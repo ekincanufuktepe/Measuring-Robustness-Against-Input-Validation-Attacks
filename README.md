@@ -11,3 +11,5 @@ You need to run the MainIV class.
 The MainIV receives 2 arguments.
 1) The first argument is the JavaScript source code to be analyzed.
 2) The second argument is the "-flowgraph", which is necessary to generate CFG by TAJS for input validations analysis.
+
+Also, under the "files" folder there is a "config.conf" file for setting the configuration. This configuration is used for updating the input validation vulnerability attack statistics.
