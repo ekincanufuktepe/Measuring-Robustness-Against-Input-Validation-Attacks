@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry169[shape=none,label=""];
+BB_entry169 -> BB2954 [tailport=s, headport=n, headlabel="    2954"]
+BB2954 [shape=record label="{8830: constant[undefined,v1]|8831: function-decl[function doRequire ( mid callback ),-]|8832: function-decl[function forEachLocale ( locale func ),-]|8833: function-decl[function preloadingAddLock ( ),-]|8834: function-decl[function preloadingRelLock ( ),-]|8835: function-decl[function cacheId ( path name loc require ),-]|8836: function-decl[function preload ( locale ),-]}" ] 
+BB2954 -> BB2955 [tailport=s, headport=n, headlabel="      2955"]
+BB2955 [shape=record label="{8837: read-variable['contextRequire',v2,-]|8838: if[v2](true-block:2957,false-block:2956)}" ] 
+BB2955 -> BB2957 [tailport=s, headport=n, headlabel="      2957"]
+BB2955 -> BB2956 [tailport=s, headport=n, headlabel="      2956"]
+BB2955 -> BB2962 [tailport=s, headport=n, color=gray, headlabel="      2962"]
+BB2956 [shape=record label="{8839: read-variable['require',v2,-]}" ] 
+BB2956 -> BB2957 [tailport=s, headport=n]
+BB2956 -> BB2962 [tailport=s, headport=n, color=gray]
+BB2957 [shape=record label="{8840: write-variable[v2,'contextRequire']*|8841: read-variable['preload',v4,v3]}" ] 
+BB2957 -> BB2958 [tailport=s, headport=n, headlabel="      2958"]
+BB2957 -> BB2962 [tailport=s, headport=n, color=gray]
+BB2958 [shape=record label="{8842: call-preload [v3,v4,-]*}" ] 
+BB2958 -> BB2959 [tailport=s, headport=n, headlabel="      2959"]
+BB2958 -> BB2962 [tailport=s, headport=n, color=gray]
+BB2959 [shape=record label="{8843: read-variable['array',v6,-]|8844: read-property[v6,'forEach',-]|8845: \<variable-non-null-undef\>['array']|8846: read-variable['dojo',v9,-]|8847: read-property[v9,'config',v8]|8848: \<variable-non-null-undef\>['dojo']|8849: read-property[v8,'extraLocale',v7]|8850: \<property-non-null-undef\>[v9,'config']|8851: read-variable['preload',v10,-]}" ] 
+BB2959 -> BB2960 [tailport=s, headport=n, headlabel="      2960"]
+BB2959 -> BB2962 [tailport=s, headport=n, color=gray]
+BB2960 [shape=record label="{8852: call-array.forEach [v6,'forEach',v7,v10,-]*}" ] 
+BB2960 -> BB2961 [tailport=s, headport=n, headlabel="      2961"]
+BB2960 -> BB2962 [tailport=s, headport=n, color=gray]
+BB2961 [shape=record label="{8853: return[v1]}" ] 
+BB2962 [shape=record label="{8854: exceptional-return}" ] 
+//#$~ 3313
+}

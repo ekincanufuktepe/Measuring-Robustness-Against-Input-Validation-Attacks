@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1772[shape=none,label=""];
+BB_entry1772 -> BB20334 [tailport=s, headport=n, headlabel="    20334"]
+BB20334 [shape=record label="{67846: constant[undefined,v1]|67847: vardecl['args']}" ] 
+BB20334 -> BB20335 [tailport=s, headport=n, headlabel="      20335"]
+BB20335 [shape=record label="{67848: read-variable['arguments',v2,-]|67849: write-variable[v2,'args']*|67850: read-variable['isAsync',v3,-]|67851: if[v3](true-block:20336,false-block:20337)}" ] 
+BB20335 -> BB20336 [tailport=s, headport=n, headlabel="      20336"]
+BB20335 -> BB20337 [tailport=s, headport=n, headlabel="      20337"]
+BB20335 -> BB20341 [tailport=s, headport=n, color=gray, headlabel="      20341"]
+BB20336 [shape=record label="{67852: read-variable['callback',v5,-]|67853: read-property[v5,'apply',-]|67854: \<variable-non-null-undef\>['callback']|67855: read-variable['this',v6,-]|67856: read-variable['args',v7,-]}" ] 
+BB20336 -> BB20338 [tailport=s, headport=n, headlabel="      20338"]
+BB20336 -> BB20341 [tailport=s, headport=n, color=gray]
+BB20337 [shape=record label="{67857: read-variable['this',v5,-]|67858: read-property[v5,'then',-]|67859: function-expr[function ( ),v6]}" ] 
+BB20337 -> BB20339 [tailport=s, headport=n, headlabel="      20339"]
+BB20337 -> BB20341 [tailport=s, headport=n, color=gray]
+BB20338 [shape=record label="{67860: call-callback.apply [v5,'apply',v6,v7,v1]}" ] 
+BB20338 -> BB20340 [tailport=s, headport=n, headlabel="      20340"]
+BB20338 -> BB20341 [tailport=s, headport=n, color=gray]
+BB20339 [shape=record label="{67861: call-this.then [v5,'then',v6,v1]}" ] 
+BB20339 -> BB20340 [tailport=s, headport=n]
+BB20339 -> BB20341 [tailport=s, headport=n, color=gray]
+BB20340 [shape=record label="{67862: return[v1]}" ] 
+BB20341 [shape=record label="{67863: exceptional-return}" ] 
+//#$~ 38183
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry671[shape=none,label=""];
+BB_entry671 -> BB8840 [tailport=s, headport=n, headlabel="    8840"]
+BB8840 [shape=record label="{24809: constant[undefined,v1]}" ] 
+BB8840 -> BB8841 [tailport=s, headport=n, headlabel="      8841"]
+BB8841 [shape=record label="{24810: read-variable['element',v3,-]|24811: read-property[v3,'addEventListener',v2]|24812: \<variable-non-null-undef\>['element']|24813: if[v2](true-block:8842,false-block:8843)}" ] 
+BB8841 -> BB8842 [tailport=s, headport=n, headlabel="      8842"]
+BB8841 -> BB8843 [tailport=s, headport=n, headlabel="      8843"]
+BB8841 -> BB8849 [tailport=s, headport=n, color=gray, headlabel="      8849"]
+BB8842 [shape=record label="{24814: read-variable['element',v5,-]|24815: read-property[v5,'addEventListener',-]|24816: \<variable-non-null-undef\>['element']|24817: constant[\"dataavailable\",v6]|24818: read-variable['responder',v7,-]|24819: constant[false,v8]}" ] 
+BB8842 -> BB8844 [tailport=s, headport=n, headlabel="      8844"]
+BB8842 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8843 [shape=record label="{24820: read-variable['element',v5,-]|24821: read-property[v5,'attachEvent',-]|24822: \<variable-non-null-undef\>['element']|24823: constant[\"ondataavailable\",v6]|24824: read-variable['responder',v7,-]}" ] 
+BB8843 -> BB8845 [tailport=s, headport=n, headlabel="      8845"]
+BB8843 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8844 [shape=record label="{24825: call-element.addEventListener [v5,'addEventListener',v6,v7,v8,-]*}" ] 
+BB8844 -> BB8848 [tailport=s, headport=n, headlabel="      8848"]
+BB8844 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8845 [shape=record label="{24826: call-element.attachEvent [v5,'attachEvent',v6,v7,-]*}" ] 
+BB8845 -> BB8846 [tailport=s, headport=n, headlabel="      8846"]
+BB8845 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8846 [shape=record label="{24827: read-variable['element',v9,-]|24828: read-property[v9,'attachEvent',-]|24829: \<variable-non-null-undef\>['element']|24830: constant[\"onlosecapture\",v10]|24831: read-variable['responder',v11,-]}" ] 
+BB8846 -> BB8847 [tailport=s, headport=n, headlabel="      8847"]
+BB8846 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8847 [shape=record label="{24832: call-element.attachEvent [v9,'attachEvent',v10,v11,-]*}" ] 
+BB8847 -> BB8848 [tailport=s, headport=n]
+BB8847 -> BB8849 [tailport=s, headport=n, color=gray]
+BB8848 [shape=record label="{24833: return[v1]}" ] 
+BB8849 [shape=record label="{24834: exceptional-return}" ] 
+//#$~ 6959
+}

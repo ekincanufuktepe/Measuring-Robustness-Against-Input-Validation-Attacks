@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry148[shape=none,label=""];
+BB_entry148 -> BB1999 [tailport=s, headport=n, headlabel="    1999"]
+BB1999 [shape=record label="{4809: constant[undefined,v1]|4810: vardecl['parent']}" ] 
+BB1999 -> BB2000 [tailport=s, headport=n, headlabel="      2000"]
+BB2000 [shape=record label="{4811: read-variable['keepData',v3,-]|4812: ![v3,v2]|4813: if[v2](true-block:2001,false-block:2003)}" ] 
+BB2000 -> BB2001 [tailport=s, headport=n, headlabel="      2001"]
+BB2000 -> BB2003 [tailport=s, headport=n, headlabel="      2003"]
+BB2000 -> BB2007 [tailport=s, headport=n, color=gray, headlabel="      2007"]
+BB2001 [shape=record label="{4814: read-variable['jqLiteDealoc',v5,v4]|4815: read-variable['element',v6,-]}" ] 
+BB2001 -> BB2002 [tailport=s, headport=n, headlabel="      2002"]
+BB2001 -> BB2007 [tailport=s, headport=n, color=gray]
+BB2002 [shape=record label="{4816: call-jqLiteDealoc [v4,v5,v6,-]*}" ] 
+BB2002 -> BB2003 [tailport=s, headport=n]
+BB2002 -> BB2007 [tailport=s, headport=n, color=gray]
+BB2003 [shape=record label="{4817: read-variable['element',v5,-]|4818: read-property[v5,'parentNode',v4]|4819: \<variable-non-null-undef\>['element']|4820: write-variable[v4,'parent']*|4821: read-variable['parent',v6,-]|4822: if[v6](true-block:2004,false-block:2006)}" ] 
+BB2003 -> BB2004 [tailport=s, headport=n, headlabel="      2004"]
+BB2003 -> BB2006 [tailport=s, headport=n, headlabel="      2006"]
+BB2003 -> BB2007 [tailport=s, headport=n, color=gray]
+BB2004 [shape=record label="{4823: read-variable['parent',v8,-]|4824: read-property[v8,'removeChild',-]|4825: \<variable-non-null-undef\>['parent']|4826: read-variable['element',v9,-]}" ] 
+BB2004 -> BB2005 [tailport=s, headport=n, headlabel="      2005"]
+BB2004 -> BB2007 [tailport=s, headport=n, color=gray]
+BB2005 [shape=record label="{4827: call-parent.removeChild [v8,'removeChild',v9,-]*}" ] 
+BB2005 -> BB2006 [tailport=s, headport=n]
+BB2005 -> BB2007 [tailport=s, headport=n, color=gray]
+BB2006 [shape=record label="{4828: return[v1]}" ] 
+BB2007 [shape=record label="{4829: exceptional-return}" ] 
+//#$~ 2971
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry46[shape=none,label=""];
+BB_entry46 -> BB493 [tailport=s, headport=n, headlabel="    493"]
+BB493 [shape=record label="{1260: constant[undefined,v1]|1261: vardecl['key']}" ] 
+BB493 -> BB494 [tailport=s, headport=n, headlabel="      494"]
+BB494 [shape=record label="{1262: read-variable['iteratee',v4,v3]|1263: read-variable['value',v5,-]|1264: read-variable['index',v6,-]|1265: read-variable['obj',v7,-]}" ] 
+BB494 -> BB495 [tailport=s, headport=n, headlabel="      495"]
+BB494 -> BB499 [tailport=s, headport=n, color=gray, headlabel="      499"]
+BB495 [shape=record label="{1266: call-iteratee [v3,v4,v5,v6,v7,v2]}" ] 
+BB495 -> BB496 [tailport=s, headport=n, headlabel="      496"]
+BB495 -> BB499 [tailport=s, headport=n, color=gray]
+BB496 [shape=record label="{1267: write-variable[v2,'key']*|1268: read-variable['behavior',v9,v8]|1269: read-variable['result',v10,-]|1270: read-variable['value',v11,-]|1271: read-variable['key',v12,-]}" ] 
+BB496 -> BB497 [tailport=s, headport=n, headlabel="      497"]
+BB496 -> BB499 [tailport=s, headport=n, color=gray]
+BB497 [shape=record label="{1272: call-behavior [v8,v9,v10,v11,v12,-]*}" ] 
+BB497 -> BB498 [tailport=s, headport=n, headlabel="      498"]
+BB497 -> BB499 [tailport=s, headport=n, color=gray]
+BB498 [shape=record label="{1273: return[v1]}" ] 
+BB499 [shape=record label="{1274: exceptional-return}" ] 
+//#$~ 400
+}

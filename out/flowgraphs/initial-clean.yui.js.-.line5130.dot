@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry150[shape=none,label=""];
+BB_entry150 -> BB2882 [tailport=s, headport=n, headlabel="    2882"]
+BB2882 [shape=record label="{9653: constant[undefined,v1]|9654: vardecl['imp']}" ] 
+BB2882 -> BB2883 [tailport=s, headport=n, headlabel="      2883"]
+BB2883 [shape=record label="{9655: read-variable['Y',v4,-]|9656: read-property[v4,'config',v3]|9657: \<variable-non-null-undef\>['Y']|9658: read-property[v3,'doc',v2]|9659: \<property-non-null-undef\>[v4,'config']|9660: if[v2](true-block:2884,false-block:2885)}" ] 
+BB2883 -> BB2885 [tailport=s, headport=n, headlabel="      2885"]
+BB2883 -> BB2884 [tailport=s, headport=n, headlabel="      2884"]
+BB2883 -> BB2890 [tailport=s, headport=n, color=gray, headlabel="      2890"]
+BB2884 [shape=record label="{9661: read-variable['Y',v7,-]|9662: read-property[v7,'config',v6]|9663: \<variable-non-null-undef\>['Y']|9664: read-property[v6,'doc',v5]|9665: \<property-non-null-undef\>[v7,'config']|9666: read-property[v5,'implementation',v2]|9667: \<property-non-null-undef\>[v6,'doc']}" ] 
+BB2884 -> BB2885 [tailport=s, headport=n]
+BB2884 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2885 [shape=record label="{9668: write-variable[v2,'imp']*|9669: read-variable['imp',v1,-]|9670: if[v1](true-block:2886,false-block:2889)}" ] 
+BB2885 -> BB2889 [tailport=s, headport=n, headlabel="      2889"]
+BB2885 -> BB2886 [tailport=s, headport=n, headlabel="      2886"]
+BB2885 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2886 [shape=record label="{9671: read-variable['imp',v7,-]|9672: read-property[v7,'hasFeature',-]|9673: \<variable-non-null-undef\>['imp']|9674: constant[\"Events\",v8]|9675: constant[\"2.0\",v9]}" ] 
+BB2886 -> BB2887 [tailport=s, headport=n, headlabel="      2887"]
+BB2886 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2887 [shape=record label="{9676: call-imp.hasFeature [v7,'hasFeature',v8,v9,v5]}" ] 
+BB2887 -> BB2888 [tailport=s, headport=n, headlabel="      2888"]
+BB2887 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2888 [shape=record label="{9677: ![v5,v1]}" ] 
+BB2888 -> BB2889 [tailport=s, headport=n]
+BB2888 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2889 [shape=record label="{9678: return[v1]}" ] 
+BB2890 [shape=record label="{9679: exceptional-return}" ] 
+//#$~ 5132
+}

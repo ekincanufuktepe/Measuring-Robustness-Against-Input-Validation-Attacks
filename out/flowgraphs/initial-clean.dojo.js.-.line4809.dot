@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry256[shape=none,label=""];
+BB_entry256 -> BB3787 [tailport=s, headport=n, headlabel="    3787"]
+BB3787 [shape=record label="{11577: constant[undefined,v1]|11578: vardecl['p']}" ] 
+BB3787 -> BB3788 [tailport=s, headport=n, headlabel="      3788"]
+BB3788 [shape=record label="{11579: read-variable['node',v3,-]|11580: read-property[v3,'parentNode',v2]|11581: \<variable-non-null-undef\>['node']|11582: write-variable[v2,'p']*|11583: read-variable['p',v4,-]|11584: if[v4](true-block:3789,false-block:3791)}" ] 
+BB3788 -> BB3789 [tailport=s, headport=n, headlabel="      3789"]
+BB3788 -> BB3791 [tailport=s, headport=n, headlabel="      3791"]
+BB3788 -> BB3792 [tailport=s, headport=n, color=gray, headlabel="      3792"]
+BB3789 [shape=record label="{11585: read-variable['p',v6,-]|11586: read-property[v6,'removeChild',-]|11587: \<variable-non-null-undef\>['p']|11588: read-variable['node',v7,-]}" ] 
+BB3789 -> BB3790 [tailport=s, headport=n, headlabel="      3790"]
+BB3789 -> BB3792 [tailport=s, headport=n, color=gray]
+BB3790 [shape=record label="{11589: call-p.removeChild [v6,'removeChild',v7,-]*}" ] 
+BB3790 -> BB3791 [tailport=s, headport=n]
+BB3790 -> BB3792 [tailport=s, headport=n, color=gray]
+BB3791 [shape=record label="{11590: return[v1]}" ] 
+BB3792 [shape=record label="{11591: exceptional-return}" ] 
+//#$~ 4814
+}

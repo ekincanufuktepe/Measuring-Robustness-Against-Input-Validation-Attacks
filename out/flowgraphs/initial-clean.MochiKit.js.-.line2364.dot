@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry269[shape=none,label=""];
+BB_entry269 -> BB3576 [tailport=s, headport=n, headlabel="    3576"]
+BB3576 [shape=record label="{14266: constant[undefined,v1]}" ] 
+BB3576 -> BB3577 [tailport=s, headport=n, headlabel="      3577"]
+BB3577 [shape=record label="{14267: read-variable['arguments',v5,-]|14268: read-property[v5,'length',v3]|14269: \<variable-non-null-undef\>['arguments']|14270: constant[1.0,v4]|14271: \>[v3,v4,v2]|14272: if[v2](true-block:3578,false-block:3581)}" ] 
+BB3577 -> BB3578 [tailport=s, headport=n, headlabel="      3578"]
+BB3577 -> BB3581 [tailport=s, headport=n, headlabel="      3581"]
+BB3577 -> BB3584 [tailport=s, headport=n, color=gray, headlabel="      3584"]
+BB3578 [shape=record label="{14273: read-variable['MochiKit',v10,-]|14274: read-property[v10,'Base',v9]|14275: \<variable-non-null-undef\>['MochiKit']|14276: read-property[v9,'partial',v8]|14277: \<property-non-null-undef\>[v10,'Base']|14278: read-property[v8,'apply',-]|14279: \<property-non-null-undef\>[v9,'partial']|14280: constant[null,v11]|14281: read-variable['arguments',v12,-]}" ] 
+BB3578 -> BB3579 [tailport=s, headport=n, headlabel="      3579"]
+BB3578 -> BB3584 [tailport=s, headport=n, color=gray]
+BB3579 [shape=record label="{14282: call-MochiKit.Base.partial.apply [v8,'apply',v11,v12,v6]}" ] 
+BB3579 -> BB3580 [tailport=s, headport=n, headlabel="      3580"]
+BB3579 -> BB3584 [tailport=s, headport=n, color=gray]
+BB3580 [shape=record label="{14283: write-variable[v6,'fn']*}" ] 
+BB3580 -> BB3581 [tailport=s, headport=n]
+BB3581 [shape=record label="{14284: read-variable['this',v7,-]|14285: read-property[v7,'addCallbacks',-]|14286: read-variable['fn',v8,-]|14287: constant[null,v9]}" ] 
+BB3581 -> BB3582 [tailport=s, headport=n, headlabel="      3582"]
+BB3581 -> BB3584 [tailport=s, headport=n, color=gray]
+BB3582 [shape=record label="{14288: call-this.addCallbacks [v7,'addCallbacks',v8,v9,v1]}" ] 
+BB3582 -> BB3583 [tailport=s, headport=n, headlabel="      3583"]
+BB3582 -> BB3584 [tailport=s, headport=n, color=gray]
+BB3583 [shape=record label="{14289: return[v1]}" ] 
+BB3584 [shape=record label="{14290: exceptional-return}" ] 
+//#$~ 2368
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry847[shape=none,label=""];
+BB_entry847 -> BB9891 [tailport=s, headport=n, headlabel="    9891"]
+BB9891 [shape=record label="{33905: constant[undefined,v1]}" ] 
+BB9891 -> BB9892 [tailport=s, headport=n, headlabel="      9892"]
+BB9892 [shape=record label="{33906: read-variable['object',v2,-]|33907: if[v2](true-block:9893,false-block:9894)}" ] 
+BB9892 -> BB9894 [tailport=s, headport=n, headlabel="      9894"]
+BB9892 -> BB9893 [tailport=s, headport=n, headlabel="      9893"]
+BB9892 -> BB9898 [tailport=s, headport=n, color=gray, headlabel="      9898"]
+BB9893 [shape=record label="{33908: read-variable['object',v3,-]|33909: read-property[v3,'isStream',v2]|33910: \<variable-non-null-undef\>['object']}" ] 
+BB9893 -> BB9894 [tailport=s, headport=n]
+BB9893 -> BB9898 [tailport=s, headport=n, color=gray]
+BB9894 [shape=record label="{33911: if[v2](true-block:9895,false-block:9897)}" ] 
+BB9894 -> BB9895 [tailport=s, headport=n, headlabel="      9895"]
+BB9894 -> BB9897 [tailport=s, headport=n, headlabel="      9897"]
+BB9895 [shape=record label="{33912: read-variable['object',v4,-]|33913: read-property[v4,'unsubscribe',-]|33914: \<variable-non-null-undef\>['object']|33915: read-variable['callback',v5,-]|33916: read-variable['context',v6,-]}" ] 
+BB9895 -> BB9896 [tailport=s, headport=n, headlabel="      9896"]
+BB9895 -> BB9898 [tailport=s, headport=n, color=gray]
+BB9896 [shape=record label="{33917: call-object.unsubscribe [v4,'unsubscribe',v5,v6,-]*}" ] 
+BB9896 -> BB9897 [tailport=s, headport=n]
+BB9896 -> BB9898 [tailport=s, headport=n, color=gray]
+BB9897 [shape=record label="{33918: return[v1]}" ] 
+BB9898 [shape=record label="{33919: exceptional-return}" ] 
+//#$~ 17688
+}

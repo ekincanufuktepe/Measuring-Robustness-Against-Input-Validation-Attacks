@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry546[shape=none,label=""];
+BB_entry546 -> BB5779 [tailport=s, headport=n, headlabel="    5779"]
+BB5779 [shape=record label="{18198: constant[undefined,v1]}" ] 
+BB5779 -> BB5780 [tailport=s, headport=n, headlabel="      5780"]
+BB5780 [shape=record label="{18199: read-variable['lines',v3,-]|18200: read-property[v3,'push',-]|18201: \<variable-non-null-undef\>['lines']|18202: read-variable['Array',v5,-]}" ] 
+BB5780 -> BB5781 [tailport=s, headport=n, headlabel="      5781"]
+BB5780 -> BB5785 [tailport=s, headport=n, color=gray, headlabel="      5785"]
+BB5781 [shape=record label="{18203: construct [-,v5,v4]}" ] 
+BB5781 -> BB5782 [tailport=s, headport=n, headlabel="      5782"]
+BB5781 -> BB5785 [tailport=s, headport=n, color=gray]
+BB5782 [shape=record label="{18204: write-variable[v4,'line']}" ] 
+BB5782 -> BB5783 [tailport=s, headport=n, headlabel="      5783"]
+BB5783 [shape=record label="{18205: call-lines.push [v3,'push',v4,-]*}" ] 
+BB5783 -> BB5784 [tailport=s, headport=n, headlabel="      5784"]
+BB5783 -> BB5785 [tailport=s, headport=n, color=gray]
+BB5784 [shape=record label="{18206: return[v1]}" ] 
+BB5785 [shape=record label="{18207: exceptional-return}" ] 
+//#$~ 3407
+}

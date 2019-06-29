@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry483[shape=none,label=""];
+BB_entry483 -> BB5994 [tailport=s, headport=n, headlabel="    5994"]
+BB5994 [shape=record label="{21318: constant[undefined,v1]|21319: vardecl['i']|21320: vardecl['l']}" ] 
+BB5994 -> BB5995 [tailport=s, headport=n, headlabel="      5995"]
+BB5995 [shape=record label="{21321: constant[0.0,v3]|21322: write-variable[v3,'i']*|21323: read-variable['chainNodes',v5,-]|21324: read-property[v5,'length',v4]|21325: \<variable-non-null-undef\>['chainNodes']|21326: write-variable[v4,'l']*}" ] 
+BB5995 -> BB5996 [tailport=s, headport=n, headlabel="      5996"]
+BB5995 -> BB6001 [tailport=s, headport=n, color=gray, headlabel="      6001"]
+BB5996 [shape=record label="{21327: read-variable['i',v6,-]|21328: read-variable['l',v7,-]|21329: \<[v6,v7,v2]|21330: if[v2](true-block:5997,false-block:6000)}" ] 
+BB5996 -> BB5997 [tailport=s, headport=n, headlabel="      5997"]
+BB5996 -> BB6000 [tailport=s, headport=n, headlabel="      6000"]
+BB5996 -> BB6001 [tailport=s, headport=n, color=gray]
+BB5997 [shape=record label="{21331: read-variable['chainNodes',v10,-]|21332: read-variable['i',v11,-]|21333: read-property[v10,v11,v9]|21334: \<variable-non-null-undef\>['chainNodes']|21335: read-property[v9,'didChange',-]|21336: \<property-non-null-undef\>[v10,v11]|21337: constant[null,v12]}" ] 
+BB5997 -> BB5998 [tailport=s, headport=n, headlabel="      5998"]
+BB5997 -> BB6001 [tailport=s, headport=n, color=gray]
+BB5998 [shape=record label="{21338: call-null [v9,'didChange',v12,-]*}" ] 
+BB5998 -> BB5999 [tailport=s, headport=n, headlabel="      5999"]
+BB5998 -> BB6001 [tailport=s, headport=n, color=gray]
+BB5999 [shape=record label="{21339: constant[1.0,v13]|21340: read-variable['i',v14,-]|21341: +[v14,v15]|21342: +[v15,v13,v16]|21343: write-variable[v16,'i']}" ] 
+BB5999 -> BB5996 [tailport=s, headport=n]
+BB5999 -> BB6001 [tailport=s, headport=n, color=gray]
+BB6000 [shape=record label="{21344: return[v1]}" ] 
+BB6001 [shape=record label="{21345: exceptional-return}" ] 
+//#$~ 10876
+}

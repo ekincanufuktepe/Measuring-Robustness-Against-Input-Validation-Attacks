@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry524[shape=none,label=""];
+BB_entry524 -> BB5510 [tailport=s, headport=n, headlabel="    5510"]
+BB5510 [shape=record label="{17271: constant[undefined,v1]|17272: function-decl[function compose ( x y ),-]}" ] 
+BB5510 -> BB5511 [tailport=s, headport=n, headlabel="      5511"]
+BB5511 [shape=record label="{17273: read-variable['a',v3,-]|17274: read-property[v3,'invert',v2]|17275: \<variable-non-null-undef\>['a']|17276: if[v2](true-block:5512,false-block:5513)}" ] 
+BB5511 -> BB5513 [tailport=s, headport=n, headlabel="      5513"]
+BB5511 -> BB5512 [tailport=s, headport=n, headlabel="      5512"]
+BB5511 -> BB5517 [tailport=s, headport=n, color=gray, headlabel="      5517"]
+BB5512 [shape=record label="{17277: read-variable['b',v4,-]|17278: read-property[v4,'invert',v2]|17279: \<variable-non-null-undef\>['b']}" ] 
+BB5512 -> BB5513 [tailport=s, headport=n]
+BB5512 -> BB5517 [tailport=s, headport=n, color=gray]
+BB5513 [shape=record label="{17280: if[v2](true-block:5514,false-block:5515)}" ] 
+BB5513 -> BB5514 [tailport=s, headport=n, headlabel="      5514"]
+BB5513 -> BB5515 [tailport=s, headport=n, headlabel="      5515"]
+BB5514 [shape=record label="{17281: read-variable['compose',v5,-]|17282: function-expr[function ( x y ),v4]|17283: write-property[v5,'invert',v4]|17284: \<variable-non-null-undef\>['compose']*}" ] 
+BB5514 -> BB5515 [tailport=s, headport=n]
+BB5514 -> BB5517 [tailport=s, headport=n, color=gray]
+BB5515 [shape=record label="{17285: read-variable['compose',v1,-]}" ] 
+BB5515 -> BB5516 [tailport=s, headport=n, headlabel="      5516"]
+BB5515 -> BB5517 [tailport=s, headport=n, color=gray]
+BB5516 [shape=record label="{17286: return[v1]}" ] 
+BB5517 [shape=record label="{17287: exceptional-return}" ] 
+//#$~ 3225
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry305[shape=none,label=""];
+BB_entry305 -> BB2793 [tailport=s, headport=n, headlabel="    2793"]
+BB2793 [shape=record label="{8314: constant[undefined,v1]|8315: vardecl['cons']|8316: vardecl['parentcons']}" ] 
+BB2793 -> BB2794 [tailport=s, headport=n, headlabel="      2794"]
+BB2794 [shape=record label="{8317: read-variable['this',v3,-]|8318: read-property[v3,'_constraints',v2]|8319: write-variable[v2,'cons']*|8320: read-variable['this',v5,-]|8321: read-property[v5,'_uses',v4]|8322: if[v4](true-block:2795,false-block:2799)}" ] 
+BB2794 -> BB2795 [tailport=s, headport=n, headlabel="      2795"]
+BB2794 -> BB2799 [tailport=s, headport=n, headlabel="      2799"]
+BB2794 -> BB2801 [tailport=s, headport=n, color=gray, headlabel="      2801"]
+BB2795 [shape=record label="{8323: read-variable['this',v9,-]|8324: read-property[v9,'_uses',v8]|8325: read-property[v8,'getConstraintList',-]|8326: \<property-non-null-undef\>[v9,'_uses']}" ] 
+BB2795 -> BB2796 [tailport=s, headport=n, headlabel="      2796"]
+BB2795 -> BB2801 [tailport=s, headport=n, color=gray]
+BB2796 [shape=record label="{8327: call-this._uses.getConstraintList [v8,'getConstraintList',v6]}" ] 
+BB2796 -> BB2797 [tailport=s, headport=n, headlabel="      2797"]
+BB2796 -> BB2801 [tailport=s, headport=n, color=gray]
+BB2797 [shape=record label="{8328: write-variable[v6,'parentcons']*|8329: read-variable['parentcons',v11,-]|8330: read-property[v11,'concat',-]|8331: \<variable-non-null-undef\>['parentcons']|8332: read-variable['cons',v12,-]}" ] 
+BB2797 -> BB2798 [tailport=s, headport=n, headlabel="      2798"]
+BB2797 -> BB2801 [tailport=s, headport=n, color=gray]
+BB2798 [shape=record label="{8333: call-parentcons.concat [v11,'concat',v12,v1]}" ] 
+BB2798 -> BB2800 [tailport=s, headport=n, headlabel="      2800"]
+BB2798 -> BB2801 [tailport=s, headport=n, color=gray]
+BB2799 [shape=record label="{8334: read-variable['cons',v1,-]}" ] 
+BB2799 -> BB2800 [tailport=s, headport=n]
+BB2799 -> BB2801 [tailport=s, headport=n, color=gray]
+BB2800 [shape=record label="{8335: return[v1]}" ] 
+BB2801 [shape=record label="{8336: exceptional-return}" ] 
+//#$~ 3235
+}

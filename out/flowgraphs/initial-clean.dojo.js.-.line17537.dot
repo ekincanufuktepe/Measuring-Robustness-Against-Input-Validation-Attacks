@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry913[shape=none,label=""];
+BB_entry913 -> BB12375 [tailport=s, headport=n, headlabel="    12375"]
+BB12375 [shape=record label="{36154: constant[undefined,v1]|36155: vardecl['fixEvent']|36156: vardecl['ret']}" ] 
+BB12375 -> BB12376 [tailport=s, headport=n, headlabel="      12376"]
+BB12376 [shape=record label="{36157: read-variable['on',v3,-]|36158: read-property[v3,'_fixEvent',v2]|36159: \<variable-non-null-undef\>['on']|36160: if[v2](true-block:12377,false-block:12378)}" ] 
+BB12376 -> BB12377 [tailport=s, headport=n, headlabel="      12377"]
+BB12376 -> BB12378 [tailport=s, headport=n, headlabel="      12378"]
+BB12376 -> BB12382 [tailport=s, headport=n, color=gray, headlabel="      12382"]
+BB12377 [shape=record label="{36161: read-variable['on',v5,-]|36162: read-property[v5,'_fixEvent',v4]|36163: \<variable-non-null-undef\>['on']|36164: write-variable[v4,'fixEvent']*|36165: read-variable['on',v7,-]|36166: function-expr[function ( evt se ),v6]|36167: write-property[v7,'_fixEvent',v6]|36168: \<variable-non-null-undef\>['on']*}" ] 
+BB12377 -> BB12378 [tailport=s, headport=n]
+BB12377 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12378 [shape=record label="{36169: new[v4]|36170: function-expr[function ( evt sender ),v5]|36171: write-property[v4,'fix',v5]|36172: function-expr[function ( evt ),v6]|36173: write-property[v4,'stop',v6]|36174: write-variable[v4,'ret']*|36175: constant[1.0,v7]|36176: if[v7](true-block:12379,false-block:12380)}" ] 
+BB12378 -> BB12379 [tailport=s, headport=n, headlabel="      12379"]
+BB12378 -> BB12380 [tailport=s, headport=n, headlabel="      12380"]
+BB12378 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12379 [shape=record label="{36177: read-variable['dojo',v9,-]|36178: read-variable['ret',v10,-]|36179: read-property[v10,'fix',v8]|36180: \<variable-non-null-undef\>['ret']|36181: write-property[v9,'fixEvent',v8]|36182: \<variable-non-null-undef\>['dojo']*|36183: read-variable['dojo',v12,-]|36184: read-variable['ret',v13,-]|36185: read-property[v13,'stop',v11]|36186: \<variable-non-null-undef\>['ret']|36187: write-property[v12,'stopEvent',v11]|36188: \<variable-non-null-undef\>['dojo']*}" ] 
+BB12379 -> BB12380 [tailport=s, headport=n]
+BB12379 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12380 [shape=record label="{36189: read-variable['ret',v1,-]}" ] 
+BB12380 -> BB12381 [tailport=s, headport=n, headlabel="      12381"]
+BB12380 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12381 [shape=record label="{36190: return[v1]}" ] 
+BB12382 [shape=record label="{36191: exceptional-return}" ] 
+//#$~ 17594
+}

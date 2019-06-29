@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry6[shape=none,label=""];
+BB_entry6 -> BB57 [tailport=s, headport=n, headlabel="    57"]
+BB57 [shape=record label="{316: constant[undefined,v1]}" ] 
+BB57 -> BB58 [tailport=s, headport=n, headlabel="      58"]
+BB58 [shape=record label="{317: read-variable['document',v3,-]|318: read-property[v3,'set_focus_onerror',v2]|319: \<variable-non-null-undef\>['document']|320: if[v2](true-block:59,false-block:64)}" ] 
+BB58 -> BB59 [tailport=s, headport=n, headlabel="      59"]
+BB58 -> BB64 [tailport=s, headport=n, headlabel="      64"]
+BB58 -> BB65 [tailport=s, headport=n, color=gray, headlabel="      65"]
+BB59 [shape=record label="{321: read-variable['objInput',v6,-]|322: read-property[v6,'disabled',v5]|323: \<variable-non-null-undef\>['objInput']|324: ![v5,v4]|325: if[v4](true-block:60,false-block:61)}" ] 
+BB59 -> BB61 [tailport=s, headport=n, headlabel="      61"]
+BB59 -> BB60 [tailport=s, headport=n, headlabel="      60"]
+BB59 -> BB65 [tailport=s, headport=n, color=gray]
+BB60 [shape=record label="{326: read-variable['objInput',v9,-]|327: read-property[v9,'type',v7]|328: \<variable-non-null-undef\>['objInput']|329: constant[\"hidden\",v8]|330: !=[v7,v8,v4]}" ] 
+BB60 -> BB61 [tailport=s, headport=n]
+BB60 -> BB65 [tailport=s, headport=n, color=gray]
+BB61 [shape=record label="{331: if[v4](true-block:62,false-block:64)}" ] 
+BB61 -> BB62 [tailport=s, headport=n, headlabel="      62"]
+BB61 -> BB64 [tailport=s, headport=n]
+BB62 [shape=record label="{332: read-variable['objInput',v8,-]|333: read-property[v8,'focus',-]|334: \<variable-non-null-undef\>['objInput']}" ] 
+BB62 -> BB63 [tailport=s, headport=n, headlabel="      63"]
+BB62 -> BB65 [tailport=s, headport=n, color=gray]
+BB63 [shape=record label="{335: call-objInput.focus [v8,'focus',-]*}" ] 
+BB63 -> BB64 [tailport=s, headport=n]
+BB63 -> BB65 [tailport=s, headport=n, color=gray]
+BB64 [shape=record label="{336: return[v1]}" ] 
+BB65 [shape=record label="{337: exceptional-return}" ] 
+//#$~ 120
+}

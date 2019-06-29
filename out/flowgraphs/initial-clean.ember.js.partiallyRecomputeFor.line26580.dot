@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry1207[shape=none,label=""];
+BB_entry1207 -> BB14473 [tailport=s, headport=n, headlabel="    14473"]
+BB14473 [shape=record label="{49984: constant[undefined,v1]|49985: vardecl['value']}" ] 
+BB14473 -> BB14474 [tailport=s, headport=n, headlabel="      14474"]
+BB14474 [shape=record label="{49986: read-variable['arrayBracketPattern',v4,-]|49987: read-property[v4,'test',-]|49988: \<variable-non-null-undef\>['arrayBracketPattern']|49989: read-variable['dependentKey',v5,-]}" ] 
+BB14474 -> BB14475 [tailport=s, headport=n, headlabel="      14475"]
+BB14474 -> BB14483 [tailport=s, headport=n, color=gray, headlabel="      14483"]
+BB14475 [shape=record label="{49990: call-arrayBracketPattern.test [v4,'test',v5,v2]}" ] 
+BB14475 -> BB14476 [tailport=s, headport=n, headlabel="      14476"]
+BB14475 -> BB14483 [tailport=s, headport=n, color=gray]
+BB14476 [shape=record label="{49991: if[v2](true-block:14477,false-block:14478)}" ] 
+BB14476 -> BB14477 [tailport=s, headport=n, headlabel="      14477"]
+BB14476 -> BB14478 [tailport=s, headport=n, headlabel="      14478"]
+BB14477 [shape=record label="{49992: constant[false,v1]}" ] 
+BB14477 -> BB14482 [tailport=s, headport=n, headlabel="      14482"]
+BB14478 [shape=record label="{49993: read-variable['get',v8,v7]|49994: read-variable['obj',v9,-]|49995: read-variable['dependentKey',v10,-]}" ] 
+BB14478 -> BB14479 [tailport=s, headport=n, headlabel="      14479"]
+BB14478 -> BB14483 [tailport=s, headport=n, color=gray]
+BB14479 [shape=record label="{49996: call-get [v7,v8,v9,v10,v6]}" ] 
+BB14479 -> BB14480 [tailport=s, headport=n, headlabel="      14480"]
+BB14479 -> BB14483 [tailport=s, headport=n, color=gray]
+BB14480 [shape=record label="{49997: write-variable[v6,'value']*|49998: read-variable['EmberArray',v12,-]|49999: read-property[v12,'detect',-]|50000: \<variable-non-null-undef\>['EmberArray']|50001: read-variable['value',v13,-]}" ] 
+BB14480 -> BB14481 [tailport=s, headport=n, headlabel="      14481"]
+BB14480 -> BB14483 [tailport=s, headport=n, color=gray]
+BB14481 [shape=record label="{50002: call-EmberArray.detect [v12,'detect',v13,v1]}" ] 
+BB14481 -> BB14482 [tailport=s, headport=n]
+BB14481 -> BB14483 [tailport=s, headport=n, color=gray]
+BB14482 [shape=record label="{50003: return[v1]}" ] 
+BB14483 [shape=record label="{50004: exceptional-return}" ] 
+//#$~ 26586
+}

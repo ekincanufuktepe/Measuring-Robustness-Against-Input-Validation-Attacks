@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry1131[shape=none,label=""];
+BB_entry1131 -> BB12297 [tailport=s, headport=n, headlabel="    12297"]
+BB12297 [shape=record label="{42301: constant[undefined,v1]|42302: vardecl['x']|42303: vardecl['y']|42304: vardecl['dx']|42305: vardecl['dy']}" ] 
+BB12297 -> BB12298 [tailport=s, headport=n, headlabel="      12298"]
+BB12298 [shape=record label="{42306: read-variable['node',v5,-]|42307: read-property[v5,'x',v3]|42308: \<variable-non-null-undef\>['node']|42309: read-variable['padding',v6,-]|42310: constant[3.0,v7]|42311: read-property[v6,v7,v4]|42312: \<variable-non-null-undef\>['padding']|42313: +[v3,v4,v2]|42314: write-variable[v2,'x']*|42315: read-variable['node',v11,-]|42316: read-property[v11,'y',v9]|42317: \<variable-non-null-undef\>['node']|42318: read-variable['padding',v12,-]|42319: constant[0.0,v13]|42320: read-property[v12,v13,v10]|42321: \<variable-non-null-undef\>['padding']|42322: +[v9,v10,v8]|42323: write-variable[v8,'y']*|42324: read-variable['node',v19,-]|42325: read-property[v19,'dx',v17]|42326: \<variable-non-null-undef\>['node']|42327: read-variable['padding',v20,-]|42328: constant[1.0,v21]|42329: read-property[v20,v21,v18]|42330: \<variable-non-null-undef\>['padding']|42331: -[v17,v18,v15]|42332: read-variable['padding',v22,-]|42333: constant[3.0,v23]|42334: read-property[v22,v23,v16]|42335: \<variable-non-null-undef\>['padding']|42336: -[v15,v16,v14]|42337: write-variable[v14,'dx']*|42338: read-variable['node',v29,-]|42339: read-property[v29,'dy',v27]|42340: \<variable-non-null-undef\>['node']|42341: read-variable['padding',v30,-]|42342: constant[0.0,v31]|42343: read-property[v30,v31,v28]|42344: \<variable-non-null-undef\>['padding']|42345: -[v27,v28,v25]|42346: read-variable['padding',v32,-]|42347: constant[2.0,v33]|42348: read-property[v32,v33,v26]|42349: \<variable-non-null-undef\>['padding']|42350: -[v25,v26,v24]|42351: write-variable[v24,'dy']*|42352: read-variable['dx',v35,-]|42353: constant[0.0,v36]|42354: \<[v35,v36,v34]|42355: if[v34](true-block:12299,false-block:12300)}" ] 
+BB12298 -> BB12299 [tailport=s, headport=n, headlabel="      12299"]
+BB12298 -> BB12300 [tailport=s, headport=n, headlabel="      12300"]
+BB12298 -> BB12304 [tailport=s, headport=n, color=gray, headlabel="      12304"]
+BB12299 [shape=record label="{42356: read-variable['x',v38,-]|42357: read-variable['dx',v40,-]|42358: constant[2.0,v41]|42359: /[v40,v41,v39]|42360: +[v38,v39,v37]|42361: write-variable[v37,'x']*|42362: constant[0.0,v42]|42363: write-variable[v42,'dx']*}" ] 
+BB12299 -> BB12300 [tailport=s, headport=n]
+BB12299 -> BB12304 [tailport=s, headport=n, color=gray]
+BB12300 [shape=record label="{42364: read-variable['dy',v38,-]|42365: constant[0.0,v39]|42366: \<[v38,v39,v37]|42367: if[v37](true-block:12301,false-block:12302)}" ] 
+BB12300 -> BB12301 [tailport=s, headport=n, headlabel="      12301"]
+BB12300 -> BB12302 [tailport=s, headport=n, headlabel="      12302"]
+BB12300 -> BB12304 [tailport=s, headport=n, color=gray]
+BB12301 [shape=record label="{42368: read-variable['y',v41,-]|42369: read-variable['dy',v43,-]|42370: constant[2.0,v44]|42371: /[v43,v44,v42]|42372: +[v41,v42,v40]|42373: write-variable[v40,'y']*|42374: constant[0.0,v45]|42375: write-variable[v45,'dy']*}" ] 
+BB12301 -> BB12302 [tailport=s, headport=n]
+BB12301 -> BB12304 [tailport=s, headport=n, color=gray]
+BB12302 [shape=record label="{42376: new[v1]|42377: read-variable['x',v40,-]|42378: write-property[v1,'x',v40]|42379: read-variable['y',v41,-]|42380: write-property[v1,'y',v41]|42381: read-variable['dx',v42,-]|42382: write-property[v1,'dx',v42]|42383: read-variable['dy',v43,-]|42384: write-property[v1,'dy',v43]}" ] 
+BB12302 -> BB12303 [tailport=s, headport=n, headlabel="      12303"]
+BB12302 -> BB12304 [tailport=s, headport=n, color=gray]
+BB12303 [shape=record label="{42385: return[v1]}" ] 
+BB12304 [shape=record label="{42386: exceptional-return}" ] 
+//#$~ 7392
+}

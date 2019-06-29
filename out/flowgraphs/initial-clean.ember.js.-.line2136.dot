@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry122[shape=none,label=""];
+BB_entry122 -> BB1612 [tailport=s, headport=n, headlabel="    1612"]
+BB1612 [shape=record label="{5174: constant[undefined,v1]|5175: vardecl['visited']|5176: vardecl['vertices']|5177: vardecl['names']|5178: vardecl['len']|5179: vardecl['i']|5180: vardecl['vertex']}" ] 
+BB1612 -> BB1613 [tailport=s, headport=n, headlabel="      1613"]
+BB1613 [shape=record label="{5181: new[v2]|5182: write-variable[v2,'visited']*|5183: read-variable['this',v4,-]|5184: read-property[v4,'vertices',v3]|5185: write-variable[v3,'vertices']*|5186: read-variable['this',v6,-]|5187: read-property[v6,'names',v5]|5188: write-variable[v5,'names']*|5189: read-variable['names',v8,-]|5190: read-property[v8,'length',v7]|5191: \<variable-non-null-undef\>['names']|5192: write-variable[v7,'len']*|5193: constant[0.0,v10]|5194: write-variable[v10,'i']}" ] 
+BB1613 -> BB1614 [tailport=s, headport=n, headlabel="      1614"]
+BB1613 -> BB1620 [tailport=s, headport=n, color=gray, headlabel="      1620"]
+BB1614 [shape=record label="{5195: read-variable['i',v11,-]|5196: read-variable['len',v12,-]|5197: \<[v11,v12,v9]|5198: if[v9](true-block:1615,false-block:1619)}" ] 
+BB1614 -> BB1615 [tailport=s, headport=n, headlabel="      1615"]
+BB1614 -> BB1619 [tailport=s, headport=n, headlabel="      1619"]
+BB1614 -> BB1620 [tailport=s, headport=n, color=gray]
+BB1615 [shape=record label="{5199: read-variable['vertices',v14,-]|5200: read-variable['names',v16,-]|5201: read-variable['i',v17,-]|5202: read-property[v16,v17,v15]|5203: \<variable-non-null-undef\>['names']|5204: read-property[v14,v15,v13]|5205: \<variable-non-null-undef\>['vertices']|5206: write-variable[v13,'vertex']*|5207: read-variable['vertex',v20,-]|5208: read-property[v20,'hasOutgoing',v19]|5209: \<variable-non-null-undef\>['vertex']|5210: ![v19,v18]|5211: if[v18](true-block:1616,false-block:1618)}" ] 
+BB1615 -> BB1616 [tailport=s, headport=n, headlabel="      1616"]
+BB1615 -> BB1618 [tailport=s, headport=n, headlabel="      1618"]
+BB1615 -> BB1620 [tailport=s, headport=n, color=gray]
+BB1616 [shape=record label="{5212: read-variable['visit',v22,v21]|5213: read-variable['vertex',v23,-]|5214: read-variable['fn',v24,-]|5215: read-variable['visited',v25,-]}" ] 
+BB1616 -> BB1617 [tailport=s, headport=n, headlabel="      1617"]
+BB1616 -> BB1620 [tailport=s, headport=n, color=gray]
+BB1617 [shape=record label="{5216: call-visit [v21,v22,v23,v24,v25,-]*}" ] 
+BB1617 -> BB1618 [tailport=s, headport=n]
+BB1617 -> BB1620 [tailport=s, headport=n, color=gray]
+BB1618 [shape=record label="{5217: constant[1.0,v21]|5218: read-variable['i',v22,-]|5219: +[v22,v23]|5220: +[v23,v21,v24]|5221: write-variable[v24,'i']}" ] 
+BB1618 -> BB1614 [tailport=s, headport=n]
+BB1618 -> BB1620 [tailport=s, headport=n, color=gray]
+BB1619 [shape=record label="{5222: return[v1]}" ] 
+BB1620 [shape=record label="{5223: exceptional-return}" ] 
+//#$~ 2143
+}

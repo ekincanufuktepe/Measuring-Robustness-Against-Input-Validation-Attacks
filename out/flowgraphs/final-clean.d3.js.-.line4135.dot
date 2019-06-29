@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry654[shape=none,label=""];
+BB_entry654 -> BB7071 [tailport=s, headport=n, headlabel="    7071"]
+BB7071 [shape=record label="{22470: constant[undefined,v1]}" ] 
+BB7071 -> BB7072 [tailport=s, headport=n, headlabel="      7072"]
+BB7072 [shape=record label="{22471: read-variable['stream',v3,-]|22472: read-property[v3,'polygonEnd',-]|22473: \<variable-non-null-undef\>['stream']}" ] 
+BB7072 -> BB7073 [tailport=s, headport=n, headlabel="      7073"]
+BB7072 -> BB7076 [tailport=s, headport=n, color=gray, headlabel="      7076"]
+BB7073 [shape=record label="{22474: call-stream.polygonEnd [v3,'polygonEnd',-]*}" ] 
+BB7073 -> BB7074 [tailport=s, headport=n, headlabel="      7074"]
+BB7073 -> BB7076 [tailport=s, headport=n, color=gray]
+BB7074 [shape=record label="{22475: read-variable['resample',v5,-]|22476: read-variable['lineStart',v4,-]|22477: write-property[v5,'lineStart',v4]|22478: \<variable-non-null-undef\>['resample']*}" ] 
+BB7074 -> BB7075 [tailport=s, headport=n, headlabel="      7075"]
+BB7074 -> BB7076 [tailport=s, headport=n, color=gray]
+BB7075 [shape=record label="{22479: return[v1]}" ] 
+BB7076 [shape=record label="{22480: exceptional-return}" ] 
+//#$~ 4137
+}

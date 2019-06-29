@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2168[shape=none,label=""];
+BB_entry2168 -> BB24690 [tailport=s, headport=n, headlabel="    24690"]
+BB24690 [shape=record label="{81399: constant[undefined,v1]}" ] 
+BB24690 -> BB24691 [tailport=s, headport=n, headlabel="      24691"]
+BB24691 [shape=record label="{81400: read-variable['isAttrRemovalValue',v4,v3]|81401: read-variable['value',v5,-]}" ] 
+BB24691 -> BB24692 [tailport=s, headport=n, headlabel="      24692"]
+BB24691 -> BB24699 [tailport=s, headport=n, color=gray, headlabel="      24699"]
+BB24692 [shape=record label="{81402: call-isAttrRemovalValue [v3,v4,v5,v2]}" ] 
+BB24692 -> BB24693 [tailport=s, headport=n, headlabel="      24693"]
+BB24692 -> BB24699 [tailport=s, headport=n, color=gray]
+BB24693 [shape=record label="{81403: if[v2](true-block:24694,false-block:24695)}" ] 
+BB24693 -> BB24694 [tailport=s, headport=n, headlabel="      24694"]
+BB24693 -> BB24695 [tailport=s, headport=n, headlabel="      24695"]
+BB24694 [shape=record label="{81404: read-variable['this',v8,-]|81405: read-property[v8,'domHelper',v7]|81406: read-property[v7,'removeAttribute',-]|81407: \<property-non-null-undef\>[v8,'domHelper']|81408: read-variable['this',v10,-]|81409: read-property[v10,'element',v9]|81410: read-variable['this',v12,-]|81411: read-property[v12,'attrName',v11]}" ] 
+BB24694 -> BB24696 [tailport=s, headport=n, headlabel="      24696"]
+BB24694 -> BB24699 [tailport=s, headport=n, color=gray]
+BB24695 [shape=record label="{81412: read-variable['this',v8,-]|81413: read-property[v8,'domHelper',v7]|81414: read-property[v7,'setAttributeNS',-]|81415: \<property-non-null-undef\>[v8,'domHelper']|81416: read-variable['this',v10,-]|81417: read-property[v10,'element',v9]|81418: read-variable['this',v12,-]|81419: read-property[v12,'namespace',v11]|81420: read-variable['this',v14,-]|81421: read-property[v14,'attrName',v13]|81422: read-variable['value',v15,-]}" ] 
+BB24695 -> BB24697 [tailport=s, headport=n, headlabel="      24697"]
+BB24695 -> BB24699 [tailport=s, headport=n, color=gray]
+BB24696 [shape=record label="{81423: call-this.domHelper.removeAttribute [v7,'removeAttribute',v9,v11,-]*}" ] 
+BB24696 -> BB24698 [tailport=s, headport=n, headlabel="      24698"]
+BB24696 -> BB24699 [tailport=s, headport=n, color=gray]
+BB24697 [shape=record label="{81424: call-this.domHelper.setAttributeNS [v7,'setAttributeNS',v9,v11,v13,v15,-]*}" ] 
+BB24697 -> BB24698 [tailport=s, headport=n]
+BB24697 -> BB24699 [tailport=s, headport=n, color=gray]
+BB24698 [shape=record label="{81425: return[v1]}" ] 
+BB24699 [shape=record label="{81426: exceptional-return}" ] 
+//#$~ 46216
+}

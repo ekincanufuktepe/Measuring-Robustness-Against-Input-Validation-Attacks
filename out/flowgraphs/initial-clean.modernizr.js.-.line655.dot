@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry70[shape=none,label=""];
+BB_entry70 -> BB724 [tailport=s, headport=n, headlabel="    724"]
+BB724 [shape=record label="{1769: constant[undefined,v1]|1770: vardecl['frag']}" ] 
+BB724 -> BB725 [tailport=s, headport=n, headlabel="      725"]
+BB725 [shape=record label="{1771: read-variable['document',v3,-]|1772: read-property[v3,'createElement',-]|1773: \<variable-non-null-undef\>['document']|1774: constant[\"a\",v4]}" ] 
+BB725 -> BB726 [tailport=s, headport=n, headlabel="      726"]
+BB725 -> BB733 [tailport=s, headport=n, color=gray, headlabel="      733"]
+BB726 [shape=record label="{1775: call-document.createElement [v3,'createElement',v4,-]*}" ] 
+BB726 -> BB727 [tailport=s, headport=n, headlabel="      727"]
+BB726 -> BB733 [tailport=s, headport=n, color=gray]
+BB727 [shape=record label="{1776: read-variable['document',v7,-]|1777: read-property[v7,'createDocumentFragment',-]|1778: \<variable-non-null-undef\>['document']}" ] 
+BB727 -> BB728 [tailport=s, headport=n, headlabel="      728"]
+BB727 -> BB733 [tailport=s, headport=n, color=gray]
+BB728 [shape=record label="{1779: call-document.createDocumentFragment [v7,'createDocumentFragment',v5]}" ] 
+BB728 -> BB729 [tailport=s, headport=n, headlabel="      729"]
+BB728 -> BB733 [tailport=s, headport=n, color=gray]
+BB729 [shape=record label="{1780: write-variable[v5,'frag']*|1781: read-variable['frag',v11,-]|1782: read-property[v11,'cloneNode',v10]|1783: \<variable-non-null-undef\>['frag']|1784: typeof[v10,v8]|1785: constant[\"undefined\",v9]|1786: ==[v8,v9,v1]|1787: if[v1](true-block:732,false-block:730)}" ] 
+BB729 -> BB732 [tailport=s, headport=n, headlabel="      732"]
+BB729 -> BB730 [tailport=s, headport=n, headlabel="      730"]
+BB729 -> BB733 [tailport=s, headport=n, color=gray]
+BB730 [shape=record label="{1788: read-variable['frag',v11,-]|1789: read-property[v11,'createDocumentFragment',v10]|1790: \<variable-non-null-undef\>['frag']|1791: typeof[v10,v8]|1792: constant[\"undefined\",v9]|1793: ==[v8,v9,v1]|1794: if[v1](true-block:732,false-block:731)}" ] 
+BB730 -> BB732 [tailport=s, headport=n]
+BB730 -> BB731 [tailport=s, headport=n, headlabel="      731"]
+BB730 -> BB733 [tailport=s, headport=n, color=gray]
+BB731 [shape=record label="{1795: read-variable['frag',v11,-]|1796: read-property[v11,'createElement',v10]|1797: \<variable-non-null-undef\>['frag']|1798: typeof[v10,v8]|1799: constant[\"undefined\",v9]|1800: ==[v8,v9,v1]}" ] 
+BB731 -> BB732 [tailport=s, headport=n]
+BB731 -> BB733 [tailport=s, headport=n, color=gray]
+BB732 [shape=record label="{1801: return[v1]}" ] 
+BB733 [shape=record label="{1802: exceptional-return}" ] 
+//#$~ 661
+}

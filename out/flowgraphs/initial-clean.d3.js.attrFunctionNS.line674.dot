@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry114[shape=none,label=""];
+BB_entry114 -> BB1133 [tailport=s, headport=n, headlabel="    1133"]
+BB1133 [shape=record label="{3348: constant[undefined,v1]|3349: vardecl['x']}" ] 
+BB1133 -> BB1134 [tailport=s, headport=n, headlabel="      1134"]
+BB1134 [shape=record label="{3350: read-variable['value',v4,-]|3351: read-property[v4,'apply',-]|3352: \<variable-non-null-undef\>['value']|3353: read-variable['this',v5,-]|3354: read-variable['arguments',v6,-]}" ] 
+BB1134 -> BB1135 [tailport=s, headport=n, headlabel="      1135"]
+BB1134 -> BB1142 [tailport=s, headport=n, color=gray, headlabel="      1142"]
+BB1135 [shape=record label="{3355: call-value.apply [v4,'apply',v5,v6,v2]}" ] 
+BB1135 -> BB1136 [tailport=s, headport=n, headlabel="      1136"]
+BB1135 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1136 [shape=record label="{3356: write-variable[v2,'x']*|3357: read-variable['x',v8,-]|3358: constant[null,v9]|3359: ==[v8,v9,v7]|3360: if[v7](true-block:1137,false-block:1138)}" ] 
+BB1136 -> BB1137 [tailport=s, headport=n, headlabel="      1137"]
+BB1136 -> BB1138 [tailport=s, headport=n, headlabel="      1138"]
+BB1136 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1137 [shape=record label="{3361: read-variable['this',v11,-]|3362: read-property[v11,'removeAttributeNS',-]|3363: read-variable['name',v13,-]|3364: read-property[v13,'space',v12]|3365: \<variable-non-null-undef\>['name']|3366: read-variable['name',v15,-]|3367: read-property[v15,'local',v14]|3368: \<variable-non-null-undef\>['name']}" ] 
+BB1137 -> BB1139 [tailport=s, headport=n, headlabel="      1139"]
+BB1137 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1138 [shape=record label="{3369: read-variable['this',v11,-]|3370: read-property[v11,'setAttributeNS',-]|3371: read-variable['name',v13,-]|3372: read-property[v13,'space',v12]|3373: \<variable-non-null-undef\>['name']|3374: read-variable['name',v15,-]|3375: read-property[v15,'local',v14]|3376: \<variable-non-null-undef\>['name']|3377: read-variable['x',v16,-]}" ] 
+BB1138 -> BB1140 [tailport=s, headport=n, headlabel="      1140"]
+BB1138 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1139 [shape=record label="{3378: call-this.removeAttributeNS [v11,'removeAttributeNS',v12,v14,-]*}" ] 
+BB1139 -> BB1141 [tailport=s, headport=n, headlabel="      1141"]
+BB1139 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1140 [shape=record label="{3379: call-this.setAttributeNS [v11,'setAttributeNS',v12,v14,v16,-]*}" ] 
+BB1140 -> BB1141 [tailport=s, headport=n]
+BB1140 -> BB1142 [tailport=s, headport=n, color=gray]
+BB1141 [shape=record label="{3380: return[v1]}" ] 
+BB1142 [shape=record label="{3381: exceptional-return}" ] 
+//#$~ 676
+}

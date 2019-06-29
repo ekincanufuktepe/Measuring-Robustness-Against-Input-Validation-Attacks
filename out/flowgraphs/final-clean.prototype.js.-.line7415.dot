@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry716[shape=none,label=""];
+BB_entry716 -> BB9386 [tailport=s, headport=n, headlabel="    9386"]
+BB9386 [shape=record label="{26483: constant[undefined,v1]}" ] 
+BB9386 -> BB9387 [tailport=s, headport=n, headlabel="      9387"]
+BB9387 [shape=record label="{26484: read-variable['$',v5,v4]|26485: read-variable['parentElement',v6,-]|26486: if[v6](true-block:9389,false-block:9388)}" ] 
+BB9387 -> BB9389 [tailport=s, headport=n, headlabel="      9389"]
+BB9387 -> BB9388 [tailport=s, headport=n, headlabel="      9388"]
+BB9387 -> BB9393 [tailport=s, headport=n, color=gray, headlabel="      9393"]
+BB9388 [shape=record label="{26487: read-variable['document',v7,-]|26488: read-property[v7,'body',v6]|26489: \<variable-non-null-undef\>['document']}" ] 
+BB9388 -> BB9389 [tailport=s, headport=n]
+BB9388 -> BB9393 [tailport=s, headport=n, color=gray]
+BB9389 [shape=record label="{26490: call-$ [v4,v5,v6,v3]}" ] 
+BB9389 -> BB9390 [tailport=s, headport=n, headlabel="      9390"]
+BB9389 -> BB9393 [tailport=s, headport=n, color=gray]
+BB9390 [shape=record label="{26491: read-property[v3,'getElementsByClassName',-]|26492: read-variable['className',v7,-]}" ] 
+BB9390 -> BB9391 [tailport=s, headport=n, headlabel="      9391"]
+BB9390 -> BB9393 [tailport=s, headport=n, color=gray]
+BB9391 [shape=record label="{26493: call-null [v3,'getElementsByClassName',v7,v1]}" ] 
+BB9391 -> BB9392 [tailport=s, headport=n, headlabel="      9392"]
+BB9391 -> BB9393 [tailport=s, headport=n, color=gray]
+BB9392 [shape=record label="{26494: return[v1]}" ] 
+BB9393 [shape=record label="{26495: exceptional-return}" ] 
+//#$~ 7416
+}

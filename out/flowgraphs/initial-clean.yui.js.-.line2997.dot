@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry106[shape=none,label=""];
+BB_entry106 -> BB1712 [tailport=s, headport=n, headlabel="    1712"]
+BB1712 [shape=record label="{5531: constant[undefined,v1]|5532: vardecl['c']}" ] 
+BB1712 -> BB1713 [tailport=s, headport=n, headlabel="      1713"]
+BB1713 [shape=record label="{5533: constant[0.0,v2]|5534: write-variable[v2,'c']*|5535: read-variable['parseFloat',v4,v3]|5536: read-variable['s',v7,-]|5537: read-property[v7,'replace',-]|5538: \<variable-non-null-undef\>['s']|5539: read-variable['RegExp',v9,-]|5540: constant[\"\\\\.\",v10]|5541: constant[\"g\",v11]}" ] 
+BB1713 -> BB1714 [tailport=s, headport=n, headlabel="      1714"]
+BB1713 -> BB1719 [tailport=s, headport=n, color=gray, headlabel="      1719"]
+BB1714 [shape=record label="{5542: construct [-,v9,v10,v11,v8]}" ] 
+BB1714 -> BB1715 [tailport=s, headport=n, headlabel="      1715"]
+BB1714 -> BB1719 [tailport=s, headport=n, color=gray]
+BB1715 [shape=record label="{5543: function-expr[function ( ),v12]}" ] 
+BB1715 -> BB1716 [tailport=s, headport=n, headlabel="      1716"]
+BB1716 [shape=record label="{5544: call-s.replace [v7,'replace',v8,v12,v5]}" ] 
+BB1716 -> BB1717 [tailport=s, headport=n, headlabel="      1717"]
+BB1716 -> BB1719 [tailport=s, headport=n, color=gray]
+BB1717 [shape=record label="{5545: call-parseFloat [v3,v4,v5,v1]}" ] 
+BB1717 -> BB1718 [tailport=s, headport=n, headlabel="      1718"]
+BB1717 -> BB1719 [tailport=s, headport=n, color=gray]
+BB1718 [shape=record label="{5546: return[v1]}" ] 
+BB1719 [shape=record label="{5547: exceptional-return}" ] 
+//#$~ 3000
+}

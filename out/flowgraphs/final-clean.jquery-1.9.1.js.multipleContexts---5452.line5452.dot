@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry335[shape=none,label=""];
+BB_entry335 -> BB5185 [tailport=s, headport=n, headlabel="    5185"]
+BB5185 [shape=record label="{15067: constant[undefined,v1]|15068: vardecl['i']|15069: vardecl['len']}" ] 
+BB5185 -> BB5186 [tailport=s, headport=n, headlabel="      5186"]
+BB5186 [shape=record label="{15070: constant[0.0,v2]|15071: write-variable[v2,'i']*|15072: read-variable['contexts-5454:10',v4,-]|15073: read-property[v4,'length',v3]|15074: \<variable-non-null-undef\>['contexts']|15075: write-variable[v3,'len']*}" ] 
+BB5186 -> BB5187 [tailport=s, headport=n, headlabel="      5187"]
+BB5186 -> BB5193 [tailport=s, headport=n, color=gray, headlabel="      5193"]
+BB5187 [shape=record label="{15076: read-variable['i-5455:12',v6,-]|15077: read-variable['len-5455:16',v7,-]|15078: \<[v6,v7,v5]|15079: if[v5](true-block:5188,false-block:5189)}" ] 
+BB5187 -> BB5188 [tailport=s, headport=n, headlabel="      5188"]
+BB5187 -> BB5189 [tailport=s, headport=n, headlabel="      5189"]
+BB5187 -> BB5193 [tailport=s, headport=n, color=gray]
+BB5188 [shape=record label="{15080: read-variable['Sizzle-5456:5',v9,v8]|15081: read-variable['selector-5456:13',v10,-]|15082: read-variable['contexts-5456:23',v12,-]|15083: read-variable['i-5456:32',v13,-]|15084: read-property[v12,v13,v11]|15085: \<variable-non-null-undef\>['contexts']|15086: read-variable['results-5456:36',v14,-]}" ] 
+BB5188 -> BB5190 [tailport=s, headport=n, headlabel="      5190"]
+BB5188 -> BB5193 [tailport=s, headport=n, color=gray]
+BB5189 [shape=record label="{15087: read-variable['results-5458:11',v1,-]}" ] 
+BB5189 -> BB5192 [tailport=s, headport=n, headlabel="      5192"]
+BB5189 -> BB5193 [tailport=s, headport=n, color=gray]
+BB5190 [shape=record label="{15088: call-0:0[v8,v9,v10,v11,v14,-]*}" ] 
+BB5190 -> BB5191 [tailport=s, headport=n, headlabel="      5191"]
+BB5190 -> BB5193 [tailport=s, headport=n, color=gray]
+BB5191 [shape=record label="{15089: constant[1.0,v15]|15090: read-variable['i-5455:21',v16,-]|15091: +[v16,v17]|15092: +[v17,v15,v18]|15093: write-variable[v18,'i']}" ] 
+BB5191 -> BB5187 [tailport=s, headport=n]
+BB5191 -> BB5193 [tailport=s, headport=n, color=gray]
+BB5192 [shape=record label="{15094: return[v1]}" ] 
+BB5193 [shape=record label="{15095: exceptional-return}" ] 
+}

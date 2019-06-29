@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry127[shape=none,label=""];
+BB_entry127 -> BB1619 [tailport=s, headport=n, headlabel="    1619"]
+BB1619 [shape=record label="{4697: constant[undefined,v1]}" ] 
+BB1619 -> BB1620 [tailport=s, headport=n, headlabel="      1620"]
+BB1620 [shape=record label="{4698: read-variable['$doc',v3,-]|4699: read-property[v3,'on',-]|4700: \<variable-non-null-undef\>['$doc']|4701: constant[\"scrolling.uk.document\",v4]|4702: read-variable['checkScrollSpyNavs',v5,-]}" ] 
+BB1620 -> BB1621 [tailport=s, headport=n, headlabel="      1621"]
+BB1620 -> BB1628 [tailport=s, headport=n, color=gray, headlabel="      1628"]
+BB1621 [shape=record label="{4703: call-$doc.on [v3,'on',v4,v5,-]*}" ] 
+BB1621 -> BB1622 [tailport=s, headport=n, headlabel="      1622"]
+BB1621 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1622 [shape=record label="{4704: read-variable['$win',v7,-]|4705: read-property[v7,'on',-]|4706: \<variable-non-null-undef\>['$win']|4707: constant[\"resize orientationchange\",v8]|4708: read-variable['UI',v12,-]|4709: read-property[v12,'Utils',v11]|4710: \<variable-non-null-undef\>['UI']|4711: read-property[v11,'debounce',-]|4712: \<property-non-null-undef\>[v12,'Utils']|4713: read-variable['checkScrollSpyNavs',v13,-]|4714: constant[50.0,v14]}" ] 
+BB1622 -> BB1623 [tailport=s, headport=n, headlabel="      1623"]
+BB1622 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1623 [shape=record label="{4715: call-UI.Utils.debounce [v11,'debounce',v13,v14,v9]}" ] 
+BB1623 -> BB1624 [tailport=s, headport=n, headlabel="      1624"]
+BB1623 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1624 [shape=record label="{4716: call-$win.on [v7,'on',v8,v9,-]*}" ] 
+BB1624 -> BB1625 [tailport=s, headport=n, headlabel="      1625"]
+BB1624 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1625 [shape=record label="{4717: read-variable['UI',v16,-]|4718: read-property[v16,'ready',-]|4719: \<variable-non-null-undef\>['UI']|4720: function-expr[function ( context ),v17]}" ] 
+BB1625 -> BB1626 [tailport=s, headport=n, headlabel="      1626"]
+BB1625 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1626 [shape=record label="{4721: call-UI.ready [v16,'ready',v17,-]*}" ] 
+BB1626 -> BB1627 [tailport=s, headport=n, headlabel="      1627"]
+BB1626 -> BB1628 [tailport=s, headport=n, color=gray]
+BB1627 [shape=record label="{4722: return[v1]}" ] 
+BB1628 [shape=record label="{4723: exceptional-return}" ] 
+//#$~ 1251
+}

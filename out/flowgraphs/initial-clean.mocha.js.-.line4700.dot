@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry366[shape=none,label=""];
+BB_entry366 -> BB4070 [tailport=s, headport=n, headlabel="    4070"]
+BB4070 [shape=record label="{12887: constant[undefined,v1]|12888: vardecl['self']|12889: vardecl['total']}" ] 
+BB4070 -> BB4071 [tailport=s, headport=n, headlabel="      4071"]
+BB4071 [shape=record label="{12890: read-variable['this',v2,-]|12891: write-variable[v2,'self']*|12892: constant[0.0,v3]|12893: write-variable[v3,'total']*|12894: read-variable['suite',v5,-]|12895: read-property[v5,'eachTest',-]|12896: \<variable-non-null-undef\>['suite']|12897: function-expr[function ( test ),v6]}" ] 
+BB4071 -> BB4072 [tailport=s, headport=n, headlabel="      4072"]
+BB4071 -> BB4075 [tailport=s, headport=n, color=gray, headlabel="      4075"]
+BB4072 [shape=record label="{12898: call-suite.eachTest [v5,'eachTest',v6,-]*}" ] 
+BB4072 -> BB4073 [tailport=s, headport=n, headlabel="      4073"]
+BB4072 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4073 [shape=record label="{12899: read-variable['total',v1,-]}" ] 
+BB4073 -> BB4074 [tailport=s, headport=n, headlabel="      4074"]
+BB4073 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4074 [shape=record label="{12900: return[v1]}" ] 
+BB4075 [shape=record label="{12901: exceptional-return}" ] 
+//#$~ 4710
+}

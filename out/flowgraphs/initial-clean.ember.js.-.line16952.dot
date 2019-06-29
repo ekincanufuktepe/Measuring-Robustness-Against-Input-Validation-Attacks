@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry802[shape=none,label=""];
+BB_entry802 -> BB9527 [tailport=s, headport=n, headlabel="    9527"]
+BB9527 [shape=record label="{32674: constant[undefined,v1]}" ] 
+BB9527 -> BB9528 [tailport=s, headport=n, headlabel="      9528"]
+BB9528 [shape=record label="{32675: read-variable['backburner',v3,-]|32676: read-property[v3,'currentInstance',v2]|32677: \<variable-non-null-undef\>['backburner']|32678: if[v2](true-block:9529,false-block:9531)}" ] 
+BB9528 -> BB9529 [tailport=s, headport=n, headlabel="      9529"]
+BB9528 -> BB9531 [tailport=s, headport=n, headlabel="      9531"]
+BB9528 -> BB9532 [tailport=s, headport=n, color=gray, headlabel="      9532"]
+BB9529 [shape=record label="{32679: read-variable['backburner',v8,-]|32680: read-property[v8,'currentInstance',v7]|32681: \<variable-non-null-undef\>['backburner']|32682: read-property[v7,'queues',v6]|32683: \<property-non-null-undef\>[v8,'currentInstance']|32684: read-property[v6,'sync',v5]|32685: \<property-non-null-undef\>[v7,'queues']|32686: read-property[v5,'flush',-]|32687: \<property-non-null-undef\>[v6,'sync']}" ] 
+BB9529 -> BB9530 [tailport=s, headport=n, headlabel="      9530"]
+BB9529 -> BB9532 [tailport=s, headport=n, color=gray]
+BB9530 [shape=record label="{32688: call-backburner.currentInstance.queues.sync.flush [v5,'flush',-]*}" ] 
+BB9530 -> BB9531 [tailport=s, headport=n]
+BB9530 -> BB9532 [tailport=s, headport=n, color=gray]
+BB9531 [shape=record label="{32689: return[v1]}" ] 
+BB9532 [shape=record label="{32690: exceptional-return}" ] 
+//#$~ 16954
+}

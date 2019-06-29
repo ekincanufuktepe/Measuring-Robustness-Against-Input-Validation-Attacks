@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry100[shape=none,label=""];
+BB_entry100 -> BB1135 [tailport=s, headport=n, headlabel="    1135"]
+BB1135 [shape=record label="{2961: constant[undefined,v1]}" ] 
+BB1135 -> BB1136 [tailport=s, headport=n, headlabel="      1136"]
+BB1136 [shape=record label="{2962: constant[1.0,v5]|2963: read-variable['times',v6,-]|2964: +[v6,v7]|2965: -[v7,v5,v3]|2966: write-variable[v3,'times']|2967: constant[0.0,v4]|2968: \>[v3,v4,v2]|2969: if[v2](true-block:1137,false-block:1140)}" ] 
+BB1136 -> BB1137 [tailport=s, headport=n, headlabel="      1137"]
+BB1136 -> BB1140 [tailport=s, headport=n, headlabel="      1140"]
+BB1136 -> BB1144 [tailport=s, headport=n, color=gray, headlabel="      1144"]
+BB1137 [shape=record label="{2970: read-variable['func',v10,-]|2971: read-property[v10,'apply',-]|2972: \<variable-non-null-undef\>['func']|2973: read-variable['this',v11,-]|2974: read-variable['arguments',v12,-]}" ] 
+BB1137 -> BB1138 [tailport=s, headport=n, headlabel="      1138"]
+BB1137 -> BB1144 [tailport=s, headport=n, color=gray]
+BB1138 [shape=record label="{2975: call-func.apply [v10,'apply',v11,v12,v8]}" ] 
+BB1138 -> BB1139 [tailport=s, headport=n, headlabel="      1139"]
+BB1138 -> BB1144 [tailport=s, headport=n, color=gray]
+BB1139 [shape=record label="{2976: write-variable[v8,'memo']*}" ] 
+BB1139 -> BB1140 [tailport=s, headport=n]
+BB1140 [shape=record label="{2977: read-variable['times',v9,-]|2978: constant[1.0,v10]|2979: \<=[v9,v10,v8]|2980: if[v8](true-block:1141,false-block:1142)}" ] 
+BB1140 -> BB1141 [tailport=s, headport=n, headlabel="      1141"]
+BB1140 -> BB1142 [tailport=s, headport=n, headlabel="      1142"]
+BB1140 -> BB1144 [tailport=s, headport=n, color=gray]
+BB1141 [shape=record label="{2981: constant[null,v11]|2982: write-variable[v11,'func']*}" ] 
+BB1141 -> BB1142 [tailport=s, headport=n]
+BB1142 [shape=record label="{2983: read-variable['memo',v1,-]}" ] 
+BB1142 -> BB1143 [tailport=s, headport=n, headlabel="      1143"]
+BB1142 -> BB1144 [tailport=s, headport=n, color=gray]
+BB1143 [shape=record label="{2984: return[v1]}" ] 
+BB1144 [shape=record label="{2985: exceptional-return}" ] 
+//#$~ 893
+}

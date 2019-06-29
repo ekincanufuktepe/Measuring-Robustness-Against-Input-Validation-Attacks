@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry217[shape=none,label=""];
+BB_entry217 -> BB1878 [tailport=s, headport=n, headlabel="    1878"]
+BB1878 [shape=record label="{5487: constant[undefined,v1]|5488: vardecl['name']}" ] 
+BB1878 -> BB1879 [tailport=s, headport=n, headlabel="      1879"]
+BB1879 [shape=record label="{5489: read-variable['locked',v2,-]|5490: if[v2](true-block:1880,false-block:1885)}" ] 
+BB1879 -> BB1880 [tailport=s, headport=n, headlabel="      1880"]
+BB1879 -> BB1885 [tailport=s, headport=n, headlabel="      1885"]
+BB1879 -> BB1886 [tailport=s, headport=n, color=gray, headlabel="      1886"]
+BB1880 [shape=record label="{5491: read-variable['this',v6,-]|5492: read-property[v6,'meta',v5]|5493: read-property[v5,'className',-]|5494: \<property-non-null-undef\>[v6,'meta']}" ] 
+BB1880 -> BB1881 [tailport=s, headport=n, headlabel="      1881"]
+BB1880 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1881 [shape=record label="{5495: call-this.meta.className [v5,'className',v3]}" ] 
+BB1881 -> BB1882 [tailport=s, headport=n, headlabel="      1882"]
+BB1881 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1882 [shape=record label="{5496: write-variable[v3,'name']*|5497: read-variable['Error',v8,-]|5498: constant[\"The class \",v12]|5499: read-variable['name',v13,-]|5500: +[v12,v13,v10]|5501: constant[\" is a singleton. Please use the class method getInstance().\",v11]|5502: +[v10,v11,v9]}" ] 
+BB1882 -> BB1883 [tailport=s, headport=n, headlabel="      1883"]
+BB1882 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1883 [shape=record label="{5503: construct [-,v8,v9,v7]}" ] 
+BB1883 -> BB1884 [tailport=s, headport=n, headlabel="      1884"]
+BB1883 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1884 [shape=record label="{5504: throw[v7]*}" ] 
+BB1884 -> BB1885 [tailport=s, headport=n]
+BB1884 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1885 [shape=record label="{5505: return[v1]}" ] 
+BB1886 [shape=record label="{5506: exceptional-return}" ] 
+//#$~ 2152
+}

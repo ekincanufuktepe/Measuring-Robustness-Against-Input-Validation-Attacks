@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB54 [tailport=s, headport=n, headlabel="    54"]
+BB54 [shape=record label="{91: constant[undefined,v1]}" ] 
+BB54 -> BB55 [tailport=s, headport=n, headlabel="      55"]
+BB55 [shape=record label="{92: read-variable['String',v5,v4]|93: read-variable['string',v6,-]}" ] 
+BB55 -> BB56 [tailport=s, headport=n, headlabel="      56"]
+BB55 -> BB62 [tailport=s, headport=n, color=gray, headlabel="      62"]
+BB56 [shape=record label="{94: call-String [v4,v5,v6,v3]}" ] 
+BB56 -> BB57 [tailport=s, headport=n, headlabel="      57"]
+BB56 -> BB62 [tailport=s, headport=n, color=gray]
+BB57 [shape=record label="{95: read-property[v3,'replace',-]|96: read-variable['RegExp',v8,-]|97: constant[\"[&\\\<\\\>\\\"'\\\\/]\",v9]|98: constant[\"g\",v10]}" ] 
+BB57 -> BB58 [tailport=s, headport=n, headlabel="      58"]
+BB57 -> BB62 [tailport=s, headport=n, color=gray]
+BB58 [shape=record label="{99: construct [-,v8,v9,v10,v7]}" ] 
+BB58 -> BB59 [tailport=s, headport=n, headlabel="      59"]
+BB58 -> BB62 [tailport=s, headport=n, color=gray]
+BB59 [shape=record label="{100: function-expr[function ( s ),v11]}" ] 
+BB59 -> BB60 [tailport=s, headport=n, headlabel="      60"]
+BB60 [shape=record label="{101: call-null [v3,'replace',v7,v11,v1]}" ] 
+BB60 -> BB61 [tailport=s, headport=n, headlabel="      61"]
+BB60 -> BB62 [tailport=s, headport=n, color=gray]
+BB61 [shape=record label="{102: return[v1]}" ] 
+BB62 [shape=record label="{103: exceptional-return}" ] 
+//#$~ 54
+}

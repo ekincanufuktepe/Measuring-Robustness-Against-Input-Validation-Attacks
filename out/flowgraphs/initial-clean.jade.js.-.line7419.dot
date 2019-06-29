@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry451[shape=none,label=""];
+BB_entry451 -> BB8055 [tailport=s, headport=n, headlabel="    8055"]
+BB8055 [shape=record label="{24209: constant[undefined,v1]|24210: vardecl['i']}" ] 
+BB8055 -> BB8056 [tailport=s, headport=n, headlabel="      8056"]
+BB8056 [shape=record label="{24211: constant[0.0,v3]|24212: write-variable[v3,'i']*}" ] 
+BB8056 -> BB8057 [tailport=s, headport=n, headlabel="      8057"]
+BB8057 [shape=record label="{24213: read-variable['i',v4,-]|24214: read-variable['node',v7,-]|24215: read-property[v7,'blocks',v6]|24216: \<variable-non-null-undef\>['node']|24217: read-property[v6,'length',v5]|24218: \<property-non-null-undef\>[v7,'blocks']|24219: \<[v4,v5,v2]|24220: if[v2](true-block:8058,false-block:8059)}" ] 
+BB8057 -> BB8058 [tailport=s, headport=n, headlabel="      8058"]
+BB8057 -> BB8059 [tailport=s, headport=n, headlabel="      8059"]
+BB8057 -> BB8064 [tailport=s, headport=n, color=gray, headlabel="      8064"]
+BB8058 [shape=record label="{24221: read-variable['c',v9,v8]|24222: read-variable['node',v13,-]|24223: read-property[v13,'blocks',v12]|24224: \<variable-non-null-undef\>['node']|24225: read-variable['i',v14,-]|24226: read-property[v12,v14,v11]|24227: \<property-non-null-undef\>[v13,'blocks']|24228: read-property[v11,'right',v10]|24229: \<property-non-null-undef\>[v12,v14]|24230: read-variable['st',v15,-]|24231: constant[\"Expression\",v16]}" ] 
+BB8058 -> BB8060 [tailport=s, headport=n, headlabel="      8060"]
+BB8058 -> BB8064 [tailport=s, headport=n, color=gray]
+BB8059 [shape=record label="{24232: read-variable['c',v9,v8]|24233: read-variable['node',v11,-]|24234: read-property[v11,'body',v10]|24235: \<variable-non-null-undef\>['node']|24236: read-variable['st',v12,-]|24237: constant[\"Expression\",v13]}" ] 
+BB8059 -> BB8062 [tailport=s, headport=n, headlabel="      8062"]
+BB8059 -> BB8064 [tailport=s, headport=n, color=gray]
+BB8060 [shape=record label="{24238: call-c [v8,v9,v10,v15,v16,-]*}" ] 
+BB8060 -> BB8061 [tailport=s, headport=n, headlabel="      8061"]
+BB8060 -> BB8064 [tailport=s, headport=n, color=gray]
+BB8061 [shape=record label="{24239: constant[1.0,v17]|24240: read-variable['i',v18,-]|24241: +[v18,v19]|24242: +[v19,v17,v20]|24243: write-variable[v20,'i']}" ] 
+BB8061 -> BB8057 [tailport=s, headport=n]
+BB8061 -> BB8064 [tailport=s, headport=n, color=gray]
+BB8062 [shape=record label="{24244: call-c [v8,v9,v10,v12,v13,-]*}" ] 
+BB8062 -> BB8063 [tailport=s, headport=n, headlabel="      8063"]
+BB8062 -> BB8064 [tailport=s, headport=n, color=gray]
+BB8063 [shape=record label="{24245: return[v1]}" ] 
+BB8064 [shape=record label="{24246: exceptional-return}" ] 
+//#$~ 7422
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry901[shape=none,label=""];
+BB_entry901 -> BB11635 [tailport=s, headport=n, headlabel="    11635"]
+BB11635 [shape=record label="{30515: constant[undefined,v1]}" ] 
+BB11635 -> BB11636 [tailport=s, headport=n, headlabel="      11636"]
+BB11636 [shape=record label="{30516: read-variable['matcher',v3,-]|30517: constant[\"self\",v4]|30518: ===[v3,v4,v2]|30519: if[v2](true-block:11637,false-block:11638)}" ] 
+BB11636 -> BB11637 [tailport=s, headport=n, headlabel="      11637"]
+BB11636 -> BB11638 [tailport=s, headport=n, headlabel="      11638"]
+BB11636 -> BB11643 [tailport=s, headport=n, color=gray, headlabel="      11643"]
+BB11637 [shape=record label="{30520: read-variable['urlIsSameOrigin',v6,v5]|30521: read-variable['parsedUrl',v7,-]}" ] 
+BB11637 -> BB11639 [tailport=s, headport=n, headlabel="      11639"]
+BB11637 -> BB11643 [tailport=s, headport=n, color=gray]
+BB11638 [shape=record label="{30522: read-variable['matcher',v8,-]|30523: read-property[v8,'exec',-]|30524: \<variable-non-null-undef\>['matcher']|30525: read-variable['parsedUrl',v10,-]|30526: read-property[v10,'href',v9]|30527: \<variable-non-null-undef\>['parsedUrl']}" ] 
+BB11638 -> BB11640 [tailport=s, headport=n, headlabel="      11640"]
+BB11638 -> BB11643 [tailport=s, headport=n, color=gray]
+BB11639 [shape=record label="{30528: call-urlIsSameOrigin [v5,v6,v7,v1]}" ] 
+BB11639 -> BB11642 [tailport=s, headport=n, headlabel="      11642"]
+BB11639 -> BB11643 [tailport=s, headport=n, color=gray]
+BB11640 [shape=record label="{30529: call-matcher.exec [v8,'exec',v9,v6]}" ] 
+BB11640 -> BB11641 [tailport=s, headport=n, headlabel="      11641"]
+BB11640 -> BB11643 [tailport=s, headport=n, color=gray]
+BB11641 [shape=record label="{30530: ![v6,v5]|30531: ![v5,v1]}" ] 
+BB11641 -> BB11642 [tailport=s, headport=n]
+BB11641 -> BB11643 [tailport=s, headport=n, color=gray]
+BB11642 [shape=record label="{30532: return[v1]}" ] 
+BB11643 [shape=record label="{30533: exceptional-return}" ] 
+//#$~ 16542
+}

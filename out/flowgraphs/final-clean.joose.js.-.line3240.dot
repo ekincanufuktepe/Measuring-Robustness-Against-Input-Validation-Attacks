@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry306[shape=none,label=""];
+BB_entry306 -> BB2804 [tailport=s, headport=n, headlabel="    2804"]
+BB2804 [shape=record label="{8340: constant[undefined,v1]|8341: vardecl['msg']|8342: vardecl['parentmsg']}" ] 
+BB2804 -> BB2805 [tailport=s, headport=n, headlabel="      2805"]
+BB2805 [shape=record label="{8343: read-variable['this',v3,-]|8344: read-property[v3,'_messages',v2]|8345: write-variable[v2,'msg']*|8346: read-variable['this',v5,-]|8347: read-property[v5,'_uses',v4]|8348: if[v4](true-block:2806,false-block:2810)}" ] 
+BB2805 -> BB2806 [tailport=s, headport=n, headlabel="      2806"]
+BB2805 -> BB2810 [tailport=s, headport=n, headlabel="      2810"]
+BB2805 -> BB2812 [tailport=s, headport=n, color=gray, headlabel="      2812"]
+BB2806 [shape=record label="{8349: read-variable['this',v9,-]|8350: read-property[v9,'_uses',v8]|8351: read-property[v8,'getMessageList',-]|8352: \<property-non-null-undef\>[v9,'_uses']}" ] 
+BB2806 -> BB2807 [tailport=s, headport=n, headlabel="      2807"]
+BB2806 -> BB2812 [tailport=s, headport=n, color=gray]
+BB2807 [shape=record label="{8353: call-this._uses.getMessageList [v8,'getMessageList',v6]}" ] 
+BB2807 -> BB2808 [tailport=s, headport=n, headlabel="      2808"]
+BB2807 -> BB2812 [tailport=s, headport=n, color=gray]
+BB2808 [shape=record label="{8354: write-variable[v6,'parentmsg']*|8355: read-variable['parentmsg',v11,-]|8356: read-property[v11,'concat',-]|8357: \<variable-non-null-undef\>['parentmsg']|8358: read-variable['msg',v12,-]}" ] 
+BB2808 -> BB2809 [tailport=s, headport=n, headlabel="      2809"]
+BB2808 -> BB2812 [tailport=s, headport=n, color=gray]
+BB2809 [shape=record label="{8359: call-parentmsg.concat [v11,'concat',v12,v1]}" ] 
+BB2809 -> BB2811 [tailport=s, headport=n, headlabel="      2811"]
+BB2809 -> BB2812 [tailport=s, headport=n, color=gray]
+BB2810 [shape=record label="{8360: read-variable['msg',v1,-]}" ] 
+BB2810 -> BB2811 [tailport=s, headport=n]
+BB2810 -> BB2812 [tailport=s, headport=n, color=gray]
+BB2811 [shape=record label="{8361: return[v1]}" ] 
+BB2812 [shape=record label="{8362: exceptional-return}" ] 
+//#$~ 3246
+}

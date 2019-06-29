@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry552[shape=none,label=""];
+BB_entry552 -> BB6686 [tailport=s, headport=n, headlabel="    6686"]
+BB6686 [shape=record label="{23380: constant[undefined,v1]|23381: vardecl['result']}" ] 
+BB6686 -> BB6687 [tailport=s, headport=n, headlabel="      6687"]
+BB6687 [shape=record label="{23382: read-variable['Array',v3,-]}" ] 
+BB6687 -> BB6688 [tailport=s, headport=n, headlabel="      6688"]
+BB6687 -> BB6693 [tailport=s, headport=n, color=gray, headlabel="      6693"]
+BB6688 [shape=record label="{23383: construct [-,v3,v2]}" ] 
+BB6688 -> BB6689 [tailport=s, headport=n, headlabel="      6689"]
+BB6688 -> BB6693 [tailport=s, headport=n, color=gray]
+BB6689 [shape=record label="{23384: write-variable[v2,'result']*|23385: read-variable['forEach',v5,v4]|23386: read-variable['array1',v6,-]|23387: function-expr[function ( element ),v7]}" ] 
+BB6689 -> BB6690 [tailport=s, headport=n, headlabel="      6690"]
+BB6689 -> BB6693 [tailport=s, headport=n, color=gray]
+BB6690 [shape=record label="{23388: call-forEach [v4,v5,v6,v7,-]*}" ] 
+BB6690 -> BB6691 [tailport=s, headport=n, headlabel="      6691"]
+BB6690 -> BB6693 [tailport=s, headport=n, color=gray]
+BB6691 [shape=record label="{23389: read-variable['result',v1,-]}" ] 
+BB6691 -> BB6692 [tailport=s, headport=n, headlabel="      6692"]
+BB6691 -> BB6693 [tailport=s, headport=n, color=gray]
+BB6692 [shape=record label="{23390: return[v1]}" ] 
+BB6693 [shape=record label="{23391: exceptional-return}" ] 
+//#$~ 12498
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry215[shape=none,label=""];
+BB_entry215 -> BB3711 [tailport=s, headport=n, headlabel="    3711"]
+BB3711 [shape=record label="{11600: constant[undefined,v1]}" ] 
+BB3711 -> BB3712 [tailport=s, headport=n, headlabel="      3712"]
+BB3712 [shape=record label="{11601: read-variable['splitPathRe',v5,-]|11602: read-property[v5,'exec',-]|11603: \<variable-non-null-undef\>['splitPathRe']|11604: read-variable['filename',v6,-]}" ] 
+BB3712 -> BB3713 [tailport=s, headport=n, headlabel="      3713"]
+BB3712 -> BB3717 [tailport=s, headport=n, color=gray, headlabel="      3717"]
+BB3713 [shape=record label="{11605: call-splitPathRe.exec [v5,'exec',v6,v3]}" ] 
+BB3713 -> BB3714 [tailport=s, headport=n, headlabel="      3714"]
+BB3713 -> BB3717 [tailport=s, headport=n, color=gray]
+BB3714 [shape=record label="{11606: read-property[v3,'slice',-]|11607: constant[1.0,v7]}" ] 
+BB3714 -> BB3715 [tailport=s, headport=n, headlabel="      3715"]
+BB3714 -> BB3717 [tailport=s, headport=n, color=gray]
+BB3715 [shape=record label="{11608: call-null [v3,'slice',v7,v1]}" ] 
+BB3715 -> BB3716 [tailport=s, headport=n, headlabel="      3716"]
+BB3715 -> BB3717 [tailport=s, headport=n, color=gray]
+BB3716 [shape=record label="{11609: return[v1]}" ] 
+BB3717 [shape=record label="{11610: exceptional-return}" ] 
+//#$~ 3918
+}

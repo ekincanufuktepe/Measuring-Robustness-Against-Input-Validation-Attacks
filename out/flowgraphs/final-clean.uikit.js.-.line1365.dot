@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry142[shape=none,label=""];
+BB_entry142 -> BB1774 [tailport=s, headport=n, headlabel="    1774"]
+BB1774 [shape=record label="{5143: constant[undefined,v1]}" ] 
+BB1774 -> BB1775 [tailport=s, headport=n, headlabel="      1775"]
+BB1775 [shape=record label="{5144: read-variable['$this',v5,-]|5145: read-property[v5,'element',v4]|5146: \<variable-non-null-undef\>['$this']|5147: read-property[v4,'is',-]|5148: \<property-non-null-undef\>[v5,'element']|5149: constant[\"a[href=\\\"#\\\"]\",v6]}" ] 
+BB1775 -> BB1776 [tailport=s, headport=n, headlabel="      1776"]
+BB1775 -> BB1783 [tailport=s, headport=n, color=gray, headlabel="      1783"]
+BB1776 [shape=record label="{5150: call-$this.element.is [v4,'is',v6,v2]}" ] 
+BB1776 -> BB1777 [tailport=s, headport=n, headlabel="      1777"]
+BB1776 -> BB1783 [tailport=s, headport=n, color=gray]
+BB1777 [shape=record label="{5151: if[v2](true-block:1778,false-block:1780)}" ] 
+BB1777 -> BB1778 [tailport=s, headport=n, headlabel="      1778"]
+BB1777 -> BB1780 [tailport=s, headport=n, headlabel="      1780"]
+BB1778 [shape=record label="{5152: read-variable['e',v8,-]|5153: read-property[v8,'preventDefault',-]|5154: \<variable-non-null-undef\>['e']}" ] 
+BB1778 -> BB1779 [tailport=s, headport=n, headlabel="      1779"]
+BB1778 -> BB1783 [tailport=s, headport=n, color=gray]
+BB1779 [shape=record label="{5155: call-e.preventDefault [v8,'preventDefault',-]*}" ] 
+BB1779 -> BB1780 [tailport=s, headport=n]
+BB1779 -> BB1783 [tailport=s, headport=n, color=gray]
+BB1780 [shape=record label="{5156: read-variable['$this',v8,-]|5157: read-property[v8,'toggle',-]|5158: \<variable-non-null-undef\>['$this']}" ] 
+BB1780 -> BB1781 [tailport=s, headport=n, headlabel="      1781"]
+BB1780 -> BB1783 [tailport=s, headport=n, color=gray]
+BB1781 [shape=record label="{5159: call-$this.toggle [v8,'toggle',-]*}" ] 
+BB1781 -> BB1782 [tailport=s, headport=n, headlabel="      1782"]
+BB1781 -> BB1783 [tailport=s, headport=n, color=gray]
+BB1782 [shape=record label="{5160: return[v1]}" ] 
+BB1783 [shape=record label="{5161: exceptional-return}" ] 
+//#$~ 1367
+}

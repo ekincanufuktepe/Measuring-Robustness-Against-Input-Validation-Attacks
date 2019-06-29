@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry62[shape=none,label=""];
+BB_entry62 -> BB685 [tailport=s, headport=n, headlabel="    685"]
+BB685 [shape=record label="{2299: constant[undefined,v1]}" ] 
+BB685 -> BB686 [tailport=s, headport=n, headlabel="      686"]
+BB686 [shape=record label="{2300: read-variable['boolOrFn',v4,v3]|2301: read-variable['recognizer',v7,-]|2302: read-property[v7,'options',v6]|2303: \<variable-non-null-undef\>['recognizer']|2304: read-property[v6,'enable',v5]|2305: \<property-non-null-undef\>[v7,'options']|2306: read-variable['Array',v9,-]|2307: read-variable['recognizer',v10,-]}" ] 
+BB686 -> BB687 [tailport=s, headport=n, headlabel="      687"]
+BB686 -> BB695 [tailport=s, headport=n, color=gray, headlabel="      695"]
+BB687 [shape=record label="{2308: construct [-,v9,v10,v8]}" ] 
+BB687 -> BB688 [tailport=s, headport=n, headlabel="      688"]
+BB687 -> BB695 [tailport=s, headport=n, color=gray]
+BB688 [shape=record label="{2309: call-boolOrFn [v3,v4,v5,v8,v2]}" ] 
+BB688 -> BB689 [tailport=s, headport=n, headlabel="      689"]
+BB688 -> BB695 [tailport=s, headport=n, color=gray]
+BB689 [shape=record label="{2310: if[v2](true-block:690,false-block:694)}" ] 
+BB689 -> BB690 [tailport=s, headport=n, headlabel="      690"]
+BB689 -> BB694 [tailport=s, headport=n, headlabel="      694"]
+BB690 [shape=record label="{2311: read-variable['actions',v13,-]|2312: read-property[v13,'concat',-]|2313: \<variable-non-null-undef\>['actions']|2314: read-variable['recognizer',v16,-]|2315: read-property[v16,'getTouchAction',-]|2316: \<variable-non-null-undef\>['recognizer']}" ] 
+BB690 -> BB691 [tailport=s, headport=n, headlabel="      691"]
+BB690 -> BB695 [tailport=s, headport=n, color=gray]
+BB691 [shape=record label="{2317: call-recognizer.getTouchAction [v16,'getTouchAction',v14]}" ] 
+BB691 -> BB692 [tailport=s, headport=n, headlabel="      692"]
+BB691 -> BB695 [tailport=s, headport=n, color=gray]
+BB692 [shape=record label="{2318: call-actions.concat [v13,'concat',v14,v11]}" ] 
+BB692 -> BB693 [tailport=s, headport=n, headlabel="      693"]
+BB692 -> BB695 [tailport=s, headport=n, color=gray]
+BB693 [shape=record label="{2319: write-variable[v11,'actions']*}" ] 
+BB693 -> BB694 [tailport=s, headport=n]
+BB694 [shape=record label="{2320: return[v1]}" ] 
+BB695 [shape=record label="{2321: exceptional-return}" ] 
+//#$~ 1138
+}

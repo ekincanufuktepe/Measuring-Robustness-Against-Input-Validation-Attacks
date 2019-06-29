@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry208[shape=none,label=""];
+BB_entry208 -> BB2691 [tailport=s, headport=n, headlabel="    2691"]
+BB2691 [shape=record label="{7617: constant[undefined,v1]|7618: vardecl['max']}" ] 
+BB2691 -> BB2692 [tailport=s, headport=n, headlabel="      2692"]
+BB2692 [shape=record label="{7619: read-variable['group',v5,-]|7620: read-property[v5,'length',v3]|7621: \<variable-non-null-undef\>['group']|7622: constant[2.0,v4]|7623: \<[v3,v4,v2]|7624: if[v2](true-block:2693,false-block:2694)}" ] 
+BB2692 -> BB2693 [tailport=s, headport=n, headlabel="      2693"]
+BB2692 -> BB2694 [tailport=s, headport=n, headlabel="      2694"]
+BB2692 -> BB2699 [tailport=s, headport=n, color=gray, headlabel="      2699"]
+BB2693 [shape=record label="{7625: constant[undefined,v1]}" ] 
+BB2693 -> BB2698 [tailport=s, headport=n, headlabel="      2698"]
+BB2694 [shape=record label="{7626: constant[0.0,v6]|7627: write-variable[v6,'max']*|7628: read-variable['group',v10,-]|7629: read-property[v10,'each',-]|7630: \<variable-non-null-undef\>['group']|7631: function-expr[function ( ),v11]}" ] 
+BB2694 -> BB2695 [tailport=s, headport=n, headlabel="      2695"]
+BB2694 -> BB2699 [tailport=s, headport=n, color=gray]
+BB2695 [shape=record label="{7632: call-group.each [v10,'each',v11,v8]}" ] 
+BB2695 -> BB2696 [tailport=s, headport=n, headlabel="      2696"]
+BB2695 -> BB2699 [tailport=s, headport=n, color=gray]
+BB2696 [shape=record label="{7633: read-property[v8,'each',-]|7634: function-expr[function ( ),v12]}" ] 
+BB2696 -> BB2697 [tailport=s, headport=n, headlabel="      2697"]
+BB2696 -> BB2699 [tailport=s, headport=n, color=gray]
+BB2697 [shape=record label="{7635: call-null [v8,'each',v12,-]*}" ] 
+BB2697 -> BB2698 [tailport=s, headport=n]
+BB2697 -> BB2699 [tailport=s, headport=n, color=gray]
+BB2698 [shape=record label="{7636: return[v1]}" ] 
+BB2699 [shape=record label="{7637: exceptional-return}" ] 
+//#$~ 2084
+}

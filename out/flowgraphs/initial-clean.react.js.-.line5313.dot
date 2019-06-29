@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry195[shape=none,label=""];
+BB_entry195 -> BB2633 [tailport=s, headport=n, headlabel="    2633"]
+BB2633 [shape=record label="{9285: constant[undefined,v1]}" ] 
+BB2633 -> BB2634 [tailport=s, headport=n, headlabel="      2634"]
+BB2634 [shape=record label="{9286: constant[\"production\",v3]|9287: constant[\"development\",v4]|9288: !==[v3,v4,v2]|9289: if[v2](true-block:2635,false-block:2637)}" ] 
+BB2634 -> BB2635 [tailport=s, headport=n, headlabel="      2635"]
+BB2634 -> BB2637 [tailport=s, headport=n, headlabel="      2637"]
+BB2634 -> BB2641 [tailport=s, headport=n, color=gray, headlabel="      2641"]
+BB2635 [shape=record label="{9290: read-variable['validateTypeDef',v6,v5]|9291: read-variable['Constructor',v7,-]|9292: read-variable['childContextTypes',v8,-]|9293: read-variable['ReactPropTypeLocations',v10,-]|9294: read-property[v10,'childContext',v9]|9295: \<variable-non-null-undef\>['ReactPropTypeLocations']}" ] 
+BB2635 -> BB2636 [tailport=s, headport=n, headlabel="      2636"]
+BB2635 -> BB2641 [tailport=s, headport=n, color=gray]
+BB2636 [shape=record label="{9296: call-validateTypeDef [v5,v6,v7,v8,v9,-]*}" ] 
+BB2636 -> BB2637 [tailport=s, headport=n]
+BB2636 -> BB2641 [tailport=s, headport=n, color=gray]
+BB2637 [shape=record label="{9297: read-variable['Constructor',v6,-]|9298: read-variable['assign',v8,v7]|9299: new[v9]|9300: read-variable['Constructor',v11,-]|9301: read-property[v11,'childContextTypes',v10]|9302: \<variable-non-null-undef\>['Constructor']|9303: read-variable['childContextTypes',v12,-]}" ] 
+BB2637 -> BB2638 [tailport=s, headport=n, headlabel="      2638"]
+BB2637 -> BB2641 [tailport=s, headport=n, color=gray]
+BB2638 [shape=record label="{9304: call-assign [v7,v8,v9,v10,v12,v5]}" ] 
+BB2638 -> BB2639 [tailport=s, headport=n, headlabel="      2639"]
+BB2638 -> BB2641 [tailport=s, headport=n, color=gray]
+BB2639 [shape=record label="{9305: write-property[v6,'childContextTypes',v5]|9306: \<variable-non-null-undef\>['Constructor']*}" ] 
+BB2639 -> BB2640 [tailport=s, headport=n, headlabel="      2640"]
+BB2639 -> BB2641 [tailport=s, headport=n, color=gray]
+BB2640 [shape=record label="{9307: return[v1]}" ] 
+BB2641 [shape=record label="{9308: exceptional-return}" ] 
+//#$~ 5324
+}

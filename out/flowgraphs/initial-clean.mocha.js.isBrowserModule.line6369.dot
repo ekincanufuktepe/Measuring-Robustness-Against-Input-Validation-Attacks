@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry479[shape=none,label=""];
+BB_entry479 -> BB5582 [tailport=s, headport=n, headlabel="    5582"]
+BB5582 [shape=record label="{16782: constant[undefined,v1]}" ] 
+BB5582 -> BB5583 [tailport=s, headport=n, headlabel="      5583"]
+BB5583 [shape=record label="{16783: read-variable['line',v4,-]|16784: read-property[v4,'indexOf',-]|16785: \<variable-non-null-undef\>['line']|16786: constant[\"node_modules\",v5]}" ] 
+BB5583 -> BB5584 [tailport=s, headport=n, headlabel="      5584"]
+BB5583 -> BB5590 [tailport=s, headport=n, color=gray, headlabel="      5590"]
+BB5584 [shape=record label="{16787: call-line.indexOf [v4,'indexOf',v5,v2]}" ] 
+BB5584 -> BB5585 [tailport=s, headport=n, headlabel="      5585"]
+BB5584 -> BB5590 [tailport=s, headport=n, color=gray]
+BB5585 [shape=record label="{16788: ~[v2,v1]|16789: if[v1](true-block:5589,false-block:5586)}" ] 
+BB5585 -> BB5589 [tailport=s, headport=n, headlabel="      5589"]
+BB5585 -> BB5586 [tailport=s, headport=n, headlabel="      5586"]
+BB5585 -> BB5590 [tailport=s, headport=n, color=gray]
+BB5586 [shape=record label="{16790: read-variable['line',v4,-]|16791: read-property[v4,'indexOf',-]|16792: \<variable-non-null-undef\>['line']|16793: constant[\"components\",v5]}" ] 
+BB5586 -> BB5587 [tailport=s, headport=n, headlabel="      5587"]
+BB5586 -> BB5590 [tailport=s, headport=n, color=gray]
+BB5587 [shape=record label="{16794: call-line.indexOf [v4,'indexOf',v5,v2]}" ] 
+BB5587 -> BB5588 [tailport=s, headport=n, headlabel="      5588"]
+BB5587 -> BB5590 [tailport=s, headport=n, color=gray]
+BB5588 [shape=record label="{16795: ~[v2,v1]}" ] 
+BB5588 -> BB5589 [tailport=s, headport=n]
+BB5588 -> BB5590 [tailport=s, headport=n, color=gray]
+BB5589 [shape=record label="{16796: return[v1]}" ] 
+BB5590 [shape=record label="{16797: exceptional-return}" ] 
+//#$~ 6371
+}

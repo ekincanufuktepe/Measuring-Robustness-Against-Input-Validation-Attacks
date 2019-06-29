@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry98[shape=none,label=""];
+BB_entry98 -> BB1617 [tailport=s, headport=n, headlabel="    1617"]
+BB1617 [shape=record label="{5299: constant[undefined,v1]}" ] 
+BB1617 -> BB1618 [tailport=s, headport=n, headlabel="      1618"]
+BB1618 [shape=record label="{5300: read-variable['O',v4,-]|5301: read-property[v4,'keys',-]|5302: \<variable-non-null-undef\>['O']|5303: read-variable['obj',v5,-]}" ] 
+BB1618 -> BB1619 [tailport=s, headport=n, headlabel="      1619"]
+BB1618 -> BB1621 [tailport=s, headport=n, color=gray, headlabel="      1621"]
+BB1619 [shape=record label="{5304: call-O.keys [v4,'keys',v5,v2]}" ] 
+BB1619 -> BB1620 [tailport=s, headport=n, headlabel="      1620"]
+BB1619 -> BB1621 [tailport=s, headport=n, color=gray]
+BB1620 [shape=record label="{5305: read-property[v2,'length',v1]}" ] 
+BB1620 -> BB1625 [tailport=s, headport=n, headlabel="      1625"]
+BB1620 -> BB1621 [tailport=s, headport=n, color=gray]
+BB1621 [shape=record label="{5306: catch[ex,v2]|5307: begin-with[v2]}" ] 
+BB1621 -> BB1622 [tailport=s, headport=n, headlabel="      1622"]
+BB1621 -> BB1626 [tailport=s, headport=n, color=gray, headlabel="      1626"]
+BB1622 [shape=record label="{5308: constant[0.0,v1]}" ] 
+BB1622 -> BB1625 [tailport=s, headport=n]
+BB1623 [shape=record label="{5309: end-with}" ] 
+BB1623 -> BB1626 [tailport=s, headport=n]
+BB1624 [shape=record label="{5310: end-with}" ] 
+BB1624 -> BB1625 [tailport=s, headport=n]
+BB1625 [shape=record label="{5311: return[v1]}" ] 
+BB1626 [shape=record label="{5312: exceptional-return}" ] 
+//#$~ 2802
+}

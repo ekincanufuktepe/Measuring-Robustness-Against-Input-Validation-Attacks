@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1158[shape=none,label=""];
+BB_entry1158 -> BB14060 [tailport=s, headport=n, headlabel="    14060"]
+BB14060 [shape=record label="{48579: constant[undefined,v1]|48580: vardecl['cp']}" ] 
+BB14060 -> BB14061 [tailport=s, headport=n, headlabel="      14061"]
+BB14061 [shape=record label="{48581: read-variable['this',v2,-]|48582: write-variable[v2,'cp']*|48583: read-variable['ReduceComputedProperty',v4,-]|48584: read-property[v4,'apply',-]|48585: \<variable-non-null-undef\>['ReduceComputedProperty']|48586: read-variable['this',v5,-]|48587: read-variable['arguments',v6,-]}" ] 
+BB14061 -> BB14062 [tailport=s, headport=n, headlabel="      14062"]
+BB14061 -> BB14067 [tailport=s, headport=n, color=gray, headlabel="      14067"]
+BB14062 [shape=record label="{48588: call-ReduceComputedProperty.apply [v4,'apply',v5,v6,-]*}" ] 
+BB14062 -> BB14063 [tailport=s, headport=n, headlabel="      14063"]
+BB14062 -> BB14067 [tailport=s, headport=n, color=gray]
+BB14063 [shape=record label="{48589: read-variable['this',v8,-]|48590: function-expr[function ( reduceFunc ),v9]|48591: read-variable['this',v11,-]|48592: read-property[v11,'func',v10]}" ] 
+BB14063 -> BB14064 [tailport=s, headport=n, headlabel="      14064"]
+BB14063 -> BB14067 [tailport=s, headport=n, color=gray]
+BB14064 [shape=record label="{48593: call-null [-,v9,v10,v7]}" ] 
+BB14064 -> BB14065 [tailport=s, headport=n, headlabel="      14065"]
+BB14064 -> BB14067 [tailport=s, headport=n, color=gray]
+BB14065 [shape=record label="{48594: write-property[v8,'func',v7]*|48595: read-variable['this',v1,-]}" ] 
+BB14065 -> BB14066 [tailport=s, headport=n, headlabel="      14066"]
+BB14065 -> BB14067 [tailport=s, headport=n, color=gray]
+BB14066 [shape=record label="{48596: return[v1]}" ] 
+BB14067 [shape=record label="{48597: exceptional-return}" ] 
+//#$~ 26017
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry95[shape=none,label=""];
+BB_entry95 -> BB1264 [tailport=s, headport=n, headlabel="    1264"]
+BB1264 [shape=record label="{4045: constant[undefined,v1]}" ] 
+BB1264 -> BB1265 [tailport=s, headport=n, headlabel="      1265"]
+BB1265 [shape=record label="{4046: read-variable['container',v4,-]|4047: read-property[v4,'cache',v3]|4048: \<variable-non-null-undef\>['container']|4049: read-variable['fullName',v5,-]|4050: read-property[v3,v5,v2]|4051: \<property-non-null-undef\>[v4,'cache']|4052: if[v2](true-block:1266,false-block:1267)}" ] 
+BB1265 -> BB1266 [tailport=s, headport=n, headlabel="      1266"]
+BB1265 -> BB1267 [tailport=s, headport=n, headlabel="      1267"]
+BB1265 -> BB1271 [tailport=s, headport=n, color=gray, headlabel="      1271"]
+BB1266 [shape=record label="{4053: constant[true,v1]}" ] 
+BB1266 -> BB1270 [tailport=s, headport=n, headlabel="      1270"]
+BB1267 [shape=record label="{4054: read-variable['container',v9,-]|4055: read-property[v9,'resolve',-]|4056: \<variable-non-null-undef\>['container']|4057: read-variable['fullName',v10,-]}" ] 
+BB1267 -> BB1268 [tailport=s, headport=n, headlabel="      1268"]
+BB1267 -> BB1271 [tailport=s, headport=n, color=gray]
+BB1268 [shape=record label="{4058: call-container.resolve [v9,'resolve',v10,v6]}" ] 
+BB1268 -> BB1269 [tailport=s, headport=n, headlabel="      1269"]
+BB1268 -> BB1271 [tailport=s, headport=n, color=gray]
+BB1269 [shape=record label="{4059: read-variable['undefined',v7,-]|4060: !==[v6,v7,v1]}" ] 
+BB1269 -> BB1270 [tailport=s, headport=n]
+BB1269 -> BB1271 [tailport=s, headport=n, color=gray]
+BB1270 [shape=record label="{4061: return[v1]}" ] 
+BB1271 [shape=record label="{4062: exceptional-return}" ] 
+//#$~ 1755
+}

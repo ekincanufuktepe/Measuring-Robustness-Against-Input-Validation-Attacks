@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry168[shape=none,label=""];
+BB_entry168 -> BB1421 [tailport=s, headport=n, headlabel="    1421"]
+BB1421 [shape=record label="{4269: constant[undefined,v1]}" ] 
+BB1421 -> BB1422 [tailport=s, headport=n, headlabel="      1422"]
+BB1422 [shape=record label="{4270: read-variable['this',v4,-]|4271: read-property[v4,'meta',v3]|4272: read-property[v3,'instantiate',-]|4273: \<property-non-null-undef\>[v4,'meta']|4274: read-variable['this',v7,-]|4275: read-property[v7,'getName',-]}" ] 
+BB1422 -> BB1423 [tailport=s, headport=n, headlabel="      1423"]
+BB1422 -> BB1427 [tailport=s, headport=n, color=gray, headlabel="      1427"]
+BB1423 [shape=record label="{4276: call-this.getName [v7,'getName',v5]}" ] 
+BB1423 -> BB1424 [tailport=s, headport=n, headlabel="      1424"]
+BB1423 -> BB1427 [tailport=s, headport=n, color=gray]
+BB1424 [shape=record label="{4277: read-variable['func',v8,-]}" ] 
+BB1424 -> BB1425 [tailport=s, headport=n, headlabel="      1425"]
+BB1424 -> BB1427 [tailport=s, headport=n, color=gray]
+BB1425 [shape=record label="{4278: call-this.meta.instantiate [v3,'instantiate',v5,v8,v1]}" ] 
+BB1425 -> BB1426 [tailport=s, headport=n, headlabel="      1426"]
+BB1425 -> BB1427 [tailport=s, headport=n, color=gray]
+BB1426 [shape=record label="{4279: return[v1]}" ] 
+BB1427 [shape=record label="{4280: exceptional-return}" ] 
+//#$~ 1688
+}

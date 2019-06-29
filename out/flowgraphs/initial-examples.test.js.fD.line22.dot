@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB22 [tailport=s, headport=n, headlabel="    22"]
+BB22 [shape=record label="{34: constant[undefined,v1]|35: vardecl['hello']}" ] 
+BB22 -> BB23 [tailport=s, headport=n, headlabel="      23"]
+BB23 [shape=record label="{36: constant[\"h\",v2]|37: write-variable[v2,'hello']*|38: read-variable['a',v4,-]|39: read-variable['hello',v5,-]|40: ==[v4,v5,v3]|41: if[v3](true-block:24,false-block:25)}" ] 
+BB23 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB23 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB23 -> BB27 [tailport=s, headport=n, color=gray, headlabel="      27"]
+BB24 [shape=record label="{42: constant[true,v1]}" ] 
+BB24 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB25 [shape=record label="{43: read-variable['a',v8,-]|44: read-variable['b',v9,-]|45: +[v8,v9,v6]|46: read-variable['c',v7,-]|47: +[v6,v7,v1]}" ] 
+BB25 -> BB26 [tailport=s, headport=n]
+BB25 -> BB27 [tailport=s, headport=n, color=gray]
+BB26 [shape=record label="{48: return[v1]}" ] 
+BB27 [shape=record label="{49: exceptional-return}" ] 
+//#$~ 32
+}

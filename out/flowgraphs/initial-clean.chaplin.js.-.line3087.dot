@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry280[shape=none,label=""];
+BB_entry280 -> BB3604 [tailport=s, headport=n, headlabel="    3604"]
+BB3604 [shape=record label="{11738: constant[undefined,v1]}" ] 
+BB3604 -> BB3605 [tailport=s, headport=n, headlabel="      3605"]
+BB3605 [shape=record label="{11739: read-variable['loader',v3,-]|11740: read-property[v3,'register',-]|11741: \<variable-non-null-undef\>['loader']|11742: constant[\"backbone\",v4]|11743: function-expr[function ( exports require module ),v5]}" ] 
+BB3605 -> BB3606 [tailport=s, headport=n, headlabel="      3606"]
+BB3605 -> BB3610 [tailport=s, headport=n, color=gray, headlabel="      3610"]
+BB3606 [shape=record label="{11744: call-loader.register [v3,'register',v4,v5,-]*}" ] 
+BB3606 -> BB3607 [tailport=s, headport=n, headlabel="      3607"]
+BB3606 -> BB3610 [tailport=s, headport=n, color=gray]
+BB3607 [shape=record label="{11745: read-variable['loader',v7,-]|11746: read-property[v7,'register',-]|11747: \<variable-non-null-undef\>['loader']|11748: constant[\"underscore\",v8]|11749: function-expr[function ( exports require module ),v9]}" ] 
+BB3607 -> BB3608 [tailport=s, headport=n, headlabel="      3608"]
+BB3607 -> BB3610 [tailport=s, headport=n, color=gray]
+BB3608 [shape=record label="{11750: call-loader.register [v7,'register',v8,v9,-]*}" ] 
+BB3608 -> BB3609 [tailport=s, headport=n, headlabel="      3609"]
+BB3608 -> BB3610 [tailport=s, headport=n, color=gray]
+BB3609 [shape=record label="{11751: return[v1]}" ] 
+BB3610 [shape=record label="{11752: exceptional-return}" ] 
+//#$~ 3092
+}

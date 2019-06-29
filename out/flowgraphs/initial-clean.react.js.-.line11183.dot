@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry437[shape=none,label=""];
+BB_entry437 -> BB6346 [tailport=s, headport=n, headlabel="    6346"]
+BB6346 [shape=record label="{21867: constant[undefined,v1]}" ] 
+BB6346 -> BB6347 [tailport=s, headport=n, headlabel="      6347"]
+BB6347 [shape=record label="{21868: read-variable['elem',v1,-]|21869: if[v1](true-block:6348,false-block:6353)}" ] 
+BB6347 -> BB6353 [tailport=s, headport=n, headlabel="      6353"]
+BB6347 -> BB6348 [tailport=s, headport=n, headlabel="      6348"]
+BB6347 -> BB6354 [tailport=s, headport=n, color=gray, headlabel="      6354"]
+BB6348 [shape=record label="{21870: read-variable['elem',v4,-]|21871: read-property[v4,'nodeName',v2]|21872: \<variable-non-null-undef\>['elem']|21873: constant[\"INPUT\",v3]|21874: ===[v2,v3,v1]|21875: if[v1](true-block:6349,false-block:6350)}" ] 
+BB6348 -> BB6350 [tailport=s, headport=n, headlabel="      6350"]
+BB6348 -> BB6349 [tailport=s, headport=n, headlabel="      6349"]
+BB6348 -> BB6354 [tailport=s, headport=n, color=gray]
+BB6349 [shape=record label="{21876: read-variable['elem',v7,-]|21877: read-property[v7,'type',v5]|21878: \<variable-non-null-undef\>['elem']|21879: constant[\"text\",v6]|21880: ===[v5,v6,v1]}" ] 
+BB6349 -> BB6350 [tailport=s, headport=n]
+BB6349 -> BB6354 [tailport=s, headport=n, color=gray]
+BB6350 [shape=record label="{21881: if[v1](true-block:6353,false-block:6351)}" ] 
+BB6350 -> BB6353 [tailport=s, headport=n]
+BB6350 -> BB6351 [tailport=s, headport=n, headlabel="      6351"]
+BB6351 [shape=record label="{21882: read-variable['elem',v4,-]|21883: read-property[v4,'nodeName',v2]|21884: \<variable-non-null-undef\>['elem']|21885: constant[\"TEXTAREA\",v3]|21886: ===[v2,v3,v1]|21887: if[v1](true-block:6353,false-block:6352)}" ] 
+BB6351 -> BB6353 [tailport=s, headport=n]
+BB6351 -> BB6352 [tailport=s, headport=n, headlabel="      6352"]
+BB6351 -> BB6354 [tailport=s, headport=n, color=gray]
+BB6352 [shape=record label="{21888: read-variable['elem',v4,-]|21889: read-property[v4,'contentEditable',v2]|21890: \<variable-non-null-undef\>['elem']|21891: constant[\"true\",v3]|21892: ===[v2,v3,v1]}" ] 
+BB6352 -> BB6353 [tailport=s, headport=n]
+BB6352 -> BB6354 [tailport=s, headport=n, color=gray]
+BB6353 [shape=record label="{21893: return[v1]}" ] 
+BB6354 [shape=record label="{21894: exceptional-return}" ] 
+//#$~ 11186
+}

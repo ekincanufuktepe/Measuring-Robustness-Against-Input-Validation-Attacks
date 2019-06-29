@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry509[shape=none,label=""];
+BB_entry509 -> BB8263 [tailport=s, headport=n, headlabel="    8263"]
+BB8263 [shape=record label="{24270: constant[undefined,v1]|24271: vardecl['callback']}" ] 
+BB8263 -> BB8264 [tailport=s, headport=n, headlabel="      8264"]
+BB8264 [shape=record label="{24272: read-variable['s',v4,-]|24273: read-property[v4,'crossDomain',v3]|24274: \<variable-non-null-undef\>['s']|24275: ![v3,v2]|24276: if[v2](true-block:8266,false-block:8265)}" ] 
+BB8264 -> BB8266 [tailport=s, headport=n, headlabel="      8266"]
+BB8264 -> BB8265 [tailport=s, headport=n, headlabel="      8265"]
+BB8264 -> BB8269 [tailport=s, headport=n, color=gray, headlabel="      8269"]
+BB8265 [shape=record label="{24277: read-variable['jQuery',v4,-]|24278: read-property[v4,'support',v3]|24279: \<variable-non-null-undef\>['jQuery']|24280: read-property[v3,'cors',v2]|24281: \<property-non-null-undef\>[v4,'support']}" ] 
+BB8265 -> BB8266 [tailport=s, headport=n]
+BB8265 -> BB8269 [tailport=s, headport=n, color=gray]
+BB8266 [shape=record label="{24282: if[v2](true-block:8267,false-block:8268)}" ] 
+BB8266 -> BB8267 [tailport=s, headport=n, headlabel="      8267"]
+BB8266 -> BB8268 [tailport=s, headport=n, headlabel="      8268"]
+BB8267 [shape=record label="{24283: new[v1]|24284: function-expr[function ( headers complete ),v3]|24285: write-property[v1,'send',v3]|24286: function-expr[function ( ),v4]|24287: write-property[v1,'abort',v4]}" ] 
+BB8267 -> BB8268 [tailport=s, headport=n]
+BB8267 -> BB8269 [tailport=s, headport=n, color=gray]
+BB8268 [shape=record label="{24288: return[v1]}" ] 
+BB8269 [shape=record label="{24289: exceptional-return}" ] 
+}

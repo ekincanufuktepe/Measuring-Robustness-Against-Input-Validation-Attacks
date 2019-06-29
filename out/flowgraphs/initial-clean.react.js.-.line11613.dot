@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry456[shape=none,label=""];
+BB_entry456 -> BB6663 [tailport=s, headport=n, headlabel="    6663"]
+BB6663 [shape=record label="{22721: constant[undefined,v1]}" ] 
+BB6663 -> BB6664 [tailport=s, headport=n, headlabel="      6664"]
+BB6664 [shape=record label="{22722: read-variable['targetID',v2,-]|22723: if[v2](true-block:6665,false-block:6669)}" ] 
+BB6664 -> BB6665 [tailport=s, headport=n, headlabel="      6665"]
+BB6664 -> BB6669 [tailport=s, headport=n, headlabel="      6669"]
+BB6664 -> BB6670 [tailport=s, headport=n, color=gray, headlabel="      6670"]
+BB6665 [shape=record label="{22724: read-variable['traverseParentPath',v4,v3]|22725: constant[\"\",v5]|22726: read-variable['targetID',v6,-]|22727: read-variable['cb',v7,-]|22728: read-variable['arg',v8,-]|22729: constant[true,v9]|22730: constant[false,v10]}" ] 
+BB6665 -> BB6666 [tailport=s, headport=n, headlabel="      6666"]
+BB6665 -> BB6670 [tailport=s, headport=n, color=gray]
+BB6666 [shape=record label="{22731: call-traverseParentPath [v3,v4,v5,v6,v7,v8,v9,v10,-]*}" ] 
+BB6666 -> BB6667 [tailport=s, headport=n, headlabel="      6667"]
+BB6666 -> BB6670 [tailport=s, headport=n, color=gray]
+BB6667 [shape=record label="{22732: read-variable['traverseParentPath',v12,v11]|22733: read-variable['targetID',v13,-]|22734: constant[\"\",v14]|22735: read-variable['cb',v15,-]|22736: read-variable['arg',v16,-]|22737: constant[false,v17]|22738: constant[true,v18]}" ] 
+BB6667 -> BB6668 [tailport=s, headport=n, headlabel="      6668"]
+BB6667 -> BB6670 [tailport=s, headport=n, color=gray]
+BB6668 [shape=record label="{22739: call-traverseParentPath [v11,v12,v13,v14,v15,v16,v17,v18,-]*}" ] 
+BB6668 -> BB6669 [tailport=s, headport=n]
+BB6668 -> BB6670 [tailport=s, headport=n, color=gray]
+BB6669 [shape=record label="{22740: return[v1]}" ] 
+BB6670 [shape=record label="{22741: exceptional-return}" ] 
+//#$~ 11616
+}

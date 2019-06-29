@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry464[shape=none,label=""];
+BB_entry464 -> BB6681 [tailport=s, headport=n, headlabel="    6681"]
+BB6681 [shape=record label="{22796: constant[undefined,v1]|22797: vardecl['checksum']}" ] 
+BB6681 -> BB6682 [tailport=s, headport=n, headlabel="      6682"]
+BB6682 [shape=record label="{22798: read-variable['adler32',v4,v3]|22799: read-variable['markup',v5,-]}" ] 
+BB6682 -> BB6683 [tailport=s, headport=n, headlabel="      6683"]
+BB6682 -> BB6687 [tailport=s, headport=n, color=gray, headlabel="      6687"]
+BB6683 [shape=record label="{22800: call-adler32 [v3,v4,v5,v2]}" ] 
+BB6683 -> BB6684 [tailport=s, headport=n, headlabel="      6684"]
+BB6683 -> BB6687 [tailport=s, headport=n, color=gray]
+BB6684 [shape=record label="{22801: write-variable[v2,'checksum']*|22802: read-variable['markup',v7,-]|22803: read-property[v7,'replace',-]|22804: \<variable-non-null-undef\>['markup']|22805: constant[\"\\\>\",v8]|22806: constant[\" \",v16]|22807: read-variable['ReactMarkupChecksum',v18,-]|22808: read-property[v18,'CHECKSUM_ATTR_NAME',v17]|22809: \<variable-non-null-undef\>['ReactMarkupChecksum']|22810: +[v16,v17,v14]|22811: constant[\"=\\\"\",v15]|22812: +[v14,v15,v12]|22813: read-variable['checksum',v13,-]|22814: +[v12,v13,v10]|22815: constant[\"\\\"\\\>\",v11]|22816: +[v10,v11,v9]}" ] 
+BB6684 -> BB6685 [tailport=s, headport=n, headlabel="      6685"]
+BB6684 -> BB6687 [tailport=s, headport=n, color=gray]
+BB6685 [shape=record label="{22817: call-markup.replace [v7,'replace',v8,v9,v1]}" ] 
+BB6685 -> BB6686 [tailport=s, headport=n, headlabel="      6686"]
+BB6685 -> BB6687 [tailport=s, headport=n, color=gray]
+BB6686 [shape=record label="{22818: return[v1]}" ] 
+BB6687 [shape=record label="{22819: exceptional-return}" ] 
+//#$~ 11733
+}

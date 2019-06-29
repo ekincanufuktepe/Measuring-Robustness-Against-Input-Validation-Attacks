@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry162[shape=none,label=""];
+BB_entry162 -> BB2555 [tailport=s, headport=n, headlabel="    2555"]
+BB2555 [shape=record label="{8186: constant[undefined,v1]}" ] 
+BB2555 -> BB2556 [tailport=s, headport=n, headlabel="      2556"]
+BB2556 [shape=record label="{8187: read-variable['node',v5,-]|8188: read-property[v5,'type',v3]|8189: \<variable-non-null-undef\>['node']|8190: constant[\"Block\",v4]|8191: ===[v3,v4,v2]|8192: if[v2](true-block:2557,false-block:2558)}" ] 
+BB2556 -> BB2558 [tailport=s, headport=n, headlabel="      2558"]
+BB2556 -> BB2557 [tailport=s, headport=n, headlabel="      2557"]
+BB2556 -> BB2562 [tailport=s, headport=n, color=gray, headlabel="      2562"]
+BB2557 [shape=record label="{8193: read-variable['node',v6,-]|8194: read-property[v6,'name',v2]|8195: \<variable-non-null-undef\>['node']}" ] 
+BB2557 -> BB2558 [tailport=s, headport=n]
+BB2557 -> BB2562 [tailport=s, headport=n, color=gray]
+BB2558 [shape=record label="{8196: if[v2](true-block:2559,false-block:2561)}" ] 
+BB2558 -> BB2559 [tailport=s, headport=n, headlabel="      2559"]
+BB2558 -> BB2561 [tailport=s, headport=n, headlabel="      2561"]
+BB2559 [shape=record label="{8197: read-variable['blocks',v7,-]|8198: read-property[v7,'push',-]|8199: \<variable-non-null-undef\>['blocks']|8200: read-variable['node',v9,-]|8201: read-property[v9,'name',v8]|8202: \<variable-non-null-undef\>['node']}" ] 
+BB2559 -> BB2560 [tailport=s, headport=n, headlabel="      2560"]
+BB2559 -> BB2562 [tailport=s, headport=n, color=gray]
+BB2560 [shape=record label="{8203: call-blocks.push [v7,'push',v8,-]*}" ] 
+BB2560 -> BB2561 [tailport=s, headport=n]
+BB2560 -> BB2562 [tailport=s, headport=n, color=gray]
+BB2561 [shape=record label="{8204: return[v1]}" ] 
+BB2562 [shape=record label="{8205: exceptional-return}" ] 
+//#$~ 2886
+}

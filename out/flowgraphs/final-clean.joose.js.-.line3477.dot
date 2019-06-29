@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry328[shape=none,label=""];
+BB_entry328 -> BB3010 [tailport=s, headport=n, headlabel="    3010"]
+BB3010 [shape=record label="{8891: constant[undefined,v1]|8892: vardecl['sn']}" ] 
+BB3010 -> BB3011 [tailport=s, headport=n, headlabel="      3011"]
+BB3011 [shape=record label="{8893: read-variable['String',v4,v3]|8894: read-variable['n',v5,-]}" ] 
+BB3011 -> BB3012 [tailport=s, headport=n, headlabel="      3012"]
+BB3011 -> BB3020 [tailport=s, headport=n, color=gray, headlabel="      3020"]
+BB3012 [shape=record label="{8895: call-String [v3,v4,v5,v2]}" ] 
+BB3012 -> BB3013 [tailport=s, headport=n, headlabel="      3013"]
+BB3012 -> BB3020 [tailport=s, headport=n, color=gray]
+BB3013 [shape=record label="{8896: write-variable[v2,'sn']*|8897: read-variable['sn',v8,-]|8898: read-property[v8,'match',-]|8899: \<variable-non-null-undef\>['sn']|8900: read-variable['RegExp',v10,-]|8901: constant[\"^\\\\d*\\\\.\\\\d$\",v11]}" ] 
+BB3013 -> BB3014 [tailport=s, headport=n, headlabel="      3014"]
+BB3013 -> BB3020 [tailport=s, headport=n, color=gray]
+BB3014 [shape=record label="{8902: construct [-,v10,v11,v9]}" ] 
+BB3014 -> BB3015 [tailport=s, headport=n, headlabel="      3015"]
+BB3014 -> BB3020 [tailport=s, headport=n, color=gray]
+BB3015 [shape=record label="{8903: call-sn.match [v8,'match',v9,v6]}" ] 
+BB3015 -> BB3016 [tailport=s, headport=n, headlabel="      3016"]
+BB3015 -> BB3020 [tailport=s, headport=n, color=gray]
+BB3016 [shape=record label="{8904: if[v6](true-block:3017,false-block:3018)}" ] 
+BB3016 -> BB3017 [tailport=s, headport=n, headlabel="      3017"]
+BB3016 -> BB3018 [tailport=s, headport=n, headlabel="      3018"]
+BB3017 [shape=record label="{8905: constant[false,v1]}" ] 
+BB3017 -> BB3019 [tailport=s, headport=n, headlabel="      3019"]
+BB3018 [shape=record label="{8906: constant[true,v1]}" ] 
+BB3018 -> BB3019 [tailport=s, headport=n]
+BB3019 [shape=record label="{8907: return[v1]}" ] 
+BB3020 [shape=record label="{8908: exceptional-return}" ] 
+//#$~ 3482
+}

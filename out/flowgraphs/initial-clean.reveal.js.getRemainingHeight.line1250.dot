@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry57[shape=none,label=""];
+BB_entry57 -> BB942 [tailport=s, headport=n, headlabel="    942"]
+BB942 [shape=record label="{3115: constant[undefined,v1]|3116: vardecl['newHeight']|3117: vardecl['oldHeight']}" ] 
+BB942 -> BB943 [tailport=s, headport=n, headlabel="      943"]
+BB943 [shape=record label="{3118: read-variable['height',v2,-]|3119: if[v2](true-block:945,false-block:944)}" ] 
+BB943 -> BB945 [tailport=s, headport=n, headlabel="      945"]
+BB943 -> BB944 [tailport=s, headport=n, headlabel="      944"]
+BB943 -> BB949 [tailport=s, headport=n, color=gray, headlabel="      949"]
+BB944 [shape=record label="{3120: constant[0.0,v2]}" ] 
+BB944 -> BB945 [tailport=s, headport=n]
+BB945 [shape=record label="{3121: write-variable[v2,'height']*|3122: read-variable['element',v3,-]|3123: if[v3](true-block:946,false-block:947)}" ] 
+BB945 -> BB946 [tailport=s, headport=n, headlabel="      946"]
+BB945 -> BB947 [tailport=s, headport=n, headlabel="      947"]
+BB945 -> BB949 [tailport=s, headport=n, color=gray]
+BB946 [shape=record label="{3124: read-variable['element',v6,-]|3125: read-property[v6,'style',v5]|3126: \<variable-non-null-undef\>['element']|3127: read-property[v5,'height',v4]|3128: \<property-non-null-undef\>[v6,'style']|3129: write-variable[v4,'oldHeight']*|3130: read-variable['element',v9,-]|3131: read-property[v9,'style',v8]|3132: \<variable-non-null-undef\>['element']|3133: constant[\"0px\",v7]|3134: write-property[v8,'height',v7]|3135: \<property-non-null-undef\>[v9,'style']*|3136: read-variable['height',v11,-]|3137: read-variable['element',v14,-]|3138: read-property[v14,'parentNode',v13]|3139: \<variable-non-null-undef\>['element']|3140: read-property[v13,'offsetHeight',v12]|3141: \<property-non-null-undef\>[v14,'parentNode']|3142: -[v11,v12,v10]|3143: write-variable[v10,'newHeight']*|3144: read-variable['element',v17,-]|3145: read-property[v17,'style',v16]|3146: \<variable-non-null-undef\>['element']|3147: read-variable['oldHeight',v18,-]|3148: constant[\"px\",v19]|3149: +[v18,v19,v15]|3150: write-property[v16,'height',v15]|3151: \<property-non-null-undef\>[v17,'style']*|3152: read-variable['newHeight',v1,-]}" ] 
+BB946 -> BB948 [tailport=s, headport=n, headlabel="      948"]
+BB946 -> BB949 [tailport=s, headport=n, color=gray]
+BB947 [shape=record label="{3153: read-variable['height',v1,-]}" ] 
+BB947 -> BB948 [tailport=s, headport=n]
+BB947 -> BB949 [tailport=s, headport=n, color=gray]
+BB948 [shape=record label="{3154: return[v1]}" ] 
+BB949 [shape=record label="{3155: exceptional-return}" ] 
+//#$~ 1268
+}

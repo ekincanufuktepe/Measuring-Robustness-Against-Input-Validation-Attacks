@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry77[shape=none,label=""];
+BB_entry77 -> BB784 [tailport=s, headport=n, headlabel="    784"]
+BB784 [shape=record label="{2606: constant[undefined,v1]}" ] 
+BB784 -> BB785 [tailport=s, headport=n, headlabel="      785"]
+BB785 [shape=record label="{2607: read-variable['path',v5,-]|2608: read-property[v5,'parts',v4]|2609: \<variable-non-null-undef\>['path']|2610: read-property[v4,'length',v2]|2611: \<property-non-null-undef\>[v5,'parts']|2612: constant[1.0,v3]|2613: ===[v2,v3,v1]|2614: if[v1](true-block:786,false-block:790)}" ] 
+BB785 -> BB790 [tailport=s, headport=n, headlabel="      790"]
+BB785 -> BB786 [tailport=s, headport=n, headlabel="      786"]
+BB785 -> BB791 [tailport=s, headport=n, color=gray, headlabel="      791"]
+BB786 [shape=record label="{2615: read-variable['AST',v9,-]|2616: read-property[v9,'helpers',v8]|2617: \<variable-non-null-undef\>['AST']|2618: read-property[v8,'scopedId',-]|2619: \<property-non-null-undef\>[v9,'helpers']|2620: read-variable['path',v10,-]}" ] 
+BB786 -> BB787 [tailport=s, headport=n, headlabel="      787"]
+BB786 -> BB791 [tailport=s, headport=n, color=gray]
+BB787 [shape=record label="{2621: call-AST.helpers.scopedId [v8,'scopedId',v10,v6]}" ] 
+BB787 -> BB788 [tailport=s, headport=n, headlabel="      788"]
+BB787 -> BB791 [tailport=s, headport=n, color=gray]
+BB788 [shape=record label="{2622: ![v6,v1]|2623: if[v1](true-block:789,false-block:790)}" ] 
+BB788 -> BB790 [tailport=s, headport=n]
+BB788 -> BB789 [tailport=s, headport=n, headlabel="      789"]
+BB788 -> BB791 [tailport=s, headport=n, color=gray]
+BB789 [shape=record label="{2624: read-variable['path',v12,-]|2625: read-property[v12,'depth',v11]|2626: \<variable-non-null-undef\>['path']|2627: ![v11,v1]}" ] 
+BB789 -> BB790 [tailport=s, headport=n]
+BB789 -> BB791 [tailport=s, headport=n, color=gray]
+BB790 [shape=record label="{2628: return[v1]}" ] 
+BB791 [shape=record label="{2629: exceptional-return}" ] 
+//#$~ 861
+}

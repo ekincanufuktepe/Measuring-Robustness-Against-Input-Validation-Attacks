@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry11[shape=none,label=""];
+BB_entry11 -> BB77 [tailport=s, headport=n, headlabel="    77"]
+BB77 [shape=record label="{242: constant[undefined,v1]}" ] 
+BB77 -> BB78 [tailport=s, headport=n, headlabel="      78"]
+BB78 [shape=record label="{243: read-variable['extensionObject',v4,-]|244: read-property[v4,'hasOwnProperty',-]|245: \<variable-non-null-undef\>['extensionObject']|246: read-variable['key',v5,-]}" ] 
+BB78 -> BB79 [tailport=s, headport=n, headlabel="      79"]
+BB78 -> BB83 [tailport=s, headport=n, color=gray, headlabel="      83"]
+BB79 [shape=record label="{247: call-extensionObject.hasOwnProperty [v4,'hasOwnProperty',v5,v2]}" ] 
+BB79 -> BB80 [tailport=s, headport=n, headlabel="      80"]
+BB79 -> BB83 [tailport=s, headport=n, color=gray]
+BB80 [shape=record label="{248: if[v2](true-block:81,false-block:82)}" ] 
+BB80 -> BB81 [tailport=s, headport=n, headlabel="      81"]
+BB80 -> BB82 [tailport=s, headport=n, headlabel="      82"]
+BB81 [shape=record label="{249: read-variable['base',v7,-]|250: read-variable['key',v8,-]|251: read-variable['value',v6,-]|252: write-property[v7,v8,v6]|253: \<variable-non-null-undef\>['base']*}" ] 
+BB81 -> BB82 [tailport=s, headport=n]
+BB81 -> BB83 [tailport=s, headport=n, color=gray]
+BB82 [shape=record label="{254: return[v1]}" ] 
+BB83 [shape=record label="{255: exceptional-return}" ] 
+//#$~ 220
+}

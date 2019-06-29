@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry193[shape=none,label=""];
+BB_entry193 -> BB2484 [tailport=s, headport=n, headlabel="    2484"]
+BB2484 [shape=record label="{5996: constant[undefined,v1]|5997: vardecl['index']|5998: vardecl['parent']|5999: vardecl['i']|6000: vardecl['ii']|6001: vardecl['node']}" ] 
+BB2484 -> BB2485 [tailport=s, headport=n, headlabel="      2485"]
+BB2485 [shape=record label="{6002: read-variable['element',v2,-]|6003: write-variable[v2,'index']*|6004: read-variable['element',v4,-]|6005: read-property[v4,'parentNode',v3]|6006: \<variable-non-null-undef\>['element']|6007: write-variable[v3,'parent']*|6008: read-variable['JQLite',v6,-]|6009: read-variable['newElement',v7,-]}" ] 
+BB2485 -> BB2486 [tailport=s, headport=n, headlabel="      2486"]
+BB2485 -> BB2493 [tailport=s, headport=n, color=gray, headlabel="      2493"]
+BB2486 [shape=record label="{6010: construct [-,v6,v7,v5]}" ] 
+BB2486 -> BB2487 [tailport=s, headport=n, headlabel="      2487"]
+BB2486 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2487 [shape=record label="{6011: write-variable[v5,'newElement']*|6012: constant[0.0,v9]|6013: write-variable[v9,'i']*|6014: read-variable['newElement',v11,-]|6015: read-property[v11,'length',v10]|6016: \<variable-non-null-undef\>['newElement']|6017: write-variable[v10,'ii']*}" ] 
+BB2487 -> BB2488 [tailport=s, headport=n, headlabel="      2488"]
+BB2487 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2488 [shape=record label="{6018: read-variable['i',v12,-]|6019: read-variable['ii',v13,-]|6020: \<[v12,v13,v8]|6021: if[v8](true-block:2489,false-block:2492)}" ] 
+BB2488 -> BB2489 [tailport=s, headport=n, headlabel="      2489"]
+BB2488 -> BB2492 [tailport=s, headport=n, headlabel="      2492"]
+BB2488 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2489 [shape=record label="{6022: read-variable['newElement',v15,-]|6023: read-variable['i',v16,-]|6024: read-property[v15,v16,v14]|6025: \<variable-non-null-undef\>['newElement']|6026: write-variable[v14,'node']*|6027: read-variable['parent',v18,-]|6028: read-property[v18,'insertBefore',-]|6029: \<variable-non-null-undef\>['parent']|6030: read-variable['node',v19,-]|6031: read-variable['index',v21,-]|6032: read-property[v21,'nextSibling',v20]|6033: \<variable-non-null-undef\>['index']}" ] 
+BB2489 -> BB2490 [tailport=s, headport=n, headlabel="      2490"]
+BB2489 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2490 [shape=record label="{6034: call-parent.insertBefore [v18,'insertBefore',v19,v20,-]*}" ] 
+BB2490 -> BB2491 [tailport=s, headport=n, headlabel="      2491"]
+BB2490 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2491 [shape=record label="{6035: read-variable['node',v22,-]|6036: write-variable[v22,'index']*|6037: constant[1.0,v23]|6038: read-variable['i',v24,-]|6039: +[v24,v25]|6040: +[v25,v23,v26]|6041: write-variable[v26,'i']}" ] 
+BB2491 -> BB2488 [tailport=s, headport=n]
+BB2491 -> BB2493 [tailport=s, headport=n, color=gray]
+BB2492 [shape=record label="{6042: return[v1]}" ] 
+BB2493 [shape=record label="{6043: exceptional-return}" ] 
+//#$~ 3426
+}

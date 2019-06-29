@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry284[shape=none,label=""];
+BB_entry284 -> BB3011 [tailport=s, headport=n, headlabel="    3011"]
+BB3011 [shape=record label="{12315: constant[undefined,v1]|12316: vardecl['totalDataArray']}" ] 
+BB3011 -> BB3012 [tailport=s, headport=n, headlabel="      3012"]
+BB3012 [shape=record label="{12317: read-variable['Array',v3,-]}" ] 
+BB3012 -> BB3013 [tailport=s, headport=n, headlabel="      3013"]
+BB3012 -> BB3018 [tailport=s, headport=n, color=gray, headlabel="      3018"]
+BB3013 [shape=record label="{12318: construct [-,v3,v2]}" ] 
+BB3013 -> BB3014 [tailport=s, headport=n, headlabel="      3014"]
+BB3013 -> BB3018 [tailport=s, headport=n, color=gray]
+BB3014 [shape=record label="{12319: write-variable[v2,'totalDataArray']*|12320: read-variable['helpers',v5,-]|12321: read-property[v5,'each',-]|12322: \<variable-non-null-undef\>['helpers']|12323: read-variable['datasets',v6,-]|12324: function-expr[function ( dataset ),v7]}" ] 
+BB3014 -> BB3015 [tailport=s, headport=n, headlabel="      3015"]
+BB3014 -> BB3018 [tailport=s, headport=n, color=gray]
+BB3015 [shape=record label="{12325: call-helpers.each [v5,'each',v6,v7,-]*}" ] 
+BB3015 -> BB3016 [tailport=s, headport=n, headlabel="      3016"]
+BB3015 -> BB3018 [tailport=s, headport=n, color=gray]
+BB3016 [shape=record label="{12326: read-variable['totalDataArray',v1,-]}" ] 
+BB3016 -> BB3017 [tailport=s, headport=n, headlabel="      3017"]
+BB3016 -> BB3018 [tailport=s, headport=n, color=gray]
+BB3017 [shape=record label="{12327: return[v1]}" ] 
+BB3018 [shape=record label="{12328: exceptional-return}" ] 
+//#$~ 3349
+}

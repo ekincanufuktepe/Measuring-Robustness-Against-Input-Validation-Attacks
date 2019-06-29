@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry44[shape=none,label=""];
+BB_entry44 -> BB466 [tailport=s, headport=n, headlabel="    466"]
+BB466 [shape=record label="{1163: constant[undefined,v1]}" ] 
+BB466 -> BB467 [tailport=s, headport=n, headlabel="      467"]
+BB467 [shape=record label="{1164: read-variable['root',v3,-]|1165: read-property[v3,'stub',v2]|1166: \<variable-non-null-undef\>['root']|1167: if[v2](true-block:468,false-block:469)}" ] 
+BB467 -> BB468 [tailport=s, headport=n, headlabel="      468"]
+BB467 -> BB469 [tailport=s, headport=n, headlabel="      469"]
+BB467 -> BB472 [tailport=s, headport=n, color=gray, headlabel="      472"]
+BB468 [shape=record label="{1168: read-variable['parent',v5,-]|1169: read-property[v5,'root',v4]|1170: \<variable-non-null-undef\>['parent']|1171: write-variable[v4,'root']*}" ] 
+BB468 -> BB469 [tailport=s, headport=n]
+BB468 -> BB472 [tailport=s, headport=n, color=gray]
+BB469 [shape=record label="{1172: read-variable['dom',v6,-]|1173: read-property[v6,'parentNode',v5]|1174: \<variable-non-null-undef\>['dom']|1175: read-property[v5,'removeChild',-]|1176: \<property-non-null-undef\>[v6,'parentNode']|1177: read-variable['dom',v7,-]}" ] 
+BB469 -> BB470 [tailport=s, headport=n, headlabel="      470"]
+BB469 -> BB472 [tailport=s, headport=n, color=gray]
+BB470 [shape=record label="{1178: call-dom.parentNode.removeChild [v5,'removeChild',v7,-]*}" ] 
+BB470 -> BB471 [tailport=s, headport=n, headlabel="      471"]
+BB470 -> BB472 [tailport=s, headport=n, color=gray]
+BB471 [shape=record label="{1179: return[v1]}" ] 
+BB472 [shape=record label="{1180: exceptional-return}" ] 
+//#$~ 455
+}

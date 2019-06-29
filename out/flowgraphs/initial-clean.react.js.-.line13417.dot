@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry532[shape=none,label=""];
+BB_entry532 -> BB7614 [tailport=s, headport=n, headlabel="    7614"]
+BB7614 [shape=record label="{25580: constant[undefined,v1]|25581: vardecl['measuredFunc']|25582: vardecl['wrapper']}" ] 
+BB7614 -> BB7615 [tailport=s, headport=n, headlabel="      7615"]
+BB7615 [shape=record label="{25583: constant[\"production\",v3]|25584: constant[\"development\",v4]|25585: !==[v3,v4,v2]|25586: if[v2](true-block:7616,false-block:7617)}" ] 
+BB7615 -> BB7616 [tailport=s, headport=n, headlabel="      7616"]
+BB7615 -> BB7617 [tailport=s, headport=n, headlabel="      7617"]
+BB7615 -> BB7619 [tailport=s, headport=n, color=gray, headlabel="      7619"]
+BB7616 [shape=record label="{25587: constant[null,v5]|25588: write-variable[v5,'measuredFunc']*|25589: function-expr[function ( ),v6]|25590: write-variable[v6,'wrapper']*|25591: read-variable['wrapper',v8,-]|25592: read-variable['objName',v11,-]|25593: constant[\"_\",v12]|25594: +[v11,v12,v9]|25595: read-variable['fnName',v10,-]|25596: +[v9,v10,v7]|25597: write-property[v8,'displayName',v7]|25598: \<variable-non-null-undef\>['wrapper']*|25599: read-variable['wrapper',v1,-]}" ] 
+BB7616 -> BB7618 [tailport=s, headport=n, headlabel="      7618"]
+BB7616 -> BB7619 [tailport=s, headport=n, color=gray]
+BB7617 [shape=record label="{25600: read-variable['func',v1,-]}" ] 
+BB7617 -> BB7618 [tailport=s, headport=n]
+BB7617 -> BB7619 [tailport=s, headport=n, color=gray]
+BB7618 [shape=record label="{25601: return[v1]}" ] 
+BB7619 [shape=record label="{25602: exceptional-return}" ] 
+//#$~ 13432
+}

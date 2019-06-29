@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry18[shape=none,label=""];
+BB_entry18 -> BB484 [tailport=s, headport=n, headlabel="    484"]
+BB484 [shape=record label="{1886: constant[undefined,v1]}" ] 
+BB484 -> BB485 [tailport=s, headport=n, headlabel="      485"]
+BB485 [shape=record label="{1887: read-variable['this',v5,-]|1888: read-property[v5,'readyState',v3]|1889: constant[\"complete\",v4]|1890: ==[v3,v4,v2]|1891: if[v2](true-block:486,false-block:488)}" ] 
+BB485 -> BB486 [tailport=s, headport=n, headlabel="      486"]
+BB485 -> BB488 [tailport=s, headport=n, headlabel="      488"]
+BB485 -> BB489 [tailport=s, headport=n, color=gray, headlabel="      489"]
+BB486 [shape=record label="{1892: read-variable['midori',v7,-]|1893: read-property[v7,'runReadyEvents',-]|1894: \<variable-non-null-undef\>['midori']}" ] 
+BB486 -> BB487 [tailport=s, headport=n, headlabel="      487"]
+BB486 -> BB489 [tailport=s, headport=n, color=gray]
+BB487 [shape=record label="{1895: call-midori.runReadyEvents [v7,'runReadyEvents',-]*}" ] 
+BB487 -> BB488 [tailport=s, headport=n]
+BB487 -> BB489 [tailport=s, headport=n, color=gray]
+BB488 [shape=record label="{1896: return[v1]}" ] 
+BB489 [shape=record label="{1897: exceptional-return}" ] 
+//#$~ 347
+}

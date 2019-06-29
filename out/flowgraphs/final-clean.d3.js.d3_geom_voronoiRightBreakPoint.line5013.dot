@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry827[shape=none,label=""];
+BB_entry827 -> BB8791 [tailport=s, headport=n, headlabel="    8791"]
+BB8791 [shape=record label="{28400: constant[undefined,v1]|28401: vardecl['rArc']|28402: vardecl['site']}" ] 
+BB8791 -> BB8792 [tailport=s, headport=n, headlabel="      8792"]
+BB8792 [shape=record label="{28403: read-variable['arc',v3,-]|28404: read-property[v3,'N',v2]|28405: \<variable-non-null-undef\>['arc']|28406: write-variable[v2,'rArc']*|28407: read-variable['rArc',v4,-]|28408: if[v4](true-block:8793,false-block:8795)}" ] 
+BB8792 -> BB8793 [tailport=s, headport=n, headlabel="      8793"]
+BB8792 -> BB8795 [tailport=s, headport=n, headlabel="      8795"]
+BB8792 -> BB8799 [tailport=s, headport=n, color=gray, headlabel="      8799"]
+BB8793 [shape=record label="{28409: read-variable['d3_geom_voronoiLeftBreakPoint',v6,v5]|28410: read-variable['rArc',v7,-]|28411: read-variable['directrix',v8,-]}" ] 
+BB8793 -> BB8794 [tailport=s, headport=n, headlabel="      8794"]
+BB8793 -> BB8799 [tailport=s, headport=n, color=gray]
+BB8794 [shape=record label="{28412: call-d3_geom_voronoiLeftBreakPoint [v5,v6,v7,v8,v1]}" ] 
+BB8794 -> BB8798 [tailport=s, headport=n, headlabel="      8798"]
+BB8794 -> BB8799 [tailport=s, headport=n, color=gray]
+BB8795 [shape=record label="{28413: read-variable['arc',v6,-]|28414: read-property[v6,'site',v5]|28415: \<variable-non-null-undef\>['arc']|28416: write-variable[v5,'site']*|28417: read-variable['site',v10,-]|28418: read-property[v10,'y',v8]|28419: \<variable-non-null-undef\>['site']|28420: read-variable['directrix',v9,-]|28421: ===[v8,v9,v7]|28422: if[v7](true-block:8796,false-block:8797)}" ] 
+BB8795 -> BB8796 [tailport=s, headport=n, headlabel="      8796"]
+BB8795 -> BB8797 [tailport=s, headport=n, headlabel="      8797"]
+BB8795 -> BB8799 [tailport=s, headport=n, color=gray]
+BB8796 [shape=record label="{28423: read-variable['site',v11,-]|28424: read-property[v11,'x',v1]|28425: \<variable-non-null-undef\>['site']}" ] 
+BB8796 -> BB8798 [tailport=s, headport=n]
+BB8796 -> BB8799 [tailport=s, headport=n, color=gray]
+BB8797 [shape=record label="{28426: read-variable['Infinity',v1,-]}" ] 
+BB8797 -> BB8798 [tailport=s, headport=n]
+BB8797 -> BB8799 [tailport=s, headport=n, color=gray]
+BB8798 [shape=record label="{28427: return[v1]}" ] 
+BB8799 [shape=record label="{28428: exceptional-return}" ] 
+//#$~ 5017
+}

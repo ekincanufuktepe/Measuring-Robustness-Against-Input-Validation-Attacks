@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB1792 [tailport=s, headport=n, headlabel="    1792"]
+BB1792 [shape=record label="{7002: constant[undefined,v1]}" ] 
+BB1792 -> BB1793 [tailport=s, headport=n, headlabel="      1793"]
+BB1793 [shape=record label="{7003: read-variable['instance',v4,-]|7004: read-property[v4,'options',v3]|7005: \<variable-non-null-undef\>['instance']|7006: read-property[v3,'responsive',v2]|7007: \<property-non-null-undef\>[v4,'options']|7008: if[v2](true-block:1794,false-block:1796)}" ] 
+BB1793 -> BB1794 [tailport=s, headport=n, headlabel="      1794"]
+BB1793 -> BB1796 [tailport=s, headport=n, headlabel="      1796"]
+BB1793 -> BB1797 [tailport=s, headport=n, color=gray, headlabel="      1797"]
+BB1794 [shape=record label="{7009: read-variable['instance',v6,-]|7010: read-property[v6,'resize',-]|7011: \<variable-non-null-undef\>['instance']|7012: read-variable['instance',v8,-]|7013: read-property[v8,'render',v7]|7014: \<variable-non-null-undef\>['instance']|7015: constant[true,v9]}" ] 
+BB1794 -> BB1795 [tailport=s, headport=n, headlabel="      1795"]
+BB1794 -> BB1797 [tailport=s, headport=n, color=gray]
+BB1795 [shape=record label="{7016: call-instance.resize [v6,'resize',v7,v9,-]*}" ] 
+BB1795 -> BB1796 [tailport=s, headport=n]
+BB1795 -> BB1797 [tailport=s, headport=n, color=gray]
+BB1796 [shape=record label="{7017: return[v1]}" ] 
+BB1797 [shape=record label="{7018: exceptional-return}" ] 
+//#$~ 1998
+}

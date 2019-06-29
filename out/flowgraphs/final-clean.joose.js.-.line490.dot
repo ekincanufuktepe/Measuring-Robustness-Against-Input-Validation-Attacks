@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry50[shape=none,label=""];
+BB_entry50 -> BB450 [tailport=s, headport=n, headlabel="    450"]
+BB450 [shape=record label="{1598: constant[undefined,v1]}" ] 
+BB450 -> BB451 [tailport=s, headport=n, headlabel="      451"]
+BB451 [shape=record label="{1599: read-variable['this',v6,-]|1600: read-property[v6,'c',v5]|1601: read-property[v5,'prototype',v4]|1602: \<property-non-null-undef\>[v6,'c']|1603: read-property[v4,'initialize',v3]|1604: \<property-non-null-undef\>[v5,'prototype']|1605: ![v3,v2]|1606: if[v2](true-block:452,false-block:455)}" ] 
+BB451 -> BB452 [tailport=s, headport=n, headlabel="      452"]
+BB451 -> BB455 [tailport=s, headport=n, headlabel="      455"]
+BB451 -> BB456 [tailport=s, headport=n, color=gray, headlabel="      456"]
+BB452 [shape=record label="{1607: read-variable['this',v8,-]|1608: read-property[v8,'addMethod',-]|1609: constant[\"initialize\",v9]|1610: read-variable['this',v12,-]|1611: read-property[v12,'initializer',-]}" ] 
+BB452 -> BB453 [tailport=s, headport=n, headlabel="      453"]
+BB452 -> BB456 [tailport=s, headport=n, color=gray]
+BB453 [shape=record label="{1612: call-this.initializer [v12,'initializer',v10]}" ] 
+BB453 -> BB454 [tailport=s, headport=n, headlabel="      454"]
+BB453 -> BB456 [tailport=s, headport=n, color=gray]
+BB454 [shape=record label="{1613: call-this.addMethod [v8,'addMethod',v9,v10,-]*}" ] 
+BB454 -> BB455 [tailport=s, headport=n]
+BB454 -> BB456 [tailport=s, headport=n, color=gray]
+BB455 [shape=record label="{1614: return[v1]}" ] 
+BB456 [shape=record label="{1615: exceptional-return}" ] 
+//#$~ 492
+}

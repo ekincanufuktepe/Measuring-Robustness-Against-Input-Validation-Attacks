@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry380[shape=none,label=""];
+BB_entry380 -> BB5521 [tailport=s, headport=n, headlabel="    5521"]
+BB5521 [shape=record label="{16610: constant[undefined,v1]}" ] 
+BB5521 -> BB5522 [tailport=s, headport=n, headlabel="      5522"]
+BB5522 [shape=record label="{16611: read-variable['declare',v3,-]|16612: read-property[v3,'safeMixin',-]|16613: \<variable-non-null-undef\>['declare']|16614: read-variable['this',v5,-]|16615: read-property[v5,'prototype',v4]|16616: read-variable['source',v6,-]}" ] 
+BB5522 -> BB5523 [tailport=s, headport=n, headlabel="      5523"]
+BB5522 -> BB5526 [tailport=s, headport=n, color=gray, headlabel="      5526"]
+BB5523 [shape=record label="{16617: call-declare.safeMixin [v3,'safeMixin',v4,v6,-]*}" ] 
+BB5523 -> BB5524 [tailport=s, headport=n, headlabel="      5524"]
+BB5523 -> BB5526 [tailport=s, headport=n, color=gray]
+BB5524 [shape=record label="{16618: read-variable['this',v1,-]}" ] 
+BB5524 -> BB5525 [tailport=s, headport=n, headlabel="      5525"]
+BB5524 -> BB5526 [tailport=s, headport=n, color=gray]
+BB5525 [shape=record label="{16619: return[v1]}" ] 
+BB5526 [shape=record label="{16620: exceptional-return}" ] 
+//#$~ 7511
+}

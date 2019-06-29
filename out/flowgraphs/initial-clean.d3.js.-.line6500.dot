@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1001[shape=none,label=""];
+BB_entry1001 -> BB10948 [tailport=s, headport=n, headlabel="    10948"]
+BB10948 [shape=record label="{36961: constant[undefined,v1]}" ] 
+BB10948 -> BB10949 [tailport=s, headport=n, headlabel="      10949"]
+BB10949 [shape=record label="{36962: read-variable['value',v2,-]|36963: if[v2](true-block:10950,false-block:10954)}" ] 
+BB10949 -> BB10950 [tailport=s, headport=n, headlabel="      10950"]
+BB10949 -> BB10954 [tailport=s, headport=n, headlabel="      10954"]
+BB10949 -> BB10956 [tailport=s, headport=n, color=gray, headlabel="      10956"]
+BB10950 [shape=record label="{36964: read-variable['d3_layout_hierarchyVisitBefore',v4,v3]|36965: read-variable['root',v5,-]|36966: function-expr[function ( node ),v6]}" ] 
+BB10950 -> BB10951 [tailport=s, headport=n, headlabel="      10951"]
+BB10950 -> BB10956 [tailport=s, headport=n, color=gray]
+BB10951 [shape=record label="{36967: call-d3_layout_hierarchyVisitBefore [v3,v4,v5,v6,-]*}" ] 
+BB10951 -> BB10952 [tailport=s, headport=n, headlabel="      10952"]
+BB10951 -> BB10956 [tailport=s, headport=n, color=gray]
+BB10952 [shape=record label="{36968: read-variable['d3_layout_hierarchyVisitAfter',v8,v7]|36969: read-variable['root',v9,-]|36970: function-expr[function ( node ),v10]}" ] 
+BB10952 -> BB10953 [tailport=s, headport=n, headlabel="      10953"]
+BB10952 -> BB10956 [tailport=s, headport=n, color=gray]
+BB10953 [shape=record label="{36971: call-d3_layout_hierarchyVisitAfter [v7,v8,v9,v10,-]*}" ] 
+BB10953 -> BB10954 [tailport=s, headport=n]
+BB10953 -> BB10956 [tailport=s, headport=n, color=gray]
+BB10954 [shape=record label="{36972: read-variable['root',v1,-]}" ] 
+BB10954 -> BB10955 [tailport=s, headport=n, headlabel="      10955"]
+BB10954 -> BB10956 [tailport=s, headport=n, color=gray]
+BB10955 [shape=record label="{36973: return[v1]}" ] 
+BB10956 [shape=record label="{36974: exceptional-return}" ] 
+//#$~ 6511
+}

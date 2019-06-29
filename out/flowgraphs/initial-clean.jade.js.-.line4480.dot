@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry270[shape=none,label=""];
+BB_entry270 -> BB4473 [tailport=s, headport=n, headlabel="    4473"]
+BB4473 [shape=record label="{13879: constant[undefined,v1]|13880: vardecl['fn']}" ] 
+BB4473 -> BB4474 [tailport=s, headport=n, headlabel="      4474"]
+BB4474 [shape=record label="{13881: read-variable['node',v2,-]|13882: write-variable[v2,'fn']*|13883: read-variable['fn',v4,-]|13884: read-variable['fn',v5,-]|13885: read-property[v5,'locals',v3]|13886: \<variable-non-null-undef\>['fn']|13887: if[v3](true-block:4476,false-block:4475)}" ] 
+BB4474 -> BB4476 [tailport=s, headport=n, headlabel="      4476"]
+BB4474 -> BB4475 [tailport=s, headport=n, headlabel="      4475"]
+BB4474 -> BB4481 [tailport=s, headport=n, color=gray, headlabel="      4481"]
+BB4475 [shape=record label="{13888: new[v3]}" ] 
+BB4475 -> BB4476 [tailport=s, headport=n]
+BB4476 [shape=record label="{13889: write-property[v4,'locals',v3]|13890: \<variable-non-null-undef\>['fn']*|13891: read-variable['node',v7,-]|13892: read-property[v7,'params',v6]|13893: \<variable-non-null-undef\>['node']|13894: read-property[v6,'forEach',-]|13895: \<property-non-null-undef\>[v7,'params']|13896: function-expr[function ( node ),v8]}" ] 
+BB4476 -> BB4477 [tailport=s, headport=n, headlabel="      4477"]
+BB4476 -> BB4481 [tailport=s, headport=n, color=gray]
+BB4477 [shape=record label="{13897: call-node.params.forEach [v6,'forEach',v8,-]*}" ] 
+BB4477 -> BB4478 [tailport=s, headport=n, headlabel="      4478"]
+BB4477 -> BB4481 [tailport=s, headport=n, color=gray]
+BB4478 [shape=record label="{13898: read-variable['node',v10,-]|13899: read-property[v10,'id',v9]|13900: \<variable-non-null-undef\>['node']|13901: if[v9](true-block:4479,false-block:4480)}" ] 
+BB4478 -> BB4479 [tailport=s, headport=n, headlabel="      4479"]
+BB4478 -> BB4480 [tailport=s, headport=n, headlabel="      4480"]
+BB4478 -> BB4481 [tailport=s, headport=n, color=gray]
+BB4479 [shape=record label="{13902: read-variable['fn',v14,-]|13903: read-property[v14,'locals',v12]|13904: \<variable-non-null-undef\>['fn']|13905: read-variable['node',v16,-]|13906: read-property[v16,'id',v15]|13907: \<variable-non-null-undef\>['node']|13908: read-property[v15,'name',v13]|13909: \<property-non-null-undef\>[v16,'id']|13910: constant[true,v11]|13911: write-property[v12,v13,v11]|13912: \<property-non-null-undef\>[v14,'locals']*}" ] 
+BB4479 -> BB4480 [tailport=s, headport=n]
+BB4479 -> BB4481 [tailport=s, headport=n, color=gray]
+BB4480 [shape=record label="{13913: return[v1]}" ] 
+BB4481 [shape=record label="{13914: exceptional-return}" ] 
+//#$~ 4487
+}

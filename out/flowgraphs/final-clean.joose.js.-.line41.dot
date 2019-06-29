@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB98 [tailport=s, headport=n, headlabel="    98"]
+BB98 [shape=record label="{622: constant[undefined,v1]|623: vardecl['a']}" ] 
+BB98 -> BB99 [tailport=s, headport=n, headlabel="      99"]
+BB99 [shape=record label="{624: read-variable['Array',v3,-]}" ] 
+BB99 -> BB100 [tailport=s, headport=n, headlabel="      100"]
+BB99 -> BB105 [tailport=s, headport=n, color=gray, headlabel="      105"]
+BB100 [shape=record label="{625: construct [-,v3,v2]}" ] 
+BB100 -> BB101 [tailport=s, headport=n, headlabel="      101"]
+BB100 -> BB105 [tailport=s, headport=n, color=gray]
+BB101 [shape=record label="{626: write-variable[v2,'a']*|627: read-variable['Joose',v6,-]|628: read-property[v6,'A',v5]|629: \<variable-non-null-undef\>['Joose']|630: read-property[v5,'each',-]|631: \<property-non-null-undef\>[v6,'A']|632: read-variable['array',v7,-]|633: function-expr[function ( t ),v8]}" ] 
+BB101 -> BB102 [tailport=s, headport=n, headlabel="      102"]
+BB101 -> BB105 [tailport=s, headport=n, color=gray]
+BB102 [shape=record label="{634: call-Joose.A.each [v5,'each',v7,v8,-]*}" ] 
+BB102 -> BB103 [tailport=s, headport=n, headlabel="      103"]
+BB102 -> BB105 [tailport=s, headport=n, color=gray]
+BB103 [shape=record label="{635: read-variable['a',v1,-]}" ] 
+BB103 -> BB104 [tailport=s, headport=n, headlabel="      104"]
+BB103 -> BB105 [tailport=s, headport=n, color=gray]
+BB104 [shape=record label="{636: return[v1]}" ] 
+BB105 [shape=record label="{637: exceptional-return}" ] 
+//#$~ 48
+}

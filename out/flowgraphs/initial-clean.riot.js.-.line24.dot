@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB119 [tailport=s, headport=n, headlabel="    119"]
+BB119 [shape=record label="{301: constant[undefined,v1]|302: vardecl['callbacks']|303: vardecl['_id']}" ] 
+BB119 -> BB120 [tailport=s, headport=n, headlabel="      120"]
+BB120 [shape=record label="{304: read-variable['el',v2,-]|305: if[v2](true-block:122,false-block:121)}" ] 
+BB120 -> BB122 [tailport=s, headport=n, headlabel="      122"]
+BB120 -> BB121 [tailport=s, headport=n, headlabel="      121"]
+BB120 -> BB124 [tailport=s, headport=n, color=gray, headlabel="      124"]
+BB121 [shape=record label="{306: new[v2]}" ] 
+BB121 -> BB122 [tailport=s, headport=n]
+BB122 [shape=record label="{307: write-variable[v2,'el']*|308: new[v3]|309: write-variable[v3,'callbacks']*|310: constant[0.0,v4]|311: write-variable[v4,'_id']*|312: read-variable['el',v6,-]|313: function-expr[function ( events fn ),v5]|314: write-property[v6,'on',v5]|315: \<variable-non-null-undef\>['el']*|316: read-variable['el',v8,-]|317: function-expr[function ( events fn ),v7]|318: write-property[v8,'off',v7]|319: \<variable-non-null-undef\>['el']*|320: read-variable['el',v10,-]|321: function-expr[function ( name fn ),v9]|322: write-property[v10,'one',v9]|323: \<variable-non-null-undef\>['el']*|324: read-variable['el',v12,-]|325: function-expr[function ( name ),v11]|326: write-property[v12,'trigger',v11]|327: \<variable-non-null-undef\>['el']*|328: read-variable['el',v1,-]}" ] 
+BB122 -> BB123 [tailport=s, headport=n, headlabel="      123"]
+BB122 -> BB124 [tailport=s, headport=n, color=gray]
+BB123 [shape=record label="{329: return[v1]}" ] 
+BB124 [shape=record label="{330: exceptional-return}" ] 
+//#$~ 89
+}

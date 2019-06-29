@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry92[shape=none,label=""];
+BB_entry92 -> BB1309 [tailport=s, headport=n, headlabel="    1309"]
+BB1309 [shape=record label="{7216: constant[undefined,v1]|7217: vardecl['m']}" ] 
+BB1309 -> BB1310 [tailport=s, headport=n, headlabel="      1310"]
+BB1310 [shape=record label="{7218: read-variable['s',v4,-]|7219: read-property[v4,'match',-]|7220: \<variable-non-null-undef\>['s']|7221: read-variable['RegExp',v6,-]|7222: constant[\"^\\\\s*\\\\/\\\\*(.*)\\\\*\\\\/\\\\s*$\",v7]}" ] 
+BB1310 -> BB1311 [tailport=s, headport=n, headlabel="      1311"]
+BB1310 -> BB1317 [tailport=s, headport=n, color=gray, headlabel="      1317"]
+BB1311 [shape=record label="{7223: construct [-,v6,v7,v5]}" ] 
+BB1311 -> BB1312 [tailport=s, headport=n, headlabel="      1312"]
+BB1311 -> BB1317 [tailport=s, headport=n, color=gray]
+BB1312 [shape=record label="{7224: call-s.match [v4,'match',v5,v2]}" ] 
+BB1312 -> BB1313 [tailport=s, headport=n, headlabel="      1313"]
+BB1312 -> BB1317 [tailport=s, headport=n, color=gray]
+BB1313 [shape=record label="{7225: write-variable[v2,'m']*|7226: read-variable['m',v8,-]|7227: if[v8](true-block:1314,false-block:1315)}" ] 
+BB1313 -> BB1314 [tailport=s, headport=n, headlabel="      1314"]
+BB1313 -> BB1315 [tailport=s, headport=n, headlabel="      1315"]
+BB1313 -> BB1317 [tailport=s, headport=n, color=gray]
+BB1314 [shape=record label="{7228: read-variable['m',v9,-]|7229: constant[1.0,v10]|7230: read-property[v9,v10,v1]|7231: \<variable-non-null-undef\>['m']}" ] 
+BB1314 -> BB1316 [tailport=s, headport=n, headlabel="      1316"]
+BB1314 -> BB1317 [tailport=s, headport=n, color=gray]
+BB1315 [shape=record label="{7232: read-variable['s',v1,-]}" ] 
+BB1315 -> BB1316 [tailport=s, headport=n]
+BB1315 -> BB1317 [tailport=s, headport=n, color=gray]
+BB1316 [shape=record label="{7233: return[v1]}" ] 
+BB1317 [shape=record label="{7234: exceptional-return}" ] 
+//#$~ 666
+}

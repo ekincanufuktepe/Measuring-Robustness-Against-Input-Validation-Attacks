@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry67[shape=none,label=""];
+BB_entry67 -> BB1071 [tailport=s, headport=n, headlabel="    1071"]
+BB1071 [shape=record label="{3506: constant[undefined,v1]|3507: vardecl['anchors']}" ] 
+BB1071 -> BB1072 [tailport=s, headport=n, headlabel="      1072"]
+BB1072 [shape=record label="{3508: read-variable['toArray',v4,v3]|3509: read-variable['document',v7,-]|3510: read-property[v7,'querySelectorAll',-]|3511: \<variable-non-null-undef\>['document']|3512: constant[\"a\",v8]}" ] 
+BB1072 -> BB1073 [tailport=s, headport=n, headlabel="      1073"]
+BB1072 -> BB1078 [tailport=s, headport=n, color=gray, headlabel="      1078"]
+BB1073 [shape=record label="{3513: call-document.querySelectorAll [v7,'querySelectorAll',v8,v5]}" ] 
+BB1073 -> BB1074 [tailport=s, headport=n, headlabel="      1074"]
+BB1073 -> BB1078 [tailport=s, headport=n, color=gray]
+BB1074 [shape=record label="{3514: call-toArray [v3,v4,v5,v2]}" ] 
+BB1074 -> BB1075 [tailport=s, headport=n, headlabel="      1075"]
+BB1074 -> BB1078 [tailport=s, headport=n, color=gray]
+BB1075 [shape=record label="{3515: write-variable[v2,'anchors']*|3516: read-variable['anchors',v10,-]|3517: read-property[v10,'forEach',-]|3518: \<variable-non-null-undef\>['anchors']|3519: function-expr[function ( element ),v11]}" ] 
+BB1075 -> BB1076 [tailport=s, headport=n, headlabel="      1076"]
+BB1075 -> BB1078 [tailport=s, headport=n, color=gray]
+BB1076 [shape=record label="{3520: call-anchors.forEach [v10,'forEach',v11,-]*}" ] 
+BB1076 -> BB1077 [tailport=s, headport=n, headlabel="      1077"]
+BB1076 -> BB1078 [tailport=s, headport=n, color=gray]
+BB1077 [shape=record label="{3521: return[v1]}" ] 
+BB1078 [shape=record label="{3522: exceptional-return}" ] 
+//#$~ 1393
+}

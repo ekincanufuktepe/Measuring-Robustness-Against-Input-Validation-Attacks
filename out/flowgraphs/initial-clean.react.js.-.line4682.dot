@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry178[shape=none,label=""];
+BB_entry178 -> BB2428 [tailport=s, headport=n, headlabel="    2428"]
+BB2428 [shape=record label="{8590: constant[undefined,v1]|8591: vardecl['refresh']}" ] 
+BB2428 -> BB2429 [tailport=s, headport=n, headlabel="      2429"]
+BB2429 [shape=record label="{8592: read-variable['isMonitoringScrollValue',v3,-]|8593: ![v3,v2]|8594: if[v2](true-block:2430,false-block:2433)}" ] 
+BB2429 -> BB2430 [tailport=s, headport=n, headlabel="      2430"]
+BB2429 -> BB2433 [tailport=s, headport=n, headlabel="      2433"]
+BB2429 -> BB2434 [tailport=s, headport=n, color=gray, headlabel="      2434"]
+BB2430 [shape=record label="{8595: read-variable['ViewportMetrics',v5,-]|8596: read-property[v5,'refreshScrollValues',v4]|8597: \<variable-non-null-undef\>['ViewportMetrics']|8598: write-variable[v4,'refresh']*|8599: read-variable['ReactBrowserEventEmitter',v8,-]|8600: read-property[v8,'ReactEventListener',v7]|8601: \<variable-non-null-undef\>['ReactBrowserEventEmitter']|8602: read-property[v7,'monitorScrollValue',-]|8603: \<property-non-null-undef\>[v8,'ReactEventListener']|8604: read-variable['refresh',v9,-]}" ] 
+BB2430 -> BB2431 [tailport=s, headport=n, headlabel="      2431"]
+BB2430 -> BB2434 [tailport=s, headport=n, color=gray]
+BB2431 [shape=record label="{8605: call-ReactBrowserEventEmitter.ReactEventListener.monitorScrollValue [v7,'monitorScrollValue',v9,-]*}" ] 
+BB2431 -> BB2432 [tailport=s, headport=n, headlabel="      2432"]
+BB2431 -> BB2434 [tailport=s, headport=n, color=gray]
+BB2432 [shape=record label="{8606: constant[true,v10]|8607: write-variable[v10,'isMonitoringScrollValue']*}" ] 
+BB2432 -> BB2433 [tailport=s, headport=n]
+BB2433 [shape=record label="{8608: return[v1]}" ] 
+BB2434 [shape=record label="{8609: exceptional-return}" ] 
+//#$~ 4686
+}

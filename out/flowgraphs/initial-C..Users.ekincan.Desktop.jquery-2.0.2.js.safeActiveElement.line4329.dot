@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry277[shape=none,label=""];
+BB_entry277 -> BB4137 [tailport=s, headport=n, headlabel="    4137"]
+BB4137 [shape=record label="{12070: constant[undefined,v1]}" ] 
+BB4137 -> BB4138 [tailport=s, headport=n, headlabel="      4138"]
+BB4138 [shape=record label="{12071: read-variable['document',v2,-]|12072: read-property[v2,'activeElement',v1]|12073: \<variable-non-null-undef\>['document']}" ] 
+BB4138 -> BB4142 [tailport=s, headport=n, headlabel="      4142"]
+BB4138 -> BB4139 [tailport=s, headport=n, color=gray, headlabel="      4139"]
+BB4139 [shape=record label="{12074: catch[err,v2]|12075: begin-with[v2]}" ] 
+BB4139 -> BB4140 [tailport=s, headport=n, headlabel="      4140"]
+BB4139 -> BB4143 [tailport=s, headport=n, color=gray, headlabel="      4143"]
+BB4140 [shape=record label="{12076: end-with}" ] 
+BB4140 -> BB4142 [tailport=s, headport=n]
+BB4141 [shape=record label="{12077: end-with}" ] 
+BB4141 -> BB4143 [tailport=s, headport=n]
+BB4142 [shape=record label="{12078: return[v1]}" ] 
+BB4143 [shape=record label="{12079: exceptional-return}" ] 
+}

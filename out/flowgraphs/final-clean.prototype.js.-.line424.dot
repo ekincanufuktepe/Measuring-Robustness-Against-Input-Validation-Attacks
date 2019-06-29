@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry49[shape=none,label=""];
+BB_entry49 -> BB640 [tailport=s, headport=n, headlabel="    640"]
+BB640 [shape=record label="{2169: constant[undefined,v1]|2170: vardecl['a']}" ] 
+BB640 -> BB641 [tailport=s, headport=n, headlabel="      641"]
+BB641 [shape=record label="{2171: read-variable['merge',v4,v3]|2172: read-variable['args',v5,-]|2173: read-variable['arguments',v6,-]}" ] 
+BB641 -> BB642 [tailport=s, headport=n, headlabel="      642"]
+BB641 -> BB646 [tailport=s, headport=n, color=gray, headlabel="      646"]
+BB642 [shape=record label="{2174: call-merge [v3,v4,v5,v6,v2]}" ] 
+BB642 -> BB643 [tailport=s, headport=n, headlabel="      643"]
+BB642 -> BB646 [tailport=s, headport=n, color=gray]
+BB643 [shape=record label="{2175: write-variable[v2,'a']*|2176: read-variable['__method',v8,-]|2177: read-property[v8,'apply',-]|2178: \<variable-non-null-undef\>['__method']|2179: read-variable['this',v9,-]|2180: read-variable['a',v10,-]}" ] 
+BB643 -> BB644 [tailport=s, headport=n, headlabel="      644"]
+BB643 -> BB646 [tailport=s, headport=n, color=gray]
+BB644 [shape=record label="{2181: call-__method.apply [v8,'apply',v9,v10,v1]}" ] 
+BB644 -> BB645 [tailport=s, headport=n, headlabel="      645"]
+BB644 -> BB646 [tailport=s, headport=n, color=gray]
+BB645 [shape=record label="{2182: return[v1]}" ] 
+BB646 [shape=record label="{2183: exceptional-return}" ] 
+//#$~ 426
+}

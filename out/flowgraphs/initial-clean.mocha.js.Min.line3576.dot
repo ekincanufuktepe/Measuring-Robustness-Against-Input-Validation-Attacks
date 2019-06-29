@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry276[shape=none,label=""];
+BB_entry276 -> BB3104 [tailport=s, headport=n, headlabel="    3104"]
+BB3104 [shape=record label="{9999: constant[undefined,v1]}" ] 
+BB3104 -> BB3105 [tailport=s, headport=n, headlabel="      3105"]
+BB3105 [shape=record label="{10000: read-variable['Base',v3,-]|10001: read-property[v3,'call',-]|10002: \<variable-non-null-undef\>['Base']|10003: read-variable['this',v4,-]|10004: read-variable['runner',v5,-]}" ] 
+BB3105 -> BB3106 [tailport=s, headport=n, headlabel="      3106"]
+BB3105 -> BB3113 [tailport=s, headport=n, color=gray, headlabel="      3113"]
+BB3106 [shape=record label="{10005: call-Base.call [v3,'call',v4,v5,-]*}" ] 
+BB3106 -> BB3107 [tailport=s, headport=n, headlabel="      3107"]
+BB3106 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3107 [shape=record label="{10006: read-variable['runner',v7,-]|10007: read-property[v7,'on',-]|10008: \<variable-non-null-undef\>['runner']|10009: constant[\"start\",v8]|10010: function-expr[function ( ),v9]}" ] 
+BB3107 -> BB3108 [tailport=s, headport=n, headlabel="      3108"]
+BB3107 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3108 [shape=record label="{10011: call-runner.on [v7,'on',v8,v9,-]*}" ] 
+BB3108 -> BB3109 [tailport=s, headport=n, headlabel="      3109"]
+BB3108 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3109 [shape=record label="{10012: read-variable['runner',v11,-]|10013: read-property[v11,'on',-]|10014: \<variable-non-null-undef\>['runner']|10015: constant[\"end\",v12]|10016: read-variable['this',v16,-]|10017: read-property[v16,'epilogue',v15]|10018: read-property[v15,'bind',-]|10019: \<property-non-null-undef\>[v16,'epilogue']|10020: read-variable['this',v17,-]}" ] 
+BB3109 -> BB3110 [tailport=s, headport=n, headlabel="      3110"]
+BB3109 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3110 [shape=record label="{10021: call-this.epilogue.bind [v15,'bind',v17,v13]}" ] 
+BB3110 -> BB3111 [tailport=s, headport=n, headlabel="      3111"]
+BB3110 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3111 [shape=record label="{10022: call-runner.on [v11,'on',v12,v13,-]*}" ] 
+BB3111 -> BB3112 [tailport=s, headport=n, headlabel="      3112"]
+BB3111 -> BB3113 [tailport=s, headport=n, color=gray]
+BB3112 [shape=record label="{10023: return[v1]}" ] 
+BB3113 [shape=record label="{10024: exceptional-return}" ] 
+//#$~ 3586
+}

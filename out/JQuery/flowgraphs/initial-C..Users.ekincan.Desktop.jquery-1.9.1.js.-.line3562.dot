@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry208[shape=none,label=""];
+BB_entry208 -> BB3269 [tailport=s, headport=n, headlabel="    3269"]
+BB3269 [shape=record label="{9571: constant[undefined,v1]}" ] 
+BB3269 -> BB3270 [tailport=s, headport=n, headlabel="      3270"]
+BB3270 [shape=record label="{9572: constant[1.0,v5]|9573: read-variable['attaches',v6,-]|9574: +[v6,v7]|9575: -[v7,v5,v3]|9576: write-variable[v3,'attaches']|9577: constant[0.0,v4]|9578: ===[v3,v4,v2]|9579: if[v2](true-block:3271,false-block:3273)}" ] 
+BB3270 -> BB3271 [tailport=s, headport=n, headlabel="      3271"]
+BB3270 -> BB3273 [tailport=s, headport=n, headlabel="      3273"]
+BB3270 -> BB3274 [tailport=s, headport=n, color=gray, headlabel="      3274"]
+BB3271 [shape=record label="{9580: read-variable['document',v9,-]|9581: read-property[v9,'removeEventListener',-]|9582: \<variable-non-null-undef\>['document']|9583: read-variable['orig',v10,-]|9584: read-variable['handler',v11,-]|9585: constant[true,v12]}" ] 
+BB3271 -> BB3272 [tailport=s, headport=n, headlabel="      3272"]
+BB3271 -> BB3274 [tailport=s, headport=n, color=gray]
+BB3272 [shape=record label="{9586: call[v9,'removeEventListener',v10,v11,v12,-]*}" ] 
+BB3272 -> BB3273 [tailport=s, headport=n]
+BB3272 -> BB3274 [tailport=s, headport=n, color=gray]
+BB3273 [shape=record label="{9587: return[v1]}" ] 
+BB3274 [shape=record label="{9588: exceptional-return}" ] 
+}

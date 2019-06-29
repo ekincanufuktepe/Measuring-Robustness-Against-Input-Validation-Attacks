@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry179[shape=none,label=""];
+BB_entry179 -> BB1963 [tailport=s, headport=n, headlabel="    1963"]
+BB1963 [shape=record label="{4772: constant[undefined,v1]}" ] 
+BB1963 -> BB1964 [tailport=s, headport=n, headlabel="      1964"]
+BB1964 [shape=record label="{4773: read-variable['handlers',v5,-]|4774: read-variable['id',v6,-]|4775: read-property[v5,v6,v3]|4776: \<variable-non-null-undef\>['handlers']|4777: read-variable['handler',v7,-]|4778: read-property[v7,'i',v4]|4779: \<variable-non-null-undef\>['handler']|4780: delete-property[v3,v4,v2]*|4781: constant[\"removeEventListener\",v9]|4782: read-variable['element',v10,-]|4783: in[v9,v10,v8]|4784: if[v8](true-block:1965,false-block:1970)}" ] 
+BB1964 -> BB1965 [tailport=s, headport=n, headlabel="      1965"]
+BB1964 -> BB1970 [tailport=s, headport=n, headlabel="      1970"]
+BB1964 -> BB1971 [tailport=s, headport=n, color=gray, headlabel="      1971"]
+BB1965 [shape=record label="{4785: read-variable['element',v12,-]|4786: read-property[v12,'removeEventListener',-]|4787: \<variable-non-null-undef\>['element']|4788: read-variable['realEvent',v15,v14]|4789: read-variable['handler',v17,-]|4790: read-property[v17,'e',v16]|4791: \<variable-non-null-undef\>['handler']}" ] 
+BB1965 -> BB1966 [tailport=s, headport=n, headlabel="      1966"]
+BB1965 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1966 [shape=record label="{4792: call-realEvent [v14,v15,v16,v13]}" ] 
+BB1966 -> BB1967 [tailport=s, headport=n, headlabel="      1967"]
+BB1966 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1967 [shape=record label="{4793: read-variable['handler',v19,-]|4794: read-property[v19,'proxy',v18]|4795: \<variable-non-null-undef\>['handler']|4796: read-variable['eventCapture',v22,v21]|4797: read-variable['handler',v23,-]|4798: read-variable['capture',v24,-]}" ] 
+BB1967 -> BB1968 [tailport=s, headport=n, headlabel="      1968"]
+BB1967 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1968 [shape=record label="{4799: call-eventCapture [v21,v22,v23,v24,v20]}" ] 
+BB1968 -> BB1969 [tailport=s, headport=n, headlabel="      1969"]
+BB1968 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1969 [shape=record label="{4800: call-element.removeEventListener [v12,'removeEventListener',v13,v18,v20,-]*}" ] 
+BB1969 -> BB1970 [tailport=s, headport=n]
+BB1969 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1970 [shape=record label="{4801: return[v1]}" ] 
+BB1971 [shape=record label="{4802: exceptional-return}" ] 
+//#$~ 967
+}

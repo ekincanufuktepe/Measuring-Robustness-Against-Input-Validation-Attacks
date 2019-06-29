@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry630[shape=none,label=""];
+BB_entry630 -> BB9101 [tailport=s, headport=n, headlabel="    9101"]
+BB9101 [shape=record label="{33307: constant[undefined,v1]|33308: vardecl['p']}" ] 
+BB9101 -> BB9102 [tailport=s, headport=n, headlabel="      9102"]
+BB9102 [shape=record label="{33309: read-variable['MochiKit',v3,-]|33310: read-property[v3,'Position',v2]|33311: \<variable-non-null-undef\>['MochiKit']|33312: write-variable[v2,'p']*|33313: read-variable['p',v5,-]|33314: read-property[v5,'prepare',-]|33315: \<variable-non-null-undef\>['p']}" ] 
+BB9102 -> BB9103 [tailport=s, headport=n, headlabel="      9103"]
+BB9102 -> BB9107 [tailport=s, headport=n, color=gray, headlabel="      9107"]
+BB9103 [shape=record label="{33316: call-p.prepare [v5,'prepare',-]*}" ] 
+BB9103 -> BB9104 [tailport=s, headport=n, headlabel="      9104"]
+BB9103 -> BB9107 [tailport=s, headport=n, color=gray]
+BB9104 [shape=record label="{33317: read-variable['window',v7,-]|33318: read-property[v7,'scrollTo',-]|33319: \<variable-non-null-undef\>['window']|33320: read-variable['p',v10,-]|33321: read-property[v10,'windowOffset',v9]|33322: \<variable-non-null-undef\>['p']|33323: read-property[v9,'x',v8]|33324: \<property-non-null-undef\>[v10,'windowOffset']|33325: read-variable['this',v14,-]|33326: read-property[v14,'scrollStart',v12]|33327: read-variable['_6b2',v15,-]|33328: read-variable['this',v17,-]|33329: read-property[v17,'delta',v16]|33330: *[v15,v16,v13]|33331: +[v12,v13,v11]}" ] 
+BB9104 -> BB9105 [tailport=s, headport=n, headlabel="      9105"]
+BB9104 -> BB9107 [tailport=s, headport=n, color=gray]
+BB9105 [shape=record label="{33332: call-window.scrollTo [v7,'scrollTo',v8,v11,-]*}" ] 
+BB9105 -> BB9106 [tailport=s, headport=n, headlabel="      9106"]
+BB9105 -> BB9107 [tailport=s, headport=n, color=gray]
+BB9106 [shape=record label="{33333: return[v1]}" ] 
+BB9107 [shape=record label="{33334: exceptional-return}" ] 
+//#$~ 6504
+}

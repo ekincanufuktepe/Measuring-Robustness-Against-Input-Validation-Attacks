@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry538[shape=none,label=""];
+BB_entry538 -> BB6555 [tailport=s, headport=n, headlabel="    6555"]
+BB6555 [shape=record label="{23042: constant[undefined,v1]}" ] 
+BB6555 -> BB6556 [tailport=s, headport=n, headlabel="      6556"]
+BB6556 [shape=record label="{23043: read-variable['deprecate',v3,v2]}" ] 
+BB6556 -> BB6557 [tailport=s, headport=n, headlabel="      6557"]
+BB6556 -> BB6561 [tailport=s, headport=n, color=gray, headlabel="      6561"]
+BB6557 [shape=record label="{23044: call-deprecate [v2,v3,-]*}" ] 
+BB6557 -> BB6558 [tailport=s, headport=n, headlabel="      6558"]
+BB6557 -> BB6561 [tailport=s, headport=n, color=gray]
+BB6558 [shape=record label="{23045: read-variable['get',v5,v4]|23046: read-variable['this',v6,-]|23047: read-variable['newKey',v7,-]}" ] 
+BB6558 -> BB6559 [tailport=s, headport=n, headlabel="      6559"]
+BB6558 -> BB6561 [tailport=s, headport=n, color=gray]
+BB6559 [shape=record label="{23048: call-get [v4,v5,v6,v7,v1]}" ] 
+BB6559 -> BB6560 [tailport=s, headport=n, headlabel="      6560"]
+BB6559 -> BB6561 [tailport=s, headport=n, color=gray]
+BB6560 [shape=record label="{23049: return[v1]}" ] 
+BB6561 [shape=record label="{23050: exceptional-return}" ] 
+//#$~ 12251
+}

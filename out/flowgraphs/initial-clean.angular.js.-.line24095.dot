@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1159[shape=none,label=""];
+BB_entry1159 -> BB14526 [tailport=s, headport=n, headlabel="    14526"]
+BB14526 [shape=record label="{37697: constant[undefined,v1]}" ] 
+BB14526 -> BB14527 [tailport=s, headport=n, headlabel="      14527"]
+BB14527 [shape=record label="{37698: read-variable['thisChangeId',v3,-]|37699: read-variable['changeCounter',v4,-]|37700: ===[v3,v4,v2]|37701: if[v2](true-block:14528,false-block:14532)}" ] 
+BB14527 -> BB14528 [tailport=s, headport=n, headlabel="      14528"]
+BB14527 -> BB14532 [tailport=s, headport=n, headlabel="      14532"]
+BB14527 -> BB14533 [tailport=s, headport=n, color=gray, headlabel="      14533"]
+BB14528 [shape=record label="{37702: read-variable['cleanupLastIncludeContent',v6,v5]}" ] 
+BB14528 -> BB14529 [tailport=s, headport=n, headlabel="      14529"]
+BB14528 -> BB14533 [tailport=s, headport=n, color=gray]
+BB14529 [shape=record label="{37703: call-cleanupLastIncludeContent [v5,v6,-]*}" ] 
+BB14529 -> BB14530 [tailport=s, headport=n, headlabel="      14530"]
+BB14529 -> BB14533 [tailport=s, headport=n, color=gray]
+BB14530 [shape=record label="{37704: read-variable['scope',v8,-]|37705: read-property[v8,'$emit',-]|37706: \<variable-non-null-undef\>['scope']|37707: constant[\"$includeContentError\",v9]|37708: read-variable['src',v10,-]}" ] 
+BB14530 -> BB14531 [tailport=s, headport=n, headlabel="      14531"]
+BB14530 -> BB14533 [tailport=s, headport=n, color=gray]
+BB14531 [shape=record label="{37709: call-scope.$emit [v8,'$emit',v9,v10,-]*}" ] 
+BB14531 -> BB14532 [tailport=s, headport=n]
+BB14531 -> BB14533 [tailport=s, headport=n, color=gray]
+BB14532 [shape=record label="{37710: return[v1]}" ] 
+BB14533 [shape=record label="{37711: exceptional-return}" ] 
+//#$~ 24098
+}

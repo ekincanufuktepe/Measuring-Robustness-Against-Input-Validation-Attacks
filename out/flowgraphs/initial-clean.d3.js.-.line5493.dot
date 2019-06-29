@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry859[shape=none,label=""];
+BB_entry859 -> BB9359 [tailport=s, headport=n, headlabel="    9359"]
+BB9359 [shape=record label="{30952: constant[undefined,v1]}" ] 
+BB9359 -> BB9360 [tailport=s, headport=n, headlabel="      9360"]
+BB9360 [shape=record label="{30953: read-variable['d3_geom_voronoi',v8,v7]|30954: read-variable['sites',v11,v10]|30955: read-variable['data',v12,-]}" ] 
+BB9360 -> BB9361 [tailport=s, headport=n, headlabel="      9361"]
+BB9360 -> BB9368 [tailport=s, headport=n, color=gray, headlabel="      9368"]
+BB9361 [shape=record label="{30956: call-sites [v10,v11,v12,v9]}" ] 
+BB9361 -> BB9362 [tailport=s, headport=n, headlabel="      9362"]
+BB9361 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9362 [shape=record label="{30957: call-d3_geom_voronoi [v7,v8,v9,v6]}" ] 
+BB9362 -> BB9363 [tailport=s, headport=n, headlabel="      9363"]
+BB9362 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9363 [shape=record label="{30958: read-property[v6,'edges',v5]|30959: read-property[v5,'filter',-]|30960: \<property-non-null-undef\>[v6,'edges']|30961: function-expr[function ( edge ),v13]}" ] 
+BB9363 -> BB9364 [tailport=s, headport=n, headlabel="      9364"]
+BB9363 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9364 [shape=record label="{30962: call-null [v5,'filter',v13,v3]}" ] 
+BB9364 -> BB9365 [tailport=s, headport=n, headlabel="      9365"]
+BB9364 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9365 [shape=record label="{30963: read-property[v3,'map',-]|30964: function-expr[function ( edge ),v14]}" ] 
+BB9365 -> BB9366 [tailport=s, headport=n, headlabel="      9366"]
+BB9365 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9366 [shape=record label="{30965: call-null [v3,'map',v14,v1]}" ] 
+BB9366 -> BB9367 [tailport=s, headport=n, headlabel="      9367"]
+BB9366 -> BB9368 [tailport=s, headport=n, color=gray]
+BB9367 [shape=record label="{30966: return[v1]}" ] 
+BB9368 [shape=record label="{30967: exceptional-return}" ] 
+//#$~ 5499
+}

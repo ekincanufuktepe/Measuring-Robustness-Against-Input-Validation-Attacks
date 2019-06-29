@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry113[shape=none,label=""];
+BB_entry113 -> BB1244 [tailport=s, headport=n, headlabel="    1244"]
+BB1244 [shape=record label="{3671: constant[undefined,v1]|3672: vardecl['layoutOptions']}" ] 
+BB1244 -> BB1245 [tailport=s, headport=n, headlabel="      1245"]
+BB1245 [shape=record label="{3673: read-variable['this',v4,-]|3674: read-property[v4,'layout',v3]|3675: read-property[v3,'options',v2]|3676: \<property-non-null-undef\>[v4,'layout']|3677: write-variable[v2,'layoutOptions']*|3678: read-variable['layoutOptions',v6,-]|3679: read-property[v6,'percentPosition',v5]|3680: \<variable-non-null-undef\>['layoutOptions']|3681: if[v5](true-block:1246,false-block:1247)}" ] 
+BB1245 -> BB1247 [tailport=s, headport=n, headlabel="      1247"]
+BB1245 -> BB1246 [tailport=s, headport=n, headlabel="      1246"]
+BB1245 -> BB1251 [tailport=s, headport=n, color=gray, headlabel="      1251"]
+BB1246 [shape=record label="{3682: read-variable['layoutOptions',v7,-]|3683: read-property[v7,'isHorizontal',v5]|3684: \<variable-non-null-undef\>['layoutOptions']}" ] 
+BB1246 -> BB1247 [tailport=s, headport=n]
+BB1246 -> BB1251 [tailport=s, headport=n, color=gray]
+BB1247 [shape=record label="{3685: if[v5](true-block:1248,false-block:1249)}" ] 
+BB1247 -> BB1248 [tailport=s, headport=n, headlabel="      1248"]
+BB1247 -> BB1249 [tailport=s, headport=n, headlabel="      1249"]
+BB1248 [shape=record label="{3686: read-variable['y',v11,-]|3687: read-variable['this',v15,-]|3688: read-property[v15,'layout',v14]|3689: read-property[v14,'size',v13]|3690: \<property-non-null-undef\>[v15,'layout']|3691: read-property[v13,'height',v12]|3692: \<property-non-null-undef\>[v14,'size']|3693: /[v11,v12,v9]|3694: constant[100.0,v10]|3695: *[v9,v10,v7]|3696: constant[\"%\",v8]|3697: +[v7,v8,v1]}" ] 
+BB1248 -> BB1250 [tailport=s, headport=n, headlabel="      1250"]
+BB1248 -> BB1251 [tailport=s, headport=n, color=gray]
+BB1249 [shape=record label="{3698: read-variable['y',v7,-]|3699: constant[\"px\",v8]|3700: +[v7,v8,v1]}" ] 
+BB1249 -> BB1250 [tailport=s, headport=n]
+BB1249 -> BB1251 [tailport=s, headport=n, color=gray]
+BB1250 [shape=record label="{3701: return[v1]}" ] 
+BB1251 [shape=record label="{3702: exceptional-return}" ] 
+//#$~ 1699
+}

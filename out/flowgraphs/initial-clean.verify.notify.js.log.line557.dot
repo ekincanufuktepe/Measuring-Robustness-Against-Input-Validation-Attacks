@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry41[shape=none,label=""];
+BB_entry41 -> BB637 [tailport=s, headport=n, headlabel="    637"]
+BB637 [shape=record label="{2165: constant[undefined,v1]}" ] 
+BB637 -> BB638 [tailport=s, headport=n, headlabel="      638"]
+BB638 [shape=record label="{2166: read-variable['this',v3,-]|2167: read-property[v3,'suppressLog',v2]|2168: if[v2](true-block:639,false-block:640)}" ] 
+BB638 -> BB639 [tailport=s, headport=n, headlabel="      639"]
+BB638 -> BB640 [tailport=s, headport=n, headlabel="      640"]
+BB638 -> BB643 [tailport=s, headport=n, color=gray, headlabel="      643"]
+BB639 [shape=record label="{2169: constant[undefined,v1]}" ] 
+BB639 -> BB642 [tailport=s, headport=n, headlabel="      642"]
+BB640 [shape=record label="{2170: read-variable['cons',v5,v4]|2171: constant[\"log\",v6]|2172: read-variable['this',v7,-]|2173: read-variable['arguments',v8,-]}" ] 
+BB640 -> BB641 [tailport=s, headport=n, headlabel="      641"]
+BB640 -> BB643 [tailport=s, headport=n, color=gray]
+BB641 [shape=record label="{2174: call-cons [v4,v5,v6,v7,v8,-]*}" ] 
+BB641 -> BB642 [tailport=s, headport=n]
+BB641 -> BB643 [tailport=s, headport=n, color=gray]
+BB642 [shape=record label="{2175: return[v1]}" ] 
+BB643 [shape=record label="{2176: exceptional-return}" ] 
+//#$~ 560
+}

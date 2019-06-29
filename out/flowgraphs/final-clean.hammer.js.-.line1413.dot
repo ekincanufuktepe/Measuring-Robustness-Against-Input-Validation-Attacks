@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry76[shape=none,label=""];
+BB_entry76 -> BB867 [tailport=s, headport=n, headlabel="    867"]
+BB867 [shape=record label="{2732: constant[undefined,v1]}" ] 
+BB867 -> BB868 [tailport=s, headport=n, headlabel="      868"]
+BB868 [shape=record label="{2733: read-variable['this',v4,-]|2734: read-property[v4,'canEmit',-]}" ] 
+BB868 -> BB869 [tailport=s, headport=n, headlabel="      869"]
+BB868 -> BB875 [tailport=s, headport=n, color=gray, headlabel="      875"]
+BB869 [shape=record label="{2735: call-this.canEmit [v4,'canEmit',v2]}" ] 
+BB869 -> BB870 [tailport=s, headport=n, headlabel="      870"]
+BB869 -> BB875 [tailport=s, headport=n, color=gray]
+BB870 [shape=record label="{2736: if[v2](true-block:871,false-block:873)}" ] 
+BB870 -> BB871 [tailport=s, headport=n, headlabel="      871"]
+BB870 -> BB873 [tailport=s, headport=n, headlabel="      873"]
+BB871 [shape=record label="{2737: read-variable['this',v6,-]|2738: read-property[v6,'emit',-]|2739: read-variable['input',v7,-]}" ] 
+BB871 -> BB872 [tailport=s, headport=n, headlabel="      872"]
+BB871 -> BB875 [tailport=s, headport=n, color=gray]
+BB872 [shape=record label="{2740: call-this.emit [v6,'emit',v7,v1]}" ] 
+BB872 -> BB874 [tailport=s, headport=n, headlabel="      874"]
+BB872 -> BB875 [tailport=s, headport=n, color=gray]
+BB873 [shape=record label="{2741: read-variable['this',v6,-]|2742: read-variable['STATE_FAILED',v5,-]|2743: write-property[v6,'state',v5]*}" ] 
+BB873 -> BB874 [tailport=s, headport=n]
+BB873 -> BB875 [tailport=s, headport=n, color=gray]
+BB874 [shape=record label="{2744: return[v1]}" ] 
+BB875 [shape=record label="{2745: exceptional-return}" ] 
+//#$~ 1418
+}

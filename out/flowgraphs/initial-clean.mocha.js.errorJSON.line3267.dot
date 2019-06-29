@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry246[shape=none,label=""];
+BB_entry246 -> BB2808 [tailport=s, headport=n, headlabel="    2808"]
+BB2808 [shape=record label="{9095: constant[undefined,v1]|9096: vardecl['res']}" ] 
+BB2808 -> BB2809 [tailport=s, headport=n, headlabel="      2809"]
+BB2809 [shape=record label="{9097: new[v2]|9098: write-variable[v2,'res']*|9099: read-variable['Object',v6,-]|9100: read-property[v6,'getOwnPropertyNames',-]|9101: \<variable-non-null-undef\>['Object']|9102: read-variable['err',v7,-]}" ] 
+BB2809 -> BB2810 [tailport=s, headport=n, headlabel="      2810"]
+BB2809 -> BB2815 [tailport=s, headport=n, color=gray, headlabel="      2815"]
+BB2810 [shape=record label="{9103: call-Object.getOwnPropertyNames [v6,'getOwnPropertyNames',v7,v4]}" ] 
+BB2810 -> BB2811 [tailport=s, headport=n, headlabel="      2811"]
+BB2810 -> BB2815 [tailport=s, headport=n, color=gray]
+BB2811 [shape=record label="{9104: read-property[v4,'forEach',-]|9105: function-expr[function ( key ),v8]|9106: read-variable['err',v9,-]}" ] 
+BB2811 -> BB2812 [tailport=s, headport=n, headlabel="      2812"]
+BB2811 -> BB2815 [tailport=s, headport=n, color=gray]
+BB2812 [shape=record label="{9107: call-null [v4,'forEach',v8,v9,-]*}" ] 
+BB2812 -> BB2813 [tailport=s, headport=n, headlabel="      2813"]
+BB2812 -> BB2815 [tailport=s, headport=n, color=gray]
+BB2813 [shape=record label="{9108: read-variable['res',v1,-]}" ] 
+BB2813 -> BB2814 [tailport=s, headport=n, headlabel="      2814"]
+BB2813 -> BB2815 [tailport=s, headport=n, color=gray]
+BB2814 [shape=record label="{9109: return[v1]}" ] 
+BB2815 [shape=record label="{9110: exceptional-return}" ] 
+//#$~ 3272
+}

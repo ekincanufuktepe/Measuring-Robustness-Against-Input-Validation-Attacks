@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry2057[shape=none,label=""];
+BB_entry2057 -> BB23503 [tailport=s, headport=n, headlabel="    23503"]
+BB23503 [shape=record label="{77982: constant[undefined,v1]|77983: vardecl['parentView']}" ] 
+BB23503 -> BB23504 [tailport=s, headport=n, headlabel="      23504"]
+BB23504 [shape=record label="{77984: read-variable['this',v3,-]|77985: read-property[v3,'isVirtual',v2]|77986: if[v2](true-block:23505,false-block:23510)}" ] 
+BB23504 -> BB23505 [tailport=s, headport=n, headlabel="      23505"]
+BB23504 -> BB23510 [tailport=s, headport=n, headlabel="      23510"]
+BB23504 -> BB23511 [tailport=s, headport=n, color=gray, headlabel="      23511"]
+BB23505 [shape=record label="{77987: read-variable['get',v6,v5]|77988: read-variable['this',v7,-]|77989: constant[\"parentView\",v8]}" ] 
+BB23505 -> BB23506 [tailport=s, headport=n, headlabel="      23506"]
+BB23505 -> BB23511 [tailport=s, headport=n, color=gray]
+BB23506 [shape=record label="{77990: call-get [v5,v6,v7,v8,v4]}" ] 
+BB23506 -> BB23507 [tailport=s, headport=n, headlabel="      23507"]
+BB23506 -> BB23511 [tailport=s, headport=n, color=gray]
+BB23507 [shape=record label="{77991: write-variable[v4,'parentView']*|77992: read-variable['parentView',v9,-]|77993: if[v9](true-block:23508,false-block:23510)}" ] 
+BB23507 -> BB23508 [tailport=s, headport=n, headlabel="      23508"]
+BB23507 -> BB23510 [tailport=s, headport=n]
+BB23507 -> BB23511 [tailport=s, headport=n, color=gray]
+BB23508 [shape=record label="{77994: read-variable['propertyDidChange',v11,v10]|77995: read-variable['parentView',v12,-]|77996: constant[\"childViews\",v13]}" ] 
+BB23508 -> BB23509 [tailport=s, headport=n, headlabel="      23509"]
+BB23508 -> BB23511 [tailport=s, headport=n, color=gray]
+BB23509 [shape=record label="{77997: call-propertyDidChange [v10,v11,v12,v13,-]*}" ] 
+BB23509 -> BB23510 [tailport=s, headport=n]
+BB23509 -> BB23511 [tailport=s, headport=n, color=gray]
+BB23510 [shape=record label="{77998: return[v1]}" ] 
+BB23511 [shape=record label="{77999: exceptional-return}" ] 
+//#$~ 44558
+}

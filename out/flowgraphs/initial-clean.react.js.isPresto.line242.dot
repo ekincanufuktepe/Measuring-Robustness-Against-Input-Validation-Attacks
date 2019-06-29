@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB166 [tailport=s, headport=n, headlabel="    166"]
+BB166 [shape=record label="{625: constant[undefined,v1]|626: vardecl['opera']}" ] 
+BB166 -> BB167 [tailport=s, headport=n, headlabel="      167"]
+BB167 [shape=record label="{627: read-variable['window',v3,-]|628: read-property[v3,'opera',v2]|629: \<variable-non-null-undef\>['window']|630: write-variable[v2,'opera']*|631: typeof['opera',v4]|632: constant[\"object\",v5]|633: ===[v4,v5,v1]|634: if[v1](true-block:168,false-block:174)}" ] 
+BB167 -> BB174 [tailport=s, headport=n, headlabel="      174"]
+BB167 -> BB168 [tailport=s, headport=n, headlabel="      168"]
+BB167 -> BB175 [tailport=s, headport=n, color=gray, headlabel="      175"]
+BB168 [shape=record label="{635: read-variable['opera',v9,-]|636: read-property[v9,'version',v8]|637: \<variable-non-null-undef\>['opera']|638: typeof[v8,v6]|639: constant[\"function\",v7]|640: ===[v6,v7,v1]|641: if[v1](true-block:169,false-block:174)}" ] 
+BB168 -> BB174 [tailport=s, headport=n]
+BB168 -> BB169 [tailport=s, headport=n, headlabel="      169"]
+BB168 -> BB175 [tailport=s, headport=n, color=gray]
+BB169 [shape=record label="{642: read-variable['parseInt',v13,v12]|643: read-variable['opera',v16,-]|644: read-property[v16,'version',-]|645: \<variable-non-null-undef\>['opera']}" ] 
+BB169 -> BB170 [tailport=s, headport=n, headlabel="      170"]
+BB169 -> BB175 [tailport=s, headport=n, color=gray]
+BB170 [shape=record label="{646: call-opera.version [v16,'version',v14]}" ] 
+BB170 -> BB171 [tailport=s, headport=n, headlabel="      171"]
+BB170 -> BB175 [tailport=s, headport=n, color=gray]
+BB171 [shape=record label="{647: constant[10.0,v17]}" ] 
+BB171 -> BB172 [tailport=s, headport=n, headlabel="      172"]
+BB172 [shape=record label="{648: call-parseInt [v12,v13,v14,v17,v10]}" ] 
+BB172 -> BB173 [tailport=s, headport=n, headlabel="      173"]
+BB172 -> BB175 [tailport=s, headport=n, color=gray]
+BB173 [shape=record label="{649: constant[12.0,v11]|650: \<=[v10,v11,v1]}" ] 
+BB173 -> BB174 [tailport=s, headport=n]
+BB173 -> BB175 [tailport=s, headport=n, color=gray]
+BB174 [shape=record label="{651: return[v1]}" ] 
+BB175 [shape=record label="{652: exceptional-return}" ] 
+//#$~ 247
+}

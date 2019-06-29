@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry445[shape=none,label=""];
+BB_entry445 -> BB5033 [tailport=s, headport=n, headlabel="    5033"]
+BB5033 [shape=record label="{15574: constant[undefined,v1]}" ] 
+BB5033 -> BB5034 [tailport=s, headport=n, headlabel="      5034"]
+BB5034 [shape=record label="{15575: read-variable['debug',v3,v2]|15576: constant[\"file %s\",v4]|15577: read-variable['file',v5,-]}" ] 
+BB5034 -> BB5035 [tailport=s, headport=n, headlabel="      5035"]
+BB5034 -> BB5039 [tailport=s, headport=n, color=gray, headlabel="      5039"]
+BB5035 [shape=record label="{15578: call-debug [v2,v3,v4,v5,-]*}" ] 
+BB5035 -> BB5036 [tailport=s, headport=n, headlabel="      5036"]
+BB5035 -> BB5039 [tailport=s, headport=n, color=gray]
+BB5036 [shape=record label="{15579: read-variable['fs',v7,-]|15580: read-property[v7,'watchFile',-]|15581: \<variable-non-null-undef\>['fs']|15582: read-variable['file',v8,-]|15583: read-variable['options',v9,-]|15584: function-expr[function ( curr prev ),v10]}" ] 
+BB5036 -> BB5037 [tailport=s, headport=n, headlabel="      5037"]
+BB5036 -> BB5039 [tailport=s, headport=n, color=gray]
+BB5037 [shape=record label="{15585: call-fs.watchFile [v7,'watchFile',v8,v9,v10,-]*}" ] 
+BB5037 -> BB5038 [tailport=s, headport=n, headlabel="      5038"]
+BB5037 -> BB5039 [tailport=s, headport=n, color=gray]
+BB5038 [shape=record label="{15586: return[v1]}" ] 
+BB5039 [shape=record label="{15587: exceptional-return}" ] 
+//#$~ 5861
+}

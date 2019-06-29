@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry445[shape=none,label=""];
+BB_entry445 -> BB8001 [tailport=s, headport=n, headlabel="    8001"]
+BB8001 [shape=record label="{24044: constant[undefined,v1]}" ] 
+BB8001 -> BB8002 [tailport=s, headport=n, headlabel="      8002"]
+BB8002 [shape=record label="{24045: read-variable['c',v3,v2]|24046: read-variable['node',v5,-]|24047: read-property[v5,'test',v4]|24048: \<variable-non-null-undef\>['node']|24049: read-variable['st',v6,-]|24050: constant[\"Expression\",v7]}" ] 
+BB8002 -> BB8003 [tailport=s, headport=n, headlabel="      8003"]
+BB8002 -> BB8009 [tailport=s, headport=n, color=gray, headlabel="      8009"]
+BB8003 [shape=record label="{24051: call-c [v2,v3,v4,v6,v7,-]*}" ] 
+BB8003 -> BB8004 [tailport=s, headport=n, headlabel="      8004"]
+BB8003 -> BB8009 [tailport=s, headport=n, color=gray]
+BB8004 [shape=record label="{24052: read-variable['c',v9,v8]|24053: read-variable['node',v11,-]|24054: read-property[v11,'consequent',v10]|24055: \<variable-non-null-undef\>['node']|24056: read-variable['st',v12,-]|24057: constant[\"Expression\",v13]}" ] 
+BB8004 -> BB8005 [tailport=s, headport=n, headlabel="      8005"]
+BB8004 -> BB8009 [tailport=s, headport=n, color=gray]
+BB8005 [shape=record label="{24058: call-c [v8,v9,v10,v12,v13,-]*}" ] 
+BB8005 -> BB8006 [tailport=s, headport=n, headlabel="      8006"]
+BB8005 -> BB8009 [tailport=s, headport=n, color=gray]
+BB8006 [shape=record label="{24059: read-variable['c',v15,v14]|24060: read-variable['node',v17,-]|24061: read-property[v17,'alternate',v16]|24062: \<variable-non-null-undef\>['node']|24063: read-variable['st',v18,-]|24064: constant[\"Expression\",v19]}" ] 
+BB8006 -> BB8007 [tailport=s, headport=n, headlabel="      8007"]
+BB8006 -> BB8009 [tailport=s, headport=n, color=gray]
+BB8007 [shape=record label="{24065: call-c [v14,v15,v16,v18,v19,-]*}" ] 
+BB8007 -> BB8008 [tailport=s, headport=n, headlabel="      8008"]
+BB8007 -> BB8009 [tailport=s, headport=n, color=gray]
+BB8008 [shape=record label="{24066: return[v1]}" ] 
+BB8009 [shape=record label="{24067: exceptional-return}" ] 
+//#$~ 7393
+}

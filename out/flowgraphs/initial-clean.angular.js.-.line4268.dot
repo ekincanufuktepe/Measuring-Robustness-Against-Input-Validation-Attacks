@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry226[shape=none,label=""];
+BB_entry226 -> BB2789 [tailport=s, headport=n, headlabel="    2789"]
+BB2789 [shape=record label="{6713: constant[undefined,v1]|6714: vardecl['provider']}" ] 
+BB2789 -> BB2790 [tailport=s, headport=n, headlabel="      2790"]
+BB2790 [shape=record label="{6715: read-variable['providerInjector',v4,-]|6716: read-property[v4,'get',-]|6717: \<variable-non-null-undef\>['providerInjector']|6718: read-variable['serviceName',v6,-]|6719: read-variable['providerSuffix',v7,-]|6720: +[v6,v7,v5]|6721: read-variable['caller',v8,-]}" ] 
+BB2790 -> BB2791 [tailport=s, headport=n, headlabel="      2791"]
+BB2790 -> BB2795 [tailport=s, headport=n, color=gray, headlabel="      2795"]
+BB2791 [shape=record label="{6722: call-providerInjector.get [v4,'get',v5,v8,v2]}" ] 
+BB2791 -> BB2792 [tailport=s, headport=n, headlabel="      2792"]
+BB2791 -> BB2795 [tailport=s, headport=n, color=gray]
+BB2792 [shape=record label="{6723: write-variable[v2,'provider']*|6724: read-variable['instanceInjector',v10,-]|6725: read-property[v10,'invoke',-]|6726: \<variable-non-null-undef\>['instanceInjector']|6727: read-variable['provider',v12,-]|6728: read-property[v12,'$get',v11]|6729: \<variable-non-null-undef\>['provider']|6730: read-variable['provider',v13,-]|6731: read-variable['undefined',v14,-]|6732: read-variable['serviceName',v15,-]}" ] 
+BB2792 -> BB2793 [tailport=s, headport=n, headlabel="      2793"]
+BB2792 -> BB2795 [tailport=s, headport=n, color=gray]
+BB2793 [shape=record label="{6733: call-instanceInjector.invoke [v10,'invoke',v11,v13,v14,v15,v1]}" ] 
+BB2793 -> BB2794 [tailport=s, headport=n, headlabel="      2794"]
+BB2793 -> BB2795 [tailport=s, headport=n, color=gray]
+BB2794 [shape=record label="{6734: return[v1]}" ] 
+BB2795 [shape=record label="{6735: exceptional-return}" ] 
+//#$~ 4270
+}

@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB47 [tailport=s, headport=n, headlabel="    47"]
+BB47 [shape=record label="{153: constant[undefined,v1]}" ] 
+BB47 -> BB48 [tailport=s, headport=n, headlabel="      48"]
+BB48 [shape=record label="{154: read-variable['o',v1,-]|155: if[v1](true-block:49,false-block:51)}" ] 
+BB48 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB48 -> BB49 [tailport=s, headport=n, headlabel="      49"]
+BB48 -> BB52 [tailport=s, headport=n, color=gray, headlabel="      52"]
+BB49 [shape=record label="{156: read-variable['o',v2,-]|157: read-property[v2,'hasOwnProperty',v1]|158: \<variable-non-null-undef\>['o']|159: if[v1](true-block:50,false-block:51)}" ] 
+BB49 -> BB51 [tailport=s, headport=n]
+BB49 -> BB50 [tailport=s, headport=n, headlabel="      50"]
+BB49 -> BB52 [tailport=s, headport=n, color=gray]
+BB50 [shape=record label="{160: read-variable['o',v3,-]|161: read-variable['type',v4,-]|162: instanceof[v3,v4,v1]}" ] 
+BB50 -> BB51 [tailport=s, headport=n]
+BB50 -> BB52 [tailport=s, headport=n, color=gray]
+BB51 [shape=record label="{163: return[v1]}" ] 
+BB52 [shape=record label="{164: exceptional-return}" ] 
+//#$~ 14
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry122[shape=none,label=""];
+BB_entry122 -> BB1307 [tailport=s, headport=n, headlabel="    1307"]
+BB1307 [shape=record label="{4076: constant[undefined,v1]}" ] 
+BB1307 -> BB1308 [tailport=s, headport=n, headlabel="      1308"]
+BB1308 [shape=record label="{4077: read-variable['this',v4,-]|4078: read-property[v4,'session',v3]|4079: read-variable['force',v5,-]|4080: if[v5](true-block:1309,false-block:1310)}" ] 
+BB1308 -> BB1309 [tailport=s, headport=n, headlabel="      1309"]
+BB1308 -> BB1310 [tailport=s, headport=n, headlabel="      1310"]
+BB1308 -> BB1313 [tailport=s, headport=n, color=gray, headlabel="      1313"]
+BB1309 [shape=record label="{4081: read-variable['FORCED_STOP',v2,-]}" ] 
+BB1309 -> BB1311 [tailport=s, headport=n, headlabel="      1311"]
+BB1309 -> BB1313 [tailport=s, headport=n, color=gray]
+BB1310 [shape=record label="{4082: read-variable['STOP',v2,-]}" ] 
+BB1310 -> BB1311 [tailport=s, headport=n]
+BB1310 -> BB1313 [tailport=s, headport=n, color=gray]
+BB1311 [shape=record label="{4083: write-property[v3,'stopped',v2]|4084: \<property-non-null-undef\>[v4,'session']*}" ] 
+BB1311 -> BB1312 [tailport=s, headport=n, headlabel="      1312"]
+BB1311 -> BB1313 [tailport=s, headport=n, color=gray]
+BB1312 [shape=record label="{4085: return[v1]}" ] 
+BB1313 [shape=record label="{4086: exceptional-return}" ] 
+//#$~ 2182
+}

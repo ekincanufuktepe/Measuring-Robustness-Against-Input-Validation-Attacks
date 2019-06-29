@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry211[shape=none,label=""];
+BB_entry211 -> BB2630 [tailport=s, headport=n, headlabel="    2630"]
+BB2630 [shape=record label="{6359: constant[undefined,v1]}" ] 
+BB2630 -> BB2631 [tailport=s, headport=n, headlabel="      2631"]
+BB2631 [shape=record label="{6360: read-variable['node',v3,-]|6361: read-property[v3,'attr',v2]|6362: \<variable-non-null-undef\>['node']|6363: if[v2](true-block:2632,false-block:2633)}" ] 
+BB2631 -> BB2632 [tailport=s, headport=n, headlabel="      2632"]
+BB2631 -> BB2633 [tailport=s, headport=n, headlabel="      2633"]
+BB2631 -> BB2636 [tailport=s, headport=n, color=gray, headlabel="      2636"]
+BB2632 [shape=record label="{6364: read-variable['node',v5,-]|6365: constant[0.0,v6]|6366: read-property[v5,v6,v4]|6367: \<variable-non-null-undef\>['node']|6368: write-variable[v4,'node']*}" ] 
+BB2632 -> BB2633 [tailport=s, headport=n]
+BB2632 -> BB2636 [tailport=s, headport=n, color=gray]
+BB2633 [shape=record label="{6369: read-variable['jqLiteRemoveClass',v5,v4]|6370: read-variable['node',v6,-]|6371: read-variable['classes',v7,-]}" ] 
+BB2633 -> BB2634 [tailport=s, headport=n, headlabel="      2634"]
+BB2633 -> BB2636 [tailport=s, headport=n, color=gray]
+BB2634 [shape=record label="{6372: call-jqLiteRemoveClass [v4,v5,v6,v7,v1]}" ] 
+BB2634 -> BB2635 [tailport=s, headport=n, headlabel="      2635"]
+BB2634 -> BB2636 [tailport=s, headport=n, color=gray]
+BB2635 [shape=record label="{6373: return[v1]}" ] 
+BB2636 [shape=record label="{6374: exceptional-return}" ] 
+//#$~ 3544
+}

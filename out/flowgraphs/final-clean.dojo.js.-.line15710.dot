@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry830[shape=none,label=""];
+BB_entry830 -> BB11222 [tailport=s, headport=n, headlabel="    11222"]
+BB11222 [shape=record label="{32850: constant[undefined,v1]|32851: vardecl['paused']|32852: vardecl['signal']}" ] 
+BB11222 -> BB11223 [tailport=s, headport=n, headlabel="      11223"]
+BB11223 [shape=record label="{32853: read-variable['on',v4,v3]|32854: read-variable['target',v5,-]|32855: read-variable['type',v6,-]|32856: function-expr[function ( ),v7]|32857: read-variable['dontFix',v8,-]}" ] 
+BB11223 -> BB11224 [tailport=s, headport=n, headlabel="      11224"]
+BB11223 -> BB11227 [tailport=s, headport=n, color=gray, headlabel="      11227"]
+BB11224 [shape=record label="{32858: call-on [v3,v4,v5,v6,v7,v8,v2]}" ] 
+BB11224 -> BB11225 [tailport=s, headport=n, headlabel="      11225"]
+BB11224 -> BB11227 [tailport=s, headport=n, color=gray]
+BB11225 [shape=record label="{32859: write-variable[v2,'signal']*|32860: read-variable['signal',v10,-]|32861: function-expr[function ( ),v9]|32862: write-property[v10,'pause',v9]|32863: \<variable-non-null-undef\>['signal']*|32864: read-variable['signal',v12,-]|32865: function-expr[function ( ),v11]|32866: write-property[v12,'resume',v11]|32867: \<variable-non-null-undef\>['signal']*|32868: read-variable['signal',v1,-]}" ] 
+BB11225 -> BB11226 [tailport=s, headport=n, headlabel="      11226"]
+BB11225 -> BB11227 [tailport=s, headport=n, color=gray]
+BB11226 [shape=record label="{32869: return[v1]}" ] 
+BB11227 [shape=record label="{32870: exceptional-return}" ] 
+//#$~ 15728
+}

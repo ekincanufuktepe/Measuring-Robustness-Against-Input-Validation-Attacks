@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry117[shape=none,label=""];
+BB_entry117 -> BB1580 [tailport=s, headport=n, headlabel="    1580"]
+BB1580 [shape=record label="{5728: constant[undefined,v1]|5729: vardecl['map']|5730: vardecl['original']|5731: vardecl['weakmap']}" ] 
+BB1580 -> BB1581 [tailport=s, headport=n, headlabel="      1581"]
+BB1581 [shape=record label="{5732: read-variable['obj',v3,-]|5733: read-variable['fn',v4,-]|5734: read-property[v3,v4,v2]|5735: \<variable-non-null-undef\>['obj']|5736: write-variable[v2,'original']*|5737: read-variable['this',v7,-]|5738: read-property[v7,'weakReference',-]|5739: read-variable['obj',v8,-]}" ] 
+BB1581 -> BB1582 [tailport=s, headport=n, headlabel="      1582"]
+BB1581 -> BB1585 [tailport=s, headport=n, color=gray, headlabel="      1585"]
+BB1582 [shape=record label="{5740: call-this.weakReference [v7,'weakReference',v8,v5]}" ] 
+BB1582 -> BB1583 [tailport=s, headport=n, headlabel="      1583"]
+BB1582 -> BB1585 [tailport=s, headport=n, color=gray]
+BB1583 [shape=record label="{5741: write-variable[v5,'map']*|5742: read-variable['this',v10,-]|5743: read-property[v10,'weakmap',v9]|5744: write-variable[v9,'weakmap']*|5745: read-variable['obj',v11,-]|5746: read-variable['fn',v12,-]|5747: function-expr[function ( ),v1]|5748: write-property[v11,v12,v1]|5749: \<variable-non-null-undef\>['obj']}" ] 
+BB1583 -> BB1584 [tailport=s, headport=n, headlabel="      1584"]
+BB1583 -> BB1585 [tailport=s, headport=n, color=gray]
+BB1584 [shape=record label="{5750: return[v1]}" ] 
+BB1585 [shape=record label="{5751: exceptional-return}" ] 
+//#$~ 1264
+}

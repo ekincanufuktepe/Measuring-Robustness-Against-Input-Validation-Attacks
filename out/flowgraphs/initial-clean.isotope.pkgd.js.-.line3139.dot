@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry208[shape=none,label=""];
+BB_entry208 -> BB2263 [tailport=s, headport=n, headlabel="    2263"]
+BB2263 [shape=record label="{7389: constant[undefined,v1]|7390: vardecl['size']|7391: vardecl['hasSizes']}" ] 
+BB2263 -> BB2264 [tailport=s, headport=n, headlabel="      2264"]
+BB2264 [shape=record label="{7392: read-variable['getSize',v4,v3]|7393: read-variable['this',v7,-]|7394: read-property[v7,'isotope',v6]|7395: read-property[v6,'element',v5]|7396: \<property-non-null-undef\>[v7,'isotope']}" ] 
+BB2264 -> BB2265 [tailport=s, headport=n, headlabel="      2265"]
+BB2264 -> BB2271 [tailport=s, headport=n, color=gray, headlabel="      2271"]
+BB2265 [shape=record label="{7397: call-getSize [v3,v4,v5,v2]}" ] 
+BB2265 -> BB2266 [tailport=s, headport=n, headlabel="      2266"]
+BB2265 -> BB2271 [tailport=s, headport=n, color=gray]
+BB2266 [shape=record label="{7398: write-variable[v2,'size']*|7399: read-variable['this',v10,-]|7400: read-property[v10,'isotope',v9]|7401: read-property[v9,'size',v8]|7402: \<property-non-null-undef\>[v10,'isotope']|7403: if[v8](true-block:2267,false-block:2268)}" ] 
+BB2266 -> BB2268 [tailport=s, headport=n, headlabel="      2268"]
+BB2266 -> BB2267 [tailport=s, headport=n, headlabel="      2267"]
+BB2266 -> BB2271 [tailport=s, headport=n, color=gray]
+BB2267 [shape=record label="{7404: read-variable['size',v8,-]}" ] 
+BB2267 -> BB2268 [tailport=s, headport=n]
+BB2267 -> BB2271 [tailport=s, headport=n, color=gray]
+BB2268 [shape=record label="{7405: write-variable[v8,'hasSizes']*|7406: read-variable['hasSizes',v1,-]|7407: if[v1](true-block:2269,false-block:2270)}" ] 
+BB2268 -> BB2270 [tailport=s, headport=n, headlabel="      2270"]
+BB2268 -> BB2269 [tailport=s, headport=n, headlabel="      2269"]
+BB2268 -> BB2271 [tailport=s, headport=n, color=gray]
+BB2269 [shape=record label="{7408: read-variable['size',v13,-]|7409: read-property[v13,'innerHeight',v11]|7410: \<variable-non-null-undef\>['size']|7411: read-variable['this',v16,-]|7412: read-property[v16,'isotope',v15]|7413: read-property[v15,'size',v14]|7414: \<property-non-null-undef\>[v16,'isotope']|7415: read-property[v14,'innerHeight',v12]|7416: \<property-non-null-undef\>[v15,'size']|7417: !=[v11,v12,v1]}" ] 
+BB2269 -> BB2270 [tailport=s, headport=n]
+BB2269 -> BB2271 [tailport=s, headport=n, color=gray]
+BB2270 [shape=record label="{7418: return[v1]}" ] 
+BB2271 [shape=record label="{7419: exceptional-return}" ] 
+//#$~ 3145
+}

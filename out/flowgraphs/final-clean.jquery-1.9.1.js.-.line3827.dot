@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry225[shape=none,label=""];
+BB_entry225 -> BB3427 [tailport=s, headport=n, headlabel="    3427"]
+BB3427 [shape=record label="{10021: constant[undefined,v1]|10022: vardecl['elem']|10023: vardecl['results']}" ] 
+BB3427 -> BB3428 [tailport=s, headport=n, headlabel="      3428"]
+BB3428 [shape=record label="{10024: read-variable['Array',v3,-]}" ] 
+BB3428 -> BB3429 [tailport=s, headport=n, headlabel="      3429"]
+BB3428 -> BB3436 [tailport=s, headport=n, color=gray, headlabel="      3436"]
+BB3429 [shape=record label="{10025: construct [-,v3,v2]}" ] 
+BB3429 -> BB3430 [tailport=s, headport=n, headlabel="      3430"]
+BB3429 -> BB3436 [tailport=s, headport=n, color=gray]
+BB3430 [shape=record label="{10026: write-variable[v2,'results']*}" ] 
+BB3430 -> BB3431 [tailport=s, headport=n, headlabel="      3431"]
+BB3431 [shape=record label="{10027: read-variable['this',v5,-]|10028: constant[1.0,v7]|10029: read-variable['i',v8,-]|10030: +[v8,v6]|10031: +[v6,v7,v9]|10032: write-variable[v9,'i']|10033: read-property[v5,v6,v4]|10034: write-variable[v4,'elem']|10035: if[v4](true-block:3432,false-block:3433)}" ] 
+BB3431 -> BB3432 [tailport=s, headport=n, headlabel="      3432"]
+BB3431 -> BB3433 [tailport=s, headport=n, headlabel="      3433"]
+BB3431 -> BB3436 [tailport=s, headport=n, color=gray]
+BB3432 [shape=record label="{10036: read-variable['results',v11,-]|10037: read-property[v11,'push',-]|10038: \<variable-non-null-undef\>['results']|10039: read-variable['elem',v12,-]}" ] 
+BB3432 -> BB3434 [tailport=s, headport=n, headlabel="      3434"]
+BB3432 -> BB3436 [tailport=s, headport=n, color=gray]
+BB3433 [shape=record label="{10040: read-variable['results',v1,-]}" ] 
+BB3433 -> BB3435 [tailport=s, headport=n, headlabel="      3435"]
+BB3433 -> BB3436 [tailport=s, headport=n, color=gray]
+BB3434 [shape=record label="{10041: call-results.push [v11,'push',v12,-]*}" ] 
+BB3434 -> BB3431 [tailport=s, headport=n]
+BB3434 -> BB3436 [tailport=s, headport=n, color=gray]
+BB3435 [shape=record label="{10042: return[v1]}" ] 
+BB3436 [shape=record label="{10043: exceptional-return}" ] 
+//#$~ 3833
+}

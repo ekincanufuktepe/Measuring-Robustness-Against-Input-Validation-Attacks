@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry189[shape=none,label=""];
+BB_entry189 -> BB2048 [tailport=s, headport=n, headlabel="    2048"]
+BB2048 [shape=record label="{4955: constant[undefined,v1]}" ] 
+BB2048 -> BB2049 [tailport=s, headport=n, headlabel="      2049"]
+BB2049 [shape=record label="{4956: read-variable['this',v3,-]|4957: read-variable['predicate',v4,-]|4958: read-variable['returnTrue',v2,-]|4959: write-property[v3,v4,v2]*|4960: read-variable['sourceMethod',v1,-]|4961: if[v1](true-block:2050,false-block:2052)}" ] 
+BB2049 -> BB2052 [tailport=s, headport=n, headlabel="      2052"]
+BB2049 -> BB2050 [tailport=s, headport=n, headlabel="      2050"]
+BB2049 -> BB2053 [tailport=s, headport=n, color=gray, headlabel="      2053"]
+BB2050 [shape=record label="{4962: read-variable['sourceMethod',v6,-]|4963: read-property[v6,'apply',-]|4964: \<variable-non-null-undef\>['sourceMethod']|4965: read-variable['source',v7,-]|4966: read-variable['arguments',v8,-]}" ] 
+BB2050 -> BB2051 [tailport=s, headport=n, headlabel="      2051"]
+BB2050 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2051 [shape=record label="{4967: call-sourceMethod.apply [v6,'apply',v7,v8,v1]}" ] 
+BB2051 -> BB2052 [tailport=s, headport=n]
+BB2051 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2052 [shape=record label="{4968: return[v1]}" ] 
+BB2053 [shape=record label="{4969: exceptional-return}" ] 
+//#$~ 1019
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry748[shape=none,label=""];
+BB_entry748 -> BB10017 [tailport=s, headport=n, headlabel="    10017"]
+BB10017 [shape=record label="{33127: constant[undefined,v1]|33128: vardecl['ITERATOR_SYMBOL']|33129: vardecl['FAUX_ITERATOR_SYMBOL']|33130: function-decl[function getIteratorFn ( maybeIterable ),-]}" ] 
+BB10017 -> BB10018 [tailport=s, headport=n, headlabel="      10018"]
+BB10018 [shape=record label="{33131: typeof['Symbol',v3]|33132: constant[\"function\",v4]|33133: ===[v3,v4,v2]|33134: if[v2](true-block:10019,false-block:10020)}" ] 
+BB10018 -> BB10020 [tailport=s, headport=n, headlabel="      10020"]
+BB10018 -> BB10019 [tailport=s, headport=n, headlabel="      10019"]
+BB10018 -> BB10022 [tailport=s, headport=n, color=gray, headlabel="      10022"]
+BB10019 [shape=record label="{33135: read-variable['Symbol',v5,-]|33136: read-property[v5,'iterator',v2]|33137: \<variable-non-null-undef\>['Symbol']}" ] 
+BB10019 -> BB10020 [tailport=s, headport=n]
+BB10019 -> BB10022 [tailport=s, headport=n, color=gray]
+BB10020 [shape=record label="{33138: write-variable[v2,'ITERATOR_SYMBOL']*|33139: constant[\"@@iterator\",v5]|33140: write-variable[v5,'FAUX_ITERATOR_SYMBOL']*|33141: read-variable['module',v7,-]|33142: read-variable['getIteratorFn',v6,-]|33143: write-property[v7,'exports',v6]|33144: \<variable-non-null-undef\>['module']*}" ] 
+BB10020 -> BB10021 [tailport=s, headport=n, headlabel="      10021"]
+BB10020 -> BB10022 [tailport=s, headport=n, color=gray]
+BB10021 [shape=record label="{33145: return[v1]}" ] 
+BB10022 [shape=record label="{33146: exceptional-return}" ] 
+//#$~ 17914
+}

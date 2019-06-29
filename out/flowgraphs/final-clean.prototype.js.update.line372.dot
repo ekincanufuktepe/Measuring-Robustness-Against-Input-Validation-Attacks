@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB554 [tailport=s, headport=n, headlabel="    554"]
+BB554 [shape=record label="{1957: constant[undefined,v1]|1958: vardecl['arrayLength']|1959: vardecl['length']}" ] 
+BB554 -> BB555 [tailport=s, headport=n, headlabel="      555"]
+BB555 [shape=record label="{1960: read-variable['array',v3,-]|1961: read-property[v3,'length',v2]|1962: \<variable-non-null-undef\>['array']|1963: write-variable[v2,'arrayLength']*|1964: read-variable['args',v5,-]|1965: read-property[v5,'length',v4]|1966: \<variable-non-null-undef\>['args']|1967: write-variable[v4,'length']*}" ] 
+BB555 -> BB556 [tailport=s, headport=n, headlabel="      556"]
+BB555 -> BB560 [tailport=s, headport=n, color=gray, headlabel="      560"]
+BB556 [shape=record label="{1968: constant[1.0,v7]|1969: read-variable['length',v8,-]|1970: +[v8,v6]|1971: -[v6,v7,v9]|1972: write-variable[v9,'length']|1973: if[v6](true-block:557,false-block:558)}" ] 
+BB556 -> BB557 [tailport=s, headport=n, headlabel="      557"]
+BB556 -> BB558 [tailport=s, headport=n, headlabel="      558"]
+BB556 -> BB560 [tailport=s, headport=n, color=gray]
+BB557 [shape=record label="{1974: read-variable['array',v11,-]|1975: read-variable['arrayLength',v13,-]|1976: read-variable['length',v14,-]|1977: +[v13,v14,v12]|1978: read-variable['args',v15,-]|1979: read-variable['length',v16,-]|1980: read-property[v15,v16,v10]|1981: \<variable-non-null-undef\>['args']|1982: write-property[v11,v12,v10]|1983: \<variable-non-null-undef\>['array']*}" ] 
+BB557 -> BB556 [tailport=s, headport=n]
+BB557 -> BB560 [tailport=s, headport=n, color=gray]
+BB558 [shape=record label="{1984: read-variable['array',v1,-]}" ] 
+BB558 -> BB559 [tailport=s, headport=n, headlabel="      559"]
+BB558 -> BB560 [tailport=s, headport=n, color=gray]
+BB559 [shape=record label="{1985: return[v1]}" ] 
+BB560 [shape=record label="{1986: exceptional-return}" ] 
+//#$~ 375
+}

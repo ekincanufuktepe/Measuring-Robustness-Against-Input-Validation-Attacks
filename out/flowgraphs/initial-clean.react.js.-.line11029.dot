@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry430[shape=none,label=""];
+BB_entry430 -> BB6229 [tailport=s, headport=n, headlabel="    6229"]
+BB6229 [shape=record label="{21481: constant[undefined,v1]}" ] 
+BB6229 -> BB6230 [tailport=s, headport=n, headlabel="      6230"]
+BB6230 [shape=record label="{21482: constant[\"production\",v3]|21483: constant[\"development\",v4]|21484: !==[v3,v4,v2]|21485: if[v2](true-block:6231,false-block:6232)}" ] 
+BB6230 -> BB6231 [tailport=s, headport=n, headlabel="      6231"]
+BB6230 -> BB6232 [tailport=s, headport=n, headlabel="      6232"]
+BB6230 -> BB6236 [tailport=s, headport=n, color=gray, headlabel="      6236"]
+BB6231 [shape=record label="{21486: read-variable['warning',v6,v5]|21487: read-variable['this',v8,-]|21488: read-variable['didWarnKey',v9,-]|21489: read-property[v8,v9,v7]|21490: constant[\"A ReactFragment is an immutable opaque type. Mutating its \",v11]|21491: constant[\"properties is deprecated.\",v12]|21492: +[v11,v12,v10]}" ] 
+BB6231 -> BB6233 [tailport=s, headport=n, headlabel="      6233"]
+BB6231 -> BB6236 [tailport=s, headport=n, color=gray]
+BB6232 [shape=record label="{21493: constant[null,-]}" ] 
+BB6232 -> BB6234 [tailport=s, headport=n, headlabel="      6234"]
+BB6233 [shape=record label="{21494: call-warning [v5,v6,v7,v10,-]}" ] 
+BB6233 -> BB6234 [tailport=s, headport=n]
+BB6233 -> BB6236 [tailport=s, headport=n, color=gray]
+BB6234 [shape=record label="{21495: read-variable['this',v6,-]|21496: read-variable['didWarnKey',v7,-]|21497: constant[true,v5]|21498: write-property[v6,v7,v5]*|21499: read-variable['this',v11,-]|21500: read-variable['fragmentKey',v12,-]|21501: read-property[v11,v12,v9]|21502: read-variable['key',v10,-]|21503: read-variable['value',v8,-]|21504: write-property[v9,v10,v8]|21505: \<property-non-null-undef\>[v11,v12]*}" ] 
+BB6234 -> BB6235 [tailport=s, headport=n, headlabel="      6235"]
+BB6234 -> BB6236 [tailport=s, headport=n, color=gray]
+BB6235 [shape=record label="{21506: return[v1]}" ] 
+BB6236 [shape=record label="{21507: exceptional-return}" ] 
+//#$~ 11036
+}

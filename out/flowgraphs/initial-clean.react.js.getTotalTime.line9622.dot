@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry362[shape=none,label=""];
+BB_entry362 -> BB5364 [tailport=s, headport=n, headlabel="    5364"]
+BB5364 [shape=record label="{18586: constant[undefined,v1]|18587: vardecl['totalTime']|18588: vardecl['i']|18589: vardecl['measurement']}" ] 
+BB5364 -> BB5365 [tailport=s, headport=n, headlabel="      5365"]
+BB5365 [shape=record label="{18590: constant[0.0,v2]|18591: write-variable[v2,'totalTime']*|18592: constant[0.0,v4]|18593: write-variable[v4,'i']*}" ] 
+BB5365 -> BB5366 [tailport=s, headport=n, headlabel="      5366"]
+BB5366 [shape=record label="{18594: read-variable['i',v5,-]|18595: read-variable['measurements',v7,-]|18596: read-property[v7,'length',v6]|18597: \<variable-non-null-undef\>['measurements']|18598: \<[v5,v6,v3]|18599: if[v3](true-block:5367,false-block:5368)}" ] 
+BB5366 -> BB5367 [tailport=s, headport=n, headlabel="      5367"]
+BB5366 -> BB5368 [tailport=s, headport=n, headlabel="      5368"]
+BB5366 -> BB5370 [tailport=s, headport=n, color=gray, headlabel="      5370"]
+BB5367 [shape=record label="{18600: read-variable['measurements',v9,-]|18601: read-variable['i',v10,-]|18602: read-property[v9,v10,v8]|18603: \<variable-non-null-undef\>['measurements']|18604: write-variable[v8,'measurement']*|18605: read-variable['totalTime',v12,-]|18606: read-variable['measurement',v14,-]|18607: read-property[v14,'totalTime',v13]|18608: \<variable-non-null-undef\>['measurement']|18609: +[v12,v13,v11]|18610: write-variable[v11,'totalTime']*|18611: constant[1.0,v15]|18612: read-variable['i',v16,-]|18613: +[v16,v17]|18614: +[v17,v15,v18]|18615: write-variable[v18,'i']}" ] 
+BB5367 -> BB5366 [tailport=s, headport=n]
+BB5367 -> BB5370 [tailport=s, headport=n, color=gray]
+BB5368 [shape=record label="{18616: read-variable['totalTime',v1,-]}" ] 
+BB5368 -> BB5369 [tailport=s, headport=n, headlabel="      5369"]
+BB5368 -> BB5370 [tailport=s, headport=n, color=gray]
+BB5369 [shape=record label="{18617: return[v1]}" ] 
+BB5370 [shape=record label="{18618: exceptional-return}" ] 
+//#$~ 9632
+}

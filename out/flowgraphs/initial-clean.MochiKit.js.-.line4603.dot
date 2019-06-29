@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry435[shape=none,label=""];
+BB_entry435 -> BB6520 [tailport=s, headport=n, headlabel="    6520"]
+BB6520 [shape=record label="{24023: constant[undefined,v1]|24024: vardecl['hsl']|24025: vardecl['m']}" ] 
+BB6520 -> BB6521 [tailport=s, headport=n, headlabel="      6521"]
+BB6521 [shape=record label="{24026: read-variable['this',v4,-]|24027: read-property[v4,'asHSL',-]}" ] 
+BB6521 -> BB6522 [tailport=s, headport=n, headlabel="      6522"]
+BB6521 -> BB6526 [tailport=s, headport=n, color=gray, headlabel="      6526"]
+BB6522 [shape=record label="{24028: call-this.asHSL [v4,'asHSL',v2]}" ] 
+BB6522 -> BB6523 [tailport=s, headport=n, headlabel="      6523"]
+BB6522 -> BB6526 [tailport=s, headport=n, color=gray]
+BB6523 [shape=record label="{24029: write-variable[v2,'hsl']*|24030: read-variable['hsl',v6,-]|24031: read-variable['hue',v5,-]|24032: write-property[v6,'h',v5]|24033: \<variable-non-null-undef\>['hsl']*|24034: read-variable['MochiKit',v8,-]|24035: read-property[v8,'Color',v7]|24036: \<variable-non-null-undef\>['MochiKit']|24037: write-variable[v7,'m']*|24038: read-variable['m',v11,-]|24039: read-property[v11,'Color',v10]|24040: \<variable-non-null-undef\>['m']|24041: read-property[v10,'fromHSL',-]|24042: \<property-non-null-undef\>[v11,'Color']|24043: read-variable['hsl',v12,-]}" ] 
+BB6523 -> BB6524 [tailport=s, headport=n, headlabel="      6524"]
+BB6523 -> BB6526 [tailport=s, headport=n, color=gray]
+BB6524 [shape=record label="{24044: call-m.Color.fromHSL [v10,'fromHSL',v12,v1]}" ] 
+BB6524 -> BB6525 [tailport=s, headport=n, headlabel="      6525"]
+BB6524 -> BB6526 [tailport=s, headport=n, color=gray]
+BB6525 [shape=record label="{24045: return[v1]}" ] 
+BB6526 [shape=record label="{24046: exceptional-return}" ] 
+//#$~ 4607
+}

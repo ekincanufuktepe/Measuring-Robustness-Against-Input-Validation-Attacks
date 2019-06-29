@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry81[shape=none,label=""];
+BB_entry81 -> BB895 [tailport=s, headport=n, headlabel="    895"]
+BB895 [shape=record label="{2562: constant[undefined,v1]|2563: vardecl['i']|2564: vardecl['len']}" ] 
+BB895 -> BB896 [tailport=s, headport=n, headlabel="      896"]
+BB896 [shape=record label="{2565: constant[0.0,v3]|2566: write-variable[v3,'i']*|2567: read-variable['ary',v5,-]|2568: read-property[v5,'length',v4]|2569: \<variable-non-null-undef\>['ary']|2570: write-variable[v4,'len']*}" ] 
+BB896 -> BB897 [tailport=s, headport=n, headlabel="      897"]
+BB896 -> BB903 [tailport=s, headport=n, color=gray, headlabel="      903"]
+BB897 [shape=record label="{2571: read-variable['i',v6,-]|2572: read-variable['len',v7,-]|2573: \<[v6,v7,v2]|2574: if[v2](true-block:898,false-block:899)}" ] 
+BB897 -> BB898 [tailport=s, headport=n, headlabel="      898"]
+BB897 -> BB899 [tailport=s, headport=n, headlabel="      899"]
+BB897 -> BB903 [tailport=s, headport=n, color=gray]
+BB898 [shape=record label="{2575: read-variable['ary',v11,-]|2576: read-variable['i',v12,-]|2577: read-property[v11,v12,v9]|2578: \<variable-non-null-undef\>['ary']|2579: read-variable['obj',v10,-]|2580: ===[v9,v10,v8]|2581: if[v8](true-block:900,false-block:901)}" ] 
+BB898 -> BB900 [tailport=s, headport=n, headlabel="      900"]
+BB898 -> BB901 [tailport=s, headport=n, headlabel="      901"]
+BB898 -> BB903 [tailport=s, headport=n, color=gray]
+BB899 [shape=record label="{2582: constant[-1.0,v1]}" ] 
+BB899 -> BB902 [tailport=s, headport=n, headlabel="      902"]
+BB900 [shape=record label="{2583: read-variable['i',v1,-]}" ] 
+BB900 -> BB902 [tailport=s, headport=n]
+BB900 -> BB903 [tailport=s, headport=n, color=gray]
+BB901 [shape=record label="{2584: constant[1.0,v13]|2585: read-variable['i',v14,-]|2586: +[v14,v15]|2587: +[v15,v13,v16]|2588: write-variable[v16,'i']}" ] 
+BB901 -> BB897 [tailport=s, headport=n]
+BB901 -> BB903 [tailport=s, headport=n, color=gray]
+BB902 [shape=record label="{2589: return[v1]}" ] 
+BB903 [shape=record label="{2590: exceptional-return}" ] 
+//#$~ 1299
+}

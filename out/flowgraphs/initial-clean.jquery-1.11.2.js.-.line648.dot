@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry45[shape=none,label=""];
+BB_entry45 -> BB491 [tailport=s, headport=n, headlabel="    491"]
+BB491 [shape=record label="{1255: constant[undefined,v1]|1256: vardecl['i']|1257: vardecl['len']}" ] 
+BB491 -> BB492 [tailport=s, headport=n, headlabel="      492"]
+BB492 [shape=record label="{1258: constant[0.0,v2]|1259: write-variable[v2,'i']*|1260: read-variable['list',v4,-]|1261: read-property[v4,'length',v3]|1262: \<variable-non-null-undef\>['list']|1263: write-variable[v3,'len']*}" ] 
+BB492 -> BB493 [tailport=s, headport=n, headlabel="      493"]
+BB492 -> BB499 [tailport=s, headport=n, color=gray, headlabel="      499"]
+BB493 [shape=record label="{1264: read-variable['i',v6,-]|1265: read-variable['len',v7,-]|1266: \<[v6,v7,v5]|1267: if[v5](true-block:494,false-block:495)}" ] 
+BB493 -> BB494 [tailport=s, headport=n, headlabel="      494"]
+BB493 -> BB495 [tailport=s, headport=n, headlabel="      495"]
+BB493 -> BB499 [tailport=s, headport=n, color=gray]
+BB494 [shape=record label="{1268: read-variable['list',v11,-]|1269: read-variable['i',v12,-]|1270: read-property[v11,v12,v9]|1271: \<variable-non-null-undef\>['list']|1272: read-variable['elem',v10,-]|1273: ===[v9,v10,v8]|1274: if[v8](true-block:496,false-block:497)}" ] 
+BB494 -> BB496 [tailport=s, headport=n, headlabel="      496"]
+BB494 -> BB497 [tailport=s, headport=n, headlabel="      497"]
+BB494 -> BB499 [tailport=s, headport=n, color=gray]
+BB495 [shape=record label="{1275: constant[-1.0,v1]}" ] 
+BB495 -> BB498 [tailport=s, headport=n, headlabel="      498"]
+BB496 [shape=record label="{1276: read-variable['i',v1,-]}" ] 
+BB496 -> BB498 [tailport=s, headport=n]
+BB496 -> BB499 [tailport=s, headport=n, color=gray]
+BB497 [shape=record label="{1277: constant[1.0,v13]|1278: read-variable['i',v14,-]|1279: +[v14,v15]|1280: +[v15,v13,v16]|1281: write-variable[v16,'i']}" ] 
+BB497 -> BB493 [tailport=s, headport=n]
+BB497 -> BB499 [tailport=s, headport=n, color=gray]
+BB498 [shape=record label="{1282: return[v1]}" ] 
+BB499 [shape=record label="{1283: exceptional-return}" ] 
+}

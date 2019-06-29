@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry377[shape=none,label=""];
+BB_entry377 -> BB5457 [tailport=s, headport=n, headlabel="    5457"]
+BB5457 [shape=record label="{16385: constant[undefined,v1]|16386: vardecl['bases']|16387: vardecl['i']|16388: vardecl['l']}" ] 
+BB5457 -> BB5458 [tailport=s, headport=n, headlabel="      5458"]
+BB5458 [shape=record label="{16389: read-variable['this',v5,-]|16390: read-property[v5,'constructor',v4]|16391: read-property[v4,'_meta',v3]|16392: \<property-non-null-undef\>[v5,'constructor']|16393: read-property[v3,'bases',v2]|16394: \<property-non-null-undef\>[v4,'_meta']|16395: write-variable[v2,'bases']*|16396: constant[0.0,v7]|16397: write-variable[v7,'i']*|16398: read-variable['bases',v9,-]|16399: read-property[v9,'length',v8]|16400: \<variable-non-null-undef\>['bases']|16401: write-variable[v8,'l']*}" ] 
+BB5458 -> BB5459 [tailport=s, headport=n, headlabel="      5459"]
+BB5458 -> BB5465 [tailport=s, headport=n, color=gray, headlabel="      5465"]
+BB5459 [shape=record label="{16402: read-variable['i',v10,-]|16403: read-variable['l',v11,-]|16404: \<[v10,v11,v6]|16405: if[v6](true-block:5460,false-block:5461)}" ] 
+BB5459 -> BB5460 [tailport=s, headport=n, headlabel="      5460"]
+BB5459 -> BB5461 [tailport=s, headport=n, headlabel="      5461"]
+BB5459 -> BB5465 [tailport=s, headport=n, color=gray]
+BB5460 [shape=record label="{16406: read-variable['bases',v15,-]|16407: read-variable['i',v16,-]|16408: read-property[v15,v16,v13]|16409: \<variable-non-null-undef\>['bases']|16410: read-variable['cls',v14,-]|16411: ===[v13,v14,v12]|16412: if[v12](true-block:5462,false-block:5463)}" ] 
+BB5460 -> BB5462 [tailport=s, headport=n, headlabel="      5462"]
+BB5460 -> BB5463 [tailport=s, headport=n, headlabel="      5463"]
+BB5460 -> BB5465 [tailport=s, headport=n, color=gray]
+BB5461 [shape=record label="{16413: read-variable['this',v12,-]|16414: read-variable['cls',v13,-]|16415: instanceof[v12,v13,v1]}" ] 
+BB5461 -> BB5464 [tailport=s, headport=n, headlabel="      5464"]
+BB5461 -> BB5465 [tailport=s, headport=n, color=gray]
+BB5462 [shape=record label="{16416: constant[true,v1]}" ] 
+BB5462 -> BB5464 [tailport=s, headport=n]
+BB5463 [shape=record label="{16417: constant[1.0,v17]|16418: read-variable['i',v18,-]|16419: +[v18,v19]|16420: +[v19,v17,v20]|16421: write-variable[v20,'i']}" ] 
+BB5463 -> BB5459 [tailport=s, headport=n]
+BB5463 -> BB5465 [tailport=s, headport=n, color=gray]
+BB5464 [shape=record label="{16422: return[v1]}" ] 
+BB5465 [shape=record label="{16423: exceptional-return}" ] 
+//#$~ 7402
+}

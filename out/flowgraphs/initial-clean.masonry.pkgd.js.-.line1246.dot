@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry76[shape=none,label=""];
+BB_entry76 -> BB839 [tailport=s, headport=n, headlabel="    839"]
+BB839 [shape=record label="{2435: constant[undefined,v1]|2436: vardecl['prop']}" ] 
+BB839 -> BB840 [tailport=s, headport=n, headlabel="      840"]
+BB840 [shape=record label="{2437: read-variable['b',v3,-]}" ] 
+BB840 -> BB841 [tailport=s, headport=n, headlabel="      841"]
+BB840 -> BB847 [tailport=s, headport=n, color=gray, headlabel="      847"]
+BB841 [shape=record label="{2438: begin-for-in[v3,v4]}" ] 
+BB841 -> BB842 [tailport=s, headport=n, headlabel="      842"]
+BB841 -> BB847 [tailport=s, headport=n, color=gray]
+BB842 [shape=record label="{2439: has-next[v4,v5]|2440: if[v5](true-block:843,false-block:845)}" ] 
+BB842 -> BB843 [tailport=s, headport=n, headlabel="      843"]
+BB842 -> BB845 [tailport=s, headport=n, headlabel="      845"]
+BB843 [shape=record label="{2441: next-property[v4,v6]|2442: write-variable[v6,'prop']|2443: read-variable['a',v8,-]|2444: read-variable['prop',v9,-]|2445: read-variable['b',v10,-]|2446: read-variable['prop',v11,-]|2447: read-property[v10,v11,v7]|2448: \<variable-non-null-undef\>['b']|2449: write-property[v8,v9,v7]|2450: \<variable-non-null-undef\>['a']*}" ] 
+BB843 -> BB844 [tailport=s, headport=n, headlabel="      844"]
+BB843 -> BB847 [tailport=s, headport=n, color=gray]
+BB844 [shape=record label="{2451: end-for-in(begin-node:2438)}" ] 
+BB844 -> BB842 [tailport=s, headport=n]
+BB845 [shape=record label="{2452: read-variable['a',v1,-]}" ] 
+BB845 -> BB846 [tailport=s, headport=n, headlabel="      846"]
+BB845 -> BB847 [tailport=s, headport=n, color=gray]
+BB846 [shape=record label="{2453: return[v1]}" ] 
+BB847 [shape=record label="{2454: exceptional-return}" ] 
+//#$~ 1250
+}

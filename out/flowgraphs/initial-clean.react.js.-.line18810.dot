@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry789[shape=none,label=""];
+BB_entry789 -> BB10443 [tailport=s, headport=n, headlabel="    10443"]
+BB10443 [shape=record label="{34401: constant[undefined,v1]}" ] 
+BB10443 -> BB10444 [tailport=s, headport=n, headlabel="      10444"]
+BB10444 [shape=record label="{34402: read-variable['cache',v5,-]|34403: read-property[v5,'hasOwnProperty',-]|34404: \<variable-non-null-undef\>['cache']|34405: read-variable['string',v6,-]}" ] 
+BB10444 -> BB10445 [tailport=s, headport=n, headlabel="      10445"]
+BB10444 -> BB10452 [tailport=s, headport=n, color=gray, headlabel="      10452"]
+BB10445 [shape=record label="{34406: call-cache.hasOwnProperty [v5,'hasOwnProperty',v6,v3]}" ] 
+BB10445 -> BB10446 [tailport=s, headport=n, headlabel="      10446"]
+BB10445 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10446 [shape=record label="{34407: ![v3,v2]|34408: if[v2](true-block:10447,false-block:10450)}" ] 
+BB10446 -> BB10447 [tailport=s, headport=n, headlabel="      10447"]
+BB10446 -> BB10450 [tailport=s, headport=n, headlabel="      10450"]
+BB10446 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10447 [shape=record label="{34409: read-variable['cache',v8,-]|34410: read-variable['string',v9,-]|34411: read-variable['callback',v11,-]|34412: read-property[v11,'call',-]|34413: \<variable-non-null-undef\>['callback']|34414: read-variable['this',v12,-]|34415: read-variable['string',v13,-]}" ] 
+BB10447 -> BB10448 [tailport=s, headport=n, headlabel="      10448"]
+BB10447 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10448 [shape=record label="{34416: call-callback.call [v11,'call',v12,v13,v7]}" ] 
+BB10448 -> BB10449 [tailport=s, headport=n, headlabel="      10449"]
+BB10448 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10449 [shape=record label="{34417: write-property[v8,v9,v7]|34418: \<variable-non-null-undef\>['cache']*}" ] 
+BB10449 -> BB10450 [tailport=s, headport=n]
+BB10449 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10450 [shape=record label="{34419: read-variable['cache',v7,-]|34420: read-variable['string',v8,-]|34421: read-property[v7,v8,v1]|34422: \<variable-non-null-undef\>['cache']}" ] 
+BB10450 -> BB10451 [tailport=s, headport=n, headlabel="      10451"]
+BB10450 -> BB10452 [tailport=s, headport=n, color=gray]
+BB10451 [shape=record label="{34423: return[v1]}" ] 
+BB10452 [shape=record label="{34424: exceptional-return}" ] 
+//#$~ 18814
+}

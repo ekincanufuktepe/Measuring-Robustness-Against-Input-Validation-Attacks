@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry613[shape=none,label=""];
+BB_entry613 -> BB8359 [tailport=s, headport=n, headlabel="    8359"]
+BB8359 [shape=record label="{27720: constant[undefined,v1]|27721: vardecl['internalInstance']}" ] 
+BB8359 -> BB8360 [tailport=s, headport=n, headlabel="      8360"]
+BB8360 [shape=record label="{27722: read-variable['getInternalInstanceReadyForUpdate',v4,v3]|27723: read-variable['publicInstance',v5,-]|27724: constant[\"forceUpdate\",v6]}" ] 
+BB8360 -> BB8361 [tailport=s, headport=n, headlabel="      8361"]
+BB8360 -> BB8367 [tailport=s, headport=n, color=gray, headlabel="      8367"]
+BB8361 [shape=record label="{27725: call-getInternalInstanceReadyForUpdate [v3,v4,v5,v6,v2]}" ] 
+BB8361 -> BB8362 [tailport=s, headport=n, headlabel="      8362"]
+BB8361 -> BB8367 [tailport=s, headport=n, color=gray]
+BB8362 [shape=record label="{27726: write-variable[v2,'internalInstance']*|27727: read-variable['internalInstance',v8,-]|27728: ![v8,v7]|27729: if[v7](true-block:8363,false-block:8364)}" ] 
+BB8362 -> BB8363 [tailport=s, headport=n, headlabel="      8363"]
+BB8362 -> BB8364 [tailport=s, headport=n, headlabel="      8364"]
+BB8362 -> BB8367 [tailport=s, headport=n, color=gray]
+BB8363 [shape=record label="{27730: constant[undefined,v1]}" ] 
+BB8363 -> BB8366 [tailport=s, headport=n, headlabel="      8366"]
+BB8364 [shape=record label="{27731: read-variable['internalInstance',v10,-]|27732: constant[true,v9]|27733: write-property[v10,'_pendingForceUpdate',v9]|27734: \<variable-non-null-undef\>['internalInstance']*|27735: read-variable['enqueueUpdate',v12,v11]|27736: read-variable['internalInstance',v13,-]}" ] 
+BB8364 -> BB8365 [tailport=s, headport=n, headlabel="      8365"]
+BB8364 -> BB8367 [tailport=s, headport=n, color=gray]
+BB8365 [shape=record label="{27737: call-enqueueUpdate [v11,v12,v13,-]*}" ] 
+BB8365 -> BB8366 [tailport=s, headport=n]
+BB8365 -> BB8367 [tailport=s, headport=n, color=gray]
+BB8366 [shape=record label="{27738: return[v1]}" ] 
+BB8367 [shape=record label="{27739: exceptional-return}" ] 
+//#$~ 14660
+}

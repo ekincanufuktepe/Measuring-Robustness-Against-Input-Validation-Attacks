@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry213[shape=none,label=""];
+BB_entry213 -> BB2213 [tailport=s, headport=n, headlabel="    2213"]
+BB2213 [shape=record label="{6484: constant[undefined,v1]}" ] 
+BB2213 -> BB2214 [tailport=s, headport=n, headlabel="      2214"]
+BB2214 [shape=record label="{6485: read-variable['Math',v5,-]|6486: read-property[v5,'sin',-]|6487: \<variable-non-null-undef\>['Math']|6488: read-variable['x',v7,-]|6489: constant[2.0,v8]|6490: /[v7,v8,v6]}" ] 
+BB2214 -> BB2215 [tailport=s, headport=n, headlabel="      2215"]
+BB2214 -> BB2218 [tailport=s, headport=n, color=gray, headlabel="      2218"]
+BB2215 [shape=record label="{6491: call-Math.sin [v5,'sin',v6,v2]}" ] 
+BB2215 -> BB2216 [tailport=s, headport=n, headlabel="      2216"]
+BB2215 -> BB2218 [tailport=s, headport=n, color=gray]
+BB2216 [shape=record label="{6492: write-variable[v2,'x']|6493: read-variable['x',v3,-]|6494: *[v2,v3,v1]}" ] 
+BB2216 -> BB2217 [tailport=s, headport=n, headlabel="      2217"]
+BB2216 -> BB2218 [tailport=s, headport=n, color=gray]
+BB2217 [shape=record label="{6495: return[v1]}" ] 
+BB2218 [shape=record label="{6496: exceptional-return}" ] 
+//#$~ 1284
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry61[shape=none,label=""];
+BB_entry61 -> BB1125 [tailport=s, headport=n, headlabel="    1125"]
+BB1125 [shape=record label="{3791: constant[undefined,v1]|3792: vardecl['captures']}" ] 
+BB1125 -> BB1126 [tailport=s, headport=n, headlabel="      1126"]
+BB1126 [shape=record label="{3793: read-variable['regexp',v4,-]|3794: read-property[v4,'exec',-]|3795: \<variable-non-null-undef\>['regexp']|3796: read-variable['this',v6,-]|3797: read-property[v6,'input',v5]}" ] 
+BB1126 -> BB1127 [tailport=s, headport=n, headlabel="      1127"]
+BB1126 -> BB1134 [tailport=s, headport=n, color=gray, headlabel="      1134"]
+BB1127 [shape=record label="{3798: call-regexp.exec [v4,'exec',v5,v2]}" ] 
+BB1127 -> BB1128 [tailport=s, headport=n, headlabel="      1128"]
+BB1127 -> BB1134 [tailport=s, headport=n, color=gray]
+BB1128 [shape=record label="{3799: write-variable[v2,'captures']|3800: if[v2](true-block:1129,false-block:1133)}" ] 
+BB1128 -> BB1129 [tailport=s, headport=n, headlabel="      1129"]
+BB1128 -> BB1133 [tailport=s, headport=n, headlabel="      1133"]
+BB1129 [shape=record label="{3801: read-variable['this',v8,-]|3802: read-property[v8,'consume',-]|3803: read-variable['captures',v11,-]|3804: constant[0.0,v12]|3805: read-property[v11,v12,v10]|3806: \<variable-non-null-undef\>['captures']|3807: read-property[v10,'length',v9]|3808: \<property-non-null-undef\>[v11,v12]}" ] 
+BB1129 -> BB1130 [tailport=s, headport=n, headlabel="      1130"]
+BB1129 -> BB1134 [tailport=s, headport=n, color=gray]
+BB1130 [shape=record label="{3809: call-this.consume [v8,'consume',v9,-]*}" ] 
+BB1130 -> BB1131 [tailport=s, headport=n, headlabel="      1131"]
+BB1130 -> BB1134 [tailport=s, headport=n, color=gray]
+BB1131 [shape=record label="{3810: read-variable['this',v14,-]|3811: read-property[v14,'tok',-]|3812: read-variable['type',v15,-]|3813: read-variable['captures',v17,-]|3814: constant[1.0,v18]|3815: read-property[v17,v18,v16]|3816: \<variable-non-null-undef\>['captures']}" ] 
+BB1131 -> BB1132 [tailport=s, headport=n, headlabel="      1132"]
+BB1131 -> BB1134 [tailport=s, headport=n, color=gray]
+BB1132 [shape=record label="{3817: call-this.tok [v14,'tok',v15,v16,v1]}" ] 
+BB1132 -> BB1133 [tailport=s, headport=n]
+BB1132 -> BB1134 [tailport=s, headport=n, color=gray]
+BB1133 [shape=record label="{3818: return[v1]}" ] 
+BB1134 [shape=record label="{3819: exceptional-return}" ] 
+//#$~ 1276
+}

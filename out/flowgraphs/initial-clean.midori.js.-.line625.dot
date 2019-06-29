@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry44[shape=none,label=""];
+BB_entry44 -> BB858 [tailport=s, headport=n, headlabel="    858"]
+BB858 [shape=record label="{3112: constant[undefined,v1]|3113: vardecl['xPos']|3114: vardecl['yPos']}" ] 
+BB858 -> BB859 [tailport=s, headport=n, headlabel="      859"]
+BB859 [shape=record label="{3115: constant[0.0,v2]|3116: write-variable[v2,'xPos']*|3117: constant[0.0,v3]|3118: write-variable[v3,'yPos']*|3119: read-variable['stopAt',v5,-]|3120: if[v5](true-block:860,false-block:861)}" ] 
+BB859 -> BB860 [tailport=s, headport=n, headlabel="      860"]
+BB859 -> BB861 [tailport=s, headport=n, headlabel="      861"]
+BB859 -> BB867 [tailport=s, headport=n, color=gray, headlabel="      867"]
+BB860 [shape=record label="{3121: read-variable['stopAt',v6,-]|3122: read-property[v6,'offsetParent',v4]|3123: \<variable-non-null-undef\>['stopAt']}" ] 
+BB860 -> BB862 [tailport=s, headport=n, headlabel="      862"]
+BB860 -> BB867 [tailport=s, headport=n, color=gray]
+BB861 [shape=record label="{3124: constant[null,v4]}" ] 
+BB861 -> BB862 [tailport=s, headport=n]
+BB862 [shape=record label="{3125: write-variable[v4,'stopAt']*}" ] 
+BB862 -> BB863 [tailport=s, headport=n, headlabel="      863"]
+BB863 [shape=record label="{3126: read-variable['obj',v9,-]|3127: read-property[v9,'offsetParent',v7]|3128: \<variable-non-null-undef\>['obj']|3129: read-variable['stopAt',v8,-]|3130: !=[v7,v8,v6]|3131: if[v6](true-block:864,false-block:865)}" ] 
+BB863 -> BB864 [tailport=s, headport=n, headlabel="      864"]
+BB863 -> BB865 [tailport=s, headport=n, headlabel="      865"]
+BB863 -> BB867 [tailport=s, headport=n, color=gray]
+BB864 [shape=record label="{3132: read-variable['xPos',v11,-]|3133: read-variable['obj',v13,-]|3134: read-property[v13,'offsetLeft',v12]|3135: \<variable-non-null-undef\>['obj']|3136: +[v11,v12,v10]|3137: write-variable[v10,'xPos']|3138: read-variable['yPos',v15,-]|3139: read-variable['obj',v19,-]|3140: read-property[v19,'offsetTop',v17]|3141: \<variable-non-null-undef\>['obj']|3142: read-variable['obj',v20,-]|3143: read-property[v20,'scrollTop',v18]|3144: \<variable-non-null-undef\>['obj']|3145: -[v17,v18,v16]|3146: +[v15,v16,v14]|3147: write-variable[v14,'yPos']|3148: read-variable['obj',v22,-]|3149: read-property[v22,'offsetParent',v21]|3150: \<variable-non-null-undef\>['obj']|3151: write-variable[v21,'obj']}" ] 
+BB864 -> BB863 [tailport=s, headport=n]
+BB864 -> BB867 [tailport=s, headport=n, color=gray]
+BB865 [shape=record label="{3152: new[v1]|3153: read-variable['xPos',v10,-]|3154: write-property[v1,'x',v10]|3155: read-variable['yPos',v11,-]|3156: write-property[v1,'y',v11]}" ] 
+BB865 -> BB866 [tailport=s, headport=n, headlabel="      866"]
+BB865 -> BB867 [tailport=s, headport=n, color=gray]
+BB866 [shape=record label="{3157: return[v1]}" ] 
+BB867 [shape=record label="{3158: exceptional-return}" ] 
+//#$~ 632
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry30[shape=none,label=""];
+BB_entry30 -> BB325 [tailport=s, headport=n, headlabel="    325"]
+BB325 [shape=record label="{822: constant[undefined,v1]|823: vardecl['func']}" ] 
+BB325 -> BB326 [tailport=s, headport=n, headlabel="      326"]
+BB326 [shape=record label="{824: read-variable['isFunc',v3,-]|825: if[v3](true-block:327,false-block:328)}" ] 
+BB326 -> BB327 [tailport=s, headport=n, headlabel="      327"]
+BB326 -> BB328 [tailport=s, headport=n, headlabel="      328"]
+BB326 -> BB334 [tailport=s, headport=n, color=gray, headlabel="      334"]
+BB327 [shape=record label="{826: read-variable['method',v2,-]}" ] 
+BB327 -> BB329 [tailport=s, headport=n, headlabel="      329"]
+BB327 -> BB334 [tailport=s, headport=n, color=gray]
+BB328 [shape=record label="{827: read-variable['value',v4,-]|828: read-variable['method',v5,-]|829: read-property[v4,v5,v2]|830: \<variable-non-null-undef\>['value']}" ] 
+BB328 -> BB329 [tailport=s, headport=n]
+BB328 -> BB334 [tailport=s, headport=n, color=gray]
+BB329 [shape=record label="{831: write-variable[v2,'func']*|832: read-variable['func',v5,-]|833: constant[null,v6]|834: ==[v5,v6,v4]|835: if[v4](true-block:330,false-block:331)}" ] 
+BB329 -> BB330 [tailport=s, headport=n, headlabel="      330"]
+BB329 -> BB331 [tailport=s, headport=n, headlabel="      331"]
+BB329 -> BB334 [tailport=s, headport=n, color=gray]
+BB330 [shape=record label="{836: read-variable['func',v1,-]}" ] 
+BB330 -> BB333 [tailport=s, headport=n, headlabel="      333"]
+BB330 -> BB334 [tailport=s, headport=n, color=gray]
+BB331 [shape=record label="{837: read-variable['func',v8,-]|838: read-property[v8,'apply',-]|839: \<variable-non-null-undef\>['func']|840: read-variable['value',v9,-]|841: read-variable['args',v10,-]}" ] 
+BB331 -> BB332 [tailport=s, headport=n, headlabel="      332"]
+BB331 -> BB334 [tailport=s, headport=n, color=gray]
+BB332 [shape=record label="{842: call-func.apply [v8,'apply',v9,v10,v1]}" ] 
+BB332 -> BB333 [tailport=s, headport=n]
+BB332 -> BB334 [tailport=s, headport=n, color=gray]
+BB333 [shape=record label="{843: return[v1]}" ] 
+BB334 [shape=record label="{844: exceptional-return}" ] 
+//#$~ 283
+}

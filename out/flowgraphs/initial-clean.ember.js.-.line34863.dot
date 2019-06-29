@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1604[shape=none,label=""];
+BB_entry1604 -> BB18608 [tailport=s, headport=n, headlabel="    18608"]
+BB18608 [shape=record label="{62321: constant[undefined,v1]}" ] 
+BB18608 -> BB18609 [tailport=s, headport=n, headlabel="      18609"]
+BB18609 [shape=record label="{62322: read-variable['Ember',v4,-]|62323: read-property[v4,'BOOTED',v3]|62324: \<variable-non-null-undef\>['Ember']|62325: ![v3,v2]|62326: if[v2](true-block:18610,false-block:18612)}" ] 
+BB18609 -> BB18610 [tailport=s, headport=n, headlabel="      18610"]
+BB18609 -> BB18612 [tailport=s, headport=n, headlabel="      18612"]
+BB18609 -> BB18614 [tailport=s, headport=n, color=gray, headlabel="      18614"]
+BB18610 [shape=record label="{62327: read-variable['processAllNamespaces',v6,v5]}" ] 
+BB18610 -> BB18611 [tailport=s, headport=n, headlabel="      18611"]
+BB18610 -> BB18614 [tailport=s, headport=n, color=gray]
+BB18611 [shape=record label="{62328: call-processAllNamespaces [v5,v6,-]*}" ] 
+BB18611 -> BB18612 [tailport=s, headport=n]
+BB18611 -> BB18614 [tailport=s, headport=n, color=gray]
+BB18612 [shape=record label="{62329: read-variable['NAMESPACES_BY_ID',v5,-]|62330: read-variable['name',v6,-]|62331: read-property[v5,v6,v1]|62332: \<variable-non-null-undef\>['NAMESPACES_BY_ID']}" ] 
+BB18612 -> BB18613 [tailport=s, headport=n, headlabel="      18613"]
+BB18612 -> BB18614 [tailport=s, headport=n, color=gray]
+BB18613 [shape=record label="{62333: return[v1]}" ] 
+BB18614 [shape=record label="{62334: exceptional-return}" ] 
+//#$~ 34868
+}

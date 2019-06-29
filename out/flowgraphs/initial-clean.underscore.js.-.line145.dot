@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry16[shape=none,label=""];
+BB_entry16 -> BB130 [tailport=s, headport=n, headlabel="    130"]
+BB130 [shape=record label="{322: constant[undefined,v1]|323: vardecl['length']}" ] 
+BB130 -> BB131 [tailport=s, headport=n, headlabel="      131"]
+BB131 [shape=record label="{324: read-variable['getLength',v4,v3]|325: read-variable['collection',v5,-]}" ] 
+BB131 -> BB132 [tailport=s, headport=n, headlabel="      132"]
+BB131 -> BB137 [tailport=s, headport=n, color=gray, headlabel="      137"]
+BB132 [shape=record label="{326: call-getLength [v3,v4,v5,v2]}" ] 
+BB132 -> BB133 [tailport=s, headport=n, headlabel="      133"]
+BB132 -> BB137 [tailport=s, headport=n, color=gray]
+BB133 [shape=record label="{327: write-variable[v2,'length']*|328: typeof['length',v6]|329: constant[\"number\",v7]|330: ==[v6,v7,v1]|331: if[v1](true-block:134,false-block:136)}" ] 
+BB133 -> BB136 [tailport=s, headport=n, headlabel="      136"]
+BB133 -> BB134 [tailport=s, headport=n, headlabel="      134"]
+BB133 -> BB137 [tailport=s, headport=n, color=gray]
+BB134 [shape=record label="{332: read-variable['length',v8,-]|333: constant[0.0,v9]|334: \>=[v8,v9,v1]|335: if[v1](true-block:135,false-block:136)}" ] 
+BB134 -> BB136 [tailport=s, headport=n]
+BB134 -> BB135 [tailport=s, headport=n, headlabel="      135"]
+BB134 -> BB137 [tailport=s, headport=n, color=gray]
+BB135 [shape=record label="{336: read-variable['length',v10,-]|337: read-variable['MAX_ARRAY_INDEX',v11,-]|338: \<=[v10,v11,v1]}" ] 
+BB135 -> BB136 [tailport=s, headport=n]
+BB135 -> BB137 [tailport=s, headport=n, color=gray]
+BB136 [shape=record label="{339: return[v1]}" ] 
+BB137 [shape=record label="{340: exceptional-return}" ] 
+//#$~ 147
+}

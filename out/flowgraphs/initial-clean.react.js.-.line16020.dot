@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry657[shape=none,label=""];
+BB_entry657 -> BB9083 [tailport=s, headport=n, headlabel="    9083"]
+BB9083 [shape=record label="{30407: constant[undefined,v1]|30408: vardecl['event']}" ] 
+BB9083 -> BB9084 [tailport=s, headport=n, headlabel="      9084"]
+BB9084 [shape=record label="{30409: read-variable['this',v3,-]|30410: read-property[v3,'nativeEvent',v2]|30411: write-variable[v2,'event']*|30412: read-variable['event',v5,-]|30413: read-property[v5,'stopPropagation',v4]|30414: \<variable-non-null-undef\>['event']|30415: if[v4](true-block:9085,false-block:9086)}" ] 
+BB9084 -> BB9085 [tailport=s, headport=n, headlabel="      9085"]
+BB9084 -> BB9086 [tailport=s, headport=n, headlabel="      9086"]
+BB9084 -> BB9090 [tailport=s, headport=n, color=gray, headlabel="      9090"]
+BB9085 [shape=record label="{30416: read-variable['event',v7,-]|30417: read-property[v7,'stopPropagation',-]|30418: \<variable-non-null-undef\>['event']}" ] 
+BB9085 -> BB9087 [tailport=s, headport=n, headlabel="      9087"]
+BB9085 -> BB9090 [tailport=s, headport=n, color=gray]
+BB9086 [shape=record label="{30419: read-variable['event',v7,-]|30420: constant[true,v6]|30421: write-property[v7,'cancelBubble',v6]|30422: \<variable-non-null-undef\>['event']*}" ] 
+BB9086 -> BB9088 [tailport=s, headport=n, headlabel="      9088"]
+BB9086 -> BB9090 [tailport=s, headport=n, color=gray]
+BB9087 [shape=record label="{30423: call-event.stopPropagation [v7,'stopPropagation',-]*}" ] 
+BB9087 -> BB9088 [tailport=s, headport=n]
+BB9087 -> BB9090 [tailport=s, headport=n, color=gray]
+BB9088 [shape=record label="{30424: read-variable['this',v7,-]|30425: read-variable['emptyFunction',v8,-]|30426: read-property[v8,'thatReturnsTrue',v6]|30427: \<variable-non-null-undef\>['emptyFunction']|30428: write-property[v7,'isPropagationStopped',v6]*}" ] 
+BB9088 -> BB9089 [tailport=s, headport=n, headlabel="      9089"]
+BB9088 -> BB9090 [tailport=s, headport=n, color=gray]
+BB9089 [shape=record label="{30429: return[v1]}" ] 
+BB9090 [shape=record label="{30430: exceptional-return}" ] 
+//#$~ 16027
+}

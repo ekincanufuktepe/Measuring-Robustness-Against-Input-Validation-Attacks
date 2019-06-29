@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry338[shape=none,label=""];
+BB_entry338 -> BB4968 [tailport=s, headport=n, headlabel="    4968"]
+BB4968 [shape=record label="{17254: constant[undefined,v1]|17255: vardecl['alreadyBatchingUpdates']}" ] 
+BB4968 -> BB4969 [tailport=s, headport=n, headlabel="      4969"]
+BB4969 [shape=record label="{17256: read-variable['ReactDefaultBatchingStrategy',v3,-]|17257: read-property[v3,'isBatchingUpdates',v2]|17258: \<variable-non-null-undef\>['ReactDefaultBatchingStrategy']|17259: write-variable[v2,'alreadyBatchingUpdates']*|17260: read-variable['ReactDefaultBatchingStrategy',v5,-]|17261: constant[true,v4]|17262: write-property[v5,'isBatchingUpdates',v4]|17263: \<variable-non-null-undef\>['ReactDefaultBatchingStrategy']*|17264: read-variable['alreadyBatchingUpdates',v6,-]|17265: if[v6](true-block:4970,false-block:4971)}" ] 
+BB4969 -> BB4970 [tailport=s, headport=n, headlabel="      4970"]
+BB4969 -> BB4971 [tailport=s, headport=n, headlabel="      4971"]
+BB4969 -> BB4975 [tailport=s, headport=n, color=gray, headlabel="      4975"]
+BB4970 [shape=record label="{17266: read-variable['callback',v8,v7]|17267: read-variable['a',v9,-]|17268: read-variable['b',v10,-]|17269: read-variable['c',v11,-]|17270: read-variable['d',v12,-]}" ] 
+BB4970 -> BB4972 [tailport=s, headport=n, headlabel="      4972"]
+BB4970 -> BB4975 [tailport=s, headport=n, color=gray]
+BB4971 [shape=record label="{17271: read-variable['transaction',v8,-]|17272: read-property[v8,'perform',-]|17273: \<variable-non-null-undef\>['transaction']|17274: read-variable['callback',v9,-]|17275: constant[null,v10]|17276: read-variable['a',v11,-]|17277: read-variable['b',v12,-]|17278: read-variable['c',v13,-]|17279: read-variable['d',v14,-]}" ] 
+BB4971 -> BB4973 [tailport=s, headport=n, headlabel="      4973"]
+BB4971 -> BB4975 [tailport=s, headport=n, color=gray]
+BB4972 [shape=record label="{17280: call-callback [v7,v8,v9,v10,v11,v12,-]*}" ] 
+BB4972 -> BB4974 [tailport=s, headport=n, headlabel="      4974"]
+BB4972 -> BB4975 [tailport=s, headport=n, color=gray]
+BB4973 [shape=record label="{17281: call-transaction.perform [v8,'perform',v9,v10,v11,v12,v13,v14,-]*}" ] 
+BB4973 -> BB4974 [tailport=s, headport=n]
+BB4973 -> BB4975 [tailport=s, headport=n, color=gray]
+BB4974 [shape=record label="{17282: return[v1]}" ] 
+BB4975 [shape=record label="{17283: exceptional-return}" ] 
+//#$~ 9199
+}

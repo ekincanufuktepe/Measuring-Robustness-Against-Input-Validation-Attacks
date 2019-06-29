@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry182[shape=none,label=""];
+BB_entry182 -> BB2265 [tailport=s, headport=n, headlabel="    2265"]
+BB2265 [shape=record label="{6471: constant[undefined,v1]}" ] 
+BB2265 -> BB2266 [tailport=s, headport=n, headlabel="      2266"]
+BB2266 [shape=record label="{6472: read-variable['active',v2,-]|6473: if[v2](true-block:2267,false-block:2268)}" ] 
+BB2266 -> BB2268 [tailport=s, headport=n, headlabel="      2268"]
+BB2266 -> BB2267 [tailport=s, headport=n, headlabel="      2267"]
+BB2266 -> BB2272 [tailport=s, headport=n, color=gray, headlabel="      2272"]
+BB2267 [shape=record label="{6474: read-variable['active',v3,-]|6475: read-variable['$this',v4,-]|6476: ==[v3,v4,v2]}" ] 
+BB2267 -> BB2268 [tailport=s, headport=n]
+BB2267 -> BB2272 [tailport=s, headport=n, color=gray]
+BB2268 [shape=record label="{6477: if[v2](true-block:2269,false-block:2271)}" ] 
+BB2268 -> BB2269 [tailport=s, headport=n, headlabel="      2269"]
+BB2268 -> BB2271 [tailport=s, headport=n, headlabel="      2271"]
+BB2269 [shape=record label="{6478: read-variable['$this',v4,-]|6479: read-property[v4,'hide',-]|6480: \<variable-non-null-undef\>['$this']}" ] 
+BB2269 -> BB2270 [tailport=s, headport=n, headlabel="      2270"]
+BB2269 -> BB2272 [tailport=s, headport=n, color=gray]
+BB2270 [shape=record label="{6481: call-$this.hide [v4,'hide',-]*}" ] 
+BB2270 -> BB2271 [tailport=s, headport=n]
+BB2270 -> BB2272 [tailport=s, headport=n, color=gray]
+BB2271 [shape=record label="{6482: return[v1]}" ] 
+BB2272 [shape=record label="{6483: exceptional-return}" ] 
+//#$~ 1781
+}

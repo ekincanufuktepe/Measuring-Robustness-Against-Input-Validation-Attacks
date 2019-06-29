@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry890[shape=none,label=""];
+BB_entry890 -> BB11532 [tailport=s, headport=n, headlabel="    11532"]
+BB11532 [shape=record label="{30327: constant[undefined,v1]}" ] 
+BB11532 -> BB11533 [tailport=s, headport=n, headlabel="      11533"]
+BB11533 [shape=record label="{30328: read-variable['isDefined',v4,v3]|30329: read-variable['regexp',v5,-]}" ] 
+BB11533 -> BB11534 [tailport=s, headport=n, headlabel="      11534"]
+BB11533 -> BB11539 [tailport=s, headport=n, color=gray, headlabel="      11539"]
+BB11534 [shape=record label="{30330: call-isDefined [v3,v4,v5,v2]}" ] 
+BB11534 -> BB11535 [tailport=s, headport=n, headlabel="      11535"]
+BB11534 -> BB11539 [tailport=s, headport=n, color=gray]
+BB11535 [shape=record label="{30331: if[v2](true-block:11536,false-block:11537)}" ] 
+BB11535 -> BB11536 [tailport=s, headport=n, headlabel="      11536"]
+BB11535 -> BB11537 [tailport=s, headport=n, headlabel="      11537"]
+BB11536 [shape=record label="{30332: read-variable['regexp',v6,-]|30333: write-variable[v6,'imgSrcSanitizationWhitelist']*|30334: read-variable['this',v1,-]}" ] 
+BB11536 -> BB11538 [tailport=s, headport=n, headlabel="      11538"]
+BB11536 -> BB11539 [tailport=s, headport=n, color=gray]
+BB11537 [shape=record label="{30335: read-variable['imgSrcSanitizationWhitelist',v1,-]}" ] 
+BB11537 -> BB11538 [tailport=s, headport=n]
+BB11537 -> BB11539 [tailport=s, headport=n, color=gray]
+BB11538 [shape=record label="{30336: return[v1]}" ] 
+BB11539 [shape=record label="{30337: exceptional-return}" ] 
+//#$~ 16309
+}

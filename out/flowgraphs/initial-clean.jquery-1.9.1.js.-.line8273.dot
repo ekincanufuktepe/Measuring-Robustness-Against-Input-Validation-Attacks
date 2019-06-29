@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry494[shape=none,label=""];
+BB_entry494 -> BB8002 [tailport=s, headport=n, headlabel="    8002"]
+BB8002 [shape=record label="{23501: constant[undefined,v1]}" ] 
+BB8002 -> BB8003 [tailport=s, headport=n, headlabel="      8003"]
+BB8003 [shape=record label="{23502: read-variable['jQuery',v3,-]|23503: read-property[v3,'globalEval',-]|23504: \<variable-non-null-undef\>['jQuery']|23505: read-variable['text',v4,-]}" ] 
+BB8003 -> BB8004 [tailport=s, headport=n, headlabel="      8004"]
+BB8003 -> BB8007 [tailport=s, headport=n, color=gray, headlabel="      8007"]
+BB8004 [shape=record label="{23506: call-jQuery.globalEval [v3,'globalEval',v4,-]*}" ] 
+BB8004 -> BB8005 [tailport=s, headport=n, headlabel="      8005"]
+BB8004 -> BB8007 [tailport=s, headport=n, color=gray]
+BB8005 [shape=record label="{23507: read-variable['text',v1,-]}" ] 
+BB8005 -> BB8006 [tailport=s, headport=n, headlabel="      8006"]
+BB8005 -> BB8007 [tailport=s, headport=n, color=gray]
+BB8006 [shape=record label="{23508: return[v1]}" ] 
+BB8007 [shape=record label="{23509: exceptional-return}" ] 
+}

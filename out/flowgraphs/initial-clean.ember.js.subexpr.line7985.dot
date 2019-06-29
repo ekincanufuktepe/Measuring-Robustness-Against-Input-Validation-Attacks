@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry335[shape=none,label=""];
+BB_entry335 -> BB4178 [tailport=s, headport=n, headlabel="    4178"]
+BB4178 [shape=record label="{14043: constant[undefined,v1]|14044: vardecl['helper']|14045: vardecl['options']}" ] 
+BB4178 -> BB4179 [tailport=s, headport=n, headlabel="      4179"]
+BB4179 [shape=record label="{14046: read-variable['lookupHelper',v5,v4]|14047: read-variable['path',v6,v2]|14048: read-variable['view',v7,v2]|14049: read-variable['env',v8,v2]}" ] 
+BB4179 -> BB4180 [tailport=s, headport=n, headlabel="      4180"]
+BB4179 -> BB4186 [tailport=s, headport=n, color=gray, headlabel="      4186"]
+BB4180 [shape=record label="{14050: call-lookupHelper [v4,v5,v6,v7,v8,v3]}" ] 
+BB4180 -> BB4181 [tailport=s, headport=n, headlabel="      4181"]
+BB4180 -> BB4186 [tailport=s, headport=n, color=gray]
+BB4181 [shape=record label="{14051: write-variable[v3,'helper']*|14052: read-variable['Ember',v10,-]|14053: read-property[v10,'assert',-]|14054: \<variable-non-null-undef\>['Ember']|14055: constant[\"A helper named '\",v14]|14056: read-variable['path',v15,v2]|14057: +[v14,v15,v12]|14058: constant[\"' could not be found\",v13]|14059: +[v12,v13,v11]|14060: read-variable['helper',v16,v2]}" ] 
+BB4181 -> BB4182 [tailport=s, headport=n, headlabel="      4182"]
+BB4181 -> BB4186 [tailport=s, headport=n, color=gray]
+BB4182 [shape=record label="{14061: call-Ember.assert [v10,'assert',v11,v16,-]*}" ] 
+BB4182 -> BB4183 [tailport=s, headport=n, headlabel="      4183"]
+BB4182 -> BB4186 [tailport=s, headport=n, color=gray]
+BB4183 [shape=record label="{14062: new[v17]|14063: constant[true,v18]|14064: write-property[v17,'isInline',v18]|14065: write-variable[v17,'options']*|14066: read-variable['helper',v21,-]|14067: read-property[v21,'helperFunction',v20]|14068: \<variable-non-null-undef\>['helper']|14069: read-property[v20,'call',-]|14070: \<property-non-null-undef\>[v21,'helperFunction']|14071: read-variable['view',v22,v2]|14072: read-variable['params',v23,v2]|14073: read-variable['hash',v24,v2]|14074: read-variable['options',v25,v2]|14075: read-variable['env',v26,v2]}" ] 
+BB4183 -> BB4184 [tailport=s, headport=n, headlabel="      4184"]
+BB4183 -> BB4186 [tailport=s, headport=n, color=gray]
+BB4184 [shape=record label="{14076: call-helper.helperFunction.call [v20,'call',v22,v23,v24,v25,v26,v1]}" ] 
+BB4184 -> BB4185 [tailport=s, headport=n, headlabel="      4185"]
+BB4184 -> BB4186 [tailport=s, headport=n, color=gray]
+BB4185 [shape=record label="{14077: return[v1]}" ] 
+BB4186 [shape=record label="{14078: exceptional-return}" ] 
+//#$~ 7993
+}

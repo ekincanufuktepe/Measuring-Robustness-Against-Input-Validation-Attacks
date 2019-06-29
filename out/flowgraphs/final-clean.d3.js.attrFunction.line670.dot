@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry113[shape=none,label=""];
+BB_entry113 -> BB1123 [tailport=s, headport=n, headlabel="    1123"]
+BB1123 [shape=record label="{3324: constant[undefined,v1]|3325: vardecl['x']}" ] 
+BB1123 -> BB1124 [tailport=s, headport=n, headlabel="      1124"]
+BB1124 [shape=record label="{3326: read-variable['value',v4,-]|3327: read-property[v4,'apply',-]|3328: \<variable-non-null-undef\>['value']|3329: read-variable['this',v5,-]|3330: read-variable['arguments',v6,-]}" ] 
+BB1124 -> BB1125 [tailport=s, headport=n, headlabel="      1125"]
+BB1124 -> BB1132 [tailport=s, headport=n, color=gray, headlabel="      1132"]
+BB1125 [shape=record label="{3331: call-value.apply [v4,'apply',v5,v6,v2]}" ] 
+BB1125 -> BB1126 [tailport=s, headport=n, headlabel="      1126"]
+BB1125 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1126 [shape=record label="{3332: write-variable[v2,'x']*|3333: read-variable['x',v8,-]|3334: constant[null,v9]|3335: ==[v8,v9,v7]|3336: if[v7](true-block:1127,false-block:1128)}" ] 
+BB1126 -> BB1127 [tailport=s, headport=n, headlabel="      1127"]
+BB1126 -> BB1128 [tailport=s, headport=n, headlabel="      1128"]
+BB1126 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1127 [shape=record label="{3337: read-variable['this',v11,-]|3338: read-property[v11,'removeAttribute',-]|3339: read-variable['name',v12,-]}" ] 
+BB1127 -> BB1129 [tailport=s, headport=n, headlabel="      1129"]
+BB1127 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1128 [shape=record label="{3340: read-variable['this',v11,-]|3341: read-property[v11,'setAttribute',-]|3342: read-variable['name',v12,-]|3343: read-variable['x',v13,-]}" ] 
+BB1128 -> BB1130 [tailport=s, headport=n, headlabel="      1130"]
+BB1128 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1129 [shape=record label="{3344: call-this.removeAttribute [v11,'removeAttribute',v12,-]*}" ] 
+BB1129 -> BB1131 [tailport=s, headport=n, headlabel="      1131"]
+BB1129 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1130 [shape=record label="{3345: call-this.setAttribute [v11,'setAttribute',v12,v13,-]*}" ] 
+BB1130 -> BB1131 [tailport=s, headport=n]
+BB1130 -> BB1132 [tailport=s, headport=n, color=gray]
+BB1131 [shape=record label="{3346: return[v1]}" ] 
+BB1132 [shape=record label="{3347: exceptional-return}" ] 
+//#$~ 672
+}

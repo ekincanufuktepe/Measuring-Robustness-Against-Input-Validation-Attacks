@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry882[shape=none,label=""];
+BB_entry882 -> BB11465 [tailport=s, headport=n, headlabel="    11465"]
+BB11465 [shape=record label="{30122: constant[undefined,v1]}" ] 
+BB11465 -> BB11466 [tailport=s, headport=n, headlabel="      11466"]
+BB11466 [shape=record label="{30123: read-variable['current',v5,-]|30124: read-property[v5,'$$watchersCount',v4]|30125: \<variable-non-null-undef\>['current']|30126: read-variable['count',v6,-]|30127: +[v4,v6,v3]|30128: write-property[v5,'$$watchersCount',v3]|30129: \<variable-non-null-undef\>['current']*}" ] 
+BB11466 -> BB11467 [tailport=s, headport=n, headlabel="      11467"]
+BB11466 -> BB11469 [tailport=s, headport=n, color=gray, headlabel="      11469"]
+BB11467 [shape=record label="{30130: read-variable['current',v3,-]|30131: read-property[v3,'$parent',v2]|30132: \<variable-non-null-undef\>['current']|30133: write-variable[v2,'current']|30134: if[v2](true-block:11466,false-block:11468)}" ] 
+BB11467 -> BB11466 [tailport=s, headport=n]
+BB11467 -> BB11468 [tailport=s, headport=n, headlabel="      11468"]
+BB11467 -> BB11469 [tailport=s, headport=n, color=gray]
+BB11468 [shape=record label="{30135: return[v1]}" ] 
+BB11469 [shape=record label="{30136: exceptional-return}" ] 
+//#$~ 16215
+}

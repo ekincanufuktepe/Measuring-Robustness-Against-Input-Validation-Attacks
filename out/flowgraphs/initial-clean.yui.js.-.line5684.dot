@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry179[shape=none,label=""];
+BB_entry179 -> BB3360 [tailport=s, headport=n, headlabel="    3360"]
+BB3360 [shape=record label="{11442: constant[undefined,v1]|11443: vardecl['path']}" ] 
+BB3360 -> BB3361 [tailport=s, headport=n, headlabel="      3361"]
+BB3361 [shape=record label="{11444: read-variable['dir',v5,-]|11445: constant[\"/\",v6]|11446: +[v5,v6,v3]|11447: read-variable['file',v4,-]|11448: +[v3,v4,v2]|11449: write-variable[v2,'path']*|11450: read-variable['nomin',v8,-]|11451: ![v8,v7]|11452: if[v7](true-block:3362,false-block:3363)}" ] 
+BB3361 -> BB3362 [tailport=s, headport=n, headlabel="      3362"]
+BB3361 -> BB3363 [tailport=s, headport=n, headlabel="      3363"]
+BB3361 -> BB3367 [tailport=s, headport=n, color=gray, headlabel="      3367"]
+BB3362 [shape=record label="{11453: read-variable['path',v10,-]|11454: constant[\"-min\",v11]|11455: +[v10,v11,v9]|11456: write-variable[v9,'path']*}" ] 
+BB3362 -> BB3363 [tailport=s, headport=n]
+BB3362 -> BB3367 [tailport=s, headport=n, color=gray]
+BB3363 [shape=record label="{11457: read-variable['path',v10,-]|11458: constant[\".\",v12]|11459: read-variable['type',v13,-]|11460: if[v13](true-block:3365,false-block:3364)}" ] 
+BB3363 -> BB3365 [tailport=s, headport=n, headlabel="      3365"]
+BB3363 -> BB3364 [tailport=s, headport=n, headlabel="      3364"]
+BB3363 -> BB3367 [tailport=s, headport=n, color=gray]
+BB3364 [shape=record label="{11461: read-variable['CSS',v13,-]}" ] 
+BB3364 -> BB3365 [tailport=s, headport=n]
+BB3364 -> BB3367 [tailport=s, headport=n, color=gray]
+BB3365 [shape=record label="{11462: +[v12,v13,v11]|11463: +[v10,v11,v9]|11464: write-variable[v9,'path']*|11465: read-variable['path',v1,-]}" ] 
+BB3365 -> BB3366 [tailport=s, headport=n, headlabel="      3366"]
+BB3365 -> BB3367 [tailport=s, headport=n, color=gray]
+BB3366 [shape=record label="{11466: return[v1]}" ] 
+BB3367 [shape=record label="{11467: exceptional-return}" ] 
+//#$~ 5691
+}

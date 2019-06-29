@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry255[shape=none,label=""];
+BB_entry255 -> BB3184 [tailport=s, headport=n, headlabel="    3184"]
+BB3184 [shape=record label="{10378: constant[undefined,v1]|10379: vardecl['boundHelperArgs']|10380: vardecl['boundFn']}" ] 
+BB3184 -> BB3185 [tailport=s, headport=n, headlabel="      3185"]
+BB3185 [shape=record label="{10381: read-variable['slice',v5,-]|10382: read-property[v5,'call',-]|10383: \<variable-non-null-undef\>['slice']|10384: read-variable['arguments',v6,v2]|10385: constant[1.0,v7]}" ] 
+BB3185 -> BB3186 [tailport=s, headport=n, headlabel="      3186"]
+BB3185 -> BB3191 [tailport=s, headport=n, color=gray, headlabel="      3191"]
+BB3186 [shape=record label="{10386: call-slice.call [v5,'call',v6,v7,v3]}" ] 
+BB3186 -> BB3187 [tailport=s, headport=n, headlabel="      3187"]
+BB3186 -> BB3191 [tailport=s, headport=n, color=gray]
+BB3187 [shape=record label="{10387: write-variable[v3,'boundHelperArgs']*|10388: read-variable['makeBoundHelper',v10,-]|10389: read-property[v10,'apply',-]|10390: \<variable-non-null-undef\>['makeBoundHelper']|10391: read-variable['this',v11,-]|10392: read-variable['boundHelperArgs',v12,v2]}" ] 
+BB3187 -> BB3188 [tailport=s, headport=n, headlabel="      3188"]
+BB3187 -> BB3191 [tailport=s, headport=n, color=gray]
+BB3188 [shape=record label="{10393: call-makeBoundHelper.apply [v10,'apply',v11,v12,v8]}" ] 
+BB3188 -> BB3189 [tailport=s, headport=n, headlabel="      3189"]
+BB3188 -> BB3191 [tailport=s, headport=n, color=gray]
+BB3189 [shape=record label="{10394: write-variable[v8,'boundFn']*|10395: read-variable['helpers',v14,v2]|10396: read-variable['name',v15,v2]|10397: read-variable['boundFn',v13,v2]|10398: write-property[v14,v15,v13]|10399: \<variable-non-null-undef\>['helpers']*}" ] 
+BB3189 -> BB3190 [tailport=s, headport=n, headlabel="      3190"]
+BB3189 -> BB3191 [tailport=s, headport=n, color=gray]
+BB3190 [shape=record label="{10400: return[v1]}" ] 
+BB3191 [shape=record label="{10401: exceptional-return}" ] 
+//#$~ 5338
+}

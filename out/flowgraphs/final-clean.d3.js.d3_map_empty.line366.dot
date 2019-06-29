@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry55[shape=none,label=""];
+BB_entry55 -> BB621 [tailport=s, headport=n, headlabel="    621"]
+BB621 [shape=record label="{1987: constant[undefined,v1]|1988: vardecl['key']}" ] 
+BB621 -> BB622 [tailport=s, headport=n, headlabel="      622"]
+BB622 [shape=record label="{1989: read-variable['this',v7,-]|1990: read-property[v7,'_',v3]}" ] 
+BB622 -> BB623 [tailport=s, headport=n, headlabel="      623"]
+BB622 -> BB629 [tailport=s, headport=n, color=gray, headlabel="      629"]
+BB623 [shape=record label="{1991: begin-for-in[v3,v4]}" ] 
+BB623 -> BB624 [tailport=s, headport=n, headlabel="      624"]
+BB623 -> BB629 [tailport=s, headport=n, color=gray]
+BB624 [shape=record label="{1992: has-next[v4,v5]|1993: if[v5](true-block:625,false-block:627)}" ] 
+BB624 -> BB625 [tailport=s, headport=n, headlabel="      625"]
+BB624 -> BB627 [tailport=s, headport=n, headlabel="      627"]
+BB625 [shape=record label="{1994: next-property[v4,v6]|1995: write-variable[v6,'key']|1996: constant[false,v1]}" ] 
+BB625 -> BB628 [tailport=s, headport=n, headlabel="      628"]
+BB626 [shape=record label="{1997: end-for-in(begin-node:1991)}" ] 
+BB626 -> BB624 [tailport=s, headport=n]
+BB627 [shape=record label="{1998: constant[true,v1]}" ] 
+BB627 -> BB628 [tailport=s, headport=n]
+BB628 [shape=record label="{1999: return[v1]}" ] 
+BB629 [shape=record label="{2000: exceptional-return}" ] 
+//#$~ 368
+}

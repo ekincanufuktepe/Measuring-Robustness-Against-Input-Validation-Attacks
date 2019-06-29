@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry38[shape=none,label=""];
+BB_entry38 -> BB392 [tailport=s, headport=n, headlabel="    392"]
+BB392 [shape=record label="{973: constant[undefined,v1]}" ] 
+BB392 -> BB393 [tailport=s, headport=n, headlabel="      393"]
+BB393 [shape=record label="{974: read-variable['iteratee',v4,v3]|975: read-variable['value',v5,-]|976: read-variable['index',v6,-]|977: read-variable['list',v7,-]}" ] 
+BB393 -> BB394 [tailport=s, headport=n, headlabel="      394"]
+BB393 -> BB401 [tailport=s, headport=n, color=gray, headlabel="      401"]
+BB394 [shape=record label="{978: call-iteratee [v3,v4,v5,v6,v7,v2]}" ] 
+BB394 -> BB395 [tailport=s, headport=n, headlabel="      395"]
+BB394 -> BB401 [tailport=s, headport=n, color=gray]
+BB395 [shape=record label="{979: write-variable[v2,'computed']*|980: read-variable['computed',v9,-]|981: read-variable['lastComputed',v10,-]|982: \<[v9,v10,v8]|983: if[v8](true-block:398,false-block:396)}" ] 
+BB395 -> BB398 [tailport=s, headport=n, headlabel="      398"]
+BB395 -> BB396 [tailport=s, headport=n, headlabel="      396"]
+BB395 -> BB401 [tailport=s, headport=n, color=gray]
+BB396 [shape=record label="{984: read-variable['computed',v9,-]|985: read-variable['Infinity',v10,-]|986: ===[v9,v10,v8]|987: if[v8](true-block:397,false-block:398)}" ] 
+BB396 -> BB398 [tailport=s, headport=n]
+BB396 -> BB397 [tailport=s, headport=n, headlabel="      397"]
+BB396 -> BB401 [tailport=s, headport=n, color=gray]
+BB397 [shape=record label="{988: read-variable['result',v11,-]|989: read-variable['Infinity',v12,-]|990: ===[v11,v12,v8]}" ] 
+BB397 -> BB398 [tailport=s, headport=n]
+BB397 -> BB401 [tailport=s, headport=n, color=gray]
+BB398 [shape=record label="{991: if[v8](true-block:399,false-block:400)}" ] 
+BB398 -> BB399 [tailport=s, headport=n, headlabel="      399"]
+BB398 -> BB400 [tailport=s, headport=n, headlabel="      400"]
+BB399 [shape=record label="{992: read-variable['value',v9,-]|993: write-variable[v9,'result']*|994: read-variable['computed',v10,-]|995: write-variable[v10,'lastComputed']*}" ] 
+BB399 -> BB400 [tailport=s, headport=n]
+BB399 -> BB401 [tailport=s, headport=n, color=gray]
+BB400 [shape=record label="{996: return[v1]}" ] 
+BB401 [shape=record label="{997: exceptional-return}" ] 
+//#$~ 341
+}

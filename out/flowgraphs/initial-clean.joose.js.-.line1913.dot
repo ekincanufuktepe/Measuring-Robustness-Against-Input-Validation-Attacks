@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry194[shape=none,label=""];
+BB_entry194 -> BB1643 [tailport=s, headport=n, headlabel="    1643"]
+BB1643 [shape=record label="{4853: constant[undefined,v1]|4854: vardecl['test']}" ] 
+BB1643 -> BB1644 [tailport=s, headport=n, headlabel="      1644"]
+BB1644 [shape=record label="{4855: read-variable['this',v4,-]|4856: read-property[v4,'methodModifiers',v3]|4857: read-property[v3,'push',-]|4858: \<property-non-null-undef\>[v4,'methodModifiers']|4859: read-variable['arguments',v5,-]}" ] 
+BB1644 -> BB1645 [tailport=s, headport=n, headlabel="      1645"]
+BB1644 -> BB1648 [tailport=s, headport=n, color=gray, headlabel="      1648"]
+BB1645 [shape=record label="{4860: call-this.methodModifiers.push [v3,'push',v5,-]*}" ] 
+BB1645 -> BB1646 [tailport=s, headport=n, headlabel="      1646"]
+BB1645 -> BB1648 [tailport=s, headport=n, color=gray]
+BB1646 [shape=record label="{4861: read-variable['this',v7,-]|4862: read-property[v7,'methodModifiers',v6]|4863: write-variable[v6,'test']*}" ] 
+BB1646 -> BB1647 [tailport=s, headport=n, headlabel="      1647"]
+BB1646 -> BB1648 [tailport=s, headport=n, color=gray]
+BB1647 [shape=record label="{4864: return[v1]}" ] 
+BB1648 [shape=record label="{4865: exceptional-return}" ] 
+//#$~ 1916
+}

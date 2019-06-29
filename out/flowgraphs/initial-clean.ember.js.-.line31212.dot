@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1425[shape=none,label=""];
+BB_entry1425 -> BB16687 [tailport=s, headport=n, headlabel="    16687"]
+BB16687 [shape=record label="{56570: constant[undefined,v1]|56571: vardecl['sortKeys']}" ] 
+BB16687 -> BB16688 [tailport=s, headport=n, headlabel="      16688"]
+BB16688 [shape=record label="{56572: read-variable['arguments',v2,-]|56573: write-variable[v2,'sortKeys']*|56574: read-variable['this',v6,-]|56575: read-property[v6,'toArray',-]}" ] 
+BB16688 -> BB16689 [tailport=s, headport=n, headlabel="      16689"]
+BB16688 -> BB16693 [tailport=s, headport=n, color=gray, headlabel="      16693"]
+BB16689 [shape=record label="{56576: call-this.toArray [v6,'toArray',v4]}" ] 
+BB16689 -> BB16690 [tailport=s, headport=n, headlabel="      16690"]
+BB16689 -> BB16693 [tailport=s, headport=n, color=gray]
+BB16690 [shape=record label="{56577: read-property[v4,'sort',-]|56578: function-expr[function ( a b ),v7]}" ] 
+BB16690 -> BB16691 [tailport=s, headport=n, headlabel="      16691"]
+BB16690 -> BB16693 [tailport=s, headport=n, color=gray]
+BB16691 [shape=record label="{56579: call-null [v4,'sort',v7,v1]}" ] 
+BB16691 -> BB16692 [tailport=s, headport=n, headlabel="      16692"]
+BB16691 -> BB16693 [tailport=s, headport=n, color=gray]
+BB16692 [shape=record label="{56580: return[v1]}" ] 
+BB16693 [shape=record label="{56581: exceptional-return}" ] 
+//#$~ 31227
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB3813 [tailport=s, headport=n, headlabel="    3813"]
+BB3813 [shape=record label="{12588: constant[undefined,v1]|12589: vardecl['strip']}" ] 
+BB3813 -> BB3814 [tailport=s, headport=n, headlabel="      3814"]
+BB3814 [shape=record label="{12590: read-variable['input',v5,-]|12591: read-property[v5,'type',v3]|12592: \<variable-non-null-undef\>['input']|12593: constant[\"Program\",v4]|12594: ===[v3,v4,v2]|12595: if[v2](true-block:3815,false-block:3816)}" ] 
+BB3814 -> BB3815 [tailport=s, headport=n, headlabel="      3815"]
+BB3814 -> BB3816 [tailport=s, headport=n, headlabel="      3816"]
+BB3814 -> BB3822 [tailport=s, headport=n, color=gray, headlabel="      3822"]
+BB3815 [shape=record label="{12596: read-variable['input',v1,-]}" ] 
+BB3815 -> BB3821 [tailport=s, headport=n, headlabel="      3821"]
+BB3815 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3816 [shape=record label="{12597: read-variable['parser',v7,-]|12598: read-variable['yy',v6,-]|12599: write-property[v7,'yy',v6]|12600: \<variable-non-null-undef\>['parser']*|12601: read-variable['yy',v9,-]|12602: function-expr[function ( locInfo ),v8]|12603: write-property[v9,'locInfo',v8]|12604: \<variable-non-null-undef\>['yy']*|12605: read-variable['WhitespaceControl',v11,-]}" ] 
+BB3816 -> BB3817 [tailport=s, headport=n, headlabel="      3817"]
+BB3816 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3817 [shape=record label="{12606: construct [-,v11,v10]}" ] 
+BB3817 -> BB3818 [tailport=s, headport=n, headlabel="      3818"]
+BB3817 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3818 [shape=record label="{12607: write-variable[v10,'strip']*|12608: read-variable['strip',v13,-]|12609: read-property[v13,'accept',-]|12610: \<variable-non-null-undef\>['strip']|12611: read-variable['parser',v16,-]|12612: read-property[v16,'parse',-]|12613: \<variable-non-null-undef\>['parser']|12614: read-variable['input',v17,-]}" ] 
+BB3818 -> BB3819 [tailport=s, headport=n, headlabel="      3819"]
+BB3818 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3819 [shape=record label="{12615: call-parser.parse [v16,'parse',v17,v14]}" ] 
+BB3819 -> BB3820 [tailport=s, headport=n, headlabel="      3820"]
+BB3819 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3820 [shape=record label="{12616: call-strip.accept [v13,'accept',v14,v1]}" ] 
+BB3820 -> BB3821 [tailport=s, headport=n]
+BB3820 -> BB3822 [tailport=s, headport=n, color=gray]
+BB3821 [shape=record label="{12617: return[v1]}" ] 
+BB3822 [shape=record label="{12618: exceptional-return}" ] 
+//#$~ 1936
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry814[shape=none,label=""];
+BB_entry814 -> BB9607 [tailport=s, headport=n, headlabel="    9607"]
+BB9607 [shape=record label="{33024: constant[undefined,v1]|33025: vardecl['props']|33026: vardecl['propertyName']|33027: vardecl['i']|33028: vardecl['l']}" ] 
+BB9607 -> BB9608 [tailport=s, headport=n, headlabel="      9608"]
+BB9608 [shape=record label="{33029: read-variable['keys',v4,v3]|33030: read-variable['properties',v5,-]}" ] 
+BB9608 -> BB9609 [tailport=s, headport=n, headlabel="      9609"]
+BB9608 -> BB9616 [tailport=s, headport=n, color=gray, headlabel="      9616"]
+BB9609 [shape=record label="{33031: call-keys [v3,v4,v5,v2]}" ] 
+BB9609 -> BB9610 [tailport=s, headport=n, headlabel="      9610"]
+BB9609 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9610 [shape=record label="{33032: write-variable[v2,'props']*|33033: constant[0.0,v7]|33034: write-variable[v7,'i']*|33035: read-variable['props',v9,-]|33036: read-property[v9,'length',v8]|33037: \<variable-non-null-undef\>['props']|33038: write-variable[v8,'l']*}" ] 
+BB9610 -> BB9611 [tailport=s, headport=n, headlabel="      9611"]
+BB9610 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9611 [shape=record label="{33039: read-variable['i',v10,-]|33040: read-variable['l',v11,-]|33041: \<[v10,v11,v6]|33042: if[v6](true-block:9612,false-block:9615)}" ] 
+BB9611 -> BB9612 [tailport=s, headport=n, headlabel="      9612"]
+BB9611 -> BB9615 [tailport=s, headport=n, headlabel="      9615"]
+BB9611 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9612 [shape=record label="{33043: read-variable['props',v13,-]|33044: read-variable['i',v14,-]|33045: read-property[v13,v14,v12]|33046: \<variable-non-null-undef\>['props']|33047: write-variable[v12,'propertyName']*|33048: read-variable['set',v16,v15]|33049: read-variable['obj',v17,-]|33050: read-variable['propertyName',v18,-]|33051: read-variable['properties',v20,-]|33052: read-variable['propertyName',v21,-]|33053: read-property[v20,v21,v19]|33054: \<variable-non-null-undef\>['properties']}" ] 
+BB9612 -> BB9613 [tailport=s, headport=n, headlabel="      9613"]
+BB9612 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9613 [shape=record label="{33055: call-set [v15,v16,v17,v18,v19,-]*}" ] 
+BB9613 -> BB9614 [tailport=s, headport=n, headlabel="      9614"]
+BB9613 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9614 [shape=record label="{33056: constant[1.0,v22]|33057: read-variable['i',v23,-]|33058: +[v23,v24]|33059: +[v24,v22,v25]|33060: write-variable[v25,'i']}" ] 
+BB9614 -> BB9611 [tailport=s, headport=n]
+BB9614 -> BB9616 [tailport=s, headport=n, color=gray]
+BB9615 [shape=record label="{33061: return[v1]}" ] 
+BB9616 [shape=record label="{33062: exceptional-return}" ] 
+//#$~ 17335
+}

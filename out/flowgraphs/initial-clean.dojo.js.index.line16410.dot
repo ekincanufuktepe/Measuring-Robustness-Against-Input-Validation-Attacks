@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry878[shape=none,label=""];
+BB_entry878 -> BB11866 [tailport=s, headport=n, headlabel="    11866"]
+BB11866 [shape=record label="{34670: constant[undefined,v1]|34671: vardecl['delta']|34672: vardecl['lOver']|34673: vardecl['uOver']}" ] 
+BB11866 -> BB11867 [tailport=s, headport=n, headlabel="      11867"]
+BB11867 [shape=record label="{34674: constant[1.0,v2]|34675: write-variable[v2,'delta']*|34676: constant[0.0,v3]|34677: write-variable[v3,'lOver']*|34678: constant[0.0,v4]|34679: write-variable[v4,'uOver']*|34680: read-variable['up',v6,-]|34681: ![v6,v5]|34682: if[v5](true-block:11868,false-block:11869)}" ] 
+BB11867 -> BB11868 [tailport=s, headport=n, headlabel="      11868"]
+BB11867 -> BB11869 [tailport=s, headport=n, headlabel="      11869"]
+BB11867 -> BB11871 [tailport=s, headport=n, color=gray, headlabel="      11871"]
+BB11868 [shape=record label="{34683: constant[-1.0,v7]|34684: write-variable[v7,'uOver']|34685: write-variable[v7,'lOver']|34686: write-variable[v7,'delta']*}" ] 
+BB11868 -> BB11869 [tailport=s, headport=n]
+BB11869 [shape=record label="{34687: function-expr[function ( a x from last ),v1]}" ] 
+BB11869 -> BB11870 [tailport=s, headport=n, headlabel="      11870"]
+BB11870 [shape=record label="{34688: return[v1]}" ] 
+BB11871 [shape=record label="{34689: exceptional-return}" ] 
+//#$~ 16439
+}

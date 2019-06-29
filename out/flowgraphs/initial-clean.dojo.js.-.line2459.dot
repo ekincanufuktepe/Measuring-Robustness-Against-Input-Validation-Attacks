@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry140[shape=none,label=""];
+BB_entry140 -> BB2350 [tailport=s, headport=n, headlabel="    2350"]
+BB2350 [shape=record label="{7008: constant[undefined,v1]}" ] 
+BB2350 -> BB2351 [tailport=s, headport=n, headlabel="      2351"]
+BB2351 [shape=record label="{7009: constant[0.5,v2]|7010: read-variable['Math',v7,-]|7011: read-property[v7,'sin',-]|7012: \<variable-non-null-undef\>['Math']|7013: read-variable['n',v11,-]|7014: constant[1.5,v12]|7015: +[v11,v12,v9]|7016: read-variable['Math',v13,-]|7017: read-property[v13,'PI',v10]|7018: \<variable-non-null-undef\>['Math']|7019: *[v9,v10,v8]}" ] 
+BB2351 -> BB2352 [tailport=s, headport=n, headlabel="      2352"]
+BB2351 -> BB2355 [tailport=s, headport=n, color=gray, headlabel="      2355"]
+BB2352 [shape=record label="{7020: call-Math.sin [v7,'sin',v8,v4]}" ] 
+BB2352 -> BB2353 [tailport=s, headport=n, headlabel="      2353"]
+BB2352 -> BB2355 [tailport=s, headport=n, color=gray]
+BB2353 [shape=record label="{7021: constant[2.0,v5]|7022: /[v4,v5,v3]|7023: +[v2,v3,v1]}" ] 
+BB2353 -> BB2354 [tailport=s, headport=n, headlabel="      2354"]
+BB2353 -> BB2355 [tailport=s, headport=n, color=gray]
+BB2354 [shape=record label="{7024: return[v1]}" ] 
+BB2355 [shape=record label="{7025: exceptional-return}" ] 
+//#$~ 2462
+}

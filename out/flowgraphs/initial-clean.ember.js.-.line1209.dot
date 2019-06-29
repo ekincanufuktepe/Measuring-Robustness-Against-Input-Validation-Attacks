@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry74[shape=none,label=""];
+BB_entry74 -> BB1036 [tailport=s, headport=n, headlabel="    1036"]
+BB1036 [shape=record label="{3448: constant[undefined,v1]|3449: vardecl['container']}" ] 
+BB1036 -> BB1037 [tailport=s, headport=n, headlabel="      1037"]
+BB1037 [shape=record label="{3450: read-variable['Container',v3,-]|3451: read-variable['this',v4,-]}" ] 
+BB1037 -> BB1038 [tailport=s, headport=n, headlabel="      1038"]
+BB1037 -> BB1043 [tailport=s, headport=n, color=gray, headlabel="      1043"]
+BB1038 [shape=record label="{3452: construct [-,v3,v4,v2]}" ] 
+BB1038 -> BB1039 [tailport=s, headport=n, headlabel="      1039"]
+BB1038 -> BB1043 [tailport=s, headport=n, color=gray]
+BB1039 [shape=record label="{3453: write-variable[v2,'container']*|3454: read-variable['this',v7,-]|3455: read-property[v7,'children',v6]|3456: read-property[v6,'push',-]|3457: \<property-non-null-undef\>[v7,'children']|3458: read-variable['container',v8,-]}" ] 
+BB1039 -> BB1040 [tailport=s, headport=n, headlabel="      1040"]
+BB1039 -> BB1043 [tailport=s, headport=n, color=gray]
+BB1040 [shape=record label="{3459: call-this.children.push [v6,'push',v8,-]*}" ] 
+BB1040 -> BB1041 [tailport=s, headport=n, headlabel="      1041"]
+BB1040 -> BB1043 [tailport=s, headport=n, color=gray]
+BB1041 [shape=record label="{3460: read-variable['container',v1,-]}" ] 
+BB1041 -> BB1042 [tailport=s, headport=n, headlabel="      1042"]
+BB1041 -> BB1043 [tailport=s, headport=n, color=gray]
+BB1042 [shape=record label="{3461: return[v1]}" ] 
+BB1043 [shape=record label="{3462: exceptional-return}" ] 
+//#$~ 1212
+}

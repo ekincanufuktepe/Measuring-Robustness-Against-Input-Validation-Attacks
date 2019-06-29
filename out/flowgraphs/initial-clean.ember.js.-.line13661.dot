@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry615[shape=none,label=""];
+BB_entry615 -> BB7389 [tailport=s, headport=n, headlabel="    7389"]
+BB7389 [shape=record label="{25856: constant[undefined,v1]|25857: vardecl['libs']|25858: vardecl['count']|25859: vardecl['i']}" ] 
+BB7389 -> BB7390 [tailport=s, headport=n, headlabel="      7390"]
+BB7390 [shape=record label="{25860: read-variable['this',v3,-]|25861: read-property[v3,'_registry',v2]|25862: write-variable[v2,'libs']*|25863: read-variable['libs',v5,-]|25864: read-property[v5,'length',v4]|25865: \<variable-non-null-undef\>['libs']|25866: write-variable[v4,'count']*|25867: constant[0.0,v7]|25868: write-variable[v7,'i']*}" ] 
+BB7390 -> BB7391 [tailport=s, headport=n, headlabel="      7391"]
+BB7390 -> BB7396 [tailport=s, headport=n, color=gray, headlabel="      7396"]
+BB7391 [shape=record label="{25869: read-variable['i',v8,-]|25870: read-variable['count',v9,-]|25871: \<[v8,v9,v6]|25872: if[v6](true-block:7392,false-block:7395)}" ] 
+BB7391 -> BB7392 [tailport=s, headport=n, headlabel="      7392"]
+BB7391 -> BB7395 [tailport=s, headport=n, headlabel="      7395"]
+BB7391 -> BB7396 [tailport=s, headport=n, color=gray]
+BB7392 [shape=record label="{25873: read-variable['libs',v14,-]|25874: read-variable['i',v15,-]|25875: read-property[v14,v15,v13]|25876: \<variable-non-null-undef\>['libs']|25877: read-property[v13,'name',v11]|25878: \<property-non-null-undef\>[v14,v15]|25879: read-variable['name',v12,-]|25880: ===[v11,v12,v10]|25881: if[v10](true-block:7393,false-block:7394)}" ] 
+BB7392 -> BB7393 [tailport=s, headport=n, headlabel="      7393"]
+BB7392 -> BB7394 [tailport=s, headport=n, headlabel="      7394"]
+BB7392 -> BB7396 [tailport=s, headport=n, color=gray]
+BB7393 [shape=record label="{25882: read-variable['libs',v16,-]|25883: read-variable['i',v17,-]|25884: read-property[v16,v17,v1]|25885: \<variable-non-null-undef\>['libs']}" ] 
+BB7393 -> BB7395 [tailport=s, headport=n]
+BB7393 -> BB7396 [tailport=s, headport=n, color=gray]
+BB7394 [shape=record label="{25886: constant[1.0,v16]|25887: read-variable['i',v17,-]|25888: +[v17,v18]|25889: +[v18,v16,v19]|25890: write-variable[v19,'i']}" ] 
+BB7394 -> BB7391 [tailport=s, headport=n]
+BB7394 -> BB7396 [tailport=s, headport=n, color=gray]
+BB7395 [shape=record label="{25891: return[v1]}" ] 
+BB7396 [shape=record label="{25892: exceptional-return}" ] 
+//#$~ 13665
+}

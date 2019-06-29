@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry292[shape=none,label=""];
+BB_entry292 -> BB4710 [tailport=s, headport=n, headlabel="    4710"]
+BB4710 [shape=record label="{13651: constant[undefined,v1]|13652: vardecl['name']}" ] 
+BB4710 -> BB4711 [tailport=s, headport=n, headlabel="      4711"]
+BB4711 [shape=record label="{13653: constant[\"on\",v3]|13654: read-variable['type',v4,-]|13655: +[v3,v4,v2]|13656: write-variable[v2,'name']*|13657: read-variable['elem',v6,-]|13658: read-property[v6,'detachEvent',v5]|13659: \<variable-non-null-undef\>['elem']|13660: if[v5](true-block:4712,false-block:4716)}" ] 
+BB4711 -> BB4712 [tailport=s, headport=n, headlabel="      4712"]
+BB4711 -> BB4716 [tailport=s, headport=n, headlabel="      4716"]
+BB4711 -> BB4717 [tailport=s, headport=n, color=gray, headlabel="      4717"]
+BB4712 [shape=record label="{13661: read-variable['elem',v11,-]|13662: read-variable['name',v12,-]|13663: read-property[v11,v12,v10]|13664: \<variable-non-null-undef\>['elem']|13665: typeof[v10,v8]|13666: read-variable['strundefined',v9,-]|13667: ===[v8,v9,v7]|13668: if[v7](true-block:4713,false-block:4714)}" ] 
+BB4712 -> BB4713 [tailport=s, headport=n, headlabel="      4713"]
+BB4712 -> BB4714 [tailport=s, headport=n, headlabel="      4714"]
+BB4712 -> BB4717 [tailport=s, headport=n, color=gray]
+BB4713 [shape=record label="{13669: read-variable['elem',v14,-]|13670: read-variable['name',v15,-]|13671: constant[null,v13]|13672: write-property[v14,v15,v13]|13673: \<variable-non-null-undef\>['elem']*}" ] 
+BB4713 -> BB4714 [tailport=s, headport=n]
+BB4713 -> BB4717 [tailport=s, headport=n, color=gray]
+BB4714 [shape=record label="{13674: read-variable['elem',v14,-]|13675: read-property[v14,'detachEvent',-]|13676: \<variable-non-null-undef\>['elem']|13677: read-variable['name',v15,-]|13678: read-variable['handle',v16,-]}" ] 
+BB4714 -> BB4715 [tailport=s, headport=n, headlabel="      4715"]
+BB4714 -> BB4717 [tailport=s, headport=n, color=gray]
+BB4715 [shape=record label="{13679: call-0:0[v14,'detachEvent',v15,v16,-]*}" ] 
+BB4715 -> BB4716 [tailport=s, headport=n]
+BB4715 -> BB4717 [tailport=s, headport=n, color=gray]
+BB4716 [shape=record label="{13680: return[v1]}" ] 
+BB4717 [shape=record label="{13681: exceptional-return}" ] 
+}

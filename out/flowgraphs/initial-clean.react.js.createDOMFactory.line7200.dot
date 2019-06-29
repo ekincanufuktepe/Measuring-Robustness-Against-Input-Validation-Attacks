@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry260[shape=none,label=""];
+BB_entry260 -> BB3729 [tailport=s, headport=n, headlabel="    3729"]
+BB3729 [shape=record label="{13043: constant[undefined,v1]}" ] 
+BB3729 -> BB3730 [tailport=s, headport=n, headlabel="      3730"]
+BB3730 [shape=record label="{13044: constant[\"production\",v3]|13045: constant[\"development\",v4]|13046: !==[v3,v4,v2]|13047: if[v2](true-block:3731,false-block:3733)}" ] 
+BB3730 -> BB3731 [tailport=s, headport=n, headlabel="      3731"]
+BB3730 -> BB3733 [tailport=s, headport=n, headlabel="      3733"]
+BB3730 -> BB3736 [tailport=s, headport=n, color=gray, headlabel="      3736"]
+BB3731 [shape=record label="{13048: read-variable['ReactElementValidator',v6,-]|13049: read-property[v6,'createFactory',-]|13050: \<variable-non-null-undef\>['ReactElementValidator']|13051: read-variable['tag',v7,-]}" ] 
+BB3731 -> BB3732 [tailport=s, headport=n, headlabel="      3732"]
+BB3731 -> BB3736 [tailport=s, headport=n, color=gray]
+BB3732 [shape=record label="{13052: call-ReactElementValidator.createFactory [v6,'createFactory',v7,v1]}" ] 
+BB3732 -> BB3735 [tailport=s, headport=n, headlabel="      3735"]
+BB3732 -> BB3736 [tailport=s, headport=n, color=gray]
+BB3733 [shape=record label="{13053: read-variable['ReactElement',v6,-]|13054: read-property[v6,'createFactory',-]|13055: \<variable-non-null-undef\>['ReactElement']|13056: read-variable['tag',v7,-]}" ] 
+BB3733 -> BB3734 [tailport=s, headport=n, headlabel="      3734"]
+BB3733 -> BB3736 [tailport=s, headport=n, color=gray]
+BB3734 [shape=record label="{13057: call-ReactElement.createFactory [v6,'createFactory',v7,v1]}" ] 
+BB3734 -> BB3735 [tailport=s, headport=n]
+BB3734 -> BB3736 [tailport=s, headport=n, color=gray]
+BB3735 [shape=record label="{13058: return[v1]}" ] 
+BB3736 [shape=record label="{13059: exceptional-return}" ] 
+//#$~ 7204
+}

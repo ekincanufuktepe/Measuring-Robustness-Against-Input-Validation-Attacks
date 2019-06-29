@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry39[shape=none,label=""];
+BB_entry39 -> BB469 [tailport=s, headport=n, headlabel="    469"]
+BB469 [shape=record label="{1045: constant[undefined,v1]}" ] 
+BB469 -> BB470 [tailport=s, headport=n, headlabel="      470"]
+BB470 [shape=record label="{1046: read-variable['value',v3,-]|1047: constant[null,v4]|1048: ==[v3,v4,v2]|1049: if[v2](true-block:471,false-block:472)}" ] 
+BB470 -> BB471 [tailport=s, headport=n, headlabel="      471"]
+BB470 -> BB472 [tailport=s, headport=n, headlabel="      472"]
+BB470 -> BB476 [tailport=s, headport=n, color=gray, headlabel="      476"]
+BB471 [shape=record label="{1050: read-variable['node',v6,-]|1051: read-property[v6,'removeAttribute',-]|1052: \<variable-non-null-undef\>['node']|1053: read-variable['name',v7,-]}" ] 
+BB471 -> BB473 [tailport=s, headport=n, headlabel="      473"]
+BB471 -> BB476 [tailport=s, headport=n, color=gray]
+BB472 [shape=record label="{1054: read-variable['node',v6,-]|1055: read-property[v6,'setAttribute',-]|1056: \<variable-non-null-undef\>['node']|1057: read-variable['name',v7,-]|1058: read-variable['value',v8,-]}" ] 
+BB472 -> BB474 [tailport=s, headport=n, headlabel="      474"]
+BB472 -> BB476 [tailport=s, headport=n, color=gray]
+BB473 [shape=record label="{1059: call-node.removeAttribute [v6,'removeAttribute',v7,-]}" ] 
+BB473 -> BB475 [tailport=s, headport=n, headlabel="      475"]
+BB473 -> BB476 [tailport=s, headport=n, color=gray]
+BB474 [shape=record label="{1060: call-node.setAttribute [v6,'setAttribute',v7,v8,-]}" ] 
+BB474 -> BB475 [tailport=s, headport=n]
+BB474 -> BB476 [tailport=s, headport=n, color=gray]
+BB475 [shape=record label="{1061: return[v1]}" ] 
+BB476 [shape=record label="{1062: exceptional-return}" ] 
+//#$~ 284
+}

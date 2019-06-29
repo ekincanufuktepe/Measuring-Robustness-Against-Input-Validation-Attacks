@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry123[shape=none,label=""];
+BB_entry123 -> BB1142 [tailport=s, headport=n, headlabel="    1142"]
+BB1142 [shape=record label="{4025: constant[undefined,v1]|4026: vardecl['hitDetectionRange']}" ] 
+BB1142 -> BB1143 [tailport=s, headport=n, headlabel="      1143"]
+BB1143 [shape=record label="{4027: read-variable['this',v5,-]|4028: read-property[v5,'hitDetectionRadius',v3]|4029: read-variable['this',v6,-]|4030: read-property[v6,'radius',v4]|4031: +[v3,v4,v2]|4032: write-variable[v2,'hitDetectionRange']*|4033: read-variable['Math',v12,-]|4034: read-property[v12,'pow',-]|4035: \<variable-non-null-undef\>['Math']|4036: read-variable['chartX',v14,-]|4037: read-variable['this',v16,-]|4038: read-property[v16,'x',v15]|4039: -[v14,v15,v13]|4040: constant[2.0,v17]}" ] 
+BB1143 -> BB1144 [tailport=s, headport=n, headlabel="      1144"]
+BB1143 -> BB1151 [tailport=s, headport=n, color=gray, headlabel="      1151"]
+BB1144 [shape=record label="{4041: call-Math.pow [v12,'pow',v13,v17,v9]}" ] 
+BB1144 -> BB1145 [tailport=s, headport=n, headlabel="      1145"]
+BB1144 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1145 [shape=record label="{4042: read-variable['Math',v19,-]|4043: read-property[v19,'pow',-]|4044: \<variable-non-null-undef\>['Math']|4045: read-variable['chartY',v21,-]|4046: read-variable['this',v23,-]|4047: read-property[v23,'y',v22]|4048: -[v21,v22,v20]|4049: constant[2.0,v24]}" ] 
+BB1145 -> BB1146 [tailport=s, headport=n, headlabel="      1146"]
+BB1145 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1146 [shape=record label="{4050: call-Math.pow [v19,'pow',v20,v24,v10]}" ] 
+BB1146 -> BB1147 [tailport=s, headport=n, headlabel="      1147"]
+BB1146 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1147 [shape=record label="{4051: +[v9,v10,v7]|4052: read-variable['Math',v26,-]|4053: read-property[v26,'pow',-]|4054: \<variable-non-null-undef\>['Math']|4055: read-variable['hitDetectionRange',v27,-]|4056: constant[2.0,v28]}" ] 
+BB1147 -> BB1148 [tailport=s, headport=n, headlabel="      1148"]
+BB1147 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1148 [shape=record label="{4057: call-Math.pow [v26,'pow',v27,v28,v8]}" ] 
+BB1148 -> BB1149 [tailport=s, headport=n, headlabel="      1149"]
+BB1148 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1149 [shape=record label="{4058: \<[v7,v8,v1]}" ] 
+BB1149 -> BB1150 [tailport=s, headport=n, headlabel="      1150"]
+BB1149 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1150 [shape=record label="{4059: return[v1]}" ] 
+BB1151 [shape=record label="{4060: exceptional-return}" ] 
+//#$~ 1147
+}

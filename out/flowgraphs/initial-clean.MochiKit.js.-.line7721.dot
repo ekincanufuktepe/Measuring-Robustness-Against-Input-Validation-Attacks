@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry783[shape=none,label=""];
+BB_entry783 -> BB11055 [tailport=s, headport=n, headlabel="    11055"]
+BB11055 [shape=record label="{41384: constant[undefined,v1]|41385: vardecl['i']}" ] 
+BB11055 -> BB11056 [tailport=s, headport=n, headlabel="      11056"]
+BB11056 [shape=record label="{41386: constant[0.0,v3]|41387: write-variable[v3,'i']*}" ] 
+BB11056 -> BB11057 [tailport=s, headport=n, headlabel="      11057"]
+BB11057 [shape=record label="{41388: read-variable['i',v4,-]|41389: read-variable['lst',v6,-]|41390: read-property[v6,'length',v5]|41391: \<variable-non-null-undef\>['lst']|41392: \<[v4,v5,v2]|41393: if[v2](true-block:11058,false-block:11061)}" ] 
+BB11057 -> BB11058 [tailport=s, headport=n, headlabel="      11058"]
+BB11057 -> BB11061 [tailport=s, headport=n, headlabel="      11061"]
+BB11057 -> BB11062 [tailport=s, headport=n, color=gray, headlabel="      11062"]
+BB11058 [shape=record label="{41394: read-variable['dojo',v8,-]|41395: read-property[v8,'require',-]|41396: \<variable-non-null-undef\>['dojo']|41397: constant[\"MochiKit.\",v10]|41398: read-variable['lst',v12,-]|41399: read-variable['i',v13,-]|41400: read-property[v12,v13,v11]|41401: \<variable-non-null-undef\>['lst']|41402: +[v10,v11,v9]}" ] 
+BB11058 -> BB11059 [tailport=s, headport=n, headlabel="      11059"]
+BB11058 -> BB11062 [tailport=s, headport=n, color=gray]
+BB11059 [shape=record label="{41403: call-dojo.require [v8,'require',v9,-]*}" ] 
+BB11059 -> BB11060 [tailport=s, headport=n, headlabel="      11060"]
+BB11059 -> BB11062 [tailport=s, headport=n, color=gray]
+BB11060 [shape=record label="{41404: constant[1.0,v14]|41405: read-variable['i',v15,-]|41406: +[v15,v16]|41407: +[v16,v14,v17]|41408: write-variable[v17,'i']}" ] 
+BB11060 -> BB11057 [tailport=s, headport=n]
+BB11060 -> BB11062 [tailport=s, headport=n, color=gray]
+BB11061 [shape=record label="{41409: return[v1]}" ] 
+BB11062 [shape=record label="{41410: exceptional-return}" ] 
+//#$~ 7722
+}

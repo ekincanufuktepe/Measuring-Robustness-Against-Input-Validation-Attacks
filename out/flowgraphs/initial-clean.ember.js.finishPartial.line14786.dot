@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry683[shape=none,label=""];
+BB_entry683 -> BB8146 [tailport=s, headport=n, headlabel="    8146"]
+BB8146 [shape=record label="{28120: constant[undefined,v1]}" ] 
+BB8146 -> BB8147 [tailport=s, headport=n, headlabel="      8147"]
+BB8147 [shape=record label="{28121: read-variable['connectBindings',v3,v2]|28122: read-variable['obj',v4,-]|28123: read-variable['m',v5,-]|28124: if[v5](true-block:8150,false-block:8148)}" ] 
+BB8147 -> BB8150 [tailport=s, headport=n, headlabel="      8150"]
+BB8147 -> BB8148 [tailport=s, headport=n, headlabel="      8148"]
+BB8147 -> BB8153 [tailport=s, headport=n, color=gray, headlabel="      8153"]
+BB8148 [shape=record label="{28125: read-variable['metaFor',v7,v6]|28126: read-variable['obj',v8,-]}" ] 
+BB8148 -> BB8149 [tailport=s, headport=n, headlabel="      8149"]
+BB8148 -> BB8153 [tailport=s, headport=n, color=gray]
+BB8149 [shape=record label="{28127: call-metaFor [v6,v7,v8,v5]}" ] 
+BB8149 -> BB8150 [tailport=s, headport=n]
+BB8149 -> BB8153 [tailport=s, headport=n, color=gray]
+BB8150 [shape=record label="{28128: call-connectBindings [v2,v3,v4,v5,-]*}" ] 
+BB8150 -> BB8151 [tailport=s, headport=n, headlabel="      8151"]
+BB8150 -> BB8153 [tailport=s, headport=n, color=gray]
+BB8151 [shape=record label="{28129: read-variable['obj',v1,-]}" ] 
+BB8151 -> BB8152 [tailport=s, headport=n, headlabel="      8152"]
+BB8151 -> BB8153 [tailport=s, headport=n, color=gray]
+BB8152 [shape=record label="{28130: return[v1]}" ] 
+BB8153 [shape=record label="{28131: exceptional-return}" ] 
+//#$~ 14788
+}

@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry347[shape=none,label=""];
+BB_entry347 -> BB3946 [tailport=s, headport=n, headlabel="    3946"]
+BB3946 [shape=record label="{11995: constant[undefined,v1]|11996: vardecl['locale_decimal']|11997: vardecl['locale_thousands']|11998: vardecl['locale_grouping']|11999: vardecl['locale_currency']|12000: vardecl['formatGroup']}" ] 
+BB3946 -> BB3947 [tailport=s, headport=n, headlabel="      3947"]
+BB3947 [shape=record label="{12001: read-variable['locale',v3,-]|12002: read-property[v3,'decimal',v2]|12003: \<variable-non-null-undef\>['locale']|12004: write-variable[v2,'locale_decimal']*|12005: read-variable['locale',v5,-]|12006: read-property[v5,'thousands',v4]|12007: \<variable-non-null-undef\>['locale']|12008: write-variable[v4,'locale_thousands']*|12009: read-variable['locale',v7,-]|12010: read-property[v7,'grouping',v6]|12011: \<variable-non-null-undef\>['locale']|12012: write-variable[v6,'locale_grouping']*|12013: read-variable['locale',v9,-]|12014: read-property[v9,'currency',v8]|12015: \<variable-non-null-undef\>['locale']|12016: write-variable[v8,'locale_currency']*|12017: read-variable['locale_grouping',v11,-]|12018: if[v11](true-block:3948,false-block:3949)}" ] 
+BB3947 -> BB3949 [tailport=s, headport=n, headlabel="      3949"]
+BB3947 -> BB3948 [tailport=s, headport=n, headlabel="      3948"]
+BB3947 -> BB3954 [tailport=s, headport=n, color=gray, headlabel="      3954"]
+BB3948 [shape=record label="{12019: read-variable['locale_thousands',v11,-]}" ] 
+BB3948 -> BB3949 [tailport=s, headport=n]
+BB3948 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3949 [shape=record label="{12020: if[v11](true-block:3950,false-block:3951)}" ] 
+BB3949 -> BB3950 [tailport=s, headport=n, headlabel="      3950"]
+BB3949 -> BB3951 [tailport=s, headport=n, headlabel="      3951"]
+BB3950 [shape=record label="{12021: function-expr[function ( value width ),v10]}" ] 
+BB3950 -> BB3952 [tailport=s, headport=n, headlabel="      3952"]
+BB3951 [shape=record label="{12022: read-variable['d3_identity',v10,-]}" ] 
+BB3951 -> BB3952 [tailport=s, headport=n]
+BB3951 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3952 [shape=record label="{12023: write-variable[v10,'formatGroup']*|12024: function-expr[function ( specifier ),v1]}" ] 
+BB3952 -> BB3953 [tailport=s, headport=n, headlabel="      3953"]
+BB3953 [shape=record label="{12025: return[v1]}" ] 
+BB3954 [shape=record label="{12026: exceptional-return}" ] 
+//#$~ 2293
+}

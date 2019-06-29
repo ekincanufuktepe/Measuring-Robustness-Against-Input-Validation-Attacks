@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry487[shape=none,label=""];
+BB_entry487 -> BB7590 [tailport=s, headport=n, headlabel="    7590"]
+BB7590 [shape=record label="{22205: constant[undefined,v1]}" ] 
+BB7590 -> BB7591 [tailport=s, headport=n, headlabel="      7591"]
+BB7591 [shape=record label="{22206: read-variable['setTimeout',v3,v2]|22207: function-expr[function(),v4]}" ] 
+BB7591 -> BB7592 [tailport=s, headport=n, headlabel="      7592"]
+BB7591 -> BB7597 [tailport=s, headport=n, color=gray, headlabel="      7597"]
+BB7592 [shape=record label="{22208: call[v2,v3,v4,-]*}" ] 
+BB7592 -> BB7593 [tailport=s, headport=n, headlabel="      7593"]
+BB7592 -> BB7597 [tailport=s, headport=n, color=gray]
+BB7593 [shape=record label="{22209: read-variable['jQuery',v6,-]|22210: read-property[v6,'now',-]|22211: \<variable-non-null-undef\>['jQuery']}" ] 
+BB7593 -> BB7594 [tailport=s, headport=n, headlabel="      7594"]
+BB7593 -> BB7597 [tailport=s, headport=n, color=gray]
+BB7594 [shape=record label="{22212: call[v6,'now',v1]}" ] 
+BB7594 -> BB7595 [tailport=s, headport=n, headlabel="      7595"]
+BB7594 -> BB7597 [tailport=s, headport=n, color=gray]
+BB7595 [shape=record label="{22213: write-variable[v1,'fxNow']}" ] 
+BB7595 -> BB7596 [tailport=s, headport=n, headlabel="      7596"]
+BB7596 [shape=record label="{22214: return[v1]}" ] 
+BB7597 [shape=record label="{22215: exceptional-return}" ] 
+}

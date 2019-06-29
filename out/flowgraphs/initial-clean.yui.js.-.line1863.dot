@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry60[shape=none,label=""];
+BB_entry60 -> BB1166 [tailport=s, headport=n, headlabel="    1166"]
+BB1166 [shape=record label="{4129: constant[undefined,v1]}" ] 
+BB1166 -> BB1167 [tailport=s, headport=n, headlabel="      1167"]
+BB1167 [shape=record label="{4130: read-variable['s',v2,-]|4131: if[v2](true-block:1168,false-block:1169)}" ] 
+BB1167 -> BB1169 [tailport=s, headport=n, headlabel="      1169"]
+BB1167 -> BB1168 [tailport=s, headport=n, headlabel="      1168"]
+BB1167 -> BB1174 [tailport=s, headport=n, color=gray, headlabel="      1174"]
+BB1168 [shape=record label="{4132: read-variable['s',v3,-]|4133: read-property[v3,'trim',v2]|4134: \<variable-non-null-undef\>['s']}" ] 
+BB1168 -> BB1169 [tailport=s, headport=n]
+BB1168 -> BB1174 [tailport=s, headport=n, color=gray]
+BB1169 [shape=record label="{4135: if[v2](true-block:1170,false-block:1171)}" ] 
+BB1169 -> BB1170 [tailport=s, headport=n, headlabel="      1170"]
+BB1169 -> BB1171 [tailport=s, headport=n, headlabel="      1171"]
+BB1170 [shape=record label="{4136: read-variable['s',v4,-]|4137: read-property[v4,'trim',-]|4138: \<variable-non-null-undef\>['s']}" ] 
+BB1170 -> BB1172 [tailport=s, headport=n, headlabel="      1172"]
+BB1170 -> BB1174 [tailport=s, headport=n, color=gray]
+BB1171 [shape=record label="{4139: read-variable['s',v1,-]}" ] 
+BB1171 -> BB1173 [tailport=s, headport=n, headlabel="      1173"]
+BB1171 -> BB1174 [tailport=s, headport=n, color=gray]
+BB1172 [shape=record label="{4140: call-s.trim [v4,'trim',v1]}" ] 
+BB1172 -> BB1173 [tailport=s, headport=n]
+BB1172 -> BB1174 [tailport=s, headport=n, color=gray]
+BB1173 [shape=record label="{4141: return[v1]}" ] 
+BB1174 [shape=record label="{4142: exceptional-return}" ] 
+//#$~ 1864
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry138[shape=none,label=""];
+BB_entry138 -> BB1983 [tailport=s, headport=n, headlabel="    1983"]
+BB1983 [shape=record label="{6767: constant[undefined,v1]}" ] 
+BB1983 -> BB1984 [tailport=s, headport=n, headlabel="      1984"]
+BB1984 [shape=record label="{6768: read-variable['this',v3,-]|6769: read-variable['root',v2,-]|6770: write-property[v3,'_root',v2]*|6771: read-variable['this',v5,-]|6772: read-variable['this',v7,-]|6773: read-property[v7,'getText',-]}" ] 
+BB1984 -> BB1985 [tailport=s, headport=n, headlabel="      1985"]
+BB1984 -> BB1988 [tailport=s, headport=n, color=gray, headlabel="      1988"]
+BB1985 [shape=record label="{6774: call-this.getText [v7,'getText',v4]}" ] 
+BB1985 -> BB1986 [tailport=s, headport=n, headlabel="      1986"]
+BB1985 -> BB1988 [tailport=s, headport=n, color=gray]
+BB1986 [shape=record label="{6775: write-property[v5,'_startText',v4]*|6776: read-variable['this',v9,-]|6777: constant[null,v8]|6778: write-property[v9,'_fallbackText',v8]*}" ] 
+BB1986 -> BB1987 [tailport=s, headport=n, headlabel="      1987"]
+BB1986 -> BB1988 [tailport=s, headport=n, color=gray]
+BB1987 [shape=record label="{6779: return[v1]}" ] 
+BB1988 [shape=record label="{6780: exceptional-return}" ] 
+//#$~ 3624
+}

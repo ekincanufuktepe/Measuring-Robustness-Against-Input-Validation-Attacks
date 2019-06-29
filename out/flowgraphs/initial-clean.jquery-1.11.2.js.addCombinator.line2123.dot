@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry140[shape=none,label=""];
+BB_entry140 -> BB1943 [tailport=s, headport=n, headlabel="    1943"]
+BB1943 [shape=record label="{5320: constant[undefined,v1]|5321: vardecl['dir']|5322: vardecl['checkNonElements']|5323: vardecl['doneName']}" ] 
+BB1943 -> BB1944 [tailport=s, headport=n, headlabel="      1944"]
+BB1944 [shape=record label="{5324: read-variable['combinator',v3,-]|5325: read-property[v3,'dir',v2]|5326: \<variable-non-null-undef\>['combinator']|5327: write-variable[v2,'dir']*|5328: read-variable['base',v4,-]|5329: if[v4](true-block:1945,false-block:1946)}" ] 
+BB1944 -> BB1946 [tailport=s, headport=n, headlabel="      1946"]
+BB1944 -> BB1945 [tailport=s, headport=n, headlabel="      1945"]
+BB1944 -> BB1950 [tailport=s, headport=n, color=gray, headlabel="      1950"]
+BB1945 [shape=record label="{5330: read-variable['dir',v5,-]|5331: constant[\"parentNode\",v6]|5332: ===[v5,v6,v4]}" ] 
+BB1945 -> BB1946 [tailport=s, headport=n]
+BB1945 -> BB1950 [tailport=s, headport=n, color=gray]
+BB1946 [shape=record label="{5333: write-variable[v4,'checkNonElements']*|5334: constant[1.0,v6]|5335: read-variable['done',v7,-]|5336: +[v7,v5]|5337: +[v5,v6,v8]|5338: write-variable[v8,'done']|5339: write-variable[v5,'doneName']*|5340: read-variable['combinator',v10,-]|5341: read-property[v10,'first',v9]|5342: \<variable-non-null-undef\>['combinator']|5343: if[v9](true-block:1947,false-block:1948)}" ] 
+BB1946 -> BB1947 [tailport=s, headport=n, headlabel="      1947"]
+BB1946 -> BB1948 [tailport=s, headport=n, headlabel="      1948"]
+BB1946 -> BB1950 [tailport=s, headport=n, color=gray]
+BB1947 [shape=record label="{5344: function-expr[function ( elem context xml ),v1]}" ] 
+BB1947 -> BB1949 [tailport=s, headport=n, headlabel="      1949"]
+BB1948 [shape=record label="{5345: function-expr[function ( elem context xml ),v1]}" ] 
+BB1948 -> BB1949 [tailport=s, headport=n]
+BB1949 [shape=record label="{5346: return[v1]}" ] 
+BB1950 [shape=record label="{5347: exceptional-return}" ] 
+}

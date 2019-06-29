@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB1610 [tailport=s, headport=n, headlabel="    1610"]
+BB1610 [shape=record label="{4987: constant[undefined,v1]}" ] 
+BB1610 -> BB1611 [tailport=s, headport=n, headlabel="      1611"]
+BB1611 [shape=record label="{4988: read-variable['this',v3,-]|4989: read-variable['this',v5,-]|4990: read-property[v5,'_itemize',-]|4991: read-variable['this',v8,-]|4992: read-property[v8,'element',v7]|4993: read-property[v7,'children',v6]|4994: \<property-non-null-undef\>[v8,'element']}" ] 
+BB1611 -> BB1612 [tailport=s, headport=n, headlabel="      1612"]
+BB1611 -> BB1615 [tailport=s, headport=n, color=gray, headlabel="      1615"]
+BB1612 [shape=record label="{4995: call-this._itemize [v5,'_itemize',v6,v2]}" ] 
+BB1612 -> BB1613 [tailport=s, headport=n, headlabel="      1613"]
+BB1612 -> BB1615 [tailport=s, headport=n, color=gray]
+BB1613 [shape=record label="{4996: write-property[v3,'items',v2]*}" ] 
+BB1613 -> BB1614 [tailport=s, headport=n, headlabel="      1614"]
+BB1613 -> BB1615 [tailport=s, headport=n, color=gray]
+BB1614 [shape=record label="{4997: return[v1]}" ] 
+BB1615 [shape=record label="{4998: exceptional-return}" ] 
+//#$~ 2215
+}

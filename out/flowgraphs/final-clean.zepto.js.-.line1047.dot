@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry193[shape=none,label=""];
+BB_entry193 -> BB2103 [tailport=s, headport=n, headlabel="    2103"]
+BB2103 [shape=record label="{5101: constant[undefined,v1]}" ] 
+BB2103 -> BB2104 [tailport=s, headport=n, headlabel="      2104"]
+BB2104 [shape=record label="{5102: read-variable['$',v5,v4]|5103: read-variable['document',v7,-]|5104: read-property[v7,'body',v6]|5105: \<variable-non-null-undef\>['document']}" ] 
+BB2104 -> BB2105 [tailport=s, headport=n, headlabel="      2105"]
+BB2104 -> BB2110 [tailport=s, headport=n, color=gray, headlabel="      2110"]
+BB2105 [shape=record label="{5106: call-$ [v4,v5,v6,v3]}" ] 
+BB2105 -> BB2106 [tailport=s, headport=n, headlabel="      2106"]
+BB2105 -> BB2110 [tailport=s, headport=n, color=gray]
+BB2106 [shape=record label="{5107: read-property[v3,'delegate',-]|5108: read-variable['this',v9,-]|5109: read-property[v9,'selector',v8]|5110: read-variable['event',v10,-]|5111: read-variable['callback',v11,-]}" ] 
+BB2106 -> BB2107 [tailport=s, headport=n, headlabel="      2107"]
+BB2106 -> BB2110 [tailport=s, headport=n, color=gray]
+BB2107 [shape=record label="{5112: call-null [v3,'delegate',v8,v10,v11,-]*}" ] 
+BB2107 -> BB2108 [tailport=s, headport=n, headlabel="      2108"]
+BB2107 -> BB2110 [tailport=s, headport=n, color=gray]
+BB2108 [shape=record label="{5113: read-variable['this',v1,-]}" ] 
+BB2108 -> BB2109 [tailport=s, headport=n, headlabel="      2109"]
+BB2108 -> BB2110 [tailport=s, headport=n, color=gray]
+BB2109 [shape=record label="{5114: return[v1]}" ] 
+BB2110 [shape=record label="{5115: exceptional-return}" ] 
+//#$~ 1049
+}

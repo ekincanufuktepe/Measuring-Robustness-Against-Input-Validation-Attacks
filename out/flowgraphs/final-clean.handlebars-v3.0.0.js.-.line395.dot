@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry31[shape=none,label=""];
+BB_entry31 -> BB361 [tailport=s, headport=n, headlabel="    361"]
+BB361 [shape=record label="{1067: constant[undefined,v1]}" ] 
+BB361 -> BB362 [tailport=s, headport=n, headlabel="      362"]
+BB362 [shape=record label="{1068: read-variable['obj',v1,-]|1069: if[v1](true-block:363,false-block:364)}" ] 
+BB362 -> BB364 [tailport=s, headport=n, headlabel="      364"]
+BB362 -> BB363 [tailport=s, headport=n, headlabel="      363"]
+BB362 -> BB365 [tailport=s, headport=n, color=gray, headlabel="      365"]
+BB363 [shape=record label="{1070: read-variable['obj',v2,-]|1071: read-variable['field',v3,-]|1072: read-property[v2,v3,v1]|1073: \<variable-non-null-undef\>['obj']}" ] 
+BB363 -> BB364 [tailport=s, headport=n]
+BB363 -> BB365 [tailport=s, headport=n, color=gray]
+BB364 [shape=record label="{1074: return[v1]}" ] 
+BB365 [shape=record label="{1075: exceptional-return}" ] 
+//#$~ 396
+}

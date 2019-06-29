@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry72[shape=none,label=""];
+BB_entry72 -> BB757 [tailport=s, headport=n, headlabel="    757"]
+BB757 [shape=record label="{1881: constant[undefined,v1]|1882: vardecl['elements']}" ] 
+BB757 -> BB758 [tailport=s, headport=n, headlabel="      758"]
+BB758 [shape=record label="{1883: read-variable['html5',v3,-]|1884: read-property[v3,'elements',v2]|1885: \<variable-non-null-undef\>['html5']|1886: write-variable[v2,'elements']*|1887: typeof['elements',v5]|1888: constant[\"string\",v6]|1889: ==[v5,v6,v4]|1890: if[v4](true-block:759,false-block:760)}" ] 
+BB758 -> BB759 [tailport=s, headport=n, headlabel="      759"]
+BB758 -> BB760 [tailport=s, headport=n, headlabel="      760"]
+BB758 -> BB763 [tailport=s, headport=n, color=gray, headlabel="      763"]
+BB759 [shape=record label="{1891: read-variable['elements',v8,-]|1892: read-property[v8,'split',-]|1893: \<variable-non-null-undef\>['elements']|1894: constant[\" \",v9]}" ] 
+BB759 -> BB761 [tailport=s, headport=n, headlabel="      761"]
+BB759 -> BB763 [tailport=s, headport=n, color=gray]
+BB760 [shape=record label="{1895: read-variable['elements',v1,-]}" ] 
+BB760 -> BB762 [tailport=s, headport=n, headlabel="      762"]
+BB760 -> BB763 [tailport=s, headport=n, color=gray]
+BB761 [shape=record label="{1896: call-elements.split [v8,'split',v9,v1]}" ] 
+BB761 -> BB762 [tailport=s, headport=n]
+BB761 -> BB763 [tailport=s, headport=n, color=gray]
+BB762 [shape=record label="{1897: return[v1]}" ] 
+BB763 [shape=record label="{1898: exceptional-return}" ] 
+//#$~ 681
+}

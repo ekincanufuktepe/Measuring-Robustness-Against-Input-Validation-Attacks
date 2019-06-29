@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry315[shape=none,label=""];
+BB_entry315 -> BB4090 [tailport=s, headport=n, headlabel="    4090"]
+BB4090 [shape=record label="{15750: constant[undefined,v1]|15751: vardecl['self']|15752: vardecl['_2f6']|15753: vardecl['_2f7']|15754: vardecl['rval']}" ] 
+BB4090 -> BB4091 [tailport=s, headport=n, headlabel="      4091"]
+BB4091 [shape=record label="{15755: read-variable['MochiKit',v3,-]|15756: read-property[v3,'DOM',v2]|15757: \<variable-non-null-undef\>['MochiKit']|15758: write-variable[v2,'self']*|15759: read-variable['self',v5,-]|15760: read-property[v5,'_document',v4]|15761: \<variable-non-null-undef\>['self']|15762: write-variable[v4,'_2f6']*|15763: read-variable['self',v7,-]|15764: read-property[v7,'_window',v6]|15765: \<variable-non-null-undef\>['self']|15766: write-variable[v6,'_2f7']*}" ] 
+BB4091 -> BB4092 [tailport=s, headport=n, headlabel="      4092"]
+BB4091 -> BB4100 [tailport=s, headport=n, color=gray, headlabel="      4100"]
+BB4092 [shape=record label="{15767: read-variable['self',v9,-]|15768: read-variable['win',v8,-]|15769: write-property[v9,'_window',v8]|15770: \<variable-non-null-undef\>['self']*|15771: read-variable['self',v11,-]|15772: read-variable['win',v12,-]|15773: read-property[v12,'document',v10]|15774: \<variable-non-null-undef\>['win']|15775: write-property[v11,'_document',v10]|15776: \<variable-non-null-undef\>['self']*|15777: read-variable['func',v15,v14]}" ] 
+BB4092 -> BB4093 [tailport=s, headport=n, headlabel="      4093"]
+BB4092 -> BB4096 [tailport=s, headport=n, color=gray, headlabel="      4096"]
+BB4093 [shape=record label="{15778: call-func [v14,v15,v13]}" ] 
+BB4093 -> BB4094 [tailport=s, headport=n, headlabel="      4094"]
+BB4093 -> BB4096 [tailport=s, headport=n, color=gray]
+BB4094 [shape=record label="{15779: write-variable[v13,'rval']*}" ] 
+BB4094 -> BB4095 [tailport=s, headport=n, headlabel="      4095"]
+BB4095 [shape=record label="{15780: read-variable['self',v11,-]|15781: read-variable['_2f7',v10,-]|15782: write-property[v11,'_window',v10]|15783: \<variable-non-null-undef\>['self']*|15784: read-variable['self',v13,-]|15785: read-variable['_2f6',v12,-]|15786: write-property[v13,'_document',v12]|15787: \<variable-non-null-undef\>['self']*|15788: read-variable['rval',v1,-]}" ] 
+BB4095 -> BB4099 [tailport=s, headport=n, headlabel="      4099"]
+BB4095 -> BB4100 [tailport=s, headport=n, color=gray]
+BB4096 [shape=record label="{15789: catch[e,v8]|15790: begin-with[v8]}" ] 
+BB4096 -> BB4097 [tailport=s, headport=n, headlabel="      4097"]
+BB4096 -> BB4100 [tailport=s, headport=n, color=gray]
+BB4097 [shape=record label="{15791: read-variable['self',v11,v9]|15792: read-variable['_2f7',v10,v9]|15793: write-property[v11,'_window',v10]|15794: \<variable-non-null-undef\>['self']*|15795: read-variable['self',v13,v9]|15796: read-variable['_2f6',v12,v9]|15797: write-property[v13,'_document',v12]|15798: \<variable-non-null-undef\>['self']*|15799: read-variable['e',v14,v9]|15800: throw[v14]*|15801: end-with}" ] 
+BB4097 -> BB4095 [tailport=s, headport=n]
+BB4097 -> BB4098 [tailport=s, headport=n, color=gray, headlabel="      4098"]
+BB4098 [shape=record label="{15802: end-with}" ] 
+BB4098 -> BB4100 [tailport=s, headport=n]
+BB4099 [shape=record label="{15803: return[v1]}" ] 
+BB4100 [shape=record label="{15804: exceptional-return}" ] 
+//#$~ 2772
+}

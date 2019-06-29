@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1411[shape=none,label=""];
+BB_entry1411 -> BB15086 [tailport=s, headport=n, headlabel="    15086"]
+BB15086 [shape=record label="{52129: constant[undefined,v1]}" ] 
+BB15086 -> BB15087 [tailport=s, headport=n, headlabel="      15087"]
+BB15087 [shape=record label="{52130: constant[1.0,v3]|52131: read-variable['lock',v5,-]|52132: read-property[v5,'count',v4]|52133: \<variable-non-null-undef\>['lock']|52134: +[v4,v6]|52135: -[v6,v3,v2]|52136: write-property[v5,'count',v2]|52137: \<variable-non-null-undef\>['lock']|52138: if[v2](true-block:15088,false-block:15089)}" ] 
+BB15087 -> BB15088 [tailport=s, headport=n, headlabel="      15088"]
+BB15087 -> BB15089 [tailport=s, headport=n, headlabel="      15089"]
+BB15087 -> BB15092 [tailport=s, headport=n, color=gray, headlabel="      15092"]
+BB15088 [shape=record label="{52139: read-variable['lock',v8,-]|52140: read-variable['id',v9,-]|52141: delete-property[v8,v9,v7]*}" ] 
+BB15088 -> BB15090 [tailport=s, headport=n, headlabel="      15090"]
+BB15088 -> BB15092 [tailport=s, headport=n, color=gray]
+BB15089 [shape=record label="{52142: read-variable['node',v8,-]|52143: read-variable['ns',v9,-]|52144: delete-property[v8,v9,v7]*}" ] 
+BB15089 -> BB15090 [tailport=s, headport=n]
+BB15089 -> BB15092 [tailport=s, headport=n, color=gray]
+BB15090 [shape=record label="{52145: constant[1.0,v1]}" ] 
+BB15090 -> BB15091 [tailport=s, headport=n, headlabel="      15091"]
+BB15091 [shape=record label="{52146: return[v1]}" ] 
+BB15092 [shape=record label="{52147: exceptional-return}" ] 
+//#$~ 8924
+}

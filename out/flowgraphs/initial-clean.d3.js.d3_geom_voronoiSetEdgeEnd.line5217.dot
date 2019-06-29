@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry840[shape=none,label=""];
+BB_entry840 -> BB9050 [tailport=s, headport=n, headlabel="    9050"]
+BB9050 [shape=record label="{29616: constant[undefined,v1]}" ] 
+BB9050 -> BB9051 [tailport=s, headport=n, headlabel="      9051"]
+BB9051 [shape=record label="{29617: read-variable['edge',v4,-]|29618: read-property[v4,'a',v3]|29619: \<variable-non-null-undef\>['edge']|29620: ![v3,v2]|29621: if[v2](true-block:9052,false-block:9053)}" ] 
+BB9051 -> BB9053 [tailport=s, headport=n, headlabel="      9053"]
+BB9051 -> BB9052 [tailport=s, headport=n, headlabel="      9052"]
+BB9051 -> BB9059 [tailport=s, headport=n, color=gray, headlabel="      9059"]
+BB9052 [shape=record label="{29622: read-variable['edge',v6,-]|29623: read-property[v6,'b',v5]|29624: \<variable-non-null-undef\>['edge']|29625: ![v5,v2]}" ] 
+BB9052 -> BB9053 [tailport=s, headport=n]
+BB9052 -> BB9059 [tailport=s, headport=n, color=gray]
+BB9053 [shape=record label="{29626: if[v2](true-block:9054,false-block:9055)}" ] 
+BB9053 -> BB9054 [tailport=s, headport=n, headlabel="      9054"]
+BB9053 -> BB9055 [tailport=s, headport=n, headlabel="      9055"]
+BB9054 [shape=record label="{29627: read-variable['edge',v6,-]|29628: read-variable['vertex',v5,-]|29629: write-property[v6,'a',v5]|29630: \<variable-non-null-undef\>['edge']*|29631: read-variable['edge',v8,-]|29632: read-variable['lSite',v7,-]|29633: write-property[v8,'l',v7]|29634: \<variable-non-null-undef\>['edge']*|29635: read-variable['edge',v10,-]|29636: read-variable['rSite',v9,-]|29637: write-property[v10,'r',v9]|29638: \<variable-non-null-undef\>['edge']*}" ] 
+BB9054 -> BB9058 [tailport=s, headport=n, headlabel="      9058"]
+BB9054 -> BB9059 [tailport=s, headport=n, color=gray]
+BB9055 [shape=record label="{29639: read-variable['edge',v8,-]|29640: read-property[v8,'l',v6]|29641: \<variable-non-null-undef\>['edge']|29642: read-variable['rSite',v7,-]|29643: ===[v6,v7,v5]|29644: if[v5](true-block:9056,false-block:9057)}" ] 
+BB9055 -> BB9056 [tailport=s, headport=n, headlabel="      9056"]
+BB9055 -> BB9057 [tailport=s, headport=n, headlabel="      9057"]
+BB9055 -> BB9059 [tailport=s, headport=n, color=gray]
+BB9056 [shape=record label="{29645: read-variable['edge',v10,-]|29646: read-variable['vertex',v9,-]|29647: write-property[v10,'b',v9]|29648: \<variable-non-null-undef\>['edge']*}" ] 
+BB9056 -> BB9058 [tailport=s, headport=n]
+BB9056 -> BB9059 [tailport=s, headport=n, color=gray]
+BB9057 [shape=record label="{29649: read-variable['edge',v10,-]|29650: read-variable['vertex',v9,-]|29651: write-property[v10,'a',v9]|29652: \<variable-non-null-undef\>['edge']*}" ] 
+BB9057 -> BB9058 [tailport=s, headport=n]
+BB9057 -> BB9059 [tailport=s, headport=n, color=gray]
+BB9058 [shape=record label="{29653: return[v1]}" ] 
+BB9059 [shape=record label="{29654: exceptional-return}" ] 
+//#$~ 5225
+}

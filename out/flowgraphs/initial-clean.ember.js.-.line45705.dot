@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry2121[shape=none,label=""];
+BB_entry2121 -> BB24214 [tailport=s, headport=n, headlabel="    24214"]
+BB24214 [shape=record label="{79681: constant[undefined,v1]|79682: vardecl['streamBindings']|79683: vardecl['path']}" ] 
+BB24214 -> BB24215 [tailport=s, headport=n, headlabel="      24215"]
+BB24215 [shape=record label="{79684: read-variable['this',v3,-]|79685: read-property[v3,'_streamBindings',v2]|79686: write-variable[v2,'streamBindings']*|79687: read-variable['streamBindings',v5,-]}" ] 
+BB24215 -> BB24216 [tailport=s, headport=n, headlabel="      24216"]
+BB24215 -> BB24223 [tailport=s, headport=n, color=gray, headlabel="      24223"]
+BB24216 [shape=record label="{79688: begin-for-in[v5,v6]}" ] 
+BB24216 -> BB24217 [tailport=s, headport=n, headlabel="      24217"]
+BB24216 -> BB24223 [tailport=s, headport=n, color=gray]
+BB24217 [shape=record label="{79689: has-next[v6,v7]|79690: if[v7](true-block:24218,false-block:24221)}" ] 
+BB24217 -> BB24218 [tailport=s, headport=n, headlabel="      24218"]
+BB24217 -> BB24221 [tailport=s, headport=n, headlabel="      24221"]
+BB24218 [shape=record label="{79691: next-property[v6,v8]|79692: write-variable[v8,'path']|79693: read-variable['streamBindings',v11,-]|79694: read-variable['path',v12,-]|79695: read-property[v11,v12,v10]|79696: \<variable-non-null-undef\>['streamBindings']|79697: read-property[v10,'destroy',-]|79698: \<property-non-null-undef\>[v11,v12]}" ] 
+BB24218 -> BB24219 [tailport=s, headport=n, headlabel="      24219"]
+BB24218 -> BB24223 [tailport=s, headport=n, color=gray]
+BB24219 [shape=record label="{79699: call-null [v10,'destroy',-]*}" ] 
+BB24219 -> BB24220 [tailport=s, headport=n, headlabel="      24220"]
+BB24219 -> BB24223 [tailport=s, headport=n, color=gray]
+BB24220 [shape=record label="{79700: end-for-in(begin-node:79688)}" ] 
+BB24220 -> BB24217 [tailport=s, headport=n]
+BB24221 [shape=record label="{79701: read-variable['this',v10,-]|79702: read-variable['undefined',v9,-]|79703: write-property[v10,'_streamBindings',v9]*}" ] 
+BB24221 -> BB24222 [tailport=s, headport=n, headlabel="      24222"]
+BB24221 -> BB24223 [tailport=s, headport=n, color=gray]
+BB24222 [shape=record label="{79704: return[v1]}" ] 
+BB24223 [shape=record label="{79705: exceptional-return}" ] 
+//#$~ 45710
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry71[shape=none,label=""];
+BB_entry71 -> BB666 [tailport=s, headport=n, headlabel="    666"]
+BB666 [shape=record label="{2317: constant[undefined,v1]}" ] 
+BB666 -> BB667 [tailport=s, headport=n, headlabel="      667"]
+BB667 [shape=record label="{2318: read-variable['window',v2,-]|2319: read-property[v2,'requestAnimationFrame',v1]|2320: \<variable-non-null-undef\>['window']|2321: if[v1](true-block:673,false-block:668)}" ] 
+BB667 -> BB673 [tailport=s, headport=n, headlabel="      673"]
+BB667 -> BB668 [tailport=s, headport=n, headlabel="      668"]
+BB667 -> BB674 [tailport=s, headport=n, color=gray, headlabel="      674"]
+BB668 [shape=record label="{2322: read-variable['window',v2,-]|2323: read-property[v2,'webkitRequestAnimationFrame',v1]|2324: \<variable-non-null-undef\>['window']|2325: if[v1](true-block:673,false-block:669)}" ] 
+BB668 -> BB673 [tailport=s, headport=n]
+BB668 -> BB669 [tailport=s, headport=n, headlabel="      669"]
+BB668 -> BB674 [tailport=s, headport=n, color=gray]
+BB669 [shape=record label="{2326: read-variable['window',v2,-]|2327: read-property[v2,'mozRequestAnimationFrame',v1]|2328: \<variable-non-null-undef\>['window']|2329: if[v1](true-block:673,false-block:670)}" ] 
+BB669 -> BB673 [tailport=s, headport=n]
+BB669 -> BB670 [tailport=s, headport=n, headlabel="      670"]
+BB669 -> BB674 [tailport=s, headport=n, color=gray]
+BB670 [shape=record label="{2330: read-variable['window',v2,-]|2331: read-property[v2,'oRequestAnimationFrame',v1]|2332: \<variable-non-null-undef\>['window']|2333: if[v1](true-block:673,false-block:671)}" ] 
+BB670 -> BB673 [tailport=s, headport=n]
+BB670 -> BB671 [tailport=s, headport=n, headlabel="      671"]
+BB670 -> BB674 [tailport=s, headport=n, color=gray]
+BB671 [shape=record label="{2334: read-variable['window',v2,-]|2335: read-property[v2,'msRequestAnimationFrame',v1]|2336: \<variable-non-null-undef\>['window']|2337: if[v1](true-block:673,false-block:672)}" ] 
+BB671 -> BB673 [tailport=s, headport=n]
+BB671 -> BB672 [tailport=s, headport=n, headlabel="      672"]
+BB671 -> BB674 [tailport=s, headport=n, color=gray]
+BB672 [shape=record label="{2338: function-expr[function ( callback ),v1]}" ] 
+BB672 -> BB673 [tailport=s, headport=n]
+BB673 [shape=record label="{2339: return[v1]}" ] 
+BB674 [shape=record label="{2340: exceptional-return}" ] 
+//#$~ 674
+}

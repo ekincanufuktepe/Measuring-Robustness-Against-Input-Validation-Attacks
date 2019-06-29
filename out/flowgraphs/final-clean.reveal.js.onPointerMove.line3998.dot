@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry200[shape=none,label=""];
+BB_entry200 -> BB3493 [tailport=s, headport=n, headlabel="    3493"]
+BB3493 [shape=record label="{10078: constant[undefined,v1]}" ] 
+BB3493 -> BB3494 [tailport=s, headport=n, headlabel="      3494"]
+BB3494 [shape=record label="{10079: read-variable['event',v5,-]|10080: read-property[v5,'pointerType',v3]|10081: \<variable-non-null-undef\>['event']|10082: read-variable['event',v6,-]|10083: read-property[v6,'MSPOINTER_TYPE_TOUCH',v4]|10084: \<variable-non-null-undef\>['event']|10085: ===[v3,v4,v2]|10086: if[v2](true-block:3496,false-block:3495)}" ] 
+BB3494 -> BB3496 [tailport=s, headport=n, headlabel="      3496"]
+BB3494 -> BB3495 [tailport=s, headport=n, headlabel="      3495"]
+BB3494 -> BB3502 [tailport=s, headport=n, color=gray, headlabel="      3502"]
+BB3495 [shape=record label="{10087: read-variable['event',v5,-]|10088: read-property[v5,'pointerType',v3]|10089: \<variable-non-null-undef\>['event']|10090: constant[\"touch\",v4]|10091: ===[v3,v4,v2]}" ] 
+BB3495 -> BB3496 [tailport=s, headport=n]
+BB3495 -> BB3502 [tailport=s, headport=n, color=gray]
+BB3496 [shape=record label="{10092: if[v2](true-block:3497,false-block:3501)}" ] 
+BB3496 -> BB3497 [tailport=s, headport=n, headlabel="      3497"]
+BB3496 -> BB3501 [tailport=s, headport=n, headlabel="      3501"]
+BB3497 [shape=record label="{10093: read-variable['event',v4,-]|10094: read-variable['Array',v5,-]|10095: new[v6]|10096: read-variable['event',v8,-]|10097: read-property[v8,'clientX',v7]|10098: \<variable-non-null-undef\>['event']|10099: write-property[v6,'clientX',v7]|10100: read-variable['event',v10,-]|10101: read-property[v10,'clientY',v9]|10102: \<variable-non-null-undef\>['event']|10103: write-property[v6,'clientY',v9]}" ] 
+BB3497 -> BB3498 [tailport=s, headport=n, headlabel="      3498"]
+BB3497 -> BB3502 [tailport=s, headport=n, color=gray]
+BB3498 [shape=record label="{10104: construct [-,v5,v6,v3]}" ] 
+BB3498 -> BB3499 [tailport=s, headport=n, headlabel="      3499"]
+BB3498 -> BB3502 [tailport=s, headport=n, color=gray]
+BB3499 [shape=record label="{10105: write-property[v4,'touches',v3]|10106: \<variable-non-null-undef\>['event']*|10107: read-variable['onTouchMove',v12,v11]|10108: read-variable['event',v13,-]}" ] 
+BB3499 -> BB3500 [tailport=s, headport=n, headlabel="      3500"]
+BB3499 -> BB3502 [tailport=s, headport=n, color=gray]
+BB3500 [shape=record label="{10109: call-onTouchMove [v11,v12,v13,-]*}" ] 
+BB3500 -> BB3501 [tailport=s, headport=n]
+BB3500 -> BB3502 [tailport=s, headport=n, color=gray]
+BB3501 [shape=record label="{10110: return[v1]}" ] 
+BB3502 [shape=record label="{10111: exceptional-return}" ] 
+//#$~ 4002
+}

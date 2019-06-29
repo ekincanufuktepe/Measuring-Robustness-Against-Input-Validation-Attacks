@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry15[shape=none,label=""];
+BB_entry15 -> BB111 [tailport=s, headport=n, headlabel="    111"]
+BB111 [shape=record label="{245: constant[undefined,v1]}" ] 
+BB111 -> BB112 [tailport=s, headport=n, headlabel="      112"]
+BB112 [shape=record label="{246: read-variable['chr',v2,-]|247: if[v2](true-block:113,false-block:114)}" ] 
+BB112 -> BB113 [tailport=s, headport=n, headlabel="      113"]
+BB112 -> BB114 [tailport=s, headport=n, headlabel="      114"]
+BB112 -> BB117 [tailport=s, headport=n, color=gray, headlabel="      117"]
+BB113 [shape=record label="{248: read-variable['chr',v4,-]|249: read-property[v4,'toUpperCase',-]|250: \<variable-non-null-undef\>['chr']}" ] 
+BB113 -> BB115 [tailport=s, headport=n, headlabel="      115"]
+BB113 -> BB117 [tailport=s, headport=n, color=gray]
+BB114 [shape=record label="{251: constant[\"\",v1]}" ] 
+BB114 -> BB116 [tailport=s, headport=n, headlabel="      116"]
+BB115 [shape=record label="{252: call-chr.toUpperCase [v4,'toUpperCase',v1]}" ] 
+BB115 -> BB116 [tailport=s, headport=n]
+BB115 -> BB117 [tailport=s, headport=n, color=gray]
+BB116 [shape=record label="{253: return[v1]}" ] 
+BB117 [shape=record label="{254: exceptional-return}" ] 
+//#$~ 79
+}

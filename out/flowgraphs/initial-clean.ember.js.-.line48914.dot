@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2379[shape=none,label=""];
+BB_entry2379 -> BB27127 [tailport=s, headport=n, headlabel="    27127"]
+BB27127 [shape=record label="{89549: constant[undefined,v1]|89550: vardecl['handler']}" ] 
+BB27127 -> BB27128 [tailport=s, headport=n, headlabel="      27128"]
+BB27128 [shape=record label="{89551: read-variable['handlerInfo',v3,-]|89552: read-property[v3,'handler',v2]|89553: \<variable-non-null-undef\>['handlerInfo']|89554: write-variable[v2,'handler']*|89555: read-variable['handler',v5,-]|89556: constant[\"context\",v6]|89557: delete-property[v5,v6,v4]*|89558: read-variable['callHook',v8,v7]|89559: read-variable['handler',v9,-]|89560: constant[\"reset\",v10]|89561: constant[true,v11]|89562: read-variable['transition',v12,-]}" ] 
+BB27128 -> BB27129 [tailport=s, headport=n, headlabel="      27129"]
+BB27128 -> BB27133 [tailport=s, headport=n, color=gray, headlabel="      27133"]
+BB27129 [shape=record label="{89563: call-callHook [v7,v8,v9,v10,v11,v12,-]*}" ] 
+BB27129 -> BB27130 [tailport=s, headport=n, headlabel="      27130"]
+BB27129 -> BB27133 [tailport=s, headport=n, color=gray]
+BB27130 [shape=record label="{89564: read-variable['callHook',v14,v13]|89565: read-variable['handler',v15,-]|89566: constant[\"exit\",v16]|89567: read-variable['transition',v17,-]}" ] 
+BB27130 -> BB27131 [tailport=s, headport=n, headlabel="      27131"]
+BB27130 -> BB27133 [tailport=s, headport=n, color=gray]
+BB27131 [shape=record label="{89568: call-callHook [v13,v14,v15,v16,v17,-]*}" ] 
+BB27131 -> BB27132 [tailport=s, headport=n, headlabel="      27132"]
+BB27131 -> BB27133 [tailport=s, headport=n, color=gray]
+BB27132 [shape=record label="{89569: return[v1]}" ] 
+BB27133 [shape=record label="{89570: exceptional-return}" ] 
+//#$~ 48919
+}

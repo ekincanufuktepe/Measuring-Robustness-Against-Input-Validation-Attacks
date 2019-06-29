@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry326[shape=none,label=""];
+BB_entry326 -> BB3859 [tailport=s, headport=n, headlabel="    3859"]
+BB3859 [shape=record label="{11067: constant[undefined,v1]|11068: vardecl['e']}" ] 
+BB3859 -> BB3860 [tailport=s, headport=n, headlabel="      3860"]
+BB3860 [shape=record label="{11069: read-variable['a',v3,-]|11070: read-property[v3,'createViewModel',v2]|11071: \<variable-non-null-undef\>['a']|11072: write-variable[v2,'e']*|11073: read-variable['e',v4,-]|11074: if[v4](true-block:3861,false-block:3862)}" ] 
+BB3860 -> BB3861 [tailport=s, headport=n, headlabel="      3861"]
+BB3860 -> BB3862 [tailport=s, headport=n, headlabel="      3862"]
+BB3860 -> BB3865 [tailport=s, headport=n, color=gray, headlabel="      3865"]
+BB3861 [shape=record label="{11075: read-variable['e',v6,-]|11076: read-property[v6,'call',-]|11077: \<variable-non-null-undef\>['e']|11078: read-variable['a',v7,-]|11079: read-variable['d',v8,-]|11080: new[v9]|11081: read-variable['b',v10,-]|11082: write-property[v9,'element',v10]|11083: read-variable['c',v11,-]|11084: write-property[v9,'templateNodes',v11]}" ] 
+BB3861 -> BB3863 [tailport=s, headport=n, headlabel="      3863"]
+BB3861 -> BB3865 [tailport=s, headport=n, color=gray]
+BB3862 [shape=record label="{11085: read-variable['d',v1,-]}" ] 
+BB3862 -> BB3864 [tailport=s, headport=n, headlabel="      3864"]
+BB3862 -> BB3865 [tailport=s, headport=n, color=gray]
+BB3863 [shape=record label="{11086: call-e.call [v6,'call',v7,v8,v9,v1]}" ] 
+BB3863 -> BB3864 [tailport=s, headport=n]
+BB3863 -> BB3865 [tailport=s, headport=n, color=gray]
+BB3864 [shape=record label="{11087: return[v1]}" ] 
+BB3865 [shape=record label="{11088: exceptional-return}" ] 
+}

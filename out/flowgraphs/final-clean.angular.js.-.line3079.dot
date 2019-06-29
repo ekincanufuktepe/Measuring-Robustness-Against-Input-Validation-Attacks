@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry161[shape=none,label=""];
+BB_entry161 -> BB2104 [tailport=s, headport=n, headlabel="    2104"]
+BB2104 [shape=record label="{5034: constant[undefined,v1]}" ] 
+BB2104 -> BB2105 [tailport=s, headport=n, headlabel="      2105"]
+BB2105 [shape=record label="{5035: read-variable['jqLite',v3,-]|5036: read-property[v3,'data',-]|5037: \<variable-non-null-undef\>['jqLite']|5038: read-variable['element',v4,-]|5039: constant[\"$isolateScope\",v5]}" ] 
+BB2105 -> BB2106 [tailport=s, headport=n, headlabel="      2106"]
+BB2105 -> BB2111 [tailport=s, headport=n, color=gray, headlabel="      2111"]
+BB2106 [shape=record label="{5040: call-jqLite.data [v3,'data',v4,v5,v1]}" ] 
+BB2106 -> BB2107 [tailport=s, headport=n, headlabel="      2107"]
+BB2106 -> BB2111 [tailport=s, headport=n, color=gray]
+BB2107 [shape=record label="{5041: if[v1](true-block:2110,false-block:2108)}" ] 
+BB2107 -> BB2110 [tailport=s, headport=n, headlabel="      2110"]
+BB2107 -> BB2108 [tailport=s, headport=n, headlabel="      2108"]
+BB2108 [shape=record label="{5042: read-variable['jqLite',v3,-]|5043: read-property[v3,'data',-]|5044: \<variable-non-null-undef\>['jqLite']|5045: read-variable['element',v4,-]|5046: constant[\"$isolateScopeNoTemplate\",v5]}" ] 
+BB2108 -> BB2109 [tailport=s, headport=n, headlabel="      2109"]
+BB2108 -> BB2111 [tailport=s, headport=n, color=gray]
+BB2109 [shape=record label="{5047: call-jqLite.data [v3,'data',v4,v5,v1]}" ] 
+BB2109 -> BB2110 [tailport=s, headport=n]
+BB2109 -> BB2111 [tailport=s, headport=n, color=gray]
+BB2110 [shape=record label="{5048: return[v1]}" ] 
+BB2111 [shape=record label="{5049: exceptional-return}" ] 
+//#$~ 3081
+}

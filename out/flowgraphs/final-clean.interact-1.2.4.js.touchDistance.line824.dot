@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry41[shape=none,label=""];
+BB_entry41 -> BB545 [tailport=s, headport=n, headlabel="    545"]
+BB545 [shape=record label="{2232: constant[undefined,v1]|2233: vardecl['sourceX']|2234: vardecl['sourceY']|2235: vardecl['touches']|2236: vardecl['dx']|2237: vardecl['dy']}" ] 
+BB545 -> BB546 [tailport=s, headport=n, headlabel="      546"]
+BB546 [shape=record label="{2238: read-variable['deltaSource',v2,-]|2239: if[v2](true-block:548,false-block:547)}" ] 
+BB546 -> BB548 [tailport=s, headport=n, headlabel="      548"]
+BB546 -> BB547 [tailport=s, headport=n, headlabel="      547"]
+BB546 -> BB553 [tailport=s, headport=n, color=gray, headlabel="      553"]
+BB547 [shape=record label="{2240: read-variable['defaultOptions',v3,-]|2241: read-property[v3,'deltaSource',v2]|2242: \<variable-non-null-undef\>['defaultOptions']}" ] 
+BB547 -> BB548 [tailport=s, headport=n]
+BB547 -> BB553 [tailport=s, headport=n, color=gray]
+BB548 [shape=record label="{2243: write-variable[v2,'deltaSource']*|2244: read-variable['deltaSource',v4,-]|2245: constant[\"X\",v5]|2246: +[v4,v5,v3]|2247: write-variable[v3,'sourceX']*|2248: read-variable['deltaSource',v7,-]|2249: constant[\"Y\",v8]|2250: +[v7,v8,v6]|2251: write-variable[v6,'sourceY']*|2252: read-variable['getTouchPair',v11,v10]|2253: read-variable['event',v12,-]}" ] 
+BB548 -> BB549 [tailport=s, headport=n, headlabel="      549"]
+BB548 -> BB553 [tailport=s, headport=n, color=gray]
+BB549 [shape=record label="{2254: call-getTouchPair [v10,v11,v12,v9]}" ] 
+BB549 -> BB550 [tailport=s, headport=n, headlabel="      550"]
+BB549 -> BB553 [tailport=s, headport=n, color=gray]
+BB550 [shape=record label="{2255: write-variable[v9,'touches']*|2256: read-variable['touches',v17,-]|2257: constant[0.0,v18]|2258: read-property[v17,v18,v16]|2259: \<variable-non-null-undef\>['touches']|2260: read-variable['sourceX',v19,-]|2261: read-property[v16,v19,v14]|2262: \<property-non-null-undef\>[v17,v18]|2263: read-variable['touches',v21,-]|2264: constant[1.0,v22]|2265: read-property[v21,v22,v20]|2266: \<variable-non-null-undef\>['touches']|2267: read-variable['sourceX',v23,-]|2268: read-property[v20,v23,v15]|2269: \<property-non-null-undef\>[v21,v22]|2270: -[v14,v15,v13]|2271: write-variable[v13,'dx']*|2272: read-variable['touches',v28,-]|2273: constant[0.0,v29]|2274: read-property[v28,v29,v27]|2275: \<variable-non-null-undef\>['touches']|2276: read-variable['sourceY',v30,-]|2277: read-property[v27,v30,v25]|2278: \<property-non-null-undef\>[v28,v29]|2279: read-variable['touches',v32,-]|2280: constant[1.0,v33]|2281: read-property[v32,v33,v31]|2282: \<variable-non-null-undef\>['touches']|2283: read-variable['sourceY',v34,-]|2284: read-property[v31,v34,v26]|2285: \<property-non-null-undef\>[v32,v33]|2286: -[v25,v26,v24]|2287: write-variable[v24,'dy']*|2288: read-variable['hypot',v36,v35]|2289: read-variable['dx',v37,-]|2290: read-variable['dy',v38,-]}" ] 
+BB550 -> BB551 [tailport=s, headport=n, headlabel="      551"]
+BB550 -> BB553 [tailport=s, headport=n, color=gray]
+BB551 [shape=record label="{2291: call-hypot [v35,v36,v37,v38,v1]}" ] 
+BB551 -> BB552 [tailport=s, headport=n, headlabel="      552"]
+BB551 -> BB553 [tailport=s, headport=n, color=gray]
+BB552 [shape=record label="{2292: return[v1]}" ] 
+BB553 [shape=record label="{2293: exceptional-return}" ] 
+//#$~ 835
+}

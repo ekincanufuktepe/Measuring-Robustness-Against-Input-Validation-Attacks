@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2445[shape=none,label=""];
+BB_entry2445 -> BB27937 [tailport=s, headport=n, headlabel="    27937"]
+BB27937 [shape=record label="{92782: constant[undefined,v1]|92783: vardecl['i']|92784: vardecl['l']}" ] 
+BB27937 -> BB27938 [tailport=s, headport=n, headlabel="      27938"]
+BB27938 [shape=record label="{92785: constant[0.0,v3]|92786: write-variable[v3,'i']*|92787: read-variable['array',v5,-]|92788: read-property[v5,'length',v4]|92789: \<variable-non-null-undef\>['array']|92790: write-variable[v4,'l']*}" ] 
+BB27938 -> BB27939 [tailport=s, headport=n, headlabel="      27939"]
+BB27938 -> BB27946 [tailport=s, headport=n, color=gray, headlabel="      27946"]
+BB27939 [shape=record label="{92791: read-variable['i',v6,-]|92792: read-variable['l',v7,-]|92793: \<[v6,v7,v2]|92794: if[v2](true-block:27940,false-block:27943)}" ] 
+BB27939 -> BB27943 [tailport=s, headport=n, headlabel="      27943"]
+BB27939 -> BB27940 [tailport=s, headport=n, headlabel="      27940"]
+BB27939 -> BB27946 [tailport=s, headport=n, color=gray]
+BB27940 [shape=record label="{92795: constant[false,v8]|92796: read-variable['callback',v11,v10]|92797: read-variable['array',v13,-]|92798: read-variable['i',v14,-]|92799: read-property[v13,v14,v12]|92800: \<variable-non-null-undef\>['array']}" ] 
+BB27940 -> BB27941 [tailport=s, headport=n, headlabel="      27941"]
+BB27940 -> BB27946 [tailport=s, headport=n, color=gray]
+BB27941 [shape=record label="{92801: call-callback [v10,v11,v12,v9]}" ] 
+BB27941 -> BB27942 [tailport=s, headport=n, headlabel="      27942"]
+BB27941 -> BB27946 [tailport=s, headport=n, color=gray]
+BB27942 [shape=record label="{92802: !==[v8,v9,v2]}" ] 
+BB27942 -> BB27943 [tailport=s, headport=n]
+BB27942 -> BB27946 [tailport=s, headport=n, color=gray]
+BB27943 [shape=record label="{92803: if[v2](true-block:27944,false-block:27945)}" ] 
+BB27943 -> BB27944 [tailport=s, headport=n, headlabel="      27944"]
+BB27943 -> BB27945 [tailport=s, headport=n, headlabel="      27945"]
+BB27944 [shape=record label="{92804: constant[1.0,v8]|92805: read-variable['i',v9,-]|92806: +[v9,v10]|92807: +[v10,v8,v11]|92808: write-variable[v11,'i']}" ] 
+BB27944 -> BB27939 [tailport=s, headport=n]
+BB27944 -> BB27946 [tailport=s, headport=n, color=gray]
+BB27945 [shape=record label="{92809: return[v1]}" ] 
+BB27946 [shape=record label="{92810: exceptional-return}" ] 
+//#$~ 50101
+}

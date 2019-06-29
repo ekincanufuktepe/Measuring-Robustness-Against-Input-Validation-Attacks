@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry499[shape=none,label=""];
+BB_entry499 -> BB8040 [tailport=s, headport=n, headlabel="    8040"]
+BB8040 [shape=record label="{23625: constant[undefined,v1]}" ] 
+BB8040 -> BB8041 [tailport=s, headport=n, headlabel="      8041"]
+BB8041 [shape=record label="{23626: read-variable['script',v2,-]|23627: if[v2](true-block:8042,false-block:8044)}" ] 
+BB8041 -> BB8042 [tailport=s, headport=n, headlabel="      8042"]
+BB8041 -> BB8044 [tailport=s, headport=n, headlabel="      8044"]
+BB8041 -> BB8045 [tailport=s, headport=n, color=gray, headlabel="      8045"]
+BB8042 [shape=record label="{23628: read-variable['script',v4,-]|23629: read-property[v4,'onload',-]|23630: \<variable-non-null-undef\>['script']|23631: read-variable['undefined',v5,-]|23632: constant[true,v6]}" ] 
+BB8042 -> BB8043 [tailport=s, headport=n, headlabel="      8043"]
+BB8042 -> BB8045 [tailport=s, headport=n, color=gray]
+BB8043 [shape=record label="{23633: call-script.onload [v4,'onload',v5,v6,-]*}" ] 
+BB8043 -> BB8044 [tailport=s, headport=n]
+BB8043 -> BB8045 [tailport=s, headport=n, color=gray]
+BB8044 [shape=record label="{23634: return[v1]}" ] 
+BB8045 [shape=record label="{23635: exceptional-return}" ] 
+//#$~ 8341
+}

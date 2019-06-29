@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry242[shape=none,label=""];
+BB_entry242 -> BB2897 [tailport=s, headport=n, headlabel="    2897"]
+BB2897 [shape=record label="{6935: constant[undefined,v1]|6936: vardecl['i']|6937: vardecl['ii']|6938: vardecl['invokeArgs']|6939: vardecl['provider']}" ] 
+BB2897 -> BB2898 [tailport=s, headport=n, headlabel="      2898"]
+BB2898 [shape=record label="{6940: constant[0.0,v3]|6941: write-variable[v3,'i']|6942: read-variable['queue',v5,-]|6943: read-property[v5,'length',v4]|6944: \<variable-non-null-undef\>['queue']|6945: write-variable[v4,'ii']}" ] 
+BB2898 -> BB2899 [tailport=s, headport=n, headlabel="      2899"]
+BB2898 -> BB2906 [tailport=s, headport=n, color=gray, headlabel="      2906"]
+BB2899 [shape=record label="{6946: read-variable['i',v6,-]|6947: read-variable['ii',v7,-]|6948: \<[v6,v7,v2]|6949: if[v2](true-block:2900,false-block:2905)}" ] 
+BB2899 -> BB2900 [tailport=s, headport=n, headlabel="      2900"]
+BB2899 -> BB2905 [tailport=s, headport=n, headlabel="      2905"]
+BB2899 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2900 [shape=record label="{6950: read-variable['queue',v9,-]|6951: read-variable['i',v10,-]|6952: read-property[v9,v10,v8]|6953: \<variable-non-null-undef\>['queue']|6954: write-variable[v8,'invokeArgs']*|6955: read-variable['providerInjector',v13,-]|6956: read-property[v13,'get',-]|6957: \<variable-non-null-undef\>['providerInjector']|6958: read-variable['invokeArgs',v15,-]|6959: constant[0.0,v16]|6960: read-property[v15,v16,v14]|6961: \<variable-non-null-undef\>['invokeArgs']}" ] 
+BB2900 -> BB2901 [tailport=s, headport=n, headlabel="      2901"]
+BB2900 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2901 [shape=record label="{6962: call-providerInjector.get [v13,'get',v14,v11]}" ] 
+BB2901 -> BB2902 [tailport=s, headport=n, headlabel="      2902"]
+BB2901 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2902 [shape=record label="{6963: write-variable[v11,'provider']*|6964: read-variable['provider',v19,-]|6965: read-variable['invokeArgs',v21,-]|6966: constant[1.0,v22]|6967: read-property[v21,v22,v20]|6968: \<variable-non-null-undef\>['invokeArgs']|6969: read-property[v19,v20,v18]|6970: \<variable-non-null-undef\>['provider']|6971: read-property[v18,'apply',-]|6972: \<property-non-null-undef\>[v19,v20]|6973: read-variable['provider',v23,-]|6974: read-variable['invokeArgs',v25,-]|6975: constant[2.0,v26]|6976: read-property[v25,v26,v24]|6977: \<variable-non-null-undef\>['invokeArgs']}" ] 
+BB2902 -> BB2903 [tailport=s, headport=n, headlabel="      2903"]
+BB2902 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2903 [shape=record label="{6978: call-null [v18,'apply',v23,v24,-]*}" ] 
+BB2903 -> BB2904 [tailport=s, headport=n, headlabel="      2904"]
+BB2903 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2904 [shape=record label="{6979: constant[1.0,v27]|6980: read-variable['i',v28,-]|6981: +[v28,v29]|6982: +[v29,v27,v30]|6983: write-variable[v30,'i']}" ] 
+BB2904 -> BB2899 [tailport=s, headport=n]
+BB2904 -> BB2906 [tailport=s, headport=n, color=gray]
+BB2905 [shape=record label="{6984: return[v1]}" ] 
+BB2906 [shape=record label="{6985: exceptional-return}" ] 
+//#$~ 4354
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry874[shape=none,label=""];
+BB_entry874 -> BB9502 [tailport=s, headport=n, headlabel="    9502"]
+BB9502 [shape=record label="{31476: constant[undefined,v1]}" ] 
+BB9502 -> BB9503 [tailport=s, headport=n, headlabel="      9503"]
+BB9503 [shape=record label="{31477: read-variable['insert',v3,v2]|31478: read-variable['root',v4,-]|31479: read-variable['d',v5,-]|31480: read-variable['fx',v9,v8]|31481: read-variable['d',v10,-]|31482: constant[1.0,v12]|31483: read-variable['i',v13,-]|31484: +[v13,v14]|31485: +[v14,v12,v11]|31486: write-variable[v11,'i']}" ] 
+BB9503 -> BB9504 [tailport=s, headport=n, headlabel="      9504"]
+BB9503 -> BB9510 [tailport=s, headport=n, color=gray, headlabel="      9510"]
+BB9504 [shape=record label="{31487: call-fx [v8,v9,v10,v11,v7]}" ] 
+BB9504 -> BB9505 [tailport=s, headport=n, headlabel="      9505"]
+BB9504 -> BB9510 [tailport=s, headport=n, color=gray]
+BB9505 [shape=record label="{31488: +[v7,v6]|31489: read-variable['fy',v18,v17]|31490: read-variable['d',v19,-]|31491: read-variable['i',v20,-]}" ] 
+BB9505 -> BB9506 [tailport=s, headport=n, headlabel="      9506"]
+BB9505 -> BB9510 [tailport=s, headport=n, color=gray]
+BB9506 [shape=record label="{31492: call-fy [v17,v18,v19,v20,v16]}" ] 
+BB9506 -> BB9507 [tailport=s, headport=n, headlabel="      9507"]
+BB9506 -> BB9510 [tailport=s, headport=n, color=gray]
+BB9507 [shape=record label="{31493: +[v16,v15]|31494: read-variable['x1_',v21,-]|31495: read-variable['y1_',v22,-]|31496: read-variable['x2_',v23,-]|31497: read-variable['y2_',v24,-]}" ] 
+BB9507 -> BB9508 [tailport=s, headport=n, headlabel="      9508"]
+BB9507 -> BB9510 [tailport=s, headport=n, color=gray]
+BB9508 [shape=record label="{31498: call-insert [v2,v3,v4,v5,v6,v15,v21,v22,v23,v24,-]*}" ] 
+BB9508 -> BB9509 [tailport=s, headport=n, headlabel="      9509"]
+BB9508 -> BB9510 [tailport=s, headport=n, color=gray]
+BB9509 [shape=record label="{31499: return[v1]}" ] 
+BB9510 [shape=record label="{31500: exceptional-return}" ] 
+//#$~ 5613
+}

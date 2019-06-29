@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry241[shape=none,label=""];
+BB_entry241 -> BB3569 [tailport=s, headport=n, headlabel="    3569"]
+BB3569 [shape=record label="{10433: constant[undefined,v1]}" ] 
+BB3569 -> BB3570 [tailport=s, headport=n, headlabel="      3570"]
+BB3570 [shape=record label="{10434: constant[1.0,v4]|10435: read-variable['count',v5,-]|10436: +[v5,v6]|10437: -[v6,v4,v3]|10438: write-variable[v3,'count']|10439: ![v3,v2]|10440: if[v2](true-block:3571,false-block:3574)}" ] 
+BB3570 -> BB3571 [tailport=s, headport=n, headlabel="      3571"]
+BB3570 -> BB3574 [tailport=s, headport=n, headlabel="      3574"]
+BB3570 -> BB3575 [tailport=s, headport=n, color=gray, headlabel="      3575"]
+BB3571 [shape=record label="{10441: read-variable['defer',v8,-]|10442: read-property[v8,'resolveWith',-]|10443: \<variable-non-null-undef\>['defer']|10444: read-variable['elements',v9,-]|10445: read-variable['Array',v11,-]|10446: read-variable['elements',v12,-]}" ] 
+BB3571 -> BB3572 [tailport=s, headport=n, headlabel="      3572"]
+BB3571 -> BB3575 [tailport=s, headport=n, color=gray]
+BB3572 [shape=record label="{10447: construct[-,v11,v12,v10]}" ] 
+BB3572 -> BB3573 [tailport=s, headport=n, headlabel="      3573"]
+BB3572 -> BB3575 [tailport=s, headport=n, color=gray]
+BB3573 [shape=record label="{10448: call[v8,'resolveWith',v9,v10,-]*}" ] 
+BB3573 -> BB3574 [tailport=s, headport=n]
+BB3573 -> BB3575 [tailport=s, headport=n, color=gray]
+BB3574 [shape=record label="{10449: return[v1]}" ] 
+BB3575 [shape=record label="{10450: exceptional-return}" ] 
+}

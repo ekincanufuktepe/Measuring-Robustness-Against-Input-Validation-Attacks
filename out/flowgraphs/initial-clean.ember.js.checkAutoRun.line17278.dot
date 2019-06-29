@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry810[shape=none,label=""];
+BB_entry810 -> BB9581 [tailport=s, headport=n, headlabel="    9581"]
+BB9581 [shape=record label="{32816: constant[undefined,v1]}" ] 
+BB9581 -> BB9582 [tailport=s, headport=n, headlabel="      9582"]
+BB9582 [shape=record label="{32817: read-variable['run',v4,-]|32818: read-property[v4,'currentRunLoop',v3]|32819: \<variable-non-null-undef\>['run']|32820: ![v3,v2]|32821: if[v2](true-block:9583,false-block:9585)}" ] 
+BB9582 -> BB9583 [tailport=s, headport=n, headlabel="      9583"]
+BB9582 -> BB9585 [tailport=s, headport=n, headlabel="      9585"]
+BB9582 -> BB9586 [tailport=s, headport=n, color=gray, headlabel="      9586"]
+BB9583 [shape=record label="{32822: read-variable['Ember',v6,-]|32823: read-property[v6,'assert',-]|32824: \<variable-non-null-undef\>['Ember']|32825: constant[\"You have turned on testing mode, which disabled the run-loop's autorun.\",v8]|32826: constant[\" You will need to wrap any code with asynchronous side-effects in a run\",v9]|32827: +[v8,v9,v7]|32828: read-variable['Ember',v12,-]|32829: read-property[v12,'testing',v11]|32830: \<variable-non-null-undef\>['Ember']|32831: ![v11,v10]}" ] 
+BB9583 -> BB9584 [tailport=s, headport=n, headlabel="      9584"]
+BB9583 -> BB9586 [tailport=s, headport=n, color=gray]
+BB9584 [shape=record label="{32832: call-Ember.assert [v6,'assert',v7,v10,-]*}" ] 
+BB9584 -> BB9585 [tailport=s, headport=n]
+BB9584 -> BB9586 [tailport=s, headport=n, color=gray]
+BB9585 [shape=record label="{32833: return[v1]}" ] 
+BB9586 [shape=record label="{32834: exceptional-return}" ] 
+//#$~ 17281
+}

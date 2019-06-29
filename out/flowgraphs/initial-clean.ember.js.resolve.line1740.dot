@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry94[shape=none,label=""];
+BB_entry94 -> BB1254 [tailport=s, headport=n, headlabel="    1254"]
+BB1254 [shape=record label="{4009: constant[undefined,v1]|4010: vardecl['cached']|4011: vardecl['resolved']}" ] 
+BB1254 -> BB1255 [tailport=s, headport=n, headlabel="      1255"]
+BB1255 [shape=record label="{4012: read-variable['container',v4,-]|4013: read-property[v4,'resolveCache',v3]|4014: \<variable-non-null-undef\>['container']|4015: read-variable['normalizedName',v5,-]|4016: read-property[v3,v5,v2]|4017: \<property-non-null-undef\>[v4,'resolveCache']|4018: write-variable[v2,'cached']*|4019: read-variable['cached',v6,-]|4020: if[v6](true-block:1256,false-block:1257)}" ] 
+BB1255 -> BB1256 [tailport=s, headport=n, headlabel="      1256"]
+BB1255 -> BB1257 [tailport=s, headport=n, headlabel="      1257"]
+BB1255 -> BB1263 [tailport=s, headport=n, color=gray, headlabel="      1263"]
+BB1256 [shape=record label="{4021: read-variable['cached',v1,-]}" ] 
+BB1256 -> BB1262 [tailport=s, headport=n, headlabel="      1262"]
+BB1256 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1257 [shape=record label="{4022: read-variable['container',v9,-]|4023: read-property[v9,'resolver',-]|4024: \<variable-non-null-undef\>['container']|4025: read-variable['normalizedName',v10,-]}" ] 
+BB1257 -> BB1258 [tailport=s, headport=n, headlabel="      1258"]
+BB1257 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1258 [shape=record label="{4026: call-container.resolver [v9,'resolver',v10,v7]}" ] 
+BB1258 -> BB1259 [tailport=s, headport=n, headlabel="      1259"]
+BB1258 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1259 [shape=record label="{4027: if[v7](true-block:1261,false-block:1260)}" ] 
+BB1259 -> BB1261 [tailport=s, headport=n, headlabel="      1261"]
+BB1259 -> BB1260 [tailport=s, headport=n, headlabel="      1260"]
+BB1260 [shape=record label="{4028: read-variable['container',v9,-]|4029: read-property[v9,'registry',v8]|4030: \<variable-non-null-undef\>['container']|4031: read-variable['normalizedName',v10,-]|4032: read-property[v8,v10,v7]|4033: \<property-non-null-undef\>[v9,'registry']}" ] 
+BB1260 -> BB1261 [tailport=s, headport=n]
+BB1260 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1261 [shape=record label="{4034: write-variable[v7,'resolved']*|4035: read-variable['container',v11,-]|4036: read-property[v11,'resolveCache',v9]|4037: \<variable-non-null-undef\>['container']|4038: read-variable['normalizedName',v10,-]|4039: read-variable['resolved',v8,-]|4040: write-property[v9,v10,v8]|4041: \<property-non-null-undef\>[v11,'resolveCache']*|4042: read-variable['resolved',v1,-]}" ] 
+BB1261 -> BB1262 [tailport=s, headport=n]
+BB1261 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1262 [shape=record label="{4043: return[v1]}" ] 
+BB1263 [shape=record label="{4044: exceptional-return}" ] 
+//#$~ 1747
+}

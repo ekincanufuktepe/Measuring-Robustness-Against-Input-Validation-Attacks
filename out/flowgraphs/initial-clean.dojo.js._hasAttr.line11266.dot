@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry543[shape=none,label=""];
+BB_entry543 -> BB8044 [tailport=s, headport=n, headlabel="    8044"]
+BB8044 [shape=record label="{24094: constant[undefined,v1]|24095: vardecl['attr']}" ] 
+BB8044 -> BB8045 [tailport=s, headport=n, headlabel="      8045"]
+BB8045 [shape=record label="{24096: read-variable['node',v3,-]|24097: read-property[v3,'getAttributeNode',v2]|24098: \<variable-non-null-undef\>['node']|24099: if[v2](true-block:8046,false-block:8048)}" ] 
+BB8045 -> BB8048 [tailport=s, headport=n, headlabel="      8048"]
+BB8045 -> BB8046 [tailport=s, headport=n, headlabel="      8046"]
+BB8045 -> BB8051 [tailport=s, headport=n, color=gray, headlabel="      8051"]
+BB8046 [shape=record label="{24100: read-variable['node',v5,-]|24101: read-property[v5,'getAttributeNode',-]|24102: \<variable-non-null-undef\>['node']|24103: read-variable['name',v6,-]}" ] 
+BB8046 -> BB8047 [tailport=s, headport=n, headlabel="      8047"]
+BB8046 -> BB8051 [tailport=s, headport=n, color=gray]
+BB8047 [shape=record label="{24104: call-node.getAttributeNode [v5,'getAttributeNode',v6,v2]}" ] 
+BB8047 -> BB8048 [tailport=s, headport=n]
+BB8047 -> BB8051 [tailport=s, headport=n, color=gray]
+BB8048 [shape=record label="{24105: write-variable[v2,'attr']*|24106: read-variable['attr',v5,-]|24107: ![v5,v4]|24108: ![v4,v1]|24109: if[v1](true-block:8049,false-block:8050)}" ] 
+BB8048 -> BB8050 [tailport=s, headport=n, headlabel="      8050"]
+BB8048 -> BB8049 [tailport=s, headport=n, headlabel="      8049"]
+BB8048 -> BB8051 [tailport=s, headport=n, color=gray]
+BB8049 [shape=record label="{24110: read-variable['attr',v6,-]|24111: read-property[v6,'specified',v1]|24112: \<variable-non-null-undef\>['attr']}" ] 
+BB8049 -> BB8050 [tailport=s, headport=n]
+BB8049 -> BB8051 [tailport=s, headport=n, color=gray]
+BB8050 [shape=record label="{24113: return[v1]}" ] 
+BB8051 [shape=record label="{24114: exceptional-return}" ] 
+//#$~ 11268
+}

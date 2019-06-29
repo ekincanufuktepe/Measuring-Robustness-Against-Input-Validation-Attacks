@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry324[shape=none,label=""];
+BB_entry324 -> BB4786 [tailport=s, headport=n, headlabel="    4786"]
+BB4786 [shape=record label="{16728: constant[undefined,v1]|16729: vardecl['escapedText']}" ] 
+BB4786 -> BB4787 [tailport=s, headport=n, headlabel="      4787"]
+BB4787 [shape=record label="{16730: read-variable['this',v3,-]|16731: read-variable['rootID',v2,-]|16732: write-property[v3,'_rootNodeID',v2]*|16733: read-variable['escapeTextContentForBrowser',v6,v5]|16734: read-variable['this',v8,-]|16735: read-property[v8,'_stringText',v7]}" ] 
+BB4787 -> BB4788 [tailport=s, headport=n, headlabel="      4788"]
+BB4787 -> BB4795 [tailport=s, headport=n, color=gray, headlabel="      4795"]
+BB4788 [shape=record label="{16736: call-escapeTextContentForBrowser [v5,v6,v7,v4]}" ] 
+BB4788 -> BB4789 [tailport=s, headport=n, headlabel="      4789"]
+BB4788 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4789 [shape=record label="{16737: write-variable[v4,'escapedText']*|16738: read-variable['transaction',v10,-]|16739: read-property[v10,'renderToStaticMarkup',v9]|16740: \<variable-non-null-undef\>['transaction']|16741: if[v9](true-block:4790,false-block:4791)}" ] 
+BB4789 -> BB4790 [tailport=s, headport=n, headlabel="      4790"]
+BB4789 -> BB4791 [tailport=s, headport=n, headlabel="      4791"]
+BB4789 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4790 [shape=record label="{16742: read-variable['escapedText',v1,-]}" ] 
+BB4790 -> BB4794 [tailport=s, headport=n, headlabel="      4794"]
+BB4790 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4791 [shape=record label="{16743: constant[\"\\\<span \",v17]|16744: read-variable['DOMPropertyOperations',v20,-]|16745: read-property[v20,'createMarkupForID',-]|16746: \<variable-non-null-undef\>['DOMPropertyOperations']|16747: read-variable['rootID',v21,-]}" ] 
+BB4791 -> BB4792 [tailport=s, headport=n, headlabel="      4792"]
+BB4791 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4792 [shape=record label="{16748: call-DOMPropertyOperations.createMarkupForID [v20,'createMarkupForID',v21,v18]}" ] 
+BB4792 -> BB4793 [tailport=s, headport=n, headlabel="      4793"]
+BB4792 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4793 [shape=record label="{16749: +[v17,v18,v15]|16750: constant[\"\\\>\",v16]|16751: +[v15,v16,v13]|16752: read-variable['escapedText',v14,-]|16753: +[v13,v14,v11]|16754: constant[\"\\\</span\\\>\",v12]|16755: +[v11,v12,v1]}" ] 
+BB4793 -> BB4794 [tailport=s, headport=n]
+BB4793 -> BB4795 [tailport=s, headport=n, color=gray]
+BB4794 [shape=record label="{16756: return[v1]}" ] 
+BB4795 [shape=record label="{16757: exceptional-return}" ] 
+//#$~ 8923
+}

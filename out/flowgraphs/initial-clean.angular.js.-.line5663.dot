@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry313[shape=none,label=""];
+BB_entry313 -> BB3781 [tailport=s, headport=n, headlabel="    3781"]
+BB3781 [shape=record label="{9011: constant[undefined,v1]|9012: vardecl['timeoutId']}" ] 
+BB3781 -> BB3782 [tailport=s, headport=n, headlabel="      3782"]
+BB3782 [shape=record label="{9013: constant[1.0,v2]|9014: read-variable['outstandingRequestCount',v3,-]|9015: +[v3,v4]|9016: +[v4,v2,v5]|9017: write-variable[v5,'outstandingRequestCount']*|9018: read-variable['setTimeout',v8,v7]|9019: function-expr[function ( ),v9]|9020: read-variable['delay',v10,-]|9021: if[v10](true-block:3784,false-block:3783)}" ] 
+BB3782 -> BB3784 [tailport=s, headport=n, headlabel="      3784"]
+BB3782 -> BB3783 [tailport=s, headport=n, headlabel="      3783"]
+BB3782 -> BB3787 [tailport=s, headport=n, color=gray, headlabel="      3787"]
+BB3783 [shape=record label="{9022: constant[0.0,v10]}" ] 
+BB3783 -> BB3784 [tailport=s, headport=n]
+BB3784 [shape=record label="{9023: call-setTimeout [v7,v8,v9,v10,v6]}" ] 
+BB3784 -> BB3785 [tailport=s, headport=n, headlabel="      3785"]
+BB3784 -> BB3787 [tailport=s, headport=n, color=gray]
+BB3785 [shape=record label="{9024: write-variable[v6,'timeoutId']*|9025: read-variable['pendingDeferIds',v12,-]|9026: read-variable['timeoutId',v13,-]|9027: constant[true,v11]|9028: write-property[v12,v13,v11]|9029: \<variable-non-null-undef\>['pendingDeferIds']*|9030: read-variable['timeoutId',v1,-]}" ] 
+BB3785 -> BB3786 [tailport=s, headport=n, headlabel="      3786"]
+BB3785 -> BB3787 [tailport=s, headport=n, color=gray]
+BB3786 [shape=record label="{9031: return[v1]}" ] 
+BB3787 [shape=record label="{9032: exceptional-return}" ] 
+//#$~ 5671
+}

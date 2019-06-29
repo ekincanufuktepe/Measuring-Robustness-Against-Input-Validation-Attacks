@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry441[shape=none,label=""];
+BB_entry441 -> BB5487 [tailport=s, headport=n, headlabel="    5487"]
+BB5487 [shape=record label="{19525: constant[undefined,v1]|19526: vardecl['key']}" ] 
+BB5487 -> BB5488 [tailport=s, headport=n, headlabel="      5488"]
+BB5488 [shape=record label="{19527: read-variable['from',v3,-]}" ] 
+BB5488 -> BB5489 [tailport=s, headport=n, headlabel="      5489"]
+BB5488 -> BB5497 [tailport=s, headport=n, color=gray, headlabel="      5497"]
+BB5489 [shape=record label="{19528: begin-for-in[v3,v4]}" ] 
+BB5489 -> BB5490 [tailport=s, headport=n, headlabel="      5490"]
+BB5489 -> BB5497 [tailport=s, headport=n, color=gray]
+BB5490 [shape=record label="{19529: has-next[v4,v5]|19530: if[v5](true-block:5491,false-block:5496)}" ] 
+BB5490 -> BB5491 [tailport=s, headport=n, headlabel="      5491"]
+BB5490 -> BB5496 [tailport=s, headport=n, headlabel="      5496"]
+BB5491 [shape=record label="{19531: next-property[v4,v6]|19532: write-variable[v6,'key']|19533: read-variable['from',v9,-]|19534: read-property[v9,'hasOwnProperty',-]|19535: \<variable-non-null-undef\>['from']|19536: read-variable['key',v10,-]}" ] 
+BB5491 -> BB5492 [tailport=s, headport=n, headlabel="      5492"]
+BB5491 -> BB5497 [tailport=s, headport=n, color=gray]
+BB5492 [shape=record label="{19537: call-from.hasOwnProperty [v9,'hasOwnProperty',v10,v7]}" ] 
+BB5492 -> BB5493 [tailport=s, headport=n, headlabel="      5493"]
+BB5492 -> BB5497 [tailport=s, headport=n, color=gray]
+BB5493 [shape=record label="{19538: if[v7](true-block:5494,false-block:5495)}" ] 
+BB5493 -> BB5494 [tailport=s, headport=n, headlabel="      5494"]
+BB5493 -> BB5495 [tailport=s, headport=n, headlabel="      5495"]
+BB5494 [shape=record label="{19539: read-variable['to',v12,-]|19540: read-variable['key',v13,-]|19541: read-variable['from',v14,-]|19542: read-variable['key',v15,-]|19543: read-property[v14,v15,v11]|19544: \<variable-non-null-undef\>['from']|19545: write-property[v12,v13,v11]|19546: \<variable-non-null-undef\>['to']*}" ] 
+BB5494 -> BB5495 [tailport=s, headport=n]
+BB5494 -> BB5497 [tailport=s, headport=n, color=gray]
+BB5495 [shape=record label="{19547: end-for-in(begin-node:19528)}" ] 
+BB5495 -> BB5490 [tailport=s, headport=n]
+BB5496 [shape=record label="{19548: return[v1]}" ] 
+BB5497 [shape=record label="{19549: exceptional-return}" ] 
+//#$~ 9913
+}

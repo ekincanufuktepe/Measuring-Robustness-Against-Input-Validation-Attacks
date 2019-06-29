@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1589[shape=none,label=""];
+BB_entry1589 -> BB18470 [tailport=s, headport=n, headlabel="    18470"]
+BB18470 [shape=record label="{61798: constant[undefined,v1]}" ] 
+BB18470 -> BB18471 [tailport=s, headport=n, headlabel="      18471"]
+BB18471 [shape=record label="{61799: read-variable['IS_OBSERVER',v4,-]|61800: read-property[v4,'test',-]|61801: \<variable-non-null-undef\>['IS_OBSERVER']|61802: read-variable['eventName',v5,-]}" ] 
+BB18471 -> BB18472 [tailport=s, headport=n, headlabel="      18472"]
+BB18471 -> BB18478 [tailport=s, headport=n, color=gray, headlabel="      18478"]
+BB18472 [shape=record label="{61803: call-IS_OBSERVER.test [v4,'test',v5,v2]}" ] 
+BB18472 -> BB18473 [tailport=s, headport=n, headlabel="      18473"]
+BB18472 -> BB18478 [tailport=s, headport=n, color=gray]
+BB18473 [shape=record label="{61804: if[v2](true-block:18474,false-block:18477)}" ] 
+BB18473 -> BB18474 [tailport=s, headport=n, headlabel="      18474"]
+BB18473 -> BB18477 [tailport=s, headport=n, headlabel="      18477"]
+BB18474 [shape=record label="{61805: read-variable['this',v7,-]|61806: read-property[v7,'beginObservingContentKey',-]|61807: read-variable['eventName',v10,-]|61808: read-property[v10,'slice',-]|61809: \<variable-non-null-undef\>['eventName']|61810: constant[0.0,v11]|61811: constant[-7.0,v12]}" ] 
+BB18474 -> BB18475 [tailport=s, headport=n, headlabel="      18475"]
+BB18474 -> BB18478 [tailport=s, headport=n, color=gray]
+BB18475 [shape=record label="{61812: call-eventName.slice [v10,'slice',v11,v12,v8]}" ] 
+BB18475 -> BB18476 [tailport=s, headport=n, headlabel="      18476"]
+BB18475 -> BB18478 [tailport=s, headport=n, color=gray]
+BB18476 [shape=record label="{61813: call-this.beginObservingContentKey [v7,'beginObservingContentKey',v8,-]*}" ] 
+BB18476 -> BB18477 [tailport=s, headport=n]
+BB18476 -> BB18478 [tailport=s, headport=n, color=gray]
+BB18477 [shape=record label="{61814: return[v1]}" ] 
+BB18478 [shape=record label="{61815: exceptional-return}" ] 
+//#$~ 34665
+}

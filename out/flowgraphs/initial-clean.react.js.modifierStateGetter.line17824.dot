@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry744[shape=none,label=""];
+BB_entry744 -> BB9977 [tailport=s, headport=n, headlabel="    9977"]
+BB9977 [shape=record label="{33013: constant[undefined,v1]|33014: vardecl['syntheticEvent']|33015: vardecl['nativeEvent']|33016: vardecl['keyProp']}" ] 
+BB9977 -> BB9978 [tailport=s, headport=n, headlabel="      9978"]
+BB9978 [shape=record label="{33017: read-variable['this',v2,-]|33018: write-variable[v2,'syntheticEvent']*|33019: read-variable['syntheticEvent',v4,-]|33020: read-property[v4,'nativeEvent',v3]|33021: \<variable-non-null-undef\>['syntheticEvent']|33022: write-variable[v3,'nativeEvent']*|33023: read-variable['nativeEvent',v6,-]|33024: read-property[v6,'getModifierState',v5]|33025: \<variable-non-null-undef\>['nativeEvent']|33026: if[v5](true-block:9979,false-block:9981)}" ] 
+BB9978 -> BB9979 [tailport=s, headport=n, headlabel="      9979"]
+BB9978 -> BB9981 [tailport=s, headport=n, headlabel="      9981"]
+BB9978 -> BB9985 [tailport=s, headport=n, color=gray, headlabel="      9985"]
+BB9979 [shape=record label="{33027: read-variable['nativeEvent',v8,-]|33028: read-property[v8,'getModifierState',-]|33029: \<variable-non-null-undef\>['nativeEvent']|33030: read-variable['keyArg',v9,-]}" ] 
+BB9979 -> BB9980 [tailport=s, headport=n, headlabel="      9980"]
+BB9979 -> BB9985 [tailport=s, headport=n, color=gray]
+BB9980 [shape=record label="{33031: call-nativeEvent.getModifierState [v8,'getModifierState',v9,v1]}" ] 
+BB9980 -> BB9984 [tailport=s, headport=n, headlabel="      9984"]
+BB9980 -> BB9985 [tailport=s, headport=n, color=gray]
+BB9981 [shape=record label="{33032: read-variable['modifierKeyToProp',v8,-]|33033: read-variable['keyArg',v9,-]|33034: read-property[v8,v9,v7]|33035: \<variable-non-null-undef\>['modifierKeyToProp']|33036: write-variable[v7,'keyProp']*|33037: read-variable['keyProp',v10,-]|33038: if[v10](true-block:9982,false-block:9983)}" ] 
+BB9981 -> BB9982 [tailport=s, headport=n, headlabel="      9982"]
+BB9981 -> BB9983 [tailport=s, headport=n, headlabel="      9983"]
+BB9981 -> BB9985 [tailport=s, headport=n, color=gray]
+BB9982 [shape=record label="{33039: read-variable['nativeEvent',v13,-]|33040: read-variable['keyProp',v14,-]|33041: read-property[v13,v14,v12]|33042: \<variable-non-null-undef\>['nativeEvent']|33043: ![v12,v11]|33044: ![v11,v1]}" ] 
+BB9982 -> BB9984 [tailport=s, headport=n]
+BB9982 -> BB9985 [tailport=s, headport=n, color=gray]
+BB9983 [shape=record label="{33045: constant[false,v1]}" ] 
+BB9983 -> BB9984 [tailport=s, headport=n]
+BB9984 [shape=record label="{33046: return[v1]}" ] 
+BB9985 [shape=record label="{33047: exceptional-return}" ] 
+//#$~ 17832
+}

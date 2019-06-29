@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry116[shape=none,label=""];
+BB_entry116 -> BB1549 [tailport=s, headport=n, headlabel="    1549"]
+BB1549 [shape=record label="{5010: constant[undefined,v1]}" ] 
+BB1549 -> BB1550 [tailport=s, headport=n, headlabel="      1550"]
+BB1550 [shape=record label="{5011: read-variable['this',v3,-]|5012: read-variable['Array',v4,-]}" ] 
+BB1550 -> BB1551 [tailport=s, headport=n, headlabel="      1551"]
+BB1550 -> BB1556 [tailport=s, headport=n, color=gray, headlabel="      1556"]
+BB1551 [shape=record label="{5013: construct [-,v4,v2]}" ] 
+BB1551 -> BB1552 [tailport=s, headport=n, headlabel="      1552"]
+BB1551 -> BB1556 [tailport=s, headport=n, color=gray]
+BB1552 [shape=record label="{5014: write-property[v3,'names',v2]*|5015: read-variable['this',v6,-]|5016: read-variable['Object',v8,-]|5017: read-property[v8,'create',-]|5018: \<variable-non-null-undef\>['Object']|5019: constant[null,v9]}" ] 
+BB1552 -> BB1553 [tailport=s, headport=n, headlabel="      1553"]
+BB1552 -> BB1556 [tailport=s, headport=n, color=gray]
+BB1553 [shape=record label="{5020: call-Object.create [v8,'create',v9,v5]}" ] 
+BB1553 -> BB1554 [tailport=s, headport=n, headlabel="      1554"]
+BB1553 -> BB1556 [tailport=s, headport=n, color=gray]
+BB1554 [shape=record label="{5021: write-property[v6,'vertices',v5]*}" ] 
+BB1554 -> BB1555 [tailport=s, headport=n, headlabel="      1555"]
+BB1554 -> BB1556 [tailport=s, headport=n, color=gray]
+BB1555 [shape=record label="{5022: return[v1]}" ] 
+BB1556 [shape=record label="{5023: exceptional-return}" ] 
+//#$~ 2050
+}

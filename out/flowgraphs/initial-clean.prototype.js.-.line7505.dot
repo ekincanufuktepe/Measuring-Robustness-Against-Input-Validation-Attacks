@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry732[shape=none,label=""];
+BB_entry732 -> BB9514 [tailport=s, headport=n, headlabel="    9514"]
+BB9514 [shape=record label="{26762: constant[undefined,v1]|26763: vardecl['selector']}" ] 
+BB9514 -> BB9515 [tailport=s, headport=n, headlabel="      9515"]
+BB9515 [shape=record label="{26764: read-variable['expressions',v6,-]|26765: read-property[v6,'toArray',-]|26766: \<variable-non-null-undef\>['expressions']}" ] 
+BB9515 -> BB9516 [tailport=s, headport=n, headlabel="      9516"]
+BB9515 -> BB9523 [tailport=s, headport=n, color=gray, headlabel="      9523"]
+BB9516 [shape=record label="{26767: call-expressions.toArray [v6,'toArray',v4]}" ] 
+BB9516 -> BB9517 [tailport=s, headport=n, headlabel="      9517"]
+BB9516 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9517 [shape=record label="{26768: read-property[v4,'join',-]|26769: constant[\", \",v7]}" ] 
+BB9517 -> BB9518 [tailport=s, headport=n, headlabel="      9518"]
+BB9517 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9518 [shape=record label="{26770: call-null [v4,'join',v7,v2]}" ] 
+BB9518 -> BB9519 [tailport=s, headport=n, headlabel="      9519"]
+BB9518 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9519 [shape=record label="{26771: write-variable[v2,'selector']*|26772: read-variable['Prototype',v10,-]|26773: read-property[v10,'Selector',v9]|26774: \<variable-non-null-undef\>['Prototype']|26775: read-property[v9,'select',-]|26776: \<property-non-null-undef\>[v10,'Selector']|26777: read-variable['selector',v11,-]|26778: read-variable['element',v12,-]|26779: if[v12](true-block:9521,false-block:9520)}" ] 
+BB9519 -> BB9521 [tailport=s, headport=n, headlabel="      9521"]
+BB9519 -> BB9520 [tailport=s, headport=n, headlabel="      9520"]
+BB9519 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9520 [shape=record label="{26780: read-variable['document',v12,-]}" ] 
+BB9520 -> BB9521 [tailport=s, headport=n]
+BB9520 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9521 [shape=record label="{26781: call-Prototype.Selector.select [v9,'select',v11,v12,v1]}" ] 
+BB9521 -> BB9522 [tailport=s, headport=n, headlabel="      9522"]
+BB9521 -> BB9523 [tailport=s, headport=n, color=gray]
+BB9522 [shape=record label="{26782: return[v1]}" ] 
+BB9523 [shape=record label="{26783: exceptional-return}" ] 
+//#$~ 7507
+}

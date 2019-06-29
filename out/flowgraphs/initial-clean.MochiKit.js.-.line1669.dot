@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry201[shape=none,label=""];
+BB_entry201 -> BB2626 [tailport=s, headport=n, headlabel="    2626"]
+BB2626 [shape=record label="{11265: constant[undefined,v1]|11266: vardecl['rval']}" ] 
+BB2626 -> BB2627 [tailport=s, headport=n, headlabel="      2627"]
+BB2627 [shape=record label="{11267: read-variable['_1f5',v4,-]|11268: read-property[v4,'iterateNext',-]|11269: \<variable-non-null-undef\>['_1f5']}" ] 
+BB2627 -> BB2628 [tailport=s, headport=n, headlabel="      2628"]
+BB2627 -> BB2635 [tailport=s, headport=n, color=gray, headlabel="      2635"]
+BB2628 [shape=record label="{11270: call-_1f5.iterateNext [v4,'iterateNext',v2]}" ] 
+BB2628 -> BB2629 [tailport=s, headport=n, headlabel="      2629"]
+BB2628 -> BB2635 [tailport=s, headport=n, color=gray]
+BB2629 [shape=record label="{11271: write-variable[v2,'rval']*|11272: read-variable['rval',v6,-]|11273: constant[null,v7]|11274: ===[v6,v7,v5]|11275: if[v5](true-block:2631,false-block:2630)}" ] 
+BB2629 -> BB2631 [tailport=s, headport=n, headlabel="      2631"]
+BB2629 -> BB2630 [tailport=s, headport=n, headlabel="      2630"]
+BB2629 -> BB2635 [tailport=s, headport=n, color=gray]
+BB2630 [shape=record label="{11276: read-variable['rval',v6,-]|11277: read-variable['undefined',v7,-]|11278: ===[v6,v7,v5]}" ] 
+BB2630 -> BB2631 [tailport=s, headport=n]
+BB2630 -> BB2635 [tailport=s, headport=n, color=gray]
+BB2631 [shape=record label="{11279: if[v5](true-block:2632,false-block:2633)}" ] 
+BB2631 -> BB2632 [tailport=s, headport=n, headlabel="      2632"]
+BB2631 -> BB2633 [tailport=s, headport=n, headlabel="      2633"]
+BB2632 [shape=record label="{11280: read-variable['MochiKit',v8,-]|11281: read-property[v8,'Iter',v7]|11282: \<variable-non-null-undef\>['MochiKit']|11283: read-property[v7,'StopIteration',v6]|11284: \<property-non-null-undef\>[v8,'Iter']|11285: throw[v6]*}" ] 
+BB2632 -> BB2633 [tailport=s, headport=n]
+BB2632 -> BB2635 [tailport=s, headport=n, color=gray]
+BB2633 [shape=record label="{11286: read-variable['rval',v1,-]}" ] 
+BB2633 -> BB2634 [tailport=s, headport=n, headlabel="      2634"]
+BB2633 -> BB2635 [tailport=s, headport=n, color=gray]
+BB2634 [shape=record label="{11287: return[v1]}" ] 
+BB2635 [shape=record label="{11288: exceptional-return}" ] 
+//#$~ 1674
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry283[shape=none,label=""];
+BB_entry283 -> BB2591 [tailport=s, headport=n, headlabel="    2591"]
+BB2591 [shape=record label="{7785: constant[undefined,v1]|7786: vardecl['global']}" ] 
+BB2591 -> BB2592 [tailport=s, headport=n, headlabel="      2592"]
+BB2592 [shape=record label="{7787: read-variable['this',v4,-]|7788: read-property[v4,'globalName',-]|7789: read-variable['thing',v7,-]|7790: read-property[v7,'getName',-]|7791: \<variable-non-null-undef\>['thing']}" ] 
+BB2592 -> BB2593 [tailport=s, headport=n, headlabel="      2593"]
+BB2592 -> BB2597 [tailport=s, headport=n, color=gray, headlabel="      2597"]
+BB2593 [shape=record label="{7792: call-thing.getName [v7,'getName',v5]}" ] 
+BB2593 -> BB2594 [tailport=s, headport=n, headlabel="      2594"]
+BB2593 -> BB2597 [tailport=s, headport=n, color=gray]
+BB2594 [shape=record label="{7793: call-this.globalName [v4,'globalName',v5,v2]}" ] 
+BB2594 -> BB2595 [tailport=s, headport=n, headlabel="      2595"]
+BB2594 -> BB2597 [tailport=s, headport=n, color=gray]
+BB2595 [shape=record label="{7794: write-variable[v2,'global']*|7795: read-variable['joose',v11,-]|7796: read-property[v11,'top',v9]|7797: \<variable-non-null-undef\>['joose']|7798: read-variable['global',v10,-]|7799: delete-property[v9,v10,v8]*}" ] 
+BB2595 -> BB2596 [tailport=s, headport=n, headlabel="      2596"]
+BB2595 -> BB2597 [tailport=s, headport=n, color=gray]
+BB2596 [shape=record label="{7800: return[v1]}" ] 
+BB2597 [shape=record label="{7801: exceptional-return}" ] 
+//#$~ 3026
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB904 [tailport=s, headport=n, headlabel="    904"]
+BB904 [shape=record label="{2743: constant[undefined,v1]|2744: vardecl['e']|2745: vardecl['s']}" ] 
+BB904 -> BB905 [tailport=s, headport=n, headlabel="      905"]
+BB905 [shape=record label="{2746: read-variable['d3',v3,-]|2747: read-property[v3,'event',v2]|2748: \<variable-non-null-undef\>['d3']|2749: write-variable[v2,'e']*}" ] 
+BB905 -> BB906 [tailport=s, headport=n, headlabel="      906"]
+BB905 -> BB910 [tailport=s, headport=n, color=gray, headlabel="      910"]
+BB906 [shape=record label="{2750: read-variable['e',v5,-]|2751: read-property[v5,'sourceEvent',v4]|2752: \<variable-non-null-undef\>['e']|2753: write-variable[v4,'s']|2754: if[v4](true-block:907,false-block:908)}" ] 
+BB906 -> BB907 [tailport=s, headport=n, headlabel="      907"]
+BB906 -> BB908 [tailport=s, headport=n, headlabel="      908"]
+BB906 -> BB910 [tailport=s, headport=n, color=gray]
+BB907 [shape=record label="{2755: read-variable['s',v6,-]|2756: write-variable[v6,'e']*}" ] 
+BB907 -> BB906 [tailport=s, headport=n]
+BB907 -> BB910 [tailport=s, headport=n, color=gray]
+BB908 [shape=record label="{2757: read-variable['e',v1,-]}" ] 
+BB908 -> BB909 [tailport=s, headport=n, headlabel="      909"]
+BB908 -> BB910 [tailport=s, headport=n, color=gray]
+BB909 [shape=record label="{2758: return[v1]}" ] 
+BB910 [shape=record label="{2759: exceptional-return}" ] 
+//#$~ 529
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry837[shape=none,label=""];
+BB_entry837 -> BB9816 [tailport=s, headport=n, headlabel="    9816"]
+BB9816 [shape=record label="{33655: constant[undefined,v1]}" ] 
+BB9816 -> BB9817 [tailport=s, headport=n, headlabel="      9817"]
+BB9817 [shape=record label="{33656: read-variable['Ember',v3,-]|33657: read-property[v3,'assert',-]|33658: \<variable-non-null-undef\>['Ember']|33659: constant[\"StreamBinding error: tried to bind to object that is not a stream\",v4]|33660: read-variable['stream',v5,-]|33661: if[v5](true-block:9818,false-block:9819)}" ] 
+BB9817 -> BB9819 [tailport=s, headport=n, headlabel="      9819"]
+BB9817 -> BB9818 [tailport=s, headport=n, headlabel="      9818"]
+BB9817 -> BB9825 [tailport=s, headport=n, color=gray, headlabel="      9825"]
+BB9818 [shape=record label="{33662: read-variable['stream',v6,-]|33663: read-property[v6,'isStream',v5]|33664: \<variable-non-null-undef\>['stream']}" ] 
+BB9818 -> BB9819 [tailport=s, headport=n]
+BB9818 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9819 [shape=record label="{33665: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB9819 -> BB9820 [tailport=s, headport=n, headlabel="      9820"]
+BB9819 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9820 [shape=record label="{33666: read-variable['this',v7,-]|33667: read-property[v7,'init',-]}" ] 
+BB9820 -> BB9821 [tailport=s, headport=n, headlabel="      9821"]
+BB9820 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9821 [shape=record label="{33668: call-this.init [v7,'init',-]*}" ] 
+BB9821 -> BB9822 [tailport=s, headport=n, headlabel="      9822"]
+BB9821 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9822 [shape=record label="{33669: read-variable['this',v9,-]|33670: read-variable['stream',v8,-]|33671: write-property[v9,'stream',v8]*|33672: read-variable['this',v11,-]|33673: read-variable['undefined',v10,-]|33674: write-property[v11,'senderCallback',v10]*|33675: read-variable['this',v13,-]|33676: read-variable['undefined',v12,-]|33677: write-property[v13,'senderContext',v12]*|33678: read-variable['this',v15,-]|33679: read-variable['undefined',v14,-]|33680: write-property[v15,'senderValue',v14]*|33681: read-variable['stream',v17,-]|33682: read-property[v17,'subscribe',-]|33683: \<variable-non-null-undef\>['stream']|33684: read-variable['this',v19,-]|33685: read-property[v19,'_onNotify',v18]|33686: read-variable['this',v20,-]}" ] 
+BB9822 -> BB9823 [tailport=s, headport=n, headlabel="      9823"]
+BB9822 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9823 [shape=record label="{33687: call-stream.subscribe [v17,'subscribe',v18,v20,-]*}" ] 
+BB9823 -> BB9824 [tailport=s, headport=n, headlabel="      9824"]
+BB9823 -> BB9825 [tailport=s, headport=n, color=gray]
+BB9824 [shape=record label="{33688: return[v1]}" ] 
+BB9825 [shape=record label="{33689: exceptional-return}" ] 
+//#$~ 17577
+}

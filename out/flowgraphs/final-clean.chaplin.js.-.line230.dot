@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry23[shape=none,label=""];
+BB_entry23 -> BB202 [tailport=s, headport=n, headlabel="    202"]
+BB202 [shape=record label="{636: constant[undefined,v1]}" ] 
+BB202 -> BB203 [tailport=s, headport=n, headlabel="      203"]
+BB203 [shape=record label="{637: read-variable['support',v3,-]|638: read-property[v3,'propertyDescriptors',v2]|639: \<variable-non-null-undef\>['support']|640: if[v2](true-block:204,false-block:205)}" ] 
+BB203 -> BB205 [tailport=s, headport=n, headlabel="      205"]
+BB203 -> BB204 [tailport=s, headport=n, headlabel="      204"]
+BB203 -> BB209 [tailport=s, headport=n, color=gray, headlabel="      209"]
+BB204 [shape=record label="{641: read-variable['Object',v4,-]|642: read-property[v4,'seal',v2]|643: \<variable-non-null-undef\>['Object']}" ] 
+BB204 -> BB205 [tailport=s, headport=n]
+BB204 -> BB209 [tailport=s, headport=n, color=gray]
+BB205 [shape=record label="{644: if[v2](true-block:206,false-block:208)}" ] 
+BB205 -> BB206 [tailport=s, headport=n, headlabel="      206"]
+BB205 -> BB208 [tailport=s, headport=n, headlabel="      208"]
+BB206 [shape=record label="{645: read-variable['Object',v5,-]|646: read-property[v5,'seal',-]|647: \<variable-non-null-undef\>['Object']|648: read-variable['mediator',v6,-]}" ] 
+BB206 -> BB207 [tailport=s, headport=n, headlabel="      207"]
+BB206 -> BB209 [tailport=s, headport=n, color=gray]
+BB207 [shape=record label="{649: call-Object.seal [v5,'seal',v6,v1]}" ] 
+BB207 -> BB208 [tailport=s, headport=n]
+BB207 -> BB209 [tailport=s, headport=n, color=gray]
+BB208 [shape=record label="{650: return[v1]}" ] 
+BB209 [shape=record label="{651: exceptional-return}" ] 
+//#$~ 232
+}

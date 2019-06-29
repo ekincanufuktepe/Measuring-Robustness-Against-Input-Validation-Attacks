@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry820[shape=none,label=""];
+BB_entry820 -> BB10682 [tailport=s, headport=n, headlabel="    10682"]
+BB10682 [shape=record label="{27800: constant[undefined,v1]|27801: vardecl['result']}" ] 
+BB10682 -> BB10683 [tailport=s, headport=n, headlabel="      10683"]
+BB10683 [shape=record label="{27802: read-variable['Deferred',v3,-]}" ] 
+BB10683 -> BB10684 [tailport=s, headport=n, headlabel="      10684"]
+BB10683 -> BB10689 [tailport=s, headport=n, color=gray, headlabel="      10689"]
+BB10684 [shape=record label="{27803: construct [-,v3,v2]}" ] 
+BB10684 -> BB10685 [tailport=s, headport=n, headlabel="      10685"]
+BB10684 -> BB10689 [tailport=s, headport=n, color=gray]
+BB10685 [shape=record label="{27804: write-variable[v2,'result']*|27805: read-variable['result',v5,-]|27806: read-property[v5,'reject',-]|27807: \<variable-non-null-undef\>['result']|27808: read-variable['reason',v6,-]}" ] 
+BB10685 -> BB10686 [tailport=s, headport=n, headlabel="      10686"]
+BB10685 -> BB10689 [tailport=s, headport=n, color=gray]
+BB10686 [shape=record label="{27809: call-result.reject [v5,'reject',v6,-]*}" ] 
+BB10686 -> BB10687 [tailport=s, headport=n, headlabel="      10687"]
+BB10686 -> BB10689 [tailport=s, headport=n, color=gray]
+BB10687 [shape=record label="{27810: read-variable['result',v7,-]|27811: read-property[v7,'promise',v1]|27812: \<variable-non-null-undef\>['result']}" ] 
+BB10687 -> BB10688 [tailport=s, headport=n, headlabel="      10688"]
+BB10687 -> BB10689 [tailport=s, headport=n, color=gray]
+BB10688 [shape=record label="{27813: return[v1]}" ] 
+BB10689 [shape=record label="{27814: exceptional-return}" ] 
+//#$~ 14700
+}

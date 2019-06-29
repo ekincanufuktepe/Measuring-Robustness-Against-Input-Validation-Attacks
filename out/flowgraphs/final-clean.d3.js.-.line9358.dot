@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1467[shape=none,label=""];
+BB_entry1467 -> BB15994 [tailport=s, headport=n, headlabel="    15994"]
+BB15994 [shape=record label="{54874: constant[undefined,v1]|54875: vardecl['timezone']}" ] 
+BB15994 -> BB15995 [tailport=s, headport=n, headlabel="      15995"]
+BB15995 [shape=record label="{54876: read-variable['date',v6,-]|54877: read-property[v6,'getTimezoneOffset',-]|54878: \<variable-non-null-undef\>['date']}" ] 
+BB15995 -> BB15996 [tailport=s, headport=n, headlabel="      15996"]
+BB15995 -> BB16002 [tailport=s, headport=n, color=gray, headlabel="      16002"]
+BB15996 [shape=record label="{54879: call-date.getTimezoneOffset [v6,'getTimezoneOffset',v3]}" ] 
+BB15996 -> BB15997 [tailport=s, headport=n, headlabel="      15997"]
+BB15996 -> BB16002 [tailport=s, headport=n, color=gray]
+BB15997 [shape=record label="{54880: constant[60.0,v4]|54881: /[v3,v4,v2]|54882: write-variable[v2,'timezone']*|54883: read-variable['d3_date',v7,-]|54884: read-variable['Math',v14,-]|54885: read-property[v14,'floor',-]|54886: \<variable-non-null-undef\>['Math']|54887: read-variable['date',v18,-]|54888: constant[3600000.0,v19]|54889: /[v18,v19,v16]|54890: read-variable['timezone',v17,-]|54891: -[v16,v17,v15]}" ] 
+BB15997 -> BB15998 [tailport=s, headport=n, headlabel="      15998"]
+BB15997 -> BB16002 [tailport=s, headport=n, color=gray]
+BB15998 [shape=record label="{54892: call-Math.floor [v14,'floor',v15,v11]}" ] 
+BB15998 -> BB15999 [tailport=s, headport=n, headlabel="      15999"]
+BB15998 -> BB16002 [tailport=s, headport=n, color=gray]
+BB15999 [shape=record label="{54893: read-variable['timezone',v12,-]|54894: +[v11,v12,v9]|54895: constant[3600000.0,v10]|54896: *[v9,v10,v8]}" ] 
+BB15999 -> BB16000 [tailport=s, headport=n, headlabel="      16000"]
+BB15999 -> BB16002 [tailport=s, headport=n, color=gray]
+BB16000 [shape=record label="{54897: construct [-,v7,v8,v1]}" ] 
+BB16000 -> BB16001 [tailport=s, headport=n, headlabel="      16001"]
+BB16000 -> BB16002 [tailport=s, headport=n, color=gray]
+BB16001 [shape=record label="{54898: return[v1]}" ] 
+BB16002 [shape=record label="{54899: exceptional-return}" ] 
+//#$~ 9360
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry255[shape=none,label=""];
+BB_entry255 -> BB3279 [tailport=s, headport=n, headlabel="    3279"]
+BB3279 [shape=record label="{10781: constant[undefined,v1]}" ] 
+BB3279 -> BB3280 [tailport=s, headport=n, headlabel="      3280"]
+BB3280 [shape=record label="{10782: read-variable['this',v5,-]|10783: read-property[v5,'_syncState',v3]|10784: read-variable['SYNCING',v4,-]|10785: ===[v3,v4,v2]|10786: if[v2](true-block:3281,false-block:3285)}" ] 
+BB3280 -> BB3281 [tailport=s, headport=n, headlabel="      3281"]
+BB3280 -> BB3285 [tailport=s, headport=n, headlabel="      3285"]
+BB3280 -> BB3286 [tailport=s, headport=n, color=gray, headlabel="      3286"]
+BB3281 [shape=record label="{10787: read-variable['this',v7,-]|10788: read-variable['this',v8,-]|10789: read-property[v8,'_previousSync',v6]|10790: write-property[v7,'_syncState',v6]*|10791: read-variable['this',v10,-]|10792: read-variable['this',v11,-]|10793: read-property[v11,'_syncState',v9]|10794: write-property[v10,'_previousSync',v9]*|10795: read-variable['this',v13,-]|10796: read-property[v13,'trigger',-]|10797: read-variable['this',v15,-]|10798: read-property[v15,'_syncState',v14]|10799: read-variable['this',v16,-]|10800: read-variable['this',v18,-]|10801: read-property[v18,'_syncState',v17]}" ] 
+BB3281 -> BB3282 [tailport=s, headport=n, headlabel="      3282"]
+BB3281 -> BB3286 [tailport=s, headport=n, color=gray]
+BB3282 [shape=record label="{10802: call-this.trigger [v13,'trigger',v14,v16,v17,-]*}" ] 
+BB3282 -> BB3283 [tailport=s, headport=n, headlabel="      3283"]
+BB3282 -> BB3286 [tailport=s, headport=n, color=gray]
+BB3283 [shape=record label="{10803: read-variable['this',v20,-]|10804: read-property[v20,'trigger',-]|10805: read-variable['STATE_CHANGE',v21,-]|10806: read-variable['this',v22,-]|10807: read-variable['this',v24,-]|10808: read-property[v24,'_syncState',v23]}" ] 
+BB3283 -> BB3284 [tailport=s, headport=n, headlabel="      3284"]
+BB3283 -> BB3286 [tailport=s, headport=n, color=gray]
+BB3284 [shape=record label="{10809: call-this.trigger [v20,'trigger',v21,v22,v23,-]*}" ] 
+BB3284 -> BB3285 [tailport=s, headport=n]
+BB3284 -> BB3286 [tailport=s, headport=n, color=gray]
+BB3285 [shape=record label="{10810: return[v1]}" ] 
+BB3286 [shape=record label="{10811: exceptional-return}" ] 
+//#$~ 2863
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry275[shape=none,label=""];
+BB_entry275 -> BB3653 [tailport=s, headport=n, headlabel="    3653"]
+BB3653 [shape=record label="{14510: constant[undefined,v1]|14511: vardecl['d']}" ] 
+BB3653 -> BB3654 [tailport=s, headport=n, headlabel="      3654"]
+BB3654 [shape=record label="{14512: read-variable['MochiKit',v5,-]|14513: read-property[v5,'Async',v4]|14514: \<variable-non-null-undef\>['MochiKit']|14515: read-property[v4,'Deferred',-]|14516: \<property-non-null-undef\>[v5,'Async']}" ] 
+BB3654 -> BB3655 [tailport=s, headport=n, headlabel="      3655"]
+BB3654 -> BB3660 [tailport=s, headport=n, color=gray, headlabel="      3660"]
+BB3655 [shape=record label="{14517: construct [v4,'Deferred',v2]}" ] 
+BB3655 -> BB3656 [tailport=s, headport=n, headlabel="      3656"]
+BB3655 -> BB3660 [tailport=s, headport=n, color=gray]
+BB3656 [shape=record label="{14518: write-variable[v2,'d']*|14519: read-variable['d',v8,-]|14520: read-property[v8,'callback',v7]|14521: \<variable-non-null-undef\>['d']|14522: read-property[v7,'apply',-]|14523: \<property-non-null-undef\>[v8,'callback']|14524: read-variable['d',v9,-]|14525: read-variable['arguments',v10,-]}" ] 
+BB3656 -> BB3657 [tailport=s, headport=n, headlabel="      3657"]
+BB3656 -> BB3660 [tailport=s, headport=n, color=gray]
+BB3657 [shape=record label="{14526: call-d.callback.apply [v7,'apply',v9,v10,-]*}" ] 
+BB3657 -> BB3658 [tailport=s, headport=n, headlabel="      3658"]
+BB3657 -> BB3660 [tailport=s, headport=n, color=gray]
+BB3658 [shape=record label="{14527: read-variable['d',v1,-]}" ] 
+BB3658 -> BB3659 [tailport=s, headport=n, headlabel="      3659"]
+BB3658 -> BB3660 [tailport=s, headport=n, color=gray]
+BB3659 [shape=record label="{14528: return[v1]}" ] 
+BB3660 [shape=record label="{14529: exceptional-return}" ] 
+//#$~ 2429
+}

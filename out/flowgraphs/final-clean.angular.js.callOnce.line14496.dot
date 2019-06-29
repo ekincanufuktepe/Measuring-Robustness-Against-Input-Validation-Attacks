@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry798[shape=none,label=""];
+BB_entry798 -> BB10490 [tailport=s, headport=n, headlabel="    10490"]
+BB10490 [shape=record label="{27291: constant[undefined,v1]|27292: vardecl['called']|27293: function-decl[function wrap ( fn ),-]}" ] 
+BB10490 -> BB10491 [tailport=s, headport=n, headlabel="      10491"]
+BB10491 [shape=record label="{27294: constant[false,v2]|27295: write-variable[v2,'called']*|27296: read-variable['Array',v3,-]|27297: read-variable['wrap',v6,v5]|27298: read-variable['resolveFn',v7,-]}" ] 
+BB10491 -> BB10492 [tailport=s, headport=n, headlabel="      10492"]
+BB10491 -> BB10497 [tailport=s, headport=n, color=gray, headlabel="      10497"]
+BB10492 [shape=record label="{27299: call-wrap [v5,v6,v7,v4]}" ] 
+BB10492 -> BB10493 [tailport=s, headport=n, headlabel="      10493"]
+BB10492 -> BB10497 [tailport=s, headport=n, color=gray]
+BB10493 [shape=record label="{27300: read-variable['wrap',v10,v9]|27301: read-variable['rejectFn',v11,-]}" ] 
+BB10493 -> BB10494 [tailport=s, headport=n, headlabel="      10494"]
+BB10493 -> BB10497 [tailport=s, headport=n, color=gray]
+BB10494 [shape=record label="{27302: call-wrap [v9,v10,v11,v8]}" ] 
+BB10494 -> BB10495 [tailport=s, headport=n, headlabel="      10495"]
+BB10494 -> BB10497 [tailport=s, headport=n, color=gray]
+BB10495 [shape=record label="{27303: construct [-,v3,v4,v8,v1]}" ] 
+BB10495 -> BB10496 [tailport=s, headport=n, headlabel="      10496"]
+BB10495 -> BB10497 [tailport=s, headport=n, color=gray]
+BB10496 [shape=record label="{27304: return[v1]}" ] 
+BB10497 [shape=record label="{27305: exceptional-return}" ] 
+//#$~ 14506
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry368[shape=none,label=""];
+BB_entry368 -> BB4542 [tailport=s, headport=n, headlabel="    4542"]
+BB4542 [shape=record label="{11159: constant[undefined,v1]}" ] 
+BB4542 -> BB4543 [tailport=s, headport=n, headlabel="      4543"]
+BB4543 [shape=record label="{11160: read-variable['transcludedScope',v3,-]|11161: ![v3,v2]|11162: if[v2](true-block:4544,false-block:4547)}" ] 
+BB4543 -> BB4544 [tailport=s, headport=n, headlabel="      4544"]
+BB4543 -> BB4547 [tailport=s, headport=n, headlabel="      4547"]
+BB4543 -> BB4550 [tailport=s, headport=n, color=gray, headlabel="      4550"]
+BB4544 [shape=record label="{11163: read-variable['scope',v6,-]|11164: read-property[v6,'$new',-]|11165: \<variable-non-null-undef\>['scope']|11166: constant[false,v7]|11167: read-variable['containingScope',v8,-]}" ] 
+BB4544 -> BB4545 [tailport=s, headport=n, headlabel="      4545"]
+BB4544 -> BB4550 [tailport=s, headport=n, color=gray]
+BB4545 [shape=record label="{11168: call-scope.$new [v6,'$new',v7,v8,v4]}" ] 
+BB4545 -> BB4546 [tailport=s, headport=n, headlabel="      4546"]
+BB4545 -> BB4550 [tailport=s, headport=n, color=gray]
+BB4546 [shape=record label="{11169: write-variable[v4,'transcludedScope']*|11170: read-variable['transcludedScope',v10,-]|11171: constant[true,v9]|11172: write-property[v10,'$$transcluded',v9]|11173: \<variable-non-null-undef\>['transcludedScope']*}" ] 
+BB4546 -> BB4547 [tailport=s, headport=n]
+BB4546 -> BB4550 [tailport=s, headport=n, color=gray]
+BB4547 [shape=record label="{11174: read-variable['transcludeFn',v5,v4]|11175: read-variable['transcludedScope',v6,-]|11176: read-variable['cloneFn',v7,-]|11177: new[v8]|11178: read-variable['previousBoundTranscludeFn',v9,-]|11179: write-property[v8,'parentBoundTranscludeFn',v9]|11180: read-variable['controllers',v10,-]|11181: write-property[v8,'transcludeControllers',v10]|11182: read-variable['futureParentElement',v11,-]|11183: write-property[v8,'futureParentElement',v11]}" ] 
+BB4547 -> BB4548 [tailport=s, headport=n, headlabel="      4548"]
+BB4547 -> BB4550 [tailport=s, headport=n, color=gray]
+BB4548 [shape=record label="{11184: call-transcludeFn [v4,v5,v6,v7,v8,v1]}" ] 
+BB4548 -> BB4549 [tailport=s, headport=n, headlabel="      4549"]
+BB4548 -> BB4550 [tailport=s, headport=n, color=gray]
+BB4549 [shape=record label="{11185: return[v1]}" ] 
+BB4550 [shape=record label="{11186: exceptional-return}" ] 
+//#$~ 7565
+}

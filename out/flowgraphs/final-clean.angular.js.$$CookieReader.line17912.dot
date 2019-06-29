@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry949[shape=none,label=""];
+BB_entry949 -> BB12240 [tailport=s, headport=n, headlabel="    12240"]
+BB12240 [shape=record label="{32125: constant[undefined,v1]|32126: vardecl['rawDocument']|32127: vardecl['lastCookies']|32128: vardecl['lastCookieString']|32129: function-decl[function safeDecodeURIComponent ( str ),-]}" ] 
+BB12240 -> BB12241 [tailport=s, headport=n, headlabel="      12241"]
+BB12241 [shape=record label="{32130: read-variable['$document',v3,-]|32131: constant[0.0,v4]|32132: read-property[v3,v4,v2]|32133: \<variable-non-null-undef\>['$document']|32134: if[v2](true-block:12243,false-block:12242)}" ] 
+BB12241 -> BB12243 [tailport=s, headport=n, headlabel="      12243"]
+BB12241 -> BB12242 [tailport=s, headport=n, headlabel="      12242"]
+BB12241 -> BB12245 [tailport=s, headport=n, color=gray, headlabel="      12245"]
+BB12242 [shape=record label="{32135: new[v2]}" ] 
+BB12242 -> BB12243 [tailport=s, headport=n]
+BB12243 [shape=record label="{32136: write-variable[v2,'rawDocument']*|32137: new[v3]|32138: write-variable[v3,'lastCookies']*|32139: constant[\"\",v4]|32140: write-variable[v4,'lastCookieString']*|32141: function-expr[function ( ),v1]}" ] 
+BB12243 -> BB12244 [tailport=s, headport=n, headlabel="      12244"]
+BB12244 [shape=record label="{32142: return[v1]}" ] 
+BB12245 [shape=record label="{32143: exceptional-return}" ] 
+//#$~ 17948
+}

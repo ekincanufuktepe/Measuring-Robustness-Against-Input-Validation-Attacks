@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry156[shape=none,label=""];
+BB_entry156 -> BB1665 [tailport=s, headport=n, headlabel="    1665"]
+BB1665 [shape=record label="{3620: constant[undefined,v1]|3621: vardecl['i']|3622: vardecl['len']}" ] 
+BB1665 -> BB1666 [tailport=s, headport=n, headlabel="      1666"]
+BB1666 [shape=record label="{3623: read-variable['fun',v3,v2]|3624: read-variable['node',v4,-]}" ] 
+BB1666 -> BB1667 [tailport=s, headport=n, headlabel="      1667"]
+BB1666 -> BB1674 [tailport=s, headport=n, color=gray, headlabel="      1674"]
+BB1667 [shape=record label="{3625: call-fun [v2,v3,v4,-]*}" ] 
+BB1667 -> BB1668 [tailport=s, headport=n, headlabel="      1668"]
+BB1667 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1668 [shape=record label="{3626: constant[0.0,v6]|3627: write-variable[v6,'i']*|3628: read-variable['node',v9,-]|3629: read-property[v9,'childNodes',v8]|3630: \<variable-non-null-undef\>['node']|3631: read-property[v8,'length',v7]|3632: \<property-non-null-undef\>[v9,'childNodes']|3633: write-variable[v7,'len']*}" ] 
+BB1668 -> BB1669 [tailport=s, headport=n, headlabel="      1669"]
+BB1668 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1669 [shape=record label="{3634: read-variable['i',v10,-]|3635: read-variable['len',v11,-]|3636: \<[v10,v11,v5]|3637: if[v5](true-block:1670,false-block:1673)}" ] 
+BB1669 -> BB1670 [tailport=s, headport=n, headlabel="      1670"]
+BB1669 -> BB1673 [tailport=s, headport=n, headlabel="      1673"]
+BB1669 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1670 [shape=record label="{3638: read-variable['traverseNode',v13,v12]|3639: read-variable['node',v16,-]|3640: read-property[v16,'childNodes',v15]|3641: \<variable-non-null-undef\>['node']|3642: read-variable['i',v17,-]|3643: read-property[v15,v17,v14]|3644: \<property-non-null-undef\>[v16,'childNodes']|3645: read-variable['fun',v18,-]}" ] 
+BB1670 -> BB1671 [tailport=s, headport=n, headlabel="      1671"]
+BB1670 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1671 [shape=record label="{3646: call-traverseNode [v12,v13,v14,v18,-]*}" ] 
+BB1671 -> BB1672 [tailport=s, headport=n, headlabel="      1672"]
+BB1671 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1672 [shape=record label="{3647: constant[1.0,v19]|3648: read-variable['i',v20,-]|3649: +[v20,v21]|3650: +[v21,v19,v22]|3651: write-variable[v22,'i']}" ] 
+BB1672 -> BB1669 [tailport=s, headport=n]
+BB1672 -> BB1674 [tailport=s, headport=n, color=gray]
+BB1673 [shape=record label="{3652: return[v1]}" ] 
+BB1674 [shape=record label="{3653: exceptional-return}" ] 
+//#$~ 820
+}

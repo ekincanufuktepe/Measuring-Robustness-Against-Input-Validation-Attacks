@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1366[shape=none,label=""];
+BB_entry1366 -> BB16104 [tailport=s, headport=n, headlabel="    16104"]
+BB16104 [shape=record label="{55198: constant[undefined,v1]|55199: vardecl['modelSpecified']}" ] 
+BB16104 -> BB16105 [tailport=s, headport=n, headlabel="      16105"]
+BB16105 [shape=record label="{55200: read-variable['this',v4,-]|55201: read-property[v4,'_super',v3]|55202: read-property[v3,'apply',-]|55203: \<property-non-null-undef\>[v4,'_super']|55204: read-variable['this',v5,-]|55205: read-variable['arguments',v6,-]}" ] 
+BB16105 -> BB16106 [tailport=s, headport=n, headlabel="      16106"]
+BB16105 -> BB16113 [tailport=s, headport=n, color=gray, headlabel="      16113"]
+BB16106 [shape=record label="{55206: call-this._super.apply [v3,'apply',v5,v6,-]*}" ] 
+BB16106 -> BB16107 [tailport=s, headport=n, headlabel="      16107"]
+BB16106 -> BB16113 [tailport=s, headport=n, color=gray]
+BB16107 [shape=record label="{55207: read-variable['props',v10,-]|55208: read-property[v10,'model',v9]|55209: \<variable-non-null-undef\>['props']|55210: ![v9,v8]|55211: ![v8,v7]|55212: write-variable[v7,'modelSpecified']*|55213: read-variable['props',v12,-]|55214: read-property[v12,'content',v11]|55215: \<variable-non-null-undef\>['props']|55216: if[v11](true-block:16108,false-block:16109)}" ] 
+BB16107 -> BB16109 [tailport=s, headport=n, headlabel="      16109"]
+BB16107 -> BB16108 [tailport=s, headport=n, headlabel="      16108"]
+BB16107 -> BB16113 [tailport=s, headport=n, color=gray]
+BB16108 [shape=record label="{55217: read-variable['modelSpecified',v13,-]|55218: ![v13,v11]}" ] 
+BB16108 -> BB16109 [tailport=s, headport=n]
+BB16108 -> BB16113 [tailport=s, headport=n, color=gray]
+BB16109 [shape=record label="{55219: if[v11](true-block:16110,false-block:16112)}" ] 
+BB16109 -> BB16110 [tailport=s, headport=n, headlabel="      16110"]
+BB16109 -> BB16112 [tailport=s, headport=n, headlabel="      16112"]
+BB16110 [shape=record label="{55220: read-variable['props',v14,-]|55221: read-variable['props',v15,-]|55222: read-property[v15,'content',v13]|55223: \<variable-non-null-undef\>['props']|55224: write-property[v14,'model',v13]|55225: \<variable-non-null-undef\>['props']*|55226: read-variable['props',v17,-]|55227: constant[\"content\",v18]|55228: delete-property[v17,v18,v16]*|55229: read-variable['Ember',v20,-]|55230: read-property[v20,'deprecate',-]|55231: \<variable-non-null-undef\>['Ember']|55232: constant[\"Do not specify `content` on a Controller, use `model` instead.\",v21]|55233: constant[false,v22]}" ] 
+BB16110 -> BB16111 [tailport=s, headport=n, headlabel="      16111"]
+BB16110 -> BB16113 [tailport=s, headport=n, color=gray]
+BB16111 [shape=record label="{55234: call-Ember.deprecate [v20,'deprecate',v21,v22,-]*}" ] 
+BB16111 -> BB16112 [tailport=s, headport=n]
+BB16111 -> BB16113 [tailport=s, headport=n, color=gray]
+BB16112 [shape=record label="{55235: return[v1]}" ] 
+BB16113 [shape=record label="{55236: exceptional-return}" ] 
+//#$~ 29902
+}

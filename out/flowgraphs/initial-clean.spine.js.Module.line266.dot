@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB331 [tailport=s, headport=n, headlabel="    331"]
+BB331 [shape=record label="{1056: constant[undefined,v1]}" ] 
+BB331 -> BB332 [tailport=s, headport=n, headlabel="      332"]
+BB332 [shape=record label="{1057: read-variable['this',v6,-]|1058: read-property[v6,'init',v5]|1059: typeof[v5,v3]|1060: constant[\"function\",v4]|1061: ===[v3,v4,v2]|1062: if[v2](true-block:333,false-block:335)}" ] 
+BB332 -> BB333 [tailport=s, headport=n, headlabel="      333"]
+BB332 -> BB335 [tailport=s, headport=n, headlabel="      335"]
+BB332 -> BB336 [tailport=s, headport=n, color=gray, headlabel="      336"]
+BB333 [shape=record label="{1063: read-variable['this',v9,-]|1064: read-property[v9,'init',v8]|1065: read-property[v8,'apply',-]|1066: \<property-non-null-undef\>[v9,'init']|1067: read-variable['this',v10,-]|1068: read-variable['arguments',v11,-]}" ] 
+BB333 -> BB334 [tailport=s, headport=n, headlabel="      334"]
+BB333 -> BB336 [tailport=s, headport=n, color=gray]
+BB334 [shape=record label="{1069: call-this.init.apply [v8,'apply',v10,v11,-]*}" ] 
+BB334 -> BB335 [tailport=s, headport=n]
+BB334 -> BB336 [tailport=s, headport=n, color=gray]
+BB335 [shape=record label="{1070: return[v1]}" ] 
+BB336 [shape=record label="{1071: exceptional-return}" ] 
+//#$~ 268
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry1740[shape=none,label=""];
+BB_entry1740 -> BB20080 [tailport=s, headport=n, headlabel="    20080"]
+BB20080 [shape=record label="{67168: constant[undefined,v1]}" ] 
+BB20080 -> BB20081 [tailport=s, headport=n, headlabel="      20081"]
+BB20081 [shape=record label="{67169: read-variable['Application',v5,-]|67170: read-property[v5,'initializers',v4]|67171: \<variable-non-null-undef\>['Application']|67172: read-variable['name',v6,-]|67173: read-property[v4,v6,v3]|67174: \<property-non-null-undef\>[v5,'initializers']|67175: ![v3,v2]|67176: if[v2](true-block:20082,false-block:20084)}" ] 
+BB20081 -> BB20082 [tailport=s, headport=n, headlabel="      20082"]
+BB20081 -> BB20084 [tailport=s, headport=n, headlabel="      20084"]
+BB20081 -> BB20085 [tailport=s, headport=n, color=gray, headlabel="      20085"]
+BB20082 [shape=record label="{67177: read-variable['Application',v8,-]|67178: read-property[v8,'initializer',-]|67179: \<variable-non-null-undef\>['Application']|67180: new[v9]|67181: read-variable['name',v10,-]|67182: write-property[v9,'name',v10]|67183: function-expr[function ( container application ),v11]|67184: write-property[v9,'initialize',v11]}" ] 
+BB20082 -> BB20083 [tailport=s, headport=n, headlabel="      20083"]
+BB20082 -> BB20085 [tailport=s, headport=n, color=gray]
+BB20083 [shape=record label="{67185: call-Application.initializer [v8,'initializer',v9,-]*}" ] 
+BB20083 -> BB20084 [tailport=s, headport=n]
+BB20083 -> BB20085 [tailport=s, headport=n, color=gray]
+BB20084 [shape=record label="{67186: return[v1]}" ] 
+BB20085 [shape=record label="{67187: exceptional-return}" ] 
+//#$~ 37597
+}

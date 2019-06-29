@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry95[shape=none,label=""];
+BB_entry95 -> BB1980 [tailport=s, headport=n, headlabel="    1980"]
+BB1980 [shape=record label="{8123: constant[undefined,v1]}" ] 
+BB1980 -> BB1981 [tailport=s, headport=n, headlabel="      1981"]
+BB1981 [shape=record label="{8124: read-variable['this',v2,-]|8125: read-property[v2,'dragging',v1]|8126: if[v1](true-block:1984,false-block:1982)}" ] 
+BB1981 -> BB1984 [tailport=s, headport=n, headlabel="      1984"]
+BB1981 -> BB1982 [tailport=s, headport=n, headlabel="      1982"]
+BB1981 -> BB1985 [tailport=s, headport=n, color=gray, headlabel="      1985"]
+BB1982 [shape=record label="{8127: read-variable['this',v2,-]|8128: read-property[v2,'resizing',v1]|8129: if[v1](true-block:1984,false-block:1983)}" ] 
+BB1982 -> BB1984 [tailport=s, headport=n]
+BB1982 -> BB1983 [tailport=s, headport=n, headlabel="      1983"]
+BB1982 -> BB1985 [tailport=s, headport=n, color=gray]
+BB1983 [shape=record label="{8130: read-variable['this',v2,-]|8131: read-property[v2,'gesturing',v1]}" ] 
+BB1983 -> BB1984 [tailport=s, headport=n]
+BB1983 -> BB1985 [tailport=s, headport=n, color=gray]
+BB1984 [shape=record label="{8132: return[v1]}" ] 
+BB1985 [shape=record label="{8133: exceptional-return}" ] 
+//#$~ 2571
+}

@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry2251[shape=none,label=""];
+BB_entry2251 -> BB25663 [tailport=s, headport=n, headlabel="    25663"]
+BB25663 [shape=record label="{84492: constant[undefined,v1]|84493: vardecl['morphs']|84494: vardecl['i']|84495: vardecl['l']}" ] 
+BB25663 -> BB25664 [tailport=s, headport=n, headlabel="      25664"]
+BB25664 [shape=record label="{84496: read-variable['this',v3,-]|84497: read-property[v3,'morphs',v2]|84498: write-variable[v2,'morphs']*|84499: constant[0.0,v5]|84500: write-variable[v5,'i']*|84501: read-variable['morphs',v7,-]|84502: read-property[v7,'length',v6]|84503: \<variable-non-null-undef\>['morphs']|84504: write-variable[v6,'l']*}" ] 
+BB25664 -> BB25665 [tailport=s, headport=n, headlabel="      25665"]
+BB25664 -> BB25671 [tailport=s, headport=n, color=gray, headlabel="      25671"]
+BB25665 [shape=record label="{84505: read-variable['i',v8,-]|84506: read-variable['l',v9,-]|84507: \<[v8,v9,v4]|84508: if[v4](true-block:25666,false-block:25670)}" ] 
+BB25665 -> BB25666 [tailport=s, headport=n, headlabel="      25666"]
+BB25665 -> BB25670 [tailport=s, headport=n, headlabel="      25670"]
+BB25665 -> BB25671 [tailport=s, headport=n, color=gray]
+BB25666 [shape=record label="{84509: read-variable['morphs',v13,-]|84510: read-variable['i',v14,-]|84511: read-property[v13,v14,v11]|84512: \<variable-non-null-undef\>['morphs']|84513: read-variable['morph',v12,-]|84514: ===[v11,v12,v10]|84515: if[v10](true-block:25667,false-block:25669)}" ] 
+BB25666 -> BB25667 [tailport=s, headport=n, headlabel="      25667"]
+BB25666 -> BB25669 [tailport=s, headport=n, headlabel="      25669"]
+BB25666 -> BB25671 [tailport=s, headport=n, color=gray]
+BB25667 [shape=record label="{84516: read-variable['this',v16,-]|84517: read-property[v16,'replace',-]|84518: read-variable['i',v17,-]|84519: constant[1.0,v18]}" ] 
+BB25667 -> BB25668 [tailport=s, headport=n, headlabel="      25668"]
+BB25667 -> BB25671 [tailport=s, headport=n, color=gray]
+BB25668 [shape=record label="{84520: call-this.replace [v16,'replace',v17,v18,-]*}" ] 
+BB25668 -> BB25670 [tailport=s, headport=n]
+BB25668 -> BB25671 [tailport=s, headport=n, color=gray]
+BB25669 [shape=record label="{84521: constant[1.0,v15]|84522: read-variable['i',v16,-]|84523: +[v16,v17]|84524: +[v17,v15,v18]|84525: write-variable[v18,'i']}" ] 
+BB25669 -> BB25665 [tailport=s, headport=n]
+BB25669 -> BB25671 [tailport=s, headport=n, color=gray]
+BB25670 [shape=record label="{84526: return[v1]}" ] 
+BB25671 [shape=record label="{84527: exceptional-return}" ] 
+//#$~ 47249
+}

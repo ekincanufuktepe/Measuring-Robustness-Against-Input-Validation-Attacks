@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2073[shape=none,label=""];
+BB_entry2073 -> BB23683 [tailport=s, headport=n, headlabel="    23683"]
+BB23683 [shape=record label="{78370: constant[undefined,v1]}" ] 
+BB23683 -> BB23684 [tailport=s, headport=n, headlabel="      23684"]
+BB23684 [shape=record label="{78371: read-variable['oldClass',v2,-]|78372: if[v2](true-block:23685,false-block:23688)}" ] 
+BB23684 -> BB23685 [tailport=s, headport=n, headlabel="      23685"]
+BB23684 -> BB23688 [tailport=s, headport=n, headlabel="      23688"]
+BB23684 -> BB23689 [tailport=s, headport=n, color=gray, headlabel="      23689"]
+BB23685 [shape=record label="{78373: read-variable['classNames',v4,-]|78374: read-property[v4,'removeObject',-]|78375: \<variable-non-null-undef\>['classNames']|78376: read-variable['oldClass',v5,-]}" ] 
+BB23685 -> BB23686 [tailport=s, headport=n, headlabel="      23686"]
+BB23685 -> BB23689 [tailport=s, headport=n, color=gray]
+BB23686 [shape=record label="{78377: call-classNames.removeObject [v4,'removeObject',v5,-]*}" ] 
+BB23686 -> BB23687 [tailport=s, headport=n, headlabel="      23687"]
+BB23686 -> BB23689 [tailport=s, headport=n, color=gray]
+BB23687 [shape=record label="{78378: constant[null,v6]|78379: write-variable[v6,'oldClass']*}" ] 
+BB23687 -> BB23688 [tailport=s, headport=n]
+BB23688 [shape=record label="{78380: return[v1]}" ] 
+BB23689 [shape=record label="{78381: exceptional-return}" ] 
+//#$~ 44831
+}

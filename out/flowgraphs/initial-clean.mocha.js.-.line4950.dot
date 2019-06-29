@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry383[shape=none,label=""];
+BB_entry383 -> BB4251 [tailport=s, headport=n, headlabel="    4251"]
+BB4251 [shape=record label="{13389: constant[undefined,v1]|13390: vardecl['suite']|13391: vardecl['suites']}" ] 
+BB4251 -> BB4252 [tailport=s, headport=n, headlabel="      4252"]
+BB4252 [shape=record label="{13392: read-variable['this',v3,-]|13393: read-property[v3,'suite',v2]|13394: write-variable[v2,'suite']*|13395: read-variable['Array',v5,-]}" ] 
+BB4252 -> BB4253 [tailport=s, headport=n, headlabel="      4253"]
+BB4252 -> BB4260 [tailport=s, headport=n, color=gray, headlabel="      4260"]
+BB4253 [shape=record label="{13396: construct [-,v5,v4]}" ] 
+BB4253 -> BB4254 [tailport=s, headport=n, headlabel="      4254"]
+BB4253 -> BB4260 [tailport=s, headport=n, color=gray]
+BB4254 [shape=record label="{13397: write-variable[v4,'suites']*}" ] 
+BB4254 -> BB4255 [tailport=s, headport=n, headlabel="      4255"]
+BB4255 [shape=record label="{13398: read-variable['suite',v7,-]|13399: read-property[v7,'parent',v6]|13400: \<variable-non-null-undef\>['suite']|13401: write-variable[v6,'suite']|13402: if[v6](true-block:4256,false-block:4257)}" ] 
+BB4255 -> BB4256 [tailport=s, headport=n, headlabel="      4256"]
+BB4255 -> BB4257 [tailport=s, headport=n, headlabel="      4257"]
+BB4255 -> BB4260 [tailport=s, headport=n, color=gray]
+BB4256 [shape=record label="{13403: read-variable['suites',v9,-]|13404: read-property[v9,'push',-]|13405: \<variable-non-null-undef\>['suites']|13406: read-variable['suite',v10,-]}" ] 
+BB4256 -> BB4258 [tailport=s, headport=n, headlabel="      4258"]
+BB4256 -> BB4260 [tailport=s, headport=n, color=gray]
+BB4257 [shape=record label="{13407: read-variable['suites',v1,-]}" ] 
+BB4257 -> BB4259 [tailport=s, headport=n, headlabel="      4259"]
+BB4257 -> BB4260 [tailport=s, headport=n, color=gray]
+BB4258 [shape=record label="{13408: call-suites.push [v9,'push',v10,-]*}" ] 
+BB4258 -> BB4255 [tailport=s, headport=n]
+BB4258 -> BB4260 [tailport=s, headport=n, color=gray]
+BB4259 [shape=record label="{13409: return[v1]}" ] 
+BB4260 [shape=record label="{13410: exceptional-return}" ] 
+//#$~ 4954
+}

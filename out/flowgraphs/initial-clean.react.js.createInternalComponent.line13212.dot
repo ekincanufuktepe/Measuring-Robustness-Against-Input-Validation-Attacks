@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry523[shape=none,label=""];
+BB_entry523 -> BB7517 [tailport=s, headport=n, headlabel="    7517"]
+BB7517 [shape=record label="{25291: constant[undefined,v1]}" ] 
+BB7517 -> BB7518 [tailport=s, headport=n, headlabel="      7518"]
+BB7518 [shape=record label="{25292: constant[\"production\",v3]|25293: constant[\"development\",v4]|25294: !==[v3,v4,v2]|25295: if[v2](true-block:7519,false-block:7520)}" ] 
+BB7518 -> BB7519 [tailport=s, headport=n, headlabel="      7519"]
+BB7518 -> BB7520 [tailport=s, headport=n, headlabel="      7520"]
+BB7518 -> BB7526 [tailport=s, headport=n, color=gray, headlabel="      7526"]
+BB7519 [shape=record label="{25296: read-variable['invariant',v6,v5]|25297: read-variable['genericComponentClass',v7,-]|25298: constant[\"There is no registered component for the tag %s\",v8]|25299: read-variable['element',v10,-]|25300: read-property[v10,'type',v9]|25301: \<variable-non-null-undef\>['element']}" ] 
+BB7519 -> BB7521 [tailport=s, headport=n, headlabel="      7521"]
+BB7519 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7520 [shape=record label="{25302: read-variable['invariant',v6,v5]|25303: read-variable['genericComponentClass',v7,-]}" ] 
+BB7520 -> BB7522 [tailport=s, headport=n, headlabel="      7522"]
+BB7520 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7521 [shape=record label="{25304: call-invariant [v5,v6,v7,v8,v9,-]}" ] 
+BB7521 -> BB7523 [tailport=s, headport=n, headlabel="      7523"]
+BB7521 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7522 [shape=record label="{25305: call-invariant [v5,v6,v7,-]}" ] 
+BB7522 -> BB7523 [tailport=s, headport=n]
+BB7522 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7523 [shape=record label="{25306: read-variable['genericComponentClass',v5,-]|25307: read-variable['element',v7,-]|25308: read-property[v7,'type',v6]|25309: \<variable-non-null-undef\>['element']|25310: read-variable['element',v9,-]|25311: read-property[v9,'props',v8]|25312: \<variable-non-null-undef\>['element']}" ] 
+BB7523 -> BB7524 [tailport=s, headport=n, headlabel="      7524"]
+BB7523 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7524 [shape=record label="{25313: construct [-,v5,v6,v8,v1]}" ] 
+BB7524 -> BB7525 [tailport=s, headport=n, headlabel="      7525"]
+BB7524 -> BB7526 [tailport=s, headport=n, color=gray]
+BB7525 [shape=record label="{25314: return[v1]}" ] 
+BB7526 [shape=record label="{25315: exceptional-return}" ] 
+//#$~ 13218
+}

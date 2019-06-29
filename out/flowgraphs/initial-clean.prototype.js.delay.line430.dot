@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry50[shape=none,label=""];
+BB_entry50 -> BB660 [tailport=s, headport=n, headlabel="    660"]
+BB660 [shape=record label="{2214: constant[undefined,v1]|2215: vardecl['__method']|2216: vardecl['args']}" ] 
+BB660 -> BB661 [tailport=s, headport=n, headlabel="      661"]
+BB661 [shape=record label="{2217: read-variable['this',v2,-]|2218: write-variable[v2,'__method']*|2219: read-variable['slice',v5,-]|2220: read-property[v5,'call',-]|2221: \<variable-non-null-undef\>['slice']|2222: read-variable['arguments',v6,-]|2223: constant[1.0,v7]}" ] 
+BB661 -> BB662 [tailport=s, headport=n, headlabel="      662"]
+BB661 -> BB666 [tailport=s, headport=n, color=gray, headlabel="      666"]
+BB662 [shape=record label="{2224: call-slice.call [v5,'call',v6,v7,v3]}" ] 
+BB662 -> BB663 [tailport=s, headport=n, headlabel="      663"]
+BB662 -> BB666 [tailport=s, headport=n, color=gray]
+BB663 [shape=record label="{2225: write-variable[v3,'args']*|2226: read-variable['timeout',v9,-]|2227: constant[1000.0,v10]|2228: *[v9,v10,v8]|2229: write-variable[v8,'timeout']*|2230: read-variable['window',v12,-]|2231: read-property[v12,'setTimeout',-]|2232: \<variable-non-null-undef\>['window']|2233: function-expr[function ( ),v13]|2234: read-variable['timeout',v14,-]}" ] 
+BB663 -> BB664 [tailport=s, headport=n, headlabel="      664"]
+BB663 -> BB666 [tailport=s, headport=n, color=gray]
+BB664 [shape=record label="{2235: call-window.setTimeout [v12,'setTimeout',v13,v14,v1]}" ] 
+BB664 -> BB665 [tailport=s, headport=n, headlabel="      665"]
+BB664 -> BB666 [tailport=s, headport=n, color=gray]
+BB665 [shape=record label="{2236: return[v1]}" ] 
+BB666 [shape=record label="{2237: exceptional-return}" ] 
+//#$~ 435
+}

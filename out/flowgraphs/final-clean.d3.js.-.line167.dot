@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry22[shape=none,label=""];
+BB_entry22 -> BB279 [tailport=s, headport=n, headlabel="    279"]
+BB279 [shape=record label="{976: constant[undefined,v1]|977: vardecl['v']}" ] 
+BB279 -> BB280 [tailport=s, headport=n, headlabel="      280"]
+BB280 [shape=record label="{978: read-variable['d3',v5,-]|979: read-property[v5,'variance',v4]|980: \<variable-non-null-undef\>['d3']|981: read-property[v4,'apply',-]|982: \<property-non-null-undef\>[v5,'variance']|983: read-variable['this',v6,-]|984: read-variable['arguments',v7,-]}" ] 
+BB280 -> BB281 [tailport=s, headport=n, headlabel="      281"]
+BB280 -> BB287 [tailport=s, headport=n, color=gray, headlabel="      287"]
+BB281 [shape=record label="{985: call-d3.variance.apply [v4,'apply',v6,v7,v2]}" ] 
+BB281 -> BB282 [tailport=s, headport=n, headlabel="      282"]
+BB281 -> BB287 [tailport=s, headport=n, color=gray]
+BB282 [shape=record label="{986: write-variable[v2,'v']*|987: read-variable['v',v8,-]|988: if[v8](true-block:283,false-block:284)}" ] 
+BB282 -> BB283 [tailport=s, headport=n, headlabel="      283"]
+BB282 -> BB284 [tailport=s, headport=n, headlabel="      284"]
+BB282 -> BB287 [tailport=s, headport=n, color=gray]
+BB283 [shape=record label="{989: read-variable['Math',v10,-]|990: read-property[v10,'sqrt',-]|991: \<variable-non-null-undef\>['Math']|992: read-variable['v',v11,-]}" ] 
+BB283 -> BB285 [tailport=s, headport=n, headlabel="      285"]
+BB283 -> BB287 [tailport=s, headport=n, color=gray]
+BB284 [shape=record label="{993: read-variable['v',v1,-]}" ] 
+BB284 -> BB286 [tailport=s, headport=n, headlabel="      286"]
+BB284 -> BB287 [tailport=s, headport=n, color=gray]
+BB285 [shape=record label="{994: call-Math.sqrt [v10,'sqrt',v11,v1]}" ] 
+BB285 -> BB286 [tailport=s, headport=n]
+BB285 -> BB287 [tailport=s, headport=n, color=gray]
+BB286 [shape=record label="{995: return[v1]}" ] 
+BB287 [shape=record label="{996: exceptional-return}" ] 
+//#$~ 169
+}

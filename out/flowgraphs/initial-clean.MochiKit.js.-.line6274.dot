@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry601[shape=none,label=""];
+BB_entry601 -> BB8765 [tailport=s, headport=n, headlabel="    8765"]
+BB8765 [shape=record label="{31990: constant[undefined,v1]|31991: vardecl['time']|31992: vardecl['i']|31993: vardecl['_677']}" ] 
+BB8765 -> BB8766 [tailport=s, headport=n, headlabel="      8766"]
+BB8766 [shape=record label="{31994: read-variable['_674',v3,-]|31995: read-variable['this',v6,-]|31996: read-property[v6,'options',v5]|31997: read-property[v5,'duration',v4]|31998: \<property-non-null-undef\>[v6,'options']|31999: *[v3,v4,v2]|32000: write-variable[v2,'time']*|32001: constant[0.0,v8]|32002: write-variable[v8,'i']*}" ] 
+BB8766 -> BB8767 [tailport=s, headport=n, headlabel="      8767"]
+BB8766 -> BB8774 [tailport=s, headport=n, color=gray, headlabel="      8774"]
+BB8767 [shape=record label="{32003: read-variable['i',v9,-]|32004: read-variable['this',v12,-]|32005: read-property[v12,'effects',v11]|32006: read-property[v11,'length',v10]|32007: \<property-non-null-undef\>[v12,'effects']|32008: \<[v9,v10,v7]|32009: if[v7](true-block:8768,false-block:8773)}" ] 
+BB8767 -> BB8768 [tailport=s, headport=n, headlabel="      8768"]
+BB8767 -> BB8773 [tailport=s, headport=n, headlabel="      8773"]
+BB8767 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8768 [shape=record label="{32010: read-variable['this',v15,-]|32011: read-property[v15,'effects',v14]|32012: read-variable['i',v16,-]|32013: read-property[v14,v16,v13]|32014: \<property-non-null-undef\>[v15,'effects']|32015: write-variable[v13,'_677']*|32016: read-variable['time',v18,-]|32017: read-variable['_677',v21,-]|32018: read-property[v21,'options',v20]|32019: \<variable-non-null-undef\>['_677']|32020: read-property[v20,'duration',v19]|32021: \<property-non-null-undef\>[v21,'options']|32022: \<=[v18,v19,v17]|32023: if[v17](true-block:8769,false-block:8770)}" ] 
+BB8768 -> BB8769 [tailport=s, headport=n, headlabel="      8769"]
+BB8768 -> BB8770 [tailport=s, headport=n, headlabel="      8770"]
+BB8768 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8769 [shape=record label="{32024: read-variable['_677',v23,-]|32025: read-property[v23,'render',-]|32026: \<variable-non-null-undef\>['_677']|32027: read-variable['time',v25,-]|32028: read-variable['_677',v28,-]|32029: read-property[v28,'options',v27]|32030: \<variable-non-null-undef\>['_677']|32031: read-property[v27,'duration',v26]|32032: \<property-non-null-undef\>[v28,'options']|32033: /[v25,v26,v24]}" ] 
+BB8769 -> BB8771 [tailport=s, headport=n, headlabel="      8771"]
+BB8769 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8770 [shape=record label="{32034: read-variable['time',v23,-]|32035: read-variable['_677',v26,-]|32036: read-property[v26,'options',v25]|32037: \<variable-non-null-undef\>['_677']|32038: read-property[v25,'duration',v24]|32039: \<property-non-null-undef\>[v26,'options']|32040: -[v23,v24,v22]|32041: write-variable[v22,'time']*}" ] 
+BB8770 -> BB8772 [tailport=s, headport=n, headlabel="      8772"]
+BB8770 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8771 [shape=record label="{32042: call-_677.render [v23,'render',v24,-]*}" ] 
+BB8771 -> BB8773 [tailport=s, headport=n]
+BB8771 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8772 [shape=record label="{32043: constant[1.0,v22]|32044: read-variable['i',v23,-]|32045: +[v23,v24]|32046: +[v24,v22,v25]|32047: write-variable[v25,'i']}" ] 
+BB8772 -> BB8767 [tailport=s, headport=n]
+BB8772 -> BB8774 [tailport=s, headport=n, color=gray]
+BB8773 [shape=record label="{32048: return[v1]}" ] 
+BB8774 [shape=record label="{32049: exceptional-return}" ] 
+//#$~ 6276
+}

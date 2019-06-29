@@ -1,0 +1,15 @@
+digraph {
+rankdir="TD"
+BB_entry0[shape=none,label=""];
+BB_entry0 -> BB0 [tailport=s, headport=n, headlabel="    0"]
+BB0 [shape=record label="{0: constant[undefined,v1]}" ] 
+BB0 -> BB1 [tailport=s, headport=n, headlabel="      1"]
+BB1 [shape=record label="{1: function-expr[function ( ),v2]}" ] 
+BB1 -> BB2 [tailport=s, headport=n, headlabel="      2"]
+BB2 [shape=record label="{2: call-null [-,v2,-]*}" ] 
+BB2 -> BB3 [tailport=s, headport=n, headlabel="      3"]
+BB2 -> BB4 [tailport=s, headport=n, color=gray, headlabel="      4"]
+BB3 [shape=record label="{3: return[v1]}" ] 
+BB4 [shape=record label="{4: exceptional-return}" ] 
+//#$~ 1
+}

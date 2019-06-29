@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry498[shape=none,label=""];
+BB_entry498 -> BB7248 [tailport=s, headport=n, headlabel="    7248"]
+BB7248 [shape=record label="{24488: constant[undefined,v1]}" ] 
+BB7248 -> BB7249 [tailport=s, headport=n, headlabel="      7249"]
+BB7249 [shape=record label="{24489: read-variable['updateQueue',v3,-]|24490: read-property[v3,'push',-]|24491: \<variable-non-null-undef\>['updateQueue']|24492: new[v4]|24493: read-variable['parentID',v5,-]|24494: write-property[v4,'parentID',v5]|24495: constant[null,v6]|24496: write-property[v4,'parentNode',v6]|24497: read-variable['ReactMultiChildUpdateTypes',v8,-]|24498: read-property[v8,'INSERT_MARKUP',v7]|24499: \<variable-non-null-undef\>['ReactMultiChildUpdateTypes']|24500: write-property[v4,'type',v7]|24501: read-variable['markupQueue',v13,-]|24502: read-property[v13,'push',-]|24503: \<variable-non-null-undef\>['markupQueue']|24504: read-variable['markup',v14,-]}" ] 
+BB7249 -> BB7250 [tailport=s, headport=n, headlabel="      7250"]
+BB7249 -> BB7254 [tailport=s, headport=n, color=gray, headlabel="      7254"]
+BB7250 [shape=record label="{24505: call-markupQueue.push [v13,'push',v14,v10]}" ] 
+BB7250 -> BB7251 [tailport=s, headport=n, headlabel="      7251"]
+BB7250 -> BB7254 [tailport=s, headport=n, color=gray]
+BB7251 [shape=record label="{24506: constant[1.0,v11]|24507: -[v10,v11,v9]|24508: write-property[v4,'markupIndex',v9]|24509: constant[null,v15]|24510: write-property[v4,'textContent',v15]|24511: constant[null,v16]|24512: write-property[v4,'fromIndex',v16]|24513: read-variable['toIndex',v17,-]|24514: write-property[v4,'toIndex',v17]}" ] 
+BB7251 -> BB7252 [tailport=s, headport=n, headlabel="      7252"]
+BB7251 -> BB7254 [tailport=s, headport=n, color=gray]
+BB7252 [shape=record label="{24515: call-updateQueue.push [v3,'push',v4,-]*}" ] 
+BB7252 -> BB7253 [tailport=s, headport=n, headlabel="      7253"]
+BB7252 -> BB7254 [tailport=s, headport=n, color=gray]
+BB7253 [shape=record label="{24516: return[v1]}" ] 
+BB7254 [shape=record label="{24517: exceptional-return}" ] 
+//#$~ 12708
+}

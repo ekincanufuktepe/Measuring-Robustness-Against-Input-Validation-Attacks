@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry305[shape=none,label=""];
+BB_entry305 -> BB4840 [tailport=s, headport=n, headlabel="    4840"]
+BB4840 [shape=record label="{14035: constant[undefined,v1]}" ] 
+BB4840 -> BB4841 [tailport=s, headport=n, headlabel="      4841"]
+BB4841 [shape=record label="{14036: read-variable['event',v6,-]|14037: read-property[v6,'originalEvent',v5]|14038: \<variable-non-null-undef\>['event']|14039: read-property[v5,'propertyName',v3]|14040: \<property-non-null-undef\>[v6,'originalEvent']|14041: constant[\"checked\",v4]|14042: ===[v3,v4,v2]|14043: if[v2](true-block:4842,false-block:4843)}" ] 
+BB4841 -> BB4842 [tailport=s, headport=n, headlabel="      4842"]
+BB4841 -> BB4843 [tailport=s, headport=n, headlabel="      4843"]
+BB4841 -> BB4844 [tailport=s, headport=n, color=gray, headlabel="      4844"]
+BB4842 [shape=record label="{14044: read-variable['this',v8,-]|14045: constant[true,v7]|14046: write-property[v8,'_just_changed',v7]*}" ] 
+BB4842 -> BB4843 [tailport=s, headport=n]
+BB4842 -> BB4844 [tailport=s, headport=n, color=gray]
+BB4843 [shape=record label="{14047: return[v1]}" ] 
+BB4844 [shape=record label="{14048: exceptional-return}" ] 
+}

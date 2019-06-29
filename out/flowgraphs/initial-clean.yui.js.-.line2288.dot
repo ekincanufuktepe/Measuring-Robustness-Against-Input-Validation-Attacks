@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry57[shape=none,label=""];
+BB_entry57 -> BB1160 [tailport=s, headport=n, headlabel="    1160"]
+BB1160 [shape=record label="{4108: constant[undefined,v1]|4109: function-decl[function value ( obj key ),-]}" ] 
+BB1160 -> BB1161 [tailport=s, headport=n, headlabel="      1161"]
+BB1161 [shape=record label="{4110: read-variable['s',v3,-]|4111: read-property[v3,'replace',v2]|4112: \<variable-non-null-undef\>['s']|4113: if[v2](true-block:1162,false-block:1163)}" ] 
+BB1161 -> BB1162 [tailport=s, headport=n, headlabel="      1162"]
+BB1161 -> BB1163 [tailport=s, headport=n, headlabel="      1163"]
+BB1161 -> BB1166 [tailport=s, headport=n, color=gray, headlabel="      1166"]
+BB1162 [shape=record label="{4114: read-variable['s',v5,-]|4115: read-property[v5,'replace',-]|4116: \<variable-non-null-undef\>['s']|4117: read-variable['SUBREGEX',v6,-]|4118: function-expr[function ( match key ),v7]}" ] 
+BB1162 -> BB1164 [tailport=s, headport=n, headlabel="      1164"]
+BB1162 -> BB1166 [tailport=s, headport=n, color=gray]
+BB1163 [shape=record label="{4119: read-variable['s',v1,-]}" ] 
+BB1163 -> BB1165 [tailport=s, headport=n, headlabel="      1165"]
+BB1163 -> BB1166 [tailport=s, headport=n, color=gray]
+BB1164 [shape=record label="{4120: call-s.replace [v5,'replace',v6,v7,v1]}" ] 
+BB1164 -> BB1165 [tailport=s, headport=n]
+BB1164 -> BB1166 [tailport=s, headport=n, color=gray]
+BB1165 [shape=record label="{4121: return[v1]}" ] 
+BB1166 [shape=record label="{4122: exceptional-return}" ] 
+//#$~ 2323
+}

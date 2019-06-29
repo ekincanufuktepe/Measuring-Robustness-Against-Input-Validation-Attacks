@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry391[shape=none,label=""];
+BB_entry391 -> BB4963 [tailport=s, headport=n, headlabel="    4963"]
+BB4963 [shape=record label="{13781: constant[undefined,v1]|13782: vardecl['obj']}" ] 
+BB4963 -> BB4964 [tailport=s, headport=n, headlabel="      4964"]
+BB4964 [shape=record label="{13783: read-variable['this',v5,-]|13784: read-property[v5,'toObject',v4]|13785: read-property[v4,'apply',-]|13786: \<property-non-null-undef\>[v5,'toObject']|13787: read-variable['this',v6,-]|13788: read-variable['arguments',v7,-]}" ] 
+BB4964 -> BB4965 [tailport=s, headport=n, headlabel="      4965"]
+BB4964 -> BB4969 [tailport=s, headport=n, color=gray, headlabel="      4969"]
+BB4965 [shape=record label="{13789: call-this.toObject.apply [v4,'apply',v6,v7,v2]}" ] 
+BB4965 -> BB4966 [tailport=s, headport=n, headlabel="      4966"]
+BB4965 -> BB4969 [tailport=s, headport=n, color=gray]
+BB4966 [shape=record label="{13790: write-variable[v2,'obj']*|13791: read-variable['Hash',v8,-]|13792: read-variable['obj',v9,-]}" ] 
+BB4966 -> BB4967 [tailport=s, headport=n, headlabel="      4967"]
+BB4966 -> BB4969 [tailport=s, headport=n, color=gray]
+BB4967 [shape=record label="{13793: construct [-,v8,v9,v1]}" ] 
+BB4967 -> BB4968 [tailport=s, headport=n, headlabel="      4968"]
+BB4967 -> BB4969 [tailport=s, headport=n, color=gray]
+BB4968 [shape=record label="{13794: return[v1]}" ] 
+BB4969 [shape=record label="{13795: exceptional-return}" ] 
+//#$~ 3748
+}

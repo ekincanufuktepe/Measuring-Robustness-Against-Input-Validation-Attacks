@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry184[shape=none,label=""];
+BB_entry184 -> BB2458 [tailport=s, headport=n, headlabel="    2458"]
+BB2458 [shape=record label="{10826: constant[undefined,v1]|10827: vardecl['rval']}" ] 
+BB2458 -> BB2459 [tailport=s, headport=n, headlabel="      2459"]
+BB2459 [shape=record label="{10828: read-variable['MochiKit',v5,-]|10829: read-property[v5,'Iter',v4]|10830: \<variable-non-null-undef\>['MochiKit']|10831: read-property[v4,'list',-]|10832: \<property-non-null-undef\>[v5,'Iter']|10833: read-variable['_1d0',v6,-]}" ] 
+BB2459 -> BB2460 [tailport=s, headport=n, headlabel="      2460"]
+BB2459 -> BB2467 [tailport=s, headport=n, color=gray, headlabel="      2467"]
+BB2460 [shape=record label="{10834: call-MochiKit.Iter.list [v4,'list',v6,v2]}" ] 
+BB2460 -> BB2461 [tailport=s, headport=n, headlabel="      2461"]
+BB2460 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2461 [shape=record label="{10835: write-variable[v2,'rval']*|10836: read-variable['arguments',v10,-]|10837: read-property[v10,'length',v8]|10838: \<variable-non-null-undef\>['arguments']|10839: constant[1.0,v9]|10840: ==[v8,v9,v7]|10841: if[v7](true-block:2462,false-block:2463)}" ] 
+BB2461 -> BB2462 [tailport=s, headport=n, headlabel="      2462"]
+BB2461 -> BB2463 [tailport=s, headport=n, headlabel="      2463"]
+BB2461 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2462 [shape=record label="{10842: read-variable['MochiKit',v13,-]|10843: read-property[v13,'Base',v12]|10844: \<variable-non-null-undef\>['MochiKit']|10845: read-property[v12,'compare',v11]|10846: \<property-non-null-undef\>[v13,'Base']|10847: write-variable[v11,'cmp']*}" ] 
+BB2462 -> BB2463 [tailport=s, headport=n]
+BB2462 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2463 [shape=record label="{10848: read-variable['rval',v12,-]|10849: read-property[v12,'sort',-]|10850: \<variable-non-null-undef\>['rval']|10851: read-variable['cmp',v13,-]}" ] 
+BB2463 -> BB2464 [tailport=s, headport=n, headlabel="      2464"]
+BB2463 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2464 [shape=record label="{10852: call-rval.sort [v12,'sort',v13,-]*}" ] 
+BB2464 -> BB2465 [tailport=s, headport=n, headlabel="      2465"]
+BB2464 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2465 [shape=record label="{10853: read-variable['rval',v1,-]}" ] 
+BB2465 -> BB2466 [tailport=s, headport=n, headlabel="      2466"]
+BB2465 -> BB2467 [tailport=s, headport=n, color=gray]
+BB2466 [shape=record label="{10854: return[v1]}" ] 
+BB2467 [shape=record label="{10855: exceptional-return}" ] 
+//#$~ 1543
+}

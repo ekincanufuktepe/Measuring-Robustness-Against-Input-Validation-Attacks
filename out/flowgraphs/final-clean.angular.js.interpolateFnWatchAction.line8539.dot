@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry402[shape=none,label=""];
+BB_entry402 -> BB5382 [tailport=s, headport=n, headlabel="    5382"]
+BB5382 [shape=record label="{13890: constant[undefined,v1]}" ] 
+BB5382 -> BB5383 [tailport=s, headport=n, headlabel="      5383"]
+BB5383 [shape=record label="{13891: read-variable['name',v4,v2]|13892: constant[\"class\",v5]|13893: ===[v4,v5,v3]|13894: if[v3](true-block:5384,false-block:5385)}" ] 
+BB5383 -> BB5385 [tailport=s, headport=n, headlabel="      5385"]
+BB5383 -> BB5384 [tailport=s, headport=n, headlabel="      5384"]
+BB5383 -> BB5391 [tailport=s, headport=n, color=gray, headlabel="      5391"]
+BB5384 [shape=record label="{13895: read-variable['newValue',v6,v2]|13896: read-variable['oldValue',v7,v2]|13897: !=[v6,v7,v3]}" ] 
+BB5384 -> BB5385 [tailport=s, headport=n]
+BB5384 -> BB5391 [tailport=s, headport=n, color=gray]
+BB5385 [shape=record label="{13898: if[v3](true-block:5386,false-block:5387)}" ] 
+BB5385 -> BB5386 [tailport=s, headport=n, headlabel="      5386"]
+BB5385 -> BB5387 [tailport=s, headport=n, headlabel="      5387"]
+BB5386 [shape=record label="{13899: read-variable['attr',v7,-]|13900: read-property[v7,'$updateClass',-]|13901: \<variable-non-null-undef\>['attr']|13902: read-variable['newValue',v8,v2]|13903: read-variable['oldValue',v9,v2]}" ] 
+BB5386 -> BB5388 [tailport=s, headport=n, headlabel="      5388"]
+BB5386 -> BB5391 [tailport=s, headport=n, color=gray]
+BB5387 [shape=record label="{13904: read-variable['attr',v7,-]|13905: read-property[v7,'$set',-]|13906: \<variable-non-null-undef\>['attr']|13907: read-variable['name',v8,v2]|13908: read-variable['newValue',v9,v2]}" ] 
+BB5387 -> BB5389 [tailport=s, headport=n, headlabel="      5389"]
+BB5387 -> BB5391 [tailport=s, headport=n, color=gray]
+BB5388 [shape=record label="{13909: call-attr.$updateClass [v7,'$updateClass',v8,v9,-]*}" ] 
+BB5388 -> BB5390 [tailport=s, headport=n, headlabel="      5390"]
+BB5388 -> BB5391 [tailport=s, headport=n, color=gray]
+BB5389 [shape=record label="{13910: call-attr.$set [v7,'$set',v8,v9,-]*}" ] 
+BB5389 -> BB5390 [tailport=s, headport=n]
+BB5389 -> BB5391 [tailport=s, headport=n, color=gray]
+BB5390 [shape=record label="{13911: return[v1]}" ] 
+BB5391 [shape=record label="{13912: exceptional-return}" ] 
+//#$~ 8549
+}

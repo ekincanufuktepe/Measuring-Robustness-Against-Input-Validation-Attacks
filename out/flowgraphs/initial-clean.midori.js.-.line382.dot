@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry20[shape=none,label=""];
+BB_entry20 -> BB537 [tailport=s, headport=n, headlabel="    537"]
+BB537 [shape=record label="{2028: constant[undefined,v1]|2029: vardecl['target']}" ] 
+BB537 -> BB538 [tailport=s, headport=n, headlabel="      538"]
+BB538 [shape=record label="{2030: read-variable['event',v4,-]|2031: read-property[v4,'target',v3]|2032: \<variable-non-null-undef\>['event']|2033: if[v3](true-block:539,false-block:540)}" ] 
+BB538 -> BB539 [tailport=s, headport=n, headlabel="      539"]
+BB538 -> BB540 [tailport=s, headport=n, headlabel="      540"]
+BB538 -> BB545 [tailport=s, headport=n, color=gray, headlabel="      545"]
+BB539 [shape=record label="{2034: read-variable['event',v5,-]|2035: read-property[v5,'target',v2]|2036: \<variable-non-null-undef\>['event']}" ] 
+BB539 -> BB541 [tailport=s, headport=n, headlabel="      541"]
+BB539 -> BB545 [tailport=s, headport=n, color=gray]
+BB540 [shape=record label="{2037: read-variable['event',v5,-]|2038: read-property[v5,'srcElement',v2]|2039: \<variable-non-null-undef\>['event']}" ] 
+BB540 -> BB541 [tailport=s, headport=n]
+BB540 -> BB545 [tailport=s, headport=n, color=gray]
+BB541 [shape=record label="{2040: write-variable[v2,'target']*|2041: read-variable['target',v8,-]|2042: read-property[v8,'nodeType',v6]|2043: \<variable-non-null-undef\>['target']|2044: constant[3.0,v7]|2045: ==[v6,v7,v5]|2046: if[v5](true-block:542,false-block:543)}" ] 
+BB541 -> BB542 [tailport=s, headport=n, headlabel="      542"]
+BB541 -> BB543 [tailport=s, headport=n, headlabel="      543"]
+BB541 -> BB545 [tailport=s, headport=n, color=gray]
+BB542 [shape=record label="{2047: read-variable['target',v10,-]|2048: read-property[v10,'parentNode',v9]|2049: \<variable-non-null-undef\>['target']|2050: write-variable[v9,'target']*}" ] 
+BB542 -> BB543 [tailport=s, headport=n]
+BB542 -> BB545 [tailport=s, headport=n, color=gray]
+BB543 [shape=record label="{2051: read-variable['target',v1,-]}" ] 
+BB543 -> BB544 [tailport=s, headport=n, headlabel="      544"]
+BB543 -> BB545 [tailport=s, headport=n, color=gray]
+BB544 [shape=record label="{2052: return[v1]}" ] 
+BB545 [shape=record label="{2053: exceptional-return}" ] 
+//#$~ 386
+}

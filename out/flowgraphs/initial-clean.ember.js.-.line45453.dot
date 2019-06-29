@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2101[shape=none,label=""];
+BB_entry2101 -> BB23984 [tailport=s, headport=n, headlabel="    23984"]
+BB23984 [shape=record label="{79131: constant[undefined,v1]|79132: vardecl['parent']}" ] 
+BB23984 -> BB23985 [tailport=s, headport=n, headlabel="      23985"]
+BB23985 [shape=record label="{79133: read-variable['this',v3,-]|79134: read-property[v3,'_parentView',v2]|79135: write-variable[v2,'parent']*|79136: read-variable['this',v5,-]|79137: read-property[v5,'remove',-]}" ] 
+BB23985 -> BB23986 [tailport=s, headport=n, headlabel="      23986"]
+BB23985 -> BB23992 [tailport=s, headport=n, color=gray, headlabel="      23992"]
+BB23986 [shape=record label="{79138: call-this.remove [v5,'remove',-]*}" ] 
+BB23986 -> BB23987 [tailport=s, headport=n, headlabel="      23987"]
+BB23986 -> BB23992 [tailport=s, headport=n, color=gray]
+BB23987 [shape=record label="{79139: read-variable['parent',v6,-]|79140: if[v6](true-block:23988,false-block:23990)}" ] 
+BB23987 -> BB23988 [tailport=s, headport=n, headlabel="      23988"]
+BB23987 -> BB23990 [tailport=s, headport=n, headlabel="      23990"]
+BB23987 -> BB23992 [tailport=s, headport=n, color=gray]
+BB23988 [shape=record label="{79141: read-variable['parent',v8,-]|79142: read-property[v8,'removeChild',-]|79143: \<variable-non-null-undef\>['parent']|79144: read-variable['this',v9,-]}" ] 
+BB23988 -> BB23989 [tailport=s, headport=n, headlabel="      23989"]
+BB23988 -> BB23992 [tailport=s, headport=n, color=gray]
+BB23989 [shape=record label="{79145: call-parent.removeChild [v8,'removeChild',v9,-]*}" ] 
+BB23989 -> BB23990 [tailport=s, headport=n]
+BB23989 -> BB23992 [tailport=s, headport=n, color=gray]
+BB23990 [shape=record label="{79146: read-variable['this',v1,-]}" ] 
+BB23990 -> BB23991 [tailport=s, headport=n, headlabel="      23991"]
+BB23990 -> BB23992 [tailport=s, headport=n, color=gray]
+BB23991 [shape=record label="{79147: return[v1]}" ] 
+BB23992 [shape=record label="{79148: exceptional-return}" ] 
+//#$~ 45460
+}

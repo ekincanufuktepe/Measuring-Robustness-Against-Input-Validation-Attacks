@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry260[shape=none,label=""];
+BB_entry260 -> BB3227 [tailport=s, headport=n, headlabel="    3227"]
+BB3227 [shape=record label="{7762: constant[undefined,v1]|7763: vardecl['i']|7764: vardecl['elm']}" ] 
+BB3227 -> BB3228 [tailport=s, headport=n, headlabel="      3228"]
+BB3228 [shape=record label="{7765: constant[0.0,v3]|7766: write-variable[v3,'i']*}" ] 
+BB3228 -> BB3229 [tailport=s, headport=n, headlabel="      3229"]
+BB3229 [shape=record label="{7767: read-variable['i',v4,-]|7768: read-variable['element',v6,-]|7769: read-property[v6,'length',v5]|7770: \<variable-non-null-undef\>['element']|7771: \<[v4,v5,v2]|7772: if[v2](true-block:3230,false-block:3233)}" ] 
+BB3229 -> BB3230 [tailport=s, headport=n, headlabel="      3230"]
+BB3229 -> BB3233 [tailport=s, headport=n, headlabel="      3233"]
+BB3229 -> BB3234 [tailport=s, headport=n, color=gray, headlabel="      3234"]
+BB3230 [shape=record label="{7773: read-variable['element',v8,-]|7774: read-variable['i',v9,-]|7775: read-property[v8,v9,v7]|7776: \<variable-non-null-undef\>['element']|7777: write-variable[v7,'elm']*|7778: read-variable['elm',v13,-]|7779: read-property[v13,'nodeType',v11]|7780: \<variable-non-null-undef\>['elm']|7781: read-variable['ELEMENT_NODE',v12,-]|7782: ===[v11,v12,v10]|7783: if[v10](true-block:3231,false-block:3232)}" ] 
+BB3230 -> BB3231 [tailport=s, headport=n, headlabel="      3231"]
+BB3230 -> BB3232 [tailport=s, headport=n, headlabel="      3232"]
+BB3230 -> BB3234 [tailport=s, headport=n, color=gray]
+BB3231 [shape=record label="{7784: read-variable['elm',v1,-]}" ] 
+BB3231 -> BB3233 [tailport=s, headport=n]
+BB3231 -> BB3234 [tailport=s, headport=n, color=gray]
+BB3232 [shape=record label="{7785: constant[1.0,v14]|7786: read-variable['i',v15,-]|7787: +[v15,v16]|7788: +[v16,v14,v17]|7789: write-variable[v17,'i']}" ] 
+BB3232 -> BB3229 [tailport=s, headport=n]
+BB3232 -> BB3234 [tailport=s, headport=n, color=gray]
+BB3233 [shape=record label="{7790: return[v1]}" ] 
+BB3234 [shape=record label="{7791: exceptional-return}" ] 
+//#$~ 4764
+}

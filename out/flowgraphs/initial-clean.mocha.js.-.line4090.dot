@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry318[shape=none,label=""];
+BB_entry318 -> BB3546 [tailport=s, headport=n, headlabel="    3546"]
+BB3546 [shape=record label="{11416: constant[undefined,v1]|11417: vardecl['total']}" ] 
+BB3546 -> BB3547 [tailport=s, headport=n, headlabel="      3547"]
+BB3547 [shape=record label="{11418: read-variable['runner',v4,-]|11419: read-property[v4,'grepTotal',-]|11420: \<variable-non-null-undef\>['runner']|11421: read-variable['runner',v6,-]|11422: read-property[v6,'suite',v5]|11423: \<variable-non-null-undef\>['runner']}" ] 
+BB3547 -> BB3548 [tailport=s, headport=n, headlabel="      3548"]
+BB3547 -> BB3552 [tailport=s, headport=n, color=gray, headlabel="      3552"]
+BB3548 [shape=record label="{11424: call-runner.grepTotal [v4,'grepTotal',v5,v2]}" ] 
+BB3548 -> BB3549 [tailport=s, headport=n, headlabel="      3549"]
+BB3548 -> BB3552 [tailport=s, headport=n, color=gray]
+BB3549 [shape=record label="{11425: write-variable[v2,'total']*|11426: read-variable['console',v8,-]|11427: read-property[v8,'log',-]|11428: \<variable-non-null-undef\>['console']|11429: constant[\"%d..%d\",v9]|11430: constant[1.0,v10]|11431: read-variable['total',v11,-]}" ] 
+BB3549 -> BB3550 [tailport=s, headport=n, headlabel="      3550"]
+BB3549 -> BB3552 [tailport=s, headport=n, color=gray]
+BB3550 [shape=record label="{11432: call-console.log [v8,'log',v9,v10,v11,-]*}" ] 
+BB3550 -> BB3551 [tailport=s, headport=n, headlabel="      3551"]
+BB3550 -> BB3552 [tailport=s, headport=n, color=gray]
+BB3551 [shape=record label="{11433: return[v1]}" ] 
+BB3552 [shape=record label="{11434: exceptional-return}" ] 
+//#$~ 4092
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1036[shape=none,label=""];
+BB_entry1036 -> BB12469 [tailport=s, headport=n, headlabel="    12469"]
+BB12469 [shape=record label="{42577: constant[undefined,v1]|42578: vardecl['value']}" ] 
+BB12469 -> BB12470 [tailport=s, headport=n, headlabel="      12470"]
+BB12470 [shape=record label="{42579: read-variable['get',v4,v3]|42580: read-variable['controller',v5,-]|42581: read-variable['qp',v7,-]|42582: read-property[v7,'prop',v6]|42583: \<variable-non-null-undef\>['qp']}" ] 
+BB12470 -> BB12471 [tailport=s, headport=n, headlabel="      12471"]
+BB12470 -> BB12475 [tailport=s, headport=n, color=gray, headlabel="      12475"]
+BB12471 [shape=record label="{42584: call-get [v3,v4,v5,v6,v2]}" ] 
+BB12471 -> BB12472 [tailport=s, headport=n, headlabel="      12472"]
+BB12471 -> BB12475 [tailport=s, headport=n, color=gray]
+BB12472 [shape=record label="{42585: write-variable[v2,'value']*|42586: read-variable['this',v12,-]|42587: read-property[v12,'router',v11]|42588: read-property[v11,'_queuedQPChanges',v9]|42589: \<property-non-null-undef\>[v12,'router']|42590: read-variable['qp',v13,-]|42591: read-property[v13,'fprop',v10]|42592: \<variable-non-null-undef\>['qp']|42593: read-variable['value',v8,-]|42594: write-property[v9,v10,v8]|42595: \<property-non-null-undef\>[v11,'_queuedQPChanges']*|42596: read-variable['run',v15,-]|42597: read-property[v15,'once',-]|42598: \<variable-non-null-undef\>['run']|42599: read-variable['this',v16,-]|42600: read-variable['this',v18,-]|42601: read-property[v18,'_fireQueryParamTransition',v17]}" ] 
+BB12472 -> BB12473 [tailport=s, headport=n, headlabel="      12473"]
+BB12472 -> BB12475 [tailport=s, headport=n, color=gray]
+BB12473 [shape=record label="{42602: call-run.once [v15,'once',v16,v17,-]*}" ] 
+BB12473 -> BB12474 [tailport=s, headport=n, headlabel="      12474"]
+BB12473 -> BB12475 [tailport=s, headport=n, color=gray]
+BB12474 [shape=record label="{42603: return[v1]}" ] 
+BB12475 [shape=record label="{42604: exceptional-return}" ] 
+//#$~ 22874
+}

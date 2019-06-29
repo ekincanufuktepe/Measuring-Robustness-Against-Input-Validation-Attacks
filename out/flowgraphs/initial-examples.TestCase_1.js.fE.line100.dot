@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB60 [tailport=s, headport=n, headlabel="    60"]
+BB60 [shape=record label="{201: constant[undefined,v1]}" ] 
+BB60 -> BB61 [tailport=s, headport=n, headlabel="      61"]
+BB61 [shape=record label="{202: read-variable['fA',v3,v2]|203: constant[2.0,v4]}" ] 
+BB61 -> BB62 [tailport=s, headport=n, headlabel="      62"]
+BB61 -> BB66 [tailport=s, headport=n, color=gray, headlabel="      66"]
+BB62 [shape=record label="{204: call-fA [v2,v3,v4,-]*}" ] 
+BB62 -> BB63 [tailport=s, headport=n, headlabel="      63"]
+BB62 -> BB66 [tailport=s, headport=n, color=gray]
+BB63 [shape=record label="{205: read-variable['inp',v6,-]|206: constant[0.0,v7]|207: !=[v6,v7,v5]|208: if[v5](true-block:64,false-block:65)}" ] 
+BB63 -> BB64 [tailport=s, headport=n, headlabel="      64"]
+BB63 -> BB65 [tailport=s, headport=n, headlabel="      65"]
+BB63 -> BB66 [tailport=s, headport=n, color=gray]
+BB64 [shape=record label="{209: read-variable['inp',v9,-]|210: read-variable['qwe',v10,-]|211: +[v9,v10,v8]|212: write-variable[v8,'ww']*}" ] 
+BB64 -> BB63 [tailport=s, headport=n]
+BB64 -> BB66 [tailport=s, headport=n, color=gray]
+BB65 [shape=record label="{213: return[v1]}" ] 
+BB66 [shape=record label="{214: exceptional-return}" ] 
+//#$~ 105
+}

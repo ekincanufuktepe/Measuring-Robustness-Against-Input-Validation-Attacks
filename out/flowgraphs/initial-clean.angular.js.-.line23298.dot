@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1143[shape=none,label=""];
+BB_entry1143 -> BB14393 [tailport=s, headport=n, headlabel="    14393"]
+BB14393 [shape=record label="{37389: constant[undefined,v1]|37390: vardecl['callback']}" ] 
+BB14393 -> BB14394 [tailport=s, headport=n, headlabel="      14394"]
+BB14394 [shape=record label="{37391: function-expr[function ( ),v2]|37392: write-variable[v2,'callback']*|37393: read-variable['forceAsyncEvents',v4,-]|37394: read-variable['eventName',v5,-]|37395: read-property[v4,v5,v3]|37396: \<variable-non-null-undef\>['forceAsyncEvents']|37397: if[v3](true-block:14395,false-block:14396)}" ] 
+BB14394 -> BB14396 [tailport=s, headport=n, headlabel="      14396"]
+BB14394 -> BB14395 [tailport=s, headport=n, headlabel="      14395"]
+BB14394 -> BB14402 [tailport=s, headport=n, color=gray, headlabel="      14402"]
+BB14395 [shape=record label="{37398: read-variable['$rootScope',v6,-]|37399: read-property[v6,'$$phase',v3]|37400: \<variable-non-null-undef\>['$rootScope']}" ] 
+BB14395 -> BB14396 [tailport=s, headport=n]
+BB14395 -> BB14402 [tailport=s, headport=n, color=gray]
+BB14396 [shape=record label="{37401: if[v3](true-block:14397,false-block:14398)}" ] 
+BB14396 -> BB14397 [tailport=s, headport=n, headlabel="      14397"]
+BB14396 -> BB14398 [tailport=s, headport=n, headlabel="      14398"]
+BB14397 [shape=record label="{37402: read-variable['scope',v7,-]|37403: read-property[v7,'$evalAsync',-]|37404: \<variable-non-null-undef\>['scope']|37405: read-variable['callback',v8,-]}" ] 
+BB14397 -> BB14399 [tailport=s, headport=n, headlabel="      14399"]
+BB14397 -> BB14402 [tailport=s, headport=n, color=gray]
+BB14398 [shape=record label="{37406: read-variable['scope',v7,-]|37407: read-property[v7,'$apply',-]|37408: \<variable-non-null-undef\>['scope']|37409: read-variable['callback',v8,-]}" ] 
+BB14398 -> BB14400 [tailport=s, headport=n, headlabel="      14400"]
+BB14398 -> BB14402 [tailport=s, headport=n, color=gray]
+BB14399 [shape=record label="{37410: call-scope.$evalAsync [v7,'$evalAsync',v8,-]*}" ] 
+BB14399 -> BB14401 [tailport=s, headport=n, headlabel="      14401"]
+BB14399 -> BB14402 [tailport=s, headport=n, color=gray]
+BB14400 [shape=record label="{37411: call-scope.$apply [v7,'$apply',v8,-]*}" ] 
+BB14400 -> BB14401 [tailport=s, headport=n]
+BB14400 -> BB14402 [tailport=s, headport=n, color=gray]
+BB14401 [shape=record label="{37412: return[v1]}" ] 
+BB14402 [shape=record label="{37413: exceptional-return}" ] 
+//#$~ 23305
+}

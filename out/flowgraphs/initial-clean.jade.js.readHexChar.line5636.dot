@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry325[shape=none,label=""];
+BB_entry325 -> BB5612 [tailport=s, headport=n, headlabel="    5612"]
+BB5612 [shape=record label="{17253: constant[undefined,v1]|17254: vardecl['n']}" ] 
+BB5612 -> BB5613 [tailport=s, headport=n, headlabel="      5613"]
+BB5613 [shape=record label="{17255: read-variable['readInt',v4,v3]|17256: constant[16.0,v5]|17257: read-variable['len',v6,-]}" ] 
+BB5613 -> BB5614 [tailport=s, headport=n, headlabel="      5614"]
+BB5613 -> BB5620 [tailport=s, headport=n, color=gray, headlabel="      5620"]
+BB5614 [shape=record label="{17258: call-readInt [v3,v4,v5,v6,v2]}" ] 
+BB5614 -> BB5615 [tailport=s, headport=n, headlabel="      5615"]
+BB5614 -> BB5620 [tailport=s, headport=n, color=gray]
+BB5615 [shape=record label="{17259: write-variable[v2,'n']*|17260: read-variable['n',v8,-]|17261: constant[null,v9]|17262: ===[v8,v9,v7]|17263: if[v7](true-block:5616,false-block:5618)}" ] 
+BB5615 -> BB5616 [tailport=s, headport=n, headlabel="      5616"]
+BB5615 -> BB5618 [tailport=s, headport=n, headlabel="      5618"]
+BB5615 -> BB5620 [tailport=s, headport=n, color=gray]
+BB5616 [shape=record label="{17264: read-variable['raise',v11,v10]|17265: read-variable['tokStart',v12,-]|17266: constant[\"Bad character escape sequence\",v13]}" ] 
+BB5616 -> BB5617 [tailport=s, headport=n, headlabel="      5617"]
+BB5616 -> BB5620 [tailport=s, headport=n, color=gray]
+BB5617 [shape=record label="{17267: call-raise [v10,v11,v12,v13,-]*}" ] 
+BB5617 -> BB5618 [tailport=s, headport=n]
+BB5617 -> BB5620 [tailport=s, headport=n, color=gray]
+BB5618 [shape=record label="{17268: read-variable['n',v1,-]}" ] 
+BB5618 -> BB5619 [tailport=s, headport=n, headlabel="      5619"]
+BB5618 -> BB5620 [tailport=s, headport=n, color=gray]
+BB5619 [shape=record label="{17269: return[v1]}" ] 
+BB5620 [shape=record label="{17270: exceptional-return}" ] 
+//#$~ 5639
+}

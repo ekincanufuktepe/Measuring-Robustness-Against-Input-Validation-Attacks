@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry177[shape=none,label=""];
+BB_entry177 -> BB2154 [tailport=s, headport=n, headlabel="    2154"]
+BB2154 [shape=record label="{6921: constant[undefined,v1]}" ] 
+BB2154 -> BB2155 [tailport=s, headport=n, headlabel="      2155"]
+BB2155 [shape=record label="{6922: read-variable['this',v3,-]|6923: read-property[v3,'itemView',v2]|6924: if[v2](true-block:2156,false-block:2157)}" ] 
+BB2155 -> BB2156 [tailport=s, headport=n, headlabel="      2156"]
+BB2155 -> BB2157 [tailport=s, headport=n, headlabel="      2157"]
+BB2155 -> BB2162 [tailport=s, headport=n, color=gray, headlabel="      2162"]
+BB2156 [shape=record label="{6925: read-variable['this',v5,-]|6926: read-property[v5,'itemView',-]|6927: new[v6]|6928: constant[false,v7]|6929: write-property[v6,'autoRender',v7]|6930: read-variable['model',v8,-]|6931: write-property[v6,'model',v8]}" ] 
+BB2156 -> BB2158 [tailport=s, headport=n, headlabel="      2158"]
+BB2156 -> BB2162 [tailport=s, headport=n, color=gray]
+BB2157 [shape=record label="{6932: read-variable['Error',v5,-]|6933: constant[\"The CollectionView#itemView property \",v7]|6934: constant[\"must be defined or the initItemView() must be overridden.\",v8]|6935: +[v7,v8,v6]}" ] 
+BB2157 -> BB2159 [tailport=s, headport=n, headlabel="      2159"]
+BB2157 -> BB2162 [tailport=s, headport=n, color=gray]
+BB2158 [shape=record label="{6936: construct [v5,'itemView',v6,v1]}" ] 
+BB2158 -> BB2161 [tailport=s, headport=n, headlabel="      2161"]
+BB2158 -> BB2162 [tailport=s, headport=n, color=gray]
+BB2159 [shape=record label="{6937: construct [-,v5,v6,v4]}" ] 
+BB2159 -> BB2160 [tailport=s, headport=n, headlabel="      2160"]
+BB2159 -> BB2162 [tailport=s, headport=n, color=gray]
+BB2160 [shape=record label="{6938: throw[v4]*}" ] 
+BB2160 -> BB2161 [tailport=s, headport=n]
+BB2160 -> BB2162 [tailport=s, headport=n, color=gray]
+BB2161 [shape=record label="{6939: return[v1]}" ] 
+BB2162 [shape=record label="{6940: exceptional-return}" ] 
+//#$~ 1916
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry50[shape=none,label=""];
+BB_entry50 -> BB979 [tailport=s, headport=n, headlabel="    979"]
+BB979 [shape=record label="{3362: constant[undefined,v1]}" ] 
+BB979 -> BB980 [tailport=s, headport=n, headlabel="      980"]
+BB980 [shape=record label="{3363: read-variable['options',v2,-]|3364: if[v2](true-block:982,false-block:981)}" ] 
+BB980 -> BB982 [tailport=s, headport=n, headlabel="      982"]
+BB980 -> BB981 [tailport=s, headport=n, headlabel="      981"]
+BB980 -> BB985 [tailport=s, headport=n, color=gray, headlabel="      985"]
+BB981 [shape=record label="{3365: new[v2]}" ] 
+BB981 -> BB982 [tailport=s, headport=n]
+BB982 [shape=record label="{3366: write-variable[v2,'options']*|3367: read-variable['options',v4,-]|3368: read-variable['path',v3,-]|3369: write-property[v4,'filename',v3]|3370: \<variable-non-null-undef\>['options']*|3371: read-variable['handleTemplateCache',v6,v5]|3372: read-variable['options',v7,-]}" ] 
+BB982 -> BB983 [tailport=s, headport=n, headlabel="      983"]
+BB982 -> BB985 [tailport=s, headport=n, color=gray]
+BB983 [shape=record label="{3373: call-handleTemplateCache [v5,v6,v7,v1]}" ] 
+BB983 -> BB984 [tailport=s, headport=n, headlabel="      984"]
+BB983 -> BB985 [tailport=s, headport=n, color=gray]
+BB984 [shape=record label="{3374: return[v1]}" ] 
+BB985 [shape=record label="{3375: exceptional-return}" ] 
+//#$~ 1058
+}

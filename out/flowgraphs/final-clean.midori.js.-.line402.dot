@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry22[shape=none,label=""];
+BB_entry22 -> BB558 [tailport=s, headport=n, headlabel="    558"]
+BB558 [shape=record label="{2136: constant[undefined,v1]}" ] 
+BB558 -> BB559 [tailport=s, headport=n, headlabel="      559"]
+BB559 [shape=record label="{2137: read-variable['event',v3,-]|2138: read-property[v3,'stopPropagation',v2]|2139: \<variable-non-null-undef\>['event']|2140: if[v2](true-block:560,false-block:561)}" ] 
+BB559 -> BB560 [tailport=s, headport=n, headlabel="      560"]
+BB559 -> BB561 [tailport=s, headport=n, headlabel="      561"]
+BB559 -> BB564 [tailport=s, headport=n, color=gray, headlabel="      564"]
+BB560 [shape=record label="{2141: read-variable['event',v5,-]|2142: read-property[v5,'stopPropagation',-]|2143: \<variable-non-null-undef\>['event']}" ] 
+BB560 -> BB562 [tailport=s, headport=n, headlabel="      562"]
+BB560 -> BB564 [tailport=s, headport=n, color=gray]
+BB561 [shape=record label="{2144: read-variable['window',v6,-]|2145: read-property[v6,'event',v5]|2146: \<variable-non-null-undef\>['window']|2147: constant[true,v4]|2148: write-property[v5,'cancelBubble',v4]|2149: \<property-non-null-undef\>[v6,'event']}" ] 
+BB561 -> BB563 [tailport=s, headport=n, headlabel="      563"]
+BB561 -> BB564 [tailport=s, headport=n, color=gray]
+BB562 [shape=record label="{2150: call-event.stopPropagation [v5,'stopPropagation',-]}" ] 
+BB562 -> BB563 [tailport=s, headport=n]
+BB562 -> BB564 [tailport=s, headport=n, color=gray]
+BB563 [shape=record label="{2151: return[v1]}" ] 
+BB564 [shape=record label="{2152: exceptional-return}" ] 
+//#$~ 404
+}

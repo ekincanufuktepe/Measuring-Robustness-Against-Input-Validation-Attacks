@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry965[shape=none,label=""];
+BB_entry965 -> BB13144 [tailport=s, headport=n, headlabel="    13144"]
+BB13144 [shape=record label="{38212: constant[undefined,v1]}" ] 
+BB13144 -> BB13145 [tailport=s, headport=n, headlabel="      13145"]
+BB13145 [shape=record label="{38213: read-variable['handle',v2,-]|38214: if[v2](true-block:13146,false-block:13148)}" ] 
+BB13145 -> BB13146 [tailport=s, headport=n, headlabel="      13146"]
+BB13145 -> BB13148 [tailport=s, headport=n, headlabel="      13148"]
+BB13145 -> BB13149 [tailport=s, headport=n, color=gray, headlabel="      13149"]
+BB13146 [shape=record label="{38215: read-variable['handle',v4,-]|38216: read-property[v4,'remove',-]|38217: \<variable-non-null-undef\>['handle']}" ] 
+BB13146 -> BB13147 [tailport=s, headport=n, headlabel="      13147"]
+BB13146 -> BB13149 [tailport=s, headport=n, color=gray]
+BB13147 [shape=record label="{38218: call-handle.remove [v4,'remove',-]*}" ] 
+BB13147 -> BB13148 [tailport=s, headport=n]
+BB13147 -> BB13149 [tailport=s, headport=n, color=gray]
+BB13148 [shape=record label="{38219: return[v1]}" ] 
+BB13149 [shape=record label="{38220: exceptional-return}" ] 
+//#$~ 18455
+}

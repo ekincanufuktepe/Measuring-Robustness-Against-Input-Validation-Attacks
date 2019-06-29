@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry629[shape=none,label=""];
+BB_entry629 -> BB8512 [tailport=s, headport=n, headlabel="    8512"]
+BB8512 [shape=record label="{21897: constant[undefined,v1]}" ] 
+BB8512 -> BB8513 [tailport=s, headport=n, headlabel="      8513"]
+BB8513 [shape=record label="{21898: read-variable['findConstantAndWatchExpressions',v3,v2]|21899: read-variable['expr',v4,-]|21900: read-variable['$filter',v5,-]}" ] 
+BB8513 -> BB8514 [tailport=s, headport=n, headlabel="      8514"]
+BB8513 -> BB8521 [tailport=s, headport=n, color=gray, headlabel="      8521"]
+BB8514 [shape=record label="{21901: call-findConstantAndWatchExpressions [v2,v3,v4,v5,-]*}" ] 
+BB8514 -> BB8515 [tailport=s, headport=n, headlabel="      8515"]
+BB8514 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8515 [shape=record label="{21902: read-variable['allConstants',v6,-]|21903: if[v6](true-block:8516,false-block:8517)}" ] 
+BB8515 -> BB8517 [tailport=s, headport=n, headlabel="      8517"]
+BB8515 -> BB8516 [tailport=s, headport=n, headlabel="      8516"]
+BB8515 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8516 [shape=record label="{21904: read-variable['expr',v7,-]|21905: read-property[v7,'constant',v6]|21906: \<variable-non-null-undef\>['expr']}" ] 
+BB8516 -> BB8517 [tailport=s, headport=n]
+BB8516 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8517 [shape=record label="{21907: write-variable[v6,'allConstants']*|21908: read-variable['expr',v9,-]|21909: read-property[v9,'constant',v8]|21910: \<variable-non-null-undef\>['expr']|21911: ![v8,v7]|21912: if[v7](true-block:8518,false-block:8520)}" ] 
+BB8517 -> BB8518 [tailport=s, headport=n, headlabel="      8518"]
+BB8517 -> BB8520 [tailport=s, headport=n, headlabel="      8520"]
+BB8517 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8518 [shape=record label="{21913: read-variable['argsToWatch',v12,-]|21914: read-property[v12,'push',v11]|21915: \<variable-non-null-undef\>['argsToWatch']|21916: read-property[v11,'apply',-]|21917: \<property-non-null-undef\>[v12,'push']|21918: read-variable['argsToWatch',v13,-]|21919: read-variable['expr',v15,-]|21920: read-property[v15,'toWatch',v14]|21921: \<variable-non-null-undef\>['expr']}" ] 
+BB8518 -> BB8519 [tailport=s, headport=n, headlabel="      8519"]
+BB8518 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8519 [shape=record label="{21922: call-argsToWatch.push.apply [v11,'apply',v13,v14,-]*}" ] 
+BB8519 -> BB8520 [tailport=s, headport=n]
+BB8519 -> BB8521 [tailport=s, headport=n, color=gray]
+BB8520 [shape=record label="{21923: return[v1]}" ] 
+BB8521 [shape=record label="{21924: exceptional-return}" ] 
+//#$~ 13019
+}

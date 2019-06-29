@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry486[shape=none,label=""];
+BB_entry486 -> BB5063 [tailport=s, headport=n, headlabel="    5063"]
+BB5063 [shape=record label="{15335: constant[undefined,v1]}" ] 
+BB5063 -> BB5064 [tailport=s, headport=n, headlabel="      5064"]
+BB5064 [shape=record label="{15336: read-variable['d3_geo_area',v3,-]|15337: read-variable['nextPoint',v2,-]|15338: write-property[v3,'point',v2]|15339: \<variable-non-null-undef\>['d3_geo_area']*|15340: read-variable['\\u03bb',v5,-]|15341: write-variable[v5,'\\u03bb00']|15342: read-variable['d3_radians',v6,-]|15343: *[v5,v6,v4]|15344: write-variable[v4,'\\u03bb0']|15345: read-variable['Math',v9,-]|15346: read-property[v9,'cos',-]|15347: \<variable-non-null-undef\>['Math']|15348: read-variable['\\u03c6',v15,-]|15349: write-variable[v15,'\\u03c600']|15350: read-variable['d3_radians',v16,-]|15351: *[v15,v16,v13]|15352: constant[2.0,v14]|15353: /[v13,v14,v11]|15354: read-variable['\\u03c0',v17,-]|15355: constant[4.0,v18]|15356: /[v17,v18,v12]|15357: +[v11,v12,v10]|15358: write-variable[v10,'\\u03c6']}" ] 
+BB5064 -> BB5065 [tailport=s, headport=n, headlabel="      5065"]
+BB5064 -> BB5070 [tailport=s, headport=n, color=gray, headlabel="      5070"]
+BB5065 [shape=record label="{15359: call-Math.cos [v9,'cos',v10,v7]}" ] 
+BB5065 -> BB5066 [tailport=s, headport=n, headlabel="      5066"]
+BB5065 -> BB5070 [tailport=s, headport=n, color=gray]
+BB5066 [shape=record label="{15360: write-variable[v7,'cos\\u03c60']|15361: read-variable['Math',v21,-]|15362: read-property[v21,'sin',-]|15363: \<variable-non-null-undef\>['Math']|15364: read-variable['\\u03c6',v22,-]}" ] 
+BB5066 -> BB5067 [tailport=s, headport=n, headlabel="      5067"]
+BB5066 -> BB5070 [tailport=s, headport=n, color=gray]
+BB5067 [shape=record label="{15365: call-Math.sin [v21,'sin',v22,v19]}" ] 
+BB5067 -> BB5068 [tailport=s, headport=n, headlabel="      5068"]
+BB5067 -> BB5070 [tailport=s, headport=n, color=gray]
+BB5068 [shape=record label="{15366: write-variable[v19,'sin\\u03c60']}" ] 
+BB5068 -> BB5069 [tailport=s, headport=n, headlabel="      5069"]
+BB5069 [shape=record label="{15367: return[v1]}" ] 
+BB5070 [shape=record label="{15368: exceptional-return}" ] 
+//#$~ 2957
+}

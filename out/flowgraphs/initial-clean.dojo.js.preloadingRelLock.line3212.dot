@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry173[shape=none,label=""];
+BB_entry173 -> BB2848 [tailport=s, headport=n, headlabel="    2848"]
+BB2848 [shape=record label="{8518: constant[undefined,v1]}" ] 
+BB2848 -> BB2849 [tailport=s, headport=n, headlabel="      2849"]
+BB2849 [shape=record label="{8519: constant[1.0,v2]|8520: read-variable['preloading',v3,-]|8521: +[v3,v4]|8522: -[v4,v2,v5]|8523: write-variable[v5,'preloading']*}" ] 
+BB2849 -> BB2850 [tailport=s, headport=n, headlabel="      2850"]
+BB2849 -> BB2857 [tailport=s, headport=n, color=gray, headlabel="      2857"]
+BB2850 [shape=record label="{8524: read-variable['preloading',v7,-]|8525: ![v7,v6]|8526: if[v6](true-block:2851,false-block:2852)}" ] 
+BB2850 -> BB2852 [tailport=s, headport=n, headlabel="      2852"]
+BB2850 -> BB2851 [tailport=s, headport=n, headlabel="      2851"]
+BB2850 -> BB2857 [tailport=s, headport=n, color=gray]
+BB2851 [shape=record label="{8527: read-variable['preloadWaitQueue',v8,-]|8528: read-property[v8,'length',v6]|8529: \<variable-non-null-undef\>['preloadWaitQueue']}" ] 
+BB2851 -> BB2852 [tailport=s, headport=n]
+BB2851 -> BB2857 [tailport=s, headport=n, color=gray]
+BB2852 [shape=record label="{8530: if[v6](true-block:2853,false-block:2856)}" ] 
+BB2852 -> BB2853 [tailport=s, headport=n, headlabel="      2853"]
+BB2852 -> BB2856 [tailport=s, headport=n, headlabel="      2856"]
+BB2853 [shape=record label="{8531: read-variable['load',v9,-]|8532: read-property[v9,'apply',-]|8533: \<variable-non-null-undef\>['load']|8534: constant[null,v10]|8535: read-variable['preloadWaitQueue',v13,-]|8536: read-property[v13,'shift',-]|8537: \<variable-non-null-undef\>['preloadWaitQueue']}" ] 
+BB2853 -> BB2854 [tailport=s, headport=n, headlabel="      2854"]
+BB2853 -> BB2857 [tailport=s, headport=n, color=gray]
+BB2854 [shape=record label="{8538: call-preloadWaitQueue.shift [v13,'shift',v11]}" ] 
+BB2854 -> BB2855 [tailport=s, headport=n, headlabel="      2855"]
+BB2854 -> BB2857 [tailport=s, headport=n, color=gray]
+BB2855 [shape=record label="{8539: call-load.apply [v9,'apply',v10,v11,-]*}" ] 
+BB2855 -> BB2850 [tailport=s, headport=n]
+BB2855 -> BB2857 [tailport=s, headport=n, color=gray]
+BB2856 [shape=record label="{8540: return[v1]}" ] 
+BB2857 [shape=record label="{8541: exceptional-return}" ] 
+//#$~ 3215
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB795 [tailport=s, headport=n, headlabel="    795"]
+BB795 [shape=record label="{1837: constant[undefined,v1]}" ] 
+BB795 -> BB796 [tailport=s, headport=n, headlabel="      796"]
+BB796 [shape=record label="{1838: read-variable['array1',v3,-]|1839: read-property[v3,'concat',-]|1840: \<variable-non-null-undef\>['array1']|1841: read-variable['slice',v6,-]|1842: read-property[v6,'call',-]|1843: \<variable-non-null-undef\>['slice']|1844: read-variable['array2',v7,-]|1845: read-variable['index',v8,-]}" ] 
+BB796 -> BB797 [tailport=s, headport=n, headlabel="      797"]
+BB796 -> BB800 [tailport=s, headport=n, color=gray, headlabel="      800"]
+BB797 [shape=record label="{1846: call-slice.call [v6,'call',v7,v8,v4]}" ] 
+BB797 -> BB798 [tailport=s, headport=n, headlabel="      798"]
+BB797 -> BB800 [tailport=s, headport=n, color=gray]
+BB798 [shape=record label="{1847: call-array1.concat [v3,'concat',v4,v1]}" ] 
+BB798 -> BB799 [tailport=s, headport=n, headlabel="      799"]
+BB798 -> BB800 [tailport=s, headport=n, color=gray]
+BB799 [shape=record label="{1848: return[v1]}" ] 
+BB800 [shape=record label="{1849: exceptional-return}" ] 
+//#$~ 1128
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry309[shape=none,label=""];
+BB_entry309 -> BB5017 [tailport=s, headport=n, headlabel="    5017"]
+BB5017 [shape=record label="{15648: constant[undefined,v1]|15649: vardecl['next']}" ] 
+BB5017 -> BB5018 [tailport=s, headport=n, headlabel="      5018"]
+BB5018 [shape=record label="{15650: read-variable['input',v4,-]|15651: read-property[v4,'charCodeAt',-]|15652: \<variable-non-null-undef\>['input']|15653: read-variable['tokPos',v6,-]|15654: constant[1.0,v7]|15655: +[v6,v7,v5]}" ] 
+BB5018 -> BB5019 [tailport=s, headport=n, headlabel="      5019"]
+BB5018 -> BB5026 [tailport=s, headport=n, color=gray, headlabel="      5026"]
+BB5019 [shape=record label="{15656: call-input.charCodeAt [v4,'charCodeAt',v5,v2]}" ] 
+BB5019 -> BB5020 [tailport=s, headport=n, headlabel="      5020"]
+BB5019 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5020 [shape=record label="{15657: write-variable[v2,'next']*|15658: read-variable['next',v9,-]|15659: constant[61.0,v10]|15660: ===[v9,v10,v8]|15661: if[v8](true-block:5021,false-block:5023)}" ] 
+BB5020 -> BB5021 [tailport=s, headport=n, headlabel="      5021"]
+BB5020 -> BB5023 [tailport=s, headport=n, headlabel="      5023"]
+BB5020 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5021 [shape=record label="{15662: read-variable['finishOp',v12,v11]|15663: read-variable['_assign',v13,-]|15664: constant[2.0,v14]}" ] 
+BB5021 -> BB5022 [tailport=s, headport=n, headlabel="      5022"]
+BB5021 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5022 [shape=record label="{15665: call-finishOp [v11,v12,v13,v14,v1]}" ] 
+BB5022 -> BB5025 [tailport=s, headport=n, headlabel="      5025"]
+BB5022 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5023 [shape=record label="{15666: read-variable['finishOp',v12,v11]|15667: read-variable['_bitwiseXOR',v13,-]|15668: constant[1.0,v14]}" ] 
+BB5023 -> BB5024 [tailport=s, headport=n, headlabel="      5024"]
+BB5023 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5024 [shape=record label="{15669: call-finishOp [v11,v12,v13,v14,v1]}" ] 
+BB5024 -> BB5025 [tailport=s, headport=n]
+BB5024 -> BB5026 [tailport=s, headport=n, color=gray]
+BB5025 [shape=record label="{15670: return[v1]}" ] 
+BB5026 [shape=record label="{15671: exceptional-return}" ] 
+//#$~ 5259
+}

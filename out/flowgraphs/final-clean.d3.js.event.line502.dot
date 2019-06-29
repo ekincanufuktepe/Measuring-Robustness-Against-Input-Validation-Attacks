@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry83[shape=none,label=""];
+BB_entry83 -> BB859 [tailport=s, headport=n, headlabel="    859"]
+BB859 [shape=record label="{2610: constant[undefined,v1]|2611: vardecl['z']|2612: vardecl['i']|2613: vardecl['n']|2614: vardecl['l']}" ] 
+BB859 -> BB860 [tailport=s, headport=n, headlabel="      860"]
+BB860 [shape=record label="{2615: read-variable['listeners',v2,-]|2616: write-variable[v2,'z']*|2617: constant[-1.0,v3]|2618: write-variable[v3,'i']*|2619: read-variable['z',v5,-]|2620: read-property[v5,'length',v4]|2621: \<variable-non-null-undef\>['z']|2622: write-variable[v4,'n']*}" ] 
+BB860 -> BB861 [tailport=s, headport=n, headlabel="      861"]
+BB860 -> BB867 [tailport=s, headport=n, color=gray, headlabel="      867"]
+BB861 [shape=record label="{2623: constant[1.0,v9]|2624: read-variable['i',v10,-]|2625: +[v10,v11]|2626: +[v11,v9,v7]|2627: write-variable[v7,'i']|2628: read-variable['n',v8,-]|2629: \<[v7,v8,v6]|2630: if[v6](true-block:862,false-block:863)}" ] 
+BB861 -> BB862 [tailport=s, headport=n, headlabel="      862"]
+BB861 -> BB863 [tailport=s, headport=n, headlabel="      863"]
+BB861 -> BB867 [tailport=s, headport=n, color=gray]
+BB862 [shape=record label="{2631: read-variable['z',v14,-]|2632: read-variable['i',v15,-]|2633: read-property[v14,v15,v13]|2634: \<variable-non-null-undef\>['z']|2635: read-property[v13,'on',v12]|2636: \<property-non-null-undef\>[v14,v15]|2637: write-variable[v12,'l']|2638: if[v12](true-block:864,false-block:861)}" ] 
+BB862 -> BB864 [tailport=s, headport=n, headlabel="      864"]
+BB862 -> BB861 [tailport=s, headport=n]
+BB862 -> BB867 [tailport=s, headport=n, color=gray]
+BB863 [shape=record label="{2639: read-variable['dispatch',v1,-]}" ] 
+BB863 -> BB866 [tailport=s, headport=n, headlabel="      866"]
+BB863 -> BB867 [tailport=s, headport=n, color=gray]
+BB864 [shape=record label="{2640: read-variable['l',v17,-]|2641: read-property[v17,'apply',-]|2642: \<variable-non-null-undef\>['l']|2643: read-variable['this',v18,-]|2644: read-variable['arguments',v19,-]}" ] 
+BB864 -> BB865 [tailport=s, headport=n, headlabel="      865"]
+BB864 -> BB867 [tailport=s, headport=n, color=gray]
+BB865 [shape=record label="{2645: call-l.apply [v17,'apply',v18,v19,-]*}" ] 
+BB865 -> BB861 [tailport=s, headport=n]
+BB865 -> BB867 [tailport=s, headport=n, color=gray]
+BB866 [shape=record label="{2646: return[v1]}" ] 
+BB867 [shape=record label="{2647: exceptional-return}" ] 
+//#$~ 505
+}

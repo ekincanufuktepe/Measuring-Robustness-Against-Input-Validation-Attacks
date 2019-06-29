@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry274[shape=none,label=""];
+BB_entry274 -> BB3064 [tailport=s, headport=n, headlabel="    3064"]
+BB3064 [shape=record label="{9876: constant[undefined,v1]}" ] 
+BB3064 -> BB3065 [tailport=s, headport=n, headlabel="      3065"]
+BB3065 [shape=record label="{9877: read-variable['process',v4,-]|9878: read-property[v4,'stdout',v3]|9879: \<variable-non-null-undef\>['process']|9880: read-property[v3,'write',-]|9881: \<property-non-null-undef\>[v4,'stdout']|9882: constant[\"# TOC\\n\",v5]}" ] 
+BB3065 -> BB3066 [tailport=s, headport=n, headlabel="      3066"]
+BB3065 -> BB3073 [tailport=s, headport=n, color=gray, headlabel="      3073"]
+BB3066 [shape=record label="{9883: call-process.stdout.write [v3,'write',v5,-]*}" ] 
+BB3066 -> BB3067 [tailport=s, headport=n, headlabel="      3067"]
+BB3066 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3067 [shape=record label="{9884: read-variable['process',v8,-]|9885: read-property[v8,'stdout',v7]|9886: \<variable-non-null-undef\>['process']|9887: read-property[v7,'write',-]|9888: \<property-non-null-undef\>[v8,'stdout']|9889: read-variable['generateTOC',v11,v10]|9890: read-variable['runner',v13,-]|9891: read-property[v13,'suite',v12]|9892: \<variable-non-null-undef\>['runner']}" ] 
+BB3067 -> BB3068 [tailport=s, headport=n, headlabel="      3068"]
+BB3067 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3068 [shape=record label="{9893: call-generateTOC [v10,v11,v12,v9]}" ] 
+BB3068 -> BB3069 [tailport=s, headport=n, headlabel="      3069"]
+BB3068 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3069 [shape=record label="{9894: call-process.stdout.write [v7,'write',v9,-]*}" ] 
+BB3069 -> BB3070 [tailport=s, headport=n, headlabel="      3070"]
+BB3069 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3070 [shape=record label="{9895: read-variable['process',v16,-]|9896: read-property[v16,'stdout',v15]|9897: \<variable-non-null-undef\>['process']|9898: read-property[v15,'write',-]|9899: \<property-non-null-undef\>[v16,'stdout']|9900: read-variable['buf',v17,-]}" ] 
+BB3070 -> BB3071 [tailport=s, headport=n, headlabel="      3071"]
+BB3070 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3071 [shape=record label="{9901: call-process.stdout.write [v15,'write',v17,-]*}" ] 
+BB3071 -> BB3072 [tailport=s, headport=n, headlabel="      3072"]
+BB3071 -> BB3073 [tailport=s, headport=n, color=gray]
+BB3072 [shape=record label="{9902: return[v1]}" ] 
+BB3073 [shape=record label="{9903: exceptional-return}" ] 
+//#$~ 3550
+}

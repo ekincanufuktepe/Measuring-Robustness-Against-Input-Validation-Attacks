@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry227[shape=none,label=""];
+BB_entry227 -> BB2492 [tailport=s, headport=n, headlabel="    2492"]
+BB2492 [shape=record label="{8193: constant[undefined,v1]|8194: vardecl['unusedCols']|8195: vardecl['i']}" ] 
+BB2492 -> BB2493 [tailport=s, headport=n, headlabel="      2493"]
+BB2493 [shape=record label="{8196: constant[0.0,v2]|8197: write-variable[v2,'unusedCols']*|8198: read-variable['this',v4,-]|8199: read-property[v4,'cols',v3]|8200: write-variable[v3,'i']*}" ] 
+BB2493 -> BB2494 [tailport=s, headport=n, headlabel="      2494"]
+BB2493 -> BB2499 [tailport=s, headport=n, color=gray, headlabel="      2499"]
+BB2494 [shape=record label="{8201: constant[1.0,v6]|8202: read-variable['i',v7,-]|8203: +[v7,v8]|8204: -[v8,v6,v5]|8205: write-variable[v5,'i']|8206: if[v5](true-block:2495,false-block:2496)}" ] 
+BB2494 -> BB2495 [tailport=s, headport=n, headlabel="      2495"]
+BB2494 -> BB2496 [tailport=s, headport=n, headlabel="      2496"]
+BB2494 -> BB2499 [tailport=s, headport=n, color=gray]
+BB2495 [shape=record label="{8207: read-variable['this',v13,-]|8208: read-property[v13,'colYs',v12]|8209: read-variable['i',v14,-]|8210: read-property[v12,v14,v10]|8211: \<property-non-null-undef\>[v13,'colYs']|8212: constant[0.0,v11]|8213: !==[v10,v11,v9]|8214: if[v9](true-block:2496,false-block:2497)}" ] 
+BB2495 -> BB2496 [tailport=s, headport=n]
+BB2495 -> BB2497 [tailport=s, headport=n, headlabel="      2497"]
+BB2495 -> BB2499 [tailport=s, headport=n, color=gray]
+BB2496 [shape=record label="{8215: read-variable['this',v15,-]|8216: read-property[v15,'cols',v13]|8217: read-variable['unusedCols',v14,-]|8218: -[v13,v14,v11]|8219: read-variable['this',v16,-]|8220: read-property[v16,'columnWidth',v12]|8221: *[v11,v12,v9]|8222: read-variable['this',v17,-]|8223: read-property[v17,'gutter',v10]|8224: -[v9,v10,v1]}" ] 
+BB2496 -> BB2498 [tailport=s, headport=n, headlabel="      2498"]
+BB2496 -> BB2499 [tailport=s, headport=n, color=gray]
+BB2497 [shape=record label="{8225: constant[1.0,v15]|8226: read-variable['unusedCols',v16,-]|8227: +[v16,v17]|8228: +[v17,v15,v18]|8229: write-variable[v18,'unusedCols']*}" ] 
+BB2497 -> BB2494 [tailport=s, headport=n]
+BB2497 -> BB2499 [tailport=s, headport=n, color=gray]
+BB2498 [shape=record label="{8230: return[v1]}" ] 
+BB2499 [shape=record label="{8231: exceptional-return}" ] 
+//#$~ 3418
+}

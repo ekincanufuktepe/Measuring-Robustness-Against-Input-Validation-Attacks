@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry10[shape=none,label=""];
+BB_entry10 -> BB157 [tailport=s, headport=n, headlabel="    157"]
+BB157 [shape=record label="{472: constant[undefined,v1]|473: vardecl['i']}" ] 
+BB157 -> BB158 [tailport=s, headport=n, headlabel="      158"]
+BB158 [shape=record label="{474: read-variable['s',v3,-]}" ] 
+BB158 -> BB159 [tailport=s, headport=n, headlabel="      159"]
+BB158 -> BB167 [tailport=s, headport=n, color=gray, headlabel="      167"]
+BB159 [shape=record label="{475: begin-for-in[v3,v4]}" ] 
+BB159 -> BB160 [tailport=s, headport=n, headlabel="      160"]
+BB159 -> BB167 [tailport=s, headport=n, color=gray]
+BB160 [shape=record label="{476: has-next[v4,v5]|477: if[v5](true-block:161,false-block:166)}" ] 
+BB160 -> BB161 [tailport=s, headport=n, headlabel="      161"]
+BB160 -> BB166 [tailport=s, headport=n, headlabel="      166"]
+BB161 [shape=record label="{478: next-property[v4,v6]|479: write-variable[v6,'i']|480: read-variable['s',v9,-]|481: read-property[v9,'hasOwnProperty',-]|482: \<variable-non-null-undef\>['s']|483: read-variable['i',v10,-]}" ] 
+BB161 -> BB162 [tailport=s, headport=n, headlabel="      162"]
+BB161 -> BB167 [tailport=s, headport=n, color=gray]
+BB162 [shape=record label="{484: call-s.hasOwnProperty [v9,'hasOwnProperty',v10,v7]}" ] 
+BB162 -> BB163 [tailport=s, headport=n, headlabel="      163"]
+BB162 -> BB167 [tailport=s, headport=n, color=gray]
+BB163 [shape=record label="{485: if[v7](true-block:164,false-block:165)}" ] 
+BB163 -> BB164 [tailport=s, headport=n, headlabel="      164"]
+BB163 -> BB165 [tailport=s, headport=n, headlabel="      165"]
+BB164 [shape=record label="{486: read-variable['r',v12,-]|487: read-variable['i',v13,-]|488: read-variable['s',v14,-]|489: read-variable['i',v15,-]|490: read-property[v14,v15,v11]|491: \<variable-non-null-undef\>['s']|492: write-property[v12,v13,v11]|493: \<variable-non-null-undef\>['r']*}" ] 
+BB164 -> BB165 [tailport=s, headport=n]
+BB164 -> BB167 [tailport=s, headport=n, color=gray]
+BB165 [shape=record label="{494: end-for-in(begin-node:475)}" ] 
+BB165 -> BB160 [tailport=s, headport=n]
+BB166 [shape=record label="{495: return[v1]}" ] 
+BB167 [shape=record label="{496: exceptional-return}" ] 
+//#$~ 248
+}

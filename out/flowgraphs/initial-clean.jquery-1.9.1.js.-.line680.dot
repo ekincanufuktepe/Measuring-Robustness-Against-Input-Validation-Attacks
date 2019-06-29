@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry42[shape=none,label=""];
+BB_entry42 -> BB561 [tailport=s, headport=n, headlabel="    561"]
+BB561 [shape=record label="{1381: constant[undefined,v1]}" ] 
+BB561 -> BB562 [tailport=s, headport=n, headlabel="      562"]
+BB562 [shape=record label="{1382: read-variable['text',v3,-]|1383: constant[null,v4]|1384: ==[v3,v4,v2]|1385: if[v2](true-block:563,false-block:564)}" ] 
+BB562 -> BB563 [tailport=s, headport=n, headlabel="      563"]
+BB562 -> BB564 [tailport=s, headport=n, headlabel="      564"]
+BB562 -> BB567 [tailport=s, headport=n, color=gray, headlabel="      567"]
+BB563 [shape=record label="{1386: constant[\"\",v1]}" ] 
+BB563 -> BB566 [tailport=s, headport=n, headlabel="      566"]
+BB564 [shape=record label="{1387: read-variable['text',v7,-]|1388: constant[\"\",v8]|1389: +[v7,v8,v6]|1390: read-property[v6,'replace',-]|1391: read-variable['rtrim',v9,-]|1392: constant[\"\",v10]}" ] 
+BB564 -> BB565 [tailport=s, headport=n, headlabel="      565"]
+BB564 -> BB567 [tailport=s, headport=n, color=gray]
+BB565 [shape=record label="{1393: call-null [v6,'replace',v9,v10,v1]}" ] 
+BB565 -> BB566 [tailport=s, headport=n]
+BB565 -> BB567 [tailport=s, headport=n, color=gray]
+BB566 [shape=record label="{1394: return[v1]}" ] 
+BB567 [shape=record label="{1395: exceptional-return}" ] 
+}

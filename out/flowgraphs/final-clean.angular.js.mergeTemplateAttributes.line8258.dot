@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry383[shape=none,label=""];
+BB_entry383 -> BB5165 [tailport=s, headport=n, headlabel="    5165"]
+BB5165 [shape=record label="{13253: constant[undefined,v1]|13254: vardecl['srcAttr']|13255: vardecl['dstAttr']|13256: vardecl['$element']}" ] 
+BB5165 -> BB5166 [tailport=s, headport=n, headlabel="      5166"]
+BB5166 [shape=record label="{13257: read-variable['src',v3,-]|13258: read-property[v3,'$attr',v2]|13259: \<variable-non-null-undef\>['src']|13260: write-variable[v2,'srcAttr']*|13261: read-variable['dst',v5,-]|13262: read-property[v5,'$attr',v4]|13263: \<variable-non-null-undef\>['dst']|13264: write-variable[v4,'dstAttr']*|13265: read-variable['dst',v7,-]|13266: read-property[v7,'$$element',v6]|13267: \<variable-non-null-undef\>['dst']|13268: write-variable[v6,'$element']*|13269: read-variable['forEach',v9,v8]|13270: read-variable['dst',v10,-]|13271: function-expr[function ( value key ),v11]}" ] 
+BB5166 -> BB5167 [tailport=s, headport=n, headlabel="      5167"]
+BB5166 -> BB5171 [tailport=s, headport=n, color=gray, headlabel="      5171"]
+BB5167 [shape=record label="{13272: call-forEach [v8,v9,v10,v11,-]*}" ] 
+BB5167 -> BB5168 [tailport=s, headport=n, headlabel="      5168"]
+BB5167 -> BB5171 [tailport=s, headport=n, color=gray]
+BB5168 [shape=record label="{13273: read-variable['forEach',v13,v12]|13274: read-variable['src',v14,-]|13275: function-expr[function ( value key ),v15]}" ] 
+BB5168 -> BB5169 [tailport=s, headport=n, headlabel="      5169"]
+BB5168 -> BB5171 [tailport=s, headport=n, color=gray]
+BB5169 [shape=record label="{13276: call-forEach [v12,v13,v14,v15,-]*}" ] 
+BB5169 -> BB5170 [tailport=s, headport=n, headlabel="      5170"]
+BB5169 -> BB5171 [tailport=s, headport=n, color=gray]
+BB5170 [shape=record label="{13277: return[v1]}" ] 
+BB5171 [shape=record label="{13278: exceptional-return}" ] 
+//#$~ 8286
+}

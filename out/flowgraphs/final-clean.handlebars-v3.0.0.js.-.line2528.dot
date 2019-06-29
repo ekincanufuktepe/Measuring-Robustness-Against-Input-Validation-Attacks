@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry195[shape=none,label=""];
+BB_entry195 -> BB4457 [tailport=s, headport=n, headlabel="    4457"]
+BB4457 [shape=record label="{14592: constant[undefined,v1]|14593: vardecl['i']|14594: vardecl['len']}" ] 
+BB4457 -> BB4458 [tailport=s, headport=n, headlabel="      4458"]
+BB4458 [shape=record label="{14595: constant[0.0,v3]|14596: write-variable[v3,'i']*|14597: read-variable['this',v6,-]|14598: read-property[v6,'source',v5]|14599: read-property[v5,'length',v4]|14600: \<property-non-null-undef\>[v6,'source']|14601: write-variable[v4,'len']*}" ] 
+BB4458 -> BB4459 [tailport=s, headport=n, headlabel="      4459"]
+BB4458 -> BB4464 [tailport=s, headport=n, color=gray, headlabel="      4464"]
+BB4459 [shape=record label="{14602: read-variable['i',v7,-]|14603: read-variable['len',v8,-]|14604: \<[v7,v8,v2]|14605: if[v2](true-block:4460,false-block:4463)}" ] 
+BB4459 -> BB4460 [tailport=s, headport=n, headlabel="      4460"]
+BB4459 -> BB4463 [tailport=s, headport=n, headlabel="      4463"]
+BB4459 -> BB4464 [tailport=s, headport=n, color=gray]
+BB4460 [shape=record label="{14606: read-variable['iter',v10,v9]|14607: read-variable['this',v13,-]|14608: read-property[v13,'source',v12]|14609: read-variable['i',v14,-]|14610: read-property[v12,v14,v11]|14611: \<property-non-null-undef\>[v13,'source']}" ] 
+BB4460 -> BB4461 [tailport=s, headport=n, headlabel="      4461"]
+BB4460 -> BB4464 [tailport=s, headport=n, color=gray]
+BB4461 [shape=record label="{14612: call-iter [v9,v10,v11,-]*}" ] 
+BB4461 -> BB4462 [tailport=s, headport=n, headlabel="      4462"]
+BB4461 -> BB4464 [tailport=s, headport=n, color=gray]
+BB4462 [shape=record label="{14613: constant[1.0,v15]|14614: read-variable['i',v16,-]|14615: +[v16,v17]|14616: +[v17,v15,v18]|14617: write-variable[v18,'i']}" ] 
+BB4462 -> BB4459 [tailport=s, headport=n]
+BB4462 -> BB4464 [tailport=s, headport=n, color=gray]
+BB4463 [shape=record label="{14618: return[v1]}" ] 
+BB4464 [shape=record label="{14619: exceptional-return}" ] 
+//#$~ 2529
+}

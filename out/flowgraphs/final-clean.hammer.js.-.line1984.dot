@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry117[shape=none,label=""];
+BB_entry117 -> BB1247 [tailport=s, headport=n, headlabel="    1247"]
+BB1247 [shape=record label="{3882: constant[undefined,v1]}" ] 
+BB1247 -> BB1248 [tailport=s, headport=n, headlabel="      1248"]
+BB1248 [shape=record label="{3883: read-variable['this',v5,-]|3884: read-property[v5,'state',v3]|3885: read-variable['STATE_RECOGNIZED',v4,-]|3886: ==[v3,v4,v2]|3887: if[v2](true-block:1249,false-block:1251)}" ] 
+BB1248 -> BB1249 [tailport=s, headport=n, headlabel="      1249"]
+BB1248 -> BB1251 [tailport=s, headport=n, headlabel="      1251"]
+BB1248 -> BB1252 [tailport=s, headport=n, color=gray, headlabel="      1252"]
+BB1249 [shape=record label="{3888: read-variable['this',v8,-]|3889: read-property[v8,'_input',v7]|3890: read-variable['this',v9,-]|3891: read-property[v9,'count',v6]|3892: write-property[v7,'tapCount',v6]|3893: \<property-non-null-undef\>[v8,'_input']*|3894: read-variable['this',v12,-]|3895: read-property[v12,'manager',v11]|3896: read-property[v11,'emit',-]|3897: \<property-non-null-undef\>[v12,'manager']|3898: read-variable['this',v15,-]|3899: read-property[v15,'options',v14]|3900: read-property[v14,'event',v13]|3901: \<property-non-null-undef\>[v15,'options']|3902: read-variable['this',v17,-]|3903: read-property[v17,'_input',v16]}" ] 
+BB1249 -> BB1250 [tailport=s, headport=n, headlabel="      1250"]
+BB1249 -> BB1252 [tailport=s, headport=n, color=gray]
+BB1250 [shape=record label="{3904: call-this.manager.emit [v11,'emit',v13,v16,-]*}" ] 
+BB1250 -> BB1251 [tailport=s, headport=n]
+BB1250 -> BB1252 [tailport=s, headport=n, color=gray]
+BB1251 [shape=record label="{3905: return[v1]}" ] 
+BB1252 [shape=record label="{3906: exceptional-return}" ] 
+//#$~ 1987
+}

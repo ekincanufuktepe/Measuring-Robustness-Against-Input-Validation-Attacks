@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry725[shape=none,label=""];
+BB_entry725 -> BB9801 [tailport=s, headport=n, headlabel="    9801"]
+BB9801 [shape=record label="{32441: constant[undefined,v1]|32442: vardecl['ESCAPE_LOOKUP']|32443: vardecl['ESCAPE_REGEX']|32444: function-decl[function escaper ( match ),-]|32445: function-decl[function escapeTextContentForBrowser ( text ),-]}" ] 
+BB9801 -> BB9802 [tailport=s, headport=n, headlabel="      9802"]
+BB9802 [shape=record label="{32446: new[v2]|32447: constant[\"&amp;\",v3]|32448: write-property[v2,'&',v3]|32449: constant[\"&gt;\",v4]|32450: write-property[v2,'\>',v4]|32451: constant[\"&lt;\",v5]|32452: write-property[v2,'\<',v5]|32453: constant[\"&quot;\",v6]|32454: write-property[v2,'\"',v6]|32455: constant[\"&#x27;\",v7]|32456: write-property[v2,''',v7]|32457: write-variable[v2,'ESCAPE_LOOKUP']*|32458: read-variable['RegExp',v9,-]|32459: constant[\"[&\\\>\\\<\\\"']\",v10]|32460: constant[\"g\",v11]}" ] 
+BB9802 -> BB9803 [tailport=s, headport=n, headlabel="      9803"]
+BB9802 -> BB9806 [tailport=s, headport=n, color=gray, headlabel="      9806"]
+BB9803 [shape=record label="{32461: construct [-,v9,v10,v11,v8]}" ] 
+BB9803 -> BB9804 [tailport=s, headport=n, headlabel="      9804"]
+BB9803 -> BB9806 [tailport=s, headport=n, color=gray]
+BB9804 [shape=record label="{32462: write-variable[v8,'ESCAPE_REGEX']*|32463: read-variable['module',v13,-]|32464: read-variable['escapeTextContentForBrowser',v12,-]|32465: write-property[v13,'exports',v12]|32466: \<variable-non-null-undef\>['module']*}" ] 
+BB9804 -> BB9805 [tailport=s, headport=n, headlabel="      9805"]
+BB9804 -> BB9806 [tailport=s, headport=n, color=gray]
+BB9805 [shape=record label="{32467: return[v1]}" ] 
+BB9806 [shape=record label="{32468: exceptional-return}" ] 
+//#$~ 17419
+}

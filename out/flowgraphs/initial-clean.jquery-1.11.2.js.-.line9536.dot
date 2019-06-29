@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry547[shape=none,label=""];
+BB_entry547 -> BB8879 [tailport=s, headport=n, headlabel="    8879"]
+BB8879 [shape=record label="{26333: constant[undefined,v1]|26334: vardecl['elements']}" ] 
+BB8879 -> BB8880 [tailport=s, headport=n, headlabel="      8880"]
+BB8880 [shape=record label="{26335: read-variable['jQuery',v4,-]|26336: read-property[v4,'prop',-]|26337: \<variable-non-null-undef\>['jQuery']|26338: read-variable['this',v5,-]|26339: constant[\"elements\",v6]}" ] 
+BB8880 -> BB8881 [tailport=s, headport=n, headlabel="      8881"]
+BB8880 -> BB8887 [tailport=s, headport=n, color=gray, headlabel="      8887"]
+BB8881 [shape=record label="{26340: call-0:0[v4,'prop',v5,v6,v2]}" ] 
+BB8881 -> BB8882 [tailport=s, headport=n, headlabel="      8882"]
+BB8881 -> BB8887 [tailport=s, headport=n, color=gray]
+BB8882 [shape=record label="{26341: write-variable[v2,'elements']*|26342: read-variable['elements',v7,-]|26343: if[v7](true-block:8883,false-block:8884)}" ] 
+BB8882 -> BB8883 [tailport=s, headport=n, headlabel="      8883"]
+BB8882 -> BB8884 [tailport=s, headport=n, headlabel="      8884"]
+BB8882 -> BB8887 [tailport=s, headport=n, color=gray]
+BB8883 [shape=record label="{26344: read-variable['jQuery',v9,-]|26345: read-property[v9,'makeArray',-]|26346: \<variable-non-null-undef\>['jQuery']|26347: read-variable['elements',v10,-]}" ] 
+BB8883 -> BB8885 [tailport=s, headport=n, headlabel="      8885"]
+BB8883 -> BB8887 [tailport=s, headport=n, color=gray]
+BB8884 [shape=record label="{26348: read-variable['this',v1,-]}" ] 
+BB8884 -> BB8886 [tailport=s, headport=n, headlabel="      8886"]
+BB8884 -> BB8887 [tailport=s, headport=n, color=gray]
+BB8885 [shape=record label="{26349: call-0:0[v9,'makeArray',v10,v1]}" ] 
+BB8885 -> BB8886 [tailport=s, headport=n]
+BB8885 -> BB8887 [tailport=s, headport=n, color=gray]
+BB8886 [shape=record label="{26350: return[v1]}" ] 
+BB8887 [shape=record label="{26351: exceptional-return}" ] 
+}

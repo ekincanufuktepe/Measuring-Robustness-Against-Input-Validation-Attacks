@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry188[shape=none,label=""];
+BB_entry188 -> BB2056 [tailport=s, headport=n, headlabel="    2056"]
+BB2056 [shape=record label="{6290: constant[undefined,v1]|6291: vardecl['i']|6292: vardecl['len']|6293: vardecl['item']}" ] 
+BB2056 -> BB2057 [tailport=s, headport=n, headlabel="      2057"]
+BB2057 [shape=record label="{6294: constant[0.0,v3]|6295: write-variable[v3,'i']*|6296: read-variable['this',v6,-]|6297: read-property[v6,'items',v5]|6298: read-property[v5,'length',v4]|6299: \<property-non-null-undef\>[v6,'items']|6300: write-variable[v4,'len']*}" ] 
+BB2057 -> BB2058 [tailport=s, headport=n, headlabel="      2058"]
+BB2057 -> BB2063 [tailport=s, headport=n, color=gray, headlabel="      2063"]
+BB2058 [shape=record label="{6301: read-variable['i',v7,-]|6302: read-variable['len',v8,-]|6303: \<[v7,v8,v2]|6304: if[v2](true-block:2059,false-block:2062)}" ] 
+BB2058 -> BB2059 [tailport=s, headport=n, headlabel="      2059"]
+BB2058 -> BB2062 [tailport=s, headport=n, headlabel="      2062"]
+BB2058 -> BB2063 [tailport=s, headport=n, color=gray]
+BB2059 [shape=record label="{6305: read-variable['this',v11,-]|6306: read-property[v11,'items',v10]|6307: read-variable['i',v12,-]|6308: read-property[v10,v12,v9]|6309: \<property-non-null-undef\>[v11,'items']|6310: write-variable[v9,'item']*|6311: read-variable['item',v16,-]|6312: read-property[v16,'element',v14]|6313: \<variable-non-null-undef\>['item']|6314: read-variable['elem',v15,-]|6315: ===[v14,v15,v13]|6316: if[v13](true-block:2060,false-block:2061)}" ] 
+BB2059 -> BB2060 [tailport=s, headport=n, headlabel="      2060"]
+BB2059 -> BB2061 [tailport=s, headport=n, headlabel="      2061"]
+BB2059 -> BB2063 [tailport=s, headport=n, color=gray]
+BB2060 [shape=record label="{6317: read-variable['item',v1,-]}" ] 
+BB2060 -> BB2062 [tailport=s, headport=n]
+BB2060 -> BB2063 [tailport=s, headport=n, color=gray]
+BB2061 [shape=record label="{6318: constant[1.0,v17]|6319: read-variable['i',v18,-]|6320: +[v18,v19]|6321: +[v19,v17,v20]|6322: write-variable[v20,'i']}" ] 
+BB2061 -> BB2058 [tailport=s, headport=n]
+BB2061 -> BB2063 [tailport=s, headport=n, color=gray]
+BB2062 [shape=record label="{6323: return[v1]}" ] 
+BB2063 [shape=record label="{6324: exceptional-return}" ] 
+//#$~ 2836
+}

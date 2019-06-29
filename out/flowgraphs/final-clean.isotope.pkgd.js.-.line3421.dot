@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry228[shape=none,label=""];
+BB_entry228 -> BB2500 [tailport=s, headport=n, headlabel="    2500"]
+BB2500 [shape=record label="{8232: constant[undefined,v1]|8233: vardecl['previousWidth']}" ] 
+BB2500 -> BB2501 [tailport=s, headport=n, headlabel="      2501"]
+BB2501 [shape=record label="{8234: read-variable['this',v3,-]|8235: read-property[v3,'containerWidth',v2]|8236: write-variable[v2,'previousWidth']*|8237: read-variable['this',v5,-]|8238: read-property[v5,'getContainerWidth',-]}" ] 
+BB2501 -> BB2502 [tailport=s, headport=n, headlabel="      2502"]
+BB2501 -> BB2505 [tailport=s, headport=n, color=gray, headlabel="      2505"]
+BB2502 [shape=record label="{8239: call-this.getContainerWidth [v5,'getContainerWidth',-]*}" ] 
+BB2502 -> BB2503 [tailport=s, headport=n, headlabel="      2503"]
+BB2502 -> BB2505 [tailport=s, headport=n, color=gray]
+BB2503 [shape=record label="{8240: read-variable['previousWidth',v6,-]|8241: read-variable['this',v8,-]|8242: read-property[v8,'containerWidth',v7]|8243: !==[v6,v7,v1]}" ] 
+BB2503 -> BB2504 [tailport=s, headport=n, headlabel="      2504"]
+BB2503 -> BB2505 [tailport=s, headport=n, color=gray]
+BB2504 [shape=record label="{8244: return[v1]}" ] 
+BB2505 [shape=record label="{8245: exceptional-return}" ] 
+//#$~ 3424
+}

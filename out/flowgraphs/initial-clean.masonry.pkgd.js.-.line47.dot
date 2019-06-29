@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB28 [tailport=s, headport=n, headlabel="    28"]
+BB28 [shape=record label="{46: constant[undefined,v1]}" ] 
+BB28 -> BB29 [tailport=s, headport=n, headlabel="      29"]
+BB29 [shape=record label="{47: read-variable['$',v5,-]|48: read-property[v5,'isPlainObject',-]|49: \<variable-non-null-undef\>['$']|50: read-variable['opts',v6,-]}" ] 
+BB29 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB29 -> BB37 [tailport=s, headport=n, color=gray, headlabel="      37"]
+BB30 [shape=record label="{51: call-$.isPlainObject [v5,'isPlainObject',v6,v3]}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB30 -> BB37 [tailport=s, headport=n, color=gray]
+BB31 [shape=record label="{52: ![v3,v2]|53: if[v2](true-block:32,false-block:33)}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB31 -> BB37 [tailport=s, headport=n, color=gray]
+BB32 [shape=record label="{54: constant[undefined,v1]}" ] 
+BB32 -> BB36 [tailport=s, headport=n, headlabel="      36"]
+BB33 [shape=record label="{55: read-variable['this',v8,-]|56: read-variable['$',v10,-]|57: read-property[v10,'extend',-]|58: \<variable-non-null-undef\>['$']|59: constant[true,v11]|60: read-variable['this',v13,-]|61: read-property[v13,'options',v12]|62: read-variable['opts',v14,-]}" ] 
+BB33 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB33 -> BB37 [tailport=s, headport=n, color=gray]
+BB34 [shape=record label="{63: call-$.extend [v10,'extend',v11,v12,v14,v7]}" ] 
+BB34 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB34 -> BB37 [tailport=s, headport=n, color=gray]
+BB35 [shape=record label="{64: write-property[v8,'options',v7]*}" ] 
+BB35 -> BB36 [tailport=s, headport=n]
+BB35 -> BB37 [tailport=s, headport=n, color=gray]
+BB36 [shape=record label="{65: return[v1]}" ] 
+BB37 [shape=record label="{66: exceptional-return}" ] 
+//#$~ 52
+}

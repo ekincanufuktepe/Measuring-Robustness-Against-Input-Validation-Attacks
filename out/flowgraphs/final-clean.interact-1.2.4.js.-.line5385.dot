@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry168[shape=none,label=""];
+BB_entry168 -> BB4003 [tailport=s, headport=n, headlabel="    4003"]
+BB4003 [shape=record label="{15914: constant[undefined,v1]}" ] 
+BB4003 -> BB4004 [tailport=s, headport=n, headlabel="      4004"]
+BB4004 [shape=record label="{15915: read-variable['newValue',v3,-]|15916: constant[null,v4]|15917: !==[v3,v4,v2]|15918: if[v2](true-block:4005,false-block:4006)}" ] 
+BB4004 -> BB4006 [tailport=s, headport=n, headlabel="      4006"]
+BB4004 -> BB4005 [tailport=s, headport=n, headlabel="      4005"]
+BB4004 -> BB4010 [tailport=s, headport=n, color=gray, headlabel="      4010"]
+BB4005 [shape=record label="{15919: read-variable['newValue',v5,-]|15920: read-variable['undefined',v6,-]|15921: !==[v5,v6,v2]}" ] 
+BB4005 -> BB4006 [tailport=s, headport=n]
+BB4005 -> BB4010 [tailport=s, headport=n, color=gray]
+BB4006 [shape=record label="{15922: if[v2](true-block:4007,false-block:4008)}" ] 
+BB4006 -> BB4007 [tailport=s, headport=n, headlabel="      4007"]
+BB4006 -> BB4008 [tailport=s, headport=n, headlabel="      4008"]
+BB4007 [shape=record label="{15923: read-variable['actionIsEnabled',v6,-]|15924: read-variable['newValue',v5,-]|15925: write-property[v6,'resize',v5]|15926: \<variable-non-null-undef\>['actionIsEnabled']*|15927: read-variable['interact',v1,-]}" ] 
+BB4007 -> BB4009 [tailport=s, headport=n, headlabel="      4009"]
+BB4007 -> BB4010 [tailport=s, headport=n, color=gray]
+BB4008 [shape=record label="{15928: read-variable['actionIsEnabled',v5,-]|15929: read-property[v5,'resize',v1]|15930: \<variable-non-null-undef\>['actionIsEnabled']}" ] 
+BB4008 -> BB4009 [tailport=s, headport=n]
+BB4008 -> BB4010 [tailport=s, headport=n, color=gray]
+BB4009 [shape=record label="{15931: return[v1]}" ] 
+BB4010 [shape=record label="{15932: exceptional-return}" ] 
+//#$~ 5391
+}

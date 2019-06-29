@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry359[shape=none,label=""];
+BB_entry359 -> BB5035 [tailport=s, headport=n, headlabel="    5035"]
+BB5035 [shape=record label="{14902: constant[undefined,v1]}" ] 
+BB5035 -> BB5036 [tailport=s, headport=n, headlabel="      5036"]
+BB5036 [shape=record label="{14903: read-variable['condition',v2,-]|14904: if[v2](true-block:5037,false-block:5039)}" ] 
+BB5036 -> BB5037 [tailport=s, headport=n, headlabel="      5037"]
+BB5036 -> BB5039 [tailport=s, headport=n, headlabel="      5039"]
+BB5036 -> BB5040 [tailport=s, headport=n, color=gray, headlabel="      5040"]
+BB5037 [shape=record label="{14905: read-variable['dojo',v4,-]|14906: read-property[v4,'require',-]|14907: \<variable-non-null-undef\>['dojo']|14908: read-variable['moduleName',v5,-]|14909: read-variable['omitModuleCheck',v6,-]}" ] 
+BB5037 -> BB5038 [tailport=s, headport=n, headlabel="      5038"]
+BB5037 -> BB5040 [tailport=s, headport=n, color=gray]
+BB5038 [shape=record label="{14910: call-dojo.require [v4,'require',v5,v6,-]*}" ] 
+BB5038 -> BB5039 [tailport=s, headport=n]
+BB5038 -> BB5040 [tailport=s, headport=n, color=gray]
+BB5039 [shape=record label="{14911: return[v1]}" ] 
+BB5040 [shape=record label="{14912: exceptional-return}" ] 
+//#$~ 6999
+}

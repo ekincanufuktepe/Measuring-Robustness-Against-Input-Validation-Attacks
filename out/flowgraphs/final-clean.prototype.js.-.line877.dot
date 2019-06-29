@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry115[shape=none,label=""];
+BB_entry115 -> BB1372 [tailport=s, headport=n, headlabel="    1372"]
+BB1372 [shape=record label="{3887: constant[undefined,v1]}" ] 
+BB1372 -> BB1373 [tailport=s, headport=n, headlabel="      1373"]
+BB1373 [shape=record label="{3888: read-variable['result',v2,-]|3889: if[v2](true-block:1374,false-block:1377)}" ] 
+BB1373 -> BB1377 [tailport=s, headport=n, headlabel="      1377"]
+BB1373 -> BB1374 [tailport=s, headport=n, headlabel="      1374"]
+BB1373 -> BB1380 [tailport=s, headport=n, color=gray, headlabel="      1380"]
+BB1374 [shape=record label="{3890: read-variable['iterator',v6,-]|3891: read-property[v6,'call',-]|3892: \<variable-non-null-undef\>['iterator']|3893: read-variable['context',v7,-]|3894: read-variable['value',v8,-]|3895: read-variable['index',v9,-]|3896: read-variable['this',v10,-]}" ] 
+BB1374 -> BB1375 [tailport=s, headport=n, headlabel="      1375"]
+BB1374 -> BB1380 [tailport=s, headport=n, color=gray]
+BB1375 [shape=record label="{3897: call-iterator.call [v6,'call',v7,v8,v9,v10,v4]}" ] 
+BB1375 -> BB1376 [tailport=s, headport=n, headlabel="      1376"]
+BB1375 -> BB1380 [tailport=s, headport=n, color=gray]
+BB1376 [shape=record label="{3898: ![v4,v3]|3899: ![v3,v2]}" ] 
+BB1376 -> BB1377 [tailport=s, headport=n]
+BB1376 -> BB1380 [tailport=s, headport=n, color=gray]
+BB1377 [shape=record label="{3900: write-variable[v2,'result']*|3901: read-variable['result',v4,-]|3902: ![v4,v3]|3903: if[v3](true-block:1378,false-block:1379)}" ] 
+BB1377 -> BB1378 [tailport=s, headport=n, headlabel="      1378"]
+BB1377 -> BB1379 [tailport=s, headport=n, headlabel="      1379"]
+BB1377 -> BB1380 [tailport=s, headport=n, color=gray]
+BB1378 [shape=record label="{3904: read-variable['$break',v5,-]|3905: throw[v5]*}" ] 
+BB1378 -> BB1379 [tailport=s, headport=n]
+BB1378 -> BB1380 [tailport=s, headport=n, color=gray]
+BB1379 [shape=record label="{3906: return[v1]}" ] 
+BB1380 [shape=record label="{3907: exceptional-return}" ] 
+//#$~ 879
+}

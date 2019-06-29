@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry643[shape=none,label=""];
+BB_entry643 -> BB9346 [tailport=s, headport=n, headlabel="    9346"]
+BB9346 [shape=record label="{27707: constant[undefined,v1]|27708: vardecl['arr']}" ] 
+BB9346 -> BB9347 [tailport=s, headport=n, headlabel="      9347"]
+BB9347 [shape=record label="{27709: read-variable['Array',v3,-]|27710: constant[null,v4]}" ] 
+BB9347 -> BB9348 [tailport=s, headport=n, headlabel="      9348"]
+BB9347 -> BB9354 [tailport=s, headport=n, color=gray, headlabel="      9354"]
+BB9348 [shape=record label="{27711: construct [-,v3,v4,v2]}" ] 
+BB9348 -> BB9349 [tailport=s, headport=n, headlabel="      9349"]
+BB9348 -> BB9354 [tailport=s, headport=n, color=gray]
+BB9349 [shape=record label="{27712: write-variable[v2,'arr']*|27713: read-variable['lang',v7,-]|27714: read-property[v7,'hitch',v6]|27715: \<variable-non-null-undef\>['lang']|27716: read-property[v6,'apply',-]|27717: \<property-non-null-undef\>[v7,'hitch']|27718: read-variable['dojo',v8,-]|27719: read-variable['arr',v11,-]|27720: read-property[v11,'concat',-]|27721: \<variable-non-null-undef\>['arr']|27722: read-variable['lang',v14,-]|27723: read-property[v14,'_toArray',-]|27724: \<variable-non-null-undef\>['lang']|27725: read-variable['arguments',v15,-]}" ] 
+BB9349 -> BB9350 [tailport=s, headport=n, headlabel="      9350"]
+BB9349 -> BB9354 [tailport=s, headport=n, color=gray]
+BB9350 [shape=record label="{27726: call-lang._toArray [v14,'_toArray',v15,v12]}" ] 
+BB9350 -> BB9351 [tailport=s, headport=n, headlabel="      9351"]
+BB9350 -> BB9354 [tailport=s, headport=n, color=gray]
+BB9351 [shape=record label="{27727: call-arr.concat [v11,'concat',v12,v9]}" ] 
+BB9351 -> BB9352 [tailport=s, headport=n, headlabel="      9352"]
+BB9351 -> BB9354 [tailport=s, headport=n, color=gray]
+BB9352 [shape=record label="{27728: call-lang.hitch.apply [v6,'apply',v8,v9,v1]}" ] 
+BB9352 -> BB9353 [tailport=s, headport=n, headlabel="      9353"]
+BB9352 -> BB9354 [tailport=s, headport=n, color=gray]
+BB9353 [shape=record label="{27729: return[v1]}" ] 
+BB9354 [shape=record label="{27730: exceptional-return}" ] 
+//#$~ 13075
+}

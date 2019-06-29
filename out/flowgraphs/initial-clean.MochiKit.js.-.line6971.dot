@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry698[shape=none,label=""];
+BB_entry698 -> BB9901 [tailport=s, headport=n, headlabel="    9901"]
+BB9901 [shape=record label="{36777: constant[undefined,v1]}" ] 
+BB9901 -> BB9902 [tailport=s, headport=n, headlabel="      9902"]
+BB9902 [shape=record label="{36778: read-variable['MochiKit',v4,-]|36779: read-property[v4,'Base',v3]|36780: \<variable-non-null-undef\>['MochiKit']|36781: read-property[v3,'map',-]|36782: \<property-non-null-undef\>[v4,'Base']|36783: function-expr[function ( drop ),v5]|36784: read-variable['this',v7,-]|36785: read-property[v7,'drops',v6]}" ] 
+BB9902 -> BB9903 [tailport=s, headport=n, headlabel="      9903"]
+BB9902 -> BB9908 [tailport=s, headport=n, color=gray, headlabel="      9908"]
+BB9903 [shape=record label="{36786: call-MochiKit.Base.map [v3,'map',v5,v6,-]*}" ] 
+BB9903 -> BB9904 [tailport=s, headport=n, headlabel="      9904"]
+BB9903 -> BB9908 [tailport=s, headport=n, color=gray]
+BB9904 [shape=record label="{36787: read-variable['this',v9,-]|36788: read-property[v9,'last_active',v8]|36789: if[v8](true-block:9905,false-block:9907)}" ] 
+BB9904 -> BB9905 [tailport=s, headport=n, headlabel="      9905"]
+BB9904 -> BB9907 [tailport=s, headport=n, headlabel="      9907"]
+BB9904 -> BB9908 [tailport=s, headport=n, color=gray]
+BB9905 [shape=record label="{36790: read-variable['this',v12,-]|36791: read-property[v12,'last_active',v11]|36792: read-property[v11,'deactivate',-]|36793: \<property-non-null-undef\>[v12,'last_active']}" ] 
+BB9905 -> BB9906 [tailport=s, headport=n, headlabel="      9906"]
+BB9905 -> BB9908 [tailport=s, headport=n, color=gray]
+BB9906 [shape=record label="{36794: call-this.last_active.deactivate [v11,'deactivate',-]*}" ] 
+BB9906 -> BB9907 [tailport=s, headport=n]
+BB9906 -> BB9908 [tailport=s, headport=n, color=gray]
+BB9907 [shape=record label="{36795: return[v1]}" ] 
+BB9908 [shape=record label="{36796: exceptional-return}" ] 
+//#$~ 6979
+}

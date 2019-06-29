@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry279[shape=none,label=""];
+BB_entry279 -> BB3336 [tailport=s, headport=n, headlabel="    3336"]
+BB3336 [shape=record label="{8009: constant[undefined,v1]}" ] 
+BB3336 -> BB3337 [tailport=s, headport=n, headlabel="      3337"]
+BB3337 [shape=record label="{8010: read-variable['toAdd',v2,-]|8011: if[v2](true-block:3338,false-block:3340)}" ] 
+BB3337 -> BB3340 [tailport=s, headport=n, headlabel="      3340"]
+BB3337 -> BB3338 [tailport=s, headport=n, headlabel="      3338"]
+BB3337 -> BB3344 [tailport=s, headport=n, color=gray, headlabel="      3344"]
+BB3338 [shape=record label="{8012: read-variable['jqLiteAddClass',v4,v3]|8013: read-variable['elm',v5,-]|8014: read-variable['toAdd',v6,-]}" ] 
+BB3338 -> BB3339 [tailport=s, headport=n, headlabel="      3339"]
+BB3338 -> BB3344 [tailport=s, headport=n, color=gray]
+BB3339 [shape=record label="{8015: call-jqLiteAddClass [v3,v4,v5,v6,-]}" ] 
+BB3339 -> BB3340 [tailport=s, headport=n]
+BB3339 -> BB3344 [tailport=s, headport=n, color=gray]
+BB3340 [shape=record label="{8016: read-variable['toRemove',v3,-]|8017: if[v3](true-block:3341,false-block:3343)}" ] 
+BB3340 -> BB3343 [tailport=s, headport=n, headlabel="      3343"]
+BB3340 -> BB3341 [tailport=s, headport=n, headlabel="      3341"]
+BB3340 -> BB3344 [tailport=s, headport=n, color=gray]
+BB3341 [shape=record label="{8018: read-variable['jqLiteRemoveClass',v5,v4]|8019: read-variable['elm',v6,-]|8020: read-variable['toRemove',v7,-]}" ] 
+BB3341 -> BB3342 [tailport=s, headport=n, headlabel="      3342"]
+BB3341 -> BB3344 [tailport=s, headport=n, color=gray]
+BB3342 [shape=record label="{8021: call-jqLiteRemoveClass [v4,v5,v6,v7,-]}" ] 
+BB3342 -> BB3343 [tailport=s, headport=n]
+BB3342 -> BB3344 [tailport=s, headport=n, color=gray]
+BB3343 [shape=record label="{8022: return[v1]}" ] 
+BB3344 [shape=record label="{8023: exceptional-return}" ] 
+//#$~ 4902
+}

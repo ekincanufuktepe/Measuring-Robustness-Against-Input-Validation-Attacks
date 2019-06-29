@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry150[shape=none,label=""];
+BB_entry150 -> BB1935 [tailport=s, headport=n, headlabel="    1935"]
+BB1935 [shape=record label="{6212: constant[undefined,v1]|6213: vardecl['initializer']}" ] 
+BB1935 -> BB1936 [tailport=s, headport=n, headlabel="      1936"]
+BB1936 [shape=record label="{6214: read-variable['vertex',v3,-]|6215: read-property[v3,'value',v2]|6216: \<variable-non-null-undef\>['vertex']|6217: write-variable[v2,'initializer']*|6218: read-variable['Ember',v5,-]|6219: read-property[v5,'assert',-]|6220: \<variable-non-null-undef\>['Ember']|6221: constant[\"No application initializer named '\",v9]|6222: read-variable['vertex',v11,-]|6223: read-property[v11,'name',v10]|6224: \<variable-non-null-undef\>['vertex']|6225: +[v9,v10,v7]|6226: constant[\"'\",v8]|6227: +[v7,v8,v6]|6228: read-variable['initializer',v14,-]|6229: ![v14,v13]|6230: ![v13,v12]}" ] 
+BB1936 -> BB1937 [tailport=s, headport=n, headlabel="      1937"]
+BB1936 -> BB1941 [tailport=s, headport=n, color=gray, headlabel="      1941"]
+BB1937 [shape=record label="{6231: call-Ember.assert [v5,'assert',v6,v12,-]*}" ] 
+BB1937 -> BB1938 [tailport=s, headport=n, headlabel="      1938"]
+BB1937 -> BB1941 [tailport=s, headport=n, color=gray]
+BB1938 [shape=record label="{6232: read-variable['initializer',v16,v15]|6233: read-variable['container',v17,-]|6234: read-variable['namespace',v18,-]}" ] 
+BB1938 -> BB1939 [tailport=s, headport=n, headlabel="      1939"]
+BB1938 -> BB1941 [tailport=s, headport=n, color=gray]
+BB1939 [shape=record label="{6235: call-initializer [v15,v16,v17,v18,-]*}" ] 
+BB1939 -> BB1940 [tailport=s, headport=n, headlabel="      1940"]
+BB1939 -> BB1941 [tailport=s, headport=n, color=gray]
+BB1940 [shape=record label="{6236: return[v1]}" ] 
+BB1941 [shape=record label="{6237: exceptional-return}" ] 
+//#$~ 3110
+}

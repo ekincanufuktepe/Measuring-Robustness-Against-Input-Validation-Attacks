@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry129[shape=none,label=""];
+BB_entry129 -> BB1773 [tailport=s, headport=n, headlabel="    1773"]
+BB1773 [shape=record label="{5098: constant[undefined,v1]}" ] 
+BB1773 -> BB1774 [tailport=s, headport=n, headlabel="      1774"]
+BB1774 [shape=record label="{5099: read-variable['this',v3,-]|5100: read-variable['name',v4,-]|5101: read-variable['undefined',v2,-]|5102: write-property[v3,v4,v2]*|5103: read-variable['this',v6,-]|5104: read-variable['name',v7,-]|5105: delete-property[v6,v7,v5]*}" ] 
+BB1774 -> BB1778 [tailport=s, headport=n, headlabel="      1778"]
+BB1774 -> BB1775 [tailport=s, headport=n, color=gray, headlabel="      1775"]
+BB1775 [shape=record label="{5106: catch[e,v2]|5107: begin-with[v2]}" ] 
+BB1775 -> BB1776 [tailport=s, headport=n, headlabel="      1776"]
+BB1775 -> BB1779 [tailport=s, headport=n, color=gray, headlabel="      1779"]
+BB1776 [shape=record label="{5108: end-with}" ] 
+BB1776 -> BB1778 [tailport=s, headport=n]
+BB1777 [shape=record label="{5109: end-with}" ] 
+BB1777 -> BB1779 [tailport=s, headport=n]
+BB1778 [shape=record label="{5110: return[v1]}" ] 
+BB1779 [shape=record label="{5111: exceptional-return}" ] 
+}

@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB3 [tailport=s, headport=n, headlabel="    3"]
+BB3 [shape=record label="{4: constant[undefined,v1]}" ] 
+BB3 -> BB4 [tailport=s, headport=n, headlabel="      4"]
+BB4 [shape=record label="{5: read-variable['jQuery',v5,v4]}" ] 
+BB4 -> BB5 [tailport=s, headport=n, headlabel="      5"]
+BB4 -> BB11 [tailport=s, headport=n, color=gray, headlabel="      11"]
+BB5 [shape=record label="{6: call[v4,v5,v3]}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB5 -> BB11 [tailport=s, headport=n, color=gray]
+BB6 [shape=record label="{7: read-property[v3,'off',-]|8: read-variable['event',v6,-]}" ] 
+BB6 -> BB7 [tailport=s, headport=n, headlabel="      7"]
+BB6 -> BB11 [tailport=s, headport=n, color=gray]
+BB7 [shape=record label="{9: call[v3,'off',v6,-]*}" ] 
+BB7 -> BB8 [tailport=s, headport=n, headlabel="      8"]
+BB7 -> BB11 [tailport=s, headport=n, color=gray]
+BB8 [shape=record label="{10: read-variable['origFn',v8,-]|11: read-property[v8,'apply',-]|12: \<variable-non-null-undef\>['origFn']|13: read-variable['this',v9,-]|14: read-variable['arguments',v10,-]}" ] 
+BB8 -> BB9 [tailport=s, headport=n, headlabel="      9"]
+BB8 -> BB11 [tailport=s, headport=n, color=gray]
+BB9 [shape=record label="{15: call[v8,'apply',v9,v10,v1]}" ] 
+BB9 -> BB10 [tailport=s, headport=n, headlabel="      10"]
+BB9 -> BB11 [tailport=s, headport=n, color=gray]
+BB10 [shape=record label="{16: return[v1]}" ] 
+BB11 [shape=record label="{17: exceptional-return}" ] 
+}

@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry462[shape=none,label=""];
+BB_entry462 -> BB5695 [tailport=s, headport=n, headlabel="    5695"]
+BB5695 [shape=record label="{20206: constant[undefined,v1]|20207: vardecl['obj']}" ] 
+BB5695 -> BB5696 [tailport=s, headport=n, headlabel="      5696"]
+BB5696 [shape=record label="{20208: read-variable['this',v3,-]|20209: read-property[v3,'_watching',v2]|20210: if[v2](true-block:5697,false-block:5701)}" ] 
+BB5696 -> BB5697 [tailport=s, headport=n, headlabel="      5697"]
+BB5696 -> BB5701 [tailport=s, headport=n, headlabel="      5701"]
+BB5696 -> BB5702 [tailport=s, headport=n, color=gray, headlabel="      5702"]
+BB5697 [shape=record label="{20211: read-variable['this',v5,-]|20212: read-property[v5,'_object',v4]|20213: write-variable[v4,'obj']*|20214: read-variable['obj',v6,-]|20215: if[v6](true-block:5698,false-block:5700)}" ] 
+BB5697 -> BB5698 [tailport=s, headport=n, headlabel="      5698"]
+BB5697 -> BB5700 [tailport=s, headport=n, headlabel="      5700"]
+BB5697 -> BB5702 [tailport=s, headport=n, color=gray]
+BB5698 [shape=record label="{20216: read-variable['removeChainWatcher',v8,v7]|20217: read-variable['obj',v9,-]|20218: read-variable['this',v11,-]|20219: read-property[v11,'_key',v10]|20220: read-variable['this',v12,-]}" ] 
+BB5698 -> BB5699 [tailport=s, headport=n, headlabel="      5699"]
+BB5698 -> BB5702 [tailport=s, headport=n, color=gray]
+BB5699 [shape=record label="{20221: call-removeChainWatcher [v7,v8,v9,v10,v12,-]*}" ] 
+BB5699 -> BB5700 [tailport=s, headport=n]
+BB5699 -> BB5702 [tailport=s, headport=n, color=gray]
+BB5700 [shape=record label="{20222: read-variable['this',v8,-]|20223: constant[false,v7]|20224: write-property[v8,'_watching',v7]*}" ] 
+BB5700 -> BB5701 [tailport=s, headport=n]
+BB5700 -> BB5702 [tailport=s, headport=n, color=gray]
+BB5701 [shape=record label="{20225: return[v1]}" ] 
+BB5702 [shape=record label="{20226: exceptional-return}" ] 
+//#$~ 10339
+}

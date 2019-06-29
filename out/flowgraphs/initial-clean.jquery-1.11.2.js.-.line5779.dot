@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry345[shape=none,label=""];
+BB_entry345 -> BB5511 [tailport=s, headport=n, headlabel="    5511"]
+BB5511 [shape=record label="{16095: constant[undefined,v1]}" ] 
+BB5511 -> BB5512 [tailport=s, headport=n, headlabel="      5512"]
+BB5512 [shape=record label="{16096: read-variable['this',v3,-]|16097: read-property[v3,'parentNode',v2]|16098: if[v2](true-block:5513,false-block:5515)}" ] 
+BB5512 -> BB5513 [tailport=s, headport=n, headlabel="      5513"]
+BB5512 -> BB5515 [tailport=s, headport=n, headlabel="      5515"]
+BB5512 -> BB5516 [tailport=s, headport=n, color=gray, headlabel="      5516"]
+BB5513 [shape=record label="{16099: read-variable['this',v6,-]|16100: read-property[v6,'parentNode',v5]|16101: read-property[v5,'insertBefore',-]|16102: \<property-non-null-undef\>[v6,'parentNode']|16103: read-variable['elem',v7,-]|16104: read-variable['this',v9,-]|16105: read-property[v9,'nextSibling',v8]}" ] 
+BB5513 -> BB5514 [tailport=s, headport=n, headlabel="      5514"]
+BB5513 -> BB5516 [tailport=s, headport=n, color=gray]
+BB5514 [shape=record label="{16106: call-0:0[v5,'insertBefore',v7,v8,-]*}" ] 
+BB5514 -> BB5515 [tailport=s, headport=n]
+BB5514 -> BB5516 [tailport=s, headport=n, color=gray]
+BB5515 [shape=record label="{16107: return[v1]}" ] 
+BB5516 [shape=record label="{16108: exceptional-return}" ] 
+}

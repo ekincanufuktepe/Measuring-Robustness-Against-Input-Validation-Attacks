@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry399[shape=none,label=""];
+BB_entry399 -> BB5096 [tailport=s, headport=n, headlabel="    5096"]
+BB5096 [shape=record label="{17133: constant[undefined,v1]}" ] 
+BB5096 -> BB5097 [tailport=s, headport=n, headlabel="      5097"]
+BB5097 [shape=record label="{17134: read-variable['view',v3,-]|17135: read-property[v3,'_elementCreated',v2]|17136: \<variable-non-null-undef\>['view']|17137: if[v2](true-block:5098,false-block:5100)}" ] 
+BB5097 -> BB5098 [tailport=s, headport=n, headlabel="      5098"]
+BB5097 -> BB5100 [tailport=s, headport=n, headlabel="      5100"]
+BB5097 -> BB5104 [tailport=s, headport=n, color=gray, headlabel="      5104"]
+BB5098 [shape=record label="{17138: read-variable['this',v5,-]|17139: read-property[v5,'willDestroyElement',-]|17140: read-variable['view',v6,-]}" ] 
+BB5098 -> BB5099 [tailport=s, headport=n, headlabel="      5099"]
+BB5098 -> BB5104 [tailport=s, headport=n, color=gray]
+BB5099 [shape=record label="{17141: call-this.willDestroyElement [v5,'willDestroyElement',v6,-]*}" ] 
+BB5099 -> BB5100 [tailport=s, headport=n]
+BB5099 -> BB5104 [tailport=s, headport=n, color=gray]
+BB5100 [shape=record label="{17142: read-variable['view',v5,-]|17143: read-property[v5,'_elementInserted',v4]|17144: \<variable-non-null-undef\>['view']|17145: if[v4](true-block:5101,false-block:5103)}" ] 
+BB5100 -> BB5101 [tailport=s, headport=n, headlabel="      5101"]
+BB5100 -> BB5103 [tailport=s, headport=n, headlabel="      5103"]
+BB5100 -> BB5104 [tailport=s, headport=n, color=gray]
+BB5101 [shape=record label="{17146: read-variable['this',v7,-]|17147: read-property[v7,'willRemoveElement',-]|17148: read-variable['view',v8,-]}" ] 
+BB5101 -> BB5102 [tailport=s, headport=n, headlabel="      5102"]
+BB5101 -> BB5104 [tailport=s, headport=n, color=gray]
+BB5102 [shape=record label="{17149: call-this.willRemoveElement [v7,'willRemoveElement',v8,-]*}" ] 
+BB5102 -> BB5103 [tailport=s, headport=n]
+BB5102 -> BB5104 [tailport=s, headport=n, color=gray]
+BB5103 [shape=record label="{17150: return[v1]}" ] 
+BB5104 [shape=record label="{17151: exceptional-return}" ] 
+//#$~ 9047
+}

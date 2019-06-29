@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry209[shape=none,label=""];
+BB_entry209 -> BB2670 [tailport=s, headport=n, headlabel="    2670"]
+BB2670 [shape=record label="{8621: constant[undefined,v1]}" ] 
+BB2670 -> BB2671 [tailport=s, headport=n, headlabel="      2671"]
+BB2671 [shape=record label="{8622: read-variable['releaseMethods',v3,-]|8623: read-property[v3,'push',-]|8624: \<variable-non-null-undef\>['releaseMethods']|8625: read-variable['self',v6,-]|8626: read-property[v6,'observeRecord',-]|8627: \<variable-non-null-undef\>['self']|8628: read-variable['record',v7,-]|8629: read-variable['recordUpdated',v8,-]}" ] 
+BB2671 -> BB2672 [tailport=s, headport=n, headlabel="      2672"]
+BB2671 -> BB2677 [tailport=s, headport=n, color=gray, headlabel="      2677"]
+BB2672 [shape=record label="{8630: call-self.observeRecord [v6,'observeRecord',v7,v8,v4]}" ] 
+BB2672 -> BB2673 [tailport=s, headport=n, headlabel="      2673"]
+BB2672 -> BB2677 [tailport=s, headport=n, color=gray]
+BB2673 [shape=record label="{8631: call-releaseMethods.push [v3,'push',v4,-]*}" ] 
+BB2673 -> BB2674 [tailport=s, headport=n, headlabel="      2674"]
+BB2673 -> BB2677 [tailport=s, headport=n, color=gray]
+BB2674 [shape=record label="{8632: read-variable['self',v10,-]|8633: read-property[v10,'wrapRecord',-]|8634: \<variable-non-null-undef\>['self']|8635: read-variable['record',v11,-]}" ] 
+BB2674 -> BB2675 [tailport=s, headport=n, headlabel="      2675"]
+BB2674 -> BB2677 [tailport=s, headport=n, color=gray]
+BB2675 [shape=record label="{8636: call-self.wrapRecord [v10,'wrapRecord',v11,v1]}" ] 
+BB2675 -> BB2676 [tailport=s, headport=n, headlabel="      2676"]
+BB2675 -> BB2677 [tailport=s, headport=n, color=gray]
+BB2676 [shape=record label="{8637: return[v1]}" ] 
+BB2677 [shape=record label="{8638: exceptional-return}" ] 
+//#$~ 4483
+}

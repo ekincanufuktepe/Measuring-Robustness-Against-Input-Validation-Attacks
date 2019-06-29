@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry151[shape=none,label=""];
+BB_entry151 -> BB2020 [tailport=s, headport=n, headlabel="    2020"]
+BB2020 [shape=record label="{4857: constant[undefined,v1]}" ] 
+BB2020 -> BB2021 [tailport=s, headport=n, headlabel="      2021"]
+BB2021 [shape=record label="{4858: read-variable['fired',v2,-]|4859: if[v2](true-block:2022,false-block:2023)}" ] 
+BB2021 -> BB2022 [tailport=s, headport=n, headlabel="      2022"]
+BB2021 -> BB2023 [tailport=s, headport=n, headlabel="      2023"]
+BB2021 -> BB2026 [tailport=s, headport=n, color=gray, headlabel="      2026"]
+BB2022 [shape=record label="{4860: constant[undefined,v1]}" ] 
+BB2022 -> BB2025 [tailport=s, headport=n, headlabel="      2025"]
+BB2023 [shape=record label="{4861: constant[true,v3]|4862: write-variable[v3,'fired']*|4863: read-variable['fn',v5,v4]}" ] 
+BB2023 -> BB2024 [tailport=s, headport=n, headlabel="      2024"]
+BB2023 -> BB2026 [tailport=s, headport=n, color=gray]
+BB2024 [shape=record label="{4864: call-fn [v4,v5,-]*}" ] 
+BB2024 -> BB2025 [tailport=s, headport=n]
+BB2024 -> BB2026 [tailport=s, headport=n, color=gray]
+BB2025 [shape=record label="{4865: return[v1]}" ] 
+BB2026 [shape=record label="{4866: exceptional-return}" ] 
+//#$~ 2998
+}

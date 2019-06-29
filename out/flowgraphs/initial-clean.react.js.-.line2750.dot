@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry96[shape=none,label=""];
+BB_entry96 -> BB1483 [tailport=s, headport=n, headlabel="    1483"]
+BB1483 [shape=record label="{5179: constant[undefined,v1]}" ] 
+BB1483 -> BB1484 [tailport=s, headport=n, headlabel="      1484"]
+BB1484 [shape=record label="{5180: constant[\"production\",v3]|5181: constant[\"development\",v4]|5182: !==[v3,v4,v2]|5183: if[v2](true-block:1485,false-block:1487)}" ] 
+BB1484 -> BB1485 [tailport=s, headport=n, headlabel="      1485"]
+BB1484 -> BB1487 [tailport=s, headport=n, headlabel="      1487"]
+BB1484 -> BB1489 [tailport=s, headport=n, color=gray, headlabel="      1489"]
+BB1485 [shape=record label="{5184: read-variable['validateInstanceHandle',v6,v5]}" ] 
+BB1485 -> BB1486 [tailport=s, headport=n, headlabel="      1486"]
+BB1485 -> BB1489 [tailport=s, headport=n, color=gray]
+BB1486 [shape=record label="{5185: call-validateInstanceHandle [v5,v6,-]*}" ] 
+BB1486 -> BB1487 [tailport=s, headport=n]
+BB1486 -> BB1489 [tailport=s, headport=n, color=gray]
+BB1487 [shape=record label="{5186: read-variable['InstanceHandle',v1,-]}" ] 
+BB1487 -> BB1488 [tailport=s, headport=n, headlabel="      1488"]
+BB1487 -> BB1489 [tailport=s, headport=n, color=gray]
+BB1488 [shape=record label="{5187: return[v1]}" ] 
+BB1489 [shape=record label="{5188: exceptional-return}" ] 
+//#$~ 2754
+}

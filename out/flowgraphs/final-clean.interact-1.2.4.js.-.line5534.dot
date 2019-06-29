@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry174[shape=none,label=""];
+BB_entry174 -> BB4042 [tailport=s, headport=n, headlabel="    4042"]
+BB4042 [shape=record label="{16121: constant[undefined,v1]|16122: vardecl['i']}" ] 
+BB4042 -> BB4043 [tailport=s, headport=n, headlabel="      4043"]
+BB4043 [shape=record label="{16123: read-variable['interactions',v6,-]|16124: read-property[v6,'length',v4]|16125: \<variable-non-null-undef\>['interactions']|16126: constant[1.0,v5]|16127: -[v4,v5,v3]|16128: write-variable[v3,'i']*}" ] 
+BB4043 -> BB4044 [tailport=s, headport=n, headlabel="      4044"]
+BB4043 -> BB4050 [tailport=s, headport=n, color=gray, headlabel="      4050"]
+BB4044 [shape=record label="{16129: read-variable['i',v7,-]|16130: constant[0.0,v8]|16131: \>[v7,v8,v2]|16132: if[v2](true-block:4045,false-block:4046)}" ] 
+BB4044 -> BB4045 [tailport=s, headport=n, headlabel="      4045"]
+BB4044 -> BB4046 [tailport=s, headport=n, headlabel="      4046"]
+BB4044 -> BB4050 [tailport=s, headport=n, color=gray]
+BB4045 [shape=record label="{16133: read-variable['interactions',v11,-]|16134: read-variable['i',v12,-]|16135: read-property[v11,v12,v10]|16136: \<variable-non-null-undef\>['interactions']|16137: read-property[v10,'stop',-]|16138: \<property-non-null-undef\>[v11,v12]|16139: read-variable['event',v13,-]}" ] 
+BB4045 -> BB4047 [tailport=s, headport=n, headlabel="      4047"]
+BB4045 -> BB4050 [tailport=s, headport=n, color=gray]
+BB4046 [shape=record label="{16140: read-variable['interact',v1,-]}" ] 
+BB4046 -> BB4049 [tailport=s, headport=n, headlabel="      4049"]
+BB4046 -> BB4050 [tailport=s, headport=n, color=gray]
+BB4047 [shape=record label="{16141: call-null [v10,'stop',v13,-]*}" ] 
+BB4047 -> BB4048 [tailport=s, headport=n, headlabel="      4048"]
+BB4047 -> BB4050 [tailport=s, headport=n, color=gray]
+BB4048 [shape=record label="{16142: constant[1.0,v14]|16143: read-variable['i',v15,-]|16144: +[v15,v16]|16145: -[v16,v14,v17]|16146: write-variable[v17,'i']}" ] 
+BB4048 -> BB4044 [tailport=s, headport=n]
+BB4048 -> BB4050 [tailport=s, headport=n, color=gray]
+BB4049 [shape=record label="{16147: return[v1]}" ] 
+BB4050 [shape=record label="{16148: exceptional-return}" ] 
+//#$~ 5539
+}

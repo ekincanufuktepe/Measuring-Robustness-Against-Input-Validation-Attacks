@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry69[shape=none,label=""];
+BB_entry69 -> BB768 [tailport=s, headport=n, headlabel="    768"]
+BB768 [shape=record label="{2270: constant[undefined,v1]|2271: vardecl['fragment']}" ] 
+BB768 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB769 [shape=record label="{2272: read-variable['elem',v3,-]|2273: read-property[v3,'parentNode',v2]|2274: \<variable-non-null-undef\>['elem']|2275: if[v2](true-block:770,false-block:771)}" ] 
+BB769 -> BB770 [tailport=s, headport=n, headlabel="      770"]
+BB769 -> BB771 [tailport=s, headport=n, headlabel="      771"]
+BB769 -> BB776 [tailport=s, headport=n, color=gray, headlabel="      776"]
+BB770 [shape=record label="{2276: constant[undefined,v1]}" ] 
+BB770 -> BB775 [tailport=s, headport=n, headlabel="      775"]
+BB771 [shape=record label="{2277: read-variable['document',v6,-]|2278: read-property[v6,'createDocumentFragment',-]|2279: \<variable-non-null-undef\>['document']}" ] 
+BB771 -> BB772 [tailport=s, headport=n, headlabel="      772"]
+BB771 -> BB776 [tailport=s, headport=n, color=gray]
+BB772 [shape=record label="{2280: call-document.createDocumentFragment [v6,'createDocumentFragment',v4]}" ] 
+BB772 -> BB773 [tailport=s, headport=n, headlabel="      773"]
+BB772 -> BB776 [tailport=s, headport=n, color=gray]
+BB773 [shape=record label="{2281: write-variable[v4,'fragment']*|2282: read-variable['fragment',v8,-]|2283: read-property[v8,'appendChild',-]|2284: \<variable-non-null-undef\>['fragment']|2285: read-variable['elem',v9,-]}" ] 
+BB773 -> BB774 [tailport=s, headport=n, headlabel="      774"]
+BB773 -> BB776 [tailport=s, headport=n, color=gray]
+BB774 [shape=record label="{2286: call-fragment.appendChild [v8,'appendChild',v9,-]*}" ] 
+BB774 -> BB775 [tailport=s, headport=n]
+BB774 -> BB776 [tailport=s, headport=n, color=gray]
+BB775 [shape=record label="{2287: return[v1]}" ] 
+BB776 [shape=record label="{2288: exceptional-return}" ] 
+//#$~ 1143
+}

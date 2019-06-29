@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry45[shape=none,label=""];
+BB_entry45 -> BB500 [tailport=s, headport=n, headlabel="    500"]
+BB500 [shape=record label="{1275: constant[undefined,v1]|1276: vardecl['result']}" ] 
+BB500 -> BB501 [tailport=s, headport=n, headlabel="      501"]
+BB501 [shape=record label="{1277: new[v2]|1278: write-variable[v2,'result']*|1279: read-variable['cb',v5,v4]|1280: read-variable['iteratee',v6,-]|1281: read-variable['context',v7,-]}" ] 
+BB501 -> BB502 [tailport=s, headport=n, headlabel="      502"]
+BB501 -> BB507 [tailport=s, headport=n, color=gray, headlabel="      507"]
+BB502 [shape=record label="{1282: call-cb [v4,v5,v6,v7,v3]}" ] 
+BB502 -> BB503 [tailport=s, headport=n, headlabel="      503"]
+BB502 -> BB507 [tailport=s, headport=n, color=gray]
+BB503 [shape=record label="{1283: write-variable[v3,'iteratee']*|1284: read-variable['_',v9,-]|1285: read-property[v9,'each',-]|1286: \<variable-non-null-undef\>['_']|1287: read-variable['obj',v10,-]|1288: function-expr[function ( value index ),v11]}" ] 
+BB503 -> BB504 [tailport=s, headport=n, headlabel="      504"]
+BB503 -> BB507 [tailport=s, headport=n, color=gray]
+BB504 [shape=record label="{1289: call-_.each [v9,'each',v10,v11,-]*}" ] 
+BB504 -> BB505 [tailport=s, headport=n, headlabel="      505"]
+BB504 -> BB507 [tailport=s, headport=n, color=gray]
+BB505 [shape=record label="{1290: read-variable['result',v1,-]}" ] 
+BB505 -> BB506 [tailport=s, headport=n, headlabel="      506"]
+BB505 -> BB507 [tailport=s, headport=n, color=gray]
+BB506 [shape=record label="{1291: return[v1]}" ] 
+BB507 [shape=record label="{1292: exceptional-return}" ] 
+//#$~ 402
+}

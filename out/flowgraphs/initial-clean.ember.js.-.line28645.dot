@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1315[shape=none,label=""];
+BB_entry1315 -> BB15521 [tailport=s, headport=n, headlabel="    15521"]
+BB15521 [shape=record label="{53412: constant[undefined,v1]}" ] 
+BB15521 -> BB15522 [tailport=s, headport=n, headlabel="      15522"]
+BB15522 [shape=record label="{53413: read-variable['Ember',v3,-]|53414: read-property[v3,'testing',v2]|53415: \<variable-non-null-undef\>['Ember']|53416: if[v2](true-block:15523,false-block:15524)}" ] 
+BB15522 -> BB15524 [tailport=s, headport=n, headlabel="      15524"]
+BB15522 -> BB15523 [tailport=s, headport=n, headlabel="      15523"]
+BB15522 -> BB15530 [tailport=s, headport=n, color=gray, headlabel="      15530"]
+BB15523 [shape=record label="{53417: read-variable['async',v2,-]}" ] 
+BB15523 -> BB15524 [tailport=s, headport=n]
+BB15523 -> BB15530 [tailport=s, headport=n, color=gray]
+BB15524 [shape=record label="{53418: if[v2](true-block:15525,false-block:15527)}" ] 
+BB15524 -> BB15525 [tailport=s, headport=n, headlabel="      15525"]
+BB15524 -> BB15527 [tailport=s, headport=n, headlabel="      15527"]
+BB15525 [shape=record label="{53419: read-variable['asyncEnd',v5,v4]}" ] 
+BB15525 -> BB15526 [tailport=s, headport=n, headlabel="      15526"]
+BB15525 -> BB15530 [tailport=s, headport=n, color=gray]
+BB15526 [shape=record label="{53420: call-asyncEnd [v4,v5,-]*}" ] 
+BB15526 -> BB15527 [tailport=s, headport=n]
+BB15526 -> BB15530 [tailport=s, headport=n, color=gray]
+BB15527 [shape=record label="{53421: read-variable['callback',v5,v4]|53422: read-variable['promise',v6,-]}" ] 
+BB15527 -> BB15528 [tailport=s, headport=n, headlabel="      15528"]
+BB15527 -> BB15530 [tailport=s, headport=n, color=gray]
+BB15528 [shape=record label="{53423: call-callback [v4,v5,v6,-]*}" ] 
+BB15528 -> BB15529 [tailport=s, headport=n, headlabel="      15529"]
+BB15528 -> BB15530 [tailport=s, headport=n, color=gray]
+BB15529 [shape=record label="{53424: return[v1]}" ] 
+BB15530 [shape=record label="{53425: exceptional-return}" ] 
+//#$~ 28647
+}

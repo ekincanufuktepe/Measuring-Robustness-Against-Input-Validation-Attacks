@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry17[shape=none,label=""];
+BB_entry17 -> BB293 [tailport=s, headport=n, headlabel="    293"]
+BB293 [shape=record label="{1124: constant[undefined,v1]}" ] 
+BB293 -> BB294 [tailport=s, headport=n, headlabel="      294"]
+BB294 [shape=record label="{1125: read-variable['thing',v3,-]|1126: if[v3](true-block:295,false-block:296)}" ] 
+BB294 -> BB296 [tailport=s, headport=n, headlabel="      296"]
+BB294 -> BB295 [tailport=s, headport=n, headlabel="      295"]
+BB294 -> BB299 [tailport=s, headport=n, color=gray, headlabel="      299"]
+BB295 [shape=record label="{1127: read-variable['thing',v4,-]|1128: read-property[v4,'Window',v3]|1129: \<variable-non-null-undef\>['thing']}" ] 
+BB295 -> BB296 [tailport=s, headport=n]
+BB295 -> BB299 [tailport=s, headport=n, color=gray]
+BB296 [shape=record label="{1130: ![v3,v2]|1131: ![v2,v1]|1132: if[v1](true-block:297,false-block:298)}" ] 
+BB296 -> BB298 [tailport=s, headport=n, headlabel="      298"]
+BB296 -> BB297 [tailport=s, headport=n, headlabel="      297"]
+BB296 -> BB299 [tailport=s, headport=n, color=gray]
+BB297 [shape=record label="{1133: read-variable['thing',v4,-]|1134: read-variable['thing',v6,-]|1135: read-property[v6,'Window',v5]|1136: \<variable-non-null-undef\>['thing']|1137: instanceof[v4,v5,v1]}" ] 
+BB297 -> BB298 [tailport=s, headport=n]
+BB297 -> BB299 [tailport=s, headport=n, color=gray]
+BB298 [shape=record label="{1138: return[v1]}" ] 
+BB299 [shape=record label="{1139: exceptional-return}" ] 
+//#$~ 573
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry192[shape=none,label=""];
+BB_entry192 -> BB1618 [tailport=s, headport=n, headlabel="    1618"]
+BB1618 [shape=record label="{4783: constant[undefined,v1]|4784: vardecl['val']}" ] 
+BB1618 -> BB1619 [tailport=s, headport=n, headlabel="      1619"]
+BB1619 [shape=record label="{4785: read-variable['this',v4,-]|4786: read-variable['getter',v5,-]|4787: read-property[v4,v5,-]}" ] 
+BB1619 -> BB1620 [tailport=s, headport=n, headlabel="      1620"]
+BB1619 -> BB1625 [tailport=s, headport=n, color=gray, headlabel="      1625"]
+BB1620 [shape=record label="{4788: call-null [v4,[v5],v2]}" ] 
+BB1620 -> BB1621 [tailport=s, headport=n, headlabel="      1621"]
+BB1620 -> BB1625 [tailport=s, headport=n, color=gray]
+BB1621 [shape=record label="{4789: write-variable[v2,'val']*|4790: read-variable['val',v6,-]|4791: if[v6](true-block:1622,false-block:1623)}" ] 
+BB1621 -> BB1622 [tailport=s, headport=n, headlabel="      1622"]
+BB1621 -> BB1623 [tailport=s, headport=n, headlabel="      1623"]
+BB1621 -> BB1625 [tailport=s, headport=n, color=gray]
+BB1622 [shape=record label="{4792: constant[true,v1]}" ] 
+BB1622 -> BB1624 [tailport=s, headport=n, headlabel="      1624"]
+BB1623 [shape=record label="{4793: constant[false,v1]}" ] 
+BB1623 -> BB1624 [tailport=s, headport=n]
+BB1624 [shape=record label="{4794: return[v1]}" ] 
+BB1625 [shape=record label="{4795: exceptional-return}" ] 
+//#$~ 1884
+}

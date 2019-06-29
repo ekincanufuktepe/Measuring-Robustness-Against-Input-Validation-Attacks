@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry226[shape=none,label=""];
+BB_entry226 -> BB2911 [tailport=s, headport=n, headlabel="    2911"]
+BB2911 [shape=record label="{12181: constant[undefined,v1]|12182: vardecl['ev']}" ] 
+BB2911 -> BB2912 [tailport=s, headport=n, headlabel="      2912"]
+BB2912 [shape=record label="{12183: read-variable['printfire',v3,-]|12184: read-variable['arguments',v2,-]|12185: write-property[v3,'args',v2]|12186: \<variable-non-null-undef\>['printfire']*|12187: read-variable['document',v6,-]|12188: read-property[v6,'createEvent',-]|12189: \<variable-non-null-undef\>['document']|12190: constant[\"Events\",v7]}" ] 
+BB2912 -> BB2913 [tailport=s, headport=n, headlabel="      2913"]
+BB2912 -> BB2919 [tailport=s, headport=n, color=gray, headlabel="      2919"]
+BB2913 [shape=record label="{12191: call-document.createEvent [v6,'createEvent',v7,v4]}" ] 
+BB2913 -> BB2914 [tailport=s, headport=n, headlabel="      2914"]
+BB2913 -> BB2919 [tailport=s, headport=n, color=gray]
+BB2914 [shape=record label="{12192: write-variable[v4,'ev']*|12193: read-variable['ev',v9,-]|12194: read-property[v9,'initEvent',-]|12195: \<variable-non-null-undef\>['ev']|12196: constant[\"printfire\",v10]|12197: constant[false,v11]|12198: constant[true,v12]}" ] 
+BB2914 -> BB2915 [tailport=s, headport=n, headlabel="      2915"]
+BB2914 -> BB2919 [tailport=s, headport=n, color=gray]
+BB2915 [shape=record label="{12199: call-ev.initEvent [v9,'initEvent',v10,v11,v12,-]*}" ] 
+BB2915 -> BB2916 [tailport=s, headport=n, headlabel="      2916"]
+BB2915 -> BB2919 [tailport=s, headport=n, color=gray]
+BB2916 [shape=record label="{12200: read-variable['dispatchEvent',v14,v13]|12201: read-variable['ev',v15,-]}" ] 
+BB2916 -> BB2917 [tailport=s, headport=n, headlabel="      2917"]
+BB2916 -> BB2919 [tailport=s, headport=n, color=gray]
+BB2917 [shape=record label="{12202: call-dispatchEvent [v13,v14,v15,-]*}" ] 
+BB2917 -> BB2918 [tailport=s, headport=n, headlabel="      2918"]
+BB2917 -> BB2919 [tailport=s, headport=n, color=gray]
+BB2918 [shape=record label="{12203: return[v1]}" ] 
+BB2919 [shape=record label="{12204: exceptional-return}" ] 
+//#$~ 1877
+}

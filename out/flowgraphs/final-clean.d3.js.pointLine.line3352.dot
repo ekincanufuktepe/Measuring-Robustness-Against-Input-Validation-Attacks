@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry538[shape=none,label=""];
+BB_entry538 -> BB5681 [tailport=s, headport=n, headlabel="    5681"]
+BB5681 [shape=record label="{17891: constant[undefined,v1]|17892: vardecl['point']}" ] 
+BB5681 -> BB5682 [tailport=s, headport=n, headlabel="      5682"]
+BB5682 [shape=record label="{17893: read-variable['rotate',v4,v3]|17894: read-variable['\\u03bb',v5,-]|17895: read-variable['\\u03c6',v6,-]}" ] 
+BB5682 -> BB5683 [tailport=s, headport=n, headlabel="      5683"]
+BB5682 -> BB5687 [tailport=s, headport=n, color=gray, headlabel="      5687"]
+BB5683 [shape=record label="{17896: call-rotate [v3,v4,v5,v6,v2]}" ] 
+BB5683 -> BB5684 [tailport=s, headport=n, headlabel="      5684"]
+BB5683 -> BB5687 [tailport=s, headport=n, color=gray]
+BB5684 [shape=record label="{17897: write-variable[v2,'point']*|17898: read-variable['line',v8,-]|17899: read-property[v8,'point',-]|17900: \<variable-non-null-undef\>['line']|17901: read-variable['point',v10,-]|17902: constant[0.0,v11]|17903: read-property[v10,v11,v9]|17904: \<variable-non-null-undef\>['point']|17905: read-variable['point',v13,-]|17906: constant[1.0,v14]|17907: read-property[v13,v14,v12]|17908: \<variable-non-null-undef\>['point']}" ] 
+BB5684 -> BB5685 [tailport=s, headport=n, headlabel="      5685"]
+BB5684 -> BB5687 [tailport=s, headport=n, color=gray]
+BB5685 [shape=record label="{17909: call-line.point [v8,'point',v9,v12,-]*}" ] 
+BB5685 -> BB5686 [tailport=s, headport=n, headlabel="      5686"]
+BB5685 -> BB5687 [tailport=s, headport=n, color=gray]
+BB5686 [shape=record label="{17910: return[v1]}" ] 
+BB5687 [shape=record label="{17911: exceptional-return}" ] 
+//#$~ 3354
+}

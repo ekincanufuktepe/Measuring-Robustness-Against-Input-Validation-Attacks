@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry1020[shape=none,label=""];
+BB_entry1020 -> BB12297 [tailport=s, headport=n, headlabel="    12297"]
+BB12297 [shape=record label="{41963: constant[undefined,v1]}" ] 
+BB12297 -> BB12298 [tailport=s, headport=n, headlabel="      12298"]
+BB12298 [shape=record label="{41964: read-variable['canNest',v4,v3]|41965: read-variable['dsl',v5,-]}" ] 
+BB12298 -> BB12299 [tailport=s, headport=n, headlabel="      12299"]
+BB12298 -> BB12306 [tailport=s, headport=n, color=gray, headlabel="      12306"]
+BB12299 [shape=record label="{41966: call-canNest [v3,v4,v5,v2]}" ] 
+BB12299 -> BB12300 [tailport=s, headport=n, headlabel="      12300"]
+BB12299 -> BB12306 [tailport=s, headport=n, color=gray]
+BB12300 [shape=record label="{41967: if[v2](true-block:12301,false-block:12302)}" ] 
+BB12300 -> BB12302 [tailport=s, headport=n, headlabel="      12302"]
+BB12300 -> BB12301 [tailport=s, headport=n, headlabel="      12301"]
+BB12301 [shape=record label="{41968: read-variable['resetNamespace',v6,-]|41969: constant[true,v7]|41970: !==[v6,v7,v2]}" ] 
+BB12301 -> BB12302 [tailport=s, headport=n]
+BB12301 -> BB12306 [tailport=s, headport=n, color=gray]
+BB12302 [shape=record label="{41971: if[v2](true-block:12303,false-block:12304)}" ] 
+BB12302 -> BB12303 [tailport=s, headport=n, headlabel="      12303"]
+BB12302 -> BB12304 [tailport=s, headport=n, headlabel="      12304"]
+BB12303 [shape=record label="{41972: read-variable['dsl',v10,-]|41973: read-property[v10,'parent',v8]|41974: \<variable-non-null-undef\>['dsl']|41975: constant[\".\",v9]|41976: +[v8,v9,v6]|41977: read-variable['name',v7,-]|41978: +[v6,v7,v1]}" ] 
+BB12303 -> BB12305 [tailport=s, headport=n, headlabel="      12305"]
+BB12303 -> BB12306 [tailport=s, headport=n, color=gray]
+BB12304 [shape=record label="{41979: read-variable['name',v1,-]}" ] 
+BB12304 -> BB12305 [tailport=s, headport=n]
+BB12304 -> BB12306 [tailport=s, headport=n, color=gray]
+BB12305 [shape=record label="{41980: return[v1]}" ] 
+BB12306 [shape=record label="{41981: exceptional-return}" ] 
+//#$~ 22549
+}

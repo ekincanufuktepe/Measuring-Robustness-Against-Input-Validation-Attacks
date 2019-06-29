@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1094[shape=none,label=""];
+BB_entry1094 -> BB13266 [tailport=s, headport=n, headlabel="    13266"]
+BB13266 [shape=record label="{45232: constant[undefined,v1]|45233: vardecl['transition']}" ] 
+BB13266 -> BB13267 [tailport=s, headport=n, headlabel="      13267"]
+BB13267 [shape=record label="{45234: read-variable['this',v5,-]|45235: read-property[v5,'router',v4]|45236: read-variable['routerJsMethod',v6,-]|45237: read-property[v4,v6,-]|45238: \<property-non-null-undef\>[v5,'router']|45239: read-variable['url',v7,-]|45240: if[v7](true-block:13269,false-block:13268)}" ] 
+BB13267 -> BB13269 [tailport=s, headport=n, headlabel="      13269"]
+BB13267 -> BB13268 [tailport=s, headport=n, headlabel="      13268"]
+BB13267 -> BB13274 [tailport=s, headport=n, color=gray, headlabel="      13274"]
+BB13268 [shape=record label="{45241: constant[\"/\",v7]}" ] 
+BB13268 -> BB13269 [tailport=s, headport=n]
+BB13269 [shape=record label="{45242: call-null [v4,[v6],v7,v2]}" ] 
+BB13269 -> BB13270 [tailport=s, headport=n, headlabel="      13270"]
+BB13269 -> BB13274 [tailport=s, headport=n, color=gray]
+BB13270 [shape=record label="{45243: write-variable[v2,'transition']*|45244: read-variable['listenForTransitionErrors',v9,v8]|45245: read-variable['transition',v10,-]}" ] 
+BB13270 -> BB13271 [tailport=s, headport=n, headlabel="      13271"]
+BB13270 -> BB13274 [tailport=s, headport=n, color=gray]
+BB13271 [shape=record label="{45246: call-listenForTransitionErrors [v8,v9,v10,-]*}" ] 
+BB13271 -> BB13272 [tailport=s, headport=n, headlabel="      13272"]
+BB13271 -> BB13274 [tailport=s, headport=n, color=gray]
+BB13272 [shape=record label="{45247: read-variable['transition',v1,-]}" ] 
+BB13272 -> BB13273 [tailport=s, headport=n, headlabel="      13273"]
+BB13272 -> BB13274 [tailport=s, headport=n, color=gray]
+BB13273 [shape=record label="{45248: return[v1]}" ] 
+BB13274 [shape=record label="{45249: exceptional-return}" ] 
+//#$~ 24924
+}

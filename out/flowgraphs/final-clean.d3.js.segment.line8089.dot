@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1270[shape=none,label=""];
+BB_entry1270 -> BB13673 [tailport=s, headport=n, headlabel="    13673"]
+BB13673 [shape=record label="{46852: constant[undefined,v1]}" ] 
+BB13673 -> BB13674 [tailport=s, headport=n, headlabel="      13674"]
+BB13674 [shape=record label="{46853: read-variable['segments',v3,-]|46854: read-property[v3,'push',-]|46855: \<variable-non-null-undef\>['segments']|46856: constant[\"M\",v4]|46857: read-variable['interpolate',v7,v6]|46858: read-variable['projection',v10,v9]|46859: read-variable['points',v11,-]}" ] 
+BB13674 -> BB13675 [tailport=s, headport=n, headlabel="      13675"]
+BB13674 -> BB13680 [tailport=s, headport=n, color=gray, headlabel="      13680"]
+BB13675 [shape=record label="{46860: call-projection [v9,v10,v11,v8]}" ] 
+BB13675 -> BB13676 [tailport=s, headport=n, headlabel="      13676"]
+BB13675 -> BB13680 [tailport=s, headport=n, color=gray]
+BB13676 [shape=record label="{46861: read-variable['tension',v12,-]}" ] 
+BB13676 -> BB13677 [tailport=s, headport=n, headlabel="      13677"]
+BB13676 -> BB13680 [tailport=s, headport=n, color=gray]
+BB13677 [shape=record label="{46862: call-interpolate [v6,v7,v8,v12,v5]}" ] 
+BB13677 -> BB13678 [tailport=s, headport=n, headlabel="      13678"]
+BB13677 -> BB13680 [tailport=s, headport=n, color=gray]
+BB13678 [shape=record label="{46863: call-segments.push [v3,'push',v4,v5,-]*}" ] 
+BB13678 -> BB13679 [tailport=s, headport=n, headlabel="      13679"]
+BB13678 -> BB13680 [tailport=s, headport=n, color=gray]
+BB13679 [shape=record label="{46864: return[v1]}" ] 
+BB13680 [shape=record label="{46865: exceptional-return}" ] 
+//#$~ 8090
+}

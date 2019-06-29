@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry413[shape=none,label=""];
+BB_entry413 -> BB6369 [tailport=s, headport=n, headlabel="    6369"]
+BB6369 [shape=record label="{18513: constant[undefined,v1]}" ] 
+BB6369 -> BB6370 [tailport=s, headport=n, headlabel="      6370"]
+BB6370 [shape=record label="{18514: read-variable['manipulation_rcheckableType',v4,-]|18515: read-property[v4,'test',-]|18516: \<variable-non-null-undef\>['manipulation_rcheckableType']|18517: read-variable['elem',v6,-]|18518: read-property[v6,'type',v5]|18519: \<variable-non-null-undef\>['elem']}" ] 
+BB6370 -> BB6371 [tailport=s, headport=n, headlabel="      6371"]
+BB6370 -> BB6375 [tailport=s, headport=n, color=gray, headlabel="      6375"]
+BB6371 [shape=record label="{18520: call-manipulation_rcheckableType.test [v4,'test',v5,v2]}" ] 
+BB6371 -> BB6372 [tailport=s, headport=n, headlabel="      6372"]
+BB6371 -> BB6375 [tailport=s, headport=n, color=gray]
+BB6372 [shape=record label="{18521: if[v2](true-block:6373,false-block:6374)}" ] 
+BB6372 -> BB6373 [tailport=s, headport=n, headlabel="      6373"]
+BB6372 -> BB6374 [tailport=s, headport=n, headlabel="      6374"]
+BB6373 [shape=record label="{18522: read-variable['elem',v8,-]|18523: read-variable['elem',v9,-]|18524: read-property[v9,'checked',v7]|18525: \<variable-non-null-undef\>['elem']|18526: write-property[v8,'defaultChecked',v7]|18527: \<variable-non-null-undef\>['elem']*}" ] 
+BB6373 -> BB6374 [tailport=s, headport=n]
+BB6373 -> BB6375 [tailport=s, headport=n, color=gray]
+BB6374 [shape=record label="{18528: return[v1]}" ] 
+BB6375 [shape=record label="{18529: exceptional-return}" ] 
+}

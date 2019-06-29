@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry871[shape=none,label=""];
+BB_entry871 -> BB11340 [tailport=s, headport=n, headlabel="    11340"]
+BB11340 [shape=record label="{29697: constant[undefined,v1]|29698: vardecl['scope']|29699: function-decl[function $applyAsyncExpression ( ),-]}" ] 
+BB11340 -> BB11341 [tailport=s, headport=n, headlabel="      11341"]
+BB11341 [shape=record label="{29700: read-variable['this',v2,-]|29701: write-variable[v2,'scope']*|29702: read-variable['expr',v3,-]|29703: if[v3](true-block:11342,false-block:11344)}" ] 
+BB11341 -> BB11344 [tailport=s, headport=n, headlabel="      11344"]
+BB11341 -> BB11342 [tailport=s, headport=n, headlabel="      11342"]
+BB11341 -> BB11347 [tailport=s, headport=n, color=gray, headlabel="      11347"]
+BB11342 [shape=record label="{29704: read-variable['applyAsyncQueue',v5,-]|29705: read-property[v5,'push',-]|29706: \<variable-non-null-undef\>['applyAsyncQueue']|29707: read-variable['$applyAsyncExpression',v6,-]}" ] 
+BB11342 -> BB11343 [tailport=s, headport=n, headlabel="      11343"]
+BB11342 -> BB11347 [tailport=s, headport=n, color=gray]
+BB11343 [shape=record label="{29708: call-applyAsyncQueue.push [v5,'push',v6,-]}" ] 
+BB11343 -> BB11344 [tailport=s, headport=n]
+BB11343 -> BB11347 [tailport=s, headport=n, color=gray]
+BB11344 [shape=record label="{29709: read-variable['scheduleApplyAsync',v5,v4]}" ] 
+BB11344 -> BB11345 [tailport=s, headport=n, headlabel="      11345"]
+BB11344 -> BB11347 [tailport=s, headport=n, color=gray]
+BB11345 [shape=record label="{29710: call-scheduleApplyAsync [v4,v5,-]*}" ] 
+BB11345 -> BB11346 [tailport=s, headport=n, headlabel="      11346"]
+BB11345 -> BB11347 [tailport=s, headport=n, color=gray]
+BB11346 [shape=record label="{29711: return[v1]}" ] 
+BB11347 [shape=record label="{29712: exceptional-return}" ] 
+//#$~ 15984
+}

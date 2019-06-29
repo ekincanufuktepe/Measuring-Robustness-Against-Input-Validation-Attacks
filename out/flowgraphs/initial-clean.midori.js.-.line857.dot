@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry65[shape=none,label=""];
+BB_entry65 -> BB1175 [tailport=s, headport=n, headlabel="    1175"]
+BB1175 [shape=record label="{4444: constant[undefined,v1]}" ] 
+BB1175 -> BB1176 [tailport=s, headport=n, headlabel="      1176"]
+BB1176 [shape=record label="{4445: read-variable['midori',v5,-]|4446: read-property[v5,'get',-]|4447: \<variable-non-null-undef\>['midori']|4448: constant[\".tab-set\",v6]}" ] 
+BB1176 -> BB1177 [tailport=s, headport=n, headlabel="      1177"]
+BB1176 -> BB1181 [tailport=s, headport=n, color=gray, headlabel="      1181"]
+BB1177 [shape=record label="{4449: call-midori.get [v5,'get',v6,v3]}" ] 
+BB1177 -> BB1178 [tailport=s, headport=n, headlabel="      1178"]
+BB1177 -> BB1181 [tailport=s, headport=n, color=gray]
+BB1178 [shape=record label="{4450: read-property[v3,'apply',-]|4451: function-expr[function ( obj ),v7]}" ] 
+BB1178 -> BB1179 [tailport=s, headport=n, headlabel="      1179"]
+BB1178 -> BB1181 [tailport=s, headport=n, color=gray]
+BB1179 [shape=record label="{4452: call-null [v3,'apply',v7,-]*}" ] 
+BB1179 -> BB1180 [tailport=s, headport=n, headlabel="      1180"]
+BB1179 -> BB1181 [tailport=s, headport=n, color=gray]
+BB1180 [shape=record label="{4453: return[v1]}" ] 
+BB1181 [shape=record label="{4454: exceptional-return}" ] 
+//#$~ 871
+}

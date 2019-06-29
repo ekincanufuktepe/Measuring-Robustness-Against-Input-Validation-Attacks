@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry344[shape=none,label=""];
+BB_entry344 -> BB4116 [tailport=s, headport=n, headlabel="    4116"]
+BB4116 [shape=record label="{10007: constant[undefined,v1]}" ] 
+BB4116 -> BB4117 [tailport=s, headport=n, headlabel="      4117"]
+BB4117 [shape=record label="{10008: read-variable['isDefined',v4,v3]|10009: read-variable['enabled',v5,-]}" ] 
+BB4117 -> BB4118 [tailport=s, headport=n, headlabel="      4118"]
+BB4117 -> BB4123 [tailport=s, headport=n, color=gray, headlabel="      4123"]
+BB4118 [shape=record label="{10010: call-isDefined [v3,v4,v5,v2]}" ] 
+BB4118 -> BB4119 [tailport=s, headport=n, headlabel="      4119"]
+BB4118 -> BB4123 [tailport=s, headport=n, color=gray]
+BB4119 [shape=record label="{10011: if[v2](true-block:4120,false-block:4121)}" ] 
+BB4119 -> BB4120 [tailport=s, headport=n, headlabel="      4120"]
+BB4119 -> BB4121 [tailport=s, headport=n, headlabel="      4121"]
+BB4120 [shape=record label="{10012: read-variable['enabled',v6,-]|10013: write-variable[v6,'debugInfoEnabled']*|10014: read-variable['this',v1,-]}" ] 
+BB4120 -> BB4122 [tailport=s, headport=n, headlabel="      4122"]
+BB4120 -> BB4123 [tailport=s, headport=n, color=gray]
+BB4121 [shape=record label="{10015: read-variable['debugInfoEnabled',v1,-]}" ] 
+BB4121 -> BB4122 [tailport=s, headport=n]
+BB4121 -> BB4123 [tailport=s, headport=n, color=gray]
+BB4122 [shape=record label="{10016: return[v1]}" ] 
+BB4123 [shape=record label="{10017: exceptional-return}" ] 
+//#$~ 7063
+}

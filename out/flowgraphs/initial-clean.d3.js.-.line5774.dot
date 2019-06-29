@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry896[shape=none,label=""];
+BB_entry896 -> BB9767 [tailport=s, headport=n, headlabel="    9767"]
+BB9767 [shape=record label="{32522: constant[undefined,v1]|32523: vardecl['i']|32524: vardecl['o']}" ] 
+BB9767 -> BB9768 [tailport=s, headport=n, headlabel="      9768"]
+BB9768 [shape=record label="{32525: constant[0.0,v3]|32526: write-variable[v3,'i']*}" ] 
+BB9768 -> BB9769 [tailport=s, headport=n, headlabel="      9769"]
+BB9769 [shape=record label="{32527: read-variable['i',v4,-]|32528: read-variable['b',v5,-]|32529: \<[v4,v5,v2]|32530: if[v2](true-block:9770,false-block:9771)}" ] 
+BB9769 -> BB9770 [tailport=s, headport=n, headlabel="      9770"]
+BB9769 -> BB9771 [tailport=s, headport=n, headlabel="      9771"]
+BB9769 -> BB9776 [tailport=s, headport=n, color=gray, headlabel="      9776"]
+BB9770 [shape=record label="{32531: read-variable['s',v7,-]|32532: read-variable['q',v10,-]|32533: read-variable['i',v11,-]|32534: read-property[v10,v11,v9]|32535: \<variable-non-null-undef\>['q']|32536: write-variable[v9,'o']|32537: read-property[v9,'i',v8]|32538: \<property-non-null-undef\>[v10,v11]|32539: read-variable['o',v13,-]|32540: read-property[v13,'x',-]|32541: \<variable-non-null-undef\>['o']|32542: read-variable['t',v14,-]}" ] 
+BB9770 -> BB9772 [tailport=s, headport=n, headlabel="      9772"]
+BB9770 -> BB9776 [tailport=s, headport=n, color=gray]
+BB9771 [shape=record label="{32543: read-variable['s',v7,-]|32544: read-property[v7,'join',-]|32545: \<variable-non-null-undef\>['s']|32546: constant[\"\",v8]}" ] 
+BB9771 -> BB9774 [tailport=s, headport=n, headlabel="      9774"]
+BB9771 -> BB9776 [tailport=s, headport=n, color=gray]
+BB9772 [shape=record label="{32547: call-o.x [v13,'x',v14,v6]}" ] 
+BB9772 -> BB9773 [tailport=s, headport=n, headlabel="      9773"]
+BB9772 -> BB9776 [tailport=s, headport=n, color=gray]
+BB9773 [shape=record label="{32548: write-property[v7,v8,v6]|32549: \<variable-non-null-undef\>['s']*|32550: constant[1.0,v15]|32551: read-variable['i',v16,-]|32552: +[v16,v17]|32553: +[v17,v15,v18]|32554: write-variable[v18,'i']}" ] 
+BB9773 -> BB9769 [tailport=s, headport=n]
+BB9773 -> BB9776 [tailport=s, headport=n, color=gray]
+BB9774 [shape=record label="{32555: call-s.join [v7,'join',v8,v1]}" ] 
+BB9774 -> BB9775 [tailport=s, headport=n, headlabel="      9775"]
+BB9774 -> BB9776 [tailport=s, headport=n, color=gray]
+BB9775 [shape=record label="{32556: return[v1]}" ] 
+BB9776 [shape=record label="{32557: exceptional-return}" ] 
+//#$~ 5776
+}

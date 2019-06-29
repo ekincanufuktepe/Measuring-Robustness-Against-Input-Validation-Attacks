@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry90[shape=none,label=""];
+BB_entry90 -> BB809 [tailport=s, headport=n, headlabel="    809"]
+BB809 [shape=record label="{2604: constant[undefined,v1]|2605: vardecl['method']}" ] 
+BB809 -> BB810 [tailport=s, headport=n, headlabel="      810"]
+BB810 [shape=record label="{2606: read-variable['this',v4,-]|2607: read-property[v4,'methods',v3]|2608: read-variable['methodName',v5,-]|2609: read-property[v3,v5,v2]|2610: \<property-non-null-undef\>[v4,'methods']|2611: write-variable[v2,'method']*|2612: read-variable['method',v7,-]|2613: ![v7,v6]|2614: if[v6](true-block:811,false-block:812)}" ] 
+BB810 -> BB811 [tailport=s, headport=n, headlabel="      811"]
+BB810 -> BB812 [tailport=s, headport=n, headlabel="      812"]
+BB810 -> BB814 [tailport=s, headport=n, color=gray, headlabel="      814"]
+BB811 [shape=record label="{2615: constant[false,v1]}" ] 
+BB811 -> BB813 [tailport=s, headport=n, headlabel="      813"]
+BB812 [shape=record label="{2616: constant[true,v1]}" ] 
+BB812 -> BB813 [tailport=s, headport=n]
+BB813 [shape=record label="{2617: return[v1]}" ] 
+BB814 [shape=record label="{2618: exceptional-return}" ] 
+//#$~ 863
+}

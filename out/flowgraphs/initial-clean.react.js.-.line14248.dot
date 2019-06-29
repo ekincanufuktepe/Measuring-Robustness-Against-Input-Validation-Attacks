@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry590[shape=none,label=""];
+BB_entry590 -> BB8124 [tailport=s, headport=n, headlabel="    8124"]
+BB8124 [shape=record label="{27081: constant[undefined,v1]|27082: vardecl['ref']}" ] 
+BB8124 -> BB8125 [tailport=s, headport=n, headlabel="      8125"]
+BB8125 [shape=record label="{27083: read-variable['element',v3,-]|27084: read-property[v3,'ref',v2]|27085: \<variable-non-null-undef\>['element']|27086: write-variable[v2,'ref']*|27087: read-variable['ref',v5,-]|27088: constant[null,v6]|27089: !=[v5,v6,v4]|27090: if[v4](true-block:8126,false-block:8128)}" ] 
+BB8125 -> BB8126 [tailport=s, headport=n, headlabel="      8126"]
+BB8125 -> BB8128 [tailport=s, headport=n, headlabel="      8128"]
+BB8125 -> BB8129 [tailport=s, headport=n, color=gray, headlabel="      8129"]
+BB8126 [shape=record label="{27091: read-variable['attachRef',v8,v7]|27092: read-variable['ref',v9,-]|27093: read-variable['instance',v10,-]|27094: read-variable['element',v12,-]|27095: read-property[v12,'_owner',v11]|27096: \<variable-non-null-undef\>['element']}" ] 
+BB8126 -> BB8127 [tailport=s, headport=n, headlabel="      8127"]
+BB8126 -> BB8129 [tailport=s, headport=n, color=gray]
+BB8127 [shape=record label="{27097: call-attachRef [v7,v8,v9,v10,v11,-]*}" ] 
+BB8127 -> BB8128 [tailport=s, headport=n]
+BB8127 -> BB8129 [tailport=s, headport=n, color=gray]
+BB8128 [shape=record label="{27098: return[v1]}" ] 
+BB8129 [shape=record label="{27099: exceptional-return}" ] 
+//#$~ 14251
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry334[shape=none,label=""];
+BB_entry334 -> BB3954 [tailport=s, headport=n, headlabel="    3954"]
+BB3954 [shape=record label="{10456: constant[undefined,v1]|10457: vardecl['value']}" ] 
+BB3954 -> BB3955 [tailport=s, headport=n, headlabel="      3955"]
+BB3955 [shape=record label="{10458: read-variable['element',v4,-]|10459: read-property[v4,'getAttribute',-]|10460: \<variable-non-null-undef\>['element']|10461: read-variable['attribute',v5,-]}" ] 
+BB3955 -> BB3956 [tailport=s, headport=n, headlabel="      3956"]
+BB3955 -> BB3962 [tailport=s, headport=n, color=gray, headlabel="      3962"]
+BB3956 [shape=record label="{10462: call-element.getAttribute [v4,'getAttribute',v5,v2]}" ] 
+BB3956 -> BB3957 [tailport=s, headport=n, headlabel="      3957"]
+BB3956 -> BB3962 [tailport=s, headport=n, color=gray]
+BB3957 [shape=record label="{10463: write-variable[v2,'value']*|10464: read-variable['value',v7,-]|10465: ![v7,v6]|10466: if[v6](true-block:3958,false-block:3959)}" ] 
+BB3957 -> BB3958 [tailport=s, headport=n, headlabel="      3958"]
+BB3957 -> BB3959 [tailport=s, headport=n, headlabel="      3959"]
+BB3957 -> BB3962 [tailport=s, headport=n, color=gray]
+BB3958 [shape=record label="{10467: constant[null,v1]}" ] 
+BB3958 -> BB3961 [tailport=s, headport=n, headlabel="      3961"]
+BB3959 [shape=record label="{10468: read-variable['value',v9,-]|10469: read-property[v9,'strip',-]|10470: \<variable-non-null-undef\>['value']}" ] 
+BB3959 -> BB3960 [tailport=s, headport=n, headlabel="      3960"]
+BB3959 -> BB3962 [tailport=s, headport=n, color=gray]
+BB3960 [shape=record label="{10471: call-value.strip [v9,'strip',v1]}" ] 
+BB3960 -> BB3961 [tailport=s, headport=n]
+BB3960 -> BB3962 [tailport=s, headport=n, color=gray]
+BB3961 [shape=record label="{10472: return[v1]}" ] 
+BB3962 [shape=record label="{10473: exceptional-return}" ] 
+//#$~ 2950
+}

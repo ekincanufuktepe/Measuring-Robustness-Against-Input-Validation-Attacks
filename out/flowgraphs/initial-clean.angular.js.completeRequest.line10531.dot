@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry497[shape=none,label=""];
+BB_entry497 -> BB6603 [tailport=s, headport=n, headlabel="    6603"]
+BB6603 [shape=record label="{16981: constant[undefined,v1]}" ] 
+BB6603 -> BB6604 [tailport=s, headport=n, headlabel="      6604"]
+BB6604 [shape=record label="{16982: read-variable['timeoutId',v3,-]|16983: read-variable['undefined',v4,-]|16984: !==[v3,v4,v2]|16985: if[v2](true-block:6605,false-block:6607)}" ] 
+BB6604 -> BB6605 [tailport=s, headport=n, headlabel="      6605"]
+BB6604 -> BB6607 [tailport=s, headport=n, headlabel="      6607"]
+BB6604 -> BB6612 [tailport=s, headport=n, color=gray, headlabel="      6612"]
+BB6605 [shape=record label="{16986: read-variable['$browserDefer',v6,-]|16987: read-property[v6,'cancel',-]|16988: \<variable-non-null-undef\>['$browserDefer']|16989: read-variable['timeoutId',v7,-]}" ] 
+BB6605 -> BB6606 [tailport=s, headport=n, headlabel="      6606"]
+BB6605 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6606 [shape=record label="{16990: call-$browserDefer.cancel [v6,'cancel',v7,-]*}" ] 
+BB6606 -> BB6607 [tailport=s, headport=n]
+BB6606 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6607 [shape=record label="{16991: constant[null,v5]|16992: write-variable[v5,'xhr']|16993: write-variable[v5,'jsonpDone']*|16994: read-variable['callback',v7,v6]|16995: read-variable['status',v8,-]|16996: read-variable['response',v9,-]|16997: read-variable['headersString',v10,-]|16998: read-variable['statusText',v11,-]}" ] 
+BB6607 -> BB6608 [tailport=s, headport=n, headlabel="      6608"]
+BB6607 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6608 [shape=record label="{16999: call-callback [v6,v7,v8,v9,v10,v11,-]*}" ] 
+BB6608 -> BB6609 [tailport=s, headport=n, headlabel="      6609"]
+BB6608 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6609 [shape=record label="{17000: read-variable['$browser',v13,-]|17001: read-property[v13,'$$completeOutstandingRequest',-]|17002: \<variable-non-null-undef\>['$browser']|17003: read-variable['noop',v14,-]}" ] 
+BB6609 -> BB6610 [tailport=s, headport=n, headlabel="      6610"]
+BB6609 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6610 [shape=record label="{17004: call-$browser.$$completeOutstandingRequest [v13,'$$completeOutstandingRequest',v14,-]*}" ] 
+BB6610 -> BB6611 [tailport=s, headport=n, headlabel="      6611"]
+BB6610 -> BB6612 [tailport=s, headport=n, color=gray]
+BB6611 [shape=record label="{17005: return[v1]}" ] 
+BB6612 [shape=record label="{17006: exceptional-return}" ] 
+//#$~ 10539
+}

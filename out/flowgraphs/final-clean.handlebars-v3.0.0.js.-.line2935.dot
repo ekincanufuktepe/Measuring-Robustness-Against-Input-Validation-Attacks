@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry218[shape=none,label=""];
+BB_entry218 -> BB4863 [tailport=s, headport=n, headlabel="    4863"]
+BB4863 [shape=record label="{15832: constant[undefined,v1]}" ] 
+BB4863 -> BB4864 [tailport=s, headport=n, headlabel="      4864"]
+BB4864 [shape=record label="{15833: read-variable['this',v3,-]|15834: read-property[v3,'pendingContent',v2]|15835: if[v2](true-block:4865,false-block:4866)}" ] 
+BB4864 -> BB4865 [tailport=s, headport=n, headlabel="      4865"]
+BB4864 -> BB4866 [tailport=s, headport=n, headlabel="      4866"]
+BB4864 -> BB4869 [tailport=s, headport=n, color=gray, headlabel="      4869"]
+BB4865 [shape=record label="{15836: read-variable['this',v7,-]|15837: read-property[v7,'pendingContent',v5]|15838: read-variable['content',v6,-]|15839: +[v5,v6,v4]|15840: write-variable[v4,'content']*}" ] 
+BB4865 -> BB4867 [tailport=s, headport=n, headlabel="      4867"]
+BB4865 -> BB4869 [tailport=s, headport=n, color=gray]
+BB4866 [shape=record label="{15841: read-variable['this',v5,-]|15842: read-variable['this',v7,-]|15843: read-property[v7,'source',v6]|15844: read-property[v6,'currentLocation',v4]|15845: \<property-non-null-undef\>[v7,'source']|15846: write-property[v5,'pendingLocation',v4]*}" ] 
+BB4866 -> BB4867 [tailport=s, headport=n]
+BB4866 -> BB4869 [tailport=s, headport=n, color=gray]
+BB4867 [shape=record label="{15847: read-variable['this',v5,-]|15848: read-variable['content',v4,-]|15849: write-property[v5,'pendingContent',v4]*}" ] 
+BB4867 -> BB4868 [tailport=s, headport=n, headlabel="      4868"]
+BB4867 -> BB4869 [tailport=s, headport=n, color=gray]
+BB4868 [shape=record label="{15850: return[v1]}" ] 
+BB4869 [shape=record label="{15851: exceptional-return}" ] 
+//#$~ 2942
+}

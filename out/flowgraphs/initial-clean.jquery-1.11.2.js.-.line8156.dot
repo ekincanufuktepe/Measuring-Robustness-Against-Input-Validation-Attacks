@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry475[shape=none,label=""];
+BB_entry475 -> BB7702 [tailport=s, headport=n, headlabel="    7702"]
+BB7702 [shape=record label="{22986: constant[undefined,v1]}" ] 
+BB7702 -> BB7703 [tailport=s, headport=n, headlabel="      7703"]
+BB7703 [shape=record label="{22987: read-variable['value',v3,-]|22988: constant[\"\",v4]|22989: ===[v3,v4,v2]|22990: if[v2](true-block:7704,false-block:7707)}" ] 
+BB7703 -> BB7704 [tailport=s, headport=n, headlabel="      7704"]
+BB7703 -> BB7707 [tailport=s, headport=n, headlabel="      7707"]
+BB7703 -> BB7708 [tailport=s, headport=n, color=gray, headlabel="      7708"]
+BB7704 [shape=record label="{22991: read-variable['elem',v6,-]|22992: read-property[v6,'setAttribute',-]|22993: \<variable-non-null-undef\>['elem']|22994: read-variable['name',v7,-]|22995: constant[\"auto\",v8]}" ] 
+BB7704 -> BB7705 [tailport=s, headport=n, headlabel="      7705"]
+BB7704 -> BB7708 [tailport=s, headport=n, color=gray]
+BB7705 [shape=record label="{22996: call-0:0[v6,'setAttribute',v7,v8,-]*}" ] 
+BB7705 -> BB7706 [tailport=s, headport=n, headlabel="      7706"]
+BB7705 -> BB7708 [tailport=s, headport=n, color=gray]
+BB7706 [shape=record label="{22997: read-variable['value',v1,-]}" ] 
+BB7706 -> BB7707 [tailport=s, headport=n]
+BB7706 -> BB7708 [tailport=s, headport=n, color=gray]
+BB7707 [shape=record label="{22998: return[v1]}" ] 
+BB7708 [shape=record label="{22999: exceptional-return}" ] 
+}

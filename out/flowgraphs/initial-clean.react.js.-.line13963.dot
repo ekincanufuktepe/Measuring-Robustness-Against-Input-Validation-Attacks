@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry570[shape=none,label=""];
+BB_entry570 -> BB7960 [tailport=s, headport=n, headlabel="    7960"]
+BB7960 [shape=record label="{26669: constant[undefined,v1]|26670: vardecl['currentlyEnabled']}" ] 
+BB7960 -> BB7961 [tailport=s, headport=n, headlabel="      7961"]
+BB7961 [shape=record label="{26671: read-variable['ReactBrowserEventEmitter',v4,-]|26672: read-property[v4,'isEnabled',-]|26673: \<variable-non-null-undef\>['ReactBrowserEventEmitter']}" ] 
+BB7961 -> BB7962 [tailport=s, headport=n, headlabel="      7962"]
+BB7961 -> BB7967 [tailport=s, headport=n, color=gray, headlabel="      7967"]
+BB7962 [shape=record label="{26674: call-ReactBrowserEventEmitter.isEnabled [v4,'isEnabled',v2]}" ] 
+BB7962 -> BB7963 [tailport=s, headport=n, headlabel="      7963"]
+BB7962 -> BB7967 [tailport=s, headport=n, color=gray]
+BB7963 [shape=record label="{26675: write-variable[v2,'currentlyEnabled']*|26676: read-variable['ReactBrowserEventEmitter',v6,-]|26677: read-property[v6,'setEnabled',-]|26678: \<variable-non-null-undef\>['ReactBrowserEventEmitter']|26679: constant[false,v7]}" ] 
+BB7963 -> BB7964 [tailport=s, headport=n, headlabel="      7964"]
+BB7963 -> BB7967 [tailport=s, headport=n, color=gray]
+BB7964 [shape=record label="{26680: call-ReactBrowserEventEmitter.setEnabled [v6,'setEnabled',v7,-]*}" ] 
+BB7964 -> BB7965 [tailport=s, headport=n, headlabel="      7965"]
+BB7964 -> BB7967 [tailport=s, headport=n, color=gray]
+BB7965 [shape=record label="{26681: read-variable['currentlyEnabled',v1,-]}" ] 
+BB7965 -> BB7966 [tailport=s, headport=n, headlabel="      7966"]
+BB7965 -> BB7967 [tailport=s, headport=n, color=gray]
+BB7966 [shape=record label="{26682: return[v1]}" ] 
+BB7967 [shape=record label="{26683: exceptional-return}" ] 
+//#$~ 13966
+}

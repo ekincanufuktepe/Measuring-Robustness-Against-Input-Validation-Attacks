@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry49[shape=none,label=""];
+BB_entry49 -> BB657 [tailport=s, headport=n, headlabel="    657"]
+BB657 [shape=record label="{1700: constant[undefined,v1]}" ] 
+BB657 -> BB658 [tailport=s, headport=n, headlabel="      658"]
+BB658 [shape=record label="{1701: read-variable['fn',v3,-]|1702: read-property[v3,'apply',-]|1703: \<variable-non-null-undef\>['fn']|1704: read-variable['context',v4,-]|1705: if[v4](true-block:660,false-block:659)}" ] 
+BB658 -> BB660 [tailport=s, headport=n, headlabel="      660"]
+BB658 -> BB659 [tailport=s, headport=n, headlabel="      659"]
+BB658 -> BB665 [tailport=s, headport=n, color=gray, headlabel="      665"]
+BB659 [shape=record label="{1706: read-variable['this',v4,-]}" ] 
+BB659 -> BB660 [tailport=s, headport=n]
+BB659 -> BB665 [tailport=s, headport=n, color=gray]
+BB660 [shape=record label="{1707: read-variable['args',v7,-]|1708: read-property[v7,'concat',-]|1709: \<variable-non-null-undef\>['args']|1710: read-variable['core_slice',v10,-]|1711: read-property[v10,'call',-]|1712: \<variable-non-null-undef\>['core_slice']|1713: read-variable['arguments',v11,-]}" ] 
+BB660 -> BB661 [tailport=s, headport=n, headlabel="      661"]
+BB660 -> BB665 [tailport=s, headport=n, color=gray]
+BB661 [shape=record label="{1714: call-core_slice.call [v10,'call',v11,v8]}" ] 
+BB661 -> BB662 [tailport=s, headport=n, headlabel="      662"]
+BB661 -> BB665 [tailport=s, headport=n, color=gray]
+BB662 [shape=record label="{1715: call-args.concat [v7,'concat',v8,v5]}" ] 
+BB662 -> BB663 [tailport=s, headport=n, headlabel="      663"]
+BB662 -> BB665 [tailport=s, headport=n, color=gray]
+BB663 [shape=record label="{1716: call-fn.apply [v3,'apply',v4,v5,v1]}" ] 
+BB663 -> BB664 [tailport=s, headport=n, headlabel="      664"]
+BB663 -> BB665 [tailport=s, headport=n, color=gray]
+BB664 [shape=record label="{1717: return[v1]}" ] 
+BB665 [shape=record label="{1718: exceptional-return}" ] 
+//#$~ 818
+}

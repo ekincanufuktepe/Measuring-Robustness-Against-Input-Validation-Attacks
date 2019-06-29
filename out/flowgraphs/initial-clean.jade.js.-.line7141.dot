@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry402[shape=none,label=""];
+BB_entry402 -> BB7604 [tailport=s, headport=n, headlabel="    7604"]
+BB7604 [shape=record label="{23005: constant[undefined,v1]|23006: function-decl[function c ( node st override ),-]}" ] 
+BB7604 -> BB7605 [tailport=s, headport=n, headlabel="      7605"]
+BB7605 [shape=record label="{23007: read-variable['base',v3,-]|23008: ![v3,v2]|23009: if[v2](true-block:7606,false-block:7607)}" ] 
+BB7605 -> BB7606 [tailport=s, headport=n, headlabel="      7606"]
+BB7605 -> BB7607 [tailport=s, headport=n, headlabel="      7607"]
+BB7605 -> BB7610 [tailport=s, headport=n, color=gray, headlabel="      7610"]
+BB7606 [shape=record label="{23010: read-variable['exports',v5,-]|23011: read-property[v5,'base',v4]|23012: \<variable-non-null-undef\>['exports']|23013: write-variable[v4,'base']*}" ] 
+BB7606 -> BB7607 [tailport=s, headport=n]
+BB7606 -> BB7610 [tailport=s, headport=n, color=gray]
+BB7607 [shape=record label="{23014: read-variable['c',v5,v4]|23015: read-variable['node',v6,-]|23016: read-variable['state',v7,-]}" ] 
+BB7607 -> BB7608 [tailport=s, headport=n, headlabel="      7608"]
+BB7607 -> BB7610 [tailport=s, headport=n, color=gray]
+BB7608 [shape=record label="{23017: call-c [v4,v5,v6,v7,-]*}" ] 
+BB7608 -> BB7609 [tailport=s, headport=n, headlabel="      7609"]
+BB7608 -> BB7610 [tailport=s, headport=n, color=gray]
+BB7609 [shape=record label="{23018: return[v1]}" ] 
+BB7610 [shape=record label="{23019: exceptional-return}" ] 
+//#$~ 7148
+}

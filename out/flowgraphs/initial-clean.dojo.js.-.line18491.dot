@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry968[shape=none,label=""];
+BB_entry968 -> BB13169 [tailport=s, headport=n, headlabel="    13169"]
+BB13169 [shape=record label="{38260: constant[undefined,v1]|38261: vardecl['pf']}" ] 
+BB13169 -> BB13170 [tailport=s, headport=n, headlabel="      13170"]
+BB13170 [shape=record label="{38262: function-expr[function ( ),v2]|38263: write-variable[v2,'pf']*|38264: read-variable['event',v3,-]|38265: if[v3](true-block:13171,false-block:13172)}" ] 
+BB13170 -> BB13171 [tailport=s, headport=n, headlabel="      13171"]
+BB13170 -> BB13172 [tailport=s, headport=n, headlabel="      13172"]
+BB13170 -> BB13176 [tailport=s, headport=n, color=gray, headlabel="      13176"]
+BB13171 [shape=record label="{38266: read-variable['connect',v5,-]|38267: read-property[v5,'connect',-]|38268: \<variable-non-null-undef\>['connect']|38269: read-variable['obj',v6,-]|38270: read-variable['event',v7,-]|38271: read-variable['pf',v8,-]}" ] 
+BB13171 -> BB13173 [tailport=s, headport=n, headlabel="      13173"]
+BB13171 -> BB13176 [tailport=s, headport=n, color=gray]
+BB13172 [shape=record label="{38272: read-variable['connect',v5,-]|38273: read-property[v5,'connect',-]|38274: \<variable-non-null-undef\>['connect']|38275: read-variable['obj',v6,-]|38276: read-variable['pf',v7,-]}" ] 
+BB13172 -> BB13174 [tailport=s, headport=n, headlabel="      13174"]
+BB13172 -> BB13176 [tailport=s, headport=n, color=gray]
+BB13173 [shape=record label="{38277: call-connect.connect [v5,'connect',v6,v7,v8,v1]}" ] 
+BB13173 -> BB13175 [tailport=s, headport=n, headlabel="      13175"]
+BB13173 -> BB13176 [tailport=s, headport=n, color=gray]
+BB13174 [shape=record label="{38278: call-connect.connect [v5,'connect',v6,v7,v1]}" ] 
+BB13174 -> BB13175 [tailport=s, headport=n]
+BB13174 -> BB13176 [tailport=s, headport=n, color=gray]
+BB13175 [shape=record label="{38279: return[v1]}" ] 
+BB13176 [shape=record label="{38280: exceptional-return}" ] 
+//#$~ 18508
+}

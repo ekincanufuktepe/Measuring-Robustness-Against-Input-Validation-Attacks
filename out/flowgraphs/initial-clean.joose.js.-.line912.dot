@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry94[shape=none,label=""];
+BB_entry94 -> BB839 [tailport=s, headport=n, headlabel="    839"]
+BB839 [shape=record label="{2693: constant[undefined,v1]|2694: vardecl['found']}" ] 
+BB839 -> BB840 [tailport=s, headport=n, headlabel="      840"]
+BB840 [shape=record label="{2695: read-variable['classObject',v5,-]|2696: read-property[v5,'meta',v4]|2697: \<variable-non-null-undef\>['classObject']|2698: read-property[v4,'can',-]|2699: \<property-non-null-undef\>[v5,'meta']|2700: read-variable['value',v6,-]}" ] 
+BB840 -> BB841 [tailport=s, headport=n, headlabel="      841"]
+BB840 -> BB845 [tailport=s, headport=n, color=gray, headlabel="      845"]
+BB841 [shape=record label="{2701: call-classObject.meta.can [v4,'can',v6,v2]}" ] 
+BB841 -> BB842 [tailport=s, headport=n, headlabel="      842"]
+BB841 -> BB845 [tailport=s, headport=n, color=gray]
+BB842 [shape=record label="{2702: write-variable[v2,'found']*|2703: read-variable['found',v8,-]|2704: ![v8,v7]|2705: if[v7](true-block:843,false-block:844)}" ] 
+BB842 -> BB843 [tailport=s, headport=n, headlabel="      843"]
+BB842 -> BB844 [tailport=s, headport=n, headlabel="      844"]
+BB842 -> BB845 [tailport=s, headport=n, color=gray]
+BB843 [shape=record label="{2706: constant[false,v9]|2707: write-variable[v9,'complete']*}" ] 
+BB843 -> BB844 [tailport=s, headport=n]
+BB844 [shape=record label="{2708: return[v1]}" ] 
+BB845 [shape=record label="{2709: exceptional-return}" ] 
+//#$~ 915
+}

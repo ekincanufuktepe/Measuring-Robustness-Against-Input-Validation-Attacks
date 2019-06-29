@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry103[shape=none,label=""];
+BB_entry103 -> BB1108 [tailport=s, headport=n, headlabel="    1108"]
+BB1108 [shape=record label="{3209: constant[undefined,v1]|3210: vardecl['prop']}" ] 
+BB1108 -> BB1109 [tailport=s, headport=n, headlabel="      1109"]
+BB1109 [shape=record label="{3211: read-variable['obj',v3,-]}" ] 
+BB1109 -> BB1110 [tailport=s, headport=n, headlabel="      1110"]
+BB1109 -> BB1116 [tailport=s, headport=n, color=gray, headlabel="      1116"]
+BB1110 [shape=record label="{3212: begin-for-in[v3,v4]}" ] 
+BB1110 -> BB1111 [tailport=s, headport=n, headlabel="      1111"]
+BB1110 -> BB1116 [tailport=s, headport=n, color=gray]
+BB1111 [shape=record label="{3213: has-next[v4,v5]|3214: if[v5](true-block:1112,false-block:1114)}" ] 
+BB1111 -> BB1112 [tailport=s, headport=n, headlabel="      1112"]
+BB1111 -> BB1114 [tailport=s, headport=n, headlabel="      1114"]
+BB1112 [shape=record label="{3215: next-property[v4,v6]|3216: write-variable[v6,'prop']|3217: constant[false,v1]}" ] 
+BB1112 -> BB1115 [tailport=s, headport=n, headlabel="      1115"]
+BB1113 [shape=record label="{3218: end-for-in(begin-node:3212)}" ] 
+BB1113 -> BB1111 [tailport=s, headport=n]
+BB1114 [shape=record label="{3219: constant[null,v7]|3220: write-variable[v7,'prop']*|3221: constant[true,v1]}" ] 
+BB1114 -> BB1115 [tailport=s, headport=n]
+BB1115 [shape=record label="{3222: return[v1]}" ] 
+BB1116 [shape=record label="{3223: exceptional-return}" ] 
+//#$~ 1534
+}

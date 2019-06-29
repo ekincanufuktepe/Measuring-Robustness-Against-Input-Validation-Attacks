@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry152[shape=none,label=""];
+BB_entry152 -> BB1657 [tailport=s, headport=n, headlabel="    1657"]
+BB1657 [shape=record label="{3600: constant[undefined,v1]|3601: vardecl['dimensionProperty']}" ] 
+BB1657 -> BB1658 [tailport=s, headport=n, headlabel="      1658"]
+BB1658 [shape=record label="{3602: read-variable['dimension',v4,-]|3603: read-property[v4,'replace',-]|3604: \<variable-non-null-undef\>['dimension']|3605: read-variable['RegExp',v6,-]|3606: constant[\".\",v7]}" ] 
+BB1658 -> BB1659 [tailport=s, headport=n, headlabel="      1659"]
+BB1658 -> BB1664 [tailport=s, headport=n, color=gray, headlabel="      1664"]
+BB1659 [shape=record label="{3607: construct [-,v6,v7,v5]}" ] 
+BB1659 -> BB1660 [tailport=s, headport=n, headlabel="      1660"]
+BB1659 -> BB1664 [tailport=s, headport=n, color=gray]
+BB1660 [shape=record label="{3608: function-expr[function ( m ),v8]}" ] 
+BB1660 -> BB1661 [tailport=s, headport=n, headlabel="      1661"]
+BB1661 [shape=record label="{3609: call-dimension.replace [v4,'replace',v5,v8,v2]}" ] 
+BB1661 -> BB1662 [tailport=s, headport=n, headlabel="      1662"]
+BB1661 -> BB1664 [tailport=s, headport=n, color=gray]
+BB1662 [shape=record label="{3610: write-variable[v2,'dimensionProperty']*|3611: read-variable['$',v12,-]|3612: read-property[v12,'fn',v10]|3613: \<variable-non-null-undef\>['$']|3614: read-variable['dimension',v11,-]|3615: function-expr[function ( value ),v9]|3616: write-property[v10,v11,v9]|3617: \<property-non-null-undef\>[v12,'fn']*}" ] 
+BB1662 -> BB1663 [tailport=s, headport=n, headlabel="      1663"]
+BB1662 -> BB1664 [tailport=s, headport=n, color=gray]
+BB1663 [shape=record label="{3618: return[v1]}" ] 
+BB1664 [shape=record label="{3619: exceptional-return}" ] 
+//#$~ 813
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry403[shape=none,label=""];
+BB_entry403 -> BB5119 [tailport=s, headport=n, headlabel="    5119"]
+BB5119 [shape=record label="{14180: constant[undefined,v1]|14181: vardecl['offset']}" ] 
+BB5119 -> BB5120 [tailport=s, headport=n, headlabel="      5120"]
+BB5120 [shape=record label="{14182: read-variable['element',v4,-]|14183: read-property[v4,'positionedOffset',-]|14184: \<variable-non-null-undef\>['element']}" ] 
+BB5120 -> BB5121 [tailport=s, headport=n, headlabel="      5121"]
+BB5120 -> BB5124 [tailport=s, headport=n, color=gray, headlabel="      5124"]
+BB5121 [shape=record label="{14185: call-element.positionedOffset [v4,'positionedOffset',v2]}" ] 
+BB5121 -> BB5122 [tailport=s, headport=n, headlabel="      5122"]
+BB5121 -> BB5124 [tailport=s, headport=n, color=gray]
+BB5122 [shape=record label="{14186: write-variable[v2,'offset']*|14187: read-variable['offset',v5,-]|14188: read-property[v5,'top',v1]|14189: \<variable-non-null-undef\>['offset']}" ] 
+BB5122 -> BB5123 [tailport=s, headport=n, headlabel="      5123"]
+BB5122 -> BB5124 [tailport=s, headport=n, color=gray]
+BB5123 [shape=record label="{14190: return[v1]}" ] 
+BB5124 [shape=record label="{14191: exceptional-return}" ] 
+//#$~ 3869
+}

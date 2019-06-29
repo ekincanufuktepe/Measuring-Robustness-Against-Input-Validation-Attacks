@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry102[shape=none,label=""];
+BB_entry102 -> BB1324 [tailport=s, headport=n, headlabel="    1324"]
+BB1324 [shape=record label="{3834: constant[undefined,v1]|3835: vardecl['iframes']|3836: vardecl['check']}" ] 
+BB1324 -> BB1325 [tailport=s, headport=n, headlabel="      1325"]
+BB1325 [shape=record label="{3837: read-variable['Array',v3,-]}" ] 
+BB1325 -> BB1326 [tailport=s, headport=n, headlabel="      1326"]
+BB1325 -> BB1332 [tailport=s, headport=n, color=gray, headlabel="      1332"]
+BB1326 [shape=record label="{3838: construct [-,v3,v2]}" ] 
+BB1326 -> BB1327 [tailport=s, headport=n, headlabel="      1327"]
+BB1326 -> BB1332 [tailport=s, headport=n, color=gray]
+BB1327 [shape=record label="{3839: write-variable[v2,'iframes']*|3840: function-expr[function ( ),v4]|3841: write-variable[v4,'check']*|3842: read-variable['UI',v7,-]|3843: read-property[v7,'$win',v6]|3844: \<variable-non-null-undef\>['UI']|3845: read-property[v6,'on',-]|3846: \<property-non-null-undef\>[v7,'$win']|3847: constant[\"resize\",v8]|3848: read-variable['UI',v12,-]|3849: read-property[v12,'Utils',v11]|3850: \<variable-non-null-undef\>['UI']|3851: read-property[v11,'debounce',-]|3852: \<property-non-null-undef\>[v12,'Utils']|3853: read-variable['check',v13,-]|3854: constant[15.0,v14]}" ] 
+BB1327 -> BB1328 [tailport=s, headport=n, headlabel="      1328"]
+BB1327 -> BB1332 [tailport=s, headport=n, color=gray]
+BB1328 [shape=record label="{3855: call-UI.Utils.debounce [v11,'debounce',v13,v14,v9]}" ] 
+BB1328 -> BB1329 [tailport=s, headport=n, headlabel="      1329"]
+BB1328 -> BB1332 [tailport=s, headport=n, color=gray]
+BB1329 [shape=record label="{3856: call-UI.$win.on [v6,'on',v8,v9,-]*}" ] 
+BB1329 -> BB1330 [tailport=s, headport=n, headlabel="      1330"]
+BB1329 -> BB1332 [tailport=s, headport=n, color=gray]
+BB1330 [shape=record label="{3857: function-expr[function ( context ),v1]}" ] 
+BB1330 -> BB1331 [tailport=s, headport=n, headlabel="      1331"]
+BB1331 [shape=record label="{3858: return[v1]}" ] 
+BB1332 [shape=record label="{3859: exceptional-return}" ] 
+//#$~ 1005
+}

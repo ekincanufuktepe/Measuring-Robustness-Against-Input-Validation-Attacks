@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry180[shape=none,label=""];
+BB_entry180 -> BB2332 [tailport=s, headport=n, headlabel="    2332"]
+BB2332 [shape=record label="{7600: constant[undefined,v1]|7601: vardecl['className']|7602: vardecl['factory']}" ] 
+BB2332 -> BB2333 [tailport=s, headport=n, headlabel="      2333"]
+BB2333 [shape=record label="{7603: read-variable['classify',v4,v3]|7604: read-variable['parsedName',v6,-]|7605: read-property[v6,'name',v5]|7606: \<variable-non-null-undef\>['parsedName']}" ] 
+BB2333 -> BB2334 [tailport=s, headport=n, headlabel="      2334"]
+BB2333 -> BB2340 [tailport=s, headport=n, color=gray, headlabel="      2340"]
+BB2334 [shape=record label="{7607: call-classify [v3,v4,v5,v2]}" ] 
+BB2334 -> BB2335 [tailport=s, headport=n, headlabel="      2335"]
+BB2334 -> BB2340 [tailport=s, headport=n, color=gray]
+BB2335 [shape=record label="{7608: write-variable[v2,'className']*|7609: read-variable['get',v9,v8]|7610: read-variable['parsedName',v11,-]|7611: read-property[v11,'root',v10]|7612: \<variable-non-null-undef\>['parsedName']|7613: read-variable['className',v12,-]}" ] 
+BB2335 -> BB2336 [tailport=s, headport=n, headlabel="      2336"]
+BB2335 -> BB2340 [tailport=s, headport=n, color=gray]
+BB2336 [shape=record label="{7614: call-get [v8,v9,v10,v12,v7]}" ] 
+BB2336 -> BB2337 [tailport=s, headport=n, headlabel="      2337"]
+BB2336 -> BB2340 [tailport=s, headport=n, color=gray]
+BB2337 [shape=record label="{7615: write-variable[v7,'factory']*|7616: read-variable['factory',v13,-]|7617: if[v13](true-block:2338,false-block:2339)}" ] 
+BB2337 -> BB2338 [tailport=s, headport=n, headlabel="      2338"]
+BB2337 -> BB2339 [tailport=s, headport=n, headlabel="      2339"]
+BB2337 -> BB2340 [tailport=s, headport=n, color=gray]
+BB2338 [shape=record label="{7618: read-variable['factory',v1,-]}" ] 
+BB2338 -> BB2339 [tailport=s, headport=n]
+BB2338 -> BB2340 [tailport=s, headport=n, color=gray]
+BB2339 [shape=record label="{7619: return[v1]}" ] 
+BB2340 [shape=record label="{7620: exceptional-return}" ] 
+//#$~ 3839
+}

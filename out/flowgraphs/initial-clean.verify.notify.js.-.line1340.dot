@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry127[shape=none,label=""];
+BB_entry127 -> BB1552 [tailport=s, headport=n, headlabel="    1552"]
+BB1552 [shape=record label="{4663: constant[undefined,v1]|4664: vardecl['attrName']|4665: vardecl['attr']}" ] 
+BB1552 -> BB1553 [tailport=s, headport=n, headlabel="      1553"]
+BB1553 [shape=record label="{4666: read-variable['element',v5,-]|4667: read-property[v5,'form',v4]|4668: \<variable-non-null-undef\>['element']|4669: read-property[v4,'options',v3]|4670: \<property-non-null-undef\>[v5,'form']|4671: read-property[v3,'validateAttribute',v2]|4672: \<property-non-null-undef\>[v4,'options']|4673: write-variable[v2,'attrName']*|4674: read-variable['element',v9,-]|4675: read-property[v9,'domElem',v8]|4676: \<variable-non-null-undef\>['element']|4677: read-property[v8,'attr',-]|4678: \<property-non-null-undef\>[v9,'domElem']|4679: read-variable['attrName',v10,-]}" ] 
+BB1553 -> BB1554 [tailport=s, headport=n, headlabel="      1554"]
+BB1553 -> BB1560 [tailport=s, headport=n, color=gray, headlabel="      1560"]
+BB1554 [shape=record label="{4680: call-element.domElem.attr [v8,'attr',v10,v6]}" ] 
+BB1554 -> BB1555 [tailport=s, headport=n, headlabel="      1555"]
+BB1554 -> BB1560 [tailport=s, headport=n, color=gray]
+BB1555 [shape=record label="{4681: write-variable[v6,'attr']*|4682: read-variable['attr',v12,-]|4683: ![v12,v11]|4684: if[v11](true-block:1556,false-block:1557)}" ] 
+BB1555 -> BB1556 [tailport=s, headport=n, headlabel="      1556"]
+BB1555 -> BB1557 [tailport=s, headport=n, headlabel="      1557"]
+BB1555 -> BB1560 [tailport=s, headport=n, color=gray]
+BB1556 [shape=record label="{4685: constant[null,v1]}" ] 
+BB1556 -> BB1559 [tailport=s, headport=n, headlabel="      1559"]
+BB1557 [shape=record label="{4686: read-variable['parseStringMemo',v14,v13]|4687: read-variable['attr',v15,-]}" ] 
+BB1557 -> BB1558 [tailport=s, headport=n, headlabel="      1558"]
+BB1557 -> BB1560 [tailport=s, headport=n, color=gray]
+BB1558 [shape=record label="{4688: call-parseStringMemo [v13,v14,v15,v1]}" ] 
+BB1558 -> BB1559 [tailport=s, headport=n]
+BB1558 -> BB1560 [tailport=s, headport=n, color=gray]
+BB1559 [shape=record label="{4689: return[v1]}" ] 
+BB1560 [shape=record label="{4690: exceptional-return}" ] 
+//#$~ 1344
+}

@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry67[shape=none,label=""];
+BB_entry67 -> BB764 [tailport=s, headport=n, headlabel="    764"]
+BB764 [shape=record label="{1996: constant[undefined,v1]}" ] 
+BB764 -> BB765 [tailport=s, headport=n, headlabel="      765"]
+BB765 [shape=record label="{1997: read-variable['key',v3,-]|1998: constant[\"init\",v4]|1999: !=[v3,v4,v2]|2000: if[v2](true-block:766,false-block:771)}" ] 
+BB765 -> BB766 [tailport=s, headport=n, headlabel="      766"]
+BB765 -> BB771 [tailport=s, headport=n, headlabel="      771"]
+BB765 -> BB772 [tailport=s, headport=n, color=gray, headlabel="      772"]
+BB766 [shape=record label="{2001: read-variable['self',v6,-]|2002: read-variable['key',v7,-]|2003: read-variable['mix',v12,-]|2004: read-variable['key',v13,-]|2005: read-property[v12,v13,v11]|2006: \<variable-non-null-undef\>['mix']|2007: typeof[v11,v9]|2008: constant[\"function\",v10]|2009: ==[v9,v10,v8]|2010: if[v8](true-block:767,false-block:768)}" ] 
+BB766 -> BB767 [tailport=s, headport=n, headlabel="      767"]
+BB766 -> BB768 [tailport=s, headport=n, headlabel="      768"]
+BB766 -> BB772 [tailport=s, headport=n, color=gray]
+BB767 [shape=record label="{2011: read-variable['mix',v16,-]|2012: read-variable['key',v17,-]|2013: read-property[v16,v17,v15]|2014: \<variable-non-null-undef\>['mix']|2015: read-property[v15,'bind',-]|2016: \<property-non-null-undef\>[v16,v17]|2017: read-variable['self',v18,-]}" ] 
+BB767 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB767 -> BB772 [tailport=s, headport=n, color=gray]
+BB768 [shape=record label="{2018: read-variable['mix',v14,-]|2019: read-variable['key',v15,-]|2020: read-property[v14,v15,v5]|2021: \<variable-non-null-undef\>['mix']}" ] 
+BB768 -> BB770 [tailport=s, headport=n, headlabel="      770"]
+BB768 -> BB772 [tailport=s, headport=n, color=gray]
+BB769 [shape=record label="{2022: call-null [v15,'bind',v18,v5]}" ] 
+BB769 -> BB770 [tailport=s, headport=n]
+BB769 -> BB772 [tailport=s, headport=n, color=gray]
+BB770 [shape=record label="{2023: write-property[v6,v7,v5]|2024: \<variable-non-null-undef\>['self']*}" ] 
+BB770 -> BB771 [tailport=s, headport=n]
+BB770 -> BB772 [tailport=s, headport=n, color=gray]
+BB771 [shape=record label="{2025: return[v1]}" ] 
+BB772 [shape=record label="{2026: exceptional-return}" ] 
+//#$~ 723
+}

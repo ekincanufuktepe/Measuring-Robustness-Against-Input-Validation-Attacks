@@ -1,0 +1,13 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB8 [tailport=s, headport=n, headlabel="    8"]
+BB8 [shape=record label="{8: constant[undefined,v1]}" ] 
+BB8 -> BB9 [tailport=s, headport=n, headlabel="      9"]
+BB9 [shape=record label="{9: read-variable['registry',v3,-]|10: read-variable['name',v4,-]|11: new[v2]|12: read-variable['deps',v5,-]|13: write-property[v2,'deps',v5]|14: read-variable['callback',v6,-]|15: write-property[v2,'callback',v6]|16: write-property[v3,v4,v2]|17: \<variable-non-null-undef\>['registry']*}" ] 
+BB9 -> BB10 [tailport=s, headport=n, headlabel="      10"]
+BB9 -> BB11 [tailport=s, headport=n, color=gray, headlabel="      11"]
+BB10 [shape=record label="{18: return[v1]}" ] 
+BB11 [shape=record label="{19: exceptional-return}" ] 
+//#$~ 23
+}

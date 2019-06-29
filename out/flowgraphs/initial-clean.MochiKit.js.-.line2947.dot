@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry323[shape=none,label=""];
+BB_entry323 -> BB4310 [tailport=s, headport=n, headlabel="    4310"]
+BB4310 [shape=record label="{16446: constant[undefined,v1]|16447: vardecl['o']}" ] 
+BB4310 -> BB4311 [tailport=s, headport=n, headlabel="      4311"]
+BB4311 [shape=record label="{16448: new[v2]|16449: write-variable[v2,'o']*|16450: read-variable['o',v4,-]|16451: read-variable['attr',v5,-]|16452: read-variable['_322',v3,-]|16453: write-property[v4,v5,v3]|16454: \<variable-non-null-undef\>['o']*}" ] 
+BB4311 -> BB4312 [tailport=s, headport=n, headlabel="      4312"]
+BB4311 -> BB4319 [tailport=s, headport=n, color=gray, headlabel="      4319"]
+BB4312 [shape=record label="{16455: read-variable['MochiKit',v8,-]|16456: read-property[v8,'DOM',v7]|16457: \<variable-non-null-undef\>['MochiKit']|16458: read-property[v7,'updateNodeAttributes',-]|16459: \<property-non-null-undef\>[v8,'DOM']|16460: read-variable['node',v9,-]|16461: read-variable['o',v10,-]}" ] 
+BB4312 -> BB4313 [tailport=s, headport=n, headlabel="      4313"]
+BB4312 -> BB4315 [tailport=s, headport=n, color=gray, headlabel="      4315"]
+BB4313 [shape=record label="{16462: call-MochiKit.DOM.updateNodeAttributes [v7,'updateNodeAttributes',v9,v10,v1]}" ] 
+BB4313 -> BB4318 [tailport=s, headport=n, headlabel="      4318"]
+BB4313 -> BB4315 [tailport=s, headport=n, color=gray]
+BB4314 [shape=record label="{16463: constant[null,v1]}" ] 
+BB4314 -> BB4318 [tailport=s, headport=n]
+BB4315 [shape=record label="{16464: catch[e,v6]|16465: begin-with[v6]}" ] 
+BB4315 -> BB4316 [tailport=s, headport=n, headlabel="      4316"]
+BB4315 -> BB4319 [tailport=s, headport=n, color=gray]
+BB4316 [shape=record label="{16466: end-with}" ] 
+BB4316 -> BB4314 [tailport=s, headport=n, headlabel="      4314"]
+BB4317 [shape=record label="{16467: end-with}" ] 
+BB4317 -> BB4319 [tailport=s, headport=n]
+BB4318 [shape=record label="{16468: return[v1]}" ] 
+BB4319 [shape=record label="{16469: exceptional-return}" ] 
+//#$~ 2955
+}

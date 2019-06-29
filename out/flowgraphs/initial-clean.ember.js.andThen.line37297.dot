@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1734[shape=none,label=""];
+BB_entry1734 -> BB19990 [tailport=s, headport=n, headlabel="    19990"]
+BB19990 [shape=record label="{66909: constant[undefined,v1]}" ] 
+BB19990 -> BB19991 [tailport=s, headport=n, headlabel="      19991"]
+BB19991 [shape=record label="{66910: read-variable['app',v4,-]|66911: read-property[v4,'testHelpers',v3]|66912: \<variable-non-null-undef\>['app']|66913: read-property[v3,'wait',-]|66914: \<property-non-null-undef\>[v4,'testHelpers']|66915: read-variable['callback',v7,v6]|66916: read-variable['app',v8,-]}" ] 
+BB19991 -> BB19992 [tailport=s, headport=n, headlabel="      19992"]
+BB19991 -> BB19995 [tailport=s, headport=n, color=gray, headlabel="      19995"]
+BB19992 [shape=record label="{66917: call-callback [v6,v7,v8,v5]}" ] 
+BB19992 -> BB19993 [tailport=s, headport=n, headlabel="      19993"]
+BB19992 -> BB19995 [tailport=s, headport=n, color=gray]
+BB19993 [shape=record label="{66918: call-app.testHelpers.wait [v3,'wait',v5,v1]}" ] 
+BB19993 -> BB19994 [tailport=s, headport=n, headlabel="      19994"]
+BB19993 -> BB19995 [tailport=s, headport=n, color=gray]
+BB19994 [shape=record label="{66919: return[v1]}" ] 
+BB19995 [shape=record label="{66920: exceptional-return}" ] 
+//#$~ 37298
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB64 [tailport=s, headport=n, headlabel="    64"]
+BB64 [shape=record label="{217: constant[undefined,v1]}" ] 
+BB64 -> BB65 [tailport=s, headport=n, headlabel="      65"]
+BB65 [shape=record label="{218: read-variable['obj',v4,-]|219: read-property[v4,'hasOwnProperty',-]|220: \<variable-non-null-undef\>['obj']|221: read-variable['key',v5,-]}" ] 
+BB65 -> BB66 [tailport=s, headport=n, headlabel="      66"]
+BB65 -> BB70 [tailport=s, headport=n, color=gray, headlabel="      70"]
+BB66 [shape=record label="{222: call-obj.hasOwnProperty [v4,'hasOwnProperty',v5,v2]}" ] 
+BB66 -> BB67 [tailport=s, headport=n, headlabel="      67"]
+BB66 -> BB70 [tailport=s, headport=n, color=gray]
+BB67 [shape=record label="{223: if[v2](true-block:68,false-block:69)}" ] 
+BB67 -> BB68 [tailport=s, headport=n, headlabel="      68"]
+BB67 -> BB69 [tailport=s, headport=n, headlabel="      69"]
+BB68 [shape=record label="{224: read-variable['objClone',v7,-]|225: read-variable['key',v8,-]|226: read-variable['value',v6,-]|227: write-property[v7,v8,v6]|228: \<variable-non-null-undef\>['objClone']*}" ] 
+BB68 -> BB69 [tailport=s, headport=n]
+BB68 -> BB70 [tailport=s, headport=n, color=gray]
+BB69 [shape=record label="{229: return[v1]}" ] 
+BB70 [shape=record label="{230: exceptional-return}" ] 
+//#$~ 213
+}

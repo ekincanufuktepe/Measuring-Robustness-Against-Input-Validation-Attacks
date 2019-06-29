@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry210[shape=none,label=""];
+BB_entry210 -> BB3220 [tailport=s, headport=n, headlabel="    3220"]
+BB3220 [shape=record label="{9527: constant[undefined,v1]|9528: vardecl['cache']}" ] 
+BB3220 -> BB3221 [tailport=s, headport=n, headlabel="      3221"]
+BB3221 [shape=record label="{9529: read-variable['this',v4,-]|9530: read-property[v4,'cache',v3]|9531: read-variable['this',v7,-]|9532: read-property[v7,'key',-]|9533: read-variable['owner',v8,-]}" ] 
+BB3221 -> BB3222 [tailport=s, headport=n, headlabel="      3222"]
+BB3221 -> BB3227 [tailport=s, headport=n, color=gray, headlabel="      3227"]
+BB3222 [shape=record label="{9534: call[v7,'key',v8,v5]}" ] 
+BB3222 -> BB3223 [tailport=s, headport=n, headlabel="      3223"]
+BB3222 -> BB3227 [tailport=s, headport=n, color=gray]
+BB3223 [shape=record label="{9535: read-property[v3,v5,v2]|9536: \<property-non-null-undef\>[v4,'cache']|9537: write-variable[v2,'cache']*|9538: read-variable['key',v10,-]|9539: read-variable['undefined',v11,-]|9540: ===[v10,v11,v9]|9541: if[v9](true-block:3224,false-block:3225)}" ] 
+BB3223 -> BB3224 [tailport=s, headport=n, headlabel="      3224"]
+BB3223 -> BB3225 [tailport=s, headport=n, headlabel="      3225"]
+BB3223 -> BB3227 [tailport=s, headport=n, color=gray]
+BB3224 [shape=record label="{9542: read-variable['cache',v1,-]}" ] 
+BB3224 -> BB3226 [tailport=s, headport=n, headlabel="      3226"]
+BB3224 -> BB3227 [tailport=s, headport=n, color=gray]
+BB3225 [shape=record label="{9543: read-variable['cache',v12,-]|9544: read-variable['key',v13,-]|9545: read-property[v12,v13,v1]|9546: \<variable-non-null-undef\>['cache']}" ] 
+BB3225 -> BB3226 [tailport=s, headport=n]
+BB3225 -> BB3227 [tailport=s, headport=n, color=gray]
+BB3226 [shape=record label="{9547: return[v1]}" ] 
+BB3227 [shape=record label="{9548: exceptional-return}" ] 
+}

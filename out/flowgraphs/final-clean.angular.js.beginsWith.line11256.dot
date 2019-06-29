@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry530[shape=none,label=""];
+BB_entry530 -> BB7052 [tailport=s, headport=n, headlabel="    7052"]
+BB7052 [shape=record label="{18255: constant[undefined,v1]}" ] 
+BB7052 -> BB7053 [tailport=s, headport=n, headlabel="      7053"]
+BB7053 [shape=record label="{18256: read-variable['whole',v6,-]|18257: read-property[v6,'indexOf',-]|18258: \<variable-non-null-undef\>['whole']|18259: read-variable['begin',v7,-]}" ] 
+BB7053 -> BB7054 [tailport=s, headport=n, headlabel="      7054"]
+BB7053 -> BB7059 [tailport=s, headport=n, color=gray, headlabel="      7059"]
+BB7054 [shape=record label="{18260: call-whole.indexOf [v6,'indexOf',v7,v3]}" ] 
+BB7054 -> BB7055 [tailport=s, headport=n, headlabel="      7055"]
+BB7054 -> BB7059 [tailport=s, headport=n, color=gray]
+BB7055 [shape=record label="{18261: constant[0.0,v4]|18262: ===[v3,v4,v2]|18263: if[v2](true-block:7056,false-block:7058)}" ] 
+BB7055 -> BB7056 [tailport=s, headport=n, headlabel="      7056"]
+BB7055 -> BB7058 [tailport=s, headport=n, headlabel="      7058"]
+BB7055 -> BB7059 [tailport=s, headport=n, color=gray]
+BB7056 [shape=record label="{18264: read-variable['whole',v9,-]|18265: read-property[v9,'substr',-]|18266: \<variable-non-null-undef\>['whole']|18267: read-variable['begin',v11,-]|18268: read-property[v11,'length',v10]|18269: \<variable-non-null-undef\>['begin']}" ] 
+BB7056 -> BB7057 [tailport=s, headport=n, headlabel="      7057"]
+BB7056 -> BB7059 [tailport=s, headport=n, color=gray]
+BB7057 [shape=record label="{18270: call-whole.substr [v9,'substr',v10,v1]}" ] 
+BB7057 -> BB7058 [tailport=s, headport=n]
+BB7057 -> BB7059 [tailport=s, headport=n, color=gray]
+BB7058 [shape=record label="{18271: return[v1]}" ] 
+BB7059 [shape=record label="{18272: exceptional-return}" ] 
+//#$~ 11258
+}

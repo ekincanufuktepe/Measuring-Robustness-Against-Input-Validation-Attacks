@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry743[shape=none,label=""];
+BB_entry743 -> BB10502 [tailport=s, headport=n, headlabel="    10502"]
+BB10502 [shape=record label="{30968: constant[undefined,v1]|30969: vardecl['PROGRESS']|30970: vardecl['RESOLVED']|30971: vardecl['REJECTED']|30972: vardecl['FULFILLED_ERROR_MESSAGE']|30973: vardecl['freezeObject']|30974: vardecl['signalWaiting']|30975: vardecl['signalListener']|30976: vardecl['makeDeferredSignaler']|30977: vardecl['signalDeferred']|30978: vardecl['Deferred']}" ] 
+BB10502 -> BB10503 [tailport=s, headport=n, headlabel="      10503"]
+BB10503 [shape=record label="{30979: constant[0.0,v2]|30980: write-variable[v2,'PROGRESS']*|30981: constant[1.0,v3]|30982: write-variable[v3,'RESOLVED']*|30983: constant[2.0,v4]|30984: write-variable[v4,'REJECTED']*|30985: constant[\"This deferred has already been fulfilled.\",v5]|30986: write-variable[v5,'FULFILLED_ERROR_MESSAGE']*|30987: read-variable['Object',v7,-]|30988: read-property[v7,'freeze',v6]|30989: \<variable-non-null-undef\>['Object']|30990: if[v6](true-block:10505,false-block:10504)}" ] 
+BB10503 -> BB10505 [tailport=s, headport=n, headlabel="      10505"]
+BB10503 -> BB10504 [tailport=s, headport=n, headlabel="      10504"]
+BB10503 -> BB10510 [tailport=s, headport=n, color=gray, headlabel="      10510"]
+BB10504 [shape=record label="{30991: function-expr[function ( ),v6]}" ] 
+BB10504 -> BB10505 [tailport=s, headport=n]
+BB10505 [shape=record label="{30992: write-variable[v6,'freezeObject']*|30993: function-expr[function ( waiting type result rejection deferred ),v7]|30994: write-variable[v7,'signalWaiting']*|30995: function-expr[function ( listener type result rejection ),v8]|30996: write-variable[v8,'signalListener']*|30997: function-expr[function ( deferred type ),v9]|30998: write-variable[v9,'makeDeferredSignaler']*|30999: function-expr[function ( deferred type result ),v10]|31000: write-variable[v10,'signalDeferred']*|31001: function-expr[function ( canceler ),v11]|31002: write-variable[v11,'Deferred']*|31003: read-variable['Deferred',v14,-]|31004: read-property[v14,'prototype',v13]|31005: \<variable-non-null-undef\>['Deferred']|31006: function-expr[function ( ),v12]|31007: write-property[v13,'toString',v12]|31008: \<property-non-null-undef\>[v14,'prototype']*|31009: read-variable['instrumentation',v15,-]|31010: if[v15](true-block:10506,false-block:10508)}" ] 
+BB10505 -> BB10506 [tailport=s, headport=n, headlabel="      10506"]
+BB10505 -> BB10508 [tailport=s, headport=n, headlabel="      10508"]
+BB10505 -> BB10510 [tailport=s, headport=n, color=gray]
+BB10506 [shape=record label="{31011: read-variable['instrumentation',v17,v16]|31012: read-variable['Deferred',v18,-]}" ] 
+BB10506 -> BB10507 [tailport=s, headport=n, headlabel="      10507"]
+BB10506 -> BB10510 [tailport=s, headport=n, color=gray]
+BB10507 [shape=record label="{31013: call-instrumentation [v16,v17,v18,-]*}" ] 
+BB10507 -> BB10508 [tailport=s, headport=n]
+BB10507 -> BB10510 [tailport=s, headport=n, color=gray]
+BB10508 [shape=record label="{31014: read-variable['Deferred',v1,-]}" ] 
+BB10508 -> BB10509 [tailport=s, headport=n, headlabel="      10509"]
+BB10508 -> BB10510 [tailport=s, headport=n, color=gray]
+BB10509 [shape=record label="{31015: return[v1]}" ] 
+BB10510 [shape=record label="{31016: exceptional-return}" ] 
+//#$~ 14782
+}

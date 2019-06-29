@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry179[shape=none,label=""];
+BB_entry179 -> BB1518 [tailport=s, headport=n, headlabel="    1518"]
+BB1518 [shape=record label="{4500: constant[undefined,v1]|4501: vardecl['orig']}" ] 
+BB1518 -> BB1519 [tailport=s, headport=n, headlabel="      1519"]
+BB1519 [shape=record label="{4502: read-variable['this',v4,-]|4503: read-property[v4,'getBody',-]}" ] 
+BB1519 -> BB1520 [tailport=s, headport=n, headlabel="      1520"]
+BB1519 -> BB1526 [tailport=s, headport=n, color=gray, headlabel="      1526"]
+BB1520 [shape=record label="{4504: call-this.getBody [v4,'getBody',v2]}" ] 
+BB1520 -> BB1521 [tailport=s, headport=n, headlabel="      1521"]
+BB1520 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1521 [shape=record label="{4505: write-variable[v2,'orig']*|4506: read-variable['orig',v6,-]|4507: read-variable['orig',v8,-]|4508: read-property[v8,'toString',-]|4509: \<variable-non-null-undef\>['orig']}" ] 
+BB1521 -> BB1522 [tailport=s, headport=n, headlabel="      1522"]
+BB1521 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1522 [shape=record label="{4510: call-orig.toString [v8,'toString',v5]}" ] 
+BB1522 -> BB1523 [tailport=s, headport=n, headlabel="      1523"]
+BB1522 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1523 [shape=record label="{4511: write-property[v6,'source',v5]|4512: \<variable-non-null-undef\>['orig']*|4513: read-variable['this',v10,-]|4514: read-property[v10,'_makeWrapped',-]|4515: function-expr[function augmentWrapper ( ),v11]}" ] 
+BB1523 -> BB1524 [tailport=s, headport=n, headlabel="      1524"]
+BB1523 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1524 [shape=record label="{4516: call-this._makeWrapped [v10,'_makeWrapped',v11,v1]}" ] 
+BB1524 -> BB1525 [tailport=s, headport=n, headlabel="      1525"]
+BB1524 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1525 [shape=record label="{4517: return[v1]}" ] 
+BB1526 [shape=record label="{4518: exceptional-return}" ] 
+//#$~ 1746
+}

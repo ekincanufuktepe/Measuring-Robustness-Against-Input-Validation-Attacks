@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry54[shape=none,label=""];
+BB_entry54 -> BB612 [tailport=s, headport=n, headlabel="    612"]
+BB612 [shape=record label="{1966: constant[undefined,v1]|1967: vardecl['size']|1968: vardecl['key']}" ] 
+BB612 -> BB613 [tailport=s, headport=n, headlabel="      613"]
+BB613 [shape=record label="{1969: constant[0.0,v2]|1970: write-variable[v2,'size']*|1971: read-variable['this',v8,-]|1972: read-property[v8,'_',v4]}" ] 
+BB613 -> BB614 [tailport=s, headport=n, headlabel="      614"]
+BB613 -> BB620 [tailport=s, headport=n, color=gray, headlabel="      620"]
+BB614 [shape=record label="{1973: begin-for-in[v4,v5]}" ] 
+BB614 -> BB615 [tailport=s, headport=n, headlabel="      615"]
+BB614 -> BB620 [tailport=s, headport=n, color=gray]
+BB615 [shape=record label="{1974: has-next[v5,v6]|1975: if[v6](true-block:616,false-block:618)}" ] 
+BB615 -> BB616 [tailport=s, headport=n, headlabel="      616"]
+BB615 -> BB618 [tailport=s, headport=n, headlabel="      618"]
+BB616 [shape=record label="{1976: next-property[v5,v7]|1977: write-variable[v7,'key']|1978: constant[1.0,v9]|1979: read-variable['size',v10,-]|1980: +[v10,v11]|1981: +[v11,v9,v12]|1982: write-variable[v12,'size']*}" ] 
+BB616 -> BB617 [tailport=s, headport=n, headlabel="      617"]
+BB616 -> BB620 [tailport=s, headport=n, color=gray]
+BB617 [shape=record label="{1983: end-for-in(begin-node:1973)}" ] 
+BB617 -> BB615 [tailport=s, headport=n]
+BB618 [shape=record label="{1984: read-variable['size',v1,-]}" ] 
+BB618 -> BB619 [tailport=s, headport=n, headlabel="      619"]
+BB618 -> BB620 [tailport=s, headport=n, color=gray]
+BB619 [shape=record label="{1985: return[v1]}" ] 
+BB620 [shape=record label="{1986: exceptional-return}" ] 
+//#$~ 364
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry422[shape=none,label=""];
+BB_entry422 -> BB6131 [tailport=s, headport=n, headlabel="    6131"]
+BB6131 [shape=record label="{21196: constant[undefined,v1]|21197: vardecl['element']}" ] 
+BB6131 -> BB6132 [tailport=s, headport=n, headlabel="      6132"]
+BB6132 [shape=record label="{21198: read-variable['handle',v2,-]|21199: write-variable[v2,'element']*|21200: read-variable['element',v4,-]|21201: ![v4,v3]|21202: if[v3](true-block:6133,false-block:6134)}" ] 
+BB6132 -> BB6133 [tailport=s, headport=n, headlabel="      6133"]
+BB6132 -> BB6134 [tailport=s, headport=n, headlabel="      6134"]
+BB6132 -> BB6138 [tailport=s, headport=n, color=gray, headlabel="      6138"]
+BB6133 [shape=record label="{21203: constant[null,v1]}" ] 
+BB6133 -> BB6137 [tailport=s, headport=n, headlabel="      6137"]
+BB6134 [shape=record label="{21204: read-variable['EventListener',v6,-]|21205: read-property[v6,'capture',-]|21206: \<variable-non-null-undef\>['EventListener']|21207: read-variable['element',v7,-]|21208: read-variable['handlerBaseName',v8,-]|21209: read-variable['ReactEventListener',v12,-]|21210: read-property[v12,'dispatchEvent',v11]|21211: \<variable-non-null-undef\>['ReactEventListener']|21212: read-property[v11,'bind',-]|21213: \<property-non-null-undef\>[v12,'dispatchEvent']|21214: constant[null,v13]|21215: read-variable['topLevelType',v14,-]}" ] 
+BB6134 -> BB6135 [tailport=s, headport=n, headlabel="      6135"]
+BB6134 -> BB6138 [tailport=s, headport=n, color=gray]
+BB6135 [shape=record label="{21216: call-ReactEventListener.dispatchEvent.bind [v11,'bind',v13,v14,v9]}" ] 
+BB6135 -> BB6136 [tailport=s, headport=n, headlabel="      6136"]
+BB6135 -> BB6138 [tailport=s, headport=n, color=gray]
+BB6136 [shape=record label="{21217: call-EventListener.capture [v6,'capture',v7,v8,v9,v1]}" ] 
+BB6136 -> BB6137 [tailport=s, headport=n]
+BB6136 -> BB6138 [tailport=s, headport=n, color=gray]
+BB6137 [shape=record label="{21218: return[v1]}" ] 
+BB6138 [shape=record label="{21219: exceptional-return}" ] 
+//#$~ 10896
+}

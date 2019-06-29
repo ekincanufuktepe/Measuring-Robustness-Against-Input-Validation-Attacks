@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2090[shape=none,label=""];
+BB_entry2090 -> BB23875 [tailport=s, headport=n, headlabel="    23875"]
+BB23875 [shape=record label="{78874: constant[undefined,v1]}" ] 
+BB23875 -> BB23876 [tailport=s, headport=n, headlabel="      23876"]
+BB23876 [shape=record label="{78875: read-variable['hash',v3,-]|78876: read-variable['get',v5,v4]|78877: read-variable['this',v6,-]|78878: constant[\"templateName\",v7]}" ] 
+BB23876 -> BB23877 [tailport=s, headport=n, headlabel="      23877"]
+BB23876 -> BB23881 [tailport=s, headport=n, color=gray, headlabel="      23881"]
+BB23877 [shape=record label="{78879: call-get [v4,v5,v6,v7,v2]}" ] 
+BB23877 -> BB23878 [tailport=s, headport=n, headlabel="      23878"]
+BB23877 -> BB23881 [tailport=s, headport=n, color=gray]
+BB23878 [shape=record label="{78880: write-property[v3,'template',v2]|78881: \<variable-non-null-undef\>['hash']*|78882: read-variable['this',v9,-]|78883: read-property[v9,'_super',-]|78884: read-variable['hash',v10,-]}" ] 
+BB23878 -> BB23879 [tailport=s, headport=n, headlabel="      23879"]
+BB23878 -> BB23881 [tailport=s, headport=n, color=gray]
+BB23879 [shape=record label="{78885: call-this._super [v9,'_super',v10,-]*}" ] 
+BB23879 -> BB23880 [tailport=s, headport=n, headlabel="      23880"]
+BB23879 -> BB23881 [tailport=s, headport=n, color=gray]
+BB23880 [shape=record label="{78886: return[v1]}" ] 
+BB23881 [shape=record label="{78887: exceptional-return}" ] 
+//#$~ 45203
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry240[shape=none,label=""];
+BB_entry240 -> BB3411 [tailport=s, headport=n, headlabel="    3411"]
+BB3411 [shape=record label="{11929: constant[undefined,v1]}" ] 
+BB3411 -> BB3412 [tailport=s, headport=n, headlabel="      3412"]
+BB3412 [shape=record label="{11930: read-variable['childContext',v2,-]|11931: if[v2](true-block:3413,false-block:3415)}" ] 
+BB3412 -> BB3413 [tailport=s, headport=n, headlabel="      3413"]
+BB3412 -> BB3415 [tailport=s, headport=n, headlabel="      3415"]
+BB3412 -> BB3417 [tailport=s, headport=n, color=gray, headlabel="      3417"]
+BB3413 [shape=record label="{11932: read-variable['assign',v4,v3]|11933: new[v5]|11934: read-variable['currentContext',v6,-]|11935: read-variable['childContext',v7,-]}" ] 
+BB3413 -> BB3414 [tailport=s, headport=n, headlabel="      3414"]
+BB3413 -> BB3417 [tailport=s, headport=n, color=gray]
+BB3414 [shape=record label="{11936: call-assign [v3,v4,v5,v6,v7,v1]}" ] 
+BB3414 -> BB3416 [tailport=s, headport=n, headlabel="      3416"]
+BB3414 -> BB3417 [tailport=s, headport=n, color=gray]
+BB3415 [shape=record label="{11937: read-variable['currentContext',v1,-]}" ] 
+BB3415 -> BB3416 [tailport=s, headport=n]
+BB3415 -> BB3417 [tailport=s, headport=n, color=gray]
+BB3416 [shape=record label="{11938: return[v1]}" ] 
+BB3417 [shape=record label="{11939: exceptional-return}" ] 
+//#$~ 6601
+}

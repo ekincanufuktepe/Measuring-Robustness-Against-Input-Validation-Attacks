@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry6[shape=none,label=""];
+BB_entry6 -> BB70 [tailport=s, headport=n, headlabel="    70"]
+BB70 [shape=record label="{226: constant[undefined,v1]|227: vardecl['s']}" ] 
+BB70 -> BB71 [tailport=s, headport=n, headlabel="      71"]
+BB71 [shape=record label="{228: constant[0.0,v2]|229: write-variable[v2,'s']*|230: read-variable['x',v4,-]|231: constant[0.0,v5]|232: !=[v4,v5,v3]|233: if[v3](true-block:72,false-block:75)}" ] 
+BB71 -> BB72 [tailport=s, headport=n, headlabel="      72"]
+BB71 -> BB75 [tailport=s, headport=n, headlabel="      75"]
+BB71 -> BB79 [tailport=s, headport=n, color=gray, headlabel="      79"]
+BB72 [shape=record label="{234: read-variable['x',v7,-]|235: read-variable['x',v8,-]|236: *[v7,v8,v6]|237: write-variable[v6,'s']*|238: read-variable['y',v10,-]|239: read-variable['Infinity',v11,-]|240: ==[v10,v11,v9]|241: if[v9](true-block:73,false-block:75)}" ] 
+BB72 -> BB73 [tailport=s, headport=n, headlabel="      73"]
+BB72 -> BB75 [tailport=s, headport=n]
+BB72 -> BB79 [tailport=s, headport=n, color=gray]
+BB73 [shape=record label="{242: read-variable['document',v13,-]|243: read-property[v13,'write',-]|244: \<variable-non-null-undef\>['document']|245: constant[\"To infinity and beyond!\",v14]}" ] 
+BB73 -> BB74 [tailport=s, headport=n, headlabel="      74"]
+BB73 -> BB79 [tailport=s, headport=n, color=gray]
+BB74 [shape=record label="{246: call-document.write [v13,'write',v14,-]*}" ] 
+BB74 -> BB75 [tailport=s, headport=n]
+BB74 -> BB79 [tailport=s, headport=n, color=gray]
+BB75 [shape=record label="{247: read-variable['q',v7,-]|248: constant[null,v8]|249: !=[v7,v8,v6]|250: if[v6](true-block:76,false-block:77)}" ] 
+BB75 -> BB76 [tailport=s, headport=n, headlabel="      76"]
+BB75 -> BB77 [tailport=s, headport=n, headlabel="      77"]
+BB75 -> BB79 [tailport=s, headport=n, color=gray]
+BB76 [shape=record label="{251: constant[0.0,v9]|252: write-variable[v9,'y']*}" ] 
+BB76 -> BB77 [tailport=s, headport=n]
+BB77 [shape=record label="{253: read-variable['z',v10,-]|254: read-variable['s',v11,-]|255: +[v10,v11,v9]|256: write-variable[v9,'z']*|257: read-variable['z',v1,-]}" ] 
+BB77 -> BB78 [tailport=s, headport=n, headlabel="      78"]
+BB77 -> BB79 [tailport=s, headport=n, color=gray]
+BB78 [shape=record label="{258: return[v1]}" ] 
+BB79 [shape=record label="{259: exceptional-return}" ] 
+//#$~ 144
+}

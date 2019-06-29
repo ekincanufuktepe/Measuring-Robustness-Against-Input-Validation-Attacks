@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1371[shape=none,label=""];
+BB_entry1371 -> BB16148 [tailport=s, headport=n, headlabel="    16148"]
+BB16148 [shape=record label="{55338: constant[undefined,v1]}" ] 
+BB16148 -> BB16149 [tailport=s, headport=n, headlabel="      16149"]
+BB16149 [shape=record label="{55339: read-variable['fulfillment',v3,-]|55340: read-variable['promise',v4,-]|55341: ===[v3,v4,v2]|55342: if[v2](true-block:16150,false-block:16151)}" ] 
+BB16149 -> BB16150 [tailport=s, headport=n, headlabel="      16150"]
+BB16149 -> BB16151 [tailport=s, headport=n, headlabel="      16151"]
+BB16149 -> BB16155 [tailport=s, headport=n, color=gray, headlabel="      16155"]
+BB16150 [shape=record label="{55343: read-variable['resolve',v6,v5]|55344: read-variable['entity',v7,-]}" ] 
+BB16150 -> BB16152 [tailport=s, headport=n, headlabel="      16152"]
+BB16150 -> BB16155 [tailport=s, headport=n, color=gray]
+BB16151 [shape=record label="{55345: read-variable['resolve',v6,v5]|55346: read-variable['fulfillment',v7,-]}" ] 
+BB16151 -> BB16153 [tailport=s, headport=n, headlabel="      16153"]
+BB16151 -> BB16155 [tailport=s, headport=n, color=gray]
+BB16152 [shape=record label="{55347: call-resolve [v5,v6,v7,v1]}" ] 
+BB16152 -> BB16154 [tailport=s, headport=n, headlabel="      16154"]
+BB16152 -> BB16155 [tailport=s, headport=n, color=gray]
+BB16153 [shape=record label="{55348: call-resolve [v5,v6,v7,v1]}" ] 
+BB16153 -> BB16154 [tailport=s, headport=n]
+BB16153 -> BB16155 [tailport=s, headport=n, color=gray]
+BB16154 [shape=record label="{55349: return[v1]}" ] 
+BB16155 [shape=record label="{55350: exceptional-return}" ] 
+//#$~ 30014
+}

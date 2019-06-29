@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry205[shape=none,label=""];
+BB_entry205 -> BB3574 [tailport=s, headport=n, headlabel="    3574"]
+BB3574 [shape=record label="{11183: constant[undefined,v1]|11184: vardecl['curr']}" ] 
+BB3574 -> BB3575 [tailport=s, headport=n, headlabel="      3575"]
+BB3575 [shape=record label="{11185: read-variable['i',v5,-]|11186: read-variable['start',v6,-]|11187: +[v5,v6,v3]|11188: constant[1.0,v4]|11189: +[v3,v4,v2]|11190: write-variable[v2,'curr']*|11191: read-variable['curr',v14,-]|11192: read-variable['lineno',v15,-]|11193: ==[v14,v15,v13]|11194: if[v13](true-block:3576,false-block:3577)}" ] 
+BB3575 -> BB3576 [tailport=s, headport=n, headlabel="      3576"]
+BB3575 -> BB3577 [tailport=s, headport=n, headlabel="      3577"]
+BB3575 -> BB3580 [tailport=s, headport=n, color=gray, headlabel="      3580"]
+BB3576 [shape=record label="{11195: constant[\"  \\\> \",v11]}" ] 
+BB3576 -> BB3578 [tailport=s, headport=n, headlabel="      3578"]
+BB3577 [shape=record label="{11196: constant[\"    \",v11]}" ] 
+BB3577 -> BB3578 [tailport=s, headport=n]
+BB3578 [shape=record label="{11197: read-variable['curr',v12,-]|11198: +[v11,v12,v9]|11199: constant[\"| \",v10]|11200: +[v9,v10,v7]|11201: read-variable['line',v8,-]|11202: +[v7,v8,v1]}" ] 
+BB3578 -> BB3579 [tailport=s, headport=n, headlabel="      3579"]
+BB3578 -> BB3580 [tailport=s, headport=n, color=gray]
+BB3579 [shape=record label="{11203: return[v1]}" ] 
+BB3580 [shape=record label="{11204: exceptional-return}" ] 
+//#$~ 3793
+}

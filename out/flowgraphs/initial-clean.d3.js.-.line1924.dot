@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry299[shape=none,label=""];
+BB_entry299 -> BB3213 [tailport=s, headport=n, headlabel="    3213"]
+BB3213 [shape=record label="{9940: constant[undefined,v1]}" ] 
+BB3213 -> BB3214 [tailport=s, headport=n, headlabel="      3214"]
+BB3214 [shape=record label="{9941: read-variable['arguments',v5,-]|9942: read-property[v5,'length',v3]|9943: \<variable-non-null-undef\>['arguments']|9944: constant[2.0,v4]|9945: ===[v3,v4,v2]|9946: if[v2](true-block:3215,false-block:3216)}" ] 
+BB3214 -> BB3216 [tailport=s, headport=n, headlabel="      3216"]
+BB3214 -> BB3215 [tailport=s, headport=n, headlabel="      3215"]
+BB3214 -> BB3221 [tailport=s, headport=n, color=gray, headlabel="      3221"]
+BB3215 [shape=record label="{9947: typeof['mimeType',v6]|9948: constant[\"function\",v7]|9949: ===[v6,v7,v2]}" ] 
+BB3215 -> BB3216 [tailport=s, headport=n]
+BB3215 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3216 [shape=record label="{9950: if[v2](true-block:3217,false-block:3218)}" ] 
+BB3216 -> BB3217 [tailport=s, headport=n, headlabel="      3217"]
+BB3216 -> BB3218 [tailport=s, headport=n, headlabel="      3218"]
+BB3217 [shape=record label="{9951: read-variable['mimeType',v6,-]|9952: write-variable[v6,'callback']|9953: constant[null,v7]|9954: write-variable[v7,'mimeType']}" ] 
+BB3217 -> BB3218 [tailport=s, headport=n]
+BB3217 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3218 [shape=record label="{9955: read-variable['d3_xhr',v7,v6]|9956: read-variable['url',v8,-]|9957: read-variable['mimeType',v9,-]|9958: read-variable['response',v10,-]|9959: read-variable['callback',v11,-]}" ] 
+BB3218 -> BB3219 [tailport=s, headport=n, headlabel="      3219"]
+BB3218 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3219 [shape=record label="{9960: call-d3_xhr [v6,v7,v8,v9,v10,v11,v1]}" ] 
+BB3219 -> BB3220 [tailport=s, headport=n, headlabel="      3220"]
+BB3219 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3220 [shape=record label="{9961: return[v1]}" ] 
+BB3221 [shape=record label="{9962: exceptional-return}" ] 
+//#$~ 1927
+}

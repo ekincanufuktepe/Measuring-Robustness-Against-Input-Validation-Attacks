@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry489[shape=none,label=""];
+BB_entry489 -> BB7008 [tailport=s, headport=n, headlabel="    7008"]
+BB7008 [shape=record label="{20657: constant[undefined,v1]}" ] 
+BB7008 -> BB7009 [tailport=s, headport=n, headlabel="      7009"]
+BB7009 [shape=record label="{20658: read-variable['node',v2,-]|20659: read-property[v2,'_uid',v1]|20660: \<variable-non-null-undef\>['node']|20661: if[v1](true-block:7011,false-block:7010)}" ] 
+BB7009 -> BB7011 [tailport=s, headport=n, headlabel="      7011"]
+BB7009 -> BB7010 [tailport=s, headport=n, headlabel="      7010"]
+BB7009 -> BB7012 [tailport=s, headport=n, color=gray, headlabel="      7012"]
+BB7010 [shape=record label="{20662: read-variable['node',v2,-]|20663: constant[1.0,v3]|20664: read-variable['_zipIdx',v4,-]|20665: +[v4,v5]|20666: +[v5,v3,v1]|20667: write-variable[v1,'_zipIdx']|20668: write-property[v2,'_uid',v1]|20669: \<variable-non-null-undef\>['node']}" ] 
+BB7010 -> BB7011 [tailport=s, headport=n]
+BB7010 -> BB7012 [tailport=s, headport=n, color=gray]
+BB7011 [shape=record label="{20670: return[v1]}" ] 
+BB7012 [shape=record label="{20671: exceptional-return}" ] 
+//#$~ 9771
+}

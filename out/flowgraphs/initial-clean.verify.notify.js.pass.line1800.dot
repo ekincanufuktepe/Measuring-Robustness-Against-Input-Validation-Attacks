@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry161[shape=none,label=""];
+BB_entry161 -> BB1966 [tailport=s, headport=n, headlabel="    1966"]
+BB1966 [shape=record label="{5904: constant[undefined,v1]}" ] 
+BB1966 -> BB1967 [tailport=s, headport=n, headlabel="      1967"]
+BB1967 [shape=record label="{5905: constant[1.0,v2]|5906: read-variable['n',v3,-]|5907: +[v3,v4]|5908: +[v4,v2,v5]|5909: write-variable[v5,'n']*|5910: read-variable['n',v7,-]|5911: read-variable['l',v8,-]|5912: ===[v7,v8,v6]|5913: if[v6](true-block:1968,false-block:1970)}" ] 
+BB1967 -> BB1968 [tailport=s, headport=n, headlabel="      1968"]
+BB1967 -> BB1970 [tailport=s, headport=n, headlabel="      1970"]
+BB1967 -> BB1971 [tailport=s, headport=n, color=gray, headlabel="      1971"]
+BB1968 [shape=record label="{5914: read-variable['_this',v10,-]|5915: read-property[v10,'resolve',-]|5916: \<variable-non-null-undef\>['_this']|5917: read-variable['response',v11,-]}" ] 
+BB1968 -> BB1969 [tailport=s, headport=n, headlabel="      1969"]
+BB1968 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1969 [shape=record label="{5918: call-_this.resolve [v10,'resolve',v11,-]*}" ] 
+BB1969 -> BB1970 [tailport=s, headport=n]
+BB1969 -> BB1971 [tailport=s, headport=n, color=gray]
+BB1970 [shape=record label="{5919: return[v1]}" ] 
+BB1971 [shape=record label="{5920: exceptional-return}" ] 
+//#$~ 1802
+}

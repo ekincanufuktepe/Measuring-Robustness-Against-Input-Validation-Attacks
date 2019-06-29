@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry709[shape=none,label=""];
+BB_entry709 -> BB9588 [tailport=s, headport=n, headlabel="    9588"]
+BB9588 [shape=record label="{25117: constant[undefined,v1]}" ] 
+BB9588 -> BB9589 [tailport=s, headport=n, headlabel="      9589"]
+BB9589 [shape=record label="{25118: read-variable['args',v3,-]|25119: read-property[v3,'push',-]|25120: \<variable-non-null-undef\>['args']|25121: read-variable['self',v6,-]|25122: read-property[v6,'recurse',-]|25123: \<variable-non-null-undef\>['self']|25124: read-variable['expr',v7,-]}" ] 
+BB9589 -> BB9590 [tailport=s, headport=n, headlabel="      9590"]
+BB9589 -> BB9593 [tailport=s, headport=n, color=gray, headlabel="      9593"]
+BB9590 [shape=record label="{25125: call-self.recurse [v6,'recurse',v7,v4]}" ] 
+BB9590 -> BB9591 [tailport=s, headport=n, headlabel="      9591"]
+BB9590 -> BB9593 [tailport=s, headport=n, color=gray]
+BB9591 [shape=record label="{25126: call-args.push [v3,'push',v4,-]*}" ] 
+BB9591 -> BB9592 [tailport=s, headport=n, headlabel="      9592"]
+BB9591 -> BB9593 [tailport=s, headport=n, color=gray]
+BB9592 [shape=record label="{25127: return[v1]}" ] 
+BB9593 [shape=record label="{25128: exceptional-return}" ] 
+//#$~ 13705
+}

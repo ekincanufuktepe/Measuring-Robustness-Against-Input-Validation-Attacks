@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry59[shape=none,label=""];
+BB_entry59 -> BB528 [tailport=s, headport=n, headlabel="    528"]
+BB528 [shape=record label="{1672: constant[undefined,v1]}" ] 
+BB528 -> BB529 [tailport=s, headport=n, headlabel="      529"]
+BB529 [shape=record label="{1673: read-variable['t',v3,-]|1674: constant[1.0,v4]|1675: \>=[v3,v4,v2]|1676: if[v2](true-block:530,false-block:531)}" ] 
+BB529 -> BB530 [tailport=s, headport=n, headlabel="      530"]
+BB529 -> BB531 [tailport=s, headport=n, headlabel="      531"]
+BB529 -> BB535 [tailport=s, headport=n, color=gray, headlabel="      535"]
+BB530 [shape=record label="{1677: read-variable['t',v1,-]}" ] 
+BB530 -> BB534 [tailport=s, headport=n, headlabel="      534"]
+BB530 -> BB535 [tailport=s, headport=n, color=gray]
+BB531 [shape=record label="{1678: constant[-1.0,v5]|1679: read-variable['Math',v10,-]|1680: read-property[v10,'sqrt',-]|1681: \<variable-non-null-undef\>['Math']|1682: constant[1.0,v12]|1683: read-variable['t',v16,-]|1684: constant[1.0,v17]|1685: /[v16,v17,v14]|1686: write-variable[v14,'t']|1687: read-variable['t',v15,-]|1688: *[v14,v15,v13]|1689: -[v12,v13,v11]}" ] 
+BB531 -> BB532 [tailport=s, headport=n, headlabel="      532"]
+BB531 -> BB535 [tailport=s, headport=n, color=gray]
+BB532 [shape=record label="{1690: call-Math.sqrt [v10,'sqrt',v11,v7]}" ] 
+BB532 -> BB533 [tailport=s, headport=n, headlabel="      533"]
+BB532 -> BB535 [tailport=s, headport=n, color=gray]
+BB533 [shape=record label="{1691: constant[1.0,v8]|1692: -[v7,v8,v6]|1693: *[v5,v6,v1]}" ] 
+BB533 -> BB534 [tailport=s, headport=n]
+BB533 -> BB535 [tailport=s, headport=n, color=gray]
+BB534 [shape=record label="{1694: return[v1]}" ] 
+BB535 [shape=record label="{1695: exceptional-return}" ] 
+//#$~ 585
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry45[shape=none,label=""];
+BB_entry45 -> BB432 [tailport=s, headport=n, headlabel="    432"]
+BB432 [shape=record label="{1564: constant[undefined,v1]|1565: vardecl['f']}" ] 
+BB432 -> BB433 [tailport=s, headport=n, headlabel="      433"]
+BB433 [shape=record label="{1566: function-expr[function ( ),v2]|1567: write-variable[v2,'f']*|1568: read-variable['joose',v4,-]|1569: read-property[v4,'addToString',-]|1570: \<variable-non-null-undef\>['joose']|1571: read-variable['f',v5,-]|1572: function-expr[function ( ),v6]}" ] 
+BB433 -> BB434 [tailport=s, headport=n, headlabel="      434"]
+BB433 -> BB437 [tailport=s, headport=n, color=gray, headlabel="      437"]
+BB434 [shape=record label="{1573: call-joose.addToString [v4,'addToString',v5,v6,-]*}" ] 
+BB434 -> BB435 [tailport=s, headport=n, headlabel="      435"]
+BB434 -> BB437 [tailport=s, headport=n, color=gray]
+BB435 [shape=record label="{1574: read-variable['f',v1,-]}" ] 
+BB435 -> BB436 [tailport=s, headport=n, headlabel="      436"]
+BB435 -> BB437 [tailport=s, headport=n, color=gray]
+BB436 [shape=record label="{1575: return[v1]}" ] 
+BB437 [shape=record label="{1576: exceptional-return}" ] 
+//#$~ 463
+}

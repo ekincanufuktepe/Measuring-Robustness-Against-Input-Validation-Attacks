@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry579[shape=none,label=""];
+BB_entry579 -> BB7748 [tailport=s, headport=n, headlabel="    7748"]
+BB7748 [shape=record label="{19911: constant[undefined,v1]}" ] 
+BB7748 -> BB7749 [tailport=s, headport=n, headlabel="      7749"]
+BB7749 [shape=record label="{19912: read-variable['logFn',v3,v2]|19913: read-variable['arg1',v4,-]|19914: read-variable['arg2',v7,-]|19915: constant[null,v8]|19916: ==[v7,v8,v6]|19917: if[v6](true-block:7750,false-block:7751)}" ] 
+BB7749 -> BB7750 [tailport=s, headport=n, headlabel="      7750"]
+BB7749 -> BB7751 [tailport=s, headport=n, headlabel="      7751"]
+BB7749 -> BB7754 [tailport=s, headport=n, color=gray, headlabel="      7754"]
+BB7750 [shape=record label="{19918: constant[\"\",v5]}" ] 
+BB7750 -> BB7752 [tailport=s, headport=n, headlabel="      7752"]
+BB7751 [shape=record label="{19919: read-variable['arg2',v5,-]}" ] 
+BB7751 -> BB7752 [tailport=s, headport=n]
+BB7751 -> BB7754 [tailport=s, headport=n, color=gray]
+BB7752 [shape=record label="{19920: call-logFn [v2,v3,v4,v5,-]*}" ] 
+BB7752 -> BB7753 [tailport=s, headport=n, headlabel="      7753"]
+BB7752 -> BB7754 [tailport=s, headport=n, color=gray]
+BB7753 [shape=record label="{19921: return[v1]}" ] 
+BB7754 [shape=record label="{19922: exceptional-return}" ] 
+//#$~ 12339
+}

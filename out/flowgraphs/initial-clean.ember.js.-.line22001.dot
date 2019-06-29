@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry979[shape=none,label=""];
+BB_entry979 -> BB11908 [tailport=s, headport=n, headlabel="    11908"]
+BB11908 [shape=record label="{40888: constant[undefined,v1]}" ] 
+BB11908 -> BB11909 [tailport=s, headport=n, headlabel="      11909"]
+BB11909 [shape=record label="{40889: read-variable['get',v5,v4]|40890: read-variable['this',v6,-]|40891: constant[\"location\",v7]}" ] 
+BB11909 -> BB11910 [tailport=s, headport=n, headlabel="      11910"]
+BB11909 -> BB11914 [tailport=s, headport=n, color=gray, headlabel="      11914"]
+BB11910 [shape=record label="{40892: call-get [v4,v5,v6,v7,v3]}" ] 
+BB11910 -> BB11911 [tailport=s, headport=n, headlabel="      11911"]
+BB11910 -> BB11914 [tailport=s, headport=n, color=gray]
+BB11911 [shape=record label="{40893: read-variable['path',v2,-]|40894: write-property[v3,'hash',v2]*|40895: read-variable['set',v9,v8]|40896: read-variable['this',v10,-]|40897: constant[\"lastSetURL\",v11]|40898: read-variable['path',v12,-]}" ] 
+BB11911 -> BB11912 [tailport=s, headport=n, headlabel="      11912"]
+BB11911 -> BB11914 [tailport=s, headport=n, color=gray]
+BB11912 [shape=record label="{40899: call-set [v8,v9,v10,v11,v12,-]*}" ] 
+BB11912 -> BB11913 [tailport=s, headport=n, headlabel="      11913"]
+BB11912 -> BB11914 [tailport=s, headport=n, color=gray]
+BB11913 [shape=record label="{40900: return[v1]}" ] 
+BB11914 [shape=record label="{40901: exceptional-return}" ] 
+//#$~ 22003
+}

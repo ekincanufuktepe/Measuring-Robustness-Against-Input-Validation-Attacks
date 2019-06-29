@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry577[shape=none,label=""];
+BB_entry577 -> BB7739 [tailport=s, headport=n, headlabel="    7739"]
+BB7739 [shape=record label="{19894: constant[undefined,v1]|19895: vardecl['args']}" ] 
+BB7739 -> BB7740 [tailport=s, headport=n, headlabel="      7740"]
+BB7740 [shape=record label="{19896: read-variable['Array',v3,-]}" ] 
+BB7740 -> BB7741 [tailport=s, headport=n, headlabel="      7741"]
+BB7740 -> BB7747 [tailport=s, headport=n, color=gray, headlabel="      7747"]
+BB7741 [shape=record label="{19897: construct [-,v3,v2]}" ] 
+BB7741 -> BB7742 [tailport=s, headport=n, headlabel="      7742"]
+BB7741 -> BB7747 [tailport=s, headport=n, color=gray]
+BB7742 [shape=record label="{19898: write-variable[v2,'args']*|19899: read-variable['forEach',v5,v4]|19900: read-variable['arguments',v6,-]|19901: function-expr[function ( arg ),v7]}" ] 
+BB7742 -> BB7743 [tailport=s, headport=n, headlabel="      7743"]
+BB7742 -> BB7747 [tailport=s, headport=n, color=gray]
+BB7743 [shape=record label="{19902: call-forEach [v4,v5,v6,v7,-]*}" ] 
+BB7743 -> BB7744 [tailport=s, headport=n, headlabel="      7744"]
+BB7743 -> BB7747 [tailport=s, headport=n, color=gray]
+BB7744 [shape=record label="{19903: read-variable['logFn',v9,-]|19904: read-property[v9,'apply',-]|19905: \<variable-non-null-undef\>['logFn']|19906: read-variable['console',v10,-]|19907: read-variable['args',v11,-]}" ] 
+BB7744 -> BB7745 [tailport=s, headport=n, headlabel="      7745"]
+BB7744 -> BB7747 [tailport=s, headport=n, color=gray]
+BB7745 [shape=record label="{19908: call-logFn.apply [v9,'apply',v10,v11,v1]}" ] 
+BB7745 -> BB7746 [tailport=s, headport=n, headlabel="      7746"]
+BB7745 -> BB7747 [tailport=s, headport=n, color=gray]
+BB7746 [shape=record label="{19909: return[v1]}" ] 
+BB7747 [shape=record label="{19910: exceptional-return}" ] 
+//#$~ 12332
+}

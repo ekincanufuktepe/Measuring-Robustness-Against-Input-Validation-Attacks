@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry817[shape=none,label=""];
+BB_entry817 -> BB10946 [tailport=s, headport=n, headlabel="    10946"]
+BB10946 [shape=record label="{35867: constant[undefined,v1]|35868: vardecl['emptyFunction']|35869: vardecl['warning']}" ] 
+BB10946 -> BB10947 [tailport=s, headport=n, headlabel="      10947"]
+BB10947 [shape=record label="{35870: read-variable['_dereq_',v4,v3]|35871: constant[114.0,v5]}" ] 
+BB10947 -> BB10948 [tailport=s, headport=n, headlabel="      10948"]
+BB10947 -> BB10953 [tailport=s, headport=n, color=gray, headlabel="      10953"]
+BB10948 [shape=record label="{35872: call-_dereq_ [v3,v4,v5,v2]}" ] 
+BB10948 -> BB10949 [tailport=s, headport=n, headlabel="      10949"]
+BB10948 -> BB10953 [tailport=s, headport=n, color=gray]
+BB10949 [shape=record label="{35873: write-variable[v2,'emptyFunction']*|35874: read-variable['emptyFunction',v6,-]|35875: write-variable[v6,'warning']*|35876: constant[\"production\",v8]|35877: constant[\"development\",v9]|35878: !==[v8,v9,v7]|35879: if[v7](true-block:10950,false-block:10951)}" ] 
+BB10949 -> BB10950 [tailport=s, headport=n, headlabel="      10950"]
+BB10949 -> BB10951 [tailport=s, headport=n, headlabel="      10951"]
+BB10949 -> BB10953 [tailport=s, headport=n, color=gray]
+BB10950 [shape=record label="{35880: function-expr[function ( condition format ),v10]|35881: write-variable[v10,'warning']*}" ] 
+BB10950 -> BB10951 [tailport=s, headport=n]
+BB10951 [shape=record label="{35882: read-variable['module',v11,-]|35883: read-variable['warning',v10,-]|35884: write-property[v11,'exports',v10]|35885: \<variable-non-null-undef\>['module']*}" ] 
+BB10951 -> BB10952 [tailport=s, headport=n, headlabel="      10952"]
+BB10951 -> BB10953 [tailport=s, headport=n, color=gray]
+BB10952 [shape=record label="{35886: return[v1]}" ] 
+BB10953 [shape=record label="{35887: exceptional-return}" ] 
+//#$~ 19599
+}

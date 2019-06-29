@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry1553[shape=none,label=""];
+BB_entry1553 -> BB18057 [tailport=s, headport=n, headlabel="    18057"]
+BB18057 [shape=record label="{60370: constant[undefined,v1]}" ] 
+BB18057 -> BB18058 [tailport=s, headport=n, headlabel="      18058"]
+BB18058 [shape=record label="{60371: read-variable['this',v3,-]|60372: read-property[v3,'isDestroying',v2]|60373: if[v2](true-block:18059,false-block:18060)}" ] 
+BB18058 -> BB18059 [tailport=s, headport=n, headlabel="      18059"]
+BB18058 -> BB18060 [tailport=s, headport=n, headlabel="      18060"]
+BB18058 -> BB18066 [tailport=s, headport=n, color=gray, headlabel="      18066"]
+BB18059 [shape=record label="{60374: constant[undefined,v1]}" ] 
+BB18059 -> BB18065 [tailport=s, headport=n, headlabel="      18065"]
+BB18060 [shape=record label="{60375: read-variable['this',v5,-]|60376: constant[true,v4]|60377: write-property[v5,'isDestroying',v4]*|60378: read-variable['schedule',v7,v6]|60379: constant[\"actions\",v8]|60380: read-variable['this',v9,-]|60381: read-variable['this',v11,-]|60382: read-property[v11,'willDestroy',v10]}" ] 
+BB18060 -> BB18061 [tailport=s, headport=n, headlabel="      18061"]
+BB18060 -> BB18066 [tailport=s, headport=n, color=gray]
+BB18061 [shape=record label="{60383: call-schedule [v6,v7,v8,v9,v10,-]*}" ] 
+BB18061 -> BB18062 [tailport=s, headport=n, headlabel="      18062"]
+BB18061 -> BB18066 [tailport=s, headport=n, color=gray]
+BB18062 [shape=record label="{60384: read-variable['schedule',v13,v12]|60385: constant[\"destroy\",v14]|60386: read-variable['this',v15,-]|60387: read-variable['this',v17,-]|60388: read-property[v17,'_scheduledDestroy',v16]}" ] 
+BB18062 -> BB18063 [tailport=s, headport=n, headlabel="      18063"]
+BB18062 -> BB18066 [tailport=s, headport=n, color=gray]
+BB18063 [shape=record label="{60389: call-schedule [v12,v13,v14,v15,v16,-]*}" ] 
+BB18063 -> BB18064 [tailport=s, headport=n, headlabel="      18064"]
+BB18063 -> BB18066 [tailport=s, headport=n, color=gray]
+BB18064 [shape=record label="{60390: read-variable['this',v1,-]}" ] 
+BB18064 -> BB18065 [tailport=s, headport=n]
+BB18064 -> BB18066 [tailport=s, headport=n, color=gray]
+BB18065 [shape=record label="{60391: return[v1]}" ] 
+BB18066 [shape=record label="{60392: exceptional-return}" ] 
+//#$~ 33920
+}

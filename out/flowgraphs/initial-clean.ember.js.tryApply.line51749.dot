@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2550[shape=none,label=""];
+BB_entry2550 -> BB28878 [tailport=s, headport=n, headlabel="    28878"]
+BB28878 [shape=record label="{96010: constant[undefined,v1]}" ] 
+BB28878 -> BB28879 [tailport=s, headport=n, headlabel="      28879"]
+BB28879 [shape=record label="{96011: read-variable['f',v3,-]|96012: read-property[v3,'apply',-]|96013: \<variable-non-null-undef\>['f']|96014: read-variable['s',v4,-]|96015: read-variable['a',v5,-]}" ] 
+BB28879 -> BB28880 [tailport=s, headport=n, headlabel="      28880"]
+BB28879 -> BB28881 [tailport=s, headport=n, color=gray, headlabel="      28881"]
+BB28880 [shape=record label="{96016: call-f.apply [v3,'apply',v4,v5,-]*}" ] 
+BB28880 -> BB28885 [tailport=s, headport=n, headlabel="      28885"]
+BB28880 -> BB28881 [tailport=s, headport=n, color=gray]
+BB28881 [shape=record label="{96017: catch[error,v2]|96018: begin-with[v2]}" ] 
+BB28881 -> BB28882 [tailport=s, headport=n, headlabel="      28882"]
+BB28881 -> BB28886 [tailport=s, headport=n, color=gray, headlabel="      28886"]
+BB28882 [shape=record label="{96019: read-variable['ERROR',v5,v3]|96020: read-variable['error',v4,v3]|96021: write-property[v5,'value',v4]|96022: \<variable-non-null-undef\>['ERROR']*|96023: read-variable['ERROR',v1,v3]}" ] 
+BB28882 -> BB28885 [tailport=s, headport=n]
+BB28882 -> BB28883 [tailport=s, headport=n, color=gray, headlabel="      28883"]
+BB28883 [shape=record label="{96024: end-with}" ] 
+BB28883 -> BB28886 [tailport=s, headport=n]
+BB28884 [shape=record label="{96025: end-with}" ] 
+BB28884 -> BB28885 [tailport=s, headport=n]
+BB28885 [shape=record label="{96026: return[v1]}" ] 
+BB28886 [shape=record label="{96027: exceptional-return}" ] 
+//#$~ 51754
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry438[shape=none,label=""];
+BB_entry438 -> BB4958 [tailport=s, headport=n, headlabel="    4958"]
+BB4958 [shape=record label="{15348: constant[undefined,v1]|15349: vardecl['i']|15350: vardecl['l']}" ] 
+BB4958 -> BB4959 [tailport=s, headport=n, headlabel="      4959"]
+BB4959 [shape=record label="{15351: constant[0.0,v3]|15352: write-variable[v3,'i']*|15353: read-variable['arr',v5,-]|15354: read-property[v5,'length',v4]|15355: \<variable-non-null-undef\>['arr']|15356: write-variable[v4,'l']*}" ] 
+BB4959 -> BB4960 [tailport=s, headport=n, headlabel="      4960"]
+BB4959 -> BB4965 [tailport=s, headport=n, color=gray, headlabel="      4965"]
+BB4960 [shape=record label="{15357: read-variable['i',v6,-]|15358: read-variable['l',v7,-]|15359: \<[v6,v7,v2]|15360: if[v2](true-block:4961,false-block:4964)}" ] 
+BB4960 -> BB4961 [tailport=s, headport=n, headlabel="      4961"]
+BB4960 -> BB4964 [tailport=s, headport=n, headlabel="      4964"]
+BB4960 -> BB4965 [tailport=s, headport=n, color=gray]
+BB4961 [shape=record label="{15361: read-variable['fn',v9,-]|15362: read-property[v9,'call',-]|15363: \<variable-non-null-undef\>['fn']|15364: read-variable['scope',v10,-]|15365: read-variable['arr',v12,-]|15366: read-variable['i',v13,-]|15367: read-property[v12,v13,v11]|15368: \<variable-non-null-undef\>['arr']|15369: read-variable['i',v14,-]}" ] 
+BB4961 -> BB4962 [tailport=s, headport=n, headlabel="      4962"]
+BB4961 -> BB4965 [tailport=s, headport=n, color=gray]
+BB4962 [shape=record label="{15370: call-fn.call [v9,'call',v10,v11,v14,-]*}" ] 
+BB4962 -> BB4963 [tailport=s, headport=n, headlabel="      4963"]
+BB4962 -> BB4965 [tailport=s, headport=n, color=gray]
+BB4963 [shape=record label="{15371: constant[1.0,v15]|15372: read-variable['i',v16,-]|15373: +[v16,v17]|15374: +[v17,v15,v18]|15375: write-variable[v18,'i']}" ] 
+BB4963 -> BB4960 [tailport=s, headport=n]
+BB4963 -> BB4965 [tailport=s, headport=n, color=gray]
+BB4964 [shape=record label="{15376: return[v1]}" ] 
+BB4965 [shape=record label="{15377: exceptional-return}" ] 
+//#$~ 5751
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry325[shape=none,label=""];
+BB_entry325 -> BB4796 [tailport=s, headport=n, headlabel="    4796"]
+BB4796 [shape=record label="{16758: constant[undefined,v1]|16759: vardecl['nextStringText']}" ] 
+BB4796 -> BB4797 [tailport=s, headport=n, headlabel="      4797"]
+BB4797 [shape=record label="{16760: read-variable['nextText',v3,-]|16761: read-variable['this',v5,-]|16762: read-property[v5,'_currentElement',v4]|16763: !==[v3,v4,v2]|16764: if[v2](true-block:4798,false-block:4801)}" ] 
+BB4797 -> BB4798 [tailport=s, headport=n, headlabel="      4798"]
+BB4797 -> BB4801 [tailport=s, headport=n, headlabel="      4801"]
+BB4797 -> BB4802 [tailport=s, headport=n, color=gray, headlabel="      4802"]
+BB4798 [shape=record label="{16765: read-variable['this',v7,-]|16766: read-variable['nextText',v6,-]|16767: write-property[v7,'_currentElement',v6]*|16768: constant[\"\",v9]|16769: read-variable['nextText',v10,-]|16770: +[v9,v10,v8]|16771: write-variable[v8,'nextStringText']*|16772: read-variable['nextStringText',v12,-]|16773: read-variable['this',v14,-]|16774: read-property[v14,'_stringText',v13]|16775: !==[v12,v13,v11]|16776: if[v11](true-block:4799,false-block:4801)}" ] 
+BB4798 -> BB4799 [tailport=s, headport=n, headlabel="      4799"]
+BB4798 -> BB4801 [tailport=s, headport=n]
+BB4798 -> BB4802 [tailport=s, headport=n, color=gray]
+BB4799 [shape=record label="{16777: read-variable['this',v16,-]|16778: read-variable['nextStringText',v15,-]|16779: write-property[v16,'_stringText',v15]*|16780: read-variable['ReactDOMComponent',v19,-]|16781: read-property[v19,'BackendIDOperations',v18]|16782: \<variable-non-null-undef\>['ReactDOMComponent']|16783: read-property[v18,'updateTextContentByID',-]|16784: \<property-non-null-undef\>[v19,'BackendIDOperations']|16785: read-variable['this',v21,-]|16786: read-property[v21,'_rootNodeID',v20]|16787: read-variable['nextStringText',v22,-]}" ] 
+BB4799 -> BB4800 [tailport=s, headport=n, headlabel="      4800"]
+BB4799 -> BB4802 [tailport=s, headport=n, color=gray]
+BB4800 [shape=record label="{16788: call-ReactDOMComponent.BackendIDOperations.updateTextContentByID [v18,'updateTextContentByID',v20,v22,-]*}" ] 
+BB4800 -> BB4801 [tailport=s, headport=n]
+BB4800 -> BB4802 [tailport=s, headport=n, color=gray]
+BB4801 [shape=record label="{16789: return[v1]}" ] 
+BB4802 [shape=record label="{16790: exceptional-return}" ] 
+//#$~ 8945
+}

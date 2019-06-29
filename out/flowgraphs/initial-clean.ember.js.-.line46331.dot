@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2175[shape=none,label=""];
+BB_entry2175 -> BB24769 [tailport=s, headport=n, headlabel="    24769"]
+BB24769 [shape=record label="{81697: constant[undefined,v1]|81698: vardecl['element']|81699: vardecl['clonedElement']}" ] 
+BB24769 -> BB24770 [tailport=s, headport=n, headlabel="      24770"]
+BB24770 [shape=record label="{81700: read-variable['document',v4,-]|81701: read-property[v4,'createElement',-]|81702: \<variable-non-null-undef\>['document']|81703: constant[\"input\",v5]}" ] 
+BB24770 -> BB24771 [tailport=s, headport=n, headlabel="      24771"]
+BB24770 -> BB24778 [tailport=s, headport=n, color=gray, headlabel="      24778"]
+BB24771 [shape=record label="{81704: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB24771 -> BB24772 [tailport=s, headport=n, headlabel="      24772"]
+BB24771 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24772 [shape=record label="{81705: write-variable[v2,'element']*|81706: read-variable['element',v7,-]|81707: read-property[v7,'setAttribute',-]|81708: \<variable-non-null-undef\>['element']|81709: constant[\"checked\",v8]|81710: constant[\"checked\",v9]}" ] 
+BB24772 -> BB24773 [tailport=s, headport=n, headlabel="      24773"]
+BB24772 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24773 [shape=record label="{81711: call-element.setAttribute [v7,'setAttribute',v8,v9,-]*}" ] 
+BB24773 -> BB24774 [tailport=s, headport=n, headlabel="      24774"]
+BB24773 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24774 [shape=record label="{81712: read-variable['element',v12,-]|81713: read-property[v12,'cloneNode',-]|81714: \<variable-non-null-undef\>['element']|81715: constant[false,v13]}" ] 
+BB24774 -> BB24775 [tailport=s, headport=n, headlabel="      24775"]
+BB24774 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24775 [shape=record label="{81716: call-element.cloneNode [v12,'cloneNode',v13,v10]}" ] 
+BB24775 -> BB24776 [tailport=s, headport=n, headlabel="      24776"]
+BB24775 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24776 [shape=record label="{81717: write-variable[v10,'clonedElement']*|81718: read-variable['clonedElement',v15,-]|81719: read-property[v15,'checked',v14]|81720: \<variable-non-null-undef\>['clonedElement']|81721: ![v14,v1]}" ] 
+BB24776 -> BB24777 [tailport=s, headport=n, headlabel="      24777"]
+BB24776 -> BB24778 [tailport=s, headport=n, color=gray]
+BB24777 [shape=record label="{81722: return[v1]}" ] 
+BB24778 [shape=record label="{81723: exceptional-return}" ] 
+//#$~ 46335
+}

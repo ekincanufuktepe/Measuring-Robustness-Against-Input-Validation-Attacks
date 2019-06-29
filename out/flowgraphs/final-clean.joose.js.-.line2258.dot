@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry226[shape=none,label=""];
+BB_entry226 -> BB1952 [tailport=s, headport=n, headlabel="    1952"]
+BB1952 [shape=record label="{5693: constant[undefined,v1]|5694: vardecl['paras']|5695: vardecl['cbName']|5696: vardecl['ret']|5697: vardecl['object']}" ] 
+BB1952 -> BB1953 [tailport=s, headport=n, headlabel="      1953"]
+BB1953 [shape=record label="{5698: read-variable['message',v3,-]|5699: read-property[v3,'body',v2]|5700: \<variable-non-null-undef\>['message']|5701: write-variable[v2,'paras']*|5702: read-variable['paras',v5,-]|5703: read-property[v5,'to',v4]|5704: \<variable-non-null-undef\>['paras']|5705: write-variable[v4,'cbName']*|5706: read-variable['paras',v7,-]|5707: read-property[v7,'ret',v6]|5708: \<variable-non-null-undef\>['paras']|5709: write-variable[v6,'ret']*|5710: read-variable['this',v10,-]|5711: read-property[v10,'calls',v9]|5712: read-variable['paras',v12,-]|5713: read-property[v12,'index',v11]|5714: \<variable-non-null-undef\>['paras']|5715: read-property[v9,v11,v8]|5716: \<property-non-null-undef\>[v10,'calls']|5717: write-variable[v8,'object']*|5718: read-variable['object',v16,-]|5719: read-property[v16,'meta',v15]|5720: \<variable-non-null-undef\>['object']|5721: read-property[v15,'can',-]|5722: \<property-non-null-undef\>[v16,'meta']|5723: read-variable['cbName',v17,-]}" ] 
+BB1953 -> BB1954 [tailport=s, headport=n, headlabel="      1954"]
+BB1953 -> BB1959 [tailport=s, headport=n, color=gray, headlabel="      1959"]
+BB1954 [shape=record label="{5724: call-object.meta.can [v15,'can',v17,v13]}" ] 
+BB1954 -> BB1955 [tailport=s, headport=n, headlabel="      1955"]
+BB1954 -> BB1959 [tailport=s, headport=n, color=gray]
+BB1955 [shape=record label="{5725: if[v13](true-block:1956,false-block:1958)}" ] 
+BB1955 -> BB1956 [tailport=s, headport=n, headlabel="      1956"]
+BB1955 -> BB1958 [tailport=s, headport=n, headlabel="      1958"]
+BB1956 [shape=record label="{5726: read-variable['object',v20,-]|5727: read-variable['cbName',v21,-]|5728: read-property[v20,v21,v19]|5729: \<variable-non-null-undef\>['object']|5730: read-property[v19,'call',-]|5731: \<property-non-null-undef\>[v20,v21]|5732: read-variable['object',v22,-]|5733: read-variable['ret',v23,-]}" ] 
+BB1956 -> BB1957 [tailport=s, headport=n, headlabel="      1957"]
+BB1956 -> BB1959 [tailport=s, headport=n, color=gray]
+BB1957 [shape=record label="{5734: call-null [v19,'call',v22,v23,-]*}" ] 
+BB1957 -> BB1958 [tailport=s, headport=n]
+BB1957 -> BB1959 [tailport=s, headport=n, color=gray]
+BB1958 [shape=record label="{5735: return[v1]}" ] 
+BB1959 [shape=record label="{5736: exceptional-return}" ] 
+//#$~ 2264
+}

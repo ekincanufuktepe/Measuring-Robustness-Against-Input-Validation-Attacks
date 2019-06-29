@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB30 [tailport=s, headport=n, headlabel="    30"]
+BB30 [shape=record label="{53: constant[undefined,v1]|54: vardecl['i']|55: vardecl['array']}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB31 [shape=record label="{56: read-variable['list',v3,-]|57: read-property[v3,'length',v2]|58: \<variable-non-null-undef\>['list']|59: write-variable[v2,'i']*|60: read-variable['Array',v5,-]|61: read-variable['i',v6,-]}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB38 [tailport=s, headport=n, color=gray, headlabel="      38"]
+BB32 [shape=record label="{62: construct [-,v5,v6,v4]}" ] 
+BB32 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB32 -> BB38 [tailport=s, headport=n, color=gray]
+BB33 [shape=record label="{63: write-variable[v4,'array']*}" ] 
+BB33 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB34 [shape=record label="{64: constant[1.0,v8]|65: read-variable['i',v9,-]|66: +[v9,v7]|67: -[v7,v8,v10]|68: write-variable[v10,'i']|69: if[v7](true-block:35,false-block:36)}" ] 
+BB34 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB34 -> BB36 [tailport=s, headport=n, headlabel="      36"]
+BB34 -> BB38 [tailport=s, headport=n, color=gray]
+BB35 [shape=record label="{70: read-variable['array',v12,-]|71: read-variable['i',v13,-]|72: read-variable['list',v14,-]|73: read-variable['i',v15,-]|74: read-property[v14,v15,v11]|75: \<variable-non-null-undef\>['list']|76: write-property[v12,v13,v11]|77: \<variable-non-null-undef\>['array']*}" ] 
+BB35 -> BB34 [tailport=s, headport=n]
+BB35 -> BB38 [tailport=s, headport=n, color=gray]
+BB36 [shape=record label="{78: read-variable['array',v1,-]}" ] 
+BB36 -> BB37 [tailport=s, headport=n, headlabel="      37"]
+BB36 -> BB38 [tailport=s, headport=n, color=gray]
+BB37 [shape=record label="{79: return[v1]}" ] 
+BB38 [shape=record label="{80: exceptional-return}" ] 
+//#$~ 22
+}

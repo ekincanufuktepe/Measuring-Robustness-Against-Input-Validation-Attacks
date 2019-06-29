@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry91[shape=none,label=""];
+BB_entry91 -> BB1229 [tailport=s, headport=n, headlabel="    1229"]
+BB1229 [shape=record label="{3527: constant[undefined,v1]}" ] 
+BB1229 -> BB1230 [tailport=s, headport=n, headlabel="      1230"]
+BB1230 [shape=record label="{3528: read-variable['xhr',v3,-]|3529: read-property[v3,'setRequestHeader',-]|3530: \<variable-non-null-undef\>['xhr']|3531: constant[\"X-HTTP-Method-Override\",v4]|3532: read-variable['type',v5,-]}" ] 
+BB1230 -> BB1231 [tailport=s, headport=n, headlabel="      1231"]
+BB1230 -> BB1236 [tailport=s, headport=n, color=gray, headlabel="      1236"]
+BB1231 [shape=record label="{3533: call-xhr.setRequestHeader [v3,'setRequestHeader',v4,v5,-]*}" ] 
+BB1231 -> BB1232 [tailport=s, headport=n, headlabel="      1232"]
+BB1231 -> BB1236 [tailport=s, headport=n, color=gray]
+BB1232 [shape=record label="{3534: read-variable['beforeSend',v6,-]|3535: if[v6](true-block:1233,false-block:1235)}" ] 
+BB1232 -> BB1233 [tailport=s, headport=n, headlabel="      1233"]
+BB1232 -> BB1235 [tailport=s, headport=n, headlabel="      1235"]
+BB1232 -> BB1236 [tailport=s, headport=n, color=gray]
+BB1233 [shape=record label="{3536: read-variable['beforeSend',v8,-]|3537: read-property[v8,'apply',-]|3538: \<variable-non-null-undef\>['beforeSend']|3539: read-variable['this',v9,-]|3540: read-variable['arguments',v10,-]}" ] 
+BB1233 -> BB1234 [tailport=s, headport=n, headlabel="      1234"]
+BB1233 -> BB1236 [tailport=s, headport=n, color=gray]
+BB1234 [shape=record label="{3541: call-beforeSend.apply [v8,'apply',v9,v10,v1]}" ] 
+BB1234 -> BB1235 [tailport=s, headport=n]
+BB1234 -> BB1236 [tailport=s, headport=n, color=gray]
+BB1235 [shape=record label="{3542: return[v1]}" ] 
+BB1236 [shape=record label="{3543: exceptional-return}" ] 
+//#$~ 1167
+}

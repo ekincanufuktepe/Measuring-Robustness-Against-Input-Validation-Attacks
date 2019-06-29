@@ -1,0 +1,236 @@
+<html>
+<head>
+	<script src="C:/Users/ekincan/InputAnalysisJS/TAJS/clean/jquery-1.9.1.js"></script>
+</head>
+
+<script>
+function assertEqual(a, b, message)
+{
+	try {
+		if (a != b)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else if(a == RangeError)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else
+			console.log("passed");
+	} catch (e) {
+		console.log(e.message);  // 'Default Message'
+		countErrs++;
+	}
+}
+
+Array.prototype.allValuesSame = function() {
+	for(var i = 1; i < this.length; i++)
+	{
+		if(this[i] !== this[0])
+			return false;
+	}
+	return true;
+}
+
+function mode(array)
+{
+	if(array.length == 0)
+		return null;
+	var modeMap = {};	var maxEl = array[0], maxCount = 1;
+	for(var i = 0; i < array.length; i++)
+	{
+		var el = array[i];
+		if(modeMap[el] == null)
+			modeMap[el] = 1;
+		else
+			modeMap[el]++;
+		if(modeMap[el] > maxCount)
+		{
+			maxEl = el;
+			maxCount = modeMap[el];
+		}
+	}
+	return maxEl;
+}
+
+var ar = [];
+var testCases = [undefined, null, true, false, 'abcde', NaN, -Infinity, Infinity, 5, -5, 0.15, -0.15, Error, RangeError, ReferenceError, SyntaxError, TypeError, URIError, 1.3987869234598501e+308];
+document.write('Length of Test Cases: '+testCases.length+'<br><br>');
+var testRes = [];
+var countPassed = 0, countNotExist = 0, countFailed = 0;
+
+for(i0=0; i0<testCases.length; i0++)
+{
+	for(i1=0; i1<testCases.length; i1++)
+	{
+		try{
+		var x = (typeof $().css(testCases[i0],testCases[i1]));
+			ar.push(x);
+		} catch(e){}
+	}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [css] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+for(i0=0; i0<testCases.length; i0++)
+{
+	try{
+	var x = (typeof $().toggle(testCases[i0]));
+		ar.push(x);
+	} catch(e){}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [toggle] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+for(i0=0; i0<testCases.length; i0++)
+{
+	for(i1=0; i1<testCases.length; i1++)
+	{
+		try{
+		var x = (typeof $().get(testCases[i0],testCases[i1]));
+			ar.push(x);
+		} catch(e){}
+	}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [get] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+for(i0=0; i0<testCases.length; i0++)
+{
+	for(i1=0; i1<testCases.length; i1++)
+	{
+		for(i2=0; i2<testCases.length; i2++)
+		{
+			for(i3=0; i3<testCases.length; i3++)
+			{
+				try{
+				var x = (typeof $().style(testCases[i0],testCases[i1],testCases[i2],testCases[i3]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [style] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+for(i0=0; i0<testCases.length; i0++)
+{
+	for(i1=0; i1<testCases.length; i1++)
+	{
+		for(i2=0; i2<testCases.length; i2++)
+		{
+			for(i3=0; i3<testCases.length; i3++)
+			{
+				try{
+				var x = (typeof $().css(testCases[i0],testCases[i1],testCases[i2],testCases[i3]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [css] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+for(i0=0; i0<testCases.length; i0++)
+{
+	for(i1=0; i1<testCases.length; i1++)
+	{
+		for(i2=0; i2<testCases.length; i2++)
+		{
+			for(i3=0; i3<testCases.length; i3++)
+			{
+				try{
+				var x = (typeof $().swap(testCases[i0],testCases[i1],testCases[i2],testCases[i3]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+}
+
+//document.write(ar+'<br>');
+document.write("FUNCTION: [swap] Result: "+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+if(ar.allValuesSame() == true && mode(ar) == null)
+{
+	countNotExist++;
+}
+else if(ar.allValuesSame() == true && mode(ar) != null)
+{
+	countPassed++;
+}
+else if(ar.allValuesSame() == false)
+{
+	countFailed++;
+}
+
+ar.length = 0;
+document.write('Total Test Run      : '+6+'<br>');document.write('Total Test Failed   : '+countFailed+'<br>');document.write('Total Test Passed   : '+countPassed+'<br>');document.write('Total Test Not Exist: '+countNotExist+'<br><br>');</script>
+</html>

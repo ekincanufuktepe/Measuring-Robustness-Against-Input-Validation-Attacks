@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB3880 [tailport=s, headport=n, headlabel="    3880"]
+BB3880 [shape=record label="{15623: constant[undefined,v1]}" ] 
+BB3880 -> BB3881 [tailport=s, headport=n, headlabel="      3881"]
+BB3881 [shape=record label="{15624: read-variable['warned',v3,-]|15625: ![v3,v2]|15626: if[v2](true-block:3882,false-block:3885)}" ] 
+BB3881 -> BB3882 [tailport=s, headport=n, headlabel="      3882"]
+BB3881 -> BB3885 [tailport=s, headport=n, headlabel="      3885"]
+BB3881 -> BB3888 [tailport=s, headport=n, color=gray, headlabel="      3888"]
+BB3882 [shape=record label="{15627: read-variable['window',v6,-]|15628: read-property[v6,'console',v5]|15629: \<variable-non-null-undef\>['window']|15630: read-property[v5,'warn',-]|15631: \<property-non-null-undef\>[v6,'console']|15632: read-variable['message',v7,-]}" ] 
+BB3882 -> BB3883 [tailport=s, headport=n, headlabel="      3883"]
+BB3882 -> BB3888 [tailport=s, headport=n, color=gray]
+BB3883 [shape=record label="{15633: call-window.console.warn [v5,'warn',v7,-]*}" ] 
+BB3883 -> BB3884 [tailport=s, headport=n, headlabel="      3884"]
+BB3883 -> BB3888 [tailport=s, headport=n, color=gray]
+BB3884 [shape=record label="{15634: constant[true,v8]|15635: write-variable[v8,'warned']*}" ] 
+BB3884 -> BB3885 [tailport=s, headport=n]
+BB3885 [shape=record label="{15636: read-variable['method',v5,-]|15637: read-property[v5,'apply',-]|15638: \<variable-non-null-undef\>['method']|15639: read-variable['this',v6,-]|15640: read-variable['arguments',v7,-]}" ] 
+BB3885 -> BB3886 [tailport=s, headport=n, headlabel="      3886"]
+BB3885 -> BB3888 [tailport=s, headport=n, color=gray]
+BB3886 [shape=record label="{15641: call-method.apply [v5,'apply',v6,v7,v1]}" ] 
+BB3886 -> BB3887 [tailport=s, headport=n, headlabel="      3887"]
+BB3886 -> BB3888 [tailport=s, headport=n, color=gray]
+BB3887 [shape=record label="{15642: return[v1]}" ] 
+BB3888 [shape=record label="{15643: exceptional-return}" ] 
+//#$~ 5231
+}

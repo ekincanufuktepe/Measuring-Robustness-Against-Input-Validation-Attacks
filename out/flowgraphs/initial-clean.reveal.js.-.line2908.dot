@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry153[shape=none,label=""];
+BB_entry153 -> BB2440 [tailport=s, headport=n, headlabel="    2440"]
+BB2440 [shape=record label="{7504: constant[undefined,v1]}" ] 
+BB2440 -> BB2441 [tailport=s, headport=n, headlabel="      2441"]
+BB2441 [shape=record label="{7505: read-variable['el',v4,-]|7506: read-property[v4,'hasAttribute',-]|7507: \<variable-non-null-undef\>['el']|7508: constant[\"data-autoplay\",v5]}" ] 
+BB2441 -> BB2442 [tailport=s, headport=n, headlabel="      2442"]
+BB2441 -> BB2449 [tailport=s, headport=n, color=gray, headlabel="      2449"]
+BB2442 [shape=record label="{7509: call-el.hasAttribute [v4,'hasAttribute',v5,v2]}" ] 
+BB2442 -> BB2443 [tailport=s, headport=n, headlabel="      2443"]
+BB2442 -> BB2449 [tailport=s, headport=n, color=gray]
+BB2443 [shape=record label="{7510: if[v2](true-block:2444,false-block:2445)}" ] 
+BB2443 -> BB2445 [tailport=s, headport=n, headlabel="      2445"]
+BB2443 -> BB2444 [tailport=s, headport=n, headlabel="      2444"]
+BB2444 [shape=record label="{7511: read-variable['el',v9,-]|7512: read-property[v9,'play',v8]|7513: \<variable-non-null-undef\>['el']|7514: typeof[v8,v6]|7515: constant[\"function\",v7]|7516: ===[v6,v7,v2]}" ] 
+BB2444 -> BB2445 [tailport=s, headport=n]
+BB2444 -> BB2449 [tailport=s, headport=n, color=gray]
+BB2445 [shape=record label="{7517: if[v2](true-block:2446,false-block:2448)}" ] 
+BB2445 -> BB2446 [tailport=s, headport=n, headlabel="      2446"]
+BB2445 -> BB2448 [tailport=s, headport=n, headlabel="      2448"]
+BB2446 [shape=record label="{7518: read-variable['el',v7,-]|7519: read-property[v7,'play',-]|7520: \<variable-non-null-undef\>['el']}" ] 
+BB2446 -> BB2447 [tailport=s, headport=n, headlabel="      2447"]
+BB2446 -> BB2449 [tailport=s, headport=n, color=gray]
+BB2447 [shape=record label="{7521: call-el.play [v7,'play',-]*}" ] 
+BB2447 -> BB2448 [tailport=s, headport=n]
+BB2447 -> BB2449 [tailport=s, headport=n, color=gray]
+BB2448 [shape=record label="{7522: return[v1]}" ] 
+BB2449 [shape=record label="{7523: exceptional-return}" ] 
+//#$~ 2910
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2249[shape=none,label=""];
+BB_entry2249 -> BB25643 [tailport=s, headport=n, headlabel="    25643"]
+BB25643 [shape=record label="{84436: constant[undefined,v1]|84437: vardecl['parent']}" ] 
+BB25643 -> BB25644 [tailport=s, headport=n, headlabel="      25644"]
+BB25644 [shape=record label="{84438: read-variable['this',v4,-]|84439: read-property[v4,'element',v3]|84440: ![v3,v2]|84441: if[v2](true-block:25645,false-block:25649)}" ] 
+BB25644 -> BB25645 [tailport=s, headport=n, headlabel="      25645"]
+BB25644 -> BB25649 [tailport=s, headport=n, headlabel="      25649"]
+BB25644 -> BB25651 [tailport=s, headport=n, color=gray, headlabel="      25651"]
+BB25645 [shape=record label="{84442: read-variable['this',v7,-]|84443: read-property[v7,'start',v6]|84444: read-property[v6,'parentNode',v5]|84445: \<property-non-null-undef\>[v7,'start']|84446: write-variable[v5,'parent']*|84447: read-variable['this',v11,-]|84448: read-property[v11,'_parent',v9]|84449: read-variable['parent',v10,-]|84450: !==[v9,v10,v8]|84451: if[v8](true-block:25646,false-block:25647)}" ] 
+BB25645 -> BB25646 [tailport=s, headport=n, headlabel="      25646"]
+BB25645 -> BB25647 [tailport=s, headport=n, headlabel="      25647"]
+BB25645 -> BB25651 [tailport=s, headport=n, color=gray]
+BB25646 [shape=record label="{84452: read-variable['this',v13,-]|84453: read-variable['parent',v12,-]|84454: write-property[v13,'_parent',v12]*}" ] 
+BB25646 -> BB25647 [tailport=s, headport=n]
+BB25646 -> BB25651 [tailport=s, headport=n, color=gray]
+BB25647 [shape=record label="{84455: read-variable['parent',v15,-]|84456: read-property[v15,'nodeType',v13]|84457: \<variable-non-null-undef\>['parent']|84458: constant[1.0,v14]|84459: ===[v13,v14,v12]|84460: if[v12](true-block:25648,false-block:25649)}" ] 
+BB25647 -> BB25648 [tailport=s, headport=n, headlabel="      25648"]
+BB25647 -> BB25649 [tailport=s, headport=n]
+BB25647 -> BB25651 [tailport=s, headport=n, color=gray]
+BB25648 [shape=record label="{84461: read-variable['this',v17,-]|84462: read-variable['parent',v16,-]|84463: write-property[v17,'element',v16]*}" ] 
+BB25648 -> BB25649 [tailport=s, headport=n]
+BB25648 -> BB25651 [tailport=s, headport=n, color=gray]
+BB25649 [shape=record label="{84464: read-variable['this',v5,-]|84465: read-property[v5,'_parent',v1]}" ] 
+BB25649 -> BB25650 [tailport=s, headport=n, headlabel="      25650"]
+BB25649 -> BB25651 [tailport=s, headport=n, color=gray]
+BB25650 [shape=record label="{84466: return[v1]}" ] 
+BB25651 [shape=record label="{84467: exceptional-return}" ] 
+//#$~ 47236
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry54[shape=none,label=""];
+BB_entry54 -> BB647 [tailport=s, headport=n, headlabel="    647"]
+BB647 [shape=record label="{2090: constant[undefined,v1]}" ] 
+BB647 -> BB648 [tailport=s, headport=n, headlabel="      648"]
+BB648 [shape=record label="{2091: read-variable['options',v3,-]|2092: constant[true,v2]|2093: write-property[v3,'partial',v2]|2094: \<variable-non-null-undef\>['options']*|2095: read-variable['partial',v5,-]|2096: read-variable['undefined',v6,-]|2097: ===[v5,v6,v4]|2098: if[v4](true-block:649,false-block:650)}" ] 
+BB648 -> BB649 [tailport=s, headport=n, headlabel="      649"]
+BB648 -> BB650 [tailport=s, headport=n, headlabel="      650"]
+BB648 -> BB656 [tailport=s, headport=n, color=gray, headlabel="      656"]
+BB649 [shape=record label="{2099: read-variable['Exception',v8,-]|2100: constant[\"The partial \",v12]|2101: read-variable['options',v14,-]|2102: read-property[v14,'name',v13]|2103: \<variable-non-null-undef\>['options']|2104: +[v12,v13,v10]|2105: constant[\" could not be found\",v11]|2106: +[v10,v11,v9]}" ] 
+BB649 -> BB651 [tailport=s, headport=n, headlabel="      651"]
+BB649 -> BB656 [tailport=s, headport=n, color=gray]
+BB650 [shape=record label="{2107: read-variable['partial',v8,-]|2108: read-variable['Function',v9,-]|2109: instanceof[v8,v9,v7]|2110: if[v7](true-block:653,false-block:655)}" ] 
+BB650 -> BB653 [tailport=s, headport=n, headlabel="      653"]
+BB650 -> BB655 [tailport=s, headport=n, headlabel="      655"]
+BB650 -> BB656 [tailport=s, headport=n, color=gray]
+BB651 [shape=record label="{2111: construct [-,v8,v9,v7]}" ] 
+BB651 -> BB652 [tailport=s, headport=n, headlabel="      652"]
+BB651 -> BB656 [tailport=s, headport=n, color=gray]
+BB652 [shape=record label="{2112: throw[v7]*}" ] 
+BB652 -> BB655 [tailport=s, headport=n]
+BB652 -> BB656 [tailport=s, headport=n, color=gray]
+BB653 [shape=record label="{2113: read-variable['partial',v11,v10]|2114: read-variable['context',v12,-]|2115: read-variable['options',v13,-]}" ] 
+BB653 -> BB654 [tailport=s, headport=n, headlabel="      654"]
+BB653 -> BB656 [tailport=s, headport=n, color=gray]
+BB654 [shape=record label="{2116: call-partial [v10,v11,v12,v13,v1]}" ] 
+BB654 -> BB655 [tailport=s, headport=n]
+BB654 -> BB656 [tailport=s, headport=n, color=gray]
+BB655 [shape=record label="{2117: return[v1]}" ] 
+BB656 [shape=record label="{2118: exceptional-return}" ] 
+//#$~ 657
+}

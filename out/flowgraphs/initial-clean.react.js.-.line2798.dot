@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry98[shape=none,label=""];
+BB_entry98 -> BB1504 [tailport=s, headport=n, headlabel="    1504"]
+BB1504 [shape=record label="{5232: constant[undefined,v1]|5233: vardecl['bankForRegistrationName']}" ] 
+BB1504 -> BB1505 [tailport=s, headport=n, headlabel="      1505"]
+BB1505 [shape=record label="{5234: read-variable['listenerBank',v3,-]|5235: read-variable['registrationName',v4,-]|5236: read-property[v3,v4,v2]|5237: \<variable-non-null-undef\>['listenerBank']|5238: write-variable[v2,'bankForRegistrationName']*|5239: read-variable['bankForRegistrationName',v1,-]|5240: if[v1](true-block:1506,false-block:1507)}" ] 
+BB1505 -> BB1507 [tailport=s, headport=n, headlabel="      1507"]
+BB1505 -> BB1506 [tailport=s, headport=n, headlabel="      1506"]
+BB1505 -> BB1508 [tailport=s, headport=n, color=gray, headlabel="      1508"]
+BB1506 [shape=record label="{5241: read-variable['bankForRegistrationName',v5,-]|5242: read-variable['id',v6,-]|5243: read-property[v5,v6,v1]|5244: \<variable-non-null-undef\>['bankForRegistrationName']}" ] 
+BB1506 -> BB1507 [tailport=s, headport=n]
+BB1506 -> BB1508 [tailport=s, headport=n, color=gray]
+BB1507 [shape=record label="{5245: return[v1]}" ] 
+BB1508 [shape=record label="{5246: exceptional-return}" ] 
+//#$~ 2800
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry47[shape=none,label=""];
+BB_entry47 -> BB537 [tailport=s, headport=n, headlabel="    537"]
+BB537 [shape=record label="{1403: constant[undefined,v1]|1404: vardecl['keys']}" ] 
+BB537 -> BB538 [tailport=s, headport=n, headlabel="      538"]
+BB538 [shape=record label="{1405: read-variable['Object',v4,-]|1406: read-property[v4,'keys',-]|1407: \<variable-non-null-undef\>['Object']|1408: read-variable['parent',v5,-]}" ] 
+BB538 -> BB539 [tailport=s, headport=n, headlabel="      539"]
+BB538 -> BB543 [tailport=s, headport=n, color=gray, headlabel="      543"]
+BB539 [shape=record label="{1409: call-Object.keys [v4,'keys',v5,v2]}" ] 
+BB539 -> BB540 [tailport=s, headport=n, headlabel="      540"]
+BB539 -> BB543 [tailport=s, headport=n, color=gray]
+BB540 [shape=record label="{1410: write-variable[v2,'keys']*|1411: read-variable['walk',v7,v6]|1412: read-variable['root',v8,-]|1413: function-expr[function ( node ),v9]}" ] 
+BB540 -> BB541 [tailport=s, headport=n, headlabel="      541"]
+BB540 -> BB543 [tailport=s, headport=n, color=gray]
+BB541 [shape=record label="{1414: call-walk [v6,v7,v8,v9,-]*}" ] 
+BB541 -> BB542 [tailport=s, headport=n, headlabel="      542"]
+BB541 -> BB543 [tailport=s, headport=n, color=gray]
+BB542 [shape=record label="{1415: return[v1]}" ] 
+BB543 [shape=record label="{1416: exceptional-return}" ] 
+//#$~ 514
+}

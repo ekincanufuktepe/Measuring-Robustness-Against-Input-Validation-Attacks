@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry101[shape=none,label=""];
+BB_entry101 -> BB1221 [tailport=s, headport=n, headlabel="    1221"]
+BB1221 [shape=record label="{3708: constant[undefined,v1]}" ] 
+BB1221 -> BB1222 [tailport=s, headport=n, headlabel="      1222"]
+BB1222 [shape=record label="{3709: read-variable['a',v4,-]|3710: read-property[v4,'a',v3]|3711: \<variable-non-null-undef\>['a']|3712: read-property[v3,'sa',-]|3713: \<property-non-null-undef\>[v4,'a']|3714: read-variable['this',v5,-]|3715: read-variable['a',v8,-]|3716: read-property[v8,'N',v7]|3717: \<variable-non-null-undef\>['a']|3718: read-property[v7,'fn',v6]|3719: \<property-non-null-undef\>[v8,'N']}" ] 
+BB1222 -> BB1223 [tailport=s, headport=n, headlabel="      1223"]
+BB1222 -> BB1226 [tailport=s, headport=n, color=gray, headlabel="      1226"]
+BB1223 [shape=record label="{3720: call-a.a.sa [v3,'sa',v5,v6,-]*}" ] 
+BB1223 -> BB1224 [tailport=s, headport=n, headlabel="      1224"]
+BB1223 -> BB1226 [tailport=s, headport=n, color=gray]
+BB1224 [shape=record label="{3721: read-variable['this',v10,-]|3722: new[v9]|3723: write-property[v10,'H',v9]*}" ] 
+BB1224 -> BB1225 [tailport=s, headport=n, headlabel="      1225"]
+BB1224 -> BB1226 [tailport=s, headport=n, color=gray]
+BB1225 [shape=record label="{3724: return[v1]}" ] 
+BB1226 [shape=record label="{3725: exceptional-return}" ] 
+}

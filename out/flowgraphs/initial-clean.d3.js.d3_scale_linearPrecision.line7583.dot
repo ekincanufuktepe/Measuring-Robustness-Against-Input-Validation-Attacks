@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1170[shape=none,label=""];
+BB_entry1170 -> BB12646 [tailport=s, headport=n, headlabel="    12646"]
+BB12646 [shape=record label="{43362: constant[undefined,v1]}" ] 
+BB12646 -> BB12647 [tailport=s, headport=n, headlabel="      12647"]
+BB12647 [shape=record label="{43363: read-variable['Math',v4,-]|43364: read-property[v4,'floor',-]|43365: \<variable-non-null-undef\>['Math']|43366: read-variable['Math',v11,-]|43367: read-property[v11,'log',-]|43368: \<variable-non-null-undef\>['Math']|43369: read-variable['value',v12,-]}" ] 
+BB12647 -> BB12648 [tailport=s, headport=n, headlabel="      12648"]
+BB12647 -> BB12653 [tailport=s, headport=n, color=gray, headlabel="      12653"]
+BB12648 [shape=record label="{43370: call-Math.log [v11,'log',v12,v8]}" ] 
+BB12648 -> BB12649 [tailport=s, headport=n, headlabel="      12649"]
+BB12648 -> BB12653 [tailport=s, headport=n, color=gray]
+BB12649 [shape=record label="{43371: read-variable['Math',v13,-]|43372: read-property[v13,'LN10',v9]|43373: \<variable-non-null-undef\>['Math']|43374: /[v8,v9,v6]|43375: constant[0.01,v7]|43376: +[v6,v7,v5]}" ] 
+BB12649 -> BB12650 [tailport=s, headport=n, headlabel="      12650"]
+BB12649 -> BB12653 [tailport=s, headport=n, color=gray]
+BB12650 [shape=record label="{43377: call-Math.floor [v4,'floor',v5,v2]}" ] 
+BB12650 -> BB12651 [tailport=s, headport=n, headlabel="      12651"]
+BB12650 -> BB12653 [tailport=s, headport=n, color=gray]
+BB12651 [shape=record label="{43378: -[v2,v1]}" ] 
+BB12651 -> BB12652 [tailport=s, headport=n, headlabel="      12652"]
+BB12651 -> BB12653 [tailport=s, headport=n, color=gray]
+BB12652 [shape=record label="{43379: return[v1]}" ] 
+BB12653 [shape=record label="{43380: exceptional-return}" ] 
+//#$~ 7584
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry305[shape=none,label=""];
+BB_entry305 -> BB3598 [tailport=s, headport=n, headlabel="    3598"]
+BB3598 [shape=record label="{9619: constant[undefined,v1]}" ] 
+BB3598 -> BB3599 [tailport=s, headport=n, headlabel="      3599"]
+BB3599 [shape=record label="{9620: read-variable['$',v4,v3]|9621: read-variable['element',v5,-]}" ] 
+BB3599 -> BB3600 [tailport=s, headport=n, headlabel="      3600"]
+BB3599 -> BB3607 [tailport=s, headport=n, color=gray, headlabel="      3607"]
+BB3600 [shape=record label="{9622: call-$ [v3,v4,v5,v2]}" ] 
+BB3600 -> BB3601 [tailport=s, headport=n, headlabel="      3601"]
+BB3600 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3601 [shape=record label="{9623: write-variable[v2,'element']*|9624: read-variable['arguments',v9,-]|9625: read-property[v9,'length',v7]|9626: \<variable-non-null-undef\>['arguments']|9627: constant[1.0,v8]|9628: ===[v7,v8,v6]|9629: if[v6](true-block:3602,false-block:3604)}" ] 
+BB3601 -> BB3602 [tailport=s, headport=n, headlabel="      3602"]
+BB3601 -> BB3604 [tailport=s, headport=n, headlabel="      3604"]
+BB3601 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3602 [shape=record label="{9630: read-variable['$',v11,v10]|9631: read-variable['element',v13,-]|9632: read-property[v13,'parentNode',v12]|9633: \<variable-non-null-undef\>['element']}" ] 
+BB3602 -> BB3603 [tailport=s, headport=n, headlabel="      3603"]
+BB3602 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3603 [shape=record label="{9634: call-$ [v10,v11,v12,v1]}" ] 
+BB3603 -> BB3606 [tailport=s, headport=n, headlabel="      3606"]
+BB3603 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3604 [shape=record label="{9635: read-variable['_recursivelyFind',v11,v10]|9636: read-variable['element',v12,-]|9637: constant[\"parentNode\",v13]|9638: read-variable['expression',v14,-]|9639: read-variable['index',v15,-]}" ] 
+BB3604 -> BB3605 [tailport=s, headport=n, headlabel="      3605"]
+BB3604 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3605 [shape=record label="{9640: call-_recursivelyFind [v10,v11,v12,v13,v14,v15,v1]}" ] 
+BB3605 -> BB3606 [tailport=s, headport=n]
+BB3605 -> BB3607 [tailport=s, headport=n, color=gray]
+BB3606 [shape=record label="{9641: return[v1]}" ] 
+BB3607 [shape=record label="{9642: exceptional-return}" ] 
+//#$~ 2644
+}

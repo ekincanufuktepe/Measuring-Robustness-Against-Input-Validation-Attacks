@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2345[shape=none,label=""];
+BB_entry2345 -> BB26751 [tailport=s, headport=n, headlabel="    26751"]
+BB26751 [shape=record label="{88339: constant[undefined,v1]}" ] 
+BB26751 -> BB26752 [tailport=s, headport=n, headlabel="      26752"]
+BB26752 [shape=record label="{88340: read-variable['this',v3,-]|88341: read-property[v3,'log',-]|88342: read-variable['payload',v4,-]|88343: read-variable['this',v8,-]|88344: read-property[v8,'name',v6]|88345: constant[\": resolving provided model\",v7]|88346: +[v6,v7,v5]}" ] 
+BB26752 -> BB26753 [tailport=s, headport=n, headlabel="      26753"]
+BB26752 -> BB26757 [tailport=s, headport=n, color=gray, headlabel="      26757"]
+BB26753 [shape=record label="{88347: call-this.log [v3,'log',v4,v5,-]*}" ] 
+BB26753 -> BB26754 [tailport=s, headport=n, headlabel="      26754"]
+BB26753 -> BB26757 [tailport=s, headport=n, color=gray]
+BB26754 [shape=record label="{88348: read-variable['Promise',v10,-]|88349: read-property[v10,'resolve',-]|88350: \<variable-non-null-undef\>['Promise']|88351: read-variable['this',v12,-]|88352: read-property[v12,'context',v11]}" ] 
+BB26754 -> BB26755 [tailport=s, headport=n, headlabel="      26755"]
+BB26754 -> BB26757 [tailport=s, headport=n, color=gray]
+BB26755 [shape=record label="{88353: call-Promise.resolve [v10,'resolve',v11,v1]}" ] 
+BB26755 -> BB26756 [tailport=s, headport=n, headlabel="      26756"]
+BB26755 -> BB26757 [tailport=s, headport=n, color=gray]
+BB26756 [shape=record label="{88354: return[v1]}" ] 
+BB26757 [shape=record label="{88355: exceptional-return}" ] 
+//#$~ 48388
+}

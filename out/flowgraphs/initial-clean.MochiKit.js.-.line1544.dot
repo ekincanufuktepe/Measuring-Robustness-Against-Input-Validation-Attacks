@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry185[shape=none,label=""];
+BB_entry185 -> BB2468 [tailport=s, headport=n, headlabel="    2468"]
+BB2468 [shape=record label="{10856: constant[undefined,v1]|10857: vardecl['rval']}" ] 
+BB2468 -> BB2469 [tailport=s, headport=n, headlabel="      2469"]
+BB2469 [shape=record label="{10858: read-variable['MochiKit',v5,-]|10859: read-property[v5,'Iter',v4]|10860: \<variable-non-null-undef\>['MochiKit']|10861: read-property[v4,'list',-]|10862: \<property-non-null-undef\>[v5,'Iter']|10863: read-variable['_1d3',v6,-]}" ] 
+BB2469 -> BB2470 [tailport=s, headport=n, headlabel="      2470"]
+BB2469 -> BB2475 [tailport=s, headport=n, color=gray, headlabel="      2475"]
+BB2470 [shape=record label="{10864: call-MochiKit.Iter.list [v4,'list',v6,v2]}" ] 
+BB2470 -> BB2471 [tailport=s, headport=n, headlabel="      2471"]
+BB2470 -> BB2475 [tailport=s, headport=n, color=gray]
+BB2471 [shape=record label="{10865: write-variable[v2,'rval']*|10866: read-variable['rval',v8,-]|10867: read-property[v8,'reverse',-]|10868: \<variable-non-null-undef\>['rval']}" ] 
+BB2471 -> BB2472 [tailport=s, headport=n, headlabel="      2472"]
+BB2471 -> BB2475 [tailport=s, headport=n, color=gray]
+BB2472 [shape=record label="{10869: call-rval.reverse [v8,'reverse',-]*}" ] 
+BB2472 -> BB2473 [tailport=s, headport=n, headlabel="      2473"]
+BB2472 -> BB2475 [tailport=s, headport=n, color=gray]
+BB2473 [shape=record label="{10870: read-variable['rval',v1,-]}" ] 
+BB2473 -> BB2474 [tailport=s, headport=n, headlabel="      2474"]
+BB2473 -> BB2475 [tailport=s, headport=n, color=gray]
+BB2474 [shape=record label="{10871: return[v1]}" ] 
+BB2475 [shape=record label="{10872: exceptional-return}" ] 
+//#$~ 1547
+}

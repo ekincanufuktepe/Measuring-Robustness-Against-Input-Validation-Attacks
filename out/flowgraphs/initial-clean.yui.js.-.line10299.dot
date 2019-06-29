@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry255[shape=none,label=""];
+BB_entry255 -> BB5374 [tailport=s, headport=n, headlabel="    5374"]
+BB5374 [shape=record label="{19265: constant[undefined,v1]|19266: vardecl['docMode']}" ] 
+BB5374 -> BB5375 [tailport=s, headport=n, headlabel="      5375"]
+BB5375 [shape=record label="{19267: read-variable['Y',v4,-]|19268: read-property[v4,'config',v3]|19269: \<variable-non-null-undef\>['Y']|19270: read-property[v3,'doc',v2]|19271: \<property-non-null-undef\>[v4,'config']|19272: if[v2](true-block:5376,false-block:5377)}" ] 
+BB5375 -> BB5377 [tailport=s, headport=n, headlabel="      5377"]
+BB5375 -> BB5376 [tailport=s, headport=n, headlabel="      5376"]
+BB5375 -> BB5382 [tailport=s, headport=n, color=gray, headlabel="      5382"]
+BB5376 [shape=record label="{19273: read-variable['Y',v7,-]|19274: read-property[v7,'config',v6]|19275: \<variable-non-null-undef\>['Y']|19276: read-property[v6,'doc',v5]|19277: \<property-non-null-undef\>[v7,'config']|19278: read-property[v5,'documentMode',v2]|19279: \<property-non-null-undef\>[v6,'doc']}" ] 
+BB5376 -> BB5377 [tailport=s, headport=n]
+BB5376 -> BB5382 [tailport=s, headport=n, color=gray]
+BB5377 [shape=record label="{19280: write-variable[v2,'docMode']*|19281: read-variable['Y',v6,-]|19282: read-property[v6,'UA',v5]|19283: \<variable-non-null-undef\>['Y']|19284: read-property[v5,'ie',v1]|19285: \<property-non-null-undef\>[v6,'UA']|19286: if[v1](true-block:5378,false-block:5381)}" ] 
+BB5377 -> BB5381 [tailport=s, headport=n, headlabel="      5381"]
+BB5377 -> BB5378 [tailport=s, headport=n, headlabel="      5378"]
+BB5377 -> BB5382 [tailport=s, headport=n, color=gray]
+BB5378 [shape=record label="{19287: constant[\"onhashchange\",v8]|19288: read-variable['Y',v11,-]|19289: read-property[v11,'config',v10]|19290: \<variable-non-null-undef\>['Y']|19291: read-property[v10,'win',v9]|19292: \<property-non-null-undef\>[v11,'config']|19293: in[v8,v9,v7]|19294: ![v7,v1]|19295: if[v1](true-block:5381,false-block:5379)}" ] 
+BB5378 -> BB5381 [tailport=s, headport=n]
+BB5378 -> BB5379 [tailport=s, headport=n, headlabel="      5379"]
+BB5378 -> BB5382 [tailport=s, headport=n, color=gray]
+BB5379 [shape=record label="{19296: read-variable['docMode',v7,-]|19297: ![v7,v1]|19298: if[v1](true-block:5381,false-block:5380)}" ] 
+BB5379 -> BB5381 [tailport=s, headport=n]
+BB5379 -> BB5380 [tailport=s, headport=n, headlabel="      5380"]
+BB5379 -> BB5382 [tailport=s, headport=n, color=gray]
+BB5380 [shape=record label="{19299: read-variable['docMode',v7,-]|19300: constant[8.0,v8]|19301: \<[v7,v8,v1]}" ] 
+BB5380 -> BB5381 [tailport=s, headport=n]
+BB5380 -> BB5382 [tailport=s, headport=n, color=gray]
+BB5381 [shape=record label="{19302: return[v1]}" ] 
+BB5382 [shape=record label="{19303: exceptional-return}" ] 
+//#$~ 10303
+}

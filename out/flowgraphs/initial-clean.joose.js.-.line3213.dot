@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry301[shape=none,label=""];
+BB_entry301 -> BB2773 [tailport=s, headport=n, headlabel="    2773"]
+BB2773 [shape=record label="{8268: constant[undefined,v1]|8269: vardecl['t']}" ] 
+BB2773 -> BB2774 [tailport=s, headport=n, headlabel="      2774"]
+BB2774 [shape=record label="{8270: read-variable['Joose',v4,-]|8271: read-property[v4,'TypeConstraint',-]|8272: \<variable-non-null-undef\>['Joose']|8273: new[v5]|8274: read-variable['name',v6,-]|8275: write-property[v5,'name',v6]}" ] 
+BB2774 -> BB2775 [tailport=s, headport=n, headlabel="      2775"]
+BB2774 -> BB2780 [tailport=s, headport=n, color=gray, headlabel="      2780"]
+BB2775 [shape=record label="{8276: construct [v4,'TypeConstraint',v5,v2]}" ] 
+BB2775 -> BB2776 [tailport=s, headport=n, headlabel="      2776"]
+BB2775 -> BB2780 [tailport=s, headport=n, color=gray]
+BB2776 [shape=record label="{8277: write-variable[v2,'t']*|8278: read-variable['Joose',v9,-]|8279: read-property[v9,'A',v8]|8280: \<variable-non-null-undef\>['Joose']|8281: read-property[v8,'each',-]|8282: \<property-non-null-undef\>[v9,'A']|8283: read-variable['this',v11,-]|8284: read-property[v11,'_constraints',v10]|8285: function-expr[function ( con ),v12]}" ] 
+BB2776 -> BB2777 [tailport=s, headport=n, headlabel="      2777"]
+BB2776 -> BB2780 [tailport=s, headport=n, color=gray]
+BB2777 [shape=record label="{8286: call-Joose.A.each [v8,'each',v10,v12,-]*}" ] 
+BB2777 -> BB2778 [tailport=s, headport=n, headlabel="      2778"]
+BB2777 -> BB2780 [tailport=s, headport=n, color=gray]
+BB2778 [shape=record label="{8287: read-variable['t',v1,-]}" ] 
+BB2778 -> BB2779 [tailport=s, headport=n, headlabel="      2779"]
+BB2778 -> BB2780 [tailport=s, headport=n, color=gray]
+BB2779 [shape=record label="{8288: return[v1]}" ] 
+BB2780 [shape=record label="{8289: exceptional-return}" ] 
+//#$~ 3218
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry487[shape=none,label=""];
+BB_entry487 -> BB7438 [tailport=s, headport=n, headlabel="    7438"]
+BB7438 [shape=record label="{27308: constant[undefined,v1]}" ] 
+BB7438 -> BB7439 [tailport=s, headport=n, headlabel="      7439"]
+BB7439 [shape=record label="{27309: read-variable['this',v4,-]|27310: read-property[v4,'_event',v3]|27311: read-property[v3,'stopPropagation',v2]|27312: \<property-non-null-undef\>[v4,'_event']|27313: if[v2](true-block:7440,false-block:7441)}" ] 
+BB7439 -> BB7440 [tailport=s, headport=n, headlabel="      7440"]
+BB7439 -> BB7441 [tailport=s, headport=n, headlabel="      7441"]
+BB7439 -> BB7444 [tailport=s, headport=n, color=gray, headlabel="      7444"]
+BB7440 [shape=record label="{27314: read-variable['this',v7,-]|27315: read-property[v7,'_event',v6]|27316: read-property[v6,'stopPropagation',-]|27317: \<property-non-null-undef\>[v7,'_event']}" ] 
+BB7440 -> BB7442 [tailport=s, headport=n, headlabel="      7442"]
+BB7440 -> BB7444 [tailport=s, headport=n, color=gray]
+BB7441 [shape=record label="{27318: read-variable['this',v7,-]|27319: read-property[v7,'_event',v6]|27320: constant[true,v5]|27321: write-property[v6,'cancelBubble',v5]|27322: \<property-non-null-undef\>[v7,'_event']*}" ] 
+BB7441 -> BB7443 [tailport=s, headport=n, headlabel="      7443"]
+BB7441 -> BB7444 [tailport=s, headport=n, color=gray]
+BB7442 [shape=record label="{27323: call-this._event.stopPropagation [v6,'stopPropagation',-]*}" ] 
+BB7442 -> BB7443 [tailport=s, headport=n]
+BB7442 -> BB7444 [tailport=s, headport=n, color=gray]
+BB7443 [shape=record label="{27324: return[v1]}" ] 
+BB7444 [shape=record label="{27325: exceptional-return}" ] 
+//#$~ 5246
+}

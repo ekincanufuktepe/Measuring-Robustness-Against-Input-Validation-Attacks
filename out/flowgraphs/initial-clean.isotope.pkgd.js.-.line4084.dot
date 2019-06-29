@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry285[shape=none,label=""];
+BB_entry285 -> BB3034 [tailport=s, headport=n, headlabel="    3034"]
+BB3034 [shape=record label="{9789: constant[undefined,v1]|9790: vardecl['layoutMode']|9791: vardecl['mode']}" ] 
+BB3034 -> BB3035 [tailport=s, headport=n, headlabel="      3035"]
+BB3035 [shape=record label="{9792: read-variable['this',v4,-]|9793: read-property[v4,'options',v3]|9794: read-property[v3,'layoutMode',v2]|9795: \<property-non-null-undef\>[v4,'options']|9796: write-variable[v2,'layoutMode']*|9797: read-variable['this',v7,-]|9798: read-property[v7,'modes',v6]|9799: read-variable['layoutMode',v8,-]|9800: read-property[v6,v8,v5]|9801: \<property-non-null-undef\>[v7,'modes']|9802: write-variable[v5,'mode']*|9803: read-variable['mode',v10,-]|9804: ![v10,v9]|9805: if[v9](true-block:3036,false-block:3039)}" ] 
+BB3035 -> BB3036 [tailport=s, headport=n, headlabel="      3036"]
+BB3035 -> BB3039 [tailport=s, headport=n, headlabel="      3039"]
+BB3035 -> BB3041 [tailport=s, headport=n, color=gray, headlabel="      3041"]
+BB3036 [shape=record label="{9806: read-variable['Error',v12,-]|9807: constant[\"No layout mode: \",v14]|9808: read-variable['layoutMode',v15,-]|9809: +[v14,v15,v13]}" ] 
+BB3036 -> BB3037 [tailport=s, headport=n, headlabel="      3037"]
+BB3036 -> BB3041 [tailport=s, headport=n, color=gray]
+BB3037 [shape=record label="{9810: construct [-,v12,v13,v11]}" ] 
+BB3037 -> BB3038 [tailport=s, headport=n, headlabel="      3038"]
+BB3037 -> BB3041 [tailport=s, headport=n, color=gray]
+BB3038 [shape=record label="{9811: throw[v11]*}" ] 
+BB3038 -> BB3039 [tailport=s, headport=n]
+BB3038 -> BB3041 [tailport=s, headport=n, color=gray]
+BB3039 [shape=record label="{9812: read-variable['mode',v12,-]|9813: read-variable['this',v14,-]|9814: read-property[v14,'options',v13]|9815: read-variable['layoutMode',v15,-]|9816: read-property[v13,v15,v11]|9817: \<property-non-null-undef\>[v14,'options']|9818: write-property[v12,'options',v11]|9819: \<variable-non-null-undef\>['mode']*|9820: read-variable['mode',v1,-]}" ] 
+BB3039 -> BB3040 [tailport=s, headport=n, headlabel="      3040"]
+BB3039 -> BB3041 [tailport=s, headport=n, color=gray]
+BB3040 [shape=record label="{9821: return[v1]}" ] 
+BB3041 [shape=record label="{9822: exceptional-return}" ] 
+//#$~ 4094
+}

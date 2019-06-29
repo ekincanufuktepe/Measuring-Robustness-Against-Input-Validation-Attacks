@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB12 [tailport=s, headport=n, headlabel="    12"]
+BB12 [shape=record label="{18: constant[undefined,v1]}" ] 
+BB12 -> BB13 [tailport=s, headport=n, headlabel="      13"]
+BB13 [shape=record label="{19: read-variable['Array',v4,-]|20: read-property[v4,'isArray',-]|21: \<variable-non-null-undef\>['Array']|22: read-variable['arg',v5,-]}" ] 
+BB13 -> BB14 [tailport=s, headport=n, headlabel="      14"]
+BB13 -> BB21 [tailport=s, headport=n, color=gray, headlabel="      21"]
+BB14 [shape=record label="{23: call-Array.isArray [v4,'isArray',v5,v2]}" ] 
+BB14 -> BB15 [tailport=s, headport=n, headlabel="      15"]
+BB14 -> BB21 [tailport=s, headport=n, color=gray]
+BB15 [shape=record label="{24: if[v2](true-block:16,false-block:19)}" ] 
+BB15 -> BB16 [tailport=s, headport=n, headlabel="      16"]
+BB15 -> BB19 [tailport=s, headport=n, headlabel="      19"]
+BB16 [shape=record label="{25: read-variable['each',v7,v6]|26: read-variable['arg',v8,-]|27: read-variable['context',v10,-]|28: read-variable['fn',v11,-]|29: read-property[v10,v11,v9]|30: \<variable-non-null-undef\>['context']|31: read-variable['context',v12,-]}" ] 
+BB16 -> BB17 [tailport=s, headport=n, headlabel="      17"]
+BB16 -> BB21 [tailport=s, headport=n, color=gray]
+BB17 [shape=record label="{32: call-each [v6,v7,v8,v9,v12,-]*}" ] 
+BB17 -> BB18 [tailport=s, headport=n, headlabel="      18"]
+BB17 -> BB21 [tailport=s, headport=n, color=gray]
+BB18 [shape=record label="{33: constant[true,v1]}" ] 
+BB18 -> BB20 [tailport=s, headport=n, headlabel="      20"]
+BB19 [shape=record label="{34: constant[false,v1]}" ] 
+BB19 -> BB20 [tailport=s, headport=n]
+BB20 [shape=record label="{35: return[v1]}" ] 
+BB21 [shape=record label="{36: exceptional-return}" ] 
+//#$~ 44
+}

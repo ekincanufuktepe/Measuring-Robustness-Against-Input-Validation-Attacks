@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry257[shape=none,label=""];
+BB_entry257 -> BB2726 [tailport=s, headport=n, headlabel="    2726"]
+BB2726 [shape=record label="{11126: constant[undefined,v1]|11127: vardecl['segmentsArray']|11128: vardecl['location']}" ] 
+BB2726 -> BB2727 [tailport=s, headport=n, headlabel="      2727"]
+BB2727 [shape=record label="{11129: read-variable['Array',v3,-]}" ] 
+BB2727 -> BB2728 [tailport=s, headport=n, headlabel="      2728"]
+BB2727 -> BB2735 [tailport=s, headport=n, color=gray, headlabel="      2735"]
+BB2728 [shape=record label="{11130: construct [-,v3,v2]}" ] 
+BB2728 -> BB2729 [tailport=s, headport=n, headlabel="      2729"]
+BB2728 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2729 [shape=record label="{11131: write-variable[v2,'segmentsArray']*|11132: read-variable['helpers',v6,-]|11133: read-property[v6,'getRelativePosition',-]|11134: \<variable-non-null-undef\>['helpers']|11135: read-variable['e',v7,-]}" ] 
+BB2729 -> BB2730 [tailport=s, headport=n, headlabel="      2730"]
+BB2729 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2730 [shape=record label="{11136: call-helpers.getRelativePosition [v6,'getRelativePosition',v7,v4]}" ] 
+BB2730 -> BB2731 [tailport=s, headport=n, headlabel="      2731"]
+BB2730 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2731 [shape=record label="{11137: write-variable[v4,'location']*|11138: read-variable['helpers',v9,-]|11139: read-property[v9,'each',-]|11140: \<variable-non-null-undef\>['helpers']|11141: read-variable['this',v11,-]|11142: read-property[v11,'segments',v10]|11143: function-expr[function ( segment ),v12]|11144: read-variable['this',v13,-]}" ] 
+BB2731 -> BB2732 [tailport=s, headport=n, headlabel="      2732"]
+BB2731 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2732 [shape=record label="{11145: call-helpers.each [v9,'each',v10,v12,v13,-]*}" ] 
+BB2732 -> BB2733 [tailport=s, headport=n, headlabel="      2733"]
+BB2732 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2733 [shape=record label="{11146: read-variable['segmentsArray',v1,-]}" ] 
+BB2733 -> BB2734 [tailport=s, headport=n, headlabel="      2734"]
+BB2733 -> BB2735 [tailport=s, headport=n, color=gray]
+BB2734 [shape=record label="{11147: return[v1]}" ] 
+BB2735 [shape=record label="{11148: exceptional-return}" ] 
+//#$~ 3012
+}

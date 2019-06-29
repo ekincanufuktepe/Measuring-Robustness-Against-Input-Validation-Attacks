@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry373[shape=none,label=""];
+BB_entry373 -> BB4701 [tailport=s, headport=n, headlabel="    4701"]
+BB4701 [shape=record label="{11654: constant[undefined,v1]}" ] 
+BB4701 -> BB4702 [tailport=s, headport=n, headlabel="      4702"]
+BB4702 [shape=record label="{11655: read-variable['groupScan',v4,v3]|11656: read-variable['element',v6,-]|11657: constant[0.0,v7]|11658: read-property[v6,v7,v5]|11659: \<variable-non-null-undef\>['element']|11660: read-variable['attrStart',v8,-]|11661: read-variable['attrEnd',v9,-]}" ] 
+BB4702 -> BB4703 [tailport=s, headport=n, headlabel="      4703"]
+BB4702 -> BB4707 [tailport=s, headport=n, color=gray, headlabel="      4707"]
+BB4703 [shape=record label="{11662: call-groupScan [v3,v4,v5,v8,v9,v2]}" ] 
+BB4703 -> BB4704 [tailport=s, headport=n, headlabel="      4704"]
+BB4703 -> BB4707 [tailport=s, headport=n, color=gray]
+BB4704 [shape=record label="{11663: write-variable[v2,'element']*|11664: read-variable['linkFn',v11,v10]|11665: read-variable['scope',v12,-]|11666: read-variable['element',v13,-]|11667: read-variable['attrs',v14,-]|11668: read-variable['controllers',v15,-]|11669: read-variable['transcludeFn',v16,-]}" ] 
+BB4704 -> BB4705 [tailport=s, headport=n, headlabel="      4705"]
+BB4704 -> BB4707 [tailport=s, headport=n, color=gray]
+BB4705 [shape=record label="{11670: call-linkFn [v10,v11,v12,v13,v14,v15,v16,v1]}" ] 
+BB4705 -> BB4706 [tailport=s, headport=n, headlabel="      4706"]
+BB4705 -> BB4707 [tailport=s, headport=n, color=gray]
+BB4706 [shape=record label="{11671: return[v1]}" ] 
+BB4707 [shape=record label="{11672: exceptional-return}" ] 
+//#$~ 7725
+}

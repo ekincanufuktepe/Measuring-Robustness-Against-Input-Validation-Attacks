@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry418[shape=none,label=""];
+BB_entry418 -> BB5217 [tailport=s, headport=n, headlabel="    5217"]
+BB5217 [shape=record label="{18715: constant[undefined,v1]}" ] 
+BB5217 -> BB5218 [tailport=s, headport=n, headlabel="      5218"]
+BB5218 [shape=record label="{18716: read-variable['func',v1,-]|18717: if[v1](true-block:5219,false-block:5224)}" ] 
+BB5218 -> BB5224 [tailport=s, headport=n, headlabel="      5224"]
+BB5218 -> BB5219 [tailport=s, headport=n, headlabel="      5219"]
+BB5218 -> BB5225 [tailport=s, headport=n, color=gray, headlabel="      5225"]
+BB5219 [shape=record label="{18718: read-variable['Function',v9,-]|18719: read-property[v9,'prototype',v8]|18720: \<variable-non-null-undef\>['Function']|18721: read-property[v8,'toString',v7]|18722: \<property-non-null-undef\>[v9,'prototype']|18723: read-property[v7,'call',-]|18724: \<property-non-null-undef\>[v8,'toString']|18725: read-variable['func',v10,-]}" ] 
+BB5219 -> BB5220 [tailport=s, headport=n, headlabel="      5220"]
+BB5219 -> BB5225 [tailport=s, headport=n, color=gray]
+BB5220 [shape=record label="{18726: call-Function.prototype.toString.call [v7,'call',v10,v5]}" ] 
+BB5220 -> BB5221 [tailport=s, headport=n, headlabel="      5221"]
+BB5220 -> BB5225 [tailport=s, headport=n, color=gray]
+BB5221 [shape=record label="{18727: read-property[v5,'indexOf',-]|18728: constant[\"[native code]\",v11]}" ] 
+BB5221 -> BB5222 [tailport=s, headport=n, headlabel="      5222"]
+BB5221 -> BB5225 [tailport=s, headport=n, color=gray]
+BB5222 [shape=record label="{18729: call-null [v5,'indexOf',v11,v2]}" ] 
+BB5222 -> BB5223 [tailport=s, headport=n, headlabel="      5223"]
+BB5222 -> BB5225 [tailport=s, headport=n, color=gray]
+BB5223 [shape=record label="{18730: constant[-1.0,v3]|18731: \>[v2,v3,v1]}" ] 
+BB5223 -> BB5224 [tailport=s, headport=n]
+BB5223 -> BB5225 [tailport=s, headport=n, color=gray]
+BB5224 [shape=record label="{18732: return[v1]}" ] 
+BB5225 [shape=record label="{18733: exceptional-return}" ] 
+//#$~ 9517
+}

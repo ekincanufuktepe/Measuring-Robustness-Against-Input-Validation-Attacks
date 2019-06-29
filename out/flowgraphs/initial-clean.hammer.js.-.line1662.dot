@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry91[shape=none,label=""];
+BB_entry91 -> BB1015 [tailport=s, headport=n, headlabel="    1015"]
+BB1015 [shape=record label="{3157: constant[undefined,v1]}" ] 
+BB1015 -> BB1016 [tailport=s, headport=n, headlabel="      1016"]
+BB1016 [shape=record label="{3158: read-variable['AttrRecognizer',v5,-]|3159: read-property[v5,'prototype',v4]|3160: \<variable-non-null-undef\>['AttrRecognizer']|3161: read-property[v4,'attrTest',v3]|3162: \<property-non-null-undef\>[v5,'prototype']|3163: read-property[v3,'call',-]|3164: \<property-non-null-undef\>[v4,'attrTest']|3165: read-variable['this',v6,-]|3166: read-variable['input',v7,-]}" ] 
+BB1016 -> BB1017 [tailport=s, headport=n, headlabel="      1017"]
+BB1016 -> BB1024 [tailport=s, headport=n, color=gray, headlabel="      1024"]
+BB1017 [shape=record label="{3167: call-AttrRecognizer.prototype.attrTest.call [v3,'call',v6,v7,v1]}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1017 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1018 [shape=record label="{3168: if[v1](true-block:1019,false-block:1023)}" ] 
+BB1018 -> BB1023 [tailport=s, headport=n, headlabel="      1023"]
+BB1018 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1019 [shape=record label="{3169: read-variable['this',v10,-]|3170: read-property[v10,'state',v8]|3171: read-variable['STATE_BEGAN',v9,-]|3172: &[v8,v9,v1]|3173: if[v1](true-block:1023,false-block:1020)}" ] 
+BB1019 -> BB1023 [tailport=s, headport=n]
+BB1019 -> BB1020 [tailport=s, headport=n, headlabel="      1020"]
+BB1019 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1020 [shape=record label="{3174: read-variable['this',v11,-]|3175: read-property[v11,'state',v9]|3176: read-variable['STATE_BEGAN',v10,-]|3177: &[v9,v10,v8]|3178: ![v8,v1]|3179: if[v1](true-block:1021,false-block:1023)}" ] 
+BB1020 -> BB1023 [tailport=s, headport=n]
+BB1020 -> BB1021 [tailport=s, headport=n, headlabel="      1021"]
+BB1020 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1021 [shape=record label="{3180: read-variable['this',v13,-]|3181: read-property[v13,'directionTest',-]|3182: read-variable['input',v14,-]}" ] 
+BB1021 -> BB1022 [tailport=s, headport=n, headlabel="      1022"]
+BB1021 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1022 [shape=record label="{3183: call-this.directionTest [v13,'directionTest',v14,v1]}" ] 
+BB1022 -> BB1023 [tailport=s, headport=n]
+BB1022 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1023 [shape=record label="{3184: return[v1]}" ] 
+BB1024 [shape=record label="{3185: exceptional-return}" ] 
+//#$~ 1664
+}

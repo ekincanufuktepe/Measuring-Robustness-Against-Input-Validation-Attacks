@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB1776 [tailport=s, headport=n, headlabel="    1776"]
+BB1776 [shape=record label="{5461: constant[undefined,v1]|5462: vardecl['item']}" ] 
+BB1776 -> BB1777 [tailport=s, headport=n, headlabel="      1777"]
+BB1777 [shape=record label="{5463: read-variable['this',v4,-]|5464: read-property[v4,'getItem',-]|5465: read-variable['elem',v5,-]}" ] 
+BB1777 -> BB1778 [tailport=s, headport=n, headlabel="      1778"]
+BB1777 -> BB1782 [tailport=s, headport=n, color=gray, headlabel="      1782"]
+BB1778 [shape=record label="{5466: call-this.getItem [v4,'getItem',v5,v2]}" ] 
+BB1778 -> BB1779 [tailport=s, headport=n, headlabel="      1779"]
+BB1778 -> BB1782 [tailport=s, headport=n, color=gray]
+BB1779 [shape=record label="{5467: write-variable[v2,'item']*|5468: read-variable['item',v6,-]|5469: if[v6](true-block:1780,false-block:1781)}" ] 
+BB1779 -> BB1780 [tailport=s, headport=n, headlabel="      1780"]
+BB1779 -> BB1781 [tailport=s, headport=n, headlabel="      1781"]
+BB1779 -> BB1782 [tailport=s, headport=n, color=gray]
+BB1780 [shape=record label="{5470: read-variable['item',v8,-]|5471: constant[\"isIgnored\",v9]|5472: delete-property[v8,v9,v7]*}" ] 
+BB1780 -> BB1781 [tailport=s, headport=n]
+BB1780 -> BB1782 [tailport=s, headport=n, color=gray]
+BB1781 [shape=record label="{5473: return[v1]}" ] 
+BB1782 [shape=record label="{5474: exceptional-return}" ] 
+//#$~ 2499
+}

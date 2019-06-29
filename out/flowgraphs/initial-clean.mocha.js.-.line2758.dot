@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry205[shape=none,label=""];
+BB_entry205 -> BB2293 [tailport=s, headport=n, headlabel="    2293"]
+BB2293 [shape=record label="{7357: constant[undefined,v1]}" ] 
+BB2293 -> BB2294 [tailport=s, headport=n, headlabel="      2294"]
+BB2294 [shape=record label="{7358: read-variable['suite',v3,-]|7359: read-property[v3,'root',v2]|7360: \<variable-non-null-undef\>['suite']|7361: if[v2](true-block:2295,false-block:2296)}" ] 
+BB2294 -> BB2295 [tailport=s, headport=n, headlabel="      2295"]
+BB2294 -> BB2296 [tailport=s, headport=n, headlabel="      2296"]
+BB2294 -> BB2299 [tailport=s, headport=n, color=gray, headlabel="      2299"]
+BB2295 [shape=record label="{7362: constant[undefined,v1]}" ] 
+BB2295 -> BB2298 [tailport=s, headport=n, headlabel="      2298"]
+BB2296 [shape=record label="{7363: read-variable['stack',v5,-]|7364: read-property[v5,'shift',-]|7365: \<variable-non-null-undef\>['stack']}" ] 
+BB2296 -> BB2297 [tailport=s, headport=n, headlabel="      2297"]
+BB2296 -> BB2299 [tailport=s, headport=n, color=gray]
+BB2297 [shape=record label="{7366: call-stack.shift [v5,'shift',-]*}" ] 
+BB2297 -> BB2298 [tailport=s, headport=n]
+BB2297 -> BB2299 [tailport=s, headport=n, color=gray]
+BB2298 [shape=record label="{7367: return[v1]}" ] 
+BB2299 [shape=record label="{7368: exceptional-return}" ] 
+//#$~ 2760
+}

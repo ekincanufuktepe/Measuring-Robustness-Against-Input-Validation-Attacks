@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry77[shape=none,label=""];
+BB_entry77 -> BB1086 [tailport=s, headport=n, headlabel="    1086"]
+BB1086 [shape=record label="{3120: constant[undefined,v1]|3121: vardecl['module']}" ] 
+BB1086 -> BB1087 [tailport=s, headport=n, headlabel="      1087"]
+BB1087 [shape=record label="{3122: read-variable['getModule',v4,v3]|3123: read-variable['moduleId',v5,-]|3124: read-variable['referenceModule',v6,-]}" ] 
+BB1087 -> BB1088 [tailport=s, headport=n, headlabel="      1088"]
+BB1087 -> BB1094 [tailport=s, headport=n, color=gray, headlabel="      1094"]
+BB1088 [shape=record label="{3125: call-getModule [v3,v4,v5,v6,v2]}" ] 
+BB1088 -> BB1089 [tailport=s, headport=n, headlabel="      1089"]
+BB1088 -> BB1094 [tailport=s, headport=n, color=gray]
+BB1089 [shape=record label="{3126: write-variable[v2,'module']*|3127: read-variable['setArrived',v8,v7]|3128: read-variable['module',v9,-]}" ] 
+BB1089 -> BB1090 [tailport=s, headport=n, headlabel="      1090"]
+BB1089 -> BB1094 [tailport=s, headport=n, color=gray]
+BB1090 [shape=record label="{3129: call-setArrived [v7,v8,v9,-]*}" ] 
+BB1090 -> BB1091 [tailport=s, headport=n, headlabel="      1091"]
+BB1090 -> BB1094 [tailport=s, headport=n, color=gray]
+BB1091 [shape=record label="{3130: read-variable['mix',v11,v10]|3131: read-variable['module',v12,-]|3132: new[v13]|3133: constant[0.0,v14]|3134: write-property[v13,'def',v14]|3135: constant[0.0,v15]|3136: write-property[v13,'executed',v15]|3137: constant[0.0,v16]|3138: write-property[v13,'injected',v16]|3139: constant[0.0,v17]|3140: write-property[v13,'node',v17]}" ] 
+BB1091 -> BB1092 [tailport=s, headport=n, headlabel="      1092"]
+BB1091 -> BB1094 [tailport=s, headport=n, color=gray]
+BB1092 [shape=record label="{3141: call-mix [v10,v11,v12,v13,-]*}" ] 
+BB1092 -> BB1093 [tailport=s, headport=n, headlabel="      1093"]
+BB1092 -> BB1094 [tailport=s, headport=n, color=gray]
+BB1093 [shape=record label="{3142: return[v1]}" ] 
+BB1094 [shape=record label="{3143: exceptional-return}" ] 
+//#$~ 1331
+}

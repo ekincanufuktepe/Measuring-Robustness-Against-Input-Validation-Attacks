@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry468[shape=none,label=""];
+BB_entry468 -> BB5901 [tailport=s, headport=n, headlabel="    5901"]
+BB5901 [shape=record label="{16485: constant[undefined,v1]}" ] 
+BB5901 -> BB5902 [tailport=s, headport=n, headlabel="      5902"]
+BB5902 [shape=record label="{16486: read-variable['push_native',v3,-]|16487: read-property[v3,'apply',-]|16488: \<variable-non-null-undef\>['push_native']|16489: read-variable['target',v4,-]|16490: read-variable['slice',v7,-]|16491: read-property[v7,'call',-]|16492: \<variable-non-null-undef\>['slice']|16493: read-variable['els',v8,-]}" ] 
+BB5902 -> BB5903 [tailport=s, headport=n, headlabel="      5903"]
+BB5902 -> BB5906 [tailport=s, headport=n, color=gray, headlabel="      5906"]
+BB5903 [shape=record label="{16494: call-slice.call [v7,'call',v8,v5]}" ] 
+BB5903 -> BB5904 [tailport=s, headport=n, headlabel="      5904"]
+BB5903 -> BB5906 [tailport=s, headport=n, color=gray]
+BB5904 [shape=record label="{16495: call-push_native.apply [v3,'apply',v4,v5,-]*}" ] 
+BB5904 -> BB5905 [tailport=s, headport=n, headlabel="      5905"]
+BB5904 -> BB5906 [tailport=s, headport=n, color=gray]
+BB5905 [shape=record label="{16496: return[v1]}" ] 
+BB5906 [shape=record label="{16497: exceptional-return}" ] 
+//#$~ 4624
+}

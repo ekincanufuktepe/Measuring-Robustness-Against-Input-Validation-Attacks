@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry2044[shape=none,label=""];
+BB_entry2044 -> BB23387 [tailport=s, headport=n, headlabel="    23387"]
+BB23387 [shape=record label="{77686: constant[undefined,v1]|77687: vardecl['childViews']|77688: vardecl['ret']}" ] 
+BB23387 -> BB23388 [tailport=s, headport=n, headlabel="      23388"]
+BB23388 [shape=record label="{77689: read-variable['this',v3,-]|77690: read-property[v3,'_childViews',v2]|77691: write-variable[v2,'childViews']*|77692: read-variable['emberA',v6,v5]}" ] 
+BB23388 -> BB23389 [tailport=s, headport=n, headlabel="      23389"]
+BB23388 -> BB23394 [tailport=s, headport=n, color=gray, headlabel="      23394"]
+BB23389 [shape=record label="{77693: call-emberA [v5,v6,v4]}" ] 
+BB23389 -> BB23390 [tailport=s, headport=n, headlabel="      23390"]
+BB23389 -> BB23394 [tailport=s, headport=n, color=gray]
+BB23390 [shape=record label="{77694: write-variable[v4,'ret']*|77695: read-variable['forEach',v8,v7]|77696: read-variable['childViews',v9,-]|77697: function-expr[function ( view ),v10]}" ] 
+BB23390 -> BB23391 [tailport=s, headport=n, headlabel="      23391"]
+BB23390 -> BB23394 [tailport=s, headport=n, color=gray]
+BB23391 [shape=record label="{77698: call-forEach [v7,v8,v9,v10,-]*}" ] 
+BB23391 -> BB23392 [tailport=s, headport=n, headlabel="      23392"]
+BB23391 -> BB23394 [tailport=s, headport=n, color=gray]
+BB23392 [shape=record label="{77699: read-variable['ret',v12,-]|77700: function-expr[function ( idx removedCount addedViews ),v11]|77701: write-property[v12,'replace',v11]|77702: \<variable-non-null-undef\>['ret']*|77703: read-variable['ret',v1,-]}" ] 
+BB23392 -> BB23393 [tailport=s, headport=n, headlabel="      23393"]
+BB23392 -> BB23394 [tailport=s, headport=n, color=gray]
+BB23393 [shape=record label="{77704: return[v1]}" ] 
+BB23394 [shape=record label="{77705: exceptional-return}" ] 
+//#$~ 43696
+}

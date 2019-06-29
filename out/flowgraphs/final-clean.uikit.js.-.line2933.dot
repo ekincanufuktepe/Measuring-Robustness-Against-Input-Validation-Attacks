@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry283[shape=none,label=""];
+BB_entry283 -> BB3825 [tailport=s, headport=n, headlabel="    3825"]
+BB3825 [shape=record label="{10703: constant[undefined,v1]|10704: vardecl['d']}" ] 
+BB3825 -> BB3826 [tailport=s, headport=n, headlabel="      3826"]
+BB3826 [shape=record label="{10705: read-variable['UI',v5,-]|10706: read-property[v5,'$',v4]|10707: \<variable-non-null-undef\>['UI']|10708: read-property[v4,'Deferred',-]|10709: \<property-non-null-undef\>[v5,'$']}" ] 
+BB3826 -> BB3827 [tailport=s, headport=n, headlabel="      3827"]
+BB3826 -> BB3833 [tailport=s, headport=n, color=gray, headlabel="      3833"]
+BB3827 [shape=record label="{10710: call-UI.$.Deferred [v4,'Deferred',v2]}" ] 
+BB3827 -> BB3828 [tailport=s, headport=n, headlabel="      3828"]
+BB3827 -> BB3833 [tailport=s, headport=n, color=gray]
+BB3828 [shape=record label="{10711: write-variable[v2,'d']*|10712: read-variable['d',v7,-]|10713: read-property[v7,'resolve',-]|10714: \<variable-non-null-undef\>['d']}" ] 
+BB3828 -> BB3829 [tailport=s, headport=n, headlabel="      3829"]
+BB3828 -> BB3833 [tailport=s, headport=n, color=gray]
+BB3829 [shape=record label="{10715: call-d.resolve [v7,'resolve',-]*}" ] 
+BB3829 -> BB3830 [tailport=s, headport=n, headlabel="      3830"]
+BB3829 -> BB3833 [tailport=s, headport=n, color=gray]
+BB3830 [shape=record label="{10716: read-variable['d',v9,-]|10717: read-property[v9,'promise',-]|10718: \<variable-non-null-undef\>['d']}" ] 
+BB3830 -> BB3831 [tailport=s, headport=n, headlabel="      3831"]
+BB3830 -> BB3833 [tailport=s, headport=n, color=gray]
+BB3831 [shape=record label="{10719: call-d.promise [v9,'promise',v1]}" ] 
+BB3831 -> BB3832 [tailport=s, headport=n, headlabel="      3832"]
+BB3831 -> BB3833 [tailport=s, headport=n, color=gray]
+BB3832 [shape=record label="{10720: return[v1]}" ] 
+BB3833 [shape=record label="{10721: exceptional-return}" ] 
+//#$~ 2936
+}

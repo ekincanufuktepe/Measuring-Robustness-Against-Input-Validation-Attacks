@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry29[shape=none,label=""];
+BB_entry29 -> BB252 [tailport=s, headport=n, headlabel="    252"]
+BB252 [shape=record label="{653: constant[undefined,v1]}" ] 
+BB252 -> BB253 [tailport=s, headport=n, headlabel="      253"]
+BB253 [shape=record label="{654: read-variable['str',v1,-]|655: if[v1](true-block:254,false-block:259)}" ] 
+BB253 -> BB259 [tailport=s, headport=n, headlabel="      259"]
+BB253 -> BB254 [tailport=s, headport=n, headlabel="      254"]
+BB253 -> BB260 [tailport=s, headport=n, color=gray, headlabel="      260"]
+BB254 [shape=record label="{656: read-variable['cache',v3,-]|657: read-variable['str',v4,-]|658: read-variable['cache',v5,-]|659: read-variable['str',v6,-]|660: read-property[v5,v6,v2]|661: \<variable-non-null-undef\>['cache']|662: if[v2](true-block:257,false-block:255)}" ] 
+BB254 -> BB257 [tailport=s, headport=n, headlabel="      257"]
+BB254 -> BB255 [tailport=s, headport=n, headlabel="      255"]
+BB254 -> BB260 [tailport=s, headport=n, color=gray]
+BB255 [shape=record label="{663: read-variable['tmpl',v6,v5]|664: read-variable['str',v7,-]}" ] 
+BB255 -> BB256 [tailport=s, headport=n, headlabel="      256"]
+BB255 -> BB260 [tailport=s, headport=n, color=gray]
+BB256 [shape=record label="{665: call-tmpl [v5,v6,v7,v2]}" ] 
+BB256 -> BB257 [tailport=s, headport=n]
+BB256 -> BB260 [tailport=s, headport=n, color=gray]
+BB257 [shape=record label="{666: write-property[v3,v4,v2]|667: \<variable-non-null-undef\>['cache']|668: read-variable['data',v5,-]}" ] 
+BB257 -> BB258 [tailport=s, headport=n, headlabel="      258"]
+BB257 -> BB260 [tailport=s, headport=n, color=gray]
+BB258 [shape=record label="{669: call-null [-,v2,v5,v1]}" ] 
+BB258 -> BB259 [tailport=s, headport=n]
+BB258 -> BB260 [tailport=s, headport=n, color=gray]
+BB259 [shape=record label="{670: return[v1]}" ] 
+BB260 [shape=record label="{671: exceptional-return}" ] 
+//#$~ 250
+}

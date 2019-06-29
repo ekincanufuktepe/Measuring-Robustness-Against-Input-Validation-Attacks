@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1144[shape=none,label=""];
+BB_entry1144 -> BB12397 [tailport=s, headport=n, headlabel="    12397"]
+BB12397 [shape=record label="{42625: constant[undefined,v1]|42626: vardecl['i0']|42627: vardecl['i1']|42628: vardecl['x0']|42629: vardecl['x1']|42630: vardecl['dx']}" ] 
+BB12397 -> BB12398 [tailport=s, headport=n, headlabel="      12398"]
+BB12398 [shape=record label="{42631: constant[0.0,v2]|42632: write-variable[v2,'i0']*|42633: read-variable['domain',v6,-]|42634: read-property[v6,'length',v4]|42635: \<variable-non-null-undef\>['domain']|42636: constant[1.0,v5]|42637: -[v4,v5,v3]|42638: write-variable[v3,'i1']*|42639: read-variable['domain',v8,-]|42640: read-variable['i0',v9,-]|42641: read-property[v8,v9,v7]|42642: \<variable-non-null-undef\>['domain']|42643: write-variable[v7,'x0']*|42644: read-variable['domain',v11,-]|42645: read-variable['i1',v12,-]|42646: read-property[v11,v12,v10]|42647: \<variable-non-null-undef\>['domain']|42648: write-variable[v10,'x1']*|42649: read-variable['x1',v14,-]|42650: read-variable['x0',v15,-]|42651: \<[v14,v15,v13]|42652: if[v13](true-block:12399,false-block:12400)}" ] 
+BB12398 -> BB12399 [tailport=s, headport=n, headlabel="      12399"]
+BB12398 -> BB12400 [tailport=s, headport=n, headlabel="      12400"]
+BB12398 -> BB12406 [tailport=s, headport=n, color=gray, headlabel="      12406"]
+BB12399 [shape=record label="{42653: read-variable['i0',v16,-]|42654: write-variable[v16,'dx']|42655: read-variable['i1',v17,-]|42656: write-variable[v17,'i0']|42657: read-variable['dx',v18,-]|42658: write-variable[v18,'i1']|42659: read-variable['x0',v19,-]|42660: write-variable[v19,'dx']|42661: read-variable['x1',v20,-]|42662: write-variable[v20,'x0']|42663: read-variable['dx',v21,-]|42664: write-variable[v21,'x1']}" ] 
+BB12399 -> BB12400 [tailport=s, headport=n]
+BB12399 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12400 [shape=record label="{42665: read-variable['domain',v17,-]|42666: read-variable['i0',v18,-]|42667: read-variable['nice',v20,-]|42668: read-property[v20,'floor',-]|42669: \<variable-non-null-undef\>['nice']|42670: read-variable['x0',v21,-]}" ] 
+BB12400 -> BB12401 [tailport=s, headport=n, headlabel="      12401"]
+BB12400 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12401 [shape=record label="{42671: call-nice.floor [v20,'floor',v21,v16]}" ] 
+BB12401 -> BB12402 [tailport=s, headport=n, headlabel="      12402"]
+BB12401 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12402 [shape=record label="{42672: write-property[v17,v18,v16]|42673: \<variable-non-null-undef\>['domain']*|42674: read-variable['domain',v23,-]|42675: read-variable['i1',v24,-]|42676: read-variable['nice',v26,-]|42677: read-property[v26,'ceil',-]|42678: \<variable-non-null-undef\>['nice']|42679: read-variable['x1',v27,-]}" ] 
+BB12402 -> BB12403 [tailport=s, headport=n, headlabel="      12403"]
+BB12402 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12403 [shape=record label="{42680: call-nice.ceil [v26,'ceil',v27,v22]}" ] 
+BB12403 -> BB12404 [tailport=s, headport=n, headlabel="      12404"]
+BB12403 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12404 [shape=record label="{42681: write-property[v23,v24,v22]|42682: \<variable-non-null-undef\>['domain']*|42683: read-variable['domain',v1,-]}" ] 
+BB12404 -> BB12405 [tailport=s, headport=n, headlabel="      12405"]
+BB12404 -> BB12406 [tailport=s, headport=n, color=gray]
+BB12405 [shape=record label="{42684: return[v1]}" ] 
+BB12406 [shape=record label="{42685: exceptional-return}" ] 
+//#$~ 7451
+}

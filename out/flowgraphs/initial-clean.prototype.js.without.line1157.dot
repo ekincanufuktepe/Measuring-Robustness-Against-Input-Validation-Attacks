@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB1785 [tailport=s, headport=n, headlabel="    1785"]
+BB1785 [shape=record label="{4796: constant[undefined,v1]|4797: vardecl['values']}" ] 
+BB1785 -> BB1786 [tailport=s, headport=n, headlabel="      1786"]
+BB1786 [shape=record label="{4798: read-variable['slice',v4,-]|4799: read-property[v4,'call',-]|4800: \<variable-non-null-undef\>['slice']|4801: read-variable['arguments',v5,-]|4802: constant[0.0,v6]}" ] 
+BB1786 -> BB1787 [tailport=s, headport=n, headlabel="      1787"]
+BB1786 -> BB1791 [tailport=s, headport=n, color=gray, headlabel="      1791"]
+BB1787 [shape=record label="{4803: call-slice.call [v4,'call',v5,v6,v2]}" ] 
+BB1787 -> BB1788 [tailport=s, headport=n, headlabel="      1788"]
+BB1787 -> BB1791 [tailport=s, headport=n, color=gray]
+BB1788 [shape=record label="{4804: write-variable[v2,'values']*|4805: read-variable['this',v8,-]|4806: read-property[v8,'select',-]|4807: function-expr[function ( value ),v9]}" ] 
+BB1788 -> BB1789 [tailport=s, headport=n, headlabel="      1789"]
+BB1788 -> BB1791 [tailport=s, headport=n, color=gray]
+BB1789 [shape=record label="{4808: call-this.select [v8,'select',v9,v1]}" ] 
+BB1789 -> BB1790 [tailport=s, headport=n, headlabel="      1790"]
+BB1789 -> BB1791 [tailport=s, headport=n, color=gray]
+BB1790 [shape=record label="{4809: return[v1]}" ] 
+BB1791 [shape=record label="{4810: exceptional-return}" ] 
+//#$~ 1160
+}

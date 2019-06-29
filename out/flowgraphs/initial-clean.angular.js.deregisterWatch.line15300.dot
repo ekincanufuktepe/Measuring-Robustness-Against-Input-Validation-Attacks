@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry851[shape=none,label=""];
+BB_entry851 -> BB10940 [tailport=s, headport=n, headlabel="    10940"]
+BB10940 [shape=record label="{28494: constant[undefined,v1]}" ] 
+BB10940 -> BB10941 [tailport=s, headport=n, headlabel="      10941"]
+BB10941 [shape=record label="{28495: read-variable['arrayRemove',v6,v5]|28496: read-variable['array',v7,-]|28497: read-variable['watcher',v8,-]}" ] 
+BB10941 -> BB10942 [tailport=s, headport=n, headlabel="      10942"]
+BB10941 -> BB10948 [tailport=s, headport=n, color=gray, headlabel="      10948"]
+BB10942 [shape=record label="{28498: call-arrayRemove [v5,v6,v7,v8,v3]}" ] 
+BB10942 -> BB10943 [tailport=s, headport=n, headlabel="      10943"]
+BB10942 -> BB10948 [tailport=s, headport=n, color=gray]
+BB10943 [shape=record label="{28499: constant[0.0,v4]|28500: \>=[v3,v4,v2]|28501: if[v2](true-block:10944,false-block:10946)}" ] 
+BB10943 -> BB10944 [tailport=s, headport=n, headlabel="      10944"]
+BB10943 -> BB10946 [tailport=s, headport=n, headlabel="      10946"]
+BB10943 -> BB10948 [tailport=s, headport=n, color=gray]
+BB10944 [shape=record label="{28502: read-variable['incrementWatchersCount',v10,v9]|28503: read-variable['scope',v11,-]|28504: constant[-1.0,v12]}" ] 
+BB10944 -> BB10945 [tailport=s, headport=n, headlabel="      10945"]
+BB10944 -> BB10948 [tailport=s, headport=n, color=gray]
+BB10945 [shape=record label="{28505: call-incrementWatchersCount [v9,v10,v11,v12,-]*}" ] 
+BB10945 -> BB10946 [tailport=s, headport=n]
+BB10945 -> BB10948 [tailport=s, headport=n, color=gray]
+BB10946 [shape=record label="{28506: constant[null,v9]|28507: write-variable[v9,'lastDirtyWatch']*}" ] 
+BB10946 -> BB10947 [tailport=s, headport=n, headlabel="      10947"]
+BB10947 [shape=record label="{28508: return[v1]}" ] 
+BB10948 [shape=record label="{28509: exceptional-return}" ] 
+//#$~ 15304
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry733[shape=none,label=""];
+BB_entry733 -> BB9865 [tailport=s, headport=n, headlabel="    9865"]
+BB9865 [shape=record label="{32628: constant[undefined,v1]}" ] 
+BB9865 -> BB9866 [tailport=s, headport=n, headlabel="      9866"]
+BB9866 [shape=record label="{32629: read-variable['node',v3,-]|32630: read-property[v3,'focus',-]|32631: \<variable-non-null-undef\>['node']}" ] 
+BB9866 -> BB9867 [tailport=s, headport=n, headlabel="      9867"]
+BB9866 -> BB9868 [tailport=s, headport=n, color=gray, headlabel="      9868"]
+BB9867 [shape=record label="{32632: call-node.focus [v3,'focus',-]*}" ] 
+BB9867 -> BB9871 [tailport=s, headport=n, headlabel="      9871"]
+BB9867 -> BB9868 [tailport=s, headport=n, color=gray]
+BB9868 [shape=record label="{32633: catch[e,v2]|32634: begin-with[v2]}" ] 
+BB9868 -> BB9869 [tailport=s, headport=n, headlabel="      9869"]
+BB9868 -> BB9872 [tailport=s, headport=n, color=gray, headlabel="      9872"]
+BB9869 [shape=record label="{32635: end-with}" ] 
+BB9869 -> BB9871 [tailport=s, headport=n]
+BB9870 [shape=record label="{32636: end-with}" ] 
+BB9870 -> BB9872 [tailport=s, headport=n]
+BB9871 [shape=record label="{32637: return[v1]}" ] 
+BB9872 [shape=record label="{32638: exceptional-return}" ] 
+//#$~ 17533
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry212[shape=none,label=""];
+BB_entry212 -> BB1850 [tailport=s, headport=n, headlabel="    1850"]
+BB1850 [shape=record label="{5387: constant[undefined,v1]|5388: vardecl['me']|5389: vardecl['complete']}" ] 
+BB1850 -> BB1851 [tailport=s, headport=n, headlabel="      1851"]
+BB1851 [shape=record label="{5390: read-variable['this',v2,-]|5391: write-variable[v2,'me']*|5392: constant[true,v3]|5393: write-variable[v3,'complete']*|5394: read-variable['Joose',v6,-]|5395: read-property[v6,'A',v5]|5396: \<variable-non-null-undef\>['Joose']|5397: read-property[v5,'each',-]|5398: \<property-non-null-undef\>[v6,'A']|5399: read-variable['this',v8,-]|5400: read-property[v8,'requiresMethodNames',v7]|5401: function-expr[function ( value ),v9]}" ] 
+BB1851 -> BB1852 [tailport=s, headport=n, headlabel="      1852"]
+BB1851 -> BB1855 [tailport=s, headport=n, color=gray, headlabel="      1855"]
+BB1852 [shape=record label="{5402: call-Joose.A.each [v5,'each',v7,v9,-]*}" ] 
+BB1852 -> BB1853 [tailport=s, headport=n, headlabel="      1853"]
+BB1852 -> BB1855 [tailport=s, headport=n, color=gray]
+BB1853 [shape=record label="{5403: read-variable['complete',v1,-]}" ] 
+BB1853 -> BB1854 [tailport=s, headport=n, headlabel="      1854"]
+BB1853 -> BB1855 [tailport=s, headport=n, color=gray]
+BB1854 [shape=record label="{5404: return[v1]}" ] 
+BB1855 [shape=record label="{5405: exceptional-return}" ] 
+//#$~ 2106
+}

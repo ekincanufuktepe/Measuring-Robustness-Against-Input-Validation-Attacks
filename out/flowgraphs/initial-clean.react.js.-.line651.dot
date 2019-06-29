@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry22[shape=none,label=""];
+BB_entry22 -> BB327 [tailport=s, headport=n, headlabel="    327"]
+BB327 [shape=record label="{1045: constant[undefined,v1]}" ] 
+BB327 -> BB328 [tailport=s, headport=n, headlabel="      328"]
+BB328 [shape=record label="{1046: read-variable['Array',v2,-]|1047: read-variable['extractCompositionEvent',v5,v4]|1048: read-variable['topLevelType',v6,-]|1049: read-variable['topLevelTarget',v7,-]|1050: read-variable['topLevelTargetID',v8,-]|1051: read-variable['nativeEvent',v9,-]}" ] 
+BB328 -> BB329 [tailport=s, headport=n, headlabel="      329"]
+BB328 -> BB334 [tailport=s, headport=n, color=gray, headlabel="      334"]
+BB329 [shape=record label="{1052: call-extractCompositionEvent [v4,v5,v6,v7,v8,v9,v3]}" ] 
+BB329 -> BB330 [tailport=s, headport=n, headlabel="      330"]
+BB329 -> BB334 [tailport=s, headport=n, color=gray]
+BB330 [shape=record label="{1053: read-variable['extractBeforeInputEvent',v12,v11]|1054: read-variable['topLevelType',v13,-]|1055: read-variable['topLevelTarget',v14,-]|1056: read-variable['topLevelTargetID',v15,-]|1057: read-variable['nativeEvent',v16,-]}" ] 
+BB330 -> BB331 [tailport=s, headport=n, headlabel="      331"]
+BB330 -> BB334 [tailport=s, headport=n, color=gray]
+BB331 [shape=record label="{1058: call-extractBeforeInputEvent [v11,v12,v13,v14,v15,v16,v10]}" ] 
+BB331 -> BB332 [tailport=s, headport=n, headlabel="      332"]
+BB331 -> BB334 [tailport=s, headport=n, color=gray]
+BB332 [shape=record label="{1059: construct [-,v2,v3,v10,v1]}" ] 
+BB332 -> BB333 [tailport=s, headport=n, headlabel="      333"]
+BB332 -> BB334 [tailport=s, headport=n, color=gray]
+BB333 [shape=record label="{1060: return[v1]}" ] 
+BB334 [shape=record label="{1061: exceptional-return}" ] 
+//#$~ 668
+}

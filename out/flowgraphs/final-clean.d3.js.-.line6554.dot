@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1011[shape=none,label=""];
+BB_entry1011 -> BB11025 [tailport=s, headport=n, headlabel="    11025"]
+BB11025 [shape=record label="{37170: constant[undefined,v1]}" ] 
+BB11025 -> BB11026 [tailport=s, headport=n, headlabel="      11026"]
+BB11026 [shape=record label="{37171: read-variable['parent',v4,-]|37172: read-property[v4,'children',v3]|37173: \<variable-non-null-undef\>['parent']|37174: if[v3](true-block:11029,false-block:11027)}" ] 
+BB11026 -> BB11029 [tailport=s, headport=n, headlabel="      11029"]
+BB11026 -> BB11027 [tailport=s, headport=n, headlabel="      11027"]
+BB11026 -> BB11032 [tailport=s, headport=n, color=gray, headlabel="      11032"]
+BB11027 [shape=record label="{37175: read-variable['Array',v4,-]}" ] 
+BB11027 -> BB11028 [tailport=s, headport=n, headlabel="      11028"]
+BB11027 -> BB11032 [tailport=s, headport=n, color=gray]
+BB11028 [shape=record label="{37176: construct [-,v4,v3]}" ] 
+BB11028 -> BB11029 [tailport=s, headport=n]
+BB11028 -> BB11032 [tailport=s, headport=n, color=gray]
+BB11029 [shape=record label="{37177: read-property[v3,'map',-]|37178: function-expr[function ( child ),v4]}" ] 
+BB11029 -> BB11030 [tailport=s, headport=n, headlabel="      11030"]
+BB11029 -> BB11032 [tailport=s, headport=n, color=gray]
+BB11030 [shape=record label="{37179: call-null [v3,'map',v4,v1]}" ] 
+BB11030 -> BB11031 [tailport=s, headport=n, headlabel="      11031"]
+BB11030 -> BB11032 [tailport=s, headport=n, color=gray]
+BB11031 [shape=record label="{37180: return[v1]}" ] 
+BB11032 [shape=record label="{37181: exceptional-return}" ] 
+//#$~ 6558
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry796[shape=none,label=""];
+BB_entry796 -> BB9487 [tailport=s, headport=n, headlabel="    9487"]
+BB9487 [shape=record label="{32603: constant[undefined,v1]}" ] 
+BB9487 -> BB9488 [tailport=s, headport=n, headlabel="      9488"]
+BB9488 [shape=record label="{32604: read-variable['run',v4,-]|32605: read-property[v4,'join',v3]|32606: \<variable-non-null-undef\>['run']|32607: read-property[v3,'apply',-]|32608: \<property-non-null-undef\>[v4,'join']|32609: read-variable['run',v5,-]|32610: read-variable['args',v8,-]|32611: read-property[v8,'concat',-]|32612: \<variable-non-null-undef\>['args']|32613: read-variable['slice',v11,-]|32614: read-property[v11,'call',-]|32615: \<variable-non-null-undef\>['slice']|32616: read-variable['arguments',v12,-]}" ] 
+BB9488 -> BB9489 [tailport=s, headport=n, headlabel="      9489"]
+BB9488 -> BB9493 [tailport=s, headport=n, color=gray, headlabel="      9493"]
+BB9489 [shape=record label="{32617: call-slice.call [v11,'call',v12,v9]}" ] 
+BB9489 -> BB9490 [tailport=s, headport=n, headlabel="      9490"]
+BB9489 -> BB9493 [tailport=s, headport=n, color=gray]
+BB9490 [shape=record label="{32618: call-args.concat [v8,'concat',v9,v6]}" ] 
+BB9490 -> BB9491 [tailport=s, headport=n, headlabel="      9491"]
+BB9490 -> BB9493 [tailport=s, headport=n, color=gray]
+BB9491 [shape=record label="{32619: call-run.join.apply [v3,'apply',v5,v6,v1]}" ] 
+BB9491 -> BB9492 [tailport=s, headport=n, headlabel="      9492"]
+BB9491 -> BB9493 [tailport=s, headport=n, color=gray]
+BB9492 [shape=record label="{32620: return[v1]}" ] 
+BB9493 [shape=record label="{32621: exceptional-return}" ] 
+//#$~ 16829
+}

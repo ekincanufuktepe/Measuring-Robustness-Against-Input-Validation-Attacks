@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry52[shape=none,label=""];
+BB_entry52 -> BB613 [tailport=s, headport=n, headlabel="    613"]
+BB613 [shape=record label="{1626: constant[undefined,v1]|1627: vardecl['expr']}" ] 
+BB613 -> BB614 [tailport=s, headport=n, headlabel="      614"]
+BB614 [shape=record label="{1628: read-variable['val',v6,-]|1629: read-property[v6,'indexOf',-]|1630: \<variable-non-null-undef\>['val']|1631: read-variable['brackets',v9,v8]|1632: constant[0.0,v10]}" ] 
+BB614 -> BB615 [tailport=s, headport=n, headlabel="      615"]
+BB614 -> BB622 [tailport=s, headport=n, color=gray, headlabel="      622"]
+BB615 [shape=record label="{1633: call-brackets [v8,v9,v10,v7]}" ] 
+BB615 -> BB616 [tailport=s, headport=n, headlabel="      616"]
+BB615 -> BB622 [tailport=s, headport=n, color=gray]
+BB616 [shape=record label="{1634: call-val.indexOf [v6,'indexOf',v7,v3]}" ] 
+BB616 -> BB617 [tailport=s, headport=n, headlabel="      617"]
+BB616 -> BB622 [tailport=s, headport=n, color=gray]
+BB617 [shape=record label="{1635: constant[0.0,v4]|1636: \>=[v3,v4,v2]|1637: if[v2](true-block:618,false-block:621)}" ] 
+BB617 -> BB618 [tailport=s, headport=n, headlabel="      618"]
+BB617 -> BB621 [tailport=s, headport=n, headlabel="      621"]
+BB617 -> BB622 [tailport=s, headport=n, color=gray]
+BB618 [shape=record label="{1638: new[v11]|1639: read-variable['dom',v12,-]|1640: write-property[v11,'dom',v12]|1641: read-variable['val',v13,-]|1642: write-property[v11,'expr',v13]|1643: write-variable[v11,'expr']*|1644: read-variable['expressions',v15,-]|1645: read-property[v15,'push',-]|1646: \<variable-non-null-undef\>['expressions']|1647: read-variable['extend',v18,v17]|1648: read-variable['expr',v19,-]|1649: read-variable['extra',v20,-]}" ] 
+BB618 -> BB619 [tailport=s, headport=n, headlabel="      619"]
+BB618 -> BB622 [tailport=s, headport=n, color=gray]
+BB619 [shape=record label="{1650: call-extend [v17,v18,v19,v20,v16]}" ] 
+BB619 -> BB620 [tailport=s, headport=n, headlabel="      620"]
+BB619 -> BB622 [tailport=s, headport=n, color=gray]
+BB620 [shape=record label="{1651: call-expressions.push [v15,'push',v16,-]*}" ] 
+BB620 -> BB621 [tailport=s, headport=n]
+BB620 -> BB622 [tailport=s, headport=n, color=gray]
+BB621 [shape=record label="{1652: return[v1]}" ] 
+BB622 [shape=record label="{1653: exceptional-return}" ] 
+//#$~ 578
+}

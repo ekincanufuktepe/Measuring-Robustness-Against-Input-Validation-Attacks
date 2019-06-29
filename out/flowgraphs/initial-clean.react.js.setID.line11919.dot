@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry472[shape=none,label=""];
+BB_entry472 -> BB6788 [tailport=s, headport=n, headlabel="    6788"]
+BB6788 [shape=record label="{23083: constant[undefined,v1]|23084: vardecl['oldID']}" ] 
+BB6788 -> BB6789 [tailport=s, headport=n, headlabel="      6789"]
+BB6789 [shape=record label="{23085: read-variable['internalGetID',v4,v3]|23086: read-variable['node',v5,-]}" ] 
+BB6789 -> BB6790 [tailport=s, headport=n, headlabel="      6790"]
+BB6789 -> BB6797 [tailport=s, headport=n, color=gray, headlabel="      6797"]
+BB6790 [shape=record label="{23087: call-internalGetID [v3,v4,v5,v2]}" ] 
+BB6790 -> BB6791 [tailport=s, headport=n, headlabel="      6791"]
+BB6790 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6791 [shape=record label="{23088: write-variable[v2,'oldID']*|23089: read-variable['oldID',v7,-]|23090: read-variable['id',v8,-]|23091: !==[v7,v8,v6]|23092: if[v6](true-block:6792,false-block:6793)}" ] 
+BB6791 -> BB6792 [tailport=s, headport=n, headlabel="      6792"]
+BB6791 -> BB6793 [tailport=s, headport=n, headlabel="      6793"]
+BB6791 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6792 [shape=record label="{23093: read-variable['nodeCache',v10,-]|23094: read-variable['oldID',v11,-]|23095: delete-property[v10,v11,v9]*}" ] 
+BB6792 -> BB6793 [tailport=s, headport=n]
+BB6792 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6793 [shape=record label="{23096: read-variable['node',v10,-]|23097: read-property[v10,'setAttribute',-]|23098: \<variable-non-null-undef\>['node']|23099: read-variable['ATTR_NAME',v11,-]|23100: read-variable['id',v12,-]}" ] 
+BB6793 -> BB6794 [tailport=s, headport=n, headlabel="      6794"]
+BB6793 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6794 [shape=record label="{23101: call-node.setAttribute [v10,'setAttribute',v11,v12,-]*}" ] 
+BB6794 -> BB6795 [tailport=s, headport=n, headlabel="      6795"]
+BB6794 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6795 [shape=record label="{23102: read-variable['nodeCache',v14,-]|23103: read-variable['id',v15,-]|23104: read-variable['node',v13,-]|23105: write-property[v14,v15,v13]|23106: \<variable-non-null-undef\>['nodeCache']*}" ] 
+BB6795 -> BB6796 [tailport=s, headport=n, headlabel="      6796"]
+BB6795 -> BB6797 [tailport=s, headport=n, color=gray]
+BB6796 [shape=record label="{23107: return[v1]}" ] 
+BB6797 [shape=record label="{23108: exceptional-return}" ] 
+//#$~ 11925
+}

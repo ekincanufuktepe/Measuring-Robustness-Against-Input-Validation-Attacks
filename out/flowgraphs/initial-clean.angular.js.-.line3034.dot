@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry155[shape=none,label=""];
+BB_entry155 -> BB2062 [tailport=s, headport=n, headlabel="    2062"]
+BB2062 [shape=record label="{4945: constant[undefined,v1]}" ] 
+BB2062 -> BB2063 [tailport=s, headport=n, headlabel="      2063"]
+BB2063 [shape=record label="{4946: read-variable['BOOLEAN_ATTR',v3,-]|4947: read-variable['lowercase',v6,v5]|4948: read-variable['value',v7,-]}" ] 
+BB2063 -> BB2064 [tailport=s, headport=n, headlabel="      2064"]
+BB2063 -> BB2067 [tailport=s, headport=n, color=gray, headlabel="      2067"]
+BB2064 [shape=record label="{4949: call-lowercase [v5,v6,v7,v4]}" ] 
+BB2064 -> BB2065 [tailport=s, headport=n, headlabel="      2065"]
+BB2064 -> BB2067 [tailport=s, headport=n, color=gray]
+BB2065 [shape=record label="{4950: read-variable['value',v2,-]|4951: write-property[v3,v4,v2]|4952: \<variable-non-null-undef\>['BOOLEAN_ATTR']*}" ] 
+BB2065 -> BB2066 [tailport=s, headport=n, headlabel="      2066"]
+BB2065 -> BB2067 [tailport=s, headport=n, color=gray]
+BB2066 [shape=record label="{4953: return[v1]}" ] 
+BB2067 [shape=record label="{4954: exceptional-return}" ] 
+//#$~ 3035
+}

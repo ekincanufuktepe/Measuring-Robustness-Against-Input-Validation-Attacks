@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB14 [tailport=s, headport=n, headlabel="    14"]
+BB14 [shape=record label="{28: constant[undefined,v1]|29: vardecl['index']|30: vardecl['shiftedIndex']}" ] 
+BB14 -> BB15 [tailport=s, headport=n, headlabel="      15"]
+BB15 [shape=record label="{31: read-variable['match',v5,-]|32: read-property[v5,'slice',-]|33: \<variable-non-null-undef\>['match']|34: constant[1.0,v6]|35: constant[-1.0,v7]}" ] 
+BB15 -> BB16 [tailport=s, headport=n, headlabel="      16"]
+BB15 -> BB22 [tailport=s, headport=n, color=gray, headlabel="      22"]
+BB16 [shape=record label="{36: call-match.slice [v5,'slice',v6,v7,v3]}" ] 
+BB16 -> BB17 [tailport=s, headport=n, headlabel="      17"]
+BB16 -> BB22 [tailport=s, headport=n, color=gray]
+BB17 [shape=record label="{37: +[v3,v2]|38: write-variable[v2,'index']*|39: read-variable['index',v9,-]|40: read-variable['SKIP_INDEXES',v10,-]|41: +[v9,v10,v8]|42: write-variable[v8,'shiftedIndex']*|43: read-variable['shiftedIndex',v12,-]|44: read-variable['templateArgs',v14,-]|45: read-property[v14,'length',v13]|46: \<variable-non-null-undef\>['templateArgs']|47: \<[v12,v13,v11]|48: if[v11](true-block:18,false-block:20)}" ] 
+BB17 -> BB18 [tailport=s, headport=n, headlabel="      18"]
+BB17 -> BB20 [tailport=s, headport=n, headlabel="      20"]
+BB17 -> BB22 [tailport=s, headport=n, color=gray]
+BB18 [shape=record label="{49: read-variable['toDebugString',v16,v15]|50: read-variable['templateArgs',v18,-]|51: read-variable['shiftedIndex',v19,-]|52: read-property[v18,v19,v17]|53: \<variable-non-null-undef\>['templateArgs']}" ] 
+BB18 -> BB19 [tailport=s, headport=n, headlabel="      19"]
+BB18 -> BB22 [tailport=s, headport=n, color=gray]
+BB19 [shape=record label="{54: call-toDebugString [v15,v16,v17,v1]}" ] 
+BB19 -> BB21 [tailport=s, headport=n, headlabel="      21"]
+BB19 -> BB22 [tailport=s, headport=n, color=gray]
+BB20 [shape=record label="{55: read-variable['match',v1,-]}" ] 
+BB20 -> BB21 [tailport=s, headport=n]
+BB20 -> BB22 [tailport=s, headport=n, color=gray]
+BB21 [shape=record label="{56: return[v1]}" ] 
+BB22 [shape=record label="{57: exceptional-return}" ] 
+//#$~ 57
+}

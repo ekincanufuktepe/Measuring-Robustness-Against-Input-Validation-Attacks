@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry164[shape=none,label=""];
+BB_entry164 -> BB2199 [tailport=s, headport=n, headlabel="    2199"]
+BB2199 [shape=record label="{10033: constant[undefined,v1]|10034: vardecl['self']}" ] 
+BB2199 -> BB2200 [tailport=s, headport=n, headlabel="      2200"]
+BB2200 [shape=record label="{10035: read-variable['MochiKit',v3,-]|10036: read-property[v3,'Iter',v2]|10037: \<variable-non-null-undef\>['MochiKit']|10038: write-variable[v2,'self']*|10039: read-variable['self',v6,-]|10040: read-property[v6,'iter',-]|10041: \<variable-non-null-undef\>['self']|10042: read-variable['seq',v7,-]}" ] 
+BB2200 -> BB2201 [tailport=s, headport=n, headlabel="      2201"]
+BB2200 -> BB2206 [tailport=s, headport=n, color=gray, headlabel="      2206"]
+BB2201 [shape=record label="{10043: call-self.iter [v6,'iter',v7,v4]}" ] 
+BB2201 -> BB2202 [tailport=s, headport=n, headlabel="      2202"]
+BB2201 -> BB2206 [tailport=s, headport=n, color=gray]
+BB2202 [shape=record label="{10044: write-variable[v4,'seq']*|10045: new[v1]|10046: function-expr[function ( ),v8]|10047: write-property[v1,'repr',v8]|10048: read-variable['MochiKit',v12,-]|10049: read-property[v12,'Base',v11]|10050: \<variable-non-null-undef\>['MochiKit']|10051: read-property[v11,'forwardCall',-]|10052: \<property-non-null-undef\>[v12,'Base']|10053: constant[\"repr\",v13]}" ] 
+BB2202 -> BB2203 [tailport=s, headport=n, headlabel="      2203"]
+BB2202 -> BB2206 [tailport=s, headport=n, color=gray]
+BB2203 [shape=record label="{10054: call-MochiKit.Base.forwardCall [v11,'forwardCall',v13,v9]}" ] 
+BB2203 -> BB2204 [tailport=s, headport=n, headlabel="      2204"]
+BB2203 -> BB2206 [tailport=s, headport=n, color=gray]
+BB2204 [shape=record label="{10055: write-property[v1,'toString',v9]|10056: function-expr[function ( ),v14]|10057: write-property[v1,'next',v14]}" ] 
+BB2204 -> BB2205 [tailport=s, headport=n, headlabel="      2205"]
+BB2204 -> BB2206 [tailport=s, headport=n, color=gray]
+BB2205 [shape=record label="{10058: return[v1]}" ] 
+BB2206 [shape=record label="{10059: exceptional-return}" ] 
+//#$~ 1329
+}

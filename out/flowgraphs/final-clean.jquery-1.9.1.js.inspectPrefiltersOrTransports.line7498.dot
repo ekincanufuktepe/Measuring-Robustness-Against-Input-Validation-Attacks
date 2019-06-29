@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry469[shape=none,label=""];
+BB_entry469 -> BB7452 [tailport=s, headport=n, headlabel="    7452"]
+BB7452 [shape=record label="{21696: constant[undefined,v1]|21697: vardecl['inspected']|21698: vardecl['seekingTransport']|21699: function-decl[function inspect ( dataType ),-]}" ] 
+BB7452 -> BB7453 [tailport=s, headport=n, headlabel="      7453"]
+BB7453 [shape=record label="{21700: new[v2]|21701: write-variable[v2,'inspected']*|21702: read-variable['structure',v4,-]|21703: read-variable['transports',v5,-]|21704: ===[v4,v5,v3]|21705: write-variable[v3,'seekingTransport']*|21706: read-variable['inspect',v7,v6]|21707: read-variable['options',v10,-]|21708: read-property[v10,'dataTypes',v9]|21709: \<variable-non-null-undef\>['options']|21710: constant[0.0,v11]|21711: read-property[v9,v11,v8]|21712: \<property-non-null-undef\>[v10,'dataTypes']}" ] 
+BB7453 -> BB7454 [tailport=s, headport=n, headlabel="      7454"]
+BB7453 -> BB7460 [tailport=s, headport=n, color=gray, headlabel="      7460"]
+BB7454 [shape=record label="{21713: call-inspect [v6,v7,v8,v1]}" ] 
+BB7454 -> BB7455 [tailport=s, headport=n, headlabel="      7455"]
+BB7454 -> BB7460 [tailport=s, headport=n, color=gray]
+BB7455 [shape=record label="{21714: if[v1](true-block:7459,false-block:7456)}" ] 
+BB7455 -> BB7459 [tailport=s, headport=n, headlabel="      7459"]
+BB7455 -> BB7456 [tailport=s, headport=n, headlabel="      7456"]
+BB7456 [shape=record label="{21715: read-variable['inspected',v7,-]|21716: read-property[v7,'*',v6]|21717: \<variable-non-null-undef\>['inspected']|21718: ![v6,v1]|21719: if[v1](true-block:7457,false-block:7459)}" ] 
+BB7456 -> BB7459 [tailport=s, headport=n]
+BB7456 -> BB7457 [tailport=s, headport=n, headlabel="      7457"]
+BB7456 -> BB7460 [tailport=s, headport=n, color=gray]
+BB7457 [shape=record label="{21720: read-variable['inspect',v9,v8]|21721: constant[\"*\",v10]}" ] 
+BB7457 -> BB7458 [tailport=s, headport=n, headlabel="      7458"]
+BB7457 -> BB7460 [tailport=s, headport=n, color=gray]
+BB7458 [shape=record label="{21722: call-inspect [v8,v9,v10,v1]}" ] 
+BB7458 -> BB7459 [tailport=s, headport=n]
+BB7458 -> BB7460 [tailport=s, headport=n, color=gray]
+BB7459 [shape=record label="{21723: return[v1]}" ] 
+BB7460 [shape=record label="{21724: exceptional-return}" ] 
+//#$~ 7519
+}

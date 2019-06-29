@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry654[shape=none,label=""];
+BB_entry654 -> BB9047 [tailport=s, headport=n, headlabel="    9047"]
+BB9047 [shape=record label="{30282: constant[undefined,v1]}" ] 
+BB9047 -> BB9048 [tailport=s, headport=n, headlabel="      9048"]
+BB9048 [shape=record label="{30283: read-variable['event',v2,-]|30284: read-property[v2,'timeStamp',v1]|30285: \<variable-non-null-undef\>['event']|30286: if[v1](true-block:9051,false-block:9049)}" ] 
+BB9048 -> BB9051 [tailport=s, headport=n, headlabel="      9051"]
+BB9048 -> BB9049 [tailport=s, headport=n, headlabel="      9049"]
+BB9048 -> BB9052 [tailport=s, headport=n, color=gray, headlabel="      9052"]
+BB9049 [shape=record label="{30287: read-variable['Date',v3,-]|30288: read-property[v3,'now',-]|30289: \<variable-non-null-undef\>['Date']}" ] 
+BB9049 -> BB9050 [tailport=s, headport=n, headlabel="      9050"]
+BB9049 -> BB9052 [tailport=s, headport=n, color=gray]
+BB9050 [shape=record label="{30290: call-Date.now [v3,'now',v1]}" ] 
+BB9050 -> BB9051 [tailport=s, headport=n]
+BB9050 -> BB9052 [tailport=s, headport=n, color=gray]
+BB9051 [shape=record label="{30291: return[v1]}" ] 
+BB9052 [shape=record label="{30292: exceptional-return}" ] 
+//#$~ 15955
+}

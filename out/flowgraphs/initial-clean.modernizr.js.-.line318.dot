@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry31[shape=none,label=""];
+BB_entry31 -> BB312 [tailport=s, headport=n, headlabel="    312"]
+BB312 [shape=record label="{808: constant[undefined,v1]|809: vardecl['div']}" ] 
+BB312 -> BB313 [tailport=s, headport=n, headlabel="      313"]
+BB313 [shape=record label="{810: read-variable['document',v4,-]|811: read-property[v4,'createElement',-]|812: \<variable-non-null-undef\>['document']|813: constant[\"div\",v5]}" ] 
+BB313 -> BB314 [tailport=s, headport=n, headlabel="      314"]
+BB313 -> BB319 [tailport=s, headport=n, color=gray, headlabel="      319"]
+BB314 [shape=record label="{814: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB314 -> BB315 [tailport=s, headport=n, headlabel="      315"]
+BB314 -> BB319 [tailport=s, headport=n, color=gray]
+BB315 [shape=record label="{815: write-variable[v2,'div']*|816: constant[\"draggable\",v6]|817: read-variable['div',v7,-]|818: in[v6,v7,v1]|819: if[v1](true-block:318,false-block:316)}" ] 
+BB315 -> BB318 [tailport=s, headport=n, headlabel="      318"]
+BB315 -> BB316 [tailport=s, headport=n, headlabel="      316"]
+BB315 -> BB319 [tailport=s, headport=n, color=gray]
+BB316 [shape=record label="{820: constant[\"ondragstart\",v6]|821: read-variable['div',v7,-]|822: in[v6,v7,v1]|823: if[v1](true-block:317,false-block:318)}" ] 
+BB316 -> BB318 [tailport=s, headport=n]
+BB316 -> BB317 [tailport=s, headport=n, headlabel="      317"]
+BB316 -> BB319 [tailport=s, headport=n, color=gray]
+BB317 [shape=record label="{824: constant[\"ondrop\",v8]|825: read-variable['div',v9,-]|826: in[v8,v9,v1]}" ] 
+BB317 -> BB318 [tailport=s, headport=n]
+BB317 -> BB319 [tailport=s, headport=n, color=gray]
+BB318 [shape=record label="{827: return[v1]}" ] 
+BB319 [shape=record label="{828: exceptional-return}" ] 
+//#$~ 320
+}

@@ -1,0 +1,2831 @@
+<html>
+<head>
+	<script src="C:/Users/ekincan/InputAnalysisJS/TAJS/clean/hammer.js"></script>
+</head>
+
+<script>
+function assertEqual(a, b, message)
+{
+	try {
+		if (a != b)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else if(a == RangeError)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else
+			console.log("passed");
+	} catch (e) {
+		console.log(e.message);  // 'Default Message'
+		countErrs++;
+	}
+}
+
+Array.prototype.allValuesSame = function() {
+	for(var i = 1; i < this.length; i++)
+	{
+		if(this[i] !== this[0])
+			return false;
+	}
+	return true;
+}
+
+function mode(array)
+{
+	if(array.length == 0)
+		return null;
+	var modeMap = {};	var maxEl = array[0], maxCount = 1;
+	for(var i = 0; i < array.length; i++)
+	{
+		var el = array[i];
+		if(modeMap[el] == null)
+			modeMap[el] = 1;
+		else
+			modeMap[el]++;
+		if(modeMap[el] > maxCount)
+		{
+			maxEl = el;
+			maxCount = modeMap[el];
+		}
+	}
+	return maxEl;
+}
+
+var ar = [];
+var testCases = [undefined, null, true, false, 'abcde', NaN, -Infinity, Infinity, 5, -5, 0.15, -0.15, Error, RangeError, ReferenceError, SyntaxError, TypeError, URIError, 1.3987869234598501e+308];
+document.write('Length of Test Cases: '+testCases.length+'<br><br>');
+var testRes = [];
+var countPassed = 0, countNotExist = 0, countFailed = 0;
+
+if((typeof setTimeoutContext) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof setTimeoutContext(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('3. FUNCTION @26: [setTimeoutContext] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof invokeArrayArg) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof invokeArrayArg(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('4. FUNCTION @39: [invokeArrayArg] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof each) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof each(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('5. FUNCTION @53: [each] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof extend) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof extend(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('6. FUNCTION @83: [extend] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof merge) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof merge(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('7. FUNCTION @102: [merge] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof inherit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof inherit(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('8. FUNCTION @112: [inherit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof bindFn) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof bindFn(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('9. FUNCTION @131: [bindFn] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof boolOrFn) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof boolOrFn(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('11. FUNCTION @144: [boolOrFn] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof ifUndefined) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof ifUndefined(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('12. FUNCTION @157: [ifUndefined] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof addEventListeners) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof addEventListeners(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('13. FUNCTION @167: [addEventListeners] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof removeEventListeners) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof removeEventListeners(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('15. FUNCTION @179: [removeEventListeners] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof hasParent) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof hasParent(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('17. FUNCTION @192: [hasParent] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof inStr) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof inStr(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('18. FUNCTION @208: [inStr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof splitStr) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof splitStr(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('19. FUNCTION @217: [splitStr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof inArray) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof inArray(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('20. FUNCTION @228: [inArray] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof toArray) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof toArray(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('21. FUNCTION @248: [toArray] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof uniqueArray) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof uniqueArray(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('22. FUNCTION @259: [uniqueArray] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof sortUniqueArray) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof sortUniqueArray(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('23. FUNCTION @277: [sortUniqueArray] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof prefixed) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof prefixed(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('24. FUNCTION @292: [prefixed] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getWindowForElement) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof getWindowForElement(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('26. FUNCTION @323: [getWindowForElement] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Input) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Input(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('27. FUNCTION @366: [Input] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof createInputInstance) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof createInputInstance(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('32. FUNCTION @417: [createInputInstance] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof inputHandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof inputHandler(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('33. FUNCTION @441: [inputHandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof computeInputData) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof computeInputData(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('34. FUNCTION @473: [computeInputData] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof computeDeltaXY) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof computeDeltaXY(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('35. FUNCTION @517: [computeDeltaXY] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof computeIntervalInputData) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof computeIntervalInputData(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('36. FUNCTION @544: [computeIntervalInputData] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof simpleCloneInputData) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof simpleCloneInputData(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('37. FUNCTION @579: [simpleCloneInputData] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getCenter) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof getCenter(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('38. FUNCTION @606: [getCenter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getVelocity) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof getVelocity(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('39. FUNCTION @637: [getVelocity] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getDirection) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof getDirection(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('40. FUNCTION @650: [getDirection] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getDistance) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof getDistance(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('41. FUNCTION @668: [getDistance] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getAngle) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof getAngle(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('42. FUNCTION @685: [getAngle] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getRotation) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof getRotation(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('43. FUNCTION @700: [getRotation] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getScale) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof getScale(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('44. FUNCTION @711: [getScale] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof MEhandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof MEhandler(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('46. FUNCTION @744: [MEhandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof PEhandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof PEhandler(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('48. FUNCTION @818: [PEhandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof TEhandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof TEhandler(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('50. FUNCTION @887: [TEhandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof normalizeSingleTouches) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof normalizeSingleTouches(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('51. FUNCTION @921: [normalizeSingleTouches] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof MTEhandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof MTEhandler(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('53. FUNCTION @954: [MTEhandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getTouches) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof getTouches(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('54. FUNCTION @976: [getTouches] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof TMEhandler) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof TMEhandler(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('57. FUNCTION @1055: [TMEhandler] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof TouchAction) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof TouchAction(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('59. FUNCTION @1102: [TouchAction] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof set) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof set(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('60. FUNCTION @1112: [set] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof preventDefaults) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof preventDefaults(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('64. FUNCTION @1149: [preventDefaults] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof preventSrc) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof preventSrc(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('65. FUNCTION @1180: [preventSrc] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof cleanTouchActions) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof cleanTouchActions(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('66. FUNCTION @1191: [cleanTouchActions] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Recognizer) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Recognizer(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('67. FUNCTION @1259: [Recognizer] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof set) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof set(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('68. FUNCTION @1286: [set] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof recognizeWith) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof recognizeWith(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('69. FUNCTION @1299: [recognizeWith] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof dropRecognizeWith) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof dropRecognizeWith(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('70. FUNCTION @1318: [dropRecognizeWith] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof requireFailure) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof requireFailure(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('71. FUNCTION @1333: [requireFailure] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof dropRequireFailure) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof dropRequireFailure(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('72. FUNCTION @1352: [dropRequireFailure] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof canRecognizeWith) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof canRecognizeWith(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('74. FUNCTION @1378: [canRecognizeWith] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('75. FUNCTION @1387: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('76. FUNCTION @1391: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof tryEmit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof tryEmit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('77. FUNCTION @1414: [tryEmit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof recognize) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof recognize(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('79. FUNCTION @1441: [recognize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof ignore:lin) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof ignore:lin(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('80. FUNCTION @1474: [ignore:lin] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof stateStr) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof stateStr(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('83. FUNCTION @1496: [stateStr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof directionStr) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof directionStr(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('84. FUNCTION @1514: [directionStr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof getRecognizerByNameIfManager) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof getRecognizerByNameIfManager(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('85. FUNCTION @1533: [getRecognizerByNameIfManager] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof attrTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof attrTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('87. FUNCTION @1569: [attrTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof process) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof process(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('88. FUNCTION @1580: [process] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof directionTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof directionTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('91. FUNCTION @1639: [directionTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof attrTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof attrTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('92. FUNCTION @1663: [attrTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('93. FUNCTION @1668: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof attrTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof attrTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('96. FUNCTION @1706: [attrTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('97. FUNCTION @1711: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof process) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof process(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('100. FUNCTION @1749: [process] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('103. FUNCTION @1777: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof attrTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof attrTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('106. FUNCTION @1816: [attrTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof attrTest) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof attrTest(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('109. FUNCTION @1849: [attrTest] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof emit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('110. FUNCTION @1867: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof process) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof process(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('113. FUNCTION @1919: [process] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Hammer) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Hammer(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('119. FUNCTION @1998: [Hammer] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Manager) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Manager(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('120. FUNCTION @2130: [Manager] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof set) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof set(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('122. FUNCTION @2159: [set] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof stop) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof stop(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('123. FUNCTION @2181: [stop] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof recognize) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof recognize(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('124. FUNCTION @2191: [recognize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof get) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof get(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('125. FUNCTION @2246: [get] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof add) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof add(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('126. FUNCTION @2266: [add] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof remove) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof remove(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('127. FUNCTION @2289: [remove] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof on) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof on(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('128. FUNCTION @2308: [on] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof off) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof off(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('130. FUNCTION @2323: [off] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof emit) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof emit(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('132. FUNCTION @2340: [emit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof toggleCssProps) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof toggleCssProps(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('135. FUNCTION @2383: [toggleCssProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof triggerDomEvent) != 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof triggerDomEvent(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('137. FUNCTION @2395: [triggerDomEvent] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+document.write('Total Test Run             : '+87+'<br>');document.write('Tests Skipped (Complexity) : '+0+'<br>');document.write('Total Test Failed          : '+countFailed+'<br>');document.write('Total Test Passed   		 : '+countPassed+'<br>');document.write('Total Test Not Exist		 : '+countNotExist+'<br><br>');</script>
+</html>

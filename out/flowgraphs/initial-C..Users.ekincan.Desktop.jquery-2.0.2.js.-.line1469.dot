@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB1096 [tailport=s, headport=n, headlabel="    1096"]
+BB1096 [shape=record label="{2904: constant[undefined,v1]|2905: vardecl['node']}" ] 
+BB1096 -> BB1097 [tailport=s, headport=n, headlabel="      1097"]
+BB1097 [shape=record label="{2906: read-variable['elem',v6,-]|2907: read-property[v6,'getAttributeNode',v5]|2908: \<variable-non-null-undef\>['elem']|2909: typeof[v5,v3]|2910: read-variable['strundefined',v4,-]|2911: !==[v3,v4,v2]|2912: if[v2](true-block:1098,false-block:1100)}" ] 
+BB1097 -> BB1100 [tailport=s, headport=n, headlabel="      1100"]
+BB1097 -> BB1098 [tailport=s, headport=n, headlabel="      1098"]
+BB1097 -> BB1103 [tailport=s, headport=n, color=gray, headlabel="      1103"]
+BB1098 [shape=record label="{2913: read-variable['elem',v8,-]|2914: read-property[v8,'getAttributeNode',-]|2915: \<variable-non-null-undef\>['elem']|2916: constant[\"id\",v9]}" ] 
+BB1098 -> BB1099 [tailport=s, headport=n, headlabel="      1099"]
+BB1098 -> BB1103 [tailport=s, headport=n, color=gray]
+BB1099 [shape=record label="{2917: call[v8,'getAttributeNode',v9,v2]}" ] 
+BB1099 -> BB1100 [tailport=s, headport=n]
+BB1099 -> BB1103 [tailport=s, headport=n, color=gray]
+BB1100 [shape=record label="{2918: write-variable[v2,'node']*|2919: read-variable['node',v1,-]|2920: if[v1](true-block:1101,false-block:1102)}" ] 
+BB1100 -> BB1102 [tailport=s, headport=n, headlabel="      1102"]
+BB1100 -> BB1101 [tailport=s, headport=n, headlabel="      1101"]
+BB1100 -> BB1103 [tailport=s, headport=n, color=gray]
+BB1101 [shape=record label="{2921: read-variable['node',v9,-]|2922: read-property[v9,'value',v7]|2923: \<variable-non-null-undef\>['node']|2924: read-variable['attrId',v8,-]|2925: ===[v7,v8,v1]}" ] 
+BB1101 -> BB1102 [tailport=s, headport=n]
+BB1101 -> BB1103 [tailport=s, headport=n, color=gray]
+BB1102 [shape=record label="{2926: return[v1]}" ] 
+BB1103 [shape=record label="{2927: exceptional-return}" ] 
+}

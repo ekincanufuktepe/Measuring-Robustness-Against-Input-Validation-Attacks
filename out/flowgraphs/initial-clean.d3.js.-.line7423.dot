@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1139[shape=none,label=""];
+BB_entry1139 -> BB12353 [tailport=s, headport=n, headlabel="    12353"]
+BB12353 [shape=record label="{42511: constant[undefined,v1]|42512: vardecl['s']|42513: vardecl['j']}" ] 
+BB12353 -> BB12354 [tailport=s, headport=n, headlabel="      12354"]
+BB12354 [shape=record label="{42514: constant[0.0,v3]|42515: write-variable[v3,'s']*|42516: constant[0.0,v4]|42517: write-variable[v4,'j']*}" ] 
+BB12354 -> BB12355 [tailport=s, headport=n, headlabel="      12355"]
+BB12355 [shape=record label="{42518: read-variable['j',v5,-]|42519: read-variable['m',v6,-]|42520: \<[v5,v6,v2]|42521: if[v2](true-block:12356,false-block:12357)}" ] 
+BB12355 -> BB12356 [tailport=s, headport=n, headlabel="      12356"]
+BB12355 -> BB12357 [tailport=s, headport=n, headlabel="      12357"]
+BB12355 -> BB12361 [tailport=s, headport=n, color=gray, headlabel="      12361"]
+BB12356 [shape=record label="{42522: read-variable['s',v8,-]|42523: read-variable['Math',v11,-]|42524: read-property[v11,'random',-]|42525: \<variable-non-null-undef\>['Math']}" ] 
+BB12356 -> BB12358 [tailport=s, headport=n, headlabel="      12358"]
+BB12356 -> BB12361 [tailport=s, headport=n, color=gray]
+BB12357 [shape=record label="{42526: read-variable['s',v1,-]}" ] 
+BB12357 -> BB12360 [tailport=s, headport=n, headlabel="      12360"]
+BB12357 -> BB12361 [tailport=s, headport=n, color=gray]
+BB12358 [shape=record label="{42527: call-Math.random [v11,'random',v9]}" ] 
+BB12358 -> BB12359 [tailport=s, headport=n, headlabel="      12359"]
+BB12358 -> BB12361 [tailport=s, headport=n, color=gray]
+BB12359 [shape=record label="{42528: +[v8,v9,v7]|42529: write-variable[v7,'s']*|42530: constant[1.0,v12]|42531: read-variable['j',v13,-]|42532: +[v13,v14]|42533: +[v14,v12,v15]|42534: write-variable[v15,'j']}" ] 
+BB12359 -> BB12355 [tailport=s, headport=n]
+BB12359 -> BB12361 [tailport=s, headport=n, color=gray]
+BB12360 [shape=record label="{42535: return[v1]}" ] 
+BB12361 [shape=record label="{42536: exceptional-return}" ] 
+//#$~ 7425
+}

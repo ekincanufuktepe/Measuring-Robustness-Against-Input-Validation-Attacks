@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1124[shape=none,label=""];
+BB_entry1124 -> BB14305 [tailport=s, headport=n, headlabel="    14305"]
+BB14305 [shape=record label="{37183: constant[undefined,v1]|37184: vardecl['oldVal']|37185: function-decl[function addClasses ( classes ),-]|37186: function-decl[function removeClasses ( classes ),-]|37187: function-decl[function digestClassCounts ( classes count ),-]|37188: function-decl[function updateClasses ( oldClasses newClasses ),-]|37189: function-decl[function ngClassWatchAction ( newVal ),-]}" ] 
+BB14305 -> BB14306 [tailport=s, headport=n, headlabel="      14306"]
+BB14306 [shape=record label="{37190: read-variable['scope',v3,-]|37191: read-property[v3,'$watch',-]|37192: \<variable-non-null-undef\>['scope']|37193: read-variable['attr',v5,-]|37194: read-variable['name',v6,-]|37195: read-property[v5,v6,v4]|37196: \<variable-non-null-undef\>['attr']|37197: read-variable['ngClassWatchAction',v7,-]|37198: constant[true,v8]}" ] 
+BB14306 -> BB14307 [tailport=s, headport=n, headlabel="      14307"]
+BB14306 -> BB14314 [tailport=s, headport=n, color=gray, headlabel="      14314"]
+BB14307 [shape=record label="{37199: call-scope.$watch [v3,'$watch',v4,v7,v8,-]*}" ] 
+BB14307 -> BB14308 [tailport=s, headport=n, headlabel="      14308"]
+BB14307 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14308 [shape=record label="{37200: read-variable['attr',v10,-]|37201: read-property[v10,'$observe',-]|37202: \<variable-non-null-undef\>['attr']|37203: constant[\"class\",v11]|37204: function-expr[function ( value ),v12]}" ] 
+BB14308 -> BB14309 [tailport=s, headport=n, headlabel="      14309"]
+BB14308 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14309 [shape=record label="{37205: call-attr.$observe [v10,'$observe',v11,v12,-]*}" ] 
+BB14309 -> BB14310 [tailport=s, headport=n, headlabel="      14310"]
+BB14309 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14310 [shape=record label="{37206: read-variable['name',v14,-]|37207: constant[\"ngClass\",v15]|37208: !==[v14,v15,v13]|37209: if[v13](true-block:14311,false-block:14313)}" ] 
+BB14310 -> BB14311 [tailport=s, headport=n, headlabel="      14311"]
+BB14310 -> BB14313 [tailport=s, headport=n, headlabel="      14313"]
+BB14310 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14311 [shape=record label="{37210: read-variable['scope',v17,-]|37211: read-property[v17,'$watch',-]|37212: \<variable-non-null-undef\>['scope']|37213: constant[\"$index\",v18]|37214: function-expr[function ( $index old$index ),v19]}" ] 
+BB14311 -> BB14312 [tailport=s, headport=n, headlabel="      14312"]
+BB14311 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14312 [shape=record label="{37215: call-scope.$watch [v17,'$watch',v18,v19,-]*}" ] 
+BB14312 -> BB14313 [tailport=s, headport=n]
+BB14312 -> BB14314 [tailport=s, headport=n, color=gray]
+BB14313 [shape=record label="{37216: return[v1]}" ] 
+BB14314 [shape=record label="{37217: exceptional-return}" ] 
+//#$~ 22455
+}

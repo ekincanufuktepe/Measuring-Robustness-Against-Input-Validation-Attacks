@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry636[shape=none,label=""];
+BB_entry636 -> BB9274 [tailport=s, headport=n, headlabel="    9274"]
+BB9274 [shape=record label="{27552: constant[undefined,v1]}" ] 
+BB9274 -> BB9275 [tailport=s, headport=n, headlabel="      9275"]
+BB9275 [shape=record label="{27553: read-variable['method',v3,-]|27554: read-property[v3,'apply',-]|27555: \<variable-non-null-undef\>['method']|27556: read-variable['scope',v4,-]|27557: read-variable['arguments',v5,-]|27558: if[v5](true-block:9278,false-block:9276)}" ] 
+BB9275 -> BB9278 [tailport=s, headport=n, headlabel="      9278"]
+BB9275 -> BB9276 [tailport=s, headport=n, headlabel="      9276"]
+BB9275 -> BB9280 [tailport=s, headport=n, color=gray, headlabel="      9280"]
+BB9276 [shape=record label="{27559: read-variable['Array',v6,-]}" ] 
+BB9276 -> BB9277 [tailport=s, headport=n, headlabel="      9277"]
+BB9276 -> BB9280 [tailport=s, headport=n, color=gray]
+BB9277 [shape=record label="{27560: construct [-,v6,v5]}" ] 
+BB9277 -> BB9278 [tailport=s, headport=n]
+BB9277 -> BB9280 [tailport=s, headport=n, color=gray]
+BB9278 [shape=record label="{27561: call-method.apply [v3,'apply',v4,v5,v1]}" ] 
+BB9278 -> BB9279 [tailport=s, headport=n, headlabel="      9279"]
+BB9278 -> BB9280 [tailport=s, headport=n, color=gray]
+BB9279 [shape=record label="{27562: return[v1]}" ] 
+BB9280 [shape=record label="{27563: exceptional-return}" ] 
+//#$~ 12986
+}

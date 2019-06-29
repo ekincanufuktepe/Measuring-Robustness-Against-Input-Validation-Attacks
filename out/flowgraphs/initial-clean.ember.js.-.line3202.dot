@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry156[shape=none,label=""];
+BB_entry156 -> BB2011 [tailport=s, headport=n, headlabel="    2011"]
+BB2011 [shape=record label="{6428: constant[undefined,v1]}" ] 
+BB2011 -> BB2012 [tailport=s, headport=n, headlabel="      2012"]
+BB2012 [shape=record label="{6429: read-variable['this',v4,-]|6430: read-property[v4,'constructor',v3]|6431: read-property[v3,'initializer',-]|6432: \<property-non-null-undef\>[v4,'constructor']|6433: read-variable['options',v5,-]}" ] 
+BB2012 -> BB2013 [tailport=s, headport=n, headlabel="      2013"]
+BB2012 -> BB2015 [tailport=s, headport=n, color=gray, headlabel="      2015"]
+BB2013 [shape=record label="{6434: call-this.constructor.initializer [v3,'initializer',v5,-]*}" ] 
+BB2013 -> BB2014 [tailport=s, headport=n, headlabel="      2014"]
+BB2013 -> BB2015 [tailport=s, headport=n, color=gray]
+BB2014 [shape=record label="{6435: return[v1]}" ] 
+BB2015 [shape=record label="{6436: exceptional-return}" ] 
+//#$~ 3203
+}

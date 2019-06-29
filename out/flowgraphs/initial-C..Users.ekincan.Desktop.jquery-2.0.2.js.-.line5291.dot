@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry325[shape=none,label=""];
+BB_entry325 -> BB5117 [tailport=s, headport=n, headlabel="    5117"]
+BB5117 [shape=record label="{15049: constant[undefined,v1]|15050: vardecl['parent']}" ] 
+BB5117 -> BB5118 [tailport=s, headport=n, headlabel="      5118"]
+BB5118 [shape=record label="{15051: read-variable['elem',v3,-]|15052: read-property[v3,'parentNode',v2]|15053: \<variable-non-null-undef\>['elem']|15054: write-variable[v2,'parent']*|15055: read-variable['parent',v4,-]|15056: if[v4](true-block:5119,false-block:5120)}" ] 
+BB5118 -> BB5120 [tailport=s, headport=n, headlabel="      5120"]
+BB5118 -> BB5119 [tailport=s, headport=n, headlabel="      5119"]
+BB5118 -> BB5124 [tailport=s, headport=n, color=gray, headlabel="      5124"]
+BB5119 [shape=record label="{15057: read-variable['parent',v7,-]|15058: read-property[v7,'nodeType',v5]|15059: \<variable-non-null-undef\>['parent']|15060: constant[11.0,v6]|15061: !==[v5,v6,v4]}" ] 
+BB5119 -> BB5120 [tailport=s, headport=n]
+BB5119 -> BB5124 [tailport=s, headport=n, color=gray]
+BB5120 [shape=record label="{15062: if[v4](true-block:5121,false-block:5122)}" ] 
+BB5120 -> BB5121 [tailport=s, headport=n, headlabel="      5121"]
+BB5120 -> BB5122 [tailport=s, headport=n, headlabel="      5122"]
+BB5121 [shape=record label="{15063: read-variable['parent',v1,-]}" ] 
+BB5121 -> BB5123 [tailport=s, headport=n, headlabel="      5123"]
+BB5121 -> BB5124 [tailport=s, headport=n, color=gray]
+BB5122 [shape=record label="{15064: constant[null,v1]}" ] 
+BB5122 -> BB5123 [tailport=s, headport=n]
+BB5123 [shape=record label="{15065: return[v1]}" ] 
+BB5124 [shape=record label="{15066: exceptional-return}" ] 
+}

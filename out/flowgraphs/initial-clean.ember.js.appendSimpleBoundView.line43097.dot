@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2003[shape=none,label=""];
+BB_entry2003 -> BB23045 [tailport=s, headport=n, headlabel="    23045"]
+BB23045 [shape=record label="{76585: constant[undefined,v1]|76586: vardecl['view']}" ] 
+BB23045 -> BB23046 [tailport=s, headport=n, headlabel="      23046"]
+BB23046 [shape=record label="{76587: read-variable['SimpleBoundView',v3,-]|76588: read-variable['stream',v4,-]|76589: read-variable['morph',v6,-]|76590: read-property[v6,'escaped',v5]|76591: \<variable-non-null-undef\>['morph']}" ] 
+BB23046 -> BB23047 [tailport=s, headport=n, headlabel="      23047"]
+BB23046 -> BB23054 [tailport=s, headport=n, color=gray, headlabel="      23054"]
+BB23047 [shape=record label="{76592: construct [-,v3,v4,v5,v2]}" ] 
+BB23047 -> BB23048 [tailport=s, headport=n, headlabel="      23048"]
+BB23047 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23048 [shape=record label="{76593: write-variable[v2,'view']*|76594: read-variable['view',v8,-]|76595: read-variable['morph',v7,-]|76596: write-property[v8,'_morph',v7]|76597: \<variable-non-null-undef\>['view']*|76598: read-variable['stream',v10,-]|76599: read-property[v10,'subscribe',-]|76600: \<variable-non-null-undef\>['stream']|76601: read-variable['parentView',v13,-]|76602: read-property[v13,'_wrapAsScheduled',-]|76603: \<variable-non-null-undef\>['parentView']|76604: function-expr[function ( ),v14]}" ] 
+BB23048 -> BB23049 [tailport=s, headport=n, headlabel="      23049"]
+BB23048 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23049 [shape=record label="{76605: call-parentView._wrapAsScheduled [v13,'_wrapAsScheduled',v14,v11]}" ] 
+BB23049 -> BB23050 [tailport=s, headport=n, headlabel="      23050"]
+BB23049 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23050 [shape=record label="{76606: call-stream.subscribe [v10,'subscribe',v11,-]*}" ] 
+BB23050 -> BB23051 [tailport=s, headport=n, headlabel="      23051"]
+BB23050 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23051 [shape=record label="{76607: read-variable['parentView',v16,-]|76608: read-property[v16,'appendChild',-]|76609: \<variable-non-null-undef\>['parentView']|76610: read-variable['view',v17,-]}" ] 
+BB23051 -> BB23052 [tailport=s, headport=n, headlabel="      23052"]
+BB23051 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23052 [shape=record label="{76611: call-parentView.appendChild [v16,'appendChild',v17,-]*}" ] 
+BB23052 -> BB23053 [tailport=s, headport=n, headlabel="      23053"]
+BB23052 -> BB23054 [tailport=s, headport=n, color=gray]
+BB23053 [shape=record label="{76612: return[v1]}" ] 
+BB23054 [shape=record label="{76613: exceptional-return}" ] 
+//#$~ 43105
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry286[shape=none,label=""];
+BB_entry286 -> BB3046 [tailport=s, headport=n, headlabel="    3046"]
+BB3046 [shape=record label="{9375: constant[undefined,v1]}" ] 
+BB3046 -> BB3047 [tailport=s, headport=n, headlabel="      3047"]
+BB3047 [shape=record label="{9376: read-variable['Math',v4,-]|9377: read-property[v4,'pow',-]|9378: \<variable-non-null-undef\>['Math']|9379: constant[0.7,v5]|9380: read-variable['arguments',v8,-]|9381: read-property[v8,'length',v7]|9382: \<variable-non-null-undef\>['arguments']|9383: if[v7](true-block:3048,false-block:3049)}" ] 
+BB3047 -> BB3048 [tailport=s, headport=n, headlabel="      3048"]
+BB3047 -> BB3049 [tailport=s, headport=n, headlabel="      3049"]
+BB3047 -> BB3054 [tailport=s, headport=n, color=gray, headlabel="      3054"]
+BB3048 [shape=record label="{9384: read-variable['k',v6,-]}" ] 
+BB3048 -> BB3050 [tailport=s, headport=n, headlabel="      3050"]
+BB3048 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3049 [shape=record label="{9385: constant[1.0,v6]}" ] 
+BB3049 -> BB3050 [tailport=s, headport=n]
+BB3050 [shape=record label="{9386: call-Math.pow [v4,'pow',v5,v6,v2]}" ] 
+BB3050 -> BB3051 [tailport=s, headport=n, headlabel="      3051"]
+BB3050 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3051 [shape=record label="{9387: write-variable[v2,'k']*|9388: read-variable['d3_rgb',v9,-]|9389: read-variable['k',v11,-]|9390: read-variable['this',v13,-]|9391: read-property[v13,'r',v12]|9392: *[v11,v12,v10]|9393: read-variable['k',v15,-]|9394: read-variable['this',v17,-]|9395: read-property[v17,'g',v16]|9396: *[v15,v16,v14]|9397: read-variable['k',v19,-]|9398: read-variable['this',v21,-]|9399: read-property[v21,'b',v20]|9400: *[v19,v20,v18]}" ] 
+BB3051 -> BB3052 [tailport=s, headport=n, headlabel="      3052"]
+BB3051 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3052 [shape=record label="{9401: construct [-,v9,v10,v14,v18,v1]}" ] 
+BB3052 -> BB3053 [tailport=s, headport=n, headlabel="      3053"]
+BB3052 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3053 [shape=record label="{9402: return[v1]}" ] 
+BB3054 [shape=record label="{9403: exceptional-return}" ] 
+//#$~ 1690
+}

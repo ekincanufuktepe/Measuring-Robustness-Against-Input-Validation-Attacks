@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry96[shape=none,label=""];
+BB_entry96 -> BB971 [tailport=s, headport=n, headlabel="    971"]
+BB971 [shape=record label="{2910: constant[undefined,v1]|2911: vardecl['d3_selectMatcher']}" ] 
+BB971 -> BB972 [tailport=s, headport=n, headlabel="      972"]
+BB972 [shape=record label="{2912: read-variable['n',v3,-]|2913: read-property[v3,'matches',v2]|2914: \<variable-non-null-undef\>['n']|2915: if[v2](true-block:976,false-block:973)}" ] 
+BB972 -> BB976 [tailport=s, headport=n, headlabel="      976"]
+BB972 -> BB973 [tailport=s, headport=n, headlabel="      973"]
+BB972 -> BB979 [tailport=s, headport=n, color=gray, headlabel="      979"]
+BB973 [shape=record label="{2916: read-variable['n',v3,-]|2917: read-variable['d3_vendorSymbol',v6,v5]|2918: read-variable['n',v7,-]|2919: constant[\"matchesSelector\",v8]}" ] 
+BB973 -> BB974 [tailport=s, headport=n, headlabel="      974"]
+BB973 -> BB979 [tailport=s, headport=n, color=gray]
+BB974 [shape=record label="{2920: call-d3_vendorSymbol [v5,v6,v7,v8,v4]}" ] 
+BB974 -> BB975 [tailport=s, headport=n, headlabel="      975"]
+BB974 -> BB979 [tailport=s, headport=n, color=gray]
+BB975 [shape=record label="{2921: read-property[v3,v4,v2]|2922: \<variable-non-null-undef\>['n']}" ] 
+BB975 -> BB976 [tailport=s, headport=n]
+BB975 -> BB979 [tailport=s, headport=n, color=gray]
+BB976 [shape=record label="{2923: write-variable[v2,'d3_selectMatcher']*|2924: function-expr[function ( n s ),v3]|2925: write-variable[v3,'d3_selectMatches']*|2926: read-variable['d3_selectMatches',v5,v4]|2927: read-variable['n',v6,-]|2928: read-variable['s',v7,-]}" ] 
+BB976 -> BB977 [tailport=s, headport=n, headlabel="      977"]
+BB976 -> BB979 [tailport=s, headport=n, color=gray]
+BB977 [shape=record label="{2929: call-d3_selectMatches [v4,v5,v6,v7,v1]}" ] 
+BB977 -> BB978 [tailport=s, headport=n, headlabel="      978"]
+BB977 -> BB979 [tailport=s, headport=n, color=gray]
+BB978 [shape=record label="{2930: return[v1]}" ] 
+BB979 [shape=record label="{2931: exceptional-return}" ] 
+//#$~ 570
+}

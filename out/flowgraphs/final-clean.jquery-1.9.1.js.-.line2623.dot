@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry159[shape=none,label=""];
+BB_entry159 -> BB2371 [tailport=s, headport=n, headlabel="    2371"]
+BB2371 [shape=record label="{6744: constant[undefined,v1]|6745: vardecl['ret']}" ] 
+BB2371 -> BB2372 [tailport=s, headport=n, headlabel="      2372"]
+BB2372 [shape=record label="{6746: read-variable['elem',v4,-]|6747: read-property[v4,'getAttribute',-]|6748: \<variable-non-null-undef\>['elem']|6749: read-variable['name',v5,-]|6750: constant[2.0,v6]}" ] 
+BB2372 -> BB2373 [tailport=s, headport=n, headlabel="      2373"]
+BB2372 -> BB2378 [tailport=s, headport=n, color=gray, headlabel="      2378"]
+BB2373 [shape=record label="{6751: call-elem.getAttribute [v4,'getAttribute',v5,v6,v2]}" ] 
+BB2373 -> BB2374 [tailport=s, headport=n, headlabel="      2374"]
+BB2373 -> BB2378 [tailport=s, headport=n, color=gray]
+BB2374 [shape=record label="{6752: write-variable[v2,'ret']*|6753: read-variable['ret',v8,-]|6754: constant[null,v9]|6755: ==[v8,v9,v7]|6756: if[v7](true-block:2375,false-block:2376)}" ] 
+BB2374 -> BB2375 [tailport=s, headport=n, headlabel="      2375"]
+BB2374 -> BB2376 [tailport=s, headport=n, headlabel="      2376"]
+BB2374 -> BB2378 [tailport=s, headport=n, color=gray]
+BB2375 [shape=record label="{6757: read-variable['undefined',v1,-]}" ] 
+BB2375 -> BB2377 [tailport=s, headport=n, headlabel="      2377"]
+BB2375 -> BB2378 [tailport=s, headport=n, color=gray]
+BB2376 [shape=record label="{6758: read-variable['ret',v1,-]}" ] 
+BB2376 -> BB2377 [tailport=s, headport=n]
+BB2376 -> BB2378 [tailport=s, headport=n, color=gray]
+BB2377 [shape=record label="{6759: return[v1]}" ] 
+BB2378 [shape=record label="{6760: exceptional-return}" ] 
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry136[shape=none,label=""];
+BB_entry136 -> BB1466 [tailport=s, headport=n, headlabel="    1466"]
+BB1466 [shape=record label="{4520: constant[undefined,v1]|4521: vardecl['gestureEvent']}" ] 
+BB1466 -> BB1467 [tailport=s, headport=n, headlabel="      1467"]
+BB1467 [shape=record label="{4522: read-variable['document',v4,-]|4523: read-property[v4,'createEvent',-]|4524: \<variable-non-null-undef\>['document']|4525: constant[\"Event\",v5]}" ] 
+BB1467 -> BB1468 [tailport=s, headport=n, headlabel="      1468"]
+BB1467 -> BB1474 [tailport=s, headport=n, color=gray, headlabel="      1474"]
+BB1468 [shape=record label="{4526: call-document.createEvent [v4,'createEvent',v5,v2]}" ] 
+BB1468 -> BB1469 [tailport=s, headport=n, headlabel="      1469"]
+BB1468 -> BB1474 [tailport=s, headport=n, color=gray]
+BB1469 [shape=record label="{4527: write-variable[v2,'gestureEvent']*|4528: read-variable['gestureEvent',v7,-]|4529: read-property[v7,'initEvent',-]|4530: \<variable-non-null-undef\>['gestureEvent']|4531: read-variable['event',v8,-]|4532: constant[true,v9]|4533: constant[true,v10]}" ] 
+BB1469 -> BB1470 [tailport=s, headport=n, headlabel="      1470"]
+BB1469 -> BB1474 [tailport=s, headport=n, color=gray]
+BB1470 [shape=record label="{4534: call-gestureEvent.initEvent [v7,'initEvent',v8,v9,v10,-]*}" ] 
+BB1470 -> BB1471 [tailport=s, headport=n, headlabel="      1471"]
+BB1470 -> BB1474 [tailport=s, headport=n, color=gray]
+BB1471 [shape=record label="{4535: read-variable['gestureEvent',v12,-]|4536: read-variable['data',v11,-]|4537: write-property[v12,'gesture',v11]|4538: \<variable-non-null-undef\>['gestureEvent']*|4539: read-variable['data',v15,-]|4540: read-property[v15,'target',v14]|4541: \<variable-non-null-undef\>['data']|4542: read-property[v14,'dispatchEvent',-]|4543: \<property-non-null-undef\>[v15,'target']|4544: read-variable['gestureEvent',v16,-]}" ] 
+BB1471 -> BB1472 [tailport=s, headport=n, headlabel="      1472"]
+BB1471 -> BB1474 [tailport=s, headport=n, color=gray]
+BB1472 [shape=record label="{4545: call-data.target.dispatchEvent [v14,'dispatchEvent',v16,-]*}" ] 
+BB1472 -> BB1473 [tailport=s, headport=n, headlabel="      1473"]
+BB1472 -> BB1474 [tailport=s, headport=n, color=gray]
+BB1473 [shape=record label="{4546: return[v1]}" ] 
+BB1474 [shape=record label="{4547: exceptional-return}" ] 
+//#$~ 2398
+}

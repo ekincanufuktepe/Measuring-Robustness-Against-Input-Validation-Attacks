@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1306[shape=none,label=""];
+BB_entry1306 -> BB15469 [tailport=s, headport=n, headlabel="    15469"]
+BB15469 [shape=record label="{53225: constant[undefined,v1]}" ] 
+BB15469 -> BB15470 [tailport=s, headport=n, headlabel="      15470"]
+BB15470 [shape=record label="{53226: read-variable['Ember',v3,-]|53227: read-property[v3,'assert',-]|53228: \<variable-non-null-undef\>['Ember']|53229: constant[\"Immediate observers must observe internal properties only, \",v5]|53230: constant[\"not properties on other objects.\",v6]|53231: +[v5,v6,v4]|53232: function-expr[function checkIsInternalProperty ( ),v7]}" ] 
+BB15470 -> BB15471 [tailport=s, headport=n, headlabel="      15471"]
+BB15470 -> BB15475 [tailport=s, headport=n, color=gray, headlabel="      15475"]
+BB15471 [shape=record label="{53233: call-Ember.assert [v3,'assert',v4,v7,-]*}" ] 
+BB15471 -> BB15472 [tailport=s, headport=n, headlabel="      15472"]
+BB15471 -> BB15475 [tailport=s, headport=n, color=gray]
+BB15472 [shape=record label="{53234: read-variable['this',v10,-]|53235: read-property[v10,'observes',v9]|53236: read-property[v9,'apply',-]|53237: \<property-non-null-undef\>[v10,'observes']|53238: read-variable['this',v11,-]|53239: read-variable['arguments',v12,-]}" ] 
+BB15472 -> BB15473 [tailport=s, headport=n, headlabel="      15473"]
+BB15472 -> BB15475 [tailport=s, headport=n, color=gray]
+BB15473 [shape=record label="{53240: call-this.observes.apply [v9,'apply',v11,v12,v1]}" ] 
+BB15473 -> BB15474 [tailport=s, headport=n, headlabel="      15474"]
+BB15473 -> BB15475 [tailport=s, headport=n, color=gray]
+BB15474 [shape=record label="{53241: return[v1]}" ] 
+BB15475 [shape=record label="{53242: exceptional-return}" ] 
+//#$~ 28540
+}

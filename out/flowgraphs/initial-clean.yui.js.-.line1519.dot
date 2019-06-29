@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB968 [tailport=s, headport=n, headlabel="    968"]
+BB968 [shape=record label="{3521: constant[undefined,v1]|3522: vardecl['Y']}" ] 
+BB968 -> BB969 [tailport=s, headport=n, headlabel="      969"]
+BB969 [shape=record label="{3523: read-variable['this',v2,-]|3524: write-variable[v2,'Y']*|3525: read-variable['Y',v4,-]|3526: read-property[v4,'Event',v3]|3527: \<variable-non-null-undef\>['Y']|3528: if[v3](true-block:970,false-block:972)}" ] 
+BB969 -> BB970 [tailport=s, headport=n, headlabel="      970"]
+BB969 -> BB972 [tailport=s, headport=n, headlabel="      972"]
+BB969 -> BB974 [tailport=s, headport=n, color=gray, headlabel="      974"]
+BB970 [shape=record label="{3529: read-variable['Y',v7,-]|3530: read-property[v7,'Event',v6]|3531: \<variable-non-null-undef\>['Y']|3532: read-property[v6,'_unload',-]|3533: \<property-non-null-undef\>[v7,'Event']}" ] 
+BB970 -> BB971 [tailport=s, headport=n, headlabel="      971"]
+BB970 -> BB974 [tailport=s, headport=n, color=gray]
+BB971 [shape=record label="{3534: call-Y.Event._unload [v6,'_unload',-]*}" ] 
+BB971 -> BB972 [tailport=s, headport=n]
+BB971 -> BB974 [tailport=s, headport=n, color=gray]
+BB972 [shape=record label="{3535: read-variable['instances',v6,-]|3536: read-variable['Y',v8,-]|3537: read-property[v8,'id',v7]|3538: \<variable-non-null-undef\>['Y']|3539: delete-property[v6,v7,v5]*|3540: read-variable['Y',v10,-]|3541: constant[\"Env\",v11]|3542: delete-property[v10,v11,v9]*|3543: read-variable['Y',v13,-]|3544: constant[\"config\",v14]|3545: delete-property[v13,v14,v12]*}" ] 
+BB972 -> BB973 [tailport=s, headport=n, headlabel="      973"]
+BB972 -> BB974 [tailport=s, headport=n, color=gray]
+BB973 [shape=record label="{3546: return[v1]}" ] 
+BB974 [shape=record label="{3547: exceptional-return}" ] 
+//#$~ 1526
+}

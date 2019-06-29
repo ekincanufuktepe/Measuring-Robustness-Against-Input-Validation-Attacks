@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry888[shape=none,label=""];
+BB_entry888 -> BB11558 [tailport=s, headport=n, headlabel="    11558"]
+BB11558 [shape=record label="{30372: constant[undefined,v1]|30373: vardecl['aHrefSanitizationWhitelist']|30374: vardecl['imgSrcSanitizationWhitelist']}" ] 
+BB11558 -> BB11559 [tailport=s, headport=n, headlabel="      11559"]
+BB11559 [shape=record label="{30375: read-variable['RegExp',v3,-]|30376: constant[\"^\\\\s*(https?|ftp|mailto|tel|file):\",v4]}" ] 
+BB11559 -> BB11560 [tailport=s, headport=n, headlabel="      11560"]
+BB11559 -> BB11565 [tailport=s, headport=n, color=gray, headlabel="      11565"]
+BB11560 [shape=record label="{30377: construct [-,v3,v4,v2]}" ] 
+BB11560 -> BB11561 [tailport=s, headport=n, headlabel="      11561"]
+BB11560 -> BB11565 [tailport=s, headport=n, color=gray]
+BB11561 [shape=record label="{30378: write-variable[v2,'aHrefSanitizationWhitelist']*|30379: read-variable['RegExp',v6,-]|30380: constant[\"^\\\\s*((https?|ftp|file|blob):|data:image\\\\/)\",v7]}" ] 
+BB11561 -> BB11562 [tailport=s, headport=n, headlabel="      11562"]
+BB11561 -> BB11565 [tailport=s, headport=n, color=gray]
+BB11562 [shape=record label="{30381: construct [-,v6,v7,v5]}" ] 
+BB11562 -> BB11563 [tailport=s, headport=n, headlabel="      11563"]
+BB11562 -> BB11565 [tailport=s, headport=n, color=gray]
+BB11563 [shape=record label="{30382: write-variable[v5,'imgSrcSanitizationWhitelist']*|30383: read-variable['this',v9,-]|30384: function-expr[function ( regexp ),v8]|30385: write-property[v9,'aHrefSanitizationWhitelist',v8]*|30386: read-variable['this',v11,-]|30387: function-expr[function ( regexp ),v10]|30388: write-property[v11,'imgSrcSanitizationWhitelist',v10]*|30389: read-variable['this',v13,-]|30390: function-expr[function ( ),v12]|30391: write-property[v13,'$get',v12]*}" ] 
+BB11563 -> BB11564 [tailport=s, headport=n, headlabel="      11564"]
+BB11563 -> BB11565 [tailport=s, headport=n, color=gray]
+BB11564 [shape=record label="{30392: return[v1]}" ] 
+BB11565 [shape=record label="{30393: exceptional-return}" ] 
+//#$~ 16320
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1215[shape=none,label=""];
+BB_entry1215 -> BB15120 [tailport=s, headport=n, headlabel="    15120"]
+BB15120 [shape=record label="{39264: constant[undefined,v1]|39265: vardecl['modelCtrl']}" ] 
+BB15120 -> BB15121 [tailport=s, headport=n, headlabel="      15121"]
+BB15121 [shape=record label="{39266: read-variable['ctrls',v4,v2]|39267: constant[0.0,v5]|39268: read-property[v4,v5,v3]|39269: \<variable-non-null-undef\>['ctrls']|39270: write-variable[v3,'modelCtrl']*|39271: read-variable['modelCtrl',v7,v2]|39272: read-property[v7,'$options',v6]|39273: \<variable-non-null-undef\>['modelCtrl']|39274: if[v6](true-block:15122,false-block:15123)}" ] 
+BB15121 -> BB15123 [tailport=s, headport=n, headlabel="      15123"]
+BB15121 -> BB15122 [tailport=s, headport=n, headlabel="      15122"]
+BB15121 -> BB15129 [tailport=s, headport=n, color=gray, headlabel="      15129"]
+BB15122 [shape=record label="{39275: read-variable['modelCtrl',v9,v2]|39276: read-property[v9,'$options',v8]|39277: \<variable-non-null-undef\>['modelCtrl']|39278: read-property[v8,'updateOn',v6]|39279: \<property-non-null-undef\>[v9,'$options']}" ] 
+BB15122 -> BB15123 [tailport=s, headport=n]
+BB15122 -> BB15129 [tailport=s, headport=n, color=gray]
+BB15123 [shape=record label="{39280: if[v6](true-block:15124,false-block:15126)}" ] 
+BB15123 -> BB15124 [tailport=s, headport=n, headlabel="      15124"]
+BB15123 -> BB15126 [tailport=s, headport=n, headlabel="      15126"]
+BB15124 [shape=record label="{39281: read-variable['element',v9,-]|39282: read-property[v9,'on',-]|39283: \<variable-non-null-undef\>['element']|39284: read-variable['modelCtrl',v12,v2]|39285: read-property[v12,'$options',v11]|39286: \<variable-non-null-undef\>['modelCtrl']|39287: read-property[v11,'updateOn',v10]|39288: \<property-non-null-undef\>[v12,'$options']|39289: function-expr[function ( ev ),v13]}" ] 
+BB15124 -> BB15125 [tailport=s, headport=n, headlabel="      15125"]
+BB15124 -> BB15129 [tailport=s, headport=n, color=gray]
+BB15125 [shape=record label="{39290: call-element.on [v9,'on',v10,v13,-]*}" ] 
+BB15125 -> BB15126 [tailport=s, headport=n]
+BB15125 -> BB15129 [tailport=s, headport=n, color=gray]
+BB15126 [shape=record label="{39291: read-variable['element',v9,-]|39292: read-property[v9,'on',-]|39293: \<variable-non-null-undef\>['element']|39294: constant[\"blur\",v10]|39295: function-expr[function ( ev ),v11]}" ] 
+BB15126 -> BB15127 [tailport=s, headport=n, headlabel="      15127"]
+BB15126 -> BB15129 [tailport=s, headport=n, color=gray]
+BB15127 [shape=record label="{39296: call-element.on [v9,'on',v10,v11,-]*}" ] 
+BB15127 -> BB15128 [tailport=s, headport=n, headlabel="      15128"]
+BB15127 -> BB15129 [tailport=s, headport=n, color=gray]
+BB15128 [shape=record label="{39297: return[v1]}" ] 
+BB15129 [shape=record label="{39298: exceptional-return}" ] 
+//#$~ 25391
+}

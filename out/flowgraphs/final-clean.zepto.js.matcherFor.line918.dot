@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry170[shape=none,label=""];
+BB_entry170 -> BB1870 [tailport=s, headport=n, headlabel="    1870"]
+BB1870 [shape=record label="{4528: constant[undefined,v1]}" ] 
+BB1870 -> BB1871 [tailport=s, headport=n, headlabel="      1871"]
+BB1871 [shape=record label="{4529: read-variable['RegExp',v2,-]|4530: constant[\"(?:^| )\",v6]|4531: read-variable['ns',v9,-]|4532: read-property[v9,'replace',-]|4533: \<variable-non-null-undef\>['ns']|4534: constant[\" \",v10]|4535: constant[\" .* ?\",v11]}" ] 
+BB1871 -> BB1872 [tailport=s, headport=n, headlabel="      1872"]
+BB1871 -> BB1876 [tailport=s, headport=n, color=gray, headlabel="      1876"]
+BB1872 [shape=record label="{4536: call-ns.replace [v9,'replace',v10,v11,v7]}" ] 
+BB1872 -> BB1873 [tailport=s, headport=n, headlabel="      1873"]
+BB1872 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1873 [shape=record label="{4537: +[v6,v7,v4]|4538: constant[\"(?: |$)\",v5]|4539: +[v4,v5,v3]}" ] 
+BB1873 -> BB1874 [tailport=s, headport=n, headlabel="      1874"]
+BB1873 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1874 [shape=record label="{4540: construct [-,v2,v3,v1]}" ] 
+BB1874 -> BB1875 [tailport=s, headport=n, headlabel="      1875"]
+BB1874 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1875 [shape=record label="{4541: return[v1]}" ] 
+BB1876 [shape=record label="{4542: exceptional-return}" ] 
+//#$~ 919
+}

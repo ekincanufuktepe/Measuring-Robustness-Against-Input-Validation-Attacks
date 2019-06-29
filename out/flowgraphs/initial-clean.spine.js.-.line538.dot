@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB648 [tailport=s, headport=n, headlabel="    648"]
+BB648 [shape=record label="{1914: constant[undefined,v1]}" ] 
+BB648 -> BB649 [tailport=s, headport=n, headlabel="      649"]
+BB649 [shape=record label="{1915: read-variable['this',v3,-]|1916: read-property[v3,'comparator',v2]|1917: if[v2](true-block:650,false-block:652)}" ] 
+BB649 -> BB650 [tailport=s, headport=n, headlabel="      650"]
+BB649 -> BB652 [tailport=s, headport=n, headlabel="      652"]
+BB649 -> BB654 [tailport=s, headport=n, color=gray, headlabel="      654"]
+BB650 [shape=record label="{1918: read-variable['this',v6,-]|1919: read-property[v6,'records',v5]|1920: read-property[v5,'sort',-]|1921: \<property-non-null-undef\>[v6,'records']|1922: read-variable['this',v8,-]|1923: read-property[v8,'comparator',v7]}" ] 
+BB650 -> BB651 [tailport=s, headport=n, headlabel="      651"]
+BB650 -> BB654 [tailport=s, headport=n, color=gray]
+BB651 [shape=record label="{1924: call-this.records.sort [v5,'sort',v7,-]*}" ] 
+BB651 -> BB652 [tailport=s, headport=n]
+BB651 -> BB654 [tailport=s, headport=n, color=gray]
+BB652 [shape=record label="{1925: read-variable['this',v1,-]}" ] 
+BB652 -> BB653 [tailport=s, headport=n, headlabel="      653"]
+BB652 -> BB654 [tailport=s, headport=n, color=gray]
+BB653 [shape=record label="{1926: return[v1]}" ] 
+BB654 [shape=record label="{1927: exceptional-return}" ] 
+//#$~ 542
+}

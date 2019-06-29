@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB949 [tailport=s, headport=n, headlabel="    949"]
+BB949 [shape=record label="{2922: constant[undefined,v1]|2923: vardecl['optionPointers']}" ] 
+BB949 -> BB950 [tailport=s, headport=n, headlabel="      950"]
+BB950 [shape=record label="{2924: read-variable['this',v4,-]|2925: read-property[v4,'options',v3]|2926: read-property[v3,'pointers',v2]|2927: \<property-non-null-undef\>[v4,'options']|2928: write-variable[v2,'optionPointers']*|2929: read-variable['optionPointers',v5,-]|2930: constant[0.0,v6]|2931: ===[v5,v6,v1]|2932: if[v1](true-block:952,false-block:951)}" ] 
+BB950 -> BB952 [tailport=s, headport=n, headlabel="      952"]
+BB950 -> BB951 [tailport=s, headport=n, headlabel="      951"]
+BB950 -> BB953 [tailport=s, headport=n, color=gray, headlabel="      953"]
+BB951 [shape=record label="{2933: read-variable['input',v8,-]|2934: read-property[v8,'pointers',v7]|2935: \<variable-non-null-undef\>['input']|2936: read-property[v7,'length',v5]|2937: \<property-non-null-undef\>[v8,'pointers']|2938: read-variable['optionPointers',v6,-]|2939: ===[v5,v6,v1]}" ] 
+BB951 -> BB952 [tailport=s, headport=n]
+BB951 -> BB953 [tailport=s, headport=n, color=gray]
+BB952 [shape=record label="{2940: return[v1]}" ] 
+BB953 [shape=record label="{2941: exceptional-return}" ] 
+//#$~ 1570
+}

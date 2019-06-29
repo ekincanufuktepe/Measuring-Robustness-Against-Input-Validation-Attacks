@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB650 [tailport=s, headport=n, headlabel="    650"]
+BB650 [shape=record label="{1448: constant[undefined,v1]}" ] 
+BB650 -> BB651 [tailport=s, headport=n, headlabel="      651"]
+BB651 [shape=record label="{1449: read-variable['this',v5,-]|1450: read-property[v5,'parentNode',v3]|1451: constant[null,v4]|1452: !=[v3,v4,v2]|1453: if[v2](true-block:652,false-block:654)}" ] 
+BB651 -> BB652 [tailport=s, headport=n, headlabel="      652"]
+BB651 -> BB654 [tailport=s, headport=n, headlabel="      654"]
+BB651 -> BB655 [tailport=s, headport=n, color=gray, headlabel="      655"]
+BB652 [shape=record label="{1454: read-variable['this',v8,-]|1455: read-property[v8,'parentNode',v7]|1456: read-property[v7,'removeChild',-]|1457: \<property-non-null-undef\>[v8,'parentNode']|1458: read-variable['this',v9,-]}" ] 
+BB652 -> BB653 [tailport=s, headport=n, headlabel="      653"]
+BB652 -> BB655 [tailport=s, headport=n, color=gray]
+BB653 [shape=record label="{1459: call-this.parentNode.removeChild [v7,'removeChild',v9,-]*}" ] 
+BB653 -> BB654 [tailport=s, headport=n]
+BB653 -> BB655 [tailport=s, headport=n, color=gray]
+BB654 [shape=record label="{1460: return[v1]}" ] 
+BB655 [shape=record label="{1461: exceptional-return}" ] 
+//#$~ 422
+}

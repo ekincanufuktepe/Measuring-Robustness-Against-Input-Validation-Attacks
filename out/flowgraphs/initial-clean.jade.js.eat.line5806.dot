@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry336[shape=none,label=""];
+BB_entry336 -> BB5751 [tailport=s, headport=n, headlabel="    5751"]
+BB5751 [shape=record label="{17650: constant[undefined,v1]}" ] 
+BB5751 -> BB5752 [tailport=s, headport=n, headlabel="      5752"]
+BB5752 [shape=record label="{17651: read-variable['tokType',v3,-]|17652: read-variable['type',v4,-]|17653: ===[v3,v4,v2]|17654: if[v2](true-block:5753,false-block:5754)}" ] 
+BB5752 -> BB5753 [tailport=s, headport=n, headlabel="      5753"]
+BB5752 -> BB5754 [tailport=s, headport=n, headlabel="      5754"]
+BB5752 -> BB5758 [tailport=s, headport=n, color=gray, headlabel="      5758"]
+BB5753 [shape=record label="{17655: read-variable['next',v6,v5]}" ] 
+BB5753 -> BB5755 [tailport=s, headport=n, headlabel="      5755"]
+BB5753 -> BB5758 [tailport=s, headport=n, color=gray]
+BB5754 [shape=record label="{17656: constant[false,v1]}" ] 
+BB5754 -> BB5757 [tailport=s, headport=n, headlabel="      5757"]
+BB5755 [shape=record label="{17657: call-next [v5,v6,-]*}" ] 
+BB5755 -> BB5756 [tailport=s, headport=n, headlabel="      5756"]
+BB5755 -> BB5758 [tailport=s, headport=n, color=gray]
+BB5756 [shape=record label="{17658: constant[true,v1]}" ] 
+BB5756 -> BB5757 [tailport=s, headport=n]
+BB5757 [shape=record label="{17659: return[v1]}" ] 
+BB5758 [shape=record label="{17660: exceptional-return}" ] 
+//#$~ 5811
+}

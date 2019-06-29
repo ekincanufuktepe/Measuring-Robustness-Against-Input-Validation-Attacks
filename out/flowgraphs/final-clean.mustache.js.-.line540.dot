@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB491 [tailport=s, headport=n, headlabel="    491"]
+BB491 [shape=record label="{1416: constant[undefined,v1]|1417: vardecl['value']}" ] 
+BB491 -> BB492 [tailport=s, headport=n, headlabel="      492"]
+BB492 [shape=record label="{1418: read-variable['context',v4,-]|1419: read-property[v4,'lookup',-]|1420: \<variable-non-null-undef\>['context']|1421: read-variable['token',v6,-]|1422: constant[1.0,v7]|1423: read-property[v6,v7,v5]|1424: \<variable-non-null-undef\>['token']}" ] 
+BB492 -> BB493 [tailport=s, headport=n, headlabel="      493"]
+BB492 -> BB498 [tailport=s, headport=n, color=gray, headlabel="      498"]
+BB493 [shape=record label="{1425: call-context.lookup [v4,'lookup',v5,v2]}" ] 
+BB493 -> BB494 [tailport=s, headport=n, headlabel="      494"]
+BB493 -> BB498 [tailport=s, headport=n, color=gray]
+BB494 [shape=record label="{1426: write-variable[v2,'value']*|1427: read-variable['value',v9,-]|1428: constant[null,v10]|1429: !=[v9,v10,v8]|1430: if[v8](true-block:495,false-block:497)}" ] 
+BB494 -> BB495 [tailport=s, headport=n, headlabel="      495"]
+BB494 -> BB497 [tailport=s, headport=n, headlabel="      497"]
+BB494 -> BB498 [tailport=s, headport=n, color=gray]
+BB495 [shape=record label="{1431: read-variable['mustache',v12,-]|1432: read-property[v12,'escape',-]|1433: \<variable-non-null-undef\>['mustache']|1434: read-variable['value',v13,-]}" ] 
+BB495 -> BB496 [tailport=s, headport=n, headlabel="      496"]
+BB495 -> BB498 [tailport=s, headport=n, color=gray]
+BB496 [shape=record label="{1435: call-mustache.escape [v12,'escape',v13,v1]}" ] 
+BB496 -> BB497 [tailport=s, headport=n]
+BB496 -> BB498 [tailport=s, headport=n, color=gray]
+BB497 [shape=record label="{1436: return[v1]}" ] 
+BB498 [shape=record label="{1437: exceptional-return}" ] 
+//#$~ 543
+}

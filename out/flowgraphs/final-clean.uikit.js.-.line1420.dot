@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry148[shape=none,label=""];
+BB_entry148 -> BB1863 [tailport=s, headport=n, headlabel="    1863"]
+BB1863 [shape=record label="{5410: constant[undefined,v1]}" ] 
+BB1863 -> BB1864 [tailport=s, headport=n, headlabel="      1864"]
+BB1864 [shape=record label="{5411: read-variable['this',v3,-]|5412: read-variable['this',v6,-]|5413: read-property[v6,'options',v5]|5414: read-property[v5,'target',v4]|5415: \<property-non-null-undef\>[v6,'options']|5416: if[v4](true-block:1865,false-block:1866)}" ] 
+BB1864 -> BB1865 [tailport=s, headport=n, headlabel="      1865"]
+BB1864 -> BB1866 [tailport=s, headport=n, headlabel="      1866"]
+BB1864 -> BB1872 [tailport=s, headport=n, color=gray, headlabel="      1872"]
+BB1865 [shape=record label="{5417: read-variable['UI',v8,-]|5418: read-property[v8,'$',-]|5419: \<variable-non-null-undef\>['UI']|5420: read-variable['this',v11,-]|5421: read-property[v11,'options',v10]|5422: read-property[v10,'target',v9]|5423: \<property-non-null-undef\>[v11,'options']}" ] 
+BB1865 -> BB1867 [tailport=s, headport=n, headlabel="      1867"]
+BB1865 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1866 [shape=record label="{5424: read-variable['Array',v7,-]}" ] 
+BB1866 -> BB1868 [tailport=s, headport=n, headlabel="      1868"]
+BB1866 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1867 [shape=record label="{5425: call-UI.$ [v8,'$',v9,v2]}" ] 
+BB1867 -> BB1869 [tailport=s, headport=n, headlabel="      1869"]
+BB1867 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1868 [shape=record label="{5426: construct [-,v7,v2]}" ] 
+BB1868 -> BB1869 [tailport=s, headport=n]
+BB1868 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1869 [shape=record label="{5427: write-property[v3,'totoggle',v2]*|5428: read-variable['this',v8,-]|5429: read-property[v8,'updateAria',-]}" ] 
+BB1869 -> BB1870 [tailport=s, headport=n, headlabel="      1870"]
+BB1869 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1870 [shape=record label="{5430: call-this.updateAria [v8,'updateAria',-]*}" ] 
+BB1870 -> BB1871 [tailport=s, headport=n, headlabel="      1871"]
+BB1870 -> BB1872 [tailport=s, headport=n, color=gray]
+BB1871 [shape=record label="{5431: return[v1]}" ] 
+BB1872 [shape=record label="{5432: exceptional-return}" ] 
+//#$~ 1422
+}

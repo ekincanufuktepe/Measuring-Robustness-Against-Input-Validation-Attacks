@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry162[shape=none,label=""];
+BB_entry162 -> BB2562 [tailport=s, headport=n, headlabel="    2562"]
+BB2562 [shape=record label="{7776: constant[undefined,v1]}" ] 
+BB2562 -> BB2563 [tailport=s, headport=n, headlabel="      2563"]
+BB2563 [shape=record label="{7777: read-variable['el',v3,-]|7778: read-property[v3,'setAttribute',-]|7779: \<variable-non-null-undef\>['el']|7780: constant[\"src\",v4]|7781: constant[\"about:blank\",v5]}" ] 
+BB2563 -> BB2564 [tailport=s, headport=n, headlabel="      2564"]
+BB2563 -> BB2568 [tailport=s, headport=n, color=gray, headlabel="      2568"]
+BB2564 [shape=record label="{7782: call-el.setAttribute [v3,'setAttribute',v4,v5,-]*}" ] 
+BB2564 -> BB2565 [tailport=s, headport=n, headlabel="      2565"]
+BB2564 -> BB2568 [tailport=s, headport=n, color=gray]
+BB2565 [shape=record label="{7783: read-variable['el',v7,-]|7784: read-property[v7,'removeAttribute',-]|7785: \<variable-non-null-undef\>['el']|7786: constant[\"src\",v8]}" ] 
+BB2565 -> BB2566 [tailport=s, headport=n, headlabel="      2566"]
+BB2565 -> BB2568 [tailport=s, headport=n, color=gray]
+BB2566 [shape=record label="{7787: call-el.removeAttribute [v7,'removeAttribute',v8,-]*}" ] 
+BB2566 -> BB2567 [tailport=s, headport=n, headlabel="      2567"]
+BB2566 -> BB2568 [tailport=s, headport=n, color=gray]
+BB2567 [shape=record label="{7788: return[v1]}" ] 
+BB2568 [shape=record label="{7789: exceptional-return}" ] 
+//#$~ 2993
+}

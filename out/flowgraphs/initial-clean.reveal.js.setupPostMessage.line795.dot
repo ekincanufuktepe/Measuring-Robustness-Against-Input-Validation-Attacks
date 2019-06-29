@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry25[shape=none,label=""];
+BB_entry25 -> BB485 [tailport=s, headport=n, headlabel="    485"]
+BB485 [shape=record label="{1711: constant[undefined,v1]}" ] 
+BB485 -> BB486 [tailport=s, headport=n, headlabel="      486"]
+BB486 [shape=record label="{1712: read-variable['config',v3,-]|1713: read-property[v3,'postMessage',v2]|1714: \<variable-non-null-undef\>['config']|1715: if[v2](true-block:487,false-block:489)}" ] 
+BB486 -> BB487 [tailport=s, headport=n, headlabel="      487"]
+BB486 -> BB489 [tailport=s, headport=n, headlabel="      489"]
+BB486 -> BB490 [tailport=s, headport=n, color=gray, headlabel="      490"]
+BB487 [shape=record label="{1716: read-variable['window',v5,-]|1717: read-property[v5,'addEventListener',-]|1718: \<variable-non-null-undef\>['window']|1719: constant[\"message\",v6]|1720: function-expr[function ( event ),v7]|1721: constant[false,v8]}" ] 
+BB487 -> BB488 [tailport=s, headport=n, headlabel="      488"]
+BB487 -> BB490 [tailport=s, headport=n, color=gray]
+BB488 [shape=record label="{1722: call-window.addEventListener [v5,'addEventListener',v6,v7,v8,-]*}" ] 
+BB488 -> BB489 [tailport=s, headport=n]
+BB488 -> BB490 [tailport=s, headport=n, color=gray]
+BB489 [shape=record label="{1723: return[v1]}" ] 
+BB490 [shape=record label="{1724: exceptional-return}" ] 
+//#$~ 810
+}

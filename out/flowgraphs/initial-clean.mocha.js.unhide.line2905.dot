@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry216[shape=none,label=""];
+BB_entry216 -> BB2502 [tailport=s, headport=n, headlabel="    2502"]
+BB2502 [shape=record label="{8084: constant[undefined,v1]|8085: vardecl['els']|8086: vardecl['i']}" ] 
+BB2502 -> BB2503 [tailport=s, headport=n, headlabel="      2503"]
+BB2503 [shape=record label="{8087: read-variable['document',v4,-]|8088: read-property[v4,'getElementsByClassName',-]|8089: \<variable-non-null-undef\>['document']|8090: constant[\"suite hidden\",v5]}" ] 
+BB2503 -> BB2504 [tailport=s, headport=n, headlabel="      2504"]
+BB2503 -> BB2511 [tailport=s, headport=n, color=gray, headlabel="      2511"]
+BB2504 [shape=record label="{8091: call-document.getElementsByClassName [v4,'getElementsByClassName',v5,v2]}" ] 
+BB2504 -> BB2505 [tailport=s, headport=n, headlabel="      2505"]
+BB2504 -> BB2511 [tailport=s, headport=n, color=gray]
+BB2505 [shape=record label="{8092: write-variable[v2,'els']*|8093: constant[0.0,v7]|8094: write-variable[v7,'i']*}" ] 
+BB2505 -> BB2506 [tailport=s, headport=n, headlabel="      2506"]
+BB2506 [shape=record label="{8095: read-variable['i',v8,-]|8096: read-variable['els',v10,-]|8097: read-property[v10,'length',v9]|8098: \<variable-non-null-undef\>['els']|8099: \<[v8,v9,v6]|8100: if[v6](true-block:2507,false-block:2510)}" ] 
+BB2506 -> BB2507 [tailport=s, headport=n, headlabel="      2507"]
+BB2506 -> BB2510 [tailport=s, headport=n, headlabel="      2510"]
+BB2506 -> BB2511 [tailport=s, headport=n, color=gray]
+BB2507 [shape=record label="{8101: read-variable['els',v13,-]|8102: read-variable['i',v14,-]|8103: read-property[v13,v14,v12]|8104: \<variable-non-null-undef\>['els']|8105: read-variable['els',v18,-]|8106: read-variable['i',v19,-]|8107: read-property[v18,v19,v17]|8108: \<variable-non-null-undef\>['els']|8109: read-property[v17,'className',v16]|8110: \<property-non-null-undef\>[v18,v19]|8111: read-property[v16,'replace',-]|8112: \<property-non-null-undef\>[v17,'className']|8113: constant[\"suite hidden\",v20]|8114: constant[\"suite\",v21]}" ] 
+BB2507 -> BB2508 [tailport=s, headport=n, headlabel="      2508"]
+BB2507 -> BB2511 [tailport=s, headport=n, color=gray]
+BB2508 [shape=record label="{8115: call-null [v16,'replace',v20,v21,v11]}" ] 
+BB2508 -> BB2509 [tailport=s, headport=n, headlabel="      2509"]
+BB2508 -> BB2511 [tailport=s, headport=n, color=gray]
+BB2509 [shape=record label="{8116: write-property[v12,'className',v11]|8117: \<property-non-null-undef\>[v13,v14]*|8118: constant[1.0,v22]|8119: read-variable['i',v23,-]|8120: +[v23,v24]|8121: +[v24,v22,v25]|8122: write-variable[v25,'i']}" ] 
+BB2509 -> BB2506 [tailport=s, headport=n]
+BB2509 -> BB2511 [tailport=s, headport=n, color=gray]
+BB2510 [shape=record label="{8123: return[v1]}" ] 
+BB2511 [shape=record label="{8124: exceptional-return}" ] 
+//#$~ 2907
+}

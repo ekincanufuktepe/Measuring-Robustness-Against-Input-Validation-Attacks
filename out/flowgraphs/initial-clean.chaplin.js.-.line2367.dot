@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry215[shape=none,label=""];
+BB_entry215 -> BB2680 [tailport=s, headport=n, headlabel="    2680"]
+BB2680 [shape=record label="{8830: constant[undefined,v1]|8831: vardecl['handler']|8832: vardecl['_i']|8833: vardecl['_len']|8834: vardecl['_ref']}" ] 
+BB2680 -> BB2681 [tailport=s, headport=n, headlabel="      2681"]
+BB2681 [shape=record label="{8835: read-variable['Backbone',v4,-]|8836: read-property[v4,'history',v3]|8837: \<variable-non-null-undef\>['Backbone']|8838: read-property[v3,'handlers',v2]|8839: \<property-non-null-undef\>[v4,'history']|8840: write-variable[v2,'_ref']*|8841: constant[0.0,v6]|8842: write-variable[v6,'_i']|8843: read-variable['_ref',v8,-]|8844: read-property[v8,'length',v7]|8845: \<variable-non-null-undef\>['_ref']|8846: write-variable[v7,'_len']}" ] 
+BB2681 -> BB2682 [tailport=s, headport=n, headlabel="      2682"]
+BB2681 -> BB2689 [tailport=s, headport=n, color=gray, headlabel="      2689"]
+BB2682 [shape=record label="{8847: read-variable['_i',v9,-]|8848: read-variable['_len',v10,-]|8849: \<[v9,v10,v5]|8850: if[v5](true-block:2683,false-block:2688)}" ] 
+BB2682 -> BB2683 [tailport=s, headport=n, headlabel="      2683"]
+BB2682 -> BB2688 [tailport=s, headport=n, headlabel="      2688"]
+BB2682 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2683 [shape=record label="{8851: read-variable['_ref',v12,-]|8852: read-variable['_i',v13,-]|8853: read-property[v12,v13,v11]|8854: \<variable-non-null-undef\>['_ref']|8855: write-variable[v11,'handler']*|8856: read-variable['predicate',v16,v15]|8857: read-variable['handler',v17,-]}" ] 
+BB2683 -> BB2684 [tailport=s, headport=n, headlabel="      2684"]
+BB2683 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2684 [shape=record label="{8858: call-predicate [v15,v16,v17,v14]}" ] 
+BB2684 -> BB2685 [tailport=s, headport=n, headlabel="      2685"]
+BB2684 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2685 [shape=record label="{8859: if[v14](true-block:2686,false-block:2687)}" ] 
+BB2685 -> BB2686 [tailport=s, headport=n, headlabel="      2686"]
+BB2685 -> BB2687 [tailport=s, headport=n, headlabel="      2687"]
+BB2686 [shape=record label="{8860: read-variable['handler',v1,-]}" ] 
+BB2686 -> BB2688 [tailport=s, headport=n]
+BB2686 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2687 [shape=record label="{8861: constant[1.0,v18]|8862: read-variable['_i',v19,-]|8863: +[v19,v20]|8864: +[v20,v18,v21]|8865: write-variable[v21,'_i']}" ] 
+BB2687 -> BB2682 [tailport=s, headport=n]
+BB2687 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2688 [shape=record label="{8866: return[v1]}" ] 
+BB2689 [shape=record label="{8867: exceptional-return}" ] 
+//#$~ 2370
+}

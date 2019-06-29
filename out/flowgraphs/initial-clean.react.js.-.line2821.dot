@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry100[shape=none,label=""];
+BB_entry100 -> BB1514 [tailport=s, headport=n, headlabel="    1514"]
+BB1514 [shape=record label="{5261: constant[undefined,v1]|5262: vardecl['registrationName']}" ] 
+BB1514 -> BB1515 [tailport=s, headport=n, headlabel="      1515"]
+BB1515 [shape=record label="{5263: read-variable['listenerBank',v3,-]}" ] 
+BB1515 -> BB1516 [tailport=s, headport=n, headlabel="      1516"]
+BB1515 -> BB1521 [tailport=s, headport=n, color=gray, headlabel="      1521"]
+BB1516 [shape=record label="{5264: begin-for-in[v3,v4]}" ] 
+BB1516 -> BB1517 [tailport=s, headport=n, headlabel="      1517"]
+BB1516 -> BB1521 [tailport=s, headport=n, color=gray]
+BB1517 [shape=record label="{5265: has-next[v4,v5]|5266: if[v5](true-block:1518,false-block:1520)}" ] 
+BB1517 -> BB1518 [tailport=s, headport=n, headlabel="      1518"]
+BB1517 -> BB1520 [tailport=s, headport=n, headlabel="      1520"]
+BB1518 [shape=record label="{5267: next-property[v4,v6]|5268: write-variable[v6,'registrationName']|5269: read-variable['listenerBank',v10,-]|5270: read-variable['registrationName',v11,-]|5271: read-property[v10,v11,v8]|5272: \<variable-non-null-undef\>['listenerBank']|5273: read-variable['id',v9,-]|5274: delete-property[v8,v9,v7]*}" ] 
+BB1518 -> BB1519 [tailport=s, headport=n, headlabel="      1519"]
+BB1518 -> BB1521 [tailport=s, headport=n, color=gray]
+BB1519 [shape=record label="{5275: end-for-in(begin-node:5264)}" ] 
+BB1519 -> BB1517 [tailport=s, headport=n]
+BB1520 [shape=record label="{5276: return[v1]}" ] 
+BB1521 [shape=record label="{5277: exceptional-return}" ] 
+//#$~ 2823
+}

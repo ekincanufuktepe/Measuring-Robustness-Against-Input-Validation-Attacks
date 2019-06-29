@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry59[shape=none,label=""];
+BB_entry59 -> BB957 [tailport=s, headport=n, headlabel="    957"]
+BB957 [shape=record label="{3170: constant[undefined,v1]}" ] 
+BB957 -> BB958 [tailport=s, headport=n, headlabel="      958"]
+BB958 [shape=record label="{3171: read-variable['config',v3,-]|3172: read-property[v3,'hideAddressBar',v2]|3173: \<variable-non-null-undef\>['config']|3174: if[v2](true-block:959,false-block:960)}" ] 
+BB958 -> BB960 [tailport=s, headport=n, headlabel="      960"]
+BB958 -> BB959 [tailport=s, headport=n, headlabel="      959"]
+BB958 -> BB966 [tailport=s, headport=n, color=gray, headlabel="      966"]
+BB959 [shape=record label="{3175: read-variable['isMobileDevice',v2,-]}" ] 
+BB959 -> BB960 [tailport=s, headport=n]
+BB959 -> BB966 [tailport=s, headport=n, color=gray]
+BB960 [shape=record label="{3176: if[v2](true-block:961,false-block:965)}" ] 
+BB960 -> BB961 [tailport=s, headport=n, headlabel="      961"]
+BB960 -> BB965 [tailport=s, headport=n, headlabel="      965"]
+BB961 [shape=record label="{3177: read-variable['window',v5,-]|3178: read-property[v5,'addEventListener',-]|3179: \<variable-non-null-undef\>['window']|3180: constant[\"load\",v6]|3181: read-variable['removeAddressBar',v7,-]|3182: constant[false,v8]}" ] 
+BB961 -> BB962 [tailport=s, headport=n, headlabel="      962"]
+BB961 -> BB966 [tailport=s, headport=n, color=gray]
+BB962 [shape=record label="{3183: call-window.addEventListener [v5,'addEventListener',v6,v7,v8,-]*}" ] 
+BB962 -> BB963 [tailport=s, headport=n, headlabel="      963"]
+BB962 -> BB966 [tailport=s, headport=n, color=gray]
+BB963 [shape=record label="{3184: read-variable['window',v10,-]|3185: read-property[v10,'addEventListener',-]|3186: \<variable-non-null-undef\>['window']|3187: constant[\"orientationchange\",v11]|3188: read-variable['removeAddressBar',v12,-]|3189: constant[false,v13]}" ] 
+BB963 -> BB964 [tailport=s, headport=n, headlabel="      964"]
+BB963 -> BB966 [tailport=s, headport=n, color=gray]
+BB964 [shape=record label="{3190: call-window.addEventListener [v10,'addEventListener',v11,v12,v13,-]*}" ] 
+BB964 -> BB965 [tailport=s, headport=n]
+BB964 -> BB966 [tailport=s, headport=n, color=gray]
+BB965 [shape=record label="{3191: return[v1]}" ] 
+BB966 [shape=record label="{3192: exceptional-return}" ] 
+//#$~ 1289
+}

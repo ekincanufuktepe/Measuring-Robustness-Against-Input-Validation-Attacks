@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry332[shape=none,label=""];
+BB_entry332 -> BB3047 [tailport=s, headport=n, headlabel="    3047"]
+BB3047 [shape=record label="{8950: constant[undefined,v1]}" ] 
+BB3047 -> BB3048 [tailport=s, headport=n, headlabel="      3048"]
+BB3048 [shape=record label="{8951: read-variable['Object',v8,-]|8952: read-property[v8,'prototype',v7]|8953: \<variable-non-null-undef\>['Object']|8954: read-property[v7,'toString',v6]|8955: \<property-non-null-undef\>[v8,'prototype']|8956: read-property[v6,'call',-]|8957: \<property-non-null-undef\>[v7,'toString']|8958: read-variable['A',v9,-]}" ] 
+BB3048 -> BB3049 [tailport=s, headport=n, headlabel="      3049"]
+BB3048 -> BB3054 [tailport=s, headport=n, color=gray, headlabel="      3054"]
+BB3049 [shape=record label="{8959: call-Object.prototype.toString.call [v6,'call',v9,v3]}" ] 
+BB3049 -> BB3050 [tailport=s, headport=n, headlabel="      3050"]
+BB3049 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3050 [shape=record label="{8960: constant[\"[object Array]\",v4]|8961: ===[v3,v4,v2]|8962: if[v2](true-block:3051,false-block:3052)}" ] 
+BB3050 -> BB3051 [tailport=s, headport=n, headlabel="      3051"]
+BB3050 -> BB3052 [tailport=s, headport=n, headlabel="      3052"]
+BB3050 -> BB3054 [tailport=s, headport=n, color=gray]
+BB3051 [shape=record label="{8963: constant[true,v1]}" ] 
+BB3051 -> BB3053 [tailport=s, headport=n, headlabel="      3053"]
+BB3052 [shape=record label="{8964: constant[false,v1]}" ] 
+BB3052 -> BB3053 [tailport=s, headport=n]
+BB3053 [shape=record label="{8965: return[v1]}" ] 
+BB3054 [shape=record label="{8966: exceptional-return}" ] 
+//#$~ 3523
+}

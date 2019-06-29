@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2506[shape=none,label=""];
+BB_entry2506 -> BB28522 [tailport=s, headport=n, headlabel="    28522"]
+BB28522 [shape=record label="{94812: constant[undefined,v1]}" ] 
+BB28522 -> BB28523 [tailport=s, headport=n, headlabel="      28523"]
+BB28523 [shape=record label="{94813: read-variable['name',v3,-]|94814: constant[\"onerror\",v4]|94815: ===[v3,v4,v2]|94816: if[v2](true-block:28524,false-block:28527)}" ] 
+BB28523 -> BB28524 [tailport=s, headport=n, headlabel="      28524"]
+BB28523 -> BB28527 [tailport=s, headport=n, headlabel="      28527"]
+BB28523 -> BB28531 [tailport=s, headport=n, color=gray, headlabel="      28531"]
+BB28524 [shape=record label="{94817: read-variable['config',v6,-]|94818: read-property[v6,'on',-]|94819: \<variable-non-null-undef\>['config']|94820: constant[\"error\",v7]|94821: read-variable['value',v8,-]}" ] 
+BB28524 -> BB28525 [tailport=s, headport=n, headlabel="      28525"]
+BB28524 -> BB28531 [tailport=s, headport=n, color=gray]
+BB28525 [shape=record label="{94822: call-config.on [v6,'on',v7,v8,-]*}" ] 
+BB28525 -> BB28526 [tailport=s, headport=n, headlabel="      28526"]
+BB28525 -> BB28531 [tailport=s, headport=n, color=gray]
+BB28526 [shape=record label="{94823: constant[undefined,v1]}" ] 
+BB28526 -> BB28530 [tailport=s, headport=n, headlabel="      28530"]
+BB28527 [shape=record label="{94824: read-variable['arguments',v8,-]|94825: read-property[v8,'length',v6]|94826: \<variable-non-null-undef\>['arguments']|94827: constant[2.0,v7]|94828: ===[v6,v7,v5]|94829: if[v5](true-block:28528,false-block:28529)}" ] 
+BB28527 -> BB28528 [tailport=s, headport=n, headlabel="      28528"]
+BB28527 -> BB28529 [tailport=s, headport=n, headlabel="      28529"]
+BB28527 -> BB28531 [tailport=s, headport=n, color=gray]
+BB28528 [shape=record label="{94830: read-variable['config',v10,-]|94831: read-variable['name',v11,-]|94832: read-variable['value',v9,-]|94833: write-property[v10,v11,v9]|94834: \<variable-non-null-undef\>['config']*}" ] 
+BB28528 -> BB28530 [tailport=s, headport=n]
+BB28528 -> BB28531 [tailport=s, headport=n, color=gray]
+BB28529 [shape=record label="{94835: read-variable['config',v9,-]|94836: read-variable['name',v10,-]|94837: read-property[v9,v10,v1]|94838: \<variable-non-null-undef\>['config']}" ] 
+BB28529 -> BB28530 [tailport=s, headport=n]
+BB28529 -> BB28531 [tailport=s, headport=n, color=gray]
+BB28530 [shape=record label="{94839: return[v1]}" ] 
+BB28531 [shape=record label="{94840: exceptional-return}" ] 
+//#$~ 50836
+}

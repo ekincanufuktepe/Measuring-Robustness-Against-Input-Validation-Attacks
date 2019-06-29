@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry305[shape=none,label=""];
+BB_entry305 -> BB4066 [tailport=s, headport=n, headlabel="    4066"]
+BB4066 [shape=record label="{11333: constant[undefined,v1]}" ] 
+BB4066 -> BB4067 [tailport=s, headport=n, headlabel="      4067"]
+BB4067 [shape=record label="{11334: read-variable['$this',v5,-]|11335: read-property[v5,'element',v4]|11336: \<variable-non-null-undef\>['$this']|11337: read-property[v4,'is',-]|11338: \<property-non-null-undef\>[v5,'element']|11339: constant[\":visible\",v6]}" ] 
+BB4067 -> BB4068 [tailport=s, headport=n, headlabel="      4068"]
+BB4067 -> BB4073 [tailport=s, headport=n, color=gray, headlabel="      4073"]
+BB4068 [shape=record label="{11340: call-$this.element.is [v4,'is',v6,v2]}" ] 
+BB4068 -> BB4069 [tailport=s, headport=n, headlabel="      4069"]
+BB4068 -> BB4073 [tailport=s, headport=n, color=gray]
+BB4069 [shape=record label="{11341: if[v2](true-block:4070,false-block:4072)}" ] 
+BB4069 -> BB4070 [tailport=s, headport=n, headlabel="      4070"]
+BB4069 -> BB4072 [tailport=s, headport=n, headlabel="      4072"]
+BB4070 [shape=record label="{11342: read-variable['$this',v8,-]|11343: read-property[v8,'check',-]|11344: \<variable-non-null-undef\>['$this']}" ] 
+BB4070 -> BB4071 [tailport=s, headport=n, headlabel="      4071"]
+BB4070 -> BB4073 [tailport=s, headport=n, color=gray]
+BB4071 [shape=record label="{11345: call-$this.check [v8,'check',-]*}" ] 
+BB4071 -> BB4072 [tailport=s, headport=n]
+BB4071 -> BB4073 [tailport=s, headport=n, color=gray]
+BB4072 [shape=record label="{11346: return[v1]}" ] 
+BB4073 [shape=record label="{11347: exceptional-return}" ] 
+//#$~ 3152
+}

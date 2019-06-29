@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2131[shape=none,label=""];
+BB_entry2131 -> BB24361 [tailport=s, headport=n, headlabel="    24361"]
+BB24361 [shape=record label="{80411: constant[undefined,v1]}" ] 
+BB24361 -> BB24362 [tailport=s, headport=n, headlabel="      24362"]
+BB24362 [shape=record label="{80412: read-variable['set',v3,v2]|80413: read-variable['controller',v4,-]|80414: constant[\"model\",v5]|80415: read-variable['modelStream',v8,-]|80416: read-property[v8,'value',-]|80417: \<variable-non-null-undef\>['modelStream']}" ] 
+BB24362 -> BB24363 [tailport=s, headport=n, headlabel="      24363"]
+BB24362 -> BB24366 [tailport=s, headport=n, color=gray, headlabel="      24366"]
+BB24363 [shape=record label="{80418: call-modelStream.value [v8,'value',v6]}" ] 
+BB24363 -> BB24364 [tailport=s, headport=n, headlabel="      24364"]
+BB24363 -> BB24366 [tailport=s, headport=n, color=gray]
+BB24364 [shape=record label="{80419: call-set [v2,v3,v4,v5,v6,-]*}" ] 
+BB24364 -> BB24365 [tailport=s, headport=n, headlabel="      24365"]
+BB24364 -> BB24366 [tailport=s, headport=n, color=gray]
+BB24365 [shape=record label="{80420: return[v1]}" ] 
+BB24366 [shape=record label="{80421: exceptional-return}" ] 
+//#$~ 45862
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry469[shape=none,label=""];
+BB_entry469 -> BB6749 [tailport=s, headport=n, headlabel="    6749"]
+BB6749 [shape=record label="{22994: constant[undefined,v1]|22995: vardecl['rootElement']}" ] 
+BB6749 -> BB6750 [tailport=s, headport=n, headlabel="      6750"]
+BB6750 [shape=record label="{22996: read-variable['getReactRootElementInContainer',v4,v3]|22997: read-variable['container',v5,-]}" ] 
+BB6750 -> BB6751 [tailport=s, headport=n, headlabel="      6751"]
+BB6750 -> BB6756 [tailport=s, headport=n, color=gray, headlabel="      6756"]
+BB6751 [shape=record label="{22998: call-getReactRootElementInContainer [v3,v4,v5,v2]}" ] 
+BB6751 -> BB6752 [tailport=s, headport=n, headlabel="      6752"]
+BB6751 -> BB6756 [tailport=s, headport=n, color=gray]
+BB6752 [shape=record label="{22999: write-variable[v2,'rootElement']*|23000: read-variable['rootElement',v1,-]|23001: if[v1](true-block:6753,false-block:6755)}" ] 
+BB6752 -> BB6755 [tailport=s, headport=n, headlabel="      6755"]
+BB6752 -> BB6753 [tailport=s, headport=n, headlabel="      6753"]
+BB6752 -> BB6756 [tailport=s, headport=n, color=gray]
+BB6753 [shape=record label="{23002: read-variable['ReactMount',v7,-]|23003: read-property[v7,'getID',-]|23004: \<variable-non-null-undef\>['ReactMount']|23005: read-variable['rootElement',v8,-]}" ] 
+BB6753 -> BB6754 [tailport=s, headport=n, headlabel="      6754"]
+BB6753 -> BB6756 [tailport=s, headport=n, color=gray]
+BB6754 [shape=record label="{23006: call-ReactMount.getID [v7,'getID',v8,v1]}" ] 
+BB6754 -> BB6755 [tailport=s, headport=n]
+BB6754 -> BB6756 [tailport=s, headport=n, color=gray]
+BB6755 [shape=record label="{23007: return[v1]}" ] 
+BB6756 [shape=record label="{23008: exceptional-return}" ] 
+//#$~ 11871
+}

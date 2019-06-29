@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB48 [tailport=s, headport=n, headlabel="    48"]
+BB48 [shape=record label="{175: constant[undefined,v1]}" ] 
+BB48 -> BB49 [tailport=s, headport=n, headlabel="      49"]
+BB49 [shape=record label="{176: read-variable['window',v7,-]|177: read-property[v7,'getComputedStyle',v6]|178: \<variable-non-null-undef\>['window']|179: if[v6](true-block:50,false-block:51)}" ] 
+BB49 -> BB50 [tailport=s, headport=n, headlabel="      50"]
+BB49 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB49 -> BB55 [tailport=s, headport=n, color=gray, headlabel="      55"]
+BB50 [shape=record label="{180: read-variable['getComputedStyle',v9,v8]|181: read-variable['node',v10,-]|182: constant[null,v11]}" ] 
+BB50 -> BB52 [tailport=s, headport=n, headlabel="      52"]
+BB50 -> BB55 [tailport=s, headport=n, color=gray]
+BB51 [shape=record label="{183: read-variable['node',v8,-]|184: read-property[v8,'currentStyle',v5]|185: \<variable-non-null-undef\>['node']}" ] 
+BB51 -> BB53 [tailport=s, headport=n, headlabel="      53"]
+BB51 -> BB55 [tailport=s, headport=n, color=gray]
+BB52 [shape=record label="{186: call-getComputedStyle [v8,v9,v10,v11,v5]}" ] 
+BB52 -> BB53 [tailport=s, headport=n]
+BB52 -> BB55 [tailport=s, headport=n, color=gray]
+BB53 [shape=record label="{187: read-property[v5,'position',v3]|188: constant[\"absolute\",v4]|189: ==[v3,v4,v2]|190: write-variable[v2,'bool']*}" ] 
+BB53 -> BB54 [tailport=s, headport=n, headlabel="      54"]
+BB53 -> BB55 [tailport=s, headport=n, color=gray]
+BB54 [shape=record label="{191: return[v1]}" ] 
+BB55 [shape=record label="{192: exceptional-return}" ] 
+//#$~ 102
+}

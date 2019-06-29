@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry859[shape=none,label=""];
+BB_entry859 -> BB11563 [tailport=s, headport=n, headlabel="    11563"]
+BB11563 [shape=record label="{33812: constant[undefined,v1]}" ] 
+BB11563 -> BB11564 [tailport=s, headport=n, headlabel="      11564"]
+BB11564 [shape=record label="{33813: read-variable['evt',v3,-]|33814: read-variable['evt',v5,-]|33815: read-property[v5,'charCode',v4]|33816: \<variable-non-null-undef\>['evt']|33817: if[v4](true-block:11565,false-block:11566)}" ] 
+BB11564 -> BB11565 [tailport=s, headport=n, headlabel="      11565"]
+BB11564 -> BB11566 [tailport=s, headport=n, headlabel="      11566"]
+BB11564 -> BB11572 [tailport=s, headport=n, color=gray, headlabel="      11572"]
+BB11565 [shape=record label="{33818: read-variable['String',v7,-]|33819: read-property[v7,'fromCharCode',-]|33820: \<variable-non-null-undef\>['String']|33821: read-variable['evt',v9,-]|33822: read-property[v9,'charCode',v8]|33823: \<variable-non-null-undef\>['evt']}" ] 
+BB11565 -> BB11567 [tailport=s, headport=n, headlabel="      11567"]
+BB11565 -> BB11572 [tailport=s, headport=n, color=gray]
+BB11566 [shape=record label="{33824: constant[\"\",v2]}" ] 
+BB11566 -> BB11568 [tailport=s, headport=n, headlabel="      11568"]
+BB11567 [shape=record label="{33825: call-String.fromCharCode [v7,'fromCharCode',v8,v2]}" ] 
+BB11567 -> BB11568 [tailport=s, headport=n]
+BB11567 -> BB11572 [tailport=s, headport=n, color=gray]
+BB11568 [shape=record label="{33826: write-property[v3,'keyChar',v2]|33827: \<variable-non-null-undef\>['evt']*|33828: read-variable['evt',v7,-]|33829: read-variable['evt',v8,-]|33830: read-property[v8,'keyChar',v6]|33831: \<variable-non-null-undef\>['evt']|33832: if[v6](true-block:11570,false-block:11569)}" ] 
+BB11568 -> BB11570 [tailport=s, headport=n, headlabel="      11570"]
+BB11568 -> BB11569 [tailport=s, headport=n, headlabel="      11569"]
+BB11568 -> BB11572 [tailport=s, headport=n, color=gray]
+BB11569 [shape=record label="{33833: read-variable['evt',v8,-]|33834: read-property[v8,'keyCode',v6]|33835: \<variable-non-null-undef\>['evt']}" ] 
+BB11569 -> BB11570 [tailport=s, headport=n]
+BB11569 -> BB11572 [tailport=s, headport=n, color=gray]
+BB11570 [shape=record label="{33836: write-property[v7,'charOrCode',v6]|33837: \<variable-non-null-undef\>['evt']*}" ] 
+BB11570 -> BB11571 [tailport=s, headport=n, headlabel="      11571"]
+BB11570 -> BB11572 [tailport=s, headport=n, color=gray]
+BB11571 [shape=record label="{33838: return[v1]}" ] 
+BB11572 [shape=record label="{33839: exceptional-return}" ] 
+//#$~ 16128
+}

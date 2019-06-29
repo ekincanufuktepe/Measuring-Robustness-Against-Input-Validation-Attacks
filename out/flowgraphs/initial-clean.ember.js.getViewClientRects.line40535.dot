@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1896[shape=none,label=""];
+BB_entry1896 -> BB21676 [tailport=s, headport=n, headlabel="    21676"]
+BB21676 [shape=record label="{72591: constant[undefined,v1]|72592: vardecl['range']}" ] 
+BB21676 -> BB21677 [tailport=s, headport=n, headlabel="      21677"]
+BB21677 [shape=record label="{72593: read-variable['getViewRange',v4,v3]|72594: read-variable['view',v5,-]}" ] 
+BB21677 -> BB21678 [tailport=s, headport=n, headlabel="      21678"]
+BB21677 -> BB21682 [tailport=s, headport=n, color=gray, headlabel="      21682"]
+BB21678 [shape=record label="{72595: call-getViewRange [v3,v4,v5,v2]}" ] 
+BB21678 -> BB21679 [tailport=s, headport=n, headlabel="      21679"]
+BB21678 -> BB21682 [tailport=s, headport=n, color=gray]
+BB21679 [shape=record label="{72596: write-variable[v2,'range']*|72597: read-variable['range',v7,-]|72598: read-property[v7,'getClientRects',-]|72599: \<variable-non-null-undef\>['range']}" ] 
+BB21679 -> BB21680 [tailport=s, headport=n, headlabel="      21680"]
+BB21679 -> BB21682 [tailport=s, headport=n, color=gray]
+BB21680 [shape=record label="{72600: call-range.getClientRects [v7,'getClientRects',v1]}" ] 
+BB21680 -> BB21681 [tailport=s, headport=n, headlabel="      21681"]
+BB21680 -> BB21682 [tailport=s, headport=n, color=gray]
+BB21681 [shape=record label="{72601: return[v1]}" ] 
+BB21682 [shape=record label="{72602: exceptional-return}" ] 
+//#$~ 40537
+}

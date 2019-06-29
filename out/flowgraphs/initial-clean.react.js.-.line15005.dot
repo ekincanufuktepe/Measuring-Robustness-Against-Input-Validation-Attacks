@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry634[shape=none,label=""];
+BB_entry634 -> BB8570 [tailport=s, headport=n, headlabel="    8570"]
+BB8570 [shape=record label="{28316: constant[undefined,v1]}" ] 
+BB8570 -> BB8571 [tailport=s, headport=n, headlabel="      8571"]
+BB8571 [shape=record label="{28317: constant[\"production\",v3]|28318: constant[\"development\",v4]|28319: !==[v3,v4,v2]|28320: if[v2](true-block:8572,false-block:8573)}" ] 
+BB8571 -> BB8572 [tailport=s, headport=n, headlabel="      8572"]
+BB8571 -> BB8573 [tailport=s, headport=n, headlabel="      8573"]
+BB8571 -> BB8578 [tailport=s, headport=n, color=gray, headlabel="      8578"]
+BB8572 [shape=record label="{28321: read-variable['invariant',v6,v5]|28322: read-variable['ReconcileTransaction',v7,-]|28323: constant[\"ReactUpdates: must provide a reconcile transaction class\",v8]}" ] 
+BB8572 -> BB8574 [tailport=s, headport=n, headlabel="      8574"]
+BB8572 -> BB8578 [tailport=s, headport=n, color=gray]
+BB8573 [shape=record label="{28324: read-variable['invariant',v6,v5]|28325: read-variable['ReconcileTransaction',v7,-]}" ] 
+BB8573 -> BB8575 [tailport=s, headport=n, headlabel="      8575"]
+BB8573 -> BB8578 [tailport=s, headport=n, color=gray]
+BB8574 [shape=record label="{28326: call-invariant [v5,v6,v7,v8,-]}" ] 
+BB8574 -> BB8576 [tailport=s, headport=n, headlabel="      8576"]
+BB8574 -> BB8578 [tailport=s, headport=n, color=gray]
+BB8575 [shape=record label="{28327: call-invariant [v5,v6,v7,-]}" ] 
+BB8575 -> BB8576 [tailport=s, headport=n]
+BB8575 -> BB8578 [tailport=s, headport=n, color=gray]
+BB8576 [shape=record label="{28328: read-variable['ReactUpdates',v6,-]|28329: read-variable['ReconcileTransaction',v5,-]|28330: write-property[v6,'ReactReconcileTransaction',v5]|28331: \<variable-non-null-undef\>['ReactUpdates']*}" ] 
+BB8576 -> BB8577 [tailport=s, headport=n, headlabel="      8577"]
+BB8576 -> BB8578 [tailport=s, headport=n, color=gray]
+BB8577 [shape=record label="{28332: return[v1]}" ] 
+BB8578 [shape=record label="{28333: exceptional-return}" ] 
+//#$~ 15010
+}

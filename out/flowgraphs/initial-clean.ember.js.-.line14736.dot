@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry680[shape=none,label=""];
+BB_entry680 -> BB8085 [tailport=s, headport=n, headlabel="    8085"]
+BB8085 [shape=record label="{27964: constant[undefined,v1]}" ] 
+BB8085 -> BB8086 [tailport=s, headport=n, headlabel="      8086"]
+BB8086 [shape=record label="{27965: read-variable['trySet',v3,v2]|27966: read-variable['obj',v4,-]|27967: read-variable['key',v5,-]|27968: read-variable['stream',v8,-]|27969: read-property[v8,'value',-]|27970: \<variable-non-null-undef\>['stream']}" ] 
+BB8086 -> BB8087 [tailport=s, headport=n, headlabel="      8087"]
+BB8086 -> BB8090 [tailport=s, headport=n, color=gray, headlabel="      8090"]
+BB8087 [shape=record label="{27971: call-stream.value [v8,'value',v6]}" ] 
+BB8087 -> BB8088 [tailport=s, headport=n, headlabel="      8088"]
+BB8087 -> BB8090 [tailport=s, headport=n, color=gray]
+BB8088 [shape=record label="{27972: call-trySet [v2,v3,v4,v5,v6,-]*}" ] 
+BB8088 -> BB8089 [tailport=s, headport=n, headlabel="      8089"]
+BB8088 -> BB8090 [tailport=s, headport=n, color=gray]
+BB8089 [shape=record label="{27973: return[v1]}" ] 
+BB8090 [shape=record label="{27974: exceptional-return}" ] 
+//#$~ 14737
+}

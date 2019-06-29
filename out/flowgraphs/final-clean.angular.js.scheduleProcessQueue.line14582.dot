@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry811[shape=none,label=""];
+BB_entry811 -> BB10581 [tailport=s, headport=n, headlabel="    10581"]
+BB10581 [shape=record label="{27514: constant[undefined,v1]}" ] 
+BB10581 -> BB10582 [tailport=s, headport=n, headlabel="      10582"]
+BB10582 [shape=record label="{27515: read-variable['state',v3,-]|27516: read-property[v3,'processScheduled',v2]|27517: \<variable-non-null-undef\>['state']|27518: if[v2](true-block:10584,false-block:10583)}" ] 
+BB10582 -> BB10584 [tailport=s, headport=n, headlabel="      10584"]
+BB10582 -> BB10583 [tailport=s, headport=n, headlabel="      10583"]
+BB10582 -> BB10589 [tailport=s, headport=n, color=gray, headlabel="      10589"]
+BB10583 [shape=record label="{27519: read-variable['state',v4,-]|27520: read-property[v4,'pending',v3]|27521: \<variable-non-null-undef\>['state']|27522: ![v3,v2]}" ] 
+BB10583 -> BB10584 [tailport=s, headport=n]
+BB10583 -> BB10589 [tailport=s, headport=n, color=gray]
+BB10584 [shape=record label="{27523: if[v2](true-block:10585,false-block:10586)}" ] 
+BB10584 -> BB10585 [tailport=s, headport=n, headlabel="      10585"]
+BB10584 -> BB10586 [tailport=s, headport=n, headlabel="      10586"]
+BB10585 [shape=record label="{27524: constant[undefined,v1]}" ] 
+BB10585 -> BB10588 [tailport=s, headport=n, headlabel="      10588"]
+BB10586 [shape=record label="{27525: read-variable['state',v4,-]|27526: constant[true,v3]|27527: write-property[v4,'processScheduled',v3]|27528: \<variable-non-null-undef\>['state']*|27529: read-variable['nextTick',v6,v5]|27530: function-expr[function ( ),v7]}" ] 
+BB10586 -> BB10587 [tailport=s, headport=n, headlabel="      10587"]
+BB10586 -> BB10589 [tailport=s, headport=n, color=gray]
+BB10587 [shape=record label="{27531: call-nextTick [v5,v6,v7,-]*}" ] 
+BB10587 -> BB10588 [tailport=s, headport=n]
+BB10587 -> BB10589 [tailport=s, headport=n, color=gray]
+BB10588 [shape=record label="{27532: return[v1]}" ] 
+BB10589 [shape=record label="{27533: exceptional-return}" ] 
+//#$~ 14585
+}

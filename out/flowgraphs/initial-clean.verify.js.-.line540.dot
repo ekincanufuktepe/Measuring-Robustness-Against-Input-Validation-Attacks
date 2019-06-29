@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry66[shape=none,label=""];
+BB_entry66 -> BB660 [tailport=s, headport=n, headlabel="    660"]
+BB660 [shape=record label="{1744: constant[undefined,v1]|1745: vardecl['_this']}" ] 
+BB660 -> BB661 [tailport=s, headport=n, headlabel="      661"]
+BB661 [shape=record label="{1746: read-variable['this',v2,-]|1747: write-variable[v2,'_this']*|1748: read-variable['window',v4,-]|1749: read-property[v4,'setTimeout',-]|1750: \<variable-non-null-undef\>['window']|1751: function-expr[function ( ),v5]|1752: read-variable['ms',v6,-]|1753: if[v6](true-block:663,false-block:662)}" ] 
+BB661 -> BB663 [tailport=s, headport=n, headlabel="      663"]
+BB661 -> BB662 [tailport=s, headport=n, headlabel="      662"]
+BB661 -> BB665 [tailport=s, headport=n, color=gray, headlabel="      665"]
+BB662 [shape=record label="{1754: constant[0.0,v6]}" ] 
+BB662 -> BB663 [tailport=s, headport=n]
+BB663 [shape=record label="{1755: call-window.setTimeout [v4,'setTimeout',v5,v6,v1]}" ] 
+BB663 -> BB664 [tailport=s, headport=n, headlabel="      664"]
+BB663 -> BB665 [tailport=s, headport=n, color=gray]
+BB664 [shape=record label="{1756: return[v1]}" ] 
+BB665 [shape=record label="{1757: exceptional-return}" ] 
+//#$~ 544
+}

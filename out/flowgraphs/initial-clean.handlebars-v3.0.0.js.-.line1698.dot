@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry131[shape=none,label=""];
+BB_entry131 -> BB3615 [tailport=s, headport=n, headlabel="    3615"]
+BB3615 [shape=record label="{11816: constant[undefined,v1]|11817: vardecl['strip']}" ] 
+BB3615 -> BB3616 [tailport=s, headport=n, headlabel="      3616"]
+BB3616 [shape=record label="{11818: read-variable['node',v3,-]|11819: read-property[v3,'strip',v2]|11820: \<variable-non-null-undef\>['node']|11821: if[v2](true-block:3618,false-block:3617)}" ] 
+BB3616 -> BB3618 [tailport=s, headport=n, headlabel="      3618"]
+BB3616 -> BB3617 [tailport=s, headport=n, headlabel="      3617"]
+BB3616 -> BB3620 [tailport=s, headport=n, color=gray, headlabel="      3620"]
+BB3617 [shape=record label="{11822: new[v2]}" ] 
+BB3617 -> BB3618 [tailport=s, headport=n]
+BB3618 [shape=record label="{11823: write-variable[v2,'strip']*|11824: new[v1]|11825: constant[true,v3]|11826: write-property[v1,'inlineStandalone',v3]|11827: read-variable['strip',v5,-]|11828: read-property[v5,'open',v4]|11829: \<variable-non-null-undef\>['strip']|11830: write-property[v1,'open',v4]|11831: read-variable['strip',v7,-]|11832: read-property[v7,'close',v6]|11833: \<variable-non-null-undef\>['strip']|11834: write-property[v1,'close',v6]}" ] 
+BB3618 -> BB3619 [tailport=s, headport=n, headlabel="      3619"]
+BB3618 -> BB3620 [tailport=s, headport=n, color=gray]
+BB3619 [shape=record label="{11835: return[v1]}" ] 
+BB3620 [shape=record label="{11836: exceptional-return}" ] 
+//#$~ 1704
+}

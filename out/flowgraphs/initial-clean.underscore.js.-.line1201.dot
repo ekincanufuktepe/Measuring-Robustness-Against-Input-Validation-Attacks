@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry121[shape=none,label=""];
+BB_entry121 -> BB1514 [tailport=s, headport=n, headlabel="    1514"]
+BB1514 [shape=record label="{4059: constant[undefined,v1]}" ] 
+BB1514 -> BB1515 [tailport=s, headport=n, headlabel="      1515"]
+BB1515 [shape=record label="{4060: read-variable['obj',v3,-]|4061: if[v3](true-block:1516,false-block:1517)}" ] 
+BB1515 -> BB1517 [tailport=s, headport=n, headlabel="      1517"]
+BB1515 -> BB1516 [tailport=s, headport=n, headlabel="      1516"]
+BB1515 -> BB1519 [tailport=s, headport=n, color=gray, headlabel="      1519"]
+BB1516 [shape=record label="{4062: read-variable['obj',v6,-]|4063: read-property[v6,'nodeType',v4]|4064: \<variable-non-null-undef\>['obj']|4065: constant[1.0,v5]|4066: ===[v4,v5,v3]}" ] 
+BB1516 -> BB1517 [tailport=s, headport=n]
+BB1516 -> BB1519 [tailport=s, headport=n, color=gray]
+BB1517 [shape=record label="{4067: ![v3,v2]|4068: ![v2,v1]}" ] 
+BB1517 -> BB1518 [tailport=s, headport=n, headlabel="      1518"]
+BB1517 -> BB1519 [tailport=s, headport=n, color=gray]
+BB1518 [shape=record label="{4069: return[v1]}" ] 
+BB1519 [shape=record label="{4070: exceptional-return}" ] 
+//#$~ 1202
+}

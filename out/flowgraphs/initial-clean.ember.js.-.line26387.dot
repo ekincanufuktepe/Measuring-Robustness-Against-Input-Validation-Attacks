@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1189[shape=none,label=""];
+BB_entry1189 -> BB14254 [tailport=s, headport=n, headlabel="    14254"]
+BB14254 [shape=record label="{49165: constant[undefined,v1]|49166: vardecl['trackedArray']}" ] 
+BB14254 -> BB14255 [tailport=s, headport=n, headlabel="      14255"]
+BB14255 [shape=record label="{49167: read-variable['this',v4,-]|49168: read-property[v4,'trackedArraysByGuid',v3]|49169: read-variable['dependentKey',v5,-]|49170: read-property[v3,v5,v2]|49171: \<property-non-null-undef\>[v4,'trackedArraysByGuid']|49172: write-variable[v2,'trackedArray']*|49173: read-variable['trackedArray',v6,-]|49174: if[v6](true-block:14256,false-block:14258)}" ] 
+BB14255 -> BB14256 [tailport=s, headport=n, headlabel="      14256"]
+BB14255 -> BB14258 [tailport=s, headport=n, headlabel="      14258"]
+BB14255 -> BB14261 [tailport=s, headport=n, color=gray, headlabel="      14261"]
+BB14256 [shape=record label="{49175: read-variable['trackedArray',v8,-]|49176: read-property[v8,'removeItems',-]|49177: \<variable-non-null-undef\>['trackedArray']|49178: read-variable['index',v9,-]|49179: read-variable['removedCount',v10,-]}" ] 
+BB14256 -> BB14257 [tailport=s, headport=n, headlabel="      14257"]
+BB14256 -> BB14261 [tailport=s, headport=n, color=gray]
+BB14257 [shape=record label="{49180: call-trackedArray.removeItems [v8,'removeItems',v9,v10,v1]}" ] 
+BB14257 -> BB14260 [tailport=s, headport=n, headlabel="      14260"]
+BB14257 -> BB14261 [tailport=s, headport=n, color=gray]
+BB14258 [shape=record label="{49181: read-variable['Array',v7,-]}" ] 
+BB14258 -> BB14259 [tailport=s, headport=n, headlabel="      14259"]
+BB14258 -> BB14261 [tailport=s, headport=n, color=gray]
+BB14259 [shape=record label="{49182: construct [-,v7,v1]}" ] 
+BB14259 -> BB14260 [tailport=s, headport=n]
+BB14259 -> BB14261 [tailport=s, headport=n, color=gray]
+BB14260 [shape=record label="{49183: return[v1]}" ] 
+BB14261 [shape=record label="{49184: exceptional-return}" ] 
+//#$~ 26394
+}

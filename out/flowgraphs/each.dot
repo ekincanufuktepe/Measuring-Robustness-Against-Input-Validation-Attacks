@@ -1,0 +1,33 @@
+digraph {
+compound=true
+subgraph cluster0 {
+label="<main> function ( )\njquery/each.js:1:1";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry0[shape=none,label=""];
+BB_entry0 -> BB0 [tailport=s, headport=n, headlabel="    0"]
+BB0 [shape=record label="{0: constant[undefined,v1]|1: function-decl[function each ( callback args ),-]}" ] 
+BB0 -> BB1 [tailport=s, headport=n, headlabel="      1"]
+BB1 [shape=record label="{2: return[v1]}" ] 
+BB2 [shape=record label="{3: exceptional-return}" ] 
+}
+subgraph cluster1 {
+label="function each ( callback args )\njquery/each.js:1:1\nouter: <main>";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry1[shape=none,label=""];
+BB_entry1 -> BB3 [tailport=s, headport=n, headlabel="    3"]
+BB3 [shape=record label="{4: constant[undefined,v1]}" ] 
+BB3 -> BB4 [tailport=s, headport=n, headlabel="      4"]
+BB4 [shape=record label="{5: read-variable['jQuery',v3,-]|6: read-property[v3,'each',-]|7: \<variable-non-null-undef\>['jQuery']|8: read-variable['this',v4,-]|9: read-variable['callback',v5,-]|10: read-variable['args',v6,-]}" ] 
+BB4 -> BB5 [tailport=s, headport=n, headlabel="      5"]
+BB4 -> BB7 [tailport=s, headport=n, color=gray, headlabel="      7"]
+BB5 [shape=record label="{11: call[v3,'each',v4,v5,v6,v1]}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB5 -> BB7 [tailport=s, headport=n, color=gray]
+BB6 [shape=record label="{12: return[v1]}" ] 
+BB7 [shape=record label="{13: exceptional-return}" ] 
+}
+}

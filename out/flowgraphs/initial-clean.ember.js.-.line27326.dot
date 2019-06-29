@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1248[shape=none,label=""];
+BB_entry1248 -> BB14829 [tailport=s, headport=n, headlabel="    14829"]
+BB14829 [shape=record label="{51161: constant[undefined,v1]|51162: vardecl['filterIndex']}" ] 
+BB14829 -> BB14830 [tailport=s, headport=n, headlabel="      14830"]
+BB14830 [shape=record label="{51163: read-variable['instanceMeta',v5,-]|51164: read-property[v5,'filteredArrayIndexes',v4]|51165: \<variable-non-null-undef\>['instanceMeta']|51166: read-property[v4,'removeItem',-]|51167: \<property-non-null-undef\>[v5,'filteredArrayIndexes']|51168: read-variable['changeMeta',v7,-]|51169: read-property[v7,'index',v6]|51170: \<variable-non-null-undef\>['changeMeta']}" ] 
+BB14830 -> BB14831 [tailport=s, headport=n, headlabel="      14831"]
+BB14830 -> BB14837 [tailport=s, headport=n, color=gray, headlabel="      14837"]
+BB14831 [shape=record label="{51171: call-instanceMeta.filteredArrayIndexes.removeItem [v4,'removeItem',v6,v2]}" ] 
+BB14831 -> BB14832 [tailport=s, headport=n, headlabel="      14832"]
+BB14831 -> BB14837 [tailport=s, headport=n, color=gray]
+BB14832 [shape=record label="{51172: write-variable[v2,'filterIndex']*|51173: read-variable['filterIndex',v9,-]|51174: constant[-1.0,v10]|51175: \>[v9,v10,v8]|51176: if[v8](true-block:14833,false-block:14835)}" ] 
+BB14832 -> BB14833 [tailport=s, headport=n, headlabel="      14833"]
+BB14832 -> BB14835 [tailport=s, headport=n, headlabel="      14835"]
+BB14832 -> BB14837 [tailport=s, headport=n, color=gray]
+BB14833 [shape=record label="{51177: read-variable['array',v12,-]|51178: read-property[v12,'removeAt',-]|51179: \<variable-non-null-undef\>['array']|51180: read-variable['filterIndex',v13,-]}" ] 
+BB14833 -> BB14834 [tailport=s, headport=n, headlabel="      14834"]
+BB14833 -> BB14837 [tailport=s, headport=n, color=gray]
+BB14834 [shape=record label="{51181: call-array.removeAt [v12,'removeAt',v13,-]*}" ] 
+BB14834 -> BB14835 [tailport=s, headport=n]
+BB14834 -> BB14837 [tailport=s, headport=n, color=gray]
+BB14835 [shape=record label="{51182: read-variable['array',v1,-]}" ] 
+BB14835 -> BB14836 [tailport=s, headport=n, headlabel="      14836"]
+BB14835 -> BB14837 [tailport=s, headport=n, color=gray]
+BB14836 [shape=record label="{51183: return[v1]}" ] 
+BB14837 [shape=record label="{51184: exceptional-return}" ] 
+//#$~ 27333
+}

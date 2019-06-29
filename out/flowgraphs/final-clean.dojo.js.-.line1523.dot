@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB1205 [tailport=s, headport=n, headlabel="    1205"]
+BB1205 [shape=record label="{3385: constant[undefined,v1]}" ] 
+BB1205 -> BB1206 [tailport=s, headport=n, headlabel="      1206"]
+BB1206 [shape=record label="{3386: read-variable['dojo',v3,-]|3387: read-property[v3,'require',-]|3388: \<variable-non-null-undef\>['dojo']|3389: read-variable['mid',v4,-]}" ] 
+BB1206 -> BB1207 [tailport=s, headport=n, headlabel="      1207"]
+BB1206 -> BB1209 [tailport=s, headport=n, color=gray, headlabel="      1209"]
+BB1207 [shape=record label="{3390: call-dojo.require [v3,'require',v4,-]*}" ] 
+BB1207 -> BB1208 [tailport=s, headport=n, headlabel="      1208"]
+BB1207 -> BB1209 [tailport=s, headport=n, color=gray]
+BB1208 [shape=record label="{3391: return[v1]}" ] 
+BB1209 [shape=record label="{3392: exceptional-return}" ] 
+//#$~ 1523
+}

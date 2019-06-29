@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1999[shape=none,label=""];
+BB_entry1999 -> BB23007 [tailport=s, headport=n, headlabel="    23007"]
+BB23007 [shape=record label="{76495: constant[undefined,v1]|76496: vardecl['value']}" ] 
+BB23007 -> BB23008 [tailport=s, headport=n, headlabel="      23008"]
+BB23008 [shape=record label="{76497: read-variable['this',v4,-]|76498: read-property[v4,'normalizedValue',-]}" ] 
+BB23008 -> BB23009 [tailport=s, headport=n, headlabel="      23009"]
+BB23008 -> BB23012 [tailport=s, headport=n, color=gray, headlabel="      23012"]
+BB23009 [shape=record label="{76499: call-this.normalizedValue [v4,'normalizedValue',v2]}" ] 
+BB23009 -> BB23010 [tailport=s, headport=n, headlabel="      23010"]
+BB23009 -> BB23012 [tailport=s, headport=n, color=gray]
+BB23010 [shape=record label="{76500: write-variable[v2,'value']*|76501: read-variable['this',v6,-]|76502: read-variable['value',v5,-]|76503: write-property[v6,'_lastNormalizedValue',v5]*|76504: read-variable['buffer',v8,-]|76505: read-variable['value',v7,-]|76506: write-property[v8,'_element',v7]|76507: \<variable-non-null-undef\>['buffer']*}" ] 
+BB23010 -> BB23011 [tailport=s, headport=n, headlabel="      23011"]
+BB23010 -> BB23012 [tailport=s, headport=n, color=gray]
+BB23011 [shape=record label="{76508: return[v1]}" ] 
+BB23012 [shape=record label="{76509: exceptional-return}" ] 
+//#$~ 43064
+}

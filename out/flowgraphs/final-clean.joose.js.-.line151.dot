@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry18[shape=none,label=""];
+BB_entry18 -> BB199 [tailport=s, headport=n, headlabel="    199"]
+BB199 [shape=record label="{870: constant[undefined,v1]|871: vardecl['html']}" ] 
+BB199 -> BB200 [tailport=s, headport=n, headlabel="      200"]
+BB200 [shape=record label="{872: constant[\"\",v2]|873: write-variable[v2,'html']*|874: read-variable['Joose',v5,-]|875: read-property[v5,'A',v4]|876: \<variable-non-null-undef\>['Joose']|877: read-property[v4,'each',-]|878: \<property-non-null-undef\>[v5,'A']|879: read-variable['this',v8,-]|880: read-property[v8,'components',-]}" ] 
+BB200 -> BB201 [tailport=s, headport=n, headlabel="      201"]
+BB200 -> BB207 [tailport=s, headport=n, color=gray, headlabel="      207"]
+BB201 [shape=record label="{881: call-this.components [v8,'components',v6]}" ] 
+BB201 -> BB202 [tailport=s, headport=n, headlabel="      202"]
+BB201 -> BB207 [tailport=s, headport=n, color=gray]
+BB202 [shape=record label="{882: function-expr[function ( name ),v9]}" ] 
+BB202 -> BB203 [tailport=s, headport=n, headlabel="      203"]
+BB203 [shape=record label="{883: call-Joose.A.each [v4,'each',v6,v9,-]*}" ] 
+BB203 -> BB204 [tailport=s, headport=n, headlabel="      204"]
+BB203 -> BB207 [tailport=s, headport=n, color=gray]
+BB204 [shape=record label="{884: read-variable['document',v11,-]|885: read-property[v11,'write',-]|886: \<variable-non-null-undef\>['document']|887: read-variable['html',v12,-]}" ] 
+BB204 -> BB205 [tailport=s, headport=n, headlabel="      205"]
+BB204 -> BB207 [tailport=s, headport=n, color=gray]
+BB205 [shape=record label="{888: call-document.write [v11,'write',v12,-]*}" ] 
+BB205 -> BB206 [tailport=s, headport=n, headlabel="      206"]
+BB205 -> BB207 [tailport=s, headport=n, color=gray]
+BB206 [shape=record label="{889: return[v1]}" ] 
+BB207 [shape=record label="{890: exceptional-return}" ] 
+//#$~ 158
+}

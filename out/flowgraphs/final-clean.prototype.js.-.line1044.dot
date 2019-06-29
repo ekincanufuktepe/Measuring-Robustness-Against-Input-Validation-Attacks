@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry149[shape=none,label=""];
+BB_entry149 -> BB1651 [tailport=s, headport=n, headlabel="    1651"]
+BB1651 [shape=record label="{4455: constant[undefined,v1]}" ] 
+BB1651 -> BB1652 [tailport=s, headport=n, headlabel="      1652"]
+BB1652 [shape=record label="{4456: read-variable['iterator',v3,v2]|4457: read-variable['collections',v6,-]|4458: read-property[v6,'pluck',-]|4459: \<variable-non-null-undef\>['collections']|4460: read-variable['index',v7,-]}" ] 
+BB1652 -> BB1653 [tailport=s, headport=n, headlabel="      1653"]
+BB1652 -> BB1656 [tailport=s, headport=n, color=gray, headlabel="      1656"]
+BB1653 [shape=record label="{4461: call-collections.pluck [v6,'pluck',v7,v4]}" ] 
+BB1653 -> BB1654 [tailport=s, headport=n, headlabel="      1654"]
+BB1653 -> BB1656 [tailport=s, headport=n, color=gray]
+BB1654 [shape=record label="{4462: call-iterator [v2,v3,v4,v1]}" ] 
+BB1654 -> BB1655 [tailport=s, headport=n, headlabel="      1655"]
+BB1654 -> BB1656 [tailport=s, headport=n, color=gray]
+BB1655 [shape=record label="{4463: return[v1]}" ] 
+BB1656 [shape=record label="{4464: exceptional-return}" ] 
+//#$~ 1045
+}

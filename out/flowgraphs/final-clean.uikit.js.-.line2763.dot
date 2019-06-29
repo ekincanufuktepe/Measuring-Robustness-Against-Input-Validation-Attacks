@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry272[shape=none,label=""];
+BB_entry272 -> BB3609 [tailport=s, headport=n, headlabel="    3609"]
+BB3609 [shape=record label="{10091: constant[undefined,v1]}" ] 
+BB3609 -> BB3610 [tailport=s, headport=n, headlabel="      3610"]
+BB3610 [shape=record label="{10092: read-variable['UI',v5,-]|10093: read-property[v5,'$',-]|10094: \<variable-non-null-undef\>['UI']|10095: constant[\"[data-uk-switcher]\",v6]|10096: read-variable['context',v7,-]}" ] 
+BB3610 -> BB3611 [tailport=s, headport=n, headlabel="      3611"]
+BB3610 -> BB3615 [tailport=s, headport=n, color=gray, headlabel="      3615"]
+BB3611 [shape=record label="{10097: call-UI.$ [v5,'$',v6,v7,v3]}" ] 
+BB3611 -> BB3612 [tailport=s, headport=n, headlabel="      3612"]
+BB3611 -> BB3615 [tailport=s, headport=n, color=gray]
+BB3612 [shape=record label="{10098: read-property[v3,'each',-]|10099: function-expr[function ( ),v8]}" ] 
+BB3612 -> BB3613 [tailport=s, headport=n, headlabel="      3613"]
+BB3612 -> BB3615 [tailport=s, headport=n, color=gray]
+BB3613 [shape=record label="{10100: call-null [v3,'each',v8,-]*}" ] 
+BB3613 -> BB3614 [tailport=s, headport=n, headlabel="      3614"]
+BB3613 -> BB3615 [tailport=s, headport=n, color=gray]
+BB3614 [shape=record label="{10101: return[v1]}" ] 
+BB3615 [shape=record label="{10102: exceptional-return}" ] 
+//#$~ 2769
+}

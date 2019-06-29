@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry628[shape=none,label=""];
+BB_entry628 -> BB8504 [tailport=s, headport=n, headlabel="    8504"]
+BB8504 [shape=record label="{21880: constant[undefined,v1]}" ] 
+BB8504 -> BB8505 [tailport=s, headport=n, headlabel="      8505"]
+BB8505 [shape=record label="{21881: read-variable['findConstantAndWatchExpressions',v3,v2]|21882: read-variable['expr',v5,-]|21883: read-property[v5,'expression',v4]|21884: \<variable-non-null-undef\>['expr']|21885: read-variable['$filter',v6,-]}" ] 
+BB8505 -> BB8506 [tailport=s, headport=n, headlabel="      8506"]
+BB8505 -> BB8511 [tailport=s, headport=n, color=gray, headlabel="      8511"]
+BB8506 [shape=record label="{21886: call-findConstantAndWatchExpressions [v2,v3,v4,v6,-]*}" ] 
+BB8506 -> BB8507 [tailport=s, headport=n, headlabel="      8507"]
+BB8506 -> BB8511 [tailport=s, headport=n, color=gray]
+BB8507 [shape=record label="{21887: read-variable['allConstants',v7,-]|21888: if[v7](true-block:8508,false-block:8509)}" ] 
+BB8507 -> BB8509 [tailport=s, headport=n, headlabel="      8509"]
+BB8507 -> BB8508 [tailport=s, headport=n, headlabel="      8508"]
+BB8507 -> BB8511 [tailport=s, headport=n, color=gray]
+BB8508 [shape=record label="{21889: read-variable['expr',v9,-]|21890: read-property[v9,'expression',v8]|21891: \<variable-non-null-undef\>['expr']|21892: read-property[v8,'constant',v7]|21893: \<property-non-null-undef\>[v9,'expression']}" ] 
+BB8508 -> BB8509 [tailport=s, headport=n]
+BB8508 -> BB8511 [tailport=s, headport=n, color=gray]
+BB8509 [shape=record label="{21894: write-variable[v7,'allConstants']*}" ] 
+BB8509 -> BB8510 [tailport=s, headport=n, headlabel="      8510"]
+BB8510 [shape=record label="{21895: return[v1]}" ] 
+BB8511 [shape=record label="{21896: exceptional-return}" ] 
+//#$~ 12968
+}

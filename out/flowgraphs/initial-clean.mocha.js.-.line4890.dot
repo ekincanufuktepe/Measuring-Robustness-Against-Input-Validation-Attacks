@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry378[shape=none,label=""];
+BB_entry378 -> BB4223 [tailport=s, headport=n, headlabel="    4223"]
+BB4223 [shape=record label="{13330: constant[undefined,v1]|13331: vardecl['self']|13332: vardecl['orig']|13333: function-decl[function next ( suite ),-]}" ] 
+BB4223 -> BB4224 [tailport=s, headport=n, headlabel="      4224"]
+BB4224 [shape=record label="{13334: read-variable['this',v2,-]|13335: write-variable[v2,'self']*|13336: read-variable['this',v4,-]|13337: read-property[v4,'suite',v3]|13338: write-variable[v3,'orig']*|13339: read-variable['next',v6,v5]|13340: read-variable['suites',v9,-]|13341: read-property[v9,'pop',-]|13342: \<variable-non-null-undef\>['suites']}" ] 
+BB4224 -> BB4225 [tailport=s, headport=n, headlabel="      4225"]
+BB4224 -> BB4228 [tailport=s, headport=n, color=gray, headlabel="      4228"]
+BB4225 [shape=record label="{13343: call-suites.pop [v9,'pop',v7]}" ] 
+BB4225 -> BB4226 [tailport=s, headport=n, headlabel="      4226"]
+BB4225 -> BB4228 [tailport=s, headport=n, color=gray]
+BB4226 [shape=record label="{13344: call-next [v5,v6,v7,-]*}" ] 
+BB4226 -> BB4227 [tailport=s, headport=n, headlabel="      4227"]
+BB4226 -> BB4228 [tailport=s, headport=n, color=gray]
+BB4227 [shape=record label="{13345: return[v1]}" ] 
+BB4228 [shape=record label="{13346: exceptional-return}" ] 
+//#$~ 4913
+}

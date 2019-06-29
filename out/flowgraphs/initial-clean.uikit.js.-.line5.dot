@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB72 [tailport=s, headport=n, headlabel="    72"]
+BB72 [shape=record label="{153: constant[undefined,v1]|154: vardecl['uikit']}" ] 
+BB72 -> BB73 [tailport=s, headport=n, headlabel="      73"]
+BB73 [shape=record label="{155: read-variable['window',v3,-]|156: read-property[v3,'UIkit',v2]|157: \<variable-non-null-undef\>['window']|158: if[v2](true-block:76,false-block:74)}" ] 
+BB73 -> BB76 [tailport=s, headport=n, headlabel="      76"]
+BB73 -> BB74 [tailport=s, headport=n, headlabel="      74"]
+BB73 -> BB78 [tailport=s, headport=n, color=gray, headlabel="      78"]
+BB74 [shape=record label="{159: read-variable['core',v4,v3]|160: read-variable['window',v5,-]|161: read-variable['window',v7,-]|162: read-property[v7,'jQuery',v6]|163: \<variable-non-null-undef\>['window']|164: read-variable['window',v9,-]|165: read-property[v9,'document',v8]|166: \<variable-non-null-undef\>['window']}" ] 
+BB74 -> BB75 [tailport=s, headport=n, headlabel="      75"]
+BB74 -> BB78 [tailport=s, headport=n, color=gray]
+BB75 [shape=record label="{167: call-core [v3,v4,v5,v6,v8,v2]}" ] 
+BB75 -> BB76 [tailport=s, headport=n]
+BB75 -> BB78 [tailport=s, headport=n, color=gray]
+BB76 [shape=record label="{168: write-variable[v2,'uikit']*|169: read-variable['uikit',v4,-]|170: function-expr[function ( res req onload config ),v3]|171: write-property[v4,'load',v3]|172: \<variable-non-null-undef\>['uikit']*|173: read-variable['uikit',v1,-]}" ] 
+BB76 -> BB77 [tailport=s, headport=n, headlabel="      77"]
+BB76 -> BB78 [tailport=s, headport=n, color=gray]
+BB77 [shape=record label="{174: return[v1]}" ] 
+BB78 [shape=record label="{175: exceptional-return}" ] 
+//#$~ 27
+}

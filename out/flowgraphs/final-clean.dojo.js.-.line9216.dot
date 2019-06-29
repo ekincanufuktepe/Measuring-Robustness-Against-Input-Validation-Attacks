@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry459[shape=none,label=""];
+BB_entry459 -> BB6514 [tailport=s, headport=n, headlabel="    6514"]
+BB6514 [shape=record label="{19416: constant[undefined,v1]}" ] 
+BB6514 -> BB6515 [tailport=s, headport=n, headlabel="      6515"]
+BB6515 [shape=record label="{19417: read-variable['elem',v1,-]|19418: if[v1](true-block:6516,false-block:6519)}" ] 
+BB6515 -> BB6519 [tailport=s, headport=n, headlabel="      6519"]
+BB6515 -> BB6516 [tailport=s, headport=n, headlabel="      6516"]
+BB6515 -> BB6520 [tailport=s, headport=n, color=gray, headlabel="      6520"]
+BB6516 [shape=record label="{19419: read-variable['elem',v2,-]|19420: read-property[v2,'getAttribute',v1]|19421: \<variable-non-null-undef\>['elem']|19422: if[v1](true-block:6517,false-block:6519)}" ] 
+BB6516 -> BB6519 [tailport=s, headport=n]
+BB6516 -> BB6517 [tailport=s, headport=n, headlabel="      6517"]
+BB6516 -> BB6520 [tailport=s, headport=n, color=gray]
+BB6517 [shape=record label="{19423: read-variable['elem',v4,-]|19424: read-property[v4,'hasAttribute',-]|19425: \<variable-non-null-undef\>['elem']|19426: read-variable['cond',v5,-]}" ] 
+BB6517 -> BB6518 [tailport=s, headport=n, headlabel="      6518"]
+BB6517 -> BB6520 [tailport=s, headport=n, color=gray]
+BB6518 [shape=record label="{19427: call-elem.hasAttribute [v4,'hasAttribute',v5,v1]}" ] 
+BB6518 -> BB6519 [tailport=s, headport=n]
+BB6518 -> BB6520 [tailport=s, headport=n, color=gray]
+BB6519 [shape=record label="{19428: return[v1]}" ] 
+BB6520 [shape=record label="{19429: exceptional-return}" ] 
+//#$~ 9217
+}

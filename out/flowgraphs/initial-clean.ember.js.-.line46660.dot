@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2207[shape=none,label=""];
+BB_entry2207 -> BB25041 [tailport=s, headport=n, headlabel="    25041"]
+BB25041 [shape=record label="{82361: constant[undefined,v1]}" ] 
+BB25041 -> BB25042 [tailport=s, headport=n, headlabel="      25042"]
+BB25042 [shape=record label="{82362: read-variable['contextualElement',v3,-]|82363: ![v3,v2]|82364: if[v2](true-block:25043,false-block:25044)}" ] 
+BB25042 -> BB25044 [tailport=s, headport=n, headlabel="      25044"]
+BB25042 -> BB25043 [tailport=s, headport=n, headlabel="      25043"]
+BB25042 -> BB25049 [tailport=s, headport=n, color=gray, headlabel="      25049"]
+BB25043 [shape=record label="{82365: read-variable['parent',v6,-]|82366: read-property[v6,'nodeType',v4]|82367: \<variable-non-null-undef\>['parent']|82368: constant[1.0,v5]|82369: ===[v4,v5,v2]}" ] 
+BB25043 -> BB25044 [tailport=s, headport=n]
+BB25043 -> BB25049 [tailport=s, headport=n, color=gray]
+BB25044 [shape=record label="{82370: if[v2](true-block:25045,false-block:25046)}" ] 
+BB25044 -> BB25045 [tailport=s, headport=n, headlabel="      25045"]
+BB25044 -> BB25046 [tailport=s, headport=n, headlabel="      25046"]
+BB25045 [shape=record label="{82371: read-variable['parent',v4,-]|82372: write-variable[v4,'contextualElement']*}" ] 
+BB25045 -> BB25046 [tailport=s, headport=n]
+BB25045 -> BB25049 [tailport=s, headport=n, color=gray]
+BB25046 [shape=record label="{82373: read-variable['Morph',v4,-]|82374: read-variable['parent',v5,-]|82375: read-variable['start',v6,-]|82376: read-variable['end',v7,-]|82377: read-variable['this',v8,-]|82378: read-variable['contextualElement',v9,-]}" ] 
+BB25046 -> BB25047 [tailport=s, headport=n, headlabel="      25047"]
+BB25046 -> BB25049 [tailport=s, headport=n, color=gray]
+BB25047 [shape=record label="{82379: construct [-,v4,v5,v6,v7,v8,v9,v1]}" ] 
+BB25047 -> BB25048 [tailport=s, headport=n, headlabel="      25048"]
+BB25047 -> BB25049 [tailport=s, headport=n, color=gray]
+BB25048 [shape=record label="{82380: return[v1]}" ] 
+BB25049 [shape=record label="{82381: exceptional-return}" ] 
+//#$~ 46664
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry128[shape=none,label=""];
+BB_entry128 -> BB1748 [tailport=s, headport=n, headlabel="    1748"]
+BB1748 [shape=record label="{4791: constant[undefined,v1]|4792: vardecl['name']}" ] 
+BB1748 -> BB1749 [tailport=s, headport=n, headlabel="      1749"]
+BB1749 [shape=record label="{4793: read-variable['elem',v5,-]|4794: read-property[v5,'nodeName',v4]|4795: \<variable-non-null-undef\>['elem']|4796: read-property[v4,'toLowerCase',-]|4797: \<property-non-null-undef\>[v5,'nodeName']}" ] 
+BB1749 -> BB1750 [tailport=s, headport=n, headlabel="      1750"]
+BB1749 -> BB1756 [tailport=s, headport=n, color=gray, headlabel="      1756"]
+BB1750 [shape=record label="{4798: call-0:0[v4,'toLowerCase',v2]}" ] 
+BB1750 -> BB1751 [tailport=s, headport=n, headlabel="      1751"]
+BB1750 -> BB1756 [tailport=s, headport=n, color=gray]
+BB1751 [shape=record label="{4799: write-variable[v2,'name']*|4800: read-variable['name',v6,-]|4801: constant[\"input\",v7]|4802: ===[v6,v7,v1]|4803: if[v1](true-block:1752,false-block:1753)}" ] 
+BB1751 -> BB1753 [tailport=s, headport=n, headlabel="      1753"]
+BB1751 -> BB1752 [tailport=s, headport=n, headlabel="      1752"]
+BB1751 -> BB1756 [tailport=s, headport=n, color=gray]
+BB1752 [shape=record label="{4804: read-variable['elem',v10,-]|4805: read-property[v10,'type',v8]|4806: \<variable-non-null-undef\>['elem']|4807: constant[\"button\",v9]|4808: ===[v8,v9,v1]}" ] 
+BB1752 -> BB1753 [tailport=s, headport=n]
+BB1752 -> BB1756 [tailport=s, headport=n, color=gray]
+BB1753 [shape=record label="{4809: if[v1](true-block:1755,false-block:1754)}" ] 
+BB1753 -> BB1755 [tailport=s, headport=n, headlabel="      1755"]
+BB1753 -> BB1754 [tailport=s, headport=n, headlabel="      1754"]
+BB1754 [shape=record label="{4810: read-variable['name',v6,-]|4811: constant[\"button\",v7]|4812: ===[v6,v7,v1]}" ] 
+BB1754 -> BB1755 [tailport=s, headport=n]
+BB1754 -> BB1756 [tailport=s, headport=n, color=gray]
+BB1755 [shape=record label="{4813: return[v1]}" ] 
+BB1756 [shape=record label="{4814: exceptional-return}" ] 
+}

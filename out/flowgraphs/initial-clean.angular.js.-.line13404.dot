@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry668[shape=none,label=""];
+BB_entry668 -> BB9041 [tailport=s, headport=n, headlabel="    9041"]
+BB9041 [shape=record label="{23624: constant[undefined,v1]}" ] 
+BB9041 -> BB9042 [tailport=s, headport=n, headlabel="      9042"]
+BB9042 [shape=record label="{23625: read-variable['self',v3,-]|23626: read-property[v3,'recurse',-]|23627: \<variable-non-null-undef\>['self']|23628: read-variable['property',v5,-]|23629: read-property[v5,'value',v4]|23630: \<variable-non-null-undef\>['property']|23631: read-variable['self',v8,-]|23632: read-property[v8,'nextId',-]|23633: \<variable-non-null-undef\>['self']}" ] 
+BB9042 -> BB9043 [tailport=s, headport=n, headlabel="      9043"]
+BB9042 -> BB9047 [tailport=s, headport=n, color=gray, headlabel="      9047"]
+BB9043 [shape=record label="{23634: call-self.nextId [v8,'nextId',v6]}" ] 
+BB9043 -> BB9044 [tailport=s, headport=n, headlabel="      9044"]
+BB9043 -> BB9047 [tailport=s, headport=n, color=gray]
+BB9044 [shape=record label="{23635: read-variable['undefined',v9,-]|23636: function-expr[function ( expr ),v10]}" ] 
+BB9044 -> BB9045 [tailport=s, headport=n, headlabel="      9045"]
+BB9044 -> BB9047 [tailport=s, headport=n, color=gray]
+BB9045 [shape=record label="{23637: call-self.recurse [v3,'recurse',v4,v6,v9,v10,-]*}" ] 
+BB9045 -> BB9046 [tailport=s, headport=n, headlabel="      9046"]
+BB9045 -> BB9047 [tailport=s, headport=n, color=gray]
+BB9046 [shape=record label="{23638: return[v1]}" ] 
+BB9047 [shape=record label="{23639: exceptional-return}" ] 
+//#$~ 13409
+}

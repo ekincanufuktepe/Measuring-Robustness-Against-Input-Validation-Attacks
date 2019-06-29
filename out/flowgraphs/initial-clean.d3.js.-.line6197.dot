@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry967[shape=none,label=""];
+BB_entry967 -> BB10525 [tailport=s, headport=n, headlabel="    10525"]
+BB10525 [shape=record label="{35099: constant[undefined,v1]}" ] 
+BB10525 -> BB10526 [tailport=s, headport=n, headlabel="      10526"]
+BB10526 [shape=record label="{35100: read-variable['chords',v3,-]|35101: ![v3,v2]|35102: if[v2](true-block:10527,false-block:10529)}" ] 
+BB10526 -> BB10527 [tailport=s, headport=n, headlabel="      10527"]
+BB10526 -> BB10529 [tailport=s, headport=n, headlabel="      10529"]
+BB10526 -> BB10531 [tailport=s, headport=n, color=gray, headlabel="      10531"]
+BB10527 [shape=record label="{35103: read-variable['relayout',v5,v4]}" ] 
+BB10527 -> BB10528 [tailport=s, headport=n, headlabel="      10528"]
+BB10527 -> BB10531 [tailport=s, headport=n, color=gray]
+BB10528 [shape=record label="{35104: call-relayout [v4,v5,-]*}" ] 
+BB10528 -> BB10529 [tailport=s, headport=n]
+BB10528 -> BB10531 [tailport=s, headport=n, color=gray]
+BB10529 [shape=record label="{35105: read-variable['chords',v1,-]}" ] 
+BB10529 -> BB10530 [tailport=s, headport=n, headlabel="      10530"]
+BB10529 -> BB10531 [tailport=s, headport=n, color=gray]
+BB10530 [shape=record label="{35106: return[v1]}" ] 
+BB10531 [shape=record label="{35107: exceptional-return}" ] 
+//#$~ 6199
+}

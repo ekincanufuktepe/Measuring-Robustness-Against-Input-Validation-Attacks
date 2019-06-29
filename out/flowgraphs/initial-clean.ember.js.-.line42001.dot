@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1946[shape=none,label=""];
+BB_entry1946 -> BB22308 [tailport=s, headport=n, headlabel="    22308"]
+BB22308 [shape=record label="{74411: constant[undefined,v1]|74412: vardecl['i']|74413: vardecl['_view']}" ] 
+BB22308 -> BB22309 [tailport=s, headport=n, headlabel="      22309"]
+BB22309 [shape=record label="{74414: read-variable['start',v3,-]|74415: write-variable[v3,'i']*}" ] 
+BB22309 -> BB22310 [tailport=s, headport=n, headlabel="      22310"]
+BB22309 -> BB22317 [tailport=s, headport=n, color=gray, headlabel="      22317"]
+BB22310 [shape=record label="{74416: read-variable['i',v4,-]|74417: read-variable['start',v6,-]|74418: read-variable['removed',v7,-]|74419: +[v6,v7,v5]|74420: \<[v4,v5,v2]|74421: if[v2](true-block:22311,false-block:22316)}" ] 
+BB22310 -> BB22311 [tailport=s, headport=n, headlabel="      22311"]
+BB22310 -> BB22316 [tailport=s, headport=n, headlabel="      22316"]
+BB22310 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22311 [shape=record label="{74422: read-variable['views',v9,-]|74423: read-variable['i',v10,-]|74424: read-property[v9,v10,v8]|74425: \<variable-non-null-undef\>['views']|74426: write-variable[v8,'_view']*|74427: read-variable['_view',v12,-]|74428: read-property[v12,'_unsubscribeFromStreamBindings',-]|74429: \<variable-non-null-undef\>['_view']}" ] 
+BB22311 -> BB22312 [tailport=s, headport=n, headlabel="      22312"]
+BB22311 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22312 [shape=record label="{74430: call-_view._unsubscribeFromStreamBindings [v12,'_unsubscribeFromStreamBindings',-]*}" ] 
+BB22312 -> BB22313 [tailport=s, headport=n, headlabel="      22313"]
+BB22312 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22313 [shape=record label="{74431: read-variable['_view',v14,-]|74432: read-property[v14,'remove',-]|74433: \<variable-non-null-undef\>['_view']}" ] 
+BB22313 -> BB22314 [tailport=s, headport=n, headlabel="      22314"]
+BB22313 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22314 [shape=record label="{74434: call-_view.remove [v14,'remove',-]*}" ] 
+BB22314 -> BB22315 [tailport=s, headport=n, headlabel="      22315"]
+BB22314 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22315 [shape=record label="{74435: constant[1.0,v15]|74436: read-variable['i',v16,-]|74437: +[v16,v17]|74438: +[v17,v15,v18]|74439: write-variable[v18,'i']}" ] 
+BB22315 -> BB22310 [tailport=s, headport=n]
+BB22315 -> BB22317 [tailport=s, headport=n, color=gray]
+BB22316 [shape=record label="{74440: return[v1]}" ] 
+BB22317 [shape=record label="{74441: exceptional-return}" ] 
+//#$~ 42002
+}

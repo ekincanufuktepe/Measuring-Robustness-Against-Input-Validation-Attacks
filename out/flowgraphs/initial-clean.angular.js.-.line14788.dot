@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry828[shape=none,label=""];
+BB_entry828 -> BB10742 [tailport=s, headport=n, headlabel="    10742"]
+BB10742 [shape=record label="{27907: constant[undefined,v1]}" ] 
+BB10742 -> BB10743 [tailport=s, headport=n, headlabel="      10743"]
+BB10743 [shape=record label="{27908: read-variable['results',v4,-]|27909: read-property[v4,'hasOwnProperty',-]|27910: \<variable-non-null-undef\>['results']|27911: read-variable['key',v5,-]}" ] 
+BB10743 -> BB10744 [tailport=s, headport=n, headlabel="      10744"]
+BB10743 -> BB10751 [tailport=s, headport=n, color=gray, headlabel="      10751"]
+BB10744 [shape=record label="{27912: call-results.hasOwnProperty [v4,'hasOwnProperty',v5,v2]}" ] 
+BB10744 -> BB10745 [tailport=s, headport=n, headlabel="      10745"]
+BB10744 -> BB10751 [tailport=s, headport=n, color=gray]
+BB10745 [shape=record label="{27913: if[v2](true-block:10746,false-block:10747)}" ] 
+BB10745 -> BB10746 [tailport=s, headport=n, headlabel="      10746"]
+BB10745 -> BB10747 [tailport=s, headport=n, headlabel="      10747"]
+BB10746 [shape=record label="{27914: constant[undefined,v1]}" ] 
+BB10746 -> BB10750 [tailport=s, headport=n, headlabel="      10750"]
+BB10747 [shape=record label="{27915: read-variable['results',v7,-]|27916: read-variable['key',v8,-]|27917: read-variable['value',v6,-]|27918: write-property[v7,v8,v6]|27919: \<variable-non-null-undef\>['results']*|27920: constant[1.0,v11]|27921: read-variable['counter',v12,-]|27922: +[v12,v13]|27923: -[v13,v11,v10]|27924: write-variable[v10,'counter']|27925: ![v10,v9]|27926: if[v9](true-block:10748,false-block:10750)}" ] 
+BB10747 -> BB10748 [tailport=s, headport=n, headlabel="      10748"]
+BB10747 -> BB10750 [tailport=s, headport=n]
+BB10747 -> BB10751 [tailport=s, headport=n, color=gray]
+BB10748 [shape=record label="{27927: read-variable['deferred',v15,-]|27928: read-property[v15,'resolve',-]|27929: \<variable-non-null-undef\>['deferred']|27930: read-variable['results',v16,-]}" ] 
+BB10748 -> BB10749 [tailport=s, headport=n, headlabel="      10749"]
+BB10748 -> BB10751 [tailport=s, headport=n, color=gray]
+BB10749 [shape=record label="{27931: call-deferred.resolve [v15,'resolve',v16,-]*}" ] 
+BB10749 -> BB10750 [tailport=s, headport=n]
+BB10749 -> BB10751 [tailport=s, headport=n, color=gray]
+BB10750 [shape=record label="{27932: return[v1]}" ] 
+BB10751 [shape=record label="{27933: exceptional-return}" ] 
+//#$~ 14791
+}

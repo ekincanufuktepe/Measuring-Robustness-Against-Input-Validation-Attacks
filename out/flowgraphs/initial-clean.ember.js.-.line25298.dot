@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1126[shape=none,label=""];
+BB_entry1126 -> BB13611 [tailport=s, headport=n, headlabel="    13611"]
+BB13611 [shape=record label="{46404: constant[undefined,v1]}" ] 
+BB13611 -> BB13612 [tailport=s, headport=n, headlabel="      13612"]
+BB13612 [shape=record label="{46405: read-variable['this',v5,-]|46406: read-property[v5,'router',v4]|46407: read-property[v4,'activeTransition',v3]|46408: \<property-non-null-undef\>[v5,'router']|46409: ![v3,v2]|46410: if[v2](true-block:13613,false-block:13614)}" ] 
+BB13612 -> BB13613 [tailport=s, headport=n, headlabel="      13613"]
+BB13612 -> BB13614 [tailport=s, headport=n, headlabel="      13614"]
+BB13612 -> BB13617 [tailport=s, headport=n, color=gray, headlabel="      13617"]
+BB13613 [shape=record label="{46411: constant[undefined,v1]}" ] 
+BB13613 -> BB13616 [tailport=s, headport=n, headlabel="      13616"]
+BB13614 [shape=record label="{46412: read-variable['transition',v7,-]|46413: read-property[v7,'trigger',-]|46414: \<variable-non-null-undef\>['transition']|46415: constant[true,v8]|46416: constant[\"loading\",v9]|46417: read-variable['transition',v10,-]|46418: read-variable['originRoute',v11,-]}" ] 
+BB13614 -> BB13615 [tailport=s, headport=n, headlabel="      13615"]
+BB13614 -> BB13617 [tailport=s, headport=n, color=gray]
+BB13615 [shape=record label="{46419: call-transition.trigger [v7,'trigger',v8,v9,v10,v11,-]*}" ] 
+BB13615 -> BB13616 [tailport=s, headport=n]
+BB13615 -> BB13617 [tailport=s, headport=n, color=gray]
+BB13616 [shape=record label="{46420: return[v1]}" ] 
+BB13617 [shape=record label="{46421: exceptional-return}" ] 
+//#$~ 25305
+}

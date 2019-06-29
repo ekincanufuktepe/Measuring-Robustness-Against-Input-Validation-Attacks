@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB1750 [tailport=s, headport=n, headlabel="    1750"]
+BB1750 [shape=record label="{5711: constant[undefined,v1]}" ] 
+BB1750 -> BB1751 [tailport=s, headport=n, headlabel="      1751"]
+BB1751 [shape=record label="{5712: read-variable['stats',v3,-]|5713: read-variable['stats',v4,-]|5714: read-property[v4,'tests',v2]|5715: \<variable-non-null-undef\>['stats']|5716: if[v2](true-block:1753,false-block:1752)}" ] 
+BB1751 -> BB1753 [tailport=s, headport=n, headlabel="      1753"]
+BB1751 -> BB1752 [tailport=s, headport=n, headlabel="      1752"]
+BB1751 -> BB1755 [tailport=s, headport=n, color=gray, headlabel="      1755"]
+BB1752 [shape=record label="{5717: constant[0.0,v2]}" ] 
+BB1752 -> BB1753 [tailport=s, headport=n]
+BB1753 [shape=record label="{5718: write-property[v3,'tests',v2]|5719: \<variable-non-null-undef\>['stats']*|5720: constant[1.0,v4]|5721: read-variable['stats',v6,-]|5722: read-property[v6,'tests',v5]|5723: \<variable-non-null-undef\>['stats']|5724: +[v5,v7]|5725: +[v7,v4,v8]|5726: write-property[v6,'tests',v8]|5727: \<variable-non-null-undef\>['stats']*}" ] 
+BB1753 -> BB1754 [tailport=s, headport=n, headlabel="      1754"]
+BB1753 -> BB1755 [tailport=s, headport=n, color=gray]
+BB1754 [shape=record label="{5728: return[v1]}" ] 
+BB1755 [shape=record label="{5729: exceptional-return}" ] 
+//#$~ 2236
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry256[shape=none,label=""];
+BB_entry256 -> BB2879 [tailport=s, headport=n, headlabel="    2879"]
+BB2879 [shape=record label="{7788: constant[undefined,v1]}" ] 
+BB2879 -> BB2880 [tailport=s, headport=n, headlabel="      2880"]
+BB2880 [shape=record label="{7789: read-variable['this',v5,-]|7790: read-property[v5,'updater',v4]|7791: read-property[v4,'options',v3]|7792: \<property-non-null-undef\>[v5,'updater']|7793: read-variable['undefined',v2,-]|7794: write-property[v3,'onComplete',v2]|7795: \<property-non-null-undef\>[v4,'options']*|7796: read-variable['clearTimeout',v7,v6]|7797: read-variable['this',v9,-]|7798: read-property[v9,'timer',v8]}" ] 
+BB2880 -> BB2881 [tailport=s, headport=n, headlabel="      2881"]
+BB2880 -> BB2887 [tailport=s, headport=n, color=gray, headlabel="      2887"]
+BB2881 [shape=record label="{7799: call-clearTimeout [v6,v7,v8,-]*}" ] 
+BB2881 -> BB2882 [tailport=s, headport=n, headlabel="      2882"]
+BB2881 -> BB2887 [tailport=s, headport=n, color=gray]
+BB2882 [shape=record label="{7800: read-variable['this',v12,-]|7801: read-property[v12,'onComplete',v11]|7802: if[v11](true-block:2884,false-block:2883)}" ] 
+BB2882 -> BB2884 [tailport=s, headport=n, headlabel="      2884"]
+BB2882 -> BB2883 [tailport=s, headport=n, headlabel="      2883"]
+BB2882 -> BB2887 [tailport=s, headport=n, color=gray]
+BB2883 [shape=record label="{7803: read-variable['Prototype',v12,-]|7804: read-property[v12,'emptyFunction',v11]|7805: \<variable-non-null-undef\>['Prototype']}" ] 
+BB2883 -> BB2884 [tailport=s, headport=n]
+BB2883 -> BB2887 [tailport=s, headport=n, color=gray]
+BB2884 [shape=record label="{7806: read-property[v11,'apply',-]|7807: read-variable['this',v12,-]|7808: read-variable['arguments',v13,-]}" ] 
+BB2884 -> BB2885 [tailport=s, headport=n, headlabel="      2885"]
+BB2884 -> BB2887 [tailport=s, headport=n, color=gray]
+BB2885 [shape=record label="{7809: call-null [v11,'apply',v12,v13,-]*}" ] 
+BB2885 -> BB2886 [tailport=s, headport=n, headlabel="      2886"]
+BB2885 -> BB2887 [tailport=s, headport=n, color=gray]
+BB2886 [shape=record label="{7810: return[v1]}" ] 
+BB2887 [shape=record label="{7811: exceptional-return}" ] 
+//#$~ 2022
+}

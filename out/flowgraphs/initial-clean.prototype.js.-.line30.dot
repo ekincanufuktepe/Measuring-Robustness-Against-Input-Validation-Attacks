@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB130 [tailport=s, headport=n, headlabel="    130"]
+BB130 [shape=record label="{801: constant[undefined,v1]|802: vardecl['constructor']}" ] 
+BB130 -> BB131 [tailport=s, headport=n, headlabel="      131"]
+BB131 [shape=record label="{803: read-variable['window',v3,-]|804: read-property[v3,'Element',v2]|805: \<variable-non-null-undef\>['window']|806: if[v2](true-block:133,false-block:132)}" ] 
+BB131 -> BB133 [tailport=s, headport=n, headlabel="      133"]
+BB131 -> BB132 [tailport=s, headport=n, headlabel="      132"]
+BB131 -> BB137 [tailport=s, headport=n, color=gray, headlabel="      137"]
+BB132 [shape=record label="{807: read-variable['window',v3,-]|808: read-property[v3,'HTMLElement',v2]|809: \<variable-non-null-undef\>['window']}" ] 
+BB132 -> BB133 [tailport=s, headport=n]
+BB132 -> BB137 [tailport=s, headport=n, color=gray]
+BB133 [shape=record label="{810: write-variable[v2,'constructor']*|811: read-variable['constructor',v4,-]|812: if[v4](true-block:134,false-block:135)}" ] 
+BB133 -> BB135 [tailport=s, headport=n, headlabel="      135"]
+BB133 -> BB134 [tailport=s, headport=n, headlabel="      134"]
+BB133 -> BB137 [tailport=s, headport=n, color=gray]
+BB134 [shape=record label="{813: read-variable['constructor',v5,-]|814: read-property[v5,'prototype',v4]|815: \<variable-non-null-undef\>['constructor']}" ] 
+BB134 -> BB135 [tailport=s, headport=n]
+BB134 -> BB137 [tailport=s, headport=n, color=gray]
+BB135 [shape=record label="{816: ![v4,v3]|817: ![v3,v1]}" ] 
+BB135 -> BB136 [tailport=s, headport=n, headlabel="      136"]
+BB135 -> BB137 [tailport=s, headport=n, color=gray]
+BB136 [shape=record label="{818: return[v1]}" ] 
+BB137 [shape=record label="{819: exceptional-return}" ] 
+//#$~ 32
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry887[shape=none,label=""];
+BB_entry887 -> BB12008 [tailport=s, headport=n, headlabel="    12008"]
+BB12008 [shape=record label="{35061: constant[undefined,v1]}" ] 
+BB12008 -> BB12009 [tailport=s, headport=n, headlabel="      12009"]
+BB12009 [shape=record label="{35062: read-variable['json',v3,-]|35063: read-property[v3,'stringify',-]|35064: \<variable-non-null-undef\>['json']|35065: read-variable['it',v4,-]|35066: function-expr[function ( key value ),v5]|35067: read-variable['prettyPrint',v6,-]|35068: if[v6](true-block:12010,false-block:12011)}" ] 
+BB12009 -> BB12011 [tailport=s, headport=n, headlabel="      12011"]
+BB12009 -> BB12010 [tailport=s, headport=n, headlabel="      12010"]
+BB12009 -> BB12013 [tailport=s, headport=n, color=gray, headlabel="      12013"]
+BB12010 [shape=record label="{35069: read-variable['dojo',v7,-]|35070: read-property[v7,'toJsonIndentStr',v6]|35071: \<variable-non-null-undef\>['dojo']}" ] 
+BB12010 -> BB12011 [tailport=s, headport=n]
+BB12010 -> BB12013 [tailport=s, headport=n, color=gray]
+BB12011 [shape=record label="{35072: call-json.stringify [v3,'stringify',v4,v5,v6,v1]}" ] 
+BB12011 -> BB12012 [tailport=s, headport=n, headlabel="      12012"]
+BB12011 -> BB12013 [tailport=s, headport=n, color=gray]
+BB12012 [shape=record label="{35073: return[v1]}" ] 
+BB12013 [shape=record label="{35074: exceptional-return}" ] 
+//#$~ 16808
+}

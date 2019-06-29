@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry915[shape=none,label=""];
+BB_entry915 -> BB9968 [tailport=s, headport=n, headlabel="    9968"]
+BB9968 [shape=record label="{33099: constant[undefined,v1]}" ] 
+BB9968 -> BB9969 [tailport=s, headport=n, headlabel="      9969"]
+BB9969 [shape=record label="{33100: constant[0.5,v2]|33101: read-variable['t',v5,-]|33102: constant[0.5,v6]|33103: \<[v5,v6,v4]|33104: if[v4](true-block:9970,false-block:9971)}" ] 
+BB9969 -> BB9970 [tailport=s, headport=n, headlabel="      9970"]
+BB9969 -> BB9971 [tailport=s, headport=n, headlabel="      9971"]
+BB9969 -> BB9977 [tailport=s, headport=n, color=gray, headlabel="      9977"]
+BB9970 [shape=record label="{33105: read-variable['f',v8,v7]|33106: constant[2.0,v10]|33107: read-variable['t',v11,-]|33108: *[v10,v11,v9]}" ] 
+BB9970 -> BB9972 [tailport=s, headport=n, headlabel="      9972"]
+BB9970 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9971 [shape=record label="{33109: constant[2.0,v7]|33110: read-variable['f',v10,v9]|33111: constant[2.0,v12]|33112: constant[2.0,v14]|33113: read-variable['t',v15,-]|33114: *[v14,v15,v13]|33115: -[v12,v13,v11]}" ] 
+BB9971 -> BB9973 [tailport=s, headport=n, headlabel="      9973"]
+BB9971 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9972 [shape=record label="{33116: call-f [v7,v8,v9,v3]}" ] 
+BB9972 -> BB9975 [tailport=s, headport=n, headlabel="      9975"]
+BB9972 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9973 [shape=record label="{33117: call-f [v9,v10,v11,v8]}" ] 
+BB9973 -> BB9974 [tailport=s, headport=n, headlabel="      9974"]
+BB9973 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9974 [shape=record label="{33118: -[v7,v8,v3]}" ] 
+BB9974 -> BB9975 [tailport=s, headport=n]
+BB9974 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9975 [shape=record label="{33119: *[v2,v3,v1]}" ] 
+BB9975 -> BB9976 [tailport=s, headport=n, headlabel="      9976"]
+BB9975 -> BB9977 [tailport=s, headport=n, color=gray]
+BB9976 [shape=record label="{33120: return[v1]}" ] 
+BB9977 [shape=record label="{33121: exceptional-return}" ] 
+//#$~ 5854
+}

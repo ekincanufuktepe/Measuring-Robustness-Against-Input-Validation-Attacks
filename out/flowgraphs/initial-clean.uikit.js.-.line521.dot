@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry53[shape=none,label=""];
+BB_entry53 -> BB657 [tailport=s, headport=n, headlabel="    657"]
+BB657 [shape=record label="{1879: constant[undefined,v1]|1880: vardecl['component']}" ] 
+BB657 -> BB658 [tailport=s, headport=n, headlabel="      658"]
+BB658 [shape=record label="{1881: read-variable['UI',v7,-]|1882: read-property[v7,'components',v3]|1883: \<variable-non-null-undef\>['UI']}" ] 
+BB658 -> BB659 [tailport=s, headport=n, headlabel="      659"]
+BB658 -> BB665 [tailport=s, headport=n, color=gray, headlabel="      665"]
+BB659 [shape=record label="{1884: begin-for-in[v3,v4]}" ] 
+BB659 -> BB660 [tailport=s, headport=n, headlabel="      660"]
+BB659 -> BB665 [tailport=s, headport=n, color=gray]
+BB660 [shape=record label="{1885: has-next[v4,v5]|1886: if[v5](true-block:661,false-block:664)}" ] 
+BB660 -> BB661 [tailport=s, headport=n, headlabel="      661"]
+BB660 -> BB664 [tailport=s, headport=n, headlabel="      664"]
+BB661 [shape=record label="{1887: next-property[v4,v6]|1888: write-variable[v6,'component']|1889: read-variable['UI',v10,-]|1890: read-property[v10,'component',v9]|1891: \<variable-non-null-undef\>['UI']|1892: read-property[v9,'boot',-]|1893: \<property-non-null-undef\>[v10,'component']|1894: read-variable['component',v11,-]}" ] 
+BB661 -> BB662 [tailport=s, headport=n, headlabel="      662"]
+BB661 -> BB665 [tailport=s, headport=n, color=gray]
+BB662 [shape=record label="{1895: call-UI.component.boot [v9,'boot',v11,-]*}" ] 
+BB662 -> BB663 [tailport=s, headport=n, headlabel="      663"]
+BB662 -> BB665 [tailport=s, headport=n, color=gray]
+BB663 [shape=record label="{1896: end-for-in(begin-node:1884)}" ] 
+BB663 -> BB660 [tailport=s, headport=n]
+BB664 [shape=record label="{1897: return[v1]}" ] 
+BB665 [shape=record label="{1898: exceptional-return}" ] 
+//#$~ 524
+}

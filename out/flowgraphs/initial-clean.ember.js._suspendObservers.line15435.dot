@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry721[shape=none,label=""];
+BB_entry721 -> BB8597 [tailport=s, headport=n, headlabel="    8597"]
+BB8597 [shape=record label="{29635: constant[undefined,v1]|29636: vardecl['events']}" ] 
+BB8597 -> BB8598 [tailport=s, headport=n, headlabel="      8598"]
+BB8598 [shape=record label="{29637: read-variable['map',v4,-]|29638: read-property[v4,'call',-]|29639: \<variable-non-null-undef\>['map']|29640: read-variable['paths',v5,-]|29641: read-variable['changeEvent',v6,-]}" ] 
+BB8598 -> BB8599 [tailport=s, headport=n, headlabel="      8599"]
+BB8598 -> BB8603 [tailport=s, headport=n, color=gray, headlabel="      8603"]
+BB8599 [shape=record label="{29642: call-map.call [v4,'call',v5,v6,v2]}" ] 
+BB8599 -> BB8600 [tailport=s, headport=n, headlabel="      8600"]
+BB8599 -> BB8603 [tailport=s, headport=n, color=gray]
+BB8600 [shape=record label="{29643: write-variable[v2,'events']*|29644: read-variable['suspendListeners',v8,v7]|29645: read-variable['obj',v9,-]|29646: read-variable['events',v10,-]|29647: read-variable['target',v11,-]|29648: read-variable['method',v12,-]|29649: read-variable['callback',v13,-]}" ] 
+BB8600 -> BB8601 [tailport=s, headport=n, headlabel="      8601"]
+BB8600 -> BB8603 [tailport=s, headport=n, color=gray]
+BB8601 [shape=record label="{29650: call-suspendListeners [v7,v8,v9,v10,v11,v12,v13,v1]}" ] 
+BB8601 -> BB8602 [tailport=s, headport=n, headlabel="      8602"]
+BB8601 -> BB8603 [tailport=s, headport=n, color=gray]
+BB8602 [shape=record label="{29651: return[v1]}" ] 
+BB8603 [shape=record label="{29652: exceptional-return}" ] 
+//#$~ 15437
+}

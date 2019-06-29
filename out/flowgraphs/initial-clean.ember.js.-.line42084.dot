@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1952[shape=none,label=""];
+BB_entry1952 -> BB22366 [tailport=s, headport=n, headlabel="    22366"]
+BB22366 [shape=record label="{74700: constant[undefined,v1]|74701: vardecl['parent']}" ] 
+BB22366 -> BB22367 [tailport=s, headport=n, headlabel="      22367"]
+BB22367 [shape=record label="{74702: read-variable['this',v3,-]|74703: read-property[v3,'_parentView',v2]|74704: write-variable[v2,'parent']*|74705: read-variable['parent',v4,-]|74706: if[v4](true-block:22368,false-block:22369)}" ] 
+BB22367 -> BB22369 [tailport=s, headport=n, headlabel="      22369"]
+BB22367 -> BB22368 [tailport=s, headport=n, headlabel="      22368"]
+BB22367 -> BB22374 [tailport=s, headport=n, color=gray, headlabel="      22374"]
+BB22368 [shape=record label="{74707: read-variable['parent',v5,-]|74708: read-property[v5,'isVirtual',v4]|74709: \<variable-non-null-undef\>['parent']}" ] 
+BB22368 -> BB22369 [tailport=s, headport=n]
+BB22368 -> BB22374 [tailport=s, headport=n, color=gray]
+BB22369 [shape=record label="{74710: if[v4](true-block:22370,false-block:22371)}" ] 
+BB22369 -> BB22370 [tailport=s, headport=n, headlabel="      22370"]
+BB22369 -> BB22371 [tailport=s, headport=n, headlabel="      22371"]
+BB22370 [shape=record label="{74711: read-variable['get',v6,v5]|74712: read-variable['parent',v7,-]|74713: constant[\"parentView\",v8]}" ] 
+BB22370 -> BB22372 [tailport=s, headport=n, headlabel="      22372"]
+BB22370 -> BB22374 [tailport=s, headport=n, color=gray]
+BB22371 [shape=record label="{74714: read-variable['parent',v1,-]}" ] 
+BB22371 -> BB22373 [tailport=s, headport=n, headlabel="      22373"]
+BB22371 -> BB22374 [tailport=s, headport=n, color=gray]
+BB22372 [shape=record label="{74715: call-get [v5,v6,v7,v8,v1]}" ] 
+BB22372 -> BB22373 [tailport=s, headport=n]
+BB22372 -> BB22374 [tailport=s, headport=n, color=gray]
+BB22373 [shape=record label="{74716: return[v1]}" ] 
+BB22374 [shape=record label="{74717: exceptional-return}" ] 
+//#$~ 42090
+}

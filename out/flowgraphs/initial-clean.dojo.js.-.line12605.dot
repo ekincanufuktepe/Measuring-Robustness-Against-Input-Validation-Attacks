@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry617[shape=none,label=""];
+BB_entry617 -> BB9056 [tailport=s, headport=n, headlabel="    9056"]
+BB9056 [shape=record label="{26994: constant[undefined,v1]|26995: vardecl['i']}" ] 
+BB9056 -> BB9057 [tailport=s, headport=n, headlabel="      9057"]
+BB9057 [shape=record label="{26996: new[v3]|26997: constant[1.0,v7]|26998: write-property[v3,'toString',v7]}" ] 
+BB9057 -> BB9058 [tailport=s, headport=n, headlabel="      9058"]
+BB9057 -> BB9064 [tailport=s, headport=n, color=gray, headlabel="      9064"]
+BB9058 [shape=record label="{26999: begin-for-in[v3,v4]}" ] 
+BB9058 -> BB9059 [tailport=s, headport=n, headlabel="      9059"]
+BB9058 -> BB9064 [tailport=s, headport=n, color=gray]
+BB9059 [shape=record label="{27000: has-next[v4,v5]|27001: if[v5](true-block:9060,false-block:9062)}" ] 
+BB9059 -> BB9060 [tailport=s, headport=n, headlabel="      9060"]
+BB9059 -> BB9062 [tailport=s, headport=n, headlabel="      9062"]
+BB9060 [shape=record label="{27002: next-property[v4,v6]|27003: write-variable[v6,'i']|27004: constant[0.0,v1]}" ] 
+BB9060 -> BB9063 [tailport=s, headport=n, headlabel="      9063"]
+BB9061 [shape=record label="{27005: end-for-in(begin-node:26999)}" ] 
+BB9061 -> BB9059 [tailport=s, headport=n]
+BB9062 [shape=record label="{27006: constant[1.0,v1]}" ] 
+BB9062 -> BB9063 [tailport=s, headport=n]
+BB9063 [shape=record label="{27007: return[v1]}" ] 
+BB9064 [shape=record label="{27008: exceptional-return}" ] 
+//#$~ 12610
+}

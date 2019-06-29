@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry622[shape=none,label=""];
+BB_entry622 -> BB6913 [tailport=s, headport=n, headlabel="    6913"]
+BB6913 [shape=record label="{21947: constant[undefined,v1]}" ] 
+BB6913 -> BB6914 [tailport=s, headport=n, headlabel="      6914"]
+BB6914 [shape=record label="{21948: read-variable['buffer',v3,-]|21949: read-property[v3,'push',-]|21950: \<variable-non-null-undef\>['buffer']|21951: constant[\"M\",v4]|21952: read-variable['x',v5,-]|21953: constant[\",\",v6]|21954: read-variable['y',v7,-]}" ] 
+BB6914 -> BB6915 [tailport=s, headport=n, headlabel="      6915"]
+BB6914 -> BB6918 [tailport=s, headport=n, color=gray, headlabel="      6918"]
+BB6915 [shape=record label="{21955: call-buffer.push [v3,'push',v4,v5,v6,v7,-]*}" ] 
+BB6915 -> BB6916 [tailport=s, headport=n, headlabel="      6916"]
+BB6915 -> BB6918 [tailport=s, headport=n, color=gray]
+BB6916 [shape=record label="{21956: read-variable['stream',v9,-]|21957: read-variable['pointLine',v8,-]|21958: write-property[v9,'point',v8]|21959: \<variable-non-null-undef\>['stream']*}" ] 
+BB6916 -> BB6917 [tailport=s, headport=n, headlabel="      6917"]
+BB6916 -> BB6918 [tailport=s, headport=n, color=gray]
+BB6917 [shape=record label="{21960: return[v1]}" ] 
+BB6918 [shape=record label="{21961: exceptional-return}" ] 
+//#$~ 4002
+}

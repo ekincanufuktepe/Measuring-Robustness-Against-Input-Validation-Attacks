@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry412[shape=none,label=""];
+BB_entry412 -> BB6072 [tailport=s, headport=n, headlabel="    6072"]
+BB6072 [shape=record label="{21043: constant[undefined,v1]|21044: vardecl['events']}" ] 
+BB6072 -> BB6073 [tailport=s, headport=n, headlabel="      6073"]
+BB6073 [shape=record label="{21045: read-variable['EventPluginHub',v4,-]|21046: read-property[v4,'extractEvents',-]|21047: \<variable-non-null-undef\>['EventPluginHub']|21048: read-variable['topLevelType',v5,-]|21049: read-variable['topLevelTarget',v6,-]|21050: read-variable['topLevelTargetID',v7,-]|21051: read-variable['nativeEvent',v8,-]}" ] 
+BB6073 -> BB6074 [tailport=s, headport=n, headlabel="      6074"]
+BB6073 -> BB6078 [tailport=s, headport=n, color=gray, headlabel="      6078"]
+BB6074 [shape=record label="{21052: call-EventPluginHub.extractEvents [v4,'extractEvents',v5,v6,v7,v8,v2]}" ] 
+BB6074 -> BB6075 [tailport=s, headport=n, headlabel="      6075"]
+BB6074 -> BB6078 [tailport=s, headport=n, color=gray]
+BB6075 [shape=record label="{21053: write-variable[v2,'events']*|21054: read-variable['runEventQueueInBatch',v10,v9]|21055: read-variable['events',v11,-]}" ] 
+BB6075 -> BB6076 [tailport=s, headport=n, headlabel="      6076"]
+BB6075 -> BB6078 [tailport=s, headport=n, color=gray]
+BB6076 [shape=record label="{21056: call-runEventQueueInBatch [v9,v10,v11,-]*}" ] 
+BB6076 -> BB6077 [tailport=s, headport=n, headlabel="      6077"]
+BB6076 -> BB6078 [tailport=s, headport=n, color=gray]
+BB6077 [shape=record label="{21057: return[v1]}" ] 
+BB6078 [shape=record label="{21058: exceptional-return}" ] 
+//#$~ 10773
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry270[shape=none,label=""];
+BB_entry270 -> BB4089 [tailport=s, headport=n, headlabel="    4089"]
+BB4089 [shape=record label="{11963: constant[undefined,v1]|11964: vardecl['parent']}" ] 
+BB4089 -> BB4090 [tailport=s, headport=n, headlabel="      4090"]
+BB4090 [shape=record label="{11965: read-variable['elem',v3,-]|11966: read-property[v3,'parentNode',v2]|11967: \<variable-non-null-undef\>['elem']|11968: write-variable[v2,'parent']*|11969: read-variable['parent',v4,-]|11970: if[v4](true-block:4091,false-block:4092)}" ] 
+BB4090 -> BB4092 [tailport=s, headport=n, headlabel="      4092"]
+BB4090 -> BB4091 [tailport=s, headport=n, headlabel="      4091"]
+BB4090 -> BB4096 [tailport=s, headport=n, color=gray, headlabel="      4096"]
+BB4091 [shape=record label="{11971: read-variable['parent',v5,-]|11972: read-property[v5,'parentNode',v4]|11973: \<variable-non-null-undef\>['parent']}" ] 
+BB4091 -> BB4092 [tailport=s, headport=n]
+BB4091 -> BB4096 [tailport=s, headport=n, color=gray]
+BB4092 [shape=record label="{11974: if[v4](true-block:4093,false-block:4094)}" ] 
+BB4092 -> BB4093 [tailport=s, headport=n, headlabel="      4093"]
+BB4092 -> BB4094 [tailport=s, headport=n, headlabel="      4094"]
+BB4093 [shape=record label="{11975: read-variable['parent',v6,-]|11976: read-property[v6,'parentNode',v5]|11977: \<variable-non-null-undef\>['parent']|11978: read-property[v5,'selectedIndex',-]|11979: \<property-non-null-undef\>[v6,'parentNode']*}" ] 
+BB4093 -> BB4094 [tailport=s, headport=n]
+BB4093 -> BB4096 [tailport=s, headport=n, color=gray]
+BB4094 [shape=record label="{11980: constant[null,v1]}" ] 
+BB4094 -> BB4095 [tailport=s, headport=n, headlabel="      4095"]
+BB4095 [shape=record label="{11981: return[v1]}" ] 
+BB4096 [shape=record label="{11982: exceptional-return}" ] 
+}

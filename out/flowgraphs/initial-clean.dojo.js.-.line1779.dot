@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry104[shape=none,label=""];
+BB_entry104 -> BB1565 [tailport=s, headport=n, headlabel="    1565"]
+BB1565 [shape=record label="{4354: constant[undefined,v1]}" ] 
+BB1565 -> BB1566 [tailport=s, headport=n, headlabel="      1566"]
+BB1566 [shape=record label="{4355: read-variable['isString',v4,v3]|4356: read-variable['group',v5,-]}" ] 
+BB1566 -> BB1567 [tailport=s, headport=n, headlabel="      1567"]
+BB1566 -> BB1573 [tailport=s, headport=n, color=gray, headlabel="      1573"]
+BB1567 [shape=record label="{4357: call-isString [v3,v4,v5,v2]}" ] 
+BB1567 -> BB1568 [tailport=s, headport=n, headlabel="      1568"]
+BB1567 -> BB1573 [tailport=s, headport=n, color=gray]
+BB1568 [shape=record label="{4358: if[v2](true-block:1569,false-block:1570)}" ] 
+BB1568 -> BB1569 [tailport=s, headport=n, headlabel="      1569"]
+BB1568 -> BB1570 [tailport=s, headport=n, headlabel="      1570"]
+BB1569 [shape=record label="{4359: read-variable['trace',v9,-]|4360: read-property[v9,'group',v7]|4361: \<variable-non-null-undef\>['trace']|4362: read-variable['group',v8,-]|4363: read-variable['value',v6,-]|4364: write-property[v7,v8,v6]|4365: \<property-non-null-undef\>[v9,'group']*}" ] 
+BB1569 -> BB1572 [tailport=s, headport=n, headlabel="      1572"]
+BB1569 -> BB1573 [tailport=s, headport=n, color=gray]
+BB1570 [shape=record label="{4366: read-variable['mix',v7,v6]|4367: read-variable['trace',v9,-]|4368: read-property[v9,'group',v8]|4369: \<variable-non-null-undef\>['trace']|4370: read-variable['group',v10,-]}" ] 
+BB1570 -> BB1571 [tailport=s, headport=n, headlabel="      1571"]
+BB1570 -> BB1573 [tailport=s, headport=n, color=gray]
+BB1571 [shape=record label="{4371: call-mix [v6,v7,v8,v10,-]*}" ] 
+BB1571 -> BB1572 [tailport=s, headport=n]
+BB1571 -> BB1573 [tailport=s, headport=n, color=gray]
+BB1572 [shape=record label="{4372: return[v1]}" ] 
+BB1573 [shape=record label="{4373: exceptional-return}" ] 
+//#$~ 1783
+}

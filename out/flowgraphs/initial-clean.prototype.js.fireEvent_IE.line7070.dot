@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry681[shape=none,label=""];
+BB_entry681 -> BB8971 [tailport=s, headport=n, headlabel="    8971"]
+BB8971 [shape=record label="{25158: constant[undefined,v1]|25159: vardecl['event']}" ] 
+BB8971 -> BB8972 [tailport=s, headport=n, headlabel="      8972"]
+BB8972 [shape=record label="{25160: read-variable['document',v4,-]|25161: read-property[v4,'createEventObject',-]|25162: \<variable-non-null-undef\>['document']}" ] 
+BB8972 -> BB8973 [tailport=s, headport=n, headlabel="      8973"]
+BB8972 -> BB8981 [tailport=s, headport=n, color=gray, headlabel="      8981"]
+BB8973 [shape=record label="{25163: call-document.createEventObject [v4,'createEventObject',v2]}" ] 
+BB8973 -> BB8974 [tailport=s, headport=n, headlabel="      8974"]
+BB8973 -> BB8981 [tailport=s, headport=n, color=gray]
+BB8974 [shape=record label="{25164: write-variable[v2,'event']*|25165: read-variable['event',v6,-]|25166: read-variable['bubble',v7,-]|25167: if[v7](true-block:8975,false-block:8976)}" ] 
+BB8974 -> BB8975 [tailport=s, headport=n, headlabel="      8975"]
+BB8974 -> BB8976 [tailport=s, headport=n, headlabel="      8976"]
+BB8974 -> BB8981 [tailport=s, headport=n, color=gray]
+BB8975 [shape=record label="{25168: constant[\"ondataavailable\",v5]}" ] 
+BB8975 -> BB8977 [tailport=s, headport=n, headlabel="      8977"]
+BB8976 [shape=record label="{25169: constant[\"onlosecapture\",v5]}" ] 
+BB8976 -> BB8977 [tailport=s, headport=n]
+BB8977 [shape=record label="{25170: write-property[v6,'eventType',v5]|25171: \<variable-non-null-undef\>['event']*|25172: read-variable['event',v9,-]|25173: read-variable['eventName',v8,-]|25174: write-property[v9,'eventName',v8]|25175: \<variable-non-null-undef\>['event']*|25176: read-variable['event',v11,-]|25177: read-variable['memo',v10,-]|25178: write-property[v11,'memo',v10]|25179: \<variable-non-null-undef\>['event']*|25180: read-variable['element',v13,-]|25181: read-property[v13,'fireEvent',-]|25182: \<variable-non-null-undef\>['element']|25183: read-variable['event',v15,-]|25184: read-property[v15,'eventType',v14]|25185: \<variable-non-null-undef\>['event']|25186: read-variable['event',v16,-]}" ] 
+BB8977 -> BB8978 [tailport=s, headport=n, headlabel="      8978"]
+BB8977 -> BB8981 [tailport=s, headport=n, color=gray]
+BB8978 [shape=record label="{25187: call-element.fireEvent [v13,'fireEvent',v14,v16,-]*}" ] 
+BB8978 -> BB8979 [tailport=s, headport=n, headlabel="      8979"]
+BB8978 -> BB8981 [tailport=s, headport=n, color=gray]
+BB8979 [shape=record label="{25188: read-variable['event',v1,-]}" ] 
+BB8979 -> BB8980 [tailport=s, headport=n, headlabel="      8980"]
+BB8979 -> BB8981 [tailport=s, headport=n, color=gray]
+BB8980 [shape=record label="{25189: return[v1]}" ] 
+BB8981 [shape=record label="{25190: exceptional-return}" ] 
+//#$~ 7078
+}

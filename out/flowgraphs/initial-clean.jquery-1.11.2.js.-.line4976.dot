@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry294[shape=none,label=""];
+BB_entry294 -> BB4744 [tailport=s, headport=n, headlabel="    4744"]
+BB4744 [shape=record label="{13761: constant[undefined,v1]|13762: vardecl['e']}" ] 
+BB4744 -> BB4745 [tailport=s, headport=n, headlabel="      4745"]
+BB4745 [shape=record label="{13763: read-variable['this',v3,-]|13764: read-property[v3,'originalEvent',v2]|13765: write-variable[v2,'e']*|13766: read-variable['this',v5,-]|13767: read-variable['returnTrue',v4,-]|13768: write-property[v5,'isDefaultPrevented',v4]*|13769: read-variable['e',v7,-]|13770: ![v7,v6]|13771: if[v6](true-block:4746,false-block:4747)}" ] 
+BB4745 -> BB4746 [tailport=s, headport=n, headlabel="      4746"]
+BB4745 -> BB4747 [tailport=s, headport=n, headlabel="      4747"]
+BB4745 -> BB4752 [tailport=s, headport=n, color=gray, headlabel="      4752"]
+BB4746 [shape=record label="{13772: constant[undefined,v1]}" ] 
+BB4746 -> BB4751 [tailport=s, headport=n, headlabel="      4751"]
+BB4747 [shape=record label="{13773: read-variable['e',v9,-]|13774: read-property[v9,'preventDefault',v8]|13775: \<variable-non-null-undef\>['e']|13776: if[v8](true-block:4748,false-block:4749)}" ] 
+BB4747 -> BB4748 [tailport=s, headport=n, headlabel="      4748"]
+BB4747 -> BB4749 [tailport=s, headport=n, headlabel="      4749"]
+BB4747 -> BB4752 [tailport=s, headport=n, color=gray]
+BB4748 [shape=record label="{13777: read-variable['e',v11,-]|13778: read-property[v11,'preventDefault',-]|13779: \<variable-non-null-undef\>['e']}" ] 
+BB4748 -> BB4750 [tailport=s, headport=n, headlabel="      4750"]
+BB4748 -> BB4752 [tailport=s, headport=n, color=gray]
+BB4749 [shape=record label="{13780: read-variable['e',v11,-]|13781: constant[false,v10]|13782: write-property[v11,'returnValue',v10]|13783: \<variable-non-null-undef\>['e']*}" ] 
+BB4749 -> BB4751 [tailport=s, headport=n]
+BB4749 -> BB4752 [tailport=s, headport=n, color=gray]
+BB4750 [shape=record label="{13784: call-0:0[v11,'preventDefault',-]*}" ] 
+BB4750 -> BB4751 [tailport=s, headport=n]
+BB4750 -> BB4752 [tailport=s, headport=n, color=gray]
+BB4751 [shape=record label="{13785: return[v1]}" ] 
+BB4752 [shape=record label="{13786: exceptional-return}" ] 
+}

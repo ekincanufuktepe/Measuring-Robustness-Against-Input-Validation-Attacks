@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB73 [tailport=s, headport=n, headlabel="    73"]
+BB73 [shape=record label="{238: constant[undefined,v1]|239: vardecl['c']}" ] 
+BB73 -> BB74 [tailport=s, headport=n, headlabel="      74"]
+BB74 [shape=record label="{240: read-variable['fM',v3,v2]}" ] 
+BB74 -> BB75 [tailport=s, headport=n, headlabel="      75"]
+BB74 -> BB82 [tailport=s, headport=n, color=gray, headlabel="      82"]
+BB75 [shape=record label="{241: call-fM [v2,v3,-]*}" ] 
+BB75 -> BB76 [tailport=s, headport=n, headlabel="      76"]
+BB75 -> BB82 [tailport=s, headport=n, color=gray]
+BB76 [shape=record label="{242: read-variable['a',v5,-]|243: constant[null,v6]|244: !=[v5,v6,v4]|245: if[v4](true-block:77,false-block:79)}" ] 
+BB76 -> BB77 [tailport=s, headport=n, headlabel="      77"]
+BB76 -> BB79 [tailport=s, headport=n, headlabel="      79"]
+BB76 -> BB82 [tailport=s, headport=n, color=gray]
+BB77 [shape=record label="{246: read-variable['alert',v8,v7]|247: constant[\"a is not null\",v9]}" ] 
+BB77 -> BB78 [tailport=s, headport=n, headlabel="      78"]
+BB77 -> BB82 [tailport=s, headport=n, color=gray]
+BB78 [shape=record label="{248: call-alert [v7,v8,v9,-]*}" ] 
+BB78 -> BB79 [tailport=s, headport=n]
+BB78 -> BB82 [tailport=s, headport=n, color=gray]
+BB79 [shape=record label="{249: read-variable['b',v8,-]|250: read-variable['b',v9,-]|251: *[v8,v9,v7]|252: write-variable[v7,'c']*|253: read-variable['document',v11,-]|254: read-property[v11,'write',-]|255: \<variable-non-null-undef\>['document']|256: constant[\"b square: \",v13]|257: read-variable['c',v14,-]|258: +[v13,v14,v12]}" ] 
+BB79 -> BB80 [tailport=s, headport=n, headlabel="      80"]
+BB79 -> BB82 [tailport=s, headport=n, color=gray]
+BB80 [shape=record label="{259: call-document.write [v11,'write',v12,-]*}" ] 
+BB80 -> BB81 [tailport=s, headport=n, headlabel="      81"]
+BB80 -> BB82 [tailport=s, headport=n, color=gray]
+BB81 [shape=record label="{260: return[v1]}" ] 
+BB82 [shape=record label="{261: exceptional-return}" ] 
+//#$~ 139
+}

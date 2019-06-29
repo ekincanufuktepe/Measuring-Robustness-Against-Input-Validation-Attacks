@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry632[shape=none,label=""];
+BB_entry632 -> BB6962 [tailport=s, headport=n, headlabel="    6962"]
+BB6962 [shape=record label="{22110: constant[undefined,v1]|22111: vardecl['dx']|22112: vardecl['dy']|22113: vardecl['z']}" ] 
+BB6962 -> BB6963 [tailport=s, headport=n, headlabel="      6963"]
+BB6963 [shape=record label="{22114: read-variable['x',v3,-]|22115: read-variable['x0',v4,-]|22116: -[v3,v4,v2]|22117: write-variable[v2,'dx']*|22118: read-variable['y',v6,-]|22119: read-variable['y0',v7,-]|22120: -[v6,v7,v5]|22121: write-variable[v5,'dy']*|22122: read-variable['Math',v10,-]|22123: read-property[v10,'sqrt',-]|22124: \<variable-non-null-undef\>['Math']|22125: read-variable['dx',v14,-]|22126: read-variable['dx',v15,-]|22127: *[v14,v15,v12]|22128: read-variable['dy',v16,-]|22129: read-variable['dy',v17,-]|22130: *[v16,v17,v13]|22131: +[v12,v13,v11]}" ] 
+BB6963 -> BB6964 [tailport=s, headport=n, headlabel="      6964"]
+BB6963 -> BB6968 [tailport=s, headport=n, color=gray, headlabel="      6968"]
+BB6964 [shape=record label="{22132: call-Math.sqrt [v10,'sqrt',v11,v8]}" ] 
+BB6964 -> BB6965 [tailport=s, headport=n, headlabel="      6965"]
+BB6964 -> BB6968 [tailport=s, headport=n, color=gray]
+BB6965 [shape=record label="{22133: write-variable[v8,'z']*|22134: read-variable['d3_geo_centroidX1',v19,-]|22135: read-variable['z',v23,-]|22136: read-variable['x0',v25,-]|22137: read-variable['x',v26,-]|22138: +[v25,v26,v24]|22139: *[v23,v24,v21]|22140: constant[2.0,v22]|22141: /[v21,v22,v20]|22142: +[v19,v20,v18]|22143: write-variable[v18,'d3_geo_centroidX1']*|22144: read-variable['d3_geo_centroidY1',v28,-]|22145: read-variable['z',v32,-]|22146: read-variable['y0',v34,-]|22147: read-variable['y',v35,-]|22148: +[v34,v35,v33]|22149: *[v32,v33,v30]|22150: constant[2.0,v31]|22151: /[v30,v31,v29]|22152: +[v28,v29,v27]|22153: write-variable[v27,'d3_geo_centroidY1']*|22154: read-variable['d3_geo_centroidZ1',v37,-]|22155: read-variable['z',v38,-]|22156: +[v37,v38,v36]|22157: write-variable[v36,'d3_geo_centroidZ1']*|22158: read-variable['d3_geo_pathCentroidPoint',v40,v39]|22159: read-variable['x',v41,-]|22160: write-variable[v41,'x0']|22161: read-variable['y',v42,-]|22162: write-variable[v42,'y0']}" ] 
+BB6965 -> BB6966 [tailport=s, headport=n, headlabel="      6966"]
+BB6965 -> BB6968 [tailport=s, headport=n, color=gray]
+BB6966 [shape=record label="{22163: call-d3_geo_pathCentroidPoint [v39,v40,v41,v42,-]*}" ] 
+BB6966 -> BB6967 [tailport=s, headport=n, headlabel="      6967"]
+BB6966 -> BB6968 [tailport=s, headport=n, color=gray]
+BB6967 [shape=record label="{22164: return[v1]}" ] 
+BB6968 [shape=record label="{22165: exceptional-return}" ] 
+//#$~ 4047
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry631[shape=none,label=""];
+BB_entry631 -> BB9234 [tailport=s, headport=n, headlabel="    9234"]
+BB9234 [shape=record label="{27450: constant[undefined,v1]|27451: vardecl['i']|27452: vardecl['l']}" ] 
+BB9234 -> BB9235 [tailport=s, headport=n, headlabel="      9235"]
+BB9235 [shape=record label="{27453: constant[1.0,v3]|27454: write-variable[v3,'i']*|27455: read-variable['arguments',v5,-]|27456: read-property[v5,'length',v4]|27457: \<variable-non-null-undef\>['arguments']|27458: write-variable[v4,'l']*}" ] 
+BB9235 -> BB9236 [tailport=s, headport=n, headlabel="      9236"]
+BB9235 -> BB9242 [tailport=s, headport=n, color=gray, headlabel="      9242"]
+BB9236 [shape=record label="{27459: read-variable['i',v6,-]|27460: read-variable['l',v7,-]|27461: \<[v6,v7,v2]|27462: if[v2](true-block:9237,false-block:9238)}" ] 
+BB9236 -> BB9237 [tailport=s, headport=n, headlabel="      9237"]
+BB9236 -> BB9238 [tailport=s, headport=n, headlabel="      9238"]
+BB9236 -> BB9242 [tailport=s, headport=n, color=gray]
+BB9237 [shape=record label="{27463: read-variable['lang',v9,-]|27464: read-property[v9,'_mixin',-]|27465: \<variable-non-null-undef\>['lang']|27466: read-variable['ctor',v11,-]|27467: read-property[v11,'prototype',v10]|27468: \<variable-non-null-undef\>['ctor']|27469: read-variable['arguments',v13,-]|27470: read-variable['i',v14,-]|27471: read-property[v13,v14,v12]|27472: \<variable-non-null-undef\>['arguments']}" ] 
+BB9237 -> BB9239 [tailport=s, headport=n, headlabel="      9239"]
+BB9237 -> BB9242 [tailport=s, headport=n, color=gray]
+BB9238 [shape=record label="{27473: read-variable['ctor',v1,-]}" ] 
+BB9238 -> BB9241 [tailport=s, headport=n, headlabel="      9241"]
+BB9238 -> BB9242 [tailport=s, headport=n, color=gray]
+BB9239 [shape=record label="{27474: call-lang._mixin [v9,'_mixin',v10,v12,-]*}" ] 
+BB9239 -> BB9240 [tailport=s, headport=n, headlabel="      9240"]
+BB9239 -> BB9242 [tailport=s, headport=n, color=gray]
+BB9240 [shape=record label="{27475: constant[1.0,v15]|27476: read-variable['i',v16,-]|27477: +[v16,v17]|27478: +[v17,v15,v18]|27479: write-variable[v18,'i']}" ] 
+BB9240 -> BB9236 [tailport=s, headport=n]
+BB9240 -> BB9242 [tailport=s, headport=n, color=gray]
+BB9241 [shape=record label="{27480: return[v1]}" ] 
+BB9242 [shape=record label="{27481: exceptional-return}" ] 
+//#$~ 12926
+}

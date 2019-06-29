@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB97 [tailport=s, headport=n, headlabel="    97"]
+BB97 [shape=record label="{280: constant[undefined,v1]|281: vardecl['args']}" ] 
+BB97 -> BB98 [tailport=s, headport=n, headlabel="      98"]
+BB98 [shape=record label="{282: read-variable['Array',v6,-]|283: read-property[v6,'prototype',v5]|284: \<variable-non-null-undef\>['Array']|285: read-property[v5,'slice',v4]|286: \<property-non-null-undef\>[v6,'prototype']|287: read-property[v4,'call',-]|288: \<property-non-null-undef\>[v5,'slice']|289: read-variable['arguments',v7,-]|290: constant[0.0,v8]}" ] 
+BB98 -> BB99 [tailport=s, headport=n, headlabel="      99"]
+BB98 -> BB105 [tailport=s, headport=n, color=gray, headlabel="      105"]
+BB99 [shape=record label="{291: call-Array.prototype.slice.call [v4,'call',v7,v8,v2]}" ] 
+BB99 -> BB100 [tailport=s, headport=n, headlabel="      100"]
+BB99 -> BB105 [tailport=s, headport=n, color=gray]
+BB100 [shape=record label="{292: write-variable[v2,'args']*|293: read-variable['args',v10,-]|294: read-property[v10,'unshift',-]|295: \<variable-non-null-undef\>['args']|296: new[v11]}" ] 
+BB100 -> BB101 [tailport=s, headport=n, headlabel="      101"]
+BB100 -> BB105 [tailport=s, headport=n, color=gray]
+BB101 [shape=record label="{297: call-args.unshift [v10,'unshift',v11,-]*}" ] 
+BB101 -> BB102 [tailport=s, headport=n, headlabel="      102"]
+BB101 -> BB105 [tailport=s, headport=n, color=gray]
+BB102 [shape=record label="{298: read-variable['extend',v13,-]|299: read-property[v13,'apply',-]|300: \<variable-non-null-undef\>['extend']|301: constant[null,v14]|302: read-variable['args',v15,-]}" ] 
+BB102 -> BB103 [tailport=s, headport=n, headlabel="      103"]
+BB102 -> BB105 [tailport=s, headport=n, color=gray]
+BB103 [shape=record label="{303: call-extend.apply [v13,'apply',v14,v15,v1]}" ] 
+BB103 -> BB104 [tailport=s, headport=n, headlabel="      104"]
+BB103 -> BB105 [tailport=s, headport=n, color=gray]
+BB104 [shape=record label="{304: return[v1]}" ] 
+BB105 [shape=record label="{305: exceptional-return}" ] 
+//#$~ 229
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1474[shape=none,label=""];
+BB_entry1474 -> BB17151 [tailport=s, headport=n, headlabel="    17151"]
+BB17151 [shape=record label="{57897: constant[undefined,v1]}" ] 
+BB17151 -> BB17152 [tailport=s, headport=n, headlabel="      17152"]
+BB17152 [shape=record label="{57898: read-variable['setProperties',v3,v2]|57899: read-variable['proxy',v4,-]|57900: new[v5]|57901: constant[false,v6]|57902: write-property[v5,'isFulfilled',v6]|57903: constant[false,v7]|57904: write-property[v5,'isRejected',v7]}" ] 
+BB17152 -> BB17153 [tailport=s, headport=n, headlabel="      17153"]
+BB17152 -> BB17157 [tailport=s, headport=n, color=gray, headlabel="      17157"]
+BB17153 [shape=record label="{57905: call-setProperties [v2,v3,v4,v5,-]*}" ] 
+BB17153 -> BB17154 [tailport=s, headport=n, headlabel="      17154"]
+BB17153 -> BB17157 [tailport=s, headport=n, color=gray]
+BB17154 [shape=record label="{57906: read-variable['promise',v9,-]|57907: read-property[v9,'then',-]|57908: \<variable-non-null-undef\>['promise']|57909: function-expr[function ( value ),v10]|57910: function-expr[function ( reason ),v11]|57911: constant[\"Ember: PromiseProxy\",v12]}" ] 
+BB17154 -> BB17155 [tailport=s, headport=n, headlabel="      17155"]
+BB17154 -> BB17157 [tailport=s, headport=n, color=gray]
+BB17155 [shape=record label="{57912: call-promise.then [v9,'then',v10,v11,v12,v1]}" ] 
+BB17155 -> BB17156 [tailport=s, headport=n, headlabel="      17156"]
+BB17155 -> BB17157 [tailport=s, headport=n, color=gray]
+BB17156 [shape=record label="{57913: return[v1]}" ] 
+BB17157 [shape=record label="{57914: exceptional-return}" ] 
+//#$~ 32508
+}

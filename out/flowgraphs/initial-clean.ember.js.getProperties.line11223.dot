@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry494[shape=none,label=""];
+BB_entry494 -> BB6153 [tailport=s, headport=n, headlabel="    6153"]
+BB6153 [shape=record label="{21921: constant[undefined,v1]|21922: vardecl['ret']|21923: vardecl['i']}" ] 
+BB6153 -> BB6154 [tailport=s, headport=n, headlabel="      6154"]
+BB6154 [shape=record label="{21924: new[v2]|21925: write-variable[v2,'ret']*|21926: constant[0.0,v4]|21927: write-variable[v4,'i']*}" ] 
+BB6154 -> BB6155 [tailport=s, headport=n, headlabel="      6155"]
+BB6155 [shape=record label="{21928: read-variable['i',v5,-]|21929: read-variable['propertyNames',v7,-]|21930: read-property[v7,'length',v6]|21931: \<variable-non-null-undef\>['propertyNames']|21932: \<[v5,v6,v3]|21933: if[v3](true-block:6156,false-block:6157)}" ] 
+BB6155 -> BB6156 [tailport=s, headport=n, headlabel="      6156"]
+BB6155 -> BB6157 [tailport=s, headport=n, headlabel="      6157"]
+BB6155 -> BB6161 [tailport=s, headport=n, color=gray, headlabel="      6161"]
+BB6156 [shape=record label="{21934: read-variable['ret',v9,-]|21935: read-variable['propertyNames',v11,-]|21936: read-variable['i',v12,-]|21937: read-property[v11,v12,v10]|21938: \<variable-non-null-undef\>['propertyNames']|21939: read-variable['get',v14,v13]|21940: read-variable['self',v15,-]|21941: read-variable['propertyNames',v17,-]|21942: read-variable['i',v18,-]|21943: read-property[v17,v18,v16]|21944: \<variable-non-null-undef\>['propertyNames']}" ] 
+BB6156 -> BB6158 [tailport=s, headport=n, headlabel="      6158"]
+BB6156 -> BB6161 [tailport=s, headport=n, color=gray]
+BB6157 [shape=record label="{21945: read-variable['ret',v1,-]}" ] 
+BB6157 -> BB6160 [tailport=s, headport=n, headlabel="      6160"]
+BB6157 -> BB6161 [tailport=s, headport=n, color=gray]
+BB6158 [shape=record label="{21946: call-get [v13,v14,v15,v16,v8]}" ] 
+BB6158 -> BB6159 [tailport=s, headport=n, headlabel="      6159"]
+BB6158 -> BB6161 [tailport=s, headport=n, color=gray]
+BB6159 [shape=record label="{21947: write-property[v9,v10,v8]|21948: \<variable-non-null-undef\>['ret']*|21949: constant[1.0,v19]|21950: read-variable['i',v20,-]|21951: +[v20,v21]|21952: +[v21,v19,v22]|21953: write-variable[v22,'i']}" ] 
+BB6159 -> BB6155 [tailport=s, headport=n]
+BB6159 -> BB6161 [tailport=s, headport=n, color=gray]
+BB6160 [shape=record label="{21954: return[v1]}" ] 
+BB6161 [shape=record label="{21955: exceptional-return}" ] 
+//#$~ 11228
+}

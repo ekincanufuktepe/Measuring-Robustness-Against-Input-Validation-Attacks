@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1359[shape=none,label=""];
+BB_entry1359 -> BB15969 [tailport=s, headport=n, headlabel="    15969"]
+BB15969 [shape=record label="{54725: constant[undefined,v1]}" ] 
+BB15969 -> BB15970 [tailport=s, headport=n, headlabel="      15970"]
+BB15970 [shape=record label="{54726: read-variable['hasListeners',v3,v2]|54727: read-variable['this',v4,-]|54728: constant[\"@array:change\",v5]}" ] 
+BB15970 -> BB15971 [tailport=s, headport=n, headlabel="      15971"]
+BB15970 -> BB15976 [tailport=s, headport=n, color=gray, headlabel="      15976"]
+BB15971 [shape=record label="{54729: call-hasListeners [v2,v3,v4,v5,v1]}" ] 
+BB15971 -> BB15972 [tailport=s, headport=n, headlabel="      15972"]
+BB15971 -> BB15976 [tailport=s, headport=n, color=gray]
+BB15972 [shape=record label="{54730: if[v1](true-block:15975,false-block:15973)}" ] 
+BB15972 -> BB15975 [tailport=s, headport=n, headlabel="      15975"]
+BB15972 -> BB15973 [tailport=s, headport=n, headlabel="      15973"]
+BB15973 [shape=record label="{54731: read-variable['hasListeners',v3,v2]|54732: read-variable['this',v4,-]|54733: constant[\"@array:before\",v5]}" ] 
+BB15973 -> BB15974 [tailport=s, headport=n, headlabel="      15974"]
+BB15973 -> BB15976 [tailport=s, headport=n, color=gray]
+BB15974 [shape=record label="{54734: call-hasListeners [v2,v3,v4,v5,v1]}" ] 
+BB15974 -> BB15975 [tailport=s, headport=n]
+BB15974 -> BB15976 [tailport=s, headport=n, color=gray]
+BB15975 [shape=record label="{54735: return[v1]}" ] 
+BB15976 [shape=record label="{54736: exceptional-return}" ] 
+//#$~ 29597
+}

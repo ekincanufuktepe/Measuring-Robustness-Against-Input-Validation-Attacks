@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry167[shape=none,label=""];
+BB_entry167 -> BB2306 [tailport=s, headport=n, headlabel="    2306"]
+BB2306 [shape=record label="{8136: constant[undefined,v1]|8137: vardecl['NewKlass']}" ] 
+BB2306 -> BB2307 [tailport=s, headport=n, headlabel="      2307"]
+BB2307 [shape=record label="{8138: read-variable['CopyConstructor',v2,-]|8139: write-variable[v2,'NewKlass']*|8140: read-variable['NewKlass',v4,-]|8141: read-variable['Array',v5,-]}" ] 
+BB2307 -> BB2308 [tailport=s, headport=n, headlabel="      2308"]
+BB2307 -> BB2315 [tailport=s, headport=n, color=gray, headlabel="      2315"]
+BB2308 [shape=record label="{8142: construct [-,v5,v3]}" ] 
+BB2308 -> BB2309 [tailport=s, headport=n, headlabel="      2309"]
+BB2308 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2309 [shape=record label="{8143: write-property[v4,'instancePool',v3]|8144: \<variable-non-null-undef\>['NewKlass']*|8145: read-variable['NewKlass',v7,-]|8146: read-variable['pooler',v6,-]|8147: if[v6](true-block:2311,false-block:2310)}" ] 
+BB2309 -> BB2311 [tailport=s, headport=n, headlabel="      2311"]
+BB2309 -> BB2310 [tailport=s, headport=n, headlabel="      2310"]
+BB2309 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2310 [shape=record label="{8148: read-variable['DEFAULT_POOLER',v6,-]}" ] 
+BB2310 -> BB2311 [tailport=s, headport=n]
+BB2310 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2311 [shape=record label="{8149: write-property[v7,'getPooled',v6]|8150: \<variable-non-null-undef\>['NewKlass']*|8151: read-variable['NewKlass',v10,-]|8152: read-property[v10,'poolSize',v9]|8153: \<variable-non-null-undef\>['NewKlass']|8154: ![v9,v8]|8155: if[v8](true-block:2312,false-block:2313)}" ] 
+BB2311 -> BB2312 [tailport=s, headport=n, headlabel="      2312"]
+BB2311 -> BB2313 [tailport=s, headport=n, headlabel="      2313"]
+BB2311 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2312 [shape=record label="{8156: read-variable['NewKlass',v12,-]|8157: read-variable['DEFAULT_POOL_SIZE',v11,-]|8158: write-property[v12,'poolSize',v11]|8159: \<variable-non-null-undef\>['NewKlass']*}" ] 
+BB2312 -> BB2313 [tailport=s, headport=n]
+BB2312 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2313 [shape=record label="{8160: read-variable['NewKlass',v12,-]|8161: read-variable['standardReleaser',v11,-]|8162: write-property[v12,'release',v11]|8163: \<variable-non-null-undef\>['NewKlass']*|8164: read-variable['NewKlass',v1,-]}" ] 
+BB2313 -> BB2314 [tailport=s, headport=n, headlabel="      2314"]
+BB2313 -> BB2315 [tailport=s, headport=n, color=gray]
+BB2314 [shape=record label="{8165: return[v1]}" ] 
+BB2315 [shape=record label="{8166: exceptional-return}" ] 
+//#$~ 4309
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1312[shape=none,label=""];
+BB_entry1312 -> BB15505 [tailport=s, headport=n, headlabel="    15505"]
+BB15505 [shape=record label="{53370: constant[undefined,v1]}" ] 
+BB15505 -> BB15506 [tailport=s, headport=n, headlabel="      15506"]
+BB15506 [shape=record label="{53371: read-variable['Ember',v3,-]|53372: read-property[v3,'Test',v2]|53373: \<variable-non-null-undef\>['Ember']|53374: if[v2](true-block:15507,false-block:15508)}" ] 
+BB15506 -> BB15508 [tailport=s, headport=n, headlabel="      15508"]
+BB15506 -> BB15507 [tailport=s, headport=n, headlabel="      15507"]
+BB15506 -> BB15512 [tailport=s, headport=n, color=gray, headlabel="      15512"]
+BB15507 [shape=record label="{53375: read-variable['Ember',v5,-]|53376: read-property[v5,'Test',v4]|53377: \<variable-non-null-undef\>['Ember']|53378: read-property[v4,'adapter',v2]|53379: \<property-non-null-undef\>[v5,'Test']}" ] 
+BB15507 -> BB15508 [tailport=s, headport=n]
+BB15507 -> BB15512 [tailport=s, headport=n, color=gray]
+BB15508 [shape=record label="{53380: if[v2](true-block:15509,false-block:15511)}" ] 
+BB15508 -> BB15509 [tailport=s, headport=n, headlabel="      15509"]
+BB15508 -> BB15511 [tailport=s, headport=n, headlabel="      15511"]
+BB15509 [shape=record label="{53381: read-variable['Ember',v7,-]|53382: read-property[v7,'Test',v6]|53383: \<variable-non-null-undef\>['Ember']|53384: read-property[v6,'adapter',v5]|53385: \<property-non-null-undef\>[v7,'Test']|53386: read-property[v5,'asyncStart',-]|53387: \<property-non-null-undef\>[v6,'adapter']}" ] 
+BB15509 -> BB15510 [tailport=s, headport=n, headlabel="      15510"]
+BB15509 -> BB15512 [tailport=s, headport=n, color=gray]
+BB15510 [shape=record label="{53388: call-Ember.Test.adapter.asyncStart [v5,'asyncStart',-]*}" ] 
+BB15510 -> BB15511 [tailport=s, headport=n]
+BB15510 -> BB15512 [tailport=s, headport=n, color=gray]
+BB15511 [shape=record label="{53389: return[v1]}" ] 
+BB15512 [shape=record label="{53390: exceptional-return}" ] 
+//#$~ 28630
+}

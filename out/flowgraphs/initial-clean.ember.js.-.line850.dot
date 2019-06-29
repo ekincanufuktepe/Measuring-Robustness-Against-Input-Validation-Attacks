@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry55[shape=none,label=""];
+BB_entry55 -> BB761 [tailport=s, headport=n, headlabel="    761"]
+BB761 [shape=record label="{2588: constant[undefined,v1]}" ] 
+BB761 -> BB762 [tailport=s, headport=n, headlabel="      762"]
+BB762 [shape=record label="{2589: read-variable['args',v2,-]|2590: if[v2](true-block:763,false-block:764)}" ] 
+BB762 -> BB764 [tailport=s, headport=n, headlabel="      764"]
+BB762 -> BB763 [tailport=s, headport=n, headlabel="      763"]
+BB762 -> BB770 [tailport=s, headport=n, color=gray, headlabel="      770"]
+BB763 [shape=record label="{2591: read-variable['args',v5,-]|2592: read-property[v5,'length',v3]|2593: \<variable-non-null-undef\>['args']|2594: constant[0.0,v4]|2595: \>[v3,v4,v2]}" ] 
+BB763 -> BB764 [tailport=s, headport=n]
+BB763 -> BB770 [tailport=s, headport=n, color=gray]
+BB764 [shape=record label="{2596: if[v2](true-block:765,false-block:766)}" ] 
+BB764 -> BB765 [tailport=s, headport=n, headlabel="      765"]
+BB764 -> BB766 [tailport=s, headport=n, headlabel="      766"]
+BB765 [shape=record label="{2597: read-variable['method',v4,-]|2598: read-property[v4,'apply',-]|2599: \<variable-non-null-undef\>['method']|2600: read-variable['target',v5,-]|2601: read-variable['args',v6,-]}" ] 
+BB765 -> BB767 [tailport=s, headport=n, headlabel="      767"]
+BB765 -> BB770 [tailport=s, headport=n, color=gray]
+BB766 [shape=record label="{2602: read-variable['method',v4,-]|2603: read-property[v4,'call',-]|2604: \<variable-non-null-undef\>['method']|2605: read-variable['target',v5,-]}" ] 
+BB766 -> BB768 [tailport=s, headport=n, headlabel="      768"]
+BB766 -> BB770 [tailport=s, headport=n, color=gray]
+BB767 [shape=record label="{2606: call-method.apply [v4,'apply',v5,v6,-]*}" ] 
+BB767 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB767 -> BB770 [tailport=s, headport=n, color=gray]
+BB768 [shape=record label="{2607: call-method.call [v4,'call',v5,-]*}" ] 
+BB768 -> BB769 [tailport=s, headport=n]
+BB768 -> BB770 [tailport=s, headport=n, color=gray]
+BB769 [shape=record label="{2608: return[v1]}" ] 
+BB770 [shape=record label="{2609: exceptional-return}" ] 
+//#$~ 854
+}

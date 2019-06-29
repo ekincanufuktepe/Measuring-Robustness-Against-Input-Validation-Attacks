@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry122[shape=none,label=""];
+BB_entry122 -> BB1580 [tailport=s, headport=n, headlabel="    1580"]
+BB1580 [shape=record label="{4585: constant[undefined,v1]|4586: vardecl['$this']|4587: vardecl['inviewstate']|4588: vardecl['initinview']|4589: vardecl['togglecls']|4590: vardecl['fn']}" ] 
+BB1580 -> BB1581 [tailport=s, headport=n, headlabel="      1581"]
+BB1581 [shape=record label="{4591: read-variable['this',v2,-]|4592: write-variable[v2,'$this']*|4593: read-variable['this',v7,-]|4594: read-property[v7,'options',v6]|4595: read-property[v6,'cls',v5]|4596: \<property-non-null-undef\>[v7,'options']|4597: read-property[v5,'split',-]|4598: \<property-non-null-undef\>[v6,'cls']|4599: read-variable['RegExp',v9,-]|4600: constant[\",\",v10]}" ] 
+BB1581 -> BB1582 [tailport=s, headport=n, headlabel="      1582"]
+BB1581 -> BB1589 [tailport=s, headport=n, color=gray, headlabel="      1589"]
+BB1582 [shape=record label="{4601: construct [-,v9,v10,v8]}" ] 
+BB1582 -> BB1583 [tailport=s, headport=n, headlabel="      1583"]
+BB1582 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1583 [shape=record label="{4602: call-this.options.cls.split [v5,'split',v8,v3]}" ] 
+BB1583 -> BB1584 [tailport=s, headport=n, headlabel="      1584"]
+BB1583 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1584 [shape=record label="{4603: write-variable[v3,'togglecls']*|4604: function-expr[function ( ),v11]|4605: write-variable[v11,'fn']*|4606: read-variable['fn',v13,v12]}" ] 
+BB1584 -> BB1585 [tailport=s, headport=n, headlabel="      1585"]
+BB1584 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1585 [shape=record label="{4607: call-fn [v12,v13,-]*}" ] 
+BB1585 -> BB1586 [tailport=s, headport=n, headlabel="      1586"]
+BB1585 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1586 [shape=record label="{4608: read-variable['this',v15,-]|4609: read-variable['fn',v14,-]|4610: write-property[v15,'check',v14]*|4611: read-variable['scrollspies',v17,-]|4612: read-property[v17,'push',-]|4613: \<variable-non-null-undef\>['scrollspies']|4614: read-variable['this',v18,-]}" ] 
+BB1586 -> BB1587 [tailport=s, headport=n, headlabel="      1587"]
+BB1586 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1587 [shape=record label="{4615: call-scrollspies.push [v17,'push',v18,-]*}" ] 
+BB1587 -> BB1588 [tailport=s, headport=n, headlabel="      1588"]
+BB1587 -> BB1589 [tailport=s, headport=n, color=gray]
+BB1588 [shape=record label="{4616: return[v1]}" ] 
+BB1589 [shape=record label="{4617: exceptional-return}" ] 
+//#$~ 1215
+}

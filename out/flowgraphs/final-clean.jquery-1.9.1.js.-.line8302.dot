@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry497[shape=none,label=""];
+BB_entry497 -> BB8031 [tailport=s, headport=n, headlabel="    8031"]
+BB8031 [shape=record label="{23581: constant[undefined,v1]}" ] 
+BB8031 -> BB8032 [tailport=s, headport=n, headlabel="      8032"]
+BB8032 [shape=record label="{23582: read-variable['document',v4,-]|23583: read-property[v4,'createElement',-]|23584: \<variable-non-null-undef\>['document']|23585: constant[\"script\",v5]}" ] 
+BB8032 -> BB8033 [tailport=s, headport=n, headlabel="      8033"]
+BB8032 -> BB8039 [tailport=s, headport=n, color=gray, headlabel="      8039"]
+BB8033 [shape=record label="{23586: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB8033 -> BB8034 [tailport=s, headport=n, headlabel="      8034"]
+BB8033 -> BB8039 [tailport=s, headport=n, color=gray]
+BB8034 [shape=record label="{23587: write-variable[v2,'script']*|23588: read-variable['script',v7,-]|23589: constant[true,v6]|23590: write-property[v7,'async',v6]|23591: \<variable-non-null-undef\>['script']*|23592: read-variable['s',v9,-]|23593: read-property[v9,'scriptCharset',v8]|23594: \<variable-non-null-undef\>['s']|23595: if[v8](true-block:8035,false-block:8036)}" ] 
+BB8034 -> BB8035 [tailport=s, headport=n, headlabel="      8035"]
+BB8034 -> BB8036 [tailport=s, headport=n, headlabel="      8036"]
+BB8034 -> BB8039 [tailport=s, headport=n, color=gray]
+BB8035 [shape=record label="{23596: read-variable['script',v11,-]|23597: read-variable['s',v12,-]|23598: read-property[v12,'scriptCharset',v10]|23599: \<variable-non-null-undef\>['s']|23600: write-property[v11,'charset',v10]|23601: \<variable-non-null-undef\>['script']*}" ] 
+BB8035 -> BB8036 [tailport=s, headport=n]
+BB8035 -> BB8039 [tailport=s, headport=n, color=gray]
+BB8036 [shape=record label="{23602: read-variable['script',v11,-]|23603: read-variable['s',v12,-]|23604: read-property[v12,'url',v10]|23605: \<variable-non-null-undef\>['s']|23606: write-property[v11,'src',v10]|23607: \<variable-non-null-undef\>['script']*|23608: read-variable['script',v14,-]|23609: read-variable['script',v15,-]|23610: function-expr[function ( _ isAbort ),v13]|23611: write-property[v15,'onreadystatechange',v13]|23612: \<variable-non-null-undef\>['script']|23613: write-property[v14,'onload',v13]|23614: \<variable-non-null-undef\>['script']*|23615: read-variable['head',v17,-]|23616: read-property[v17,'insertBefore',-]|23617: \<variable-non-null-undef\>['head']|23618: read-variable['script',v18,-]|23619: read-variable['head',v20,-]|23620: read-property[v20,'firstChild',v19]|23621: \<variable-non-null-undef\>['head']}" ] 
+BB8036 -> BB8037 [tailport=s, headport=n, headlabel="      8037"]
+BB8036 -> BB8039 [tailport=s, headport=n, color=gray]
+BB8037 [shape=record label="{23622: call-head.insertBefore [v17,'insertBefore',v18,v19,-]*}" ] 
+BB8037 -> BB8038 [tailport=s, headport=n, headlabel="      8038"]
+BB8037 -> BB8039 [tailport=s, headport=n, color=gray]
+BB8038 [shape=record label="{23623: return[v1]}" ] 
+BB8039 [shape=record label="{23624: exceptional-return}" ] 
+}

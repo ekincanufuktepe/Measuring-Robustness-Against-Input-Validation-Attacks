@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry164[shape=none,label=""];
+BB_entry164 -> BB2495 [tailport=s, headport=n, headlabel="    2495"]
+BB2495 [shape=record label="{6917: constant[undefined,v1]|6918: vardecl['matcherCachedRuns']|6919: vardecl['bySet']|6920: vardecl['byElement']|6921: vardecl['superMatcher']}" ] 
+BB2495 -> BB2496 [tailport=s, headport=n, headlabel="      2496"]
+BB2496 [shape=record label="{6922: constant[0.0,v2]|6923: write-variable[v2,'matcherCachedRuns']*|6924: read-variable['setMatchers',v6,-]|6925: read-property[v6,'length',v4]|6926: \<variable-non-null-undef\>['setMatchers']|6927: constant[0.0,v5]|6928: \>[v4,v5,v3]|6929: write-variable[v3,'bySet']*|6930: read-variable['elementMatchers',v10,-]|6931: read-property[v10,'length',v8]|6932: \<variable-non-null-undef\>['elementMatchers']|6933: constant[0.0,v9]|6934: \>[v8,v9,v7]|6935: write-variable[v7,'byElement']*|6936: function-expr[function(seed,context,xml,results,expandContext),v11]|6937: write-variable[v11,'superMatcher']*|6938: read-variable['bySet',v12,-]|6939: if[v12](true-block:2497,false-block:2498)}" ] 
+BB2496 -> BB2497 [tailport=s, headport=n, headlabel="      2497"]
+BB2496 -> BB2498 [tailport=s, headport=n, headlabel="      2498"]
+BB2496 -> BB2501 [tailport=s, headport=n, color=gray, headlabel="      2501"]
+BB2497 [shape=record label="{6940: read-variable['markFunction',v14,v13]|6941: read-variable['superMatcher',v15,-]}" ] 
+BB2497 -> BB2499 [tailport=s, headport=n, headlabel="      2499"]
+BB2497 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2498 [shape=record label="{6942: read-variable['superMatcher',v1,-]}" ] 
+BB2498 -> BB2500 [tailport=s, headport=n, headlabel="      2500"]
+BB2498 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2499 [shape=record label="{6943: call[v13,v14,v15,v1]}" ] 
+BB2499 -> BB2500 [tailport=s, headport=n]
+BB2499 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2500 [shape=record label="{6944: return[v1]}" ] 
+BB2501 [shape=record label="{6945: exceptional-return}" ] 
+}

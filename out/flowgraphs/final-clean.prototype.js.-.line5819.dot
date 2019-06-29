@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry567[shape=none,label=""];
+BB_entry567 -> BB7335 [tailport=s, headport=n, headlabel="    7335"]
+BB7335 [shape=record label="{20467: constant[undefined,v1]|20468: vardecl['i']}" ] 
+BB7335 -> BB7336 [tailport=s, headport=n, headlabel="      7336"]
+BB7336 [shape=record label="{20469: read-variable['matchers',v3,-]|20470: read-property[v3,'length',v2]|20471: \<variable-non-null-undef\>['matchers']|20472: write-variable[v2,'i']*}" ] 
+BB7336 -> BB7337 [tailport=s, headport=n, headlabel="      7337"]
+BB7336 -> BB7344 [tailport=s, headport=n, color=gray, headlabel="      7344"]
+BB7337 [shape=record label="{20473: constant[1.0,v5]|20474: read-variable['i',v6,-]|20475: +[v6,v4]|20476: -[v4,v5,v7]|20477: write-variable[v7,'i']|20478: if[v4](true-block:7338,false-block:7339)}" ] 
+BB7337 -> BB7338 [tailport=s, headport=n, headlabel="      7338"]
+BB7337 -> BB7339 [tailport=s, headport=n, headlabel="      7339"]
+BB7337 -> BB7344 [tailport=s, headport=n, color=gray]
+BB7338 [shape=record label="{20479: read-variable['matchers',v11,-]|20480: read-variable['i',v12,-]|20481: read-property[v11,v12,-]|20482: \<variable-non-null-undef\>['matchers']|20483: read-variable['elem',v13,-]|20484: read-variable['context',v14,-]|20485: read-variable['xml',v15,-]}" ] 
+BB7338 -> BB7340 [tailport=s, headport=n, headlabel="      7340"]
+BB7338 -> BB7344 [tailport=s, headport=n, color=gray]
+BB7339 [shape=record label="{20486: constant[true,v1]}" ] 
+BB7339 -> BB7343 [tailport=s, headport=n, headlabel="      7343"]
+BB7340 [shape=record label="{20487: call-null [v11,[v12],v13,v14,v15,v9]}" ] 
+BB7340 -> BB7341 [tailport=s, headport=n, headlabel="      7341"]
+BB7340 -> BB7344 [tailport=s, headport=n, color=gray]
+BB7341 [shape=record label="{20488: ![v9,v8]|20489: if[v8](true-block:7342,false-block:7337)}" ] 
+BB7341 -> BB7342 [tailport=s, headport=n, headlabel="      7342"]
+BB7341 -> BB7337 [tailport=s, headport=n]
+BB7341 -> BB7344 [tailport=s, headport=n, color=gray]
+BB7342 [shape=record label="{20490: constant[false,v1]}" ] 
+BB7342 -> BB7343 [tailport=s, headport=n]
+BB7343 [shape=record label="{20491: return[v1]}" ] 
+BB7344 [shape=record label="{20492: exceptional-return}" ] 
+//#$~ 5826
+}

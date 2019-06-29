@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry308[shape=none,label=""];
+BB_entry308 -> BB4299 [tailport=s, headport=n, headlabel="    4299"]
+BB4299 [shape=record label="{12846: constant[undefined,v1]}" ] 
+BB4299 -> BB4300 [tailport=s, headport=n, headlabel="      4300"]
+BB4300 [shape=record label="{12847: read-variable['query',v6,-]|12848: read-property[v6,'filter',-]|12849: \<variable-non-null-undef\>['query']|12850: read-variable['Array',v8,-]|12851: read-variable['node',v9,-]}" ] 
+BB4300 -> BB4301 [tailport=s, headport=n, headlabel="      4301"]
+BB4300 -> BB4306 [tailport=s, headport=n, color=gray, headlabel="      4306"]
+BB4301 [shape=record label="{12852: construct [-,v8,v9,v7]}" ] 
+BB4301 -> BB4302 [tailport=s, headport=n, headlabel="      4302"]
+BB4301 -> BB4306 [tailport=s, headport=n, color=gray]
+BB4302 [shape=record label="{12853: read-variable['selector',v10,-]|12854: read-variable['root',v11,-]}" ] 
+BB4302 -> BB4303 [tailport=s, headport=n, headlabel="      4303"]
+BB4302 -> BB4306 [tailport=s, headport=n, color=gray]
+BB4303 [shape=record label="{12855: call-query.filter [v6,'filter',v7,v10,v11,v4]}" ] 
+BB4303 -> BB4304 [tailport=s, headport=n, headlabel="      4304"]
+BB4303 -> BB4306 [tailport=s, headport=n, color=gray]
+BB4304 [shape=record label="{12856: read-property[v4,'length',v2]|12857: constant[0.0,v3]|12858: \>[v2,v3,v1]}" ] 
+BB4304 -> BB4305 [tailport=s, headport=n, headlabel="      4305"]
+BB4304 -> BB4306 [tailport=s, headport=n, color=gray]
+BB4305 [shape=record label="{12859: return[v1]}" ] 
+BB4306 [shape=record label="{12860: exceptional-return}" ] 
+//#$~ 5931
+}

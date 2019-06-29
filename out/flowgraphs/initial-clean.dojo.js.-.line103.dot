@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB45 [tailport=s, headport=n, headlabel="    45"]
+BB45 [shape=record label="{227: constant[undefined,v1]|228: vardecl['i']}" ] 
+BB45 -> BB46 [tailport=s, headport=n, headlabel="      46"]
+BB46 [shape=record label="{229: read-variable['vector',v2,-]|230: if[v2](true-block:47,false-block:51)}" ] 
+BB46 -> BB47 [tailport=s, headport=n, headlabel="      47"]
+BB46 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB46 -> BB52 [tailport=s, headport=n, color=gray, headlabel="      52"]
+BB47 [shape=record label="{231: constant[0.0,v4]|232: write-variable[v4,'i']*}" ] 
+BB47 -> BB48 [tailport=s, headport=n, headlabel="      48"]
+BB48 [shape=record label="{233: read-variable['i',v5,-]|234: read-variable['vector',v7,-]|235: read-property[v7,'length',v6]|236: \<variable-non-null-undef\>['vector']|237: \<[v5,v6,v3]|238: if[v3](true-block:49,false-block:51)}" ] 
+BB48 -> BB49 [tailport=s, headport=n, headlabel="      49"]
+BB48 -> BB51 [tailport=s, headport=n]
+BB48 -> BB52 [tailport=s, headport=n, color=gray]
+BB49 [shape=record label="{239: read-variable['callback',v9,v8]|240: read-variable['vector',v11,-]|241: constant[1.0,v13]|242: read-variable['i',v14,-]|243: +[v14,v12]|244: +[v12,v13,v15]|245: write-variable[v15,'i']|246: read-property[v11,v12,v10]|247: \<variable-non-null-undef\>['vector']}" ] 
+BB49 -> BB50 [tailport=s, headport=n, headlabel="      50"]
+BB49 -> BB52 [tailport=s, headport=n, color=gray]
+BB50 [shape=record label="{248: call-callback [v8,v9,v10,-]*}" ] 
+BB50 -> BB48 [tailport=s, headport=n]
+BB50 -> BB52 [tailport=s, headport=n, color=gray]
+BB51 [shape=record label="{249: return[v1]}" ] 
+BB52 [shape=record label="{250: exceptional-return}" ] 
+//#$~ 105
+}

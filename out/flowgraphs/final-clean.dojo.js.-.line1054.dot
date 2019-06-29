@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry59[shape=none,label=""];
+BB_entry59 -> BB790 [tailport=s, headport=n, headlabel="    790"]
+BB790 [shape=record label="{2239: constant[undefined,v1]}" ] 
+BB790 -> BB791 [tailport=s, headport=n, headlabel="      791"]
+BB791 [shape=record label="{2240: read-variable['plugin',v3,-]|2241: read-property[v3,'normalize',v2]|2242: \<variable-non-null-undef\>['plugin']|2243: if[v2](true-block:792,false-block:793)}" ] 
+BB791 -> BB792 [tailport=s, headport=n, headlabel="      792"]
+BB791 -> BB793 [tailport=s, headport=n, headlabel="      793"]
+BB791 -> BB797 [tailport=s, headport=n, color=gray, headlabel="      797"]
+BB792 [shape=record label="{2244: read-variable['plugin',v5,-]|2245: read-property[v5,'normalize',-]|2246: \<variable-non-null-undef\>['plugin']|2247: read-variable['prid',v6,-]|2248: function-expr[function ( mid ),v7]}" ] 
+BB792 -> BB794 [tailport=s, headport=n, headlabel="      794"]
+BB792 -> BB797 [tailport=s, headport=n, color=gray]
+BB793 [shape=record label="{2249: read-variable['toAbsMid',v5,v4]|2250: read-variable['prid',v6,-]|2251: read-variable['referenceModule',v7,-]}" ] 
+BB793 -> BB795 [tailport=s, headport=n, headlabel="      795"]
+BB793 -> BB797 [tailport=s, headport=n, color=gray]
+BB794 [shape=record label="{2252: call-plugin.normalize [v5,'normalize',v6,v7,v1]}" ] 
+BB794 -> BB796 [tailport=s, headport=n, headlabel="      796"]
+BB794 -> BB797 [tailport=s, headport=n, color=gray]
+BB795 [shape=record label="{2253: call-toAbsMid [v4,v5,v6,v7,v1]}" ] 
+BB795 -> BB796 [tailport=s, headport=n]
+BB795 -> BB797 [tailport=s, headport=n, color=gray]
+BB796 [shape=record label="{2254: return[v1]}" ] 
+BB797 [shape=record label="{2255: exceptional-return}" ] 
+//#$~ 1055
+}

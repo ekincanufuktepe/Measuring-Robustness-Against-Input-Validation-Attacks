@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry141[shape=none,label=""];
+BB_entry141 -> BB1185 [tailport=s, headport=n, headlabel="    1185"]
+BB1185 [shape=record label="{3521: constant[undefined,v1]|3522: vardecl['props']|3523: vardecl['name']|3524: vardecl['val']|3525: vardecl['type']}" ] 
+BB1185 -> BB1186 [tailport=s, headport=n, headlabel="      1186"]
+BB1186 [shape=record label="{3526: read-variable['this',v4,-]|3527: read-property[v4,'getProps',-]}" ] 
+BB1186 -> BB1187 [tailport=s, headport=n, headlabel="      1187"]
+BB1186 -> BB1193 [tailport=s, headport=n, color=gray, headlabel="      1193"]
+BB1187 [shape=record label="{3528: call-this.getProps [v4,'getProps',v2]}" ] 
+BB1187 -> BB1188 [tailport=s, headport=n, headlabel="      1188"]
+BB1187 -> BB1193 [tailport=s, headport=n, color=gray]
+BB1188 [shape=record label="{3529: write-variable[v2,'props']*|3530: read-variable['this',v7,-]|3531: read-property[v7,'getName',-]}" ] 
+BB1188 -> BB1189 [tailport=s, headport=n, headlabel="      1189"]
+BB1188 -> BB1193 [tailport=s, headport=n, color=gray]
+BB1189 [shape=record label="{3532: call-this.getName [v7,'getName',v5]}" ] 
+BB1189 -> BB1190 [tailport=s, headport=n, headlabel="      1190"]
+BB1189 -> BB1193 [tailport=s, headport=n, color=gray]
+BB1190 [shape=record label="{3533: write-variable[v5,'name']*|3534: read-variable['classObject',v11,-]|3535: read-property[v11,'prototype',v9]|3536: \<variable-non-null-undef\>['classObject']|3537: read-variable['name',v10,-]|3538: constant[null,v8]|3539: write-property[v9,v10,v8]|3540: \<property-non-null-undef\>[v11,'prototype']*|3541: read-variable['props',v16,-]|3542: read-property[v16,'init',v15]|3543: \<variable-non-null-undef\>['props']|3544: typeof[v15,v13]|3545: constant[\"undefined\",v14]|3546: !=[v13,v14,v12]|3547: if[v12](true-block:1191,false-block:1192)}" ] 
+BB1190 -> BB1191 [tailport=s, headport=n, headlabel="      1191"]
+BB1190 -> BB1192 [tailport=s, headport=n, headlabel="      1192"]
+BB1190 -> BB1193 [tailport=s, headport=n, color=gray]
+BB1191 [shape=record label="{3548: read-variable['props',v18,-]|3549: read-property[v18,'init',v17]|3550: \<variable-non-null-undef\>['props']|3551: write-variable[v17,'val']*|3552: typeof['val',v19]|3553: write-variable[v19,'type']*|3554: read-variable['classObject',v23,-]|3555: read-property[v23,'prototype',v21]|3556: \<variable-non-null-undef\>['classObject']|3557: read-variable['name',v22,-]|3558: read-variable['val',v20,-]|3559: write-property[v21,v22,v20]|3560: \<property-non-null-undef\>[v23,'prototype']*}" ] 
+BB1191 -> BB1192 [tailport=s, headport=n]
+BB1191 -> BB1193 [tailport=s, headport=n, color=gray]
+BB1192 [shape=record label="{3561: return[v1]}" ] 
+BB1193 [shape=record label="{3562: exceptional-return}" ] 
+//#$~ 1350
+}

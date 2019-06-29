@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry253[shape=none,label=""];
+BB_entry253 -> BB3006 [tailport=s, headport=n, headlabel="    3006"]
+BB3006 [shape=record label="{7740: constant[undefined,v1]}" ] 
+BB3006 -> BB3007 [tailport=s, headport=n, headlabel="      3007"]
+BB3007 [shape=record label="{7741: read-variable['$',v5,-]|7742: read-property[v5,'type',-]|7743: \<variable-non-null-undef\>['$']|7744: read-variable['object',v6,-]}" ] 
+BB3007 -> BB3008 [tailport=s, headport=n, headlabel="      3008"]
+BB3007 -> BB3012 [tailport=s, headport=n, color=gray, headlabel="      3012"]
+BB3008 [shape=record label="{7745: call-$.type [v5,'type',v6,v2]}" ] 
+BB3008 -> BB3009 [tailport=s, headport=n, headlabel="      3009"]
+BB3008 -> BB3012 [tailport=s, headport=n, color=gray]
+BB3009 [shape=record label="{7746: constant[\"array\",v3]|7747: ===[v2,v3,v1]|7748: if[v1](true-block:3010,false-block:3011)}" ] 
+BB3009 -> BB3011 [tailport=s, headport=n, headlabel="      3011"]
+BB3009 -> BB3010 [tailport=s, headport=n, headlabel="      3010"]
+BB3009 -> BB3012 [tailport=s, headport=n, color=gray]
+BB3010 [shape=record label="{7749: constant[\"__Z\",v7]|7750: read-variable['object',v8,-]|7751: in[v7,v8,v1]}" ] 
+BB3010 -> BB3011 [tailport=s, headport=n]
+BB3010 -> BB3012 [tailport=s, headport=n, color=gray]
+BB3011 [shape=record label="{7752: return[v1]}" ] 
+BB3012 [shape=record label="{7753: exceptional-return}" ] 
+//#$~ 1568
+}

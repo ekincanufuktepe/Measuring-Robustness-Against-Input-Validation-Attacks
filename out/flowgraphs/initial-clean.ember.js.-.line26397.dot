@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1190[shape=none,label=""];
+BB_entry1190 -> BB14279 [tailport=s, headport=n, headlabel="    14279"]
+BB14279 [shape=record label="{49229: constant[undefined,v1]|49230: vardecl['length']}" ] 
+BB14279 -> BB14280 [tailport=s, headport=n, headlabel="      14280"]
+BB14280 [shape=record label="{49231: read-variable['get',v4,v3]|49232: read-variable['array',v5,-]|49233: constant[\"length\",v6]}" ] 
+BB14280 -> BB14281 [tailport=s, headport=n, headlabel="      14281"]
+BB14280 -> BB14285 [tailport=s, headport=n, color=gray, headlabel="      14285"]
+BB14281 [shape=record label="{49234: call-get [v3,v4,v5,v6,v2]}" ] 
+BB14281 -> BB14282 [tailport=s, headport=n, headlabel="      14282"]
+BB14281 -> BB14285 [tailport=s, headport=n, color=gray]
+BB14282 [shape=record label="{49235: write-variable[v2,'length']*|49236: read-variable['trackedArray',v8,-]|49237: read-property[v8,'apply',-]|49238: \<variable-non-null-undef\>['trackedArray']|49239: function-expr[function ( observerContexts offset operation operationIndex ),v9]}" ] 
+BB14282 -> BB14283 [tailport=s, headport=n, headlabel="      14283"]
+BB14282 -> BB14285 [tailport=s, headport=n, color=gray]
+BB14283 [shape=record label="{49240: call-trackedArray.apply [v8,'apply',v9,-]*}" ] 
+BB14283 -> BB14284 [tailport=s, headport=n, headlabel="      14284"]
+BB14283 -> BB14285 [tailport=s, headport=n, color=gray]
+BB14284 [shape=record label="{49241: return[v1]}" ] 
+BB14285 [shape=record label="{49242: exceptional-return}" ] 
+//#$~ 26412
+}

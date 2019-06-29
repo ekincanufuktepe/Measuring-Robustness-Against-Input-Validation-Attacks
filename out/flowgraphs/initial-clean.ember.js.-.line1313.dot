@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry77[shape=none,label=""];
+BB_entry77 -> BB1072 [tailport=s, headport=n, headlabel="    1072"]
+BB1072 [shape=record label="{3560: constant[undefined,v1]}" ] 
+BB1072 -> BB1073 [tailport=s, headport=n, headlabel="      1073"]
+BB1073 [shape=record label="{3561: read-variable['Ember',v3,-]|3562: read-property[v3,'assert',-]|3563: \<variable-non-null-undef\>['Ember']|3564: constant[\"fullName must be a proper full name\",v4]|3565: read-variable['validateFullName',v7,v6]|3566: read-variable['fullName',v8,-]}" ] 
+BB1073 -> BB1074 [tailport=s, headport=n, headlabel="      1074"]
+BB1073 -> BB1080 [tailport=s, headport=n, color=gray, headlabel="      1080"]
+BB1074 [shape=record label="{3567: call-validateFullName [v6,v7,v8,v5]}" ] 
+BB1074 -> BB1075 [tailport=s, headport=n, headlabel="      1075"]
+BB1074 -> BB1080 [tailport=s, headport=n, color=gray]
+BB1075 [shape=record label="{3568: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB1075 -> BB1076 [tailport=s, headport=n, headlabel="      1076"]
+BB1075 -> BB1080 [tailport=s, headport=n, color=gray]
+BB1076 [shape=record label="{3569: read-variable['resolve',v10,v9]|3570: read-variable['this',v11,-]|3571: read-variable['this',v14,-]|3572: read-property[v14,'normalize',-]|3573: read-variable['fullName',v15,-]}" ] 
+BB1076 -> BB1077 [tailport=s, headport=n, headlabel="      1077"]
+BB1076 -> BB1080 [tailport=s, headport=n, color=gray]
+BB1077 [shape=record label="{3574: call-this.normalize [v14,'normalize',v15,v12]}" ] 
+BB1077 -> BB1078 [tailport=s, headport=n, headlabel="      1078"]
+BB1077 -> BB1080 [tailport=s, headport=n, color=gray]
+BB1078 [shape=record label="{3575: call-resolve [v9,v10,v11,v12,v1]}" ] 
+BB1078 -> BB1079 [tailport=s, headport=n, headlabel="      1079"]
+BB1078 -> BB1080 [tailport=s, headport=n, color=gray]
+BB1079 [shape=record label="{3576: return[v1]}" ] 
+BB1080 [shape=record label="{3577: exceptional-return}" ] 
+//#$~ 1315
+}

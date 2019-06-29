@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry279[shape=none,label=""];
+BB_entry279 -> BB2966 [tailport=s, headport=n, headlabel="    2966"]
+BB2966 [shape=record label="{9608: constant[undefined,v1]|9609: vardecl['child']}" ] 
+BB2966 -> BB2967 [tailport=s, headport=n, headlabel="      2967"]
+BB2967 [shape=record label="{9610: read-variable['elem',v4,-]|9611: read-property[v4,'querySelector',-]|9612: \<variable-non-null-undef\>['elem']|9613: read-variable['query',v5,-]}" ] 
+BB2967 -> BB2968 [tailport=s, headport=n, headlabel="      2968"]
+BB2967 -> BB2973 [tailport=s, headport=n, color=gray, headlabel="      2973"]
+BB2968 [shape=record label="{9614: call-elem.querySelector [v4,'querySelector',v5,v2]}" ] 
+BB2968 -> BB2969 [tailport=s, headport=n, headlabel="      2969"]
+BB2968 -> BB2973 [tailport=s, headport=n, color=gray]
+BB2969 [shape=record label="{9615: write-variable[v2,'child']*|9616: read-variable['child',v1,-]|9617: if[v1](true-block:2970,false-block:2972)}" ] 
+BB2969 -> BB2972 [tailport=s, headport=n, headlabel="      2972"]
+BB2969 -> BB2970 [tailport=s, headport=n, headlabel="      2970"]
+BB2969 -> BB2973 [tailport=s, headport=n, color=gray]
+BB2970 [shape=record label="{9618: read-variable['getText',v7,v6]|9619: read-variable['child',v8,-]}" ] 
+BB2970 -> BB2971 [tailport=s, headport=n, headlabel="      2971"]
+BB2970 -> BB2973 [tailport=s, headport=n, color=gray]
+BB2971 [shape=record label="{9620: call-getText [v6,v7,v8,v1]}" ] 
+BB2971 -> BB2972 [tailport=s, headport=n]
+BB2971 -> BB2973 [tailport=s, headport=n, color=gray]
+BB2972 [shape=record label="{9621: return[v1]}" ] 
+BB2973 [shape=record label="{9622: exceptional-return}" ] 
+//#$~ 4023
+}

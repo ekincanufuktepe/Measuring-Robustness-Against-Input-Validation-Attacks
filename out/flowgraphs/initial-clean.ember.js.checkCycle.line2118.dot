@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry121[shape=none,label=""];
+BB_entry121 -> BB1583 [tailport=s, headport=n, headlabel="    1583"]
+BB1583 [shape=record label="{5093: constant[undefined,v1]}" ] 
+BB1583 -> BB1584 [tailport=s, headport=n, headlabel="      1584"]
+BB1584 [shape=record label="{5094: read-variable['vertex',v5,-]|5095: read-property[v5,'name',v3]|5096: \<variable-non-null-undef\>['vertex']|5097: read-variable['toName',v4,-]|5098: ===[v3,v4,v2]|5099: if[v2](true-block:1585,false-block:1590)}" ] 
+BB1584 -> BB1585 [tailport=s, headport=n, headlabel="      1585"]
+BB1584 -> BB1590 [tailport=s, headport=n, headlabel="      1590"]
+BB1584 -> BB1591 [tailport=s, headport=n, color=gray, headlabel="      1591"]
+BB1585 [shape=record label="{5100: read-variable['Error',v7,-]|5101: constant[\"cycle detected: \",v13]|5102: read-variable['toName',v14,-]|5103: +[v13,v14,v11]|5104: constant[\" \\\<- \",v12]|5105: +[v11,v12,v9]|5106: read-variable['path',v16,-]|5107: read-property[v16,'join',-]|5108: \<variable-non-null-undef\>['path']|5109: constant[\" \\\<- \",v17]}" ] 
+BB1585 -> BB1586 [tailport=s, headport=n, headlabel="      1586"]
+BB1585 -> BB1591 [tailport=s, headport=n, color=gray]
+BB1586 [shape=record label="{5110: call-path.join [v16,'join',v17,v10]}" ] 
+BB1586 -> BB1587 [tailport=s, headport=n, headlabel="      1587"]
+BB1586 -> BB1591 [tailport=s, headport=n, color=gray]
+BB1587 [shape=record label="{5111: +[v9,v10,v8]}" ] 
+BB1587 -> BB1588 [tailport=s, headport=n, headlabel="      1588"]
+BB1587 -> BB1591 [tailport=s, headport=n, color=gray]
+BB1588 [shape=record label="{5112: construct [-,v7,v8,v6]}" ] 
+BB1588 -> BB1589 [tailport=s, headport=n, headlabel="      1589"]
+BB1588 -> BB1591 [tailport=s, headport=n, color=gray]
+BB1589 [shape=record label="{5113: throw[v6]*}" ] 
+BB1589 -> BB1590 [tailport=s, headport=n]
+BB1589 -> BB1591 [tailport=s, headport=n, color=gray]
+BB1590 [shape=record label="{5114: return[v1]}" ] 
+BB1591 [shape=record label="{5115: exceptional-return}" ] 
+//#$~ 2120
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry160[shape=none,label=""];
+BB_entry160 -> BB1295 [tailport=s, headport=n, headlabel="    1295"]
+BB1295 [shape=record label="{3808: constant[undefined,v1]}" ] 
+BB1295 -> BB1296 [tailport=s, headport=n, headlabel="      1296"]
+BB1296 [shape=record label="{3809: read-variable['props',v4,-]|3810: read-property[v4,'meta',v3]|3811: \<variable-non-null-undef\>['props']|3812: ![v3,v2]|3813: if[v2](true-block:1297,false-block:1298)}" ] 
+BB1296 -> BB1297 [tailport=s, headport=n, headlabel="      1297"]
+BB1296 -> BB1298 [tailport=s, headport=n, headlabel="      1298"]
+BB1296 -> BB1301 [tailport=s, headport=n, color=gray, headlabel="      1301"]
+BB1297 [shape=record label="{3814: read-variable['props',v6,-]|3815: read-variable['Joose',v7,-]|3816: read-property[v7,'Role',v5]|3817: \<variable-non-null-undef\>['Joose']|3818: write-property[v6,'meta',v5]|3819: \<variable-non-null-undef\>['props']*}" ] 
+BB1297 -> BB1298 [tailport=s, headport=n]
+BB1297 -> BB1301 [tailport=s, headport=n, color=gray]
+BB1298 [shape=record label="{3820: read-variable['JooseClass',v6,v5]|3821: read-variable['name',v7,-]|3822: read-variable['props',v8,-]}" ] 
+BB1298 -> BB1299 [tailport=s, headport=n, headlabel="      1299"]
+BB1298 -> BB1301 [tailport=s, headport=n, color=gray]
+BB1299 [shape=record label="{3823: call-JooseClass [v5,v6,v7,v8,v1]}" ] 
+BB1299 -> BB1300 [tailport=s, headport=n, headlabel="      1300"]
+BB1299 -> BB1301 [tailport=s, headport=n, color=gray]
+BB1300 [shape=record label="{3824: return[v1]}" ] 
+BB1301 [shape=record label="{3825: exceptional-return}" ] 
+//#$~ 1498
+}

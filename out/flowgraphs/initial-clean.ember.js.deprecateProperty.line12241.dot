@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry535[shape=none,label=""];
+BB_entry535 -> BB6562 [tailport=s, headport=n, headlabel="    6562"]
+BB6562 [shape=record label="{23051: constant[undefined,v1]|23052: function-decl[function deprecate ( ),-]}" ] 
+BB6562 -> BB6563 [tailport=s, headport=n, headlabel="      6563"]
+BB6563 [shape=record label="{23053: read-variable['hasPropertyAccessors',v2,-]|23054: if[v2](true-block:6564,false-block:6566)}" ] 
+BB6563 -> BB6564 [tailport=s, headport=n, headlabel="      6564"]
+BB6563 -> BB6566 [tailport=s, headport=n, headlabel="      6566"]
+BB6563 -> BB6567 [tailport=s, headport=n, color=gray, headlabel="      6567"]
+BB6564 [shape=record label="{23055: read-variable['defineProperty',v4,v3]|23056: read-variable['object',v5,-]|23057: read-variable['deprecatedKey',v6,-]|23058: new[v7]|23059: constant[true,v8]|23060: write-property[v7,'configurable',v8]|23061: constant[false,v9]|23062: write-property[v7,'enumerable',v9]|23063: function-expr[function ( value ),v10]|23064: write-property[v7,'set',v10]|23065: function-expr[function ( ),v11]|23066: write-property[v7,'get',v11]}" ] 
+BB6564 -> BB6565 [tailport=s, headport=n, headlabel="      6565"]
+BB6564 -> BB6567 [tailport=s, headport=n, color=gray]
+BB6565 [shape=record label="{23067: call-defineProperty [v3,v4,v5,v6,v7,-]*}" ] 
+BB6565 -> BB6566 [tailport=s, headport=n]
+BB6565 -> BB6567 [tailport=s, headport=n, color=gray]
+BB6566 [shape=record label="{23068: return[v1]}" ] 
+BB6567 [shape=record label="{23069: exceptional-return}" ] 
+//#$~ 12251
+}

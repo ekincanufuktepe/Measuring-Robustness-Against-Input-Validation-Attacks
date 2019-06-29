@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry260[shape=none,label=""];
+BB_entry260 -> BB3334 [tailport=s, headport=n, headlabel="    3334"]
+BB3334 [shape=record label="{10979: constant[undefined,v1]|10980: vardecl['ctor']}" ] 
+BB3334 -> BB3335 [tailport=s, headport=n, headlabel="      3335"]
+BB3335 [shape=record label="{10981: read-variable['Object',v6,-]|10982: read-property[v6,'create',v5]|10983: \<variable-non-null-undef\>['Object']|10984: typeof[v5,v3]|10985: constant[\"function\",v4]|10986: ===[v3,v4,v2]|10987: if[v2](true-block:3336,false-block:3337)}" ] 
+BB3335 -> BB3336 [tailport=s, headport=n, headlabel="      3336"]
+BB3335 -> BB3337 [tailport=s, headport=n, headlabel="      3337"]
+BB3335 -> BB3339 [tailport=s, headport=n, color=gray, headlabel="      3339"]
+BB3336 [shape=record label="{10988: read-variable['Object',v7,-]|10989: read-property[v7,'create',v1]|10990: \<variable-non-null-undef\>['Object']}" ] 
+BB3336 -> BB3338 [tailport=s, headport=n, headlabel="      3338"]
+BB3336 -> BB3339 [tailport=s, headport=n, color=gray]
+BB3337 [shape=record label="{10991: function-expr[function ( ),v7]|10992: write-variable[v7,'ctor']*|10993: function-expr[function ( obj ),v1]}" ] 
+BB3337 -> BB3338 [tailport=s, headport=n]
+BB3338 [shape=record label="{10994: return[v1]}" ] 
+BB3339 [shape=record label="{10995: exceptional-return}" ] 
+//#$~ 2912
+}

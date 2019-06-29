@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry36[shape=none,label=""];
+BB_entry36 -> BB397 [tailport=s, headport=n, headlabel="    397"]
+BB397 [shape=record label="{1199: constant[undefined,v1]|1200: vardecl['cache']|1201: function-decl[function tmpl ( str data ),-]}" ] 
+BB397 -> BB398 [tailport=s, headport=n, headlabel="      398"]
+BB398 [shape=record label="{1202: read-variable['templateString',v3,-]|1203: read-variable['Function',v4,-]|1204: instanceof[v3,v4,v2]|1205: if[v2](true-block:399,false-block:401)}" ] 
+BB398 -> BB399 [tailport=s, headport=n, headlabel="      399"]
+BB398 -> BB401 [tailport=s, headport=n, headlabel="      401"]
+BB398 -> BB404 [tailport=s, headport=n, color=gray, headlabel="      404"]
+BB399 [shape=record label="{1206: read-variable['templateString',v6,v5]|1207: read-variable['valuesObject',v7,-]}" ] 
+BB399 -> BB400 [tailport=s, headport=n, headlabel="      400"]
+BB399 -> BB404 [tailport=s, headport=n, color=gray]
+BB400 [shape=record label="{1208: call-templateString [v5,v6,v7,v1]}" ] 
+BB400 -> BB403 [tailport=s, headport=n, headlabel="      403"]
+BB400 -> BB404 [tailport=s, headport=n, color=gray]
+BB401 [shape=record label="{1209: new[v5]|1210: write-variable[v5,'cache']*|1211: read-variable['tmpl',v7,v6]|1212: read-variable['templateString',v8,-]|1213: read-variable['valuesObject',v9,-]}" ] 
+BB401 -> BB402 [tailport=s, headport=n, headlabel="      402"]
+BB401 -> BB404 [tailport=s, headport=n, color=gray]
+BB402 [shape=record label="{1214: call-tmpl [v6,v7,v8,v9,v1]}" ] 
+BB402 -> BB403 [tailport=s, headport=n]
+BB402 -> BB404 [tailport=s, headport=n, color=gray]
+BB403 [shape=record label="{1215: return[v1]}" ] 
+BB404 [shape=record label="{1216: exceptional-return}" ] 
+//#$~ 503
+}

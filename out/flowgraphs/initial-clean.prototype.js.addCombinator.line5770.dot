@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry563[shape=none,label=""];
+BB_entry563 -> BB7327 [tailport=s, headport=n, headlabel="    7327"]
+BB7327 [shape=record label="{20439: constant[undefined,v1]|20440: vardecl['dir']|20441: vardecl['checkNonElements']|20442: vardecl['doneName']}" ] 
+BB7327 -> BB7328 [tailport=s, headport=n, headlabel="      7328"]
+BB7328 [shape=record label="{20443: read-variable['combinator',v3,-]|20444: read-property[v3,'dir',v2]|20445: \<variable-non-null-undef\>['combinator']|20446: write-variable[v2,'dir']*|20447: read-variable['base',v4,-]|20448: if[v4](true-block:7329,false-block:7330)}" ] 
+BB7328 -> BB7330 [tailport=s, headport=n, headlabel="      7330"]
+BB7328 -> BB7329 [tailport=s, headport=n, headlabel="      7329"]
+BB7328 -> BB7334 [tailport=s, headport=n, color=gray, headlabel="      7334"]
+BB7329 [shape=record label="{20449: read-variable['dir',v5,-]|20450: constant[\"parentNode\",v6]|20451: ===[v5,v6,v4]}" ] 
+BB7329 -> BB7330 [tailport=s, headport=n]
+BB7329 -> BB7334 [tailport=s, headport=n, color=gray]
+BB7330 [shape=record label="{20452: write-variable[v4,'checkNonElements']*|20453: constant[1.0,v6]|20454: read-variable['done',v7,-]|20455: +[v7,v5]|20456: +[v5,v6,v8]|20457: write-variable[v8,'done']|20458: write-variable[v5,'doneName']*|20459: read-variable['combinator',v10,-]|20460: read-property[v10,'first',v9]|20461: \<variable-non-null-undef\>['combinator']|20462: if[v9](true-block:7331,false-block:7332)}" ] 
+BB7330 -> BB7331 [tailport=s, headport=n, headlabel="      7331"]
+BB7330 -> BB7332 [tailport=s, headport=n, headlabel="      7332"]
+BB7330 -> BB7334 [tailport=s, headport=n, color=gray]
+BB7331 [shape=record label="{20463: function-expr[function ( elem context xml ),v1]}" ] 
+BB7331 -> BB7333 [tailport=s, headport=n, headlabel="      7333"]
+BB7332 [shape=record label="{20464: function-expr[function ( elem context xml ),v1]}" ] 
+BB7332 -> BB7333 [tailport=s, headport=n]
+BB7333 [shape=record label="{20465: return[v1]}" ] 
+BB7334 [shape=record label="{20466: exceptional-return}" ] 
+//#$~ 5808
+}

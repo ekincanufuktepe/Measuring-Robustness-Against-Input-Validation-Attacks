@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry967[shape=none,label=""];
+BB_entry967 -> BB11746 [tailport=s, headport=n, headlabel="    11746"]
+BB11746 [shape=record label="{40371: constant[undefined,v1]|40372: vardecl['_window']|40373: vardecl['documentMode']}" ] 
+BB11746 -> BB11747 [tailport=s, headport=n, headlabel="      11747"]
+BB11747 [shape=record label="{40374: read-variable['this',v3,-]|40375: read-property[v3,'_window',v2]|40376: write-variable[v2,'_window']*|40377: read-variable['_window',v6,-]|40378: read-property[v6,'document',v5]|40379: \<variable-non-null-undef\>['_window']|40380: read-property[v5,'documentMode',v4]|40381: \<property-non-null-undef\>[v6,'document']|40382: write-variable[v4,'documentMode']*|40383: constant[\"onhashchange\",v7]|40384: read-variable['_window',v8,-]|40385: in[v7,v8,v1]|40386: if[v1](true-block:11748,false-block:11750)}" ] 
+BB11747 -> BB11750 [tailport=s, headport=n, headlabel="      11750"]
+BB11747 -> BB11748 [tailport=s, headport=n, headlabel="      11748"]
+BB11747 -> BB11751 [tailport=s, headport=n, color=gray, headlabel="      11751"]
+BB11748 [shape=record label="{40387: read-variable['documentMode',v9,-]|40388: read-variable['undefined',v10,-]|40389: ===[v9,v10,v1]|40390: if[v1](true-block:11750,false-block:11749)}" ] 
+BB11748 -> BB11750 [tailport=s, headport=n]
+BB11748 -> BB11749 [tailport=s, headport=n, headlabel="      11749"]
+BB11748 -> BB11751 [tailport=s, headport=n, color=gray]
+BB11749 [shape=record label="{40391: read-variable['documentMode',v9,-]|40392: constant[7.0,v10]|40393: \>[v9,v10,v1]}" ] 
+BB11749 -> BB11750 [tailport=s, headport=n]
+BB11749 -> BB11751 [tailport=s, headport=n, color=gray]
+BB11750 [shape=record label="{40394: return[v1]}" ] 
+BB11751 [shape=record label="{40395: exceptional-return}" ] 
+//#$~ 21707
+}

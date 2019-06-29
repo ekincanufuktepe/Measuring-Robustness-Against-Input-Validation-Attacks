@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry228[shape=none,label=""];
+BB_entry228 -> BB4953 [tailport=s, headport=n, headlabel="    4953"]
+BB4953 [shape=record label="{16050: constant[undefined,v1]|16051: vardecl['lookup']}" ] 
+BB4953 -> BB4954 [tailport=s, headport=n, headlabel="      4954"]
+BB4954 [shape=record label="{16052: read-variable['this',v4,-]|16053: read-property[v4,'nameLookup',-]|16054: read-variable['current',v5,-]|16055: read-variable['parts',v7,-]|16056: read-variable['i',v8,-]|16057: read-property[v7,v8,v6]|16058: \<variable-non-null-undef\>['parts']|16059: read-variable['type',v9,-]}" ] 
+BB4954 -> BB4955 [tailport=s, headport=n, headlabel="      4955"]
+BB4954 -> BB4962 [tailport=s, headport=n, color=gray, headlabel="      4962"]
+BB4955 [shape=record label="{16060: call-this.nameLookup [v4,'nameLookup',v5,v6,v9,v2]}" ] 
+BB4955 -> BB4956 [tailport=s, headport=n, headlabel="      4956"]
+BB4955 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4956 [shape=record label="{16061: write-variable[v2,'lookup']*|16062: read-variable['falsy',v11,-]|16063: ![v11,v10]|16064: if[v10](true-block:4957,false-block:4958)}" ] 
+BB4956 -> BB4957 [tailport=s, headport=n, headlabel="      4957"]
+BB4956 -> BB4958 [tailport=s, headport=n, headlabel="      4958"]
+BB4956 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4957 [shape=record label="{16065: read-variable['Array',v12,-]|16066: constant[\" != null ? \",v13]|16067: read-variable['lookup',v14,-]|16068: constant[\" : \",v15]|16069: read-variable['current',v16,-]}" ] 
+BB4957 -> BB4959 [tailport=s, headport=n, headlabel="      4959"]
+BB4957 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4958 [shape=record label="{16070: read-variable['Array',v12,-]|16071: constant[\" && \",v13]|16072: read-variable['lookup',v14,-]}" ] 
+BB4958 -> BB4960 [tailport=s, headport=n, headlabel="      4960"]
+BB4958 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4959 [shape=record label="{16073: construct [-,v12,v13,v14,v15,v16,v1]}" ] 
+BB4959 -> BB4961 [tailport=s, headport=n, headlabel="      4961"]
+BB4959 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4960 [shape=record label="{16074: construct [-,v12,v13,v14,v1]}" ] 
+BB4960 -> BB4961 [tailport=s, headport=n]
+BB4960 -> BB4962 [tailport=s, headport=n, color=gray]
+BB4961 [shape=record label="{16075: return[v1]}" ] 
+BB4962 [shape=record label="{16076: exceptional-return}" ] 
+//#$~ 3071
+}

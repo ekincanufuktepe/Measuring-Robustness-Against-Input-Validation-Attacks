@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry111[shape=none,label=""];
+BB_entry111 -> BB1052 [tailport=s, headport=n, headlabel="    1052"]
+BB1052 [shape=record label="{3759: constant[undefined,v1]|3760: vardecl['config']}" ] 
+BB1052 -> BB1053 [tailport=s, headport=n, headlabel="      1053"]
+BB1053 [shape=record label="{3761: read-variable['merge',v4,v3]|3762: read-variable['Chart',v7,-]|3763: read-property[v7,'defaults',v6]|3764: \<variable-non-null-undef\>['Chart']|3765: read-property[v6,'global',v5]|3766: \<property-non-null-undef\>[v7,'defaults']|3767: read-variable['Chart',v10,-]|3768: read-property[v10,'defaults',v9]|3769: \<variable-non-null-undef\>['Chart']|3770: read-variable['chartName',v11,-]|3771: read-property[v9,v11,v8]|3772: \<property-non-null-undef\>[v10,'defaults']|3773: read-variable['options',v12,-]|3774: if[v12](true-block:1055,false-block:1054)}" ] 
+BB1053 -> BB1055 [tailport=s, headport=n, headlabel="      1055"]
+BB1053 -> BB1054 [tailport=s, headport=n, headlabel="      1054"]
+BB1053 -> BB1059 [tailport=s, headport=n, color=gray, headlabel="      1059"]
+BB1054 [shape=record label="{3775: new[v12]}" ] 
+BB1054 -> BB1055 [tailport=s, headport=n]
+BB1055 [shape=record label="{3776: call-merge [v3,v4,v5,v8,v12,v2]}" ] 
+BB1055 -> BB1056 [tailport=s, headport=n, headlabel="      1056"]
+BB1055 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1056 [shape=record label="{3777: write-variable[v2,'config']*|3778: read-variable['ChartType',v13,-]|3779: read-variable['data',v14,-]|3780: read-variable['config',v15,-]|3781: read-variable['this',v16,-]}" ] 
+BB1056 -> BB1057 [tailport=s, headport=n, headlabel="      1057"]
+BB1056 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1057 [shape=record label="{3782: construct [-,v13,v14,v15,v16,v1]}" ] 
+BB1057 -> BB1058 [tailport=s, headport=n, headlabel="      1058"]
+BB1057 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1058 [shape=record label="{3783: return[v1]}" ] 
+BB1059 [shape=record label="{3784: exceptional-return}" ] 
+//#$~ 1086
+}

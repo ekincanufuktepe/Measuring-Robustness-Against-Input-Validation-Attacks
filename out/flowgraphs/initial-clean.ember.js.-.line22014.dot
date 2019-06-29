@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry980[shape=none,label=""];
+BB_entry980 -> BB11915 [tailport=s, headport=n, headlabel="    11915"]
+BB11915 [shape=record label="{40902: constant[undefined,v1]}" ] 
+BB11915 -> BB11916 [tailport=s, headport=n, headlabel="      11916"]
+BB11916 [shape=record label="{40903: read-variable['get',v5,v4]|40904: read-variable['this',v6,-]|40905: constant[\"location\",v7]}" ] 
+BB11916 -> BB11917 [tailport=s, headport=n, headlabel="      11917"]
+BB11916 -> BB11923 [tailport=s, headport=n, color=gray, headlabel="      11923"]
+BB11917 [shape=record label="{40906: call-get [v4,v5,v6,v7,v3]}" ] 
+BB11917 -> BB11918 [tailport=s, headport=n, headlabel="      11918"]
+BB11917 -> BB11923 [tailport=s, headport=n, color=gray]
+BB11918 [shape=record label="{40907: read-property[v3,'replace',-]|40908: constant[\"#\",v9]|40909: read-variable['path',v10,-]|40910: +[v9,v10,v8]}" ] 
+BB11918 -> BB11919 [tailport=s, headport=n, headlabel="      11919"]
+BB11918 -> BB11923 [tailport=s, headport=n, color=gray]
+BB11919 [shape=record label="{40911: call-null [v3,'replace',v8,-]*}" ] 
+BB11919 -> BB11920 [tailport=s, headport=n, headlabel="      11920"]
+BB11919 -> BB11923 [tailport=s, headport=n, color=gray]
+BB11920 [shape=record label="{40912: read-variable['set',v12,v11]|40913: read-variable['this',v13,-]|40914: constant[\"lastSetURL\",v14]|40915: read-variable['path',v15,-]}" ] 
+BB11920 -> BB11921 [tailport=s, headport=n, headlabel="      11921"]
+BB11920 -> BB11923 [tailport=s, headport=n, color=gray]
+BB11921 [shape=record label="{40916: call-set [v11,v12,v13,v14,v15,-]*}" ] 
+BB11921 -> BB11922 [tailport=s, headport=n, headlabel="      11922"]
+BB11921 -> BB11923 [tailport=s, headport=n, color=gray]
+BB11922 [shape=record label="{40917: return[v1]}" ] 
+BB11923 [shape=record label="{40918: exceptional-return}" ] 
+//#$~ 22016
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry222[shape=none,label=""];
+BB_entry222 -> BB2859 [tailport=s, headport=n, headlabel="    2859"]
+BB2859 [shape=record label="{11997: constant[undefined,v1]}" ] 
+BB2859 -> BB2860 [tailport=s, headport=n, headlabel="      2860"]
+BB2860 [shape=record label="{11998: read-variable['MochiKit',v6,-]|11999: read-property[v6,'LoggingPane',v5]|12000: \<variable-non-null-undef\>['MochiKit']|12001: typeof[v5,v3]|12002: constant[\"undefined\",v4]|12003: ==[v3,v4,v2]|12004: if[v2](true-block:2861,false-block:2862)}" ] 
+BB2860 -> BB2861 [tailport=s, headport=n, headlabel="      2861"]
+BB2860 -> BB2862 [tailport=s, headport=n, headlabel="      2862"]
+BB2860 -> BB2868 [tailport=s, headport=n, color=gray, headlabel="      2868"]
+BB2861 [shape=record label="{12005: read-variable['alert',v8,v7]|12006: read-variable['this',v11,-]|12007: read-property[v11,'getMessageText',-]}" ] 
+BB2861 -> BB2863 [tailport=s, headport=n, headlabel="      2863"]
+BB2861 -> BB2868 [tailport=s, headport=n, color=gray]
+BB2862 [shape=record label="{12008: read-variable['MochiKit',v9,-]|12009: read-property[v9,'LoggingPane',v8]|12010: \<variable-non-null-undef\>['MochiKit']|12011: read-property[v8,'createLoggingPane',-]|12012: \<property-non-null-undef\>[v9,'LoggingPane']|12013: read-variable['_218',v10,-]|12014: if[v10](true-block:2866,false-block:2865)}" ] 
+BB2862 -> BB2866 [tailport=s, headport=n, headlabel="      2866"]
+BB2862 -> BB2865 [tailport=s, headport=n, headlabel="      2865"]
+BB2862 -> BB2868 [tailport=s, headport=n, color=gray]
+BB2863 [shape=record label="{12015: call-this.getMessageText [v11,'getMessageText',v9]}" ] 
+BB2863 -> BB2864 [tailport=s, headport=n, headlabel="      2864"]
+BB2863 -> BB2868 [tailport=s, headport=n, color=gray]
+BB2864 [shape=record label="{12016: call-alert [v7,v8,v9,-]*}" ] 
+BB2864 -> BB2867 [tailport=s, headport=n, headlabel="      2867"]
+BB2864 -> BB2868 [tailport=s, headport=n, color=gray]
+BB2865 [shape=record label="{12017: constant[false,v10]}" ] 
+BB2865 -> BB2866 [tailport=s, headport=n]
+BB2866 [shape=record label="{12018: call-MochiKit.LoggingPane.createLoggingPane [v8,'createLoggingPane',v10,-]*}" ] 
+BB2866 -> BB2867 [tailport=s, headport=n]
+BB2866 -> BB2868 [tailport=s, headport=n, color=gray]
+BB2867 [shape=record label="{12019: return[v1]}" ] 
+BB2868 [shape=record label="{12020: exceptional-return}" ] 
+//#$~ 1845
+}

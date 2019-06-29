@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry47[shape=none,label=""];
+BB_entry47 -> BB624 [tailport=s, headport=n, headlabel="    624"]
+BB624 [shape=record label="{2133: constant[undefined,v1]|2134: vardecl['a']}" ] 
+BB624 -> BB625 [tailport=s, headport=n, headlabel="      625"]
+BB625 [shape=record label="{2135: read-variable['update',v4,v3]|2136: read-variable['Array',v6,-]|2137: read-variable['event',v7,-]|2138: if[v7](true-block:627,false-block:626)}" ] 
+BB625 -> BB627 [tailport=s, headport=n, headlabel="      627"]
+BB625 -> BB626 [tailport=s, headport=n, headlabel="      626"]
+BB625 -> BB633 [tailport=s, headport=n, color=gray, headlabel="      633"]
+BB626 [shape=record label="{2139: read-variable['window',v8,-]|2140: read-property[v8,'event',v7]|2141: \<variable-non-null-undef\>['window']}" ] 
+BB626 -> BB627 [tailport=s, headport=n]
+BB626 -> BB633 [tailport=s, headport=n, color=gray]
+BB627 [shape=record label="{2142: construct [-,v6,v7,v5]}" ] 
+BB627 -> BB628 [tailport=s, headport=n, headlabel="      628"]
+BB627 -> BB633 [tailport=s, headport=n, color=gray]
+BB628 [shape=record label="{2143: read-variable['args',v8,-]}" ] 
+BB628 -> BB629 [tailport=s, headport=n, headlabel="      629"]
+BB628 -> BB633 [tailport=s, headport=n, color=gray]
+BB629 [shape=record label="{2144: call-update [v3,v4,v5,v8,v2]}" ] 
+BB629 -> BB630 [tailport=s, headport=n, headlabel="      630"]
+BB629 -> BB633 [tailport=s, headport=n, color=gray]
+BB630 [shape=record label="{2145: write-variable[v2,'a']*|2146: read-variable['__method',v10,-]|2147: read-property[v10,'apply',-]|2148: \<variable-non-null-undef\>['__method']|2149: read-variable['context',v11,-]|2150: read-variable['a',v12,-]}" ] 
+BB630 -> BB631 [tailport=s, headport=n, headlabel="      631"]
+BB630 -> BB633 [tailport=s, headport=n, color=gray]
+BB631 [shape=record label="{2151: call-__method.apply [v10,'apply',v11,v12,v1]}" ] 
+BB631 -> BB632 [tailport=s, headport=n, headlabel="      632"]
+BB631 -> BB633 [tailport=s, headport=n, color=gray]
+BB632 [shape=record label="{2152: return[v1]}" ] 
+BB633 [shape=record label="{2153: exceptional-return}" ] 
+//#$~ 417
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry759[shape=none,label=""];
+BB_entry759 -> BB10125 [tailport=s, headport=n, headlabel="    10125"]
+BB10125 [shape=record label="{33516: constant[undefined,v1]}" ] 
+BB10125 -> BB10126 [tailport=s, headport=n, headlabel="      10126"]
+BB10126 [shape=record label="{33517: read-variable['contentKey',v3,-]|33518: ![v3,v2]|33519: if[v2](true-block:10127,false-block:10128)}" ] 
+BB10126 -> BB10128 [tailport=s, headport=n, headlabel="      10128"]
+BB10126 -> BB10127 [tailport=s, headport=n, headlabel="      10127"]
+BB10126 -> BB10135 [tailport=s, headport=n, color=gray, headlabel="      10135"]
+BB10127 [shape=record label="{33520: read-variable['ExecutionEnvironment',v4,-]|33521: read-property[v4,'canUseDOM',v2]|33522: \<variable-non-null-undef\>['ExecutionEnvironment']}" ] 
+BB10127 -> BB10128 [tailport=s, headport=n]
+BB10127 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10128 [shape=record label="{33523: if[v2](true-block:10129,false-block:10133)}" ] 
+BB10128 -> BB10129 [tailport=s, headport=n, headlabel="      10129"]
+BB10128 -> BB10133 [tailport=s, headport=n, headlabel="      10133"]
+BB10129 [shape=record label="{33524: constant[\"textContent\",v6]|33525: read-variable['document',v8,-]|33526: read-property[v8,'documentElement',v7]|33527: \<variable-non-null-undef\>['document']|33528: in[v6,v7,v5]|33529: if[v5](true-block:10130,false-block:10131)}" ] 
+BB10129 -> BB10130 [tailport=s, headport=n, headlabel="      10130"]
+BB10129 -> BB10131 [tailport=s, headport=n, headlabel="      10131"]
+BB10129 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10130 [shape=record label="{33530: constant[\"textContent\",v4]}" ] 
+BB10130 -> BB10132 [tailport=s, headport=n, headlabel="      10132"]
+BB10131 [shape=record label="{33531: constant[\"innerText\",v4]}" ] 
+BB10131 -> BB10132 [tailport=s, headport=n]
+BB10132 [shape=record label="{33532: write-variable[v4,'contentKey']*}" ] 
+BB10132 -> BB10133 [tailport=s, headport=n]
+BB10133 [shape=record label="{33533: read-variable['contentKey',v1,-]}" ] 
+BB10133 -> BB10134 [tailport=s, headport=n, headlabel="      10134"]
+BB10133 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10134 [shape=record label="{33534: return[v1]}" ] 
+BB10135 [shape=record label="{33535: exceptional-return}" ] 
+//#$~ 18175
+}

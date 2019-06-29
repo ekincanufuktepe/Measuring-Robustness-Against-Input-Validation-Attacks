@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry142[shape=none,label=""];
+BB_entry142 -> BB1877 [tailport=s, headport=n, headlabel="    1877"]
+BB1877 [shape=record label="{6065: constant[undefined,v1]}" ] 
+BB1877 -> BB1878 [tailport=s, headport=n, headlabel="      1878"]
+BB1878 [shape=record label="{6066: read-variable['Ember',v3,-]|6067: read-property[v3,'assert',-]|6068: \<variable-non-null-undef\>['Ember']|6069: constant[\"You must call advanceReadiness on an instance of Ember.Application\",v4]|6070: read-variable['this',v6,-]|6071: read-variable['Application',v7,-]|6072: instanceof[v6,v7,v5]}" ] 
+BB1878 -> BB1879 [tailport=s, headport=n, headlabel="      1879"]
+BB1878 -> BB1884 [tailport=s, headport=n, color=gray, headlabel="      1884"]
+BB1879 [shape=record label="{6073: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB1879 -> BB1880 [tailport=s, headport=n, headlabel="      1880"]
+BB1879 -> BB1884 [tailport=s, headport=n, color=gray]
+BB1880 [shape=record label="{6074: constant[1.0,v8]|6075: read-variable['this',v10,-]|6076: read-property[v10,'_readinessDeferrals',v9]|6077: +[v9,v11]|6078: -[v11,v8,v12]|6079: write-property[v10,'_readinessDeferrals',v12]*|6080: read-variable['this',v16,-]|6081: read-property[v16,'_readinessDeferrals',v14]|6082: constant[0.0,v15]|6083: ===[v14,v15,v13]|6084: if[v13](true-block:1881,false-block:1883)}" ] 
+BB1880 -> BB1881 [tailport=s, headport=n, headlabel="      1881"]
+BB1880 -> BB1883 [tailport=s, headport=n, headlabel="      1883"]
+BB1880 -> BB1884 [tailport=s, headport=n, color=gray]
+BB1881 [shape=record label="{6085: read-variable['run',v18,-]|6086: read-property[v18,'once',-]|6087: \<variable-non-null-undef\>['run']|6088: read-variable['this',v19,-]|6089: read-variable['this',v21,-]|6090: read-property[v21,'didBecomeReady',v20]}" ] 
+BB1881 -> BB1882 [tailport=s, headport=n, headlabel="      1882"]
+BB1881 -> BB1884 [tailport=s, headport=n, color=gray]
+BB1882 [shape=record label="{6091: call-run.once [v18,'once',v19,v20,-]*}" ] 
+BB1882 -> BB1883 [tailport=s, headport=n]
+BB1882 -> BB1884 [tailport=s, headport=n, color=gray]
+BB1883 [shape=record label="{6092: return[v1]}" ] 
+BB1884 [shape=record label="{6093: exceptional-return}" ] 
+//#$~ 2839
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry200[shape=none,label=""];
+BB_entry200 -> BB2063 [tailport=s, headport=n, headlabel="    2063"]
+BB2063 [shape=record label="{5997: constant[undefined,v1]|5998: vardecl['position1']|5999: vardecl['dx']|6000: vardecl['dy']}" ] 
+BB2063 -> BB2064 [tailport=s, headport=n, headlabel="      2064"]
+BB2064 [shape=record label="{6001: read-variable['position',v4,v3]|6002: read-variable['parent',v5,-]|6003: read-variable['dragId',v6,-]}" ] 
+BB2064 -> BB2065 [tailport=s, headport=n, headlabel="      2065"]
+BB2064 -> BB2071 [tailport=s, headport=n, color=gray, headlabel="      2071"]
+BB2065 [shape=record label="{6004: call-position [v3,v4,v5,v6,v2]}" ] 
+BB2065 -> BB2066 [tailport=s, headport=n, headlabel="      2066"]
+BB2065 -> BB2071 [tailport=s, headport=n, color=gray]
+BB2066 [shape=record label="{6005: write-variable[v2,'position1']*|6006: read-variable['position1',v8,-]|6007: ![v8,v7]|6008: if[v7](true-block:2067,false-block:2068)}" ] 
+BB2066 -> BB2067 [tailport=s, headport=n, headlabel="      2067"]
+BB2066 -> BB2068 [tailport=s, headport=n, headlabel="      2068"]
+BB2066 -> BB2071 [tailport=s, headport=n, color=gray]
+BB2067 [shape=record label="{6009: constant[undefined,v1]}" ] 
+BB2067 -> BB2070 [tailport=s, headport=n, headlabel="      2070"]
+BB2068 [shape=record label="{6010: read-variable['position1',v12,-]|6011: constant[0.0,v13]|6012: read-property[v12,v13,v10]|6013: \<variable-non-null-undef\>['position1']|6014: read-variable['position0',v14,-]|6015: constant[0.0,v15]|6016: read-property[v14,v15,v11]|6017: \<variable-non-null-undef\>['position0']|6018: -[v10,v11,v9]|6019: write-variable[v9,'dx']*|6020: read-variable['position1',v19,-]|6021: constant[1.0,v20]|6022: read-property[v19,v20,v17]|6023: \<variable-non-null-undef\>['position1']|6024: read-variable['position0',v21,-]|6025: constant[1.0,v22]|6026: read-property[v21,v22,v18]|6027: \<variable-non-null-undef\>['position0']|6028: -[v17,v18,v16]|6029: write-variable[v16,'dy']*|6030: read-variable['dragged',v24,-]|6031: read-variable['dx',v26,-]|6032: read-variable['dy',v27,-]|6033: |[v26,v27,v25]|6034: |[v24,v25,v23]|6035: write-variable[v23,'dragged']*|6036: read-variable['position1',v28,-]|6037: write-variable[v28,'position0']*|6038: read-variable['dispatch',v30,v29]|6039: new[v31]|6040: constant[\"drag\",v32]|6041: write-property[v31,'type',v32]|6042: read-variable['position1',v36,-]|6043: constant[0.0,v37]|6044: read-property[v36,v37,v34]|6045: \<variable-non-null-undef\>['position1']|6046: read-variable['dragOffset',v38,-]|6047: constant[0.0,v39]|6048: read-property[v38,v39,v35]|6049: \<variable-non-null-undef\>['dragOffset']|6050: +[v34,v35,v33]|6051: write-property[v31,'x',v33]|6052: read-variable['position1',v43,-]|6053: constant[1.0,v44]|6054: read-property[v43,v44,v41]|6055: \<variable-non-null-undef\>['position1']|6056: read-variable['dragOffset',v45,-]|6057: constant[1.0,v46]|6058: read-property[v45,v46,v42]|6059: \<variable-non-null-undef\>['dragOffset']|6060: +[v41,v42,v40]|6061: write-property[v31,'y',v40]|6062: read-variable['dx',v47,-]|6063: write-property[v31,'dx',v47]|6064: read-variable['dy',v48,-]|6065: write-property[v31,'dy',v48]}" ] 
+BB2068 -> BB2069 [tailport=s, headport=n, headlabel="      2069"]
+BB2068 -> BB2071 [tailport=s, headport=n, color=gray]
+BB2069 [shape=record label="{6066: call-dispatch [v29,v30,v31,-]*}" ] 
+BB2069 -> BB2070 [tailport=s, headport=n]
+BB2069 -> BB2071 [tailport=s, headport=n, color=gray]
+BB2070 [shape=record label="{6067: return[v1]}" ] 
+BB2071 [shape=record label="{6068: exceptional-return}" ] 
+//#$~ 1230
+}

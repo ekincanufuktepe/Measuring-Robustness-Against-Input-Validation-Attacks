@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry107[shape=none,label=""];
+BB_entry107 -> BB1422 [tailport=s, headport=n, headlabel="    1422"]
+BB1422 [shape=record label="{3208: constant[undefined,v1]}" ] 
+BB1422 -> BB1423 [tailport=s, headport=n, headlabel="      1423"]
+BB1423 [shape=record label="{3209: read-variable['name',v3,-]|3210: constant[\"hasOwnProperty\",v4]|3211: ===[v3,v4,v2]|3212: if[v2](true-block:1424,false-block:1427)}" ] 
+BB1423 -> BB1424 [tailport=s, headport=n, headlabel="      1424"]
+BB1423 -> BB1427 [tailport=s, headport=n, headlabel="      1427"]
+BB1423 -> BB1428 [tailport=s, headport=n, color=gray, headlabel="      1428"]
+BB1424 [shape=record label="{3213: read-variable['ngMinErr',v7,v6]|3214: constant[\"badname\",v8]|3215: constant[\"hasOwnProperty is not a valid \\\{0\\\} name\",v9]|3216: read-variable['context',v10,-]}" ] 
+BB1424 -> BB1425 [tailport=s, headport=n, headlabel="      1425"]
+BB1424 -> BB1428 [tailport=s, headport=n, color=gray]
+BB1425 [shape=record label="{3217: call-ngMinErr [v6,v7,v8,v9,v10,v5]}" ] 
+BB1425 -> BB1426 [tailport=s, headport=n, headlabel="      1426"]
+BB1425 -> BB1428 [tailport=s, headport=n, color=gray]
+BB1426 [shape=record label="{3218: throw[v5]*}" ] 
+BB1426 -> BB1427 [tailport=s, headport=n]
+BB1426 -> BB1428 [tailport=s, headport=n, color=gray]
+BB1427 [shape=record label="{3219: return[v1]}" ] 
+BB1428 [shape=record label="{3220: exceptional-return}" ] 
+//#$~ 1948
+}

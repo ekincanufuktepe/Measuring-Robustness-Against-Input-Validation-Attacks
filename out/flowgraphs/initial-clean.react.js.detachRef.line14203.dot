@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry588[shape=none,label=""];
+BB_entry588 -> BB8089 [tailport=s, headport=n, headlabel="    8089"]
+BB8089 [shape=record label="{26988: constant[undefined,v1]}" ] 
+BB8089 -> BB8090 [tailport=s, headport=n, headlabel="      8090"]
+BB8090 [shape=record label="{26989: typeof['ref',v3]|26990: constant[\"function\",v4]|26991: ===[v3,v4,v2]|26992: if[v2](true-block:8091,false-block:8092)}" ] 
+BB8090 -> BB8091 [tailport=s, headport=n, headlabel="      8091"]
+BB8090 -> BB8092 [tailport=s, headport=n, headlabel="      8092"]
+BB8090 -> BB8096 [tailport=s, headport=n, color=gray, headlabel="      8096"]
+BB8091 [shape=record label="{26993: read-variable['ref',v6,v5]|26994: constant[null,v7]}" ] 
+BB8091 -> BB8093 [tailport=s, headport=n, headlabel="      8093"]
+BB8091 -> BB8096 [tailport=s, headport=n, color=gray]
+BB8092 [shape=record label="{26995: read-variable['ReactOwner',v6,-]|26996: read-property[v6,'removeComponentAsRefFrom',-]|26997: \<variable-non-null-undef\>['ReactOwner']|26998: read-variable['component',v7,-]|26999: read-variable['ref',v8,-]|27000: read-variable['owner',v9,-]}" ] 
+BB8092 -> BB8094 [tailport=s, headport=n, headlabel="      8094"]
+BB8092 -> BB8096 [tailport=s, headport=n, color=gray]
+BB8093 [shape=record label="{27001: call-ref [v5,v6,v7,-]*}" ] 
+BB8093 -> BB8095 [tailport=s, headport=n, headlabel="      8095"]
+BB8093 -> BB8096 [tailport=s, headport=n, color=gray]
+BB8094 [shape=record label="{27002: call-ReactOwner.removeComponentAsRefFrom [v6,'removeComponentAsRefFrom',v7,v8,v9,-]*}" ] 
+BB8094 -> BB8095 [tailport=s, headport=n]
+BB8094 -> BB8096 [tailport=s, headport=n, color=gray]
+BB8095 [shape=record label="{27003: return[v1]}" ] 
+BB8096 [shape=record label="{27004: exceptional-return}" ] 
+//#$~ 14208
+}

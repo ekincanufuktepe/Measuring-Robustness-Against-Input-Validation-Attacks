@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry2525[shape=none,label=""];
+BB_entry2525 -> BB28672 [tailport=s, headport=n, headlabel="    28672"]
+BB28672 [shape=record label="{95343: constant[undefined,v1]|95344: vardecl['callbacks']}" ] 
+BB28672 -> BB28673 [tailport=s, headport=n, headlabel="      28673"]
+BB28673 [shape=record label="{95345: read-variable['object',v3,-]|95346: read-property[v3,'_promiseCallbacks',v2]|95347: \<variable-non-null-undef\>['object']|95348: write-variable[v2,'callbacks']*|95349: read-variable['callbacks',v5,-]|95350: ![v5,v4]|95351: if[v4](true-block:28674,false-block:28675)}" ] 
+BB28673 -> BB28674 [tailport=s, headport=n, headlabel="      28674"]
+BB28673 -> BB28675 [tailport=s, headport=n, headlabel="      28675"]
+BB28673 -> BB28677 [tailport=s, headport=n, color=gray, headlabel="      28677"]
+BB28674 [shape=record label="{95352: read-variable['object',v7,-]|95353: new[v6]|95354: write-property[v7,'_promiseCallbacks',v6]|95355: \<variable-non-null-undef\>['object']|95356: write-variable[v6,'callbacks']*}" ] 
+BB28674 -> BB28675 [tailport=s, headport=n]
+BB28674 -> BB28677 [tailport=s, headport=n, color=gray]
+BB28675 [shape=record label="{95357: read-variable['callbacks',v1,-]}" ] 
+BB28675 -> BB28676 [tailport=s, headport=n, headlabel="      28676"]
+BB28675 -> BB28677 [tailport=s, headport=n, color=gray]
+BB28676 [shape=record label="{95358: return[v1]}" ] 
+BB28677 [shape=record label="{95359: exceptional-return}" ] 
+//#$~ 51038
+}

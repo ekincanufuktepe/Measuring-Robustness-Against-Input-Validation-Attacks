@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry1142[shape=none,label=""];
+BB_entry1142 -> BB13800 [tailport=s, headport=n, headlabel="    13800"]
+BB13800 [shape=record label="{47007: constant[undefined,v1]|47008: vardecl['i']}" ] 
+BB13800 -> BB13801 [tailport=s, headport=n, headlabel="      13801"]
+BB13801 [shape=record label="{47009: constant[0.0,v3]|47010: write-variable[v3,'i']*}" ] 
+BB13801 -> BB13802 [tailport=s, headport=n, headlabel="      13802"]
+BB13802 [shape=record label="{47011: read-variable['i',v4,-]|47012: read-variable['router',v7,-]|47013: read-property[v7,'callbacks',v6]|47014: \<variable-non-null-undef\>['router']|47015: read-property[v6,'length',v5]|47016: \<property-non-null-undef\>[v7,'callbacks']|47017: \<[v4,v5,v2]|47018: if[v2](true-block:13803,false-block:13804)}" ] 
+BB13802 -> BB13803 [tailport=s, headport=n, headlabel="      13803"]
+BB13802 -> BB13804 [tailport=s, headport=n, headlabel="      13804"]
+BB13802 -> BB13809 [tailport=s, headport=n, color=gray, headlabel="      13809"]
+BB13803 [shape=record label="{47019: read-variable['router',v11,-]|47020: read-property[v11,'callbacks',v10]|47021: \<variable-non-null-undef\>['router']|47022: read-variable['i',v12,-]|47023: read-property[v10,v12,v9]|47024: \<property-non-null-undef\>[v11,'callbacks']|47025: read-property[v9,'call',-]|47026: \<property-non-null-undef\>[v10,v12]|47027: read-variable['this',v13,-]}" ] 
+BB13803 -> BB13805 [tailport=s, headport=n, headlabel="      13805"]
+BB13803 -> BB13809 [tailport=s, headport=n, color=gray]
+BB13804 [shape=record label="{47028: read-variable['callback',v9,-]|47029: read-property[v9,'call',-]|47030: \<variable-non-null-undef\>['callback']|47031: read-variable['this',v10,-]}" ] 
+BB13804 -> BB13807 [tailport=s, headport=n, headlabel="      13807"]
+BB13804 -> BB13809 [tailport=s, headport=n, color=gray]
+BB13805 [shape=record label="{47032: call-null [v9,'call',v13,-]*}" ] 
+BB13805 -> BB13806 [tailport=s, headport=n, headlabel="      13806"]
+BB13805 -> BB13809 [tailport=s, headport=n, color=gray]
+BB13806 [shape=record label="{47033: constant[1.0,v14]|47034: read-variable['i',v15,-]|47035: +[v15,v16]|47036: +[v16,v14,v17]|47037: write-variable[v17,'i']}" ] 
+BB13806 -> BB13802 [tailport=s, headport=n]
+BB13806 -> BB13809 [tailport=s, headport=n, color=gray]
+BB13807 [shape=record label="{47038: call-callback.call [v9,'call',v10,-]*}" ] 
+BB13807 -> BB13808 [tailport=s, headport=n, headlabel="      13808"]
+BB13807 -> BB13809 [tailport=s, headport=n, color=gray]
+BB13808 [shape=record label="{47039: return[v1]}" ] 
+BB13809 [shape=record label="{47040: exceptional-return}" ] 
+//#$~ 25560
+}

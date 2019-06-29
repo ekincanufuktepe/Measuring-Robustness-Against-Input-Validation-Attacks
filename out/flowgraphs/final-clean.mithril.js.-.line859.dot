@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry55[shape=none,label=""];
+BB_entry55 -> BB1372 [tailport=s, headport=n, headlabel="    1372"]
+BB1372 [shape=record label="{4851: constant[undefined,v1]}" ] 
+BB1372 -> BB1373 [tailport=s, headport=n, headlabel="      1373"]
+BB1373 [shape=record label="{4852: read-variable['propify',v3,v2]|4853: read-variable['promise',v6,-]|4854: read-property[v6,'then',-]|4855: \<variable-non-null-undef\>['promise']|4856: read-variable['resolve',v7,-]|4857: read-variable['reject',v8,-]}" ] 
+BB1373 -> BB1374 [tailport=s, headport=n, headlabel="      1374"]
+BB1373 -> BB1378 [tailport=s, headport=n, color=gray, headlabel="      1378"]
+BB1374 [shape=record label="{4858: call-promise.then [v6,'then',v7,v8,v4]}" ] 
+BB1374 -> BB1375 [tailport=s, headport=n, headlabel="      1375"]
+BB1374 -> BB1378 [tailport=s, headport=n, color=gray]
+BB1375 [shape=record label="{4859: read-variable['initialValue',v9,-]}" ] 
+BB1375 -> BB1376 [tailport=s, headport=n, headlabel="      1376"]
+BB1375 -> BB1378 [tailport=s, headport=n, color=gray]
+BB1376 [shape=record label="{4860: call-propify [v2,v3,v4,v9,v1]}" ] 
+BB1376 -> BB1377 [tailport=s, headport=n, headlabel="      1377"]
+BB1376 -> BB1378 [tailport=s, headport=n, color=gray]
+BB1377 [shape=record label="{4861: return[v1]}" ] 
+BB1378 [shape=record label="{4862: exceptional-return}" ] 
+//#$~ 860
+}

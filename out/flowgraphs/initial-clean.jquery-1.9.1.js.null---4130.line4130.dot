@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry246[shape=none,label=""];
+BB_entry246 -> BB3723 [tailport=s, headport=n, headlabel="    3723"]
+BB3723 [shape=record label="{10901: constant[undefined,v1]|10902: vardecl['node']}" ] 
+BB3723 -> BB3724 [tailport=s, headport=n, headlabel="      3724"]
+BB3724 [shape=record label="{10903: read-variable['elem-4131:27',v7,v2]|10904: read-property[v7,'getAttributeNode',v6]|10905: \<variable-non-null-undef\>['elem']|10906: typeof[v6,v4]|10907: read-variable['strundefined-4131:53',v5,v2]|10908: !==[v4,v5,v3]|10909: if[v3](true-block:3725,false-block:3727)}" ] 
+BB3724 -> BB3727 [tailport=s, headport=n, headlabel="      3727"]
+BB3724 -> BB3725 [tailport=s, headport=n, headlabel="      3725"]
+BB3724 -> BB3730 [tailport=s, headport=n, color=gray, headlabel="      3730"]
+BB3725 [shape=record label="{10910: read-variable['elem-4131:69',v9,-]|10911: read-property[v9,'getAttributeNode',-]|10912: \<variable-non-null-undef\>['elem']|10913: constant[\"id\",v10]}" ] 
+BB3725 -> BB3726 [tailport=s, headport=n, headlabel="      3726"]
+BB3725 -> BB3730 [tailport=s, headport=n, color=gray]
+BB3726 [shape=record label="{10914: call-0:0[v9,'getAttributeNode',v10,v3]}" ] 
+BB3726 -> BB3727 [tailport=s, headport=n]
+BB3726 -> BB3730 [tailport=s, headport=n, color=gray]
+BB3727 [shape=record label="{10915: write-variable[v3,'node']*|10916: read-variable['node-4132:16',v1,v2]|10917: if[v1](true-block:3728,false-block:3729)}" ] 
+BB3727 -> BB3729 [tailport=s, headport=n, headlabel="      3729"]
+BB3727 -> BB3728 [tailport=s, headport=n, headlabel="      3728"]
+BB3727 -> BB3730 [tailport=s, headport=n, color=gray]
+BB3728 [shape=record label="{10918: read-variable['node-4132:24',v10,v2]|10919: read-property[v10,'value',v8]|10920: \<variable-non-null-undef\>['node']|10921: read-variable['attrId-4132:39',v9,v2]|10922: ===[v8,v9,v1]}" ] 
+BB3728 -> BB3729 [tailport=s, headport=n]
+BB3728 -> BB3730 [tailport=s, headport=n, color=gray]
+BB3729 [shape=record label="{10923: return[v1]}" ] 
+BB3730 [shape=record label="{10924: exceptional-return}" ] 
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry92[shape=none,label=""];
+BB_entry92 -> BB1025 [tailport=s, headport=n, headlabel="    1025"]
+BB1025 [shape=record label="{3186: constant[undefined,v1]|3187: vardecl['direction']}" ] 
+BB1025 -> BB1026 [tailport=s, headport=n, headlabel="      1026"]
+BB1026 [shape=record label="{3188: read-variable['this',v3,-]|3189: read-variable['input',v4,-]|3190: read-property[v4,'deltaX',v2]|3191: \<variable-non-null-undef\>['input']|3192: write-property[v3,'pX',v2]*|3193: read-variable['this',v6,-]|3194: read-variable['input',v7,-]|3195: read-property[v7,'deltaY',v5]|3196: \<variable-non-null-undef\>['input']|3197: write-property[v6,'pY',v5]*|3198: read-variable['directionStr',v10,v9]|3199: read-variable['input',v12,-]|3200: read-property[v12,'direction',v11]|3201: \<variable-non-null-undef\>['input']}" ] 
+BB1026 -> BB1027 [tailport=s, headport=n, headlabel="      1027"]
+BB1026 -> BB1034 [tailport=s, headport=n, color=gray, headlabel="      1034"]
+BB1027 [shape=record label="{3202: call-directionStr [v9,v10,v11,v8]}" ] 
+BB1027 -> BB1028 [tailport=s, headport=n, headlabel="      1028"]
+BB1027 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1028 [shape=record label="{3203: write-variable[v8,'direction']*|3204: read-variable['direction',v13,-]|3205: if[v13](true-block:1029,false-block:1031)}" ] 
+BB1028 -> BB1029 [tailport=s, headport=n, headlabel="      1029"]
+BB1028 -> BB1031 [tailport=s, headport=n, headlabel="      1031"]
+BB1028 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1029 [shape=record label="{3206: read-variable['this',v16,-]|3207: read-property[v16,'manager',v15]|3208: read-property[v15,'emit',-]|3209: \<property-non-null-undef\>[v16,'manager']|3210: read-variable['this',v21,-]|3211: read-property[v21,'options',v20]|3212: read-property[v20,'event',v18]|3213: \<property-non-null-undef\>[v21,'options']|3214: read-variable['direction',v19,-]|3215: +[v18,v19,v17]|3216: read-variable['input',v22,-]}" ] 
+BB1029 -> BB1030 [tailport=s, headport=n, headlabel="      1030"]
+BB1029 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1030 [shape=record label="{3217: call-this.manager.emit [v15,'emit',v17,v22,-]*}" ] 
+BB1030 -> BB1031 [tailport=s, headport=n]
+BB1030 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1031 [shape=record label="{3218: read-variable['this',v17,-]|3219: read-property[v17,'_super',v16]|3220: read-property[v16,'emit',v15]|3221: \<property-non-null-undef\>[v17,'_super']|3222: read-property[v15,'call',-]|3223: \<property-non-null-undef\>[v16,'emit']|3224: read-variable['this',v18,-]|3225: read-variable['input',v19,-]}" ] 
+BB1031 -> BB1032 [tailport=s, headport=n, headlabel="      1032"]
+BB1031 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1032 [shape=record label="{3226: call-this._super.emit.call [v15,'call',v18,v19,-]*}" ] 
+BB1032 -> BB1033 [tailport=s, headport=n, headlabel="      1033"]
+BB1032 -> BB1034 [tailport=s, headport=n, color=gray]
+BB1033 [shape=record label="{3227: return[v1]}" ] 
+BB1034 [shape=record label="{3228: exceptional-return}" ] 
+//#$~ 1677
+}

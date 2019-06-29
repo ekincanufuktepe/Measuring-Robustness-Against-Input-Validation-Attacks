@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry183[shape=none,label=""];
+BB_entry183 -> BB1984 [tailport=s, headport=n, headlabel="    1984"]
+BB1984 [shape=record label="{6083: constant[undefined,v1]|6084: vardecl['items']}" ] 
+BB1984 -> BB1985 [tailport=s, headport=n, headlabel="      1985"]
+BB1985 [shape=record label="{6085: read-variable['this',v4,-]|6086: read-property[v4,'getItems',-]|6087: read-variable['elems',v5,-]}" ] 
+BB1985 -> BB1986 [tailport=s, headport=n, headlabel="      1986"]
+BB1985 -> BB1990 [tailport=s, headport=n, color=gray, headlabel="      1990"]
+BB1986 [shape=record label="{6088: call-this.getItems [v4,'getItems',v5,v2]}" ] 
+BB1986 -> BB1987 [tailport=s, headport=n, headlabel="      1987"]
+BB1986 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1987 [shape=record label="{6089: write-variable[v2,'items']*|6090: read-variable['this',v7,-]|6091: read-property[v7,'hide',-]|6092: read-variable['items',v8,-]}" ] 
+BB1987 -> BB1988 [tailport=s, headport=n, headlabel="      1988"]
+BB1987 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1988 [shape=record label="{6093: call-this.hide [v7,'hide',v8,-]*}" ] 
+BB1988 -> BB1989 [tailport=s, headport=n, headlabel="      1989"]
+BB1988 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1989 [shape=record label="{6094: return[v1]}" ] 
+BB1990 [shape=record label="{6095: exceptional-return}" ] 
+//#$~ 2775
+}

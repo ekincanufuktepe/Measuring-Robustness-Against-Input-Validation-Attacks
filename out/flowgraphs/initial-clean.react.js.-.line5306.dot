@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry194[shape=none,label=""];
+BB_entry194 -> BB2624 [tailport=s, headport=n, headlabel="    2624"]
+BB2624 [shape=record label="{9259: constant[undefined,v1]|9260: vardecl['i']}" ] 
+BB2624 -> BB2625 [tailport=s, headport=n, headlabel="      2625"]
+BB2625 [shape=record label="{9261: read-variable['mixins',v2,-]|9262: if[v2](true-block:2626,false-block:2631)}" ] 
+BB2625 -> BB2626 [tailport=s, headport=n, headlabel="      2626"]
+BB2625 -> BB2631 [tailport=s, headport=n, headlabel="      2631"]
+BB2625 -> BB2632 [tailport=s, headport=n, color=gray, headlabel="      2632"]
+BB2626 [shape=record label="{9263: constant[0.0,v4]|9264: write-variable[v4,'i']*}" ] 
+BB2626 -> BB2627 [tailport=s, headport=n, headlabel="      2627"]
+BB2627 [shape=record label="{9265: read-variable['i',v5,-]|9266: read-variable['mixins',v7,-]|9267: read-property[v7,'length',v6]|9268: \<variable-non-null-undef\>['mixins']|9269: \<[v5,v6,v3]|9270: if[v3](true-block:2628,false-block:2631)}" ] 
+BB2627 -> BB2628 [tailport=s, headport=n, headlabel="      2628"]
+BB2627 -> BB2631 [tailport=s, headport=n]
+BB2627 -> BB2632 [tailport=s, headport=n, color=gray]
+BB2628 [shape=record label="{9271: read-variable['mixSpecIntoComponent',v9,v8]|9272: read-variable['Constructor',v10,-]|9273: read-variable['mixins',v12,-]|9274: read-variable['i',v13,-]|9275: read-property[v12,v13,v11]|9276: \<variable-non-null-undef\>['mixins']}" ] 
+BB2628 -> BB2629 [tailport=s, headport=n, headlabel="      2629"]
+BB2628 -> BB2632 [tailport=s, headport=n, color=gray]
+BB2629 [shape=record label="{9277: call-mixSpecIntoComponent [v8,v9,v10,v11,-]*}" ] 
+BB2629 -> BB2630 [tailport=s, headport=n, headlabel="      2630"]
+BB2629 -> BB2632 [tailport=s, headport=n, color=gray]
+BB2630 [shape=record label="{9278: constant[1.0,v14]|9279: read-variable['i',v15,-]|9280: +[v15,v16]|9281: +[v16,v14,v17]|9282: write-variable[v17,'i']}" ] 
+BB2630 -> BB2627 [tailport=s, headport=n]
+BB2630 -> BB2632 [tailport=s, headport=n, color=gray]
+BB2631 [shape=record label="{9283: return[v1]}" ] 
+BB2632 [shape=record label="{9284: exceptional-return}" ] 
+//#$~ 5308
+}

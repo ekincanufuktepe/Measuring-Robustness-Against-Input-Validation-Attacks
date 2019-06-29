@@ -1,0 +1,15 @@
+digraph {
+rankdir="TD"
+BB_entry172[shape=none,label=""];
+BB_entry172 -> BB2002 [tailport=s, headport=n, headlabel="    2002"]
+BB2002 [shape=record label="{5857: constant[undefined,v1]}" ] 
+BB2002 -> BB2003 [tailport=s, headport=n, headlabel="      2003"]
+BB2003 [shape=record label="{5858: read-variable['a',v3,-]|5859: read-property[v3,'Ha',-]|5860: \<variable-non-null-undef\>['a']|5861: read-variable['b',v4,-]|5862: read-variable['a',v6,-]|5863: read-property[v6,'h',v5]|5864: \<variable-non-null-undef\>['a']}" ] 
+BB2003 -> BB2004 [tailport=s, headport=n, headlabel="      2004"]
+BB2003 -> BB2006 [tailport=s, headport=n, color=gray, headlabel="      2006"]
+BB2004 [shape=record label="{5865: call-a.Ha [v3,'Ha',v4,v5,v1]}" ] 
+BB2004 -> BB2005 [tailport=s, headport=n, headlabel="      2005"]
+BB2004 -> BB2006 [tailport=s, headport=n, color=gray]
+BB2005 [shape=record label="{5866: return[v1]}" ] 
+BB2006 [shape=record label="{5867: exceptional-return}" ] 
+}

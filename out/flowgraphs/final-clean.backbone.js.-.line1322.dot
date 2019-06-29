@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry105[shape=none,label=""];
+BB_entry105 -> BB1418 [tailport=s, headport=n, headlabel="    1418"]
+BB1418 [shape=record label="{4037: constant[undefined,v1]}" ] 
+BB1418 -> BB1419 [tailport=s, headport=n, headlabel="      1419"]
+BB1419 [shape=record label="{4038: read-variable['this',v3,-]|4039: read-variable['Array',v4,-]}" ] 
+BB1419 -> BB1420 [tailport=s, headport=n, headlabel="      1420"]
+BB1419 -> BB1426 [tailport=s, headport=n, color=gray, headlabel="      1426"]
+BB1420 [shape=record label="{4040: construct [-,v4,v2]}" ] 
+BB1420 -> BB1421 [tailport=s, headport=n, headlabel="      1421"]
+BB1420 -> BB1426 [tailport=s, headport=n, color=gray]
+BB1421 [shape=record label="{4041: write-property[v3,'handlers',v2]*|4042: read-variable['_',v6,-]|4043: read-property[v6,'bindAll',-]|4044: \<variable-non-null-undef\>['_']|4045: read-variable['this',v7,-]|4046: constant[\"checkUrl\",v8]}" ] 
+BB1421 -> BB1422 [tailport=s, headport=n, headlabel="      1422"]
+BB1421 -> BB1426 [tailport=s, headport=n, color=gray]
+BB1422 [shape=record label="{4047: call-_.bindAll [v6,'bindAll',v7,v8,-]*}" ] 
+BB1422 -> BB1423 [tailport=s, headport=n, headlabel="      1423"]
+BB1422 -> BB1426 [tailport=s, headport=n, color=gray]
+BB1423 [shape=record label="{4048: typeof['window',v10]|4049: constant[\"undefined\",v11]|4050: !==[v10,v11,v9]|4051: if[v9](true-block:1424,false-block:1425)}" ] 
+BB1423 -> BB1424 [tailport=s, headport=n, headlabel="      1424"]
+BB1423 -> BB1425 [tailport=s, headport=n, headlabel="      1425"]
+BB1423 -> BB1426 [tailport=s, headport=n, color=gray]
+BB1424 [shape=record label="{4052: read-variable['this',v13,-]|4053: read-variable['window',v14,-]|4054: read-property[v14,'location',v12]|4055: \<variable-non-null-undef\>['window']|4056: write-property[v13,'location',v12]*|4057: read-variable['this',v16,-]|4058: read-variable['window',v17,-]|4059: read-property[v17,'history',v15]|4060: \<variable-non-null-undef\>['window']|4061: write-property[v16,'history',v15]*}" ] 
+BB1424 -> BB1425 [tailport=s, headport=n]
+BB1424 -> BB1426 [tailport=s, headport=n, color=gray]
+BB1425 [shape=record label="{4062: return[v1]}" ] 
+BB1426 [shape=record label="{4063: exceptional-return}" ] 
+//#$~ 1329
+}

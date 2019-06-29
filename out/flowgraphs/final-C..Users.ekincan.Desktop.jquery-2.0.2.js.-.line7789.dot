@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry481[shape=none,label=""];
+BB_entry481 -> BB7526 [tailport=s, headport=n, headlabel="    7526"]
+BB7526 [shape=record label="{21994: constant[undefined,v1]|21995: vardecl['callback']}" ] 
+BB7526 -> BB7527 [tailport=s, headport=n, headlabel="      7527"]
+BB7527 [shape=record label="{21996: read-variable['jQuery',v4,-]|21997: read-property[v4,'support',v3]|21998: \<variable-non-null-undef\>['jQuery']|21999: read-property[v3,'cors',v2]|22000: \<property-non-null-undef\>[v4,'support']|22001: if[v2](true-block:7530,false-block:7528)}" ] 
+BB7527 -> BB7530 [tailport=s, headport=n, headlabel="      7530"]
+BB7527 -> BB7528 [tailport=s, headport=n, headlabel="      7528"]
+BB7527 -> BB7533 [tailport=s, headport=n, color=gray, headlabel="      7533"]
+BB7528 [shape=record label="{22002: read-variable['xhrSupported',v2,-]|22003: if[v2](true-block:7529,false-block:7530)}" ] 
+BB7528 -> BB7530 [tailport=s, headport=n]
+BB7528 -> BB7529 [tailport=s, headport=n, headlabel="      7529"]
+BB7528 -> BB7533 [tailport=s, headport=n, color=gray]
+BB7529 [shape=record label="{22004: read-variable['options',v4,-]|22005: read-property[v4,'crossDomain',v3]|22006: \<variable-non-null-undef\>['options']|22007: ![v3,v2]}" ] 
+BB7529 -> BB7530 [tailport=s, headport=n]
+BB7529 -> BB7533 [tailport=s, headport=n, color=gray]
+BB7530 [shape=record label="{22008: if[v2](true-block:7531,false-block:7532)}" ] 
+BB7530 -> BB7531 [tailport=s, headport=n, headlabel="      7531"]
+BB7530 -> BB7532 [tailport=s, headport=n, headlabel="      7532"]
+BB7531 [shape=record label="{22009: new[v1]|22010: function-expr[function(headers,complete),v3]|22011: write-property[v1,'send',v3]|22012: function-expr[function(),v4]|22013: write-property[v1,'abort',v4]}" ] 
+BB7531 -> BB7532 [tailport=s, headport=n]
+BB7531 -> BB7533 [tailport=s, headport=n, color=gray]
+BB7532 [shape=record label="{22014: return[v1]}" ] 
+BB7533 [shape=record label="{22015: exceptional-return}" ] 
+}

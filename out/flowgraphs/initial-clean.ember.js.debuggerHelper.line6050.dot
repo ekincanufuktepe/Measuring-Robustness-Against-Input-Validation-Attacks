@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry273[shape=none,label=""];
+BB_entry273 -> BB3480 [tailport=s, headport=n, headlabel="    3480"]
+BB3480 [shape=record label="{11470: constant[undefined,v1]|11471: vardecl['view']}" ] 
+BB3480 -> BB3481 [tailport=s, headport=n, headlabel="      3481"]
+BB3481 [shape=record label="{11472: read-variable['this',v2,-]|11473: write-variable[v2,'view']*|11474: read-variable['Logger',v4,-]|11475: read-property[v4,'info',-]|11476: \<variable-non-null-undef\>['Logger']|11477: constant[\"Use `this` to access the view context.\",v5]}" ] 
+BB3481 -> BB3482 [tailport=s, headport=n, headlabel="      3482"]
+BB3481 -> BB3484 [tailport=s, headport=n, color=gray, headlabel="      3484"]
+BB3482 [shape=record label="{11478: call-Logger.info [v4,'info',v5,-]*}" ] 
+BB3482 -> BB3483 [tailport=s, headport=n, headlabel="      3483"]
+BB3482 -> BB3484 [tailport=s, headport=n, color=gray]
+BB3483 [shape=record label="{11479: return[v1]}" ] 
+BB3484 [shape=record label="{11480: exceptional-return}" ] 
+//#$~ 6055
+}

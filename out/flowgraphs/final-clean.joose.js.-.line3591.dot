@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry340[shape=none,label=""];
+BB_entry340 -> BB3140 [tailport=s, headport=n, headlabel="    3140"]
+BB3140 [shape=record label="{9303: constant[undefined,v1]|9304: vardecl['o']}" ] 
+BB3140 -> BB3141 [tailport=s, headport=n, headlabel="      3141"]
+BB3141 [shape=record label="{9305: read-variable['this',v3,-]|9306: read-property[v3,'object',v2]|9307: write-variable[v2,'o']*|9308: read-variable['o',v5,-]|9309: read-variable['this',v6,-]|9310: read-property[v6,'metaObject',v4]|9311: write-property[v5,'meta',v4]|9312: \<variable-non-null-undef\>['o']*|9313: read-variable['o',v8,-]|9314: read-property[v8,'detach',-]|9315: \<variable-non-null-undef\>['o']}" ] 
+BB3141 -> BB3142 [tailport=s, headport=n, headlabel="      3142"]
+BB3141 -> BB3146 [tailport=s, headport=n, color=gray, headlabel="      3146"]
+BB3142 [shape=record label="{9316: call-o.detach [v8,'detach',-]*}" ] 
+BB3142 -> BB3143 [tailport=s, headport=n, headlabel="      3143"]
+BB3142 -> BB3146 [tailport=s, headport=n, color=gray]
+BB3143 [shape=record label="{9317: read-variable['o',v12,-]|9318: read-property[v12,'meta',v11]|9319: \<variable-non-null-undef\>['o']|9320: read-variable['name',v13,-]|9321: read-property[v11,v13,v10]|9322: \<property-non-null-undef\>[v12,'meta']|9323: read-property[v10,'apply',-]|9324: \<property-non-null-undef\>[v11,v13]|9325: read-variable['o',v15,-]|9326: read-property[v15,'meta',v14]|9327: \<variable-non-null-undef\>['o']|9328: read-variable['arguments',v16,-]}" ] 
+BB3143 -> BB3144 [tailport=s, headport=n, headlabel="      3144"]
+BB3143 -> BB3146 [tailport=s, headport=n, color=gray]
+BB3144 [shape=record label="{9329: call-null [v10,'apply',v14,v16,-]*}" ] 
+BB3144 -> BB3145 [tailport=s, headport=n, headlabel="      3145"]
+BB3144 -> BB3146 [tailport=s, headport=n, color=gray]
+BB3145 [shape=record label="{9330: return[v1]}" ] 
+BB3146 [shape=record label="{9331: exceptional-return}" ] 
+//#$~ 3597
+}

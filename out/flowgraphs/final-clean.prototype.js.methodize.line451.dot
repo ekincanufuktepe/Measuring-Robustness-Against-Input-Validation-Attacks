@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry55[shape=none,label=""];
+BB_entry55 -> BB699 [tailport=s, headport=n, headlabel="    699"]
+BB699 [shape=record label="{2301: constant[undefined,v1]|2302: vardecl['__method']}" ] 
+BB699 -> BB700 [tailport=s, headport=n, headlabel="      700"]
+BB700 [shape=record label="{2303: read-variable['this',v3,-]|2304: read-property[v3,'_methodized',v2]|2305: if[v2](true-block:701,false-block:702)}" ] 
+BB700 -> BB701 [tailport=s, headport=n, headlabel="      701"]
+BB700 -> BB702 [tailport=s, headport=n, headlabel="      702"]
+BB700 -> BB704 [tailport=s, headport=n, color=gray, headlabel="      704"]
+BB701 [shape=record label="{2306: read-variable['this',v4,-]|2307: read-property[v4,'_methodized',v1]}" ] 
+BB701 -> BB703 [tailport=s, headport=n, headlabel="      703"]
+BB701 -> BB704 [tailport=s, headport=n, color=gray]
+BB702 [shape=record label="{2308: read-variable['this',v4,-]|2309: write-variable[v4,'__method']*|2310: read-variable['this',v5,-]|2311: function-expr[function ( ),v1]|2312: write-property[v5,'_methodized',v1]}" ] 
+BB702 -> BB703 [tailport=s, headport=n]
+BB702 -> BB704 [tailport=s, headport=n, color=gray]
+BB703 [shape=record label="{2313: return[v1]}" ] 
+BB704 [shape=record label="{2314: exceptional-return}" ] 
+//#$~ 456
+}

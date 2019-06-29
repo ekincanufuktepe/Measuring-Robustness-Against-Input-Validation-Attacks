@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry78[shape=none,label=""];
+BB_entry78 -> BB1043 [tailport=s, headport=n, headlabel="    1043"]
+BB1043 [shape=record label="{2662: constant[undefined,v1]|2663: vardecl['fns']}" ] 
+BB1043 -> BB1044 [tailport=s, headport=n, headlabel="      1044"]
+BB1044 [shape=record label="{2664: read-variable['arguments',v2,-]|2665: write-variable[v2,'fns']*|2666: read-variable['jQuery',v6,-]|2667: read-property[v6,'Deferred',-]|2668: \<variable-non-null-undef\>['jQuery']|2669: function-expr[function(newDefer),v7]}" ] 
+BB1044 -> BB1045 [tailport=s, headport=n, headlabel="      1045"]
+BB1044 -> BB1049 [tailport=s, headport=n, color=gray, headlabel="      1049"]
+BB1045 [shape=record label="{2670: call[v6,'Deferred',v7,v4]}" ] 
+BB1045 -> BB1046 [tailport=s, headport=n, headlabel="      1046"]
+BB1045 -> BB1049 [tailport=s, headport=n, color=gray]
+BB1046 [shape=record label="{2671: read-property[v4,'promise',-]}" ] 
+BB1046 -> BB1047 [tailport=s, headport=n, headlabel="      1047"]
+BB1046 -> BB1049 [tailport=s, headport=n, color=gray]
+BB1047 [shape=record label="{2672: call[v4,'promise',v1]}" ] 
+BB1047 -> BB1048 [tailport=s, headport=n, headlabel="      1048"]
+BB1047 -> BB1049 [tailport=s, headport=n, color=gray]
+BB1048 [shape=record label="{2673: return[v1]}" ] 
+BB1049 [shape=record label="{2674: exceptional-return}" ] 
+}

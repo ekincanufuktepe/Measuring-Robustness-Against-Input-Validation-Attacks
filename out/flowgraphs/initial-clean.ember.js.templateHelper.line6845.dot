@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry299[shape=none,label=""];
+BB_entry299 -> BB3724 [tailport=s, headport=n, headlabel="    3724"]
+BB3724 [shape=record label="{12411: constant[undefined,v1]}" ] 
+BB3724 -> BB3725 [tailport=s, headport=n, headlabel="      3725"]
+BB3725 [shape=record label="{12412: read-variable['Ember',v3,-]|12413: read-property[v3,'deprecate',-]|12414: \<variable-non-null-undef\>['Ember']|12415: constant[\"The `template` helper has been deprecated in favor of the `partial` helper.\",v5]|12416: constant[\" Please use `partial` instead, which will work the same way.\",v6]|12417: +[v5,v6,v4]}" ] 
+BB3725 -> BB3726 [tailport=s, headport=n, headlabel="      3726"]
+BB3725 -> BB3732 [tailport=s, headport=n, color=gray, headlabel="      3732"]
+BB3726 [shape=record label="{12418: call-Ember.deprecate [v3,'deprecate',v4,-]*}" ] 
+BB3726 -> BB3727 [tailport=s, headport=n, headlabel="      3727"]
+BB3726 -> BB3732 [tailport=s, headport=n, color=gray]
+BB3727 [shape=record label="{12419: read-variable['options',v8,-]|12420: read-variable['options',v9,-]|12421: read-property[v9,'helperName',v7]|12422: \<variable-non-null-undef\>['options']|12423: if[v7](true-block:3729,false-block:3728)}" ] 
+BB3727 -> BB3729 [tailport=s, headport=n, headlabel="      3729"]
+BB3727 -> BB3728 [tailport=s, headport=n, headlabel="      3728"]
+BB3727 -> BB3732 [tailport=s, headport=n, color=gray]
+BB3728 [shape=record label="{12424: constant[\"template\",v7]}" ] 
+BB3728 -> BB3729 [tailport=s, headport=n]
+BB3729 [shape=record label="{12425: write-property[v8,'helperName',v7]|12426: \<variable-non-null-undef\>['options']*|12427: read-variable['env',v13,-]|12428: read-property[v13,'helpers',v12]|12429: \<variable-non-null-undef\>['env']|12430: read-property[v12,'partial',v11]|12431: \<property-non-null-undef\>[v13,'helpers']|12432: read-property[v11,'helperFunction',v10]|12433: \<property-non-null-undef\>[v12,'partial']|12434: read-property[v10,'call',-]|12435: \<property-non-null-undef\>[v11,'helperFunction']|12436: read-variable['this',v14,-]|12437: read-variable['params',v15,-]|12438: read-variable['hash',v16,-]|12439: read-variable['options',v17,-]|12440: read-variable['env',v18,-]}" ] 
+BB3729 -> BB3730 [tailport=s, headport=n, headlabel="      3730"]
+BB3729 -> BB3732 [tailport=s, headport=n, color=gray]
+BB3730 [shape=record label="{12441: call-env.helpers.partial.helperFunction.call [v10,'call',v14,v15,v16,v17,v18,v1]}" ] 
+BB3730 -> BB3731 [tailport=s, headport=n, headlabel="      3731"]
+BB3730 -> BB3732 [tailport=s, headport=n, color=gray]
+BB3731 [shape=record label="{12442: return[v1]}" ] 
+BB3732 [shape=record label="{12443: exceptional-return}" ] 
+//#$~ 6851
+}

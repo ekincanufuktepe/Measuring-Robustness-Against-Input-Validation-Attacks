@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2419[shape=none,label=""];
+BB_entry2419 -> BB27717 [tailport=s, headport=n, headlabel="    27717"]
+BB27717 [shape=record label="{91985: constant[undefined,v1]}" ] 
+BB27717 -> BB27718 [tailport=s, headport=n, headlabel="      27718"]
+BB27718 [shape=record label="{91986: read-variable['transition',v3,-]|91987: read-property[v3,'isAborted',v2]|91988: \<variable-non-null-undef\>['transition']|91989: if[v2](true-block:27719,false-block:27722)}" ] 
+BB27718 -> BB27719 [tailport=s, headport=n, headlabel="      27719"]
+BB27718 -> BB27722 [tailport=s, headport=n, headlabel="      27722"]
+BB27718 -> BB27723 [tailport=s, headport=n, color=gray, headlabel="      27723"]
+BB27719 [shape=record label="{91990: read-variable['Promise',v5,-]|91991: read-property[v5,'reject',-]|91992: \<variable-non-null-undef\>['Promise']|91993: read-variable['undefined',v6,-]|91994: read-variable['promiseLabel',v9,v8]|91995: constant[\"Transition aborted - reject\",v10]}" ] 
+BB27719 -> BB27720 [tailport=s, headport=n, headlabel="      27720"]
+BB27719 -> BB27723 [tailport=s, headport=n, color=gray]
+BB27720 [shape=record label="{91996: call-promiseLabel [v8,v9,v10,v7]}" ] 
+BB27720 -> BB27721 [tailport=s, headport=n, headlabel="      27721"]
+BB27720 -> BB27723 [tailport=s, headport=n, color=gray]
+BB27721 [shape=record label="{91997: call-Promise.reject [v5,'reject',v6,v7,v1]}" ] 
+BB27721 -> BB27722 [tailport=s, headport=n]
+BB27721 -> BB27723 [tailport=s, headport=n, color=gray]
+BB27722 [shape=record label="{91998: return[v1]}" ] 
+BB27723 [shape=record label="{91999: exceptional-return}" ] 
+//#$~ 49768
+}

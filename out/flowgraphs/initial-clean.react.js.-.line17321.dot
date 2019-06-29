@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry723[shape=none,label=""];
+BB_entry723 -> BB9758 [tailport=s, headport=n, headlabel="    9758"]
+BB9758 [shape=record label="{32325: constant[undefined,v1]|32326: vardecl['emptyObject']}" ] 
+BB9758 -> BB9759 [tailport=s, headport=n, headlabel="      9759"]
+BB9759 [shape=record label="{32327: new[v2]|32328: write-variable[v2,'emptyObject']*|32329: constant[\"production\",v4]|32330: constant[\"development\",v5]|32331: !==[v4,v5,v3]|32332: if[v3](true-block:9760,false-block:9762)}" ] 
+BB9759 -> BB9760 [tailport=s, headport=n, headlabel="      9760"]
+BB9759 -> BB9762 [tailport=s, headport=n, headlabel="      9762"]
+BB9759 -> BB9764 [tailport=s, headport=n, color=gray, headlabel="      9764"]
+BB9760 [shape=record label="{32333: read-variable['Object',v7,-]|32334: read-property[v7,'freeze',-]|32335: \<variable-non-null-undef\>['Object']|32336: read-variable['emptyObject',v8,-]}" ] 
+BB9760 -> BB9761 [tailport=s, headport=n, headlabel="      9761"]
+BB9760 -> BB9764 [tailport=s, headport=n, color=gray]
+BB9761 [shape=record label="{32337: call-Object.freeze [v7,'freeze',v8,-]*}" ] 
+BB9761 -> BB9762 [tailport=s, headport=n]
+BB9761 -> BB9764 [tailport=s, headport=n, color=gray]
+BB9762 [shape=record label="{32338: read-variable['module',v7,-]|32339: read-variable['emptyObject',v6,-]|32340: write-property[v7,'exports',v6]|32341: \<variable-non-null-undef\>['module']*}" ] 
+BB9762 -> BB9763 [tailport=s, headport=n, headlabel="      9763"]
+BB9762 -> BB9764 [tailport=s, headport=n, color=gray]
+BB9763 [shape=record label="{32342: return[v1]}" ] 
+BB9764 [shape=record label="{32343: exceptional-return}" ] 
+//#$~ 17341
+}

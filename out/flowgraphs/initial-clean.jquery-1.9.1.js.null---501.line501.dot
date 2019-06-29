@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry30[shape=none,label=""];
+BB_entry30 -> BB382 [tailport=s, headport=n, headlabel="    382"]
+BB382 [shape=record label="{981: constant[undefined,v1]|982: vardecl['name']}" ] 
+BB382 -> BB383 [tailport=s, headport=n, headlabel="      383"]
+BB383 [shape=record label="{983: read-variable['obj-503:18',v4,v2]}" ] 
+BB383 -> BB384 [tailport=s, headport=n, headlabel="      384"]
+BB383 -> BB390 [tailport=s, headport=n, color=gray, headlabel="      390"]
+BB384 [shape=record label="{984: begin-for-in[v4,v5]}" ] 
+BB384 -> BB385 [tailport=s, headport=n, headlabel="      385"]
+BB384 -> BB390 [tailport=s, headport=n, color=gray]
+BB385 [shape=record label="{985: has-next[v5,v6]|986: if[v6](true-block:386,false-block:388)}" ] 
+BB385 -> BB386 [tailport=s, headport=n, headlabel="      386"]
+BB385 -> BB388 [tailport=s, headport=n, headlabel="      388"]
+BB386 [shape=record label="{987: next-property[v5,v7]|988: write-variable[v7,'name']|989: constant[false,v1]}" ] 
+BB386 -> BB389 [tailport=s, headport=n, headlabel="      389"]
+BB387 [shape=record label="{990: end-for-in(begin-node:984)}" ] 
+BB387 -> BB385 [tailport=s, headport=n]
+BB388 [shape=record label="{991: constant[true,v1]}" ] 
+BB388 -> BB389 [tailport=s, headport=n]
+BB389 [shape=record label="{992: return[v1]}" ] 
+BB390 [shape=record label="{993: exceptional-return}" ] 
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry291[shape=none,label=""];
+BB_entry291 -> BB4496 [tailport=s, headport=n, headlabel="    4496"]
+BB4496 [shape=record label="{13049: constant[undefined,v1]}" ] 
+BB4496 -> BB4497 [tailport=s, headport=n, headlabel="      4497"]
+BB4497 [shape=record label="{13050: read-variable['input',v3,-]|13051: constant[0.0,v4]|13052: read-variable['elem',v2,-]|13053: write-property[v3,v4,v2]|13054: \<variable-non-null-undef\>['input']*|13055: read-variable['matcher',v6,v5]|13056: read-variable['input',v7,-]|13057: constant[null,v8]|13058: read-variable['xml',v9,-]|13059: read-variable['results',v10,-]}" ] 
+BB4497 -> BB4498 [tailport=s, headport=n, headlabel="      4498"]
+BB4497 -> BB4503 [tailport=s, headport=n, color=gray, headlabel="      4503"]
+BB4498 [shape=record label="{13060: call-matcher [v5,v6,v7,v8,v9,v10,-]*}" ] 
+BB4498 -> BB4499 [tailport=s, headport=n, headlabel="      4499"]
+BB4498 -> BB4503 [tailport=s, headport=n, color=gray]
+BB4499 [shape=record label="{13061: read-variable['results',v13,-]|13062: read-property[v13,'pop',-]|13063: \<variable-non-null-undef\>['results']}" ] 
+BB4499 -> BB4500 [tailport=s, headport=n, headlabel="      4500"]
+BB4499 -> BB4503 [tailport=s, headport=n, color=gray]
+BB4500 [shape=record label="{13064: call-results.pop [v13,'pop',v11]}" ] 
+BB4500 -> BB4501 [tailport=s, headport=n, headlabel="      4501"]
+BB4500 -> BB4503 [tailport=s, headport=n, color=gray]
+BB4501 [shape=record label="{13065: ![v11,v1]}" ] 
+BB4501 -> BB4502 [tailport=s, headport=n, headlabel="      4502"]
+BB4501 -> BB4503 [tailport=s, headport=n, color=gray]
+BB4502 [shape=record label="{13066: return[v1]}" ] 
+BB4503 [shape=record label="{13067: exceptional-return}" ] 
+}

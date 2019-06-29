@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry48[shape=none,label=""];
+BB_entry48 -> BB560 [tailport=s, headport=n, headlabel="    560"]
+BB560 [shape=record label="{1854: constant[undefined,v1]|1855: vardecl['key']}" ] 
+BB560 -> BB561 [tailport=s, headport=n, headlabel="      561"]
+BB561 [shape=record label="{1856: read-variable['this',v7,-]|1857: read-property[v7,'_',v3]}" ] 
+BB561 -> BB562 [tailport=s, headport=n, headlabel="      562"]
+BB561 -> BB570 [tailport=s, headport=n, color=gray, headlabel="      570"]
+BB562 [shape=record label="{1858: begin-for-in[v3,v4]}" ] 
+BB562 -> BB563 [tailport=s, headport=n, headlabel="      563"]
+BB562 -> BB570 [tailport=s, headport=n, color=gray]
+BB563 [shape=record label="{1859: has-next[v4,v5]|1860: if[v5](true-block:564,false-block:569)}" ] 
+BB563 -> BB564 [tailport=s, headport=n, headlabel="      564"]
+BB563 -> BB569 [tailport=s, headport=n, headlabel="      569"]
+BB564 [shape=record label="{1861: next-property[v4,v6]|1862: write-variable[v6,'key']|1863: read-variable['f',v9,-]|1864: read-property[v9,'call',-]|1865: \<variable-non-null-undef\>['f']|1866: read-variable['this',v10,-]|1867: read-variable['d3_map_unescape',v13,v12]|1868: read-variable['key',v14,-]}" ] 
+BB564 -> BB565 [tailport=s, headport=n, headlabel="      565"]
+BB564 -> BB570 [tailport=s, headport=n, color=gray]
+BB565 [shape=record label="{1869: call-d3_map_unescape [v12,v13,v14,v11]}" ] 
+BB565 -> BB566 [tailport=s, headport=n, headlabel="      566"]
+BB565 -> BB570 [tailport=s, headport=n, color=gray]
+BB566 [shape=record label="{1870: read-variable['this',v17,-]|1871: read-property[v17,'_',v16]|1872: read-variable['key',v18,-]|1873: read-property[v16,v18,v15]|1874: \<property-non-null-undef\>[v17,'_']}" ] 
+BB566 -> BB567 [tailport=s, headport=n, headlabel="      567"]
+BB566 -> BB570 [tailport=s, headport=n, color=gray]
+BB567 [shape=record label="{1875: call-f.call [v9,'call',v10,v11,v15,-]*}" ] 
+BB567 -> BB568 [tailport=s, headport=n, headlabel="      568"]
+BB567 -> BB570 [tailport=s, headport=n, color=gray]
+BB568 [shape=record label="{1876: end-for-in(begin-node:1858)}" ] 
+BB568 -> BB563 [tailport=s, headport=n]
+BB569 [shape=record label="{1877: return[v1]}" ] 
+BB570 [shape=record label="{1878: exceptional-return}" ] 
+//#$~ 341
+}

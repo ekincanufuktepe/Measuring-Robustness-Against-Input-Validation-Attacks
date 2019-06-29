@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry428[shape=none,label=""];
+BB_entry428 -> BB5367 [tailport=s, headport=n, headlabel="    5367"]
+BB5367 [shape=record label="{19188: constant[undefined,v1]|19189: vardecl['copy']}" ] 
+BB5367 -> BB5368 [tailport=s, headport=n, headlabel="      5368"]
+BB5368 [shape=record label="{19190: read-variable['Binding',v3,-]|19191: read-variable['this',v5,-]|19192: read-property[v5,'_to',v4]|19193: read-variable['this',v7,-]|19194: read-property[v7,'_from',v6]}" ] 
+BB5368 -> BB5369 [tailport=s, headport=n, headlabel="      5369"]
+BB5368 -> BB5374 [tailport=s, headport=n, color=gray, headlabel="      5374"]
+BB5369 [shape=record label="{19195: construct [-,v3,v4,v6,v2]}" ] 
+BB5369 -> BB5370 [tailport=s, headport=n, headlabel="      5370"]
+BB5369 -> BB5374 [tailport=s, headport=n, color=gray]
+BB5370 [shape=record label="{19196: write-variable[v2,'copy']*|19197: read-variable['this',v9,-]|19198: read-property[v9,'_oneWay',v8]|19199: if[v8](true-block:5371,false-block:5372)}" ] 
+BB5370 -> BB5371 [tailport=s, headport=n, headlabel="      5371"]
+BB5370 -> BB5372 [tailport=s, headport=n, headlabel="      5372"]
+BB5370 -> BB5374 [tailport=s, headport=n, color=gray]
+BB5371 [shape=record label="{19200: read-variable['copy',v11,-]|19201: constant[true,v10]|19202: write-property[v11,'_oneWay',v10]|19203: \<variable-non-null-undef\>['copy']*}" ] 
+BB5371 -> BB5372 [tailport=s, headport=n]
+BB5371 -> BB5374 [tailport=s, headport=n, color=gray]
+BB5372 [shape=record label="{19204: read-variable['copy',v1,-]}" ] 
+BB5372 -> BB5373 [tailport=s, headport=n, headlabel="      5373"]
+BB5372 -> BB5374 [tailport=s, headport=n, color=gray]
+BB5373 [shape=record label="{19205: return[v1]}" ] 
+BB5374 [shape=record label="{19206: exceptional-return}" ] 
+//#$~ 9713
+}

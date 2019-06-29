@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry316[shape=none,label=""];
+BB_entry316 -> BB5286 [tailport=s, headport=n, headlabel="    5286"]
+BB5286 [shape=record label="{16345: constant[undefined,v1]|16346: vardecl['str']}" ] 
+BB5286 -> BB5287 [tailport=s, headport=n, headlabel="      5287"]
+BB5287 [shape=record label="{16347: read-variable['input',v4,-]|16348: read-property[v4,'slice',-]|16349: \<variable-non-null-undef\>['input']|16350: read-variable['tokPos',v5,-]|16351: read-variable['tokPos',v7,-]|16352: read-variable['size',v8,-]|16353: +[v7,v8,v6]}" ] 
+BB5287 -> BB5288 [tailport=s, headport=n, headlabel="      5288"]
+BB5287 -> BB5292 [tailport=s, headport=n, color=gray, headlabel="      5292"]
+BB5288 [shape=record label="{16354: call-input.slice [v4,'slice',v5,v6,v2]}" ] 
+BB5288 -> BB5289 [tailport=s, headport=n, headlabel="      5289"]
+BB5288 -> BB5292 [tailport=s, headport=n, color=gray]
+BB5289 [shape=record label="{16355: write-variable[v2,'str']*|16356: read-variable['tokPos',v10,-]|16357: read-variable['size',v11,-]|16358: +[v10,v11,v9]|16359: write-variable[v9,'tokPos']*|16360: read-variable['finishToken',v13,v12]|16361: read-variable['type',v14,-]|16362: read-variable['str',v15,-]}" ] 
+BB5289 -> BB5290 [tailport=s, headport=n, headlabel="      5290"]
+BB5289 -> BB5292 [tailport=s, headport=n, color=gray]
+BB5290 [shape=record label="{16363: call-finishToken [v12,v13,v14,v15,-]*}" ] 
+BB5290 -> BB5291 [tailport=s, headport=n, headlabel="      5291"]
+BB5290 -> BB5292 [tailport=s, headport=n, color=gray]
+BB5291 [shape=record label="{16364: return[v1]}" ] 
+BB5292 [shape=record label="{16365: exceptional-return}" ] 
+//#$~ 5437
+}

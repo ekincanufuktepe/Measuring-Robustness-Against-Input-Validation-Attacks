@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry154[shape=none,label=""];
+BB_entry154 -> BB1995 [tailport=s, headport=n, headlabel="    1995"]
+BB1995 [shape=record label="{6392: constant[undefined,v1]|6393: vardecl['router']}" ] 
+BB1995 -> BB1996 [tailport=s, headport=n, headlabel="      1996"]
+BB1996 [shape=record label="{6394: read-variable['this',v5,-]|6395: read-property[v5,'__container__',v4]|6396: read-property[v4,'lookup',-]|6397: \<property-non-null-undef\>[v5,'__container__']|6398: constant[\"router:main\",v6]}" ] 
+BB1996 -> BB1997 [tailport=s, headport=n, headlabel="      1997"]
+BB1996 -> BB2001 [tailport=s, headport=n, color=gray, headlabel="      2001"]
+BB1997 [shape=record label="{6399: call-this.__container__.lookup [v4,'lookup',v6,v2]}" ] 
+BB1997 -> BB1998 [tailport=s, headport=n, headlabel="      1998"]
+BB1997 -> BB2001 [tailport=s, headport=n, color=gray]
+BB1998 [shape=record label="{6400: write-variable[v2,'router']*|6401: read-variable['router',v8,-]|6402: read-property[v8,'handleURL',-]|6403: \<variable-non-null-undef\>['router']|6404: read-variable['url',v9,-]}" ] 
+BB1998 -> BB1999 [tailport=s, headport=n, headlabel="      1999"]
+BB1998 -> BB2001 [tailport=s, headport=n, color=gray]
+BB1999 [shape=record label="{6405: call-router.handleURL [v8,'handleURL',v9,-]*}" ] 
+BB1999 -> BB2000 [tailport=s, headport=n, headlabel="      2000"]
+BB1999 -> BB2001 [tailport=s, headport=n, color=gray]
+BB2000 [shape=record label="{6406: return[v1]}" ] 
+BB2001 [shape=record label="{6407: exceptional-return}" ] 
+//#$~ 3167
+}

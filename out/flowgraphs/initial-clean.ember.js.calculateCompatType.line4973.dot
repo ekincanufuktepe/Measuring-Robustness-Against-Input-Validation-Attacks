@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry242[shape=none,label=""];
+BB_entry242 -> BB2979 [tailport=s, headport=n, headlabel="    2979"]
+BB2979 [shape=record label="{9681: constant[undefined,v1]|9682: vardecl['itemType']}" ] 
+BB2979 -> BB2980 [tailport=s, headport=n, headlabel="      2980"]
+BB2980 [shape=record label="{9683: read-variable['isStream',v4,v3]|9684: read-variable['item',v5,-]}" ] 
+BB2980 -> BB2981 [tailport=s, headport=n, headlabel="      2981"]
+BB2980 -> BB2987 [tailport=s, headport=n, color=gray, headlabel="      2987"]
+BB2981 [shape=record label="{9685: call-isStream [v3,v4,v5,v2]}" ] 
+BB2981 -> BB2982 [tailport=s, headport=n, headlabel="      2982"]
+BB2981 -> BB2987 [tailport=s, headport=n, color=gray]
+BB2982 [shape=record label="{9686: if[v2](true-block:2983,false-block:2984)}" ] 
+BB2982 -> BB2983 [tailport=s, headport=n, headlabel="      2983"]
+BB2982 -> BB2984 [tailport=s, headport=n, headlabel="      2984"]
+BB2983 [shape=record label="{9687: constant[\"ID\",v1]}" ] 
+BB2983 -> BB2986 [tailport=s, headport=n, headlabel="      2986"]
+BB2984 [shape=record label="{9688: typeof['item',v6]|9689: write-variable[v6,'itemType']*|9690: read-variable['itemType',v8,-]|9691: read-property[v8,'toUpperCase',-]|9692: \<variable-non-null-undef\>['itemType']}" ] 
+BB2984 -> BB2985 [tailport=s, headport=n, headlabel="      2985"]
+BB2984 -> BB2987 [tailport=s, headport=n, color=gray]
+BB2985 [shape=record label="{9693: call-itemType.toUpperCase [v8,'toUpperCase',v1]}" ] 
+BB2985 -> BB2986 [tailport=s, headport=n]
+BB2985 -> BB2987 [tailport=s, headport=n, color=gray]
+BB2986 [shape=record label="{9694: return[v1]}" ] 
+BB2987 [shape=record label="{9695: exceptional-return}" ] 
+//#$~ 4979
+}

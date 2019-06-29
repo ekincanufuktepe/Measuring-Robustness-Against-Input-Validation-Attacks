@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB588 [tailport=s, headport=n, headlabel="    588"]
+BB588 [shape=record label="{1584: constant[undefined,v1]}" ] 
+BB588 -> BB589 [tailport=s, headport=n, headlabel="      589"]
+BB589 [shape=record label="{1585: read-variable['$',v6,-]|1586: read-property[v6,'type',-]|1587: \<variable-non-null-undef\>['$']|1588: read-variable['$',v8,-]|1589: read-property[v8,'notify',v7]|1590: \<variable-non-null-undef\>['$']}" ] 
+BB589 -> BB590 [tailport=s, headport=n, headlabel="      590"]
+BB589 -> BB597 [tailport=s, headport=n, color=gray, headlabel="      597"]
+BB590 [shape=record label="{1591: call-$.type [v6,'type',v7,v3]}" ] 
+BB590 -> BB591 [tailport=s, headport=n, headlabel="      591"]
+BB590 -> BB597 [tailport=s, headport=n, color=gray]
+BB591 [shape=record label="{1592: constant[\"function\",v4]|1593: ===[v3,v4,v2]|1594: if[v2](true-block:592,false-block:596)}" ] 
+BB591 -> BB592 [tailport=s, headport=n, headlabel="      592"]
+BB591 -> BB596 [tailport=s, headport=n, headlabel="      596"]
+BB591 -> BB597 [tailport=s, headport=n, color=gray]
+BB592 [shape=record label="{1595: read-variable['opts',v10,-]|1596: ![v10,v9]|1597: if[v9](true-block:593,false-block:594)}" ] 
+BB592 -> BB593 [tailport=s, headport=n, headlabel="      593"]
+BB592 -> BB594 [tailport=s, headport=n, headlabel="      594"]
+BB592 -> BB597 [tailport=s, headport=n, color=gray]
+BB593 [shape=record label="{1598: new[v11]|1599: constant[\"red\",v12]|1600: write-property[v11,'color',v12]|1601: write-variable[v11,'opts']*}" ] 
+BB593 -> BB594 [tailport=s, headport=n]
+BB593 -> BB597 [tailport=s, headport=n, color=gray]
+BB594 [shape=record label="{1602: read-variable['$',v12,-]|1603: read-property[v12,'notify',-]|1604: \<variable-non-null-undef\>['$']|1605: read-variable['element',v13,-]|1606: read-variable['text',v14,-]|1607: read-variable['opts',v15,-]}" ] 
+BB594 -> BB595 [tailport=s, headport=n, headlabel="      595"]
+BB594 -> BB597 [tailport=s, headport=n, color=gray]
+BB595 [shape=record label="{1608: call-$.notify [v12,'notify',v13,v14,v15,-]*}" ] 
+BB595 -> BB596 [tailport=s, headport=n]
+BB595 -> BB597 [tailport=s, headport=n, color=gray]
+BB596 [shape=record label="{1609: return[v1]}" ] 
+BB597 [shape=record label="{1610: exceptional-return}" ] 
+//#$~ 496
+}

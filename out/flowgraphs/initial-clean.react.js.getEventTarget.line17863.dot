@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry747[shape=none,label=""];
+BB_entry747 -> BB9994 [tailport=s, headport=n, headlabel="    9994"]
+BB9994 [shape=record label="{33072: constant[undefined,v1]|33073: vardecl['target']}" ] 
+BB9994 -> BB9995 [tailport=s, headport=n, headlabel="      9995"]
+BB9995 [shape=record label="{33074: read-variable['nativeEvent',v3,-]|33075: read-property[v3,'target',v2]|33076: \<variable-non-null-undef\>['nativeEvent']|33077: if[v2](true-block:9998,false-block:9996)}" ] 
+BB9995 -> BB9998 [tailport=s, headport=n, headlabel="      9998"]
+BB9995 -> BB9996 [tailport=s, headport=n, headlabel="      9996"]
+BB9995 -> BB10002 [tailport=s, headport=n, color=gray, headlabel="      10002"]
+BB9996 [shape=record label="{33078: read-variable['nativeEvent',v3,-]|33079: read-property[v3,'srcElement',v2]|33080: \<variable-non-null-undef\>['nativeEvent']|33081: if[v2](true-block:9998,false-block:9997)}" ] 
+BB9996 -> BB9998 [tailport=s, headport=n]
+BB9996 -> BB9997 [tailport=s, headport=n, headlabel="      9997"]
+BB9996 -> BB10002 [tailport=s, headport=n, color=gray]
+BB9997 [shape=record label="{33082: read-variable['window',v2,-]}" ] 
+BB9997 -> BB9998 [tailport=s, headport=n]
+BB9997 -> BB10002 [tailport=s, headport=n, color=gray]
+BB9998 [shape=record label="{33083: write-variable[v2,'target']*|33084: read-variable['target',v6,-]|33085: read-property[v6,'nodeType',v4]|33086: \<variable-non-null-undef\>['target']|33087: constant[3.0,v5]|33088: ===[v4,v5,v3]|33089: if[v3](true-block:9999,false-block:10000)}" ] 
+BB9998 -> BB9999 [tailport=s, headport=n, headlabel="      9999"]
+BB9998 -> BB10000 [tailport=s, headport=n, headlabel="      10000"]
+BB9998 -> BB10002 [tailport=s, headport=n, color=gray]
+BB9999 [shape=record label="{33090: read-variable['target',v7,-]|33091: read-property[v7,'parentNode',v1]|33092: \<variable-non-null-undef\>['target']}" ] 
+BB9999 -> BB10001 [tailport=s, headport=n, headlabel="      10001"]
+BB9999 -> BB10002 [tailport=s, headport=n, color=gray]
+BB10000 [shape=record label="{33093: read-variable['target',v1,-]}" ] 
+BB10000 -> BB10001 [tailport=s, headport=n]
+BB10000 -> BB10002 [tailport=s, headport=n, color=gray]
+BB10001 [shape=record label="{33094: return[v1]}" ] 
+BB10002 [shape=record label="{33095: exceptional-return}" ] 
+//#$~ 17867
+}

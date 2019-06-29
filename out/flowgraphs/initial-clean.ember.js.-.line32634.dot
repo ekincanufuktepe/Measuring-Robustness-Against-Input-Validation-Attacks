@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1477[shape=none,label=""];
+BB_entry1477 -> BB17158 [tailport=s, headport=n, headlabel="    17158"]
+BB17158 [shape=record label="{57915: constant[undefined,v1]}" ] 
+BB17158 -> BB17159 [tailport=s, headport=n, headlabel="      17159"]
+BB17159 [shape=record label="{57916: read-variable['arguments',v5,-]|57917: read-property[v5,'length',v3]|57918: \<variable-non-null-undef\>['arguments']|57919: constant[2.0,v4]|57920: ===[v3,v4,v2]|57921: if[v2](true-block:17160,false-block:17161)}" ] 
+BB17159 -> BB17160 [tailport=s, headport=n, headlabel="      17160"]
+BB17159 -> BB17161 [tailport=s, headport=n, headlabel="      17161"]
+BB17159 -> BB17166 [tailport=s, headport=n, color=gray, headlabel="      17166"]
+BB17160 [shape=record label="{57922: read-variable['tap',v7,v6]|57923: read-variable['this',v8,-]|57924: read-variable['promise',v9,-]}" ] 
+BB17160 -> BB17162 [tailport=s, headport=n, headlabel="      17162"]
+BB17160 -> BB17166 [tailport=s, headport=n, color=gray]
+BB17161 [shape=record label="{57925: read-variable['EmberError',v7,-]|57926: constant[\"PromiseProxy's promise must be set\",v8]}" ] 
+BB17161 -> BB17163 [tailport=s, headport=n, headlabel="      17163"]
+BB17161 -> BB17166 [tailport=s, headport=n, color=gray]
+BB17162 [shape=record label="{57927: call-tap [v6,v7,v8,v9,v1]}" ] 
+BB17162 -> BB17165 [tailport=s, headport=n, headlabel="      17165"]
+BB17162 -> BB17166 [tailport=s, headport=n, color=gray]
+BB17163 [shape=record label="{57928: construct [-,v7,v8,v6]}" ] 
+BB17163 -> BB17164 [tailport=s, headport=n, headlabel="      17164"]
+BB17163 -> BB17166 [tailport=s, headport=n, color=gray]
+BB17164 [shape=record label="{57929: throw[v6]*}" ] 
+BB17164 -> BB17165 [tailport=s, headport=n]
+BB17164 -> BB17166 [tailport=s, headport=n, color=gray]
+BB17165 [shape=record label="{57930: return[v1]}" ] 
+BB17166 [shape=record label="{57931: exceptional-return}" ] 
+//#$~ 32638
+}

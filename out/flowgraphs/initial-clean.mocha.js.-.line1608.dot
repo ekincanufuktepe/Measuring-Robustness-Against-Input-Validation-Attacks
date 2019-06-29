@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry124[shape=none,label=""];
+BB_entry124 -> BB1357 [tailport=s, headport=n, headlabel="    1357"]
+BB1357 [shape=record label="{4487: constant[undefined,v1]|4488: vardecl['notify']}" ] 
+BB1357 -> BB1358 [tailport=s, headport=n, headlabel="      1358"]
+BB1358 [shape=record label="{4489: read-variable['require',v4,v3]|4490: constant[\"growl\",v5]}" ] 
+BB1358 -> BB1359 [tailport=s, headport=n, headlabel="      1359"]
+BB1358 -> BB1363 [tailport=s, headport=n, color=gray, headlabel="      1363"]
+BB1359 [shape=record label="{4491: call-require [v3,v4,v5,v2]}" ] 
+BB1359 -> BB1360 [tailport=s, headport=n, headlabel="      1360"]
+BB1359 -> BB1363 [tailport=s, headport=n, color=gray]
+BB1360 [shape=record label="{4492: write-variable[v2,'notify']*|4493: read-variable['runner',v7,-]|4494: read-property[v7,'on',-]|4495: \<variable-non-null-undef\>['runner']|4496: constant[\"end\",v8]|4497: function-expr[function ( ),v9]}" ] 
+BB1360 -> BB1361 [tailport=s, headport=n, headlabel="      1361"]
+BB1360 -> BB1363 [tailport=s, headport=n, color=gray]
+BB1361 [shape=record label="{4498: call-runner.on [v7,'on',v8,v9,-]*}" ] 
+BB1361 -> BB1362 [tailport=s, headport=n, headlabel="      1362"]
+BB1361 -> BB1363 [tailport=s, headport=n, color=gray]
+BB1362 [shape=record label="{4499: return[v1]}" ] 
+BB1363 [shape=record label="{4500: exceptional-return}" ] 
+//#$~ 1620
+}

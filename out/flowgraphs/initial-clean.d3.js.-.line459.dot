@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry74[shape=none,label=""];
+BB_entry74 -> BB776 [tailport=s, headport=n, headlabel="    776"]
+BB776 [shape=record label="{2374: constant[undefined,v1]|2375: vardecl['i']|2376: vardecl['n']|2377: vardecl['method']}" ] 
+BB776 -> BB777 [tailport=s, headport=n, headlabel="      777"]
+BB777 [shape=record label="{2378: constant[1.0,v2]|2379: write-variable[v2,'i']*|2380: read-variable['arguments',v4,-]|2381: read-property[v4,'length',v3]|2382: \<variable-non-null-undef\>['arguments']|2383: write-variable[v3,'n']*}" ] 
+BB777 -> BB778 [tailport=s, headport=n, headlabel="      778"]
+BB777 -> BB784 [tailport=s, headport=n, color=gray, headlabel="      784"]
+BB778 [shape=record label="{2384: constant[1.0,v8]|2385: read-variable['i',v9,-]|2386: +[v9,v10]|2387: +[v10,v8,v6]|2388: write-variable[v6,'i']|2389: read-variable['n',v7,-]|2390: \<[v6,v7,v5]|2391: if[v5](true-block:779,false-block:780)}" ] 
+BB778 -> BB779 [tailport=s, headport=n, headlabel="      779"]
+BB778 -> BB780 [tailport=s, headport=n, headlabel="      780"]
+BB778 -> BB784 [tailport=s, headport=n, color=gray]
+BB779 [shape=record label="{2392: read-variable['target',v12,-]|2393: read-variable['arguments',v14,-]|2394: read-variable['i',v15,-]|2395: read-property[v14,v15,v13]|2396: \<variable-non-null-undef\>['arguments']|2397: write-variable[v13,'method']|2398: read-variable['d3_rebind',v17,v16]|2399: read-variable['target',v18,-]|2400: read-variable['source',v19,-]|2401: read-variable['source',v21,-]|2402: read-variable['method',v22,-]|2403: read-property[v21,v22,v20]|2404: \<variable-non-null-undef\>['source']}" ] 
+BB779 -> BB781 [tailport=s, headport=n, headlabel="      781"]
+BB779 -> BB784 [tailport=s, headport=n, color=gray]
+BB780 [shape=record label="{2405: read-variable['target',v1,-]}" ] 
+BB780 -> BB783 [tailport=s, headport=n, headlabel="      783"]
+BB780 -> BB784 [tailport=s, headport=n, color=gray]
+BB781 [shape=record label="{2406: call-d3_rebind [v16,v17,v18,v19,v20,v11]}" ] 
+BB781 -> BB782 [tailport=s, headport=n, headlabel="      782"]
+BB781 -> BB784 [tailport=s, headport=n, color=gray]
+BB782 [shape=record label="{2407: write-property[v12,v13,v11]|2408: \<variable-non-null-undef\>['target']*}" ] 
+BB782 -> BB778 [tailport=s, headport=n]
+BB782 -> BB784 [tailport=s, headport=n, color=gray]
+BB783 [shape=record label="{2409: return[v1]}" ] 
+BB784 [shape=record label="{2410: exceptional-return}" ] 
+//#$~ 462
+}

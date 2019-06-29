@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry84[shape=none,label=""];
+BB_entry84 -> BB916 [tailport=s, headport=n, headlabel="    916"]
+BB916 [shape=record label="{2618: constant[undefined,v1]}" ] 
+BB916 -> BB917 [tailport=s, headport=n, headlabel="      917"]
+BB917 [shape=record label="{2619: read-variable['obj',v1,v2]|2620: if[v1](true-block:918,false-block:921)}" ] 
+BB917 -> BB921 [tailport=s, headport=n, headlabel="      921"]
+BB917 -> BB918 [tailport=s, headport=n, headlabel="      918"]
+BB917 -> BB922 [tailport=s, headport=n, color=gray, headlabel="      922"]
+BB918 [shape=record label="{2621: typeof['obj',v3]|2622: constant[\"object\",v4]|2623: ==[v3,v4,v1]|2624: if[v1](true-block:919,false-block:921)}" ] 
+BB918 -> BB921 [tailport=s, headport=n]
+BB918 -> BB919 [tailport=s, headport=n, headlabel="      919"]
+BB918 -> BB922 [tailport=s, headport=n, color=gray]
+BB919 [shape=record label="{2625: read-variable['obj',v7,v2]|2626: read-property[v7,'nodeType',v5]|2627: \<variable-non-null-undef\>['obj']|2628: constant[1.0,v6]|2629: ==[v5,v6,v1]|2630: if[v1](true-block:920,false-block:921)}" ] 
+BB919 -> BB921 [tailport=s, headport=n]
+BB919 -> BB920 [tailport=s, headport=n, headlabel="      920"]
+BB919 -> BB922 [tailport=s, headport=n, color=gray]
+BB920 [shape=record label="{2631: read-variable['obj',v11,v2]|2632: read-property[v11,'nodeName',v10]|2633: \<variable-non-null-undef\>['obj']|2634: typeof[v10,v8]|2635: constant[\"string\",v9]|2636: ==[v8,v9,v1]}" ] 
+BB920 -> BB921 [tailport=s, headport=n]
+BB920 -> BB922 [tailport=s, headport=n, color=gray]
+BB921 [shape=record label="{2637: return[v1]}" ] 
+BB922 [shape=record label="{2638: exceptional-return}" ] 
+//#$~ 1320
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2558[shape=none,label=""];
+BB_entry2558 -> BB28972 [tailport=s, headport=n, headlabel="    28972"]
+BB28972 [shape=record label="{96304: constant[undefined,v1]|96305: vardecl['result']}" ] 
+BB28972 -> BB28973 [tailport=s, headport=n, headlabel="      28973"]
+BB28973 [shape=record label="{96306: read-variable['tryApply',v4,v3]|96307: read-variable['nodeFunc',v5,-]|96308: read-variable['self',v6,-]|96309: read-variable['args',v7,-]}" ] 
+BB28973 -> BB28974 [tailport=s, headport=n, headlabel="      28974"]
+BB28973 -> BB28980 [tailport=s, headport=n, color=gray, headlabel="      28980"]
+BB28974 [shape=record label="{96310: call-tryApply [v3,v4,v5,v6,v7,v2]}" ] 
+BB28974 -> BB28975 [tailport=s, headport=n, headlabel="      28975"]
+BB28974 -> BB28980 [tailport=s, headport=n, color=gray]
+BB28975 [shape=record label="{96311: write-variable[v2,'result']*|96312: read-variable['result',v9,-]|96313: read-variable['ERROR',v10,-]|96314: ===[v9,v10,v8]|96315: if[v8](true-block:28976,false-block:28978)}" ] 
+BB28975 -> BB28976 [tailport=s, headport=n, headlabel="      28976"]
+BB28975 -> BB28978 [tailport=s, headport=n, headlabel="      28978"]
+BB28975 -> BB28980 [tailport=s, headport=n, color=gray]
+BB28976 [shape=record label="{96316: read-variable['reject',v12,v11]|96317: read-variable['promise',v13,-]|96318: read-variable['result',v15,-]|96319: read-property[v15,'value',v14]|96320: \<variable-non-null-undef\>['result']}" ] 
+BB28976 -> BB28977 [tailport=s, headport=n, headlabel="      28977"]
+BB28976 -> BB28980 [tailport=s, headport=n, color=gray]
+BB28977 [shape=record label="{96321: call-reject [v11,v12,v13,v14,-]*}" ] 
+BB28977 -> BB28978 [tailport=s, headport=n]
+BB28977 -> BB28980 [tailport=s, headport=n, color=gray]
+BB28978 [shape=record label="{96322: read-variable['promise',v1,-]}" ] 
+BB28978 -> BB28979 [tailport=s, headport=n, headlabel="      28979"]
+BB28978 -> BB28980 [tailport=s, headport=n, color=gray]
+BB28979 [shape=record label="{96323: return[v1]}" ] 
+BB28980 [shape=record label="{96324: exceptional-return}" ] 
+//#$~ 51981
+}

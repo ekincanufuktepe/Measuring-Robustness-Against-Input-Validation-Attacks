@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry250[shape=none,label=""];
+BB_entry250 -> BB3763 [tailport=s, headport=n, headlabel="    3763"]
+BB3763 [shape=record label="{11012: constant[undefined,v1]}" ] 
+BB3763 -> BB3764 [tailport=s, headport=n, headlabel="      3764"]
+BB3764 [shape=record label="{11013: read-variable['context-4172:19',v7,v2]|11014: read-property[v7,'getElementsByClassName',v6]|11015: \<variable-non-null-undef\>['context']|11016: typeof[v6,v4]|11017: read-variable['strundefined-4172:54',v5,v2]|11018: !==[v4,v5,v3]|11019: if[v3](true-block:3765,false-block:3766)}" ] 
+BB3764 -> BB3766 [tailport=s, headport=n, headlabel="      3766"]
+BB3764 -> BB3765 [tailport=s, headport=n, headlabel="      3765"]
+BB3764 -> BB3770 [tailport=s, headport=n, color=gray, headlabel="      3770"]
+BB3765 [shape=record label="{11020: read-variable['documentIsXML-4172:71',v8,v2]|11021: ![v8,v3]}" ] 
+BB3765 -> BB3766 [tailport=s, headport=n]
+BB3765 -> BB3770 [tailport=s, headport=n, color=gray]
+BB3766 [shape=record label="{11022: if[v3](true-block:3767,false-block:3769)}" ] 
+BB3766 -> BB3767 [tailport=s, headport=n, headlabel="      3767"]
+BB3766 -> BB3769 [tailport=s, headport=n, headlabel="      3769"]
+BB3767 [shape=record label="{11023: read-variable['context-4173:15',v9,-]|11024: read-property[v9,'getElementsByClassName',-]|11025: \<variable-non-null-undef\>['context']|11026: read-variable['className-4173:47',v10,v2]}" ] 
+BB3767 -> BB3768 [tailport=s, headport=n, headlabel="      3768"]
+BB3767 -> BB3770 [tailport=s, headport=n, color=gray]
+BB3768 [shape=record label="{11027: call-0:0[v9,'getElementsByClassName',v10,v1]}" ] 
+BB3768 -> BB3769 [tailport=s, headport=n]
+BB3768 -> BB3770 [tailport=s, headport=n, color=gray]
+BB3769 [shape=record label="{11028: return[v1]}" ] 
+BB3770 [shape=record label="{11029: exceptional-return}" ] 
+}

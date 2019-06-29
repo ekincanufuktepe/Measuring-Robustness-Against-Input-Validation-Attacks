@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1199[shape=none,label=""];
+BB_entry1199 -> BB12949 [tailport=s, headport=n, headlabel="    12949"]
+BB12949 [shape=record label="{44123: constant[undefined,v1]}" ] 
+BB12949 -> BB12950 [tailport=s, headport=n, headlabel="      12950"]
+BB12950 [shape=record label="{44124: read-variable['d3',v6,-]|44125: read-property[v6,'scale',v5]|44126: \<variable-non-null-undef\>['d3']|44127: read-property[v5,'pow',-]|44128: \<property-non-null-undef\>[v6,'scale']}" ] 
+BB12950 -> BB12951 [tailport=s, headport=n, headlabel="      12951"]
+BB12950 -> BB12955 [tailport=s, headport=n, color=gray, headlabel="      12955"]
+BB12951 [shape=record label="{44129: call-d3.scale.pow [v5,'pow',v3]}" ] 
+BB12951 -> BB12952 [tailport=s, headport=n, headlabel="      12952"]
+BB12951 -> BB12955 [tailport=s, headport=n, color=gray]
+BB12952 [shape=record label="{44130: read-property[v3,'exponent',-]|44131: constant[0.5,v7]}" ] 
+BB12952 -> BB12953 [tailport=s, headport=n, headlabel="      12953"]
+BB12952 -> BB12955 [tailport=s, headport=n, color=gray]
+BB12953 [shape=record label="{44132: call-null [v3,'exponent',v7,v1]}" ] 
+BB12953 -> BB12954 [tailport=s, headport=n, headlabel="      12954"]
+BB12953 -> BB12955 [tailport=s, headport=n, color=gray]
+BB12954 [shape=record label="{44133: return[v1]}" ] 
+BB12955 [shape=record label="{44134: exceptional-return}" ] 
+//#$~ 7705
+}

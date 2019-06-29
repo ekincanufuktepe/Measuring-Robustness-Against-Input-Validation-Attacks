@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry337[shape=none,label=""];
+BB_entry337 -> BB5759 [tailport=s, headport=n, headlabel="    5759"]
+BB5759 [shape=record label="{17661: constant[undefined,v1]}" ] 
+BB5759 -> BB5760 [tailport=s, headport=n, headlabel="      5760"]
+BB5760 [shape=record label="{17662: read-variable['options',v3,-]|17663: read-property[v3,'strictSemicolons',v2]|17664: \<variable-non-null-undef\>['options']|17665: ![v2,v1]|17666: if[v1](true-block:5761,false-block:5766)}" ] 
+BB5760 -> BB5766 [tailport=s, headport=n, headlabel="      5766"]
+BB5760 -> BB5761 [tailport=s, headport=n, headlabel="      5761"]
+BB5760 -> BB5767 [tailport=s, headport=n, color=gray, headlabel="      5767"]
+BB5761 [shape=record label="{17667: read-variable['tokType',v4,-]|17668: read-variable['_eof',v5,-]|17669: ===[v4,v5,v1]|17670: if[v1](true-block:5766,false-block:5762)}" ] 
+BB5761 -> BB5766 [tailport=s, headport=n]
+BB5761 -> BB5762 [tailport=s, headport=n, headlabel="      5762"]
+BB5761 -> BB5767 [tailport=s, headport=n, color=gray]
+BB5762 [shape=record label="{17671: read-variable['tokType',v4,-]|17672: read-variable['_braceR',v5,-]|17673: ===[v4,v5,v1]|17674: if[v1](true-block:5766,false-block:5763)}" ] 
+BB5762 -> BB5766 [tailport=s, headport=n]
+BB5762 -> BB5763 [tailport=s, headport=n, headlabel="      5763"]
+BB5762 -> BB5767 [tailport=s, headport=n, color=gray]
+BB5763 [shape=record label="{17675: read-variable['newline',v5,-]|17676: read-property[v5,'test',-]|17677: \<variable-non-null-undef\>['newline']|17678: read-variable['input',v8,-]|17679: read-property[v8,'slice',-]|17680: \<variable-non-null-undef\>['input']|17681: read-variable['lastEnd',v9,-]|17682: read-variable['tokStart',v10,-]}" ] 
+BB5763 -> BB5764 [tailport=s, headport=n, headlabel="      5764"]
+BB5763 -> BB5767 [tailport=s, headport=n, color=gray]
+BB5764 [shape=record label="{17683: call-input.slice [v8,'slice',v9,v10,v6]}" ] 
+BB5764 -> BB5765 [tailport=s, headport=n, headlabel="      5765"]
+BB5764 -> BB5767 [tailport=s, headport=n, color=gray]
+BB5765 [shape=record label="{17684: call-newline.test [v5,'test',v6,v1]}" ] 
+BB5765 -> BB5766 [tailport=s, headport=n]
+BB5765 -> BB5767 [tailport=s, headport=n, color=gray]
+BB5766 [shape=record label="{17685: return[v1]}" ] 
+BB5767 [shape=record label="{17686: exceptional-return}" ] 
+//#$~ 5819
+}

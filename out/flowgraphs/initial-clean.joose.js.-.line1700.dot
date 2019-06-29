@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry172[shape=none,label=""];
+BB_entry172 -> BB1455 [tailport=s, headport=n, headlabel="    1455"]
+BB1455 [shape=record label="{4341: constant[undefined,v1]|4342: vardecl['orig']}" ] 
+BB1455 -> BB1456 [tailport=s, headport=n, headlabel="      1456"]
+BB1456 [shape=record label="{4343: read-variable['this',v4,-]|4344: read-property[v4,'getBody',-]}" ] 
+BB1456 -> BB1457 [tailport=s, headport=n, headlabel="      1457"]
+BB1456 -> BB1461 [tailport=s, headport=n, color=gray, headlabel="      1461"]
+BB1457 [shape=record label="{4345: call-this.getBody [v4,'getBody',v2]}" ] 
+BB1457 -> BB1458 [tailport=s, headport=n, headlabel="      1458"]
+BB1457 -> BB1461 [tailport=s, headport=n, color=gray]
+BB1458 [shape=record label="{4346: write-variable[v2,'orig']*|4347: read-variable['this',v6,-]|4348: read-property[v6,'_makeWrapped',-]|4349: function-expr[function beforeWrapper ( ),v7]}" ] 
+BB1458 -> BB1459 [tailport=s, headport=n, headlabel="      1459"]
+BB1458 -> BB1461 [tailport=s, headport=n, color=gray]
+BB1459 [shape=record label="{4350: call-this._makeWrapped [v6,'_makeWrapped',v7,v1]}" ] 
+BB1459 -> BB1460 [tailport=s, headport=n, headlabel="      1460"]
+BB1459 -> BB1461 [tailport=s, headport=n, color=gray]
+BB1460 [shape=record label="{4351: return[v1]}" ] 
+BB1461 [shape=record label="{4352: exceptional-return}" ] 
+//#$~ 1704
+}

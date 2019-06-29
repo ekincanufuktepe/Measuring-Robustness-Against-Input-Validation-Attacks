@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB20 [tailport=s, headport=n, headlabel="    20"]
+BB20 [shape=record label="{43: constant[undefined,v1]}" ] 
+BB20 -> BB21 [tailport=s, headport=n, headlabel="      21"]
+BB21 [shape=record label="{44: read-variable['window',v3,-]|45: read-property[v3,'document',v2]|46: \<variable-non-null-undef\>['window']|47: write-variable[v2,'$document']*|48: read-variable['window',v5,-]|49: read-property[v5,'location',v4]|50: \<variable-non-null-undef\>['window']|51: write-variable[v4,'$location']*|52: read-variable['window',v7,-]|53: read-property[v7,'cancelAnimationFrame',v6]|54: \<variable-non-null-undef\>['window']|55: if[v6](true-block:23,false-block:22)}" ] 
+BB21 -> BB23 [tailport=s, headport=n, headlabel="      23"]
+BB21 -> BB22 [tailport=s, headport=n, headlabel="      22"]
+BB21 -> BB27 [tailport=s, headport=n, color=gray, headlabel="      27"]
+BB22 [shape=record label="{56: read-variable['window',v7,-]|57: read-property[v7,'clearTimeout',v6]|58: \<variable-non-null-undef\>['window']}" ] 
+BB22 -> BB23 [tailport=s, headport=n]
+BB22 -> BB27 [tailport=s, headport=n, color=gray]
+BB23 [shape=record label="{59: write-variable[v6,'$cancelAnimationFrame']*|60: read-variable['window',v8,-]|61: read-property[v8,'requestAnimationFrame',v7]|62: \<variable-non-null-undef\>['window']|63: if[v7](true-block:25,false-block:24)}" ] 
+BB23 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB23 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB23 -> BB27 [tailport=s, headport=n, color=gray]
+BB24 [shape=record label="{64: read-variable['window',v8,-]|65: read-property[v8,'setTimeout',v7]|66: \<variable-non-null-undef\>['window']}" ] 
+BB24 -> BB25 [tailport=s, headport=n]
+BB24 -> BB27 [tailport=s, headport=n, color=gray]
+BB25 [shape=record label="{67: write-variable[v7,'$requestAnimationFrame']*}" ] 
+BB25 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB26 [shape=record label="{68: return[v1]}" ] 
+BB27 [shape=record label="{69: exceptional-return}" ] 
+//#$~ 16
+}

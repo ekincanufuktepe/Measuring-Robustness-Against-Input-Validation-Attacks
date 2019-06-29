@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry223[shape=none,label=""];
+BB_entry223 -> BB3408 [tailport=s, headport=n, headlabel="    3408"]
+BB3408 [shape=record label="{10070: constant[undefined,v1]|10071: vardecl['i']|10072: vardecl['len']}" ] 
+BB3408 -> BB3409 [tailport=s, headport=n, headlabel="      3409"]
+BB3409 [shape=record label="{10073: constant[0.0,v3]|10074: write-variable[v3,'i']*|10075: read-variable['thisCUBUR3-3740:10',v5,-]|10076: read-property[v5,'length',v4]|10077: \<variable-non-null-undef\>['thisCUBUR3']|10078: write-variable[v4,'len']*}" ] 
+BB3409 -> BB3410 [tailport=s, headport=n, headlabel="      3410"]
+BB3409 -> BB3416 [tailport=s, headport=n, color=gray, headlabel="      3416"]
+BB3410 [shape=record label="{10079: read-variable['i-3741:12',v7,v2]|10080: read-variable['len-3741:16',v8,v2]|10081: \<[v7,v8,v6]|10082: if[v6](true-block:3411,false-block:3412)}" ] 
+BB3410 -> BB3411 [tailport=s, headport=n, headlabel="      3411"]
+BB3410 -> BB3412 [tailport=s, headport=n, headlabel="      3412"]
+BB3410 -> BB3416 [tailport=s, headport=n, color=gray]
+BB3411 [shape=record label="{10083: read-variable['thisCUBUR3-3742:10',v12,-]|10084: read-variable['i-3742:15',v13,v2]|10085: read-property[v12,v13,v10]|10086: \<variable-non-null-undef\>['thisCUBUR3']|10087: read-variable['elem-3742:22',v11,v2]|10088: ===[v10,v11,v9]|10089: if[v9](true-block:3413,false-block:3414)}" ] 
+BB3411 -> BB3413 [tailport=s, headport=n, headlabel="      3413"]
+BB3411 -> BB3414 [tailport=s, headport=n, headlabel="      3414"]
+BB3411 -> BB3416 [tailport=s, headport=n, color=gray]
+BB3412 [shape=record label="{10090: constant[-1.0,v1]}" ] 
+BB3412 -> BB3415 [tailport=s, headport=n, headlabel="      3415"]
+BB3413 [shape=record label="{10091: read-variable['i-3743:13',v1,v2]}" ] 
+BB3413 -> BB3415 [tailport=s, headport=n]
+BB3413 -> BB3416 [tailport=s, headport=n, color=gray]
+BB3414 [shape=record label="{10092: constant[1.0,v14]|10093: read-variable['i-3741:21',v15,v2]|10094: +[v15,v16]|10095: +[v16,v14,v17]|10096: write-variable[v17,'i']}" ] 
+BB3414 -> BB3410 [tailport=s, headport=n]
+BB3414 -> BB3416 [tailport=s, headport=n, color=gray]
+BB3415 [shape=record label="{10097: return[v1]}" ] 
+BB3416 [shape=record label="{10098: exceptional-return}" ] 
+}

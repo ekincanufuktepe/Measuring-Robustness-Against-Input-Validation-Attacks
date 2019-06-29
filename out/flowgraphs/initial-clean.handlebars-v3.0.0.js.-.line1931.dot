@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry146[shape=none,label=""];
+BB_entry146 -> BB3806 [tailport=s, headport=n, headlabel="    3806"]
+BB3806 [shape=record label="{12575: constant[undefined,v1]}" ] 
+BB3806 -> BB3807 [tailport=s, headport=n, headlabel="      3807"]
+BB3807 [shape=record label="{12576: read-variable['yy',v3,-]|12577: read-property[v3,'SourceLocation',-]|12578: \<variable-non-null-undef\>['yy']|12579: read-variable['options',v4,-]|12580: if[v4](true-block:3808,false-block:3809)}" ] 
+BB3807 -> BB3809 [tailport=s, headport=n, headlabel="      3809"]
+BB3807 -> BB3808 [tailport=s, headport=n, headlabel="      3808"]
+BB3807 -> BB3812 [tailport=s, headport=n, color=gray, headlabel="      3812"]
+BB3808 [shape=record label="{12581: read-variable['options',v5,-]|12582: read-property[v5,'srcName',v4]|12583: \<variable-non-null-undef\>['options']}" ] 
+BB3808 -> BB3809 [tailport=s, headport=n]
+BB3808 -> BB3812 [tailport=s, headport=n, color=gray]
+BB3809 [shape=record label="{12584: read-variable['locInfo',v5,-]}" ] 
+BB3809 -> BB3810 [tailport=s, headport=n, headlabel="      3810"]
+BB3809 -> BB3812 [tailport=s, headport=n, color=gray]
+BB3810 [shape=record label="{12585: construct [v3,'SourceLocation',v4,v5,v1]}" ] 
+BB3810 -> BB3811 [tailport=s, headport=n, headlabel="      3811"]
+BB3810 -> BB3812 [tailport=s, headport=n, color=gray]
+BB3811 [shape=record label="{12586: return[v1]}" ] 
+BB3812 [shape=record label="{12587: exceptional-return}" ] 
+//#$~ 1932
+}

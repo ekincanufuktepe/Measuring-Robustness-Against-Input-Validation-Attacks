@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry230[shape=none,label=""];
+BB_entry230 -> BB3195 [tailport=s, headport=n, headlabel="    3195"]
+BB3195 [shape=record label="{11126: constant[undefined,v1]}" ] 
+BB3195 -> BB3196 [tailport=s, headport=n, headlabel="      3196"]
+BB3196 [shape=record label="{11127: constant[\"production\",v3]|11128: constant[\"development\",v4]|11129: !==[v3,v4,v2]|11130: if[v2](true-block:3197,false-block:3198)}" ] 
+BB3196 -> BB3197 [tailport=s, headport=n, headlabel="      3197"]
+BB3196 -> BB3198 [tailport=s, headport=n, headlabel="      3198"]
+BB3196 -> BB3203 [tailport=s, headport=n, color=gray, headlabel="      3203"]
+BB3197 [shape=record label="{11131: read-variable['invariant',v6,v5]|11132: read-variable['injected',v8,-]|11133: ![v8,v7]|11134: constant[\"ReactCompositeComponent: injectEnvironment() can only be called once.\",v9]}" ] 
+BB3197 -> BB3199 [tailport=s, headport=n, headlabel="      3199"]
+BB3197 -> BB3203 [tailport=s, headport=n, color=gray]
+BB3198 [shape=record label="{11135: read-variable['invariant',v6,v5]|11136: read-variable['injected',v8,-]|11137: ![v8,v7]}" ] 
+BB3198 -> BB3200 [tailport=s, headport=n, headlabel="      3200"]
+BB3198 -> BB3203 [tailport=s, headport=n, color=gray]
+BB3199 [shape=record label="{11138: call-invariant [v5,v6,v7,v9,-]}" ] 
+BB3199 -> BB3201 [tailport=s, headport=n, headlabel="      3201"]
+BB3199 -> BB3203 [tailport=s, headport=n, color=gray]
+BB3200 [shape=record label="{11139: call-invariant [v5,v6,v7,-]}" ] 
+BB3200 -> BB3201 [tailport=s, headport=n]
+BB3200 -> BB3203 [tailport=s, headport=n, color=gray]
+BB3201 [shape=record label="{11140: read-variable['ReactComponentEnvironment',v6,-]|11141: read-variable['environment',v7,-]|11142: read-property[v7,'unmountIDFromEnvironment',v5]|11143: \<variable-non-null-undef\>['environment']|11144: write-property[v6,'unmountIDFromEnvironment',v5]|11145: \<variable-non-null-undef\>['ReactComponentEnvironment']*|11146: read-variable['ReactComponentEnvironment',v9,-]|11147: read-variable['environment',v10,-]|11148: read-property[v10,'replaceNodeWithMarkupByID',v8]|11149: \<variable-non-null-undef\>['environment']|11150: write-property[v9,'replaceNodeWithMarkupByID',v8]|11151: \<variable-non-null-undef\>['ReactComponentEnvironment']*|11152: read-variable['ReactComponentEnvironment',v12,-]|11153: read-variable['environment',v13,-]|11154: read-property[v13,'processChildrenUpdates',v11]|11155: \<variable-non-null-undef\>['environment']|11156: write-property[v12,'processChildrenUpdates',v11]|11157: \<variable-non-null-undef\>['ReactComponentEnvironment']*|11158: constant[true,v14]|11159: write-variable[v14,'injected']*}" ] 
+BB3201 -> BB3202 [tailport=s, headport=n, headlabel="      3202"]
+BB3201 -> BB3203 [tailport=s, headport=n, color=gray]
+BB3202 [shape=record label="{11160: return[v1]}" ] 
+BB3203 [shape=record label="{11161: exceptional-return}" ] 
+//#$~ 6178
+}

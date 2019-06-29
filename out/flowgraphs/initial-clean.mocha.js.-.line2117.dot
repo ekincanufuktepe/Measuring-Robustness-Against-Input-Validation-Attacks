@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry154[shape=none,label=""];
+BB_entry154 -> BB1640 [tailport=s, headport=n, headlabel="    1640"]
+BB1640 [shape=record label="{5402: constant[undefined,v1]}" ] 
+BB1640 -> BB1641 [tailport=s, headport=n, headlabel="      1641"]
+BB1641 [shape=record label="{5403: read-variable['isatty',v2,-]|5404: if[v2](true-block:1642,false-block:1644)}" ] 
+BB1641 -> BB1644 [tailport=s, headport=n, headlabel="      1644"]
+BB1641 -> BB1642 [tailport=s, headport=n, headlabel="      1642"]
+BB1641 -> BB1645 [tailport=s, headport=n, color=gray, headlabel="      1645"]
+BB1642 [shape=record label="{5405: read-variable['process',v5,-]|5406: read-property[v5,'stdout',v4]|5407: \<variable-non-null-undef\>['process']|5408: read-property[v4,'write',-]|5409: \<property-non-null-undef\>[v5,'stdout']|5410: constant[\"\\u001b[?25h\",v6]}" ] 
+BB1642 -> BB1643 [tailport=s, headport=n, headlabel="      1643"]
+BB1642 -> BB1645 [tailport=s, headport=n, color=gray]
+BB1643 [shape=record label="{5411: call-process.stdout.write [v4,'write',v6,-]}" ] 
+BB1643 -> BB1644 [tailport=s, headport=n]
+BB1643 -> BB1645 [tailport=s, headport=n, color=gray]
+BB1644 [shape=record label="{5412: return[v1]}" ] 
+BB1645 [shape=record label="{5413: exceptional-return}" ] 
+//#$~ 2118
+}

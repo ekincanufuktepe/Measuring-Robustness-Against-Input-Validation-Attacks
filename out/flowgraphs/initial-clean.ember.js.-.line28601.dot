@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1310[shape=none,label=""];
+BB_entry1310 -> BB15492 [tailport=s, headport=n, headlabel="    15492"]
+BB15492 [shape=record label="{53289: constant[undefined,v1]|53290: vardecl['events']}" ] 
+BB15492 -> BB15493 [tailport=s, headport=n, headlabel="      15493"]
+BB15493 [shape=record label="{53291: read-variable['a_slice',v4,-]|53292: read-property[v4,'call',-]|53293: \<variable-non-null-undef\>['a_slice']|53294: read-variable['arguments',v5,-]}" ] 
+BB15493 -> BB15494 [tailport=s, headport=n, headlabel="      15494"]
+BB15493 -> BB15497 [tailport=s, headport=n, color=gray, headlabel="      15497"]
+BB15494 [shape=record label="{53295: call-a_slice.call [v4,'call',v5,v2]}" ] 
+BB15494 -> BB15495 [tailport=s, headport=n, headlabel="      15495"]
+BB15494 -> BB15497 [tailport=s, headport=n, color=gray]
+BB15495 [shape=record label="{53296: write-variable[v2,'events']*|53297: read-variable['this',v7,-]|53298: read-variable['events',v6,-]|53299: write-property[v7,'__ember_listens__',v6]*|53300: read-variable['this',v1,-]}" ] 
+BB15495 -> BB15496 [tailport=s, headport=n, headlabel="      15496"]
+BB15495 -> BB15497 [tailport=s, headport=n, color=gray]
+BB15496 [shape=record label="{53301: return[v1]}" ] 
+BB15497 [shape=record label="{53302: exceptional-return}" ] 
+//#$~ 28605
+}

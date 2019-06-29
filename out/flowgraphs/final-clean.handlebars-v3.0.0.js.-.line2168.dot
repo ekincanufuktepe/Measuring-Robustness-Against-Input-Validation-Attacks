@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry161[shape=none,label=""];
+BB_entry161 -> BB4031 [tailport=s, headport=n, headlabel="    4031"]
+BB4031 [shape=record label="{13319: constant[undefined,v1]}" ] 
+BB4031 -> BB4032 [tailport=s, headport=n, headlabel="      4032"]
+BB4032 [shape=record label="{13320: read-variable['this',v3,-]|13321: read-property[v3,'accept',-]|13322: read-variable['sexpr',v5,-]|13323: read-property[v5,'path',v4]|13324: \<variable-non-null-undef\>['sexpr']}" ] 
+BB4032 -> BB4033 [tailport=s, headport=n, headlabel="      4033"]
+BB4032 -> BB4037 [tailport=s, headport=n, color=gray, headlabel="      4037"]
+BB4033 [shape=record label="{13325: call-this.accept [v3,'accept',v4,-]*}" ] 
+BB4033 -> BB4034 [tailport=s, headport=n, headlabel="      4034"]
+BB4033 -> BB4037 [tailport=s, headport=n, color=gray]
+BB4034 [shape=record label="{13326: read-variable['this',v7,-]|13327: read-property[v7,'opcode',-]|13328: constant[\"resolvePossibleLambda\",v8]}" ] 
+BB4034 -> BB4035 [tailport=s, headport=n, headlabel="      4035"]
+BB4034 -> BB4037 [tailport=s, headport=n, color=gray]
+BB4035 [shape=record label="{13329: call-this.opcode [v7,'opcode',v8,-]*}" ] 
+BB4035 -> BB4036 [tailport=s, headport=n, headlabel="      4036"]
+BB4035 -> BB4037 [tailport=s, headport=n, color=gray]
+BB4036 [shape=record label="{13330: return[v1]}" ] 
+BB4037 [shape=record label="{13331: exceptional-return}" ] 
+//#$~ 2170
+}

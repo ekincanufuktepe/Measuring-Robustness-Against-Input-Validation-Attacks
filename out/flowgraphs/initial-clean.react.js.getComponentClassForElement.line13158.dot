@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry521[shape=none,label=""];
+BB_entry521 -> BB7480 [tailport=s, headport=n, headlabel="    7480"]
+BB7480 [shape=record label="{25178: constant[undefined,v1]|25179: vardecl['tag']|25180: vardecl['componentClass']}" ] 
+BB7480 -> BB7481 [tailport=s, headport=n, headlabel="      7481"]
+BB7481 [shape=record label="{25181: read-variable['element',v6,-]|25182: read-property[v6,'type',v5]|25183: \<variable-non-null-undef\>['element']|25184: typeof[v5,v3]|25185: constant[\"function\",v4]|25186: ===[v3,v4,v2]|25187: if[v2](true-block:7482,false-block:7483)}" ] 
+BB7481 -> BB7482 [tailport=s, headport=n, headlabel="      7482"]
+BB7481 -> BB7483 [tailport=s, headport=n, headlabel="      7483"]
+BB7481 -> BB7489 [tailport=s, headport=n, color=gray, headlabel="      7489"]
+BB7482 [shape=record label="{25188: read-variable['element',v7,-]|25189: read-property[v7,'type',v1]|25190: \<variable-non-null-undef\>['element']}" ] 
+BB7482 -> BB7488 [tailport=s, headport=n, headlabel="      7488"]
+BB7482 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7483 [shape=record label="{25191: read-variable['element',v8,-]|25192: read-property[v8,'type',v7]|25193: \<variable-non-null-undef\>['element']|25194: write-variable[v7,'tag']*|25195: read-variable['tagToComponentClass',v10,-]|25196: read-variable['tag',v11,-]|25197: read-property[v10,v11,v9]|25198: \<variable-non-null-undef\>['tagToComponentClass']|25199: write-variable[v9,'componentClass']*|25200: read-variable['componentClass',v13,-]|25201: constant[null,v14]|25202: ==[v13,v14,v12]|25203: if[v12](true-block:7484,false-block:7487)}" ] 
+BB7483 -> BB7484 [tailport=s, headport=n, headlabel="      7484"]
+BB7483 -> BB7487 [tailport=s, headport=n, headlabel="      7487"]
+BB7483 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7484 [shape=record label="{25204: read-variable['tagToComponentClass',v16,-]|25205: read-variable['tag',v17,-]|25206: read-variable['autoGenerateWrapperClass',v19,v18]|25207: read-variable['tag',v20,-]}" ] 
+BB7484 -> BB7485 [tailport=s, headport=n, headlabel="      7485"]
+BB7484 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7485 [shape=record label="{25208: call-autoGenerateWrapperClass [v18,v19,v20,v15]}" ] 
+BB7485 -> BB7486 [tailport=s, headport=n, headlabel="      7486"]
+BB7485 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7486 [shape=record label="{25209: write-variable[v15,'componentClass']|25210: write-property[v16,v17,v15]|25211: \<variable-non-null-undef\>['tagToComponentClass']*}" ] 
+BB7486 -> BB7487 [tailport=s, headport=n]
+BB7486 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7487 [shape=record label="{25212: read-variable['componentClass',v1,-]}" ] 
+BB7487 -> BB7488 [tailport=s, headport=n]
+BB7487 -> BB7489 [tailport=s, headport=n, color=gray]
+BB7488 [shape=record label="{25213: return[v1]}" ] 
+BB7489 [shape=record label="{25214: exceptional-return}" ] 
+//#$~ 13167
+}

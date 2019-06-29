@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB366 [tailport=s, headport=n, headlabel="    366"]
+BB366 [shape=record label="{1370: constant[undefined,v1]|1371: vardecl['value']}" ] 
+BB366 -> BB367 [tailport=s, headport=n, headlabel="      367"]
+BB367 [shape=record label="{1372: read-variable['name',v3,-]|1373: read-variable['props',v4,-]|1374: in[v3,v4,v2]|1375: if[v2](true-block:368,false-block:371)}" ] 
+BB367 -> BB368 [tailport=s, headport=n, headlabel="      368"]
+BB367 -> BB371 [tailport=s, headport=n, headlabel="      371"]
+BB367 -> BB372 [tailport=s, headport=n, color=gray, headlabel="      372"]
+BB368 [shape=record label="{1376: read-variable['props',v6,-]|1377: read-variable['name',v7,-]|1378: read-property[v6,v7,v5]|1379: \<variable-non-null-undef\>['props']|1380: write-variable[v5,'value']*|1381: read-variable['me',v9,-]|1382: read-property[v9,'_initializeFromProp',-]|1383: \<variable-non-null-undef\>['me']|1384: read-variable['name',v10,-]|1385: read-variable['value',v11,-]|1386: read-variable['props',v12,-]}" ] 
+BB368 -> BB369 [tailport=s, headport=n, headlabel="      369"]
+BB368 -> BB372 [tailport=s, headport=n, color=gray]
+BB369 [shape=record label="{1387: call-me._initializeFromProp [v9,'_initializeFromProp',v10,v11,v12,-]*}" ] 
+BB369 -> BB370 [tailport=s, headport=n, headlabel="      370"]
+BB369 -> BB372 [tailport=s, headport=n, color=gray]
+BB370 [shape=record label="{1388: read-variable['props',v14,-]|1389: read-variable['name',v15,-]|1390: delete-property[v14,v15,v13]*}" ] 
+BB370 -> BB371 [tailport=s, headport=n]
+BB370 -> BB372 [tailport=s, headport=n, color=gray]
+BB371 [shape=record label="{1391: return[v1]}" ] 
+BB372 [shape=record label="{1392: exceptional-return}" ] 
+//#$~ 398
+}

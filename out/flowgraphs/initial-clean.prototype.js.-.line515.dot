@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry62[shape=none,label=""];
+BB_entry62 -> BB763 [tailport=s, headport=n, headlabel="    763"]
+BB763 [shape=record label="{2476: constant[undefined,v1]}" ] 
+BB763 -> BB764 [tailport=s, headport=n, headlabel="      764"]
+BB764 [shape=record label="{2477: read-variable['this',v3,-]|2478: read-variable['setInterval',v5,v4]|2479: read-variable['this',v9,-]|2480: read-property[v9,'onTimerEvent',v8]|2481: read-property[v8,'bind',-]|2482: \<property-non-null-undef\>[v9,'onTimerEvent']|2483: read-variable['this',v10,-]}" ] 
+BB764 -> BB765 [tailport=s, headport=n, headlabel="      765"]
+BB764 -> BB770 [tailport=s, headport=n, color=gray, headlabel="      770"]
+BB765 [shape=record label="{2484: call-this.onTimerEvent.bind [v8,'bind',v10,v6]}" ] 
+BB765 -> BB766 [tailport=s, headport=n, headlabel="      766"]
+BB765 -> BB770 [tailport=s, headport=n, color=gray]
+BB766 [shape=record label="{2485: read-variable['this',v14,-]|2486: read-property[v14,'frequency',v12]|2487: constant[1000.0,v13]|2488: *[v12,v13,v11]}" ] 
+BB766 -> BB767 [tailport=s, headport=n, headlabel="      767"]
+BB766 -> BB770 [tailport=s, headport=n, color=gray]
+BB767 [shape=record label="{2489: call-setInterval [v4,v5,v6,v11,v2]}" ] 
+BB767 -> BB768 [tailport=s, headport=n, headlabel="      768"]
+BB767 -> BB770 [tailport=s, headport=n, color=gray]
+BB768 [shape=record label="{2490: write-property[v3,'timer',v2]*}" ] 
+BB768 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB768 -> BB770 [tailport=s, headport=n, color=gray]
+BB769 [shape=record label="{2491: return[v1]}" ] 
+BB770 [shape=record label="{2492: exceptional-return}" ] 
+//#$~ 516
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry146[shape=none,label=""];
+BB_entry146 -> BB2037 [tailport=s, headport=n, headlabel="    2037"]
+BB2037 [shape=record label="{9541: constant[undefined,v1]|9542: vardecl['m']}" ] 
+BB2037 -> BB2038 [tailport=s, headport=n, headlabel="      2038"]
+BB2038 [shape=record label="{9543: read-variable['MochiKit',v3,-]|9544: read-property[v3,'Base',v2]|9545: \<variable-non-null-undef\>['MochiKit']|9546: write-variable[v2,'m']*|9547: read-variable['MochiKit',v7,-]|9548: read-property[v7,'Iter',v6]|9549: \<variable-non-null-undef\>['MochiKit']|9550: read-property[v6,'iter',-]|9551: \<property-non-null-undef\>[v7,'Iter']|9552: read-variable['seq',v8,-]}" ] 
+BB2038 -> BB2039 [tailport=s, headport=n, headlabel="      2039"]
+BB2038 -> BB2046 [tailport=s, headport=n, color=gray, headlabel="      2046"]
+BB2039 [shape=record label="{9553: call-MochiKit.Iter.iter [v6,'iter',v8,v4]}" ] 
+BB2039 -> BB2040 [tailport=s, headport=n, headlabel="      2040"]
+BB2039 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2040 [shape=record label="{9554: write-variable[v4,'seq']*|9555: read-variable['pred',v10,-]|9556: constant[null,v11]|9557: ===[v10,v11,v9]|9558: if[v9](true-block:2041,false-block:2042)}" ] 
+BB2040 -> BB2041 [tailport=s, headport=n, headlabel="      2041"]
+BB2040 -> BB2042 [tailport=s, headport=n, headlabel="      2042"]
+BB2040 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2041 [shape=record label="{9559: read-variable['m',v14,-]|9560: read-property[v14,'operator',v13]|9561: \<variable-non-null-undef\>['m']|9562: read-property[v13,'truth',v12]|9563: \<property-non-null-undef\>[v14,'operator']|9564: write-variable[v12,'pred']*}" ] 
+BB2041 -> BB2042 [tailport=s, headport=n]
+BB2041 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2042 [shape=record label="{9565: new[v1]|9566: function-expr[function ( ),v12]|9567: write-property[v1,'repr',v12]|9568: read-variable['m',v15,-]|9569: read-property[v15,'forwardCall',-]|9570: \<variable-non-null-undef\>['m']|9571: constant[\"repr\",v16]}" ] 
+BB2042 -> BB2043 [tailport=s, headport=n, headlabel="      2043"]
+BB2042 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2043 [shape=record label="{9572: call-m.forwardCall [v15,'forwardCall',v16,v13]}" ] 
+BB2043 -> BB2044 [tailport=s, headport=n, headlabel="      2044"]
+BB2043 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2044 [shape=record label="{9573: write-property[v1,'toString',v13]|9574: function-expr[function ( ),v17]|9575: write-property[v1,'next',v17]}" ] 
+BB2044 -> BB2045 [tailport=s, headport=n, headlabel="      2045"]
+BB2044 -> BB2046 [tailport=s, headport=n, color=gray]
+BB2045 [shape=record label="{9576: return[v1]}" ] 
+BB2046 [shape=record label="{9577: exceptional-return}" ] 
+//#$~ 1213
+}

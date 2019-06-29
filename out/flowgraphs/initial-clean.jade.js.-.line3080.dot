@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry171[shape=none,label=""];
+BB_entry171 -> BB2801 [tailport=s, headport=n, headlabel="    2801"]
+BB2801 [shape=record label="{8813: constant[undefined,v1]}" ] 
+BB2801 -> BB2802 [tailport=s, headport=n, headlabel="      2802"]
+BB2802 [shape=record label="{8814: read-variable['this',v3,-]|8815: read-property[v3,'expect',-]|8816: constant[\"default\",v4]}" ] 
+BB2802 -> BB2803 [tailport=s, headport=n, headlabel="      2803"]
+BB2802 -> BB2808 [tailport=s, headport=n, color=gray, headlabel="      2808"]
+BB2803 [shape=record label="{8817: call-this.expect [v3,'expect',v4,-]*}" ] 
+BB2803 -> BB2804 [tailport=s, headport=n, headlabel="      2804"]
+BB2803 -> BB2808 [tailport=s, headport=n, color=gray]
+BB2804 [shape=record label="{8818: read-variable['nodes',v7,-]|8819: read-property[v7,'Case',v6]|8820: \<variable-non-null-undef\>['nodes']|8821: read-property[v6,'When',-]|8822: \<property-non-null-undef\>[v7,'Case']|8823: constant[\"default\",v8]|8824: read-variable['this',v11,-]|8825: read-property[v11,'parseBlockExpansion',-]}" ] 
+BB2804 -> BB2805 [tailport=s, headport=n, headlabel="      2805"]
+BB2804 -> BB2808 [tailport=s, headport=n, color=gray]
+BB2805 [shape=record label="{8826: call-this.parseBlockExpansion [v11,'parseBlockExpansion',v9]}" ] 
+BB2805 -> BB2806 [tailport=s, headport=n, headlabel="      2806"]
+BB2805 -> BB2808 [tailport=s, headport=n, color=gray]
+BB2806 [shape=record label="{8827: construct [v6,'When',v8,v9,v1]}" ] 
+BB2806 -> BB2807 [tailport=s, headport=n, headlabel="      2807"]
+BB2806 -> BB2808 [tailport=s, headport=n, color=gray]
+BB2807 [shape=record label="{8828: return[v1]}" ] 
+BB2808 [shape=record label="{8829: exceptional-return}" ] 
+//#$~ 3082
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry214[shape=none,label=""];
+BB_entry214 -> BB1854 [tailport=s, headport=n, headlabel="    1854"]
+BB1854 [shape=record label="{5403: constant[undefined,v1]|5404: vardecl['complete']}" ] 
+BB1854 -> BB1855 [tailport=s, headport=n, headlabel="      1855"]
+BB1855 [shape=record label="{5405: read-variable['this',v4,-]|5406: read-property[v4,'hasRequiredMethods',-]|5407: read-variable['classObject',v5,-]|5408: read-variable['throwException',v6,-]}" ] 
+BB1855 -> BB1856 [tailport=s, headport=n, headlabel="      1856"]
+BB1855 -> BB1863 [tailport=s, headport=n, color=gray, headlabel="      1863"]
+BB1856 [shape=record label="{5409: call-this.hasRequiredMethods [v4,'hasRequiredMethods',v5,v6,v2]}" ] 
+BB1856 -> BB1857 [tailport=s, headport=n, headlabel="      1857"]
+BB1856 -> BB1863 [tailport=s, headport=n, color=gray]
+BB1857 [shape=record label="{5410: write-variable[v2,'complete']*|5411: read-variable['complete',v7,-]|5412: if[v7](true-block:1858,false-block:1861)}" ] 
+BB1857 -> BB1858 [tailport=s, headport=n, headlabel="      1858"]
+BB1857 -> BB1861 [tailport=s, headport=n, headlabel="      1861"]
+BB1857 -> BB1863 [tailport=s, headport=n, color=gray]
+BB1858 [shape=record label="{5413: read-variable['this',v10,-]|5414: read-property[v10,'implementsMyMethods',-]|5415: read-variable['classObject',v11,-]}" ] 
+BB1858 -> BB1859 [tailport=s, headport=n, headlabel="      1859"]
+BB1858 -> BB1863 [tailport=s, headport=n, color=gray]
+BB1859 [shape=record label="{5416: call-this.implementsMyMethods [v10,'implementsMyMethods',v11,v8]}" ] 
+BB1859 -> BB1860 [tailport=s, headport=n, headlabel="      1860"]
+BB1859 -> BB1863 [tailport=s, headport=n, color=gray]
+BB1860 [shape=record label="{5417: write-variable[v8,'complete']*}" ] 
+BB1860 -> BB1861 [tailport=s, headport=n]
+BB1861 [shape=record label="{5418: read-variable['complete',v1,-]}" ] 
+BB1861 -> BB1862 [tailport=s, headport=n, headlabel="      1862"]
+BB1861 -> BB1863 [tailport=s, headport=n, color=gray]
+BB1862 [shape=record label="{5419: return[v1]}" ] 
+BB1863 [shape=record label="{5420: exceptional-return}" ] 
+//#$~ 2115
+}

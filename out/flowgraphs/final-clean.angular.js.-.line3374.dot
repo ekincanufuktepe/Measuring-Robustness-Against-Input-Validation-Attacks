@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry186[shape=none,label=""];
+BB_entry186 -> BB2417 [tailport=s, headport=n, headlabel="    2417"]
+BB2417 [shape=record label="{5838: constant[undefined,v1]}" ] 
+BB2417 -> BB2418 [tailport=s, headport=n, headlabel="      2418"]
+BB2418 [shape=record label="{5839: read-variable['element',v5,-]|5840: read-property[v5,'nodeType',v3]|5841: \<variable-non-null-undef\>['element']|5842: read-variable['NODE_TYPE_ELEMENT',v4,-]|5843: ===[v3,v4,v2]|5844: if[v2](true-block:2419,false-block:2421)}" ] 
+BB2418 -> BB2419 [tailport=s, headport=n, headlabel="      2419"]
+BB2418 -> BB2421 [tailport=s, headport=n, headlabel="      2421"]
+BB2418 -> BB2422 [tailport=s, headport=n, color=gray, headlabel="      2422"]
+BB2419 [shape=record label="{5845: read-variable['children',v7,-]|5846: read-property[v7,'push',-]|5847: \<variable-non-null-undef\>['children']|5848: read-variable['element',v8,-]}" ] 
+BB2419 -> BB2420 [tailport=s, headport=n, headlabel="      2420"]
+BB2419 -> BB2422 [tailport=s, headport=n, color=gray]
+BB2420 [shape=record label="{5849: call-children.push [v7,'push',v8,-]*}" ] 
+BB2420 -> BB2421 [tailport=s, headport=n]
+BB2420 -> BB2422 [tailport=s, headport=n, color=gray]
+BB2421 [shape=record label="{5850: return[v1]}" ] 
+BB2422 [shape=record label="{5851: exceptional-return}" ] 
+//#$~ 3376
+}

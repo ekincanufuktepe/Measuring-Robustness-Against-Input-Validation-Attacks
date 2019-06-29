@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry232[shape=none,label=""];
+BB_entry232 -> BB2448 [tailport=s, headport=n, headlabel="    2448"]
+BB2448 [shape=record label="{9886: constant[undefined,v1]}" ] 
+BB2448 -> BB2449 [tailport=s, headport=n, headlabel="      2449"]
+BB2449 [shape=record label="{9887: read-variable['point',v4,-]|9888: read-property[v4,'inRange',-]|9889: \<variable-non-null-undef\>['point']|9890: read-variable['eventPosition',v6,-]|9891: read-property[v6,'x',v5]|9892: \<variable-non-null-undef\>['eventPosition']|9893: read-variable['eventPosition',v8,-]|9894: read-property[v8,'y',v7]|9895: \<variable-non-null-undef\>['eventPosition']}" ] 
+BB2449 -> BB2450 [tailport=s, headport=n, headlabel="      2450"]
+BB2449 -> BB2455 [tailport=s, headport=n, color=gray, headlabel="      2455"]
+BB2450 [shape=record label="{9896: call-point.inRange [v4,'inRange',v5,v7,v2]}" ] 
+BB2450 -> BB2451 [tailport=s, headport=n, headlabel="      2451"]
+BB2450 -> BB2455 [tailport=s, headport=n, color=gray]
+BB2451 [shape=record label="{9897: if[v2](true-block:2452,false-block:2454)}" ] 
+BB2451 -> BB2452 [tailport=s, headport=n, headlabel="      2452"]
+BB2451 -> BB2454 [tailport=s, headport=n, headlabel="      2454"]
+BB2452 [shape=record label="{9898: read-variable['pointsArray',v10,-]|9899: read-property[v10,'push',-]|9900: \<variable-non-null-undef\>['pointsArray']|9901: read-variable['point',v11,-]}" ] 
+BB2452 -> BB2453 [tailport=s, headport=n, headlabel="      2453"]
+BB2452 -> BB2455 [tailport=s, headport=n, color=gray]
+BB2453 [shape=record label="{9902: call-pointsArray.push [v10,'push',v11,-]*}" ] 
+BB2453 -> BB2454 [tailport=s, headport=n]
+BB2453 -> BB2455 [tailport=s, headport=n, color=gray]
+BB2454 [shape=record label="{9903: return[v1]}" ] 
+BB2455 [shape=record label="{9904: exceptional-return}" ] 
+//#$~ 2665
+}

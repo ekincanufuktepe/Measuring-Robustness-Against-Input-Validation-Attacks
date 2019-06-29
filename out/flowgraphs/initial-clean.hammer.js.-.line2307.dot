@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry127[shape=none,label=""];
+BB_entry127 -> BB1395 [tailport=s, headport=n, headlabel="    1395"]
+BB1395 [shape=record label="{4336: constant[undefined,v1]|4337: vardecl['handlers']}" ] 
+BB1395 -> BB1396 [tailport=s, headport=n, headlabel="      1396"]
+BB1396 [shape=record label="{4338: read-variable['this',v3,-]|4339: read-property[v3,'handlers',v2]|4340: write-variable[v2,'handlers']*|4341: read-variable['each',v5,v4]|4342: read-variable['splitStr',v8,v7]|4343: read-variable['events',v9,-]}" ] 
+BB1396 -> BB1397 [tailport=s, headport=n, headlabel="      1397"]
+BB1396 -> BB1402 [tailport=s, headport=n, color=gray, headlabel="      1402"]
+BB1397 [shape=record label="{4344: call-splitStr [v7,v8,v9,v6]}" ] 
+BB1397 -> BB1398 [tailport=s, headport=n, headlabel="      1398"]
+BB1397 -> BB1402 [tailport=s, headport=n, color=gray]
+BB1398 [shape=record label="{4345: function-expr[function ( event ),v10]}" ] 
+BB1398 -> BB1399 [tailport=s, headport=n, headlabel="      1399"]
+BB1399 [shape=record label="{4346: call-each [v4,v5,v6,v10,-]*}" ] 
+BB1399 -> BB1400 [tailport=s, headport=n, headlabel="      1400"]
+BB1399 -> BB1402 [tailport=s, headport=n, color=gray]
+BB1400 [shape=record label="{4347: read-variable['this',v1,-]}" ] 
+BB1400 -> BB1401 [tailport=s, headport=n, headlabel="      1401"]
+BB1400 -> BB1402 [tailport=s, headport=n, color=gray]
+BB1401 [shape=record label="{4348: return[v1]}" ] 
+BB1402 [shape=record label="{4349: exceptional-return}" ] 
+//#$~ 2313
+}

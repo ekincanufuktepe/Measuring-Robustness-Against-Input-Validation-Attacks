@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry93[shape=none,label=""];
+BB_entry93 -> BB1091 [tailport=s, headport=n, headlabel="    1091"]
+BB1091 [shape=record label="{2879: constant[undefined,v1]|2880: vardecl['i']|2881: vardecl['result']}" ] 
+BB1091 -> BB1092 [tailport=s, headport=n, headlabel="      1092"]
+BB1092 [shape=record label="{2882: read-variable['start',v2,-]|2883: write-variable[v2,'i']*|2884: read-variable['args',v6,-]|2885: read-variable['start',v7,-]|2886: read-property[v6,v7,v5]|2887: \<variable-non-null-undef\>['args']|2888: read-property[v5,'apply',-]|2889: \<property-non-null-undef\>[v6,v7]|2890: read-variable['this',v8,-]|2891: read-variable['arguments',v9,-]}" ] 
+BB1092 -> BB1093 [tailport=s, headport=n, headlabel="      1093"]
+BB1092 -> BB1101 [tailport=s, headport=n, color=gray, headlabel="      1101"]
+BB1093 [shape=record label="{2892: call-null [v5,'apply',v8,v9,v3]}" ] 
+BB1093 -> BB1094 [tailport=s, headport=n, headlabel="      1094"]
+BB1093 -> BB1101 [tailport=s, headport=n, color=gray]
+BB1094 [shape=record label="{2893: write-variable[v3,'result']*}" ] 
+BB1094 -> BB1095 [tailport=s, headport=n, headlabel="      1095"]
+BB1095 [shape=record label="{2894: constant[1.0,v11]|2895: read-variable['i',v12,-]|2896: +[v12,v10]|2897: -[v10,v11,v13]|2898: write-variable[v13,'i']|2899: if[v10](true-block:1096,false-block:1097)}" ] 
+BB1095 -> BB1096 [tailport=s, headport=n, headlabel="      1096"]
+BB1095 -> BB1097 [tailport=s, headport=n, headlabel="      1097"]
+BB1095 -> BB1101 [tailport=s, headport=n, color=gray]
+BB1096 [shape=record label="{2900: read-variable['args',v17,-]|2901: read-variable['i',v18,-]|2902: read-property[v17,v18,v16]|2903: \<variable-non-null-undef\>['args']|2904: read-property[v16,'call',-]|2905: \<property-non-null-undef\>[v17,v18]|2906: read-variable['this',v19,-]|2907: read-variable['result',v20,-]}" ] 
+BB1096 -> BB1098 [tailport=s, headport=n, headlabel="      1098"]
+BB1096 -> BB1101 [tailport=s, headport=n, color=gray]
+BB1097 [shape=record label="{2908: read-variable['result',v1,-]}" ] 
+BB1097 -> BB1100 [tailport=s, headport=n, headlabel="      1100"]
+BB1097 -> BB1101 [tailport=s, headport=n, color=gray]
+BB1098 [shape=record label="{2909: call-null [v16,'call',v19,v20,v14]}" ] 
+BB1098 -> BB1099 [tailport=s, headport=n, headlabel="      1099"]
+BB1098 -> BB1101 [tailport=s, headport=n, color=gray]
+BB1099 [shape=record label="{2910: write-variable[v14,'result']*}" ] 
+BB1099 -> BB1095 [tailport=s, headport=n]
+BB1100 [shape=record label="{2911: return[v1]}" ] 
+BB1101 [shape=record label="{2912: exceptional-return}" ] 
+//#$~ 876
+}

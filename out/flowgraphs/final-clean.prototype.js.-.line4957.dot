@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry497[shape=none,label=""];
+BB_entry497 -> BB6236 [tailport=s, headport=n, headlabel="    6236"]
+BB6236 [shape=record label="{17329: constant[undefined,v1]|17330: vardecl['node']}" ] 
+BB6236 -> BB6237 [tailport=s, headport=n, headlabel="      6237"]
+BB6237 [shape=record label="{17331: read-variable['elem',v6,-]|17332: read-property[v6,'getAttributeNode',v5]|17333: \<variable-non-null-undef\>['elem']|17334: typeof[v5,v3]|17335: read-variable['strundefined',v4,-]|17336: !==[v3,v4,v2]|17337: if[v2](true-block:6238,false-block:6240)}" ] 
+BB6237 -> BB6240 [tailport=s, headport=n, headlabel="      6240"]
+BB6237 -> BB6238 [tailport=s, headport=n, headlabel="      6238"]
+BB6237 -> BB6243 [tailport=s, headport=n, color=gray, headlabel="      6243"]
+BB6238 [shape=record label="{17338: read-variable['elem',v8,-]|17339: read-property[v8,'getAttributeNode',-]|17340: \<variable-non-null-undef\>['elem']|17341: constant[\"id\",v9]}" ] 
+BB6238 -> BB6239 [tailport=s, headport=n, headlabel="      6239"]
+BB6238 -> BB6243 [tailport=s, headport=n, color=gray]
+BB6239 [shape=record label="{17342: call-elem.getAttributeNode [v8,'getAttributeNode',v9,v2]}" ] 
+BB6239 -> BB6240 [tailport=s, headport=n]
+BB6239 -> BB6243 [tailport=s, headport=n, color=gray]
+BB6240 [shape=record label="{17343: write-variable[v2,'node']*|17344: read-variable['node',v1,-]|17345: if[v1](true-block:6241,false-block:6242)}" ] 
+BB6240 -> BB6242 [tailport=s, headport=n, headlabel="      6242"]
+BB6240 -> BB6241 [tailport=s, headport=n, headlabel="      6241"]
+BB6240 -> BB6243 [tailport=s, headport=n, color=gray]
+BB6241 [shape=record label="{17346: read-variable['node',v9,-]|17347: read-property[v9,'value',v7]|17348: \<variable-non-null-undef\>['node']|17349: read-variable['attrId',v8,-]|17350: ===[v7,v8,v1]}" ] 
+BB6241 -> BB6242 [tailport=s, headport=n]
+BB6241 -> BB6243 [tailport=s, headport=n, color=gray]
+BB6242 [shape=record label="{17351: return[v1]}" ] 
+BB6243 [shape=record label="{17352: exceptional-return}" ] 
+//#$~ 4959
+}

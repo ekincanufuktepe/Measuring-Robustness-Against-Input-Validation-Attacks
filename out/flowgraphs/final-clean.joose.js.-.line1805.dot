@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry188[shape=none,label=""];
+BB_entry188 -> BB1568 [tailport=s, headport=n, headlabel="    1568"]
+BB1568 [shape=record label="{4612: constant[undefined,v1]|4613: vardecl['props']}" ] 
+BB1568 -> BB1569 [tailport=s, headport=n, headlabel="      1569"]
+BB1569 [shape=record label="{4614: read-variable['this',v4,-]|4615: read-property[v4,'getProps',-]}" ] 
+BB1569 -> BB1570 [tailport=s, headport=n, headlabel="      1570"]
+BB1569 -> BB1575 [tailport=s, headport=n, color=gray, headlabel="      1575"]
+BB1570 [shape=record label="{4616: call-this.getProps [v4,'getProps',v2]}" ] 
+BB1570 -> BB1571 [tailport=s, headport=n, headlabel="      1571"]
+BB1570 -> BB1575 [tailport=s, headport=n, color=gray]
+BB1571 [shape=record label="{4617: write-variable[v2,'props']*|4618: read-variable['props',v8,-]|4619: read-property[v8,'persistent',v6]|4620: \<variable-non-null-undef\>['props']|4621: constant[false,v7]|4622: ==[v6,v7,v5]|4623: if[v5](true-block:1572,false-block:1573)}" ] 
+BB1571 -> BB1572 [tailport=s, headport=n, headlabel="      1572"]
+BB1571 -> BB1573 [tailport=s, headport=n, headlabel="      1573"]
+BB1571 -> BB1575 [tailport=s, headport=n, color=gray]
+BB1572 [shape=record label="{4624: constant[false,v1]}" ] 
+BB1572 -> BB1574 [tailport=s, headport=n, headlabel="      1574"]
+BB1573 [shape=record label="{4625: constant[true,v1]}" ] 
+BB1573 -> BB1574 [tailport=s, headport=n]
+BB1574 [shape=record label="{4626: return[v1]}" ] 
+BB1575 [shape=record label="{4627: exceptional-return}" ] 
+//#$~ 1810
+}

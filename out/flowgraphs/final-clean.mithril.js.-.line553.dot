@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry25[shape=none,label=""];
+BB_entry25 -> BB846 [tailport=s, headport=n, headlabel="    846"]
+BB846 [shape=record label="{3182: constant[undefined,v1]}" ] 
+BB846 -> BB847 [tailport=s, headport=n, headlabel="      847"]
+BB847 [shape=record label="{3183: read-variable['component',v4,-]|3184: read-property[v4,'controller',v3]|3185: \<variable-non-null-undef\>['component']|3186: if[v3](true-block:849,false-block:848)}" ] 
+BB847 -> BB849 [tailport=s, headport=n, headlabel="      849"]
+BB847 -> BB848 [tailport=s, headport=n, headlabel="      848"]
+BB847 -> BB854 [tailport=s, headport=n, color=gray, headlabel="      854"]
+BB848 [shape=record label="{3187: read-variable['noop',v3,-]}" ] 
+BB848 -> BB849 [tailport=s, headport=n]
+BB848 -> BB854 [tailport=s, headport=n, color=gray]
+BB849 [shape=record label="{3188: read-property[v3,'apply',-]|3189: read-variable['this',v4,-]|3190: read-variable['args',v5,-]}" ] 
+BB849 -> BB850 [tailport=s, headport=n, headlabel="      850"]
+BB849 -> BB854 [tailport=s, headport=n, color=gray]
+BB850 [shape=record label="{3191: call-null [v3,'apply',v4,v5,v1]}" ] 
+BB850 -> BB851 [tailport=s, headport=n, headlabel="      851"]
+BB850 -> BB854 [tailport=s, headport=n, color=gray]
+BB851 [shape=record label="{3192: if[v1](true-block:853,false-block:852)}" ] 
+BB851 -> BB853 [tailport=s, headport=n, headlabel="      853"]
+BB851 -> BB852 [tailport=s, headport=n, headlabel="      852"]
+BB852 [shape=record label="{3193: read-variable['this',v1,-]}" ] 
+BB852 -> BB853 [tailport=s, headport=n]
+BB852 -> BB854 [tailport=s, headport=n, color=gray]
+BB853 [shape=record label="{3194: return[v1]}" ] 
+BB854 [shape=record label="{3195: exceptional-return}" ] 
+//#$~ 554
+}

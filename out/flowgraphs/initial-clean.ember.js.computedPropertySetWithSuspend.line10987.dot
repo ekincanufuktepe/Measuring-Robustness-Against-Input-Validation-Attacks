@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry485[shape=none,label=""];
+BB_entry485 -> BB6028 [tailport=s, headport=n, headlabel="    6028"]
+BB6028 [shape=record label="{21433: constant[undefined,v1]|21434: vardecl['oldSuspended']}" ] 
+BB6028 -> BB6029 [tailport=s, headport=n, headlabel="      6029"]
+BB6029 [shape=record label="{21435: read-variable['this',v4,-]|21436: read-property[v4,'_suspended',v3]|21437: write-variable[v3,'oldSuspended']*|21438: read-variable['this',v6,-]|21439: read-variable['obj',v5,v2]|21440: write-property[v6,'_suspended',v5]*}" ] 
+BB6029 -> BB6030 [tailport=s, headport=n, headlabel="      6030"]
+BB6029 -> BB6035 [tailport=s, headport=n, color=gray, headlabel="      6035"]
+BB6030 [shape=record label="{21441: read-variable['this',v8,-]|21442: read-property[v8,'_set',-]|21443: read-variable['obj',v9,v2]|21444: read-variable['keyName',v10,v2]|21445: read-variable['value',v11,v2]}" ] 
+BB6030 -> BB6031 [tailport=s, headport=n, headlabel="      6031"]
+BB6030 -> BB6033 [tailport=s, headport=n, color=gray, headlabel="      6033"]
+BB6031 [shape=record label="{21446: call-this._set [v8,'_set',v9,v10,v11,-]*}" ] 
+BB6031 -> BB6032 [tailport=s, headport=n, headlabel="      6032"]
+BB6031 -> BB6033 [tailport=s, headport=n, color=gray]
+BB6032 [shape=record label="{21447: read-variable['this',v11,-]|21448: read-variable['oldSuspended',v10,v2]|21449: write-property[v11,'_suspended',v10]*}" ] 
+BB6032 -> BB6034 [tailport=s, headport=n, headlabel="      6034"]
+BB6032 -> BB6035 [tailport=s, headport=n, color=gray]
+BB6033 [shape=record label="{21450: catch[v7]|21451: read-variable['this',v9,-]|21452: read-variable['oldSuspended',v8,v2]|21453: write-property[v9,'_suspended',v8]*|21454: throw[v7]}" ] 
+BB6033 -> BB6035 [tailport=s, headport=n]
+BB6033 -> BB6035 [tailport=s, headport=n, color=gray]
+BB6034 [shape=record label="{21455: return[v1]}" ] 
+BB6035 [shape=record label="{21456: exceptional-return}" ] 
+//#$~ 10995
+}

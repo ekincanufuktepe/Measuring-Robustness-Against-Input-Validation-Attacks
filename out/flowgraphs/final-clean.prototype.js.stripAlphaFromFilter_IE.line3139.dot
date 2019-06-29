@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry345[shape=none,label=""];
+BB_entry345 -> BB4109 [tailport=s, headport=n, headlabel="    4109"]
+BB4109 [shape=record label="{10831: constant[undefined,v1]}" ] 
+BB4109 -> BB4110 [tailport=s, headport=n, headlabel="      4110"]
+BB4110 [shape=record label="{10832: read-variable['filter',v3,-]|10833: if[v3](true-block:4112,false-block:4111)}" ] 
+BB4110 -> BB4112 [tailport=s, headport=n, headlabel="      4112"]
+BB4110 -> BB4111 [tailport=s, headport=n, headlabel="      4111"]
+BB4110 -> BB4117 [tailport=s, headport=n, color=gray, headlabel="      4117"]
+BB4111 [shape=record label="{10834: constant[\"\",v3]}" ] 
+BB4111 -> BB4112 [tailport=s, headport=n]
+BB4112 [shape=record label="{10835: read-property[v3,'replace',-]|10836: read-variable['RegExp',v5,-]|10837: constant[\"alpha\\\\([^\\\\)]*\\\\)\",v6]|10838: constant[\"gi\",v7]}" ] 
+BB4112 -> BB4113 [tailport=s, headport=n, headlabel="      4113"]
+BB4112 -> BB4117 [tailport=s, headport=n, color=gray]
+BB4113 [shape=record label="{10839: construct [-,v5,v6,v7,v4]}" ] 
+BB4113 -> BB4114 [tailport=s, headport=n, headlabel="      4114"]
+BB4113 -> BB4117 [tailport=s, headport=n, color=gray]
+BB4114 [shape=record label="{10840: constant[\"\",v8]}" ] 
+BB4114 -> BB4115 [tailport=s, headport=n, headlabel="      4115"]
+BB4115 [shape=record label="{10841: call-null [v3,'replace',v4,v8,v1]}" ] 
+BB4115 -> BB4116 [tailport=s, headport=n, headlabel="      4116"]
+BB4115 -> BB4117 [tailport=s, headport=n, color=gray]
+BB4116 [shape=record label="{10842: return[v1]}" ] 
+BB4117 [shape=record label="{10843: exceptional-return}" ] 
+//#$~ 3140
+}

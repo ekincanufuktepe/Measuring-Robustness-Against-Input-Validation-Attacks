@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB543 [tailport=s, headport=n, headlabel="    543"]
+BB543 [shape=record label="{1483: constant[undefined,v1]|1484: vardecl['style']}" ] 
+BB543 -> BB544 [tailport=s, headport=n, headlabel="      544"]
+BB544 [shape=record label="{1485: read-variable['getStyleFn',v4,v3]|1486: read-variable['elem',v5,-]}" ] 
+BB544 -> BB545 [tailport=s, headport=n, headlabel="      545"]
+BB544 -> BB551 [tailport=s, headport=n, color=gray, headlabel="      551"]
+BB545 [shape=record label="{1487: call-getStyleFn [v3,v4,v5,v2]}" ] 
+BB545 -> BB546 [tailport=s, headport=n, headlabel="      546"]
+BB545 -> BB551 [tailport=s, headport=n, color=gray]
+BB546 [shape=record label="{1488: write-variable[v2,'style']*|1489: read-variable['style',v7,-]|1490: ![v7,v6]|1491: if[v6](true-block:547,false-block:549)}" ] 
+BB546 -> BB547 [tailport=s, headport=n, headlabel="      547"]
+BB546 -> BB549 [tailport=s, headport=n, headlabel="      549"]
+BB546 -> BB551 [tailport=s, headport=n, color=gray]
+BB547 [shape=record label="{1492: read-variable['logError',v9,v8]|1493: constant[\"Style returned \",v15]|1494: read-variable['style',v16,-]|1495: +[v15,v16,v13]|1496: constant[\". Are you running this code in a hidden iframe on Firefox? \",v14]|1497: +[v13,v14,v11]|1498: constant[\"See http://bit.ly/getsizebug1\",v12]|1499: +[v11,v12,v10]}" ] 
+BB547 -> BB548 [tailport=s, headport=n, headlabel="      548"]
+BB547 -> BB551 [tailport=s, headport=n, color=gray]
+BB548 [shape=record label="{1500: call-logError [v8,v9,v10,-]*}" ] 
+BB548 -> BB549 [tailport=s, headport=n]
+BB548 -> BB551 [tailport=s, headport=n, color=gray]
+BB549 [shape=record label="{1501: read-variable['style',v1,-]}" ] 
+BB549 -> BB550 [tailport=s, headport=n, headlabel="      550"]
+BB549 -> BB551 [tailport=s, headport=n, color=gray]
+BB550 [shape=record label="{1502: return[v1]}" ] 
+BB551 [shape=record label="{1503: exceptional-return}" ] 
+//#$~ 863
+}

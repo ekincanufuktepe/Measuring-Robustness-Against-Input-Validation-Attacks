@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1402[shape=none,label=""];
+BB_entry1402 -> BB14985 [tailport=s, headport=n, headlabel="    14985"]
+BB14985 [shape=record label="{51725: constant[undefined,v1]|51726: vardecl['transition']}" ] 
+BB14985 -> BB14986 [tailport=s, headport=n, headlabel="      14986"]
+BB14986 [shape=record label="{51727: read-variable['node',v4,-]|51728: read-variable['ns',v5,-]|51729: read-property[v4,v5,v3]|51730: \<variable-non-null-undef\>['node']|51731: read-variable['id',v6,-]|51732: read-property[v3,v6,v2]|51733: \<property-non-null-undef\>[v4,v5]|51734: write-variable[v2,'transition']*|51735: read-variable['transition',v9,-]|51736: read-property[v9,'event',v8]|51737: \<variable-non-null-undef\>['transition']|51738: if[v8](true-block:14990,false-block:14987)}" ] 
+BB14986 -> BB14990 [tailport=s, headport=n, headlabel="      14990"]
+BB14986 -> BB14987 [tailport=s, headport=n, headlabel="      14987"]
+BB14986 -> BB14993 [tailport=s, headport=n, color=gray, headlabel="      14993"]
+BB14987 [shape=record label="{51739: read-variable['transition',v9,-]|51740: read-variable['d3',v11,-]|51741: read-property[v11,'dispatch',-]|51742: \<variable-non-null-undef\>['d3']|51743: constant[\"start\",v12]|51744: constant[\"end\",v13]|51745: constant[\"interrupt\",v14]}" ] 
+BB14987 -> BB14988 [tailport=s, headport=n, headlabel="      14988"]
+BB14987 -> BB14993 [tailport=s, headport=n, color=gray]
+BB14988 [shape=record label="{51746: call-d3.dispatch [v11,'dispatch',v12,v13,v14,v8]}" ] 
+BB14988 -> BB14989 [tailport=s, headport=n, headlabel="      14989"]
+BB14988 -> BB14993 [tailport=s, headport=n, color=gray]
+BB14989 [shape=record label="{51747: write-property[v9,'event',v8]|51748: \<variable-non-null-undef\>['transition']}" ] 
+BB14989 -> BB14990 [tailport=s, headport=n]
+BB14989 -> BB14993 [tailport=s, headport=n, color=gray]
+BB14990 [shape=record label="{51749: read-property[v8,'on',-]|51750: read-variable['type',v9,-]|51751: read-variable['listener',v10,-]}" ] 
+BB14990 -> BB14991 [tailport=s, headport=n, headlabel="      14991"]
+BB14990 -> BB14993 [tailport=s, headport=n, color=gray]
+BB14991 [shape=record label="{51752: call-null [v8,'on',v9,v10,-]*}" ] 
+BB14991 -> BB14992 [tailport=s, headport=n, headlabel="      14992"]
+BB14991 -> BB14993 [tailport=s, headport=n, color=gray]
+BB14992 [shape=record label="{51753: return[v1]}" ] 
+BB14993 [shape=record label="{51754: exceptional-return}" ] 
+//#$~ 8840
+}

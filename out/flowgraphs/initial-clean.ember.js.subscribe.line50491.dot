@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2477[shape=none,label=""];
+BB_entry2477 -> BB28269 [tailport=s, headport=n, headlabel="    28269"]
+BB28269 [shape=record label="{94050: constant[undefined,v1]|94051: vardecl['subscribers']|94052: vardecl['length']}" ] 
+BB28269 -> BB28270 [tailport=s, headport=n, headlabel="      28270"]
+BB28270 [shape=record label="{94053: read-variable['parent',v3,-]|94054: read-property[v3,'_subscribers',v2]|94055: \<variable-non-null-undef\>['parent']|94056: write-variable[v2,'subscribers']*|94057: read-variable['subscribers',v5,-]|94058: read-property[v5,'length',v4]|94059: \<variable-non-null-undef\>['subscribers']|94060: write-variable[v4,'length']*|94061: read-variable['parent',v7,-]|94062: constant[null,v6]|94063: write-property[v7,'_onerror',v6]|94064: \<variable-non-null-undef\>['parent']*|94065: read-variable['subscribers',v9,-]|94066: read-variable['length',v10,-]|94067: read-variable['child',v8,-]|94068: write-property[v9,v10,v8]|94069: \<variable-non-null-undef\>['subscribers']*|94070: read-variable['subscribers',v12,-]|94071: read-variable['length',v14,-]|94072: read-variable['FULFILLED',v15,-]|94073: +[v14,v15,v13]|94074: read-variable['onFulfillment',v11,-]|94075: write-property[v12,v13,v11]|94076: \<variable-non-null-undef\>['subscribers']*|94077: read-variable['subscribers',v17,-]|94078: read-variable['length',v19,-]|94079: read-variable['REJECTED',v20,-]|94080: +[v19,v20,v18]|94081: read-variable['onRejection',v16,-]|94082: write-property[v17,v18,v16]|94083: \<variable-non-null-undef\>['subscribers']*|94084: read-variable['length',v22,-]|94085: constant[0.0,v23]|94086: ===[v22,v23,v21]|94087: if[v21](true-block:28271,false-block:28272)}" ] 
+BB28270 -> BB28272 [tailport=s, headport=n, headlabel="      28272"]
+BB28270 -> BB28271 [tailport=s, headport=n, headlabel="      28271"]
+BB28270 -> BB28276 [tailport=s, headport=n, color=gray, headlabel="      28276"]
+BB28271 [shape=record label="{94088: read-variable['parent',v24,-]|94089: read-property[v24,'_state',v21]|94090: \<variable-non-null-undef\>['parent']}" ] 
+BB28271 -> BB28272 [tailport=s, headport=n]
+BB28271 -> BB28276 [tailport=s, headport=n, color=gray]
+BB28272 [shape=record label="{94091: if[v21](true-block:28273,false-block:28275)}" ] 
+BB28272 -> BB28273 [tailport=s, headport=n, headlabel="      28273"]
+BB28272 -> BB28275 [tailport=s, headport=n, headlabel="      28275"]
+BB28273 [shape=record label="{94092: read-variable['config',v25,-]|94093: read-property[v25,'async',-]|94094: \<variable-non-null-undef\>['config']|94095: read-variable['publish',v26,-]|94096: read-variable['parent',v27,-]}" ] 
+BB28273 -> BB28274 [tailport=s, headport=n, headlabel="      28274"]
+BB28273 -> BB28276 [tailport=s, headport=n, color=gray]
+BB28274 [shape=record label="{94097: call-config.async [v25,'async',v26,v27,-]*}" ] 
+BB28274 -> BB28275 [tailport=s, headport=n]
+BB28274 -> BB28276 [tailport=s, headport=n, color=gray]
+BB28275 [shape=record label="{94098: return[v1]}" ] 
+BB28276 [shape=record label="{94099: exceptional-return}" ] 
+//#$~ 50502
+}

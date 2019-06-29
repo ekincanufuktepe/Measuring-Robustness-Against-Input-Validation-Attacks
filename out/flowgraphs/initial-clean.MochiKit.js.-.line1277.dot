@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry158[shape=none,label=""];
+BB_entry158 -> BB2132 [tailport=s, headport=n, headlabel="    2132"]
+BB2132 [shape=record label="{9850: constant[undefined,v1]|9851: vardecl['m']}" ] 
+BB2132 -> BB2133 [tailport=s, headport=n, headlabel="      2133"]
+BB2133 [shape=record label="{9852: read-variable['MochiKit',v5,-]|9853: read-property[v5,'Iter',v4]|9854: \<variable-non-null-undef\>['MochiKit']|9855: read-property[v4,'iter',-]|9856: \<property-non-null-undef\>[v5,'Iter']|9857: read-variable['seq',v6,-]}" ] 
+BB2133 -> BB2134 [tailport=s, headport=n, headlabel="      2134"]
+BB2133 -> BB2139 [tailport=s, headport=n, color=gray, headlabel="      2139"]
+BB2134 [shape=record label="{9858: call-MochiKit.Iter.iter [v4,'iter',v6,v2]}" ] 
+BB2134 -> BB2135 [tailport=s, headport=n, headlabel="      2135"]
+BB2134 -> BB2139 [tailport=s, headport=n, color=gray]
+BB2135 [shape=record label="{9859: write-variable[v2,'seq']*|9860: read-variable['MochiKit',v8,-]|9861: read-property[v8,'Base',v7]|9862: \<variable-non-null-undef\>['MochiKit']|9863: write-variable[v7,'m']*|9864: new[v1]|9865: function-expr[function ( ),v9]|9866: write-property[v1,'repr',v9]|9867: read-variable['m',v12,-]|9868: read-property[v12,'forwardCall',-]|9869: \<variable-non-null-undef\>['m']|9870: constant[\"repr\",v13]}" ] 
+BB2135 -> BB2136 [tailport=s, headport=n, headlabel="      2136"]
+BB2135 -> BB2139 [tailport=s, headport=n, color=gray]
+BB2136 [shape=record label="{9871: call-m.forwardCall [v12,'forwardCall',v13,v10]}" ] 
+BB2136 -> BB2137 [tailport=s, headport=n, headlabel="      2137"]
+BB2136 -> BB2139 [tailport=s, headport=n, color=gray]
+BB2137 [shape=record label="{9872: write-property[v1,'toString',v10]|9873: function-expr[function ( ),v14]|9874: write-property[v1,'next',v14]}" ] 
+BB2137 -> BB2138 [tailport=s, headport=n, headlabel="      2138"]
+BB2137 -> BB2139 [tailport=s, headport=n, color=gray]
+BB2138 [shape=record label="{9875: return[v1]}" ] 
+BB2139 [shape=record label="{9876: exceptional-return}" ] 
+//#$~ 1283
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry507[shape=none,label=""];
+BB_entry507 -> BB8143 [tailport=s, headport=n, headlabel="    8143"]
+BB8143 [shape=record label="{23933: constant[undefined,v1]}" ] 
+BB8143 -> BB8144 [tailport=s, headport=n, headlabel="      8144"]
+BB8144 [shape=record label="{23934: read-variable['window',v3,-]|23935: read-property[v3,'XMLHttpRequest',-]|23936: \<variable-non-null-undef\>['window']}" ] 
+BB8144 -> BB8145 [tailport=s, headport=n, headlabel="      8145"]
+BB8144 -> BB8146 [tailport=s, headport=n, color=gray, headlabel="      8146"]
+BB8145 [shape=record label="{23937: construct[v3,'XMLHttpRequest',v1]}" ] 
+BB8145 -> BB8149 [tailport=s, headport=n, headlabel="      8149"]
+BB8145 -> BB8146 [tailport=s, headport=n, color=gray]
+BB8146 [shape=record label="{23938: catch[e,v2]|23939: begin-with[v2]}" ] 
+BB8146 -> BB8147 [tailport=s, headport=n, headlabel="      8147"]
+BB8146 -> BB8150 [tailport=s, headport=n, color=gray, headlabel="      8150"]
+BB8147 [shape=record label="{23940: end-with}" ] 
+BB8147 -> BB8149 [tailport=s, headport=n]
+BB8148 [shape=record label="{23941: end-with}" ] 
+BB8148 -> BB8150 [tailport=s, headport=n]
+BB8149 [shape=record label="{23942: return[v1]}" ] 
+BB8150 [shape=record label="{23943: exceptional-return}" ] 
+}

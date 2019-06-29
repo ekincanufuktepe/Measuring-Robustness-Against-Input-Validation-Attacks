@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB49 [tailport=s, headport=n, headlabel="    49"]
+BB49 [shape=record label="{121: constant[undefined,v1]|122: vardecl['x']|123: vardecl['y']|124: vardecl['z']}" ] 
+BB49 -> BB50 [tailport=s, headport=n, headlabel="      50"]
+BB50 [shape=record label="{125: constant[3.0,v2]|126: write-variable[v2,'x']*|127: constant[5.0,v3]|128: write-variable[v3,'y']*|129: read-variable['x',v5,-]|130: read-variable['y',v6,-]|131: *[v5,v6,v4]|132: write-variable[v4,'z']*|133: read-variable['z',v8,-]|134: read-variable['m',v9,-]|135: +[v8,v9,v7]|136: write-variable[v7,'z']*|137: read-variable['fA',v11,v10]|138: constant[3.0,v12]}" ] 
+BB50 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB50 -> BB54 [tailport=s, headport=n, color=gray, headlabel="      54"]
+BB51 [shape=record label="{139: call[v10,v11,v12,-]*}" ] 
+BB51 -> BB52 [tailport=s, headport=n, headlabel="      52"]
+BB51 -> BB54 [tailport=s, headport=n, color=gray]
+BB52 [shape=record label="{140: read-variable['z',v1,-]}" ] 
+BB52 -> BB53 [tailport=s, headport=n, headlabel="      53"]
+BB52 -> BB54 [tailport=s, headport=n, color=gray]
+BB53 [shape=record label="{141: return[v1]}" ] 
+BB54 [shape=record label="{142: exceptional-return}" ] 
+}

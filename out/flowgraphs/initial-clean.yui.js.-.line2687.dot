@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry95[shape=none,label=""];
+BB_entry95 -> BB1554 [tailport=s, headport=n, headlabel="    1554"]
+BB1554 [shape=record label="{5145: constant[undefined,v1]}" ] 
+BB1554 -> BB1555 [tailport=s, headport=n, headlabel="      1555"]
+BB1555 [shape=record label="{5146: read-variable['obj',v3,-]|5147: ![v3,v2]|5148: ![v2,v1]|5149: if[v1](true-block:1556,false-block:1558)}" ] 
+BB1555 -> BB1558 [tailport=s, headport=n, headlabel="      1558"]
+BB1555 -> BB1556 [tailport=s, headport=n, headlabel="      1556"]
+BB1555 -> BB1559 [tailport=s, headport=n, color=gray, headlabel="      1559"]
+BB1556 [shape=record label="{5150: read-variable['hasOwn',v5,-]|5151: read-property[v5,'call',-]|5152: \<variable-non-null-undef\>['hasOwn']|5153: read-variable['obj',v6,-]|5154: read-variable['key',v7,-]}" ] 
+BB1556 -> BB1557 [tailport=s, headport=n, headlabel="      1557"]
+BB1556 -> BB1559 [tailport=s, headport=n, color=gray]
+BB1557 [shape=record label="{5155: call-hasOwn.call [v5,'call',v6,v7,v1]}" ] 
+BB1557 -> BB1558 [tailport=s, headport=n]
+BB1557 -> BB1559 [tailport=s, headport=n, color=gray]
+BB1558 [shape=record label="{5156: return[v1]}" ] 
+BB1559 [shape=record label="{5157: exceptional-return}" ] 
+//#$~ 2688
+}

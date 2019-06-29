@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry99[shape=none,label=""];
+BB_entry99 -> BB887 [tailport=s, headport=n, headlabel="    887"]
+BB887 [shape=record label="{2796: constant[undefined,v1]|2797: vardecl['me']}" ] 
+BB887 -> BB888 [tailport=s, headport=n, headlabel="      888"]
+BB888 [shape=record label="{2798: read-variable['this',v2,-]|2799: write-variable[v2,'me']*|2800: read-variable['role',v4,-]|2801: read-variable['Array',v5,-]|2802: instanceof[v4,v5,v3]|2803: if[v3](true-block:889,false-block:890)}" ] 
+BB888 -> BB889 [tailport=s, headport=n, headlabel="      889"]
+BB888 -> BB890 [tailport=s, headport=n, headlabel="      890"]
+BB888 -> BB894 [tailport=s, headport=n, color=gray, headlabel="      894"]
+BB889 [shape=record label="{2804: read-variable['Joose',v8,-]|2805: read-property[v8,'A',v7]|2806: \<variable-non-null-undef\>['Joose']|2807: read-property[v7,'each',-]|2808: \<property-non-null-undef\>[v8,'A']|2809: read-variable['role',v9,-]|2810: function-expr[function ( aRole ),v10]}" ] 
+BB889 -> BB891 [tailport=s, headport=n, headlabel="      891"]
+BB889 -> BB894 [tailport=s, headport=n, color=gray]
+BB890 [shape=record label="{2811: read-variable['me',v7,-]|2812: read-property[v7,'addRole',-]|2813: \<variable-non-null-undef\>['me']|2814: read-variable['role',v8,-]}" ] 
+BB890 -> BB892 [tailport=s, headport=n, headlabel="      892"]
+BB890 -> BB894 [tailport=s, headport=n, color=gray]
+BB891 [shape=record label="{2815: call-Joose.A.each [v7,'each',v9,v10,-]*}" ] 
+BB891 -> BB893 [tailport=s, headport=n, headlabel="      893"]
+BB891 -> BB894 [tailport=s, headport=n, color=gray]
+BB892 [shape=record label="{2816: call-me.addRole [v7,'addRole',v8,-]*}" ] 
+BB892 -> BB893 [tailport=s, headport=n]
+BB892 -> BB894 [tailport=s, headport=n, color=gray]
+BB893 [shape=record label="{2817: return[v1]}" ] 
+BB894 [shape=record label="{2818: exceptional-return}" ] 
+//#$~ 979
+}

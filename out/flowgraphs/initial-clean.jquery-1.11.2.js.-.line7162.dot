@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry416[shape=none,label=""];
+BB_entry416 -> BB6683 [tailport=s, headport=n, headlabel="    6683"]
+BB6683 [shape=record label="{19845: constant[undefined,v1]}" ] 
+BB6683 -> BB6684 [tailport=s, headport=n, headlabel="      6684"]
+BB6684 [shape=record label="{19846: constant[1.0,v2]|19847: read-variable['hooks',v4,-]|19848: read-property[v4,'unqueued',v3]|19849: \<variable-non-null-undef\>['hooks']|19850: +[v3,v5]|19851: -[v5,v2,v6]|19852: write-property[v4,'unqueued',v6]|19853: \<variable-non-null-undef\>['hooks']*|19854: read-variable['jQuery',v11,-]|19855: read-property[v11,'queue',-]|19856: \<variable-non-null-undef\>['jQuery']|19857: read-variable['elem',v12,-]|19858: constant[\"fx\",v13]}" ] 
+BB6684 -> BB6685 [tailport=s, headport=n, headlabel="      6685"]
+BB6684 -> BB6690 [tailport=s, headport=n, color=gray, headlabel="      6690"]
+BB6685 [shape=record label="{19859: call-0:0[v11,'queue',v12,v13,v9]}" ] 
+BB6685 -> BB6686 [tailport=s, headport=n, headlabel="      6686"]
+BB6685 -> BB6690 [tailport=s, headport=n, color=gray]
+BB6686 [shape=record label="{19860: read-property[v9,'length',v8]|19861: ![v8,v7]|19862: if[v7](true-block:6687,false-block:6689)}" ] 
+BB6686 -> BB6687 [tailport=s, headport=n, headlabel="      6687"]
+BB6686 -> BB6689 [tailport=s, headport=n, headlabel="      6689"]
+BB6686 -> BB6690 [tailport=s, headport=n, color=gray]
+BB6687 [shape=record label="{19863: read-variable['hooks',v16,-]|19864: read-property[v16,'empty',v15]|19865: \<variable-non-null-undef\>['hooks']|19866: read-property[v15,'fire',-]|19867: \<property-non-null-undef\>[v16,'empty']}" ] 
+BB6687 -> BB6688 [tailport=s, headport=n, headlabel="      6688"]
+BB6687 -> BB6690 [tailport=s, headport=n, color=gray]
+BB6688 [shape=record label="{19868: call-0:0[v15,'fire',-]*}" ] 
+BB6688 -> BB6689 [tailport=s, headport=n]
+BB6688 -> BB6690 [tailport=s, headport=n, color=gray]
+BB6689 [shape=record label="{19869: return[v1]}" ] 
+BB6690 [shape=record label="{19870: exceptional-return}" ] 
+}

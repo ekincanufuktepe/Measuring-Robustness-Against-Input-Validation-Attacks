@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry50[shape=none,label=""];
+BB_entry50 -> BB565 [tailport=s, headport=n, headlabel="    565"]
+BB565 [shape=record label="{1733: constant[undefined,v1]|1734: vardecl['record']}" ] 
+BB565 -> BB566 [tailport=s, headport=n, headlabel="      566"]
+BB566 [shape=record label="{1735: read-variable['this',v3,-]|1736: read-variable['atts',v4,-]}" ] 
+BB566 -> BB567 [tailport=s, headport=n, headlabel="      567"]
+BB566 -> BB571 [tailport=s, headport=n, color=gray, headlabel="      571"]
+BB567 [shape=record label="{1737: construct [-,v3,v4,v2]}" ] 
+BB567 -> BB568 [tailport=s, headport=n, headlabel="      568"]
+BB567 -> BB571 [tailport=s, headport=n, color=gray]
+BB568 [shape=record label="{1738: write-variable[v2,'record']*|1739: read-variable['record',v6,-]|1740: read-property[v6,'save',-]|1741: \<variable-non-null-undef\>['record']|1742: read-variable['options',v7,-]}" ] 
+BB568 -> BB569 [tailport=s, headport=n, headlabel="      569"]
+BB568 -> BB571 [tailport=s, headport=n, color=gray]
+BB569 [shape=record label="{1743: call-record.save [v6,'save',v7,v1]}" ] 
+BB569 -> BB570 [tailport=s, headport=n, headlabel="      570"]
+BB569 -> BB571 [tailport=s, headport=n, color=gray]
+BB570 [shape=record label="{1744: return[v1]}" ] 
+BB571 [shape=record label="{1745: exceptional-return}" ] 
+//#$~ 474
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry153[shape=none,label=""];
+BB_entry153 -> BB2259 [tailport=s, headport=n, headlabel="    2259"]
+BB2259 [shape=record label="{6257: constant[undefined,v1]|6258: vardecl['bySet']|6259: vardecl['byElement']|6260: vardecl['superMatcher']}" ] 
+BB2259 -> BB2260 [tailport=s, headport=n, headlabel="      2260"]
+BB2260 [shape=record label="{6261: read-variable['setMatchers',v5,-]|6262: read-property[v5,'length',v3]|6263: \<variable-non-null-undef\>['setMatchers']|6264: constant[0.0,v4]|6265: \>[v3,v4,v2]|6266: write-variable[v2,'bySet']*|6267: read-variable['elementMatchers',v9,-]|6268: read-property[v9,'length',v7]|6269: \<variable-non-null-undef\>['elementMatchers']|6270: constant[0.0,v8]|6271: \>[v7,v8,v6]|6272: write-variable[v6,'byElement']*|6273: function-expr[function ( seed context xml results outermost ),v10]|6274: write-variable[v10,'superMatcher']*|6275: read-variable['bySet',v11,-]|6276: if[v11](true-block:2261,false-block:2262)}" ] 
+BB2260 -> BB2261 [tailport=s, headport=n, headlabel="      2261"]
+BB2260 -> BB2262 [tailport=s, headport=n, headlabel="      2262"]
+BB2260 -> BB2265 [tailport=s, headport=n, color=gray, headlabel="      2265"]
+BB2261 [shape=record label="{6277: read-variable['markFunction',v13,v12]|6278: read-variable['superMatcher',v14,-]}" ] 
+BB2261 -> BB2263 [tailport=s, headport=n, headlabel="      2263"]
+BB2261 -> BB2265 [tailport=s, headport=n, color=gray]
+BB2262 [shape=record label="{6279: read-variable['superMatcher',v1,-]}" ] 
+BB2262 -> BB2264 [tailport=s, headport=n, headlabel="      2264"]
+BB2262 -> BB2265 [tailport=s, headport=n, color=gray]
+BB2263 [shape=record label="{6280: call-0:0[v12,v13,v14,v1]}" ] 
+BB2263 -> BB2264 [tailport=s, headport=n]
+BB2263 -> BB2265 [tailport=s, headport=n, color=gray]
+BB2264 [shape=record label="{6281: return[v1]}" ] 
+BB2265 [shape=record label="{6282: exceptional-return}" ] 
+}

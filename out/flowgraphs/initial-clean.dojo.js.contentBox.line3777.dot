@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry212[shape=none,label=""];
+BB_entry212 -> BB3280 [tailport=s, headport=n, headlabel="    3280"]
+BB3280 [shape=record label="{9746: constant[undefined,v1]}" ] 
+BB3280 -> BB3281 [tailport=s, headport=n, headlabel="      3281"]
+BB3281 [shape=record label="{9747: read-variable['box',v3,v2]|9748: if[v3](true-block:3282,false-block:3283)}" ] 
+BB3281 -> BB3282 [tailport=s, headport=n, headlabel="      3282"]
+BB3281 -> BB3283 [tailport=s, headport=n, headlabel="      3283"]
+BB3281 -> BB3287 [tailport=s, headport=n, color=gray, headlabel="      3287"]
+BB3282 [shape=record label="{9749: read-variable['geom',v5,-]|9750: read-property[v5,'setContentSize',-]|9751: \<variable-non-null-undef\>['geom']|9752: read-variable['node',v6,v2]|9753: read-variable['box',v7,v2]}" ] 
+BB3282 -> BB3284 [tailport=s, headport=n, headlabel="      3284"]
+BB3282 -> BB3287 [tailport=s, headport=n, color=gray]
+BB3283 [shape=record label="{9754: read-variable['geom',v5,-]|9755: read-property[v5,'getContentBox',-]|9756: \<variable-non-null-undef\>['geom']|9757: read-variable['node',v6,v2]}" ] 
+BB3283 -> BB3285 [tailport=s, headport=n, headlabel="      3285"]
+BB3283 -> BB3287 [tailport=s, headport=n, color=gray]
+BB3284 [shape=record label="{9758: call-geom.setContentSize [v5,'setContentSize',v6,v7,v1]}" ] 
+BB3284 -> BB3286 [tailport=s, headport=n, headlabel="      3286"]
+BB3284 -> BB3287 [tailport=s, headport=n, color=gray]
+BB3285 [shape=record label="{9759: call-geom.getContentBox [v5,'getContentBox',v6,v1]}" ] 
+BB3285 -> BB3286 [tailport=s, headport=n]
+BB3285 -> BB3287 [tailport=s, headport=n, color=gray]
+BB3286 [shape=record label="{9760: return[v1]}" ] 
+BB3287 [shape=record label="{9761: exceptional-return}" ] 
+//#$~ 3798
+}

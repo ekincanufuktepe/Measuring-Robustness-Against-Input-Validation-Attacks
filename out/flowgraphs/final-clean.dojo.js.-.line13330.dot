@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry663[shape=none,label=""];
+BB_entry663 -> BB9573 [tailport=s, headport=n, headlabel="    9573"]
+BB9573 [shape=record label="{28315: constant[undefined,v1]}" ] 
+BB9573 -> BB9574 [tailport=s, headport=n, headlabel="      9574"]
+BB9574 [shape=record label="{28316: read-variable['lang',v4,-]|28317: read-property[v4,'delegate',-]|28318: \<variable-non-null-undef\>['lang']|28319: read-variable['options',v5,-]|28320: if[v5](true-block:9576,false-block:9575)}" ] 
+BB9574 -> BB9576 [tailport=s, headport=n, headlabel="      9576"]
+BB9574 -> BB9575 [tailport=s, headport=n, headlabel="      9575"]
+BB9574 -> BB9580 [tailport=s, headport=n, color=gray, headlabel="      9580"]
+BB9575 [shape=record label="{28321: new[v5]}" ] 
+BB9575 -> BB9576 [tailport=s, headport=n]
+BB9576 [shape=record label="{28322: call-lang.delegate [v4,'delegate',v5,v2]}" ] 
+BB9576 -> BB9577 [tailport=s, headport=n, headlabel="      9577"]
+BB9576 -> BB9580 [tailport=s, headport=n, color=gray]
+BB9577 [shape=record label="{28323: write-variable[v2,'options']*|28324: read-variable['options',v7,-]|28325: read-variable['method',v6,-]|28326: write-property[v7,'method',v6]|28327: \<variable-non-null-undef\>['options']*|28328: read-variable['provider',v9,v8]|28329: read-variable['url',v10,-]|28330: read-variable['options',v11,-]}" ] 
+BB9577 -> BB9578 [tailport=s, headport=n, headlabel="      9578"]
+BB9577 -> BB9580 [tailport=s, headport=n, color=gray]
+BB9578 [shape=record label="{28331: call-provider [v8,v9,v10,v11,v1]}" ] 
+BB9578 -> BB9579 [tailport=s, headport=n, headlabel="      9579"]
+BB9578 -> BB9580 [tailport=s, headport=n, color=gray]
+BB9579 [shape=record label="{28332: return[v1]}" ] 
+BB9580 [shape=record label="{28333: exceptional-return}" ] 
+//#$~ 13333
+}

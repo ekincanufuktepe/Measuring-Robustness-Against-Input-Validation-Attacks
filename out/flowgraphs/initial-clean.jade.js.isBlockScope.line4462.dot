@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry266[shape=none,label=""];
+BB_entry266 -> BB4452 [tailport=s, headport=n, headlabel="    4452"]
+BB4452 [shape=record label="{13821: constant[undefined,v1]}" ] 
+BB4452 -> BB4453 [tailport=s, headport=n, headlabel="      4453"]
+BB4453 [shape=record label="{13822: read-variable['node',v4,-]|13823: read-property[v4,'type',v2]|13824: \<variable-non-null-undef\>['node']|13825: constant[\"BlockStatement\",v3]|13826: ===[v2,v3,v1]|13827: if[v1](true-block:4456,false-block:4454)}" ] 
+BB4453 -> BB4456 [tailport=s, headport=n, headlabel="      4456"]
+BB4453 -> BB4454 [tailport=s, headport=n, headlabel="      4454"]
+BB4453 -> BB4457 [tailport=s, headport=n, color=gray, headlabel="      4457"]
+BB4454 [shape=record label="{13828: read-variable['isScope',v3,v2]|13829: read-variable['node',v4,-]}" ] 
+BB4454 -> BB4455 [tailport=s, headport=n, headlabel="      4455"]
+BB4454 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4455 [shape=record label="{13830: call-isScope [v2,v3,v4,v1]}" ] 
+BB4455 -> BB4456 [tailport=s, headport=n]
+BB4455 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4456 [shape=record label="{13831: return[v1]}" ] 
+BB4457 [shape=record label="{13832: exceptional-return}" ] 
+//#$~ 4463
+}

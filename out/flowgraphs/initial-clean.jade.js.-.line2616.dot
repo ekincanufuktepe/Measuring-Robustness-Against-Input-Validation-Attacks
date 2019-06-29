@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB2422 [tailport=s, headport=n, headlabel="    2422"]
+BB2422 [shape=record label="{7775: constant[undefined,v1]|7776: vardecl['err']}" ] 
+BB2422 -> BB2423 [tailport=s, headport=n, headlabel="      2423"]
+BB2423 [shape=record label="{7777: read-variable['Error',v3,-]|7778: constant[\"node.clone is deprecated and will be removed in v2.0.0\",v4]}" ] 
+BB2423 -> BB2424 [tailport=s, headport=n, headlabel="      2424"]
+BB2423 -> BB2429 [tailport=s, headport=n, color=gray, headlabel="      2429"]
+BB2424 [shape=record label="{7779: construct [-,v3,v4,v2]}" ] 
+BB2424 -> BB2425 [tailport=s, headport=n, headlabel="      2425"]
+BB2424 -> BB2429 [tailport=s, headport=n, color=gray]
+BB2425 [shape=record label="{7780: write-variable[v2,'err']*|7781: read-variable['console',v6,-]|7782: read-property[v6,'warn',-]|7783: \<variable-non-null-undef\>['console']|7784: read-variable['err',v8,-]|7785: read-property[v8,'stack',v7]|7786: \<variable-non-null-undef\>['err']}" ] 
+BB2425 -> BB2426 [tailport=s, headport=n, headlabel="      2426"]
+BB2425 -> BB2429 [tailport=s, headport=n, color=gray]
+BB2426 [shape=record label="{7787: call-console.warn [v6,'warn',v7,-]*}" ] 
+BB2426 -> BB2427 [tailport=s, headport=n, headlabel="      2427"]
+BB2426 -> BB2429 [tailport=s, headport=n, color=gray]
+BB2427 [shape=record label="{7788: read-variable['this',v1,-]}" ] 
+BB2427 -> BB2428 [tailport=s, headport=n, headlabel="      2428"]
+BB2427 -> BB2429 [tailport=s, headport=n, color=gray]
+BB2428 [shape=record label="{7789: return[v1]}" ] 
+BB2429 [shape=record label="{7790: exceptional-return}" ] 
+//#$~ 2619
+}

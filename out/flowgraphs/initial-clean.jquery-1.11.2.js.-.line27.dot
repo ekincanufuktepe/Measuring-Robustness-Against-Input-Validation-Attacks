@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB8 [tailport=s, headport=n, headlabel="    8"]
+BB8 [shape=record label="{12: constant[undefined,v1]}" ] 
+BB8 -> BB9 [tailport=s, headport=n, headlabel="      9"]
+BB9 [shape=record label="{13: read-variable['w',v4,-]|14: read-property[v4,'document',v3]|15: \<variable-non-null-undef\>['w']|16: ![v3,v2]|17: if[v2](true-block:10,false-block:13)}" ] 
+BB9 -> BB10 [tailport=s, headport=n, headlabel="      10"]
+BB9 -> BB13 [tailport=s, headport=n, headlabel="      13"]
+BB9 -> BB16 [tailport=s, headport=n, color=gray, headlabel="      16"]
+BB10 [shape=record label="{18: read-variable['Error',v6,-]|19: constant[\"jQuery requires a window with a document\",v7]}" ] 
+BB10 -> BB11 [tailport=s, headport=n, headlabel="      11"]
+BB10 -> BB16 [tailport=s, headport=n, color=gray]
+BB11 [shape=record label="{20: construct[-,v6,v7,v5]}" ] 
+BB11 -> BB12 [tailport=s, headport=n, headlabel="      12"]
+BB11 -> BB16 [tailport=s, headport=n, color=gray]
+BB12 [shape=record label="{21: throw[v5]*}" ] 
+BB12 -> BB13 [tailport=s, headport=n]
+BB12 -> BB16 [tailport=s, headport=n, color=gray]
+BB13 [shape=record label="{22: read-variable['factory',v6,v5]|23: read-variable['w',v7,-]}" ] 
+BB13 -> BB14 [tailport=s, headport=n, headlabel="      14"]
+BB13 -> BB16 [tailport=s, headport=n, color=gray]
+BB14 [shape=record label="{24: call-0:0[v5,v6,v7,v1]}" ] 
+BB14 -> BB15 [tailport=s, headport=n, headlabel="      15"]
+BB14 -> BB16 [tailport=s, headport=n, color=gray]
+BB15 [shape=record label="{25: return[v1]}" ] 
+BB16 [shape=record label="{26: exceptional-return}" ] 
+}

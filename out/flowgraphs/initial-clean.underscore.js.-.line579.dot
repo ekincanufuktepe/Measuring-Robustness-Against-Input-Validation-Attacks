@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry63[shape=none,label=""];
+BB_entry63 -> BB755 [tailport=s, headport=n, headlabel="    755"]
+BB755 [shape=record label="{1950: constant[undefined,v1]}" ] 
+BB755 -> BB756 [tailport=s, headport=n, headlabel="      756"]
+BB756 [shape=record label="{1951: read-variable['flatten',v4,v3]|1952: read-variable['rest',v5,-]|1953: constant[true,v6]|1954: constant[true,v7]}" ] 
+BB756 -> BB757 [tailport=s, headport=n, headlabel="      757"]
+BB756 -> BB761 [tailport=s, headport=n, color=gray, headlabel="      761"]
+BB757 [shape=record label="{1955: call-flatten [v3,v4,v5,v6,v7,v2]}" ] 
+BB757 -> BB758 [tailport=s, headport=n, headlabel="      758"]
+BB757 -> BB761 [tailport=s, headport=n, color=gray]
+BB758 [shape=record label="{1956: write-variable[v2,'rest']*|1957: read-variable['_',v9,-]|1958: read-property[v9,'filter',-]|1959: \<variable-non-null-undef\>['_']|1960: read-variable['array',v10,-]|1961: function-expr[function ( value ),v11]}" ] 
+BB758 -> BB759 [tailport=s, headport=n, headlabel="      759"]
+BB758 -> BB761 [tailport=s, headport=n, color=gray]
+BB759 [shape=record label="{1962: call-_.filter [v9,'filter',v10,v11,v1]}" ] 
+BB759 -> BB760 [tailport=s, headport=n, headlabel="      760"]
+BB759 -> BB761 [tailport=s, headport=n, color=gray]
+BB760 [shape=record label="{1963: return[v1]}" ] 
+BB761 [shape=record label="{1964: exceptional-return}" ] 
+//#$~ 582
+}

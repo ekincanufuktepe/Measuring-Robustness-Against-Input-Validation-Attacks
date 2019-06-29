@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB1136 [tailport=s, headport=n, headlabel="    1136"]
+BB1136 [shape=record label="{3681: constant[undefined,v1]|3682: vardecl['normalizedName']}" ] 
+BB1136 -> BB1137 [tailport=s, headport=n, headlabel="      1137"]
+BB1137 [shape=record label="{3683: read-variable['options',v2,-]|3684: if[v2](true-block:1139,false-block:1138)}" ] 
+BB1137 -> BB1139 [tailport=s, headport=n, headlabel="      1139"]
+BB1137 -> BB1138 [tailport=s, headport=n, headlabel="      1138"]
+BB1137 -> BB1143 [tailport=s, headport=n, color=gray, headlabel="      1143"]
+BB1138 [shape=record label="{3685: new[v2]}" ] 
+BB1138 -> BB1139 [tailport=s, headport=n]
+BB1139 [shape=record label="{3686: write-variable[v2,'options']*|3687: read-variable['this',v5,-]|3688: read-property[v5,'normalize',-]|3689: read-variable['fullName',v6,-]}" ] 
+BB1139 -> BB1140 [tailport=s, headport=n, headlabel="      1140"]
+BB1139 -> BB1143 [tailport=s, headport=n, color=gray]
+BB1140 [shape=record label="{3690: call-this.normalize [v5,'normalize',v6,v3]}" ] 
+BB1140 -> BB1141 [tailport=s, headport=n, headlabel="      1141"]
+BB1140 -> BB1143 [tailport=s, headport=n, color=gray]
+BB1141 [shape=record label="{3691: write-variable[v3,'normalizedName']*|3692: read-variable['this',v10,-]|3693: read-property[v10,'_options',v8]|3694: read-variable['normalizedName',v9,-]|3695: read-variable['options',v7,-]|3696: write-property[v8,v9,v7]|3697: \<property-non-null-undef\>[v10,'_options']*}" ] 
+BB1141 -> BB1142 [tailport=s, headport=n, headlabel="      1142"]
+BB1141 -> BB1143 [tailport=s, headport=n, color=gray]
+BB1142 [shape=record label="{3698: return[v1]}" ] 
+BB1143 [shape=record label="{3699: exceptional-return}" ] 
+//#$~ 1479
+}

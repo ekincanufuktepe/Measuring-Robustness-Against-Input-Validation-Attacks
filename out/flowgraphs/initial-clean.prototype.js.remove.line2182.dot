@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry269[shape=none,label=""];
+BB_entry269 -> BB3032 [tailport=s, headport=n, headlabel="    3032"]
+BB3032 [shape=record label="{8190: constant[undefined,v1]}" ] 
+BB3032 -> BB3033 [tailport=s, headport=n, headlabel="      3033"]
+BB3033 [shape=record label="{8191: read-variable['$',v4,v3]|8192: read-variable['element',v5,-]}" ] 
+BB3033 -> BB3034 [tailport=s, headport=n, headlabel="      3034"]
+BB3033 -> BB3039 [tailport=s, headport=n, color=gray, headlabel="      3039"]
+BB3034 [shape=record label="{8193: call-$ [v3,v4,v5,v2]}" ] 
+BB3034 -> BB3035 [tailport=s, headport=n, headlabel="      3035"]
+BB3034 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3035 [shape=record label="{8194: write-variable[v2,'element']*|8195: read-variable['element',v8,-]|8196: read-property[v8,'parentNode',v7]|8197: \<variable-non-null-undef\>['element']|8198: read-property[v7,'removeChild',-]|8199: \<property-non-null-undef\>[v8,'parentNode']|8200: read-variable['element',v9,-]}" ] 
+BB3035 -> BB3036 [tailport=s, headport=n, headlabel="      3036"]
+BB3035 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3036 [shape=record label="{8201: call-element.parentNode.removeChild [v7,'removeChild',v9,-]*}" ] 
+BB3036 -> BB3037 [tailport=s, headport=n, headlabel="      3037"]
+BB3036 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3037 [shape=record label="{8202: read-variable['element',v1,-]}" ] 
+BB3037 -> BB3038 [tailport=s, headport=n, headlabel="      3038"]
+BB3037 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3038 [shape=record label="{8203: return[v1]}" ] 
+BB3039 [shape=record label="{8204: exceptional-return}" ] 
+//#$~ 2185
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry70[shape=none,label=""];
+BB_entry70 -> BB1047 [tailport=s, headport=n, headlabel="    1047"]
+BB1047 [shape=record label="{4039: constant[undefined,v1]}" ] 
+BB1047 -> BB1048 [tailport=s, headport=n, headlabel="      1048"]
+BB1048 [shape=record label="{4040: read-variable['that',v3,-]|4041: read-property[v3,'pointerHold',-]|4042: \<variable-non-null-undef\>['that']|4043: read-variable['events',v6,-]|4044: read-property[v6,'useAttachEvent',v5]|4045: \<variable-non-null-undef\>['events']|4046: if[v5](true-block:1049,false-block:1050)}" ] 
+BB1048 -> BB1049 [tailport=s, headport=n, headlabel="      1049"]
+BB1048 -> BB1050 [tailport=s, headport=n, headlabel="      1050"]
+BB1048 -> BB1054 [tailport=s, headport=n, color=gray, headlabel="      1054"]
+BB1049 [shape=record label="{4047: read-variable['eventCopy',v4,-]}" ] 
+BB1049 -> BB1051 [tailport=s, headport=n, headlabel="      1051"]
+BB1049 -> BB1054 [tailport=s, headport=n, color=gray]
+BB1050 [shape=record label="{4048: read-variable['pointer',v4,-]}" ] 
+BB1050 -> BB1051 [tailport=s, headport=n]
+BB1050 -> BB1054 [tailport=s, headport=n, color=gray]
+BB1051 [shape=record label="{4049: read-variable['eventCopy',v7,-]|4050: read-variable['eventTarget',v8,-]|4051: read-variable['curEventTarget',v9,-]}" ] 
+BB1051 -> BB1052 [tailport=s, headport=n, headlabel="      1052"]
+BB1051 -> BB1054 [tailport=s, headport=n, color=gray]
+BB1052 [shape=record label="{4052: call-that.pointerHold [v3,'pointerHold',v4,v7,v8,v9,-]*}" ] 
+BB1052 -> BB1053 [tailport=s, headport=n, headlabel="      1053"]
+BB1052 -> BB1054 [tailport=s, headport=n, color=gray]
+BB1053 [shape=record label="{4053: return[v1]}" ] 
+BB1054 [shape=record label="{4054: exceptional-return}" ] 
+//#$~ 1463
+}

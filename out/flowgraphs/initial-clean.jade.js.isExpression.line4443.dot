@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry263[shape=none,label=""];
+BB_entry263 -> BB4430 [tailport=s, headport=n, headlabel="    4430"]
+BB4430 [shape=record label="{13751: constant[undefined,v1]}" ] 
+BB4430 -> BB4431 [tailport=s, headport=n, headlabel="      4431"]
+BB4431 [shape=record label="{13752: read-variable['eval',v3,v2]|13753: constant[\"throw \\\"STOP\\\"; (function () \\\{ return (\",v7]|13754: read-variable['src',v8,-]|13755: +[v7,v8,v5]|13756: constant[\"); \\\})()\",v6]|13757: +[v5,v6,v4]}" ] 
+BB4431 -> BB4432 [tailport=s, headport=n, headlabel="      4432"]
+BB4431 -> BB4434 [tailport=s, headport=n, color=gray, headlabel="      4434"]
+BB4432 [shape=record label="{13758: call-eval [v2,v3,v4,-]*}" ] 
+BB4432 -> BB4433 [tailport=s, headport=n, headlabel="      4433"]
+BB4432 -> BB4434 [tailport=s, headport=n, color=gray]
+BB4433 [shape=record label="{13759: constant[false,v1]}" ] 
+BB4433 -> BB4438 [tailport=s, headport=n, headlabel="      4438"]
+BB4434 [shape=record label="{13760: catch[err,v2]|13761: begin-with[v2]}" ] 
+BB4434 -> BB4435 [tailport=s, headport=n, headlabel="      4435"]
+BB4434 -> BB4439 [tailport=s, headport=n, color=gray, headlabel="      4439"]
+BB4435 [shape=record label="{13762: read-variable['err',v4,v3]|13763: constant[\"STOP\",v5]|13764: ===[v4,v5,v1]}" ] 
+BB4435 -> BB4438 [tailport=s, headport=n]
+BB4435 -> BB4436 [tailport=s, headport=n, color=gray, headlabel="      4436"]
+BB4436 [shape=record label="{13765: end-with}" ] 
+BB4436 -> BB4439 [tailport=s, headport=n]
+BB4437 [shape=record label="{13766: end-with}" ] 
+BB4437 -> BB4438 [tailport=s, headport=n]
+BB4438 [shape=record label="{13767: return[v1]}" ] 
+BB4439 [shape=record label="{13768: exceptional-return}" ] 
+//#$~ 4449
+}

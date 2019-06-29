@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2182[shape=none,label=""];
+BB_entry2182 -> BB24839 [tailport=s, headport=n, headlabel="    24839"]
+BB24839 [shape=record label="{81896: constant[undefined,v1]}" ] 
+BB24839 -> BB24840 [tailport=s, headport=n, headlabel="      24840"]
+BB24840 [shape=record label="{81897: read-variable['rootNode',v2,-]|81898: if[v2](true-block:24842,false-block:24841)}" ] 
+BB24840 -> BB24842 [tailport=s, headport=n, headlabel="      24842"]
+BB24840 -> BB24841 [tailport=s, headport=n, headlabel="      24841"]
+BB24840 -> BB24845 [tailport=s, headport=n, color=gray, headlabel="      24845"]
+BB24841 [shape=record label="{81899: read-variable['this',v3,-]|81900: read-property[v3,'document',v2]}" ] 
+BB24841 -> BB24842 [tailport=s, headport=n]
+BB24841 -> BB24845 [tailport=s, headport=n, color=gray]
+BB24842 [shape=record label="{81901: write-variable[v2,'rootNode']*|81902: read-variable['rootNode',v4,-]|81903: read-property[v4,'getElementById',-]|81904: \<variable-non-null-undef\>['rootNode']|81905: read-variable['id',v5,-]}" ] 
+BB24842 -> BB24843 [tailport=s, headport=n, headlabel="      24843"]
+BB24842 -> BB24845 [tailport=s, headport=n, color=gray]
+BB24843 [shape=record label="{81906: call-rootNode.getElementById [v4,'getElementById',v5,v1]}" ] 
+BB24843 -> BB24844 [tailport=s, headport=n, headlabel="      24844"]
+BB24843 -> BB24845 [tailport=s, headport=n, color=gray]
+BB24844 [shape=record label="{81907: return[v1]}" ] 
+BB24845 [shape=record label="{81908: exceptional-return}" ] 
+//#$~ 46444
+}

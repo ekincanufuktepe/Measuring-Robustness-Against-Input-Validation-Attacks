@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1003[shape=none,label=""];
+BB_entry1003 -> BB12161 [tailport=s, headport=n, headlabel="    12161"]
+BB12161 [shape=record label="{41540: constant[undefined,v1]}" ] 
+BB12161 -> BB12162 [tailport=s, headport=n, headlabel="      12162"]
+BB12162 [shape=record label="{41541: read-variable['set',v3,v2]|41542: read-variable['this',v4,-]|41543: constant[\"path\",v5]|41544: read-variable['url',v6,-]}" ] 
+BB12162 -> BB12163 [tailport=s, headport=n, headlabel="      12163"]
+BB12162 -> BB12167 [tailport=s, headport=n, color=gray, headlabel="      12167"]
+BB12163 [shape=record label="{41545: call-set [v2,v3,v4,v5,v6,-]*}" ] 
+BB12163 -> BB12164 [tailport=s, headport=n, headlabel="      12164"]
+BB12163 -> BB12167 [tailport=s, headport=n, color=gray]
+BB12164 [shape=record label="{41546: read-variable['this',v8,-]|41547: read-property[v8,'updateCallback',-]|41548: read-variable['url',v9,-]}" ] 
+BB12164 -> BB12165 [tailport=s, headport=n, headlabel="      12165"]
+BB12164 -> BB12167 [tailport=s, headport=n, color=gray]
+BB12165 [shape=record label="{41549: call-this.updateCallback [v8,'updateCallback',v9,-]*}" ] 
+BB12165 -> BB12166 [tailport=s, headport=n, headlabel="      12166"]
+BB12165 -> BB12167 [tailport=s, headport=n, color=gray]
+BB12166 [shape=record label="{41550: return[v1]}" ] 
+BB12167 [shape=record label="{41551: exceptional-return}" ] 
+//#$~ 22378
+}

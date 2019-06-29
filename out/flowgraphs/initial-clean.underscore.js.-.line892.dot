@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry97[shape=none,label=""];
+BB_entry97 -> BB1116 [tailport=s, headport=n, headlabel="    1116"]
+BB1116 [shape=record label="{2948: constant[undefined,v1]}" ] 
+BB1116 -> BB1117 [tailport=s, headport=n, headlabel="      1117"]
+BB1117 [shape=record label="{2949: constant[1.0,v5]|2950: read-variable['times',v6,-]|2951: +[v6,v7]|2952: -[v7,v5,v3]|2953: write-variable[v3,'times']|2954: constant[0.0,v4]|2955: \>[v3,v4,v2]|2956: if[v2](true-block:1118,false-block:1121)}" ] 
+BB1117 -> BB1118 [tailport=s, headport=n, headlabel="      1118"]
+BB1117 -> BB1121 [tailport=s, headport=n, headlabel="      1121"]
+BB1117 -> BB1125 [tailport=s, headport=n, color=gray, headlabel="      1125"]
+BB1118 [shape=record label="{2957: read-variable['func',v10,-]|2958: read-property[v10,'apply',-]|2959: \<variable-non-null-undef\>['func']|2960: read-variable['this',v11,-]|2961: read-variable['arguments',v12,-]}" ] 
+BB1118 -> BB1119 [tailport=s, headport=n, headlabel="      1119"]
+BB1118 -> BB1125 [tailport=s, headport=n, color=gray]
+BB1119 [shape=record label="{2962: call-func.apply [v10,'apply',v11,v12,v8]}" ] 
+BB1119 -> BB1120 [tailport=s, headport=n, headlabel="      1120"]
+BB1119 -> BB1125 [tailport=s, headport=n, color=gray]
+BB1120 [shape=record label="{2963: write-variable[v8,'memo']*}" ] 
+BB1120 -> BB1121 [tailport=s, headport=n]
+BB1121 [shape=record label="{2964: read-variable['times',v9,-]|2965: constant[1.0,v10]|2966: \<=[v9,v10,v8]|2967: if[v8](true-block:1122,false-block:1123)}" ] 
+BB1121 -> BB1122 [tailport=s, headport=n, headlabel="      1122"]
+BB1121 -> BB1123 [tailport=s, headport=n, headlabel="      1123"]
+BB1121 -> BB1125 [tailport=s, headport=n, color=gray]
+BB1122 [shape=record label="{2968: constant[null,v11]|2969: write-variable[v11,'func']*}" ] 
+BB1122 -> BB1123 [tailport=s, headport=n]
+BB1123 [shape=record label="{2970: read-variable['memo',v1,-]}" ] 
+BB1123 -> BB1124 [tailport=s, headport=n, headlabel="      1124"]
+BB1123 -> BB1125 [tailport=s, headport=n, color=gray]
+BB1124 [shape=record label="{2971: return[v1]}" ] 
+BB1125 [shape=record label="{2972: exceptional-return}" ] 
+//#$~ 897
+}

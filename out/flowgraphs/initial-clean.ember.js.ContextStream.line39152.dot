@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1818[shape=none,label=""];
+BB_entry1818 -> BB20774 [tailport=s, headport=n, headlabel="    20774"]
+BB20774 [shape=record label="{69599: constant[undefined,v1]}" ] 
+BB20774 -> BB20775 [tailport=s, headport=n, headlabel="      20775"]
+BB20775 [shape=record label="{69600: read-variable['Ember',v3,-]|69601: read-property[v3,'assert',-]|69602: \<variable-non-null-undef\>['Ember']|69603: constant[\"ContextStream error: the argument is not a view\",v4]|69604: read-variable['view',v5,-]|69605: if[v5](true-block:20776,false-block:20777)}" ] 
+BB20775 -> BB20777 [tailport=s, headport=n, headlabel="      20777"]
+BB20775 -> BB20776 [tailport=s, headport=n, headlabel="      20776"]
+BB20775 -> BB20782 [tailport=s, headport=n, color=gray, headlabel="      20782"]
+BB20776 [shape=record label="{69606: read-variable['view',v6,-]|69607: read-property[v6,'isView',v5]|69608: \<variable-non-null-undef\>['view']}" ] 
+BB20776 -> BB20777 [tailport=s, headport=n]
+BB20776 -> BB20782 [tailport=s, headport=n, color=gray]
+BB20777 [shape=record label="{69609: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB20777 -> BB20778 [tailport=s, headport=n, headlabel="      20778"]
+BB20777 -> BB20782 [tailport=s, headport=n, color=gray]
+BB20778 [shape=record label="{69610: read-variable['this',v7,-]|69611: read-property[v7,'init',-]}" ] 
+BB20778 -> BB20779 [tailport=s, headport=n, headlabel="      20779"]
+BB20778 -> BB20782 [tailport=s, headport=n, color=gray]
+BB20779 [shape=record label="{69612: call-this.init [v7,'init',-]*}" ] 
+BB20779 -> BB20780 [tailport=s, headport=n, headlabel="      20780"]
+BB20779 -> BB20782 [tailport=s, headport=n, color=gray]
+BB20780 [shape=record label="{69613: read-variable['this',v9,-]|69614: read-variable['view',v8,-]|69615: write-property[v9,'view',v8]*}" ] 
+BB20780 -> BB20781 [tailport=s, headport=n, headlabel="      20781"]
+BB20780 -> BB20782 [tailport=s, headport=n, color=gray]
+BB20781 [shape=record label="{69616: return[v1]}" ] 
+BB20782 [shape=record label="{69617: exceptional-return}" ] 
+//#$~ 39156
+}

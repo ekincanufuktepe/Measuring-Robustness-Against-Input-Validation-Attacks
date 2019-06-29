@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry453[shape=none,label=""];
+BB_entry453 -> BB8071 [tailport=s, headport=n, headlabel="    8071"]
+BB8071 [shape=record label="{24261: constant[undefined,v1]}" ] 
+BB8071 -> BB8072 [tailport=s, headport=n, headlabel="      8072"]
+BB8072 [shape=record label="{24262: read-variable['scope',v3,-]|24263: read-property[v3,'isCatch',v2]|24264: \<variable-non-null-undef\>['scope']|24265: if[v2](true-block:8073,false-block:8074)}" ] 
+BB8072 -> BB8073 [tailport=s, headport=n, headlabel="      8073"]
+BB8072 -> BB8074 [tailport=s, headport=n, headlabel="      8074"]
+BB8072 -> BB8076 [tailport=s, headport=n, color=gray, headlabel="      8076"]
+BB8073 [shape=record label="{24266: read-variable['scope',v5,-]|24267: read-property[v5,'prev',v4]|24268: \<variable-non-null-undef\>['scope']|24269: write-variable[v4,'scope']*}" ] 
+BB8073 -> BB8072 [tailport=s, headport=n]
+BB8073 -> BB8076 [tailport=s, headport=n, color=gray]
+BB8074 [shape=record label="{24270: read-variable['scope',v1,-]}" ] 
+BB8074 -> BB8075 [tailport=s, headport=n, headlabel="      8075"]
+BB8074 -> BB8076 [tailport=s, headport=n, color=gray]
+BB8075 [shape=record label="{24271: return[v1]}" ] 
+BB8076 [shape=record label="{24272: exceptional-return}" ] 
+//#$~ 7432
+}

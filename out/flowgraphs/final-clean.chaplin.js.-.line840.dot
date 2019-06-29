@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry81[shape=none,label=""];
+BB_entry81 -> BB870 [tailport=s, headport=n, headlabel="    870"]
+BB870 [shape=record label="{2875: constant[undefined,v1]|2876: vardecl['st']}" ] 
+BB870 -> BB871 [tailport=s, headport=n, headlabel="      871"]
+BB871 [shape=record label="{2877: read-variable['data',v4,-]|2878: read-property[v4,'subtitle',v3]|2879: \<variable-non-null-undef\>['data']|2880: if[v3](true-block:872,false-block:873)}" ] 
+BB871 -> BB872 [tailport=s, headport=n, headlabel="      872"]
+BB871 -> BB873 [tailport=s, headport=n, headlabel="      873"]
+BB871 -> BB876 [tailport=s, headport=n, color=gray, headlabel="      876"]
+BB872 [shape=record label="{2881: constant[\"\",v7]|2882: read-variable['data',v9,-]|2883: read-property[v9,'subtitle',v8]|2884: \<variable-non-null-undef\>['data']|2885: +[v7,v8,v5]|2886: constant[\" \\u2013 \",v6]|2887: +[v5,v6,v2]}" ] 
+BB872 -> BB874 [tailport=s, headport=n, headlabel="      874"]
+BB872 -> BB876 [tailport=s, headport=n, color=gray]
+BB873 [shape=record label="{2888: constant[\"\",v2]}" ] 
+BB873 -> BB874 [tailport=s, headport=n]
+BB874 [shape=record label="{2889: write-variable[v2,'st']*|2890: read-variable['st',v5,-]|2891: read-variable['data',v7,-]|2892: read-property[v7,'title',v6]|2893: \<variable-non-null-undef\>['data']|2894: +[v5,v6,v1]}" ] 
+BB874 -> BB875 [tailport=s, headport=n, headlabel="      875"]
+BB874 -> BB876 [tailport=s, headport=n, color=gray]
+BB875 [shape=record label="{2895: return[v1]}" ] 
+BB876 [shape=record label="{2896: exceptional-return}" ] 
+//#$~ 843
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry998[shape=none,label=""];
+BB_entry998 -> BB13017 [tailport=s, headport=n, headlabel="    13017"]
+BB13017 [shape=record label="{34057: constant[undefined,v1]}" ] 
+BB13017 -> BB13018 [tailport=s, headport=n, headlabel="      13018"]
+BB13018 [shape=record label="{34058: read-variable['reverseOrder',v3,-]|34059: if[v3](true-block:13019,false-block:13020)}" ] 
+BB13018 -> BB13019 [tailport=s, headport=n, headlabel="      13019"]
+BB13018 -> BB13020 [tailport=s, headport=n, headlabel="      13020"]
+BB13018 -> BB13024 [tailport=s, headport=n, color=gray, headlabel="      13024"]
+BB13019 [shape=record label="{34060: constant[-1.0,v2]}" ] 
+BB13019 -> BB13021 [tailport=s, headport=n, headlabel="      13021"]
+BB13020 [shape=record label="{34061: constant[1.0,v2]}" ] 
+BB13020 -> BB13021 [tailport=s, headport=n]
+BB13021 [shape=record label="{34062: write-variable[v2,'reverseOrder']*|34063: read-variable['sortPredicate',v5,-]|34064: read-property[v5,'map',-]|34065: \<variable-non-null-undef\>['sortPredicate']|34066: function-expr[function ( predicate ),v6]}" ] 
+BB13021 -> BB13022 [tailport=s, headport=n, headlabel="      13022"]
+BB13021 -> BB13024 [tailport=s, headport=n, color=gray]
+BB13022 [shape=record label="{34067: call-sortPredicate.map [v5,'map',v6,v1]}" ] 
+BB13022 -> BB13023 [tailport=s, headport=n, headlabel="      13023"]
+BB13022 -> BB13024 [tailport=s, headport=n, color=gray]
+BB13023 [shape=record label="{34068: return[v1]}" ] 
+BB13024 [shape=record label="{34069: exceptional-return}" ] 
+//#$~ 19311
+}

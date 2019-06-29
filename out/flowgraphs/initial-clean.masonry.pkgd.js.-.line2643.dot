@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry173[shape=none,label=""];
+BB_entry173 -> BB1878 [tailport=s, headport=n, headlabel="    1878"]
+BB1878 [shape=record label="{5836: constant[undefined,v1]|5837: vardecl['_this']|5838: function-decl[function delayed ( ),-]}" ] 
+BB1878 -> BB1879 [tailport=s, headport=n, headlabel="      1879"]
+BB1879 [shape=record label="{5839: read-variable['this',v3,-]|5840: read-property[v3,'resizeTimeout',v2]|5841: if[v2](true-block:1880,false-block:1882)}" ] 
+BB1879 -> BB1880 [tailport=s, headport=n, headlabel="      1880"]
+BB1879 -> BB1882 [tailport=s, headport=n, headlabel="      1882"]
+BB1879 -> BB1886 [tailport=s, headport=n, color=gray, headlabel="      1886"]
+BB1880 [shape=record label="{5842: read-variable['clearTimeout',v5,v4]|5843: read-variable['this',v7,-]|5844: read-property[v7,'resizeTimeout',v6]}" ] 
+BB1880 -> BB1881 [tailport=s, headport=n, headlabel="      1881"]
+BB1880 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1881 [shape=record label="{5845: call-clearTimeout [v4,v5,v6,-]*}" ] 
+BB1881 -> BB1882 [tailport=s, headport=n]
+BB1881 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1882 [shape=record label="{5846: read-variable['this',v4,-]|5847: write-variable[v4,'_this']*|5848: read-variable['this',v6,-]|5849: read-variable['setTimeout',v8,v7]|5850: read-variable['delayed',v9,-]|5851: constant[100.0,v10]}" ] 
+BB1882 -> BB1883 [tailport=s, headport=n, headlabel="      1883"]
+BB1882 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1883 [shape=record label="{5852: call-setTimeout [v7,v8,v9,v10,v5]}" ] 
+BB1883 -> BB1884 [tailport=s, headport=n, headlabel="      1884"]
+BB1883 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1884 [shape=record label="{5853: write-property[v6,'resizeTimeout',v5]*}" ] 
+BB1884 -> BB1885 [tailport=s, headport=n, headlabel="      1885"]
+BB1884 -> BB1886 [tailport=s, headport=n, color=gray]
+BB1885 [shape=record label="{5854: return[v1]}" ] 
+BB1886 [shape=record label="{5855: exceptional-return}" ] 
+//#$~ 2654
+}

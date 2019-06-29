@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry251[shape=none,label=""];
+BB_entry251 -> BB2554 [tailport=s, headport=n, headlabel="    2554"]
+BB2554 [shape=record label="{7651: constant[undefined,v1]|7652: vardecl['touches']}" ] 
+BB2554 -> BB2555 [tailport=s, headport=n, headlabel="      2555"]
+BB2555 [shape=record label="{7653: read-variable['d3',v4,-]|7654: read-property[v4,'touches',-]|7655: \<variable-non-null-undef\>['d3']|7656: read-variable['that',v5,-]}" ] 
+BB2555 -> BB2556 [tailport=s, headport=n, headlabel="      2556"]
+BB2555 -> BB2561 [tailport=s, headport=n, color=gray, headlabel="      2561"]
+BB2556 [shape=record label="{7657: call-d3.touches [v4,'touches',v5,v2]}" ] 
+BB2556 -> BB2557 [tailport=s, headport=n, headlabel="      2557"]
+BB2556 -> BB2561 [tailport=s, headport=n, color=gray]
+BB2557 [shape=record label="{7658: write-variable[v2,'touches']*|7659: read-variable['view',v7,-]|7660: read-property[v7,'k',v6]|7661: \<variable-non-null-undef\>['view']|7662: write-variable[v6,'scale0']*|7663: read-variable['touches',v9,-]|7664: read-property[v9,'forEach',-]|7665: \<variable-non-null-undef\>['touches']|7666: function-expr[function ( t ),v10]}" ] 
+BB2557 -> BB2558 [tailport=s, headport=n, headlabel="      2558"]
+BB2557 -> BB2561 [tailport=s, headport=n, color=gray]
+BB2558 [shape=record label="{7667: call-touches.forEach [v9,'forEach',v10,-]*}" ] 
+BB2558 -> BB2559 [tailport=s, headport=n, headlabel="      2559"]
+BB2558 -> BB2561 [tailport=s, headport=n, color=gray]
+BB2559 [shape=record label="{7668: read-variable['touches',v1,-]}" ] 
+BB2559 -> BB2560 [tailport=s, headport=n, headlabel="      2560"]
+BB2559 -> BB2561 [tailport=s, headport=n, color=gray]
+BB2560 [shape=record label="{7669: return[v1]}" ] 
+BB2561 [shape=record label="{7670: exceptional-return}" ] 
+//#$~ 1495
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry511[shape=none,label=""];
+BB_entry511 -> BB6754 [tailport=s, headport=n, headlabel="    6754"]
+BB6754 [shape=record label="{17388: constant[undefined,v1]}" ] 
+BB6754 -> BB6755 [tailport=s, headport=n, headlabel="      6755"]
+BB6755 [shape=record label="{17389: read-variable['trustedContext',v2,-]|17390: if[v2](true-block:6756,false-block:6757)}" ] 
+BB6755 -> BB6756 [tailport=s, headport=n, headlabel="      6756"]
+BB6755 -> BB6757 [tailport=s, headport=n, headlabel="      6757"]
+BB6755 -> BB6761 [tailport=s, headport=n, color=gray, headlabel="      6761"]
+BB6756 [shape=record label="{17391: read-variable['$sce',v4,-]|17392: read-property[v4,'getTrusted',-]|17393: \<variable-non-null-undef\>['$sce']|17394: read-variable['trustedContext',v5,-]|17395: read-variable['value',v6,-]}" ] 
+BB6756 -> BB6758 [tailport=s, headport=n, headlabel="      6758"]
+BB6756 -> BB6761 [tailport=s, headport=n, color=gray]
+BB6757 [shape=record label="{17396: read-variable['$sce',v4,-]|17397: read-property[v4,'valueOf',-]|17398: \<variable-non-null-undef\>['$sce']|17399: read-variable['value',v5,-]}" ] 
+BB6757 -> BB6759 [tailport=s, headport=n, headlabel="      6759"]
+BB6757 -> BB6761 [tailport=s, headport=n, color=gray]
+BB6758 [shape=record label="{17400: call-$sce.getTrusted [v4,'getTrusted',v5,v6,v1]}" ] 
+BB6758 -> BB6760 [tailport=s, headport=n, headlabel="      6760"]
+BB6758 -> BB6761 [tailport=s, headport=n, color=gray]
+BB6759 [shape=record label="{17401: call-$sce.valueOf [v4,'valueOf',v5,v1]}" ] 
+BB6759 -> BB6760 [tailport=s, headport=n]
+BB6759 -> BB6761 [tailport=s, headport=n, color=gray]
+BB6760 [shape=record label="{17402: return[v1]}" ] 
+BB6761 [shape=record label="{17403: exceptional-return}" ] 
+//#$~ 10849
+}

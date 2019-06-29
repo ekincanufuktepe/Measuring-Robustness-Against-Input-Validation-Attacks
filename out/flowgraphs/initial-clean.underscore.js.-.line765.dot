@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry84[shape=none,label=""];
+BB_entry84 -> BB1008 [tailport=s, headport=n, headlabel="    1008"]
+BB1008 [shape=record label="{2632: constant[undefined,v1]|2633: vardecl['args']}" ] 
+BB1008 -> BB1009 [tailport=s, headport=n, headlabel="      1009"]
+BB1009 [shape=record label="{2634: read-variable['slice',v4,-]|2635: read-property[v4,'call',-]|2636: \<variable-non-null-undef\>['slice']|2637: read-variable['arguments',v5,-]|2638: constant[2.0,v6]}" ] 
+BB1009 -> BB1010 [tailport=s, headport=n, headlabel="      1010"]
+BB1009 -> BB1014 [tailport=s, headport=n, color=gray, headlabel="      1014"]
+BB1010 [shape=record label="{2639: call-slice.call [v4,'call',v5,v6,v2]}" ] 
+BB1010 -> BB1011 [tailport=s, headport=n, headlabel="      1011"]
+BB1010 -> BB1014 [tailport=s, headport=n, color=gray]
+BB1011 [shape=record label="{2640: write-variable[v2,'args']*|2641: read-variable['setTimeout',v8,v7]|2642: function-expr[function ( ),v9]|2643: read-variable['wait',v10,-]}" ] 
+BB1011 -> BB1012 [tailport=s, headport=n, headlabel="      1012"]
+BB1011 -> BB1014 [tailport=s, headport=n, color=gray]
+BB1012 [shape=record label="{2644: call-setTimeout [v7,v8,v9,v10,v1]}" ] 
+BB1012 -> BB1013 [tailport=s, headport=n, headlabel="      1013"]
+BB1012 -> BB1014 [tailport=s, headport=n, color=gray]
+BB1013 [shape=record label="{2645: return[v1]}" ] 
+BB1014 [shape=record label="{2646: exceptional-return}" ] 
+//#$~ 769
+}

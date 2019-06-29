@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry306[shape=none,label=""];
+BB_entry306 -> BB3640 [tailport=s, headport=n, headlabel="    3640"]
+BB3640 [shape=record label="{10468: constant[undefined,v1]}" ] 
+BB3640 -> BB3641 [tailport=s, headport=n, headlabel="      3641"]
+BB3641 [shape=record label="{10469: read-variable['b',v3,v2]|10470: read-variable['h',v7,-]|10471: read-property[v7,'hasOwnProperty',-]|10472: \<variable-non-null-undef\>['h']|10473: read-variable['a',v8,-]}" ] 
+BB3641 -> BB3642 [tailport=s, headport=n, headlabel="      3642"]
+BB3641 -> BB3648 [tailport=s, headport=n, color=gray, headlabel="      3648"]
+BB3642 [shape=record label="{10474: call-h.hasOwnProperty [v7,'hasOwnProperty',v8,v5]}" ] 
+BB3642 -> BB3643 [tailport=s, headport=n, headlabel="      3643"]
+BB3642 -> BB3648 [tailport=s, headport=n, color=gray]
+BB3643 [shape=record label="{10475: if[v5](true-block:3644,false-block:3645)}" ] 
+BB3643 -> BB3644 [tailport=s, headport=n, headlabel="      3644"]
+BB3643 -> BB3645 [tailport=s, headport=n, headlabel="      3645"]
+BB3644 [shape=record label="{10476: read-variable['h',v9,-]|10477: read-variable['a',v10,-]|10478: read-property[v9,v10,v4]|10479: \<variable-non-null-undef\>['h']}" ] 
+BB3644 -> BB3646 [tailport=s, headport=n, headlabel="      3646"]
+BB3644 -> BB3648 [tailport=s, headport=n, color=gray]
+BB3645 [shape=record label="{10480: constant[null,v4]}" ] 
+BB3645 -> BB3646 [tailport=s, headport=n]
+BB3646 [shape=record label="{10481: call-b [v2,v3,v4,-]*}" ] 
+BB3646 -> BB3647 [tailport=s, headport=n, headlabel="      3647"]
+BB3646 -> BB3648 [tailport=s, headport=n, color=gray]
+BB3647 [shape=record label="{10482: return[v1]}" ] 
+BB3648 [shape=record label="{10483: exceptional-return}" ] 
+}

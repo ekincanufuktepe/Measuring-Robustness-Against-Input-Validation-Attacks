@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry706[shape=none,label=""];
+BB_entry706 -> BB7496 [tailport=s, headport=n, headlabel="    7496"]
+BB7496 [shape=record label="{23800: constant[undefined,v1]}" ] 
+BB7496 -> BB7497 [tailport=s, headport=n, headlabel="      7497"]
+BB7497 [shape=record label="{23801: read-variable['projectAt',v4,-]|23802: read-property[v4,'apply',-]|23803: \<variable-non-null-undef\>['projectAt']|23804: read-variable['this',v5,-]|23805: read-variable['arguments',v6,-]}" ] 
+BB7497 -> BB7498 [tailport=s, headport=n, headlabel="      7498"]
+BB7497 -> BB7504 [tailport=s, headport=n, color=gray, headlabel="      7504"]
+BB7498 [shape=record label="{23806: call-projectAt.apply [v4,'apply',v5,v6,v2]}" ] 
+BB7498 -> BB7499 [tailport=s, headport=n, headlabel="      7499"]
+BB7498 -> BB7504 [tailport=s, headport=n, color=gray]
+BB7499 [shape=record label="{23807: write-variable[v2,'project']*|23808: read-variable['projection',v8,-]|23809: read-variable['project',v9,-]|23810: read-property[v9,'invert',v7]|23811: \<variable-non-null-undef\>['project']|23812: if[v7](true-block:7500,false-block:7501)}" ] 
+BB7499 -> BB7501 [tailport=s, headport=n, headlabel="      7501"]
+BB7499 -> BB7500 [tailport=s, headport=n, headlabel="      7500"]
+BB7499 -> BB7504 [tailport=s, headport=n, color=gray]
+BB7500 [shape=record label="{23813: read-variable['invert',v7,-]}" ] 
+BB7500 -> BB7501 [tailport=s, headport=n]
+BB7500 -> BB7504 [tailport=s, headport=n, color=gray]
+BB7501 [shape=record label="{23814: write-property[v8,'invert',v7]|23815: \<variable-non-null-undef\>['projection']*|23816: read-variable['reset',v11,v10]}" ] 
+BB7501 -> BB7502 [tailport=s, headport=n, headlabel="      7502"]
+BB7501 -> BB7504 [tailport=s, headport=n, color=gray]
+BB7502 [shape=record label="{23817: call-reset [v10,v11,v1]}" ] 
+BB7502 -> BB7503 [tailport=s, headport=n, headlabel="      7503"]
+BB7502 -> BB7504 [tailport=s, headport=n, color=gray]
+BB7503 [shape=record label="{23818: return[v1]}" ] 
+BB7504 [shape=record label="{23819: exceptional-return}" ] 
+//#$~ 4375
+}

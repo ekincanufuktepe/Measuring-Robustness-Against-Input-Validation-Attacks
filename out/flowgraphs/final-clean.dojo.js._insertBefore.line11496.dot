@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry553[shape=none,label=""];
+BB_entry553 -> BB8191 [tailport=s, headport=n, headlabel="    8191"]
+BB8191 [shape=record label="{24529: constant[undefined,v1]|24530: vardecl['parent']}" ] 
+BB8191 -> BB8192 [tailport=s, headport=n, headlabel="      8192"]
+BB8192 [shape=record label="{24531: read-variable['ref',v3,-]|24532: read-property[v3,'parentNode',v2]|24533: \<variable-non-null-undef\>['ref']|24534: write-variable[v2,'parent']*|24535: read-variable['parent',v4,-]|24536: if[v4](true-block:8193,false-block:8195)}" ] 
+BB8192 -> BB8193 [tailport=s, headport=n, headlabel="      8193"]
+BB8192 -> BB8195 [tailport=s, headport=n, headlabel="      8195"]
+BB8192 -> BB8196 [tailport=s, headport=n, color=gray, headlabel="      8196"]
+BB8193 [shape=record label="{24537: read-variable['parent',v6,-]|24538: read-property[v6,'insertBefore',-]|24539: \<variable-non-null-undef\>['parent']|24540: read-variable['node',v7,-]|24541: read-variable['ref',v8,-]}" ] 
+BB8193 -> BB8194 [tailport=s, headport=n, headlabel="      8194"]
+BB8193 -> BB8196 [tailport=s, headport=n, color=gray]
+BB8194 [shape=record label="{24542: call-parent.insertBefore [v6,'insertBefore',v7,v8,-]*}" ] 
+BB8194 -> BB8195 [tailport=s, headport=n]
+BB8194 -> BB8196 [tailport=s, headport=n, color=gray]
+BB8195 [shape=record label="{24543: return[v1]}" ] 
+BB8196 [shape=record label="{24544: exceptional-return}" ] 
+//#$~ 11499
+}

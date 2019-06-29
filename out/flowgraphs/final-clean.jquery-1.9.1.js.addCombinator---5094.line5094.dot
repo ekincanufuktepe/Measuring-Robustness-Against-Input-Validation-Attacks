@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry320[shape=none,label=""];
+BB_entry320 -> BB4850 [tailport=s, headport=n, headlabel="    4850"]
+BB4850 [shape=record label="{14067: constant[undefined,v1]|14068: vardecl['dir']|14069: vardecl['checkNonElements']|14070: vardecl['doneName']}" ] 
+BB4850 -> BB4851 [tailport=s, headport=n, headlabel="      4851"]
+BB4851 [shape=record label="{14071: read-variable['combinator-5095:14',v3,-]|14072: read-property[v3,'dir',v2]|14073: \<variable-non-null-undef\>['combinator']|14074: write-variable[v2,'dir']*|14075: read-variable['base-5096:23',v4,-]|14076: if[v4](true-block:4852,false-block:4853)}" ] 
+BB4851 -> BB4853 [tailport=s, headport=n, headlabel="      4853"]
+BB4851 -> BB4852 [tailport=s, headport=n, headlabel="      4852"]
+BB4851 -> BB4857 [tailport=s, headport=n, color=gray, headlabel="      4857"]
+BB4852 [shape=record label="{14077: read-variable['dir-5096:31',v5,-]|14078: constant[\"parentNode\",v6]|14079: ===[v5,v6,v4]}" ] 
+BB4852 -> BB4853 [tailport=s, headport=n]
+BB4852 -> BB4857 [tailport=s, headport=n, color=gray]
+BB4853 [shape=record label="{14080: write-variable[v4,'checkNonElements']*|14081: constant[1.0,v6]|14082: read-variable['done-5097:15',v7,-]|14083: +[v7,v5]|14084: +[v5,v6,v8]|14085: write-variable[v8,'done']|14086: write-variable[v5,'doneName']*|14087: read-variable['combinator-5099:11',v10,-]|14088: read-property[v10,'first',v9]|14089: \<variable-non-null-undef\>['combinator']|14090: if[v9](true-block:4854,false-block:4855)}" ] 
+BB4853 -> BB4854 [tailport=s, headport=n, headlabel="      4854"]
+BB4853 -> BB4855 [tailport=s, headport=n, headlabel="      4855"]
+BB4853 -> BB4857 [tailport=s, headport=n, color=gray]
+BB4854 [shape=record label="{14091: function-expr[function null---5101 ( elem context xml ),v1]}" ] 
+BB4854 -> BB4856 [tailport=s, headport=n, headlabel="      4856"]
+BB4855 [shape=record label="{14092: function-expr[function null---5110 ( elem context xml ),v1]}" ] 
+BB4855 -> BB4856 [tailport=s, headport=n]
+BB4856 [shape=record label="{14093: return[v1]}" ] 
+BB4857 [shape=record label="{14094: exceptional-return}" ] 
+}

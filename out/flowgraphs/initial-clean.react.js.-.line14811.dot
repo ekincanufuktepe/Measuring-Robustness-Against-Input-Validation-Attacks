@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry621[shape=none,label=""];
+BB_entry621 -> BB8445 [tailport=s, headport=n, headlabel="    8445"]
+BB8445 [shape=record label="{27955: constant[undefined,v1]}" ] 
+BB8445 -> BB8446 [tailport=s, headport=n, headlabel="      8446"]
+BB8446 [shape=record label="{27956: read-variable['this',v5,-]|27957: read-property[v5,'dirtyComponentsLength',v3]|27958: read-variable['dirtyComponents',v6,-]|27959: read-property[v6,'length',v4]|27960: \<variable-non-null-undef\>['dirtyComponents']|27961: !==[v3,v4,v2]|27962: if[v2](true-block:8447,false-block:8448)}" ] 
+BB8446 -> BB8447 [tailport=s, headport=n, headlabel="      8447"]
+BB8446 -> BB8448 [tailport=s, headport=n, headlabel="      8448"]
+BB8446 -> BB8453 [tailport=s, headport=n, color=gray, headlabel="      8453"]
+BB8447 [shape=record label="{27963: read-variable['dirtyComponents',v8,-]|27964: read-property[v8,'splice',-]|27965: \<variable-non-null-undef\>['dirtyComponents']|27966: constant[0.0,v9]|27967: read-variable['this',v11,-]|27968: read-property[v11,'dirtyComponentsLength',v10]}" ] 
+BB8447 -> BB8449 [tailport=s, headport=n, headlabel="      8449"]
+BB8447 -> BB8453 [tailport=s, headport=n, color=gray]
+BB8448 [shape=record label="{27969: read-variable['dirtyComponents',v8,-]|27970: constant[0.0,v7]|27971: write-property[v8,'length',v7]|27972: \<variable-non-null-undef\>['dirtyComponents']*}" ] 
+BB8448 -> BB8452 [tailport=s, headport=n, headlabel="      8452"]
+BB8448 -> BB8453 [tailport=s, headport=n, color=gray]
+BB8449 [shape=record label="{27973: call-dirtyComponents.splice [v8,'splice',v9,v10,-]*}" ] 
+BB8449 -> BB8450 [tailport=s, headport=n, headlabel="      8450"]
+BB8449 -> BB8453 [tailport=s, headport=n, color=gray]
+BB8450 [shape=record label="{27974: read-variable['flushBatchedUpdates',v13,v12]}" ] 
+BB8450 -> BB8451 [tailport=s, headport=n, headlabel="      8451"]
+BB8450 -> BB8453 [tailport=s, headport=n, color=gray]
+BB8451 [shape=record label="{27975: call-flushBatchedUpdates [v12,v13,-]*}" ] 
+BB8451 -> BB8452 [tailport=s, headport=n]
+BB8451 -> BB8453 [tailport=s, headport=n, color=gray]
+BB8452 [shape=record label="{27976: return[v1]}" ] 
+BB8453 [shape=record label="{27977: exceptional-return}" ] 
+//#$~ 14821
+}

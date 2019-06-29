@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry59[shape=none,label=""];
+BB_entry59 -> BB801 [tailport=s, headport=n, headlabel="    801"]
+BB801 [shape=record label="{1850: constant[undefined,v1]}" ] 
+BB801 -> BB802 [tailport=s, headport=n, headlabel="      802"]
+BB802 [shape=record label="{1851: read-variable['slice',v3,-]|1852: read-property[v3,'call',-]|1853: \<variable-non-null-undef\>['slice']|1854: read-variable['args',v4,-]|1855: read-variable['startIndex',v5,-]|1856: if[v5](true-block:804,false-block:803)}" ] 
+BB802 -> BB804 [tailport=s, headport=n, headlabel="      804"]
+BB802 -> BB803 [tailport=s, headport=n, headlabel="      803"]
+BB802 -> BB806 [tailport=s, headport=n, color=gray, headlabel="      806"]
+BB803 [shape=record label="{1857: constant[0.0,v5]}" ] 
+BB803 -> BB804 [tailport=s, headport=n]
+BB804 [shape=record label="{1858: call-slice.call [v3,'call',v4,v5,v1]}" ] 
+BB804 -> BB805 [tailport=s, headport=n, headlabel="      805"]
+BB804 -> BB806 [tailport=s, headport=n, color=gray]
+BB805 [shape=record label="{1859: return[v1]}" ] 
+BB806 [shape=record label="{1860: exceptional-return}" ] 
+//#$~ 1132
+}

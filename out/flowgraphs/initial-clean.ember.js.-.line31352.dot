@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry1430[shape=none,label=""];
+BB_entry1430 -> BB16744 [tailport=s, headport=n, headlabel="    16744"]
+BB16744 [shape=record label="{56827: constant[undefined,v1]|56828: vardecl['length']|56829: vardecl['args']|56830: vardecl['i']}" ] 
+BB16744 -> BB16745 [tailport=s, headport=n, headlabel="      16745"]
+BB16745 [shape=record label="{56831: read-variable['arguments',v3,-]|56832: read-property[v3,'length',v2]|56833: \<variable-non-null-undef\>['arguments']|56834: write-variable[v2,'length']*|56835: read-variable['Array',v5,-]|56836: read-variable['length',v7,-]|56837: constant[1.0,v8]|56838: -[v7,v8,v6]}" ] 
+BB16745 -> BB16746 [tailport=s, headport=n, headlabel="      16746"]
+BB16745 -> BB16753 [tailport=s, headport=n, color=gray, headlabel="      16753"]
+BB16746 [shape=record label="{56839: construct [-,v5,v6,v4]}" ] 
+BB16746 -> BB16747 [tailport=s, headport=n, headlabel="      16747"]
+BB16746 -> BB16753 [tailport=s, headport=n, color=gray]
+BB16747 [shape=record label="{56840: write-variable[v4,'args']*|56841: constant[1.0,v10]|56842: write-variable[v10,'i']*}" ] 
+BB16747 -> BB16748 [tailport=s, headport=n, headlabel="      16748"]
+BB16748 [shape=record label="{56843: read-variable['i',v11,-]|56844: read-variable['length',v12,-]|56845: \<[v11,v12,v9]|56846: if[v9](true-block:16749,false-block:16750)}" ] 
+BB16748 -> BB16749 [tailport=s, headport=n, headlabel="      16749"]
+BB16748 -> BB16750 [tailport=s, headport=n, headlabel="      16750"]
+BB16748 -> BB16753 [tailport=s, headport=n, color=gray]
+BB16749 [shape=record label="{56847: read-variable['args',v14,-]|56848: read-variable['i',v16,-]|56849: constant[1.0,v17]|56850: -[v16,v17,v15]|56851: read-variable['arguments',v18,-]|56852: read-variable['i',v19,-]|56853: read-property[v18,v19,v13]|56854: \<variable-non-null-undef\>['arguments']|56855: write-property[v14,v15,v13]|56856: \<variable-non-null-undef\>['args']*|56857: constant[1.0,v20]|56858: read-variable['i',v21,-]|56859: +[v21,v22]|56860: +[v22,v20,v23]|56861: write-variable[v23,'i']}" ] 
+BB16749 -> BB16748 [tailport=s, headport=n]
+BB16749 -> BB16753 [tailport=s, headport=n, color=gray]
+BB16750 [shape=record label="{56862: read-variable['sendEvent',v14,v13]|56863: read-variable['this',v15,-]|56864: read-variable['name',v16,-]|56865: read-variable['args',v17,-]}" ] 
+BB16750 -> BB16751 [tailport=s, headport=n, headlabel="      16751"]
+BB16750 -> BB16753 [tailport=s, headport=n, color=gray]
+BB16751 [shape=record label="{56866: call-sendEvent [v13,v14,v15,v16,v17,-]*}" ] 
+BB16751 -> BB16752 [tailport=s, headport=n, headlabel="      16752"]
+BB16751 -> BB16753 [tailport=s, headport=n, color=gray]
+BB16752 [shape=record label="{56867: return[v1]}" ] 
+BB16753 [shape=record label="{56868: exceptional-return}" ] 
+//#$~ 31360
+}

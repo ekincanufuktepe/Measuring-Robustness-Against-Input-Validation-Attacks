@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry791[shape=none,label=""];
+BB_entry791 -> BB10805 [tailport=s, headport=n, headlabel="    10805"]
+BB10805 [shape=record label="{31893: constant[undefined,v1]}" ] 
+BB10805 -> BB10806 [tailport=s, headport=n, headlabel="      10806"]
+BB10806 [shape=record label="{31894: read-variable['handled',v3,-]|31895: ![v3,v2]|31896: if[v2](true-block:10807,false-block:10809)}" ] 
+BB10806 -> BB10807 [tailport=s, headport=n, headlabel="      10807"]
+BB10806 -> BB10809 [tailport=s, headport=n, headlabel="      10809"]
+BB10806 -> BB10810 [tailport=s, headport=n, color=gray, headlabel="      10810"]
+BB10807 [shape=record label="{31897: read-variable['logError',v5,v4]|31898: read-variable['error',v6,-]|31899: read-variable['rejection',v7,-]|31900: read-variable['deferred',v8,-]}" ] 
+BB10807 -> BB10808 [tailport=s, headport=n, headlabel="      10808"]
+BB10807 -> BB10810 [tailport=s, headport=n, color=gray]
+BB10808 [shape=record label="{31901: call-logError [v4,v5,v6,v7,v8,-]*}" ] 
+BB10808 -> BB10809 [tailport=s, headport=n]
+BB10808 -> BB10810 [tailport=s, headport=n, color=gray]
+BB10809 [shape=record label="{31902: return[v1]}" ] 
+BB10810 [shape=record label="{31903: exceptional-return}" ] 
+//#$~ 15240
+}

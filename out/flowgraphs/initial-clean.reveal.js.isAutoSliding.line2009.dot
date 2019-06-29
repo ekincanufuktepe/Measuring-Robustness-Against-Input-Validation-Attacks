@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry106[shape=none,label=""];
+BB_entry106 -> BB1587 [tailport=s, headport=n, headlabel="    1587"]
+BB1587 [shape=record label="{5080: constant[undefined,v1]}" ] 
+BB1587 -> BB1588 [tailport=s, headport=n, headlabel="      1588"]
+BB1588 [shape=record label="{5081: read-variable['autoSlide',v3,-]|5082: if[v3](true-block:1589,false-block:1590)}" ] 
+BB1588 -> BB1590 [tailport=s, headport=n, headlabel="      1590"]
+BB1588 -> BB1589 [tailport=s, headport=n, headlabel="      1589"]
+BB1588 -> BB1592 [tailport=s, headport=n, color=gray, headlabel="      1592"]
+BB1589 [shape=record label="{5083: read-variable['autoSlidePaused',v4,-]|5084: ![v4,v3]}" ] 
+BB1589 -> BB1590 [tailport=s, headport=n]
+BB1589 -> BB1592 [tailport=s, headport=n, color=gray]
+BB1590 [shape=record label="{5085: ![v3,v2]|5086: ![v2,v1]}" ] 
+BB1590 -> BB1591 [tailport=s, headport=n, headlabel="      1591"]
+BB1590 -> BB1592 [tailport=s, headport=n, color=gray]
+BB1591 [shape=record label="{5087: return[v1]}" ] 
+BB1592 [shape=record label="{5088: exceptional-return}" ] 
+//#$~ 2011
+}

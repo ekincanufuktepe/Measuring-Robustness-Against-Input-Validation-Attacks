@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry78[shape=none,label=""];
+BB_entry78 -> BB1600 [tailport=s, headport=n, headlabel="    1600"]
+BB1600 [shape=record label="{5383: constant[undefined,v1]}" ] 
+BB1600 -> BB1601 [tailport=s, headport=n, headlabel="      1601"]
+BB1601 [shape=record label="{5384: read-variable['script',v4,-]|5385: read-property[v4,'parentNode',v3]|5386: \<variable-non-null-undef\>['script']|5387: read-property[v3,'removeChild',-]|5388: \<property-non-null-undef\>[v4,'parentNode']|5389: read-variable['script',v5,-]}" ] 
+BB1601 -> BB1602 [tailport=s, headport=n, headlabel="      1602"]
+BB1601 -> BB1609 [tailport=s, headport=n, color=gray, headlabel="      1609"]
+BB1602 [shape=record label="{5390: call-script.parentNode.removeChild [v3,'removeChild',v5,-]*}" ] 
+BB1602 -> BB1603 [tailport=s, headport=n, headlabel="      1603"]
+BB1602 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1603 [shape=record label="{5391: read-variable['options',v7,-]|5392: read-property[v7,'onerror',-]|5393: \<variable-non-null-undef\>['options']|5394: new[v8]|5395: constant[\"error\",v9]|5396: write-property[v8,'type',v9]|5397: new[v10]|5398: constant[500.0,v11]|5399: write-property[v10,'status',v11]|5400: read-variable['JSON',v14,-]|5401: read-property[v14,'stringify',-]|5402: \<variable-non-null-undef\>['JSON']|5403: new[v15]|5404: constant[\"Error making jsonp request\",v16]|5405: write-property[v15,'error',v16]}" ] 
+BB1603 -> BB1604 [tailport=s, headport=n, headlabel="      1604"]
+BB1603 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1604 [shape=record label="{5406: call-JSON.stringify [v14,'stringify',v15,v12]}" ] 
+BB1604 -> BB1605 [tailport=s, headport=n, headlabel="      1605"]
+BB1604 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1605 [shape=record label="{5407: write-property[v10,'responseText',v12]|5408: write-property[v8,'target',v10]}" ] 
+BB1605 -> BB1606 [tailport=s, headport=n, headlabel="      1606"]
+BB1605 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1606 [shape=record label="{5409: call-options.onerror [v7,'onerror',v8,-]*}" ] 
+BB1606 -> BB1607 [tailport=s, headport=n, headlabel="      1607"]
+BB1606 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1607 [shape=record label="{5410: read-variable['window',v18,-]|5411: read-variable['callbackKey',v19,-]|5412: read-variable['undefined',v17,-]|5413: write-property[v18,v19,v17]|5414: \<variable-non-null-undef\>['window']*|5415: constant[false,v1]}" ] 
+BB1607 -> BB1608 [tailport=s, headport=n, headlabel="      1608"]
+BB1607 -> BB1609 [tailport=s, headport=n, color=gray]
+BB1608 [shape=record label="{5416: return[v1]}" ] 
+BB1609 [shape=record label="{5417: exceptional-return}" ] 
+//#$~ 1048
+}

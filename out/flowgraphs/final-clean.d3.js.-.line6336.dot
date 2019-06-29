@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry982[shape=none,label=""];
+BB_entry982 -> BB10661 [tailport=s, headport=n, headlabel="    10661"]
+BB10661 [shape=record label="{35766: constant[undefined,v1]}" ] 
+BB10661 -> BB10662 [tailport=s, headport=n, headlabel="      10662"]
+BB10662 [shape=record label="{35767: read-variable['arguments',v4,-]|35768: read-property[v4,'length',v3]|35769: \<variable-non-null-undef\>['arguments']|35770: ![v3,v2]|35771: if[v2](true-block:10663,false-block:10665)}" ] 
+BB10662 -> BB10663 [tailport=s, headport=n, headlabel="      10663"]
+BB10662 -> BB10665 [tailport=s, headport=n, headlabel="      10665"]
+BB10662 -> BB10667 [tailport=s, headport=n, color=gray, headlabel="      10667"]
+BB10663 [shape=record label="{35772: read-variable['Math',v6,-]|35773: read-property[v6,'sqrt',-]|35774: \<variable-non-null-undef\>['Math']|35775: read-variable['theta2',v7,-]}" ] 
+BB10663 -> BB10664 [tailport=s, headport=n, headlabel="      10664"]
+BB10663 -> BB10667 [tailport=s, headport=n, color=gray]
+BB10664 [shape=record label="{35776: call-Math.sqrt [v6,'sqrt',v7,v1]}" ] 
+BB10664 -> BB10666 [tailport=s, headport=n, headlabel="      10666"]
+BB10664 -> BB10667 [tailport=s, headport=n, color=gray]
+BB10665 [shape=record label="{35777: read-variable['x',v6,-]|35778: read-variable['x',v7,-]|35779: *[v6,v7,v5]|35780: write-variable[v5,'theta2']*|35781: read-variable['force',v1,-]}" ] 
+BB10665 -> BB10666 [tailport=s, headport=n]
+BB10665 -> BB10667 [tailport=s, headport=n, color=gray]
+BB10666 [shape=record label="{35782: return[v1]}" ] 
+BB10667 [shape=record label="{35783: exceptional-return}" ] 
+//#$~ 6339
+}

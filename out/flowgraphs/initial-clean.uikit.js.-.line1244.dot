@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry128[shape=none,label=""];
+BB_entry128 -> BB1612 [tailport=s, headport=n, headlabel="    1612"]
+BB1612 [shape=record label="{4685: constant[undefined,v1]}" ] 
+BB1612 -> BB1613 [tailport=s, headport=n, headlabel="      1613"]
+BB1613 [shape=record label="{4686: read-variable['UI',v5,-]|4687: read-property[v5,'$',-]|4688: \<variable-non-null-undef\>['UI']|4689: constant[\"[data-uk-scrollspy-nav]\",v6]|4690: read-variable['context',v7,-]}" ] 
+BB1613 -> BB1614 [tailport=s, headport=n, headlabel="      1614"]
+BB1613 -> BB1618 [tailport=s, headport=n, color=gray, headlabel="      1618"]
+BB1614 [shape=record label="{4691: call-UI.$ [v5,'$',v6,v7,v3]}" ] 
+BB1614 -> BB1615 [tailport=s, headport=n, headlabel="      1615"]
+BB1614 -> BB1618 [tailport=s, headport=n, color=gray]
+BB1615 [shape=record label="{4692: read-property[v3,'each',-]|4693: function-expr[function ( ),v8]}" ] 
+BB1615 -> BB1616 [tailport=s, headport=n, headlabel="      1616"]
+BB1615 -> BB1618 [tailport=s, headport=n, color=gray]
+BB1616 [shape=record label="{4694: call-null [v3,'each',v8,-]*}" ] 
+BB1616 -> BB1617 [tailport=s, headport=n, headlabel="      1617"]
+BB1616 -> BB1618 [tailport=s, headport=n, color=gray]
+BB1617 [shape=record label="{4695: return[v1]}" ] 
+BB1618 [shape=record label="{4696: exceptional-return}" ] 
+//#$~ 1251
+}

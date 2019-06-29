@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2468[shape=none,label=""];
+BB_entry2468 -> BB28161 [tailport=s, headport=n, headlabel="    28161"]
+BB28161 [shape=record label="{93787: constant[undefined,v1]}" ] 
+BB28161 -> BB28162 [tailport=s, headport=n, headlabel="      28162"]
+BB28162 [shape=record label="{93788: read-variable['sealed',v2,-]|93789: if[v2](true-block:28163,false-block:28164)}" ] 
+BB28162 -> BB28163 [tailport=s, headport=n, headlabel="      28163"]
+BB28162 -> BB28164 [tailport=s, headport=n, headlabel="      28164"]
+BB28162 -> BB28167 [tailport=s, headport=n, color=gray, headlabel="      28167"]
+BB28163 [shape=record label="{93790: constant[undefined,v1]}" ] 
+BB28163 -> BB28166 [tailport=s, headport=n, headlabel="      28166"]
+BB28164 [shape=record label="{93791: constant[true,v3]|93792: write-variable[v3,'sealed']*|93793: read-variable['reject',v5,v4]|93794: read-variable['promise',v6,-]|93795: read-variable['reason',v7,-]}" ] 
+BB28164 -> BB28165 [tailport=s, headport=n, headlabel="      28165"]
+BB28164 -> BB28167 [tailport=s, headport=n, color=gray]
+BB28165 [shape=record label="{93796: call-reject [v4,v5,v6,v7,-]*}" ] 
+BB28165 -> BB28166 [tailport=s, headport=n]
+BB28165 -> BB28167 [tailport=s, headport=n, color=gray]
+BB28166 [shape=record label="{93797: return[v1]}" ] 
+BB28167 [shape=record label="{93798: exceptional-return}" ] 
+//#$~ 50404
+}

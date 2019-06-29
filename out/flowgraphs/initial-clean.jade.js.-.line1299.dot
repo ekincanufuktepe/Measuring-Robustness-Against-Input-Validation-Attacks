@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry63[shape=none,label=""];
+BB_entry63 -> BB1140 [tailport=s, headport=n, headlabel="    1140"]
+BB1140 [shape=record label="{3829: constant[undefined,v1]|3830: vardecl['fetch']}" ] 
+BB1140 -> BB1141 [tailport=s, headport=n, headlabel="      1141"]
+BB1141 [shape=record label="{3831: read-variable['n',v3,-]|3832: read-variable['this',v6,-]|3833: read-property[v6,'stash',v5]|3834: read-property[v5,'length',v4]|3835: \<property-non-null-undef\>[v6,'stash']|3836: -[v3,v4,v2]|3837: write-variable[v2,'fetch']*}" ] 
+BB1141 -> BB1142 [tailport=s, headport=n, headlabel="      1142"]
+BB1141 -> BB1148 [tailport=s, headport=n, color=gray, headlabel="      1148"]
+BB1142 [shape=record label="{3838: constant[1.0,v10]|3839: read-variable['fetch',v11,-]|3840: +[v11,v8]|3841: -[v8,v10,v12]|3842: write-variable[v12,'fetch']|3843: constant[0.0,v9]|3844: \>[v8,v9,v7]|3845: if[v7](true-block:1143,false-block:1144)}" ] 
+BB1142 -> BB1143 [tailport=s, headport=n, headlabel="      1143"]
+BB1142 -> BB1144 [tailport=s, headport=n, headlabel="      1144"]
+BB1142 -> BB1148 [tailport=s, headport=n, color=gray]
+BB1143 [shape=record label="{3846: read-variable['this',v15,-]|3847: read-property[v15,'stash',v14]|3848: read-property[v14,'push',-]|3849: \<property-non-null-undef\>[v15,'stash']|3850: read-variable['this',v18,-]|3851: read-property[v18,'next',-]}" ] 
+BB1143 -> BB1145 [tailport=s, headport=n, headlabel="      1145"]
+BB1143 -> BB1148 [tailport=s, headport=n, color=gray]
+BB1144 [shape=record label="{3852: read-variable['this',v14,-]|3853: read-property[v14,'stash',v13]|3854: constant[1.0,v16]|3855: read-variable['n',v17,-]|3856: +[v17,v18]|3857: -[v18,v16,v15]|3858: write-variable[v15,'n']|3859: read-property[v13,v15,v1]|3860: \<property-non-null-undef\>[v14,'stash']}" ] 
+BB1144 -> BB1147 [tailport=s, headport=n, headlabel="      1147"]
+BB1144 -> BB1148 [tailport=s, headport=n, color=gray]
+BB1145 [shape=record label="{3861: call-this.next [v18,'next',v16]}" ] 
+BB1145 -> BB1146 [tailport=s, headport=n, headlabel="      1146"]
+BB1145 -> BB1148 [tailport=s, headport=n, color=gray]
+BB1146 [shape=record label="{3862: call-this.stash.push [v14,'push',v16,-]*}" ] 
+BB1146 -> BB1142 [tailport=s, headport=n]
+BB1146 -> BB1148 [tailport=s, headport=n, color=gray]
+BB1147 [shape=record label="{3863: return[v1]}" ] 
+BB1148 [shape=record label="{3864: exceptional-return}" ] 
+//#$~ 1302
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry33[shape=none,label=""];
+BB_entry33 -> BB745 [tailport=s, headport=n, headlabel="    745"]
+BB745 [shape=record label="{2785: constant[undefined,v1]}" ] 
+BB745 -> BB746 [tailport=s, headport=n, headlabel="      746"]
+BB746 [shape=record label="{2786: read-variable['Y',v4,-]|2787: read-property[v4,'_attach',-]|2788: \<variable-non-null-undef\>['Y']|2789: read-variable['data',v5,-]}" ] 
+BB746 -> BB747 [tailport=s, headport=n, headlabel="      747"]
+BB746 -> BB752 [tailport=s, headport=n, color=gray, headlabel="      752"]
+BB747 [shape=record label="{2790: call-Y._attach [v4,'_attach',v5,v2]}" ] 
+BB747 -> BB748 [tailport=s, headport=n, headlabel="      748"]
+BB747 -> BB752 [tailport=s, headport=n, color=gray]
+BB748 [shape=record label="{2791: if[v2](true-block:749,false-block:751)}" ] 
+BB748 -> BB749 [tailport=s, headport=n, headlabel="      749"]
+BB748 -> BB751 [tailport=s, headport=n, headlabel="      751"]
+BB749 [shape=record label="{2792: read-variable['Y',v7,-]|2793: read-property[v7,'_notify',-]|2794: \<variable-non-null-undef\>['Y']|2795: read-variable['callback',v8,-]|2796: read-variable['response',v9,-]|2797: read-variable['data',v10,-]}" ] 
+BB749 -> BB750 [tailport=s, headport=n, headlabel="      750"]
+BB749 -> BB752 [tailport=s, headport=n, color=gray]
+BB750 [shape=record label="{2798: call-Y._notify [v7,'_notify',v8,v9,v10,-]*}" ] 
+BB750 -> BB751 [tailport=s, headport=n]
+BB750 -> BB752 [tailport=s, headport=n, color=gray]
+BB751 [shape=record label="{2799: return[v1]}" ] 
+BB752 [shape=record label="{2800: exceptional-return}" ] 
+//#$~ 1249
+}

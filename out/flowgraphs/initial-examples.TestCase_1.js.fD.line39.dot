@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB30 [tailport=s, headport=n, headlabel="    30"]
+BB30 [shape=record label="{64: constant[undefined,v1]|65: vardecl['sum']}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB31 [shape=record label="{66: constant[0.0,v2]|67: write-variable[v2,'sum']*|68: read-variable['d1',v4,-]|69: constant[null,v5]|70: !=[v4,v5,v3]|71: if[v3](true-block:32,false-block:33)}" ] 
+BB31 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB36 [tailport=s, headport=n, color=gray, headlabel="      36"]
+BB32 [shape=record label="{72: read-variable['d2',v6,-]|73: constant[null,v7]|74: !=[v6,v7,v3]}" ] 
+BB32 -> BB33 [tailport=s, headport=n]
+BB32 -> BB36 [tailport=s, headport=n, color=gray]
+BB33 [shape=record label="{75: if[v3](true-block:34,false-block:35)}" ] 
+BB33 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB33 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB34 [shape=record label="{76: read-variable['d1',v7,-]|77: read-variable['d2',v8,-]|78: +[v7,v8,v6]|79: write-variable[v6,'sum']*}" ] 
+BB34 -> BB35 [tailport=s, headport=n]
+BB34 -> BB36 [tailport=s, headport=n, color=gray]
+BB35 [shape=record label="{80: return[v1]}" ] 
+BB36 [shape=record label="{81: exceptional-return}" ] 
+//#$~ 43
+}

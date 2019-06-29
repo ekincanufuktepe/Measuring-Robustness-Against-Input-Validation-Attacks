@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry121[shape=none,label=""];
+BB_entry121 -> BB1016 [tailport=s, headport=n, headlabel="    1016"]
+BB1016 [shape=record label="{3126: constant[undefined,v1]|3127: vardecl['me']}" ] 
+BB1016 -> BB1017 [tailport=s, headport=n, headlabel="      1017"]
+BB1017 [shape=record label="{3128: read-variable['this',v2,-]|3129: write-variable[v2,'me']*|3130: read-variable['Joose',v5,-]|3131: read-property[v5,'O',v4]|3132: \<variable-non-null-undef\>['Joose']|3133: read-property[v4,'eachSafe',-]|3134: \<property-non-null-undef\>[v5,'O']|3135: read-variable['map',v6,-]|3136: function-expr[function ( classObject attributeName ),v7]}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1017 -> BB1020 [tailport=s, headport=n, color=gray, headlabel="      1020"]
+BB1018 [shape=record label="{3137: call-Joose.O.eachSafe [v4,'eachSafe',v6,v7,-]*}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1018 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1019 [shape=record label="{3138: return[v1]}" ] 
+BB1020 [shape=record label="{3139: exceptional-return}" ] 
+//#$~ 1178
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB22 [tailport=s, headport=n, headlabel="    22"]
+BB22 [shape=record label="{39: constant[undefined,v1]}" ] 
+BB22 -> BB23 [tailport=s, headport=n, headlabel="      23"]
+BB23 [shape=record label="{40: read-variable['Object_toString',v5,-]|41: read-property[v5,'call',-]|42: \<variable-non-null-undef\>['Object_toString']|43: read-variable['object',v6,-]}" ] 
+BB23 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB23 -> BB27 [tailport=s, headport=n, color=gray, headlabel="      27"]
+BB24 [shape=record label="{44: call-Object_toString.call [v5,'call',v6,v2]}" ] 
+BB24 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB24 -> BB27 [tailport=s, headport=n, color=gray]
+BB25 [shape=record label="{45: constant[\"[object Array]\",v3]|46: ===[v2,v3,v1]}" ] 
+BB25 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB25 -> BB27 [tailport=s, headport=n, color=gray]
+BB26 [shape=record label="{47: return[v1]}" ] 
+BB27 [shape=record label="{48: exceptional-return}" ] 
+//#$~ 20
+}

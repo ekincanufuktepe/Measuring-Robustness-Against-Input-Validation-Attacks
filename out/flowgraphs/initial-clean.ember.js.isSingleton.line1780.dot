@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry98[shape=none,label=""];
+BB_entry98 -> BB1298 [tailport=s, headport=n, headlabel="    1298"]
+BB1298 [shape=record label="{4128: constant[undefined,v1]|4129: vardecl['singleton']}" ] 
+BB1298 -> BB1299 [tailport=s, headport=n, headlabel="      1299"]
+BB1299 [shape=record label="{4130: read-variable['option',v4,v3]|4131: read-variable['container',v5,-]|4132: read-variable['fullName',v6,-]|4133: constant[\"singleton\",v7]}" ] 
+BB1299 -> BB1300 [tailport=s, headport=n, headlabel="      1300"]
+BB1299 -> BB1303 [tailport=s, headport=n, color=gray, headlabel="      1303"]
+BB1300 [shape=record label="{4134: call-option [v3,v4,v5,v6,v7,v2]}" ] 
+BB1300 -> BB1301 [tailport=s, headport=n, headlabel="      1301"]
+BB1300 -> BB1303 [tailport=s, headport=n, color=gray]
+BB1301 [shape=record label="{4135: write-variable[v2,'singleton']*|4136: read-variable['singleton',v8,-]|4137: constant[false,v9]|4138: !==[v8,v9,v1]}" ] 
+BB1301 -> BB1302 [tailport=s, headport=n, headlabel="      1302"]
+BB1301 -> BB1303 [tailport=s, headport=n, color=gray]
+BB1302 [shape=record label="{4139: return[v1]}" ] 
+BB1303 [shape=record label="{4140: exceptional-return}" ] 
+//#$~ 1783
+}

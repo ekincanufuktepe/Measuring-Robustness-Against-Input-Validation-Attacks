@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry234[shape=none,label=""];
+BB_entry234 -> BB5052 [tailport=s, headport=n, headlabel="    5052"]
+BB5052 [shape=record label="{16281: constant[undefined,v1]}" ] 
+BB5052 -> BB5053 [tailport=s, headport=n, headlabel="      5053"]
+BB5053 [shape=record label="{16282: read-variable['this',v3,-]|16283: read-property[v3,'pushStackLiteral',-]|16284: read-variable['this',v6,-]|16285: read-property[v6,'quotedString',-]|16286: read-variable['string',v7,-]}" ] 
+BB5053 -> BB5054 [tailport=s, headport=n, headlabel="      5054"]
+BB5053 -> BB5057 [tailport=s, headport=n, color=gray, headlabel="      5057"]
+BB5054 [shape=record label="{16287: call-this.quotedString [v6,'quotedString',v7,v4]}" ] 
+BB5054 -> BB5055 [tailport=s, headport=n, headlabel="      5055"]
+BB5054 -> BB5057 [tailport=s, headport=n, color=gray]
+BB5055 [shape=record label="{16288: call-this.pushStackLiteral [v3,'pushStackLiteral',v4,-]*}" ] 
+BB5055 -> BB5056 [tailport=s, headport=n, headlabel="      5056"]
+BB5055 -> BB5057 [tailport=s, headport=n, color=gray]
+BB5056 [shape=record label="{16289: return[v1]}" ] 
+BB5057 [shape=record label="{16290: exceptional-return}" ] 
+//#$~ 3149
+}

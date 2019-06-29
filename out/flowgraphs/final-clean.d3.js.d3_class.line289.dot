@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB475 [tailport=s, headport=n, headlabel="    475"]
+BB475 [shape=record label="{1633: constant[undefined,v1]|1634: vardecl['key']}" ] 
+BB475 -> BB476 [tailport=s, headport=n, headlabel="      476"]
+BB476 [shape=record label="{1635: read-variable['properties',v3,-]}" ] 
+BB476 -> BB477 [tailport=s, headport=n, headlabel="      477"]
+BB476 -> BB483 [tailport=s, headport=n, color=gray, headlabel="      483"]
+BB477 [shape=record label="{1636: begin-for-in[v3,v4]}" ] 
+BB477 -> BB478 [tailport=s, headport=n, headlabel="      478"]
+BB477 -> BB483 [tailport=s, headport=n, color=gray]
+BB478 [shape=record label="{1637: has-next[v4,v5]|1638: if[v5](true-block:479,false-block:482)}" ] 
+BB478 -> BB479 [tailport=s, headport=n, headlabel="      479"]
+BB478 -> BB482 [tailport=s, headport=n, headlabel="      482"]
+BB479 [shape=record label="{1639: next-property[v4,v6]|1640: write-variable[v6,'key']|1641: read-variable['Object',v8,-]|1642: read-property[v8,'defineProperty',-]|1643: \<variable-non-null-undef\>['Object']|1644: read-variable['ctor',v10,-]|1645: read-property[v10,'prototype',v9]|1646: \<variable-non-null-undef\>['ctor']|1647: read-variable['key',v11,-]|1648: new[v12]|1649: read-variable['properties',v14,-]|1650: read-variable['key',v15,-]|1651: read-property[v14,v15,v13]|1652: \<variable-non-null-undef\>['properties']|1653: write-property[v12,'value',v13]|1654: constant[false,v16]|1655: write-property[v12,'enumerable',v16]}" ] 
+BB479 -> BB480 [tailport=s, headport=n, headlabel="      480"]
+BB479 -> BB483 [tailport=s, headport=n, color=gray]
+BB480 [shape=record label="{1656: call-Object.defineProperty [v8,'defineProperty',v9,v11,v12,-]*}" ] 
+BB480 -> BB481 [tailport=s, headport=n, headlabel="      481"]
+BB480 -> BB483 [tailport=s, headport=n, color=gray]
+BB481 [shape=record label="{1657: end-for-in(begin-node:1636)}" ] 
+BB481 -> BB478 [tailport=s, headport=n]
+BB482 [shape=record label="{1658: return[v1]}" ] 
+BB483 [shape=record label="{1659: exceptional-return}" ] 
+//#$~ 293
+}

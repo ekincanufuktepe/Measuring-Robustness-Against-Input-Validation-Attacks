@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry262[shape=none,label=""];
+BB_entry262 -> BB2387 [tailport=s, headport=n, headlabel="    2387"]
+BB2387 [shape=record label="{7072: constant[undefined,v1]|7073: vardecl['parts']}" ] 
+BB2387 -> BB2388 [tailport=s, headport=n, headlabel="      2388"]
+BB2388 [shape=record label="{7074: read-variable['packed',v4,-]|7075: read-property[v4,'split',-]|7076: \<variable-non-null-undef\>['packed']|7077: constant[\"-\",v5]}" ] 
+BB2388 -> BB2389 [tailport=s, headport=n, headlabel="      2389"]
+BB2388 -> BB2395 [tailport=s, headport=n, color=gray, headlabel="      2395"]
+BB2389 [shape=record label="{7078: call-packed.split [v4,'split',v5,v2]}" ] 
+BB2389 -> BB2390 [tailport=s, headport=n, headlabel="      2390"]
+BB2389 -> BB2395 [tailport=s, headport=n, color=gray]
+BB2390 [shape=record label="{7079: write-variable[v2,'parts']*|7080: read-variable['parts',v9,-]|7081: constant[0.0,v10]|7082: read-property[v9,v10,v8]|7083: \<variable-non-null-undef\>['parts']|7084: read-property[v8,'split',-]|7085: \<property-non-null-undef\>[v9,v10]|7086: constant[\"::\",v11]}" ] 
+BB2390 -> BB2391 [tailport=s, headport=n, headlabel="      2391"]
+BB2390 -> BB2395 [tailport=s, headport=n, color=gray]
+BB2391 [shape=record label="{7087: call-null [v8,'split',v11,v6]}" ] 
+BB2391 -> BB2392 [tailport=s, headport=n, headlabel="      2392"]
+BB2391 -> BB2395 [tailport=s, headport=n, color=gray]
+BB2392 [shape=record label="{7088: write-variable[v6,'parts']*|7089: read-variable['parts',v13,-]|7090: read-property[v13,'join',-]|7091: \<variable-non-null-undef\>['parts']|7092: constant[\".\",v14]}" ] 
+BB2392 -> BB2393 [tailport=s, headport=n, headlabel="      2393"]
+BB2392 -> BB2395 [tailport=s, headport=n, color=gray]
+BB2393 [shape=record label="{7093: call-parts.join [v13,'join',v14,v1]}" ] 
+BB2393 -> BB2394 [tailport=s, headport=n, headlabel="      2394"]
+BB2393 -> BB2395 [tailport=s, headport=n, color=gray]
+BB2394 [shape=record label="{7094: return[v1]}" ] 
+BB2395 [shape=record label="{7095: exceptional-return}" ] 
+//#$~ 2791
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry94[shape=none,label=""];
+BB_entry94 -> BB1177 [tailport=s, headport=n, headlabel="    1177"]
+BB1177 [shape=record label="{3629: constant[undefined,v1]}" ] 
+BB1177 -> BB1178 [tailport=s, headport=n, headlabel="      1178"]
+BB1178 [shape=record label="{3630: read-variable['a',v4,-]|3631: read-property[v4,'match',-]|3632: \<variable-non-null-undef\>['a']|3633: read-variable['RegExp',v6,-]|3634: constant[\"^\\\\[ko_memo\\\\:(.*?)\\\\]$\",v7]}" ] 
+BB1178 -> BB1179 [tailport=s, headport=n, headlabel="      1179"]
+BB1178 -> BB1185 [tailport=s, headport=n, color=gray, headlabel="      1185"]
+BB1179 [shape=record label="{3635: construct [-,v6,v7,v5]}" ] 
+BB1179 -> BB1180 [tailport=s, headport=n, headlabel="      1180"]
+BB1179 -> BB1185 [tailport=s, headport=n, color=gray]
+BB1180 [shape=record label="{3636: call-a.match [v4,'match',v5,v2]}" ] 
+BB1180 -> BB1181 [tailport=s, headport=n, headlabel="      1181"]
+BB1180 -> BB1185 [tailport=s, headport=n, color=gray]
+BB1181 [shape=record label="{3637: write-variable[v2,'a']|3638: if[v2](true-block:1182,false-block:1183)}" ] 
+BB1181 -> BB1182 [tailport=s, headport=n, headlabel="      1182"]
+BB1181 -> BB1183 [tailport=s, headport=n, headlabel="      1183"]
+BB1182 [shape=record label="{3639: read-variable['a',v8,-]|3640: constant[1.0,v9]|3641: read-property[v8,v9,v1]|3642: \<variable-non-null-undef\>['a']}" ] 
+BB1182 -> BB1184 [tailport=s, headport=n, headlabel="      1184"]
+BB1182 -> BB1185 [tailport=s, headport=n, color=gray]
+BB1183 [shape=record label="{3643: constant[null,v1]}" ] 
+BB1183 -> BB1184 [tailport=s, headport=n]
+BB1184 [shape=record label="{3644: return[v1]}" ] 
+BB1185 [shape=record label="{3645: exceptional-return}" ] 
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry490[shape=none,label=""];
+BB_entry490 -> BB7044 [tailport=s, headport=n, headlabel="    7044"]
+BB7044 [shape=record label="{23745: constant[undefined,v1]}" ] 
+BB7044 -> BB7045 [tailport=s, headport=n, headlabel="      7045"]
+BB7045 [shape=record label="{23746: read-variable['ReactReconciler',v3,-]|23747: read-property[v3,'unmountComponent',-]|23748: \<variable-non-null-undef\>['ReactReconciler']|23749: read-variable['instance',v4,-]}" ] 
+BB7045 -> BB7046 [tailport=s, headport=n, headlabel="      7046"]
+BB7045 -> BB7053 [tailport=s, headport=n, color=gray, headlabel="      7053"]
+BB7046 [shape=record label="{23750: call-ReactReconciler.unmountComponent [v3,'unmountComponent',v4,-]*}" ] 
+BB7046 -> BB7047 [tailport=s, headport=n, headlabel="      7047"]
+BB7046 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7047 [shape=record label="{23751: read-variable['container',v8,-]|23752: read-property[v8,'nodeType',v6]|23753: \<variable-non-null-undef\>['container']|23754: read-variable['DOC_NODE_TYPE',v7,-]|23755: ===[v6,v7,v5]|23756: if[v5](true-block:7048,false-block:7049)}" ] 
+BB7047 -> BB7048 [tailport=s, headport=n, headlabel="      7048"]
+BB7047 -> BB7049 [tailport=s, headport=n, headlabel="      7049"]
+BB7047 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7048 [shape=record label="{23757: read-variable['container',v10,-]|23758: read-property[v10,'documentElement',v9]|23759: \<variable-non-null-undef\>['container']|23760: write-variable[v9,'container']*}" ] 
+BB7048 -> BB7049 [tailport=s, headport=n]
+BB7048 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7049 [shape=record label="{23761: read-variable['container',v10,-]|23762: read-property[v10,'lastChild',v9]|23763: \<variable-non-null-undef\>['container']|23764: if[v9](true-block:7050,false-block:7052)}" ] 
+BB7049 -> BB7050 [tailport=s, headport=n, headlabel="      7050"]
+BB7049 -> BB7052 [tailport=s, headport=n, headlabel="      7052"]
+BB7049 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7050 [shape=record label="{23765: read-variable['container',v12,-]|23766: read-property[v12,'removeChild',-]|23767: \<variable-non-null-undef\>['container']|23768: read-variable['container',v14,-]|23769: read-property[v14,'lastChild',v13]|23770: \<variable-non-null-undef\>['container']}" ] 
+BB7050 -> BB7051 [tailport=s, headport=n, headlabel="      7051"]
+BB7050 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7051 [shape=record label="{23771: call-container.removeChild [v12,'removeChild',v13,-]*}" ] 
+BB7051 -> BB7049 [tailport=s, headport=n]
+BB7051 -> BB7053 [tailport=s, headport=n, color=gray]
+BB7052 [shape=record label="{23772: return[v1]}" ] 
+BB7053 [shape=record label="{23773: exceptional-return}" ] 
+//#$~ 12374
+}

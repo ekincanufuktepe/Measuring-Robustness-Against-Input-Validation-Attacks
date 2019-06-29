@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry164[shape=none,label=""];
+BB_entry164 -> BB1826 [tailport=s, headport=n, headlabel="    1826"]
+BB1826 [shape=record label="{4794: constant[undefined,v1]}" ] 
+BB1826 -> BB1827 [tailport=s, headport=n, headlabel="      1827"]
+BB1827 [shape=record label="{4795: read-variable['result',v3,v2]|4796: read-variable['this',v4,-]|4797: read-variable['method',v7,-]|4798: read-property[v7,'apply',-]|4799: \<variable-non-null-undef\>['method']|4800: read-variable['this',v9,-]|4801: read-property[v9,'_wrapped',v8]|4802: read-variable['arguments',v10,-]}" ] 
+BB1827 -> BB1828 [tailport=s, headport=n, headlabel="      1828"]
+BB1827 -> BB1831 [tailport=s, headport=n, color=gray, headlabel="      1831"]
+BB1828 [shape=record label="{4803: call-method.apply [v7,'apply',v8,v10,v5]}" ] 
+BB1828 -> BB1829 [tailport=s, headport=n, headlabel="      1829"]
+BB1828 -> BB1831 [tailport=s, headport=n, color=gray]
+BB1829 [shape=record label="{4804: call-result [v2,v3,v4,v5,v1]}" ] 
+BB1829 -> BB1830 [tailport=s, headport=n, headlabel="      1830"]
+BB1829 -> BB1831 [tailport=s, headport=n, color=gray]
+BB1830 [shape=record label="{4805: return[v1]}" ] 
+BB1831 [shape=record label="{4806: exceptional-return}" ] 
+//#$~ 1519
+}

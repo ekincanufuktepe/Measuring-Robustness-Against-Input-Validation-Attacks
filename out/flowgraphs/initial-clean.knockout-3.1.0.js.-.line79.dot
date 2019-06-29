@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry324[shape=none,label=""];
+BB_entry324 -> BB3946 [tailport=s, headport=n, headlabel="    3946"]
+BB3946 [shape=record label="{11562: constant[undefined,v1]}" ] 
+BB3946 -> BB3947 [tailport=s, headport=n, headlabel="      3947"]
+BB3947 [shape=record label="{11563: constant[1.0,v5]|11564: ![v5,v3]|11565: read-variable['this',v6,-]|11566: read-property[v6,'allowTemplateRewriting',v4]|11567: ===[v3,v4,v2]|11568: if[v2](true-block:3948,false-block:3949)}" ] 
+BB3947 -> BB3948 [tailport=s, headport=n, headlabel="      3948"]
+BB3947 -> BB3949 [tailport=s, headport=n, headlabel="      3949"]
+BB3947 -> BB3954 [tailport=s, headport=n, color=gray, headlabel="      3954"]
+BB3948 [shape=record label="{11569: constant[0.0,v7]|11570: ![v7,v1]}" ] 
+BB3948 -> BB3953 [tailport=s, headport=n, headlabel="      3953"]
+BB3948 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3949 [shape=record label="{11571: read-variable['this',v10,-]|11572: read-property[v10,'makeTemplateSource',-]|11573: read-variable['a',v11,-]|11574: read-variable['c',v12,-]}" ] 
+BB3949 -> BB3950 [tailport=s, headport=n, headlabel="      3950"]
+BB3949 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3950 [shape=record label="{11575: call-this.makeTemplateSource [v10,'makeTemplateSource',v11,v12,v8]}" ] 
+BB3950 -> BB3951 [tailport=s, headport=n, headlabel="      3951"]
+BB3950 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3951 [shape=record label="{11576: read-property[v8,'data',-]|11577: constant[\"isRewritten\",v13]}" ] 
+BB3951 -> BB3952 [tailport=s, headport=n, headlabel="      3952"]
+BB3951 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3952 [shape=record label="{11578: call-null [v8,'data',v13,v1]}" ] 
+BB3952 -> BB3953 [tailport=s, headport=n]
+BB3952 -> BB3954 [tailport=s, headport=n, color=gray]
+BB3953 [shape=record label="{11579: return[v1]}" ] 
+BB3954 [shape=record label="{11580: exceptional-return}" ] 
+}

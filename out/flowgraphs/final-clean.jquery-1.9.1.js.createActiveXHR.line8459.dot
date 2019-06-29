@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry508[shape=none,label=""];
+BB_entry508 -> BB8151 [tailport=s, headport=n, headlabel="    8151"]
+BB8151 [shape=record label="{23944: constant[undefined,v1]}" ] 
+BB8151 -> BB8152 [tailport=s, headport=n, headlabel="      8152"]
+BB8152 [shape=record label="{23945: read-variable['window',v3,-]|23946: read-property[v3,'ActiveXObject',-]|23947: \<variable-non-null-undef\>['window']|23948: constant[\"Microsoft.XMLHTTP\",v4]}" ] 
+BB8152 -> BB8153 [tailport=s, headport=n, headlabel="      8153"]
+BB8152 -> BB8154 [tailport=s, headport=n, color=gray, headlabel="      8154"]
+BB8153 [shape=record label="{23949: construct[v3,'ActiveXObject',v4,v1]}" ] 
+BB8153 -> BB8157 [tailport=s, headport=n, headlabel="      8157"]
+BB8153 -> BB8154 [tailport=s, headport=n, color=gray]
+BB8154 [shape=record label="{23950: catch[e,v2]|23951: begin-with[v2]}" ] 
+BB8154 -> BB8155 [tailport=s, headport=n, headlabel="      8155"]
+BB8154 -> BB8158 [tailport=s, headport=n, color=gray, headlabel="      8158"]
+BB8155 [shape=record label="{23952: end-with}" ] 
+BB8155 -> BB8157 [tailport=s, headport=n]
+BB8156 [shape=record label="{23953: end-with}" ] 
+BB8156 -> BB8158 [tailport=s, headport=n]
+BB8157 [shape=record label="{23954: return[v1]}" ] 
+BB8158 [shape=record label="{23955: exceptional-return}" ] 
+}

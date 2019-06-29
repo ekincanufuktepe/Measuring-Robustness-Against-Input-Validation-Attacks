@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry109[shape=none,label=""];
+BB_entry109 -> BB1142 [tailport=s, headport=n, headlabel="    1142"]
+BB1142 [shape=record label="{3315: constant[undefined,v1]|3316: vardecl['elemStyle']|3317: vardecl['prop']|3318: vardecl['supportedProp']}" ] 
+BB1142 -> BB1143 [tailport=s, headport=n, headlabel="      1143"]
+BB1143 [shape=record label="{3319: read-variable['this',v4,-]|3320: read-property[v4,'element',v3]|3321: read-property[v3,'style',v2]|3322: \<property-non-null-undef\>[v4,'element']|3323: write-variable[v2,'elemStyle']*|3324: read-variable['style',v6,-]}" ] 
+BB1143 -> BB1144 [tailport=s, headport=n, headlabel="      1144"]
+BB1143 -> BB1151 [tailport=s, headport=n, color=gray, headlabel="      1151"]
+BB1144 [shape=record label="{3325: begin-for-in[v6,v7]}" ] 
+BB1144 -> BB1145 [tailport=s, headport=n, headlabel="      1145"]
+BB1144 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1145 [shape=record label="{3326: has-next[v7,v8]|3327: if[v8](true-block:1146,false-block:1150)}" ] 
+BB1145 -> BB1146 [tailport=s, headport=n, headlabel="      1146"]
+BB1145 -> BB1150 [tailport=s, headport=n, headlabel="      1150"]
+BB1146 [shape=record label="{3328: next-property[v7,v9]|3329: write-variable[v9,'prop']|3330: read-variable['vendorProperties',v11,-]|3331: read-variable['prop',v12,-]|3332: read-property[v11,v12,v10]|3333: \<variable-non-null-undef\>['vendorProperties']|3334: if[v10](true-block:1148,false-block:1147)}" ] 
+BB1146 -> BB1148 [tailport=s, headport=n, headlabel="      1148"]
+BB1146 -> BB1147 [tailport=s, headport=n, headlabel="      1147"]
+BB1146 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1147 [shape=record label="{3335: read-variable['prop',v10,-]}" ] 
+BB1147 -> BB1148 [tailport=s, headport=n]
+BB1147 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1148 [shape=record label="{3336: write-variable[v10,'supportedProp']*|3337: read-variable['elemStyle',v12,-]|3338: read-variable['supportedProp',v13,-]|3339: read-variable['style',v14,-]|3340: read-variable['prop',v15,-]|3341: read-property[v14,v15,v11]|3342: \<variable-non-null-undef\>['style']|3343: write-property[v12,v13,v11]|3344: \<variable-non-null-undef\>['elemStyle']*}" ] 
+BB1148 -> BB1149 [tailport=s, headport=n, headlabel="      1149"]
+BB1148 -> BB1151 [tailport=s, headport=n, color=gray]
+BB1149 [shape=record label="{3345: end-for-in(begin-node:3325)}" ] 
+BB1149 -> BB1145 [tailport=s, headport=n]
+BB1150 [shape=record label="{3346: return[v1]}" ] 
+BB1151 [shape=record label="{3347: exceptional-return}" ] 
+//#$~ 1626
+}

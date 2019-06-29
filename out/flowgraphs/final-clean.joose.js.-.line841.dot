@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry88[shape=none,label=""];
+BB_entry88 -> BB804 [tailport=s, headport=n, headlabel="    804"]
+BB804 [shape=record label="{2584: constant[undefined,v1]|2585: vardecl['c']|2586: vardecl['me']|2587: vardecl['throwException']}" ] 
+BB804 -> BB805 [tailport=s, headport=n, headlabel="      805"]
+BB805 [shape=record label="{2588: read-variable['this',v4,-]|2589: read-property[v4,'getClassObject',-]}" ] 
+BB805 -> BB806 [tailport=s, headport=n, headlabel="      806"]
+BB805 -> BB810 [tailport=s, headport=n, color=gray, headlabel="      810"]
+BB806 [shape=record label="{2590: call-this.getClassObject [v4,'getClassObject',v2]}" ] 
+BB806 -> BB807 [tailport=s, headport=n, headlabel="      807"]
+BB806 -> BB810 [tailport=s, headport=n, color=gray]
+BB807 [shape=record label="{2591: write-variable[v2,'c']*|2592: read-variable['this',v5,-]|2593: write-variable[v5,'me']*|2594: constant[true,v6]|2595: write-variable[v6,'throwException']*|2596: read-variable['Joose',v9,-]|2597: read-property[v9,'A',v8]|2598: \<variable-non-null-undef\>['Joose']|2599: read-property[v8,'each',-]|2600: \<property-non-null-undef\>[v9,'A']|2601: read-variable['this',v11,-]|2602: read-property[v11,'roles',v10]|2603: function-expr[function ( role ),v12]}" ] 
+BB807 -> BB808 [tailport=s, headport=n, headlabel="      808"]
+BB807 -> BB810 [tailport=s, headport=n, color=gray]
+BB808 [shape=record label="{2604: call-Joose.A.each [v8,'each',v10,v12,-]*}" ] 
+BB808 -> BB809 [tailport=s, headport=n, headlabel="      809"]
+BB808 -> BB810 [tailport=s, headport=n, color=gray]
+BB809 [shape=record label="{2605: return[v1]}" ] 
+BB810 [shape=record label="{2606: exceptional-return}" ] 
+//#$~ 848
+}

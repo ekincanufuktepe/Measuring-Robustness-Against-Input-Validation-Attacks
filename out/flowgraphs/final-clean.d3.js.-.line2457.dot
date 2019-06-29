@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry390[shape=none,label=""];
+BB_entry390 -> BB4206 [tailport=s, headport=n, headlabel="    4206"]
+BB4206 [shape=record label="{12571: constant[undefined,v1]}" ] 
+BB4206 -> BB4207 [tailport=s, headport=n, headlabel="      4207"]
+BB4207 [shape=record label="{12572: read-variable['d3_time',v4,-]|12573: read-property[v4,'day',-]|12574: \<variable-non-null-undef\>['d3_time']|12575: read-variable['date',v5,-]}" ] 
+BB4207 -> BB4208 [tailport=s, headport=n, headlabel="      4208"]
+BB4207 -> BB4213 [tailport=s, headport=n, color=gray, headlabel="      4213"]
+BB4208 [shape=record label="{12576: call-d3_time.day [v4,'day',v5,v2]}" ] 
+BB4208 -> BB4209 [tailport=s, headport=n, headlabel="      4209"]
+BB4208 -> BB4213 [tailport=s, headport=n, color=gray]
+BB4209 [shape=record label="{12577: write-variable[v2,'date']*|12578: read-variable['date',v7,-]|12579: read-property[v7,'setMonth',-]|12580: \<variable-non-null-undef\>['date']|12581: constant[0.0,v8]|12582: constant[1.0,v9]}" ] 
+BB4209 -> BB4210 [tailport=s, headport=n, headlabel="      4210"]
+BB4209 -> BB4213 [tailport=s, headport=n, color=gray]
+BB4210 [shape=record label="{12583: call-date.setMonth [v7,'setMonth',v8,v9,-]*}" ] 
+BB4210 -> BB4211 [tailport=s, headport=n, headlabel="      4211"]
+BB4210 -> BB4213 [tailport=s, headport=n, color=gray]
+BB4211 [shape=record label="{12584: read-variable['date',v1,-]}" ] 
+BB4211 -> BB4212 [tailport=s, headport=n, headlabel="      4212"]
+BB4211 -> BB4213 [tailport=s, headport=n, color=gray]
+BB4212 [shape=record label="{12585: return[v1]}" ] 
+BB4213 [shape=record label="{12586: exceptional-return}" ] 
+//#$~ 2460
+}

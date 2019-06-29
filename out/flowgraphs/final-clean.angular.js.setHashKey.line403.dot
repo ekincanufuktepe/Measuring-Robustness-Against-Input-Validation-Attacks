@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry17[shape=none,label=""];
+BB_entry17 -> BB224 [tailport=s, headport=n, headlabel="    224"]
+BB224 [shape=record label="{568: constant[undefined,v1]}" ] 
+BB224 -> BB225 [tailport=s, headport=n, headlabel="      225"]
+BB225 [shape=record label="{569: read-variable['h',v2,-]|570: if[v2](true-block:226,false-block:227)}" ] 
+BB225 -> BB226 [tailport=s, headport=n, headlabel="      226"]
+BB225 -> BB227 [tailport=s, headport=n, headlabel="      227"]
+BB225 -> BB229 [tailport=s, headport=n, color=gray, headlabel="      229"]
+BB226 [shape=record label="{571: read-variable['obj',v4,-]|572: read-variable['h',v3,-]|573: write-property[v4,'$$hashKey',v3]|574: \<variable-non-null-undef\>['obj']*}" ] 
+BB226 -> BB228 [tailport=s, headport=n, headlabel="      228"]
+BB226 -> BB229 [tailport=s, headport=n, color=gray]
+BB227 [shape=record label="{575: read-variable['obj',v4,-]|576: constant[\"$$hashKey\",v5]|577: delete-property[v4,v5,v3]*}" ] 
+BB227 -> BB228 [tailport=s, headport=n]
+BB227 -> BB229 [tailport=s, headport=n, color=gray]
+BB228 [shape=record label="{578: return[v1]}" ] 
+BB229 [shape=record label="{579: exceptional-return}" ] 
+//#$~ 407
+}

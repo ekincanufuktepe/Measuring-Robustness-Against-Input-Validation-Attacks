@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry15[shape=none,label=""];
+BB_entry15 -> BB205 [tailport=s, headport=n, headlabel="    205"]
+BB205 [shape=record label="{504: constant[undefined,v1]|505: vardecl['loc']|506: vardecl['fns']|507: vardecl['win']|508: vardecl['started']|509: vardecl['current']|510: function-decl[function hash ( ),-]|511: function-decl[function parser ( path ),-]|512: function-decl[function emit ( path ),-]|513: vardecl['r']}" ] 
+BB205 -> BB206 [tailport=s, headport=n, headlabel="      206"]
+BB206 [shape=record label="{514: read-variable['window',v3,-]|515: ![v3,v2]|516: if[v2](true-block:207,false-block:208)}" ] 
+BB206 -> BB207 [tailport=s, headport=n, headlabel="      207"]
+BB206 -> BB208 [tailport=s, headport=n, headlabel="      208"]
+BB206 -> BB213 [tailport=s, headport=n, color=gray, headlabel="      213"]
+BB207 [shape=record label="{517: constant[undefined,v1]}" ] 
+BB207 -> BB212 [tailport=s, headport=n, headlabel="      212"]
+BB208 [shape=record label="{518: read-variable['window',v5,-]|519: read-property[v5,'location',v4]|520: \<variable-non-null-undef\>['window']|521: write-variable[v4,'loc']*|522: read-variable['riot',v8,-]|523: read-property[v8,'observable',-]|524: \<variable-non-null-undef\>['riot']}" ] 
+BB208 -> BB209 [tailport=s, headport=n, headlabel="      209"]
+BB208 -> BB213 [tailport=s, headport=n, color=gray]
+BB209 [shape=record label="{525: call-riot.observable [v8,'observable',v6]}" ] 
+BB209 -> BB210 [tailport=s, headport=n, headlabel="      210"]
+BB209 -> BB213 [tailport=s, headport=n, color=gray]
+BB210 [shape=record label="{526: write-variable[v6,'fns']*|527: read-variable['window',v9,-]|528: write-variable[v9,'win']*|529: constant[false,v10]|530: write-variable[v10,'started']*|531: read-variable['riot',v12,-]|532: function-expr[function ( arg ),v11]|533: write-property[v12,'route',v11]|534: \<variable-non-null-undef\>['riot']|535: write-variable[v11,'r']*|536: read-variable['r',v14,-]|537: function-expr[function ( fn ),v13]|538: write-property[v14,'exec',v13]|539: \<variable-non-null-undef\>['r']*|540: read-variable['r',v16,-]|541: function-expr[function ( fn ),v15]|542: write-property[v16,'parser',v15]|543: \<variable-non-null-undef\>['r']*|544: read-variable['r',v18,-]|545: function-expr[function ( ),v17]|546: write-property[v18,'stop',v17]|547: \<variable-non-null-undef\>['r']*|548: read-variable['r',v20,-]|549: function-expr[function ( ),v19]|550: write-property[v20,'start',v19]|551: \<variable-non-null-undef\>['r']*|552: read-variable['r',v22,-]|553: read-property[v22,'start',-]|554: \<variable-non-null-undef\>['r']}" ] 
+BB210 -> BB211 [tailport=s, headport=n, headlabel="      211"]
+BB210 -> BB213 [tailport=s, headport=n, color=gray]
+BB211 [shape=record label="{555: call-r.start [v22,'start',-]*}" ] 
+BB211 -> BB212 [tailport=s, headport=n]
+BB211 -> BB213 [tailport=s, headport=n, color=gray]
+BB212 [shape=record label="{556: return[v1]}" ] 
+BB213 [shape=record label="{557: exceptional-return}" ] 
+//#$~ 164
+}

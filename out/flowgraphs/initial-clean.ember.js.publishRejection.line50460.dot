@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2474[shape=none,label=""];
+BB_entry2474 -> BB28243 [tailport=s, headport=n, headlabel="    28243"]
+BB28243 [shape=record label="{93969: constant[undefined,v1]}" ] 
+BB28243 -> BB28244 [tailport=s, headport=n, headlabel="      28244"]
+BB28244 [shape=record label="{93970: read-variable['promise',v3,-]|93971: read-property[v3,'_onerror',v2]|93972: \<variable-non-null-undef\>['promise']|93973: if[v2](true-block:28245,false-block:28247)}" ] 
+BB28244 -> BB28245 [tailport=s, headport=n, headlabel="      28245"]
+BB28244 -> BB28247 [tailport=s, headport=n, headlabel="      28247"]
+BB28244 -> BB28250 [tailport=s, headport=n, color=gray, headlabel="      28250"]
+BB28245 [shape=record label="{93974: read-variable['promise',v5,-]|93975: read-property[v5,'_onerror',-]|93976: \<variable-non-null-undef\>['promise']|93977: read-variable['promise',v7,-]|93978: read-property[v7,'_result',v6]|93979: \<variable-non-null-undef\>['promise']}" ] 
+BB28245 -> BB28246 [tailport=s, headport=n, headlabel="      28246"]
+BB28245 -> BB28250 [tailport=s, headport=n, color=gray]
+BB28246 [shape=record label="{93980: call-promise._onerror [v5,'_onerror',v6,-]*}" ] 
+BB28246 -> BB28247 [tailport=s, headport=n]
+BB28246 -> BB28250 [tailport=s, headport=n, color=gray]
+BB28247 [shape=record label="{93981: read-variable['publish',v5,v4]|93982: read-variable['promise',v6,-]}" ] 
+BB28247 -> BB28248 [tailport=s, headport=n, headlabel="      28248"]
+BB28247 -> BB28250 [tailport=s, headport=n, color=gray]
+BB28248 [shape=record label="{93983: call-publish [v4,v5,v6,-]*}" ] 
+BB28248 -> BB28249 [tailport=s, headport=n, headlabel="      28249"]
+BB28248 -> BB28250 [tailport=s, headport=n, color=gray]
+BB28249 [shape=record label="{93984: return[v1]}" ] 
+BB28250 [shape=record label="{93985: exceptional-return}" ] 
+//#$~ 50465
+}

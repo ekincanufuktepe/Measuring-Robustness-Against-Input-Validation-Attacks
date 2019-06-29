@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry28[shape=none,label=""];
+BB_entry28 -> BB458 [tailport=s, headport=n, headlabel="    458"]
+BB458 [shape=record label="{1520: constant[undefined,v1]|1521: vardecl['style']}" ] 
+BB458 -> BB459 [tailport=s, headport=n, headlabel="      459"]
+BB459 [shape=record label="{1522: read-variable['name',v3,-]|1523: ![v3,v2]|1524: if[v2](true-block:460,false-block:461)}" ] 
+BB459 -> BB460 [tailport=s, headport=n, headlabel="      460"]
+BB459 -> BB461 [tailport=s, headport=n, headlabel="      461"]
+BB459 -> BB467 [tailport=s, headport=n, color=gray, headlabel="      467"]
+BB460 [shape=record label="{1525: read-variable['this',v6,-]|1526: read-property[v6,'options',v5]|1527: read-property[v5,'style',v4]|1528: \<property-non-null-undef\>[v6,'options']|1529: write-variable[v4,'name']*}" ] 
+BB460 -> BB461 [tailport=s, headport=n]
+BB460 -> BB467 [tailport=s, headport=n, color=gray]
+BB461 [shape=record label="{1530: read-variable['name',v5,-]|1531: ![v5,v4]|1532: if[v4](true-block:462,false-block:463)}" ] 
+BB461 -> BB462 [tailport=s, headport=n, headlabel="      462"]
+BB461 -> BB463 [tailport=s, headport=n, headlabel="      463"]
+BB461 -> BB467 [tailport=s, headport=n, color=gray]
+BB462 [shape=record label="{1533: constant[\"default\",v6]|1534: write-variable[v6,'name']*}" ] 
+BB462 -> BB463 [tailport=s, headport=n]
+BB463 [shape=record label="{1535: read-variable['styles',v7,-]|1536: read-variable['name',v8,-]|1537: read-property[v7,v8,v6]|1538: \<variable-non-null-undef\>['styles']|1539: write-variable[v6,'style']*|1540: read-variable['style',v10,-]|1541: ![v10,v9]|1542: if[v9](true-block:464,false-block:465)}" ] 
+BB463 -> BB464 [tailport=s, headport=n, headlabel="      464"]
+BB463 -> BB465 [tailport=s, headport=n, headlabel="      465"]
+BB463 -> BB467 [tailport=s, headport=n, color=gray]
+BB464 [shape=record label="{1543: constant[\"Missing style: \",v12]|1544: read-variable['name',v13,-]|1545: +[v12,v13,v11]|1546: throw[v11]*}" ] 
+BB464 -> BB465 [tailport=s, headport=n]
+BB464 -> BB467 [tailport=s, headport=n, color=gray]
+BB465 [shape=record label="{1547: read-variable['style',v1,-]}" ] 
+BB465 -> BB466 [tailport=s, headport=n, headlabel="      466"]
+BB465 -> BB467 [tailport=s, headport=n, color=gray]
+BB466 [shape=record label="{1548: return[v1]}" ] 
+BB467 [shape=record label="{1549: exceptional-return}" ] 
+//#$~ 401
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry212[shape=none,label=""];
+BB_entry212 -> BB2465 [tailport=s, headport=n, headlabel="    2465"]
+BB2465 [shape=record label="{7960: constant[undefined,v1]}" ] 
+BB2465 -> BB2466 [tailport=s, headport=n, headlabel="      2466"]
+BB2466 [shape=record label="{7961: read-variable['document',v4,-]|7962: read-property[v4,'body',v3]|7963: \<variable-non-null-undef\>['document']|7964: read-property[v3,'appendChild',-]|7965: \<property-non-null-undef\>[v4,'body']|7966: read-variable['fragment',v7,v6]|7967: constant[\"\\\<div id=\\\"mocha-error\\\"\\\>%s\\\</div\\\>\",v8]|7968: read-variable['msg',v9,-]}" ] 
+BB2466 -> BB2467 [tailport=s, headport=n, headlabel="      2467"]
+BB2466 -> BB2470 [tailport=s, headport=n, color=gray, headlabel="      2470"]
+BB2467 [shape=record label="{7969: call-fragment [v6,v7,v8,v9,v5]}" ] 
+BB2467 -> BB2468 [tailport=s, headport=n, headlabel="      2468"]
+BB2467 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2468 [shape=record label="{7970: call-document.body.appendChild [v3,'appendChild',v5,-]*}" ] 
+BB2468 -> BB2469 [tailport=s, headport=n, headlabel="      2469"]
+BB2468 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2469 [shape=record label="{7971: return[v1]}" ] 
+BB2470 [shape=record label="{7972: exceptional-return}" ] 
+//#$~ 2866
+}

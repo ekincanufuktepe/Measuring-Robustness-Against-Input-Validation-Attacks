@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry16[shape=none,label=""];
+BB_entry16 -> BB468 [tailport=s, headport=n, headlabel="    468"]
+BB468 [shape=record label="{1861: constant[undefined,v1]}" ] 
+BB468 -> BB469 [tailport=s, headport=n, headlabel="      469"]
+BB469 [shape=record label="{1862: read-variable['RegExp',v5,-]|1863: constant[\"loaded|complete\",v6]}" ] 
+BB469 -> BB470 [tailport=s, headport=n, headlabel="      470"]
+BB469 -> BB477 [tailport=s, headport=n, color=gray, headlabel="      477"]
+BB470 [shape=record label="{1864: construct [-,v5,v6,v4]}" ] 
+BB470 -> BB471 [tailport=s, headport=n, headlabel="      471"]
+BB470 -> BB477 [tailport=s, headport=n, color=gray]
+BB471 [shape=record label="{1865: read-property[v4,'test',-]|1866: read-variable['document',v8,-]|1867: read-property[v8,'readyState',v7]|1868: \<variable-non-null-undef\>['document']}" ] 
+BB471 -> BB472 [tailport=s, headport=n, headlabel="      472"]
+BB471 -> BB477 [tailport=s, headport=n, color=gray]
+BB472 [shape=record label="{1869: call-null [v4,'test',v7,v2]}" ] 
+BB472 -> BB473 [tailport=s, headport=n, headlabel="      473"]
+BB472 -> BB477 [tailport=s, headport=n, color=gray]
+BB473 [shape=record label="{1870: if[v2](true-block:474,false-block:476)}" ] 
+BB473 -> BB474 [tailport=s, headport=n, headlabel="      474"]
+BB473 -> BB476 [tailport=s, headport=n, headlabel="      476"]
+BB474 [shape=record label="{1871: read-variable['midori',v10,-]|1872: read-property[v10,'runReadyEvents',-]|1873: \<variable-non-null-undef\>['midori']}" ] 
+BB474 -> BB475 [tailport=s, headport=n, headlabel="      475"]
+BB474 -> BB477 [tailport=s, headport=n, color=gray]
+BB475 [shape=record label="{1874: call-midori.runReadyEvents [v10,'runReadyEvents',-]*}" ] 
+BB475 -> BB476 [tailport=s, headport=n]
+BB475 -> BB477 [tailport=s, headport=n, color=gray]
+BB476 [shape=record label="{1875: return[v1]}" ] 
+BB477 [shape=record label="{1876: exceptional-return}" ] 
+//#$~ 341
+}

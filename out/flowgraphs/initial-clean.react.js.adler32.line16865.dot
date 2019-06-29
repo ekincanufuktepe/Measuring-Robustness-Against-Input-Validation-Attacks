@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry697[shape=none,label=""];
+BB_entry697 -> BB9493 [tailport=s, headport=n, headlabel="    9493"]
+BB9493 [shape=record label="{31665: constant[undefined,v1]|31666: vardecl['a']|31667: vardecl['b']|31668: vardecl['i']}" ] 
+BB9493 -> BB9494 [tailport=s, headport=n, headlabel="      9494"]
+BB9494 [shape=record label="{31669: constant[1.0,v2]|31670: write-variable[v2,'a']*|31671: constant[0.0,v3]|31672: write-variable[v3,'b']*|31673: constant[0.0,v5]|31674: write-variable[v5,'i']*}" ] 
+BB9494 -> BB9495 [tailport=s, headport=n, headlabel="      9495"]
+BB9495 [shape=record label="{31675: read-variable['i',v6,-]|31676: read-variable['data',v8,-]|31677: read-property[v8,'length',v7]|31678: \<variable-non-null-undef\>['data']|31679: \<[v6,v7,v4]|31680: if[v4](true-block:9496,false-block:9497)}" ] 
+BB9495 -> BB9496 [tailport=s, headport=n, headlabel="      9496"]
+BB9495 -> BB9497 [tailport=s, headport=n, headlabel="      9497"]
+BB9495 -> BB9501 [tailport=s, headport=n, color=gray, headlabel="      9501"]
+BB9496 [shape=record label="{31681: read-variable['a',v12,-]|31682: read-variable['data',v15,-]|31683: read-property[v15,'charCodeAt',-]|31684: \<variable-non-null-undef\>['data']|31685: read-variable['i',v16,-]}" ] 
+BB9496 -> BB9498 [tailport=s, headport=n, headlabel="      9498"]
+BB9496 -> BB9501 [tailport=s, headport=n, color=gray]
+BB9497 [shape=record label="{31686: read-variable['a',v9,-]|31687: read-variable['b',v11,-]|31688: constant[16.0,v12]|31689: \<\<[v11,v12,v10]|31690: |[v9,v10,v1]}" ] 
+BB9497 -> BB9500 [tailport=s, headport=n, headlabel="      9500"]
+BB9497 -> BB9501 [tailport=s, headport=n, color=gray]
+BB9498 [shape=record label="{31691: call-data.charCodeAt [v15,'charCodeAt',v16,v13]}" ] 
+BB9498 -> BB9499 [tailport=s, headport=n, headlabel="      9499"]
+BB9498 -> BB9501 [tailport=s, headport=n, color=gray]
+BB9499 [shape=record label="{31692: +[v12,v13,v10]|31693: read-variable['MOD',v11,-]|31694: %[v10,v11,v9]|31695: write-variable[v9,'a']*|31696: read-variable['b',v20,-]|31697: read-variable['a',v21,-]|31698: +[v20,v21,v18]|31699: read-variable['MOD',v19,-]|31700: %[v18,v19,v17]|31701: write-variable[v17,'b']*|31702: constant[1.0,v22]|31703: read-variable['i',v23,-]|31704: +[v23,v24]|31705: +[v24,v22,v25]|31706: write-variable[v25,'i']}" ] 
+BB9499 -> BB9495 [tailport=s, headport=n]
+BB9499 -> BB9501 [tailport=s, headport=n, color=gray]
+BB9500 [shape=record label="{31707: return[v1]}" ] 
+BB9501 [shape=record label="{31708: exceptional-return}" ] 
+//#$~ 16872
+}

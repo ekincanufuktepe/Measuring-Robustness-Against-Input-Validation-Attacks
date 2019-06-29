@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry227[shape=none,label=""];
+BB_entry227 -> BB3386 [tailport=s, headport=n, headlabel="    3386"]
+BB3386 [shape=record label="{10325: constant[undefined,v1]|10326: vardecl['message']}" ] 
+BB3386 -> BB3387 [tailport=s, headport=n, headlabel="      3387"]
+BB3387 [shape=record label="{10327: constant[\"EXPERIMENTAL: \",v5]|10328: read-variable['moduleName',v6,-]|10329: +[v5,v6,v3]|10330: constant[\" -- APIs subject to change without notice.\",v4]|10331: +[v3,v4,v2]|10332: write-variable[v2,'message']*|10333: read-variable['extra',v7,-]|10334: if[v7](true-block:3388,false-block:3389)}" ] 
+BB3387 -> BB3388 [tailport=s, headport=n, headlabel="      3388"]
+BB3387 -> BB3389 [tailport=s, headport=n, headlabel="      3389"]
+BB3387 -> BB3392 [tailport=s, headport=n, color=gray, headlabel="      3392"]
+BB3388 [shape=record label="{10335: read-variable['message',v9,-]|10336: constant[\" \",v11]|10337: read-variable['extra',v12,-]|10338: +[v11,v12,v10]|10339: +[v9,v10,v8]|10340: write-variable[v8,'message']*}" ] 
+BB3388 -> BB3389 [tailport=s, headport=n]
+BB3388 -> BB3392 [tailport=s, headport=n, color=gray]
+BB3389 [shape=record label="{10341: read-variable['console',v9,-]|10342: read-property[v9,'warn',-]|10343: \<variable-non-null-undef\>['console']|10344: read-variable['message',v10,-]}" ] 
+BB3389 -> BB3390 [tailport=s, headport=n, headlabel="      3390"]
+BB3389 -> BB3392 [tailport=s, headport=n, color=gray]
+BB3390 [shape=record label="{10345: call-console.warn [v9,'warn',v10,-]*}" ] 
+BB3390 -> BB3391 [tailport=s, headport=n, headlabel="      3391"]
+BB3390 -> BB3392 [tailport=s, headport=n, color=gray]
+BB3391 [shape=record label="{10346: return[v1]}" ] 
+BB3392 [shape=record label="{10347: exceptional-return}" ] 
+//#$~ 4230
+}

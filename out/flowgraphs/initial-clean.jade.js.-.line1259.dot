@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry60[shape=none,label=""];
+BB_entry60 -> BB1119 [tailport=s, headport=n, headlabel="    1119"]
+BB1119 [shape=record label="{3780: constant[undefined,v1]}" ] 
+BB1119 -> BB1120 [tailport=s, headport=n, headlabel="      1120"]
+BB1120 [shape=record label="{3781: read-variable['this',v3,-]|3782: read-variable['this',v6,-]|3783: read-property[v6,'input',v5]|3784: read-property[v5,'substr',-]|3785: \<property-non-null-undef\>[v6,'input']|3786: read-variable['len',v7,-]}" ] 
+BB1120 -> BB1121 [tailport=s, headport=n, headlabel="      1121"]
+BB1120 -> BB1124 [tailport=s, headport=n, color=gray, headlabel="      1124"]
+BB1121 [shape=record label="{3787: call-this.input.substr [v5,'substr',v7,v2]}" ] 
+BB1121 -> BB1122 [tailport=s, headport=n, headlabel="      1122"]
+BB1121 -> BB1124 [tailport=s, headport=n, color=gray]
+BB1122 [shape=record label="{3788: write-property[v3,'input',v2]*}" ] 
+BB1122 -> BB1123 [tailport=s, headport=n, headlabel="      1123"]
+BB1122 -> BB1124 [tailport=s, headport=n, color=gray]
+BB1123 [shape=record label="{3789: return[v1]}" ] 
+BB1124 [shape=record label="{3790: exceptional-return}" ] 
+//#$~ 1260
+}

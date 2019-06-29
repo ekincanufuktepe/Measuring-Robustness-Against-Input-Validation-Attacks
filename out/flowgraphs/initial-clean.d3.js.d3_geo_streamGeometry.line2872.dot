@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry468[shape=none,label=""];
+BB_entry468 -> BB4951 [tailport=s, headport=n, headlabel="    4951"]
+BB4951 [shape=record label="{14932: constant[undefined,v1]}" ] 
+BB4951 -> BB4952 [tailport=s, headport=n, headlabel="      4952"]
+BB4952 [shape=record label="{14933: read-variable['geometry',v2,-]|14934: if[v2](true-block:4953,false-block:4955)}" ] 
+BB4952 -> BB4955 [tailport=s, headport=n, headlabel="      4955"]
+BB4952 -> BB4953 [tailport=s, headport=n, headlabel="      4953"]
+BB4952 -> BB4959 [tailport=s, headport=n, color=gray, headlabel="      4959"]
+BB4953 [shape=record label="{14935: read-variable['d3_geo_streamGeometryType',v4,-]|14936: read-property[v4,'hasOwnProperty',-]|14937: \<variable-non-null-undef\>['d3_geo_streamGeometryType']|14938: read-variable['geometry',v6,-]|14939: read-property[v6,'type',v5]|14940: \<variable-non-null-undef\>['geometry']}" ] 
+BB4953 -> BB4954 [tailport=s, headport=n, headlabel="      4954"]
+BB4953 -> BB4959 [tailport=s, headport=n, color=gray]
+BB4954 [shape=record label="{14941: call-d3_geo_streamGeometryType.hasOwnProperty [v4,'hasOwnProperty',v5,v2]}" ] 
+BB4954 -> BB4955 [tailport=s, headport=n]
+BB4954 -> BB4959 [tailport=s, headport=n, color=gray]
+BB4955 [shape=record label="{14942: if[v2](true-block:4956,false-block:4958)}" ] 
+BB4955 -> BB4956 [tailport=s, headport=n, headlabel="      4956"]
+BB4955 -> BB4958 [tailport=s, headport=n, headlabel="      4958"]
+BB4956 [shape=record label="{14943: read-variable['d3_geo_streamGeometryType',v4,-]|14944: read-variable['geometry',v6,-]|14945: read-property[v6,'type',v5]|14946: \<variable-non-null-undef\>['geometry']|14947: read-property[v4,v5,-]|14948: \<variable-non-null-undef\>['d3_geo_streamGeometryType']|14949: read-variable['geometry',v7,-]|14950: read-variable['listener',v8,-]}" ] 
+BB4956 -> BB4957 [tailport=s, headport=n, headlabel="      4957"]
+BB4956 -> BB4959 [tailport=s, headport=n, color=gray]
+BB4957 [shape=record label="{14951: call-null [v4,[v5],v7,v8,-]*}" ] 
+BB4957 -> BB4958 [tailport=s, headport=n]
+BB4957 -> BB4959 [tailport=s, headport=n, color=gray]
+BB4958 [shape=record label="{14952: return[v1]}" ] 
+BB4959 [shape=record label="{14953: exceptional-return}" ] 
+//#$~ 2874
+}

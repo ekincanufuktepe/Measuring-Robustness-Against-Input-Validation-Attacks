@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1874[shape=none,label=""];
+BB_entry1874 -> BB21460 [tailport=s, headport=n, headlabel="    21460"]
+BB21460 [shape=record label="{71785: constant[undefined,v1]|71786: vardecl['content']}" ] 
+BB21460 -> BB21461 [tailport=s, headport=n, headlabel="      21461"]
+BB21461 [shape=record label="{71787: read-variable['this',v4,-]|71788: read-property[v4,'innerContent',-]}" ] 
+BB21461 -> BB21462 [tailport=s, headport=n, headlabel="      21462"]
+BB21461 -> BB21468 [tailport=s, headport=n, color=gray, headlabel="      21468"]
+BB21462 [shape=record label="{71789: call-this.innerContent [v4,'innerContent',v2]}" ] 
+BB21462 -> BB21463 [tailport=s, headport=n, headlabel="      21463"]
+BB21462 -> BB21468 [tailport=s, headport=n, color=gray]
+BB21463 [shape=record label="{71790: write-variable[v2,'content']*|71791: read-variable['content',v5,-]|71792: if[v5](true-block:21464,false-block:21465)}" ] 
+BB21463 -> BB21465 [tailport=s, headport=n, headlabel="      21465"]
+BB21463 -> BB21464 [tailport=s, headport=n, headlabel="      21464"]
+BB21463 -> BB21468 [tailport=s, headport=n, color=gray]
+BB21464 [shape=record label="{71793: read-variable['content',v7,-]|71794: read-property[v7,'nodeType',v6]|71795: \<variable-non-null-undef\>['content']|71796: ![v6,v5]}" ] 
+BB21464 -> BB21465 [tailport=s, headport=n]
+BB21464 -> BB21468 [tailport=s, headport=n, color=gray]
+BB21465 [shape=record label="{71797: if[v5](true-block:21466,false-block:21467)}" ] 
+BB21465 -> BB21466 [tailport=s, headport=n, headlabel="      21466"]
+BB21465 -> BB21467 [tailport=s, headport=n, headlabel="      21467"]
+BB21466 [shape=record label="{71798: read-variable['content',v1,-]}" ] 
+BB21466 -> BB21467 [tailport=s, headport=n]
+BB21466 -> BB21468 [tailport=s, headport=n, color=gray]
+BB21467 [shape=record label="{71799: return[v1]}" ] 
+BB21468 [shape=record label="{71800: exceptional-return}" ] 
+//#$~ 40294
+}

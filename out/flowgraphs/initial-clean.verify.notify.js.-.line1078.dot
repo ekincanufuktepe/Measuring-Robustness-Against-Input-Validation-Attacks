@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry104[shape=none,label=""];
+BB_entry104 -> BB1283 [tailport=s, headport=n, headlabel="    1283"]
+BB1283 [shape=record label="{3889: constant[undefined,v1]}" ] 
+BB1283 -> BB1284 [tailport=s, headport=n, headlabel="      1284"]
+BB1284 [shape=record label="{3890: read-variable['fn',v3,-]|3891: read-property[v3,'apply',-]|3892: \<variable-non-null-undef\>['fn']|3893: read-variable['_this',v4,-]|3894: read-variable['args',v5,-]}" ] 
+BB1284 -> BB1285 [tailport=s, headport=n, headlabel="      1285"]
+BB1284 -> BB1287 [tailport=s, headport=n, color=gray, headlabel="      1287"]
+BB1285 [shape=record label="{3895: call-fn.apply [v3,'apply',v4,v5,-]*}" ] 
+BB1285 -> BB1286 [tailport=s, headport=n, headlabel="      1286"]
+BB1285 -> BB1287 [tailport=s, headport=n, color=gray]
+BB1286 [shape=record label="{3896: return[v1]}" ] 
+BB1287 [shape=record label="{3897: exceptional-return}" ] 
+//#$~ 1079
+}

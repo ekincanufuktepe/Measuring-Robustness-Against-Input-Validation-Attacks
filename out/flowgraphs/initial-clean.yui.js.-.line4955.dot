@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry128[shape=none,label=""];
+BB_entry128 -> BB2572 [tailport=s, headport=n, headlabel="    2572"]
+BB2572 [shape=record label="{8499: constant[undefined,v1]}" ] 
+BB2572 -> BB2573 [tailport=s, headport=n, headlabel="      2573"]
+BB2573 [shape=record label="{8500: read-variable['req',v2,-]|8501: if[v2](true-block:2574,false-block:2575)}" ] 
+BB2573 -> BB2574 [tailport=s, headport=n, headlabel="      2574"]
+BB2573 -> BB2575 [tailport=s, headport=n, headlabel="      2575"]
+BB2573 -> BB2578 [tailport=s, headport=n, color=gray, headlabel="      2578"]
+BB2574 [shape=record label="{8502: read-variable['Y',v4,-]|8503: read-property[v4,'merge',-]|8504: \<variable-non-null-undef\>['Y']|8505: read-variable['this',v5,-]|8506: new[v6]|8507: read-variable['this',v8,-]|8508: read-property[v8,'abort',v7]|8509: write-property[v6,'abort',v7]|8510: read-variable['this',v10,-]|8511: read-property[v10,'purge',v9]|8512: write-property[v6,'purge',v9]|8513: read-variable['req',v11,-]|8514: write-property[v6,'request',v11]|8515: read-variable['req',v13,-]|8516: read-property[v13,'url',v12]|8517: \<variable-non-null-undef\>['req']|8518: write-property[v6,'url',v12]|8519: read-variable['req',v15,-]|8520: read-property[v15,'win',v14]|8521: \<variable-non-null-undef\>['req']|8522: write-property[v6,'win',v14]}" ] 
+BB2574 -> BB2576 [tailport=s, headport=n, headlabel="      2576"]
+BB2574 -> BB2578 [tailport=s, headport=n, color=gray]
+BB2575 [shape=record label="{8523: read-variable['this',v1,-]}" ] 
+BB2575 -> BB2577 [tailport=s, headport=n, headlabel="      2577"]
+BB2575 -> BB2578 [tailport=s, headport=n, color=gray]
+BB2576 [shape=record label="{8524: call-Y.merge [v4,'merge',v5,v6,v1]}" ] 
+BB2576 -> BB2577 [tailport=s, headport=n]
+BB2576 -> BB2578 [tailport=s, headport=n, color=gray]
+BB2577 [shape=record label="{8525: return[v1]}" ] 
+BB2578 [shape=record label="{8526: exceptional-return}" ] 
+//#$~ 4966
+}

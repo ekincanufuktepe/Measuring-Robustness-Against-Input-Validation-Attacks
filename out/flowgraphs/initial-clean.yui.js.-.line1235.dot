@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry34[shape=none,label=""];
+BB_entry34 -> BB800 [tailport=s, headport=n, headlabel="    800"]
+BB800 [shape=record label="{2931: constant[undefined,v1]}" ] 
+BB800 -> BB801 [tailport=s, headport=n, headlabel="      801"]
+BB801 [shape=record label="{2932: read-variable['Y',v3,-]|2933: constant[false,v2]|2934: write-property[v3,'_loading',v2]|2935: \<variable-non-null-undef\>['Y']*|2936: read-variable['queue',v5,-]|2937: constant[false,v4]|2938: write-property[v5,'running',v4]|2939: \<variable-non-null-undef\>['queue']*|2940: read-variable['Env',v7,-]|2941: constant[true,v6]|2942: write-property[v7,'bootstrapped',v6]|2943: \<variable-non-null-undef\>['Env']*|2944: read-variable['G_ENV',v9,-]|2945: constant[false,v8]|2946: write-property[v9,'_bootstrapping',v8]|2947: \<variable-non-null-undef\>['G_ENV']*|2948: read-variable['Y',v12,-]|2949: read-property[v12,'_attach',-]|2950: \<variable-non-null-undef\>['Y']|2951: read-variable['Array',v14,-]|2952: constant[\"loader\",v15]}" ] 
+BB801 -> BB802 [tailport=s, headport=n, headlabel="      802"]
+BB801 -> BB808 [tailport=s, headport=n, color=gray, headlabel="      808"]
+BB802 [shape=record label="{2953: construct [-,v14,v15,v13]}" ] 
+BB802 -> BB803 [tailport=s, headport=n, headlabel="      803"]
+BB802 -> BB808 [tailport=s, headport=n, color=gray]
+BB803 [shape=record label="{2954: call-Y._attach [v12,'_attach',v13,v10]}" ] 
+BB803 -> BB804 [tailport=s, headport=n, headlabel="      804"]
+BB803 -> BB808 [tailport=s, headport=n, color=gray]
+BB804 [shape=record label="{2955: if[v10](true-block:805,false-block:807)}" ] 
+BB804 -> BB805 [tailport=s, headport=n, headlabel="      805"]
+BB804 -> BB807 [tailport=s, headport=n, headlabel="      807"]
+BB805 [shape=record label="{2956: read-variable['Y',v17,-]|2957: read-property[v17,'_use',-]|2958: \<variable-non-null-undef\>['Y']|2959: read-variable['args',v18,-]|2960: read-variable['callback',v19,-]}" ] 
+BB805 -> BB806 [tailport=s, headport=n, headlabel="      806"]
+BB805 -> BB808 [tailport=s, headport=n, color=gray]
+BB806 [shape=record label="{2961: call-Y._use [v17,'_use',v18,v19,-]*}" ] 
+BB806 -> BB807 [tailport=s, headport=n]
+BB806 -> BB808 [tailport=s, headport=n, color=gray]
+BB807 [shape=record label="{2962: return[v1]}" ] 
+BB808 [shape=record label="{2963: exceptional-return}" ] 
+//#$~ 1241
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry48[shape=none,label=""];
+BB_entry48 -> BB584 [tailport=s, headport=n, headlabel="    584"]
+BB584 [shape=record label="{1582: constant[undefined,v1]}" ] 
+BB584 -> BB585 [tailport=s, headport=n, headlabel="      585"]
+BB585 [shape=record label="{1583: read-variable['$this',v4,-]|1584: read-variable['method',v5,-]|1585: read-property[v4,v5,v3]|1586: \<variable-non-null-undef\>['$this']|1587: ![v3,v2]|1588: if[v2](true-block:586,false-block:589)}" ] 
+BB585 -> BB586 [tailport=s, headport=n, headlabel="      586"]
+BB585 -> BB589 [tailport=s, headport=n, headlabel="      589"]
+BB585 -> BB590 [tailport=s, headport=n, color=gray, headlabel="      590"]
+BB586 [shape=record label="{1589: read-variable['$this',v7,-]|1590: read-variable['method',v8,-]|1591: read-variable['obj',v11,-]|1592: read-variable['method',v12,-]|1593: read-property[v11,v12,v10]|1594: \<variable-non-null-undef\>['obj']|1595: read-property[v10,'bind',-]|1596: \<property-non-null-undef\>[v11,v12]|1597: read-variable['$this',v13,-]}" ] 
+BB586 -> BB587 [tailport=s, headport=n, headlabel="      587"]
+BB586 -> BB590 [tailport=s, headport=n, color=gray]
+BB587 [shape=record label="{1598: call-null [v10,'bind',v13,v6]}" ] 
+BB587 -> BB588 [tailport=s, headport=n, headlabel="      588"]
+BB587 -> BB590 [tailport=s, headport=n, color=gray]
+BB588 [shape=record label="{1599: write-property[v7,v8,v6]|1600: \<variable-non-null-undef\>['$this']*}" ] 
+BB588 -> BB589 [tailport=s, headport=n]
+BB588 -> BB590 [tailport=s, headport=n, color=gray]
+BB589 [shape=record label="{1601: return[v1]}" ] 
+BB590 [shape=record label="{1602: exceptional-return}" ] 
+//#$~ 454
+}

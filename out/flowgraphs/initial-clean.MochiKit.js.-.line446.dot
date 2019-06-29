@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry70[shape=none,label=""];
+BB_entry70 -> BB1017 [tailport=s, headport=n, headlabel="    1017"]
+BB1017 [shape=record label="{6309: constant[undefined,v1]|6310: vardecl['_a6']}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1018 [shape=record label="{6311: read-variable['MochiKit',v5,-]|6312: read-property[v5,'Base',v4]|6313: \<variable-non-null-undef\>['MochiKit']|6314: read-property[v4,'extend',-]|6315: \<property-non-null-undef\>[v5,'Base']|6316: constant[null,v6]|6317: read-variable['arguments',v7,-]|6318: constant[1.0,v8]}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1018 -> BB1024 [tailport=s, headport=n, color=gray, headlabel="      1024"]
+BB1019 [shape=record label="{6319: call-MochiKit.Base.extend [v4,'extend',v6,v7,v8,v2]}" ] 
+BB1019 -> BB1020 [tailport=s, headport=n, headlabel="      1020"]
+BB1019 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1020 [shape=record label="{6320: write-variable[v2,'_a6']*|6321: typeof['_a5',v10]|6322: constant[\"function\",v11]|6323: ==[v10,v11,v9]|6324: if[v9](true-block:1021,false-block:1022)}" ] 
+BB1020 -> BB1021 [tailport=s, headport=n, headlabel="      1021"]
+BB1020 -> BB1022 [tailport=s, headport=n, headlabel="      1022"]
+BB1020 -> BB1024 [tailport=s, headport=n, color=gray]
+BB1021 [shape=record label="{6325: function-expr[function ( obj ),v1]}" ] 
+BB1021 -> BB1023 [tailport=s, headport=n, headlabel="      1023"]
+BB1022 [shape=record label="{6326: function-expr[function ( obj ),v1]}" ] 
+BB1022 -> BB1023 [tailport=s, headport=n]
+BB1023 [shape=record label="{6327: return[v1]}" ] 
+BB1024 [shape=record label="{6328: exceptional-return}" ] 
+//#$~ 454
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry603[shape=none,label=""];
+BB_entry603 -> BB8909 [tailport=s, headport=n, headlabel="    8909"]
+BB8909 [shape=record label="{26646: constant[undefined,v1]}" ] 
+BB8909 -> BB8910 [tailport=s, headport=n, headlabel="      8910"]
+BB8910 [shape=record label="{26647: read-variable['readyQ',v3,-]|26648: read-property[v3,'push',-]|26649: \<variable-non-null-undef\>['readyQ']|26650: read-variable['callback',v4,-]}" ] 
+BB8910 -> BB8911 [tailport=s, headport=n, headlabel="      8911"]
+BB8910 -> BB8916 [tailport=s, headport=n, color=gray, headlabel="      8916"]
+BB8911 [shape=record label="{26651: call-readyQ.push [v3,'push',v4,-]*}" ] 
+BB8911 -> BB8912 [tailport=s, headport=n, headlabel="      8912"]
+BB8911 -> BB8916 [tailport=s, headport=n, color=gray]
+BB8912 [shape=record label="{26652: read-variable['ready',v5,-]|26653: if[v5](true-block:8913,false-block:8915)}" ] 
+BB8912 -> BB8913 [tailport=s, headport=n, headlabel="      8913"]
+BB8912 -> BB8915 [tailport=s, headport=n, headlabel="      8915"]
+BB8912 -> BB8916 [tailport=s, headport=n, color=gray]
+BB8913 [shape=record label="{26654: read-variable['processQ',v7,v6]}" ] 
+BB8913 -> BB8914 [tailport=s, headport=n, headlabel="      8914"]
+BB8913 -> BB8916 [tailport=s, headport=n, color=gray]
+BB8914 [shape=record label="{26655: call-processQ [v6,v7,-]*}" ] 
+BB8914 -> BB8915 [tailport=s, headport=n]
+BB8914 -> BB8916 [tailport=s, headport=n, color=gray]
+BB8915 [shape=record label="{26656: return[v1]}" ] 
+BB8916 [shape=record label="{26657: exceptional-return}" ] 
+//#$~ 12487
+}

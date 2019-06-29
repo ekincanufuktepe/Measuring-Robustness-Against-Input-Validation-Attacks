@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry500[shape=none,label=""];
+BB_entry500 -> BB8056 [tailport=s, headport=n, headlabel="    8056"]
+BB8056 [shape=record label="{23874: constant[undefined,v1]|23875: vardecl['callback']}" ] 
+BB8056 -> BB8057 [tailport=s, headport=n, headlabel="      8057"]
+BB8057 [shape=record label="{23876: read-variable['oldCallbacks-8357:19',v5,-]|23877: read-property[v5,'pop',-]|23878: \<variable-non-null-undef\>['oldCallbacks']}" ] 
+BB8057 -> BB8058 [tailport=s, headport=n, headlabel="      8058"]
+BB8057 -> BB8063 [tailport=s, headport=n, color=gray, headlabel="      8063"]
+BB8058 [shape=record label="{23879: call-0:0[v5,'pop',v3]}" ] 
+BB8058 -> BB8059 [tailport=s, headport=n, headlabel="      8059"]
+BB8058 -> BB8063 [tailport=s, headport=n, color=gray]
+BB8059 [shape=record label="{23880: if[v3](true-block:8061,false-block:8060)}" ] 
+BB8059 -> BB8061 [tailport=s, headport=n, headlabel="      8061"]
+BB8059 -> BB8060 [tailport=s, headport=n, headlabel="      8060"]
+BB8060 [shape=record label="{23881: read-variable['jQuery-8357:43',v8,v2]|23882: read-property[v8,'expando',v6]|23883: \<variable-non-null-undef\>['jQuery']|23884: constant[\"_\",v7]|23885: +[v6,v7,v4]|23886: constant[1.0,v9]|23887: read-variable['ajax_nonce-8357:68',v10,v2]|23888: +[v10,v5]|23889: +[v5,v9,v11]|23890: write-variable[v11,'ajax_nonce']|23891: +[v4,v5,v3]}" ] 
+BB8060 -> BB8061 [tailport=s, headport=n]
+BB8060 -> BB8063 [tailport=s, headport=n, color=gray]
+BB8061 [shape=record label="{23892: write-variable[v3,'callback']*|23893: read-variable['thisCUBUR3-8358:4',v5,-]|23894: read-variable['callback-8358:10',v6,v2]|23895: constant[true,v4]|23896: write-property[v5,v6,v4]|23897: \<variable-non-null-undef\>['thisCUBUR3']*|23898: read-variable['callback-8359:11',v1,v2]}" ] 
+BB8061 -> BB8062 [tailport=s, headport=n, headlabel="      8062"]
+BB8061 -> BB8063 [tailport=s, headport=n, color=gray]
+BB8062 [shape=record label="{23899: return[v1]}" ] 
+BB8063 [shape=record label="{23900: exceptional-return}" ] 
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry250[shape=none,label=""];
+BB_entry250 -> BB2199 [tailport=s, headport=n, headlabel="    2199"]
+BB2199 [shape=record label="{6483: constant[undefined,v1]}" ] 
+BB2199 -> BB2200 [tailport=s, headport=n, headlabel="      2200"]
+BB2200 [shape=record label="{6484: read-variable['attr',v5,-]|6485: read-property[v5,'isPersistent',-]|6486: \<variable-non-null-undef\>['attr']}" ] 
+BB2200 -> BB2201 [tailport=s, headport=n, headlabel="      2201"]
+BB2200 -> BB2205 [tailport=s, headport=n, color=gray, headlabel="      2205"]
+BB2201 [shape=record label="{6487: call-attr.isPersistent [v5,'isPersistent',v3]}" ] 
+BB2201 -> BB2202 [tailport=s, headport=n, headlabel="      2202"]
+BB2201 -> BB2205 [tailport=s, headport=n, color=gray]
+BB2202 [shape=record label="{6488: if[v3](true-block:2203,false-block:2204)}" ] 
+BB2202 -> BB2203 [tailport=s, headport=n, headlabel="      2203"]
+BB2202 -> BB2204 [tailport=s, headport=n, headlabel="      2204"]
+BB2203 [shape=record label="{6489: read-variable['o',v7,v2]|6490: read-variable['name',v8,v2]|6491: read-variable['object',v9,v2]|6492: read-variable['name',v10,v2]|6493: read-property[v9,v10,v6]|6494: \<variable-non-null-undef\>['object']|6495: write-property[v7,v8,v6]|6496: \<variable-non-null-undef\>['o']*}" ] 
+BB2203 -> BB2204 [tailport=s, headport=n]
+BB2203 -> BB2205 [tailport=s, headport=n, color=gray]
+BB2204 [shape=record label="{6497: return[v1]}" ] 
+BB2205 [shape=record label="{6498: exceptional-return}" ] 
+//#$~ 2617
+}

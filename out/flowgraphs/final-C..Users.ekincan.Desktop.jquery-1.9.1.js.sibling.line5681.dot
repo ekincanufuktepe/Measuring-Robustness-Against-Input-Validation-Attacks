@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry349[shape=none,label=""];
+BB_entry349 -> BB5540 [tailport=s, headport=n, headlabel="    5540"]
+BB5540 [shape=record label="{16312: constant[undefined,v1]}" ] 
+BB5540 -> BB5541 [tailport=s, headport=n, headlabel="      5541"]
+BB5541 [shape=record label="{16313: read-variable['cur',v4,-]|16314: read-variable['dir',v5,-]|16315: read-property[v4,v5,v3]|16316: \<variable-non-null-undef\>['cur']|16317: write-variable[v3,'cur']*}" ] 
+BB5541 -> BB5543 [tailport=s, headport=n, headlabel="      5543"]
+BB5541 -> BB5547 [tailport=s, headport=n, color=gray, headlabel="      5547"]
+BB5542 [shape=record label="{16318: read-variable['cur',v1,-]}" ] 
+BB5542 -> BB5546 [tailport=s, headport=n, headlabel="      5546"]
+BB5542 -> BB5547 [tailport=s, headport=n, color=gray]
+BB5543 [shape=record label="{16319: read-variable['cur',v2,-]|16320: if[v2](true-block:5544,false-block:5545)}" ] 
+BB5543 -> BB5545 [tailport=s, headport=n, headlabel="      5545"]
+BB5543 -> BB5544 [tailport=s, headport=n, headlabel="      5544"]
+BB5543 -> BB5547 [tailport=s, headport=n, color=gray]
+BB5544 [shape=record label="{16321: read-variable['cur',v5,-]|16322: read-property[v5,'nodeType',v3]|16323: \<variable-non-null-undef\>['cur']|16324: constant[1.0,v4]|16325: !==[v3,v4,v2]}" ] 
+BB5544 -> BB5545 [tailport=s, headport=n]
+BB5544 -> BB5547 [tailport=s, headport=n, color=gray]
+BB5545 [shape=record label="{16326: if[v2](true-block:5541,false-block:5542)}" ] 
+BB5545 -> BB5541 [tailport=s, headport=n]
+BB5545 -> BB5542 [tailport=s, headport=n, headlabel="      5542"]
+BB5546 [shape=record label="{16327: return[v1]}" ] 
+BB5547 [shape=record label="{16328: exceptional-return}" ] 
+}

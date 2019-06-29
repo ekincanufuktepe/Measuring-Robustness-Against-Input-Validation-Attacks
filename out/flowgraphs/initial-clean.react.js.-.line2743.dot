@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry95[shape=none,label=""];
+BB_entry95 -> BB1477 [tailport=s, headport=n, headlabel="    1477"]
+BB1477 [shape=record label="{5168: constant[undefined,v1]}" ] 
+BB1477 -> BB1478 [tailport=s, headport=n, headlabel="      1478"]
+BB1478 [shape=record label="{5169: read-variable['InjectedInstanceHandle',v2,-]|5170: write-variable[v2,'InstanceHandle']*|5171: constant[\"production\",v4]|5172: constant[\"development\",v5]|5173: !==[v4,v5,v3]|5174: if[v3](true-block:1479,false-block:1481)}" ] 
+BB1478 -> BB1479 [tailport=s, headport=n, headlabel="      1479"]
+BB1478 -> BB1481 [tailport=s, headport=n, headlabel="      1481"]
+BB1478 -> BB1482 [tailport=s, headport=n, color=gray, headlabel="      1482"]
+BB1479 [shape=record label="{5175: read-variable['validateInstanceHandle',v7,v6]}" ] 
+BB1479 -> BB1480 [tailport=s, headport=n, headlabel="      1480"]
+BB1479 -> BB1482 [tailport=s, headport=n, color=gray]
+BB1480 [shape=record label="{5176: call-validateInstanceHandle [v6,v7,-]*}" ] 
+BB1480 -> BB1481 [tailport=s, headport=n]
+BB1480 -> BB1482 [tailport=s, headport=n, color=gray]
+BB1481 [shape=record label="{5177: return[v1]}" ] 
+BB1482 [shape=record label="{5178: exceptional-return}" ] 
+//#$~ 2746
+}

@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry131[shape=none,label=""];
+BB_entry131 -> BB1423 [tailport=s, headport=n, headlabel="    1423"]
+BB1423 [shape=record label="{4228: constant[undefined,v1]|4229: vardecl['optionStyle']|4230: vardecl['prop']}" ] 
+BB1423 -> BB1424 [tailport=s, headport=n, headlabel="      1424"]
+BB1424 [shape=record label="{4231: read-variable['this',v5,-]|4232: read-property[v5,'layout',v4]|4233: read-property[v4,'options',v3]|4234: \<property-non-null-undef\>[v5,'layout']|4235: read-variable['styleProperty',v6,-]|4236: read-property[v3,v6,v2]|4237: \<property-non-null-undef\>[v4,'options']|4238: write-variable[v2,'optionStyle']*|4239: read-variable['optionStyle',v8,-]|4240: read-property[v8,'opacity',v7]|4241: \<variable-non-null-undef\>['optionStyle']|4242: if[v7](true-block:1425,false-block:1426)}" ] 
+BB1424 -> BB1425 [tailport=s, headport=n, headlabel="      1425"]
+BB1424 -> BB1426 [tailport=s, headport=n, headlabel="      1426"]
+BB1424 -> BB1432 [tailport=s, headport=n, color=gray, headlabel="      1432"]
+BB1425 [shape=record label="{4243: constant[\"opacity\",v1]}" ] 
+BB1425 -> BB1431 [tailport=s, headport=n, headlabel="      1431"]
+BB1426 [shape=record label="{4244: read-variable['optionStyle',v10,-]}" ] 
+BB1426 -> BB1427 [tailport=s, headport=n, headlabel="      1427"]
+BB1426 -> BB1432 [tailport=s, headport=n, color=gray]
+BB1427 [shape=record label="{4245: begin-for-in[v10,v11]}" ] 
+BB1427 -> BB1428 [tailport=s, headport=n, headlabel="      1428"]
+BB1427 -> BB1432 [tailport=s, headport=n, color=gray]
+BB1428 [shape=record label="{4246: has-next[v11,v12]|4247: if[v12](true-block:1429,false-block:1431)}" ] 
+BB1428 -> BB1429 [tailport=s, headport=n, headlabel="      1429"]
+BB1428 -> BB1431 [tailport=s, headport=n]
+BB1429 [shape=record label="{4248: next-property[v11,v13]|4249: write-variable[v13,'prop']|4250: read-variable['prop',v1,-]}" ] 
+BB1429 -> BB1431 [tailport=s, headport=n]
+BB1429 -> BB1432 [tailport=s, headport=n, color=gray]
+BB1430 [shape=record label="{4251: end-for-in(begin-node:4245)}" ] 
+BB1430 -> BB1428 [tailport=s, headport=n]
+BB1431 [shape=record label="{4252: return[v1]}" ] 
+BB1432 [shape=record label="{4253: exceptional-return}" ] 
+//#$~ 1987
+}

@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB672 [tailport=s, headport=n, headlabel="    672"]
+BB672 [shape=record label="{2486: constant[undefined,v1]}" ] 
+BB672 -> BB673 [tailport=s, headport=n, headlabel="      673"]
+BB673 [shape=record label="{2487: read-variable['st',v3,-]|2488: read-property[v3,'replace',-]|2489: \<variable-non-null-undef\>['st']|2490: read-variable['RegExp',v5,-]|2491: constant[\"^\\\\s+|\\\\s+$\",v6]|2492: constant[\"g\",v7]}" ] 
+BB673 -> BB674 [tailport=s, headport=n, headlabel="      674"]
+BB673 -> BB678 [tailport=s, headport=n, color=gray, headlabel="      678"]
+BB674 [shape=record label="{2493: construct [-,v5,v6,v7,v4]}" ] 
+BB674 -> BB675 [tailport=s, headport=n, headlabel="      675"]
+BB674 -> BB678 [tailport=s, headport=n, color=gray]
+BB675 [shape=record label="{2494: constant[\"\",v8]}" ] 
+BB675 -> BB676 [tailport=s, headport=n, headlabel="      676"]
+BB676 [shape=record label="{2495: call-st.replace [v3,'replace',v4,v8,v1]}" ] 
+BB676 -> BB677 [tailport=s, headport=n, headlabel="      677"]
+BB676 -> BB678 [tailport=s, headport=n, color=gray]
+BB677 [shape=record label="{2496: return[v1]}" ] 
+BB678 [shape=record label="{2497: exceptional-return}" ] 
+//#$~ 490
+}

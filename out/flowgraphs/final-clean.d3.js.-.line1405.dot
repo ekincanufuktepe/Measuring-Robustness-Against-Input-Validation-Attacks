@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry235[shape=none,label=""];
+BB_entry235 -> BB2407 [tailport=s, headport=n, headlabel="    2407"]
+BB2407 [shape=record label="{7207: constant[undefined,v1]}" ] 
+BB2407 -> BB2408 [tailport=s, headport=n, headlabel="      2408"]
+BB2408 [shape=record label="{7208: read-variable['arguments',v4,-]|7209: read-property[v4,'length',v3]|7210: \<variable-non-null-undef\>['arguments']|7211: ![v3,v2]|7212: if[v2](true-block:2409,false-block:2410)}" ] 
+BB2408 -> BB2409 [tailport=s, headport=n, headlabel="      2409"]
+BB2408 -> BB2410 [tailport=s, headport=n, headlabel="      2410"]
+BB2408 -> BB2414 [tailport=s, headport=n, color=gray, headlabel="      2414"]
+BB2409 [shape=record label="{7213: read-variable['y1',v1,-]}" ] 
+BB2409 -> BB2413 [tailport=s, headport=n, headlabel="      2413"]
+BB2409 -> BB2414 [tailport=s, headport=n, color=gray]
+BB2410 [shape=record label="{7214: read-variable['z',v5,-]|7215: write-variable[v5,'y1']*|7216: read-variable['z',v8,-]|7217: read-property[v8,'copy',-]|7218: \<variable-non-null-undef\>['z']}" ] 
+BB2410 -> BB2411 [tailport=s, headport=n, headlabel="      2411"]
+BB2410 -> BB2414 [tailport=s, headport=n, color=gray]
+BB2411 [shape=record label="{7219: call-z.copy [v8,'copy',v6]}" ] 
+BB2411 -> BB2412 [tailport=s, headport=n, headlabel="      2412"]
+BB2411 -> BB2414 [tailport=s, headport=n, color=gray]
+BB2412 [shape=record label="{7220: write-variable[v6,'y0']*|7221: new[v9]|7222: constant[0.0,v10]|7223: write-property[v9,'x',v10]|7224: constant[0.0,v11]|7225: write-property[v9,'y',v11]|7226: constant[1.0,v12]|7227: write-property[v9,'k',v12]|7228: write-variable[v9,'view']*|7229: read-variable['zoom',v1,-]}" ] 
+BB2412 -> BB2413 [tailport=s, headport=n]
+BB2412 -> BB2414 [tailport=s, headport=n, color=gray]
+BB2413 [shape=record label="{7230: return[v1]}" ] 
+BB2414 [shape=record label="{7231: exceptional-return}" ] 
+//#$~ 1414
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry711[shape=none,label=""];
+BB_entry711 -> BB9608 [tailport=s, headport=n, headlabel="    9608"]
+BB9608 [shape=record label="{25169: constant[undefined,v1]}" ] 
+BB9608 -> BB9609 [tailport=s, headport=n, headlabel="      9609"]
+BB9609 [shape=record label="{25170: read-variable['args',v3,-]|25171: read-property[v3,'push',-]|25172: \<variable-non-null-undef\>['args']|25173: new[v4]|25174: read-variable['property',v10,-]|25175: read-property[v10,'key',v9]|25176: \<variable-non-null-undef\>['property']|25177: read-property[v9,'type',v7]|25178: \<property-non-null-undef\>[v10,'key']|25179: read-variable['AST',v11,-]|25180: read-property[v11,'Identifier',v8]|25181: \<variable-non-null-undef\>['AST']|25182: ===[v7,v8,v6]|25183: if[v6](true-block:9610,false-block:9611)}" ] 
+BB9609 -> BB9610 [tailport=s, headport=n, headlabel="      9610"]
+BB9609 -> BB9611 [tailport=s, headport=n, headlabel="      9611"]
+BB9609 -> BB9617 [tailport=s, headport=n, color=gray, headlabel="      9617"]
+BB9610 [shape=record label="{25184: read-variable['property',v13,-]|25185: read-property[v13,'key',v12]|25186: \<variable-non-null-undef\>['property']|25187: read-property[v12,'name',v5]|25188: \<property-non-null-undef\>[v13,'key']}" ] 
+BB9610 -> BB9612 [tailport=s, headport=n, headlabel="      9612"]
+BB9610 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9611 [shape=record label="{25189: constant[\"\",v12]|25190: read-variable['property',v15,-]|25191: read-property[v15,'key',v14]|25192: \<variable-non-null-undef\>['property']|25193: read-property[v14,'value',v13]|25194: \<property-non-null-undef\>[v15,'key']|25195: +[v12,v13,v5]}" ] 
+BB9611 -> BB9612 [tailport=s, headport=n]
+BB9611 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9612 [shape=record label="{25196: write-property[v4,'key',v5]|25197: read-variable['self',v14,-]|25198: read-property[v14,'recurse',-]|25199: \<variable-non-null-undef\>['self']|25200: read-variable['property',v16,-]|25201: read-property[v16,'value',v15]|25202: \<variable-non-null-undef\>['property']}" ] 
+BB9612 -> BB9613 [tailport=s, headport=n, headlabel="      9613"]
+BB9612 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9613 [shape=record label="{25203: call-self.recurse [v14,'recurse',v15,v12]}" ] 
+BB9613 -> BB9614 [tailport=s, headport=n, headlabel="      9614"]
+BB9613 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9614 [shape=record label="{25204: write-property[v4,'value',v12]}" ] 
+BB9614 -> BB9615 [tailport=s, headport=n, headlabel="      9615"]
+BB9614 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9615 [shape=record label="{25205: call-args.push [v3,'push',v4,-]*}" ] 
+BB9615 -> BB9616 [tailport=s, headport=n, headlabel="      9616"]
+BB9615 -> BB9617 [tailport=s, headport=n, color=gray]
+BB9616 [shape=record label="{25206: return[v1]}" ] 
+BB9617 [shape=record label="{25207: exceptional-return}" ] 
+//#$~ 13720
+}

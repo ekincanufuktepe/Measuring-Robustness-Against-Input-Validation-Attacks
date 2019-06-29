@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry352[shape=none,label=""];
+BB_entry352 -> BB4198 [tailport=s, headport=n, headlabel="    4198"]
+BB4198 [shape=record label="{11046: constant[undefined,v1]}" ] 
+BB4198 -> BB4199 [tailport=s, headport=n, headlabel="      4199"]
+BB4199 [shape=record label="{11047: read-variable['element',v3,-]|11048: read-variable['window',v4,-]|11049: ===[v3,v4,v2]|11050: if[v2](true-block:4200,false-block:4201)}" ] 
+BB4199 -> BB4200 [tailport=s, headport=n, headlabel="      4200"]
+BB4199 -> BB4201 [tailport=s, headport=n, headlabel="      4201"]
+BB4199 -> BB4205 [tailport=s, headport=n, color=gray, headlabel="      4205"]
+BB4200 [shape=record label="{11051: constant[0.0,v1]}" ] 
+BB4200 -> BB4204 [tailport=s, headport=n, headlabel="      4204"]
+BB4201 [shape=record label="{11052: read-variable['element',v9,-]|11053: read-property[v9,'_prototypeUID',v8]|11054: \<variable-non-null-undef\>['element']|11055: typeof[v8,v6]|11056: constant[\"undefined\",v7]|11057: ===[v6,v7,v5]|11058: if[v5](true-block:4202,false-block:4203)}" ] 
+BB4201 -> BB4202 [tailport=s, headport=n, headlabel="      4202"]
+BB4201 -> BB4203 [tailport=s, headport=n, headlabel="      4203"]
+BB4201 -> BB4205 [tailport=s, headport=n, color=gray]
+BB4202 [shape=record label="{11059: read-variable['element',v11,-]|11060: constant[1.0,v12]|11061: read-variable['Element',v15,-]|11062: read-property[v15,'Storage',v14]|11063: \<variable-non-null-undef\>['Element']|11064: read-property[v14,'UID',v13]|11065: \<property-non-null-undef\>[v15,'Storage']|11066: +[v13,v10]|11067: +[v10,v12,v16]|11068: write-property[v14,'UID',v16]|11069: \<property-non-null-undef\>[v15,'Storage']|11070: write-property[v11,'_prototypeUID',v10]|11071: \<variable-non-null-undef\>['element']*}" ] 
+BB4202 -> BB4203 [tailport=s, headport=n]
+BB4202 -> BB4205 [tailport=s, headport=n, color=gray]
+BB4203 [shape=record label="{11072: read-variable['element',v10,-]|11073: read-property[v10,'_prototypeUID',v1]|11074: \<variable-non-null-undef\>['element']}" ] 
+BB4203 -> BB4204 [tailport=s, headport=n]
+BB4203 -> BB4205 [tailport=s, headport=n, color=gray]
+BB4204 [shape=record label="{11075: return[v1]}" ] 
+BB4205 [shape=record label="{11076: exceptional-return}" ] 
+//#$~ 3224
+}

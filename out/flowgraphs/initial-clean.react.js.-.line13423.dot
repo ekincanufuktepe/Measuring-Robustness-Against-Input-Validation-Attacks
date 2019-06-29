@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry535[shape=none,label=""];
+BB_entry535 -> BB7605 [tailport=s, headport=n, headlabel="    7605"]
+BB7605 [shape=record label="{25561: constant[undefined,v1]|25562: vardecl['ReactPropTypeLocationNames']}" ] 
+BB7605 -> BB7606 [tailport=s, headport=n, headlabel="      7606"]
+BB7606 [shape=record label="{25563: new[v2]|25564: write-variable[v2,'ReactPropTypeLocationNames']*|25565: constant[\"production\",v4]|25566: constant[\"development\",v5]|25567: !==[v4,v5,v3]|25568: if[v3](true-block:7607,false-block:7608)}" ] 
+BB7606 -> BB7607 [tailport=s, headport=n, headlabel="      7607"]
+BB7606 -> BB7608 [tailport=s, headport=n, headlabel="      7608"]
+BB7606 -> BB7610 [tailport=s, headport=n, color=gray, headlabel="      7610"]
+BB7607 [shape=record label="{25569: new[v6]|25570: constant[\"prop\",v7]|25571: write-property[v6,'prop',v7]|25572: constant[\"context\",v8]|25573: write-property[v6,'context',v8]|25574: constant[\"child context\",v9]|25575: write-property[v6,'childContext',v9]|25576: write-variable[v6,'ReactPropTypeLocationNames']*}" ] 
+BB7607 -> BB7608 [tailport=s, headport=n]
+BB7607 -> BB7610 [tailport=s, headport=n, color=gray]
+BB7608 [shape=record label="{25577: read-variable['module',v7,-]|25578: read-variable['ReactPropTypeLocationNames',v6,-]|25579: write-property[v7,'exports',v6]|25580: \<variable-non-null-undef\>['module']*}" ] 
+BB7608 -> BB7609 [tailport=s, headport=n, headlabel="      7609"]
+BB7608 -> BB7610 [tailport=s, headport=n, color=gray]
+BB7609 [shape=record label="{25581: return[v1]}" ] 
+BB7610 [shape=record label="{25582: exceptional-return}" ] 
+//#$~ 13447
+}

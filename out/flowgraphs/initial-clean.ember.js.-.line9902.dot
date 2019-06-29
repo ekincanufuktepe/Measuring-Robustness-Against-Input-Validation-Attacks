@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry440[shape=none,label=""];
+BB_entry440 -> BB5447 [tailport=s, headport=n, headlabel="    5447"]
+BB5447 [shape=record label="{19402: constant[undefined,v1]}" ] 
+BB5447 -> BB5448 [tailport=s, headport=n, headlabel="      5448"]
+BB5448 [shape=record label="{19403: read-variable['trySet',v3,v2]|19404: read-variable['isGlobalPath',v7,v6]|19405: read-variable['fromPath',v8,-]}" ] 
+BB5448 -> BB5449 [tailport=s, headport=n, headlabel="      5449"]
+BB5448 -> BB5456 [tailport=s, headport=n, color=gray, headlabel="      5456"]
+BB5449 [shape=record label="{19406: call-isGlobalPath [v6,v7,v8,v5]}" ] 
+BB5449 -> BB5450 [tailport=s, headport=n, headlabel="      5450"]
+BB5449 -> BB5456 [tailport=s, headport=n, color=gray]
+BB5450 [shape=record label="{19407: if[v5](true-block:5451,false-block:5452)}" ] 
+BB5450 -> BB5451 [tailport=s, headport=n, headlabel="      5451"]
+BB5450 -> BB5452 [tailport=s, headport=n, headlabel="      5452"]
+BB5451 [shape=record label="{19408: read-variable['Ember',v9,-]|19409: read-property[v9,'lookup',v4]|19410: \<variable-non-null-undef\>['Ember']}" ] 
+BB5451 -> BB5453 [tailport=s, headport=n, headlabel="      5453"]
+BB5451 -> BB5456 [tailport=s, headport=n, color=gray]
+BB5452 [shape=record label="{19411: read-variable['obj',v4,-]}" ] 
+BB5452 -> BB5453 [tailport=s, headport=n]
+BB5452 -> BB5456 [tailport=s, headport=n, color=gray]
+BB5453 [shape=record label="{19412: read-variable['fromPath',v9,-]|19413: read-variable['toValue',v10,-]}" ] 
+BB5453 -> BB5454 [tailport=s, headport=n, headlabel="      5454"]
+BB5453 -> BB5456 [tailport=s, headport=n, color=gray]
+BB5454 [shape=record label="{19414: call-trySet [v2,v3,v4,v9,v10,-]*}" ] 
+BB5454 -> BB5455 [tailport=s, headport=n, headlabel="      5455"]
+BB5454 -> BB5456 [tailport=s, headport=n, color=gray]
+BB5455 [shape=record label="{19415: return[v1]}" ] 
+BB5456 [shape=record label="{19416: exceptional-return}" ] 
+//#$~ 9903
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry146[shape=none,label=""];
+BB_entry146 -> BB1629 [tailport=s, headport=n, headlabel="    1629"]
+BB1629 [shape=record label="{4411: constant[undefined,v1]|4412: vardecl['a']|4413: vardecl['b']}" ] 
+BB1629 -> BB1630 [tailport=s, headport=n, headlabel="      1630"]
+BB1630 [shape=record label="{4414: read-variable['left',v3,-]|4415: read-property[v3,'criteria',v2]|4416: \<variable-non-null-undef\>['left']|4417: write-variable[v2,'a']*|4418: read-variable['right',v5,-]|4419: read-property[v5,'criteria',v4]|4420: \<variable-non-null-undef\>['right']|4421: write-variable[v4,'b']*|4422: read-variable['a',v7,-]|4423: read-variable['b',v8,-]|4424: \<[v7,v8,v6]|4425: if[v6](true-block:1631,false-block:1632)}" ] 
+BB1630 -> BB1631 [tailport=s, headport=n, headlabel="      1631"]
+BB1630 -> BB1632 [tailport=s, headport=n, headlabel="      1632"]
+BB1630 -> BB1636 [tailport=s, headport=n, color=gray, headlabel="      1636"]
+BB1631 [shape=record label="{4426: constant[-1.0,v1]}" ] 
+BB1631 -> BB1635 [tailport=s, headport=n, headlabel="      1635"]
+BB1632 [shape=record label="{4427: read-variable['a',v10,-]|4428: read-variable['b',v11,-]|4429: \>[v10,v11,v9]|4430: if[v9](true-block:1633,false-block:1634)}" ] 
+BB1632 -> BB1633 [tailport=s, headport=n, headlabel="      1633"]
+BB1632 -> BB1634 [tailport=s, headport=n, headlabel="      1634"]
+BB1632 -> BB1636 [tailport=s, headport=n, color=gray]
+BB1633 [shape=record label="{4431: constant[1.0,v1]}" ] 
+BB1633 -> BB1635 [tailport=s, headport=n]
+BB1634 [shape=record label="{4432: constant[0.0,v1]}" ] 
+BB1634 -> BB1635 [tailport=s, headport=n]
+BB1635 [shape=record label="{4433: return[v1]}" ] 
+BB1636 [shape=record label="{4434: exceptional-return}" ] 
+//#$~ 1030
+}

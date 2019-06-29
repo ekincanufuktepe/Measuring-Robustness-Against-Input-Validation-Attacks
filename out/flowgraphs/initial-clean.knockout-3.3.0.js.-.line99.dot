@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry416[shape=none,label=""];
+BB_entry416 -> BB4994 [tailport=s, headport=n, headlabel="    4994"]
+BB4994 [shape=record label="{14490: constant[undefined,v1]}" ] 
+BB4994 -> BB4995 [tailport=s, headport=n, headlabel="      4995"]
+BB4995 [shape=record label="{14491: read-variable['c',v4,-]|14492: read-property[v4,'isTemplateRewritten',-]|14493: \<variable-non-null-undef\>['c']|14494: read-variable['b',v5,-]|14495: read-variable['d',v6,-]}" ] 
+BB4995 -> BB4996 [tailport=s, headport=n, headlabel="      4996"]
+BB4995 -> BB5001 [tailport=s, headport=n, color=gray, headlabel="      5001"]
+BB4996 [shape=record label="{14496: call-c.isTemplateRewritten [v4,'isTemplateRewritten',v5,v6,v2]}" ] 
+BB4996 -> BB4997 [tailport=s, headport=n, headlabel="      4997"]
+BB4996 -> BB5001 [tailport=s, headport=n, color=gray]
+BB4997 [shape=record label="{14497: if[v2](true-block:5000,false-block:4998)}" ] 
+BB4997 -> BB5000 [tailport=s, headport=n, headlabel="      5000"]
+BB4997 -> BB4998 [tailport=s, headport=n, headlabel="      4998"]
+BB4998 [shape=record label="{14498: read-variable['c',v4,-]|14499: read-property[v4,'rewriteTemplate',-]|14500: \<variable-non-null-undef\>['c']|14501: read-variable['b',v5,-]|14502: function-expr[function ( b ),v6]|14503: read-variable['d',v7,-]}" ] 
+BB4998 -> BB4999 [tailport=s, headport=n, headlabel="      4999"]
+BB4998 -> BB5001 [tailport=s, headport=n, color=gray]
+BB4999 [shape=record label="{14504: call-c.rewriteTemplate [v4,'rewriteTemplate',v5,v6,v7,-]}" ] 
+BB4999 -> BB5000 [tailport=s, headport=n]
+BB4999 -> BB5001 [tailport=s, headport=n, color=gray]
+BB5000 [shape=record label="{14505: return[v1]}" ] 
+BB5001 [shape=record label="{14506: exceptional-return}" ] 
+}

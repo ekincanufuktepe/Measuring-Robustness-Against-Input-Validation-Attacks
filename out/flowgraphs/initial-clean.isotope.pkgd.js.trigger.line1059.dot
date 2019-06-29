@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB708 [tailport=s, headport=n, headlabel="    708"]
+BB708 [shape=record label="{2086: constant[undefined,v1]|2087: vardecl['i']|2088: vardecl['len']|2089: vardecl['fn']}" ] 
+BB708 -> BB709 [tailport=s, headport=n, headlabel="      709"]
+BB709 [shape=record label="{2090: read-variable['docReady',v3,-]|2091: constant[true,v2]|2092: write-property[v3,'isReady',v2]|2093: \<variable-non-null-undef\>['docReady']*|2094: constant[0.0,v5]|2095: write-variable[v5,'i']*|2096: read-variable['queue',v7,-]|2097: read-property[v7,'length',v6]|2098: \<variable-non-null-undef\>['queue']|2099: write-variable[v6,'len']*}" ] 
+BB709 -> BB710 [tailport=s, headport=n, headlabel="      710"]
+BB709 -> BB715 [tailport=s, headport=n, color=gray, headlabel="      715"]
+BB710 [shape=record label="{2100: read-variable['i',v8,-]|2101: read-variable['len',v9,-]|2102: \<[v8,v9,v4]|2103: if[v4](true-block:711,false-block:714)}" ] 
+BB710 -> BB711 [tailport=s, headport=n, headlabel="      711"]
+BB710 -> BB714 [tailport=s, headport=n, headlabel="      714"]
+BB710 -> BB715 [tailport=s, headport=n, color=gray]
+BB711 [shape=record label="{2104: read-variable['queue',v11,-]|2105: read-variable['i',v12,-]|2106: read-property[v11,v12,v10]|2107: \<variable-non-null-undef\>['queue']|2108: write-variable[v10,'fn']*|2109: read-variable['fn',v14,v13]}" ] 
+BB711 -> BB712 [tailport=s, headport=n, headlabel="      712"]
+BB711 -> BB715 [tailport=s, headport=n, color=gray]
+BB712 [shape=record label="{2110: call-fn [v13,v14,-]*}" ] 
+BB712 -> BB713 [tailport=s, headport=n, headlabel="      713"]
+BB712 -> BB715 [tailport=s, headport=n, color=gray]
+BB713 [shape=record label="{2111: constant[1.0,v15]|2112: read-variable['i',v16,-]|2113: +[v16,v17]|2114: +[v17,v15,v18]|2115: write-variable[v18,'i']}" ] 
+BB713 -> BB710 [tailport=s, headport=n]
+BB713 -> BB715 [tailport=s, headport=n, color=gray]
+BB714 [shape=record label="{2116: return[v1]}" ] 
+BB715 [shape=record label="{2117: exceptional-return}" ] 
+//#$~ 1062
+}

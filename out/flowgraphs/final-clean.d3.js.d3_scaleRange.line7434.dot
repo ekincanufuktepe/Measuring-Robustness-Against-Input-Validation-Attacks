@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1141[shape=none,label=""];
+BB_entry1141 -> BB12374 [tailport=s, headport=n, headlabel="    12374"]
+BB12374 [shape=record label="{42572: constant[undefined,v1]}" ] 
+BB12374 -> BB12375 [tailport=s, headport=n, headlabel="      12375"]
+BB12375 [shape=record label="{42573: read-variable['scale',v3,-]|42574: read-property[v3,'rangeExtent',v2]|42575: \<variable-non-null-undef\>['scale']|42576: if[v2](true-block:12376,false-block:12377)}" ] 
+BB12375 -> BB12376 [tailport=s, headport=n, headlabel="      12376"]
+BB12375 -> BB12377 [tailport=s, headport=n, headlabel="      12377"]
+BB12375 -> BB12382 [tailport=s, headport=n, color=gray, headlabel="      12382"]
+BB12376 [shape=record label="{42577: read-variable['scale',v5,-]|42578: read-property[v5,'rangeExtent',-]|42579: \<variable-non-null-undef\>['scale']}" ] 
+BB12376 -> BB12378 [tailport=s, headport=n, headlabel="      12378"]
+BB12376 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12377 [shape=record label="{42580: read-variable['d3_scaleExtent',v5,v4]|42581: read-variable['scale',v8,-]|42582: read-property[v8,'range',-]|42583: \<variable-non-null-undef\>['scale']}" ] 
+BB12377 -> BB12379 [tailport=s, headport=n, headlabel="      12379"]
+BB12377 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12378 [shape=record label="{42584: call-scale.rangeExtent [v5,'rangeExtent',v1]}" ] 
+BB12378 -> BB12381 [tailport=s, headport=n, headlabel="      12381"]
+BB12378 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12379 [shape=record label="{42585: call-scale.range [v8,'range',v6]}" ] 
+BB12379 -> BB12380 [tailport=s, headport=n, headlabel="      12380"]
+BB12379 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12380 [shape=record label="{42586: call-d3_scaleExtent [v4,v5,v6,v1]}" ] 
+BB12380 -> BB12381 [tailport=s, headport=n]
+BB12380 -> BB12382 [tailport=s, headport=n, color=gray]
+BB12381 [shape=record label="{42587: return[v1]}" ] 
+BB12382 [shape=record label="{42588: exceptional-return}" ] 
+//#$~ 7435
+}

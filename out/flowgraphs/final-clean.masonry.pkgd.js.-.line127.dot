@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry10[shape=none,label=""];
+BB_entry10 -> BB97 [tailport=s, headport=n, headlabel="    97"]
+BB97 [shape=record label="{245: constant[undefined,v1]}" ] 
+BB97 -> BB98 [tailport=s, headport=n, headlabel="      98"]
+BB98 [shape=record label="{246: read-variable['addOptionMethod',v3,v2]|247: read-variable['PluginClass',v4,-]}" ] 
+BB98 -> BB99 [tailport=s, headport=n, headlabel="      99"]
+BB98 -> BB103 [tailport=s, headport=n, color=gray, headlabel="      103"]
+BB99 [shape=record label="{248: call-addOptionMethod [v2,v3,v4,-]*}" ] 
+BB99 -> BB100 [tailport=s, headport=n, headlabel="      100"]
+BB99 -> BB103 [tailport=s, headport=n, color=gray]
+BB100 [shape=record label="{249: read-variable['bridge',v6,v5]|250: read-variable['namespace',v7,-]|251: read-variable['PluginClass',v8,-]}" ] 
+BB100 -> BB101 [tailport=s, headport=n, headlabel="      101"]
+BB100 -> BB103 [tailport=s, headport=n, color=gray]
+BB101 [shape=record label="{252: call-bridge [v5,v6,v7,v8,-]*}" ] 
+BB101 -> BB102 [tailport=s, headport=n, headlabel="      102"]
+BB101 -> BB103 [tailport=s, headport=n, color=gray]
+BB102 [shape=record label="{253: return[v1]}" ] 
+BB103 [shape=record label="{254: exceptional-return}" ] 
+//#$~ 129
+}

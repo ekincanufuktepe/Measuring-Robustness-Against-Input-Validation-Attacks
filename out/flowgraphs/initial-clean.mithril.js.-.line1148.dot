@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry87[shape=none,label=""];
+BB_entry87 -> BB1823 [tailport=s, headport=n, headlabel="    1823"]
+BB1823 [shape=record label="{6093: constant[undefined,v1]}" ] 
+BB1823 -> BB1824 [tailport=s, headport=n, headlabel="      1824"]
+BB1824 [shape=record label="{6094: read-variable['initialize',v3,v2]|6095: read-variable['mock',v4,-]|6096: if[v4](true-block:1826,false-block:1825)}" ] 
+BB1824 -> BB1826 [tailport=s, headport=n, headlabel="      1826"]
+BB1824 -> BB1825 [tailport=s, headport=n, headlabel="      1825"]
+BB1824 -> BB1830 [tailport=s, headport=n, color=gray, headlabel="      1830"]
+BB1825 [shape=record label="{6097: read-variable['window',v4,-]}" ] 
+BB1825 -> BB1826 [tailport=s, headport=n]
+BB1825 -> BB1830 [tailport=s, headport=n, color=gray]
+BB1826 [shape=record label="{6098: write-variable[v4,'window']}" ] 
+BB1826 -> BB1827 [tailport=s, headport=n, headlabel="      1827"]
+BB1827 [shape=record label="{6099: call-initialize [v2,v3,v4,-]*}" ] 
+BB1827 -> BB1828 [tailport=s, headport=n, headlabel="      1828"]
+BB1827 -> BB1830 [tailport=s, headport=n, color=gray]
+BB1828 [shape=record label="{6100: read-variable['window',v1,-]}" ] 
+BB1828 -> BB1829 [tailport=s, headport=n, headlabel="      1829"]
+BB1828 -> BB1830 [tailport=s, headport=n, color=gray]
+BB1829 [shape=record label="{6101: return[v1]}" ] 
+BB1830 [shape=record label="{6102: exceptional-return}" ] 
+//#$~ 1150
+}

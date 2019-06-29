@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2218[shape=none,label=""];
+BB_entry2218 -> BB25175 [tailport=s, headport=n, headlabel="    25175"]
+BB25175 [shape=record label="{82918: constant[undefined,v1]|82919: vardecl['testEl']}" ] 
+BB25175 -> BB25176 [tailport=s, headport=n, headlabel="      25176"]
+BB25176 [shape=record label="{82920: read-variable['document',v4,-]|82921: read-property[v4,'createElement',-]|82922: \<variable-non-null-undef\>['document']|82923: constant[\"div\",v5]}" ] 
+BB25176 -> BB25177 [tailport=s, headport=n, headlabel="      25177"]
+BB25176 -> BB25181 [tailport=s, headport=n, color=gray, headlabel="      25181"]
+BB25177 [shape=record label="{82924: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB25177 -> BB25178 [tailport=s, headport=n, headlabel="      25178"]
+BB25177 -> BB25181 [tailport=s, headport=n, color=gray]
+BB25178 [shape=record label="{82925: write-variable[v2,'testEl']*|82926: read-variable['testEl',v7,-]|82927: constant[\"Test: \\\<script type='text/x-placeholder'\\\>\\\</script\\\>Value\",v6]|82928: write-property[v7,'innerHTML',v6]|82929: \<variable-non-null-undef\>['testEl']*|82930: read-variable['testEl',v12,-]|82931: read-property[v12,'childNodes',v11]|82932: \<variable-non-null-undef\>['testEl']|82933: constant[0.0,v13]|82934: read-property[v11,v13,v10]|82935: \<property-non-null-undef\>[v12,'childNodes']|82936: read-property[v10,'nodeValue',v8]|82937: \<property-non-null-undef\>[v11,v13]|82938: constant[\"Test:\",v9]|82939: ===[v8,v9,v1]|82940: if[v1](true-block:25179,false-block:25180)}" ] 
+BB25178 -> BB25180 [tailport=s, headport=n, headlabel="      25180"]
+BB25178 -> BB25179 [tailport=s, headport=n, headlabel="      25179"]
+BB25178 -> BB25181 [tailport=s, headport=n, color=gray]
+BB25179 [shape=record label="{82941: read-variable['testEl',v18,-]|82942: read-property[v18,'childNodes',v17]|82943: \<variable-non-null-undef\>['testEl']|82944: constant[2.0,v19]|82945: read-property[v17,v19,v16]|82946: \<property-non-null-undef\>[v18,'childNodes']|82947: read-property[v16,'nodeValue',v14]|82948: \<property-non-null-undef\>[v17,v19]|82949: constant[\" Value\",v15]|82950: ===[v14,v15,v1]}" ] 
+BB25179 -> BB25180 [tailport=s, headport=n]
+BB25179 -> BB25181 [tailport=s, headport=n, color=gray]
+BB25180 [shape=record label="{82951: return[v1]}" ] 
+BB25181 [shape=record label="{82952: exceptional-return}" ] 
+//#$~ 46773
+}

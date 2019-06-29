@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry61[shape=none,label=""];
+BB_entry61 -> BB709 [tailport=s, headport=n, headlabel="    709"]
+BB709 [shape=record label="{1999: constant[undefined,v1]}" ] 
+BB709 -> BB710 [tailport=s, headport=n, headlabel="      710"]
+BB710 [shape=record label="{2000: read-variable['fn',v3,-]|2001: read-property[v3,'apply',-]|2002: \<variable-non-null-undef\>['fn']|2003: read-variable['element',v4,-]|2004: read-variable['Array',v6,-]}" ] 
+BB710 -> BB711 [tailport=s, headport=n, headlabel="      711"]
+BB710 -> BB716 [tailport=s, headport=n, color=gray, headlabel="      716"]
+BB711 [shape=record label="{2005: construct [-,v6,v5]}" ] 
+BB711 -> BB712 [tailport=s, headport=n, headlabel="      712"]
+BB711 -> BB716 [tailport=s, headport=n, color=gray]
+BB712 [shape=record label="{2006: call-fn.apply [v3,'apply',v4,v5,-]*}" ] 
+BB712 -> BB713 [tailport=s, headport=n, headlabel="      713"]
+BB712 -> BB716 [tailport=s, headport=n, color=gray]
+BB713 [shape=record label="{2007: read-variable['$element',v8,-]|2008: read-property[v8,'trigger',-]|2009: \<variable-non-null-undef\>['$element']|2010: constant[\"changed.uk.dom\",v9]}" ] 
+BB713 -> BB714 [tailport=s, headport=n, headlabel="      714"]
+BB713 -> BB716 [tailport=s, headport=n, color=gray]
+BB714 [shape=record label="{2011: call-$element.trigger [v8,'trigger',v9,-]*}" ] 
+BB714 -> BB715 [tailport=s, headport=n, headlabel="      715"]
+BB714 -> BB716 [tailport=s, headport=n, color=gray]
+BB715 [shape=record label="{2012: return[v1]}" ] 
+BB716 [shape=record label="{2013: exceptional-return}" ] 
+//#$~ 585
+}

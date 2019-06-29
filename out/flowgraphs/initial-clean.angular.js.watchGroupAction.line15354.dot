@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry855[shape=none,label=""];
+BB_entry855 -> BB10981 [tailport=s, headport=n, headlabel="    10981"]
+BB10981 [shape=record label="{28601: constant[undefined,v1]}" ] 
+BB10981 -> BB10982 [tailport=s, headport=n, headlabel="      10982"]
+BB10982 [shape=record label="{28602: read-variable['newValues',v4,v2]|28603: constant[0.0,v5]|28604: read-variable['value',v3,v2]|28605: write-property[v4,v5,v3]|28606: \<variable-non-null-undef\>['newValues']*|28607: read-variable['oldValues',v7,v2]|28608: constant[0.0,v8]|28609: read-variable['oldValue',v6,v2]|28610: write-property[v7,v8,v6]|28611: \<variable-non-null-undef\>['oldValues']*|28612: read-variable['listener',v10,v9]|28613: read-variable['newValues',v11,v2]|28614: read-variable['value',v14,v2]|28615: read-variable['oldValue',v15,v2]|28616: ===[v14,v15,v13]|28617: if[v13](true-block:10983,false-block:10984)}" ] 
+BB10982 -> BB10983 [tailport=s, headport=n, headlabel="      10983"]
+BB10982 -> BB10984 [tailport=s, headport=n, headlabel="      10984"]
+BB10982 -> BB10988 [tailport=s, headport=n, color=gray, headlabel="      10988"]
+BB10983 [shape=record label="{28618: read-variable['newValues',v12,v2]}" ] 
+BB10983 -> BB10985 [tailport=s, headport=n, headlabel="      10985"]
+BB10983 -> BB10988 [tailport=s, headport=n, color=gray]
+BB10984 [shape=record label="{28619: read-variable['oldValues',v12,v2]}" ] 
+BB10984 -> BB10985 [tailport=s, headport=n]
+BB10984 -> BB10988 [tailport=s, headport=n, color=gray]
+BB10985 [shape=record label="{28620: read-variable['scope',v16,v2]}" ] 
+BB10985 -> BB10986 [tailport=s, headport=n, headlabel="      10986"]
+BB10985 -> BB10988 [tailport=s, headport=n, color=gray]
+BB10986 [shape=record label="{28621: call-listener [v9,v10,v11,v12,v16,-]*}" ] 
+BB10986 -> BB10987 [tailport=s, headport=n, headlabel="      10987"]
+BB10986 -> BB10988 [tailport=s, headport=n, color=gray]
+BB10987 [shape=record label="{28622: return[v1]}" ] 
+BB10988 [shape=record label="{28623: exceptional-return}" ] 
+//#$~ 15357
+}

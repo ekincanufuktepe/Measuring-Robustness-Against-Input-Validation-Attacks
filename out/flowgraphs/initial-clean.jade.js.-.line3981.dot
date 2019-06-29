@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry222[shape=none,label=""];
+BB_entry222 -> BB3791 [tailport=s, headport=n, headlabel="    3791"]
+BB3791 [shape=record label="{11780: constant[undefined,v1]}" ] 
+BB3791 -> BB3792 [tailport=s, headport=n, headlabel="      3792"]
+BB3792 [shape=record label="{11781: typeof['p',v3]|11782: constant[\"string\",v4]|11783: !==[v3,v4,v2]|11784: if[v2](true-block:3793,false-block:3796)}" ] 
+BB3792 -> BB3793 [tailport=s, headport=n, headlabel="      3793"]
+BB3792 -> BB3796 [tailport=s, headport=n, headlabel="      3796"]
+BB3792 -> BB3798 [tailport=s, headport=n, color=gray, headlabel="      3798"]
+BB3793 [shape=record label="{11785: read-variable['TypeError',v6,-]|11786: constant[\"Arguments to path.join must be strings\",v7]}" ] 
+BB3793 -> BB3794 [tailport=s, headport=n, headlabel="      3794"]
+BB3793 -> BB3798 [tailport=s, headport=n, color=gray]
+BB3794 [shape=record label="{11787: construct [-,v6,v7,v5]}" ] 
+BB3794 -> BB3795 [tailport=s, headport=n, headlabel="      3795"]
+BB3794 -> BB3798 [tailport=s, headport=n, color=gray]
+BB3795 [shape=record label="{11788: throw[v5]*}" ] 
+BB3795 -> BB3796 [tailport=s, headport=n]
+BB3795 -> BB3798 [tailport=s, headport=n, color=gray]
+BB3796 [shape=record label="{11789: read-variable['p',v1,-]}" ] 
+BB3796 -> BB3797 [tailport=s, headport=n, headlabel="      3797"]
+BB3796 -> BB3798 [tailport=s, headport=n, color=gray]
+BB3797 [shape=record label="{11790: return[v1]}" ] 
+BB3798 [shape=record label="{11791: exceptional-return}" ] 
+//#$~ 3985
+}

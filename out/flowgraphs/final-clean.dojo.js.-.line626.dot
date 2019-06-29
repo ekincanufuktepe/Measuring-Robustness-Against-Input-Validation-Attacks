@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry35[shape=none,label=""];
+BB_entry35 -> BB316 [tailport=s, headport=n, headlabel="    316"]
+BB316 [shape=record label="{916: constant[undefined,v1]|917: vardecl['location']}" ] 
+BB316 -> BB317 [tailport=s, headport=n, headlabel="      317"]
+BB317 [shape=record label="{918: read-variable['baseUrl',v5,-]|919: constant[\"/\",v6]|920: +[v5,v6,v3]|921: read-variable['packageInfo',v4,-]|922: +[v3,v4,v2]|923: write-variable[v2,'location']*|924: read-variable['isString',v9,v8]|925: read-variable['packageInfo',v10,-]}" ] 
+BB317 -> BB318 [tailport=s, headport=n, headlabel="      318"]
+BB317 -> BB324 [tailport=s, headport=n, color=gray, headlabel="      324"]
+BB318 [shape=record label="{926: call-isString [v8,v9,v10,v7]}" ] 
+BB318 -> BB319 [tailport=s, headport=n, headlabel="      319"]
+BB318 -> BB324 [tailport=s, headport=n, color=gray]
+BB319 [shape=record label="{927: if[v7](true-block:320,false-block:321)}" ] 
+BB319 -> BB320 [tailport=s, headport=n, headlabel="      320"]
+BB319 -> BB321 [tailport=s, headport=n, headlabel="      321"]
+BB320 [shape=record label="{928: new[v11]|929: read-variable['packageInfo',v12,-]|930: write-property[v11,'name',v12]|931: write-variable[v11,'packageInfo']*}" ] 
+BB320 -> BB321 [tailport=s, headport=n]
+BB320 -> BB324 [tailport=s, headport=n, color=gray]
+BB321 [shape=record label="{932: read-variable['packageInfo',v12,-]|933: read-variable['location',v11,-]|934: write-property[v12,'location',v11]|935: \<variable-non-null-undef\>['packageInfo']*|936: read-variable['fixupPackageInfo',v14,v13]|937: read-variable['packageInfo',v15,-]}" ] 
+BB321 -> BB322 [tailport=s, headport=n, headlabel="      322"]
+BB321 -> BB324 [tailport=s, headport=n, color=gray]
+BB322 [shape=record label="{938: call-fixupPackageInfo [v13,v14,v15,-]*}" ] 
+BB322 -> BB323 [tailport=s, headport=n, headlabel="      323"]
+BB322 -> BB324 [tailport=s, headport=n, color=gray]
+BB323 [shape=record label="{939: return[v1]}" ] 
+BB324 [shape=record label="{940: exceptional-return}" ] 
+//#$~ 632
+}

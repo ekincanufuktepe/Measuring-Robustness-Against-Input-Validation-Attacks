@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry133[shape=none,label=""];
+BB_entry133 -> BB1359 [tailport=s, headport=n, headlabel="    1359"]
+BB1359 [shape=record label="{3912: constant[undefined,v1]|3913: vardecl['x']}" ] 
+BB1359 -> BB1360 [tailport=s, headport=n, headlabel="      1360"]
+BB1360 [shape=record label="{3914: read-variable['value',v4,-]|3915: read-property[v4,'apply',-]|3916: \<variable-non-null-undef\>['value']|3917: read-variable['this',v5,-]|3918: read-variable['arguments',v6,-]}" ] 
+BB1360 -> BB1361 [tailport=s, headport=n, headlabel="      1361"]
+BB1360 -> BB1366 [tailport=s, headport=n, color=gray, headlabel="      1366"]
+BB1361 [shape=record label="{3919: call-value.apply [v4,'apply',v5,v6,v2]}" ] 
+BB1361 -> BB1362 [tailport=s, headport=n, headlabel="      1362"]
+BB1361 -> BB1366 [tailport=s, headport=n, color=gray]
+BB1362 [shape=record label="{3920: write-variable[v2,'x']*|3921: read-variable['x',v8,-]|3922: constant[null,v9]|3923: ==[v8,v9,v7]|3924: if[v7](true-block:1363,false-block:1364)}" ] 
+BB1362 -> BB1363 [tailport=s, headport=n, headlabel="      1363"]
+BB1362 -> BB1364 [tailport=s, headport=n, headlabel="      1364"]
+BB1362 -> BB1366 [tailport=s, headport=n, color=gray]
+BB1363 [shape=record label="{3925: read-variable['this',v11,-]|3926: read-variable['name',v12,-]|3927: delete-property[v11,v12,v10]*}" ] 
+BB1363 -> BB1365 [tailport=s, headport=n, headlabel="      1365"]
+BB1363 -> BB1366 [tailport=s, headport=n, color=gray]
+BB1364 [shape=record label="{3928: read-variable['this',v11,-]|3929: read-variable['name',v12,-]|3930: read-variable['x',v10,-]|3931: write-property[v11,v12,v10]*}" ] 
+BB1364 -> BB1365 [tailport=s, headport=n]
+BB1364 -> BB1366 [tailport=s, headport=n, color=gray]
+BB1365 [shape=record label="{3932: return[v1]}" ] 
+BB1366 [shape=record label="{3933: exceptional-return}" ] 
+//#$~ 778
+}

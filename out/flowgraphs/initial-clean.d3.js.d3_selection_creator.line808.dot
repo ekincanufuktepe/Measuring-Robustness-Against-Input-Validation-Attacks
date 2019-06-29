@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry144[shape=none,label=""];
+BB_entry144 -> BB1461 [tailport=s, headport=n, headlabel="    1461"]
+BB1461 [shape=record label="{4124: constant[undefined,v1]|4125: function-decl[function create ( ),-]|4126: function-decl[function createNS ( ),-]}" ] 
+BB1461 -> BB1462 [tailport=s, headport=n, headlabel="      1462"]
+BB1462 [shape=record label="{4127: typeof['name',v3]|4128: constant[\"function\",v4]|4129: ===[v3,v4,v2]|4130: if[v2](true-block:1463,false-block:1464)}" ] 
+BB1462 -> BB1463 [tailport=s, headport=n, headlabel="      1463"]
+BB1462 -> BB1464 [tailport=s, headport=n, headlabel="      1464"]
+BB1462 -> BB1470 [tailport=s, headport=n, color=gray, headlabel="      1470"]
+BB1463 [shape=record label="{4131: read-variable['name',v1,-]}" ] 
+BB1463 -> BB1469 [tailport=s, headport=n, headlabel="      1469"]
+BB1463 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1464 [shape=record label="{4132: read-variable['d3',v9,-]|4133: read-property[v9,'ns',v8]|4134: \<variable-non-null-undef\>['d3']|4135: read-property[v8,'qualify',-]|4136: \<property-non-null-undef\>[v9,'ns']|4137: read-variable['name',v10,-]}" ] 
+BB1464 -> BB1465 [tailport=s, headport=n, headlabel="      1465"]
+BB1464 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1465 [shape=record label="{4138: call-d3.ns.qualify [v8,'qualify',v10,v6]}" ] 
+BB1465 -> BB1466 [tailport=s, headport=n, headlabel="      1466"]
+BB1465 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1466 [shape=record label="{4139: write-variable[v6,'name']|4140: read-property[v6,'local',v5]|4141: if[v5](true-block:1467,false-block:1468)}" ] 
+BB1466 -> BB1467 [tailport=s, headport=n, headlabel="      1467"]
+BB1466 -> BB1468 [tailport=s, headport=n, headlabel="      1468"]
+BB1466 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1467 [shape=record label="{4142: read-variable['createNS',v1,-]}" ] 
+BB1467 -> BB1469 [tailport=s, headport=n]
+BB1467 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1468 [shape=record label="{4143: read-variable['create',v1,-]}" ] 
+BB1468 -> BB1469 [tailport=s, headport=n]
+BB1468 -> BB1470 [tailport=s, headport=n, color=gray]
+BB1469 [shape=record label="{4144: return[v1]}" ] 
+BB1470 [shape=record label="{4145: exceptional-return}" ] 
+//#$~ 816
+}

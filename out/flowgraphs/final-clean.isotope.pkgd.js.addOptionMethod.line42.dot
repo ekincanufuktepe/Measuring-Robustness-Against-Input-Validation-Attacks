@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB50 [tailport=s, headport=n, headlabel="    50"]
+BB50 [shape=record label="{91: constant[undefined,v1]}" ] 
+BB50 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB51 [shape=record label="{92: read-variable['PluginClass',v4,-]|93: read-property[v4,'prototype',v3]|94: \<variable-non-null-undef\>['PluginClass']|95: read-property[v3,'option',v2]|96: \<property-non-null-undef\>[v4,'prototype']|97: if[v2](true-block:52,false-block:53)}" ] 
+BB51 -> BB52 [tailport=s, headport=n, headlabel="      52"]
+BB51 -> BB53 [tailport=s, headport=n, headlabel="      53"]
+BB51 -> BB55 [tailport=s, headport=n, color=gray, headlabel="      55"]
+BB52 [shape=record label="{98: constant[undefined,v1]}" ] 
+BB52 -> BB54 [tailport=s, headport=n, headlabel="      54"]
+BB53 [shape=record label="{99: read-variable['PluginClass',v7,-]|100: read-property[v7,'prototype',v6]|101: \<variable-non-null-undef\>['PluginClass']|102: function-expr[function ( opts ),v5]|103: write-property[v6,'option',v5]|104: \<property-non-null-undef\>[v7,'prototype']*}" ] 
+BB53 -> BB54 [tailport=s, headport=n]
+BB53 -> BB55 [tailport=s, headport=n, color=gray]
+BB54 [shape=record label="{105: return[v1]}" ] 
+BB55 [shape=record label="{106: exceptional-return}" ] 
+//#$~ 54
+}

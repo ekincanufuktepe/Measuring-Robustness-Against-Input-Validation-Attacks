@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry141[shape=none,label=""];
+BB_entry141 -> BB1992 [tailport=s, headport=n, headlabel="    1992"]
+BB1992 [shape=record label="{5459: constant[undefined,v1]|5460: vardecl['name']}" ] 
+BB1992 -> BB1993 [tailport=s, headport=n, headlabel="      1993"]
+BB1993 [shape=record label="{5461: read-variable['elem',v5,-]|5462: read-property[v5,'nodeName',v4]|5463: \<variable-non-null-undef\>['elem']|5464: read-property[v4,'toLowerCase',-]|5465: \<property-non-null-undef\>[v5,'nodeName']}" ] 
+BB1993 -> BB1994 [tailport=s, headport=n, headlabel="      1994"]
+BB1993 -> BB2000 [tailport=s, headport=n, color=gray, headlabel="      2000"]
+BB1994 [shape=record label="{5466: call[v4,'toLowerCase',v2]}" ] 
+BB1994 -> BB1995 [tailport=s, headport=n, headlabel="      1995"]
+BB1994 -> BB2000 [tailport=s, headport=n, color=gray]
+BB1995 [shape=record label="{5467: write-variable[v2,'name']*|5468: read-variable['name',v6,-]|5469: constant[\"input\",v7]|5470: ===[v6,v7,v1]|5471: if[v1](true-block:1996,false-block:1997)}" ] 
+BB1995 -> BB1997 [tailport=s, headport=n, headlabel="      1997"]
+BB1995 -> BB1996 [tailport=s, headport=n, headlabel="      1996"]
+BB1995 -> BB2000 [tailport=s, headport=n, color=gray]
+BB1996 [shape=record label="{5472: read-variable['elem',v10,-]|5473: read-property[v10,'type',v8]|5474: \<variable-non-null-undef\>['elem']|5475: constant[\"button\",v9]|5476: ===[v8,v9,v1]}" ] 
+BB1996 -> BB1997 [tailport=s, headport=n]
+BB1996 -> BB2000 [tailport=s, headport=n, color=gray]
+BB1997 [shape=record label="{5477: if[v1](true-block:1999,false-block:1998)}" ] 
+BB1997 -> BB1999 [tailport=s, headport=n, headlabel="      1999"]
+BB1997 -> BB1998 [tailport=s, headport=n, headlabel="      1998"]
+BB1998 [shape=record label="{5478: read-variable['name',v6,-]|5479: constant[\"button\",v7]|5480: ===[v6,v7,v1]}" ] 
+BB1998 -> BB1999 [tailport=s, headport=n]
+BB1998 -> BB2000 [tailport=s, headport=n, color=gray]
+BB1999 [shape=record label="{5481: return[v1]}" ] 
+BB2000 [shape=record label="{5482: exceptional-return}" ] 
+}

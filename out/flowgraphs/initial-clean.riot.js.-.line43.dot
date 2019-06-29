@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB64 [tailport=s, headport=n, headlabel="    64"]
+BB64 [shape=record label="{156: constant[undefined,v1]}" ] 
+BB64 -> BB65 [tailport=s, headport=n, headlabel="      65"]
+BB65 [shape=record label="{157: read-variable['events',v3,-]|158: constant[\"*\",v4]|159: ==[v3,v4,v2]|160: if[v2](true-block:66,false-block:67)}" ] 
+BB65 -> BB66 [tailport=s, headport=n, headlabel="      66"]
+BB65 -> BB67 [tailport=s, headport=n, headlabel="      67"]
+BB65 -> BB73 [tailport=s, headport=n, color=gray, headlabel="      73"]
+BB66 [shape=record label="{161: new[v5]|162: write-variable[v5,'callbacks']*}" ] 
+BB66 -> BB71 [tailport=s, headport=n, headlabel="      71"]
+BB67 [shape=record label="{163: read-variable['events',v6,-]|164: read-property[v6,'replace',-]|165: \<variable-non-null-undef\>['events']|166: read-variable['RegExp',v8,-]|167: constant[\"\\\\S+\",v9]|168: constant[\"g\",v10]}" ] 
+BB67 -> BB68 [tailport=s, headport=n, headlabel="      68"]
+BB67 -> BB73 [tailport=s, headport=n, color=gray]
+BB68 [shape=record label="{169: construct [-,v8,v9,v10,v7]}" ] 
+BB68 -> BB69 [tailport=s, headport=n, headlabel="      69"]
+BB68 -> BB73 [tailport=s, headport=n, color=gray]
+BB69 [shape=record label="{170: function-expr[function ( name ),v11]}" ] 
+BB69 -> BB70 [tailport=s, headport=n, headlabel="      70"]
+BB70 [shape=record label="{171: call-events.replace [v6,'replace',v7,v11,-]*}" ] 
+BB70 -> BB71 [tailport=s, headport=n]
+BB70 -> BB73 [tailport=s, headport=n, color=gray]
+BB71 [shape=record label="{172: read-variable['el',v1,-]}" ] 
+BB71 -> BB72 [tailport=s, headport=n, headlabel="      72"]
+BB71 -> BB73 [tailport=s, headport=n, color=gray]
+BB72 [shape=record label="{173: return[v1]}" ] 
+BB73 [shape=record label="{174: exceptional-return}" ] 
+//#$~ 57
+}

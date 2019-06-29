@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry780[shape=none,label=""];
+BB_entry780 -> BB10364 [tailport=s, headport=n, headlabel="    10364"]
+BB10364 [shape=record label="{34219: constant[undefined,v1]}" ] 
+BB10364 -> BB10365 [tailport=s, headport=n, headlabel="      10365"]
+BB10365 [shape=record label="{34220: read-variable['isNode',v3,v2]|34221: read-variable['object',v4,-]}" ] 
+BB10365 -> BB10366 [tailport=s, headport=n, headlabel="      10366"]
+BB10365 -> BB10370 [tailport=s, headport=n, color=gray, headlabel="      10370"]
+BB10366 [shape=record label="{34222: call-isNode [v2,v3,v4,v1]}" ] 
+BB10366 -> BB10367 [tailport=s, headport=n, headlabel="      10367"]
+BB10366 -> BB10370 [tailport=s, headport=n, color=gray]
+BB10367 [shape=record label="{34223: if[v1](true-block:10368,false-block:10369)}" ] 
+BB10367 -> BB10369 [tailport=s, headport=n, headlabel="      10369"]
+BB10367 -> BB10368 [tailport=s, headport=n, headlabel="      10368"]
+BB10368 [shape=record label="{34224: read-variable['object',v7,-]|34225: read-property[v7,'nodeType',v5]|34226: \<variable-non-null-undef\>['object']|34227: constant[3.0,v6]|34228: ==[v5,v6,v1]}" ] 
+BB10368 -> BB10369 [tailport=s, headport=n]
+BB10368 -> BB10370 [tailport=s, headport=n, color=gray]
+BB10369 [shape=record label="{34229: return[v1]}" ] 
+BB10370 [shape=record label="{34230: exceptional-return}" ] 
+//#$~ 18640
+}

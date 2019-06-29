@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry542[shape=none,label=""];
+BB_entry542 -> BB5708 [tailport=s, headport=n, headlabel="    5708"]
+BB5708 [shape=record label="{17963: constant[undefined,v1]}" ] 
+BB5708 -> BB5709 [tailport=s, headport=n, headlabel="      5709"]
+BB5709 [shape=record label="{17964: read-variable['ringListener',v3,-]|17965: read-property[v3,'lineStart',-]|17966: \<variable-non-null-undef\>['ringListener']}" ] 
+BB5709 -> BB5710 [tailport=s, headport=n, headlabel="      5710"]
+BB5709 -> BB5715 [tailport=s, headport=n, color=gray, headlabel="      5715"]
+BB5710 [shape=record label="{17967: call-ringListener.lineStart [v3,'lineStart',-]*}" ] 
+BB5710 -> BB5711 [tailport=s, headport=n, headlabel="      5711"]
+BB5710 -> BB5715 [tailport=s, headport=n, color=gray]
+BB5711 [shape=record label="{17968: read-variable['Array',v5,-]}" ] 
+BB5711 -> BB5712 [tailport=s, headport=n, headlabel="      5712"]
+BB5711 -> BB5715 [tailport=s, headport=n, color=gray]
+BB5712 [shape=record label="{17969: construct [-,v5,v4]}" ] 
+BB5712 -> BB5713 [tailport=s, headport=n, headlabel="      5713"]
+BB5712 -> BB5715 [tailport=s, headport=n, color=gray]
+BB5713 [shape=record label="{17970: write-variable[v4,'ring']*}" ] 
+BB5713 -> BB5714 [tailport=s, headport=n, headlabel="      5714"]
+BB5714 [shape=record label="{17971: return[v1]}" ] 
+BB5715 [shape=record label="{17972: exceptional-return}" ] 
+//#$~ 3373
+}

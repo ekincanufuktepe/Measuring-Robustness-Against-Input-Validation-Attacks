@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry319[shape=none,label=""];
+BB_entry319 -> BB4801 [tailport=s, headport=n, headlabel="    4801"]
+BB4801 [shape=record label="{13777: constant[undefined,v1]|13778: vardecl['i']|13779: vardecl['len']|13780: vardecl['selector']}" ] 
+BB4801 -> BB4802 [tailport=s, headport=n, headlabel="      4802"]
+BB4802 [shape=record label="{13781: constant[0.0,v2]|13782: write-variable[v2,'i']*|13783: read-variable['tokens',v4,-]|13784: read-property[v4,'length',v3]|13785: \<variable-non-null-undef\>['tokens']|13786: write-variable[v3,'len']*|13787: constant[\"\",v5]|13788: write-variable[v5,'selector']*}" ] 
+BB4802 -> BB4803 [tailport=s, headport=n, headlabel="      4803"]
+BB4802 -> BB4807 [tailport=s, headport=n, color=gray, headlabel="      4807"]
+BB4803 [shape=record label="{13789: read-variable['i',v7,-]|13790: read-variable['len',v8,-]|13791: \<[v7,v8,v6]|13792: if[v6](true-block:4804,false-block:4805)}" ] 
+BB4803 -> BB4804 [tailport=s, headport=n, headlabel="      4804"]
+BB4803 -> BB4805 [tailport=s, headport=n, headlabel="      4805"]
+BB4803 -> BB4807 [tailport=s, headport=n, color=gray]
+BB4804 [shape=record label="{13793: read-variable['selector',v10,-]|13794: read-variable['tokens',v13,-]|13795: read-variable['i',v14,-]|13796: read-property[v13,v14,v12]|13797: \<variable-non-null-undef\>['tokens']|13798: read-property[v12,'value',v11]|13799: \<property-non-null-undef\>[v13,v14]|13800: +[v10,v11,v9]|13801: write-variable[v9,'selector']*|13802: constant[1.0,v15]|13803: read-variable['i',v16,-]|13804: +[v16,v17]|13805: +[v17,v15,v18]|13806: write-variable[v18,'i']}" ] 
+BB4804 -> BB4803 [tailport=s, headport=n]
+BB4804 -> BB4807 [tailport=s, headport=n, color=gray]
+BB4805 [shape=record label="{13807: read-variable['selector',v1,-]}" ] 
+BB4805 -> BB4806 [tailport=s, headport=n, headlabel="      4806"]
+BB4805 -> BB4807 [tailport=s, headport=n, color=gray]
+BB4806 [shape=record label="{13808: return[v1]}" ] 
+BB4807 [shape=record label="{13809: exceptional-return}" ] 
+//#$~ 5088
+}

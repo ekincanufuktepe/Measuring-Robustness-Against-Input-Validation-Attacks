@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry85[shape=none,label=""];
+BB_entry85 -> BB1517 [tailport=s, headport=n, headlabel="    1517"]
+BB1517 [shape=record label="{5756: constant[undefined,v1]|5757: vardecl['j']|5758: vardecl['numObjs']}" ] 
+BB1517 -> BB1518 [tailport=s, headport=n, headlabel="      1518"]
+BB1518 [shape=record label="{5759: read-variable['this',v4,-]|5760: read-property[v4,'objs',v3]|5761: read-property[v3,'length',v2]|5762: \<property-non-null-undef\>[v4,'objs']|5763: write-variable[v2,'numObjs']*|5764: read-variable['midori',v6,-]|5765: read-property[v6,'each',-]|5766: \<variable-non-null-undef\>['midori']|5767: read-variable['parentObj',v7,-]|5768: function-expr[function ( o ),v8]|5769: constant[true,v9]}" ] 
+BB1518 -> BB1519 [tailport=s, headport=n, headlabel="      1519"]
+BB1518 -> BB1526 [tailport=s, headport=n, color=gray, headlabel="      1526"]
+BB1519 [shape=record label="{5770: call-midori.each [v6,'each',v7,v8,v9,-]*}" ] 
+BB1519 -> BB1520 [tailport=s, headport=n, headlabel="      1520"]
+BB1519 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1520 [shape=record label="{5771: constant[0.0,v11]|5772: write-variable[v11,'j']}" ] 
+BB1520 -> BB1521 [tailport=s, headport=n, headlabel="      1521"]
+BB1521 [shape=record label="{5773: read-variable['j',v12,-]|5774: read-variable['numObjs',v13,-]|5775: \<[v12,v13,v10]|5776: if[v10](true-block:1522,false-block:1525)}" ] 
+BB1521 -> BB1522 [tailport=s, headport=n, headlabel="      1522"]
+BB1521 -> BB1525 [tailport=s, headport=n, headlabel="      1525"]
+BB1521 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1522 [shape=record label="{5777: read-variable['this',v18,-]|5778: read-property[v18,'objs',v17]|5779: read-variable['j',v19,-]|5780: read-property[v17,v19,v15]|5781: \<property-non-null-undef\>[v18,'objs']|5782: read-variable['parentObj',v16,-]|5783: ==[v15,v16,v14]|5784: if[v14](true-block:1523,false-block:1524)}" ] 
+BB1522 -> BB1523 [tailport=s, headport=n, headlabel="      1523"]
+BB1522 -> BB1524 [tailport=s, headport=n, headlabel="      1524"]
+BB1522 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1523 [shape=record label="{5785: read-variable['this',v23,-]|5786: read-property[v23,'objs',v21]|5787: read-variable['j',v22,-]|5788: constant[\"\",v20]|5789: write-property[v21,v22,v20]|5790: \<property-non-null-undef\>[v23,'objs']*}" ] 
+BB1523 -> BB1525 [tailport=s, headport=n]
+BB1523 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1524 [shape=record label="{5791: constant[1.0,v20]|5792: read-variable['j',v21,-]|5793: +[v21,v22]|5794: +[v22,v20,v23]|5795: write-variable[v23,'j']}" ] 
+BB1524 -> BB1521 [tailport=s, headport=n]
+BB1524 -> BB1526 [tailport=s, headport=n, color=gray]
+BB1525 [shape=record label="{5796: return[v1]}" ] 
+BB1526 [shape=record label="{5797: exceptional-return}" ] 
+//#$~ 1127
+}

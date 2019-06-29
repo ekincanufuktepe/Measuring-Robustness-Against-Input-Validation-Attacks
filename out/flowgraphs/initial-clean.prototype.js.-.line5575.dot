@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry540[shape=none,label=""];
+BB_entry540 -> BB7058 [tailport=s, headport=n, headlabel="    7058"]
+BB7058 [shape=record label="{19731: constant[undefined,v1]|19732: vardecl['hash']}" ] 
+BB7058 -> BB7059 [tailport=s, headport=n, headlabel="      7059"]
+BB7059 [shape=record label="{19733: read-variable['window',v3,-]|19734: read-property[v3,'location',v2]|19735: \<variable-non-null-undef\>['window']|19736: if[v2](true-block:7060,false-block:7061)}" ] 
+BB7059 -> BB7061 [tailport=s, headport=n, headlabel="      7061"]
+BB7059 -> BB7060 [tailport=s, headport=n, headlabel="      7060"]
+BB7059 -> BB7066 [tailport=s, headport=n, color=gray, headlabel="      7066"]
+BB7060 [shape=record label="{19737: read-variable['window',v5,-]|19738: read-property[v5,'location',v4]|19739: \<variable-non-null-undef\>['window']|19740: read-property[v4,'hash',v2]|19741: \<property-non-null-undef\>[v5,'location']}" ] 
+BB7060 -> BB7061 [tailport=s, headport=n]
+BB7060 -> BB7066 [tailport=s, headport=n, color=gray]
+BB7061 [shape=record label="{19742: write-variable[v2,'hash']*|19743: read-variable['hash',v1,-]|19744: if[v1](true-block:7062,false-block:7065)}" ] 
+BB7061 -> BB7065 [tailport=s, headport=n, headlabel="      7065"]
+BB7061 -> BB7062 [tailport=s, headport=n, headlabel="      7062"]
+BB7061 -> BB7066 [tailport=s, headport=n, color=gray]
+BB7062 [shape=record label="{19745: read-variable['hash',v7,-]|19746: read-property[v7,'slice',-]|19747: \<variable-non-null-undef\>['hash']|19748: constant[1.0,v8]}" ] 
+BB7062 -> BB7063 [tailport=s, headport=n, headlabel="      7063"]
+BB7062 -> BB7066 [tailport=s, headport=n, color=gray]
+BB7063 [shape=record label="{19749: call-hash.slice [v7,'slice',v8,v4]}" ] 
+BB7063 -> BB7064 [tailport=s, headport=n, headlabel="      7064"]
+BB7063 -> BB7066 [tailport=s, headport=n, color=gray]
+BB7064 [shape=record label="{19750: read-variable['elem',v9,-]|19751: read-property[v9,'id',v5]|19752: \<variable-non-null-undef\>['elem']|19753: ===[v4,v5,v1]}" ] 
+BB7064 -> BB7065 [tailport=s, headport=n]
+BB7064 -> BB7066 [tailport=s, headport=n, color=gray]
+BB7065 [shape=record label="{19754: return[v1]}" ] 
+BB7066 [shape=record label="{19755: exceptional-return}" ] 
+//#$~ 5577
+}

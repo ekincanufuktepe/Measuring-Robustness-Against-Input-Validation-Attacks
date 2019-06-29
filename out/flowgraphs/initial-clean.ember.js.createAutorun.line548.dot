@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB513 [tailport=s, headport=n, headlabel="    513"]
+BB513 [shape=record label="{1583: constant[undefined,v1]}" ] 
+BB513 -> BB514 [tailport=s, headport=n, headlabel="      514"]
+BB514 [shape=record label="{1584: read-variable['backburner',v3,-]|1585: read-property[v3,'begin',-]|1586: \<variable-non-null-undef\>['backburner']}" ] 
+BB514 -> BB515 [tailport=s, headport=n, headlabel="      515"]
+BB514 -> BB520 [tailport=s, headport=n, color=gray, headlabel="      520"]
+BB515 [shape=record label="{1587: call-backburner.begin [v3,'begin',-]*}" ] 
+BB515 -> BB516 [tailport=s, headport=n, headlabel="      516"]
+BB515 -> BB520 [tailport=s, headport=n, color=gray]
+BB516 [shape=record label="{1588: read-variable['backburner',v5,-]|1589: read-variable['global',v7,-]|1590: read-property[v7,'setTimeout',-]|1591: \<variable-non-null-undef\>['global']|1592: function-expr[function ( ),v8]}" ] 
+BB516 -> BB517 [tailport=s, headport=n, headlabel="      517"]
+BB516 -> BB520 [tailport=s, headport=n, color=gray]
+BB517 [shape=record label="{1593: call-global.setTimeout [v7,'setTimeout',v8,v4]}" ] 
+BB517 -> BB518 [tailport=s, headport=n, headlabel="      518"]
+BB517 -> BB520 [tailport=s, headport=n, color=gray]
+BB518 [shape=record label="{1594: write-property[v5,'_autorun',v4]|1595: \<variable-non-null-undef\>['backburner']*}" ] 
+BB518 -> BB519 [tailport=s, headport=n, headlabel="      519"]
+BB518 -> BB520 [tailport=s, headport=n, color=gray]
+BB519 [shape=record label="{1596: return[v1]}" ] 
+BB520 [shape=record label="{1597: exceptional-return}" ] 
+//#$~ 552
+}

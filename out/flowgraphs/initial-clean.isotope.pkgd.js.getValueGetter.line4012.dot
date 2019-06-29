@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry277[shape=none,label=""];
+BB_entry277 -> BB2974 [tailport=s, headport=n, headlabel="    2974"]
+BB2974 [shape=record label="{9623: constant[undefined,v1]|9624: vardecl['getValue']}" ] 
+BB2974 -> BB2975 [tailport=s, headport=n, headlabel="      2975"]
+BB2975 [shape=record label="{9625: read-variable['attr',v2,-]|9626: if[v2](true-block:2976,false-block:2977)}" ] 
+BB2975 -> BB2976 [tailport=s, headport=n, headlabel="      2976"]
+BB2975 -> BB2977 [tailport=s, headport=n, headlabel="      2977"]
+BB2975 -> BB2980 [tailport=s, headport=n, color=gray, headlabel="      2980"]
+BB2976 [shape=record label="{9627: function-expr[function ( elem ),v3]|9628: write-variable[v3,'getValue']*}" ] 
+BB2976 -> BB2978 [tailport=s, headport=n, headlabel="      2978"]
+BB2977 [shape=record label="{9629: function-expr[function ( elem ),v3]|9630: write-variable[v3,'getValue']*}" ] 
+BB2977 -> BB2978 [tailport=s, headport=n]
+BB2978 [shape=record label="{9631: read-variable['getValue',v1,-]}" ] 
+BB2978 -> BB2979 [tailport=s, headport=n, headlabel="      2979"]
+BB2978 -> BB2980 [tailport=s, headport=n, color=gray]
+BB2979 [shape=record label="{9632: return[v1]}" ] 
+BB2980 [shape=record label="{9633: exceptional-return}" ] 
+//#$~ 4026
+}

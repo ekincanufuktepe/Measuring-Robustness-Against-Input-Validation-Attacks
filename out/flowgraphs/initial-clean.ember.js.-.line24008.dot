@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1059[shape=none,label=""];
+BB_entry1059 -> BB12764 [tailport=s, headport=n, headlabel="    12764"]
+BB12764 [shape=record label="{43503: constant[undefined,v1]|43504: vardecl['store']}" ] 
+BB12764 -> BB12765 [tailport=s, headport=n, headlabel="      12765"]
+BB12765 [shape=record label="{43505: read-variable['get',v4,v3]|43506: read-variable['this',v5,-]|43507: constant[\"store\",v6]}" ] 
+BB12765 -> BB12766 [tailport=s, headport=n, headlabel="      12766"]
+BB12765 -> BB12770 [tailport=s, headport=n, color=gray, headlabel="      12770"]
+BB12766 [shape=record label="{43508: call-get [v3,v4,v5,v6,v2]}" ] 
+BB12766 -> BB12767 [tailport=s, headport=n, headlabel="      12767"]
+BB12766 -> BB12770 [tailport=s, headport=n, color=gray]
+BB12767 [shape=record label="{43509: write-variable[v2,'store']*|43510: read-variable['store',v9,-]|43511: read-property[v9,'find',v8]|43512: \<variable-non-null-undef\>['store']|43513: read-property[v8,'apply',-]|43514: \<property-non-null-undef\>[v9,'find']|43515: read-variable['store',v10,-]|43516: read-variable['arguments',v11,-]}" ] 
+BB12767 -> BB12768 [tailport=s, headport=n, headlabel="      12768"]
+BB12767 -> BB12770 [tailport=s, headport=n, color=gray]
+BB12768 [shape=record label="{43517: call-store.find.apply [v8,'apply',v10,v11,v1]}" ] 
+BB12768 -> BB12769 [tailport=s, headport=n, headlabel="      12769"]
+BB12768 -> BB12770 [tailport=s, headport=n, color=gray]
+BB12769 [shape=record label="{43518: return[v1]}" ] 
+BB12770 [shape=record label="{43519: exceptional-return}" ] 
+//#$~ 24010
+}

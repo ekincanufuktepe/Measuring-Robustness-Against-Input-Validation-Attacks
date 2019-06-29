@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry582[shape=none,label=""];
+BB_entry582 -> BB7768 [tailport=s, headport=n, headlabel="    7768"]
+BB7768 [shape=record label="{21769: constant[undefined,v1]}" ] 
+BB7768 -> BB7769 [tailport=s, headport=n, headlabel="      7769"]
+BB7769 [shape=record label="{21770: read-variable['isXML',v3,-]|21771: ![v3,v2]|21772: if[v2](true-block:7770,false-block:7776)}" ] 
+BB7769 -> BB7770 [tailport=s, headport=n, headlabel="      7770"]
+BB7769 -> BB7776 [tailport=s, headport=n, headlabel="      7776"]
+BB7769 -> BB7777 [tailport=s, headport=n, color=gray, headlabel="      7777"]
+BB7770 [shape=record label="{21773: read-variable['elem',v5,-]|21774: read-property[v5,'getAttribute',-]|21775: \<variable-non-null-undef\>['elem']|21776: read-variable['name',v6,-]|21777: read-variable['name',v12,-]|21778: read-property[v12,'toLowerCase',-]|21779: \<variable-non-null-undef\>['name']}" ] 
+BB7770 -> BB7771 [tailport=s, headport=n, headlabel="      7771"]
+BB7770 -> BB7777 [tailport=s, headport=n, color=gray]
+BB7771 [shape=record label="{21780: call-name.toLowerCase [v12,'toLowerCase',v9]}" ] 
+BB7771 -> BB7772 [tailport=s, headport=n, headlabel="      7772"]
+BB7771 -> BB7777 [tailport=s, headport=n, color=gray]
+BB7772 [shape=record label="{21781: constant[\"type\",v10]|21782: ===[v9,v10,v8]|21783: if[v8](true-block:7773,false-block:7774)}" ] 
+BB7772 -> BB7773 [tailport=s, headport=n, headlabel="      7773"]
+BB7772 -> BB7774 [tailport=s, headport=n, headlabel="      7774"]
+BB7772 -> BB7777 [tailport=s, headport=n, color=gray]
+BB7773 [shape=record label="{21784: constant[1.0,v7]}" ] 
+BB7773 -> BB7775 [tailport=s, headport=n, headlabel="      7775"]
+BB7774 [shape=record label="{21785: constant[2.0,v7]}" ] 
+BB7774 -> BB7775 [tailport=s, headport=n]
+BB7775 [shape=record label="{21786: call-elem.getAttribute [v5,'getAttribute',v6,v7,v1]}" ] 
+BB7775 -> BB7776 [tailport=s, headport=n]
+BB7775 -> BB7777 [tailport=s, headport=n, color=gray]
+BB7776 [shape=record label="{21787: return[v1]}" ] 
+BB7777 [shape=record label="{21788: exceptional-return}" ] 
+//#$~ 6191
+}

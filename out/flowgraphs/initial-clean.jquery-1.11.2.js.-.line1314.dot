@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry82[shape=none,label=""];
+BB_entry82 -> BB961 [tailport=s, headport=n, headlabel="    961"]
+BB961 [shape=record label="{2513: constant[undefined,v1]}" ] 
+BB961 -> BB962 [tailport=s, headport=n, headlabel="      962"]
+BB962 [shape=record label="{2514: read-variable['b',v2,-]|2515: if[v2](true-block:963,false-block:966)}" ] 
+BB962 -> BB963 [tailport=s, headport=n, headlabel="      963"]
+BB962 -> BB966 [tailport=s, headport=n, headlabel="      966"]
+BB962 -> BB968 [tailport=s, headport=n, color=gray, headlabel="      968"]
+BB963 [shape=record label="{2516: read-variable['b',v4,-]|2517: read-property[v4,'parentNode',v3]|2518: \<variable-non-null-undef\>['b']|2519: write-variable[v3,'b']|2520: if[v3](true-block:964,false-block:966)}" ] 
+BB963 -> BB964 [tailport=s, headport=n, headlabel="      964"]
+BB963 -> BB966 [tailport=s, headport=n]
+BB963 -> BB968 [tailport=s, headport=n, color=gray]
+BB964 [shape=record label="{2521: read-variable['b',v6,-]|2522: read-variable['a',v7,-]|2523: ===[v6,v7,v5]|2524: if[v5](true-block:965,false-block:963)}" ] 
+BB964 -> BB965 [tailport=s, headport=n, headlabel="      965"]
+BB964 -> BB963 [tailport=s, headport=n]
+BB964 -> BB968 [tailport=s, headport=n, color=gray]
+BB965 [shape=record label="{2525: constant[true,v1]}" ] 
+BB965 -> BB967 [tailport=s, headport=n, headlabel="      967"]
+BB966 [shape=record label="{2526: constant[false,v1]}" ] 
+BB966 -> BB967 [tailport=s, headport=n]
+BB967 [shape=record label="{2527: return[v1]}" ] 
+BB968 [shape=record label="{2528: exceptional-return}" ] 
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry229[shape=none,label=""];
+BB_entry229 -> BB1977 [tailport=s, headport=n, headlabel="    1977"]
+BB1977 [shape=record label="{5771: constant[undefined,v1]|5772: vardecl['me']|5773: vardecl['object']|5774: vardecl['ret']}" ] 
+BB1977 -> BB1978 [tailport=s, headport=n, headlabel="      1978"]
+BB1978 [shape=record label="{5775: read-variable['this',v2,-]|5776: write-variable[v2,'me']*|5777: new[v3]|5778: function-expr[function ( ret cbName ),v4]|5779: write-property[v3,'sendReturn',v4]|5780: function-expr[function ( ),v5]|5781: write-property[v3,'clientHasGears',v5]|5782: read-variable['ajaxRequestFunc',v6,-]|5783: write-property[v3,'ajaxRequest',v6]|5784: write-variable[v3,'object']*|5785: read-variable['func',v9,-]|5786: read-property[v9,'apply',-]|5787: \<variable-non-null-undef\>['func']|5788: read-variable['object',v10,-]|5789: read-variable['arguments',v11,-]}" ] 
+BB1978 -> BB1979 [tailport=s, headport=n, headlabel="      1979"]
+BB1978 -> BB1983 [tailport=s, headport=n, color=gray, headlabel="      1983"]
+BB1979 [shape=record label="{5790: call-func.apply [v9,'apply',v10,v11,v7]}" ] 
+BB1979 -> BB1980 [tailport=s, headport=n, headlabel="      1980"]
+BB1979 -> BB1983 [tailport=s, headport=n, color=gray]
+BB1980 [shape=record label="{5791: write-variable[v7,'ret']*|5792: read-variable['object',v13,-]|5793: read-property[v13,'sendReturn',-]|5794: \<variable-non-null-undef\>['object']|5795: read-variable['ret',v14,-]|5796: read-variable['cbName',v15,-]}" ] 
+BB1980 -> BB1981 [tailport=s, headport=n, headlabel="      1981"]
+BB1980 -> BB1983 [tailport=s, headport=n, color=gray]
+BB1981 [shape=record label="{5797: call-object.sendReturn [v13,'sendReturn',v14,v15,-]*}" ] 
+BB1981 -> BB1982 [tailport=s, headport=n, headlabel="      1982"]
+BB1981 -> BB1983 [tailport=s, headport=n, color=gray]
+BB1982 [shape=record label="{5798: return[v1]}" ] 
+BB1983 [shape=record label="{5799: exceptional-return}" ] 
+//#$~ 2298
+}

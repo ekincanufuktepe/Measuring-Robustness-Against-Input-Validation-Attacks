@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry251[shape=none,label=""];
+BB_entry251 -> BB3100 [tailport=s, headport=n, headlabel="    3100"]
+BB3100 [shape=record label="{7495: constant[undefined,v1]|7496: vardecl['result']}" ] 
+BB3100 -> BB3101 [tailport=s, headport=n, headlabel="      3101"]
+BB3101 [shape=record label="{7497: constant[null,v2]|7498: write-variable[v2,'result']*|7499: read-variable['Array',v6,-]|7500: read-property[v6,'prototype',v5]|7501: \<variable-non-null-undef\>['Array']|7502: read-property[v5,'some',v4]|7503: \<property-non-null-undef\>[v6,'prototype']|7504: read-property[v4,'call',-]|7505: \<property-non-null-undef\>[v5,'some']|7506: read-variable['list',v7,-]|7507: function-expr[function ( element ),v8]}" ] 
+BB3101 -> BB3102 [tailport=s, headport=n, headlabel="      3102"]
+BB3101 -> BB3105 [tailport=s, headport=n, color=gray, headlabel="      3105"]
+BB3102 [shape=record label="{7508: call-Array.prototype.some.call [v4,'call',v7,v8,-]*}" ] 
+BB3102 -> BB3103 [tailport=s, headport=n, headlabel="      3103"]
+BB3102 -> BB3105 [tailport=s, headport=n, color=gray]
+BB3103 [shape=record label="{7509: read-variable['result',v1,-]}" ] 
+BB3103 -> BB3104 [tailport=s, headport=n, headlabel="      3104"]
+BB3103 -> BB3105 [tailport=s, headport=n, color=gray]
+BB3104 [shape=record label="{7510: return[v1]}" ] 
+BB3105 [shape=record label="{7511: exceptional-return}" ] 
+//#$~ 4663
+}

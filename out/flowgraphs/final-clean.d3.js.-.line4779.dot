@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry803[shape=none,label=""];
+BB_entry803 -> BB8457 [tailport=s, headport=n, headlabel="    8457"]
+BB8457 [shape=record label="{26798: constant[undefined,v1]|26799: vardecl['projection']|26800: vardecl['center']|26801: vardecl['rotate']}" ] 
+BB8457 -> BB8458 [tailport=s, headport=n, headlabel="      8458"]
+BB8458 [shape=record label="{26802: read-variable['d3_geo_mercatorProjection',v4,v3]|26803: read-variable['d3_geo_transverseMercator',v5,-]}" ] 
+BB8458 -> BB8459 [tailport=s, headport=n, headlabel="      8459"]
+BB8458 -> BB8464 [tailport=s, headport=n, color=gray, headlabel="      8464"]
+BB8459 [shape=record label="{26804: call-d3_geo_mercatorProjection [v3,v4,v5,v2]}" ] 
+BB8459 -> BB8460 [tailport=s, headport=n, headlabel="      8460"]
+BB8459 -> BB8464 [tailport=s, headport=n, color=gray]
+BB8460 [shape=record label="{26805: write-variable[v2,'projection']*|26806: read-variable['projection',v7,-]|26807: read-property[v7,'center',v6]|26808: \<variable-non-null-undef\>['projection']|26809: write-variable[v6,'center']*|26810: read-variable['projection',v9,-]|26811: read-property[v9,'rotate',v8]|26812: \<variable-non-null-undef\>['projection']|26813: write-variable[v8,'rotate']*|26814: read-variable['projection',v11,-]|26815: function-expr[function ( _ ),v10]|26816: write-property[v11,'center',v10]|26817: \<variable-non-null-undef\>['projection']*|26818: read-variable['projection',v13,-]|26819: function-expr[function ( _ ),v12]|26820: write-property[v13,'rotate',v12]|26821: \<variable-non-null-undef\>['projection']*|26822: read-variable['rotate',v15,v14]|26823: read-variable['Array',v17,-]|26824: constant[0.0,v18]|26825: constant[0.0,v19]|26826: constant[90.0,v20]}" ] 
+BB8460 -> BB8461 [tailport=s, headport=n, headlabel="      8461"]
+BB8460 -> BB8464 [tailport=s, headport=n, color=gray]
+BB8461 [shape=record label="{26827: construct [-,v17,v18,v19,v20,v16]}" ] 
+BB8461 -> BB8462 [tailport=s, headport=n, headlabel="      8462"]
+BB8461 -> BB8464 [tailport=s, headport=n, color=gray]
+BB8462 [shape=record label="{26828: call-rotate [v14,v15,v16,v1]}" ] 
+BB8462 -> BB8463 [tailport=s, headport=n, headlabel="      8463"]
+BB8462 -> BB8464 [tailport=s, headport=n, color=gray]
+BB8463 [shape=record label="{26829: return[v1]}" ] 
+BB8464 [shape=record label="{26830: exceptional-return}" ] 
+//#$~ 4788
+}

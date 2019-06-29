@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1022[shape=none,label=""];
+BB_entry1022 -> BB12318 [tailport=s, headport=n, headlabel="    12318"]
+BB12318 [shape=record label="{42020: constant[undefined,v1]|42021: vardecl['dsl']}" ] 
+BB12318 -> BB12319 [tailport=s, headport=n, headlabel="      12319"]
+BB12319 [shape=record label="{42022: read-variable['DSL',v3,-]}" ] 
+BB12319 -> BB12320 [tailport=s, headport=n, headlabel="      12320"]
+BB12319 -> BB12325 [tailport=s, headport=n, color=gray, headlabel="      12325"]
+BB12320 [shape=record label="{42023: construct [-,v3,v2]}" ] 
+BB12320 -> BB12321 [tailport=s, headport=n, headlabel="      12321"]
+BB12320 -> BB12325 [tailport=s, headport=n, color=gray]
+BB12321 [shape=record label="{42024: write-variable[v2,'dsl']*|42025: read-variable['callback',v5,-]|42026: read-property[v5,'call',-]|42027: \<variable-non-null-undef\>['callback']|42028: read-variable['dsl',v6,-]}" ] 
+BB12321 -> BB12322 [tailport=s, headport=n, headlabel="      12322"]
+BB12321 -> BB12325 [tailport=s, headport=n, color=gray]
+BB12322 [shape=record label="{42029: call-callback.call [v5,'call',v6,-]*}" ] 
+BB12322 -> BB12323 [tailport=s, headport=n, headlabel="      12323"]
+BB12322 -> BB12325 [tailport=s, headport=n, color=gray]
+BB12323 [shape=record label="{42030: read-variable['dsl',v1,-]}" ] 
+BB12323 -> BB12324 [tailport=s, headport=n, headlabel="      12324"]
+BB12323 -> BB12325 [tailport=s, headport=n, color=gray]
+BB12324 [shape=record label="{42031: return[v1]}" ] 
+BB12325 [shape=record label="{42032: exceptional-return}" ] 
+//#$~ 22568
+}

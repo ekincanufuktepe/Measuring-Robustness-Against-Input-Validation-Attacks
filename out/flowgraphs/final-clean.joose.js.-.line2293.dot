@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry230[shape=none,label=""];
+BB_entry230 -> BB1965 [tailport=s, headport=n, headlabel="    1965"]
+BB1965 [shape=record label="{5747: constant[undefined,v1]}" ] 
+BB1965 -> BB1966 [tailport=s, headport=n, headlabel="      1966"]
+BB1966 [shape=record label="{5748: read-variable['me',v5,-]|5749: read-property[v5,'meta',v4]|5750: \<variable-non-null-undef\>['me']|5751: read-property[v4,'can',-]|5752: \<property-non-null-undef\>[v5,'meta']|5753: read-variable['cbName',v6,-]}" ] 
+BB1966 -> BB1967 [tailport=s, headport=n, headlabel="      1967"]
+BB1966 -> BB1972 [tailport=s, headport=n, color=gray, headlabel="      1972"]
+BB1967 [shape=record label="{5754: call-me.meta.can [v4,'can',v6,v2]}" ] 
+BB1967 -> BB1968 [tailport=s, headport=n, headlabel="      1968"]
+BB1967 -> BB1972 [tailport=s, headport=n, color=gray]
+BB1968 [shape=record label="{5755: if[v2](true-block:1969,false-block:1971)}" ] 
+BB1968 -> BB1969 [tailport=s, headport=n, headlabel="      1969"]
+BB1968 -> BB1971 [tailport=s, headport=n, headlabel="      1971"]
+BB1969 [shape=record label="{5756: read-variable['me',v9,-]|5757: read-variable['cbName',v10,-]|5758: read-property[v9,v10,v8]|5759: \<variable-non-null-undef\>['me']|5760: read-property[v8,'call',-]|5761: \<property-non-null-undef\>[v9,v10]|5762: read-variable['me',v11,-]|5763: read-variable['ret',v12,-]}" ] 
+BB1969 -> BB1970 [tailport=s, headport=n, headlabel="      1970"]
+BB1969 -> BB1972 [tailport=s, headport=n, color=gray]
+BB1970 [shape=record label="{5764: call-null [v8,'call',v11,v12,-]*}" ] 
+BB1970 -> BB1971 [tailport=s, headport=n]
+BB1970 -> BB1972 [tailport=s, headport=n, color=gray]
+BB1971 [shape=record label="{5765: return[v1]}" ] 
+BB1972 [shape=record label="{5766: exceptional-return}" ] 
+//#$~ 2293
+}

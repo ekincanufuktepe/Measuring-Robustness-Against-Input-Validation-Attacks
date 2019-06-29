@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB70 [tailport=s, headport=n, headlabel="    70"]
+BB70 [shape=record label="{226: constant[undefined,v1]}" ] 
+BB70 -> BB71 [tailport=s, headport=n, headlabel="      71"]
+BB71 [shape=record label="{227: read-variable['fA',v3,v2]|228: constant[2.0,v4]}" ] 
+BB71 -> BB72 [tailport=s, headport=n, headlabel="      72"]
+BB71 -> BB76 [tailport=s, headport=n, color=gray, headlabel="      76"]
+BB72 [shape=record label="{229: call-fA [v2,v3,v4,-]*}" ] 
+BB72 -> BB73 [tailport=s, headport=n, headlabel="      73"]
+BB72 -> BB76 [tailport=s, headport=n, color=gray]
+BB73 [shape=record label="{230: read-variable['inp',v8,-]|231: read-property[v8,'length',v6]|232: \<variable-non-null-undef\>['inp']|233: constant[0.0,v7]|234: !=[v6,v7,v5]|235: if[v5](true-block:74,false-block:75)}" ] 
+BB73 -> BB74 [tailport=s, headport=n, headlabel="      74"]
+BB73 -> BB75 [tailport=s, headport=n, headlabel="      75"]
+BB73 -> BB76 [tailport=s, headport=n, color=gray]
+BB74 [shape=record label="{236: read-variable['inp',v10,-]|237: read-variable['qwe',v11,-]|238: +[v10,v11,v9]|239: write-variable[v9,'ww']*}" ] 
+BB74 -> BB73 [tailport=s, headport=n]
+BB74 -> BB76 [tailport=s, headport=n, color=gray]
+BB75 [shape=record label="{240: return[v1]}" ] 
+BB76 [shape=record label="{241: exceptional-return}" ] 
+//#$~ 115
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry330[shape=none,label=""];
+BB_entry330 -> BB4559 [tailport=s, headport=n, headlabel="    4559"]
+BB4559 [shape=record label="{13624: constant[undefined,v1]}" ] 
+BB4559 -> BB4560 [tailport=s, headport=n, headlabel="      4560"]
+BB4560 [shape=record label="{13625: read-variable['dojoRequireCallbacks',v3,-]|13626: read-property[v3,'push',-]|13627: \<variable-non-null-undef\>['dojoRequireCallbacks']|13628: read-variable['loaded',v4,-]}" ] 
+BB4560 -> BB4561 [tailport=s, headport=n, headlabel="      4561"]
+BB4560 -> BB4569 [tailport=s, headport=n, color=gray, headlabel="      4569"]
+BB4561 [shape=record label="{13629: call-dojoRequireCallbacks.push [v3,'push',v4,-]*}" ] 
+BB4561 -> BB4562 [tailport=s, headport=n, headlabel="      4562"]
+BB4561 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4562 [shape=record label="{13630: read-variable['array',v6,-]|13631: read-property[v6,'forEach',-]|13632: \<variable-non-null-undef\>['array']|13633: read-variable['mid',v9,-]|13634: read-property[v9,'split',-]|13635: \<variable-non-null-undef\>['mid']|13636: constant[\",\",v10]}" ] 
+BB4562 -> BB4563 [tailport=s, headport=n, headlabel="      4563"]
+BB4562 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4563 [shape=record label="{13637: call-mid.split [v9,'split',v10,v7]}" ] 
+BB4563 -> BB4564 [tailport=s, headport=n, headlabel="      4564"]
+BB4563 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4564 [shape=record label="{13638: function-expr[function ( mid ),v11]}" ] 
+BB4564 -> BB4565 [tailport=s, headport=n, headlabel="      4565"]
+BB4565 [shape=record label="{13639: call-array.forEach [v6,'forEach',v7,v11,-]*}" ] 
+BB4565 -> BB4566 [tailport=s, headport=n, headlabel="      4566"]
+BB4565 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4566 [shape=record label="{13640: read-variable['checkDojoRequirePlugin',v13,v12]}" ] 
+BB4566 -> BB4567 [tailport=s, headport=n, headlabel="      4567"]
+BB4566 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4567 [shape=record label="{13641: call-checkDojoRequirePlugin [v12,v13,-]*}" ] 
+BB4567 -> BB4568 [tailport=s, headport=n, headlabel="      4568"]
+BB4567 -> BB4569 [tailport=s, headport=n, color=gray]
+BB4568 [shape=record label="{13642: return[v1]}" ] 
+BB4569 [shape=record label="{13643: exceptional-return}" ] 
+//#$~ 6279
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry512[shape=none,label=""];
+BB_entry512 -> BB6614 [tailport=s, headport=n, headlabel="    6614"]
+BB6614 [shape=record label="{18374: constant[undefined,v1]}" ] 
+BB6614 -> BB6615 [tailport=s, headport=n, headlabel="      6615"]
+BB6615 [shape=record label="{18375: read-variable['Error',v3,-]|18376: constant[\"Syntax error, unrecognized expression: \",v5]|18377: read-variable['msg',v6,-]|18378: +[v5,v6,v4]}" ] 
+BB6615 -> BB6616 [tailport=s, headport=n, headlabel="      6616"]
+BB6615 -> BB6619 [tailport=s, headport=n, color=gray, headlabel="      6619"]
+BB6616 [shape=record label="{18379: construct [-,v3,v4,v2]}" ] 
+BB6616 -> BB6617 [tailport=s, headport=n, headlabel="      6617"]
+BB6616 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6617 [shape=record label="{18380: throw[v2]*}" ] 
+BB6617 -> BB6618 [tailport=s, headport=n, headlabel="      6618"]
+BB6617 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6618 [shape=record label="{18381: return[v1]}" ] 
+BB6619 [shape=record label="{18382: exceptional-return}" ] 
+//#$~ 5221
+}

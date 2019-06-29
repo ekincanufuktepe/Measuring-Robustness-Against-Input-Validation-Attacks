@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry48[shape=none,label=""];
+BB_entry48 -> BB1265 [tailport=s, headport=n, headlabel="    1265"]
+BB1265 [shape=record label="{4525: constant[undefined,v1]}" ] 
+BB1265 -> BB1266 [tailport=s, headport=n, headlabel="      1266"]
+BB1266 [shape=record label="{4526: read-variable['m',v6,-]|4527: read-property[v6,'route',v5]|4528: \<variable-non-null-undef\>['m']|4529: read-property[v5,'mode',v3]|4530: \<property-non-null-undef\>[v6,'route']|4531: constant[\"hash\",v4]|4532: !=[v3,v4,v2]|4533: if[v2](true-block:1267,false-block:1268)}" ] 
+BB1266 -> BB1268 [tailport=s, headport=n, headlabel="      1268"]
+BB1266 -> BB1267 [tailport=s, headport=n, headlabel="      1267"]
+BB1266 -> BB1273 [tailport=s, headport=n, color=gray, headlabel="      1273"]
+BB1267 [shape=record label="{4534: read-variable['$location',v7,-]|4535: read-property[v7,'hash',v2]|4536: \<variable-non-null-undef\>['$location']}" ] 
+BB1267 -> BB1268 [tailport=s, headport=n]
+BB1267 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1268 [shape=record label="{4537: if[v2](true-block:1269,false-block:1270)}" ] 
+BB1268 -> BB1269 [tailport=s, headport=n, headlabel="      1269"]
+BB1268 -> BB1270 [tailport=s, headport=n, headlabel="      1270"]
+BB1269 [shape=record label="{4538: read-variable['$location',v8,-]|4539: read-variable['$location',v9,-]|4540: read-property[v9,'hash',v7]|4541: \<variable-non-null-undef\>['$location']|4542: write-property[v8,'hash',v7]|4543: \<variable-non-null-undef\>['$location']*}" ] 
+BB1269 -> BB1272 [tailport=s, headport=n, headlabel="      1272"]
+BB1269 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1270 [shape=record label="{4544: read-variable['window',v8,-]|4545: read-property[v8,'scrollTo',-]|4546: \<variable-non-null-undef\>['window']|4547: constant[0.0,v9]|4548: constant[0.0,v10]}" ] 
+BB1270 -> BB1271 [tailport=s, headport=n, headlabel="      1271"]
+BB1270 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1271 [shape=record label="{4549: call-window.scrollTo [v8,'scrollTo',v9,v10,-]*}" ] 
+BB1271 -> BB1272 [tailport=s, headport=n]
+BB1271 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1272 [shape=record label="{4550: return[v1]}" ] 
+BB1273 [shape=record label="{4551: exceptional-return}" ] 
+//#$~ 802
+}

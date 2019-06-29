@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry183[shape=none,label=""];
+BB_entry183 -> BB1997 [tailport=s, headport=n, headlabel="    1997"]
+BB1997 [shape=record label="{8178: constant[undefined,v1]}" ] 
+BB1997 -> BB1998 [tailport=s, headport=n, headlabel="      1998"]
+BB1998 [shape=record label="{8179: read-variable['barsArray',v3,-]|8180: read-property[v3,'push',-]|8181: \<variable-non-null-undef\>['barsArray']|8182: read-variable['dataset',v6,-]|8183: read-property[v6,'bars',v5]|8184: \<variable-non-null-undef\>['dataset']|8185: read-variable['barIndex',v7,-]|8186: read-property[v5,v7,v4]|8187: \<property-non-null-undef\>[v6,'bars']}" ] 
+BB1998 -> BB1999 [tailport=s, headport=n, headlabel="      1999"]
+BB1998 -> BB2001 [tailport=s, headport=n, color=gray, headlabel="      2001"]
+BB1999 [shape=record label="{8188: call-barsArray.push [v3,'push',v4,-]*}" ] 
+BB1999 -> BB2000 [tailport=s, headport=n, headlabel="      2000"]
+BB1999 -> BB2001 [tailport=s, headport=n, color=gray]
+BB2000 [shape=record label="{8189: return[v1]}" ] 
+BB2001 [shape=record label="{8190: exceptional-return}" ] 
+//#$~ 2185
+}

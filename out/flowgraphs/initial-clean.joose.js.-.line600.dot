@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry60[shape=none,label=""];
+BB_entry60 -> BB537 [tailport=s, headport=n, headlabel="    537"]
+BB537 [shape=record label="{1842: constant[undefined,v1]}" ] 
+BB537 -> BB538 [tailport=s, headport=n, headlabel="      538"]
+BB538 [shape=record label="{1843: read-variable['me',v3,-]|1844: read-property[v3,'addAttribute',-]|1845: \<variable-non-null-undef\>['me']|1846: read-variable['name',v4,-]|1847: read-variable['attr',v7,-]|1848: read-property[v7,'getProps',-]|1849: \<variable-non-null-undef\>['attr']}" ] 
+BB538 -> BB539 [tailport=s, headport=n, headlabel="      539"]
+BB538 -> BB542 [tailport=s, headport=n, color=gray, headlabel="      542"]
+BB539 [shape=record label="{1850: call-attr.getProps [v7,'getProps',v5]}" ] 
+BB539 -> BB540 [tailport=s, headport=n, headlabel="      540"]
+BB539 -> BB542 [tailport=s, headport=n, color=gray]
+BB540 [shape=record label="{1851: call-me.addAttribute [v3,'addAttribute',v4,v5,-]*}" ] 
+BB540 -> BB541 [tailport=s, headport=n, headlabel="      541"]
+BB540 -> BB542 [tailport=s, headport=n, color=gray]
+BB541 [shape=record label="{1852: return[v1]}" ] 
+BB542 [shape=record label="{1853: exceptional-return}" ] 
+//#$~ 601
+}

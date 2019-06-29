@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry498[shape=none,label=""];
+BB_entry498 -> BB6250 [tailport=s, headport=n, headlabel="    6250"]
+BB6250 [shape=record label="{17365: constant[undefined,v1]}" ] 
+BB6250 -> BB6251 [tailport=s, headport=n, headlabel="      6251"]
+BB6251 [shape=record label="{17366: read-variable['context',v6,-]|17367: read-property[v6,'getElementsByTagName',v5]|17368: \<variable-non-null-undef\>['context']|17369: typeof[v5,v3]|17370: read-variable['strundefined',v4,-]|17371: !==[v3,v4,v2]|17372: if[v2](true-block:6252,false-block:6254)}" ] 
+BB6251 -> BB6252 [tailport=s, headport=n, headlabel="      6252"]
+BB6251 -> BB6254 [tailport=s, headport=n, headlabel="      6254"]
+BB6251 -> BB6255 [tailport=s, headport=n, color=gray, headlabel="      6255"]
+BB6252 [shape=record label="{17373: read-variable['context',v8,-]|17374: read-property[v8,'getElementsByTagName',-]|17375: \<variable-non-null-undef\>['context']|17376: read-variable['tag',v9,-]}" ] 
+BB6252 -> BB6253 [tailport=s, headport=n, headlabel="      6253"]
+BB6252 -> BB6255 [tailport=s, headport=n, color=gray]
+BB6253 [shape=record label="{17377: call-context.getElementsByTagName [v8,'getElementsByTagName',v9,v1]}" ] 
+BB6253 -> BB6254 [tailport=s, headport=n]
+BB6253 -> BB6255 [tailport=s, headport=n, color=gray]
+BB6254 [shape=record label="{17378: return[v1]}" ] 
+BB6255 [shape=record label="{17379: exceptional-return}" ] 
+//#$~ 4967
+}

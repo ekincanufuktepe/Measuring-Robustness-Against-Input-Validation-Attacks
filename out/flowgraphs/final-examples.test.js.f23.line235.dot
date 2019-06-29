@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry26[shape=none,label=""];
+BB_entry26 -> BB142 [tailport=s, headport=n, headlabel="    142"]
+BB142 [shape=record label="{308: constant[undefined,v1]|309: vardecl['hello']}" ] 
+BB142 -> BB143 [tailport=s, headport=n, headlabel="      143"]
+BB143 [shape=record label="{310: constant[\"h\",v2]|311: write-variable[v2,'hello']*|312: read-variable['a',v4,-]|313: read-variable['hello',v5,-]|314: ==[v4,v5,v3]|315: if[v3](true-block:144,false-block:145)}" ] 
+BB143 -> BB144 [tailport=s, headport=n, headlabel="      144"]
+BB143 -> BB145 [tailport=s, headport=n, headlabel="      145"]
+BB143 -> BB147 [tailport=s, headport=n, color=gray, headlabel="      147"]
+BB144 [shape=record label="{316: constant[true,v1]}" ] 
+BB144 -> BB146 [tailport=s, headport=n, headlabel="      146"]
+BB145 [shape=record label="{317: constant[false,v1]}" ] 
+BB145 -> BB146 [tailport=s, headport=n]
+BB146 [shape=record label="{318: return[v1]}" ] 
+BB147 [shape=record label="{319: exceptional-return}" ] 
+//#$~ 245
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry331[shape=none,label=""];
+BB_entry331 -> BB4550 [tailport=s, headport=n, headlabel="    4550"]
+BB4550 [shape=record label="{13605: constant[undefined,v1]|13606: vardecl['module']}" ] 
+BB4550 -> BB4551 [tailport=s, headport=n, headlabel="      4551"]
+BB4551 [shape=record label="{13607: read-variable['getModule',v4,v3]|13608: read-variable['mid',v5,-]|13609: read-variable['require',v7,-]|13610: read-property[v7,'module',v6]|13611: \<variable-non-null-undef\>['require']}" ] 
+BB4551 -> BB4552 [tailport=s, headport=n, headlabel="      4552"]
+BB4551 -> BB4558 [tailport=s, headport=n, color=gray, headlabel="      4558"]
+BB4552 [shape=record label="{13612: call-getModule [v3,v4,v5,v6,v2]}" ] 
+BB4552 -> BB4553 [tailport=s, headport=n, headlabel="      4553"]
+BB4552 -> BB4558 [tailport=s, headport=n, color=gray]
+BB4553 [shape=record label="{13613: write-variable[v2,'module']*|13614: read-variable['dojoRequireModuleStack',v9,-]|13615: read-property[v9,'push',-]|13616: \<variable-non-null-undef\>['dojoRequireModuleStack']|13617: read-variable['module',v10,-]}" ] 
+BB4553 -> BB4554 [tailport=s, headport=n, headlabel="      4554"]
+BB4553 -> BB4558 [tailport=s, headport=n, color=gray]
+BB4554 [shape=record label="{13618: call-dojoRequireModuleStack.push [v9,'push',v10,-]*}" ] 
+BB4554 -> BB4555 [tailport=s, headport=n, headlabel="      4555"]
+BB4554 -> BB4558 [tailport=s, headport=n, color=gray]
+BB4555 [shape=record label="{13619: read-variable['injectModule',v12,v11]|13620: read-variable['module',v13,-]}" ] 
+BB4555 -> BB4556 [tailport=s, headport=n, headlabel="      4556"]
+BB4555 -> BB4558 [tailport=s, headport=n, color=gray]
+BB4556 [shape=record label="{13621: call-injectModule [v11,v12,v13,-]*}" ] 
+BB4556 -> BB4557 [tailport=s, headport=n, headlabel="      4557"]
+BB4556 -> BB4558 [tailport=s, headport=n, color=gray]
+BB4557 [shape=record label="{13622: return[v1]}" ] 
+BB4558 [shape=record label="{13623: exceptional-return}" ] 
+//#$~ 6277
+}

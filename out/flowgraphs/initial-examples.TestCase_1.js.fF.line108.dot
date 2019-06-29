@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry6[shape=none,label=""];
+BB_entry6 -> BB67 [tailport=s, headport=n, headlabel="    67"]
+BB67 [shape=record label="{219: constant[undefined,v1]|220: vardecl['s']}" ] 
+BB67 -> BB68 [tailport=s, headport=n, headlabel="      68"]
+BB68 [shape=record label="{221: constant[0.0,v2]|222: write-variable[v2,'s']*|223: read-variable['x',v4,-]|224: constant[0.0,v5]|225: !=[v4,v5,v3]|226: if[v3](true-block:69,false-block:71)}" ] 
+BB68 -> BB69 [tailport=s, headport=n, headlabel="      69"]
+BB68 -> BB71 [tailport=s, headport=n, headlabel="      71"]
+BB68 -> BB73 [tailport=s, headport=n, color=gray, headlabel="      73"]
+BB69 [shape=record label="{227: read-variable['x',v7,-]|228: read-variable['x',v8,-]|229: *[v7,v8,v6]|230: write-variable[v6,'s']*|231: read-variable['y',v10,-]|232: read-variable['Infinity',v11,-]|233: ==[v10,v11,v9]|234: if[v9](true-block:70,false-block:71)}" ] 
+BB69 -> BB70 [tailport=s, headport=n, headlabel="      70"]
+BB69 -> BB71 [tailport=s, headport=n]
+BB69 -> BB73 [tailport=s, headport=n, color=gray]
+BB70 [shape=record label="{235: constant[0.0,v12]|236: write-variable[v12,'y']*}" ] 
+BB70 -> BB71 [tailport=s, headport=n]
+BB71 [shape=record label="{237: read-variable['z',v7,-]|238: read-variable['s',v8,-]|239: +[v7,v8,v6]|240: write-variable[v6,'z']*|241: read-variable['z',v1,-]}" ] 
+BB71 -> BB72 [tailport=s, headport=n, headlabel="      72"]
+BB71 -> BB73 [tailport=s, headport=n, color=gray]
+BB72 [shape=record label="{242: return[v1]}" ] 
+BB73 [shape=record label="{243: exceptional-return}" ] 
+//#$~ 129
+}

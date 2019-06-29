@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry270[shape=none,label=""];
+BB_entry270 -> BB3037 [tailport=s, headport=n, headlabel="    3037"]
+BB3037 [shape=record label="{9780: constant[undefined,v1]|9781: vardecl['obj']}" ] 
+BB3037 -> BB3038 [tailport=s, headport=n, headlabel="      3038"]
+BB3038 [shape=record label="{9782: read-variable['mapTOC',v4,v3]|9783: read-variable['suite',v5,-]|9784: new[v6]}" ] 
+BB3038 -> BB3039 [tailport=s, headport=n, headlabel="      3039"]
+BB3038 -> BB3043 [tailport=s, headport=n, color=gray, headlabel="      3043"]
+BB3039 [shape=record label="{9785: call-mapTOC [v3,v4,v5,v6,v2]}" ] 
+BB3039 -> BB3040 [tailport=s, headport=n, headlabel="      3040"]
+BB3039 -> BB3043 [tailport=s, headport=n, color=gray]
+BB3040 [shape=record label="{9786: write-variable[v2,'obj']*|9787: read-variable['stringifyTOC',v8,v7]|9788: read-variable['obj',v9,-]|9789: constant[0.0,v10]}" ] 
+BB3040 -> BB3041 [tailport=s, headport=n, headlabel="      3041"]
+BB3040 -> BB3043 [tailport=s, headport=n, color=gray]
+BB3041 [shape=record label="{9790: call-stringifyTOC [v7,v8,v9,v10,v1]}" ] 
+BB3041 -> BB3042 [tailport=s, headport=n, headlabel="      3042"]
+BB3041 -> BB3043 [tailport=s, headport=n, color=gray]
+BB3042 [shape=record label="{9791: return[v1]}" ] 
+BB3043 [shape=record label="{9792: exceptional-return}" ] 
+//#$~ 3523
+}

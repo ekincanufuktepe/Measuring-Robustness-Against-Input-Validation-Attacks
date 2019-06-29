@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry182[shape=none,label=""];
+BB_entry182 -> BB2523 [tailport=s, headport=n, headlabel="    2523"]
+BB2523 [shape=record label="{8960: constant[undefined,v1]|8961: vardecl['name']|8962: vardecl['renderedChild']}" ] 
+BB2523 -> BB2524 [tailport=s, headport=n, headlabel="      2524"]
+BB2524 [shape=record label="{8963: read-variable['renderedChildren',v3,-]}" ] 
+BB2524 -> BB2525 [tailport=s, headport=n, headlabel="      2525"]
+BB2524 -> BB2531 [tailport=s, headport=n, color=gray, headlabel="      2531"]
+BB2525 [shape=record label="{8964: begin-for-in[v3,v4]}" ] 
+BB2525 -> BB2526 [tailport=s, headport=n, headlabel="      2526"]
+BB2525 -> BB2531 [tailport=s, headport=n, color=gray]
+BB2526 [shape=record label="{8965: has-next[v4,v5]|8966: if[v5](true-block:2527,false-block:2530)}" ] 
+BB2526 -> BB2527 [tailport=s, headport=n, headlabel="      2527"]
+BB2526 -> BB2530 [tailport=s, headport=n, headlabel="      2530"]
+BB2527 [shape=record label="{8967: next-property[v4,v6]|8968: write-variable[v6,'name']|8969: read-variable['renderedChildren',v8,-]|8970: read-variable['name',v9,-]|8971: read-property[v8,v9,v7]|8972: \<variable-non-null-undef\>['renderedChildren']|8973: write-variable[v7,'renderedChild']*|8974: read-variable['ReactReconciler',v11,-]|8975: read-property[v11,'unmountComponent',-]|8976: \<variable-non-null-undef\>['ReactReconciler']|8977: read-variable['renderedChild',v12,-]}" ] 
+BB2527 -> BB2528 [tailport=s, headport=n, headlabel="      2528"]
+BB2527 -> BB2531 [tailport=s, headport=n, color=gray]
+BB2528 [shape=record label="{8978: call-ReactReconciler.unmountComponent [v11,'unmountComponent',v12,-]*}" ] 
+BB2528 -> BB2529 [tailport=s, headport=n, headlabel="      2529"]
+BB2528 -> BB2531 [tailport=s, headport=n, color=gray]
+BB2529 [shape=record label="{8979: end-for-in(begin-node:8964)}" ] 
+BB2529 -> BB2526 [tailport=s, headport=n]
+BB2530 [shape=record label="{8980: return[v1]}" ] 
+BB2531 [shape=record label="{8981: exceptional-return}" ] 
+//#$~ 4825
+}

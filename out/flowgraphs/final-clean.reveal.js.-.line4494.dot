@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry233[shape=none,label=""];
+BB_entry233 -> BB3869 [tailport=s, headport=n, headlabel="    3869"]
+BB3869 [shape=record label="{11107: constant[undefined,v1]}" ] 
+BB3869 -> BB3870 [tailport=s, headport=n, headlabel="      3870"]
+BB3870 [shape=record label="{11108: constant[\"addEventListener\",v3]|11109: read-variable['window',v4,-]|11110: in[v3,v4,v2]|11111: if[v2](true-block:3871,false-block:3876)}" ] 
+BB3870 -> BB3871 [tailport=s, headport=n, headlabel="      3871"]
+BB3870 -> BB3876 [tailport=s, headport=n, headlabel="      3876"]
+BB3870 -> BB3877 [tailport=s, headport=n, color=gray, headlabel="      3877"]
+BB3871 [shape=record label="{11112: read-variable['dom',v7,-]|11113: read-property[v7,'wrapper',v6]|11114: \<variable-non-null-undef\>['dom']|11115: if[v6](true-block:3874,false-block:3872)}" ] 
+BB3871 -> BB3874 [tailport=s, headport=n, headlabel="      3874"]
+BB3871 -> BB3872 [tailport=s, headport=n, headlabel="      3872"]
+BB3871 -> BB3877 [tailport=s, headport=n, color=gray]
+BB3872 [shape=record label="{11116: read-variable['document',v8,-]|11117: read-property[v8,'querySelector',-]|11118: \<variable-non-null-undef\>['document']|11119: constant[\".reveal\",v9]}" ] 
+BB3872 -> BB3873 [tailport=s, headport=n, headlabel="      3873"]
+BB3872 -> BB3877 [tailport=s, headport=n, color=gray]
+BB3873 [shape=record label="{11120: call-document.querySelector [v8,'querySelector',v9,v6]}" ] 
+BB3873 -> BB3874 [tailport=s, headport=n]
+BB3873 -> BB3877 [tailport=s, headport=n, color=gray]
+BB3874 [shape=record label="{11121: read-property[v6,'removeEventListener',-]|11122: read-variable['type',v7,-]|11123: read-variable['listener',v8,-]|11124: read-variable['useCapture',v9,-]}" ] 
+BB3874 -> BB3875 [tailport=s, headport=n, headlabel="      3875"]
+BB3874 -> BB3877 [tailport=s, headport=n, color=gray]
+BB3875 [shape=record label="{11125: call-null [v6,'removeEventListener',v7,v8,v9,-]*}" ] 
+BB3875 -> BB3876 [tailport=s, headport=n]
+BB3875 -> BB3877 [tailport=s, headport=n, color=gray]
+BB3876 [shape=record label="{11126: return[v1]}" ] 
+BB3877 [shape=record label="{11127: exceptional-return}" ] 
+//#$~ 4496
+}

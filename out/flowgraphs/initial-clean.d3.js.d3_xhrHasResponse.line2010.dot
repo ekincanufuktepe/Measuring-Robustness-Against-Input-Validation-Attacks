@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry315[shape=none,label=""];
+BB_entry315 -> BB3402 [tailport=s, headport=n, headlabel="    3402"]
+BB3402 [shape=record label="{10434: constant[undefined,v1]|10435: vardecl['type']}" ] 
+BB3402 -> BB3403 [tailport=s, headport=n, headlabel="      3403"]
+BB3403 [shape=record label="{10436: read-variable['request',v3,-]|10437: read-property[v3,'responseType',v2]|10438: \<variable-non-null-undef\>['request']|10439: write-variable[v2,'type']*|10440: read-variable['type',v4,-]|10441: if[v4](true-block:3404,false-block:3405)}" ] 
+BB3403 -> BB3405 [tailport=s, headport=n, headlabel="      3405"]
+BB3403 -> BB3404 [tailport=s, headport=n, headlabel="      3404"]
+BB3403 -> BB3409 [tailport=s, headport=n, color=gray, headlabel="      3409"]
+BB3404 [shape=record label="{10442: read-variable['type',v5,-]|10443: constant[\"text\",v6]|10444: !==[v5,v6,v4]}" ] 
+BB3404 -> BB3405 [tailport=s, headport=n]
+BB3404 -> BB3409 [tailport=s, headport=n, color=gray]
+BB3405 [shape=record label="{10445: if[v4](true-block:3406,false-block:3407)}" ] 
+BB3405 -> BB3406 [tailport=s, headport=n, headlabel="      3406"]
+BB3405 -> BB3407 [tailport=s, headport=n, headlabel="      3407"]
+BB3406 [shape=record label="{10446: read-variable['request',v5,-]|10447: read-property[v5,'response',v1]|10448: \<variable-non-null-undef\>['request']}" ] 
+BB3406 -> BB3408 [tailport=s, headport=n, headlabel="      3408"]
+BB3406 -> BB3409 [tailport=s, headport=n, color=gray]
+BB3407 [shape=record label="{10449: read-variable['request',v5,-]|10450: read-property[v5,'responseText',v1]|10451: \<variable-non-null-undef\>['request']}" ] 
+BB3407 -> BB3408 [tailport=s, headport=n]
+BB3407 -> BB3409 [tailport=s, headport=n, color=gray]
+BB3408 [shape=record label="{10452: return[v1]}" ] 
+BB3409 [shape=record label="{10453: exceptional-return}" ] 
+//#$~ 2012
+}

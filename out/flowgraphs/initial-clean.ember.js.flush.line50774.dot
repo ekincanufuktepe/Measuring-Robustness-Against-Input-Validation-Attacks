@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry2503[shape=none,label=""];
+BB_entry2503 -> BB28459 [tailport=s, headport=n, headlabel="    28459"]
+BB28459 [shape=record label="{94644: constant[undefined,v1]|94645: vardecl['i']|94646: vardecl['callback']|94647: vardecl['arg']}" ] 
+BB28459 -> BB28460 [tailport=s, headport=n, headlabel="      28460"]
+BB28460 [shape=record label="{94648: constant[0.0,v3]|94649: write-variable[v3,'i']*}" ] 
+BB28460 -> BB28461 [tailport=s, headport=n, headlabel="      28461"]
+BB28461 [shape=record label="{94650: read-variable['i',v4,-]|94651: read-variable['len',v5,-]|94652: \<[v4,v5,v2]|94653: if[v2](true-block:28462,false-block:28463)}" ] 
+BB28461 -> BB28462 [tailport=s, headport=n, headlabel="      28462"]
+BB28461 -> BB28463 [tailport=s, headport=n, headlabel="      28463"]
+BB28461 -> BB28467 [tailport=s, headport=n, color=gray, headlabel="      28467"]
+BB28462 [shape=record label="{94654: read-variable['queue',v7,-]|94655: read-variable['i',v8,-]|94656: read-property[v7,v8,v6]|94657: \<variable-non-null-undef\>['queue']|94658: write-variable[v6,'callback']*|94659: read-variable['queue',v10,-]|94660: read-variable['i',v12,-]|94661: constant[1.0,v13]|94662: +[v12,v13,v11]|94663: read-property[v10,v11,v9]|94664: \<variable-non-null-undef\>['queue']|94665: write-variable[v9,'arg']*|94666: read-variable['callback',v15,v14]|94667: read-variable['arg',v16,-]}" ] 
+BB28462 -> BB28464 [tailport=s, headport=n, headlabel="      28464"]
+BB28462 -> BB28467 [tailport=s, headport=n, color=gray]
+BB28463 [shape=record label="{94668: constant[0.0,v6]|94669: write-variable[v6,'len']*}" ] 
+BB28463 -> BB28466 [tailport=s, headport=n, headlabel="      28466"]
+BB28464 [shape=record label="{94670: call-callback [v14,v15,v16,-]*}" ] 
+BB28464 -> BB28465 [tailport=s, headport=n, headlabel="      28465"]
+BB28464 -> BB28467 [tailport=s, headport=n, color=gray]
+BB28465 [shape=record label="{94671: read-variable['queue',v18,-]|94672: read-variable['i',v19,-]|94673: read-variable['undefined',v17,-]|94674: write-property[v18,v19,v17]|94675: \<variable-non-null-undef\>['queue']*|94676: read-variable['queue',v21,-]|94677: read-variable['i',v23,-]|94678: constant[1.0,v24]|94679: +[v23,v24,v22]|94680: read-variable['undefined',v20,-]|94681: write-property[v21,v22,v20]|94682: \<variable-non-null-undef\>['queue']*|94683: read-variable['i',v26,-]|94684: constant[2.0,v27]|94685: +[v26,v27,v25]|94686: write-variable[v25,'i']}" ] 
+BB28465 -> BB28461 [tailport=s, headport=n]
+BB28465 -> BB28467 [tailport=s, headport=n, color=gray]
+BB28466 [shape=record label="{94687: return[v1]}" ] 
+BB28467 [shape=record label="{94688: exceptional-return}" ] 
+//#$~ 50785
+}

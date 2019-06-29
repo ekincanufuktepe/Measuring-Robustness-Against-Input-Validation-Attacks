@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry1765[shape=none,label=""];
+BB_entry1765 -> BB20257 [tailport=s, headport=n, headlabel="    20257"]
+BB20257 [shape=record label="{67616: constant[undefined,v1]}" ] 
+BB20257 -> BB20258 [tailport=s, headport=n, headlabel="      20258"]
+BB20258 [shape=record label="{67617: read-variable['Test',v6,-]|67618: read-property[v6,'resolve',-]|67619: \<variable-non-null-undef\>['Test']|67620: read-variable['lastPromise',v7,-]}" ] 
+BB20258 -> BB20259 [tailport=s, headport=n, headlabel="      20259"]
+BB20258 -> BB20264 [tailport=s, headport=n, color=gray, headlabel="      20264"]
+BB20259 [shape=record label="{67621: call-Test.resolve [v6,'resolve',v7,v4]}" ] 
+BB20259 -> BB20260 [tailport=s, headport=n, headlabel="      20260"]
+BB20259 -> BB20264 [tailport=s, headport=n, color=gray]
+BB20260 [shape=record label="{67622: read-property[v4,'then',-]|67623: function-expr[function ( ),v8]}" ] 
+BB20260 -> BB20261 [tailport=s, headport=n, headlabel="      20261"]
+BB20260 -> BB20264 [tailport=s, headport=n, color=gray]
+BB20261 [shape=record label="{67624: call-null [v4,'then',v8,v2]}" ] 
+BB20261 -> BB20262 [tailport=s, headport=n, headlabel="      20262"]
+BB20261 -> BB20264 [tailport=s, headport=n, color=gray]
+BB20262 [shape=record label="{67625: write-variable[v2,'lastPromise']*}" ] 
+BB20262 -> BB20263 [tailport=s, headport=n, headlabel="      20263"]
+BB20263 [shape=record label="{67626: return[v1]}" ] 
+BB20264 [shape=record label="{67627: exceptional-return}" ] 
+//#$~ 38025
+}

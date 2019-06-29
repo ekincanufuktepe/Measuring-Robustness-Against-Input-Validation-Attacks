@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry2181[shape=none,label=""];
+BB_entry2181 -> BB24829 [tailport=s, headport=n, headlabel="    24829"]
+BB24829 [shape=record label="{81874: constant[undefined,v1]}" ] 
+BB24829 -> BB24830 [tailport=s, headport=n, headlabel="      24830"]
+BB24830 [shape=record label="{81875: read-variable['this',v3,-]|81876: read-variable['_document',v2,-]|81877: if[v2](true-block:24832,false-block:24831)}" ] 
+BB24830 -> BB24832 [tailport=s, headport=n, headlabel="      24832"]
+BB24830 -> BB24831 [tailport=s, headport=n, headlabel="      24831"]
+BB24830 -> BB24838 [tailport=s, headport=n, color=gray, headlabel="      24838"]
+BB24831 [shape=record label="{81878: read-variable['document',v2,-]}" ] 
+BB24831 -> BB24832 [tailport=s, headport=n]
+BB24831 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24832 [shape=record label="{81879: write-property[v3,'document',v2]*|81880: read-variable['this',v6,-]|81881: read-property[v6,'document',v5]|81882: ![v5,v4]|81883: if[v4](true-block:24833,false-block:24836)}" ] 
+BB24832 -> BB24833 [tailport=s, headport=n, headlabel="      24833"]
+BB24832 -> BB24836 [tailport=s, headport=n, headlabel="      24836"]
+BB24832 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24833 [shape=record label="{81884: read-variable['Error',v8,-]|81885: constant[\"A document object must be passed to the DOMHelper, or available on the global scope\",v9]}" ] 
+BB24833 -> BB24834 [tailport=s, headport=n, headlabel="      24834"]
+BB24833 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24834 [shape=record label="{81886: construct [-,v8,v9,v7]}" ] 
+BB24834 -> BB24835 [tailport=s, headport=n, headlabel="      24835"]
+BB24834 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24835 [shape=record label="{81887: throw[v7]*}" ] 
+BB24835 -> BB24836 [tailport=s, headport=n]
+BB24835 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24836 [shape=record label="{81888: read-variable['this',v8,-]|81889: read-variable['canClone',v7,-]|81890: write-property[v8,'canClone',v7]*|81891: read-variable['this',v10,-]|81892: constant[null,v9]|81893: write-property[v10,'namespace',v9]*}" ] 
+BB24836 -> BB24837 [tailport=s, headport=n, headlabel="      24837"]
+BB24836 -> BB24838 [tailport=s, headport=n, color=gray]
+BB24837 [shape=record label="{81894: return[v1]}" ] 
+BB24838 [shape=record label="{81895: exceptional-return}" ] 
+//#$~ 46436
+}

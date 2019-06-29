@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry168[shape=none,label=""];
+BB_entry168 -> BB1865 [tailport=s, headport=n, headlabel="    1865"]
+BB1865 [shape=record label="{7753: constant[undefined,v1]|7754: vardecl['xWidth']|7755: vardecl['xAbsolute']|7756: vardecl['barWidth']}" ] 
+BB1865 -> BB1866 [tailport=s, headport=n, headlabel="      1866"]
+BB1866 [shape=record label="{7757: read-variable['this',v4,-]|7758: read-property[v4,'calculateBaseWidth',-]}" ] 
+BB1866 -> BB1867 [tailport=s, headport=n, headlabel="      1867"]
+BB1866 -> BB1874 [tailport=s, headport=n, color=gray, headlabel="      1874"]
+BB1867 [shape=record label="{7759: call-this.calculateBaseWidth [v4,'calculateBaseWidth',v2]}" ] 
+BB1867 -> BB1868 [tailport=s, headport=n, headlabel="      1868"]
+BB1867 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1868 [shape=record label="{7760: write-variable[v2,'xWidth']*|7761: read-variable['this',v9,-]|7762: read-property[v9,'calculateX',-]|7763: read-variable['barIndex',v10,-]}" ] 
+BB1868 -> BB1869 [tailport=s, headport=n, headlabel="      1869"]
+BB1868 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1869 [shape=record label="{7764: call-this.calculateX [v9,'calculateX',v10,v6]}" ] 
+BB1869 -> BB1870 [tailport=s, headport=n, headlabel="      1870"]
+BB1869 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1870 [shape=record label="{7765: read-variable['xWidth',v11,-]|7766: constant[2.0,v12]|7767: /[v11,v12,v7]|7768: -[v6,v7,v5]|7769: write-variable[v5,'xAbsolute']*|7770: read-variable['this',v15,-]|7771: read-property[v15,'calculateBarWidth',-]|7772: read-variable['datasetCount',v16,-]}" ] 
+BB1870 -> BB1871 [tailport=s, headport=n, headlabel="      1871"]
+BB1870 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1871 [shape=record label="{7773: call-this.calculateBarWidth [v15,'calculateBarWidth',v16,v13]}" ] 
+BB1871 -> BB1872 [tailport=s, headport=n, headlabel="      1872"]
+BB1871 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1872 [shape=record label="{7774: write-variable[v13,'barWidth']*|7775: read-variable['xAbsolute',v21,-]|7776: read-variable['barWidth',v23,-]|7777: read-variable['datasetIndex',v24,-]|7778: *[v23,v24,v22]|7779: +[v21,v22,v19]|7780: read-variable['datasetIndex',v25,-]|7781: read-variable['options',v27,-]|7782: read-property[v27,'barDatasetSpacing',v26]|7783: \<variable-non-null-undef\>['options']|7784: *[v25,v26,v20]|7785: +[v19,v20,v17]|7786: read-variable['barWidth',v28,-]|7787: constant[2.0,v29]|7788: /[v28,v29,v18]|7789: +[v17,v18,v1]}" ] 
+BB1872 -> BB1873 [tailport=s, headport=n, headlabel="      1873"]
+BB1872 -> BB1874 [tailport=s, headport=n, color=gray]
+BB1873 [shape=record label="{7790: return[v1]}" ] 
+BB1874 [shape=record label="{7791: exceptional-return}" ] 
+//#$~ 2084
+}

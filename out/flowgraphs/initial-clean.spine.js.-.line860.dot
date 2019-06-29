@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry88[shape=none,label=""];
+BB_entry88 -> BB1030 [tailport=s, headport=n, headlabel="    1030"]
+BB1030 [shape=record label="{3046: constant[undefined,v1]|3047: vardecl['ref']}" ] 
+BB1030 -> BB1031 [tailport=s, headport=n, headlabel="      1031"]
+BB1031 [shape=record label="{3048: read-variable['Events',v4,-]|3049: read-property[v4,'trigger',v3]|3050: \<variable-non-null-undef\>['Events']|3051: read-property[v3,'apply',-]|3052: \<property-non-null-undef\>[v4,'trigger']|3053: read-variable['this',v5,-]|3054: read-variable['arguments',v6,-]}" ] 
+BB1031 -> BB1032 [tailport=s, headport=n, headlabel="      1032"]
+BB1031 -> BB1038 [tailport=s, headport=n, color=gray, headlabel="      1038"]
+BB1032 [shape=record label="{3055: call-Events.trigger.apply [v3,'apply',v5,v6,-]*}" ] 
+BB1032 -> BB1033 [tailport=s, headport=n, headlabel="      1033"]
+BB1032 -> BB1038 [tailport=s, headport=n, color=gray]
+BB1033 [shape=record label="{3056: read-variable['arguments',v10,-]|3057: constant[0.0,v11]|3058: read-property[v10,v11,v8]|3059: \<variable-non-null-undef\>['arguments']|3060: constant[\"refresh\",v9]|3061: ===[v8,v9,v7]|3062: if[v7](true-block:1034,false-block:1035)}" ] 
+BB1033 -> BB1034 [tailport=s, headport=n, headlabel="      1034"]
+BB1033 -> BB1035 [tailport=s, headport=n, headlabel="      1035"]
+BB1033 -> BB1038 [tailport=s, headport=n, color=gray]
+BB1034 [shape=record label="{3063: constant[true,v1]}" ] 
+BB1034 -> BB1037 [tailport=s, headport=n, headlabel="      1037"]
+BB1035 [shape=record label="{3064: read-variable['this',v15,-]|3065: read-property[v15,'constructor',v14]|3066: write-variable[v14,'ref']|3067: read-property[v14,'trigger',v13]|3068: \<property-non-null-undef\>[v15,'constructor']|3069: read-property[v13,'apply',-]|3070: \<property-non-null-undef\>[v14,'trigger']|3071: read-variable['ref',v16,-]|3072: read-variable['arguments',v17,-]}" ] 
+BB1035 -> BB1036 [tailport=s, headport=n, headlabel="      1036"]
+BB1035 -> BB1038 [tailport=s, headport=n, color=gray]
+BB1036 [shape=record label="{3073: call-null [v13,'apply',v16,v17,v1]}" ] 
+BB1036 -> BB1037 [tailport=s, headport=n]
+BB1036 -> BB1038 [tailport=s, headport=n, color=gray]
+BB1037 [shape=record label="{3074: return[v1]}" ] 
+BB1038 [shape=record label="{3075: exceptional-return}" ] 
+//#$~ 866
+}

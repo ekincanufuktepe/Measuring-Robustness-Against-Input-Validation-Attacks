@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB1448 [tailport=s, headport=n, headlabel="    1448"]
+BB1448 [shape=record label="{4086: constant[undefined,v1]|4087: vardecl['document']|4088: vardecl['namespace']}" ] 
+BB1448 -> BB1449 [tailport=s, headport=n, headlabel="      1449"]
+BB1449 [shape=record label="{4089: read-variable['this',v3,-]|4090: read-property[v3,'ownerDocument',v2]|4091: write-variable[v2,'document']*|4092: read-variable['this',v5,-]|4093: read-property[v5,'namespaceURI',v4]|4094: write-variable[v4,'namespace']*|4095: read-variable['namespace',v6,-]|4096: if[v6](true-block:1450,false-block:1451)}" ] 
+BB1449 -> BB1450 [tailport=s, headport=n, headlabel="      1450"]
+BB1449 -> BB1451 [tailport=s, headport=n, headlabel="      1451"]
+BB1449 -> BB1455 [tailport=s, headport=n, color=gray, headlabel="      1455"]
+BB1450 [shape=record label="{4097: read-variable['document',v8,-]|4098: read-property[v8,'createElementNS',-]|4099: \<variable-non-null-undef\>['document']|4100: read-variable['namespace',v9,-]|4101: read-variable['name',v10,-]}" ] 
+BB1450 -> BB1452 [tailport=s, headport=n, headlabel="      1452"]
+BB1450 -> BB1455 [tailport=s, headport=n, color=gray]
+BB1451 [shape=record label="{4102: read-variable['document',v8,-]|4103: read-property[v8,'createElement',-]|4104: \<variable-non-null-undef\>['document']|4105: read-variable['name',v9,-]}" ] 
+BB1451 -> BB1453 [tailport=s, headport=n, headlabel="      1453"]
+BB1451 -> BB1455 [tailport=s, headport=n, color=gray]
+BB1452 [shape=record label="{4106: call-document.createElementNS [v8,'createElementNS',v9,v10,v1]}" ] 
+BB1452 -> BB1454 [tailport=s, headport=n, headlabel="      1454"]
+BB1452 -> BB1455 [tailport=s, headport=n, color=gray]
+BB1453 [shape=record label="{4107: call-document.createElement [v8,'createElement',v9,v1]}" ] 
+BB1453 -> BB1454 [tailport=s, headport=n]
+BB1453 -> BB1455 [tailport=s, headport=n, color=gray]
+BB1454 [shape=record label="{4108: return[v1]}" ] 
+BB1455 [shape=record label="{4109: exceptional-return}" ] 
+//#$~ 811
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry186[shape=none,label=""];
+BB_entry186 -> BB3098 [tailport=s, headport=n, headlabel="    3098"]
+BB3098 [shape=record label="{9097: constant[undefined,v1]}" ] 
+BB3098 -> BB3099 [tailport=s, headport=n, headlabel="      3099"]
+BB3099 [shape=record label="{9098: read-variable['autoSlide',v2,-]|9099: if[v2](true-block:3100,false-block:3101)}" ] 
+BB3099 -> BB3101 [tailport=s, headport=n, headlabel="      3101"]
+BB3099 -> BB3100 [tailport=s, headport=n, headlabel="      3100"]
+BB3099 -> BB3107 [tailport=s, headport=n, color=gray, headlabel="      3107"]
+BB3100 [shape=record label="{9100: read-variable['autoSlidePaused',v2,-]}" ] 
+BB3100 -> BB3101 [tailport=s, headport=n]
+BB3100 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3101 [shape=record label="{9101: if[v2](true-block:3102,false-block:3106)}" ] 
+BB3101 -> BB3102 [tailport=s, headport=n, headlabel="      3102"]
+BB3101 -> BB3106 [tailport=s, headport=n, headlabel="      3106"]
+BB3102 [shape=record label="{9102: constant[false,v3]|9103: write-variable[v3,'autoSlidePaused']*|9104: read-variable['dispatchEvent',v5,v4]|9105: constant[\"autoslideresumed\",v6]}" ] 
+BB3102 -> BB3103 [tailport=s, headport=n, headlabel="      3103"]
+BB3102 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3103 [shape=record label="{9106: call-dispatchEvent [v4,v5,v6,-]*}" ] 
+BB3103 -> BB3104 [tailport=s, headport=n, headlabel="      3104"]
+BB3103 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3104 [shape=record label="{9107: read-variable['cueAutoSlide',v8,v7]}" ] 
+BB3104 -> BB3105 [tailport=s, headport=n, headlabel="      3105"]
+BB3104 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3105 [shape=record label="{9108: call-cueAutoSlide [v7,v8,-]*}" ] 
+BB3105 -> BB3106 [tailport=s, headport=n]
+BB3105 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3106 [shape=record label="{9109: return[v1]}" ] 
+BB3107 [shape=record label="{9110: exceptional-return}" ] 
+//#$~ 3597
+}

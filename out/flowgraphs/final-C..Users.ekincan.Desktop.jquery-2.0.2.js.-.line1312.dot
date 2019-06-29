@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry70[shape=none,label=""];
+BB_entry70 -> BB974 [tailport=s, headport=n, headlabel="    974"]
+BB974 [shape=record label="{2609: constant[undefined,v1]|2610: vardecl['name']}" ] 
+BB974 -> BB975 [tailport=s, headport=n, headlabel="      975"]
+BB975 [shape=record label="{2611: read-variable['elem',v5,-]|2612: read-property[v5,'nodeName',v4]|2613: \<variable-non-null-undef\>['elem']|2614: read-property[v4,'toLowerCase',-]|2615: \<property-non-null-undef\>[v5,'nodeName']}" ] 
+BB975 -> BB976 [tailport=s, headport=n, headlabel="      976"]
+BB975 -> BB982 [tailport=s, headport=n, color=gray, headlabel="      982"]
+BB976 [shape=record label="{2616: call[v4,'toLowerCase',v2]}" ] 
+BB976 -> BB977 [tailport=s, headport=n, headlabel="      977"]
+BB976 -> BB982 [tailport=s, headport=n, color=gray]
+BB977 [shape=record label="{2617: write-variable[v2,'name']*|2618: read-variable['name',v6,-]|2619: constant[\"input\",v7]|2620: ===[v6,v7,v1]|2621: if[v1](true-block:979,false-block:978)}" ] 
+BB977 -> BB979 [tailport=s, headport=n, headlabel="      979"]
+BB977 -> BB978 [tailport=s, headport=n, headlabel="      978"]
+BB977 -> BB982 [tailport=s, headport=n, color=gray]
+BB978 [shape=record label="{2622: read-variable['name',v6,-]|2623: constant[\"button\",v7]|2624: ===[v6,v7,v1]}" ] 
+BB978 -> BB979 [tailport=s, headport=n]
+BB978 -> BB982 [tailport=s, headport=n, color=gray]
+BB979 [shape=record label="{2625: if[v1](true-block:980,false-block:981)}" ] 
+BB979 -> BB981 [tailport=s, headport=n, headlabel="      981"]
+BB979 -> BB980 [tailport=s, headport=n, headlabel="      980"]
+BB980 [shape=record label="{2626: read-variable['elem',v8,-]|2627: read-property[v8,'type',v6]|2628: \<variable-non-null-undef\>['elem']|2629: read-variable['type',v7,-]|2630: ===[v6,v7,v1]}" ] 
+BB980 -> BB981 [tailport=s, headport=n]
+BB980 -> BB982 [tailport=s, headport=n, color=gray]
+BB981 [shape=record label="{2631: return[v1]}" ] 
+BB982 [shape=record label="{2632: exceptional-return}" ] 
+}

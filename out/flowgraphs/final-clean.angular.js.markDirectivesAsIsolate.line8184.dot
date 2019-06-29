@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry380[shape=none,label=""];
+BB_entry380 -> BB5068 [tailport=s, headport=n, headlabel="    5068"]
+BB5068 [shape=record label="{12943: constant[undefined,v1]|12944: vardecl['j']|12945: vardecl['jj']}" ] 
+BB5068 -> BB5069 [tailport=s, headport=n, headlabel="      5069"]
+BB5069 [shape=record label="{12946: constant[0.0,v3]|12947: write-variable[v3,'j']*|12948: read-variable['directives',v5,-]|12949: read-property[v5,'length',v4]|12950: \<variable-non-null-undef\>['directives']|12951: write-variable[v4,'jj']*}" ] 
+BB5069 -> BB5070 [tailport=s, headport=n, headlabel="      5070"]
+BB5069 -> BB5075 [tailport=s, headport=n, color=gray, headlabel="      5075"]
+BB5070 [shape=record label="{12952: read-variable['j',v6,-]|12953: read-variable['jj',v7,-]|12954: \<[v6,v7,v2]|12955: if[v2](true-block:5071,false-block:5074)}" ] 
+BB5070 -> BB5071 [tailport=s, headport=n, headlabel="      5071"]
+BB5070 -> BB5074 [tailport=s, headport=n, headlabel="      5074"]
+BB5070 -> BB5075 [tailport=s, headport=n, color=gray]
+BB5071 [shape=record label="{12956: read-variable['directives',v9,-]|12957: read-variable['j',v10,-]|12958: read-variable['inherit',v12,v11]|12959: read-variable['directives',v14,-]|12960: read-variable['j',v15,-]|12961: read-property[v14,v15,v13]|12962: \<variable-non-null-undef\>['directives']|12963: new[v16]|12964: constant[true,v17]|12965: write-property[v16,'$$isolateScope',v17]}" ] 
+BB5071 -> BB5072 [tailport=s, headport=n, headlabel="      5072"]
+BB5071 -> BB5075 [tailport=s, headport=n, color=gray]
+BB5072 [shape=record label="{12966: call-inherit [v11,v12,v13,v16,v8]}" ] 
+BB5072 -> BB5073 [tailport=s, headport=n, headlabel="      5073"]
+BB5072 -> BB5075 [tailport=s, headport=n, color=gray]
+BB5073 [shape=record label="{12967: write-property[v9,v10,v8]|12968: \<variable-non-null-undef\>['directives']*|12969: constant[1.0,v18]|12970: read-variable['j',v19,-]|12971: +[v19,v20]|12972: +[v20,v18,v21]|12973: write-variable[v21,'j']}" ] 
+BB5073 -> BB5070 [tailport=s, headport=n]
+BB5073 -> BB5075 [tailport=s, headport=n, color=gray]
+BB5074 [shape=record label="{12974: return[v1]}" ] 
+BB5075 [shape=record label="{12975: exceptional-return}" ] 
+//#$~ 8186
+}

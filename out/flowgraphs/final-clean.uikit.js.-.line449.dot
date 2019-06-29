@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry47[shape=none,label=""];
+BB_entry47 -> BB591 [tailport=s, headport=n, headlabel="    591"]
+BB591 [shape=record label="{1603: constant[undefined,v1]|1604: vardecl['$this']}" ] 
+BB591 -> BB592 [tailport=s, headport=n, headlabel="      592"]
+BB592 [shape=record label="{1605: read-variable['this',v2,-]|1606: write-variable[v2,'$this']*|1607: read-variable['methods',v6,-]|1608: read-property[v6,'split',-]|1609: \<variable-non-null-undef\>['methods']|1610: constant[\" \",v7]}" ] 
+BB592 -> BB593 [tailport=s, headport=n, headlabel="      593"]
+BB592 -> BB597 [tailport=s, headport=n, color=gray, headlabel="      597"]
+BB593 [shape=record label="{1611: call-methods.split [v6,'split',v7,v4]}" ] 
+BB593 -> BB594 [tailport=s, headport=n, headlabel="      594"]
+BB593 -> BB597 [tailport=s, headport=n, color=gray]
+BB594 [shape=record label="{1612: read-property[v4,'forEach',-]|1613: function-expr[function ( method ),v8]}" ] 
+BB594 -> BB595 [tailport=s, headport=n, headlabel="      595"]
+BB594 -> BB597 [tailport=s, headport=n, color=gray]
+BB595 [shape=record label="{1614: call-null [v4,'forEach',v8,-]*}" ] 
+BB595 -> BB596 [tailport=s, headport=n, headlabel="      596"]
+BB595 -> BB597 [tailport=s, headport=n, color=gray]
+BB596 [shape=record label="{1615: return[v1]}" ] 
+BB597 [shape=record label="{1616: exceptional-return}" ] 
+//#$~ 454
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB1967 [tailport=s, headport=n, headlabel="    1967"]
+BB1967 [shape=record label="{5388: constant[undefined,v1]|5389: vardecl['i']|5390: vardecl['len']}" ] 
+BB1967 -> BB1968 [tailport=s, headport=n, headlabel="      1968"]
+BB1968 [shape=record label="{5391: constant[0.0,v2]|5392: write-variable[v2,'i']*|5393: read-variable['contexts',v4,-]|5394: read-property[v4,'length',v3]|5395: \<variable-non-null-undef\>['contexts']|5396: write-variable[v3,'len']*}" ] 
+BB1968 -> BB1969 [tailport=s, headport=n, headlabel="      1969"]
+BB1968 -> BB1975 [tailport=s, headport=n, color=gray, headlabel="      1975"]
+BB1969 [shape=record label="{5397: read-variable['i',v6,-]|5398: read-variable['len',v7,-]|5399: \<[v6,v7,v5]|5400: if[v5](true-block:1970,false-block:1971)}" ] 
+BB1969 -> BB1970 [tailport=s, headport=n, headlabel="      1970"]
+BB1969 -> BB1971 [tailport=s, headport=n, headlabel="      1971"]
+BB1969 -> BB1975 [tailport=s, headport=n, color=gray]
+BB1970 [shape=record label="{5401: read-variable['Sizzle',v9,v8]|5402: read-variable['selector',v10,-]|5403: read-variable['contexts',v12,-]|5404: read-variable['i',v13,-]|5405: read-property[v12,v13,v11]|5406: \<variable-non-null-undef\>['contexts']|5407: read-variable['results',v14,-]}" ] 
+BB1970 -> BB1972 [tailport=s, headport=n, headlabel="      1972"]
+BB1970 -> BB1975 [tailport=s, headport=n, color=gray]
+BB1971 [shape=record label="{5408: read-variable['results',v1,-]}" ] 
+BB1971 -> BB1974 [tailport=s, headport=n, headlabel="      1974"]
+BB1971 -> BB1975 [tailport=s, headport=n, color=gray]
+BB1972 [shape=record label="{5409: call-0:0[v8,v9,v10,v11,v14,-]*}" ] 
+BB1972 -> BB1973 [tailport=s, headport=n, headlabel="      1973"]
+BB1972 -> BB1975 [tailport=s, headport=n, color=gray]
+BB1973 [shape=record label="{5410: constant[1.0,v15]|5411: read-variable['i',v16,-]|5412: +[v16,v17]|5413: +[v17,v15,v18]|5414: write-variable[v18,'i']}" ] 
+BB1973 -> BB1969 [tailport=s, headport=n]
+BB1973 -> BB1975 [tailport=s, headport=n, color=gray]
+BB1974 [shape=record label="{5415: return[v1]}" ] 
+BB1975 [shape=record label="{5416: exceptional-return}" ] 
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry806[shape=none,label=""];
+BB_entry806 -> BB9557 [tailport=s, headport=n, headlabel="    9557"]
+BB9557 [shape=record label="{32764: constant[undefined,v1]|32765: vardecl['args']}" ] 
+BB9557 -> BB9558 [tailport=s, headport=n, headlabel="      9558"]
+BB9558 [shape=record label="{32766: read-variable['slice',v4,-]|32767: read-property[v4,'call',-]|32768: \<variable-non-null-undef\>['slice']|32769: read-variable['arguments',v5,-]}" ] 
+BB9558 -> BB9559 [tailport=s, headport=n, headlabel="      9559"]
+BB9558 -> BB9565 [tailport=s, headport=n, color=gray, headlabel="      9565"]
+BB9559 [shape=record label="{32770: call-slice.call [v4,'call',v5,v2]}" ] 
+BB9559 -> BB9560 [tailport=s, headport=n, headlabel="      9560"]
+BB9559 -> BB9565 [tailport=s, headport=n, color=gray]
+BB9560 [shape=record label="{32771: write-variable[v2,'args']*|32772: read-variable['args',v7,-]|32773: read-property[v7,'push',-]|32774: \<variable-non-null-undef\>['args']|32775: constant[1.0,v8]}" ] 
+BB9560 -> BB9561 [tailport=s, headport=n, headlabel="      9561"]
+BB9560 -> BB9565 [tailport=s, headport=n, color=gray]
+BB9561 [shape=record label="{32776: call-args.push [v7,'push',v8,-]*}" ] 
+BB9561 -> BB9562 [tailport=s, headport=n, headlabel="      9562"]
+BB9561 -> BB9565 [tailport=s, headport=n, color=gray]
+BB9562 [shape=record label="{32777: read-variable['apply',v10,v9]|32778: read-variable['backburner',v11,-]|32779: read-variable['backburner',v13,-]|32780: read-property[v13,'later',v12]|32781: \<variable-non-null-undef\>['backburner']|32782: read-variable['args',v14,-]}" ] 
+BB9562 -> BB9563 [tailport=s, headport=n, headlabel="      9563"]
+BB9562 -> BB9565 [tailport=s, headport=n, color=gray]
+BB9563 [shape=record label="{32783: call-apply [v9,v10,v11,v12,v14,v1]}" ] 
+BB9563 -> BB9564 [tailport=s, headport=n, headlabel="      9564"]
+BB9563 -> BB9565 [tailport=s, headport=n, color=gray]
+BB9564 [shape=record label="{32784: return[v1]}" ] 
+BB9565 [shape=record label="{32785: exceptional-return}" ] 
+//#$~ 17120
+}

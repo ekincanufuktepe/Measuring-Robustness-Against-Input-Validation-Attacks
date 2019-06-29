@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry96[shape=none,label=""];
+BB_entry96 -> BB1006 [tailport=s, headport=n, headlabel="    1006"]
+BB1006 [shape=record label="{3372: constant[undefined,v1]|3373: vardecl['suites']|3374: function-decl[function visit ( obj file ),-]}" ] 
+BB1006 -> BB1007 [tailport=s, headport=n, headlabel="      1007"]
+BB1007 [shape=record label="{3375: read-variable['Array',v3,-]|3376: read-variable['suite',v4,-]}" ] 
+BB1007 -> BB1008 [tailport=s, headport=n, headlabel="      1008"]
+BB1007 -> BB1012 [tailport=s, headport=n, color=gray, headlabel="      1012"]
+BB1008 [shape=record label="{3377: construct [-,v3,v4,v2]}" ] 
+BB1008 -> BB1009 [tailport=s, headport=n, headlabel="      1009"]
+BB1008 -> BB1012 [tailport=s, headport=n, color=gray]
+BB1009 [shape=record label="{3378: write-variable[v2,'suites']*|3379: read-variable['suite',v6,-]|3380: read-property[v6,'on',-]|3381: \<variable-non-null-undef\>['suite']|3382: constant[\"require\",v7]|3383: read-variable['visit',v8,-]}" ] 
+BB1009 -> BB1010 [tailport=s, headport=n, headlabel="      1010"]
+BB1009 -> BB1012 [tailport=s, headport=n, color=gray]
+BB1010 [shape=record label="{3384: call-suite.on [v6,'on',v7,v8,-]*}" ] 
+BB1010 -> BB1011 [tailport=s, headport=n, headlabel="      1011"]
+BB1010 -> BB1012 [tailport=s, headport=n, color=gray]
+BB1011 [shape=record label="{3385: return[v1]}" ] 
+BB1012 [shape=record label="{3386: exceptional-return}" ] 
+//#$~ 1177
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry31[shape=none,label=""];
+BB_entry31 -> BB484 [tailport=s, headport=n, headlabel="    484"]
+BB484 [shape=record label="{1398: constant[undefined,v1]|1399: vardecl['value']}" ] 
+BB484 -> BB485 [tailport=s, headport=n, headlabel="      485"]
+BB485 [shape=record label="{1400: read-variable['context',v4,-]|1401: read-property[v4,'lookup',-]|1402: \<variable-non-null-undef\>['context']|1403: read-variable['token',v6,-]|1404: constant[1.0,v7]|1405: read-property[v6,v7,v5]|1406: \<variable-non-null-undef\>['token']}" ] 
+BB485 -> BB486 [tailport=s, headport=n, headlabel="      486"]
+BB485 -> BB490 [tailport=s, headport=n, color=gray, headlabel="      490"]
+BB486 [shape=record label="{1407: call-context.lookup [v4,'lookup',v5,v2]}" ] 
+BB486 -> BB487 [tailport=s, headport=n, headlabel="      487"]
+BB486 -> BB490 [tailport=s, headport=n, color=gray]
+BB487 [shape=record label="{1408: write-variable[v2,'value']*|1409: read-variable['value',v9,-]|1410: constant[null,v10]|1411: !=[v9,v10,v8]|1412: if[v8](true-block:488,false-block:489)}" ] 
+BB487 -> BB488 [tailport=s, headport=n, headlabel="      488"]
+BB487 -> BB489 [tailport=s, headport=n, headlabel="      489"]
+BB487 -> BB490 [tailport=s, headport=n, color=gray]
+BB488 [shape=record label="{1413: read-variable['value',v1,-]}" ] 
+BB488 -> BB489 [tailport=s, headport=n]
+BB488 -> BB490 [tailport=s, headport=n, color=gray]
+BB489 [shape=record label="{1414: return[v1]}" ] 
+BB490 [shape=record label="{1415: exceptional-return}" ] 
+//#$~ 537
+}

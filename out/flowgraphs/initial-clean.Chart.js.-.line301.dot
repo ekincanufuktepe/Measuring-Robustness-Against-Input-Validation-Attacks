@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry24[shape=none,label=""];
+BB_entry24 -> BB193 [tailport=s, headport=n, headlabel="    193"]
+BB193 [shape=record label="{527: constant[undefined,v1]}" ] 
+BB193 -> BB194 [tailport=s, headport=n, headlabel="      194"]
+BB194 [shape=record label="{528: read-variable['window',v3,-]|529: read-property[v3,'console',v2]|530: \<variable-non-null-undef\>['window']|531: if[v2](true-block:195,false-block:196)}" ] 
+BB194 -> BB196 [tailport=s, headport=n, headlabel="      196"]
+BB194 -> BB195 [tailport=s, headport=n, headlabel="      195"]
+BB194 -> BB200 [tailport=s, headport=n, color=gray, headlabel="      200"]
+BB195 [shape=record label="{532: read-variable['window',v8,-]|533: read-property[v8,'console',v7]|534: \<variable-non-null-undef\>['window']|535: read-property[v7,'warn',v6]|536: \<property-non-null-undef\>[v8,'console']|537: typeof[v6,v4]|538: constant[\"function\",v5]|539: ==[v4,v5,v2]}" ] 
+BB195 -> BB196 [tailport=s, headport=n]
+BB195 -> BB200 [tailport=s, headport=n, color=gray]
+BB196 [shape=record label="{540: if[v2](true-block:197,false-block:199)}" ] 
+BB196 -> BB197 [tailport=s, headport=n, headlabel="      197"]
+BB196 -> BB199 [tailport=s, headport=n, headlabel="      199"]
+BB197 [shape=record label="{541: read-variable['console',v5,-]|542: read-property[v5,'warn',-]|543: \<variable-non-null-undef\>['console']|544: read-variable['str',v6,-]}" ] 
+BB197 -> BB198 [tailport=s, headport=n, headlabel="      198"]
+BB197 -> BB200 [tailport=s, headport=n, color=gray]
+BB198 [shape=record label="{545: call-console.warn [v5,'warn',v6,-]*}" ] 
+BB198 -> BB199 [tailport=s, headport=n]
+BB198 -> BB200 [tailport=s, headport=n, color=gray]
+BB199 [shape=record label="{546: return[v1]}" ] 
+BB200 [shape=record label="{547: exceptional-return}" ] 
+//#$~ 303
+}

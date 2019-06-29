@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry49[shape=none,label=""];
+BB_entry49 -> BB571 [tailport=s, headport=n, headlabel="    571"]
+BB571 [shape=record label="{1879: constant[undefined,v1]}" ] 
+BB571 -> BB572 [tailport=s, headport=n, headlabel="      572"]
+BB572 [shape=record label="{1880: read-variable['key',v5,-]|1881: constant[\"\",v6]|1882: +[v5,v6,v3]|1883: write-variable[v3,'key']|1884: read-variable['d3_map_proto',v4,-]|1885: ===[v3,v4,v2]|1886: if[v2](true-block:574,false-block:573)}" ] 
+BB572 -> BB574 [tailport=s, headport=n, headlabel="      574"]
+BB572 -> BB573 [tailport=s, headport=n, headlabel="      573"]
+BB572 -> BB578 [tailport=s, headport=n, color=gray, headlabel="      578"]
+BB573 [shape=record label="{1887: read-variable['key',v5,-]|1888: constant[0.0,v6]|1889: read-property[v5,v6,v3]|1890: \<variable-non-null-undef\>['key']|1891: read-variable['d3_map_zero',v4,-]|1892: ===[v3,v4,v2]}" ] 
+BB573 -> BB574 [tailport=s, headport=n]
+BB573 -> BB578 [tailport=s, headport=n, color=gray]
+BB574 [shape=record label="{1893: if[v2](true-block:575,false-block:576)}" ] 
+BB574 -> BB575 [tailport=s, headport=n, headlabel="      575"]
+BB574 -> BB576 [tailport=s, headport=n, headlabel="      576"]
+BB575 [shape=record label="{1894: read-variable['d3_map_zero',v3,-]|1895: read-variable['key',v4,-]|1896: +[v3,v4,v1]}" ] 
+BB575 -> BB577 [tailport=s, headport=n, headlabel="      577"]
+BB575 -> BB578 [tailport=s, headport=n, color=gray]
+BB576 [shape=record label="{1897: read-variable['key',v1,-]}" ] 
+BB576 -> BB577 [tailport=s, headport=n]
+BB576 -> BB578 [tailport=s, headport=n, color=gray]
+BB577 [shape=record label="{1898: return[v1]}" ] 
+BB578 [shape=record label="{1899: exceptional-return}" ] 
+//#$~ 345
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2429[shape=none,label=""];
+BB_entry2429 -> BB27811 [tailport=s, headport=n, headlabel="    27811"]
+BB27811 [shape=record label="{92324: constant[undefined,v1]}" ] 
+BB27811 -> BB27812 [tailport=s, headport=n, headlabel="      27812"]
+BB27812 [shape=record label="{92325: read-variable['router',v3,-]|92326: read-property[v3,'activeTransition',v2]|92327: \<variable-non-null-undef\>['router']|92328: if[v2](true-block:27813,false-block:27815)}" ] 
+BB27812 -> BB27813 [tailport=s, headport=n, headlabel="      27813"]
+BB27812 -> BB27815 [tailport=s, headport=n, headlabel="      27815"]
+BB27812 -> BB27818 [tailport=s, headport=n, color=gray, headlabel="      27818"]
+BB27813 [shape=record label="{92329: read-variable['router',v6,-]|92330: read-property[v6,'activeTransition',v5]|92331: \<variable-non-null-undef\>['router']|92332: read-property[v5,'followRedirects',-]|92333: \<property-non-null-undef\>[v6,'activeTransition']}" ] 
+BB27813 -> BB27814 [tailport=s, headport=n, headlabel="      27814"]
+BB27813 -> BB27818 [tailport=s, headport=n, color=gray]
+BB27814 [shape=record label="{92334: call-router.activeTransition.followRedirects [v5,'followRedirects',v1]}" ] 
+BB27814 -> BB27817 [tailport=s, headport=n, headlabel="      27817"]
+BB27814 -> BB27818 [tailport=s, headport=n, color=gray]
+BB27815 [shape=record label="{92335: read-variable['Promise',v5,-]|92336: read-property[v5,'reject',-]|92337: \<variable-non-null-undef\>['Promise']|92338: read-variable['reason',v6,-]}" ] 
+BB27815 -> BB27816 [tailport=s, headport=n, headlabel="      27816"]
+BB27815 -> BB27818 [tailport=s, headport=n, color=gray]
+BB27816 [shape=record label="{92339: call-Promise.reject [v5,'reject',v6,v1]}" ] 
+BB27816 -> BB27817 [tailport=s, headport=n]
+BB27816 -> BB27818 [tailport=s, headport=n, color=gray]
+BB27817 [shape=record label="{92340: return[v1]}" ] 
+BB27818 [shape=record label="{92341: exceptional-return}" ] 
+//#$~ 49972
+}

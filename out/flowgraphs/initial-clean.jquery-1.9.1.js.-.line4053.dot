@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry236[shape=none,label=""];
+BB_entry236 -> BB3628 [tailport=s, headport=n, headlabel="    3628"]
+BB3628 [shape=record label="{10514: constant[undefined,v1]|10515: vardecl['type']}" ] 
+BB3628 -> BB3629 [tailport=s, headport=n, headlabel="      3629"]
+BB3629 [shape=record label="{10516: read-variable['div',v3,-]|10517: constant[\"\\\<select\\\>\\\</select\\\>\",v2]|10518: write-property[v3,'innerHTML',v2]|10519: \<variable-non-null-undef\>['div']*|10520: read-variable['div',v8,-]|10521: read-property[v8,'lastChild',v7]|10522: \<variable-non-null-undef\>['div']|10523: read-property[v7,'getAttribute',-]|10524: \<property-non-null-undef\>[v8,'lastChild']|10525: constant[\"multiple\",v9]}" ] 
+BB3629 -> BB3630 [tailport=s, headport=n, headlabel="      3630"]
+BB3629 -> BB3634 [tailport=s, headport=n, color=gray, headlabel="      3634"]
+BB3630 [shape=record label="{10526: call[v7,'getAttribute',v9,v5]}" ] 
+BB3630 -> BB3631 [tailport=s, headport=n, headlabel="      3631"]
+BB3630 -> BB3634 [tailport=s, headport=n, color=gray]
+BB3631 [shape=record label="{10527: typeof[v5,v4]|10528: write-variable[v4,'type']*|10529: read-variable['type',v10,-]|10530: constant[\"boolean\",v11]|10531: !==[v10,v11,v1]|10532: if[v1](true-block:3632,false-block:3633)}" ] 
+BB3631 -> BB3633 [tailport=s, headport=n, headlabel="      3633"]
+BB3631 -> BB3632 [tailport=s, headport=n, headlabel="      3632"]
+BB3631 -> BB3634 [tailport=s, headport=n, color=gray]
+BB3632 [shape=record label="{10533: read-variable['type',v12,-]|10534: constant[\"string\",v13]|10535: !==[v12,v13,v1]}" ] 
+BB3632 -> BB3633 [tailport=s, headport=n]
+BB3632 -> BB3634 [tailport=s, headport=n, color=gray]
+BB3633 [shape=record label="{10536: return[v1]}" ] 
+BB3634 [shape=record label="{10537: exceptional-return}" ] 
+}

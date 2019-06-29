@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry16[shape=none,label=""];
+BB_entry16 -> BB324 [tailport=s, headport=n, headlabel="    324"]
+BB324 [shape=record label="{1177: constant[undefined,v1]|1178: vardecl['Y']}" ] 
+BB324 -> BB325 [tailport=s, headport=n, headlabel="      325"]
+BB325 [shape=record label="{1179: read-variable['this',v2,-]|1180: write-variable[v2,'Y']*|1181: read-variable['Y',v7,-]|1182: read-property[v7,'config',v6]|1183: \<variable-non-null-undef\>['Y']|1184: read-property[v6,'hasOwnProperty',-]|1185: \<property-non-null-undef\>[v7,'config']|1186: constant[\"global\",v8]}" ] 
+BB325 -> BB326 [tailport=s, headport=n, headlabel="      326"]
+BB325 -> BB333 [tailport=s, headport=n, color=gray, headlabel="      333"]
+BB326 [shape=record label="{1187: call-Y.config.hasOwnProperty [v6,'hasOwnProperty',v8,v4]}" ] 
+BB326 -> BB327 [tailport=s, headport=n, headlabel="      327"]
+BB326 -> BB333 [tailport=s, headport=n, color=gray]
+BB327 [shape=record label="{1188: ![v4,v3]|1189: if[v3](true-block:328,false-block:332)}" ] 
+BB327 -> BB328 [tailport=s, headport=n, headlabel="      328"]
+BB327 -> BB332 [tailport=s, headport=n, headlabel="      332"]
+BB327 -> BB333 [tailport=s, headport=n, color=gray]
+BB328 [shape=record label="{1190: read-variable['Y',v11,-]|1191: read-property[v11,'config',v10]|1192: \<variable-non-null-undef\>['Y']|1193: read-variable['Function',v14,v13]|1194: constant[\"return this\",v15]}" ] 
+BB328 -> BB329 [tailport=s, headport=n, headlabel="      329"]
+BB328 -> BB333 [tailport=s, headport=n, color=gray]
+BB329 [shape=record label="{1195: call-Function [v13,v14,v15,v12]}" ] 
+BB329 -> BB330 [tailport=s, headport=n, headlabel="      330"]
+BB329 -> BB333 [tailport=s, headport=n, color=gray]
+BB330 [shape=record label="{1196: call-null [-,v12,v9]}" ] 
+BB330 -> BB331 [tailport=s, headport=n, headlabel="      331"]
+BB330 -> BB333 [tailport=s, headport=n, color=gray]
+BB331 [shape=record label="{1197: write-property[v10,'global',v9]|1198: \<property-non-null-undef\>[v11,'config']*}" ] 
+BB331 -> BB332 [tailport=s, headport=n]
+BB331 -> BB333 [tailport=s, headport=n, color=gray]
+BB332 [shape=record label="{1199: return[v1]}" ] 
+BB333 [shape=record label="{1200: exceptional-return}" ] 
+//#$~ 443
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry869[shape=none,label=""];
+BB_entry869 -> BB9454 [tailport=s, headport=n, headlabel="    9454"]
+BB9454 [shape=record label="{31277: constant[undefined,v1]}" ] 
+BB9454 -> BB9455 [tailport=s, headport=n, headlabel="      9455"]
+BB9455 [shape=record label="{31278: read-variable['d3',v6,-]|31279: read-property[v6,'geom',v5]|31280: \<variable-non-null-undef\>['d3']|31281: read-property[v5,'voronoi',-]|31282: \<property-non-null-undef\>[v6,'geom']}" ] 
+BB9455 -> BB9456 [tailport=s, headport=n, headlabel="      9456"]
+BB9455 -> BB9460 [tailport=s, headport=n, color=gray, headlabel="      9460"]
+BB9456 [shape=record label="{31283: call-d3.geom.voronoi [v5,'voronoi',v3]}" ] 
+BB9456 -> BB9457 [tailport=s, headport=n, headlabel="      9457"]
+BB9456 -> BB9460 [tailport=s, headport=n, color=gray]
+BB9457 [shape=record label="{31284: read-property[v3,'triangles',-]|31285: read-variable['vertices',v7,-]}" ] 
+BB9457 -> BB9458 [tailport=s, headport=n, headlabel="      9458"]
+BB9457 -> BB9460 [tailport=s, headport=n, color=gray]
+BB9458 [shape=record label="{31286: call-null [v3,'triangles',v7,v1]}" ] 
+BB9458 -> BB9459 [tailport=s, headport=n, headlabel="      9459"]
+BB9458 -> BB9460 [tailport=s, headport=n, color=gray]
+BB9459 [shape=record label="{31287: return[v1]}" ] 
+BB9460 [shape=record label="{31288: exceptional-return}" ] 
+//#$~ 5541
+}

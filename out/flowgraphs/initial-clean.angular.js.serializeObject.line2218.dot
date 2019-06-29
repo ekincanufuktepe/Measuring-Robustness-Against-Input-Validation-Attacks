@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry114[shape=none,label=""];
+BB_entry114 -> BB1549 [tailport=s, headport=n, headlabel="    1549"]
+BB1549 [shape=record label="{3490: constant[undefined,v1]|3491: vardecl['seen']}" ] 
+BB1549 -> BB1550 [tailport=s, headport=n, headlabel="      1550"]
+BB1550 [shape=record label="{3492: read-variable['Array',v3,-]}" ] 
+BB1550 -> BB1551 [tailport=s, headport=n, headlabel="      1551"]
+BB1550 -> BB1555 [tailport=s, headport=n, color=gray, headlabel="      1555"]
+BB1551 [shape=record label="{3493: construct [-,v3,v2]}" ] 
+BB1551 -> BB1552 [tailport=s, headport=n, headlabel="      1552"]
+BB1551 -> BB1555 [tailport=s, headport=n, color=gray]
+BB1552 [shape=record label="{3494: write-variable[v2,'seen']*|3495: read-variable['JSON',v5,-]|3496: read-property[v5,'stringify',-]|3497: \<variable-non-null-undef\>['JSON']|3498: read-variable['obj',v6,-]|3499: function-expr[function ( key val ),v7]}" ] 
+BB1552 -> BB1553 [tailport=s, headport=n, headlabel="      1553"]
+BB1552 -> BB1555 [tailport=s, headport=n, color=gray]
+BB1553 [shape=record label="{3500: call-JSON.stringify [v5,'stringify',v6,v7,v1]}" ] 
+BB1553 -> BB1554 [tailport=s, headport=n, headlabel="      1554"]
+BB1553 -> BB1555 [tailport=s, headport=n, color=gray]
+BB1554 [shape=record label="{3501: return[v1]}" ] 
+BB1555 [shape=record label="{3502: exceptional-return}" ] 
+//#$~ 2229
+}

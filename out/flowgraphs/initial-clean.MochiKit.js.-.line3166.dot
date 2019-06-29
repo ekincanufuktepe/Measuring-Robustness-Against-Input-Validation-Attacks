@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry333[shape=none,label=""];
+BB_entry333 -> BB4562 [tailport=s, headport=n, headlabel="    4562"]
+BB4562 [shape=record label="{17316: constant[undefined,v1]|17317: vardecl['self']|17318: vardecl['e']}" ] 
+BB4562 -> BB4563 [tailport=s, headport=n, headlabel="      4563"]
+BB4563 [shape=record label="{17319: read-variable['MochiKit',v3,-]|17320: read-property[v3,'DOM',v2]|17321: \<variable-non-null-undef\>['MochiKit']|17322: write-variable[v2,'self']*|17323: read-variable['self',v6,-]|17324: read-property[v6,'coerceToDOM',-]|17325: \<variable-non-null-undef\>['self']|17326: read-variable['self',v9,-]|17327: read-property[v9,'getElement',-]|17328: \<variable-non-null-undef\>['self']|17329: read-variable['elem',v10,-]}" ] 
+BB4563 -> BB4564 [tailport=s, headport=n, headlabel="      4564"]
+BB4563 -> BB4570 [tailport=s, headport=n, color=gray, headlabel="      4570"]
+BB4564 [shape=record label="{17330: call-self.getElement [v9,'getElement',v10,v7]}" ] 
+BB4564 -> BB4565 [tailport=s, headport=n, headlabel="      4565"]
+BB4564 -> BB4570 [tailport=s, headport=n, color=gray]
+BB4565 [shape=record label="{17331: call-self.coerceToDOM [v6,'coerceToDOM',v7,v4]}" ] 
+BB4565 -> BB4566 [tailport=s, headport=n, headlabel="      4566"]
+BB4565 -> BB4570 [tailport=s, headport=n, color=gray]
+BB4566 [shape=record label="{17332: write-variable[v4,'e']*|17333: read-variable['e',v13,-]|17334: read-property[v13,'parentNode',v12]|17335: \<variable-non-null-undef\>['e']|17336: read-property[v12,'removeChild',-]|17337: \<property-non-null-undef\>[v13,'parentNode']|17338: read-variable['e',v14,-]}" ] 
+BB4566 -> BB4567 [tailport=s, headport=n, headlabel="      4567"]
+BB4566 -> BB4570 [tailport=s, headport=n, color=gray]
+BB4567 [shape=record label="{17339: call-e.parentNode.removeChild [v12,'removeChild',v14,-]*}" ] 
+BB4567 -> BB4568 [tailport=s, headport=n, headlabel="      4568"]
+BB4567 -> BB4570 [tailport=s, headport=n, color=gray]
+BB4568 [shape=record label="{17340: read-variable['e',v1,-]}" ] 
+BB4568 -> BB4569 [tailport=s, headport=n, headlabel="      4569"]
+BB4568 -> BB4570 [tailport=s, headport=n, color=gray]
+BB4569 [shape=record label="{17341: return[v1]}" ] 
+BB4570 [shape=record label="{17342: exceptional-return}" ] 
+//#$~ 3170
+}

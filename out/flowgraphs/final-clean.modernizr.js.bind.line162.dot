@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry9[shape=none,label=""];
+BB_entry9 -> BB136 [tailport=s, headport=n, headlabel="    136"]
+BB136 [shape=record label="{424: constant[undefined,v1]|425: vardecl['target']|426: vardecl['args']|427: vardecl['bound']}" ] 
+BB136 -> BB137 [tailport=s, headport=n, headlabel="      137"]
+BB137 [shape=record label="{428: read-variable['this',v3,-]|429: write-variable[v3,'target']*|430: typeof['target',v5]|431: constant[\"function\",v6]|432: !=[v5,v6,v4]|433: if[v4](true-block:138,false-block:141)}" ] 
+BB137 -> BB138 [tailport=s, headport=n, headlabel="      138"]
+BB137 -> BB141 [tailport=s, headport=n, headlabel="      141"]
+BB137 -> BB145 [tailport=s, headport=n, color=gray, headlabel="      145"]
+BB138 [shape=record label="{434: read-variable['TypeError',v8,-]}" ] 
+BB138 -> BB139 [tailport=s, headport=n, headlabel="      139"]
+BB138 -> BB145 [tailport=s, headport=n, color=gray]
+BB139 [shape=record label="{435: construct [-,v8,v7]}" ] 
+BB139 -> BB140 [tailport=s, headport=n, headlabel="      140"]
+BB139 -> BB145 [tailport=s, headport=n, color=gray]
+BB140 [shape=record label="{436: throw[v7]*}" ] 
+BB140 -> BB141 [tailport=s, headport=n]
+BB140 -> BB145 [tailport=s, headport=n, color=gray]
+BB141 [shape=record label="{437: read-variable['slice',v9,-]|438: read-property[v9,'call',-]|439: \<variable-non-null-undef\>['slice']|440: read-variable['arguments',v10,v2]|441: constant[1.0,v11]}" ] 
+BB141 -> BB142 [tailport=s, headport=n, headlabel="      142"]
+BB141 -> BB145 [tailport=s, headport=n, color=gray]
+BB142 [shape=record label="{442: call-slice.call [v9,'call',v10,v11,v7]}" ] 
+BB142 -> BB143 [tailport=s, headport=n, headlabel="      143"]
+BB142 -> BB145 [tailport=s, headport=n, color=gray]
+BB143 [shape=record label="{443: write-variable[v7,'args']*|444: function-expr[function ( ),v12]|445: write-variable[v12,'bound']*|446: read-variable['bound',v1,v2]}" ] 
+BB143 -> BB144 [tailport=s, headport=n, headlabel="      144"]
+BB143 -> BB145 [tailport=s, headport=n, color=gray]
+BB144 [shape=record label="{447: return[v1]}" ] 
+BB145 [shape=record label="{448: exceptional-return}" ] 
+//#$~ 199
+}

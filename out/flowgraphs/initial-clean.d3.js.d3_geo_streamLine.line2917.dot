@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry479[shape=none,label=""];
+BB_entry479 -> BB5020 [tailport=s, headport=n, headlabel="    5020"]
+BB5020 [shape=record label="{15184: constant[undefined,v1]|15185: vardecl['i']|15186: vardecl['n']|15187: vardecl['coordinate']}" ] 
+BB5020 -> BB5021 [tailport=s, headport=n, headlabel="      5021"]
+BB5021 [shape=record label="{15188: constant[-1.0,v2]|15189: write-variable[v2,'i']*|15190: read-variable['coordinates',v6,-]|15191: read-property[v6,'length',v4]|15192: \<variable-non-null-undef\>['coordinates']|15193: read-variable['closed',v5,-]|15194: -[v4,v5,v3]|15195: write-variable[v3,'n']*|15196: read-variable['listener',v8,-]|15197: read-property[v8,'lineStart',-]|15198: \<variable-non-null-undef\>['listener']}" ] 
+BB5021 -> BB5022 [tailport=s, headport=n, headlabel="      5022"]
+BB5021 -> BB5029 [tailport=s, headport=n, color=gray, headlabel="      5029"]
+BB5022 [shape=record label="{15199: call-listener.lineStart [v8,'lineStart',-]*}" ] 
+BB5022 -> BB5023 [tailport=s, headport=n, headlabel="      5023"]
+BB5022 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5023 [shape=record label="{15200: constant[1.0,v12]|15201: read-variable['i',v13,-]|15202: +[v13,v14]|15203: +[v14,v12,v10]|15204: write-variable[v10,'i']|15205: read-variable['n',v11,-]|15206: \<[v10,v11,v9]|15207: if[v9](true-block:5024,false-block:5025)}" ] 
+BB5023 -> BB5024 [tailport=s, headport=n, headlabel="      5024"]
+BB5023 -> BB5025 [tailport=s, headport=n, headlabel="      5025"]
+BB5023 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5024 [shape=record label="{15208: read-variable['coordinates',v16,-]|15209: read-variable['i',v17,-]|15210: read-property[v16,v17,v15]|15211: \<variable-non-null-undef\>['coordinates']|15212: write-variable[v15,'coordinate']|15213: read-variable['listener',v19,-]|15214: read-property[v19,'point',-]|15215: \<variable-non-null-undef\>['listener']|15216: read-variable['coordinate',v21,-]|15217: constant[0.0,v22]|15218: read-property[v21,v22,v20]|15219: \<variable-non-null-undef\>['coordinate']|15220: read-variable['coordinate',v24,-]|15221: constant[1.0,v25]|15222: read-property[v24,v25,v23]|15223: \<variable-non-null-undef\>['coordinate']|15224: read-variable['coordinate',v27,-]|15225: constant[2.0,v28]|15226: read-property[v27,v28,v26]|15227: \<variable-non-null-undef\>['coordinate']}" ] 
+BB5024 -> BB5026 [tailport=s, headport=n, headlabel="      5026"]
+BB5024 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5025 [shape=record label="{15228: read-variable['listener',v16,-]|15229: read-property[v16,'lineEnd',-]|15230: \<variable-non-null-undef\>['listener']}" ] 
+BB5025 -> BB5027 [tailport=s, headport=n, headlabel="      5027"]
+BB5025 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5026 [shape=record label="{15231: call-listener.point [v19,'point',v20,v23,v26,-]}" ] 
+BB5026 -> BB5023 [tailport=s, headport=n]
+BB5026 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5027 [shape=record label="{15232: call-listener.lineEnd [v16,'lineEnd',-]*}" ] 
+BB5027 -> BB5028 [tailport=s, headport=n, headlabel="      5028"]
+BB5027 -> BB5029 [tailport=s, headport=n, color=gray]
+BB5028 [shape=record label="{15233: return[v1]}" ] 
+BB5029 [shape=record label="{15234: exceptional-return}" ] 
+//#$~ 2921
+}

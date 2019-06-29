@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry83[shape=none,label=""];
+BB_entry83 -> BB1034 [tailport=s, headport=n, headlabel="    1034"]
+BB1034 [shape=record label="{2740: constant[undefined,v1]|2741: vardecl['context']|2742: vardecl['args']|2743: vardecl['result']|2744: vardecl['timeout']|2745: vardecl['previous']|2746: vardecl['later']}" ] 
+BB1034 -> BB1035 [tailport=s, headport=n, headlabel="      1035"]
+BB1035 [shape=record label="{2747: constant[null,v2]|2748: write-variable[v2,'timeout']*|2749: constant[0.0,v3]|2750: write-variable[v3,'previous']*|2751: read-variable['options',v5,-]|2752: ![v5,v4]|2753: if[v4](true-block:1036,false-block:1037)}" ] 
+BB1035 -> BB1036 [tailport=s, headport=n, headlabel="      1036"]
+BB1035 -> BB1037 [tailport=s, headport=n, headlabel="      1037"]
+BB1035 -> BB1039 [tailport=s, headport=n, color=gray, headlabel="      1039"]
+BB1036 [shape=record label="{2754: new[v6]|2755: write-variable[v6,'options']*}" ] 
+BB1036 -> BB1037 [tailport=s, headport=n]
+BB1037 [shape=record label="{2756: function-expr[function ( ),v6]|2757: write-variable[v6,'later']*|2758: function-expr[function ( ),v1]}" ] 
+BB1037 -> BB1038 [tailport=s, headport=n, headlabel="      1038"]
+BB1038 [shape=record label="{2759: return[v1]}" ] 
+BB1039 [shape=record label="{2760: exceptional-return}" ] 
+//#$~ 813
+}

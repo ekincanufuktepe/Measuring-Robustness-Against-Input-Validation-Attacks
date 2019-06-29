@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB341 [tailport=s, headport=n, headlabel="    341"]
+BB341 [shape=record label="{848: constant[undefined,v1]|849: vardecl['name']}" ] 
+BB341 -> BB342 [tailport=s, headport=n, headlabel="      342"]
+BB342 [shape=record label="{850: read-variable['obj',v3,-]}" ] 
+BB342 -> BB343 [tailport=s, headport=n, headlabel="      343"]
+BB342 -> BB349 [tailport=s, headport=n, color=gray, headlabel="      349"]
+BB343 [shape=record label="{851: begin-for-in[v3,v4]}" ] 
+BB343 -> BB344 [tailport=s, headport=n, headlabel="      344"]
+BB343 -> BB349 [tailport=s, headport=n, color=gray]
+BB344 [shape=record label="{852: has-next[v4,v5]|853: if[v5](true-block:345,false-block:347)}" ] 
+BB344 -> BB345 [tailport=s, headport=n, headlabel="      345"]
+BB344 -> BB347 [tailport=s, headport=n, headlabel="      347"]
+BB345 [shape=record label="{854: next-property[v4,v6]|855: write-variable[v6,'name']|856: constant[false,v1]}" ] 
+BB345 -> BB348 [tailport=s, headport=n, headlabel="      348"]
+BB346 [shape=record label="{857: end-for-in(begin-node:851)}" ] 
+BB346 -> BB344 [tailport=s, headport=n]
+BB347 [shape=record label="{858: constant[true,v1]}" ] 
+BB347 -> BB348 [tailport=s, headport=n]
+BB348 [shape=record label="{859: return[v1]}" ] 
+BB349 [shape=record label="{860: exceptional-return}" ] 
+}

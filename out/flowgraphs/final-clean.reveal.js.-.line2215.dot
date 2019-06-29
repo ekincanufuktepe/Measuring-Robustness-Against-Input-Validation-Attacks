@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry111[shape=none,label=""];
+BB_entry111 -> BB1760 [tailport=s, headport=n, headlabel="    1760"]
+BB1760 [shape=record label="{5501: constant[undefined,v1]|5502: vardecl['verticalSlides']}" ] 
+BB1760 -> BB1761 [tailport=s, headport=n, headlabel="      1761"]
+BB1761 [shape=record label="{5503: read-variable['toArray',v4,v3]|5504: read-variable['horizontalSlide',v7,-]|5505: read-property[v7,'querySelectorAll',-]|5506: \<variable-non-null-undef\>['horizontalSlide']|5507: constant[\"section\",v8]}" ] 
+BB1761 -> BB1762 [tailport=s, headport=n, headlabel="      1762"]
+BB1761 -> BB1767 [tailport=s, headport=n, color=gray, headlabel="      1767"]
+BB1762 [shape=record label="{5508: call-horizontalSlide.querySelectorAll [v7,'querySelectorAll',v8,v5]}" ] 
+BB1762 -> BB1763 [tailport=s, headport=n, headlabel="      1763"]
+BB1762 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1763 [shape=record label="{5509: call-toArray [v3,v4,v5,v2]}" ] 
+BB1763 -> BB1764 [tailport=s, headport=n, headlabel="      1764"]
+BB1763 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1764 [shape=record label="{5510: write-variable[v2,'verticalSlides']*|5511: read-variable['verticalSlides',v10,-]|5512: read-property[v10,'forEach',-]|5513: \<variable-non-null-undef\>['verticalSlides']|5514: function-expr[function ( verticalSlide y ),v11]}" ] 
+BB1764 -> BB1765 [tailport=s, headport=n, headlabel="      1765"]
+BB1764 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1765 [shape=record label="{5515: call-verticalSlides.forEach [v10,'forEach',v11,-]*}" ] 
+BB1765 -> BB1766 [tailport=s, headport=n, headlabel="      1766"]
+BB1765 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1766 [shape=record label="{5516: return[v1]}" ] 
+BB1767 [shape=record label="{5517: exceptional-return}" ] 
+//#$~ 2224
+}

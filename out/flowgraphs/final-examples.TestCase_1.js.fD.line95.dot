@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB46 [tailport=s, headport=n, headlabel="    46"]
+BB46 [shape=record label="{160: constant[undefined,v1]|161: vardecl['r']}" ] 
+BB46 -> BB47 [tailport=s, headport=n, headlabel="      47"]
+BB47 [shape=record label="{162: read-variable['fC',v3,v2]|163: constant[1.0,v4]|164: constant[2.0,v5]|165: constant[3.0,v6]|166: constant[4.0,v7]}" ] 
+BB47 -> BB48 [tailport=s, headport=n, headlabel="      48"]
+BB47 -> BB53 [tailport=s, headport=n, color=gray, headlabel="      53"]
+BB48 [shape=record label="{167: call-fC [v2,v3,v4,v5,v6,v7,-]*}" ] 
+BB48 -> BB49 [tailport=s, headport=n, headlabel="      49"]
+BB48 -> BB53 [tailport=s, headport=n, color=gray]
+BB49 [shape=record label="{168: constant[3.0,v8]|169: write-variable[v8,'asdgq']*|170: read-variable['asdgq',v10,-]|171: constant[3.0,v11]|172: +[v10,v11,v9]|173: write-variable[v9,'r']*|174: read-variable['fB',v13,v12]|175: constant[10.0,v14]}" ] 
+BB49 -> BB50 [tailport=s, headport=n, headlabel="      50"]
+BB49 -> BB53 [tailport=s, headport=n, color=gray]
+BB50 [shape=record label="{176: call-fB [v12,v13,v14,-]*}" ] 
+BB50 -> BB51 [tailport=s, headport=n, headlabel="      51"]
+BB50 -> BB53 [tailport=s, headport=n, color=gray]
+BB51 [shape=record label="{177: constant[1.0,v1]}" ] 
+BB51 -> BB52 [tailport=s, headport=n, headlabel="      52"]
+BB52 [shape=record label="{178: return[v1]}" ] 
+BB53 [shape=record label="{179: exceptional-return}" ] 
+//#$~ 100
+}

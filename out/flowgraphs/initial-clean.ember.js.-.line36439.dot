@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1678[shape=none,label=""];
+BB_entry1678 -> BB19473 [tailport=s, headport=n, headlabel="    19473"]
+BB19473 [shape=record label="{65027: constant[undefined,v1]}" ] 
+BB19473 -> BB19474 [tailport=s, headport=n, headlabel="      19474"]
+BB19474 [shape=record label="{65028: read-variable['callback',v3,v2]|65029: read-variable['arrayOperation',v5,-]|65030: read-property[v5,'items',v4]|65031: \<variable-non-null-undef\>['arrayOperation']|65032: read-variable['offset',v6,-]|65033: read-variable['arrayOperation',v8,-]|65034: read-property[v8,'type',v7]|65035: \<variable-non-null-undef\>['arrayOperation']|65036: read-variable['operationIndex',v9,-]}" ] 
+BB19474 -> BB19475 [tailport=s, headport=n, headlabel="      19475"]
+BB19474 -> BB19481 [tailport=s, headport=n, color=gray, headlabel="      19481"]
+BB19475 [shape=record label="{65037: call-callback [v2,v3,v4,v6,v7,v9,-]*}" ] 
+BB19475 -> BB19476 [tailport=s, headport=n, headlabel="      19476"]
+BB19475 -> BB19481 [tailport=s, headport=n, color=gray]
+BB19476 [shape=record label="{65038: read-variable['arrayOperation',v13,-]|65039: read-property[v13,'type',v11]|65040: \<variable-non-null-undef\>['arrayOperation']|65041: read-variable['DELETE',v12,-]|65042: !==[v11,v12,v10]|65043: if[v10](true-block:19477,false-block:19480)}" ] 
+BB19476 -> BB19477 [tailport=s, headport=n, headlabel="      19477"]
+BB19476 -> BB19480 [tailport=s, headport=n, headlabel="      19480"]
+BB19476 -> BB19481 [tailport=s, headport=n, color=gray]
+BB19477 [shape=record label="{65044: read-variable['offset',v15,-]|65045: read-variable['arrayOperation',v17,-]|65046: read-property[v17,'count',v16]|65047: \<variable-non-null-undef\>['arrayOperation']|65048: +[v15,v16,v14]|65049: write-variable[v14,'offset']*|65050: read-variable['items',v20,-]|65051: read-property[v20,'concat',-]|65052: \<variable-non-null-undef\>['items']|65053: read-variable['arrayOperation',v22,-]|65054: read-property[v22,'items',v21]|65055: \<variable-non-null-undef\>['arrayOperation']}" ] 
+BB19477 -> BB19478 [tailport=s, headport=n, headlabel="      19478"]
+BB19477 -> BB19481 [tailport=s, headport=n, color=gray]
+BB19478 [shape=record label="{65056: call-items.concat [v20,'concat',v21,v18]}" ] 
+BB19478 -> BB19479 [tailport=s, headport=n, headlabel="      19479"]
+BB19478 -> BB19481 [tailport=s, headport=n, color=gray]
+BB19479 [shape=record label="{65057: write-variable[v18,'items']*}" ] 
+BB19479 -> BB19480 [tailport=s, headport=n]
+BB19480 [shape=record label="{65058: return[v1]}" ] 
+BB19481 [shape=record label="{65059: exceptional-return}" ] 
+//#$~ 36444
+}

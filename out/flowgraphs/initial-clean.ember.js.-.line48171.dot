@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry2324[shape=none,label=""];
+BB_entry2324 -> BB26543 [tailport=s, headport=n, headlabel="    26543"]
+BB26543 [shape=record label="{87677: constant[undefined,v1]}" ] 
+BB26543 -> BB26544 [tailport=s, headport=n, headlabel="      26544"]
+BB26544 [shape=record label="{87678: read-variable['payload',v3,-]|87679: read-property[v3,'log',v2]|87680: \<variable-non-null-undef\>['payload']|87681: if[v2](true-block:26545,false-block:26547)}" ] 
+BB26544 -> BB26545 [tailport=s, headport=n, headlabel="      26545"]
+BB26544 -> BB26547 [tailport=s, headport=n, headlabel="      26547"]
+BB26544 -> BB26548 [tailport=s, headport=n, color=gray, headlabel="      26548"]
+BB26545 [shape=record label="{87682: read-variable['payload',v5,-]|87683: read-property[v5,'log',-]|87684: \<variable-non-null-undef\>['payload']|87685: read-variable['this',v11,-]|87686: read-property[v11,'name',v9]|87687: constant[\": \",v10]|87688: +[v9,v10,v7]|87689: read-variable['message',v8,-]|87690: +[v7,v8,v6]}" ] 
+BB26545 -> BB26546 [tailport=s, headport=n, headlabel="      26546"]
+BB26545 -> BB26548 [tailport=s, headport=n, color=gray]
+BB26546 [shape=record label="{87691: call-payload.log [v5,'log',v6,-]*}" ] 
+BB26546 -> BB26547 [tailport=s, headport=n]
+BB26546 -> BB26548 [tailport=s, headport=n, color=gray]
+BB26547 [shape=record label="{87692: return[v1]}" ] 
+BB26548 [shape=record label="{87693: exceptional-return}" ] 
+//#$~ 48173
+}

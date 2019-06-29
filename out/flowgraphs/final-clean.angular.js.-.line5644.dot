@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry312[shape=none,label=""];
+BB_entry312 -> BB3765 [tailport=s, headport=n, headlabel="    3765"]
+BB3765 [shape=record label="{8981: constant[undefined,v1]|8982: vardecl['href']}" ] 
+BB3765 -> BB3766 [tailport=s, headport=n, headlabel="      3766"]
+BB3766 [shape=record label="{8983: read-variable['baseElement',v4,-]|8984: read-property[v4,'attr',-]|8985: \<variable-non-null-undef\>['baseElement']|8986: constant[\"href\",v5]}" ] 
+BB3766 -> BB3767 [tailport=s, headport=n, headlabel="      3767"]
+BB3766 -> BB3775 [tailport=s, headport=n, color=gray, headlabel="      3775"]
+BB3767 [shape=record label="{8987: call-baseElement.attr [v4,'attr',v5,v2]}" ] 
+BB3767 -> BB3768 [tailport=s, headport=n, headlabel="      3768"]
+BB3767 -> BB3775 [tailport=s, headport=n, color=gray]
+BB3768 [shape=record label="{8988: write-variable[v2,'href']*|8989: read-variable['href',v6,-]|8990: if[v6](true-block:3769,false-block:3770)}" ] 
+BB3768 -> BB3769 [tailport=s, headport=n, headlabel="      3769"]
+BB3768 -> BB3770 [tailport=s, headport=n, headlabel="      3770"]
+BB3768 -> BB3775 [tailport=s, headport=n, color=gray]
+BB3769 [shape=record label="{8991: read-variable['href',v8,-]|8992: read-property[v8,'replace',-]|8993: \<variable-non-null-undef\>['href']|8994: read-variable['RegExp',v10,-]|8995: constant[\"^(https?\\\\:)?\\\\/\\\\/[^\\\\/]*\",v11]}" ] 
+BB3769 -> BB3771 [tailport=s, headport=n, headlabel="      3771"]
+BB3769 -> BB3775 [tailport=s, headport=n, color=gray]
+BB3770 [shape=record label="{8996: constant[\"\",v1]}" ] 
+BB3770 -> BB3774 [tailport=s, headport=n, headlabel="      3774"]
+BB3771 [shape=record label="{8997: construct [-,v10,v11,v9]}" ] 
+BB3771 -> BB3772 [tailport=s, headport=n, headlabel="      3772"]
+BB3771 -> BB3775 [tailport=s, headport=n, color=gray]
+BB3772 [shape=record label="{8998: constant[\"\",v12]}" ] 
+BB3772 -> BB3773 [tailport=s, headport=n, headlabel="      3773"]
+BB3773 [shape=record label="{8999: call-href.replace [v8,'replace',v9,v12,v1]}" ] 
+BB3773 -> BB3774 [tailport=s, headport=n]
+BB3773 -> BB3775 [tailport=s, headport=n, color=gray]
+BB3774 [shape=record label="{9000: return[v1]}" ] 
+BB3775 [shape=record label="{9001: exceptional-return}" ] 
+//#$~ 5646
+}

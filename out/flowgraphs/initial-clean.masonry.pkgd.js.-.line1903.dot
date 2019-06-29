@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry124[shape=none,label=""];
+BB_entry124 -> BB1363 [tailport=s, headport=n, headlabel="    1363"]
+BB1363 [shape=record label="{4075: constant[undefined,v1]|4076: vardecl['cleanStyle']|4077: vardecl['prop']}" ] 
+BB1363 -> BB1364 [tailport=s, headport=n, headlabel="      1364"]
+BB1364 [shape=record label="{4078: new[v2]|4079: write-variable[v2,'cleanStyle']*|4080: read-variable['style',v4,-]}" ] 
+BB1364 -> BB1365 [tailport=s, headport=n, headlabel="      1365"]
+BB1364 -> BB1372 [tailport=s, headport=n, color=gray, headlabel="      1372"]
+BB1365 [shape=record label="{4081: begin-for-in[v4,v5]}" ] 
+BB1365 -> BB1366 [tailport=s, headport=n, headlabel="      1366"]
+BB1365 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1366 [shape=record label="{4082: has-next[v5,v6]|4083: if[v6](true-block:1367,false-block:1369)}" ] 
+BB1366 -> BB1367 [tailport=s, headport=n, headlabel="      1367"]
+BB1366 -> BB1369 [tailport=s, headport=n, headlabel="      1369"]
+BB1367 [shape=record label="{4084: next-property[v5,v7]|4085: write-variable[v7,'prop']|4086: read-variable['cleanStyle',v9,-]|4087: read-variable['prop',v10,-]|4088: constant[\"\",v8]|4089: write-property[v9,v10,v8]|4090: \<variable-non-null-undef\>['cleanStyle']*}" ] 
+BB1367 -> BB1368 [tailport=s, headport=n, headlabel="      1368"]
+BB1367 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1368 [shape=record label="{4091: end-for-in(begin-node:4081)}" ] 
+BB1368 -> BB1366 [tailport=s, headport=n]
+BB1369 [shape=record label="{4092: read-variable['this',v9,-]|4093: read-property[v9,'css',-]|4094: read-variable['cleanStyle',v10,-]}" ] 
+BB1369 -> BB1370 [tailport=s, headport=n, headlabel="      1370"]
+BB1369 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1370 [shape=record label="{4095: call-this.css [v9,'css',v10,-]*}" ] 
+BB1370 -> BB1371 [tailport=s, headport=n, headlabel="      1371"]
+BB1370 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1371 [shape=record label="{4096: return[v1]}" ] 
+BB1372 [shape=record label="{4097: exceptional-return}" ] 
+//#$~ 1909
+}

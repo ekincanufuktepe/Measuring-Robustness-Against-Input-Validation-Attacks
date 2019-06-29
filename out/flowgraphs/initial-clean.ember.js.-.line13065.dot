@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry583[shape=none,label=""];
+BB_entry583 -> BB7048 [tailport=s, headport=n, headlabel="    7048"]
+BB7048 [shape=record label="{24729: constant[undefined,v1]|24730: vardecl['current']}" ] 
+BB7048 -> BB7049 [tailport=s, headport=n, headlabel="      7049"]
+BB7049 [shape=record label="{24731: read-variable['property',v4,-]|24732: read-property[v4,'slice',-]|24733: \<variable-non-null-undef\>['property']|24734: constant[0.0,v5]}" ] 
+BB7049 -> BB7050 [tailport=s, headport=n, headlabel="      7050"]
+BB7049 -> BB7054 [tailport=s, headport=n, color=gray, headlabel="      7054"]
+BB7050 [shape=record label="{24735: call-property.slice [v4,'slice',v5,v2]}" ] 
+BB7050 -> BB7051 [tailport=s, headport=n, headlabel="      7051"]
+BB7050 -> BB7054 [tailport=s, headport=n, color=gray]
+BB7051 [shape=record label="{24736: write-variable[v2,'current']*|24737: read-variable['current',v7,-]|24738: read-variable['index',v8,-]|24739: read-variable['part',v6,-]|24740: write-property[v7,v8,v6]|24741: \<variable-non-null-undef\>['current']*|24742: read-variable['all',v10,-]|24743: read-property[v10,'push',-]|24744: \<variable-non-null-undef\>['all']|24745: read-variable['current',v11,-]}" ] 
+BB7051 -> BB7052 [tailport=s, headport=n, headlabel="      7052"]
+BB7051 -> BB7054 [tailport=s, headport=n, color=gray]
+BB7052 [shape=record label="{24746: call-all.push [v10,'push',v11,-]*}" ] 
+BB7052 -> BB7053 [tailport=s, headport=n, headlabel="      7053"]
+BB7052 -> BB7054 [tailport=s, headport=n, color=gray]
+BB7053 [shape=record label="{24747: return[v1]}" ] 
+BB7054 [shape=record label="{24748: exceptional-return}" ] 
+//#$~ 13068
+}

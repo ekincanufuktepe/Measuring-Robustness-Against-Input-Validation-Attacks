@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry270[shape=none,label=""];
+BB_entry270 -> BB3282 [tailport=s, headport=n, headlabel="    3282"]
+BB3282 [shape=record label="{9501: constant[undefined,v1]}" ] 
+BB3282 -> BB3283 [tailport=s, headport=n, headlabel="      3283"]
+BB3283 [shape=record label="{9502: read-variable['m',v4,v3]|9503: read-variable['d',v5,-]}" ] 
+BB3283 -> BB3284 [tailport=s, headport=n, headlabel="      3284"]
+BB3283 -> BB3290 [tailport=s, headport=n, color=gray, headlabel="      3290"]
+BB3284 [shape=record label="{9504: call-m [v3,v4,v5,v2]}" ] 
+BB3284 -> BB3285 [tailport=s, headport=n, headlabel="      3285"]
+BB3284 -> BB3290 [tailport=s, headport=n, color=gray]
+BB3285 [shape=record label="{9505: write-variable[v2,'d']*|9506: read-variable['a',v7,-]|9507: read-property[v7,'va',-]|9508: \<variable-non-null-undef\>['a']|9509: read-variable['b',v8,-]|9510: read-variable['e',v11,v10]|9511: read-variable['c',v12,-]|9512: read-variable['d',v13,-]|9513: read-variable['b',v14,-]}" ] 
+BB3285 -> BB3286 [tailport=s, headport=n, headlabel="      3286"]
+BB3285 -> BB3290 [tailport=s, headport=n, color=gray]
+BB3286 [shape=record label="{9514: call-e [v10,v11,v12,v13,v14,v9]}" ] 
+BB3286 -> BB3287 [tailport=s, headport=n, headlabel="      3287"]
+BB3286 -> BB3290 [tailport=s, headport=n, color=gray]
+BB3287 [shape=record label="{9515: read-variable['d',v15,-]}" ] 
+BB3287 -> BB3288 [tailport=s, headport=n, headlabel="      3288"]
+BB3287 -> BB3290 [tailport=s, headport=n, color=gray]
+BB3288 [shape=record label="{9516: call-a.va [v7,'va',v8,v9,v15,v1]}" ] 
+BB3288 -> BB3289 [tailport=s, headport=n, headlabel="      3289"]
+BB3288 -> BB3290 [tailport=s, headport=n, color=gray]
+BB3289 [shape=record label="{9517: return[v1]}" ] 
+BB3290 [shape=record label="{9518: exceptional-return}" ] 
+}

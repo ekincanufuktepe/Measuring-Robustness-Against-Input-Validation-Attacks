@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry544[shape=none,label=""];
+BB_entry544 -> BB8436 [tailport=s, headport=n, headlabel="    8436"]
+BB8436 [shape=record label="{25024: constant[undefined,v1]}" ] 
+BB8436 -> BB8437 [tailport=s, headport=n, headlabel="      8437"]
+BB8437 [shape=record label="{25025: read-variable['jQuery',v4,-]|25026: read-property[v4,'isWindow',-]|25027: \<variable-non-null-undef\>['jQuery']|25028: read-variable['elem',v5,-]}" ] 
+BB8437 -> BB8438 [tailport=s, headport=n, headlabel="      8438"]
+BB8437 -> BB8444 [tailport=s, headport=n, color=gray, headlabel="      8444"]
+BB8438 [shape=record label="{25029: call[v4,'isWindow',v5,v2]}" ] 
+BB8438 -> BB8439 [tailport=s, headport=n, headlabel="      8439"]
+BB8438 -> BB8444 [tailport=s, headport=n, color=gray]
+BB8439 [shape=record label="{25030: if[v2](true-block:8440,false-block:8441)}" ] 
+BB8439 -> BB8440 [tailport=s, headport=n, headlabel="      8440"]
+BB8439 -> BB8441 [tailport=s, headport=n, headlabel="      8441"]
+BB8440 [shape=record label="{25031: read-variable['elem',v1,-]}" ] 
+BB8440 -> BB8443 [tailport=s, headport=n, headlabel="      8443"]
+BB8440 -> BB8444 [tailport=s, headport=n, color=gray]
+BB8441 [shape=record label="{25032: read-variable['elem',v8,-]|25033: read-property[v8,'nodeType',v6]|25034: \<variable-non-null-undef\>['elem']|25035: constant[9.0,v7]|25036: ===[v6,v7,v1]|25037: if[v1](true-block:8442,false-block:8443)}" ] 
+BB8441 -> BB8443 [tailport=s, headport=n]
+BB8441 -> BB8442 [tailport=s, headport=n, headlabel="      8442"]
+BB8441 -> BB8444 [tailport=s, headport=n, color=gray]
+BB8442 [shape=record label="{25038: read-variable['elem',v9,-]|25039: read-property[v9,'defaultView',v1]|25040: \<variable-non-null-undef\>['elem']}" ] 
+BB8442 -> BB8443 [tailport=s, headport=n]
+BB8442 -> BB8444 [tailport=s, headport=n, color=gray]
+BB8443 [shape=record label="{25041: return[v1]}" ] 
+BB8444 [shape=record label="{25042: exceptional-return}" ] 
+}

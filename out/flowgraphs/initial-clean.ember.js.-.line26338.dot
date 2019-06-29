@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1180[shape=none,label=""];
+BB_entry1180 -> BB14206 [tailport=s, headport=n, headlabel="    14206"]
+BB14206 [shape=record label="{49042: constant[undefined,v1]}" ] 
+BB14206 -> BB14207 [tailport=s, headport=n, headlabel="      14207"]
+BB14207 [shape=record label="{49043: read-variable['operation',v3,-]|49044: read-variable['TrackedArray',v5,-]|49045: read-property[v5,'DELETE',v4]|49046: \<variable-non-null-undef\>['TrackedArray']|49047: ===[v3,v4,v2]|49048: if[v2](true-block:14208,false-block:14209)}" ] 
+BB14207 -> BB14208 [tailport=s, headport=n, headlabel="      14208"]
+BB14207 -> BB14209 [tailport=s, headport=n, headlabel="      14209"]
+BB14207 -> BB14212 [tailport=s, headport=n, color=gray, headlabel="      14212"]
+BB14208 [shape=record label="{49049: constant[undefined,v1]}" ] 
+BB14208 -> BB14211 [tailport=s, headport=n, headlabel="      14211"]
+BB14209 [shape=record label="{49050: read-variable['forEach',v7,v6]|49051: read-variable['observerContexts',v8,-]|49052: function-expr[function ( observerContext ),v9]}" ] 
+BB14209 -> BB14210 [tailport=s, headport=n, headlabel="      14210"]
+BB14209 -> BB14212 [tailport=s, headport=n, color=gray]
+BB14210 [shape=record label="{49053: call-forEach [v6,v7,v8,v9,-]*}" ] 
+BB14210 -> BB14211 [tailport=s, headport=n]
+BB14210 -> BB14212 [tailport=s, headport=n, color=gray]
+BB14211 [shape=record label="{49054: return[v1]}" ] 
+BB14212 [shape=record label="{49055: exceptional-return}" ] 
+//#$~ 26349
+}

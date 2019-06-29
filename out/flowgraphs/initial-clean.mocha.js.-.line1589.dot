@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry122[shape=none,label=""];
+BB_entry122 -> BB1340 [tailport=s, headport=n, headlabel="    1340"]
+BB1340 [shape=record label="{4406: constant[undefined,v1]|4407: vardecl['self']|4408: vardecl['suite']|4409: vardecl['pending']}" ] 
+BB1340 -> BB1341 [tailport=s, headport=n, headlabel="      1341"]
+BB1341 [shape=record label="{4410: read-variable['this',v2,-]|4411: write-variable[v2,'self']*|4412: read-variable['this',v4,-]|4413: read-property[v4,'suite',v3]|4414: write-variable[v3,'suite']*|4415: read-variable['this',v7,-]|4416: read-property[v7,'files',v6]|4417: read-property[v6,'length',v5]|4418: \<property-non-null-undef\>[v7,'files']|4419: write-variable[v5,'pending']*|4420: read-variable['this',v10,-]|4421: read-property[v10,'files',v9]|4422: read-property[v9,'forEach',-]|4423: \<property-non-null-undef\>[v10,'files']|4424: function-expr[function ( file ),v11]}" ] 
+BB1341 -> BB1342 [tailport=s, headport=n, headlabel="      1342"]
+BB1341 -> BB1344 [tailport=s, headport=n, color=gray, headlabel="      1344"]
+BB1342 [shape=record label="{4425: call-this.files.forEach [v9,'forEach',v11,-]*}" ] 
+BB1342 -> BB1343 [tailport=s, headport=n, headlabel="      1343"]
+BB1342 -> BB1344 [tailport=s, headport=n, color=gray]
+BB1343 [shape=record label="{4426: return[v1]}" ] 
+BB1344 [shape=record label="{4427: exceptional-return}" ] 
+//#$~ 1598
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1051[shape=none,label=""];
+BB_entry1051 -> BB13408 [tailport=s, headport=n, headlabel="    13408"]
+BB13408 [shape=record label="{35080: constant[undefined,v1]}" ] 
+BB13408 -> BB13409 [tailport=s, headport=n, headlabel="      13409"]
+BB13409 [shape=record label="{35081: read-variable['parentFormCtrl',v3,-]|35082: read-property[v3,'$removeControl',-]|35083: \<variable-non-null-undef\>['parentFormCtrl']|35084: read-variable['controller',v4,-]}" ] 
+BB13409 -> BB13410 [tailport=s, headport=n, headlabel="      13410"]
+BB13409 -> BB13417 [tailport=s, headport=n, color=gray, headlabel="      13417"]
+BB13410 [shape=record label="{35085: call-parentFormCtrl.$removeControl [v3,'$removeControl',v4,-]*}" ] 
+BB13410 -> BB13411 [tailport=s, headport=n, headlabel="      13411"]
+BB13410 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13411 [shape=record label="{35086: read-variable['nameAttr',v5,-]|35087: if[v5](true-block:13412,false-block:13414)}" ] 
+BB13411 -> BB13412 [tailport=s, headport=n, headlabel="      13412"]
+BB13411 -> BB13414 [tailport=s, headport=n, headlabel="      13414"]
+BB13411 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13412 [shape=record label="{35088: read-variable['setter',v7,v6]|35089: read-variable['scope',v8,-]|35090: read-variable['attr',v10,-]|35091: read-variable['nameAttr',v11,-]|35092: read-property[v10,v11,v9]|35093: \<variable-non-null-undef\>['attr']|35094: read-variable['undefined',v12,-]|35095: read-variable['controller',v14,-]|35096: read-property[v14,'$name',v13]|35097: \<variable-non-null-undef\>['controller']}" ] 
+BB13412 -> BB13413 [tailport=s, headport=n, headlabel="      13413"]
+BB13412 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13413 [shape=record label="{35098: call-setter [v6,v7,v8,v9,v12,v13,-]*}" ] 
+BB13413 -> BB13414 [tailport=s, headport=n]
+BB13413 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13414 [shape=record label="{35099: read-variable['extend',v7,v6]|35100: read-variable['controller',v8,-]|35101: read-variable['nullFormCtrl',v9,-]}" ] 
+BB13414 -> BB13415 [tailport=s, headport=n, headlabel="      13415"]
+BB13414 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13415 [shape=record label="{35102: call-extend [v6,v7,v8,v9,-]*}" ] 
+BB13415 -> BB13416 [tailport=s, headport=n, headlabel="      13416"]
+BB13415 -> BB13417 [tailport=s, headport=n, color=gray]
+BB13416 [shape=record label="{35103: return[v1]}" ] 
+BB13417 [shape=record label="{35104: exceptional-return}" ] 
+//#$~ 20364
+}

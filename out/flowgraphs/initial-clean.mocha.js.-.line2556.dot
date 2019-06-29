@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry191[shape=none,label=""];
+BB_entry191 -> BB2133 [tailport=s, headport=n, headlabel="    2133"]
+BB2133 [shape=record label="{6879: constant[undefined,v1]}" ] 
+BB2133 -> BB2134 [tailport=s, headport=n, headlabel="      2134"]
+BB2134 [shape=record label="{6880: constant[1.0,v7]|6881: read-variable['n',v8,-]|6882: +[v8,v9]|6883: +[v9,v7,v5]|6884: write-variable[v5,'n']|6885: read-variable['width',v6,-]|6886: %[v5,v6,v3]|6887: constant[0.0,v4]|6888: ==[v3,v4,v2]|6889: if[v2](true-block:2135,false-block:2137)}" ] 
+BB2134 -> BB2135 [tailport=s, headport=n, headlabel="      2135"]
+BB2134 -> BB2137 [tailport=s, headport=n, headlabel="      2137"]
+BB2134 -> BB2141 [tailport=s, headport=n, color=gray, headlabel="      2141"]
+BB2135 [shape=record label="{6890: read-variable['process',v12,-]|6891: read-property[v12,'stdout',v11]|6892: \<variable-non-null-undef\>['process']|6893: read-property[v11,'write',-]|6894: \<property-non-null-undef\>[v12,'stdout']|6895: constant[\"\\n  \",v13]}" ] 
+BB2135 -> BB2136 [tailport=s, headport=n, headlabel="      2136"]
+BB2135 -> BB2141 [tailport=s, headport=n, color=gray]
+BB2136 [shape=record label="{6896: call-process.stdout.write [v11,'write',v13,-]*}" ] 
+BB2136 -> BB2137 [tailport=s, headport=n]
+BB2136 -> BB2141 [tailport=s, headport=n, color=gray]
+BB2137 [shape=record label="{6897: read-variable['process',v12,-]|6898: read-property[v12,'stdout',v11]|6899: \<variable-non-null-undef\>['process']|6900: read-property[v11,'write',-]|6901: \<property-non-null-undef\>[v12,'stdout']|6902: read-variable['color',v15,v14]|6903: constant[\"pending\",v16]|6904: read-variable['Base',v19,-]|6905: read-property[v19,'symbols',v18]|6906: \<variable-non-null-undef\>['Base']|6907: read-property[v18,'dot',v17]|6908: \<property-non-null-undef\>[v19,'symbols']}" ] 
+BB2137 -> BB2138 [tailport=s, headport=n, headlabel="      2138"]
+BB2137 -> BB2141 [tailport=s, headport=n, color=gray]
+BB2138 [shape=record label="{6909: call-color [v14,v15,v16,v17,v13]}" ] 
+BB2138 -> BB2139 [tailport=s, headport=n, headlabel="      2139"]
+BB2138 -> BB2141 [tailport=s, headport=n, color=gray]
+BB2139 [shape=record label="{6910: call-process.stdout.write [v11,'write',v13,-]*}" ] 
+BB2139 -> BB2140 [tailport=s, headport=n, headlabel="      2140"]
+BB2139 -> BB2141 [tailport=s, headport=n, color=gray]
+BB2140 [shape=record label="{6911: return[v1]}" ] 
+BB2141 [shape=record label="{6912: exceptional-return}" ] 
+//#$~ 2558
+}

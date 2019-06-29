@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry171[shape=none,label=""];
+BB_entry171 -> BB4026 [tailport=s, headport=n, headlabel="    4026"]
+BB4026 [shape=record label="{16102: constant[undefined,v1]}" ] 
+BB4026 -> BB4027 [tailport=s, headport=n, headlabel="      4027"]
+BB4027 [shape=record label="{16103: read-variable['isNumber',v4,v3]|16104: read-variable['newvalue',v5,-]}" ] 
+BB4027 -> BB4028 [tailport=s, headport=n, headlabel="      4028"]
+BB4027 -> BB4033 [tailport=s, headport=n, color=gray, headlabel="      4033"]
+BB4028 [shape=record label="{16105: call-isNumber [v3,v4,v5,v2]}" ] 
+BB4028 -> BB4029 [tailport=s, headport=n, headlabel="      4029"]
+BB4028 -> BB4033 [tailport=s, headport=n, color=gray]
+BB4029 [shape=record label="{16106: if[v2](true-block:4030,false-block:4031)}" ] 
+BB4029 -> BB4030 [tailport=s, headport=n, headlabel="      4030"]
+BB4029 -> BB4031 [tailport=s, headport=n, headlabel="      4031"]
+BB4030 [shape=record label="{16107: read-variable['newvalue',v6,-]|16108: write-variable[v6,'margin']*|16109: read-variable['interact',v1,-]}" ] 
+BB4030 -> BB4032 [tailport=s, headport=n, headlabel="      4032"]
+BB4030 -> BB4033 [tailport=s, headport=n, color=gray]
+BB4031 [shape=record label="{16110: read-variable['margin',v1,-]}" ] 
+BB4031 -> BB4032 [tailport=s, headport=n]
+BB4031 -> BB4033 [tailport=s, headport=n, color=gray]
+BB4032 [shape=record label="{16111: return[v1]}" ] 
+BB4033 [shape=record label="{16112: exceptional-return}" ] 
+//#$~ 5502
+}

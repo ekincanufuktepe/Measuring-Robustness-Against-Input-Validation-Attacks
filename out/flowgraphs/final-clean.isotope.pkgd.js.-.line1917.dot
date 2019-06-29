@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry126[shape=none,label=""];
+BB_entry126 -> BB1402 [tailport=s, headport=n, headlabel="    1402"]
+BB1402 [shape=record label="{4181: constant[undefined,v1]}" ] 
+BB1402 -> BB1403 [tailport=s, headport=n, headlabel="      1403"]
+BB1403 [shape=record label="{4182: read-variable['this',v3,-]|4183: read-property[v3,'removeTransitionStyles',-]}" ] 
+BB1403 -> BB1404 [tailport=s, headport=n, headlabel="      1404"]
+BB1403 -> BB1409 [tailport=s, headport=n, color=gray, headlabel="      1409"]
+BB1404 [shape=record label="{4184: call-this.removeTransitionStyles [v3,'removeTransitionStyles',-]*}" ] 
+BB1404 -> BB1405 [tailport=s, headport=n, headlabel="      1405"]
+BB1404 -> BB1409 [tailport=s, headport=n, color=gray]
+BB1405 [shape=record label="{4185: read-variable['this',v6,-]|4186: read-property[v6,'element',v5]|4187: read-property[v5,'removeEventListener',-]|4188: \<property-non-null-undef\>[v6,'element']|4189: read-variable['transitionEndEvent',v7,-]|4190: read-variable['this',v8,-]|4191: constant[false,v9]}" ] 
+BB1405 -> BB1406 [tailport=s, headport=n, headlabel="      1406"]
+BB1405 -> BB1409 [tailport=s, headport=n, color=gray]
+BB1406 [shape=record label="{4192: call-this.element.removeEventListener [v5,'removeEventListener',v7,v8,v9,-]*}" ] 
+BB1406 -> BB1407 [tailport=s, headport=n, headlabel="      1407"]
+BB1406 -> BB1409 [tailport=s, headport=n, color=gray]
+BB1407 [shape=record label="{4193: read-variable['this',v11,-]|4194: constant[false,v10]|4195: write-property[v11,'isTransitioning',v10]*}" ] 
+BB1407 -> BB1408 [tailport=s, headport=n, headlabel="      1408"]
+BB1407 -> BB1409 [tailport=s, headport=n, color=gray]
+BB1408 [shape=record label="{4196: return[v1]}" ] 
+BB1409 [shape=record label="{4197: exceptional-return}" ] 
+//#$~ 1920
+}

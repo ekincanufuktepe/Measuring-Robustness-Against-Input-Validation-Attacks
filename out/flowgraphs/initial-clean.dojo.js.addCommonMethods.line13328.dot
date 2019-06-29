@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry661[shape=none,label=""];
+BB_entry661 -> BB9590 [tailport=s, headport=n, headlabel="    9590"]
+BB9590 [shape=record label="{28349: constant[undefined,v1]}" ] 
+BB9590 -> BB9591 [tailport=s, headport=n, headlabel="      9591"]
+BB9591 [shape=record label="{28350: read-variable['array',v4,-]|28351: read-property[v4,'forEach',-]|28352: \<variable-non-null-undef\>['array']|28353: read-variable['methods',v5,v2]|28354: if[v5](true-block:9594,false-block:9592)}" ] 
+BB9591 -> BB9594 [tailport=s, headport=n, headlabel="      9594"]
+BB9591 -> BB9592 [tailport=s, headport=n, headlabel="      9592"]
+BB9591 -> BB9597 [tailport=s, headport=n, color=gray, headlabel="      9597"]
+BB9592 [shape=record label="{28355: read-variable['Array',v6,-]|28356: constant[\"GET\",v7]|28357: constant[\"POST\",v8]|28358: constant[\"PUT\",v9]|28359: constant[\"DELETE\",v10]}" ] 
+BB9592 -> BB9593 [tailport=s, headport=n, headlabel="      9593"]
+BB9592 -> BB9597 [tailport=s, headport=n, color=gray]
+BB9593 [shape=record label="{28360: construct [-,v6,v7,v8,v9,v10,v5]}" ] 
+BB9593 -> BB9594 [tailport=s, headport=n]
+BB9593 -> BB9597 [tailport=s, headport=n, color=gray]
+BB9594 [shape=record label="{28361: function-expr[function ( method ),v6]}" ] 
+BB9594 -> BB9595 [tailport=s, headport=n, headlabel="      9595"]
+BB9595 [shape=record label="{28362: call-array.forEach [v4,'forEach',v5,v6,-]*}" ] 
+BB9595 -> BB9596 [tailport=s, headport=n, headlabel="      9596"]
+BB9595 -> BB9597 [tailport=s, headport=n, color=gray]
+BB9596 [shape=record label="{28363: return[v1]}" ] 
+BB9597 [shape=record label="{28364: exceptional-return}" ] 
+//#$~ 13333
+}

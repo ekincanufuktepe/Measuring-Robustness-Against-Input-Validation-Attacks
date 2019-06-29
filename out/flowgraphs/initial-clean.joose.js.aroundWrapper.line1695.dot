@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry170[shape=none,label=""];
+BB_entry170 -> BB1435 [tailport=s, headport=n, headlabel="    1435"]
+BB1435 [shape=record label="{4293: constant[undefined,v1]|4294: vardecl['me']|4295: vardecl['bound']}" ] 
+BB1435 -> BB1436 [tailport=s, headport=n, headlabel="      1436"]
+BB1436 [shape=record label="{4296: read-variable['this',v3,-]|4297: write-variable[v3,'me']*|4298: function-expr[function ( ),v4]|4299: write-variable[v4,'bound']*|4300: read-variable['func',v6,-]|4301: read-property[v6,'apply',-]|4302: \<variable-non-null-undef\>['func']|4303: read-variable['this',v7,-]|4304: read-variable['Joose',v11,-]|4305: read-property[v11,'A',v10]|4306: \<variable-non-null-undef\>['Joose']|4307: read-property[v10,'concat',-]|4308: \<property-non-null-undef\>[v11,'A']|4309: read-variable['Array',v13,-]|4310: read-variable['bound',v14,v2]}" ] 
+BB1436 -> BB1437 [tailport=s, headport=n, headlabel="      1437"]
+BB1436 -> BB1442 [tailport=s, headport=n, color=gray, headlabel="      1442"]
+BB1437 [shape=record label="{4311: construct [-,v13,v14,v12]}" ] 
+BB1437 -> BB1438 [tailport=s, headport=n, headlabel="      1438"]
+BB1437 -> BB1442 [tailport=s, headport=n, color=gray]
+BB1438 [shape=record label="{4312: read-variable['arguments',v15,v2]}" ] 
+BB1438 -> BB1439 [tailport=s, headport=n, headlabel="      1439"]
+BB1438 -> BB1442 [tailport=s, headport=n, color=gray]
+BB1439 [shape=record label="{4313: call-Joose.A.concat [v10,'concat',v12,v15,v8]}" ] 
+BB1439 -> BB1440 [tailport=s, headport=n, headlabel="      1440"]
+BB1439 -> BB1442 [tailport=s, headport=n, color=gray]
+BB1440 [shape=record label="{4314: call-func.apply [v6,'apply',v7,v8,v1]}" ] 
+BB1440 -> BB1441 [tailport=s, headport=n, headlabel="      1441"]
+BB1440 -> BB1442 [tailport=s, headport=n, color=gray]
+BB1441 [shape=record label="{4315: return[v1]}" ] 
+BB1442 [shape=record label="{4316: exceptional-return}" ] 
+//#$~ 1698
+}

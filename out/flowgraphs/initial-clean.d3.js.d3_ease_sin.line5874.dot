@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry921[shape=none,label=""];
+BB_entry921 -> BB10010 [tailport=s, headport=n, headlabel="    10010"]
+BB10010 [shape=record label="{33192: constant[undefined,v1]}" ] 
+BB10010 -> BB10011 [tailport=s, headport=n, headlabel="      10011"]
+BB10011 [shape=record label="{33193: constant[1.0,v2]|33194: read-variable['Math',v5,-]|33195: read-property[v5,'cos',-]|33196: \<variable-non-null-undef\>['Math']|33197: read-variable['t',v7,-]|33198: read-variable['half\\u03c0',v8,-]|33199: *[v7,v8,v6]}" ] 
+BB10011 -> BB10012 [tailport=s, headport=n, headlabel="      10012"]
+BB10011 -> BB10015 [tailport=s, headport=n, color=gray, headlabel="      10015"]
+BB10012 [shape=record label="{33200: call-Math.cos [v5,'cos',v6,v3]}" ] 
+BB10012 -> BB10013 [tailport=s, headport=n, headlabel="      10013"]
+BB10012 -> BB10015 [tailport=s, headport=n, color=gray]
+BB10013 [shape=record label="{33201: -[v2,v3,v1]}" ] 
+BB10013 -> BB10014 [tailport=s, headport=n, headlabel="      10014"]
+BB10013 -> BB10015 [tailport=s, headport=n, color=gray]
+BB10014 [shape=record label="{33202: return[v1]}" ] 
+BB10015 [shape=record label="{33203: exceptional-return}" ] 
+//#$~ 5875
+}

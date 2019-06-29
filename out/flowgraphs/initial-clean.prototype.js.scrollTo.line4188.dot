@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry438[shape=none,label=""];
+BB_entry438 -> BB5500 [tailport=s, headport=n, headlabel="    5500"]
+BB5500 [shape=record label="{15170: constant[undefined,v1]|15171: vardecl['pos']}" ] 
+BB5500 -> BB5501 [tailport=s, headport=n, headlabel="      5501"]
+BB5501 [shape=record label="{15172: read-variable['$',v4,v3]|15173: read-variable['element',v5,-]}" ] 
+BB5501 -> BB5502 [tailport=s, headport=n, headlabel="      5502"]
+BB5501 -> BB5509 [tailport=s, headport=n, color=gray, headlabel="      5509"]
+BB5502 [shape=record label="{15174: call-$ [v3,v4,v5,v2]}" ] 
+BB5502 -> BB5503 [tailport=s, headport=n, headlabel="      5503"]
+BB5502 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5503 [shape=record label="{15175: write-variable[v2,'element']*|15176: read-variable['Element',v8,-]|15177: read-property[v8,'cumulativeOffset',-]|15178: \<variable-non-null-undef\>['Element']|15179: read-variable['element',v9,-]}" ] 
+BB5503 -> BB5504 [tailport=s, headport=n, headlabel="      5504"]
+BB5503 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5504 [shape=record label="{15180: call-Element.cumulativeOffset [v8,'cumulativeOffset',v9,v6]}" ] 
+BB5504 -> BB5505 [tailport=s, headport=n, headlabel="      5505"]
+BB5504 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5505 [shape=record label="{15181: write-variable[v6,'pos']*|15182: read-variable['window',v11,-]|15183: read-property[v11,'scrollTo',-]|15184: \<variable-non-null-undef\>['window']|15185: read-variable['pos',v13,-]|15186: read-property[v13,'left',v12]|15187: \<variable-non-null-undef\>['pos']|15188: read-variable['pos',v15,-]|15189: read-property[v15,'top',v14]|15190: \<variable-non-null-undef\>['pos']}" ] 
+BB5505 -> BB5506 [tailport=s, headport=n, headlabel="      5506"]
+BB5505 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5506 [shape=record label="{15191: call-window.scrollTo [v11,'scrollTo',v12,v14,-]*}" ] 
+BB5506 -> BB5507 [tailport=s, headport=n, headlabel="      5507"]
+BB5506 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5507 [shape=record label="{15192: read-variable['element',v1,-]}" ] 
+BB5507 -> BB5508 [tailport=s, headport=n, headlabel="      5508"]
+BB5507 -> BB5509 [tailport=s, headport=n, color=gray]
+BB5508 [shape=record label="{15193: return[v1]}" ] 
+BB5509 [shape=record label="{15194: exceptional-return}" ] 
+//#$~ 4192
+}

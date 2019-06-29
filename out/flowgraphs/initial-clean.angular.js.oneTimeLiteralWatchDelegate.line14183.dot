@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry779[shape=none,label=""];
+BB_entry779 -> BB10366 [tailport=s, headport=n, headlabel="    10366"]
+BB10366 [shape=record label="{27024: constant[undefined,v1]|27025: vardecl['unwatch']|27026: vardecl['lastValue']|27027: function-decl[function isAllDefined ( value ),-]}" ] 
+BB10366 -> BB10367 [tailport=s, headport=n, headlabel="      10367"]
+BB10367 [shape=record label="{27028: read-variable['scope',v3,-]|27029: read-property[v3,'$watch',-]|27030: \<variable-non-null-undef\>['scope']|27031: function-expr[function oneTimeWatch ( scope ),v4]|27032: function-expr[function oneTimeListener ( value old scope ),v5]|27033: read-variable['objectEquality',v6,-]}" ] 
+BB10367 -> BB10368 [tailport=s, headport=n, headlabel="      10368"]
+BB10367 -> BB10371 [tailport=s, headport=n, color=gray, headlabel="      10371"]
+BB10368 [shape=record label="{27034: call-scope.$watch [v3,'$watch',v4,v5,v6,v1]}" ] 
+BB10368 -> BB10369 [tailport=s, headport=n, headlabel="      10369"]
+BB10368 -> BB10371 [tailport=s, headport=n, color=gray]
+BB10369 [shape=record label="{27035: write-variable[v1,'unwatch']}" ] 
+BB10369 -> BB10370 [tailport=s, headport=n, headlabel="      10370"]
+BB10370 [shape=record label="{27036: return[v1]}" ] 
+BB10371 [shape=record label="{27037: exceptional-return}" ] 
+//#$~ 14204
+}

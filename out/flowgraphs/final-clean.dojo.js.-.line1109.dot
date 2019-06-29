@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB856 [tailport=s, headport=n, headlabel="    856"]
+BB856 [shape=record label="{2437: constant[undefined,v1]|2438: vardecl['moduleInfo']|2439: vardecl['url']}" ] 
+BB856 -> BB857 [tailport=s, headport=n, headlabel="      857"]
+BB857 [shape=record label="{2440: read-variable['getModuleInfo',v4,v3]|2441: read-variable['name',v6,-]|2442: constant[\"/x\",v7]|2443: +[v6,v7,v5]|2444: read-variable['referenceModule',v8,-]}" ] 
+BB857 -> BB858 [tailport=s, headport=n, headlabel="      858"]
+BB857 -> BB865 [tailport=s, headport=n, color=gray, headlabel="      865"]
+BB858 [shape=record label="{2445: call-getModuleInfo [v3,v4,v5,v8,v2]}" ] 
+BB858 -> BB859 [tailport=s, headport=n, headlabel="      859"]
+BB858 -> BB865 [tailport=s, headport=n, color=gray]
+BB859 [shape=record label="{2446: write-variable[v2,'moduleInfo']*|2447: read-variable['moduleInfo',v10,-]|2448: read-property[v10,'url',v9]|2449: \<variable-non-null-undef\>['moduleInfo']|2450: write-variable[v9,'url']*|2451: read-variable['fixupUrl',v12,v11]|2452: read-variable['moduleInfo',v17,-]|2453: read-property[v17,'pid',v15]|2454: \<variable-non-null-undef\>['moduleInfo']|2455: constant[0.0,v16]|2456: ===[v15,v16,v14]|2457: if[v14](true-block:860,false-block:861)}" ] 
+BB859 -> BB860 [tailport=s, headport=n, headlabel="      860"]
+BB859 -> BB861 [tailport=s, headport=n, headlabel="      861"]
+BB859 -> BB865 [tailport=s, headport=n, color=gray]
+BB860 [shape=record label="{2458: read-variable['name',v13,-]}" ] 
+BB860 -> BB863 [tailport=s, headport=n, headlabel="      863"]
+BB860 -> BB865 [tailport=s, headport=n, color=gray]
+BB861 [shape=record label="{2459: read-variable['url',v19,-]|2460: read-property[v19,'substring',-]|2461: \<variable-non-null-undef\>['url']|2462: constant[0.0,v20]|2463: read-variable['url',v24,-]|2464: read-property[v24,'length',v22]|2465: \<variable-non-null-undef\>['url']|2466: constant[5.0,v23]|2467: -[v22,v23,v21]}" ] 
+BB861 -> BB862 [tailport=s, headport=n, headlabel="      862"]
+BB861 -> BB865 [tailport=s, headport=n, color=gray]
+BB862 [shape=record label="{2468: call-url.substring [v19,'substring',v20,v21,v13]}" ] 
+BB862 -> BB863 [tailport=s, headport=n]
+BB862 -> BB865 [tailport=s, headport=n, color=gray]
+BB863 [shape=record label="{2469: call-fixupUrl [v11,v12,v13,v1]}" ] 
+BB863 -> BB864 [tailport=s, headport=n, headlabel="      864"]
+BB863 -> BB865 [tailport=s, headport=n, color=gray]
+BB864 [shape=record label="{2470: return[v1]}" ] 
+BB865 [shape=record label="{2471: exceptional-return}" ] 
+//#$~ 1116
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry868[shape=none,label=""];
+BB_entry868 -> BB11283 [tailport=s, headport=n, headlabel="    11283"]
+BB11283 [shape=record label="{29592: constant[undefined,v1]}" ] 
+BB11283 -> BB11284 [tailport=s, headport=n, headlabel="      11284"]
+BB11284 [shape=record label="{29593: read-variable['asyncQueue',v3,-]|29594: read-property[v3,'length',v2]|29595: \<variable-non-null-undef\>['asyncQueue']|29596: if[v2](true-block:11285,false-block:11287)}" ] 
+BB11284 -> BB11285 [tailport=s, headport=n, headlabel="      11285"]
+BB11284 -> BB11287 [tailport=s, headport=n, headlabel="      11287"]
+BB11284 -> BB11288 [tailport=s, headport=n, color=gray, headlabel="      11288"]
+BB11285 [shape=record label="{29597: read-variable['$rootScope',v5,-]|29598: read-property[v5,'$digest',-]|29599: \<variable-non-null-undef\>['$rootScope']}" ] 
+BB11285 -> BB11286 [tailport=s, headport=n, headlabel="      11286"]
+BB11285 -> BB11288 [tailport=s, headport=n, color=gray]
+BB11286 [shape=record label="{29600: call-$rootScope.$digest [v5,'$digest',-]*}" ] 
+BB11286 -> BB11287 [tailport=s, headport=n]
+BB11286 -> BB11288 [tailport=s, headport=n, color=gray]
+BB11287 [shape=record label="{29601: return[v1]}" ] 
+BB11288 [shape=record label="{29602: exceptional-return}" ] 
+//#$~ 15887
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry95[shape=none,label=""];
+BB_entry95 -> BB1013 [tailport=s, headport=n, headlabel="    1013"]
+BB1013 [shape=record label="{3387: constant[undefined,v1]|3388: vardecl['Suite']|3389: vardecl['Test']}" ] 
+BB1013 -> BB1014 [tailport=s, headport=n, headlabel="      1014"]
+BB1014 [shape=record label="{3390: read-variable['require',v4,v3]|3391: constant[\"../suite\",v5]}" ] 
+BB1014 -> BB1015 [tailport=s, headport=n, headlabel="      1015"]
+BB1014 -> BB1020 [tailport=s, headport=n, color=gray, headlabel="      1020"]
+BB1015 [shape=record label="{3392: call-require [v3,v4,v5,v2]}" ] 
+BB1015 -> BB1016 [tailport=s, headport=n, headlabel="      1016"]
+BB1015 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1016 [shape=record label="{3393: write-variable[v2,'Suite']*|3394: read-variable['require',v8,v7]|3395: constant[\"../test\",v9]}" ] 
+BB1016 -> BB1017 [tailport=s, headport=n, headlabel="      1017"]
+BB1016 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1017 [shape=record label="{3396: call-require [v7,v8,v9,v6]}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1017 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1018 [shape=record label="{3397: write-variable[v6,'Test']*|3398: read-variable['module',v11,-]|3399: function-expr[function ( suite ),v10]|3400: write-property[v11,'exports',v10]|3401: \<variable-non-null-undef\>['module']*}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1018 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1019 [shape=record label="{3402: return[v1]}" ] 
+BB1020 [shape=record label="{3403: exceptional-return}" ] 
+//#$~ 1177
+}

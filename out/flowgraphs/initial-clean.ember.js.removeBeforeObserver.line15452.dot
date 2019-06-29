@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry723[shape=none,label=""];
+BB_entry723 -> BB8610 [tailport=s, headport=n, headlabel="    8610"]
+BB8610 [shape=record label="{29662: constant[undefined,v1]}" ] 
+BB8610 -> BB8611 [tailport=s, headport=n, headlabel="      8611"]
+BB8611 [shape=record label="{29663: read-variable['unwatch',v3,v2]|29664: read-variable['obj',v4,-]|29665: read-variable['path',v5,-]}" ] 
+BB8611 -> BB8612 [tailport=s, headport=n, headlabel="      8612"]
+BB8611 -> BB8619 [tailport=s, headport=n, color=gray, headlabel="      8619"]
+BB8612 [shape=record label="{29666: call-unwatch [v2,v3,v4,v5,-]*}" ] 
+BB8612 -> BB8613 [tailport=s, headport=n, headlabel="      8613"]
+BB8612 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8613 [shape=record label="{29667: read-variable['removeListener',v7,v6]|29668: read-variable['obj',v8,-]|29669: read-variable['beforeEvent',v11,v10]|29670: read-variable['path',v12,-]}" ] 
+BB8613 -> BB8614 [tailport=s, headport=n, headlabel="      8614"]
+BB8613 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8614 [shape=record label="{29671: call-beforeEvent [v10,v11,v12,v9]}" ] 
+BB8614 -> BB8615 [tailport=s, headport=n, headlabel="      8615"]
+BB8614 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8615 [shape=record label="{29672: read-variable['target',v13,-]|29673: read-variable['method',v14,-]}" ] 
+BB8615 -> BB8616 [tailport=s, headport=n, headlabel="      8616"]
+BB8615 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8616 [shape=record label="{29674: call-removeListener [v6,v7,v8,v9,v13,v14,-]*}" ] 
+BB8616 -> BB8617 [tailport=s, headport=n, headlabel="      8617"]
+BB8616 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8617 [shape=record label="{29675: read-variable['this',v1,-]}" ] 
+BB8617 -> BB8618 [tailport=s, headport=n, headlabel="      8618"]
+BB8617 -> BB8619 [tailport=s, headport=n, color=gray]
+BB8618 [shape=record label="{29676: return[v1]}" ] 
+BB8619 [shape=record label="{29677: exceptional-return}" ] 
+//#$~ 15456
+}

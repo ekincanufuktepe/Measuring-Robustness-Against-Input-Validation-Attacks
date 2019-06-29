@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1160[shape=none,label=""];
+BB_entry1160 -> BB14046 [tailport=s, headport=n, headlabel="    14046"]
+BB14046 [shape=record label="{48551: constant[undefined,v1]}" ] 
+BB14046 -> BB14047 [tailport=s, headport=n, headlabel="      14047"]
+BB14047 [shape=record label="{48552: read-variable['cp',v5,-]|48553: read-property[v5,'_hasInstanceMeta',-]|48554: \<variable-non-null-undef\>['cp']|48555: read-variable['this',v6,-]|48556: read-variable['propertyName',v7,-]}" ] 
+BB14047 -> BB14048 [tailport=s, headport=n, headlabel="      14048"]
+BB14047 -> BB14055 [tailport=s, headport=n, color=gray, headlabel="      14055"]
+BB14048 [shape=record label="{48557: call-cp._hasInstanceMeta [v5,'_hasInstanceMeta',v6,v7,v3]}" ] 
+BB14048 -> BB14049 [tailport=s, headport=n, headlabel="      14049"]
+BB14048 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14049 [shape=record label="{48558: ![v3,v2]|48559: if[v2](true-block:14050,false-block:14052)}" ] 
+BB14049 -> BB14050 [tailport=s, headport=n, headlabel="      14050"]
+BB14049 -> BB14052 [tailport=s, headport=n, headlabel="      14052"]
+BB14049 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14050 [shape=record label="{48560: read-variable['forEach',v9,v8]|48561: read-variable['cp',v11,-]|48562: read-property[v11,'_dependentKeys',v10]|48563: \<variable-non-null-undef\>['cp']|48564: function-expr[function ( dependentKey ),v12]|48565: read-variable['this',v13,-]}" ] 
+BB14050 -> BB14051 [tailport=s, headport=n, headlabel="      14051"]
+BB14050 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14051 [shape=record label="{48566: call-forEach [v8,v9,v10,v12,v13,-]*}" ] 
+BB14051 -> BB14052 [tailport=s, headport=n]
+BB14051 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14052 [shape=record label="{48567: read-variable['reduceFunc',v9,-]|48568: read-property[v9,'apply',-]|48569: \<variable-non-null-undef\>['reduceFunc']|48570: read-variable['this',v10,-]|48571: read-variable['arguments',v11,-]}" ] 
+BB14052 -> BB14053 [tailport=s, headport=n, headlabel="      14053"]
+BB14052 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14053 [shape=record label="{48572: call-reduceFunc.apply [v9,'apply',v10,v11,v1]}" ] 
+BB14053 -> BB14054 [tailport=s, headport=n, headlabel="      14054"]
+BB14053 -> BB14055 [tailport=s, headport=n, color=gray]
+BB14054 [shape=record label="{48573: return[v1]}" ] 
+BB14055 [shape=record label="{48574: exceptional-return}" ] 
+//#$~ 26013
+}

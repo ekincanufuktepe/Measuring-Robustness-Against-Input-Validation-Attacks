@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1370[shape=none,label=""];
+BB_entry1370 -> BB16156 [tailport=s, headport=n, headlabel="    16156"]
+BB16156 [shape=record label="{55351: constant[undefined,v1]|55352: vardecl['deferred']|55353: vardecl['promise']|55354: vardecl['entity']|55355: function-decl[function fulfillmentHandler ( fulfillment ),-]}" ] 
+BB16156 -> BB16157 [tailport=s, headport=n, headlabel="      16157"]
+BB16157 [shape=record label="{55356: read-variable['this',v2,-]|55357: write-variable[v2,'entity']*|55358: read-variable['get',v5,v4]|55359: read-variable['this',v6,-]|55360: constant[\"_deferred\",v7]}" ] 
+BB16157 -> BB16158 [tailport=s, headport=n, headlabel="      16158"]
+BB16157 -> BB16164 [tailport=s, headport=n, color=gray, headlabel="      16164"]
+BB16158 [shape=record label="{55361: call-get [v4,v5,v6,v7,v3]}" ] 
+BB16158 -> BB16159 [tailport=s, headport=n, headlabel="      16159"]
+BB16158 -> BB16164 [tailport=s, headport=n, color=gray]
+BB16159 [shape=record label="{55362: write-variable[v3,'deferred']*|55363: read-variable['deferred',v9,-]|55364: read-property[v9,'promise',v8]|55365: \<variable-non-null-undef\>['deferred']|55366: write-variable[v8,'promise']*|55367: read-variable['promise',v11,-]|55368: read-property[v11,'then',-]|55369: \<variable-non-null-undef\>['promise']|55370: read-variable['resolve',v12,-]|55371: if[v12](true-block:16160,false-block:16161)}" ] 
+BB16159 -> BB16161 [tailport=s, headport=n, headlabel="      16161"]
+BB16159 -> BB16160 [tailport=s, headport=n, headlabel="      16160"]
+BB16159 -> BB16164 [tailport=s, headport=n, color=gray]
+BB16160 [shape=record label="{55372: read-variable['fulfillmentHandler',v12,-]}" ] 
+BB16160 -> BB16161 [tailport=s, headport=n]
+BB16160 -> BB16164 [tailport=s, headport=n, color=gray]
+BB16161 [shape=record label="{55373: read-variable['reject',v13,-]|55374: read-variable['label',v14,-]}" ] 
+BB16161 -> BB16162 [tailport=s, headport=n, headlabel="      16162"]
+BB16161 -> BB16164 [tailport=s, headport=n, color=gray]
+BB16162 [shape=record label="{55375: call-promise.then [v11,'then',v12,v13,v14,v1]}" ] 
+BB16162 -> BB16163 [tailport=s, headport=n, headlabel="      16163"]
+BB16162 -> BB16164 [tailport=s, headport=n, color=gray]
+BB16163 [shape=record label="{55376: return[v1]}" ] 
+BB16164 [shape=record label="{55377: exceptional-return}" ] 
+//#$~ 30018
+}

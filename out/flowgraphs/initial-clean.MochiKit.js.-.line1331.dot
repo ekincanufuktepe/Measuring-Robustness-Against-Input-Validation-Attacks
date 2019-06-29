@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry168[shape=none,label=""];
+BB_entry168 -> BB2223 [tailport=s, headport=n, headlabel="    2223"]
+BB2223 [shape=record label="{10087: constant[undefined,v1]|10088: vardecl['m']|10089: vardecl['bind']}" ] 
+BB2223 -> BB2224 [tailport=s, headport=n, headlabel="      2224"]
+BB2224 [shape=record label="{10090: read-variable['MochiKit',v5,-]|10091: read-property[v5,'Iter',v4]|10092: \<variable-non-null-undef\>['MochiKit']|10093: read-property[v4,'iter',-]|10094: \<property-non-null-undef\>[v5,'Iter']|10095: read-variable['seq',v6,-]}" ] 
+BB2224 -> BB2225 [tailport=s, headport=n, headlabel="      2225"]
+BB2224 -> BB2230 [tailport=s, headport=n, color=gray, headlabel="      2230"]
+BB2225 [shape=record label="{10096: call-MochiKit.Iter.iter [v4,'iter',v6,v2]}" ] 
+BB2225 -> BB2226 [tailport=s, headport=n, headlabel="      2226"]
+BB2225 -> BB2230 [tailport=s, headport=n, color=gray]
+BB2226 [shape=record label="{10097: write-variable[v2,'seq']*|10098: read-variable['MochiKit',v8,-]|10099: read-property[v8,'Base',v7]|10100: \<variable-non-null-undef\>['MochiKit']|10101: write-variable[v7,'m']*|10102: read-variable['m',v10,-]|10103: read-property[v10,'bind',v9]|10104: \<variable-non-null-undef\>['m']|10105: write-variable[v9,'bind']*|10106: new[v1]|10107: function-expr[function ( ),v11]|10108: write-property[v1,'repr',v11]|10109: read-variable['m',v14,-]|10110: read-property[v14,'forwardCall',-]|10111: \<variable-non-null-undef\>['m']|10112: constant[\"repr\",v15]}" ] 
+BB2226 -> BB2227 [tailport=s, headport=n, headlabel="      2227"]
+BB2226 -> BB2230 [tailport=s, headport=n, color=gray]
+BB2227 [shape=record label="{10113: call-m.forwardCall [v14,'forwardCall',v15,v12]}" ] 
+BB2227 -> BB2228 [tailport=s, headport=n, headlabel="      2228"]
+BB2227 -> BB2230 [tailport=s, headport=n, color=gray]
+BB2228 [shape=record label="{10114: write-property[v1,'toString',v12]|10115: function-expr[function ( ),v16]|10116: write-property[v1,'next',v16]}" ] 
+BB2228 -> BB2229 [tailport=s, headport=n, headlabel="      2229"]
+BB2228 -> BB2230 [tailport=s, headport=n, color=gray]
+BB2229 [shape=record label="{10117: return[v1]}" ] 
+BB2230 [shape=record label="{10118: exceptional-return}" ] 
+//#$~ 1345
+}

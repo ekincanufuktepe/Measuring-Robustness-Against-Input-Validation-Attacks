@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry39[shape=none,label=""];
+BB_entry39 -> BB468 [tailport=s, headport=n, headlabel="    468"]
+BB468 [shape=record label="{1616: constant[undefined,v1]|1617: vardecl['k']}" ] 
+BB468 -> BB469 [tailport=s, headport=n, headlabel="      469"]
+BB469 [shape=record label="{1618: constant[1.0,v2]|1619: write-variable[v2,'k']*}" ] 
+BB469 -> BB470 [tailport=s, headport=n, headlabel="      470"]
+BB470 [shape=record label="{1620: read-variable['x',v6,-]|1621: read-variable['k',v7,-]|1622: *[v6,v7,v4]|1623: constant[1.0,v5]|1624: %[v4,v5,v3]|1625: if[v3](true-block:471,false-block:472)}" ] 
+BB470 -> BB471 [tailport=s, headport=n, headlabel="      471"]
+BB470 -> BB472 [tailport=s, headport=n, headlabel="      472"]
+BB470 -> BB474 [tailport=s, headport=n, color=gray, headlabel="      474"]
+BB471 [shape=record label="{1626: read-variable['k',v9,-]|1627: constant[10.0,v10]|1628: *[v9,v10,v8]|1629: write-variable[v8,'k']*}" ] 
+BB471 -> BB470 [tailport=s, headport=n]
+BB471 -> BB474 [tailport=s, headport=n, color=gray]
+BB472 [shape=record label="{1630: read-variable['k',v1,-]}" ] 
+BB472 -> BB473 [tailport=s, headport=n, headlabel="      473"]
+BB472 -> BB474 [tailport=s, headport=n, color=gray]
+BB473 [shape=record label="{1631: return[v1]}" ] 
+BB474 [shape=record label="{1632: exceptional-return}" ] 
+//#$~ 287
+}

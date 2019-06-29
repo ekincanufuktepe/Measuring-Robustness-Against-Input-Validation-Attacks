@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry141[shape=none,label=""];
+BB_entry141 -> BB1869 [tailport=s, headport=n, headlabel="    1869"]
+BB1869 [shape=record label="{6039: constant[undefined,v1]}" ] 
+BB1869 -> BB1870 [tailport=s, headport=n, headlabel="      1870"]
+BB1870 [shape=record label="{6040: read-variable['Ember',v3,-]|6041: read-property[v3,'assert',-]|6042: \<variable-non-null-undef\>['Ember']|6043: constant[\"You must call deferReadiness on an instance of Ember.Application\",v4]|6044: read-variable['this',v6,-]|6045: read-variable['Application',v7,-]|6046: instanceof[v6,v7,v5]}" ] 
+BB1870 -> BB1871 [tailport=s, headport=n, headlabel="      1871"]
+BB1870 -> BB1876 [tailport=s, headport=n, color=gray, headlabel="      1876"]
+BB1871 [shape=record label="{6047: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB1871 -> BB1872 [tailport=s, headport=n, headlabel="      1872"]
+BB1871 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1872 [shape=record label="{6048: read-variable['Ember',v9,-]|6049: read-property[v9,'assert',-]|6050: \<variable-non-null-undef\>['Ember']|6051: constant[\"You cannot defer readiness since the `ready()` hook has already been called.\",v10]|6052: read-variable['this',v14,-]|6053: read-property[v14,'_readinessDeferrals',v12]|6054: constant[0.0,v13]|6055: \>[v12,v13,v11]}" ] 
+BB1872 -> BB1873 [tailport=s, headport=n, headlabel="      1873"]
+BB1872 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1873 [shape=record label="{6056: call-Ember.assert [v9,'assert',v10,v11,-]*}" ] 
+BB1873 -> BB1874 [tailport=s, headport=n, headlabel="      1874"]
+BB1873 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1874 [shape=record label="{6057: constant[1.0,v15]|6058: read-variable['this',v17,-]|6059: read-property[v17,'_readinessDeferrals',v16]|6060: +[v16,v18]|6061: +[v18,v15,v19]|6062: write-property[v17,'_readinessDeferrals',v19]*}" ] 
+BB1874 -> BB1875 [tailport=s, headport=n, headlabel="      1875"]
+BB1874 -> BB1876 [tailport=s, headport=n, color=gray]
+BB1875 [shape=record label="{6063: return[v1]}" ] 
+BB1876 [shape=record label="{6064: exceptional-return}" ] 
+//#$~ 2823
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry460[shape=none,label=""];
+BB_entry460 -> BB6844 [tailport=s, headport=n, headlabel="    6844"]
+BB6844 [shape=record label="{25200: constant[undefined,v1]|25201: vardecl['cls']}" ] 
+BB6844 -> BB6845 [tailport=s, headport=n, headlabel="      6845"]
+BB6845 [shape=record label="{25202: read-variable['MochiKit',v4,-]|25203: read-property[v4,'Color',v3]|25204: \<variable-non-null-undef\>['MochiKit']|25205: read-property[v3,'Color',v2]|25206: \<property-non-null-undef\>[v4,'Color']|25207: write-variable[v2,'cls']*|25208: read-variable['cls',v6,-]|25209: read-property[v6,'fromComputedStyle',-]|25210: \<variable-non-null-undef\>['cls']|25211: read-variable['elem',v7,-]|25212: constant[\"backgroundColor\",v8]|25213: constant[\"background-color\",v9]}" ] 
+BB6845 -> BB6846 [tailport=s, headport=n, headlabel="      6846"]
+BB6845 -> BB6851 [tailport=s, headport=n, color=gray, headlabel="      6851"]
+BB6846 [shape=record label="{25214: call-cls.fromComputedStyle [v6,'fromComputedStyle',v7,v8,v9,v1]}" ] 
+BB6846 -> BB6847 [tailport=s, headport=n, headlabel="      6847"]
+BB6846 -> BB6851 [tailport=s, headport=n, color=gray]
+BB6847 [shape=record label="{25215: if[v1](true-block:6850,false-block:6848)}" ] 
+BB6847 -> BB6850 [tailport=s, headport=n, headlabel="      6850"]
+BB6847 -> BB6848 [tailport=s, headport=n, headlabel="      6848"]
+BB6848 [shape=record label="{25216: read-variable['cls',v6,-]|25217: read-property[v6,'whiteColor',-]|25218: \<variable-non-null-undef\>['cls']}" ] 
+BB6848 -> BB6849 [tailport=s, headport=n, headlabel="      6849"]
+BB6848 -> BB6851 [tailport=s, headport=n, color=gray]
+BB6849 [shape=record label="{25219: call-cls.whiteColor [v6,'whiteColor',v1]}" ] 
+BB6849 -> BB6850 [tailport=s, headport=n]
+BB6849 -> BB6851 [tailport=s, headport=n, color=gray]
+BB6850 [shape=record label="{25220: return[v1]}" ] 
+BB6851 [shape=record label="{25221: exceptional-return}" ] 
+//#$~ 4826
+}

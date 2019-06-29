@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1279[shape=none,label=""];
+BB_entry1279 -> BB16008 [tailport=s, headport=n, headlabel="    16008"]
+BB16008 [shape=record label="{41937: constant[undefined,v1]|41938: vardecl['lastBlockMap']}" ] 
+BB16008 -> BB16009 [tailport=s, headport=n, headlabel="      16009"]
+BB16009 [shape=record label="{41939: read-variable['trackByExpGetter',v2,-]|41940: if[v2](true-block:16010,false-block:16011)}" ] 
+BB16009 -> BB16010 [tailport=s, headport=n, headlabel="      16010"]
+BB16009 -> BB16011 [tailport=s, headport=n, headlabel="      16011"]
+BB16009 -> BB16016 [tailport=s, headport=n, color=gray, headlabel="      16016"]
+BB16010 [shape=record label="{41941: function-expr[function ( key value index ),v3]|41942: write-variable[v3,'trackByIdExpFn']*}" ] 
+BB16010 -> BB16011 [tailport=s, headport=n]
+BB16011 [shape=record label="{41943: read-variable['createMap',v5,v4]}" ] 
+BB16011 -> BB16012 [tailport=s, headport=n, headlabel="      16012"]
+BB16011 -> BB16016 [tailport=s, headport=n, color=gray]
+BB16012 [shape=record label="{41944: call-createMap [v4,v5,v3]}" ] 
+BB16012 -> BB16013 [tailport=s, headport=n, headlabel="      16013"]
+BB16012 -> BB16016 [tailport=s, headport=n, color=gray]
+BB16013 [shape=record label="{41945: write-variable[v3,'lastBlockMap']*|41946: read-variable['$scope',v7,-]|41947: read-property[v7,'$watchCollection',-]|41948: \<variable-non-null-undef\>['$scope']|41949: read-variable['rhs',v8,-]|41950: function-expr[function ngRepeatAction ( collection ),v9]}" ] 
+BB16013 -> BB16014 [tailport=s, headport=n, headlabel="      16014"]
+BB16013 -> BB16016 [tailport=s, headport=n, color=gray]
+BB16014 [shape=record label="{41951: call-$scope.$watchCollection [v7,'$watchCollection',v8,v9,-]*}" ] 
+BB16014 -> BB16015 [tailport=s, headport=n, headlabel="      16015"]
+BB16014 -> BB16016 [tailport=s, headport=n, color=gray]
+BB16015 [shape=record label="{41952: return[v1]}" ] 
+BB16016 [shape=record label="{41953: exceptional-return}" ] 
+//#$~ 27212
+}

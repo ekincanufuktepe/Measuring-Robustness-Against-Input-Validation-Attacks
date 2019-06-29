@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry221[shape=none,label=""];
+BB_entry221 -> BB3402 [tailport=s, headport=n, headlabel="    3402"]
+BB3402 [shape=record label="{9934: constant[undefined,v1]|9935: vardecl['elem']}" ] 
+BB3402 -> BB3403 [tailport=s, headport=n, headlabel="      3403"]
+BB3403 [shape=record label="{9936: read-variable['this',v3,-]|9937: constant[0.0,v4]|9938: read-property[v3,v4,v2]|9939: write-variable[v2,'elem']*|9940: read-variable['elem',v5,-]|9941: if[v5](true-block:3404,false-block:3406)}" ] 
+BB3403 -> BB3404 [tailport=s, headport=n, headlabel="      3404"]
+BB3403 -> BB3406 [tailport=s, headport=n, headlabel="      3406"]
+BB3403 -> BB3407 [tailport=s, headport=n, color=gray, headlabel="      3407"]
+BB3404 [shape=record label="{9942: read-variable['jQuery',v8,-]|9943: read-property[v8,'event',v7]|9944: \<variable-non-null-undef\>['jQuery']|9945: read-property[v7,'trigger',-]|9946: \<property-non-null-undef\>[v8,'event']|9947: read-variable['type',v9,-]|9948: read-variable['data',v10,-]|9949: read-variable['elem',v11,-]|9950: constant[true,v12]}" ] 
+BB3404 -> BB3405 [tailport=s, headport=n, headlabel="      3405"]
+BB3404 -> BB3407 [tailport=s, headport=n, color=gray]
+BB3405 [shape=record label="{9951: call[v7,'trigger',v9,v10,v11,v12,v1]}" ] 
+BB3405 -> BB3406 [tailport=s, headport=n]
+BB3405 -> BB3407 [tailport=s, headport=n, color=gray]
+BB3406 [shape=record label="{9952: return[v1]}" ] 
+BB3407 [shape=record label="{9953: exceptional-return}" ] 
+}

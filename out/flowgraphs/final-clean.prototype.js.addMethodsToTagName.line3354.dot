@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry362[shape=none,label=""];
+BB_entry362 -> BB4345 [tailport=s, headport=n, headlabel="    4345"]
+BB4345 [shape=record label="{11431: constant[undefined,v1]}" ] 
+BB4345 -> BB4346 [tailport=s, headport=n, headlabel="      4346"]
+BB4346 [shape=record label="{11432: read-variable['tagName',v4,-]|11433: read-property[v4,'toUpperCase',-]|11434: \<variable-non-null-undef\>['tagName']}" ] 
+BB4346 -> BB4347 [tailport=s, headport=n, headlabel="      4347"]
+BB4346 -> BB4353 [tailport=s, headport=n, color=gray, headlabel="      4353"]
+BB4347 [shape=record label="{11435: call-tagName.toUpperCase [v4,'toUpperCase',v2]}" ] 
+BB4347 -> BB4348 [tailport=s, headport=n, headlabel="      4348"]
+BB4347 -> BB4353 [tailport=s, headport=n, color=gray]
+BB4348 [shape=record label="{11436: write-variable[v2,'tagName']*|11437: read-variable['ByTag',v7,-]|11438: read-variable['tagName',v8,-]|11439: read-property[v7,v8,v6]|11440: \<variable-non-null-undef\>['ByTag']|11441: ![v6,v5]|11442: if[v5](true-block:4349,false-block:4350)}" ] 
+BB4348 -> BB4349 [tailport=s, headport=n, headlabel="      4349"]
+BB4348 -> BB4350 [tailport=s, headport=n, headlabel="      4350"]
+BB4348 -> BB4353 [tailport=s, headport=n, color=gray]
+BB4349 [shape=record label="{11443: read-variable['ByTag',v10,-]|11444: read-variable['tagName',v11,-]|11445: new[v9]|11446: write-property[v10,v11,v9]|11447: \<variable-non-null-undef\>['ByTag']*}" ] 
+BB4349 -> BB4350 [tailport=s, headport=n]
+BB4349 -> BB4353 [tailport=s, headport=n, color=gray]
+BB4350 [shape=record label="{11448: read-variable['Object',v10,-]|11449: read-property[v10,'extend',-]|11450: \<variable-non-null-undef\>['Object']|11451: read-variable['ByTag',v12,-]|11452: read-variable['tagName',v13,-]|11453: read-property[v12,v13,v11]|11454: \<variable-non-null-undef\>['ByTag']|11455: read-variable['methods',v14,-]}" ] 
+BB4350 -> BB4351 [tailport=s, headport=n, headlabel="      4351"]
+BB4350 -> BB4353 [tailport=s, headport=n, color=gray]
+BB4351 [shape=record label="{11456: call-Object.extend [v10,'extend',v11,v14,-]*}" ] 
+BB4351 -> BB4352 [tailport=s, headport=n, headlabel="      4352"]
+BB4351 -> BB4353 [tailport=s, headport=n, color=gray]
+BB4352 [shape=record label="{11457: return[v1]}" ] 
+BB4353 [shape=record label="{11458: exceptional-return}" ] 
+//#$~ 3357
+}

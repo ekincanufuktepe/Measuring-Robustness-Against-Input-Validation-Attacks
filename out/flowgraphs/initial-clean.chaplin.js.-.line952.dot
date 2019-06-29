@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry90[shape=none,label=""];
+BB_entry90 -> BB1017 [tailport=s, headport=n, headlabel="    1017"]
+BB1017 [shape=record label="{3330: constant[undefined,v1]}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1018 [shape=record label="{3331: read-variable['this',v3,-]|3332: read-property[v3,'unregisterGlobalRegion',-]|3333: read-variable['instance',v4,-]|3334: read-variable['name',v5,-]}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1018 -> BB1023 [tailport=s, headport=n, color=gray, headlabel="      1023"]
+BB1019 [shape=record label="{3335: call-this.unregisterGlobalRegion [v3,'unregisterGlobalRegion',v4,v5,-]*}" ] 
+BB1019 -> BB1020 [tailport=s, headport=n, headlabel="      1020"]
+BB1019 -> BB1023 [tailport=s, headport=n, color=gray]
+BB1020 [shape=record label="{3336: read-variable['this',v8,-]|3337: read-property[v8,'globalRegions',v7]|3338: read-property[v7,'unshift',-]|3339: \<property-non-null-undef\>[v8,'globalRegions']|3340: new[v9]|3341: read-variable['instance',v10,-]|3342: write-property[v9,'instance',v10]|3343: read-variable['name',v11,-]|3344: write-property[v9,'name',v11]|3345: read-variable['selector',v12,-]|3346: write-property[v9,'selector',v12]}" ] 
+BB1020 -> BB1021 [tailport=s, headport=n, headlabel="      1021"]
+BB1020 -> BB1023 [tailport=s, headport=n, color=gray]
+BB1021 [shape=record label="{3347: call-this.globalRegions.unshift [v7,'unshift',v9,v1]}" ] 
+BB1021 -> BB1022 [tailport=s, headport=n, headlabel="      1022"]
+BB1021 -> BB1023 [tailport=s, headport=n, color=gray]
+BB1022 [shape=record label="{3348: return[v1]}" ] 
+BB1023 [shape=record label="{3349: exceptional-return}" ] 
+//#$~ 957
+}

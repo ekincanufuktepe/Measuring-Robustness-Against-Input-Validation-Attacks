@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry133[shape=none,label=""];
+BB_entry133 -> BB2619 [tailport=s, headport=n, headlabel="    2619"]
+BB2619 [shape=record label="{8659: constant[undefined,v1]}" ] 
+BB2619 -> BB2620 [tailport=s, headport=n, headlabel="      2620"]
+BB2620 [shape=record label="{8660: read-variable['RegExp',v5,-]|8661: constant[\"loaded|complete\",v6]}" ] 
+BB2620 -> BB2621 [tailport=s, headport=n, headlabel="      2621"]
+BB2620 -> BB2628 [tailport=s, headport=n, color=gray, headlabel="      2628"]
+BB2621 [shape=record label="{8662: construct [-,v5,v6,v4]}" ] 
+BB2621 -> BB2622 [tailport=s, headport=n, headlabel="      2622"]
+BB2621 -> BB2628 [tailport=s, headport=n, color=gray]
+BB2622 [shape=record label="{8663: read-property[v4,'test',-]|8664: read-variable['node',v8,-]|8665: read-property[v8,'readyState',v7]|8666: \<variable-non-null-undef\>['node']}" ] 
+BB2622 -> BB2623 [tailport=s, headport=n, headlabel="      2623"]
+BB2622 -> BB2628 [tailport=s, headport=n, color=gray]
+BB2623 [shape=record label="{8667: call-null [v4,'test',v7,v2]}" ] 
+BB2623 -> BB2624 [tailport=s, headport=n, headlabel="      2624"]
+BB2623 -> BB2628 [tailport=s, headport=n, color=gray]
+BB2624 [shape=record label="{8668: if[v2](true-block:2625,false-block:2627)}" ] 
+BB2624 -> BB2625 [tailport=s, headport=n, headlabel="      2625"]
+BB2624 -> BB2627 [tailport=s, headport=n, headlabel="      2627"]
+BB2625 [shape=record label="{8669: read-variable['node',v10,-]|8670: constant[null,v9]|8671: write-property[v10,'onreadystatechange',v9]|8672: \<variable-non-null-undef\>['node']*|8673: read-variable['onLoad',v12,v11]}" ] 
+BB2625 -> BB2626 [tailport=s, headport=n, headlabel="      2626"]
+BB2625 -> BB2628 [tailport=s, headport=n, color=gray]
+BB2626 [shape=record label="{8674: call-onLoad [v11,v12,-]*}" ] 
+BB2626 -> BB2627 [tailport=s, headport=n]
+BB2626 -> BB2628 [tailport=s, headport=n, color=gray]
+BB2627 [shape=record label="{8675: return[v1]}" ] 
+BB2628 [shape=record label="{8676: exceptional-return}" ] 
+//#$~ 4678
+}

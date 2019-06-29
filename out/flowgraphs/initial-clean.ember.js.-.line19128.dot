@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry902[shape=none,label=""];
+BB_entry902 -> BB10816 [tailport=s, headport=n, headlabel="    10816"]
+BB10816 [shape=record label="{36975: constant[undefined,v1]|36976: vardecl['actionId']|36977: vardecl['eventName']|36978: vardecl['parameters']}" ] 
+BB10816 -> BB10817 [tailport=s, headport=n, headlabel="      10817"]
+BB10817 [shape=record label="{36979: read-variable['uuid',v4,v3]}" ] 
+BB10817 -> BB10818 [tailport=s, headport=n, headlabel="      10818"]
+BB10817 -> BB10823 [tailport=s, headport=n, color=gray, headlabel="      10823"]
+BB10818 [shape=record label="{36980: call-uuid [v3,v4,v2]}" ] 
+BB10818 -> BB10819 [tailport=s, headport=n, headlabel="      10819"]
+BB10818 -> BB10823 [tailport=s, headport=n, color=gray]
+BB10819 [shape=record label="{36981: write-variable[v2,'actionId']*|36982: read-variable['options',v6,-]|36983: read-property[v6,'eventName',v5]|36984: \<variable-non-null-undef\>['options']|36985: write-variable[v5,'eventName']*|36986: read-variable['options',v8,-]|36987: read-property[v8,'parameters',v7]|36988: \<variable-non-null-undef\>['options']|36989: write-variable[v7,'parameters']*|36990: read-variable['ActionManager',v12,-]|36991: read-property[v12,'registeredActions',v10]|36992: \<variable-non-null-undef\>['ActionManager']|36993: read-variable['actionId',v11,-]|36994: new[v9]|36995: read-variable['eventName',v13,-]|36996: write-property[v9,'eventName',v13]|36997: function-expr[function handleRegisteredAction ( event ),v14]|36998: write-property[v9,'handler',v14]|36999: write-property[v10,v11,v9]|37000: \<property-non-null-undef\>[v12,'registeredActions']*|37001: read-variable['options',v17,-]|37002: read-property[v17,'view',v16]|37003: \<variable-non-null-undef\>['options']|37004: read-property[v16,'on',-]|37005: \<property-non-null-undef\>[v17,'view']|37006: constant[\"willClearRender\",v18]|37007: function-expr[function ( ),v19]}" ] 
+BB10819 -> BB10820 [tailport=s, headport=n, headlabel="      10820"]
+BB10819 -> BB10823 [tailport=s, headport=n, color=gray]
+BB10820 [shape=record label="{37008: call-options.view.on [v16,'on',v18,v19,-]*}" ] 
+BB10820 -> BB10821 [tailport=s, headport=n, headlabel="      10821"]
+BB10820 -> BB10823 [tailport=s, headport=n, color=gray]
+BB10821 [shape=record label="{37009: read-variable['actionId',v1,-]}" ] 
+BB10821 -> BB10822 [tailport=s, headport=n, headlabel="      10822"]
+BB10821 -> BB10823 [tailport=s, headport=n, color=gray]
+BB10822 [shape=record label="{37010: return[v1]}" ] 
+BB10823 [shape=record label="{37011: exceptional-return}" ] 
+//#$~ 19177
+}

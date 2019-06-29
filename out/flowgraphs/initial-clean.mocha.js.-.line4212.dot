@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry332[shape=none,label=""];
+BB_entry332 -> BB3688 [tailport=s, headport=n, headlabel="    3688"]
+BB3688 [shape=record label="{11808: constant[undefined,v1]}" ] 
+BB3688 -> BB3689 [tailport=s, headport=n, headlabel="      3689"]
+BB3689 [shape=record label="{11809: read-variable['this',v3,-]|11810: read-property[v3,'fileStream',v2]|11811: if[v2](true-block:3690,false-block:3691)}" ] 
+BB3689 -> BB3690 [tailport=s, headport=n, headlabel="      3690"]
+BB3689 -> BB3691 [tailport=s, headport=n, headlabel="      3691"]
+BB3689 -> BB3695 [tailport=s, headport=n, color=gray, headlabel="      3695"]
+BB3690 [shape=record label="{11812: read-variable['this',v6,-]|11813: read-property[v6,'fileStream',v5]|11814: read-property[v5,'end',-]|11815: \<property-non-null-undef\>[v6,'fileStream']|11816: function-expr[function ( ),v7]}" ] 
+BB3690 -> BB3692 [tailport=s, headport=n, headlabel="      3692"]
+BB3690 -> BB3695 [tailport=s, headport=n, color=gray]
+BB3691 [shape=record label="{11817: read-variable['fn',v5,v4]|11818: read-variable['failures',v6,-]}" ] 
+BB3691 -> BB3693 [tailport=s, headport=n, headlabel="      3693"]
+BB3691 -> BB3695 [tailport=s, headport=n, color=gray]
+BB3692 [shape=record label="{11819: call-this.fileStream.end [v5,'end',v7,-]*}" ] 
+BB3692 -> BB3694 [tailport=s, headport=n, headlabel="      3694"]
+BB3692 -> BB3695 [tailport=s, headport=n, color=gray]
+BB3693 [shape=record label="{11820: call-fn [v4,v5,v6,-]*}" ] 
+BB3693 -> BB3694 [tailport=s, headport=n]
+BB3693 -> BB3695 [tailport=s, headport=n, color=gray]
+BB3694 [shape=record label="{11821: return[v1]}" ] 
+BB3695 [shape=record label="{11822: exceptional-return}" ] 
+//#$~ 4218
+}

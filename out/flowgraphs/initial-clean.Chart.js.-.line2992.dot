@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry255[shape=none,label=""];
+BB_entry255 -> BB2671 [tailport=s, headport=n, headlabel="    2671"]
+BB2671 [shape=record label="{10855: constant[undefined,v1]}" ] 
+BB2671 -> BB2672 [tailport=s, headport=n, headlabel="      2672"]
+BB2672 [shape=record label="{10856: read-variable['segment',v3,-]|10857: read-property[v3,'restore',-]|10858: \<variable-non-null-undef\>['segment']|10859: read-variable['Array',v5,-]|10860: constant[\"fillColor\",v6]}" ] 
+BB2672 -> BB2673 [tailport=s, headport=n, headlabel="      2673"]
+BB2672 -> BB2676 [tailport=s, headport=n, color=gray, headlabel="      2676"]
+BB2673 [shape=record label="{10861: construct [-,v5,v6,v4]}" ] 
+BB2673 -> BB2674 [tailport=s, headport=n, headlabel="      2674"]
+BB2673 -> BB2676 [tailport=s, headport=n, color=gray]
+BB2674 [shape=record label="{10862: call-segment.restore [v3,'restore',v4,-]*}" ] 
+BB2674 -> BB2675 [tailport=s, headport=n, headlabel="      2675"]
+BB2674 -> BB2676 [tailport=s, headport=n, color=gray]
+BB2675 [shape=record label="{10863: return[v1]}" ] 
+BB2676 [shape=record label="{10864: exceptional-return}" ] 
+//#$~ 2993
+}

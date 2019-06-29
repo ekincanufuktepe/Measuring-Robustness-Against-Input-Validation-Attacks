@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry870[shape=none,label=""];
+BB_entry870 -> BB9621 [tailport=s, headport=n, headlabel="    9621"]
+BB9621 [shape=record label="{31943: constant[undefined,v1]|31944: vardecl['x']|31945: vardecl['y']|31946: vardecl['compat']|31947: function-decl[function quadtree ( data ),-]}" ] 
+BB9621 -> BB9622 [tailport=s, headport=n, headlabel="      9622"]
+BB9622 [shape=record label="{31948: read-variable['d3_geom_pointX',v2,-]|31949: write-variable[v2,'x']*|31950: read-variable['d3_geom_pointY',v3,-]|31951: write-variable[v3,'y']*|31952: read-variable['arguments',v5,-]|31953: read-property[v5,'length',v4]|31954: \<variable-non-null-undef\>['arguments']|31955: write-variable[v4,'compat']|31956: if[v4](true-block:9623,false-block:9627)}" ] 
+BB9622 -> BB9623 [tailport=s, headport=n, headlabel="      9623"]
+BB9622 -> BB9627 [tailport=s, headport=n, headlabel="      9627"]
+BB9622 -> BB9629 [tailport=s, headport=n, color=gray, headlabel="      9629"]
+BB9623 [shape=record label="{31957: read-variable['d3_geom_quadtreeCompatX',v6,-]|31958: write-variable[v6,'x']*|31959: read-variable['d3_geom_quadtreeCompatY',v7,-]|31960: write-variable[v7,'y']*|31961: read-variable['compat',v9,-]|31962: constant[3.0,v10]|31963: ===[v9,v10,v8]|31964: if[v8](true-block:9624,false-block:9625)}" ] 
+BB9623 -> BB9624 [tailport=s, headport=n, headlabel="      9624"]
+BB9623 -> BB9625 [tailport=s, headport=n, headlabel="      9625"]
+BB9623 -> BB9629 [tailport=s, headport=n, color=gray]
+BB9624 [shape=record label="{31965: read-variable['y1',v11,-]|31966: write-variable[v11,'y2']*|31967: read-variable['x1',v12,-]|31968: write-variable[v12,'x2']*|31969: constant[0.0,v13]|31970: write-variable[v13,'x1']|31971: write-variable[v13,'y1']*}" ] 
+BB9624 -> BB9625 [tailport=s, headport=n]
+BB9624 -> BB9629 [tailport=s, headport=n, color=gray]
+BB9625 [shape=record label="{31972: read-variable['quadtree',v12,v11]|31973: read-variable['points',v13,-]}" ] 
+BB9625 -> BB9626 [tailport=s, headport=n, headlabel="      9626"]
+BB9625 -> BB9629 [tailport=s, headport=n, color=gray]
+BB9626 [shape=record label="{31974: call-quadtree [v11,v12,v13,v1]}" ] 
+BB9626 -> BB9628 [tailport=s, headport=n, headlabel="      9628"]
+BB9626 -> BB9629 [tailport=s, headport=n, color=gray]
+BB9627 [shape=record label="{31975: read-variable['quadtree',v7,-]|31976: function-expr[function ( _ ),v6]|31977: write-property[v7,'x',v6]|31978: \<variable-non-null-undef\>['quadtree']*|31979: read-variable['quadtree',v9,-]|31980: function-expr[function ( _ ),v8]|31981: write-property[v9,'y',v8]|31982: \<variable-non-null-undef\>['quadtree']*|31983: read-variable['quadtree',v11,-]|31984: function-expr[function ( _ ),v10]|31985: write-property[v11,'extent',v10]|31986: \<variable-non-null-undef\>['quadtree']*|31987: read-variable['quadtree',v13,-]|31988: function-expr[function ( _ ),v12]|31989: write-property[v13,'size',v12]|31990: \<variable-non-null-undef\>['quadtree']*|31991: read-variable['quadtree',v1,-]}" ] 
+BB9627 -> BB9628 [tailport=s, headport=n]
+BB9627 -> BB9629 [tailport=s, headport=n, color=gray]
+BB9628 [shape=record label="{31992: return[v1]}" ] 
+BB9629 [shape=record label="{31993: exceptional-return}" ] 
+//#$~ 5648
+}

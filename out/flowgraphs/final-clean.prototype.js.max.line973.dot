@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry134[shape=none,label=""];
+BB_entry134 -> BB1546 [tailport=s, headport=n, headlabel="    1546"]
+BB1546 [shape=record label="{4245: constant[undefined,v1]|4246: vardecl['result']}" ] 
+BB1546 -> BB1547 [tailport=s, headport=n, headlabel="      1547"]
+BB1547 [shape=record label="{4247: read-variable['iterator',v2,-]|4248: if[v2](true-block:1549,false-block:1548)}" ] 
+BB1547 -> BB1549 [tailport=s, headport=n, headlabel="      1549"]
+BB1547 -> BB1548 [tailport=s, headport=n, headlabel="      1548"]
+BB1547 -> BB1553 [tailport=s, headport=n, color=gray, headlabel="      1553"]
+BB1548 [shape=record label="{4249: read-variable['Prototype',v3,-]|4250: read-property[v3,'K',v2]|4251: \<variable-non-null-undef\>['Prototype']}" ] 
+BB1548 -> BB1549 [tailport=s, headport=n]
+BB1548 -> BB1553 [tailport=s, headport=n, color=gray]
+BB1549 [shape=record label="{4252: write-variable[v2,'iterator']*|4253: read-variable['this',v4,-]|4254: read-property[v4,'each',-]|4255: function-expr[function ( value index ),v5]|4256: read-variable['this',v6,-]}" ] 
+BB1549 -> BB1550 [tailport=s, headport=n, headlabel="      1550"]
+BB1549 -> BB1553 [tailport=s, headport=n, color=gray]
+BB1550 [shape=record label="{4257: call-this.each [v4,'each',v5,v6,-]*}" ] 
+BB1550 -> BB1551 [tailport=s, headport=n, headlabel="      1551"]
+BB1550 -> BB1553 [tailport=s, headport=n, color=gray]
+BB1551 [shape=record label="{4258: read-variable['result',v1,-]}" ] 
+BB1551 -> BB1552 [tailport=s, headport=n, headlabel="      1552"]
+BB1551 -> BB1553 [tailport=s, headport=n, color=gray]
+BB1552 [shape=record label="{4259: return[v1]}" ] 
+BB1553 [shape=record label="{4260: exceptional-return}" ] 
+//#$~ 981
+}

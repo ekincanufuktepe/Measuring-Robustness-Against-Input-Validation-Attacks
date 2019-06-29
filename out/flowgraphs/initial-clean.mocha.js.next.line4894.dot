@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry379[shape=none,label=""];
+BB_entry379 -> BB4215 [tailport=s, headport=n, headlabel="    4215"]
+BB4215 [shape=record label="{13308: constant[undefined,v1]}" ] 
+BB4215 -> BB4216 [tailport=s, headport=n, headlabel="      4216"]
+BB4216 [shape=record label="{13309: read-variable['self',v3,-]|13310: read-variable['suite',v2,-]|13311: write-property[v3,'suite',v2]|13312: \<variable-non-null-undef\>['self']*|13313: read-variable['suite',v5,-]|13314: ![v5,v4]|13315: if[v4](true-block:4217,false-block:4219)}" ] 
+BB4216 -> BB4217 [tailport=s, headport=n, headlabel="      4217"]
+BB4216 -> BB4219 [tailport=s, headport=n, headlabel="      4219"]
+BB4216 -> BB4222 [tailport=s, headport=n, color=gray, headlabel="      4222"]
+BB4217 [shape=record label="{13316: read-variable['self',v7,-]|13317: read-variable['orig',v6,-]|13318: write-property[v7,'suite',v6]|13319: \<variable-non-null-undef\>['self']*|13320: read-variable['fn',v9,v8]}" ] 
+BB4217 -> BB4218 [tailport=s, headport=n, headlabel="      4218"]
+BB4217 -> BB4222 [tailport=s, headport=n, color=gray]
+BB4218 [shape=record label="{13321: call-fn [v8,v9,v1]}" ] 
+BB4218 -> BB4221 [tailport=s, headport=n, headlabel="      4221"]
+BB4218 -> BB4222 [tailport=s, headport=n, color=gray]
+BB4219 [shape=record label="{13322: read-variable['self',v7,-]|13323: read-property[v7,'hook',-]|13324: \<variable-non-null-undef\>['self']|13325: read-variable['name',v8,-]|13326: function-expr[function ( err ),v9]}" ] 
+BB4219 -> BB4220 [tailport=s, headport=n, headlabel="      4220"]
+BB4219 -> BB4222 [tailport=s, headport=n, color=gray]
+BB4220 [shape=record label="{13327: call-self.hook [v7,'hook',v8,v9,-]*}" ] 
+BB4220 -> BB4221 [tailport=s, headport=n]
+BB4220 -> BB4222 [tailport=s, headport=n, color=gray]
+BB4221 [shape=record label="{13328: return[v1]}" ] 
+BB4222 [shape=record label="{13329: exceptional-return}" ] 
+//#$~ 4909
+}

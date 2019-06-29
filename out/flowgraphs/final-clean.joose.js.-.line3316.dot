@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry312[shape=none,label=""];
+BB_entry312 -> BB2872 [tailport=s, headport=n, headlabel="    2872"]
+BB2872 [shape=record label="{8597: constant[undefined,v1]}" ] 
+BB2872 -> BB2873 [tailport=s, headport=n, headlabel="      2873"]
+BB2873 [shape=record label="{8598: read-variable['o',v3,-]|8599: read-property[v3,'meta',v2]|8600: \<variable-non-null-undef\>['o']|8601: if[v2](true-block:2874,false-block:2876)}" ] 
+BB2873 -> BB2876 [tailport=s, headport=n, headlabel="      2876"]
+BB2873 -> BB2874 [tailport=s, headport=n, headlabel="      2874"]
+BB2873 -> BB2880 [tailport=s, headport=n, color=gray, headlabel="      2880"]
+BB2874 [shape=record label="{8602: read-variable['o',v6,-]|8603: read-property[v6,'meta',v5]|8604: \<variable-non-null-undef\>['o']|8605: read-property[v5,'isa',-]|8606: \<property-non-null-undef\>[v6,'meta']|8607: read-variable['Joose',v8,-]|8608: read-property[v8,'TypeConstraint',v7]|8609: \<variable-non-null-undef\>['Joose']}" ] 
+BB2874 -> BB2875 [tailport=s, headport=n, headlabel="      2875"]
+BB2874 -> BB2880 [tailport=s, headport=n, color=gray]
+BB2875 [shape=record label="{8610: call-o.meta.isa [v5,'isa',v7,v2]}" ] 
+BB2875 -> BB2876 [tailport=s, headport=n]
+BB2875 -> BB2880 [tailport=s, headport=n, color=gray]
+BB2876 [shape=record label="{8611: if[v2](true-block:2877,false-block:2878)}" ] 
+BB2876 -> BB2877 [tailport=s, headport=n, headlabel="      2877"]
+BB2876 -> BB2878 [tailport=s, headport=n, headlabel="      2878"]
+BB2877 [shape=record label="{8612: constant[true,v1]}" ] 
+BB2877 -> BB2879 [tailport=s, headport=n, headlabel="      2879"]
+BB2878 [shape=record label="{8613: constant[false,v1]}" ] 
+BB2878 -> BB2879 [tailport=s, headport=n]
+BB2879 [shape=record label="{8614: return[v1]}" ] 
+BB2880 [shape=record label="{8615: exceptional-return}" ] 
+//#$~ 3320
+}

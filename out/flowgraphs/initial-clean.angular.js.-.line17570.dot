@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry934[shape=none,label=""];
+BB_entry934 -> BB12044 [tailport=s, headport=n, headlabel="    12044"]
+BB12044 [shape=record label="{31568: constant[undefined,v1]|31569: vardecl['bindings']|31570: vardecl['matches']}" ] 
+BB12044 -> BB12045 [tailport=s, headport=n, headlabel="      12045"]
+BB12045 [shape=record label="{31571: read-variable['element',v4,-]|31572: read-property[v4,'getElementsByClassName',-]|31573: \<variable-non-null-undef\>['element']|31574: constant[\"ng-binding\",v5]}" ] 
+BB12045 -> BB12046 [tailport=s, headport=n, headlabel="      12046"]
+BB12045 -> BB12053 [tailport=s, headport=n, color=gray, headlabel="      12053"]
+BB12046 [shape=record label="{31575: call-element.getElementsByClassName [v4,'getElementsByClassName',v5,v2]}" ] 
+BB12046 -> BB12047 [tailport=s, headport=n, headlabel="      12047"]
+BB12046 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12047 [shape=record label="{31576: write-variable[v2,'bindings']*|31577: read-variable['Array',v7,-]}" ] 
+BB12047 -> BB12048 [tailport=s, headport=n, headlabel="      12048"]
+BB12047 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12048 [shape=record label="{31578: construct [-,v7,v6]}" ] 
+BB12048 -> BB12049 [tailport=s, headport=n, headlabel="      12049"]
+BB12048 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12049 [shape=record label="{31579: write-variable[v6,'matches']*|31580: read-variable['forEach',v9,v8]|31581: read-variable['bindings',v10,-]|31582: function-expr[function ( binding ),v11]}" ] 
+BB12049 -> BB12050 [tailport=s, headport=n, headlabel="      12050"]
+BB12049 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12050 [shape=record label="{31583: call-forEach [v8,v9,v10,v11,-]*}" ] 
+BB12050 -> BB12051 [tailport=s, headport=n, headlabel="      12051"]
+BB12050 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12051 [shape=record label="{31584: read-variable['matches',v1,-]}" ] 
+BB12051 -> BB12052 [tailport=s, headport=n, headlabel="      12052"]
+BB12051 -> BB12053 [tailport=s, headport=n, color=gray]
+BB12052 [shape=record label="{31585: return[v1]}" ] 
+BB12053 [shape=record label="{31586: exceptional-return}" ] 
+//#$~ 17590
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry598[shape=none,label=""];
+BB_entry598 -> BB6735 [tailport=s, headport=n, headlabel="    6735"]
+BB6735 [shape=record label="{21389: constant[undefined,v1]|21390: vardecl['lower48Stream']|21391: vardecl['alaskaStream']|21392: vardecl['hawaiiStream']}" ] 
+BB6735 -> BB6736 [tailport=s, headport=n, headlabel="      6736"]
+BB6736 [shape=record label="{21393: read-variable['lower48',v4,-]|21394: read-property[v4,'stream',-]|21395: \<variable-non-null-undef\>['lower48']|21396: read-variable['stream',v5,-]}" ] 
+BB6736 -> BB6737 [tailport=s, headport=n, headlabel="      6737"]
+BB6736 -> BB6744 [tailport=s, headport=n, color=gray, headlabel="      6744"]
+BB6737 [shape=record label="{21397: call-lower48.stream [v4,'stream',v5,v2]}" ] 
+BB6737 -> BB6738 [tailport=s, headport=n, headlabel="      6738"]
+BB6737 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6738 [shape=record label="{21398: write-variable[v2,'lower48Stream']*|21399: read-variable['alaska',v8,-]|21400: read-property[v8,'stream',-]|21401: \<variable-non-null-undef\>['alaska']|21402: read-variable['stream',v9,-]}" ] 
+BB6738 -> BB6739 [tailport=s, headport=n, headlabel="      6739"]
+BB6738 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6739 [shape=record label="{21403: call-alaska.stream [v8,'stream',v9,v6]}" ] 
+BB6739 -> BB6740 [tailport=s, headport=n, headlabel="      6740"]
+BB6739 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6740 [shape=record label="{21404: write-variable[v6,'alaskaStream']*|21405: read-variable['hawaii',v12,-]|21406: read-property[v12,'stream',-]|21407: \<variable-non-null-undef\>['hawaii']|21408: read-variable['stream',v13,-]}" ] 
+BB6740 -> BB6741 [tailport=s, headport=n, headlabel="      6741"]
+BB6740 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6741 [shape=record label="{21409: call-hawaii.stream [v12,'stream',v13,v10]}" ] 
+BB6741 -> BB6742 [tailport=s, headport=n, headlabel="      6742"]
+BB6741 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6742 [shape=record label="{21410: write-variable[v10,'hawaiiStream']*|21411: new[v1]|21412: function-expr[function ( x y ),v14]|21413: write-property[v1,'point',v14]|21414: function-expr[function ( ),v15]|21415: write-property[v1,'sphere',v15]|21416: function-expr[function ( ),v16]|21417: write-property[v1,'lineStart',v16]|21418: function-expr[function ( ),v17]|21419: write-property[v1,'lineEnd',v17]|21420: function-expr[function ( ),v18]|21421: write-property[v1,'polygonStart',v18]|21422: function-expr[function ( ),v19]|21423: write-property[v1,'polygonEnd',v19]}" ] 
+BB6742 -> BB6743 [tailport=s, headport=n, headlabel="      6743"]
+BB6742 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6743 [shape=record label="{21424: return[v1]}" ] 
+BB6744 [shape=record label="{21425: exceptional-return}" ] 
+//#$~ 3901
+}

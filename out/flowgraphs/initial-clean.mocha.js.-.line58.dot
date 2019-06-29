@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry10[shape=none,label=""];
+BB_entry10 -> BB526 [tailport=s, headport=n, headlabel="    526"]
+BB526 [shape=record label="{1907: constant[undefined,v1]|1908: vardecl['JsDiff']}" ] 
+BB526 -> BB527 [tailport=s, headport=n, headlabel="      527"]
+BB527 [shape=record label="{1909: function-expr[function ( ),v3]}" ] 
+BB527 -> BB528 [tailport=s, headport=n, headlabel="      528"]
+BB528 [shape=record label="{1910: call-null [-,v3,v2]}" ] 
+BB528 -> BB529 [tailport=s, headport=n, headlabel="      529"]
+BB528 -> BB532 [tailport=s, headport=n, color=gray, headlabel="      532"]
+BB529 [shape=record label="{1911: write-variable[v2,'JsDiff']*|1912: typeof['module',v5]|1913: constant[\"undefined\",v6]|1914: !==[v5,v6,v4]|1915: if[v4](true-block:530,false-block:531)}" ] 
+BB529 -> BB530 [tailport=s, headport=n, headlabel="      530"]
+BB529 -> BB531 [tailport=s, headport=n, headlabel="      531"]
+BB529 -> BB532 [tailport=s, headport=n, color=gray]
+BB530 [shape=record label="{1916: read-variable['module',v8,-]|1917: read-variable['JsDiff',v7,-]|1918: write-property[v8,'exports',v7]|1919: \<variable-non-null-undef\>['module']*}" ] 
+BB530 -> BB531 [tailport=s, headport=n]
+BB530 -> BB532 [tailport=s, headport=n, color=gray]
+BB531 [shape=record label="{1920: return[v1]}" ] 
+BB532 [shape=record label="{1921: exceptional-return}" ] 
+//#$~ 426
+}

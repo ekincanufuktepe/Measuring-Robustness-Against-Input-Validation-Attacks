@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry587[shape=none,label=""];
+BB_entry587 -> BB8080 [tailport=s, headport=n, headlabel="    8080"]
+BB8080 [shape=record label="{26968: constant[undefined,v1]}" ] 
+BB8080 -> BB8081 [tailport=s, headport=n, headlabel="      8081"]
+BB8081 [shape=record label="{26969: typeof['ref',v3]|26970: constant[\"function\",v4]|26971: ===[v3,v4,v2]|26972: if[v2](true-block:8082,false-block:8083)}" ] 
+BB8081 -> BB8082 [tailport=s, headport=n, headlabel="      8082"]
+BB8081 -> BB8083 [tailport=s, headport=n, headlabel="      8083"]
+BB8081 -> BB8088 [tailport=s, headport=n, color=gray, headlabel="      8088"]
+BB8082 [shape=record label="{26973: read-variable['ref',v6,v5]|26974: read-variable['component',v9,-]|26975: read-property[v9,'getPublicInstance',-]|26976: \<variable-non-null-undef\>['component']}" ] 
+BB8082 -> BB8084 [tailport=s, headport=n, headlabel="      8084"]
+BB8082 -> BB8088 [tailport=s, headport=n, color=gray]
+BB8083 [shape=record label="{26977: read-variable['ReactOwner',v6,-]|26978: read-property[v6,'addComponentAsRefTo',-]|26979: \<variable-non-null-undef\>['ReactOwner']|26980: read-variable['component',v7,-]|26981: read-variable['ref',v8,-]|26982: read-variable['owner',v9,-]}" ] 
+BB8083 -> BB8086 [tailport=s, headport=n, headlabel="      8086"]
+BB8083 -> BB8088 [tailport=s, headport=n, color=gray]
+BB8084 [shape=record label="{26983: call-component.getPublicInstance [v9,'getPublicInstance',v7]}" ] 
+BB8084 -> BB8085 [tailport=s, headport=n, headlabel="      8085"]
+BB8084 -> BB8088 [tailport=s, headport=n, color=gray]
+BB8085 [shape=record label="{26984: call-ref [v5,v6,v7,-]*}" ] 
+BB8085 -> BB8087 [tailport=s, headport=n, headlabel="      8087"]
+BB8085 -> BB8088 [tailport=s, headport=n, color=gray]
+BB8086 [shape=record label="{26985: call-ReactOwner.addComponentAsRefTo [v6,'addComponentAsRefTo',v7,v8,v9,-]*}" ] 
+BB8086 -> BB8087 [tailport=s, headport=n]
+BB8086 -> BB8088 [tailport=s, headport=n, color=gray]
+BB8087 [shape=record label="{26986: return[v1]}" ] 
+BB8088 [shape=record label="{26987: exceptional-return}" ] 
+//#$~ 14199
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry84[shape=none,label=""];
+BB_entry84 -> BB937 [tailport=s, headport=n, headlabel="    937"]
+BB937 [shape=record label="{2897: constant[undefined,v1]|2898: vardecl['manager']}" ] 
+BB937 -> BB938 [tailport=s, headport=n, headlabel="      938"]
+BB938 [shape=record label="{2899: read-variable['recognizer',v3,-]|2900: read-property[v3,'manager',v2]|2901: \<variable-non-null-undef\>['recognizer']|2902: write-variable[v2,'manager']*|2903: read-variable['manager',v4,-]|2904: if[v4](true-block:939,false-block:941)}" ] 
+BB938 -> BB939 [tailport=s, headport=n, headlabel="      939"]
+BB938 -> BB941 [tailport=s, headport=n, headlabel="      941"]
+BB938 -> BB943 [tailport=s, headport=n, color=gray, headlabel="      943"]
+BB939 [shape=record label="{2905: read-variable['manager',v6,-]|2906: read-property[v6,'get',-]|2907: \<variable-non-null-undef\>['manager']|2908: read-variable['otherRecognizer',v7,-]}" ] 
+BB939 -> BB940 [tailport=s, headport=n, headlabel="      940"]
+BB939 -> BB943 [tailport=s, headport=n, color=gray]
+BB940 [shape=record label="{2909: call-manager.get [v6,'get',v7,v1]}" ] 
+BB940 -> BB942 [tailport=s, headport=n, headlabel="      942"]
+BB940 -> BB943 [tailport=s, headport=n, color=gray]
+BB941 [shape=record label="{2910: read-variable['otherRecognizer',v1,-]}" ] 
+BB941 -> BB942 [tailport=s, headport=n]
+BB941 -> BB943 [tailport=s, headport=n, color=gray]
+BB942 [shape=record label="{2911: return[v1]}" ] 
+BB943 [shape=record label="{2912: exceptional-return}" ] 
+//#$~ 1538
+}

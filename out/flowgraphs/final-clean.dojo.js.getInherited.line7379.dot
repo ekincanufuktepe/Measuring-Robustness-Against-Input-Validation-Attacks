@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry375[shape=none,label=""];
+BB_entry375 -> BB5439 [tailport=s, headport=n, headlabel="    5439"]
+BB5439 [shape=record label="{16345: constant[undefined,v1]}" ] 
+BB5439 -> BB5440 [tailport=s, headport=n, headlabel="      5440"]
+BB5440 [shape=record label="{16346: typeof['name',v3]|16347: constant[\"string\",v4]|16348: ==[v3,v4,v2]|16349: if[v2](true-block:5441,false-block:5443)}" ] 
+BB5440 -> BB5441 [tailport=s, headport=n, headlabel="      5441"]
+BB5440 -> BB5443 [tailport=s, headport=n, headlabel="      5443"]
+BB5440 -> BB5446 [tailport=s, headport=n, color=gray, headlabel="      5446"]
+BB5441 [shape=record label="{16350: read-variable['this',v6,-]|16351: read-property[v6,'__inherited',-]|16352: read-variable['name',v7,-]|16353: read-variable['args',v8,-]|16354: constant[true,v9]}" ] 
+BB5441 -> BB5442 [tailport=s, headport=n, headlabel="      5442"]
+BB5441 -> BB5446 [tailport=s, headport=n, color=gray]
+BB5442 [shape=record label="{16355: call-this.__inherited [v6,'__inherited',v7,v8,v9,v1]}" ] 
+BB5442 -> BB5445 [tailport=s, headport=n, headlabel="      5445"]
+BB5442 -> BB5446 [tailport=s, headport=n, color=gray]
+BB5443 [shape=record label="{16356: read-variable['this',v6,-]|16357: read-property[v6,'__inherited',-]|16358: read-variable['name',v7,-]|16359: constant[true,v8]}" ] 
+BB5443 -> BB5444 [tailport=s, headport=n, headlabel="      5444"]
+BB5443 -> BB5446 [tailport=s, headport=n, color=gray]
+BB5444 [shape=record label="{16360: call-this.__inherited [v6,'__inherited',v7,v8,v1]}" ] 
+BB5444 -> BB5445 [tailport=s, headport=n]
+BB5444 -> BB5446 [tailport=s, headport=n, color=gray]
+BB5445 [shape=record label="{16361: return[v1]}" ] 
+BB5446 [shape=record label="{16362: exceptional-return}" ] 
+//#$~ 7383
+}

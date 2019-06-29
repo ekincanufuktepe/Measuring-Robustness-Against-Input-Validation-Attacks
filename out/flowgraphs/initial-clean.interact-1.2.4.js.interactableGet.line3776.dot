@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry126[shape=none,label=""];
+BB_entry126 -> BB3001 [tailport=s, headport=n, headlabel="    3001"]
+BB3001 [shape=record label="{12779: constant[undefined,v1]}" ] 
+BB3001 -> BB3002 [tailport=s, headport=n, headlabel="      3002"]
+BB3002 [shape=record label="{12780: read-variable['this',v3,-]|12781: read-variable['this',v6,-]|12782: read-property[v6,'indexOfElement',-]|12783: read-variable['element',v7,v2]|12784: read-variable['options',v8,v2]|12785: if[v8](true-block:3003,false-block:3004)}" ] 
+BB3002 -> BB3004 [tailport=s, headport=n, headlabel="      3004"]
+BB3002 -> BB3003 [tailport=s, headport=n, headlabel="      3003"]
+BB3002 -> BB3007 [tailport=s, headport=n, color=gray, headlabel="      3007"]
+BB3003 [shape=record label="{12786: read-variable['options',v9,v2]|12787: read-property[v9,'context',v8]|12788: \<variable-non-null-undef\>['options']}" ] 
+BB3003 -> BB3004 [tailport=s, headport=n]
+BB3003 -> BB3007 [tailport=s, headport=n, color=gray]
+BB3004 [shape=record label="{12789: call-this.indexOfElement [v6,'indexOfElement',v7,v8,v4]}" ] 
+BB3004 -> BB3005 [tailport=s, headport=n, headlabel="      3005"]
+BB3004 -> BB3007 [tailport=s, headport=n, color=gray]
+BB3005 [shape=record label="{12790: read-property[v3,v4,v1]}" ] 
+BB3005 -> BB3006 [tailport=s, headport=n, headlabel="      3006"]
+BB3005 -> BB3007 [tailport=s, headport=n, color=gray]
+BB3006 [shape=record label="{12791: return[v1]}" ] 
+BB3007 [shape=record label="{12792: exceptional-return}" ] 
+//#$~ 3777
+}

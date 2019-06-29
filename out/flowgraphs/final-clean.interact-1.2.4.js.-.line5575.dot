@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry176[shape=none,label=""];
+BB_entry176 -> BB4059 [tailport=s, headport=n, headlabel="    4059"]
+BB4059 [shape=record label="{16160: constant[undefined,v1]}" ] 
+BB4059 -> BB4060 [tailport=s, headport=n, headlabel="      4060"]
+BB4060 [shape=record label="{16161: read-variable['isNumber',v4,v3]|16162: read-variable['newValue',v5,-]}" ] 
+BB4060 -> BB4061 [tailport=s, headport=n, headlabel="      4061"]
+BB4060 -> BB4066 [tailport=s, headport=n, color=gray, headlabel="      4066"]
+BB4061 [shape=record label="{16163: call-isNumber [v3,v4,v5,v2]}" ] 
+BB4061 -> BB4062 [tailport=s, headport=n, headlabel="      4062"]
+BB4061 -> BB4066 [tailport=s, headport=n, color=gray]
+BB4062 [shape=record label="{16164: if[v2](true-block:4063,false-block:4064)}" ] 
+BB4062 -> BB4063 [tailport=s, headport=n, headlabel="      4063"]
+BB4062 -> BB4064 [tailport=s, headport=n, headlabel="      4064"]
+BB4063 [shape=record label="{16165: read-variable['newValue',v6,-]|16166: write-variable[v6,'pointerMoveTolerance']*|16167: read-variable['this',v1,-]}" ] 
+BB4063 -> BB4065 [tailport=s, headport=n, headlabel="      4065"]
+BB4063 -> BB4066 [tailport=s, headport=n, color=gray]
+BB4064 [shape=record label="{16168: read-variable['pointerMoveTolerance',v1,-]}" ] 
+BB4064 -> BB4065 [tailport=s, headport=n]
+BB4064 -> BB4066 [tailport=s, headport=n, color=gray]
+BB4065 [shape=record label="{16169: return[v1]}" ] 
+BB4066 [shape=record label="{16170: exceptional-return}" ] 
+//#$~ 5582
+}

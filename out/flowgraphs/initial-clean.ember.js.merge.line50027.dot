@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry2436[shape=none,label=""];
+BB_entry2436 -> BB27856 [tailport=s, headport=n, headlabel="    27856"]
+BB27856 [shape=record label="{92529: constant[undefined,v1]|92530: vardecl['prop']}" ] 
+BB27856 -> BB27857 [tailport=s, headport=n, headlabel="      27857"]
+BB27857 [shape=record label="{92531: read-variable['other',v3,-]}" ] 
+BB27857 -> BB27858 [tailport=s, headport=n, headlabel="      27858"]
+BB27857 -> BB27866 [tailport=s, headport=n, color=gray, headlabel="      27866"]
+BB27858 [shape=record label="{92532: begin-for-in[v3,v4]}" ] 
+BB27858 -> BB27859 [tailport=s, headport=n, headlabel="      27859"]
+BB27858 -> BB27866 [tailport=s, headport=n, color=gray]
+BB27859 [shape=record label="{92533: has-next[v4,v5]|92534: if[v5](true-block:27860,false-block:27865)}" ] 
+BB27859 -> BB27860 [tailport=s, headport=n, headlabel="      27860"]
+BB27859 -> BB27865 [tailport=s, headport=n, headlabel="      27865"]
+BB27860 [shape=record label="{92535: next-property[v4,v6]|92536: write-variable[v6,'prop']|92537: read-variable['other',v9,-]|92538: read-property[v9,'hasOwnProperty',-]|92539: \<variable-non-null-undef\>['other']|92540: read-variable['prop',v10,-]}" ] 
+BB27860 -> BB27861 [tailport=s, headport=n, headlabel="      27861"]
+BB27860 -> BB27866 [tailport=s, headport=n, color=gray]
+BB27861 [shape=record label="{92541: call-other.hasOwnProperty [v9,'hasOwnProperty',v10,v7]}" ] 
+BB27861 -> BB27862 [tailport=s, headport=n, headlabel="      27862"]
+BB27861 -> BB27866 [tailport=s, headport=n, color=gray]
+BB27862 [shape=record label="{92542: if[v7](true-block:27863,false-block:27864)}" ] 
+BB27862 -> BB27863 [tailport=s, headport=n, headlabel="      27863"]
+BB27862 -> BB27864 [tailport=s, headport=n, headlabel="      27864"]
+BB27863 [shape=record label="{92543: read-variable['hash',v12,-]|92544: read-variable['prop',v13,-]|92545: read-variable['other',v14,-]|92546: read-variable['prop',v15,-]|92547: read-property[v14,v15,v11]|92548: \<variable-non-null-undef\>['other']|92549: write-property[v12,v13,v11]|92550: \<variable-non-null-undef\>['hash']*}" ] 
+BB27863 -> BB27864 [tailport=s, headport=n]
+BB27863 -> BB27866 [tailport=s, headport=n, color=gray]
+BB27864 [shape=record label="{92551: end-for-in(begin-node:92532)}" ] 
+BB27864 -> BB27859 [tailport=s, headport=n]
+BB27865 [shape=record label="{92552: return[v1]}" ] 
+BB27866 [shape=record label="{92553: exceptional-return}" ] 
+//#$~ 50029
+}

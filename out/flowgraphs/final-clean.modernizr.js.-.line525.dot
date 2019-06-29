@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry61[shape=none,label=""];
+BB_entry61 -> BB601 [tailport=s, headport=n, headlabel="    601"]
+BB601 [shape=record label="{1397: constant[undefined,v1]|1398: vardecl['div']}" ] 
+BB601 -> BB602 [tailport=s, headport=n, headlabel="      602"]
+BB602 [shape=record label="{1399: read-variable['document',v4,-]|1400: read-property[v4,'createElement',-]|1401: \<variable-non-null-undef\>['document']|1402: constant[\"div\",v5]}" ] 
+BB602 -> BB603 [tailport=s, headport=n, headlabel="      603"]
+BB602 -> BB608 [tailport=s, headport=n, color=gray, headlabel="      608"]
+BB603 [shape=record label="{1403: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB603 -> BB604 [tailport=s, headport=n, headlabel="      604"]
+BB603 -> BB608 [tailport=s, headport=n, color=gray]
+BB604 [shape=record label="{1404: write-variable[v2,'div']*|1405: read-variable['div',v7,-]|1406: constant[\"\\\<svg/\\\>\",v6]|1407: write-property[v7,'innerHTML',v6]|1408: \<variable-non-null-undef\>['div']*|1409: read-variable['div',v10,-]|1410: read-property[v10,'firstChild',v8]|1411: \<variable-non-null-undef\>['div']|1412: if[v8](true-block:605,false-block:606)}" ] 
+BB604 -> BB606 [tailport=s, headport=n, headlabel="      606"]
+BB604 -> BB605 [tailport=s, headport=n, headlabel="      605"]
+BB604 -> BB608 [tailport=s, headport=n, color=gray]
+BB605 [shape=record label="{1413: read-variable['div',v12,-]|1414: read-property[v12,'firstChild',v11]|1415: \<variable-non-null-undef\>['div']|1416: read-property[v11,'namespaceURI',v8]|1417: \<property-non-null-undef\>[v12,'firstChild']}" ] 
+BB605 -> BB606 [tailport=s, headport=n]
+BB605 -> BB608 [tailport=s, headport=n, color=gray]
+BB606 [shape=record label="{1418: read-variable['ns',v11,-]|1419: read-property[v11,'svg',v9]|1420: \<variable-non-null-undef\>['ns']|1421: ==[v8,v9,v1]}" ] 
+BB606 -> BB607 [tailport=s, headport=n, headlabel="      607"]
+BB606 -> BB608 [tailport=s, headport=n, color=gray]
+BB607 [shape=record label="{1422: return[v1]}" ] 
+BB608 [shape=record label="{1423: exceptional-return}" ] 
+//#$~ 528
+}

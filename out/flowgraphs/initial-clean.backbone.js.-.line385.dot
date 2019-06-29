@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry24[shape=none,label=""];
+BB_entry24 -> BB362 [tailport=s, headport=n, headlabel="    362"]
+BB362 [shape=record label="{1140: constant[undefined,v1]|1141: vardecl['attrs']|1142: vardecl['key']}" ] 
+BB362 -> BB363 [tailport=s, headport=n, headlabel="      363"]
+BB363 [shape=record label="{1143: new[v2]|1144: write-variable[v2,'attrs']*|1145: read-variable['this',v8,-]|1146: read-property[v8,'attributes',v4]}" ] 
+BB363 -> BB364 [tailport=s, headport=n, headlabel="      364"]
+BB363 -> BB372 [tailport=s, headport=n, color=gray, headlabel="      372"]
+BB364 [shape=record label="{1147: begin-for-in[v4,v5]}" ] 
+BB364 -> BB365 [tailport=s, headport=n, headlabel="      365"]
+BB364 -> BB372 [tailport=s, headport=n, color=gray]
+BB365 [shape=record label="{1148: has-next[v5,v6]|1149: if[v6](true-block:366,false-block:368)}" ] 
+BB365 -> BB366 [tailport=s, headport=n, headlabel="      366"]
+BB365 -> BB368 [tailport=s, headport=n, headlabel="      368"]
+BB366 [shape=record label="{1150: next-property[v5,v7]|1151: write-variable[v7,'key']|1152: read-variable['attrs',v10,-]|1153: read-variable['key',v11,-]|1154: constant[0.0,-]|1155: constant[undefined,v9]|1156: write-property[v10,v11,v9]|1157: \<variable-non-null-undef\>['attrs']*}" ] 
+BB366 -> BB367 [tailport=s, headport=n, headlabel="      367"]
+BB366 -> BB372 [tailport=s, headport=n, color=gray]
+BB367 [shape=record label="{1158: end-for-in(begin-node:1147)}" ] 
+BB367 -> BB365 [tailport=s, headport=n]
+BB368 [shape=record label="{1159: read-variable['this',v10,-]|1160: read-property[v10,'set',-]|1161: read-variable['attrs',v11,-]|1162: read-variable['_',v14,-]|1163: read-property[v14,'extend',-]|1164: \<variable-non-null-undef\>['_']|1165: new[v15]|1166: read-variable['options',v16,-]|1167: new[v17]|1168: constant[true,v18]|1169: write-property[v17,'unset',v18]}" ] 
+BB368 -> BB369 [tailport=s, headport=n, headlabel="      369"]
+BB368 -> BB372 [tailport=s, headport=n, color=gray]
+BB369 [shape=record label="{1170: call-_.extend [v14,'extend',v15,v16,v17,v12]}" ] 
+BB369 -> BB370 [tailport=s, headport=n, headlabel="      370"]
+BB369 -> BB372 [tailport=s, headport=n, color=gray]
+BB370 [shape=record label="{1171: call-this.set [v10,'set',v11,v12,v1]}" ] 
+BB370 -> BB371 [tailport=s, headport=n, headlabel="      371"]
+BB370 -> BB372 [tailport=s, headport=n, color=gray]
+BB371 [shape=record label="{1172: return[v1]}" ] 
+BB372 [shape=record label="{1173: exceptional-return}" ] 
+//#$~ 388
+}

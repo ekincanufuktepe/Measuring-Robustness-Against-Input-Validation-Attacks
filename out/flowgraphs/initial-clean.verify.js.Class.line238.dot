@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry28[shape=none,label=""];
+BB_entry28 -> BB249 [tailport=s, headport=n, headlabel="    249"]
+BB249 [shape=record label="{788: constant[undefined,v1]}" ] 
+BB249 -> BB250 [tailport=s, headport=n, headlabel="      250"]
+BB250 [shape=record label="{789: read-variable['initializing',v3,-]|790: ![v3,v2]|791: if[v2](true-block:251,false-block:252)}" ] 
+BB250 -> BB252 [tailport=s, headport=n, headlabel="      252"]
+BB250 -> BB251 [tailport=s, headport=n, headlabel="      251"]
+BB250 -> BB256 [tailport=s, headport=n, color=gray, headlabel="      256"]
+BB251 [shape=record label="{792: read-variable['this',v4,-]|793: read-property[v4,'init',v2]}" ] 
+BB251 -> BB252 [tailport=s, headport=n]
+BB251 -> BB256 [tailport=s, headport=n, color=gray]
+BB252 [shape=record label="{794: if[v2](true-block:253,false-block:255)}" ] 
+BB252 -> BB253 [tailport=s, headport=n, headlabel="      253"]
+BB252 -> BB255 [tailport=s, headport=n, headlabel="      255"]
+BB253 [shape=record label="{795: read-variable['this',v6,-]|796: read-property[v6,'init',v5]|797: read-property[v5,'apply',-]|798: \<property-non-null-undef\>[v6,'init']|799: read-variable['this',v7,-]|800: read-variable['arguments',v8,-]}" ] 
+BB253 -> BB254 [tailport=s, headport=n, headlabel="      254"]
+BB253 -> BB256 [tailport=s, headport=n, color=gray]
+BB254 [shape=record label="{801: call-this.init.apply [v5,'apply',v7,v8,-]*}" ] 
+BB254 -> BB255 [tailport=s, headport=n]
+BB254 -> BB256 [tailport=s, headport=n, color=gray]
+BB255 [shape=record label="{802: return[v1]}" ] 
+BB256 [shape=record label="{803: exceptional-return}" ] 
+//#$~ 241
+}

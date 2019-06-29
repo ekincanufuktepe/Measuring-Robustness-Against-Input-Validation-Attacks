@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry56[shape=none,label=""];
+BB_entry56 -> BB562 [tailport=s, headport=n, headlabel="    562"]
+BB562 [shape=record label="{1321: constant[undefined,v1]}" ] 
+BB562 -> BB563 [tailport=s, headport=n, headlabel="      563"]
+BB563 [shape=record label="{1322: read-variable['localStorage',v3,-]|1323: read-property[v3,'setItem',-]|1324: \<variable-non-null-undef\>['localStorage']|1325: read-variable['mod',v4,-]|1326: read-variable['mod',v5,-]}" ] 
+BB563 -> BB564 [tailport=s, headport=n, headlabel="      564"]
+BB563 -> BB568 [tailport=s, headport=n, color=gray, headlabel="      568"]
+BB564 [shape=record label="{1327: call-localStorage.setItem [v3,'setItem',v4,v5,-]*}" ] 
+BB564 -> BB565 [tailport=s, headport=n, headlabel="      565"]
+BB564 -> BB568 [tailport=s, headport=n, color=gray]
+BB565 [shape=record label="{1328: read-variable['localStorage',v7,-]|1329: read-property[v7,'removeItem',-]|1330: \<variable-non-null-undef\>['localStorage']|1331: read-variable['mod',v8,-]}" ] 
+BB565 -> BB566 [tailport=s, headport=n, headlabel="      566"]
+BB565 -> BB568 [tailport=s, headport=n, color=gray]
+BB566 [shape=record label="{1332: call-localStorage.removeItem [v7,'removeItem',v8,-]*}" ] 
+BB566 -> BB567 [tailport=s, headport=n, headlabel="      567"]
+BB566 -> BB568 [tailport=s, headport=n, color=gray]
+BB567 [shape=record label="{1333: constant[true,v1]}" ] 
+BB567 -> BB572 [tailport=s, headport=n, headlabel="      572"]
+BB568 [shape=record label="{1334: catch[e,v2]|1335: begin-with[v2]}" ] 
+BB568 -> BB569 [tailport=s, headport=n, headlabel="      569"]
+BB568 -> BB573 [tailport=s, headport=n, color=gray, headlabel="      573"]
+BB569 [shape=record label="{1336: constant[false,v1]}" ] 
+BB569 -> BB572 [tailport=s, headport=n]
+BB570 [shape=record label="{1337: end-with}" ] 
+BB570 -> BB573 [tailport=s, headport=n]
+BB571 [shape=record label="{1338: end-with}" ] 
+BB571 -> BB572 [tailport=s, headport=n]
+BB572 [shape=record label="{1339: return[v1]}" ] 
+BB573 [shape=record label="{1340: exceptional-return}" ] 
+//#$~ 496
+}

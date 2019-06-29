@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry270[shape=none,label=""];
+BB_entry270 -> BB5571 [tailport=s, headport=n, headlabel="    5571"]
+BB5571 [shape=record label="{18010: constant[undefined,v1]}" ] 
+BB5571 -> BB5572 [tailport=s, headport=n, headlabel="      5572"]
+BB5572 [shape=record label="{18011: read-variable['root',v5,-]|18012: read-property[v5,'Handlebars',v3]|18013: \<variable-non-null-undef\>['root']|18014: read-variable['Handlebars',v4,-]|18015: ===[v3,v4,v2]|18016: if[v2](true-block:5573,false-block:5574)}" ] 
+BB5572 -> BB5573 [tailport=s, headport=n, headlabel="      5573"]
+BB5572 -> BB5574 [tailport=s, headport=n, headlabel="      5574"]
+BB5572 -> BB5575 [tailport=s, headport=n, color=gray, headlabel="      5575"]
+BB5573 [shape=record label="{18017: read-variable['root',v7,-]|18018: read-variable['$Handlebars',v6,-]|18019: write-property[v7,'Handlebars',v6]|18020: \<variable-non-null-undef\>['root']*}" ] 
+BB5573 -> BB5574 [tailport=s, headport=n]
+BB5573 -> BB5575 [tailport=s, headport=n, color=gray]
+BB5574 [shape=record label="{18021: return[v1]}" ] 
+BB5575 [shape=record label="{18022: exceptional-return}" ] 
+//#$~ 3735
+}

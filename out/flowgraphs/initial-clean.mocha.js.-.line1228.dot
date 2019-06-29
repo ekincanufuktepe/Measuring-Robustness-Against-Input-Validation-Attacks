@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry100[shape=none,label=""];
+BB_entry100 -> BB1082 [tailport=s, headport=n, headlabel="    1082"]
+BB1082 [shape=record label="{3615: constant[undefined,v1]|3616: vardecl['suites']}" ] 
+BB1082 -> BB1083 [tailport=s, headport=n, headlabel="      1083"]
+BB1083 [shape=record label="{3617: read-variable['Array',v3,-]|3618: read-variable['suite',v4,-]}" ] 
+BB1083 -> BB1084 [tailport=s, headport=n, headlabel="      1084"]
+BB1083 -> BB1088 [tailport=s, headport=n, color=gray, headlabel="      1088"]
+BB1084 [shape=record label="{3619: construct [-,v3,v4,v2]}" ] 
+BB1084 -> BB1085 [tailport=s, headport=n, headlabel="      1085"]
+BB1084 -> BB1088 [tailport=s, headport=n, color=gray]
+BB1085 [shape=record label="{3620: write-variable[v2,'suites']*|3621: read-variable['suite',v6,-]|3622: read-property[v6,'on',-]|3623: \<variable-non-null-undef\>['suite']|3624: constant[\"pre-require\",v7]|3625: function-expr[function ( context file mocha ),v8]}" ] 
+BB1085 -> BB1086 [tailport=s, headport=n, headlabel="      1086"]
+BB1085 -> BB1088 [tailport=s, headport=n, color=gray]
+BB1086 [shape=record label="{3626: call-suite.on [v6,'on',v7,v8,-]*}" ] 
+BB1086 -> BB1087 [tailport=s, headport=n, headlabel="      1087"]
+BB1086 -> BB1088 [tailport=s, headport=n, color=gray]
+BB1087 [shape=record label="{3627: return[v1]}" ] 
+BB1088 [shape=record label="{3628: exceptional-return}" ] 
+//#$~ 1284
+}

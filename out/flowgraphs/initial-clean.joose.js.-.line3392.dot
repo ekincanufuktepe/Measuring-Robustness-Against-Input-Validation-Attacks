@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry320[shape=none,label=""];
+BB_entry320 -> BB2926 [tailport=s, headport=n, headlabel="    2926"]
+BB2926 [shape=record label="{8713: constant[undefined,v1]}" ] 
+BB2926 -> BB2927 [tailport=s, headport=n, headlabel="      2927"]
+BB2927 [shape=record label="{8714: read-variable['props',v5,-]|8715: read-property[v5,'strictMatch',v3]|8716: \<variable-non-null-undef\>['props']|8717: constant[true,v4]|8718: ===[v3,v4,v2]|8719: if[v2](true-block:2928,false-block:2929)}" ] 
+BB2927 -> BB2928 [tailport=s, headport=n, headlabel="      2928"]
+BB2927 -> BB2929 [tailport=s, headport=n, headlabel="      2929"]
+BB2927 -> BB2931 [tailport=s, headport=n, color=gray, headlabel="      2931"]
+BB2928 [shape=record label="{8720: read-variable['vv',v6,-]|8721: read-variable['v',v7,-]|8722: ===[v6,v7,v1]}" ] 
+BB2928 -> BB2930 [tailport=s, headport=n, headlabel="      2930"]
+BB2928 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2929 [shape=record label="{8723: read-variable['vv',v6,-]|8724: read-variable['v',v7,-]|8725: ==[v6,v7,v1]}" ] 
+BB2929 -> BB2930 [tailport=s, headport=n]
+BB2929 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2930 [shape=record label="{8726: return[v1]}" ] 
+BB2931 [shape=record label="{8727: exceptional-return}" ] 
+//#$~ 3394
+}

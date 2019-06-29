@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry10[shape=none,label=""];
+BB_entry10 -> BB43 [tailport=s, headport=n, headlabel="    43"]
+BB43 [shape=record label="{105: constant[undefined,v1]}" ] 
+BB43 -> BB44 [tailport=s, headport=n, headlabel="      44"]
+BB44 [shape=record label="{106: read-variable['options',v3,-]|107: constant[null,v4]|108: ==[v3,v4,v2]|109: if[v2](true-block:45,false-block:46)}" ] 
+BB44 -> BB45 [tailport=s, headport=n, headlabel="      45"]
+BB44 -> BB46 [tailport=s, headport=n, headlabel="      46"]
+BB44 -> BB49 [tailport=s, headport=n, color=gray, headlabel="      49"]
+BB45 [shape=record label="{110: new[v5]|111: write-variable[v5,'options']*}" ] 
+BB45 -> BB46 [tailport=s, headport=n]
+BB46 [shape=record label="{112: read-variable['this',v6,-]|113: read-property[v6,'initialize',-]|114: read-variable['options',v7,-]}" ] 
+BB46 -> BB47 [tailport=s, headport=n, headlabel="      47"]
+BB46 -> BB49 [tailport=s, headport=n, color=gray]
+BB47 [shape=record label="{115: call-this.initialize [v6,'initialize',v7,-]*}" ] 
+BB47 -> BB48 [tailport=s, headport=n, headlabel="      48"]
+BB47 -> BB49 [tailport=s, headport=n, color=gray]
+BB48 [shape=record label="{116: return[v1]}" ] 
+BB49 [shape=record label="{117: exceptional-return}" ] 
+//#$~ 77
+}

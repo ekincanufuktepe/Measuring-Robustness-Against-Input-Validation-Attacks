@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry825[shape=none,label=""];
+BB_entry825 -> BB10733 [tailport=s, headport=n, headlabel="    10733"]
+BB10733 [shape=record label="{27886: constant[undefined,v1]|27887: vardecl['result']}" ] 
+BB10733 -> BB10734 [tailport=s, headport=n, headlabel="      10734"]
+BB10734 [shape=record label="{27888: read-variable['Deferred',v3,-]}" ] 
+BB10734 -> BB10735 [tailport=s, headport=n, headlabel="      10735"]
+BB10734 -> BB10741 [tailport=s, headport=n, color=gray, headlabel="      10741"]
+BB10735 [shape=record label="{27889: construct [-,v3,v2]}" ] 
+BB10735 -> BB10736 [tailport=s, headport=n, headlabel="      10736"]
+BB10735 -> BB10741 [tailport=s, headport=n, color=gray]
+BB10736 [shape=record label="{27890: write-variable[v2,'result']*|27891: read-variable['result',v5,-]|27892: read-property[v5,'resolve',-]|27893: \<variable-non-null-undef\>['result']|27894: read-variable['value',v6,-]}" ] 
+BB10736 -> BB10737 [tailport=s, headport=n, headlabel="      10737"]
+BB10736 -> BB10741 [tailport=s, headport=n, color=gray]
+BB10737 [shape=record label="{27895: call-result.resolve [v5,'resolve',v6,-]*}" ] 
+BB10737 -> BB10738 [tailport=s, headport=n, headlabel="      10738"]
+BB10737 -> BB10741 [tailport=s, headport=n, color=gray]
+BB10738 [shape=record label="{27896: read-variable['result',v9,-]|27897: read-property[v9,'promise',v8]|27898: \<variable-non-null-undef\>['result']|27899: read-property[v8,'then',-]|27900: \<property-non-null-undef\>[v9,'promise']|27901: read-variable['callback',v10,-]|27902: read-variable['errback',v11,-]|27903: read-variable['progressBack',v12,-]}" ] 
+BB10738 -> BB10739 [tailport=s, headport=n, headlabel="      10739"]
+BB10738 -> BB10741 [tailport=s, headport=n, color=gray]
+BB10739 [shape=record label="{27904: call-result.promise.then [v8,'then',v10,v11,v12,v1]}" ] 
+BB10739 -> BB10740 [tailport=s, headport=n, headlabel="      10740"]
+BB10739 -> BB10741 [tailport=s, headport=n, color=gray]
+BB10740 [shape=record label="{27905: return[v1]}" ] 
+BB10741 [shape=record label="{27906: exceptional-return}" ] 
+//#$~ 14749
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry527[shape=none,label=""];
+BB_entry527 -> BB7544 [tailport=s, headport=n, headlabel="    7544"]
+BB7544 [shape=record label="{25385: constant[undefined,v1]}" ] 
+BB7544 -> BB7545 [tailport=s, headport=n, headlabel="      7545"]
+BB7545 [shape=record label="{25386: read-variable['object',v3,-]|25387: if[v3](true-block:7546,false-block:7548)}" ] 
+BB7545 -> BB7548 [tailport=s, headport=n, headlabel="      7548"]
+BB7545 -> BB7546 [tailport=s, headport=n, headlabel="      7546"]
+BB7545 -> BB7550 [tailport=s, headport=n, color=gray, headlabel="      7550"]
+BB7546 [shape=record label="{25388: read-variable['object',v7,-]|25389: read-property[v7,'attachRef',v6]|25390: \<variable-non-null-undef\>['object']|25391: typeof[v6,v4]|25392: constant[\"function\",v5]|25393: ===[v4,v5,v3]|25394: if[v3](true-block:7547,false-block:7548)}" ] 
+BB7546 -> BB7548 [tailport=s, headport=n]
+BB7546 -> BB7547 [tailport=s, headport=n, headlabel="      7547"]
+BB7546 -> BB7550 [tailport=s, headport=n, color=gray]
+BB7547 [shape=record label="{25395: read-variable['object',v11,-]|25396: read-property[v11,'detachRef',v10]|25397: \<variable-non-null-undef\>['object']|25398: typeof[v10,v8]|25399: constant[\"function\",v9]|25400: ===[v8,v9,v3]}" ] 
+BB7547 -> BB7548 [tailport=s, headport=n]
+BB7547 -> BB7550 [tailport=s, headport=n, color=gray]
+BB7548 [shape=record label="{25401: ![v3,v2]|25402: ![v2,v1]}" ] 
+BB7548 -> BB7549 [tailport=s, headport=n, headlabel="      7549"]
+BB7548 -> BB7550 [tailport=s, headport=n, color=gray]
+BB7549 [shape=record label="{25403: return[v1]}" ] 
+BB7550 [shape=record label="{25404: exceptional-return}" ] 
+//#$~ 13303
+}

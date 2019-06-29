@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry386[shape=none,label=""];
+BB_entry386 -> BB4374 [tailport=s, headport=n, headlabel="    4374"]
+BB4374 [shape=record label="{13703: constant[undefined,v1]|13704: vardecl['self']|13705: vardecl['tests']|13706: vardecl['test']|13707: function-decl[function hookErr ( err errSuite after ),-]|13708: function-decl[function next ( err errSuite ),-]}" ] 
+BB4374 -> BB4375 [tailport=s, headport=n, headlabel="      4375"]
+BB4375 [shape=record label="{13709: read-variable['this',v2,-]|13710: write-variable[v2,'self']*|13711: read-variable['suite',v6,-]|13712: read-property[v6,'tests',v5]|13713: \<variable-non-null-undef\>['suite']|13714: read-property[v5,'slice',-]|13715: \<property-non-null-undef\>[v6,'tests']}" ] 
+BB4375 -> BB4376 [tailport=s, headport=n, headlabel="      4376"]
+BB4375 -> BB4380 [tailport=s, headport=n, color=gray, headlabel="      4380"]
+BB4376 [shape=record label="{13716: call-suite.tests.slice [v5,'slice',v3]}" ] 
+BB4376 -> BB4377 [tailport=s, headport=n, headlabel="      4377"]
+BB4376 -> BB4380 [tailport=s, headport=n, color=gray]
+BB4377 [shape=record label="{13717: write-variable[v3,'tests']*|13718: read-variable['this',v8,-]|13719: read-variable['next',v7,-]|13720: write-property[v8,'next',v7]*|13721: read-variable['next',v10,v9]}" ] 
+BB4377 -> BB4378 [tailport=s, headport=n, headlabel="      4378"]
+BB4377 -> BB4380 [tailport=s, headport=n, color=gray]
+BB4378 [shape=record label="{13722: call-next [v9,v10,-]*}" ] 
+BB4378 -> BB4379 [tailport=s, headport=n, headlabel="      4379"]
+BB4378 -> BB4380 [tailport=s, headport=n, color=gray]
+BB4379 [shape=record label="{13723: return[v1]}" ] 
+BB4380 [shape=record label="{13724: exceptional-return}" ] 
+//#$~ 5084
+}

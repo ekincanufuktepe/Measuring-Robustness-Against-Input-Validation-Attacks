@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry423[shape=none,label=""];
+BB_entry423 -> BB6289 [tailport=s, headport=n, headlabel="    6289"]
+BB6289 [shape=record label="{23176: constant[undefined,v1]}" ] 
+BB6289 -> BB6290 [tailport=s, headport=n, headlabel="      6290"]
+BB6290 [shape=record label="{23177: read-variable['_48c',v3,-]|23178: read-property[v3,'firstChild',v2]|23179: \<variable-non-null-undef\>['_48c']|23180: if[v2](true-block:6291,false-block:6293)}" ] 
+BB6290 -> BB6291 [tailport=s, headport=n, headlabel="      6291"]
+BB6290 -> BB6293 [tailport=s, headport=n, headlabel="      6293"]
+BB6290 -> BB6294 [tailport=s, headport=n, color=gray, headlabel="      6294"]
+BB6291 [shape=record label="{23181: read-variable['_48c',v5,-]|23182: read-property[v5,'removeChild',-]|23183: \<variable-non-null-undef\>['_48c']|23184: read-variable['_48c',v7,-]|23185: read-property[v7,'firstChild',v6]|23186: \<variable-non-null-undef\>['_48c']}" ] 
+BB6291 -> BB6292 [tailport=s, headport=n, headlabel="      6292"]
+BB6291 -> BB6294 [tailport=s, headport=n, color=gray]
+BB6292 [shape=record label="{23187: call-_48c.removeChild [v5,'removeChild',v6,-]*}" ] 
+BB6292 -> BB6290 [tailport=s, headport=n]
+BB6292 -> BB6294 [tailport=s, headport=n, color=gray]
+BB6293 [shape=record label="{23188: return[v1]}" ] 
+BB6294 [shape=record label="{23189: exceptional-return}" ] 
+//#$~ 4468
+}

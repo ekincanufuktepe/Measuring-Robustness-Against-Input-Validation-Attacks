@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry83[shape=none,label=""];
+BB_entry83 -> BB1090 [tailport=s, headport=n, headlabel="    1090"]
+BB1090 [shape=record label="{2892: constant[undefined,v1]|2893: vardecl['attrId']}" ] 
+BB1090 -> BB1091 [tailport=s, headport=n, headlabel="      1091"]
+BB1091 [shape=record label="{2894: read-variable['id',v4,-]|2895: read-property[v4,'replace',-]|2896: \<variable-non-null-undef\>['id']|2897: read-variable['runescape',v5,-]|2898: read-variable['funescape',v6,-]}" ] 
+BB1091 -> BB1092 [tailport=s, headport=n, headlabel="      1092"]
+BB1091 -> BB1095 [tailport=s, headport=n, color=gray, headlabel="      1095"]
+BB1092 [shape=record label="{2899: call[v4,'replace',v5,v6,v2]}" ] 
+BB1092 -> BB1093 [tailport=s, headport=n, headlabel="      1093"]
+BB1092 -> BB1095 [tailport=s, headport=n, color=gray]
+BB1093 [shape=record label="{2900: write-variable[v2,'attrId']*|2901: function-expr[function(elem),v1]}" ] 
+BB1093 -> BB1094 [tailport=s, headport=n, headlabel="      1094"]
+BB1094 [shape=record label="{2902: return[v1]}" ] 
+BB1095 [shape=record label="{2903: exceptional-return}" ] 
+}

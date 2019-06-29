@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry348[shape=none,label=""];
+BB_entry348 -> BB4143 [tailport=s, headport=n, headlabel="    4143"]
+BB4143 [shape=record label="{10084: constant[undefined,v1]}" ] 
+BB4143 -> BB4144 [tailport=s, headport=n, headlabel="      4144"]
+BB4144 [shape=record label="{10085: read-variable['classVal',v2,-]|10086: if[v2](true-block:4145,false-block:4146)}" ] 
+BB4144 -> BB4146 [tailport=s, headport=n, headlabel="      4146"]
+BB4144 -> BB4145 [tailport=s, headport=n, headlabel="      4145"]
+BB4144 -> BB4150 [tailport=s, headport=n, color=gray, headlabel="      4150"]
+BB4145 [shape=record label="{10087: read-variable['classVal',v5,-]|10088: read-property[v5,'length',v3]|10089: \<variable-non-null-undef\>['classVal']|10090: constant[0.0,v4]|10091: \>[v3,v4,v2]}" ] 
+BB4145 -> BB4146 [tailport=s, headport=n]
+BB4145 -> BB4150 [tailport=s, headport=n, color=gray]
+BB4146 [shape=record label="{10092: if[v2](true-block:4147,false-block:4149)}" ] 
+BB4146 -> BB4147 [tailport=s, headport=n, headlabel="      4147"]
+BB4146 -> BB4149 [tailport=s, headport=n, headlabel="      4149"]
+BB4147 [shape=record label="{10093: read-variable['$animate',v4,-]|10094: read-property[v4,'removeClass',-]|10095: \<variable-non-null-undef\>['$animate']|10096: read-variable['this',v6,-]|10097: read-property[v6,'$$element',v5]|10098: read-variable['classVal',v7,-]}" ] 
+BB4147 -> BB4148 [tailport=s, headport=n, headlabel="      4148"]
+BB4147 -> BB4150 [tailport=s, headport=n, color=gray]
+BB4148 [shape=record label="{10099: call-$animate.removeClass [v4,'removeClass',v5,v7,-]*}" ] 
+BB4148 -> BB4149 [tailport=s, headport=n]
+BB4148 -> BB4150 [tailport=s, headport=n, color=gray]
+BB4149 [shape=record label="{10100: return[v1]}" ] 
+BB4150 [shape=record label="{10101: exceptional-return}" ] 
+//#$~ 7137
+}

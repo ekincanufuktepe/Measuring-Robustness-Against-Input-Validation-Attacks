@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry287[shape=none,label=""];
+BB_entry287 -> BB4448 [tailport=s, headport=n, headlabel="    4448"]
+BB4448 [shape=record label="{12890: constant[undefined,v1]|12891: vardecl['idx']|12892: vardecl['matched']|12893: vardecl['i']}" ] 
+BB4448 -> BB4449 [tailport=s, headport=n, headlabel="      4449"]
+BB4449 [shape=record label="{12894: read-variable['fn',v4,v3]|12895: read-variable['seed',v5,-]|12896: read-variable['argument',v6,-]}" ] 
+BB4449 -> BB4450 [tailport=s, headport=n, headlabel="      4450"]
+BB4449 -> BB4457 [tailport=s, headport=n, color=gray, headlabel="      4457"]
+BB4450 [shape=record label="{12897: call-fn [v3,v4,v5,v6,v2]}" ] 
+BB4450 -> BB4451 [tailport=s, headport=n, headlabel="      4451"]
+BB4450 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4451 [shape=record label="{12898: write-variable[v2,'matched']*|12899: read-variable['matched',v8,-]|12900: read-property[v8,'length',v7]|12901: \<variable-non-null-undef\>['matched']|12902: write-variable[v7,'i']*}" ] 
+BB4451 -> BB4452 [tailport=s, headport=n, headlabel="      4452"]
+BB4451 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4452 [shape=record label="{12903: constant[1.0,v10]|12904: read-variable['i',v11,-]|12905: +[v11,v9]|12906: -[v9,v10,v12]|12907: write-variable[v12,'i']|12908: if[v9](true-block:4453,false-block:4456)}" ] 
+BB4452 -> BB4453 [tailport=s, headport=n, headlabel="      4453"]
+BB4452 -> BB4456 [tailport=s, headport=n, headlabel="      4456"]
+BB4452 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4453 [shape=record label="{12909: read-variable['indexOf',v15,-]|12910: read-property[v15,'call',-]|12911: \<variable-non-null-undef\>['indexOf']|12912: read-variable['seed',v16,-]|12913: read-variable['matched',v18,-]|12914: read-variable['i',v19,-]|12915: read-property[v18,v19,v17]|12916: \<variable-non-null-undef\>['matched']}" ] 
+BB4453 -> BB4454 [tailport=s, headport=n, headlabel="      4454"]
+BB4453 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4454 [shape=record label="{12917: call-indexOf.call [v15,'call',v16,v17,v13]}" ] 
+BB4454 -> BB4455 [tailport=s, headport=n, headlabel="      4455"]
+BB4454 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4455 [shape=record label="{12918: write-variable[v13,'idx']*|12919: read-variable['seed',v21,-]|12920: read-variable['idx',v22,-]|12921: read-variable['matches',v24,-]|12922: read-variable['idx',v25,-]|12923: read-variable['matched',v26,-]|12924: read-variable['i',v27,-]|12925: read-property[v26,v27,v23]|12926: \<variable-non-null-undef\>['matched']|12927: write-property[v24,v25,v23]|12928: \<variable-non-null-undef\>['matches']|12929: ![v23,v20]|12930: write-property[v21,v22,v20]|12931: \<variable-non-null-undef\>['seed']*}" ] 
+BB4455 -> BB4452 [tailport=s, headport=n]
+BB4455 -> BB4457 [tailport=s, headport=n, color=gray]
+BB4456 [shape=record label="{12932: return[v1]}" ] 
+BB4457 [shape=record label="{12933: exceptional-return}" ] 
+//#$~ 4795
+}

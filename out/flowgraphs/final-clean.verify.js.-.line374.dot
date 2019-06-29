@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry49[shape=none,label=""];
+BB_entry49 -> BB463 [tailport=s, headport=n, headlabel="    463"]
+BB463 [shape=record label="{1289: constant[undefined,v1]|1290: vardecl['a']}" ] 
+BB463 -> BB464 [tailport=s, headport=n, headlabel="      464"]
+BB464 [shape=record label="{1291: read-variable['i',v3,-]|1292: ![v3,v2]|1293: if[v2](true-block:465,false-block:466)}" ] 
+BB464 -> BB465 [tailport=s, headport=n, headlabel="      465"]
+BB464 -> BB466 [tailport=s, headport=n, headlabel="      466"]
+BB464 -> BB472 [tailport=s, headport=n, color=gray, headlabel="      472"]
+BB465 [shape=record label="{1294: constant[0.0,v4]|1295: write-variable[v4,'i']*}" ] 
+BB465 -> BB466 [tailport=s, headport=n]
+BB466 [shape=record label="{1296: read-variable['Array',v8,-]}" ] 
+BB466 -> BB467 [tailport=s, headport=n, headlabel="      467"]
+BB466 -> BB472 [tailport=s, headport=n, color=gray]
+BB467 [shape=record label="{1297: construct [-,v8,v7]}" ] 
+BB467 -> BB468 [tailport=s, headport=n, headlabel="      468"]
+BB467 -> BB472 [tailport=s, headport=n, color=gray]
+BB468 [shape=record label="{1298: read-property[v7,'slice',v6]|1299: read-property[v6,'call',-]|1300: \<property-non-null-undef\>[v7,'slice']|1301: read-variable['args',v9,-]|1302: read-variable['i',v10,-]}" ] 
+BB468 -> BB469 [tailport=s, headport=n, headlabel="      469"]
+BB468 -> BB472 [tailport=s, headport=n, color=gray]
+BB469 [shape=record label="{1303: call-null [v6,'call',v9,v10,v4]}" ] 
+BB469 -> BB470 [tailport=s, headport=n, headlabel="      470"]
+BB469 -> BB472 [tailport=s, headport=n, color=gray]
+BB470 [shape=record label="{1304: write-variable[v4,'a']*|1305: read-variable['a',v12,-]|1306: read-variable['i',v13,-]|1307: read-variable['expr',v14,-]|1308: read-variable['a',v16,-]|1309: read-variable['i',v17,-]|1310: read-property[v16,v17,v15]|1311: \<variable-non-null-undef\>['a']|1312: +[v14,v15,v11]|1313: write-property[v12,v13,v11]|1314: \<variable-non-null-undef\>['a']*|1315: read-variable['a',v1,-]}" ] 
+BB470 -> BB471 [tailport=s, headport=n, headlabel="      471"]
+BB470 -> BB472 [tailport=s, headport=n, color=gray]
+BB471 [shape=record label="{1316: return[v1]}" ] 
+BB472 [shape=record label="{1317: exceptional-return}" ] 
+//#$~ 378
+}

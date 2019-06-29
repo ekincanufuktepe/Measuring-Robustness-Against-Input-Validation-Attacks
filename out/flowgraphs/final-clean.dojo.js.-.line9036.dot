@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry433[shape=none,label=""];
+BB_entry433 -> BB6273 [tailport=s, headport=n, headlabel="    6273"]
+BB6273 [shape=record label="{18817: constant[undefined,v1]}" ] 
+BB6273 -> BB6274 [tailport=s, headport=n, headlabel="      6274"]
+BB6274 [shape=record label="{18818: read-variable['node',v3,-]|18819: read-variable['_ns',v4,-]|18820: read-property[v3,v4,v2]|18821: \<variable-non-null-undef\>['node']|18822: write-variable[v2,'node']|18823: if[v2](true-block:6275,false-block:6276)}" ] 
+BB6274 -> BB6275 [tailport=s, headport=n, headlabel="      6275"]
+BB6274 -> BB6276 [tailport=s, headport=n, headlabel="      6276"]
+BB6274 -> BB6281 [tailport=s, headport=n, color=gray, headlabel="      6281"]
+BB6275 [shape=record label="{18824: read-variable['_simpleNodeTest',v7,v6]|18825: read-variable['node',v8,-]}" ] 
+BB6275 -> BB6277 [tailport=s, headport=n, headlabel="      6277"]
+BB6275 -> BB6281 [tailport=s, headport=n, color=gray]
+BB6276 [shape=record label="{18826: constant[true,v1]}" ] 
+BB6276 -> BB6280 [tailport=s, headport=n, headlabel="      6280"]
+BB6277 [shape=record label="{18827: call-_simpleNodeTest [v6,v7,v8,v5]}" ] 
+BB6277 -> BB6278 [tailport=s, headport=n, headlabel="      6278"]
+BB6277 -> BB6281 [tailport=s, headport=n, color=gray]
+BB6278 [shape=record label="{18828: if[v5](true-block:6279,false-block:6274)}" ] 
+BB6278 -> BB6279 [tailport=s, headport=n, headlabel="      6279"]
+BB6278 -> BB6274 [tailport=s, headport=n]
+BB6279 [shape=record label="{18829: constant[false,v1]}" ] 
+BB6279 -> BB6280 [tailport=s, headport=n]
+BB6280 [shape=record label="{18830: return[v1]}" ] 
+BB6281 [shape=record label="{18831: exceptional-return}" ] 
+//#$~ 9041
+}

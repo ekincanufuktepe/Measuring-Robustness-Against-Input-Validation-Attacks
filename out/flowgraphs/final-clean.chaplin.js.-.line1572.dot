@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry148[shape=none,label=""];
+BB_entry148 -> BB1774 [tailport=s, headport=n, headlabel="    1774"]
+BB1774 [shape=record label="{5863: constant[undefined,v1]}" ] 
+BB1774 -> BB1775 [tailport=s, headport=n, headlabel="      1775"]
+BB1775 [shape=record label="{5864: read-variable['useCssAnimation',v2,-]|5865: if[v2](true-block:1776,false-block:1777)}" ] 
+BB1775 -> BB1776 [tailport=s, headport=n, headlabel="      1776"]
+BB1775 -> BB1777 [tailport=s, headport=n, headlabel="      1777"]
+BB1775 -> BB1780 [tailport=s, headport=n, color=gray, headlabel="      1780"]
+BB1776 [shape=record label="{5866: read-variable['addClass',v4,v3]|5867: read-variable['elem',v5,-]|5868: read-variable['cls',v6,-]}" ] 
+BB1776 -> BB1778 [tailport=s, headport=n, headlabel="      1778"]
+BB1776 -> BB1780 [tailport=s, headport=n, color=gray]
+BB1777 [shape=record label="{5869: read-variable['elem',v4,-]|5870: read-property[v4,'style',v3]|5871: \<variable-non-null-undef\>['elem']|5872: constant[0.0,v1]|5873: write-property[v3,'opacity',v1]|5874: \<property-non-null-undef\>[v4,'style']}" ] 
+BB1777 -> BB1779 [tailport=s, headport=n, headlabel="      1779"]
+BB1777 -> BB1780 [tailport=s, headport=n, color=gray]
+BB1778 [shape=record label="{5875: call-addClass [v3,v4,v5,v6,v1]}" ] 
+BB1778 -> BB1779 [tailport=s, headport=n]
+BB1778 -> BB1780 [tailport=s, headport=n, color=gray]
+BB1779 [shape=record label="{5876: return[v1]}" ] 
+BB1780 [shape=record label="{5877: exceptional-return}" ] 
+//#$~ 1576
+}

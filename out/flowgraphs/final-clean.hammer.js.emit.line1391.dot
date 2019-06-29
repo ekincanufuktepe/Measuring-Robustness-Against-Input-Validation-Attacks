@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry75[shape=none,label=""];
+BB_entry75 -> BB847 [tailport=s, headport=n, headlabel="    847"]
+BB847 [shape=record label="{2683: constant[undefined,v1]}" ] 
+BB847 -> BB848 [tailport=s, headport=n, headlabel="      848"]
+BB848 [shape=record label="{2684: read-variable['self',v4,-]|2685: read-property[v4,'manager',v3]|2686: \<variable-non-null-undef\>['self']|2687: read-property[v3,'emit',-]|2688: \<property-non-null-undef\>[v4,'manager']|2689: read-variable['self',v9,-]|2690: read-property[v9,'options',v8]|2691: \<variable-non-null-undef\>['self']|2692: read-property[v8,'event',v6]|2693: \<property-non-null-undef\>[v9,'options']|2694: read-variable['withState',v10,-]|2695: if[v10](true-block:849,false-block:850)}" ] 
+BB848 -> BB849 [tailport=s, headport=n, headlabel="      849"]
+BB848 -> BB850 [tailport=s, headport=n, headlabel="      850"]
+BB848 -> BB855 [tailport=s, headport=n, color=gray, headlabel="      855"]
+BB849 [shape=record label="{2696: read-variable['stateStr',v12,v11]|2697: read-variable['state',v13,-]}" ] 
+BB849 -> BB851 [tailport=s, headport=n, headlabel="      851"]
+BB849 -> BB855 [tailport=s, headport=n, color=gray]
+BB850 [shape=record label="{2698: constant[\"\",v7]}" ] 
+BB850 -> BB852 [tailport=s, headport=n, headlabel="      852"]
+BB851 [shape=record label="{2699: call-stateStr [v11,v12,v13,v7]}" ] 
+BB851 -> BB852 [tailport=s, headport=n]
+BB851 -> BB855 [tailport=s, headport=n, color=gray]
+BB852 [shape=record label="{2700: +[v6,v7,v5]|2701: read-variable['input',v11,-]}" ] 
+BB852 -> BB853 [tailport=s, headport=n, headlabel="      853"]
+BB852 -> BB855 [tailport=s, headport=n, color=gray]
+BB853 [shape=record label="{2702: call-self.manager.emit [v3,'emit',v5,v11,-]*}" ] 
+BB853 -> BB854 [tailport=s, headport=n, headlabel="      854"]
+BB853 -> BB855 [tailport=s, headport=n, color=gray]
+BB854 [shape=record label="{2703: return[v1]}" ] 
+BB855 [shape=record label="{2704: exceptional-return}" ] 
+//#$~ 1392
+}

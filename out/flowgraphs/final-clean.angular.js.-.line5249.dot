@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry290[shape=none,label=""];
+BB_entry290 -> BB3505 [tailport=s, headport=n, headlabel="    3505"]
+BB3505 [shape=record label="{8393: constant[undefined,v1]}" ] 
+BB3505 -> BB3506 [tailport=s, headport=n, headlabel="      3506"]
+BB3506 [shape=record label="{8394: read-variable['prepareAnimateOptions',v4,v3]|8395: read-variable['options',v5,-]}" ] 
+BB3506 -> BB3507 [tailport=s, headport=n, headlabel="      3507"]
+BB3506 -> BB3513 [tailport=s, headport=n, color=gray, headlabel="      3513"]
+BB3507 [shape=record label="{8396: call-prepareAnimateOptions [v3,v4,v5,v2]}" ] 
+BB3507 -> BB3508 [tailport=s, headport=n, headlabel="      3508"]
+BB3507 -> BB3513 [tailport=s, headport=n, color=gray]
+BB3508 [shape=record label="{8397: write-variable[v2,'options']*|8398: read-variable['options',v7,-]|8399: read-variable['mergeClasses',v9,v8]|8400: read-variable['options',v11,-]|8401: read-property[v11,'addclass',v10]|8402: \<variable-non-null-undef\>['options']|8403: read-variable['className',v12,-]}" ] 
+BB3508 -> BB3509 [tailport=s, headport=n, headlabel="      3509"]
+BB3508 -> BB3513 [tailport=s, headport=n, color=gray]
+BB3509 [shape=record label="{8404: call-mergeClasses [v8,v9,v10,v12,v6]}" ] 
+BB3509 -> BB3510 [tailport=s, headport=n, headlabel="      3510"]
+BB3509 -> BB3513 [tailport=s, headport=n, color=gray]
+BB3510 [shape=record label="{8405: write-property[v7,'addClass',v6]|8406: \<variable-non-null-undef\>['options']*|8407: read-variable['$$animateQueue',v14,-]|8408: read-property[v14,'push',-]|8409: \<variable-non-null-undef\>['$$animateQueue']|8410: read-variable['element',v15,-]|8411: constant[\"addClass\",v16]|8412: read-variable['options',v17,-]}" ] 
+BB3510 -> BB3511 [tailport=s, headport=n, headlabel="      3511"]
+BB3510 -> BB3513 [tailport=s, headport=n, color=gray]
+BB3511 [shape=record label="{8413: call-$$animateQueue.push [v14,'push',v15,v16,v17,v1]}" ] 
+BB3511 -> BB3512 [tailport=s, headport=n, headlabel="      3512"]
+BB3511 -> BB3513 [tailport=s, headport=n, color=gray]
+BB3512 [shape=record label="{8414: return[v1]}" ] 
+BB3513 [shape=record label="{8415: exceptional-return}" ] 
+//#$~ 5252
+}

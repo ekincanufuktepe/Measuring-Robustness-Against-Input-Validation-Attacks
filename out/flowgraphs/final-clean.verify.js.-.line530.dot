@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB636 [tailport=s, headport=n, headlabel="    636"]
+BB636 [shape=record label="{1695: constant[undefined,v1]|1696: vardecl['prop']}" ] 
+BB636 -> BB637 [tailport=s, headport=n, headlabel="      637"]
+BB637 [shape=record label="{1697: read-variable['this',v3,-]|1698: read-variable['name',v4,-]|1699: read-property[v3,v4,v2]|1700: write-variable[v2,'prop']*|1701: read-variable['prop',v5,-]|1702: if[v5](true-block:638,false-block:640)}" ] 
+BB637 -> BB640 [tailport=s, headport=n, headlabel="      640"]
+BB637 -> BB638 [tailport=s, headport=n, headlabel="      638"]
+BB637 -> BB645 [tailport=s, headport=n, color=gray, headlabel="      645"]
+BB638 [shape=record label="{1703: read-variable['$',v7,-]|1704: read-property[v7,'isFunction',-]|1705: \<variable-non-null-undef\>['$']|1706: read-variable['prop',v8,-]}" ] 
+BB638 -> BB639 [tailport=s, headport=n, headlabel="      639"]
+BB638 -> BB645 [tailport=s, headport=n, color=gray]
+BB639 [shape=record label="{1707: call-$.isFunction [v7,'isFunction',v8,v5]}" ] 
+BB639 -> BB640 [tailport=s, headport=n]
+BB639 -> BB645 [tailport=s, headport=n, color=gray]
+BB640 [shape=record label="{1708: if[v5](true-block:641,false-block:644)}" ] 
+BB640 -> BB641 [tailport=s, headport=n, headlabel="      641"]
+BB640 -> BB644 [tailport=s, headport=n, headlabel="      644"]
+BB641 [shape=record label="{1709: read-variable['this',v7,-]|1710: read-variable['name',v8,-]|1711: read-variable['Utils',v10,-]|1712: read-property[v10,'bind',-]|1713: \<variable-non-null-undef\>['Utils']|1714: read-variable['prop',v11,-]|1715: read-variable['this',v12,-]}" ] 
+BB641 -> BB642 [tailport=s, headport=n, headlabel="      642"]
+BB641 -> BB645 [tailport=s, headport=n, color=gray]
+BB642 [shape=record label="{1716: call-Utils.bind [v10,'bind',v11,v12,v6]}" ] 
+BB642 -> BB643 [tailport=s, headport=n, headlabel="      643"]
+BB642 -> BB645 [tailport=s, headport=n, color=gray]
+BB643 [shape=record label="{1717: write-property[v7,v8,v6]*}" ] 
+BB643 -> BB644 [tailport=s, headport=n]
+BB643 -> BB645 [tailport=s, headport=n, color=gray]
+BB644 [shape=record label="{1718: return[v1]}" ] 
+BB645 [shape=record label="{1719: exceptional-return}" ] 
+//#$~ 533
+}

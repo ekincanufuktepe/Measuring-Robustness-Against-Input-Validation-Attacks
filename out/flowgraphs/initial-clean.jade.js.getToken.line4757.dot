@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry291[shape=none,label=""];
+BB_entry291 -> BB4713 [tailport=s, headport=n, headlabel="    4713"]
+BB4713 [shape=record label="{14642: constant[undefined,v1]}" ] 
+BB4713 -> BB4714 [tailport=s, headport=n, headlabel="      4714"]
+BB4714 [shape=record label="{14643: read-variable['tokEnd',v2,-]|14644: write-variable[v2,'lastEnd']*|14645: read-variable['readToken',v4,v3]|14646: read-variable['forceRegexp',v5,-]}" ] 
+BB4714 -> BB4715 [tailport=s, headport=n, headlabel="      4715"]
+BB4714 -> BB4719 [tailport=s, headport=n, color=gray, headlabel="      4719"]
+BB4715 [shape=record label="{14647: call-readToken [v3,v4,v5,-]*}" ] 
+BB4715 -> BB4716 [tailport=s, headport=n, headlabel="      4716"]
+BB4715 -> BB4719 [tailport=s, headport=n, color=gray]
+BB4716 [shape=record label="{14648: read-variable['Token',v6,-]}" ] 
+BB4716 -> BB4717 [tailport=s, headport=n, headlabel="      4717"]
+BB4716 -> BB4719 [tailport=s, headport=n, color=gray]
+BB4717 [shape=record label="{14649: construct [-,v6,v1]}" ] 
+BB4717 -> BB4718 [tailport=s, headport=n, headlabel="      4718"]
+BB4717 -> BB4719 [tailport=s, headport=n, color=gray]
+BB4718 [shape=record label="{14650: return[v1]}" ] 
+BB4719 [shape=record label="{14651: exceptional-return}" ] 
+//#$~ 4760
+}

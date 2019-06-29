@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry632[shape=none,label=""];
+BB_entry632 -> BB7546 [tailport=s, headport=n, headlabel="    7546"]
+BB7546 [shape=record label="{26279: constant[undefined,v1]|26280: vardecl['keys']|26281: vardecl['values']}" ] 
+BB7546 -> BB7547 [tailport=s, headport=n, headlabel="      7547"]
+BB7547 [shape=record label="{26282: read-variable['original',v5,-]|26283: read-property[v5,'keys',v4]|26284: \<variable-non-null-undef\>['original']|26285: read-property[v4,'copy',-]|26286: \<property-non-null-undef\>[v5,'keys']}" ] 
+BB7547 -> BB7548 [tailport=s, headport=n, headlabel="      7548"]
+BB7547 -> BB7553 [tailport=s, headport=n, color=gray, headlabel="      7553"]
+BB7548 [shape=record label="{26287: call-original.keys.copy [v4,'copy',v2]}" ] 
+BB7548 -> BB7549 [tailport=s, headport=n, headlabel="      7549"]
+BB7548 -> BB7553 [tailport=s, headport=n, color=gray]
+BB7549 [shape=record label="{26288: write-variable[v2,'keys']*|26289: read-variable['copyNull',v8,v7]|26290: read-variable['original',v10,-]|26291: read-property[v10,'values',v9]|26292: \<variable-non-null-undef\>['original']}" ] 
+BB7549 -> BB7550 [tailport=s, headport=n, headlabel="      7550"]
+BB7549 -> BB7553 [tailport=s, headport=n, color=gray]
+BB7550 [shape=record label="{26293: call-copyNull [v7,v8,v9,v6]}" ] 
+BB7550 -> BB7551 [tailport=s, headport=n, headlabel="      7551"]
+BB7550 -> BB7553 [tailport=s, headport=n, color=gray]
+BB7551 [shape=record label="{26294: write-variable[v6,'values']*|26295: read-variable['newObject',v12,-]|26296: read-variable['keys',v11,-]|26297: write-property[v12,'keys',v11]|26298: \<variable-non-null-undef\>['newObject']*|26299: read-variable['newObject',v14,-]|26300: read-variable['values',v13,-]|26301: write-property[v14,'values',v13]|26302: \<variable-non-null-undef\>['newObject']*|26303: read-variable['newObject',v16,-]|26304: read-variable['original',v17,-]|26305: read-property[v17,'size',v15]|26306: \<variable-non-null-undef\>['original']|26307: write-property[v16,'size',v15]|26308: \<variable-non-null-undef\>['newObject']*|26309: read-variable['newObject',v1,-]}" ] 
+BB7551 -> BB7552 [tailport=s, headport=n, headlabel="      7552"]
+BB7551 -> BB7553 [tailport=s, headport=n, color=gray]
+BB7552 [shape=record label="{26310: return[v1]}" ] 
+BB7553 [shape=record label="{26311: exceptional-return}" ] 
+//#$~ 13922
+}

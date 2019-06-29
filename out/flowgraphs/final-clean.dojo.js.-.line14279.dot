@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry728[shape=none,label=""];
+BB_entry728 -> BB10209 [tailport=s, headport=n, headlabel="    10209"]
+BB10209 [shape=record label="{30016: constant[undefined,v1]|30017: vardecl['result']}" ] 
+BB10209 -> BB10210 [tailport=s, headport=n, headlabel="      10210"]
+BB10210 [shape=record label="{30018: read-variable['dojo',v3,-]|30019: read-property[v3,'xhrGet',-]|30020: \<variable-non-null-undef\>['dojo']|30021: new[v4]|30022: read-variable['url',v5,-]|30023: write-property[v4,'url',v5]|30024: constant[true,v6]|30025: write-property[v4,'sync',v6]|30026: function-expr[function ( text ),v7]|30027: write-property[v4,'load',v7]}" ] 
+BB10210 -> BB10211 [tailport=s, headport=n, headlabel="      10211"]
+BB10210 -> BB10214 [tailport=s, headport=n, color=gray, headlabel="      10214"]
+BB10211 [shape=record label="{30028: call-dojo.xhrGet [v3,'xhrGet',v4,-]*}" ] 
+BB10211 -> BB10212 [tailport=s, headport=n, headlabel="      10212"]
+BB10211 -> BB10214 [tailport=s, headport=n, color=gray]
+BB10212 [shape=record label="{30029: read-variable['result',v1,-]}" ] 
+BB10212 -> BB10213 [tailport=s, headport=n, headlabel="      10213"]
+BB10212 -> BB10214 [tailport=s, headport=n, color=gray]
+BB10213 [shape=record label="{30030: return[v1]}" ] 
+BB10214 [shape=record label="{30031: exceptional-return}" ] 
+//#$~ 14284
+}

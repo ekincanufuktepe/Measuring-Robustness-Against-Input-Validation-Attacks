@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry2322[shape=none,label=""];
+BB_entry2322 -> BB26531 [tailport=s, headport=n, headlabel="    26531"]
+BB26531 [shape=record label="{87658: constant[undefined,v1]|87659: vardecl['props']}" ] 
+BB26531 -> BB26532 [tailport=s, headport=n, headlabel="      26532"]
+BB26532 [shape=record label="{87660: read-variable['_props',v2,-]|87661: if[v2](true-block:26534,false-block:26533)}" ] 
+BB26532 -> BB26534 [tailport=s, headport=n, headlabel="      26534"]
+BB26532 -> BB26533 [tailport=s, headport=n, headlabel="      26533"]
+BB26532 -> BB26539 [tailport=s, headport=n, color=gray, headlabel="      26539"]
+BB26533 [shape=record label="{87662: new[v2]}" ] 
+BB26533 -> BB26534 [tailport=s, headport=n]
+BB26534 [shape=record label="{87663: write-variable[v2,'props']*|87664: read-variable['merge',v4,v3]|87665: read-variable['this',v5,-]|87666: read-variable['props',v6,-]}" ] 
+BB26534 -> BB26535 [tailport=s, headport=n, headlabel="      26535"]
+BB26534 -> BB26539 [tailport=s, headport=n, color=gray]
+BB26535 [shape=record label="{87667: call-merge [v3,v4,v5,v6,-]*}" ] 
+BB26535 -> BB26536 [tailport=s, headport=n, headlabel="      26536"]
+BB26535 -> BB26539 [tailport=s, headport=n, color=gray]
+BB26536 [shape=record label="{87668: read-variable['this',v8,-]|87669: read-property[v8,'initialize',-]|87670: read-variable['props',v9,-]}" ] 
+BB26536 -> BB26537 [tailport=s, headport=n, headlabel="      26537"]
+BB26536 -> BB26539 [tailport=s, headport=n, color=gray]
+BB26537 [shape=record label="{87671: call-this.initialize [v8,'initialize',v9,-]*}" ] 
+BB26537 -> BB26538 [tailport=s, headport=n, headlabel="      26538"]
+BB26537 -> BB26539 [tailport=s, headport=n, color=gray]
+BB26538 [shape=record label="{87672: return[v1]}" ] 
+BB26539 [shape=record label="{87673: exceptional-return}" ] 
+//#$~ 48157
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry293[shape=none,label=""];
+BB_entry293 -> BB4738 [tailport=s, headport=n, headlabel="    4738"]
+BB4738 [shape=record label="{14028: constant[undefined,v1]}" ] 
+BB4738 -> BB4739 [tailport=s, headport=n, headlabel="      4739"]
+BB4739 [shape=record label="{14029: read-variable['elem',v3,-]|14030: read-property[v3,'removeEventListener',v2]|14031: \<variable-non-null-undef\>['elem']|14032: if[v2](true-block:4740,false-block:4742)}" ] 
+BB4739 -> BB4740 [tailport=s, headport=n, headlabel="      4740"]
+BB4739 -> BB4742 [tailport=s, headport=n, headlabel="      4742"]
+BB4739 -> BB4743 [tailport=s, headport=n, color=gray, headlabel="      4743"]
+BB4740 [shape=record label="{14033: read-variable['elem',v5,-]|14034: read-property[v5,'removeEventListener',-]|14035: \<variable-non-null-undef\>['elem']|14036: read-variable['type',v6,-]|14037: read-variable['handle',v7,-]|14038: constant[false,v8]}" ] 
+BB4740 -> BB4741 [tailport=s, headport=n, headlabel="      4741"]
+BB4740 -> BB4743 [tailport=s, headport=n, color=gray]
+BB4741 [shape=record label="{14039: call[v5,'removeEventListener',v6,v7,v8,-]*}" ] 
+BB4741 -> BB4742 [tailport=s, headport=n]
+BB4741 -> BB4743 [tailport=s, headport=n, color=gray]
+BB4742 [shape=record label="{14040: return[v1]}" ] 
+BB4743 [shape=record label="{14041: exceptional-return}" ] 
+}

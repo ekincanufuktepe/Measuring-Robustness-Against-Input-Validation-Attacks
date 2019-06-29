@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry463[shape=none,label=""];
+BB_entry463 -> BB6152 [tailport=s, headport=n, headlabel="    6152"]
+BB6152 [shape=record label="{15804: constant[undefined,v1]}" ] 
+BB6152 -> BB6153 [tailport=s, headport=n, headlabel="      6153"]
+BB6153 [shape=record label="{15805: read-variable['lowercase',v6,v5]|15806: read-variable['header',v7,-]}" ] 
+BB6153 -> BB6154 [tailport=s, headport=n, headlabel="      6154"]
+BB6153 -> BB6158 [tailport=s, headport=n, color=gray, headlabel="      6158"]
+BB6154 [shape=record label="{15807: call-lowercase [v5,v6,v7,v3]}" ] 
+BB6154 -> BB6155 [tailport=s, headport=n, headlabel="      6155"]
+BB6154 -> BB6158 [tailport=s, headport=n, color=gray]
+BB6155 [shape=record label="{15808: constant[\"content-type\",v4]|15809: ===[v3,v4,v2]|15810: if[v2](true-block:6156,false-block:6157)}" ] 
+BB6155 -> BB6156 [tailport=s, headport=n, headlabel="      6156"]
+BB6155 -> BB6157 [tailport=s, headport=n, headlabel="      6157"]
+BB6155 -> BB6158 [tailport=s, headport=n, color=gray]
+BB6156 [shape=record label="{15811: read-variable['headers',v9,-]|15812: read-variable['header',v10,-]|15813: delete-property[v9,v10,v8]*}" ] 
+BB6156 -> BB6157 [tailport=s, headport=n]
+BB6156 -> BB6158 [tailport=s, headport=n, color=gray]
+BB6157 [shape=record label="{15814: return[v1]}" ] 
+BB6158 [shape=record label="{15815: exceptional-return}" ] 
+//#$~ 10037
+}

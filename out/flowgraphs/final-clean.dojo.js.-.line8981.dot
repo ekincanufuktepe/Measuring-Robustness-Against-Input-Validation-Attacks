@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry425[shape=none,label=""];
+BB_entry425 -> BB6216 [tailport=s, headport=n, headlabel="    6216"]
+BB6216 [shape=record label="{18694: constant[undefined,v1]|18695: vardecl['ea']|18696: vardecl['lastIndex']}" ] 
+BB6216 -> BB6217 [tailport=s, headport=n, headlabel="      6217"]
+BB6217 [shape=record label="{18697: constant[\" \",v3]|18698: read-variable['_getAttr',v6,v5]|18699: read-variable['elem',v7,-]|18700: read-variable['attr',v8,-]}" ] 
+BB6217 -> BB6218 [tailport=s, headport=n, headlabel="      6218"]
+BB6217 -> BB6224 [tailport=s, headport=n, color=gray, headlabel="      6224"]
+BB6218 [shape=record label="{18701: call-_getAttr [v5,v6,v7,v8,v4]}" ] 
+BB6218 -> BB6219 [tailport=s, headport=n, headlabel="      6219"]
+BB6218 -> BB6224 [tailport=s, headport=n, color=gray]
+BB6219 [shape=record label="{18702: +[v3,v4,v2]|18703: write-variable[v2,'ea']*|18704: read-variable['ea',v11,-]|18705: read-property[v11,'lastIndexOf',-]|18706: \<variable-non-null-undef\>['ea']|18707: read-variable['value',v12,-]}" ] 
+BB6219 -> BB6220 [tailport=s, headport=n, headlabel="      6220"]
+BB6219 -> BB6224 [tailport=s, headport=n, color=gray]
+BB6220 [shape=record label="{18708: call-ea.lastIndexOf [v11,'lastIndexOf',v12,v9]}" ] 
+BB6220 -> BB6221 [tailport=s, headport=n, headlabel="      6221"]
+BB6220 -> BB6224 [tailport=s, headport=n, color=gray]
+BB6221 [shape=record label="{18709: write-variable[v9,'lastIndex']*|18710: read-variable['lastIndex',v13,-]|18711: constant[-1.0,v14]|18712: \>[v13,v14,v1]|18713: if[v1](true-block:6222,false-block:6223)}" ] 
+BB6221 -> BB6223 [tailport=s, headport=n, headlabel="      6223"]
+BB6221 -> BB6222 [tailport=s, headport=n, headlabel="      6222"]
+BB6221 -> BB6224 [tailport=s, headport=n, color=gray]
+BB6222 [shape=record label="{18714: read-variable['lastIndex',v15,-]|18715: read-variable['ea',v19,-]|18716: read-property[v19,'length',v17]|18717: \<variable-non-null-undef\>['ea']|18718: read-variable['value',v20,-]|18719: read-property[v20,'length',v18]|18720: \<variable-non-null-undef\>['value']|18721: -[v17,v18,v16]|18722: ==[v15,v16,v1]}" ] 
+BB6222 -> BB6223 [tailport=s, headport=n]
+BB6222 -> BB6224 [tailport=s, headport=n, color=gray]
+BB6223 [shape=record label="{18723: return[v1]}" ] 
+BB6224 [shape=record label="{18724: exceptional-return}" ] 
+//#$~ 8984
+}

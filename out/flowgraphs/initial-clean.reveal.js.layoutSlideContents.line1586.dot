@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry79[shape=none,label=""];
+BB_entry79 -> BB1256 [tailport=s, headport=n, headlabel="    1256"]
+BB1256 [shape=record label="{4225: constant[undefined,v1]}" ] 
+BB1256 -> BB1257 [tailport=s, headport=n, headlabel="      1257"]
+BB1257 [shape=record label="{4226: read-variable['toArray',v5,v4]|4227: read-variable['dom',v9,-]|4228: read-property[v9,'slides',v8]|4229: \<variable-non-null-undef\>['dom']|4230: read-property[v8,'querySelectorAll',-]|4231: \<property-non-null-undef\>[v9,'slides']|4232: constant[\"section \\\> .stretch\",v10]}" ] 
+BB1257 -> BB1258 [tailport=s, headport=n, headlabel="      1258"]
+BB1257 -> BB1263 [tailport=s, headport=n, color=gray, headlabel="      1263"]
+BB1258 [shape=record label="{4233: call-dom.slides.querySelectorAll [v8,'querySelectorAll',v10,v6]}" ] 
+BB1258 -> BB1259 [tailport=s, headport=n, headlabel="      1259"]
+BB1258 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1259 [shape=record label="{4234: call-toArray [v4,v5,v6,v3]}" ] 
+BB1259 -> BB1260 [tailport=s, headport=n, headlabel="      1260"]
+BB1259 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1260 [shape=record label="{4235: read-property[v3,'forEach',-]|4236: function-expr[function ( element ),v11]}" ] 
+BB1260 -> BB1261 [tailport=s, headport=n, headlabel="      1261"]
+BB1260 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1261 [shape=record label="{4237: call-null [v3,'forEach',v11,-]*}" ] 
+BB1261 -> BB1262 [tailport=s, headport=n, headlabel="      1262"]
+BB1261 -> BB1263 [tailport=s, headport=n, color=gray]
+BB1262 [shape=record label="{4238: return[v1]}" ] 
+BB1263 [shape=record label="{4239: exceptional-return}" ] 
+//#$~ 1607
+}

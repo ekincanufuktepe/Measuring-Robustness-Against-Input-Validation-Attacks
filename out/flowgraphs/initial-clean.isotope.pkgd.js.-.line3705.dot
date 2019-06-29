@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry248[shape=none,label=""];
+BB_entry248 -> BB2683 [tailport=s, headport=n, headlabel="    2683"]
+BB2683 [shape=record label="{8906: constant[undefined,v1]}" ] 
+BB2683 -> BB2684 [tailport=s, headport=n, headlabel="      2684"]
+BB2684 [shape=record label="{8907: read-variable['str',v3,-]|8908: read-property[v3,'replace',-]|8909: \<variable-non-null-undef\>['str']|8910: read-variable['RegExp',v5,-]|8911: constant[\"^\\\\s+|\\\\s+$\",v6]|8912: constant[\"g\",v7]}" ] 
+BB2684 -> BB2685 [tailport=s, headport=n, headlabel="      2685"]
+BB2684 -> BB2689 [tailport=s, headport=n, color=gray, headlabel="      2689"]
+BB2685 [shape=record label="{8913: construct [-,v5,v6,v7,v4]}" ] 
+BB2685 -> BB2686 [tailport=s, headport=n, headlabel="      2686"]
+BB2685 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2686 [shape=record label="{8914: constant[\"\",v8]}" ] 
+BB2686 -> BB2687 [tailport=s, headport=n, headlabel="      2687"]
+BB2687 [shape=record label="{8915: call-str.replace [v3,'replace',v4,v8,v1]}" ] 
+BB2687 -> BB2688 [tailport=s, headport=n, headlabel="      2688"]
+BB2687 -> BB2689 [tailport=s, headport=n, color=gray]
+BB2688 [shape=record label="{8916: return[v1]}" ] 
+BB2689 [shape=record label="{8917: exceptional-return}" ] 
+//#$~ 3706
+}

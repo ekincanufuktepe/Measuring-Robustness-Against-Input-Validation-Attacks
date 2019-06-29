@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1261[shape=none,label=""];
+BB_entry1261 -> BB15637 [tailport=s, headport=n, headlabel="    15637"]
+BB15637 [shape=record label="{40706: constant[undefined,v1]|40707: vardecl['next']}" ] 
+BB15637 -> BB15638 [tailport=s, headport=n, headlabel="      15638"]
+BB15638 [shape=record label="{40708: read-variable['current',v2,-]|40709: if[v2](true-block:15639,false-block:15642)}" ] 
+BB15638 -> BB15639 [tailport=s, headport=n, headlabel="      15639"]
+BB15638 -> BB15642 [tailport=s, headport=n, headlabel="      15642"]
+BB15638 -> BB15643 [tailport=s, headport=n, color=gray, headlabel="      15643"]
+BB15639 [shape=record label="{40710: read-variable['current',v4,-]|40711: read-property[v4,'nextSibling',v3]|40712: \<variable-non-null-undef\>['current']|40713: write-variable[v3,'next']*|40714: read-variable['jqLiteRemove',v6,v5]|40715: read-variable['current',v7,-]}" ] 
+BB15639 -> BB15640 [tailport=s, headport=n, headlabel="      15640"]
+BB15639 -> BB15643 [tailport=s, headport=n, color=gray]
+BB15640 [shape=record label="{40716: call-jqLiteRemove [v5,v6,v7,-]*}" ] 
+BB15640 -> BB15641 [tailport=s, headport=n, headlabel="      15641"]
+BB15640 -> BB15643 [tailport=s, headport=n, color=gray]
+BB15641 [shape=record label="{40717: read-variable['next',v8,-]|40718: write-variable[v8,'current']*}" ] 
+BB15641 -> BB15638 [tailport=s, headport=n]
+BB15641 -> BB15643 [tailport=s, headport=n, color=gray]
+BB15642 [shape=record label="{40719: return[v1]}" ] 
+BB15643 [shape=record label="{40720: exceptional-return}" ] 
+//#$~ 26338
+}

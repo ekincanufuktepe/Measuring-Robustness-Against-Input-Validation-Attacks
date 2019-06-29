@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry795[shape=none,label=""];
+BB_entry795 -> BB10834 [tailport=s, headport=n, headlabel="    10834"]
+BB10834 [shape=record label="{31957: constant[undefined,v1]}" ] 
+BB10834 -> BB10835 [tailport=s, headport=n, headlabel="      10835"]
+BB10835 [shape=record label="{31958: read-variable['obj',v5,-]|31959: read-property[v5,'timestamp',v3]|31960: \<variable-non-null-undef\>['obj']|31961: read-variable['reportBefore',v4,-]|31962: \<[v3,v4,v2]|31963: if[v2](true-block:10836,false-block:10840)}" ] 
+BB10835 -> BB10836 [tailport=s, headport=n, headlabel="      10836"]
+BB10835 -> BB10840 [tailport=s, headport=n, headlabel="      10840"]
+BB10835 -> BB10842 [tailport=s, headport=n, color=gray, headlabel="      10842"]
+BB10836 [shape=record label="{31964: read-variable['obj',v8,-]|31965: read-property[v8,'handled',v7]|31966: \<variable-non-null-undef\>['obj']|31967: ![v7,v6]|31968: if[v6](true-block:10837,false-block:10839)}" ] 
+BB10836 -> BB10837 [tailport=s, headport=n, headlabel="      10837"]
+BB10836 -> BB10839 [tailport=s, headport=n, headlabel="      10839"]
+BB10836 -> BB10842 [tailport=s, headport=n, color=gray]
+BB10837 [shape=record label="{31969: read-variable['logError',v10,v9]|31970: read-variable['obj',v12,-]|31971: read-property[v12,'error',v11]|31972: \<variable-non-null-undef\>['obj']|31973: read-variable['obj',v14,-]|31974: read-property[v14,'rejection',v13]|31975: \<variable-non-null-undef\>['obj']|31976: read-variable['obj',v16,-]|31977: read-property[v16,'deferred',v15]|31978: \<variable-non-null-undef\>['obj']}" ] 
+BB10837 -> BB10838 [tailport=s, headport=n, headlabel="      10838"]
+BB10837 -> BB10842 [tailport=s, headport=n, color=gray]
+BB10838 [shape=record label="{31979: call-logError [v9,v10,v11,v13,v15,-]*}" ] 
+BB10838 -> BB10839 [tailport=s, headport=n]
+BB10838 -> BB10842 [tailport=s, headport=n, color=gray]
+BB10839 [shape=record label="{31980: constant[false,v1]}" ] 
+BB10839 -> BB10841 [tailport=s, headport=n, headlabel="      10841"]
+BB10840 [shape=record label="{31981: constant[true,v1]}" ] 
+BB10840 -> BB10841 [tailport=s, headport=n]
+BB10841 [shape=record label="{31982: return[v1]}" ] 
+BB10842 [shape=record label="{31983: exceptional-return}" ] 
+//#$~ 15286
+}

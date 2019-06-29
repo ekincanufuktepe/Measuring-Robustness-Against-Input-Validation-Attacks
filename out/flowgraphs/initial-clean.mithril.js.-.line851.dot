@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry53[shape=none,label=""];
+BB_entry53 -> BB1364 [tailport=s, headport=n, headlabel="    1364"]
+BB1364 [shape=record label="{4835: constant[undefined,v1]|4836: vardecl['deferred']}" ] 
+BB1364 -> BB1365 [tailport=s, headport=n, headlabel="      1365"]
+BB1365 [shape=record label="{4837: read-variable['Deferred',v3,-]}" ] 
+BB1365 -> BB1366 [tailport=s, headport=n, headlabel="      1366"]
+BB1365 -> BB1371 [tailport=s, headport=n, color=gray, headlabel="      1371"]
+BB1366 [shape=record label="{4838: construct [-,v3,v2]}" ] 
+BB1366 -> BB1367 [tailport=s, headport=n, headlabel="      1367"]
+BB1366 -> BB1371 [tailport=s, headport=n, color=gray]
+BB1367 [shape=record label="{4839: write-variable[v2,'deferred']*|4840: read-variable['deferred',v5,-]|4841: read-variable['propify',v7,v6]|4842: read-variable['deferred',v9,-]|4843: read-property[v9,'promise',v8]|4844: \<variable-non-null-undef\>['deferred']}" ] 
+BB1367 -> BB1368 [tailport=s, headport=n, headlabel="      1368"]
+BB1367 -> BB1371 [tailport=s, headport=n, color=gray]
+BB1368 [shape=record label="{4845: call-propify [v6,v7,v8,v4]}" ] 
+BB1368 -> BB1369 [tailport=s, headport=n, headlabel="      1369"]
+BB1368 -> BB1371 [tailport=s, headport=n, color=gray]
+BB1369 [shape=record label="{4846: write-property[v5,'promise',v4]|4847: \<variable-non-null-undef\>['deferred']*|4848: read-variable['deferred',v1,-]}" ] 
+BB1369 -> BB1370 [tailport=s, headport=n, headlabel="      1370"]
+BB1369 -> BB1371 [tailport=s, headport=n, color=gray]
+BB1370 [shape=record label="{4849: return[v1]}" ] 
+BB1371 [shape=record label="{4850: exceptional-return}" ] 
+//#$~ 854
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry273[shape=none,label=""];
+BB_entry273 -> BB3608 [tailport=s, headport=n, headlabel="    3608"]
+BB3608 [shape=record label="{14344: constant[undefined,v1]}" ] 
+BB3608 -> BB3609 [tailport=s, headport=n, headlabel="      3609"]
+BB3609 [shape=record label="{14345: read-variable['self',v3,-]|14346: read-property[v3,'_resback',-]|14347: \<variable-non-null-undef\>['self']|14348: read-variable['res',v4,-]}" ] 
+BB3609 -> BB3610 [tailport=s, headport=n, headlabel="      3610"]
+BB3609 -> BB3617 [tailport=s, headport=n, color=gray, headlabel="      3617"]
+BB3610 [shape=record label="{14349: call-self._resback [v3,'_resback',v4,-]*}" ] 
+BB3610 -> BB3611 [tailport=s, headport=n, headlabel="      3611"]
+BB3610 -> BB3617 [tailport=s, headport=n, color=gray]
+BB3611 [shape=record label="{14350: constant[1.0,v5]|14351: read-variable['self',v7,-]|14352: read-property[v7,'paused',v6]|14353: \<variable-non-null-undef\>['self']|14354: +[v6,v8]|14355: -[v8,v5,v9]|14356: write-property[v7,'paused',v9]|14357: \<variable-non-null-undef\>['self']*|14358: read-variable['self',v13,-]|14359: read-property[v13,'paused',v11]|14360: \<variable-non-null-undef\>['self']|14361: constant[0.0,v12]|14362: ===[v11,v12,v10]|14363: if[v10](true-block:3612,false-block:3613)}" ] 
+BB3611 -> BB3613 [tailport=s, headport=n, headlabel="      3613"]
+BB3611 -> BB3612 [tailport=s, headport=n, headlabel="      3612"]
+BB3611 -> BB3617 [tailport=s, headport=n, color=gray]
+BB3612 [shape=record label="{14364: read-variable['self',v16,-]|14365: read-property[v16,'fired',v14]|14366: \<variable-non-null-undef\>['self']|14367: constant[0.0,v15]|14368: \>=[v14,v15,v10]}" ] 
+BB3612 -> BB3613 [tailport=s, headport=n]
+BB3612 -> BB3617 [tailport=s, headport=n, color=gray]
+BB3613 [shape=record label="{14369: if[v10](true-block:3614,false-block:3616)}" ] 
+BB3613 -> BB3614 [tailport=s, headport=n, headlabel="      3614"]
+BB3613 -> BB3616 [tailport=s, headport=n, headlabel="      3616"]
+BB3614 [shape=record label="{14370: read-variable['self',v15,-]|14371: read-property[v15,'_fire',-]|14372: \<variable-non-null-undef\>['self']}" ] 
+BB3614 -> BB3615 [tailport=s, headport=n, headlabel="      3615"]
+BB3614 -> BB3617 [tailport=s, headport=n, color=gray]
+BB3615 [shape=record label="{14373: call-self._fire [v15,'_fire',-]*}" ] 
+BB3615 -> BB3616 [tailport=s, headport=n]
+BB3615 -> BB3617 [tailport=s, headport=n, color=gray]
+BB3616 [shape=record label="{14374: return[v1]}" ] 
+BB3617 [shape=record label="{14375: exceptional-return}" ] 
+//#$~ 2403
+}

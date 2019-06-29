@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1338[shape=none,label=""];
+BB_entry1338 -> BB15725 [tailport=s, headport=n, headlabel="    15725"]
+BB15725 [shape=record label="{54028: constant[undefined,v1]|54029: vardecl['contentKey']}" ] 
+BB15725 -> BB15726 [tailport=s, headport=n, headlabel="      15726"]
+BB15726 [shape=record label="{54030: constant[\"content.\",v3]|54031: read-variable['key',v4,-]|54032: +[v3,v4,v2]|54033: write-variable[v2,'contentKey']*|54034: read-variable['removeBeforeObserver',v6,v5]|54035: read-variable['this',v7,-]|54036: read-variable['contentKey',v8,-]|54037: constant[null,v9]|54038: read-variable['contentPropertyWillChange',v10,-]}" ] 
+BB15726 -> BB15727 [tailport=s, headport=n, headlabel="      15727"]
+BB15726 -> BB15731 [tailport=s, headport=n, color=gray, headlabel="      15731"]
+BB15727 [shape=record label="{54039: call-removeBeforeObserver [v5,v6,v7,v8,v9,v10,-]*}" ] 
+BB15727 -> BB15728 [tailport=s, headport=n, headlabel="      15728"]
+BB15727 -> BB15731 [tailport=s, headport=n, color=gray]
+BB15728 [shape=record label="{54040: read-variable['removeObserver',v12,v11]|54041: read-variable['this',v13,-]|54042: read-variable['contentKey',v14,-]|54043: constant[null,v15]|54044: read-variable['contentPropertyDidChange',v16,-]}" ] 
+BB15728 -> BB15729 [tailport=s, headport=n, headlabel="      15729"]
+BB15728 -> BB15731 [tailport=s, headport=n, color=gray]
+BB15729 [shape=record label="{54045: call-removeObserver [v11,v12,v13,v14,v15,v16,-]*}" ] 
+BB15729 -> BB15730 [tailport=s, headport=n, headlabel="      15730"]
+BB15729 -> BB15731 [tailport=s, headport=n, color=gray]
+BB15730 [shape=record label="{54046: return[v1]}" ] 
+BB15731 [shape=record label="{54047: exceptional-return}" ] 
+//#$~ 28963
+}

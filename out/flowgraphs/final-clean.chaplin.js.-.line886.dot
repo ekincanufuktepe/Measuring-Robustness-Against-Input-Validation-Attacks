@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry85[shape=none,label=""];
+BB_entry85 -> BB928 [tailport=s, headport=n, headlabel="    928"]
+BB928 [shape=record label="{3077: constant[undefined,v1]|3078: vardecl['route']}" ] 
+BB928 -> BB929 [tailport=s, headport=n, headlabel="      929"]
+BB929 [shape=record label="{3079: read-variable['this',v4,-]|3080: read-property[v4,'settings',v3]|3081: read-property[v3,'routeLinks',v2]|3082: \<property-non-null-undef\>[v4,'settings']|3083: write-variable[v2,'route']*|3084: read-variable['route',v6,-]|3085: ![v6,v5]|3086: if[v5](true-block:930,false-block:931)}" ] 
+BB929 -> BB930 [tailport=s, headport=n, headlabel="      930"]
+BB929 -> BB931 [tailport=s, headport=n, headlabel="      931"]
+BB929 -> BB937 [tailport=s, headport=n, color=gray, headlabel="      937"]
+BB930 [shape=record label="{3087: constant[undefined,v1]}" ] 
+BB930 -> BB936 [tailport=s, headport=n, headlabel="      936"]
+BB931 [shape=record label="{3088: read-variable['$',v7,-]|3089: if[v7](true-block:932,false-block:933)}" ] 
+BB931 -> BB932 [tailport=s, headport=n, headlabel="      932"]
+BB931 -> BB933 [tailport=s, headport=n, headlabel="      933"]
+BB931 -> BB937 [tailport=s, headport=n, color=gray]
+BB932 [shape=record label="{3090: read-variable['this',v10,-]|3091: read-property[v10,'$el',v9]|3092: read-property[v9,'on',-]|3093: \<property-non-null-undef\>[v10,'$el']|3094: constant[\"click\",v11]|3095: read-variable['route',v12,-]|3096: read-variable['this',v14,-]|3097: read-property[v14,'openLink',v13]}" ] 
+BB932 -> BB934 [tailport=s, headport=n, headlabel="      934"]
+BB932 -> BB937 [tailport=s, headport=n, color=gray]
+BB933 [shape=record label="{3098: read-variable['this',v9,-]|3099: read-property[v9,'delegate',-]|3100: constant[\"click\",v10]|3101: read-variable['route',v11,-]|3102: read-variable['this',v13,-]|3103: read-property[v13,'openLink',v12]}" ] 
+BB933 -> BB935 [tailport=s, headport=n, headlabel="      935"]
+BB933 -> BB937 [tailport=s, headport=n, color=gray]
+BB934 [shape=record label="{3104: call-this.$el.on [v9,'on',v11,v12,v13,v1]}" ] 
+BB934 -> BB936 [tailport=s, headport=n]
+BB934 -> BB937 [tailport=s, headport=n, color=gray]
+BB935 [shape=record label="{3105: call-this.delegate [v9,'delegate',v10,v11,v12,v1]}" ] 
+BB935 -> BB936 [tailport=s, headport=n]
+BB935 -> BB937 [tailport=s, headport=n, color=gray]
+BB936 [shape=record label="{3106: return[v1]}" ] 
+BB937 [shape=record label="{3107: exceptional-return}" ] 
+//#$~ 895
+}

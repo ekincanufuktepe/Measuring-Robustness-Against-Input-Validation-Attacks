@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2252[shape=none,label=""];
+BB_entry2252 -> BB25672 [tailport=s, headport=n, headlabel="    25672"]
+BB25672 [shape=record label="{84528: constant[undefined,v1]}" ] 
+BB25672 -> BB25673 [tailport=s, headport=n, headlabel="      25673"]
+BB25673 [shape=record label="{84529: read-variable['this',v3,-]|84530: read-property[v3,'_update',-]|84531: read-variable['this',v5,-]|84532: read-property[v5,'element',v4]|84533: if[v4](true-block:25676,false-block:25674)}" ] 
+BB25673 -> BB25676 [tailport=s, headport=n, headlabel="      25676"]
+BB25673 -> BB25674 [tailport=s, headport=n, headlabel="      25674"]
+BB25673 -> BB25679 [tailport=s, headport=n, color=gray, headlabel="      25679"]
+BB25674 [shape=record label="{84534: read-variable['this',v6,-]|84535: read-property[v6,'parent',-]}" ] 
+BB25674 -> BB25675 [tailport=s, headport=n, headlabel="      25675"]
+BB25674 -> BB25679 [tailport=s, headport=n, color=gray]
+BB25675 [shape=record label="{84536: call-this.parent [v6,'parent',v4]}" ] 
+BB25675 -> BB25676 [tailport=s, headport=n]
+BB25675 -> BB25679 [tailport=s, headport=n, color=gray]
+BB25676 [shape=record label="{84537: read-variable['nodeOrString',v5,-]}" ] 
+BB25676 -> BB25677 [tailport=s, headport=n, headlabel="      25677"]
+BB25676 -> BB25679 [tailport=s, headport=n, color=gray]
+BB25677 [shape=record label="{84538: call-this._update [v3,'_update',v4,v5,-]*}" ] 
+BB25677 -> BB25678 [tailport=s, headport=n, headlabel="      25678"]
+BB25677 -> BB25679 [tailport=s, headport=n, color=gray]
+BB25678 [shape=record label="{84539: return[v1]}" ] 
+BB25679 [shape=record label="{84540: exceptional-return}" ] 
+//#$~ 47258
+}

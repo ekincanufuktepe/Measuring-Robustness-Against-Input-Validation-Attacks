@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry394[shape=none,label=""];
+BB_entry394 -> BB5338 [tailport=s, headport=n, headlabel="    5338"]
+BB5338 [shape=record label="{13756: constant[undefined,v1]|13757: vardecl['templateNodeParent']|13758: vardecl['hasCompileParent']|13759: function-decl[function textInterpolateLinkFn ( scope node ),-]}" ] 
+BB5338 -> BB5339 [tailport=s, headport=n, headlabel="      5339"]
+BB5339 [shape=record label="{13760: read-variable['templateNode',v5,-]|13761: read-property[v5,'parent',-]|13762: \<variable-non-null-undef\>['templateNode']}" ] 
+BB5339 -> BB5340 [tailport=s, headport=n, headlabel="      5340"]
+BB5339 -> BB5345 [tailport=s, headport=n, color=gray, headlabel="      5345"]
+BB5340 [shape=record label="{13763: call-templateNode.parent [v5,'parent',v3]}" ] 
+BB5340 -> BB5341 [tailport=s, headport=n, headlabel="      5341"]
+BB5340 -> BB5345 [tailport=s, headport=n, color=gray]
+BB5341 [shape=record label="{13764: write-variable[v3,'templateNodeParent']*|13765: read-variable['templateNodeParent',v9,v2]|13766: read-property[v9,'length',v8]|13767: \<variable-non-null-undef\>['templateNodeParent']|13768: ![v8,v7]|13769: ![v7,v6]|13770: write-variable[v6,'hasCompileParent']*|13771: read-variable['hasCompileParent',v10,v2]|13772: if[v10](true-block:5342,false-block:5344)}" ] 
+BB5341 -> BB5342 [tailport=s, headport=n, headlabel="      5342"]
+BB5341 -> BB5344 [tailport=s, headport=n, headlabel="      5344"]
+BB5341 -> BB5345 [tailport=s, headport=n, color=gray]
+BB5342 [shape=record label="{13773: read-variable['compile',v12,-]|13774: read-property[v12,'$$addBindingClass',-]|13775: \<variable-non-null-undef\>['compile']|13776: read-variable['templateNodeParent',v13,v2]}" ] 
+BB5342 -> BB5343 [tailport=s, headport=n, headlabel="      5343"]
+BB5342 -> BB5345 [tailport=s, headport=n, color=gray]
+BB5343 [shape=record label="{13777: call-compile.$$addBindingClass [v12,'$$addBindingClass',v13,-]*}" ] 
+BB5343 -> BB5344 [tailport=s, headport=n]
+BB5343 -> BB5345 [tailport=s, headport=n, color=gray]
+BB5344 [shape=record label="{13778: return[v1]}" ] 
+BB5345 [shape=record label="{13779: exceptional-return}" ] 
+//#$~ 8451
+}

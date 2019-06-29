@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry818[shape=none,label=""];
+BB_entry818 -> BB10673 [tailport=s, headport=n, headlabel="    10673"]
+BB10673 [shape=record label="{27771: constant[undefined,v1]|27772: vardecl['callbacks']}" ] 
+BB10673 -> BB10674 [tailport=s, headport=n, headlabel="      10674"]
+BB10674 [shape=record label="{27773: read-variable['this',v5,-]|27774: read-property[v5,'promise',v4]|27775: read-property[v4,'$$state',v3]|27776: \<property-non-null-undef\>[v5,'promise']|27777: read-property[v3,'pending',v2]|27778: \<property-non-null-undef\>[v4,'$$state']|27779: write-variable[v2,'callbacks']*|27780: read-variable['this',v11,-]|27781: read-property[v11,'promise',v10]|27782: read-property[v10,'$$state',v9]|27783: \<property-non-null-undef\>[v11,'promise']|27784: read-property[v9,'status',v7]|27785: \<property-non-null-undef\>[v10,'$$state']|27786: constant[0.0,v8]|27787: \<=[v7,v8,v6]|27788: if[v6](true-block:10675,false-block:10677)}" ] 
+BB10674 -> BB10677 [tailport=s, headport=n, headlabel="      10677"]
+BB10674 -> BB10675 [tailport=s, headport=n, headlabel="      10675"]
+BB10674 -> BB10681 [tailport=s, headport=n, color=gray, headlabel="      10681"]
+BB10675 [shape=record label="{27789: read-variable['callbacks',v6,-]|27790: if[v6](true-block:10676,false-block:10677)}" ] 
+BB10675 -> BB10677 [tailport=s, headport=n]
+BB10675 -> BB10676 [tailport=s, headport=n, headlabel="      10676"]
+BB10675 -> BB10681 [tailport=s, headport=n, color=gray]
+BB10676 [shape=record label="{27791: read-variable['callbacks',v12,-]|27792: read-property[v12,'length',v6]|27793: \<variable-non-null-undef\>['callbacks']}" ] 
+BB10676 -> BB10677 [tailport=s, headport=n]
+BB10676 -> BB10681 [tailport=s, headport=n, color=gray]
+BB10677 [shape=record label="{27794: if[v6](true-block:10678,false-block:10680)}" ] 
+BB10677 -> BB10678 [tailport=s, headport=n, headlabel="      10678"]
+BB10677 -> BB10680 [tailport=s, headport=n, headlabel="      10680"]
+BB10678 [shape=record label="{27795: read-variable['nextTick',v13,v12]|27796: function-expr[function ( ),v14]}" ] 
+BB10678 -> BB10679 [tailport=s, headport=n, headlabel="      10679"]
+BB10678 -> BB10681 [tailport=s, headport=n, color=gray]
+BB10679 [shape=record label="{27797: call-nextTick [v12,v13,v14,-]*}" ] 
+BB10679 -> BB10680 [tailport=s, headport=n]
+BB10679 -> BB10681 [tailport=s, headport=n, color=gray]
+BB10680 [shape=record label="{27798: return[v1]}" ] 
+BB10681 [shape=record label="{27799: exceptional-return}" ] 
+//#$~ 14647
+}

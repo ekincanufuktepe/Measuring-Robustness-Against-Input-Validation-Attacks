@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry213[shape=none,label=""];
+BB_entry213 -> BB2345 [tailport=s, headport=n, headlabel="    2345"]
+BB2345 [shape=record label="{5797: constant[undefined,v1]}" ] 
+BB2345 -> BB2346 [tailport=s, headport=n, headlabel="      2346"]
+BB2346 [shape=record label="{5798: read-variable['settings',v3,-]|5799: read-property[v3,'global',v2]|5800: \<variable-non-null-undef\>['settings']|5801: if[v2](true-block:2347,false-block:2351)}" ] 
+BB2346 -> BB2347 [tailport=s, headport=n, headlabel="      2347"]
+BB2346 -> BB2351 [tailport=s, headport=n, headlabel="      2351"]
+BB2346 -> BB2352 [tailport=s, headport=n, color=gray, headlabel="      2352"]
+BB2347 [shape=record label="{5802: read-variable['triggerAndReturn',v5,v4]|5803: read-variable['context',v6,-]|5804: if[v6](true-block:2349,false-block:2348)}" ] 
+BB2347 -> BB2349 [tailport=s, headport=n, headlabel="      2349"]
+BB2347 -> BB2348 [tailport=s, headport=n, headlabel="      2348"]
+BB2347 -> BB2352 [tailport=s, headport=n, color=gray]
+BB2348 [shape=record label="{5805: read-variable['document',v6,-]}" ] 
+BB2348 -> BB2349 [tailport=s, headport=n]
+BB2348 -> BB2352 [tailport=s, headport=n, color=gray]
+BB2349 [shape=record label="{5806: read-variable['eventName',v7,-]|5807: read-variable['data',v8,-]}" ] 
+BB2349 -> BB2350 [tailport=s, headport=n, headlabel="      2350"]
+BB2349 -> BB2352 [tailport=s, headport=n, color=gray]
+BB2350 [shape=record label="{5808: call-triggerAndReturn [v4,v5,v6,v7,v8,v1]}" ] 
+BB2350 -> BB2351 [tailport=s, headport=n]
+BB2350 -> BB2352 [tailport=s, headport=n, color=gray]
+BB2351 [shape=record label="{5809: return[v1]}" ] 
+BB2352 [shape=record label="{5810: exceptional-return}" ] 
+//#$~ 1181
+}

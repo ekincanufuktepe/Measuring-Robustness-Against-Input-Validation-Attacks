@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry289[shape=none,label=""];
+BB_entry289 -> BB4276 [tailport=s, headport=n, headlabel="    4276"]
+BB4276 [shape=record label="{15013: constant[undefined,v1]|15014: vardecl['i']}" ] 
+BB4276 -> BB4277 [tailport=s, headport=n, headlabel="      4277"]
+BB4277 [shape=record label="{15015: constant[0.0,v3]|15016: write-variable[v3,'i']*}" ] 
+BB4277 -> BB4278 [tailport=s, headport=n, headlabel="      4278"]
+BB4278 [shape=record label="{15017: read-variable['i',v4,-]|15018: read-variable['updates',v6,-]|15019: read-property[v6,'length',v5]|15020: \<variable-non-null-undef\>['updates']|15021: \<[v4,v5,v2]|15022: if[v2](true-block:4279,false-block:4280)}" ] 
+BB4278 -> BB4279 [tailport=s, headport=n, headlabel="      4279"]
+BB4278 -> BB4280 [tailport=s, headport=n, headlabel="      4280"]
+BB4278 -> BB4285 [tailport=s, headport=n, color=gray, headlabel="      4285"]
+BB4279 [shape=record label="{15023: read-variable['updates',v9,-]|15024: read-variable['i',v10,-]|15025: read-property[v9,v10,v8]|15026: \<variable-non-null-undef\>['updates']|15027: read-variable['ReactMount',v12,-]|15028: read-property[v12,'getNode',-]|15029: \<variable-non-null-undef\>['ReactMount']|15030: read-variable['updates',v15,-]|15031: read-variable['i',v16,-]|15032: read-property[v15,v16,v14]|15033: \<variable-non-null-undef\>['updates']|15034: read-property[v14,'parentID',v13]|15035: \<property-non-null-undef\>[v15,v16]}" ] 
+BB4279 -> BB4281 [tailport=s, headport=n, headlabel="      4281"]
+BB4279 -> BB4285 [tailport=s, headport=n, color=gray]
+BB4280 [shape=record label="{15036: read-variable['DOMChildrenOperations',v8,-]|15037: read-property[v8,'processUpdates',-]|15038: \<variable-non-null-undef\>['DOMChildrenOperations']|15039: read-variable['updates',v9,-]|15040: read-variable['markup',v10,-]}" ] 
+BB4280 -> BB4283 [tailport=s, headport=n, headlabel="      4283"]
+BB4280 -> BB4285 [tailport=s, headport=n, color=gray]
+BB4281 [shape=record label="{15041: call-ReactMount.getNode [v12,'getNode',v13,v7]}" ] 
+BB4281 -> BB4282 [tailport=s, headport=n, headlabel="      4282"]
+BB4281 -> BB4285 [tailport=s, headport=n, color=gray]
+BB4282 [shape=record label="{15042: write-property[v8,'parentNode',v7]|15043: \<property-non-null-undef\>[v9,v10]*|15044: constant[1.0,v17]|15045: read-variable['i',v18,-]|15046: +[v18,v19]|15047: +[v19,v17,v20]|15048: write-variable[v20,'i']}" ] 
+BB4282 -> BB4278 [tailport=s, headport=n]
+BB4282 -> BB4285 [tailport=s, headport=n, color=gray]
+BB4283 [shape=record label="{15049: call-DOMChildrenOperations.processUpdates [v8,'processUpdates',v9,v10,-]*}" ] 
+BB4283 -> BB4284 [tailport=s, headport=n, headlabel="      4284"]
+BB4283 -> BB4285 [tailport=s, headport=n, color=gray]
+BB4284 [shape=record label="{15050: return[v1]}" ] 
+BB4285 [shape=record label="{15051: exceptional-return}" ] 
+//#$~ 8155
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry58[shape=none,label=""];
+BB_entry58 -> BB630 [tailport=s, headport=n, headlabel="    630"]
+BB630 [shape=record label="{2001: constant[undefined,v1]}" ] 
+BB630 -> BB631 [tailport=s, headport=n, headlabel="      631"]
+BB631 [shape=record label="{2002: read-variable['object',v3,-]|2003: read-property[v3,'set',-]|2004: \<variable-non-null-undef\>['object']|2005: read-variable['keyValue',v4,-]|2006: read-variable['map',v7,v6]|2007: read-variable['mapType',v8,-]|2008: read-variable['values',v9,-]|2009: read-variable['depth',v10,-]}" ] 
+BB631 -> BB632 [tailport=s, headport=n, headlabel="      632"]
+BB631 -> BB635 [tailport=s, headport=n, color=gray, headlabel="      635"]
+BB632 [shape=record label="{2010: call-map [v6,v7,v8,v9,v10,v5]}" ] 
+BB632 -> BB633 [tailport=s, headport=n, headlabel="      633"]
+BB632 -> BB635 [tailport=s, headport=n, color=gray]
+BB633 [shape=record label="{2011: call-object.set [v3,'set',v4,v5,-]*}" ] 
+BB633 -> BB634 [tailport=s, headport=n, headlabel="      634"]
+BB633 -> BB635 [tailport=s, headport=n, color=gray]
+BB634 [shape=record label="{2012: return[v1]}" ] 
+BB635 [shape=record label="{2013: exceptional-return}" ] 
+//#$~ 385
+}

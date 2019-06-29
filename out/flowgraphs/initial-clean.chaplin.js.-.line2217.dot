@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry198[shape=none,label=""];
+BB_entry198 -> BB2512 [tailport=s, headport=n, headlabel="    2512"]
+BB2512 [shape=record label="{8258: constant[undefined,v1]|8259: vardecl['portion']|8260: vardecl['_this']}" ] 
+BB2512 -> BB2513 [tailport=s, headport=n, headlabel="      2513"]
+BB2513 [shape=record label="{8261: read-variable['this',v2,-]|8262: write-variable[v2,'_this']*|8263: read-variable['this',v5,-]|8264: read-property[v5,'replaceParams',-]|8265: read-variable['optionalPortion',v6,-]|8266: function-expr[function ( match param ),v7]}" ] 
+BB2513 -> BB2514 [tailport=s, headport=n, headlabel="      2514"]
+BB2513 -> BB2517 [tailport=s, headport=n, color=gray, headlabel="      2517"]
+BB2514 [shape=record label="{8267: call-this.replaceParams [v5,'replaceParams',v6,v7,v3]}" ] 
+BB2514 -> BB2515 [tailport=s, headport=n, headlabel="      2515"]
+BB2514 -> BB2517 [tailport=s, headport=n, color=gray]
+BB2515 [shape=record label="{8268: write-variable[v3,'portion']*|8269: constant[\"(?:\",v10]|8270: read-variable['portion',v11,-]|8271: +[v10,v11,v8]|8272: constant[\")?\",v9]|8273: +[v8,v9,v1]}" ] 
+BB2515 -> BB2516 [tailport=s, headport=n, headlabel="      2516"]
+BB2515 -> BB2517 [tailport=s, headport=n, color=gray]
+BB2516 [shape=record label="{8274: return[v1]}" ] 
+BB2517 [shape=record label="{8275: exceptional-return}" ] 
+//#$~ 2224
+}

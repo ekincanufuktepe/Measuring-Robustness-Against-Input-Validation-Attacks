@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2450[shape=none,label=""];
+BB_entry2450 -> BB28027 [tailport=s, headport=n, headlabel="    28027"]
+BB28027 [shape=record label="{93110: constant[undefined,v1]}" ] 
+BB28027 -> BB28028 [tailport=s, headport=n, headlabel="      28028"]
+BB28028 [shape=record label="{93111: read-variable['parentConstructor',v3,-]|93112: read-property[v3,'call',-]|93113: \<variable-non-null-undef\>['parentConstructor']|93114: read-variable['this',v4,-]|93115: read-variable['props',v5,-]|93116: if[v5](true-block:28030,false-block:28029)}" ] 
+BB28028 -> BB28030 [tailport=s, headport=n, headlabel="      28030"]
+BB28028 -> BB28029 [tailport=s, headport=n, headlabel="      28029"]
+BB28028 -> BB28032 [tailport=s, headport=n, color=gray, headlabel="      28032"]
+BB28029 [shape=record label="{93117: new[v5]}" ] 
+BB28029 -> BB28030 [tailport=s, headport=n]
+BB28030 [shape=record label="{93118: call-parentConstructor.call [v3,'call',v4,v5,-]*}" ] 
+BB28030 -> BB28031 [tailport=s, headport=n, headlabel="      28031"]
+BB28030 -> BB28032 [tailport=s, headport=n, color=gray]
+BB28031 [shape=record label="{93119: return[v1]}" ] 
+BB28032 [shape=record label="{93120: exceptional-return}" ] 
+//#$~ 50195
+}

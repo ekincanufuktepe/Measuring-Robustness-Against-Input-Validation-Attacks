@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry798[shape=none,label=""];
+BB_entry798 -> BB10972 [tailport=s, headport=n, headlabel="    10972"]
+BB10972 [shape=record label="{32298: constant[undefined,v1]|32299: vardecl['testDiv']|32300: vardecl['fullEngine']|32301: vardecl['acme']|32302: vardecl['lite']}" ] 
+BB10972 -> BB10973 [tailport=s, headport=n, headlabel="      10973"]
+BB10973 [shape=record label="{32303: read-variable['document',v4,-]|32304: read-property[v4,'createElement',-]|32305: \<variable-non-null-undef\>['document']|32306: constant[\"div\",v5]}" ] 
+BB10973 -> BB10974 [tailport=s, headport=n, headlabel="      10974"]
+BB10973 -> BB10981 [tailport=s, headport=n, color=gray, headlabel="      10981"]
+BB10974 [shape=record label="{32307: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB10974 -> BB10975 [tailport=s, headport=n, headlabel="      10975"]
+BB10974 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10975 [shape=record label="{32308: write-variable[v2,'testDiv']*|32309: read-variable['has',v7,-]|32310: read-property[v7,'add',-]|32311: \<variable-non-null-undef\>['has']|32312: constant[\"dom-qsa2.1\",v8]|32313: read-variable['testDiv',v12,-]|32314: read-property[v12,'querySelectorAll',v11]|32315: \<variable-non-null-undef\>['testDiv']|32316: ![v11,v10]|32317: ![v10,v9]}" ] 
+BB10975 -> BB10976 [tailport=s, headport=n, headlabel="      10976"]
+BB10975 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10976 [shape=record label="{32318: call-has.add [v7,'add',v8,v9,-]*}" ] 
+BB10976 -> BB10977 [tailport=s, headport=n, headlabel="      10977"]
+BB10976 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10977 [shape=record label="{32319: read-variable['has',v14,-]|32320: read-property[v14,'add',-]|32321: \<variable-non-null-undef\>['has']|32322: constant[\"dom-qsa3\",v15]|32323: function-expr[function ( ),v16]}" ] 
+BB10977 -> BB10978 [tailport=s, headport=n, headlabel="      10978"]
+BB10977 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10978 [shape=record label="{32324: call-has.add [v14,'add',v15,v16,-]*}" ] 
+BB10978 -> BB10979 [tailport=s, headport=n, headlabel="      10979"]
+BB10978 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10979 [shape=record label="{32325: constant[\"./acme\",v17]|32326: write-variable[v17,'acme']*|32327: constant[\"./lite\",v18]|32328: write-variable[v18,'lite']*|32329: new[v1]|32330: function-expr[function ( id parentRequire loaded config ),v19]|32331: write-property[v1,'load',v19]}" ] 
+BB10979 -> BB10980 [tailport=s, headport=n, headlabel="      10980"]
+BB10979 -> BB10981 [tailport=s, headport=n, color=gray]
+BB10980 [shape=record label="{32332: return[v1]}" ] 
+BB10981 [shape=record label="{32333: exceptional-return}" ] 
+//#$~ 15377
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry725[shape=none,label=""];
+BB_entry725 -> BB9460 [tailport=s, headport=n, headlabel="    9460"]
+BB9460 [shape=record label="{26608: constant[undefined,v1]}" ] 
+BB9460 -> BB9461 [tailport=s, headport=n, headlabel="      9461"]
+BB9461 [shape=record label="{26609: read-variable['this',v3,-]|26610: read-variable['expression',v5,-]|26611: read-property[v5,'strip',-]|26612: \<variable-non-null-undef\>['expression']}" ] 
+BB9461 -> BB9462 [tailport=s, headport=n, headlabel="      9462"]
+BB9461 -> BB9465 [tailport=s, headport=n, color=gray, headlabel="      9465"]
+BB9462 [shape=record label="{26613: call-expression.strip [v5,'strip',v2]}" ] 
+BB9462 -> BB9463 [tailport=s, headport=n, headlabel="      9463"]
+BB9462 -> BB9465 [tailport=s, headport=n, color=gray]
+BB9463 [shape=record label="{26614: write-property[v3,'expression',v2]*}" ] 
+BB9463 -> BB9464 [tailport=s, headport=n, headlabel="      9464"]
+BB9463 -> BB9465 [tailport=s, headport=n, color=gray]
+BB9464 [shape=record label="{26615: return[v1]}" ] 
+BB9465 [shape=record label="{26616: exceptional-return}" ] 
+//#$~ 7460
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry710[shape=none,label=""];
+BB_entry710 -> BB9295 [tailport=s, headport=n, headlabel="    9295"]
+BB9295 [shape=record label="{26291: constant[undefined,v1]}" ] 
+BB9295 -> BB9296 [tailport=s, headport=n, headlabel="      9296"]
+BB9296 [shape=record label="{26292: read-variable['options',v2,-]|26293: if[v2](true-block:9298,false-block:9297)}" ] 
+BB9296 -> BB9298 [tailport=s, headport=n, headlabel="      9298"]
+BB9296 -> BB9297 [tailport=s, headport=n, headlabel="      9297"]
+BB9296 -> BB9301 [tailport=s, headport=n, color=gray, headlabel="      9301"]
+BB9297 [shape=record label="{26294: new[v2]}" ] 
+BB9297 -> BB9298 [tailport=s, headport=n]
+BB9298 [shape=record label="{26295: write-variable[v2,'options']*|26296: read-variable['Element',v4,-]|26297: read-property[v4,'clonePosition',-]|26298: \<variable-non-null-undef\>['Element']|26299: read-variable['target',v5,-]|26300: read-variable['source',v6,-]|26301: read-variable['options',v7,-]}" ] 
+BB9298 -> BB9299 [tailport=s, headport=n, headlabel="      9299"]
+BB9298 -> BB9301 [tailport=s, headport=n, color=gray]
+BB9299 [shape=record label="{26302: call-Element.clonePosition [v4,'clonePosition',v5,v6,v7,v1]}" ] 
+BB9299 -> BB9300 [tailport=s, headport=n, headlabel="      9300"]
+BB9299 -> BB9301 [tailport=s, headport=n, color=gray]
+BB9300 [shape=record label="{26303: return[v1]}" ] 
+BB9301 [shape=record label="{26304: exceptional-return}" ] 
+//#$~ 7381
+}

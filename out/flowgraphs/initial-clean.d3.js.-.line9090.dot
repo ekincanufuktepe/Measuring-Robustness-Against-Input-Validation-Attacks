@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry1440[shape=none,label=""];
+BB_entry1440 -> BB15500 [tailport=s, headport=n, headlabel="    15500"]
+BB15500 [shape=record label="{53305: constant[undefined,v1]|53306: vardecl['xi']|53307: vardecl['yi']}" ] 
+BB15500 -> BB15501 [tailport=s, headport=n, headlabel="      15501"]
+BB15501 [shape=record label="{53308: read-variable['d3_interpolateArray',v4,v3]|53309: read-variable['xExtent',v5,-]|53310: read-variable['extent1',v7,-]|53311: read-property[v7,'x',v6]|53312: \<variable-non-null-undef\>['extent1']}" ] 
+BB15501 -> BB15502 [tailport=s, headport=n, headlabel="      15502"]
+BB15501 -> BB15507 [tailport=s, headport=n, color=gray, headlabel="      15507"]
+BB15502 [shape=record label="{53313: call-d3_interpolateArray [v3,v4,v5,v6,v2]}" ] 
+BB15502 -> BB15503 [tailport=s, headport=n, headlabel="      15503"]
+BB15502 -> BB15507 [tailport=s, headport=n, color=gray]
+BB15503 [shape=record label="{53314: write-variable[v2,'xi']*|53315: read-variable['d3_interpolateArray',v10,v9]|53316: read-variable['yExtent',v11,-]|53317: read-variable['extent1',v13,-]|53318: read-property[v13,'y',v12]|53319: \<variable-non-null-undef\>['extent1']}" ] 
+BB15503 -> BB15504 [tailport=s, headport=n, headlabel="      15504"]
+BB15503 -> BB15507 [tailport=s, headport=n, color=gray]
+BB15504 [shape=record label="{53320: call-d3_interpolateArray [v9,v10,v11,v12,v8]}" ] 
+BB15504 -> BB15505 [tailport=s, headport=n, headlabel="      15505"]
+BB15504 -> BB15507 [tailport=s, headport=n, color=gray]
+BB15505 [shape=record label="{53321: write-variable[v8,'yi']*|53322: constant[null,v14]|53323: write-variable[v14,'yExtentDomain']|53324: write-variable[v14,'xExtentDomain']*|53325: function-expr[function ( t ),v1]}" ] 
+BB15505 -> BB15506 [tailport=s, headport=n, headlabel="      15506"]
+BB15506 [shape=record label="{53326: return[v1]}" ] 
+BB15507 [shape=record label="{53327: exceptional-return}" ] 
+//#$~ 9098
+}

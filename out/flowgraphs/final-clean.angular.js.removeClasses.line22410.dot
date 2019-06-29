@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1128[shape=none,label=""];
+BB_entry1128 -> BB14227 [tailport=s, headport=n, headlabel="    14227"]
+BB14227 [shape=record label="{37001: constant[undefined,v1]|37002: vardecl['newClasses']}" ] 
+BB14227 -> BB14228 [tailport=s, headport=n, headlabel="      14228"]
+BB14228 [shape=record label="{37003: read-variable['digestClassCounts',v4,v3]|37004: read-variable['classes',v5,-]|37005: constant[-1.0,v6]}" ] 
+BB14228 -> BB14229 [tailport=s, headport=n, headlabel="      14229"]
+BB14228 -> BB14233 [tailport=s, headport=n, color=gray, headlabel="      14233"]
+BB14229 [shape=record label="{37006: call-digestClassCounts [v3,v4,v5,v6,v2]}" ] 
+BB14229 -> BB14230 [tailport=s, headport=n, headlabel="      14230"]
+BB14229 -> BB14233 [tailport=s, headport=n, color=gray]
+BB14230 [shape=record label="{37007: write-variable[v2,'newClasses']*|37008: read-variable['attr',v8,-]|37009: read-property[v8,'$removeClass',-]|37010: \<variable-non-null-undef\>['attr']|37011: read-variable['newClasses',v9,-]}" ] 
+BB14230 -> BB14231 [tailport=s, headport=n, headlabel="      14231"]
+BB14230 -> BB14233 [tailport=s, headport=n, color=gray]
+BB14231 [shape=record label="{37012: call-attr.$removeClass [v8,'$removeClass',v9,-]*}" ] 
+BB14231 -> BB14232 [tailport=s, headport=n, headlabel="      14232"]
+BB14231 -> BB14233 [tailport=s, headport=n, color=gray]
+BB14232 [shape=record label="{37013: return[v1]}" ] 
+BB14233 [shape=record label="{37014: exceptional-return}" ] 
+//#$~ 22412
+}

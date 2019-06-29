@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry76[shape=none,label=""];
+BB_entry76 -> BB951 [tailport=s, headport=n, headlabel="    951"]
+BB951 [shape=record label="{2838: constant[undefined,v1]}" ] 
+BB951 -> BB952 [tailport=s, headport=n, headlabel="      952"]
+BB952 [shape=record label="{2839: constant[null,v2]|2840: write-variable[v2,'longTapTimeout']*|2841: read-variable['touch',v4,-]|2842: read-property[v4,'last',v3]|2843: \<variable-non-null-undef\>['touch']|2844: if[v3](true-block:953,false-block:956)}" ] 
+BB952 -> BB953 [tailport=s, headport=n, headlabel="      953"]
+BB952 -> BB956 [tailport=s, headport=n, headlabel="      956"]
+BB952 -> BB957 [tailport=s, headport=n, color=gray, headlabel="      957"]
+BB953 [shape=record label="{2845: read-variable['touch',v7,-]|2846: read-property[v7,'el',v6]|2847: \<variable-non-null-undef\>['touch']|2848: read-property[v6,'trigger',-]|2849: \<property-non-null-undef\>[v7,'el']|2850: constant[\"longTap\",v8]}" ] 
+BB953 -> BB954 [tailport=s, headport=n, headlabel="      954"]
+BB953 -> BB957 [tailport=s, headport=n, color=gray]
+BB954 [shape=record label="{2851: call-touch.el.trigger [v6,'trigger',v8,-]*}" ] 
+BB954 -> BB955 [tailport=s, headport=n, headlabel="      955"]
+BB954 -> BB957 [tailport=s, headport=n, color=gray]
+BB955 [shape=record label="{2852: new[v9]|2853: write-variable[v9,'touch']*}" ] 
+BB955 -> BB956 [tailport=s, headport=n]
+BB956 [shape=record label="{2854: return[v1]}" ] 
+BB957 [shape=record label="{2855: exceptional-return}" ] 
+//#$~ 740
+}

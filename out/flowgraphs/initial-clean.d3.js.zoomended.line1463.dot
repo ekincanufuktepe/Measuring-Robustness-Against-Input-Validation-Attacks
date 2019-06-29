@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry246[shape=none,label=""];
+BB_entry246 -> BB2498 [tailport=s, headport=n, headlabel="    2498"]
+BB2498 [shape=record label="{7508: constant[undefined,v1]}" ] 
+BB2498 -> BB2499 [tailport=s, headport=n, headlabel="      2499"]
+BB2499 [shape=record label="{7509: constant[1.0,v4]|7510: read-variable['zooming',v5,-]|7511: +[v5,v6]|7512: -[v6,v4,v3]|7513: write-variable[v3,'zooming']|7514: ![v3,v2]|7515: if[v2](true-block:2500,false-block:2502)}" ] 
+BB2499 -> BB2500 [tailport=s, headport=n, headlabel="      2500"]
+BB2499 -> BB2502 [tailport=s, headport=n, headlabel="      2502"]
+BB2499 -> BB2504 [tailport=s, headport=n, color=gray, headlabel="      2504"]
+BB2500 [shape=record label="{7516: read-variable['dispatch',v8,v7]|7517: new[v9]|7518: constant[\"zoomend\",v10]|7519: write-property[v9,'type',v10]}" ] 
+BB2500 -> BB2501 [tailport=s, headport=n, headlabel="      2501"]
+BB2500 -> BB2504 [tailport=s, headport=n, color=gray]
+BB2501 [shape=record label="{7520: call-dispatch [v7,v8,v9,-]*}" ] 
+BB2501 -> BB2502 [tailport=s, headport=n]
+BB2501 -> BB2504 [tailport=s, headport=n, color=gray]
+BB2502 [shape=record label="{7521: constant[null,v7]|7522: write-variable[v7,'center0']*}" ] 
+BB2502 -> BB2503 [tailport=s, headport=n, headlabel="      2503"]
+BB2503 [shape=record label="{7523: return[v1]}" ] 
+BB2504 [shape=record label="{7524: exceptional-return}" ] 
+//#$~ 1467
+}

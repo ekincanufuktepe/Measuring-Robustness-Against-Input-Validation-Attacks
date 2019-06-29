@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry992[shape=none,label=""];
+BB_entry992 -> BB12047 [tailport=s, headport=n, headlabel="    12047"]
+BB12047 [shape=record label="{41239: constant[undefined,v1]}" ] 
+BB12047 -> BB12048 [tailport=s, headport=n, headlabel="      12048"]
+BB12048 [shape=record label="{41240: read-variable['supportsHistoryState',v2,-]|41241: if[v2](true-block:12049,false-block:12050)}" ] 
+BB12048 -> BB12049 [tailport=s, headport=n, headlabel="      12049"]
+BB12048 -> BB12050 [tailport=s, headport=n, headlabel="      12050"]
+BB12048 -> BB12054 [tailport=s, headport=n, color=gray, headlabel="      12054"]
+BB12049 [shape=record label="{41242: read-variable['get',v5,v4]|41243: read-variable['this',v6,-]|41244: constant[\"history\",v7]}" ] 
+BB12049 -> BB12051 [tailport=s, headport=n, headlabel="      12051"]
+BB12049 -> BB12054 [tailport=s, headport=n, color=gray]
+BB12050 [shape=record label="{41245: read-variable['this',v3,-]|41246: read-property[v3,'_historyState',v1]}" ] 
+BB12050 -> BB12053 [tailport=s, headport=n, headlabel="      12053"]
+BB12050 -> BB12054 [tailport=s, headport=n, color=gray]
+BB12051 [shape=record label="{41247: call-get [v4,v5,v6,v7,v3]}" ] 
+BB12051 -> BB12052 [tailport=s, headport=n, headlabel="      12052"]
+BB12051 -> BB12054 [tailport=s, headport=n, color=gray]
+BB12052 [shape=record label="{41248: read-property[v3,'state',v1]}" ] 
+BB12052 -> BB12053 [tailport=s, headport=n]
+BB12052 -> BB12054 [tailport=s, headport=n, color=gray]
+BB12053 [shape=record label="{41249: return[v1]}" ] 
+BB12054 [shape=record label="{41250: exceptional-return}" ] 
+//#$~ 22196
+}

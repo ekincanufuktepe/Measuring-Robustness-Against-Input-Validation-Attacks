@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry419[shape=none,label=""];
+BB_entry419 -> BB5226 [tailport=s, headport=n, headlabel="    5226"]
+BB5226 [shape=record label="{18734: constant[undefined,v1]}" ] 
+BB5226 -> BB5227 [tailport=s, headport=n, headlabel="      5227"]
+BB5227 [shape=record label="{18735: read-variable['isNativeFunc',v4,v3]|18736: read-variable['nativeFunc',v5,-]}" ] 
+BB5227 -> BB5228 [tailport=s, headport=n, headlabel="      5228"]
+BB5227 -> BB5233 [tailport=s, headport=n, color=gray, headlabel="      5233"]
+BB5228 [shape=record label="{18737: call-isNativeFunc [v3,v4,v5,v2]}" ] 
+BB5228 -> BB5229 [tailport=s, headport=n, headlabel="      5229"]
+BB5228 -> BB5233 [tailport=s, headport=n, color=gray]
+BB5229 [shape=record label="{18738: if[v2](true-block:5230,false-block:5231)}" ] 
+BB5229 -> BB5230 [tailport=s, headport=n, headlabel="      5230"]
+BB5229 -> BB5231 [tailport=s, headport=n, headlabel="      5231"]
+BB5230 [shape=record label="{18739: read-variable['nativeFunc',v1,-]}" ] 
+BB5230 -> BB5232 [tailport=s, headport=n, headlabel="      5232"]
+BB5230 -> BB5233 [tailport=s, headport=n, color=gray]
+BB5231 [shape=record label="{18740: read-variable['shim',v1,-]}" ] 
+BB5231 -> BB5232 [tailport=s, headport=n]
+BB5231 -> BB5233 [tailport=s, headport=n, color=gray]
+BB5232 [shape=record label="{18741: return[v1]}" ] 
+BB5233 [shape=record label="{18742: exceptional-return}" ] 
+//#$~ 9524
+}

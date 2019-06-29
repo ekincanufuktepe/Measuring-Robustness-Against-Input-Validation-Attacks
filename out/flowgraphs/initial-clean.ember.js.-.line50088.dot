@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry2443[shape=none,label=""];
+BB_entry2443 -> BB27917 [tailport=s, headport=n, headlabel="    27917"]
+BB27917 [shape=record label="{92735: constant[undefined,v1]|92736: vardecl['args']}" ] 
+BB27917 -> BB27918 [tailport=s, headport=n, headlabel="      27918"]
+BB27918 [shape=record label="{92737: read-variable['slice',v4,-]|92738: read-property[v4,'call',-]|92739: \<variable-non-null-undef\>['slice']|92740: read-variable['boundArgs',v5,-]|92741: constant[2.0,v6]}" ] 
+BB27918 -> BB27919 [tailport=s, headport=n, headlabel="      27919"]
+BB27918 -> BB27925 [tailport=s, headport=n, color=gray, headlabel="      27925"]
+BB27919 [shape=record label="{92742: call-slice.call [v4,'call',v5,v6,v2]}" ] 
+BB27919 -> BB27920 [tailport=s, headport=n, headlabel="      27920"]
+BB27919 -> BB27925 [tailport=s, headport=n, color=gray]
+BB27920 [shape=record label="{92743: write-variable[v2,'args']*|92744: read-variable['args',v8,-]|92745: read-property[v8,'push',-]|92746: \<variable-non-null-undef\>['args']|92747: read-variable['value',v9,-]}" ] 
+BB27920 -> BB27921 [tailport=s, headport=n, headlabel="      27921"]
+BB27920 -> BB27925 [tailport=s, headport=n, color=gray]
+BB27921 [shape=record label="{92748: call-args.push [v8,'push',v9,-]*}" ] 
+BB27921 -> BB27922 [tailport=s, headport=n, headlabel="      27922"]
+BB27921 -> BB27925 [tailport=s, headport=n, color=gray]
+BB27922 [shape=record label="{92749: read-variable['fn',v11,-]|92750: read-property[v11,'apply',-]|92751: \<variable-non-null-undef\>['fn']|92752: read-variable['context',v12,-]|92753: read-variable['args',v13,-]}" ] 
+BB27922 -> BB27923 [tailport=s, headport=n, headlabel="      27923"]
+BB27922 -> BB27925 [tailport=s, headport=n, color=gray]
+BB27923 [shape=record label="{92754: call-fn.apply [v11,'apply',v12,v13,v1]}" ] 
+BB27923 -> BB27924 [tailport=s, headport=n, headlabel="      27924"]
+BB27923 -> BB27925 [tailport=s, headport=n, color=gray]
+BB27924 [shape=record label="{92755: return[v1]}" ] 
+BB27925 [shape=record label="{92756: exceptional-return}" ] 
+//#$~ 50091
+}

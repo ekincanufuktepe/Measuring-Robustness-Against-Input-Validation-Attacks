@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry267[shape=none,label=""];
+BB_entry267 -> BB4062 [tailport=s, headport=n, headlabel="    4062"]
+BB4062 [shape=record label="{11866: constant[undefined,v1]}" ] 
+BB4062 -> BB4063 [tailport=s, headport=n, headlabel="      4063"]
+BB4063 [shape=record label="{11867: read-variable['value',v3,-]|11868: constant[false,v4]|11869: ===[v3,v4,v2]|11870: if[v2](true-block:4064,false-block:4065)}" ] 
+BB4063 -> BB4064 [tailport=s, headport=n, headlabel="      4064"]
+BB4063 -> BB4065 [tailport=s, headport=n, headlabel="      4065"]
+BB4063 -> BB4070 [tailport=s, headport=n, color=gray, headlabel="      4070"]
+BB4064 [shape=record label="{11871: read-variable['jQuery',v6,-]|11872: read-property[v6,'removeAttr',-]|11873: \<variable-non-null-undef\>['jQuery']|11874: read-variable['elem',v7,-]|11875: read-variable['name',v8,-]}" ] 
+BB4064 -> BB4066 [tailport=s, headport=n, headlabel="      4066"]
+BB4064 -> BB4070 [tailport=s, headport=n, color=gray]
+BB4065 [shape=record label="{11876: read-variable['elem',v6,-]|11877: read-property[v6,'setAttribute',-]|11878: \<variable-non-null-undef\>['elem']|11879: read-variable['name',v7,-]|11880: read-variable['name',v8,-]}" ] 
+BB4065 -> BB4067 [tailport=s, headport=n, headlabel="      4067"]
+BB4065 -> BB4070 [tailport=s, headport=n, color=gray]
+BB4066 [shape=record label="{11881: call[v6,'removeAttr',v7,v8,-]*}" ] 
+BB4066 -> BB4068 [tailport=s, headport=n, headlabel="      4068"]
+BB4066 -> BB4070 [tailport=s, headport=n, color=gray]
+BB4067 [shape=record label="{11882: call[v6,'setAttribute',v7,v8,-]*}" ] 
+BB4067 -> BB4068 [tailport=s, headport=n]
+BB4067 -> BB4070 [tailport=s, headport=n, color=gray]
+BB4068 [shape=record label="{11883: read-variable['name',v1,-]}" ] 
+BB4068 -> BB4069 [tailport=s, headport=n, headlabel="      4069"]
+BB4068 -> BB4070 [tailport=s, headport=n, color=gray]
+BB4069 [shape=record label="{11884: return[v1]}" ] 
+BB4070 [shape=record label="{11885: exceptional-return}" ] 
+}

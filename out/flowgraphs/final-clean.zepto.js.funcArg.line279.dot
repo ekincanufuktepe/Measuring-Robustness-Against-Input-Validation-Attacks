@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry38[shape=none,label=""];
+BB_entry38 -> BB460 [tailport=s, headport=n, headlabel="    460"]
+BB460 [shape=record label="{1030: constant[undefined,v1]}" ] 
+BB460 -> BB461 [tailport=s, headport=n, headlabel="      461"]
+BB461 [shape=record label="{1031: read-variable['isFunction',v4,v3]|1032: read-variable['arg',v5,-]}" ] 
+BB461 -> BB462 [tailport=s, headport=n, headlabel="      462"]
+BB461 -> BB468 [tailport=s, headport=n, color=gray, headlabel="      468"]
+BB462 [shape=record label="{1033: call-isFunction [v3,v4,v5,v2]}" ] 
+BB462 -> BB463 [tailport=s, headport=n, headlabel="      463"]
+BB462 -> BB468 [tailport=s, headport=n, color=gray]
+BB463 [shape=record label="{1034: if[v2](true-block:464,false-block:465)}" ] 
+BB463 -> BB464 [tailport=s, headport=n, headlabel="      464"]
+BB463 -> BB465 [tailport=s, headport=n, headlabel="      465"]
+BB464 [shape=record label="{1035: read-variable['arg',v7,-]|1036: read-property[v7,'call',-]|1037: \<variable-non-null-undef\>['arg']|1038: read-variable['context',v8,-]|1039: read-variable['idx',v9,-]|1040: read-variable['payload',v10,-]}" ] 
+BB464 -> BB466 [tailport=s, headport=n, headlabel="      466"]
+BB464 -> BB468 [tailport=s, headport=n, color=gray]
+BB465 [shape=record label="{1041: read-variable['arg',v1,-]}" ] 
+BB465 -> BB467 [tailport=s, headport=n, headlabel="      467"]
+BB465 -> BB468 [tailport=s, headport=n, color=gray]
+BB466 [shape=record label="{1042: call-arg.call [v7,'call',v8,v9,v10,v1]}" ] 
+BB466 -> BB467 [tailport=s, headport=n]
+BB466 -> BB468 [tailport=s, headport=n, color=gray]
+BB467 [shape=record label="{1043: return[v1]}" ] 
+BB468 [shape=record label="{1044: exceptional-return}" ] 
+//#$~ 280
+}

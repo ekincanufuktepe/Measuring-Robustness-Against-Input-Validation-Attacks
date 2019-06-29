@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry98[shape=none,label=""];
+BB_entry98 -> BB1125 [tailport=s, headport=n, headlabel="    1125"]
+BB1125 [shape=record label="{2940: constant[undefined,v1]}" ] 
+BB1125 -> BB1126 [tailport=s, headport=n, headlabel="      1126"]
+BB1126 [shape=record label="{2941: constant[1.0,v5]|2942: read-variable['times',v6,-]|2943: +[v6,v7]|2944: -[v7,v5,v3]|2945: write-variable[v3,'times']|2946: constant[1.0,v4]|2947: \<[v3,v4,v2]|2948: if[v2](true-block:1127,false-block:1129)}" ] 
+BB1126 -> BB1127 [tailport=s, headport=n, headlabel="      1127"]
+BB1126 -> BB1129 [tailport=s, headport=n, headlabel="      1129"]
+BB1126 -> BB1130 [tailport=s, headport=n, color=gray, headlabel="      1130"]
+BB1127 [shape=record label="{2949: read-variable['func',v9,-]|2950: read-property[v9,'apply',-]|2951: \<variable-non-null-undef\>['func']|2952: read-variable['this',v10,-]|2953: read-variable['arguments',v11,-]}" ] 
+BB1127 -> BB1128 [tailport=s, headport=n, headlabel="      1128"]
+BB1127 -> BB1130 [tailport=s, headport=n, color=gray]
+BB1128 [shape=record label="{2954: call-func.apply [v9,'apply',v10,v11,v1]}" ] 
+BB1128 -> BB1129 [tailport=s, headport=n]
+BB1128 -> BB1130 [tailport=s, headport=n, color=gray]
+BB1129 [shape=record label="{2955: return[v1]}" ] 
+BB1130 [shape=record label="{2956: exceptional-return}" ] 
+//#$~ 880
+}

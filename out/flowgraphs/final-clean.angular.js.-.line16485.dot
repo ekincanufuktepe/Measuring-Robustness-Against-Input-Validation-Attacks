@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry897[shape=none,label=""];
+BB_entry897 -> BB11613 [tailport=s, headport=n, headlabel="    11613"]
+BB11613 [shape=record label="{30483: constant[undefined,v1]}" ] 
+BB11613 -> BB11614 [tailport=s, headport=n, headlabel="      11614"]
+BB11614 [shape=record label="{30484: read-variable['arguments',v3,-]|30485: read-property[v3,'length',v2]|30486: \<variable-non-null-undef\>['arguments']|30487: if[v2](true-block:11615,false-block:11618)}" ] 
+BB11614 -> BB11615 [tailport=s, headport=n, headlabel="      11615"]
+BB11614 -> BB11618 [tailport=s, headport=n, headlabel="      11618"]
+BB11614 -> BB11620 [tailport=s, headport=n, color=gray, headlabel="      11620"]
+BB11615 [shape=record label="{30488: read-variable['adjustMatchers',v6,v5]|30489: read-variable['value',v7,-]}" ] 
+BB11615 -> BB11616 [tailport=s, headport=n, headlabel="      11616"]
+BB11615 -> BB11620 [tailport=s, headport=n, color=gray]
+BB11616 [shape=record label="{30490: call-adjustMatchers [v5,v6,v7,v4]}" ] 
+BB11616 -> BB11617 [tailport=s, headport=n, headlabel="      11617"]
+BB11616 -> BB11620 [tailport=s, headport=n, color=gray]
+BB11617 [shape=record label="{30491: write-variable[v4,'resourceUrlWhitelist']*}" ] 
+BB11617 -> BB11618 [tailport=s, headport=n]
+BB11618 [shape=record label="{30492: read-variable['resourceUrlWhitelist',v1,-]}" ] 
+BB11618 -> BB11619 [tailport=s, headport=n, headlabel="      11619"]
+BB11618 -> BB11620 [tailport=s, headport=n, color=gray]
+BB11619 [shape=record label="{30493: return[v1]}" ] 
+BB11620 [shape=record label="{30494: exceptional-return}" ] 
+//#$~ 16489
+}

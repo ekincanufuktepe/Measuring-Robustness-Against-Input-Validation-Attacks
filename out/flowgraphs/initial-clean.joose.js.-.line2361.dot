@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry234[shape=none,label=""];
+BB_entry234 -> BB2030 [tailport=s, headport=n, headlabel="    2030"]
+BB2030 [shape=record label="{5999: constant[undefined,v1]}" ] 
+BB2030 -> BB2031 [tailport=s, headport=n, headlabel="      2031"]
+BB2031 [shape=record label="{6000: read-variable['window',v3,-]|6001: read-property[v3,'setTimeout',-]|6002: \<variable-non-null-undef\>['window']|6003: read-variable['func',v4,-]|6004: read-variable['time',v5,-]}" ] 
+BB2031 -> BB2032 [tailport=s, headport=n, headlabel="      2032"]
+BB2031 -> BB2034 [tailport=s, headport=n, color=gray, headlabel="      2034"]
+BB2032 [shape=record label="{6005: call-window.setTimeout [v3,'setTimeout',v4,v5,v1]}" ] 
+BB2032 -> BB2033 [tailport=s, headport=n, headlabel="      2033"]
+BB2032 -> BB2034 [tailport=s, headport=n, color=gray]
+BB2033 [shape=record label="{6006: return[v1]}" ] 
+BB2034 [shape=record label="{6007: exceptional-return}" ] 
+//#$~ 2361
+}

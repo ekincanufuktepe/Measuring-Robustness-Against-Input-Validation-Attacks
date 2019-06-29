@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry45[shape=none,label=""];
+BB_entry45 -> BB595 [tailport=s, headport=n, headlabel="    595"]
+BB595 [shape=record label="{2052: constant[undefined,v1]|2053: vardecl['a']|2054: vardecl['c']}" ] 
+BB595 -> BB596 [tailport=s, headport=n, headlabel="      596"]
+BB596 [shape=record label="{2055: read-variable['merge',v4,v3]|2056: read-variable['args',v5,-]|2057: read-variable['arguments',v6,-]}" ] 
+BB596 -> BB597 [tailport=s, headport=n, headlabel="      597"]
+BB596 -> BB604 [tailport=s, headport=n, color=gray, headlabel="      604"]
+BB597 [shape=record label="{2058: call-merge [v3,v4,v5,v6,v2]}" ] 
+BB597 -> BB598 [tailport=s, headport=n, headlabel="      598"]
+BB597 -> BB604 [tailport=s, headport=n, color=gray]
+BB598 [shape=record label="{2059: write-variable[v2,'a']*|2060: read-variable['this',v9,-]|2061: read-variable['bound',v10,-]|2062: instanceof[v9,v10,v8]|2063: if[v8](true-block:599,false-block:600)}" ] 
+BB598 -> BB599 [tailport=s, headport=n, headlabel="      599"]
+BB598 -> BB600 [tailport=s, headport=n, headlabel="      600"]
+BB598 -> BB604 [tailport=s, headport=n, color=gray]
+BB599 [shape=record label="{2064: read-variable['this',v7,-]}" ] 
+BB599 -> BB601 [tailport=s, headport=n, headlabel="      601"]
+BB599 -> BB604 [tailport=s, headport=n, color=gray]
+BB600 [shape=record label="{2065: read-variable['context',v7,-]}" ] 
+BB600 -> BB601 [tailport=s, headport=n]
+BB600 -> BB604 [tailport=s, headport=n, color=gray]
+BB601 [shape=record label="{2066: write-variable[v7,'c']*|2067: read-variable['__method',v12,-]|2068: read-property[v12,'apply',-]|2069: \<variable-non-null-undef\>['__method']|2070: read-variable['c',v13,-]|2071: read-variable['a',v14,-]}" ] 
+BB601 -> BB602 [tailport=s, headport=n, headlabel="      602"]
+BB601 -> BB604 [tailport=s, headport=n, color=gray]
+BB602 [shape=record label="{2072: call-__method.apply [v12,'apply',v13,v14,v1]}" ] 
+BB602 -> BB603 [tailport=s, headport=n, headlabel="      603"]
+BB602 -> BB604 [tailport=s, headport=n, color=gray]
+BB603 [shape=record label="{2073: return[v1]}" ] 
+BB604 [shape=record label="{2074: exceptional-return}" ] 
+//#$~ 404
+}

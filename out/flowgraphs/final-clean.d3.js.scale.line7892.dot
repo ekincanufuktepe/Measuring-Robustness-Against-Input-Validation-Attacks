@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1237[shape=none,label=""];
+BB_entry1237 -> BB13257 [tailport=s, headport=n, headlabel="    13257"]
+BB13257 [shape=record label="{45137: constant[undefined,v1]}" ] 
+BB13257 -> BB13258 [tailport=s, headport=n, headlabel="      13258"]
+BB13258 [shape=record label="{45138: read-variable['x',v3,-]|45139: read-variable['x',v4,-]|45140: \<=[v3,v4,v2]|45141: if[v2](true-block:13259,false-block:13262)}" ] 
+BB13258 -> BB13259 [tailport=s, headport=n, headlabel="      13259"]
+BB13258 -> BB13262 [tailport=s, headport=n, headlabel="      13262"]
+BB13258 -> BB13263 [tailport=s, headport=n, color=gray, headlabel="      13263"]
+BB13259 [shape=record label="{45142: read-variable['range',v5,-]|45143: read-variable['d3',v8,-]|45144: read-property[v8,'bisect',-]|45145: \<variable-non-null-undef\>['d3']|45146: read-variable['domain',v9,-]|45147: read-variable['x',v10,-]}" ] 
+BB13259 -> BB13260 [tailport=s, headport=n, headlabel="      13260"]
+BB13259 -> BB13263 [tailport=s, headport=n, color=gray]
+BB13260 [shape=record label="{45148: call-d3.bisect [v8,'bisect',v9,v10,v6]}" ] 
+BB13260 -> BB13261 [tailport=s, headport=n, headlabel="      13261"]
+BB13260 -> BB13263 [tailport=s, headport=n, color=gray]
+BB13261 [shape=record label="{45149: read-property[v5,v6,v1]|45150: \<variable-non-null-undef\>['range']}" ] 
+BB13261 -> BB13262 [tailport=s, headport=n]
+BB13261 -> BB13263 [tailport=s, headport=n, color=gray]
+BB13262 [shape=record label="{45151: return[v1]}" ] 
+BB13263 [shape=record label="{45152: exceptional-return}" ] 
+//#$~ 7893
+}

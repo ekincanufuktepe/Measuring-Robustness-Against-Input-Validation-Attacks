@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry226[shape=none,label=""];
+BB_entry226 -> BB3136 [tailport=s, headport=n, headlabel="    3136"]
+BB3136 [shape=record label="{10954: constant[undefined,v1]}" ] 
+BB3136 -> BB3137 [tailport=s, headport=n, headlabel="      3137"]
+BB3137 [shape=record label="{10955: constant[\"production\",v3]|10956: constant[\"development\",v4]|10957: !==[v3,v4,v2]|10958: if[v2](true-block:3138,false-block:3139)}" ] 
+BB3137 -> BB3138 [tailport=s, headport=n, headlabel="      3138"]
+BB3137 -> BB3139 [tailport=s, headport=n, headlabel="      3139"]
+BB3137 -> BB3143 [tailport=s, headport=n, color=gray, headlabel="      3143"]
+BB3138 [shape=record label="{10959: read-variable['warning',v6,v5]|10960: constant[false,v7]|10961: constant[\"%s(...) is deprecated in plain JavaScript React classes.\",v8]|10962: read-variable['displayName',v9,-]}" ] 
+BB3138 -> BB3140 [tailport=s, headport=n, headlabel="      3140"]
+BB3138 -> BB3143 [tailport=s, headport=n, color=gray]
+BB3139 [shape=record label="{10963: constant[null,-]}" ] 
+BB3139 -> BB3141 [tailport=s, headport=n, headlabel="      3141"]
+BB3140 [shape=record label="{10964: call-warning [v5,v6,v7,v8,v9,-]}" ] 
+BB3140 -> BB3141 [tailport=s, headport=n]
+BB3140 -> BB3143 [tailport=s, headport=n, color=gray]
+BB3141 [shape=record label="{10965: read-variable['undefined',v1,-]}" ] 
+BB3141 -> BB3142 [tailport=s, headport=n, headlabel="      3142"]
+BB3141 -> BB3143 [tailport=s, headport=n, color=gray]
+BB3142 [shape=record label="{10966: return[v1]}" ] 
+BB3143 [shape=record label="{10967: exceptional-return}" ] 
+//#$~ 6046
+}

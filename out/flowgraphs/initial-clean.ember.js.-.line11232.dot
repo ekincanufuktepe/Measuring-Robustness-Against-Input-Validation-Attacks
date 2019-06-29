@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry496[shape=none,label=""];
+BB_entry496 -> BB6167 [tailport=s, headport=n, headlabel="    6167"]
+BB6167 [shape=record label="{21965: constant[undefined,v1]|21966: vardecl['args']}" ] 
+BB6167 -> BB6168 [tailport=s, headport=n, headlabel="      6168"]
+BB6168 [shape=record label="{21967: read-variable['a_slice',v4,-]|21968: read-property[v4,'call',-]|21969: \<variable-non-null-undef\>['a_slice']|21970: read-variable['arguments',v5,-]}" ] 
+BB6168 -> BB6169 [tailport=s, headport=n, headlabel="      6169"]
+BB6168 -> BB6173 [tailport=s, headport=n, color=gray, headlabel="      6173"]
+BB6169 [shape=record label="{21971: call-a_slice.call [v4,'call',v5,v2]}" ] 
+BB6169 -> BB6170 [tailport=s, headport=n, headlabel="      6170"]
+BB6169 -> BB6173 [tailport=s, headport=n, color=gray]
+BB6170 [shape=record label="{21972: write-variable[v2,'args']*|21973: read-variable['computed',v7,v6]|21974: read-variable['dependentKey',v8,-]|21975: function-expr[function ( ),v9]}" ] 
+BB6170 -> BB6171 [tailport=s, headport=n, headlabel="      6171"]
+BB6170 -> BB6173 [tailport=s, headport=n, color=gray]
+BB6171 [shape=record label="{21976: call-computed [v6,v7,v8,v9,v1]}" ] 
+BB6171 -> BB6172 [tailport=s, headport=n, headlabel="      6172"]
+BB6171 -> BB6173 [tailport=s, headport=n, color=gray]
+BB6172 [shape=record label="{21977: return[v1]}" ] 
+BB6173 [shape=record label="{21978: exceptional-return}" ] 
+//#$~ 11235
+}

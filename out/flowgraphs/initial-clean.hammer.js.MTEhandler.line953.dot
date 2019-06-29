@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry52[shape=none,label=""];
+BB_entry52 -> BB579 [tailport=s, headport=n, headlabel="    579"]
+BB579 [shape=record label="{1946: constant[undefined,v1]|1947: vardecl['type']|1948: vardecl['touches']}" ] 
+BB579 -> BB580 [tailport=s, headport=n, headlabel="      580"]
+BB580 [shape=record label="{1949: read-variable['TOUCH_INPUT_MAP',v4,v2]|1950: read-variable['ev',v6,v2]|1951: read-property[v6,'type',v5]|1952: \<variable-non-null-undef\>['ev']|1953: read-property[v4,v5,v3]|1954: \<variable-non-null-undef\>['TOUCH_INPUT_MAP']|1955: write-variable[v3,'type']*|1956: read-variable['getTouches',v9,-]|1957: read-property[v9,'call',-]|1958: \<variable-non-null-undef\>['getTouches']|1959: read-variable['this',v10,-]|1960: read-variable['ev',v11,v2]|1961: read-variable['type',v12,v2]}" ] 
+BB580 -> BB581 [tailport=s, headport=n, headlabel="      581"]
+BB580 -> BB587 [tailport=s, headport=n, color=gray, headlabel="      587"]
+BB581 [shape=record label="{1962: call-getTouches.call [v9,'call',v10,v11,v12,v7]}" ] 
+BB581 -> BB582 [tailport=s, headport=n, headlabel="      582"]
+BB581 -> BB587 [tailport=s, headport=n, color=gray]
+BB582 [shape=record label="{1963: write-variable[v7,'touches']*|1964: read-variable['touches',v14,v2]|1965: ![v14,v13]|1966: if[v13](true-block:583,false-block:584)}" ] 
+BB582 -> BB583 [tailport=s, headport=n, headlabel="      583"]
+BB582 -> BB584 [tailport=s, headport=n, headlabel="      584"]
+BB582 -> BB587 [tailport=s, headport=n, color=gray]
+BB583 [shape=record label="{1967: constant[undefined,v1]}" ] 
+BB583 -> BB586 [tailport=s, headport=n, headlabel="      586"]
+BB584 [shape=record label="{1968: read-variable['this',v16,-]|1969: read-property[v16,'callback',-]|1970: read-variable['this',v18,-]|1971: read-property[v18,'manager',v17]|1972: read-variable['type',v19,v2]|1973: new[v20]|1974: read-variable['touches',v22,v2]|1975: constant[0.0,v23]|1976: read-property[v22,v23,v21]|1977: \<variable-non-null-undef\>['touches']|1978: write-property[v20,'pointers',v21]|1979: read-variable['touches',v25,v2]|1980: constant[1.0,v26]|1981: read-property[v25,v26,v24]|1982: \<variable-non-null-undef\>['touches']|1983: write-property[v20,'changedPointers',v24]|1984: read-variable['INPUT_TYPE_TOUCH',v27,v2]|1985: write-property[v20,'pointerType',v27]|1986: read-variable['ev',v28,v2]|1987: write-property[v20,'srcEvent',v28]}" ] 
+BB584 -> BB585 [tailport=s, headport=n, headlabel="      585"]
+BB584 -> BB587 [tailport=s, headport=n, color=gray]
+BB585 [shape=record label="{1988: call-this.callback [v16,'callback',v17,v19,v20,-]*}" ] 
+BB585 -> BB586 [tailport=s, headport=n]
+BB585 -> BB587 [tailport=s, headport=n, color=gray]
+BB586 [shape=record label="{1989: return[v1]}" ] 
+BB587 [shape=record label="{1990: exceptional-return}" ] 
+//#$~ 964
+}

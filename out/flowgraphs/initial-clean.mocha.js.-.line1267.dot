@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry104[shape=none,label=""];
+BB_entry104 -> BB1052 [tailport=s, headport=n, headlabel="    1052"]
+BB1052 [shape=record label="{3484: constant[undefined,v1]|3485: vardecl['test']}" ] 
+BB1052 -> BB1053 [tailport=s, headport=n, headlabel="      1053"]
+BB1053 [shape=record label="{3486: read-variable['Test',v3,-]|3487: read-variable['title',v4,-]|3488: read-variable['fn',v5,-]}" ] 
+BB1053 -> BB1054 [tailport=s, headport=n, headlabel="      1054"]
+BB1053 -> BB1059 [tailport=s, headport=n, color=gray, headlabel="      1059"]
+BB1054 [shape=record label="{3489: construct [-,v3,v4,v5,v2]}" ] 
+BB1054 -> BB1055 [tailport=s, headport=n, headlabel="      1055"]
+BB1054 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1055 [shape=record label="{3490: write-variable[v2,'test']*|3491: read-variable['test',v7,-]|3492: read-variable['file',v6,-]|3493: write-property[v7,'file',v6]|3494: \<variable-non-null-undef\>['test']*|3495: read-variable['suites',v10,-]|3496: constant[0.0,v11]|3497: read-property[v10,v11,v9]|3498: \<variable-non-null-undef\>['suites']|3499: read-property[v9,'addTest',-]|3500: \<property-non-null-undef\>[v10,v11]|3501: read-variable['test',v12,-]}" ] 
+BB1055 -> BB1056 [tailport=s, headport=n, headlabel="      1056"]
+BB1055 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1056 [shape=record label="{3502: call-null [v9,'addTest',v12,-]*}" ] 
+BB1056 -> BB1057 [tailport=s, headport=n, headlabel="      1057"]
+BB1056 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1057 [shape=record label="{3503: read-variable['test',v1,-]}" ] 
+BB1057 -> BB1058 [tailport=s, headport=n, headlabel="      1058"]
+BB1057 -> BB1059 [tailport=s, headport=n, color=gray]
+BB1058 [shape=record label="{3504: return[v1]}" ] 
+BB1059 [shape=record label="{3505: exceptional-return}" ] 
+//#$~ 1271
+}

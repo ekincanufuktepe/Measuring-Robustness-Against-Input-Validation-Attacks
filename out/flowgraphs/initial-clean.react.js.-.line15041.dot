@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry635[shape=none,label=""];
+BB_entry635 -> BB8597 [tailport=s, headport=n, headlabel="    8597"]
+BB8597 [shape=record label="{28392: constant[undefined,v1]}" ] 
+BB8597 -> BB8598 [tailport=s, headport=n, headlabel="      8598"]
+BB8598 [shape=record label="{28393: constant[\"production\",v3]|28394: constant[\"development\",v4]|28395: !==[v3,v4,v2]|28396: if[v2](true-block:8599,false-block:8600)}" ] 
+BB8598 -> BB8599 [tailport=s, headport=n, headlabel="      8599"]
+BB8598 -> BB8600 [tailport=s, headport=n, headlabel="      8600"]
+BB8598 -> BB8605 [tailport=s, headport=n, color=gray, headlabel="      8605"]
+BB8599 [shape=record label="{28397: read-variable['invariant',v6,v5]|28398: read-variable['ReconcileTransaction',v7,-]|28399: constant[\"ReactUpdates: must provide a reconcile transaction class\",v8]}" ] 
+BB8599 -> BB8601 [tailport=s, headport=n, headlabel="      8601"]
+BB8599 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8600 [shape=record label="{28400: read-variable['invariant',v6,v5]|28401: read-variable['ReconcileTransaction',v7,-]}" ] 
+BB8600 -> BB8602 [tailport=s, headport=n, headlabel="      8602"]
+BB8600 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8601 [shape=record label="{28402: call-invariant [v5,v6,v7,v8,-]}" ] 
+BB8601 -> BB8603 [tailport=s, headport=n, headlabel="      8603"]
+BB8601 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8602 [shape=record label="{28403: call-invariant [v5,v6,v7,-]}" ] 
+BB8602 -> BB8603 [tailport=s, headport=n]
+BB8602 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8603 [shape=record label="{28404: read-variable['ReactUpdates',v6,-]|28405: read-variable['ReconcileTransaction',v5,-]|28406: write-property[v6,'ReactReconcileTransaction',v5]|28407: \<variable-non-null-undef\>['ReactUpdates']*}" ] 
+BB8603 -> BB8604 [tailport=s, headport=n, headlabel="      8604"]
+BB8603 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8604 [shape=record label="{28408: return[v1]}" ] 
+BB8605 [shape=record label="{28409: exceptional-return}" ] 
+//#$~ 15046
+}

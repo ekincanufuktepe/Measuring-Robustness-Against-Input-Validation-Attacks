@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry47[shape=none,label=""];
+BB_entry47 -> BB682 [tailport=s, headport=n, headlabel="    682"]
+BB682 [shape=record label="{2279: constant[undefined,v1]}" ] 
+BB682 -> BB683 [tailport=s, headport=n, headlabel="      683"]
+BB683 [shape=record label="{2280: read-variable['x',v3,v2]}" ] 
+BB683 -> BB684 [tailport=s, headport=n, headlabel="      684"]
+BB683 -> BB686 [tailport=s, headport=n, color=gray, headlabel="      686"]
+BB684 [shape=record label="{2281: call-x [v2,v3,-]*}" ] 
+BB684 -> BB685 [tailport=s, headport=n, headlabel="      685"]
+BB684 -> BB686 [tailport=s, headport=n, color=gray]
+BB685 [shape=record label="{2282: read-variable['e',v5,-]|2283: ![v5,v4]|2284: ![v4,v1]}" ] 
+BB685 -> BB689 [tailport=s, headport=n, headlabel="      689"]
+BB685 -> BB690 [tailport=s, headport=n, color=gray, headlabel="      690"]
+BB686 [shape=record label="{2285: catch[e,v2]|2286: begin-with[v2]}" ] 
+BB686 -> BB687 [tailport=s, headport=n, headlabel="      687"]
+BB686 -> BB690 [tailport=s, headport=n, color=gray]
+BB687 [shape=record label="{2287: end-with}" ] 
+BB687 -> BB685 [tailport=s, headport=n]
+BB688 [shape=record label="{2288: end-with}" ] 
+BB688 -> BB690 [tailport=s, headport=n]
+BB689 [shape=record label="{2289: return[v1]}" ] 
+BB690 [shape=record label="{2290: exceptional-return}" ] 
+//#$~ 743
+}

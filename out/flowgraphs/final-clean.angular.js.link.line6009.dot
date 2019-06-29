@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry328[shape=none,label=""];
+BB_entry328 -> BB3888 [tailport=s, headport=n, headlabel="    3888"]
+BB3888 [shape=record label="{9411: constant[undefined,v1]}" ] 
+BB3888 -> BB3889 [tailport=s, headport=n, headlabel="      3889"]
+BB3889 [shape=record label="{9412: read-variable['nextEntry',v3,-]|9413: read-variable['prevEntry',v4,-]|9414: !=[v3,v4,v2]|9415: if[v2](true-block:3890,false-block:3894)}" ] 
+BB3889 -> BB3890 [tailport=s, headport=n, headlabel="      3890"]
+BB3889 -> BB3894 [tailport=s, headport=n, headlabel="      3894"]
+BB3889 -> BB3895 [tailport=s, headport=n, color=gray, headlabel="      3895"]
+BB3890 [shape=record label="{9416: read-variable['nextEntry',v5,-]|9417: if[v5](true-block:3891,false-block:3892)}" ] 
+BB3890 -> BB3891 [tailport=s, headport=n, headlabel="      3891"]
+BB3890 -> BB3892 [tailport=s, headport=n, headlabel="      3892"]
+BB3890 -> BB3895 [tailport=s, headport=n, color=gray]
+BB3891 [shape=record label="{9418: read-variable['nextEntry',v7,-]|9419: read-variable['prevEntry',v6,-]|9420: write-property[v7,'p',v6]|9421: \<variable-non-null-undef\>['nextEntry']*}" ] 
+BB3891 -> BB3892 [tailport=s, headport=n]
+BB3891 -> BB3895 [tailport=s, headport=n, color=gray]
+BB3892 [shape=record label="{9422: read-variable['prevEntry',v6,-]|9423: if[v6](true-block:3893,false-block:3894)}" ] 
+BB3892 -> BB3893 [tailport=s, headport=n, headlabel="      3893"]
+BB3892 -> BB3894 [tailport=s, headport=n]
+BB3892 -> BB3895 [tailport=s, headport=n, color=gray]
+BB3893 [shape=record label="{9424: read-variable['prevEntry',v8,-]|9425: read-variable['nextEntry',v7,-]|9426: write-property[v8,'n',v7]|9427: \<variable-non-null-undef\>['prevEntry']*}" ] 
+BB3893 -> BB3894 [tailport=s, headport=n]
+BB3893 -> BB3895 [tailport=s, headport=n, color=gray]
+BB3894 [shape=record label="{9428: return[v1]}" ] 
+BB3895 [shape=record label="{9429: exceptional-return}" ] 
+//#$~ 6012
+}

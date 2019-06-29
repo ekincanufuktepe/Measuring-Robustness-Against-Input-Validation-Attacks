@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry309[shape=none,label=""];
+BB_entry309 -> BB4313 [tailport=s, headport=n, headlabel="    4313"]
+BB4313 [shape=record label="{12872: constant[undefined,v1]}" ] 
+BB4313 -> BB4314 [tailport=s, headport=n, headlabel="      4314"]
+BB4314 [shape=record label="{12873: read-variable['query',v5,v4]|12874: read-variable['selector',v6,-]|12875: read-variable['root',v7,-]}" ] 
+BB4314 -> BB4315 [tailport=s, headport=n, headlabel="      4315"]
+BB4314 -> BB4319 [tailport=s, headport=n, color=gray, headlabel="      4319"]
+BB4315 [shape=record label="{12876: call-query [v4,v5,v6,v7,v3]}" ] 
+BB4315 -> BB4316 [tailport=s, headport=n, headlabel="      4316"]
+BB4315 -> BB4319 [tailport=s, headport=n, color=gray]
+BB4316 [shape=record label="{12877: read-property[v3,'filter',-]|12878: function-expr[function ( node ),v8]}" ] 
+BB4316 -> BB4317 [tailport=s, headport=n, headlabel="      4317"]
+BB4316 -> BB4319 [tailport=s, headport=n, color=gray]
+BB4317 [shape=record label="{12879: call-null [v3,'filter',v8,v1]}" ] 
+BB4317 -> BB4318 [tailport=s, headport=n, headlabel="      4318"]
+BB4317 -> BB4319 [tailport=s, headport=n, color=gray]
+BB4318 [shape=record label="{12880: return[v1]}" ] 
+BB4319 [shape=record label="{12881: exceptional-return}" ] 
+//#$~ 5938
+}

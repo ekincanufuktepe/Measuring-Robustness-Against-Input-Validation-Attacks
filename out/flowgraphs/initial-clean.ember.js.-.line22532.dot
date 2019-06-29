@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1018[shape=none,label=""];
+BB_entry1018 -> BB12275 [tailport=s, headport=n, headlabel="    12275"]
+BB12275 [shape=record label="{41890: constant[undefined,v1]|41891: vardecl['i']|41892: vardecl['l']|41893: vardecl['dslMatch']}" ] 
+BB12275 -> BB12276 [tailport=s, headport=n, headlabel="      12276"]
+BB12276 [shape=record label="{41894: constant[0.0,v3]|41895: write-variable[v3,'i']*|41896: read-variable['dslMatches',v5,-]|41897: read-property[v5,'length',v4]|41898: \<variable-non-null-undef\>['dslMatches']|41899: write-variable[v4,'l']*}" ] 
+BB12276 -> BB12277 [tailport=s, headport=n, headlabel="      12277"]
+BB12276 -> BB12284 [tailport=s, headport=n, color=gray, headlabel="      12284"]
+BB12277 [shape=record label="{41900: read-variable['i',v6,-]|41901: read-variable['l',v7,-]|41902: \<[v6,v7,v2]|41903: if[v2](true-block:12278,false-block:12283)}" ] 
+BB12277 -> BB12278 [tailport=s, headport=n, headlabel="      12278"]
+BB12277 -> BB12283 [tailport=s, headport=n, headlabel="      12283"]
+BB12277 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12278 [shape=record label="{41904: read-variable['dslMatches',v9,-]|41905: read-variable['i',v10,-]|41906: read-property[v9,v10,v8]|41907: \<variable-non-null-undef\>['dslMatches']|41908: write-variable[v8,'dslMatch']*|41909: read-variable['match',v14,v13]|41910: read-variable['dslMatch',v16,-]|41911: constant[0.0,v17]|41912: read-property[v16,v17,v15]|41913: \<variable-non-null-undef\>['dslMatch']}" ] 
+BB12278 -> BB12279 [tailport=s, headport=n, headlabel="      12279"]
+BB12278 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12279 [shape=record label="{41914: call-match [v13,v14,v15,v12]}" ] 
+BB12279 -> BB12280 [tailport=s, headport=n, headlabel="      12280"]
+BB12279 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12280 [shape=record label="{41915: read-property[v12,'to',-]|41916: read-variable['dslMatch',v19,-]|41917: constant[1.0,v20]|41918: read-property[v19,v20,v18]|41919: \<variable-non-null-undef\>['dslMatch']|41920: read-variable['dslMatch',v22,-]|41921: constant[2.0,v23]|41922: read-property[v22,v23,v21]|41923: \<variable-non-null-undef\>['dslMatch']}" ] 
+BB12280 -> BB12281 [tailport=s, headport=n, headlabel="      12281"]
+BB12280 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12281 [shape=record label="{41924: call-null [v12,'to',v18,v21,-]*}" ] 
+BB12281 -> BB12282 [tailport=s, headport=n, headlabel="      12282"]
+BB12281 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12282 [shape=record label="{41925: constant[1.0,v24]|41926: read-variable['i',v25,-]|41927: +[v25,v26]|41928: +[v26,v24,v27]|41929: write-variable[v27,'i']}" ] 
+BB12282 -> BB12277 [tailport=s, headport=n]
+BB12282 -> BB12284 [tailport=s, headport=n, color=gray]
+BB12283 [shape=record label="{41930: return[v1]}" ] 
+BB12284 [shape=record label="{41931: exceptional-return}" ] 
+//#$~ 22533
+}

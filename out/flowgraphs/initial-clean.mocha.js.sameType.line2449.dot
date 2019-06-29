@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry180[shape=none,label=""];
+BB_entry180 -> BB1991 [tailport=s, headport=n, headlabel="    1991"]
+BB1991 [shape=record label="{6354: constant[undefined,v1]}" ] 
+BB1991 -> BB1992 [tailport=s, headport=n, headlabel="      1992"]
+BB1992 [shape=record label="{6355: read-variable['Object',v6,-]|6356: read-property[v6,'prototype',v5]|6357: \<variable-non-null-undef\>['Object']|6358: read-property[v5,'toString',v4]|6359: \<property-non-null-undef\>[v6,'prototype']|6360: read-property[v4,'call',-]|6361: \<property-non-null-undef\>[v5,'toString']|6362: read-variable['a',v7,-]}" ] 
+BB1992 -> BB1993 [tailport=s, headport=n, headlabel="      1993"]
+BB1992 -> BB1998 [tailport=s, headport=n, color=gray, headlabel="      1998"]
+BB1993 [shape=record label="{6363: call-Object.prototype.toString.call [v4,'call',v7,v2]}" ] 
+BB1993 -> BB1994 [tailport=s, headport=n, headlabel="      1994"]
+BB1993 -> BB1998 [tailport=s, headport=n, color=gray]
+BB1994 [shape=record label="{6364: write-variable[v2,'a']*|6365: read-variable['Object',v12,-]|6366: read-property[v12,'prototype',v11]|6367: \<variable-non-null-undef\>['Object']|6368: read-property[v11,'toString',v10]|6369: \<property-non-null-undef\>[v12,'prototype']|6370: read-property[v10,'call',-]|6371: \<property-non-null-undef\>[v11,'toString']|6372: read-variable['b',v13,-]}" ] 
+BB1994 -> BB1995 [tailport=s, headport=n, headlabel="      1995"]
+BB1994 -> BB1998 [tailport=s, headport=n, color=gray]
+BB1995 [shape=record label="{6373: call-Object.prototype.toString.call [v10,'call',v13,v8]}" ] 
+BB1995 -> BB1996 [tailport=s, headport=n, headlabel="      1996"]
+BB1995 -> BB1998 [tailport=s, headport=n, color=gray]
+BB1996 [shape=record label="{6374: write-variable[v8,'b']*|6375: read-variable['a',v14,-]|6376: read-variable['b',v15,-]|6377: ==[v14,v15,v1]}" ] 
+BB1996 -> BB1997 [tailport=s, headport=n, headlabel="      1997"]
+BB1996 -> BB1998 [tailport=s, headport=n, color=gray]
+BB1997 [shape=record label="{6378: return[v1]}" ] 
+BB1998 [shape=record label="{6379: exceptional-return}" ] 
+//#$~ 2452
+}

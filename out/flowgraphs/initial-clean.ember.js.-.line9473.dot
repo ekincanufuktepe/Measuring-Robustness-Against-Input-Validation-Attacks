@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry412[shape=none,label=""];
+BB_entry412 -> BB5180 [tailport=s, headport=n, headlabel="    5180"]
+BB5180 [shape=record label="{18506: constant[undefined,v1]|18507: vardecl['m']}" ] 
+BB5180 -> BB5181 [tailport=s, headport=n, headlabel="      5181"]
+BB5181 [shape=record label="{18508: read-variable['meta',v4,v3]|18509: read-variable['obj',v5,-]}" ] 
+BB5181 -> BB5182 [tailport=s, headport=n, headlabel="      5182"]
+BB5181 -> BB5187 [tailport=s, headport=n, color=gray, headlabel="      5187"]
+BB5182 [shape=record label="{18510: call-meta [v3,v4,v5,v2]}" ] 
+BB5182 -> BB5183 [tailport=s, headport=n, headlabel="      5183"]
+BB5182 -> BB5187 [tailport=s, headport=n, color=gray]
+BB5183 [shape=record label="{18511: write-variable[v2,'m']*|18512: read-variable['m',v8,-]|18513: read-property[v8,'watching',v7]|18514: \<variable-non-null-undef\>['m']|18515: read-variable['keyName',v9,-]|18516: read-property[v7,v9,v6]|18517: \<property-non-null-undef\>[v8,'watching']|18518: if[v6](true-block:5184,false-block:5186)}" ] 
+BB5183 -> BB5184 [tailport=s, headport=n, headlabel="      5184"]
+BB5183 -> BB5186 [tailport=s, headport=n, headlabel="      5186"]
+BB5183 -> BB5187 [tailport=s, headport=n, color=gray]
+BB5184 [shape=record label="{18519: read-variable['removeDependentKeys',v11,v10]|18520: read-variable['this',v12,-]|18521: read-variable['obj',v13,-]|18522: read-variable['keyName',v14,-]|18523: read-variable['m',v15,-]}" ] 
+BB5184 -> BB5185 [tailport=s, headport=n, headlabel="      5185"]
+BB5184 -> BB5187 [tailport=s, headport=n, color=gray]
+BB5185 [shape=record label="{18524: call-removeDependentKeys [v10,v11,v12,v13,v14,v15,-]*}" ] 
+BB5185 -> BB5186 [tailport=s, headport=n]
+BB5185 -> BB5187 [tailport=s, headport=n, color=gray]
+BB5186 [shape=record label="{18525: return[v1]}" ] 
+BB5187 [shape=record label="{18526: exceptional-return}" ] 
+//#$~ 9476
+}

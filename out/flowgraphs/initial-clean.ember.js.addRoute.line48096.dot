@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2316[shape=none,label=""];
+BB_entry2316 -> BB26474 [tailport=s, headport=n, headlabel="    26474"]
+BB26474 [shape=record label="{87473: constant[undefined,v1]|87474: vardecl['len']|87475: vardecl['i']|87476: vardecl['l']|87477: vardecl['route']}" ] 
+BB26474 -> BB26475 [tailport=s, headport=n, headlabel="      26475"]
+BB26475 [shape=record label="{87478: constant[0.0,v2]|87479: write-variable[v2,'len']*|87480: constant[0.0,v4]|87481: write-variable[v4,'i']*|87482: read-variable['routeArray',v6,-]|87483: read-property[v6,'length',v5]|87484: \<variable-non-null-undef\>['routeArray']|87485: write-variable[v5,'l']*}" ] 
+BB26475 -> BB26476 [tailport=s, headport=n, headlabel="      26476"]
+BB26475 -> BB26483 [tailport=s, headport=n, color=gray, headlabel="      26483"]
+BB26476 [shape=record label="{87486: read-variable['i',v7,-]|87487: read-variable['l',v8,-]|87488: \<[v7,v8,v3]|87489: if[v3](true-block:26477,false-block:26478)}" ] 
+BB26476 -> BB26477 [tailport=s, headport=n, headlabel="      26477"]
+BB26476 -> BB26478 [tailport=s, headport=n, headlabel="      26478"]
+BB26476 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26477 [shape=record label="{87490: read-variable['len',v10,-]|87491: read-variable['routeArray',v14,-]|87492: read-variable['i',v15,-]|87493: read-property[v14,v15,v13]|87494: \<variable-non-null-undef\>['routeArray']|87495: read-property[v13,'path',v12]|87496: \<property-non-null-undef\>[v14,v15]|87497: read-property[v12,'length',v11]|87498: \<property-non-null-undef\>[v13,'path']|87499: +[v10,v11,v9]|87500: write-variable[v9,'len']*|87501: constant[1.0,v16]|87502: read-variable['i',v17,-]|87503: +[v17,v18]|87504: +[v18,v16,v19]|87505: write-variable[v19,'i']}" ] 
+BB26477 -> BB26476 [tailport=s, headport=n]
+BB26477 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26478 [shape=record label="{87506: read-variable['path',v11,-]|87507: read-property[v11,'substr',-]|87508: \<variable-non-null-undef\>['path']|87509: read-variable['len',v12,-]}" ] 
+BB26478 -> BB26479 [tailport=s, headport=n, headlabel="      26479"]
+BB26478 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26479 [shape=record label="{87510: call-path.substr [v11,'substr',v12,v9]}" ] 
+BB26479 -> BB26480 [tailport=s, headport=n, headlabel="      26480"]
+BB26479 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26480 [shape=record label="{87511: write-variable[v9,'path']*|87512: new[v13]|87513: read-variable['path',v14,-]|87514: write-property[v13,'path',v14]|87515: read-variable['handler',v15,-]|87516: write-property[v13,'handler',v15]|87517: write-variable[v13,'route']*|87518: read-variable['routeArray',v17,-]|87519: read-property[v17,'push',-]|87520: \<variable-non-null-undef\>['routeArray']|87521: read-variable['route',v18,-]}" ] 
+BB26480 -> BB26481 [tailport=s, headport=n, headlabel="      26481"]
+BB26480 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26481 [shape=record label="{87522: call-routeArray.push [v17,'push',v18,-]*}" ] 
+BB26481 -> BB26482 [tailport=s, headport=n, headlabel="      26482"]
+BB26481 -> BB26483 [tailport=s, headport=n, color=gray]
+BB26482 [shape=record label="{87523: return[v1]}" ] 
+BB26483 [shape=record label="{87524: exceptional-return}" ] 
+//#$~ 48104
+}

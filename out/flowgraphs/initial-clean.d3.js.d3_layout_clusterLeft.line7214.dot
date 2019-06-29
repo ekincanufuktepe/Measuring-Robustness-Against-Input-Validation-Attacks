@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1113[shape=none,label=""];
+BB_entry1113 -> BB12037 [tailport=s, headport=n, headlabel="    12037"]
+BB12037 [shape=record label="{41260: constant[undefined,v1]|41261: vardecl['children']}" ] 
+BB12037 -> BB12038 [tailport=s, headport=n, headlabel="      12038"]
+BB12038 [shape=record label="{41262: read-variable['node',v3,-]|41263: read-property[v3,'children',v2]|41264: \<variable-non-null-undef\>['node']|41265: write-variable[v2,'children']*|41266: read-variable['children',v4,-]|41267: if[v4](true-block:12039,false-block:12040)}" ] 
+BB12038 -> BB12040 [tailport=s, headport=n, headlabel="      12040"]
+BB12038 -> BB12039 [tailport=s, headport=n, headlabel="      12039"]
+BB12038 -> BB12045 [tailport=s, headport=n, color=gray, headlabel="      12045"]
+BB12039 [shape=record label="{41268: read-variable['children',v5,-]|41269: read-property[v5,'length',v4]|41270: \<variable-non-null-undef\>['children']}" ] 
+BB12039 -> BB12040 [tailport=s, headport=n]
+BB12039 -> BB12045 [tailport=s, headport=n, color=gray]
+BB12040 [shape=record label="{41271: if[v4](true-block:12041,false-block:12042)}" ] 
+BB12040 -> BB12041 [tailport=s, headport=n, headlabel="      12041"]
+BB12040 -> BB12042 [tailport=s, headport=n, headlabel="      12042"]
+BB12041 [shape=record label="{41272: read-variable['d3_layout_clusterLeft',v6,v5]|41273: read-variable['children',v8,-]|41274: constant[0.0,v9]|41275: read-property[v8,v9,v7]|41276: \<variable-non-null-undef\>['children']}" ] 
+BB12041 -> BB12043 [tailport=s, headport=n, headlabel="      12043"]
+BB12041 -> BB12045 [tailport=s, headport=n, color=gray]
+BB12042 [shape=record label="{41277: read-variable['node',v1,-]}" ] 
+BB12042 -> BB12044 [tailport=s, headport=n, headlabel="      12044"]
+BB12042 -> BB12045 [tailport=s, headport=n, color=gray]
+BB12043 [shape=record label="{41278: call-d3_layout_clusterLeft [v5,v6,v7,v1]}" ] 
+BB12043 -> BB12044 [tailport=s, headport=n]
+BB12043 -> BB12045 [tailport=s, headport=n, color=gray]
+BB12044 [shape=record label="{41279: return[v1]}" ] 
+BB12045 [shape=record label="{41280: exceptional-return}" ] 
+//#$~ 7216
+}

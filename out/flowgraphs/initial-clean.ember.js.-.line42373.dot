@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry1969[shape=none,label=""];
+BB_entry1969 -> BB22590 [tailport=s, headport=n, headlabel="    22590"]
+BB22590 [shape=record label="{75424: constant[undefined,v1]|75425: vardecl['lazyValue']}" ] 
+BB22590 -> BB22591 [tailport=s, headport=n, headlabel="      22591"]
+BB22591 [shape=record label="{75426: read-variable['context',v4,-]|75427: read-property[v4,'getStream',-]|75428: \<variable-non-null-undef\>['context']|75429: constant[\"view.label\",v5]}" ] 
+BB22591 -> BB22592 [tailport=s, headport=n, headlabel="      22592"]
+BB22591 -> BB22599 [tailport=s, headport=n, color=gray, headlabel="      22599"]
+BB22592 [shape=record label="{75430: call-context.getStream [v4,'getStream',v5,v2]}" ] 
+BB22592 -> BB22593 [tailport=s, headport=n, headlabel="      22593"]
+BB22592 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22593 [shape=record label="{75431: write-variable[v2,'lazyValue']*|75432: read-variable['lazyValue',v7,-]|75433: read-property[v7,'subscribe',-]|75434: \<variable-non-null-undef\>['lazyValue']|75435: read-variable['context',v10,-]|75436: read-property[v10,'_wrapAsScheduled',-]|75437: \<variable-non-null-undef\>['context']|75438: function-expr[function ( ),v11]}" ] 
+BB22593 -> BB22594 [tailport=s, headport=n, headlabel="      22594"]
+BB22593 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22594 [shape=record label="{75439: call-context._wrapAsScheduled [v10,'_wrapAsScheduled',v11,v8]}" ] 
+BB22594 -> BB22595 [tailport=s, headport=n, headlabel="      22595"]
+BB22594 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22595 [shape=record label="{75440: call-lazyValue.subscribe [v7,'subscribe',v8,-]*}" ] 
+BB22595 -> BB22596 [tailport=s, headport=n, headlabel="      22596"]
+BB22595 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22596 [shape=record label="{75441: read-variable['lazyValue',v13,-]|75442: read-property[v13,'value',-]|75443: \<variable-non-null-undef\>['lazyValue']}" ] 
+BB22596 -> BB22597 [tailport=s, headport=n, headlabel="      22597"]
+BB22596 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22597 [shape=record label="{75444: call-lazyValue.value [v13,'value',v1]}" ] 
+BB22597 -> BB22598 [tailport=s, headport=n, headlabel="      22598"]
+BB22597 -> BB22599 [tailport=s, headport=n, color=gray]
+BB22598 [shape=record label="{75445: return[v1]}" ] 
+BB22599 [shape=record label="{75446: exceptional-return}" ] 
+//#$~ 42380
+}

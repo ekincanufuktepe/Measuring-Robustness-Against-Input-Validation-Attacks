@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry105[shape=none,label=""];
+BB_entry105 -> BB1574 [tailport=s, headport=n, headlabel="    1574"]
+BB1574 [shape=record label="{4374: constant[undefined,v1]}" ] 
+BB1574 -> BB1575 [tailport=s, headport=n, headlabel="      1575"]
+BB1575 [shape=record label="{4375: read-variable['config',v3,-]|4376: read-property[v3,'trace',v2]|4377: \<variable-non-null-undef\>['config']|4378: if[v2](true-block:1576,false-block:1578)}" ] 
+BB1575 -> BB1578 [tailport=s, headport=n, headlabel="      1578"]
+BB1575 -> BB1576 [tailport=s, headport=n, headlabel="      1576"]
+BB1575 -> BB1579 [tailport=s, headport=n, color=gray, headlabel="      1579"]
+BB1576 [shape=record label="{4379: read-variable['trace',v5,-]|4380: read-property[v5,'set',-]|4381: \<variable-non-null-undef\>['trace']|4382: read-variable['config',v7,-]|4383: read-property[v7,'trace',v6]|4384: \<variable-non-null-undef\>['config']}" ] 
+BB1576 -> BB1577 [tailport=s, headport=n, headlabel="      1577"]
+BB1576 -> BB1579 [tailport=s, headport=n, color=gray]
+BB1577 [shape=record label="{4385: call-trace.set [v5,'set',v6,-]}" ] 
+BB1577 -> BB1578 [tailport=s, headport=n]
+BB1577 -> BB1579 [tailport=s, headport=n, color=gray]
+BB1578 [shape=record label="{4386: return[v1]}" ] 
+BB1579 [shape=record label="{4387: exceptional-return}" ] 
+//#$~ 1789
+}

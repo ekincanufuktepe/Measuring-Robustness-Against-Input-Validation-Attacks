@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry166[shape=none,label=""];
+BB_entry166 -> BB1834 [tailport=s, headport=n, headlabel="    1834"]
+BB1834 [shape=record label="{5640: constant[undefined,v1]|5641: vardecl['item']}" ] 
+BB1834 -> BB1835 [tailport=s, headport=n, headlabel="      1835"]
+BB1835 [shape=record label="{5642: read-variable['this',v4,-]|5643: read-property[v4,'getItem',-]|5644: read-variable['elem',v5,-]}" ] 
+BB1835 -> BB1836 [tailport=s, headport=n, headlabel="      1836"]
+BB1835 -> BB1840 [tailport=s, headport=n, color=gray, headlabel="      1840"]
+BB1836 [shape=record label="{5645: call-this.getItem [v4,'getItem',v5,v2]}" ] 
+BB1836 -> BB1837 [tailport=s, headport=n, headlabel="      1837"]
+BB1836 -> BB1840 [tailport=s, headport=n, color=gray]
+BB1837 [shape=record label="{5646: write-variable[v2,'item']*|5647: read-variable['item',v6,-]|5648: if[v6](true-block:1838,false-block:1839)}" ] 
+BB1837 -> BB1838 [tailport=s, headport=n, headlabel="      1838"]
+BB1837 -> BB1839 [tailport=s, headport=n, headlabel="      1839"]
+BB1837 -> BB1840 [tailport=s, headport=n, color=gray]
+BB1838 [shape=record label="{5649: read-variable['item',v8,-]|5650: constant[true,v7]|5651: write-property[v8,'isIgnored',v7]|5652: \<variable-non-null-undef\>['item']*}" ] 
+BB1838 -> BB1839 [tailport=s, headport=n]
+BB1838 -> BB1840 [tailport=s, headport=n, color=gray]
+BB1839 [shape=record label="{5653: return[v1]}" ] 
+BB1840 [shape=record label="{5654: exceptional-return}" ] 
+//#$~ 2538
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry834[shape=none,label=""];
+BB_entry834 -> BB9793 [tailport=s, headport=n, headlabel="    9793"]
+BB9793 [shape=record label="{33550: constant[undefined,v1]|33551: vardecl['children']|33552: vardecl['key']}" ] 
+BB9793 -> BB9794 [tailport=s, headport=n, headlabel="      9794"]
+BB9794 [shape=record label="{33553: read-variable['this',v5,-]|33554: read-property[v5,'state',v3]|33555: constant[\"destroyed\",v4]|33556: !==[v3,v4,v2]|33557: if[v2](true-block:9795,false-block:9802)}" ] 
+BB9794 -> BB9795 [tailport=s, headport=n, headlabel="      9795"]
+BB9794 -> BB9802 [tailport=s, headport=n, headlabel="      9802"]
+BB9794 -> BB9803 [tailport=s, headport=n, color=gray, headlabel="      9803"]
+BB9795 [shape=record label="{33558: read-variable['this',v7,-]|33559: constant[\"destroyed\",v6]|33560: write-property[v7,'state',v6]*|33561: read-variable['this',v9,-]|33562: read-property[v9,'children',v8]|33563: write-variable[v8,'children']*|33564: read-variable['children',v11,-]}" ] 
+BB9795 -> BB9796 [tailport=s, headport=n, headlabel="      9796"]
+BB9795 -> BB9803 [tailport=s, headport=n, color=gray]
+BB9796 [shape=record label="{33565: begin-for-in[v11,v12]}" ] 
+BB9796 -> BB9797 [tailport=s, headport=n, headlabel="      9797"]
+BB9796 -> BB9803 [tailport=s, headport=n, color=gray]
+BB9797 [shape=record label="{33566: has-next[v12,v13]|33567: if[v13](true-block:9798,false-block:9801)}" ] 
+BB9797 -> BB9798 [tailport=s, headport=n, headlabel="      9798"]
+BB9797 -> BB9801 [tailport=s, headport=n, headlabel="      9801"]
+BB9798 [shape=record label="{33568: next-property[v12,v14]|33569: write-variable[v14,'key']|33570: read-variable['children',v17,-]|33571: read-variable['key',v18,-]|33572: read-property[v17,v18,v16]|33573: \<variable-non-null-undef\>['children']|33574: read-property[v16,'destroy',-]|33575: \<property-non-null-undef\>[v17,v18]}" ] 
+BB9798 -> BB9799 [tailport=s, headport=n, headlabel="      9799"]
+BB9798 -> BB9803 [tailport=s, headport=n, color=gray]
+BB9799 [shape=record label="{33576: call-null [v16,'destroy',-]*}" ] 
+BB9799 -> BB9800 [tailport=s, headport=n, headlabel="      9800"]
+BB9799 -> BB9803 [tailport=s, headport=n, color=gray]
+BB9800 [shape=record label="{33577: end-for-in(begin-node:33565)}" ] 
+BB9800 -> BB9797 [tailport=s, headport=n]
+BB9801 [shape=record label="{33578: constant[true,v1]}" ] 
+BB9801 -> BB9802 [tailport=s, headport=n]
+BB9802 [shape=record label="{33579: return[v1]}" ] 
+BB9803 [shape=record label="{33580: exceptional-return}" ] 
+//#$~ 17542
+}

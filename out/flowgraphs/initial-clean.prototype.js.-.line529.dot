@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry65[shape=none,label=""];
+BB_entry65 -> BB784 [tailport=s, headport=n, headlabel="    784"]
+BB784 [shape=record label="{2515: constant[undefined,v1]}" ] 
+BB784 -> BB785 [tailport=s, headport=n, headlabel="      785"]
+BB785 [shape=record label="{2516: read-variable['this',v4,-]|2517: read-property[v4,'currentlyExecuting',v3]|2518: ![v3,v2]|2519: if[v2](true-block:786,false-block:792)}" ] 
+BB785 -> BB786 [tailport=s, headport=n, headlabel="      786"]
+BB785 -> BB792 [tailport=s, headport=n, headlabel="      792"]
+BB785 -> BB793 [tailport=s, headport=n, color=gray, headlabel="      793"]
+BB786 [shape=record label="{2520: read-variable['this',v6,-]|2521: constant[true,v5]|2522: write-property[v6,'currentlyExecuting',v5]*|2523: read-variable['this',v8,-]|2524: read-property[v8,'execute',-]}" ] 
+BB786 -> BB787 [tailport=s, headport=n, headlabel="      787"]
+BB786 -> BB789 [tailport=s, headport=n, color=gray, headlabel="      789"]
+BB787 [shape=record label="{2525: call-this.execute [v8,'execute',-]*}" ] 
+BB787 -> BB788 [tailport=s, headport=n, headlabel="      788"]
+BB787 -> BB789 [tailport=s, headport=n, color=gray]
+BB788 [shape=record label="{2526: read-variable['this',v10,-]|2527: constant[false,v9]|2528: write-property[v10,'currentlyExecuting',v9]*}" ] 
+BB788 -> BB792 [tailport=s, headport=n]
+BB788 -> BB789 [tailport=s, headport=n, color=gray]
+BB789 [shape=record label="{2529: catch[e,v5]|2530: begin-with[v5]}" ] 
+BB789 -> BB790 [tailport=s, headport=n, headlabel="      790"]
+BB789 -> BB793 [tailport=s, headport=n, color=gray]
+BB790 [shape=record label="{2531: read-variable['this',v8,-]|2532: constant[false,v7]|2533: write-property[v8,'currentlyExecuting',v7]*|2534: read-variable['e',v9,v6]|2535: throw[v9]*|2536: end-with}" ] 
+BB790 -> BB792 [tailport=s, headport=n]
+BB790 -> BB791 [tailport=s, headport=n, color=gray, headlabel="      791"]
+BB791 [shape=record label="{2537: end-with}" ] 
+BB791 -> BB793 [tailport=s, headport=n]
+BB792 [shape=record label="{2538: return[v1]}" ] 
+BB793 [shape=record label="{2539: exceptional-return}" ] 
+//#$~ 537
+}

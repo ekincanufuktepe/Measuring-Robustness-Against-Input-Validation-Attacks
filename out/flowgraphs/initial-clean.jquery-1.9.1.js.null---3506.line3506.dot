@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry200[shape=none,label=""];
+BB_entry200 -> BB3189 [tailport=s, headport=n, headlabel="    3189"]
+BB3189 [shape=record label="{9429: constant[undefined,v1]}" ] 
+BB3189 -> BB3190 [tailport=s, headport=n, headlabel="      3190"]
+BB3190 [shape=record label="{9430: read-variable['thisCUBUR3-3507:14',v4,-]|9431: read-property[v4,'_just_changed',v3]|9432: \<variable-non-null-undef\>['thisCUBUR3']|9433: if[v3](true-block:3191,false-block:3192)}" ] 
+BB3190 -> BB3192 [tailport=s, headport=n, headlabel="      3192"]
+BB3190 -> BB3191 [tailport=s, headport=n, headlabel="      3191"]
+BB3190 -> BB3197 [tailport=s, headport=n, color=gray, headlabel="      3197"]
+BB3191 [shape=record label="{9434: read-variable['event-3507:37',v6,v2]|9435: read-property[v6,'isTrigger',v5]|9436: \<variable-non-null-undef\>['event']|9437: ![v5,v3]}" ] 
+BB3191 -> BB3192 [tailport=s, headport=n]
+BB3191 -> BB3197 [tailport=s, headport=n, color=gray]
+BB3192 [shape=record label="{9438: if[v3](true-block:3193,false-block:3194)}" ] 
+BB3192 -> BB3193 [tailport=s, headport=n, headlabel="      3193"]
+BB3192 -> BB3194 [tailport=s, headport=n, headlabel="      3194"]
+BB3193 [shape=record label="{9439: read-variable['thisCUBUR3-3508:10',v6,-]|9440: constant[false,v5]|9441: write-property[v6,'_just_changed',v5]|9442: \<variable-non-null-undef\>['thisCUBUR3']*}" ] 
+BB3193 -> BB3194 [tailport=s, headport=n]
+BB3193 -> BB3197 [tailport=s, headport=n, color=gray]
+BB3194 [shape=record label="{9443: read-variable['jQuery-3511:9',v7,-]|9444: read-property[v7,'event',v6]|9445: \<variable-non-null-undef\>['jQuery']|9446: read-property[v6,'simulate',-]|9447: \<property-non-null-undef\>[v7,'event']|9448: constant[\"change\",v8]|9449: read-variable['thisCUBUR3-3511:42',v9,-]|9450: read-variable['event-3511:48',v10,v2]|9451: constant[true,v11]}" ] 
+BB3194 -> BB3195 [tailport=s, headport=n, headlabel="      3195"]
+BB3194 -> BB3197 [tailport=s, headport=n, color=gray]
+BB3195 [shape=record label="{9452: call-0:0[v6,'simulate',v8,v9,v10,v11,-]*}" ] 
+BB3195 -> BB3196 [tailport=s, headport=n, headlabel="      3196"]
+BB3195 -> BB3197 [tailport=s, headport=n, color=gray]
+BB3196 [shape=record label="{9453: return[v1]}" ] 
+BB3197 [shape=record label="{9454: exceptional-return}" ] 
+}

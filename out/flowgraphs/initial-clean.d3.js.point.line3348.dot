@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry537[shape=none,label=""];
+BB_entry537 -> BB5671 [tailport=s, headport=n, headlabel="    5671"]
+BB5671 [shape=record label="{17863: constant[undefined,v1]|17864: vardecl['point']}" ] 
+BB5671 -> BB5672 [tailport=s, headport=n, headlabel="      5672"]
+BB5672 [shape=record label="{17865: read-variable['rotate',v4,v3]|17866: read-variable['\\u03bb',v5,-]|17867: read-variable['\\u03c6',v6,-]}" ] 
+BB5672 -> BB5673 [tailport=s, headport=n, headlabel="      5673"]
+BB5672 -> BB5680 [tailport=s, headport=n, color=gray, headlabel="      5680"]
+BB5673 [shape=record label="{17868: call-rotate [v3,v4,v5,v6,v2]}" ] 
+BB5673 -> BB5674 [tailport=s, headport=n, headlabel="      5674"]
+BB5673 -> BB5680 [tailport=s, headport=n, color=gray]
+BB5674 [shape=record label="{17869: write-variable[v2,'point']*|17870: read-variable['pointVisible',v9,v8]|17871: read-variable['point',v11,-]|17872: constant[0.0,v12]|17873: read-property[v11,v12,v10]|17874: \<variable-non-null-undef\>['point']|17875: write-variable[v10,'\\u03bb']|17876: read-variable['point',v14,-]|17877: constant[1.0,v15]|17878: read-property[v14,v15,v13]|17879: \<variable-non-null-undef\>['point']|17880: write-variable[v13,'\\u03c6']}" ] 
+BB5674 -> BB5675 [tailport=s, headport=n, headlabel="      5675"]
+BB5674 -> BB5680 [tailport=s, headport=n, color=gray]
+BB5675 [shape=record label="{17881: call-pointVisible [v8,v9,v10,v13,v7]}" ] 
+BB5675 -> BB5676 [tailport=s, headport=n, headlabel="      5676"]
+BB5675 -> BB5680 [tailport=s, headport=n, color=gray]
+BB5676 [shape=record label="{17882: if[v7](true-block:5677,false-block:5679)}" ] 
+BB5676 -> BB5677 [tailport=s, headport=n, headlabel="      5677"]
+BB5676 -> BB5679 [tailport=s, headport=n, headlabel="      5679"]
+BB5677 [shape=record label="{17883: read-variable['listener',v17,-]|17884: read-property[v17,'point',-]|17885: \<variable-non-null-undef\>['listener']|17886: read-variable['\\u03bb',v18,-]|17887: read-variable['\\u03c6',v19,-]}" ] 
+BB5677 -> BB5678 [tailport=s, headport=n, headlabel="      5678"]
+BB5677 -> BB5680 [tailport=s, headport=n, color=gray]
+BB5678 [shape=record label="{17888: call-listener.point [v17,'point',v18,v19,-]*}" ] 
+BB5678 -> BB5679 [tailport=s, headport=n]
+BB5678 -> BB5680 [tailport=s, headport=n, color=gray]
+BB5679 [shape=record label="{17889: return[v1]}" ] 
+BB5680 [shape=record label="{17890: exceptional-return}" ] 
+//#$~ 3350
+}

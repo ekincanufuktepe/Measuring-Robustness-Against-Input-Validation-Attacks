@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry130[shape=none,label=""];
+BB_entry130 -> BB1403 [tailport=s, headport=n, headlabel="    1403"]
+BB1403 [shape=record label="{4350: constant[undefined,v1]}" ] 
+BB1403 -> BB1404 [tailport=s, headport=n, headlabel="      1404"]
+BB1404 [shape=record label="{4351: read-variable['handler',v3,-]|4352: ![v3,v2]|4353: if[v2](true-block:1405,false-block:1406)}" ] 
+BB1404 -> BB1405 [tailport=s, headport=n, headlabel="      1405"]
+BB1404 -> BB1406 [tailport=s, headport=n, headlabel="      1406"]
+BB1404 -> BB1411 [tailport=s, headport=n, color=gray, headlabel="      1411"]
+BB1405 [shape=record label="{4354: read-variable['handlers',v5,-]|4355: read-variable['event',v6,-]|4356: delete-property[v5,v6,v4]*}" ] 
+BB1405 -> BB1410 [tailport=s, headport=n, headlabel="      1410"]
+BB1405 -> BB1411 [tailport=s, headport=n, color=gray]
+BB1406 [shape=record label="{4357: read-variable['handlers',v6,-]|4358: read-variable['event',v7,-]|4359: read-property[v6,v7,v5]|4360: \<variable-non-null-undef\>['handlers']|4361: read-property[v5,'splice',-]|4362: \<property-non-null-undef\>[v6,v7]|4363: read-variable['inArray',v10,v9]|4364: read-variable['handlers',v12,-]|4365: read-variable['event',v13,-]|4366: read-property[v12,v13,v11]|4367: \<variable-non-null-undef\>['handlers']|4368: read-variable['handler',v14,-]}" ] 
+BB1406 -> BB1407 [tailport=s, headport=n, headlabel="      1407"]
+BB1406 -> BB1411 [tailport=s, headport=n, color=gray]
+BB1407 [shape=record label="{4369: call-inArray [v9,v10,v11,v14,v8]}" ] 
+BB1407 -> BB1408 [tailport=s, headport=n, headlabel="      1408"]
+BB1407 -> BB1411 [tailport=s, headport=n, color=gray]
+BB1408 [shape=record label="{4370: constant[1.0,v15]}" ] 
+BB1408 -> BB1409 [tailport=s, headport=n, headlabel="      1409"]
+BB1409 [shape=record label="{4371: call-null [v5,'splice',v8,v15,-]*}" ] 
+BB1409 -> BB1410 [tailport=s, headport=n]
+BB1409 -> BB1411 [tailport=s, headport=n, color=gray]
+BB1410 [shape=record label="{4372: return[v1]}" ] 
+BB1411 [shape=record label="{4373: exceptional-return}" ] 
+//#$~ 2328
+}

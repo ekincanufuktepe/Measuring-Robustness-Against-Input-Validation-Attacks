@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry99[shape=none,label=""];
+BB_entry99 -> BB1348 [tailport=s, headport=n, headlabel="    1348"]
+BB1348 [shape=record label="{3624: constant[undefined,v1]}" ] 
+BB1348 -> BB1349 [tailport=s, headport=n, headlabel="      1349"]
+BB1349 [shape=record label="{3625: read-variable['tagImpl',v2,-]|3626: read-variable['dom',v5,-]|3627: read-property[v5,'getAttribute',-]|3628: \<variable-non-null-undef\>['dom']|3629: read-variable['RIOT_TAG',v6,-]}" ] 
+BB1349 -> BB1350 [tailport=s, headport=n, headlabel="      1350"]
+BB1349 -> BB1356 [tailport=s, headport=n, color=gray, headlabel="      1356"]
+BB1350 [shape=record label="{3630: call-dom.getAttribute [v5,'getAttribute',v6,v3]}" ] 
+BB1350 -> BB1351 [tailport=s, headport=n, headlabel="      1351"]
+BB1350 -> BB1356 [tailport=s, headport=n, color=gray]
+BB1351 [shape=record label="{3631: if[v3](true-block:1354,false-block:1352)}" ] 
+BB1351 -> BB1354 [tailport=s, headport=n, headlabel="      1354"]
+BB1351 -> BB1352 [tailport=s, headport=n, headlabel="      1352"]
+BB1352 [shape=record label="{3632: read-variable['dom',v6,-]|3633: read-property[v6,'tagName',v5]|3634: \<variable-non-null-undef\>['dom']|3635: read-property[v5,'toLowerCase',-]|3636: \<property-non-null-undef\>[v6,'tagName']}" ] 
+BB1352 -> BB1353 [tailport=s, headport=n, headlabel="      1353"]
+BB1352 -> BB1356 [tailport=s, headport=n, color=gray]
+BB1353 [shape=record label="{3637: call-dom.tagName.toLowerCase [v5,'toLowerCase',v3]}" ] 
+BB1353 -> BB1354 [tailport=s, headport=n]
+BB1353 -> BB1356 [tailport=s, headport=n, color=gray]
+BB1354 [shape=record label="{3638: read-property[v2,v3,v1]|3639: \<variable-non-null-undef\>['tagImpl']}" ] 
+BB1354 -> BB1355 [tailport=s, headport=n, headlabel="      1355"]
+BB1354 -> BB1356 [tailport=s, headport=n, color=gray]
+BB1355 [shape=record label="{3640: return[v1]}" ] 
+BB1356 [shape=record label="{3641: exceptional-return}" ] 
+//#$~ 1156
+}

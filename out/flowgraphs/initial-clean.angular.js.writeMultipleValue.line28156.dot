@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry1323[shape=none,label=""];
+BB_entry1323 -> BB16374 [tailport=s, headport=n, headlabel="    16374"]
+BB16374 [shape=record label="{42953: constant[undefined,v1]|42954: vardecl['items']}" ] 
+BB16374 -> BB16375 [tailport=s, headport=n, headlabel="      16375"]
+BB16375 [shape=record label="{42955: read-variable['HashMap',v4,-]|42956: read-variable['value',v5,v2]}" ] 
+BB16375 -> BB16376 [tailport=s, headport=n, headlabel="      16376"]
+BB16375 -> BB16382 [tailport=s, headport=n, color=gray, headlabel="      16382"]
+BB16376 [shape=record label="{42957: construct [-,v4,v5,v3]}" ] 
+BB16376 -> BB16377 [tailport=s, headport=n, headlabel="      16377"]
+BB16376 -> BB16382 [tailport=s, headport=n, color=gray]
+BB16377 [shape=record label="{42958: write-variable[v3,'items']*|42959: read-variable['forEach',v7,v6]|42960: read-variable['element',v10,-]|42961: read-property[v10,'find',-]|42962: \<variable-non-null-undef\>['element']|42963: constant[\"option\",v11]}" ] 
+BB16377 -> BB16378 [tailport=s, headport=n, headlabel="      16378"]
+BB16377 -> BB16382 [tailport=s, headport=n, color=gray]
+BB16378 [shape=record label="{42964: call-element.find [v10,'find',v11,v8]}" ] 
+BB16378 -> BB16379 [tailport=s, headport=n, headlabel="      16379"]
+BB16378 -> BB16382 [tailport=s, headport=n, color=gray]
+BB16379 [shape=record label="{42965: function-expr[function ( option ),v12]}" ] 
+BB16379 -> BB16380 [tailport=s, headport=n, headlabel="      16380"]
+BB16380 [shape=record label="{42966: call-forEach [v6,v7,v8,v12,-]*}" ] 
+BB16380 -> BB16381 [tailport=s, headport=n, headlabel="      16381"]
+BB16380 -> BB16382 [tailport=s, headport=n, color=gray]
+BB16381 [shape=record label="{42967: return[v1]}" ] 
+BB16382 [shape=record label="{42968: exceptional-return}" ] 
+//#$~ 28159
+}

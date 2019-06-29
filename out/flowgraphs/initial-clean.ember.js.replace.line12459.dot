@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry551[shape=none,label=""];
+BB_entry551 -> BB6670 [tailport=s, headport=n, headlabel="    6670"]
+BB6670 [shape=record label="{23345: constant[undefined,v1]}" ] 
+BB6670 -> BB6671 [tailport=s, headport=n, headlabel="      6671"]
+BB6671 [shape=record label="{23346: read-variable['array',v3,-]|23347: read-property[v3,'replace',v2]|23348: \<variable-non-null-undef\>['array']|23349: if[v2](true-block:6672,false-block:6673)}" ] 
+BB6671 -> BB6672 [tailport=s, headport=n, headlabel="      6672"]
+BB6671 -> BB6673 [tailport=s, headport=n, headlabel="      6673"]
+BB6671 -> BB6677 [tailport=s, headport=n, color=gray, headlabel="      6677"]
+BB6672 [shape=record label="{23350: read-variable['array',v5,-]|23351: read-property[v5,'replace',-]|23352: \<variable-non-null-undef\>['array']|23353: read-variable['idx',v6,-]|23354: read-variable['amt',v7,-]|23355: read-variable['objects',v8,-]}" ] 
+BB6672 -> BB6674 [tailport=s, headport=n, headlabel="      6674"]
+BB6672 -> BB6677 [tailport=s, headport=n, color=gray]
+BB6673 [shape=record label="{23356: read-variable['_replace',v5,v4]|23357: read-variable['array',v6,-]|23358: read-variable['idx',v7,-]|23359: read-variable['amt',v8,-]|23360: read-variable['objects',v9,-]}" ] 
+BB6673 -> BB6675 [tailport=s, headport=n, headlabel="      6675"]
+BB6673 -> BB6677 [tailport=s, headport=n, color=gray]
+BB6674 [shape=record label="{23361: call-array.replace [v5,'replace',v6,v7,v8,v1]}" ] 
+BB6674 -> BB6676 [tailport=s, headport=n, headlabel="      6676"]
+BB6674 -> BB6677 [tailport=s, headport=n, color=gray]
+BB6675 [shape=record label="{23362: call-_replace [v4,v5,v6,v7,v8,v9,v1]}" ] 
+BB6675 -> BB6676 [tailport=s, headport=n]
+BB6675 -> BB6677 [tailport=s, headport=n, color=gray]
+BB6676 [shape=record label="{23363: return[v1]}" ] 
+BB6677 [shape=record label="{23364: exceptional-return}" ] 
+//#$~ 12463
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry306[shape=none,label=""];
+BB_entry306 -> BB4327 [tailport=s, headport=n, headlabel="    4327"]
+BB4327 [shape=record label="{12891: constant[undefined,v1]|12892: vardecl['query']|12893: vardecl['search']}" ] 
+BB4327 -> BB4328 [tailport=s, headport=n, headlabel="      4328"]
+BB4328 [shape=record label="{12894: function-expr[function ( query root ),v2]|12895: write-variable[v2,'query']*|12896: read-variable['query',v4,-]|12897: read-variable['engine',v5,-]|12898: read-property[v5,'match',v3]|12899: \<variable-non-null-undef\>['engine']|12900: if[v3](true-block:4330,false-block:4329)}" ] 
+BB4328 -> BB4330 [tailport=s, headport=n, headlabel="      4330"]
+BB4328 -> BB4329 [tailport=s, headport=n, headlabel="      4329"]
+BB4328 -> BB4336 [tailport=s, headport=n, color=gray, headlabel="      4336"]
+BB4329 [shape=record label="{12901: function-expr[function ( node selector root ),v3]}" ] 
+BB4329 -> BB4330 [tailport=s, headport=n]
+BB4330 [shape=record label="{12902: write-property[v4,'matches',v3]|12903: \<variable-non-null-undef\>['query']*|12904: read-variable['query',v6,-]|12905: read-variable['engine',v7,-]|12906: read-property[v7,'filter',v5]|12907: \<variable-non-null-undef\>['engine']|12908: if[v5](true-block:4332,false-block:4331)}" ] 
+BB4330 -> BB4332 [tailport=s, headport=n, headlabel="      4332"]
+BB4330 -> BB4331 [tailport=s, headport=n, headlabel="      4331"]
+BB4330 -> BB4336 [tailport=s, headport=n, color=gray]
+BB4331 [shape=record label="{12909: function-expr[function ( nodes selector root ),v5]}" ] 
+BB4331 -> BB4332 [tailport=s, headport=n]
+BB4332 [shape=record label="{12910: write-property[v6,'filter',v5]|12911: \<variable-non-null-undef\>['query']*|12912: typeof['engine',v8]|12913: constant[\"function\",v9]|12914: !=[v8,v9,v7]|12915: if[v7](true-block:4333,false-block:4334)}" ] 
+BB4332 -> BB4333 [tailport=s, headport=n, headlabel="      4333"]
+BB4332 -> BB4334 [tailport=s, headport=n, headlabel="      4334"]
+BB4332 -> BB4336 [tailport=s, headport=n, color=gray]
+BB4333 [shape=record label="{12916: read-variable['engine',v11,-]|12917: read-property[v11,'search',v10]|12918: \<variable-non-null-undef\>['engine']|12919: write-variable[v10,'search']*|12920: function-expr[function ( selector root ),v12]|12921: write-variable[v12,'engine']*}" ] 
+BB4333 -> BB4334 [tailport=s, headport=n]
+BB4333 -> BB4336 [tailport=s, headport=n, color=gray]
+BB4334 [shape=record label="{12922: read-variable['query',v1,-]}" ] 
+BB4334 -> BB4335 [tailport=s, headport=n, headlabel="      4335"]
+BB4334 -> BB4336 [tailport=s, headport=n, color=gray]
+BB4335 [shape=record label="{12923: return[v1]}" ] 
+BB4336 [shape=record label="{12924: exceptional-return}" ] 
+//#$~ 5948
+}

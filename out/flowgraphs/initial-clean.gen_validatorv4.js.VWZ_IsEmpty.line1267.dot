@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry63[shape=none,label=""];
+BB_entry63 -> BB1003 [tailport=s, headport=n, headlabel="    1003"]
+BB1003 [shape=record label="{3168: constant[undefined,v1]}" ] 
+BB1003 -> BB1004 [tailport=s, headport=n, headlabel="      1004"]
+BB1004 [shape=record label="{3169: read-variable['sfm_str_trim',v4,v3]|3170: read-variable['value',v5,-]}" ] 
+BB1004 -> BB1005 [tailport=s, headport=n, headlabel="      1005"]
+BB1004 -> BB1010 [tailport=s, headport=n, color=gray, headlabel="      1010"]
+BB1005 [shape=record label="{3171: call-sfm_str_trim [v3,v4,v5,v2]}" ] 
+BB1005 -> BB1006 [tailport=s, headport=n, headlabel="      1006"]
+BB1005 -> BB1010 [tailport=s, headport=n, color=gray]
+BB1006 [shape=record label="{3172: write-variable[v2,'value']*|3173: read-variable['value',v9,-]|3174: read-property[v9,'length',v7]|3175: \<variable-non-null-undef\>['value']|3176: constant[0.0,v8]|3177: ==[v7,v8,v6]|3178: if[v6](true-block:1007,false-block:1008)}" ] 
+BB1006 -> BB1007 [tailport=s, headport=n, headlabel="      1007"]
+BB1006 -> BB1008 [tailport=s, headport=n, headlabel="      1008"]
+BB1006 -> BB1010 [tailport=s, headport=n, color=gray]
+BB1007 [shape=record label="{3179: constant[true,v1]}" ] 
+BB1007 -> BB1009 [tailport=s, headport=n, headlabel="      1009"]
+BB1008 [shape=record label="{3180: constant[false,v1]}" ] 
+BB1008 -> BB1009 [tailport=s, headport=n]
+BB1009 [shape=record label="{3181: return[v1]}" ] 
+BB1010 [shape=record label="{3182: exceptional-return}" ] 
+//#$~ 1270
+}

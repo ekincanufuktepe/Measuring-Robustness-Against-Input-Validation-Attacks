@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1518[shape=none,label=""];
+BB_entry1518 -> BB17594 [tailport=s, headport=n, headlabel="    17594"]
+BB17594 [shape=record label="{59049: constant[undefined,v1]|59050: vardecl['content']}" ] 
+BB17594 -> BB17595 [tailport=s, headport=n, headlabel="      17595"]
+BB17595 [shape=record label="{59051: read-variable['get',v4,v3]|59052: read-variable['this',v5,-]|59053: constant[\"content\",v6]}" ] 
+BB17595 -> BB17596 [tailport=s, headport=n, headlabel="      17596"]
+BB17595 -> BB17602 [tailport=s, headport=n, color=gray, headlabel="      17602"]
+BB17596 [shape=record label="{59054: call-get [v3,v4,v5,v6,v2]}" ] 
+BB17596 -> BB17597 [tailport=s, headport=n, headlabel="      17597"]
+BB17596 -> BB17602 [tailport=s, headport=n, color=gray]
+BB17597 [shape=record label="{59055: write-variable[v2,'content']*|59056: read-variable['Ember',v8,-]|59057: read-property[v8,'assert',-]|59058: \<variable-non-null-undef\>['Ember']|59059: constant[\"Can't set ArrayProxy's content to itself\",v9]|59060: read-variable['content',v11,-]|59061: read-variable['this',v12,-]|59062: !==[v11,v12,v10]}" ] 
+BB17597 -> BB17598 [tailport=s, headport=n, headlabel="      17598"]
+BB17597 -> BB17602 [tailport=s, headport=n, color=gray]
+BB17598 [shape=record label="{59063: call-Ember.assert [v8,'assert',v9,v10,-]*}" ] 
+BB17598 -> BB17599 [tailport=s, headport=n, headlabel="      17599"]
+BB17598 -> BB17602 [tailport=s, headport=n, color=gray]
+BB17599 [shape=record label="{59064: read-variable['this',v14,-]|59065: read-property[v14,'_setupContent',-]}" ] 
+BB17599 -> BB17600 [tailport=s, headport=n, headlabel="      17600"]
+BB17599 -> BB17602 [tailport=s, headport=n, color=gray]
+BB17600 [shape=record label="{59066: call-this._setupContent [v14,'_setupContent',-]*}" ] 
+BB17600 -> BB17601 [tailport=s, headport=n, headlabel="      17601"]
+BB17600 -> BB17602 [tailport=s, headport=n, color=gray]
+BB17601 [shape=record label="{59067: return[v1]}" ] 
+BB17602 [shape=record label="{59068: exceptional-return}" ] 
+//#$~ 33328
+}

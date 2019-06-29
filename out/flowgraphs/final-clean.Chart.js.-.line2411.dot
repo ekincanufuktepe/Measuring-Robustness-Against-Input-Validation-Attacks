@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry203[shape=none,label=""];
+BB_entry203 -> BB2193 [tailport=s, headport=n, headlabel="    2193"]
+BB2193 [shape=record label="{9010: constant[undefined,v1]}" ] 
+BB2193 -> BB2194 [tailport=s, headport=n, headlabel="      2194"]
+BB2194 [shape=record label="{9011: read-variable['segment',v4,-]|9012: read-property[v4,'inRange',-]|9013: \<variable-non-null-undef\>['segment']|9014: read-variable['location',v6,-]|9015: read-property[v6,'x',v5]|9016: \<variable-non-null-undef\>['location']|9017: read-variable['location',v8,-]|9018: read-property[v8,'y',v7]|9019: \<variable-non-null-undef\>['location']}" ] 
+BB2194 -> BB2195 [tailport=s, headport=n, headlabel="      2195"]
+BB2194 -> BB2200 [tailport=s, headport=n, color=gray, headlabel="      2200"]
+BB2195 [shape=record label="{9020: call-segment.inRange [v4,'inRange',v5,v7,v2]}" ] 
+BB2195 -> BB2196 [tailport=s, headport=n, headlabel="      2196"]
+BB2195 -> BB2200 [tailport=s, headport=n, color=gray]
+BB2196 [shape=record label="{9021: if[v2](true-block:2197,false-block:2199)}" ] 
+BB2196 -> BB2197 [tailport=s, headport=n, headlabel="      2197"]
+BB2196 -> BB2199 [tailport=s, headport=n, headlabel="      2199"]
+BB2197 [shape=record label="{9022: read-variable['segmentsArray',v10,-]|9023: read-property[v10,'push',-]|9024: \<variable-non-null-undef\>['segmentsArray']|9025: read-variable['segment',v11,-]}" ] 
+BB2197 -> BB2198 [tailport=s, headport=n, headlabel="      2198"]
+BB2197 -> BB2200 [tailport=s, headport=n, color=gray]
+BB2198 [shape=record label="{9026: call-segmentsArray.push [v10,'push',v11,-]*}" ] 
+BB2198 -> BB2199 [tailport=s, headport=n]
+BB2198 -> BB2200 [tailport=s, headport=n, color=gray]
+BB2199 [shape=record label="{9027: return[v1]}" ] 
+BB2200 [shape=record label="{9028: exceptional-return}" ] 
+//#$~ 2412
+}

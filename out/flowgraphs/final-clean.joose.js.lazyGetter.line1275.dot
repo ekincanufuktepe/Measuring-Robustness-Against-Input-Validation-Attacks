@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry134[shape=none,label=""];
+BB_entry134 -> BB1098 [tailport=s, headport=n, headlabel="    1098"]
+BB1098 [shape=record label="{3307: constant[undefined,v1]|3308: vardecl['val']}" ] 
+BB1098 -> BB1099 [tailport=s, headport=n, headlabel="      1099"]
+BB1099 [shape=record label="{3309: read-variable['this',v4,-]|3310: read-variable['name',v5,v2]|3311: read-property[v4,v5,v3]|3312: write-variable[v3,'val']*|3313: typeof['val',v7]|3314: constant[\"function\",v8]|3315: ==[v7,v8,v6]|3316: if[v6](true-block:1100,false-block:1101)}" ] 
+BB1099 -> BB1101 [tailport=s, headport=n, headlabel="      1101"]
+BB1099 -> BB1100 [tailport=s, headport=n, headlabel="      1100"]
+BB1099 -> BB1107 [tailport=s, headport=n, color=gray, headlabel="      1107"]
+BB1100 [shape=record label="{3317: read-variable['val',v9,v2]|3318: read-variable['init',v10,v2]|3319: ===[v9,v10,v6]}" ] 
+BB1100 -> BB1101 [tailport=s, headport=n]
+BB1100 -> BB1107 [tailport=s, headport=n, color=gray]
+BB1101 [shape=record label="{3320: if[v6](true-block:1102,false-block:1105)}" ] 
+BB1101 -> BB1102 [tailport=s, headport=n, headlabel="      1102"]
+BB1101 -> BB1105 [tailport=s, headport=n, headlabel="      1105"]
+BB1102 [shape=record label="{3321: read-variable['this',v10,-]|3322: read-variable['name',v11,v2]|3323: read-variable['val',v13,-]|3324: read-property[v13,'apply',-]|3325: \<variable-non-null-undef\>['val']|3326: read-variable['this',v14,-]}" ] 
+BB1102 -> BB1103 [tailport=s, headport=n, headlabel="      1103"]
+BB1102 -> BB1107 [tailport=s, headport=n, color=gray]
+BB1103 [shape=record label="{3327: call-val.apply [v13,'apply',v14,v9]}" ] 
+BB1103 -> BB1104 [tailport=s, headport=n, headlabel="      1104"]
+BB1103 -> BB1107 [tailport=s, headport=n, color=gray]
+BB1104 [shape=record label="{3328: write-property[v10,v11,v9]*}" ] 
+BB1104 -> BB1105 [tailport=s, headport=n]
+BB1104 -> BB1107 [tailport=s, headport=n, color=gray]
+BB1105 [shape=record label="{3329: read-variable['this',v9,-]|3330: read-variable['name',v10,v2]|3331: read-property[v9,v10,v1]}" ] 
+BB1105 -> BB1106 [tailport=s, headport=n, headlabel="      1106"]
+BB1105 -> BB1107 [tailport=s, headport=n, color=gray]
+BB1106 [shape=record label="{3332: return[v1]}" ] 
+BB1107 [shape=record label="{3333: exceptional-return}" ] 
+//#$~ 1280
+}

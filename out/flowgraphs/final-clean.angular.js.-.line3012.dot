@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry152[shape=none,label=""];
+BB_entry152 -> BB2044 [tailport=s, headport=n, headlabel="    2044"]
+BB2044 [shape=record label="{4905: constant[undefined,v1]|4906: vardecl['value']}" ] 
+BB2044 -> BB2045 [tailport=s, headport=n, headlabel="      2045"]
+BB2045 [shape=record label="{4907: read-variable['Array',v3,-]}" ] 
+BB2045 -> BB2046 [tailport=s, headport=n, headlabel="      2046"]
+BB2045 -> BB2053 [tailport=s, headport=n, color=gray, headlabel="      2053"]
+BB2046 [shape=record label="{4908: construct [-,v3,v2]}" ] 
+BB2046 -> BB2047 [tailport=s, headport=n, headlabel="      2047"]
+BB2046 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2047 [shape=record label="{4909: write-variable[v2,'value']*|4910: read-variable['forEach',v5,v4]|4911: read-variable['this',v6,-]|4912: function-expr[function ( e ),v7]}" ] 
+BB2047 -> BB2048 [tailport=s, headport=n, headlabel="      2048"]
+BB2047 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2048 [shape=record label="{4913: call-forEach [v4,v5,v6,v7,-]*}" ] 
+BB2048 -> BB2049 [tailport=s, headport=n, headlabel="      2049"]
+BB2048 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2049 [shape=record label="{4914: constant[\"[\",v10]|4915: read-variable['value',v13,-]|4916: read-property[v13,'join',-]|4917: \<variable-non-null-undef\>['value']|4918: constant[\", \",v14]}" ] 
+BB2049 -> BB2050 [tailport=s, headport=n, headlabel="      2050"]
+BB2049 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2050 [shape=record label="{4919: call-value.join [v13,'join',v14,v11]}" ] 
+BB2050 -> BB2051 [tailport=s, headport=n, headlabel="      2051"]
+BB2050 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2051 [shape=record label="{4920: +[v10,v11,v8]|4921: constant[\"]\",v9]|4922: +[v8,v9,v1]}" ] 
+BB2051 -> BB2052 [tailport=s, headport=n, headlabel="      2052"]
+BB2051 -> BB2053 [tailport=s, headport=n, color=gray]
+BB2052 [shape=record label="{4923: return[v1]}" ] 
+BB2053 [shape=record label="{4924: exceptional-return}" ] 
+//#$~ 3015
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry206[shape=none,label=""];
+BB_entry206 -> BB2300 [tailport=s, headport=n, headlabel="    2300"]
+BB2300 [shape=record label="{7369: constant[undefined,v1]}" ] 
+BB2300 -> BB2301 [tailport=s, headport=n, headlabel="      2301"]
+BB2301 [shape=record label="{7370: constant[\"hook\",v3]|7371: read-variable['test',v5,-]|7372: read-property[v5,'type',v4]|7373: \<variable-non-null-undef\>['test']|7374: ==[v3,v4,v2]|7375: if[v2](true-block:2302,false-block:2304)}" ] 
+BB2301 -> BB2302 [tailport=s, headport=n, headlabel="      2302"]
+BB2301 -> BB2304 [tailport=s, headport=n, headlabel="      2304"]
+BB2301 -> BB2305 [tailport=s, headport=n, color=gray, headlabel="      2305"]
+BB2302 [shape=record label="{7376: read-variable['runner',v7,-]|7377: read-property[v7,'emit',-]|7378: \<variable-non-null-undef\>['runner']|7379: constant[\"test end\",v8]|7380: read-variable['test',v9,-]}" ] 
+BB2302 -> BB2303 [tailport=s, headport=n, headlabel="      2303"]
+BB2302 -> BB2305 [tailport=s, headport=n, color=gray]
+BB2303 [shape=record label="{7381: call-runner.emit [v7,'emit',v8,v9,-]*}" ] 
+BB2303 -> BB2304 [tailport=s, headport=n]
+BB2303 -> BB2305 [tailport=s, headport=n, color=gray]
+BB2304 [shape=record label="{7382: return[v1]}" ] 
+BB2305 [shape=record label="{7383: exceptional-return}" ] 
+//#$~ 2764
+}

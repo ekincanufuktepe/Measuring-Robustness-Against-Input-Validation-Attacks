@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry690[shape=none,label=""];
+BB_entry690 -> BB8257 [tailport=s, headport=n, headlabel="    8257"]
+BB8257 [shape=record label="{28507: constant[undefined,v1]|28508: vardecl['args']}" ] 
+BB8257 -> BB8258 [tailport=s, headport=n, headlabel="      8258"]
+BB8258 [shape=record label="{28509: read-variable['a_slice',v4,-]|28510: read-property[v4,'call',-]|28511: \<variable-non-null-undef\>['a_slice']|28512: read-variable['arguments',v5,-]|28513: constant[1.0,v6]}" ] 
+BB8258 -> BB8259 [tailport=s, headport=n, headlabel="      8259"]
+BB8258 -> BB8263 [tailport=s, headport=n, color=gray, headlabel="      8263"]
+BB8259 [shape=record label="{28514: call-a_slice.call [v4,'call',v5,v6,v2]}" ] 
+BB8259 -> BB8260 [tailport=s, headport=n, headlabel="      8260"]
+BB8259 -> BB8263 [tailport=s, headport=n, color=gray]
+BB8260 [shape=record label="{28515: write-variable[v2,'args']*|28516: read-variable['applyMixin',v8,v7]|28517: read-variable['obj',v9,-]|28518: read-variable['args',v10,-]|28519: constant[true,v11]}" ] 
+BB8260 -> BB8261 [tailport=s, headport=n, headlabel="      8261"]
+BB8260 -> BB8263 [tailport=s, headport=n, color=gray]
+BB8261 [shape=record label="{28520: call-applyMixin [v7,v8,v9,v10,v11,v1]}" ] 
+BB8261 -> BB8262 [tailport=s, headport=n, headlabel="      8262"]
+BB8261 -> BB8263 [tailport=s, headport=n, color=gray]
+BB8262 [shape=record label="{28521: return[v1]}" ] 
+BB8263 [shape=record label="{28522: exceptional-return}" ] 
+//#$~ 14977
+}

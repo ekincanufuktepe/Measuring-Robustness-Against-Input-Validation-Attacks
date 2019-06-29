@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry357[shape=none,label=""];
+BB_entry357 -> BB5004 [tailport=s, headport=n, headlabel="    5004"]
+BB5004 [shape=record label="{14824: constant[undefined,v1]|14825: vardecl['paths']}" ] 
+BB5004 -> BB5005 [tailport=s, headport=n, headlabel="      5005"]
+BB5005 [shape=record label="{14826: new[v2]|14827: write-variable[v2,'paths']*|14828: read-variable['paths',v4,-]|14829: read-variable['moduleName',v7,-]|14830: read-property[v7,'replace',-]|14831: \<variable-non-null-undef\>['moduleName']|14832: read-variable['RegExp',v9,-]|14833: constant[\"\\\\.\",v10]|14834: constant[\"g\",v11]}" ] 
+BB5005 -> BB5006 [tailport=s, headport=n, headlabel="      5006"]
+BB5005 -> BB5012 [tailport=s, headport=n, color=gray, headlabel="      5012"]
+BB5006 [shape=record label="{14835: construct [-,v9,v10,v11,v8]}" ] 
+BB5006 -> BB5007 [tailport=s, headport=n, headlabel="      5007"]
+BB5006 -> BB5012 [tailport=s, headport=n, color=gray]
+BB5007 [shape=record label="{14836: constant[\"/\",v12]}" ] 
+BB5007 -> BB5008 [tailport=s, headport=n, headlabel="      5008"]
+BB5008 [shape=record label="{14837: call-moduleName.replace [v7,'replace',v8,v12,v5]}" ] 
+BB5008 -> BB5009 [tailport=s, headport=n, headlabel="      5009"]
+BB5008 -> BB5012 [tailport=s, headport=n, color=gray]
+BB5009 [shape=record label="{14838: read-variable['prefix',v3,-]|14839: write-property[v4,v5,v3]|14840: \<variable-non-null-undef\>['paths']*|14841: read-variable['require',v14,v13]|14842: new[v15]|14843: read-variable['paths',v16,-]|14844: write-property[v15,'paths',v16]}" ] 
+BB5009 -> BB5010 [tailport=s, headport=n, headlabel="      5010"]
+BB5009 -> BB5012 [tailport=s, headport=n, color=gray]
+BB5010 [shape=record label="{14845: call-require [v13,v14,v15,-]*}" ] 
+BB5010 -> BB5011 [tailport=s, headport=n, headlabel="      5011"]
+BB5010 -> BB5012 [tailport=s, headport=n, color=gray]
+BB5011 [shape=record label="{14846: return[v1]}" ] 
+BB5012 [shape=record label="{14847: exceptional-return}" ] 
+//#$~ 6952
+}

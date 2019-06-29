@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry589[shape=none,label=""];
+BB_entry589 -> BB7969 [tailport=s, headport=n, headlabel="    7969"]
+BB7969 [shape=record label="{22648: constant[undefined,v1]}" ] 
+BB7969 -> BB7970 [tailport=s, headport=n, headlabel="      7970"]
+BB7970 [shape=record label="{22649: read-variable['extendElements',v3,v2]|22650: read-variable['engine',v6,v5]|22651: read-variable['selector',v7,-]|22652: read-variable['scope',v8,-]|22653: if[v8](true-block:7972,false-block:7971)}" ] 
+BB7970 -> BB7972 [tailport=s, headport=n, headlabel="      7972"]
+BB7970 -> BB7971 [tailport=s, headport=n, headlabel="      7971"]
+BB7970 -> BB7975 [tailport=s, headport=n, color=gray, headlabel="      7975"]
+BB7971 [shape=record label="{22654: read-variable['document',v8,-]}" ] 
+BB7971 -> BB7972 [tailport=s, headport=n]
+BB7971 -> BB7975 [tailport=s, headport=n, color=gray]
+BB7972 [shape=record label="{22655: call-engine [v5,v6,v7,v8,v4]}" ] 
+BB7972 -> BB7973 [tailport=s, headport=n, headlabel="      7973"]
+BB7972 -> BB7975 [tailport=s, headport=n, color=gray]
+BB7973 [shape=record label="{22656: call-extendElements [v2,v3,v4,v1]}" ] 
+BB7973 -> BB7974 [tailport=s, headport=n, headlabel="      7974"]
+BB7973 -> BB7975 [tailport=s, headport=n, color=gray]
+BB7974 [shape=record label="{22657: return[v1]}" ] 
+BB7975 [shape=record label="{22658: exceptional-return}" ] 
+//#$~ 6236
+}

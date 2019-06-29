@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB1066 [tailport=s, headport=n, headlabel="    1066"]
+BB1066 [shape=record label="{2701: constant[undefined,v1]}" ] 
+BB1066 -> BB1067 [tailport=s, headport=n, headlabel="      1067"]
+BB1067 [shape=record label="{2702: read-variable['deferred',v3,-]|2703: read-variable['tuple',v7,-]|2704: constant[0.0,v8]|2705: read-property[v7,v8,v5]|2706: \<variable-non-null-undef\>['tuple']|2707: constant[\"With\",v6]|2708: +[v5,v6,v4]|2709: read-property[v3,v4,-]|2710: \<variable-non-null-undef\>['deferred']|2711: read-variable['this',v11,-]|2712: read-variable['deferred',v12,-]|2713: ===[v11,v12,v10]|2714: if[v10](true-block:1068,false-block:1069)}" ] 
+BB1067 -> BB1068 [tailport=s, headport=n, headlabel="      1068"]
+BB1067 -> BB1069 [tailport=s, headport=n, headlabel="      1069"]
+BB1067 -> BB1074 [tailport=s, headport=n, color=gray, headlabel="      1074"]
+BB1068 [shape=record label="{2715: read-variable['promise',v9,-]}" ] 
+BB1068 -> BB1070 [tailport=s, headport=n, headlabel="      1070"]
+BB1068 -> BB1074 [tailport=s, headport=n, color=gray]
+BB1069 [shape=record label="{2716: read-variable['this',v9,-]}" ] 
+BB1069 -> BB1070 [tailport=s, headport=n]
+BB1069 -> BB1074 [tailport=s, headport=n, color=gray]
+BB1070 [shape=record label="{2717: read-variable['arguments',v13,-]}" ] 
+BB1070 -> BB1071 [tailport=s, headport=n, headlabel="      1071"]
+BB1070 -> BB1074 [tailport=s, headport=n, color=gray]
+BB1071 [shape=record label="{2718: call[v3,[v4],v9,v13,-]*}" ] 
+BB1071 -> BB1072 [tailport=s, headport=n, headlabel="      1072"]
+BB1071 -> BB1074 [tailport=s, headport=n, color=gray]
+BB1072 [shape=record label="{2719: read-variable['this',v1,-]}" ] 
+BB1072 -> BB1073 [tailport=s, headport=n, headlabel="      1073"]
+BB1072 -> BB1074 [tailport=s, headport=n, color=gray]
+BB1073 [shape=record label="{2720: return[v1]}" ] 
+BB1074 [shape=record label="{2721: exceptional-return}" ] 
+}

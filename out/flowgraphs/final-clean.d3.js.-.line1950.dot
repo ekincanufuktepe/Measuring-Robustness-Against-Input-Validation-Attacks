@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry303[shape=none,label=""];
+BB_entry303 -> BB3257 [tailport=s, headport=n, headlabel="    3257"]
+BB3257 [shape=record label="{10042: constant[undefined,v1]|10043: vardecl['o']}" ] 
+BB3257 -> BB3258 [tailport=s, headport=n, headlabel="      3258"]
+BB3258 [shape=record label="{10044: read-variable['d3',v3,-]|10045: read-property[v3,'event',v2]|10046: \<variable-non-null-undef\>['d3']|10047: write-variable[v2,'o']*|10048: read-variable['d3',v5,-]|10049: read-variable['event',v4,-]|10050: write-property[v5,'event',v4]|10051: \<variable-non-null-undef\>['d3']*}" ] 
+BB3258 -> BB3259 [tailport=s, headport=n, headlabel="      3259"]
+BB3258 -> BB3264 [tailport=s, headport=n, color=gray, headlabel="      3264"]
+BB3259 [shape=record label="{10052: read-variable['dispatch',v8,-]|10053: read-property[v8,'progress',v7]|10054: \<variable-non-null-undef\>['dispatch']|10055: read-property[v7,'call',-]|10056: \<property-non-null-undef\>[v8,'progress']|10057: read-variable['xhr',v9,-]|10058: read-variable['request',v10,-]}" ] 
+BB3259 -> BB3260 [tailport=s, headport=n, headlabel="      3260"]
+BB3259 -> BB3262 [tailport=s, headport=n, color=gray, headlabel="      3262"]
+BB3260 [shape=record label="{10059: call-dispatch.progress.call [v7,'call',v9,v10,-]*}" ] 
+BB3260 -> BB3261 [tailport=s, headport=n, headlabel="      3261"]
+BB3260 -> BB3262 [tailport=s, headport=n, color=gray]
+BB3261 [shape=record label="{10060: read-variable['d3',v10,-]|10061: read-variable['o',v9,-]|10062: write-property[v10,'event',v9]|10063: \<variable-non-null-undef\>['d3']*}" ] 
+BB3261 -> BB3263 [tailport=s, headport=n, headlabel="      3263"]
+BB3261 -> BB3264 [tailport=s, headport=n, color=gray]
+BB3262 [shape=record label="{10064: catch[v6]|10065: read-variable['d3',v8,-]|10066: read-variable['o',v7,-]|10067: write-property[v8,'event',v7]|10068: \<variable-non-null-undef\>['d3']*|10069: throw[v6]}" ] 
+BB3262 -> BB3264 [tailport=s, headport=n]
+BB3262 -> BB3264 [tailport=s, headport=n, color=gray]
+BB3263 [shape=record label="{10070: return[v1]}" ] 
+BB3264 [shape=record label="{10071: exceptional-return}" ] 
+//#$~ 1956
+}

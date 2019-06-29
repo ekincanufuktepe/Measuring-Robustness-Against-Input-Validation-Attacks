@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry340[shape=none,label=""];
+BB_entry340 -> BB4060 [tailport=s, headport=n, headlabel="    4060"]
+BB4060 [shape=record label="{9900: constant[undefined,v1]|9901: vardecl['directives']}" ] 
+BB4060 -> BB4061 [tailport=s, headport=n, headlabel="      4061"]
+BB4061 [shape=record label="{9902: read-variable['Array',v3,-]}" ] 
+BB4061 -> BB4062 [tailport=s, headport=n, headlabel="      4062"]
+BB4061 -> BB4067 [tailport=s, headport=n, color=gray, headlabel="      4067"]
+BB4062 [shape=record label="{9903: construct [-,v3,v2]}" ] 
+BB4062 -> BB4063 [tailport=s, headport=n, headlabel="      4063"]
+BB4062 -> BB4067 [tailport=s, headport=n, color=gray]
+BB4063 [shape=record label="{9904: write-variable[v2,'directives']*|9905: read-variable['forEach',v5,v4]|9906: read-variable['hasDirectives',v7,-]|9907: read-variable['name',v8,-]|9908: read-property[v7,v8,v6]|9909: \<variable-non-null-undef\>['hasDirectives']|9910: function-expr[function ( directiveFactory index ),v9]}" ] 
+BB4063 -> BB4064 [tailport=s, headport=n, headlabel="      4064"]
+BB4063 -> BB4067 [tailport=s, headport=n, color=gray]
+BB4064 [shape=record label="{9911: call-forEach [v4,v5,v6,v9,-]*}" ] 
+BB4064 -> BB4065 [tailport=s, headport=n, headlabel="      4065"]
+BB4064 -> BB4067 [tailport=s, headport=n, color=gray]
+BB4065 [shape=record label="{9912: read-variable['directives',v1,-]}" ] 
+BB4065 -> BB4066 [tailport=s, headport=n, headlabel="      4066"]
+BB4065 -> BB4067 [tailport=s, headport=n, color=gray]
+BB4066 [shape=record label="{9913: return[v1]}" ] 
+BB4067 [shape=record label="{9914: exceptional-return}" ] 
+//#$~ 6965
+}

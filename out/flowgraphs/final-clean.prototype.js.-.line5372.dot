@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry520[shape=none,label=""];
+BB_entry520 -> BB6738 [tailport=s, headport=n, headlabel="    6738"]
+BB6738 [shape=record label="{18827: constant[undefined,v1]}" ] 
+BB6738 -> BB6739 [tailport=s, headport=n, headlabel="      6739"]
+BB6739 [shape=record label="{18828: read-variable['elem',v2,-]|18829: read-property[v2,'nodeName',v1]|18830: \<variable-non-null-undef\>['elem']|18831: if[v1](true-block:6740,false-block:6743)}" ] 
+BB6739 -> BB6743 [tailport=s, headport=n, headlabel="      6743"]
+BB6739 -> BB6740 [tailport=s, headport=n, headlabel="      6740"]
+BB6739 -> BB6744 [tailport=s, headport=n, color=gray, headlabel="      6744"]
+BB6740 [shape=record label="{18832: read-variable['elem',v7,-]|18833: read-property[v7,'nodeName',v6]|18834: \<variable-non-null-undef\>['elem']|18835: read-property[v6,'toLowerCase',-]|18836: \<property-non-null-undef\>[v7,'nodeName']}" ] 
+BB6740 -> BB6741 [tailport=s, headport=n, headlabel="      6741"]
+BB6740 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6741 [shape=record label="{18837: call-elem.nodeName.toLowerCase [v6,'toLowerCase',v3]}" ] 
+BB6741 -> BB6742 [tailport=s, headport=n, headlabel="      6742"]
+BB6741 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6742 [shape=record label="{18838: read-variable['nodeName',v4,-]|18839: ===[v3,v4,v1]}" ] 
+BB6742 -> BB6743 [tailport=s, headport=n]
+BB6742 -> BB6744 [tailport=s, headport=n, color=gray]
+BB6743 [shape=record label="{18840: return[v1]}" ] 
+BB6744 [shape=record label="{18841: exceptional-return}" ] 
+//#$~ 5373
+}

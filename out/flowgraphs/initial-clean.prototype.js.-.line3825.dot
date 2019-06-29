@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry398[shape=none,label=""];
+BB_entry398 -> BB5065 [tailport=s, headport=n, headlabel="    5065"]
+BB5065 [shape=record label="{14046: constant[undefined,v1]|14047: vardecl['width']|14048: vardecl['pLeft']|14049: vardecl['pRight']}" ] 
+BB5065 -> BB5066 [tailport=s, headport=n, headlabel="      5066"]
+BB5066 [shape=record label="{14050: read-variable['this',v4,-]|14051: read-property[v4,'get',-]|14052: constant[\"width\",v5]}" ] 
+BB5066 -> BB5067 [tailport=s, headport=n, headlabel="      5067"]
+BB5066 -> BB5074 [tailport=s, headport=n, color=gray, headlabel="      5074"]
+BB5067 [shape=record label="{14053: call-this.get [v4,'get',v5,v2]}" ] 
+BB5067 -> BB5068 [tailport=s, headport=n, headlabel="      5068"]
+BB5067 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5068 [shape=record label="{14054: write-variable[v2,'width']*|14055: read-variable['this',v8,-]|14056: read-property[v8,'get',-]|14057: constant[\"padding-left\",v9]}" ] 
+BB5068 -> BB5069 [tailport=s, headport=n, headlabel="      5069"]
+BB5068 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5069 [shape=record label="{14058: call-this.get [v8,'get',v9,v6]}" ] 
+BB5069 -> BB5070 [tailport=s, headport=n, headlabel="      5070"]
+BB5069 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5070 [shape=record label="{14059: write-variable[v6,'pLeft']*|14060: read-variable['this',v12,-]|14061: read-property[v12,'get',-]|14062: constant[\"padding-right\",v13]}" ] 
+BB5070 -> BB5071 [tailport=s, headport=n, headlabel="      5071"]
+BB5070 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5071 [shape=record label="{14063: call-this.get [v12,'get',v13,v10]}" ] 
+BB5071 -> BB5072 [tailport=s, headport=n, headlabel="      5072"]
+BB5071 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5072 [shape=record label="{14064: write-variable[v10,'pRight']*|14065: read-variable['width',v16,-]|14066: read-variable['pLeft',v17,-]|14067: +[v16,v17,v14]|14068: read-variable['pRight',v15,-]|14069: +[v14,v15,v1]}" ] 
+BB5072 -> BB5073 [tailport=s, headport=n, headlabel="      5073"]
+BB5072 -> BB5074 [tailport=s, headport=n, color=gray]
+BB5073 [shape=record label="{14070: return[v1]}" ] 
+BB5074 [shape=record label="{14071: exceptional-return}" ] 
+//#$~ 3830
+}

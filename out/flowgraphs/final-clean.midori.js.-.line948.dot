@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry73[shape=none,label=""];
+BB_entry73 -> BB1260 [tailport=s, headport=n, headlabel="    1260"]
+BB1260 [shape=record label="{4711: constant[undefined,v1]}" ] 
+BB1260 -> BB1261 [tailport=s, headport=n, headlabel="      1261"]
+BB1261 [shape=record label="{4712: read-variable['this',v3,-]|4713: read-variable['callback',v2,-]|4714: write-property[v3,'callback',v2]*|4715: read-variable['midori',v7,-]|4716: read-property[v7,'browserType',v5]|4717: \<variable-non-null-undef\>['midori']|4718: constant[\"MSIE\",v6]|4719: ==[v5,v6,v4]|4720: if[v4](true-block:1262,false-block:1266)}" ] 
+BB1261 -> BB1262 [tailport=s, headport=n, headlabel="      1262"]
+BB1261 -> BB1266 [tailport=s, headport=n, headlabel="      1266"]
+BB1261 -> BB1269 [tailport=s, headport=n, color=gray, headlabel="      1269"]
+BB1262 [shape=record label="{4721: read-variable['document',v12,-]|4722: read-property[v12,'body',v11]|4723: \<variable-non-null-undef\>['document']|4724: read-property[v11,'appendChild',-]|4725: \<property-non-null-undef\>[v12,'body']|4726: read-variable['document',v15,-]|4727: read-property[v15,'createElement',-]|4728: \<variable-non-null-undef\>['document']|4729: constant[\"div\",v16]}" ] 
+BB1262 -> BB1263 [tailport=s, headport=n, headlabel="      1263"]
+BB1262 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1263 [shape=record label="{4730: call-document.createElement [v15,'createElement',v16,v13]}" ] 
+BB1263 -> BB1264 [tailport=s, headport=n, headlabel="      1264"]
+BB1263 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1264 [shape=record label="{4731: call-document.body.appendChild [v11,'appendChild',v13,v9]}" ] 
+BB1264 -> BB1265 [tailport=s, headport=n, headlabel="      1265"]
+BB1264 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1265 [shape=record label="{4732: constant[\"\\\<iframe id=\\\"midori_history\\\" style=\\\"position: absolute; width: 1px; height: 1px\\\"\\\>\\\</iframe\\\>\",v8]|4733: write-property[v9,'innerHTML',v8]*}" ] 
+BB1265 -> BB1266 [tailport=s, headport=n]
+BB1265 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1266 [shape=record label="{4734: read-variable['setInterval',v9,v8]|4735: read-variable['this',v11,-]|4736: read-property[v11,'onChange',v10]|4737: constant[250.0,v12]}" ] 
+BB1266 -> BB1267 [tailport=s, headport=n, headlabel="      1267"]
+BB1266 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1267 [shape=record label="{4738: call-setInterval [v8,v9,v10,v12,-]*}" ] 
+BB1267 -> BB1268 [tailport=s, headport=n, headlabel="      1268"]
+BB1267 -> BB1269 [tailport=s, headport=n, color=gray]
+BB1268 [shape=record label="{4739: return[v1]}" ] 
+BB1269 [shape=record label="{4740: exceptional-return}" ] 
+//#$~ 954
+}

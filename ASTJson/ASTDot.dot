@@ -1,0 +1,50 @@
+digraph{
+compound=true
+subgraph cluster0 {
+label="function {}";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry1 [shape=none,label=""];
+}
+subgraph cluster1 {
+label="function {fA=[a1, a2]}";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry2 [shape=none,label=""];
+BB0 [shape=record label="a1" ]
+BB1 [shape=record label="a2" ]
+}
+subgraph cluster2 {
+label="function {fD=[d1, d2]}";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry3 [shape=none,label=""];
+BB2 [shape=record label="d1" ]
+BB3 [shape=record label="d2" ]
+BB2 -> BB2
+BB2 -> BB3
+BB3 -> BB2
+BB3 -> BB3
+}
+subgraph cluster3 {
+label="function {fB=[b1, b2]}";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry4 [shape=none,label=""];
+BB4 [shape=record label="b1" ]
+BB5 [shape=record label="b2" ]
+}
+subgraph cluster4 {
+label="function {fC=[c1, c2]}";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry5 [shape=none,label=""];
+BB6 [shape=record label="c1" ]
+BB7 [shape=record label="c2" ]
+}
+}

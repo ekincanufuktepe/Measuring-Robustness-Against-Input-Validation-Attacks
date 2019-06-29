@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry89[shape=none,label=""];
+BB_entry89 -> BB1130 [tailport=s, headport=n, headlabel="    1130"]
+BB1130 [shape=record label="{3000: constant[undefined,v1]}" ] 
+BB1130 -> BB1131 [tailport=s, headport=n, headlabel="      1131"]
+BB1131 [shape=record label="{3001: read-variable['context',v6,-]|3002: read-property[v6,'getElementsByClassName',v5]|3003: \<variable-non-null-undef\>['context']|3004: typeof[v5,v3]|3005: read-variable['strundefined',v4,-]|3006: !==[v3,v4,v2]|3007: if[v2](true-block:1132,false-block:1133)}" ] 
+BB1131 -> BB1133 [tailport=s, headport=n, headlabel="      1133"]
+BB1131 -> BB1132 [tailport=s, headport=n, headlabel="      1132"]
+BB1131 -> BB1137 [tailport=s, headport=n, color=gray, headlabel="      1137"]
+BB1132 [shape=record label="{3008: read-variable['documentIsHTML',v2,-]}" ] 
+BB1132 -> BB1133 [tailport=s, headport=n]
+BB1132 -> BB1137 [tailport=s, headport=n, color=gray]
+BB1133 [shape=record label="{3009: if[v2](true-block:1134,false-block:1136)}" ] 
+BB1133 -> BB1134 [tailport=s, headport=n, headlabel="      1134"]
+BB1133 -> BB1136 [tailport=s, headport=n, headlabel="      1136"]
+BB1134 [shape=record label="{3010: read-variable['context',v8,-]|3011: read-property[v8,'getElementsByClassName',-]|3012: \<variable-non-null-undef\>['context']|3013: read-variable['className',v9,-]}" ] 
+BB1134 -> BB1135 [tailport=s, headport=n, headlabel="      1135"]
+BB1134 -> BB1137 [tailport=s, headport=n, color=gray]
+BB1135 [shape=record label="{3014: call[v8,'getElementsByClassName',v9,v1]}" ] 
+BB1135 -> BB1136 [tailport=s, headport=n]
+BB1135 -> BB1137 [tailport=s, headport=n, color=gray]
+BB1136 [shape=record label="{3015: return[v1]}" ] 
+BB1137 [shape=record label="{3016: exceptional-return}" ] 
+}

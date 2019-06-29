@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry132[shape=none,label=""];
+BB_entry132 -> BB1528 [tailport=s, headport=n, headlabel="    1528"]
+BB1528 [shape=record label="{4208: constant[undefined,v1]|4209: vardecl['args']}" ] 
+BB1528 -> BB1529 [tailport=s, headport=n, headlabel="      1529"]
+BB1529 [shape=record label="{4210: read-variable['$A',v6,v5]|4211: read-variable['arguments',v7,-]}" ] 
+BB1529 -> BB1530 [tailport=s, headport=n, headlabel="      1530"]
+BB1529 -> BB1536 [tailport=s, headport=n, color=gray, headlabel="      1536"]
+BB1530 [shape=record label="{4212: call-$A [v5,v6,v7,v4]}" ] 
+BB1530 -> BB1531 [tailport=s, headport=n, headlabel="      1531"]
+BB1530 -> BB1536 [tailport=s, headport=n, color=gray]
+BB1531 [shape=record label="{4213: read-property[v4,'slice',-]|4214: constant[1.0,v8]}" ] 
+BB1531 -> BB1532 [tailport=s, headport=n, headlabel="      1532"]
+BB1531 -> BB1536 [tailport=s, headport=n, color=gray]
+BB1532 [shape=record label="{4215: call-null [v4,'slice',v8,v2]}" ] 
+BB1532 -> BB1533 [tailport=s, headport=n, headlabel="      1533"]
+BB1532 -> BB1536 [tailport=s, headport=n, color=gray]
+BB1533 [shape=record label="{4216: write-variable[v2,'args']*|4217: read-variable['this',v10,-]|4218: read-property[v10,'map',-]|4219: function-expr[function ( value ),v11]}" ] 
+BB1533 -> BB1534 [tailport=s, headport=n, headlabel="      1534"]
+BB1533 -> BB1536 [tailport=s, headport=n, color=gray]
+BB1534 [shape=record label="{4220: call-this.map [v10,'map',v11,v1]}" ] 
+BB1534 -> BB1535 [tailport=s, headport=n, headlabel="      1535"]
+BB1534 -> BB1536 [tailport=s, headport=n, color=gray]
+BB1535 [shape=record label="{4221: return[v1]}" ] 
+BB1536 [shape=record label="{4222: exceptional-return}" ] 
+//#$~ 969
+}

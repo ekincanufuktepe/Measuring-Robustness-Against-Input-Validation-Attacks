@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry9[shape=none,label=""];
+BB_entry9 -> BB89 [tailport=s, headport=n, headlabel="    89"]
+BB89 [shape=record label="{263: constant[undefined,v1]}" ] 
+BB89 -> BB90 [tailport=s, headport=n, headlabel="      90"]
+BB90 [shape=record label="{264: read-variable['each',v3,v2]|265: read-variable['Array',v8,-]|266: read-property[v8,'prototype',v7]|267: \<variable-non-null-undef\>['Array']|268: read-property[v7,'slice',v6]|269: \<property-non-null-undef\>[v8,'prototype']|270: read-property[v6,'call',-]|271: \<property-non-null-undef\>[v7,'slice']|272: read-variable['arguments',v9,-]|273: constant[1.0,v10]}" ] 
+BB90 -> BB91 [tailport=s, headport=n, headlabel="      91"]
+BB90 -> BB96 [tailport=s, headport=n, color=gray, headlabel="      96"]
+BB91 [shape=record label="{274: call-Array.prototype.slice.call [v6,'call',v9,v10,v4]}" ] 
+BB91 -> BB92 [tailport=s, headport=n, headlabel="      92"]
+BB91 -> BB96 [tailport=s, headport=n, color=gray]
+BB92 [shape=record label="{275: function-expr[function ( extensionObject ),v11]}" ] 
+BB92 -> BB93 [tailport=s, headport=n, headlabel="      93"]
+BB93 [shape=record label="{276: call-each [v2,v3,v4,v11,-]*}" ] 
+BB93 -> BB94 [tailport=s, headport=n, headlabel="      94"]
+BB93 -> BB96 [tailport=s, headport=n, color=gray]
+BB94 [shape=record label="{277: read-variable['base',v1,-]}" ] 
+BB94 -> BB95 [tailport=s, headport=n, headlabel="      95"]
+BB94 -> BB96 [tailport=s, headport=n, color=gray]
+BB95 [shape=record label="{278: return[v1]}" ] 
+BB96 [shape=record label="{279: exceptional-return}" ] 
+//#$~ 223
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry34[shape=none,label=""];
+BB_entry34 -> BB285 [tailport=s, headport=n, headlabel="    285"]
+BB285 [shape=record label="{864: constant[undefined,v1]}" ] 
+BB285 -> BB286 [tailport=s, headport=n, headlabel="      286"]
+BB286 [shape=record label="{865: read-variable['Math',v3,-]|866: read-property[v3,'floor',-]|867: \<variable-non-null-undef\>['Math']|868: read-variable['Math',v8,-]|869: read-property[v8,'log',-]|870: \<variable-non-null-undef\>['Math']|871: read-variable['val',v9,-]}" ] 
+BB286 -> BB287 [tailport=s, headport=n, headlabel="      287"]
+BB286 -> BB291 [tailport=s, headport=n, color=gray, headlabel="      291"]
+BB287 [shape=record label="{872: call-Math.log [v8,'log',v9,v5]}" ] 
+BB287 -> BB288 [tailport=s, headport=n, headlabel="      288"]
+BB287 -> BB291 [tailport=s, headport=n, color=gray]
+BB288 [shape=record label="{873: read-variable['Math',v10,-]|874: read-property[v10,'LN10',v6]|875: \<variable-non-null-undef\>['Math']|876: /[v5,v6,v4]}" ] 
+BB288 -> BB289 [tailport=s, headport=n, headlabel="      289"]
+BB288 -> BB291 [tailport=s, headport=n, color=gray]
+BB289 [shape=record label="{877: call-Math.floor [v3,'floor',v4,v1]}" ] 
+BB289 -> BB290 [tailport=s, headport=n, headlabel="      290"]
+BB289 -> BB291 [tailport=s, headport=n, color=gray]
+BB290 [shape=record label="{878: return[v1]}" ] 
+BB291 [shape=record label="{879: exceptional-return}" ] 
+//#$~ 381
+}

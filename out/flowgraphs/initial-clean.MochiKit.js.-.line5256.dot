@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry489[shape=none,label=""];
+BB_entry489 -> BB7453 [tailport=s, headport=n, headlabel="    7453"]
+BB7453 [shape=record label="{27349: constant[undefined,v1]}" ] 
+BB7453 -> BB7454 [tailport=s, headport=n, headlabel="      7454"]
+BB7454 [shape=record label="{27350: read-variable['this',v6,-]|27351: read-property[v6,'type',-]}" ] 
+BB7454 -> BB7455 [tailport=s, headport=n, headlabel="      7455"]
+BB7454 -> BB7459 [tailport=s, headport=n, color=gray, headlabel="      7459"]
+BB7455 [shape=record label="{27352: call-this.type [v6,'type',v3]}" ] 
+BB7455 -> BB7456 [tailport=s, headport=n, headlabel="      7456"]
+BB7455 -> BB7459 [tailport=s, headport=n, color=gray]
+BB7456 [shape=record label="{27353: constant[\"beforeunload\",v4]|27354: ==[v3,v4,v2]|27355: if[v2](true-block:7457,false-block:7458)}" ] 
+BB7456 -> BB7457 [tailport=s, headport=n, headlabel="      7457"]
+BB7456 -> BB7458 [tailport=s, headport=n, headlabel="      7458"]
+BB7456 -> BB7459 [tailport=s, headport=n, color=gray]
+BB7457 [shape=record label="{27356: read-variable['this',v8,-]|27357: read-variable['msg',v7,-]|27358: write-property[v8,'_confirmUnload',v7]*|27359: read-variable['this',v11,-]|27360: read-property[v11,'_event',v10]|27361: read-variable['msg',v9,-]|27362: write-property[v10,'returnValue',v9]|27363: \<property-non-null-undef\>[v11,'_event']*}" ] 
+BB7457 -> BB7458 [tailport=s, headport=n]
+BB7457 -> BB7459 [tailport=s, headport=n, color=gray]
+BB7458 [shape=record label="{27364: return[v1]}" ] 
+BB7459 [shape=record label="{27365: exceptional-return}" ] 
+//#$~ 5259
+}

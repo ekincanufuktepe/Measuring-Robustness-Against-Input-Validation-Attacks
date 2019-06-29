@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry377[shape=none,label=""];
+BB_entry377 -> BB5791 [tailport=s, headport=n, headlabel="    5791"]
+BB5791 [shape=record label="{17038: constant[undefined,v1]|17039: vardecl['elem']}" ] 
+BB5791 -> BB5792 [tailport=s, headport=n, headlabel="      5792"]
+BB5792 [shape=record label="{17040: read-variable['thisCUBUR3-5902:17',v3,-]|17041: write-variable[v3,'elem']*}" ] 
+BB5792 -> BB5793 [tailport=s, headport=n, headlabel="      5793"]
+BB5792 -> BB5799 [tailport=s, headport=n, color=gray, headlabel="      5799"]
+BB5793 [shape=record label="{17042: read-variable['elem-5904:14',v5,v2]|17043: read-property[v5,'firstChild',v4]|17044: \<variable-non-null-undef\>['elem']|17045: if[v4](true-block:5794,false-block:5795)}" ] 
+BB5793 -> BB5795 [tailport=s, headport=n, headlabel="      5795"]
+BB5793 -> BB5794 [tailport=s, headport=n, headlabel="      5794"]
+BB5793 -> BB5799 [tailport=s, headport=n, color=gray]
+BB5794 [shape=record label="{17046: read-variable['elem-5904:33',v9,v2]|17047: read-property[v9,'firstChild',v8]|17048: \<variable-non-null-undef\>['elem']|17049: read-property[v8,'nodeType',v6]|17050: \<property-non-null-undef\>[v9,'firstChild']|17051: constant[1.0,v7]|17052: ===[v6,v7,v4]}" ] 
+BB5794 -> BB5795 [tailport=s, headport=n]
+BB5794 -> BB5799 [tailport=s, headport=n, color=gray]
+BB5795 [shape=record label="{17053: if[v4](true-block:5796,false-block:5797)}" ] 
+BB5795 -> BB5796 [tailport=s, headport=n, headlabel="      5796"]
+BB5795 -> BB5797 [tailport=s, headport=n, headlabel="      5797"]
+BB5796 [shape=record label="{17054: read-variable['elem-5905:14',v7,v2]|17055: read-property[v7,'firstChild',v6]|17056: \<variable-non-null-undef\>['elem']|17057: write-variable[v6,'elem']*}" ] 
+BB5796 -> BB5793 [tailport=s, headport=n]
+BB5796 -> BB5799 [tailport=s, headport=n, color=gray]
+BB5797 [shape=record label="{17058: read-variable['elem-5908:13',v1,v2]}" ] 
+BB5797 -> BB5798 [tailport=s, headport=n, headlabel="      5798"]
+BB5797 -> BB5799 [tailport=s, headport=n, color=gray]
+BB5798 [shape=record label="{17059: return[v1]}" ] 
+BB5799 [shape=record label="{17060: exceptional-return}" ] 
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1159[shape=none,label=""];
+BB_entry1159 -> BB12525 [tailport=s, headport=n, headlabel="    12525"]
+BB12525 [shape=record label="{42962: constant[undefined,v1]}" ] 
+BB12525 -> BB12526 [tailport=s, headport=n, headlabel="      12526"]
+BB12526 [shape=record label="{42963: read-variable['arguments',v4,-]|42964: read-property[v4,'length',v3]|42965: \<variable-non-null-undef\>['arguments']|42966: ![v3,v2]|42967: if[v2](true-block:12527,false-block:12528)}" ] 
+BB12526 -> BB12527 [tailport=s, headport=n, headlabel="      12527"]
+BB12526 -> BB12528 [tailport=s, headport=n, headlabel="      12528"]
+BB12526 -> BB12531 [tailport=s, headport=n, color=gray, headlabel="      12531"]
+BB12527 [shape=record label="{42968: read-variable['interpolate',v1,-]}" ] 
+BB12527 -> BB12530 [tailport=s, headport=n, headlabel="      12530"]
+BB12527 -> BB12531 [tailport=s, headport=n, color=gray]
+BB12528 [shape=record label="{42969: read-variable['x',v5,-]|42970: write-variable[v5,'interpolate']*|42971: read-variable['rescale',v7,v6]}" ] 
+BB12528 -> BB12529 [tailport=s, headport=n, headlabel="      12529"]
+BB12528 -> BB12531 [tailport=s, headport=n, color=gray]
+BB12529 [shape=record label="{42972: call-rescale [v6,v7,v1]}" ] 
+BB12529 -> BB12530 [tailport=s, headport=n]
+BB12529 -> BB12531 [tailport=s, headport=n, color=gray]
+BB12530 [shape=record label="{42973: return[v1]}" ] 
+BB12531 [shape=record label="{42974: exceptional-return}" ] 
+//#$~ 7520
+}

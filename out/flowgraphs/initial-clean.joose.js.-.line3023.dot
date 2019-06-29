@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry282[shape=none,label=""];
+BB_entry282 -> BB2598 [tailport=s, headport=n, headlabel="    2598"]
+BB2598 [shape=record label="{7802: constant[undefined,v1]}" ] 
+BB2598 -> BB2599 [tailport=s, headport=n, headlabel="      2599"]
+BB2599 [shape=record label="{7803: read-variable['Joose',v4,-]|7804: read-property[v4,'A',v3]|7805: \<variable-non-null-undef\>['Joose']|7806: read-property[v3,'each',-]|7807: \<property-non-null-undef\>[v4,'A']|7808: read-variable['this',v7,-]|7809: read-property[v7,'getElements',-]}" ] 
+BB2599 -> BB2600 [tailport=s, headport=n, headlabel="      2600"]
+BB2599 -> BB2604 [tailport=s, headport=n, color=gray, headlabel="      2604"]
+BB2600 [shape=record label="{7810: call-this.getElements [v7,'getElements',v5]}" ] 
+BB2600 -> BB2601 [tailport=s, headport=n, headlabel="      2601"]
+BB2600 -> BB2604 [tailport=s, headport=n, color=gray]
+BB2601 [shape=record label="{7811: function-expr[function ( thing ),v8]}" ] 
+BB2601 -> BB2602 [tailport=s, headport=n, headlabel="      2602"]
+BB2602 [shape=record label="{7812: call-Joose.A.each [v3,'each',v5,v8,-]*}" ] 
+BB2602 -> BB2603 [tailport=s, headport=n, headlabel="      2603"]
+BB2602 -> BB2604 [tailport=s, headport=n, color=gray]
+BB2603 [shape=record label="{7813: return[v1]}" ] 
+BB2604 [shape=record label="{7814: exceptional-return}" ] 
+//#$~ 3026
+}

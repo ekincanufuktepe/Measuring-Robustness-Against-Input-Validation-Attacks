@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1255[shape=none,label=""];
+BB_entry1255 -> BB14876 [tailport=s, headport=n, headlabel="    14876"]
+BB14876 [shape=record label="{51286: constant[undefined,v1]|51287: vardecl['guid']|51288: vardecl['itemCounts']}" ] 
+BB14876 -> BB14877 [tailport=s, headport=n, headlabel="      14877"]
+BB14877 [shape=record label="{51289: read-variable['guidFor',v4,v3]|51290: read-variable['item',v5,-]}" ] 
+BB14877 -> BB14878 [tailport=s, headport=n, headlabel="      14878"]
+BB14877 -> BB14884 [tailport=s, headport=n, color=gray, headlabel="      14884"]
+BB14878 [shape=record label="{51291: call-guidFor [v3,v4,v5,v2]}" ] 
+BB14878 -> BB14879 [tailport=s, headport=n, headlabel="      14879"]
+BB14878 -> BB14884 [tailport=s, headport=n, color=gray]
+BB14879 [shape=record label="{51292: write-variable[v2,'guid']*|51293: read-variable['instanceMeta',v7,-]|51294: read-property[v7,'itemCounts',v6]|51295: \<variable-non-null-undef\>['instanceMeta']|51296: write-variable[v6,'itemCounts']*|51297: constant[1.0,v11]|51298: read-variable['itemCounts',v13,-]|51299: read-variable['guid',v14,-]|51300: read-property[v13,v14,v12]|51301: \<variable-non-null-undef\>['itemCounts']|51302: +[v12,v15]|51303: -[v15,v11,v9]|51304: write-property[v13,v14,v9]|51305: \<variable-non-null-undef\>['itemCounts']|51306: constant[0.0,v10]|51307: ===[v9,v10,v8]|51308: if[v8](true-block:14880,false-block:14882)}" ] 
+BB14879 -> BB14880 [tailport=s, headport=n, headlabel="      14880"]
+BB14879 -> BB14882 [tailport=s, headport=n, headlabel="      14882"]
+BB14879 -> BB14884 [tailport=s, headport=n, color=gray]
+BB14880 [shape=record label="{51309: read-variable['array',v17,-]|51310: read-property[v17,'removeObject',-]|51311: \<variable-non-null-undef\>['array']|51312: read-variable['item',v18,-]}" ] 
+BB14880 -> BB14881 [tailport=s, headport=n, headlabel="      14881"]
+BB14880 -> BB14884 [tailport=s, headport=n, color=gray]
+BB14881 [shape=record label="{51313: call-array.removeObject [v17,'removeObject',v18,-]*}" ] 
+BB14881 -> BB14882 [tailport=s, headport=n]
+BB14881 -> BB14884 [tailport=s, headport=n, color=gray]
+BB14882 [shape=record label="{51314: read-variable['array',v1,-]}" ] 
+BB14882 -> BB14883 [tailport=s, headport=n, headlabel="      14883"]
+BB14882 -> BB14884 [tailport=s, headport=n, color=gray]
+BB14883 [shape=record label="{51315: return[v1]}" ] 
+BB14884 [shape=record label="{51316: exceptional-return}" ] 
+//#$~ 27449
+}

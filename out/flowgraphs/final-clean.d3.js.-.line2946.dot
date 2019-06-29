@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry484[shape=none,label=""];
+BB_entry484 -> BB5056 [tailport=s, headport=n, headlabel="    5056"]
+BB5056 [shape=record label="{15304: constant[undefined,v1]|15305: vardecl['area']}" ] 
+BB5056 -> BB5057 [tailport=s, headport=n, headlabel="      5057"]
+BB5057 [shape=record label="{15306: constant[2.0,v3]|15307: read-variable['d3_geo_areaRingSum',v4,-]|15308: *[v3,v4,v2]|15309: write-variable[v2,'area']*|15310: read-variable['d3_geo_areaSum',v6,-]|15311: read-variable['area',v9,-]|15312: constant[0.0,v10]|15313: \<[v9,v10,v8]|15314: if[v8](true-block:5058,false-block:5059)}" ] 
+BB5057 -> BB5058 [tailport=s, headport=n, headlabel="      5058"]
+BB5057 -> BB5059 [tailport=s, headport=n, headlabel="      5059"]
+BB5057 -> BB5062 [tailport=s, headport=n, color=gray, headlabel="      5062"]
+BB5058 [shape=record label="{15315: constant[4.0,v13]|15316: read-variable['\\u03c0',v14,-]|15317: *[v13,v14,v11]|15318: read-variable['area',v12,-]|15319: +[v11,v12,v7]}" ] 
+BB5058 -> BB5060 [tailport=s, headport=n, headlabel="      5060"]
+BB5058 -> BB5062 [tailport=s, headport=n, color=gray]
+BB5059 [shape=record label="{15320: read-variable['area',v7,-]}" ] 
+BB5059 -> BB5060 [tailport=s, headport=n]
+BB5059 -> BB5062 [tailport=s, headport=n, color=gray]
+BB5060 [shape=record label="{15321: +[v6,v7,v5]|15322: write-variable[v5,'d3_geo_areaSum']*|15323: read-variable['d3_geo_area',v12,-]|15324: read-variable['d3_geo_area',v13,-]|15325: read-variable['d3_geo_area',v14,-]|15326: read-variable['d3_noop',v11,-]|15327: write-property[v14,'point',v11]|15328: \<variable-non-null-undef\>['d3_geo_area']|15329: write-property[v13,'lineEnd',v11]|15330: \<variable-non-null-undef\>['d3_geo_area']|15331: write-property[v12,'lineStart',v11]|15332: \<variable-non-null-undef\>['d3_geo_area']*}" ] 
+BB5060 -> BB5061 [tailport=s, headport=n, headlabel="      5061"]
+BB5060 -> BB5062 [tailport=s, headport=n, color=gray]
+BB5061 [shape=record label="{15333: return[v1]}" ] 
+BB5062 [shape=record label="{15334: exceptional-return}" ] 
+//#$~ 2949
+}

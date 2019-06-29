@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry200[shape=none,label=""];
+BB_entry200 -> BB2608 [tailport=s, headport=n, headlabel="    2608"]
+BB2608 [shape=record label="{8497: constant[undefined,v1]}" ] 
+BB2608 -> BB2609 [tailport=s, headport=n, headlabel="      2609"]
+BB2609 [shape=record label="{8498: read-variable['this',v3,-]|8499: read-property[v3,'_super',-]}" ] 
+BB2609 -> BB2610 [tailport=s, headport=n, headlabel="      2610"]
+BB2609 -> BB2615 [tailport=s, headport=n, color=gray, headlabel="      2615"]
+BB2610 [shape=record label="{8500: call-this._super [v3,'_super',-]*}" ] 
+BB2610 -> BB2611 [tailport=s, headport=n, headlabel="      2611"]
+BB2610 -> BB2615 [tailport=s, headport=n, color=gray]
+BB2611 [shape=record label="{8501: read-variable['this',v5,-]|8502: read-variable['emberA',v7,v6]}" ] 
+BB2611 -> BB2612 [tailport=s, headport=n, headlabel="      2612"]
+BB2611 -> BB2615 [tailport=s, headport=n, color=gray]
+BB2612 [shape=record label="{8503: call-emberA [v6,v7,v4]}" ] 
+BB2612 -> BB2613 [tailport=s, headport=n, headlabel="      2613"]
+BB2612 -> BB2615 [tailport=s, headport=n, color=gray]
+BB2613 [shape=record label="{8504: write-property[v5,'releaseMethods',v4]*}" ] 
+BB2613 -> BB2614 [tailport=s, headport=n, headlabel="      2614"]
+BB2613 -> BB2615 [tailport=s, headport=n, color=gray]
+BB2614 [shape=record label="{8505: return[v1]}" ] 
+BB2615 [shape=record label="{8506: exceptional-return}" ] 
+//#$~ 4347
+}

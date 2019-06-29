@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry238[shape=none,label=""];
+BB_entry238 -> BB2891 [tailport=s, headport=n, headlabel="    2891"]
+BB2891 [shape=record label="{6914: constant[undefined,v1]|6915: vardecl['origProvider']|6916: vardecl['orig$get']}" ] 
+BB2891 -> BB2892 [tailport=s, headport=n, headlabel="      2892"]
+BB2892 [shape=record label="{6917: read-variable['providerInjector',v4,-]|6918: read-property[v4,'get',-]|6919: \<variable-non-null-undef\>['providerInjector']|6920: read-variable['serviceName',v6,-]|6921: read-variable['providerSuffix',v7,-]|6922: +[v6,v7,v5]}" ] 
+BB2892 -> BB2893 [tailport=s, headport=n, headlabel="      2893"]
+BB2892 -> BB2896 [tailport=s, headport=n, color=gray, headlabel="      2896"]
+BB2893 [shape=record label="{6923: call-providerInjector.get [v4,'get',v5,v2]}" ] 
+BB2893 -> BB2894 [tailport=s, headport=n, headlabel="      2894"]
+BB2893 -> BB2896 [tailport=s, headport=n, color=gray]
+BB2894 [shape=record label="{6924: write-variable[v2,'origProvider']*|6925: read-variable['origProvider',v9,-]|6926: read-property[v9,'$get',v8]|6927: \<variable-non-null-undef\>['origProvider']|6928: write-variable[v8,'orig$get']*|6929: read-variable['origProvider',v11,-]|6930: function-expr[function ( ),v10]|6931: write-property[v11,'$get',v10]|6932: \<variable-non-null-undef\>['origProvider']*}" ] 
+BB2894 -> BB2895 [tailport=s, headport=n, headlabel="      2895"]
+BB2894 -> BB2896 [tailport=s, headport=n, color=gray]
+BB2895 [shape=record label="{6933: return[v1]}" ] 
+BB2896 [shape=record label="{6934: exceptional-return}" ] 
+//#$~ 4339
+}

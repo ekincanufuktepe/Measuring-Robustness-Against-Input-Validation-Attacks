@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry463[shape=none,label=""];
+BB_entry463 -> BB5858 [tailport=s, headport=n, headlabel="    5858"]
+BB5858 [shape=record label="{16345: constant[undefined,v1]|16346: vardecl['i']|16347: vardecl['length']}" ] 
+BB5858 -> BB5859 [tailport=s, headport=n, headlabel="      5859"]
+BB5859 [shape=record label="{16348: constant[0.0,v3]|16349: write-variable[v3,'i']*|16350: read-variable['elements',v5,-]|16351: read-property[v5,'length',v4]|16352: \<variable-non-null-undef\>['elements']|16353: write-variable[v4,'length']*}" ] 
+BB5859 -> BB5860 [tailport=s, headport=n, headlabel="      5860"]
+BB5859 -> BB5866 [tailport=s, headport=n, color=gray, headlabel="      5866"]
+BB5860 [shape=record label="{16354: read-variable['i',v6,-]|16355: read-variable['length',v7,-]|16356: \<[v6,v7,v2]|16357: if[v2](true-block:5861,false-block:5862)}" ] 
+BB5860 -> BB5861 [tailport=s, headport=n, headlabel="      5861"]
+BB5860 -> BB5862 [tailport=s, headport=n, headlabel="      5862"]
+BB5860 -> BB5866 [tailport=s, headport=n, color=gray]
+BB5861 [shape=record label="{16358: read-variable['Element',v9,-]|16359: read-property[v9,'extend',-]|16360: \<variable-non-null-undef\>['Element']|16361: read-variable['elements',v11,-]|16362: read-variable['i',v12,-]|16363: read-property[v11,v12,v10]|16364: \<variable-non-null-undef\>['elements']}" ] 
+BB5861 -> BB5863 [tailport=s, headport=n, headlabel="      5863"]
+BB5861 -> BB5866 [tailport=s, headport=n, color=gray]
+BB5862 [shape=record label="{16365: read-variable['elements',v1,-]}" ] 
+BB5862 -> BB5865 [tailport=s, headport=n, headlabel="      5865"]
+BB5862 -> BB5866 [tailport=s, headport=n, color=gray]
+BB5863 [shape=record label="{16366: call-Element.extend [v9,'extend',v10,-]*}" ] 
+BB5863 -> BB5864 [tailport=s, headport=n, headlabel="      5864"]
+BB5863 -> BB5866 [tailport=s, headport=n, color=gray]
+BB5864 [shape=record label="{16367: constant[1.0,v13]|16368: read-variable['i',v14,-]|16369: +[v14,v15]|16370: +[v15,v13,v16]|16371: write-variable[v16,'i']}" ] 
+BB5864 -> BB5860 [tailport=s, headport=n]
+BB5864 -> BB5866 [tailport=s, headport=n, color=gray]
+BB5865 [shape=record label="{16372: return[v1]}" ] 
+BB5866 [shape=record label="{16373: exceptional-return}" ] 
+//#$~ 4476
+}

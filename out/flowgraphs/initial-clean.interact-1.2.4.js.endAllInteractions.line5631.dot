@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry180[shape=none,label=""];
+BB_entry180 -> BB4091 [tailport=s, headport=n, headlabel="    4091"]
+BB4091 [shape=record label="{16266: constant[undefined,v1]|16267: vardecl['i']}" ] 
+BB4091 -> BB4092 [tailport=s, headport=n, headlabel="      4092"]
+BB4092 [shape=record label="{16268: constant[0.0,v3]|16269: write-variable[v3,'i']*}" ] 
+BB4092 -> BB4093 [tailport=s, headport=n, headlabel="      4093"]
+BB4093 [shape=record label="{16270: read-variable['i',v4,-]|16271: read-variable['interactions',v6,-]|16272: read-property[v6,'length',v5]|16273: \<variable-non-null-undef\>['interactions']|16274: \<[v4,v5,v2]|16275: if[v2](true-block:4094,false-block:4097)}" ] 
+BB4093 -> BB4094 [tailport=s, headport=n, headlabel="      4094"]
+BB4093 -> BB4097 [tailport=s, headport=n, headlabel="      4097"]
+BB4093 -> BB4098 [tailport=s, headport=n, color=gray, headlabel="      4098"]
+BB4094 [shape=record label="{16276: read-variable['interactions',v9,-]|16277: read-variable['i',v10,-]|16278: read-property[v9,v10,v8]|16279: \<variable-non-null-undef\>['interactions']|16280: read-property[v8,'pointerEnd',-]|16281: \<property-non-null-undef\>[v9,v10]|16282: read-variable['event',v11,-]|16283: read-variable['event',v12,-]}" ] 
+BB4094 -> BB4095 [tailport=s, headport=n, headlabel="      4095"]
+BB4094 -> BB4098 [tailport=s, headport=n, color=gray]
+BB4095 [shape=record label="{16284: call-null [v8,'pointerEnd',v11,v12,-]*}" ] 
+BB4095 -> BB4096 [tailport=s, headport=n, headlabel="      4096"]
+BB4095 -> BB4098 [tailport=s, headport=n, color=gray]
+BB4096 [shape=record label="{16285: constant[1.0,v13]|16286: read-variable['i',v14,-]|16287: +[v14,v15]|16288: +[v15,v13,v16]|16289: write-variable[v16,'i']}" ] 
+BB4096 -> BB4093 [tailport=s, headport=n]
+BB4096 -> BB4098 [tailport=s, headport=n, color=gray]
+BB4097 [shape=record label="{16290: return[v1]}" ] 
+BB4098 [shape=record label="{16291: exceptional-return}" ] 
+//#$~ 5632
+}

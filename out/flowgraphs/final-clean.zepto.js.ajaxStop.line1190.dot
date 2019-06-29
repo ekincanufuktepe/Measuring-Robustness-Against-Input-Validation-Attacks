@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry215[shape=none,label=""];
+BB_entry215 -> BB2361 [tailport=s, headport=n, headlabel="    2361"]
+BB2361 [shape=record label="{5834: constant[undefined,v1]}" ] 
+BB2361 -> BB2362 [tailport=s, headport=n, headlabel="      2362"]
+BB2362 [shape=record label="{5835: read-variable['settings',v3,-]|5836: read-property[v3,'global',v2]|5837: \<variable-non-null-undef\>['settings']|5838: if[v2](true-block:2363,false-block:2364)}" ] 
+BB2362 -> BB2364 [tailport=s, headport=n, headlabel="      2364"]
+BB2362 -> BB2363 [tailport=s, headport=n, headlabel="      2363"]
+BB2362 -> BB2368 [tailport=s, headport=n, color=gray, headlabel="      2368"]
+BB2363 [shape=record label="{5839: constant[1.0,v5]|5840: read-variable['$',v7,-]|5841: read-property[v7,'active',v6]|5842: \<variable-non-null-undef\>['$']|5843: +[v6,v8]|5844: -[v8,v5,v4]|5845: write-property[v7,'active',v4]|5846: \<variable-non-null-undef\>['$']|5847: ![v4,v2]}" ] 
+BB2363 -> BB2364 [tailport=s, headport=n]
+BB2363 -> BB2368 [tailport=s, headport=n, color=gray]
+BB2364 [shape=record label="{5848: if[v2](true-block:2365,false-block:2367)}" ] 
+BB2364 -> BB2365 [tailport=s, headport=n, headlabel="      2365"]
+BB2364 -> BB2367 [tailport=s, headport=n, headlabel="      2367"]
+BB2365 [shape=record label="{5849: read-variable['triggerGlobal',v5,v4]|5850: read-variable['settings',v6,-]|5851: constant[null,v7]|5852: constant[\"ajaxStop\",v8]}" ] 
+BB2365 -> BB2366 [tailport=s, headport=n, headlabel="      2366"]
+BB2365 -> BB2368 [tailport=s, headport=n, color=gray]
+BB2366 [shape=record label="{5853: call-triggerGlobal [v4,v5,v6,v7,v8,-]*}" ] 
+BB2366 -> BB2367 [tailport=s, headport=n]
+BB2366 -> BB2368 [tailport=s, headport=n, color=gray]
+BB2367 [shape=record label="{5854: return[v1]}" ] 
+BB2368 [shape=record label="{5855: exceptional-return}" ] 
+//#$~ 1191
+}

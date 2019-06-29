@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry452[shape=none,label=""];
+BB_entry452 -> BB5813 [tailport=s, headport=n, headlabel="    5813"]
+BB5813 [shape=record label="{16211: constant[undefined,v1]|16212: vardecl['IS_OLD_OPERA']|16213: vardecl['ROOT']|16214: function-decl[function getRootElement ( ),-]|16215: function-decl[function getDimensions ( ),-]|16216: function-decl[function getWidth ( ),-]|16217: function-decl[function getHeight ( ),-]|16218: function-decl[function getScrollOffsets ( ),-]}" ] 
+BB5813 -> BB5814 [tailport=s, headport=n, headlabel="      5814"]
+BB5814 [shape=record label="{16219: read-variable['Prototype',v4,-]|16220: read-property[v4,'Browser',v3]|16221: \<variable-non-null-undef\>['Prototype']|16222: read-property[v3,'Opera',v2]|16223: \<property-non-null-undef\>[v4,'Browser']|16224: if[v2](true-block:5815,false-block:5819)}" ] 
+BB5814 -> BB5819 [tailport=s, headport=n, headlabel="      5819"]
+BB5814 -> BB5815 [tailport=s, headport=n, headlabel="      5815"]
+BB5814 -> BB5821 [tailport=s, headport=n, color=gray, headlabel="      5821"]
+BB5815 [shape=record label="{16225: read-variable['window',v8,-]|16226: read-property[v8,'parseFloat',-]|16227: \<variable-non-null-undef\>['window']|16228: read-variable['window',v12,-]|16229: read-property[v12,'opera',v11]|16230: \<variable-non-null-undef\>['window']|16231: read-property[v11,'version',-]|16232: \<property-non-null-undef\>[v12,'opera']}" ] 
+BB5815 -> BB5816 [tailport=s, headport=n, headlabel="      5816"]
+BB5815 -> BB5821 [tailport=s, headport=n, color=gray]
+BB5816 [shape=record label="{16233: call-window.opera.version [v11,'version',v9]}" ] 
+BB5816 -> BB5817 [tailport=s, headport=n, headlabel="      5817"]
+BB5816 -> BB5821 [tailport=s, headport=n, color=gray]
+BB5817 [shape=record label="{16234: call-window.parseFloat [v8,'parseFloat',v9,v5]}" ] 
+BB5817 -> BB5818 [tailport=s, headport=n, headlabel="      5818"]
+BB5817 -> BB5821 [tailport=s, headport=n, color=gray]
+BB5818 [shape=record label="{16235: constant[9.5,v6]|16236: \<[v5,v6,v2]}" ] 
+BB5818 -> BB5819 [tailport=s, headport=n]
+BB5818 -> BB5821 [tailport=s, headport=n, color=gray]
+BB5819 [shape=record label="{16237: write-variable[v2,'IS_OLD_OPERA']*|16238: constant[null,v5]|16239: write-variable[v5,'ROOT']*|16240: read-variable['document',v7,-]|16241: new[v6]|16242: read-variable['getDimensions',v8,-]|16243: write-property[v6,'getDimensions',v8]|16244: read-variable['getWidth',v9,-]|16245: write-property[v6,'getWidth',v9]|16246: read-variable['getHeight',v10,-]|16247: write-property[v6,'getHeight',v10]|16248: read-variable['getScrollOffsets',v11,-]|16249: write-property[v6,'getScrollOffsets',v11]|16250: write-property[v7,'viewport',v6]|16251: \<variable-non-null-undef\>['document']*}" ] 
+BB5819 -> BB5820 [tailport=s, headport=n, headlabel="      5820"]
+BB5819 -> BB5821 [tailport=s, headport=n, color=gray]
+BB5820 [shape=record label="{16252: return[v1]}" ] 
+BB5821 [shape=record label="{16253: exceptional-return}" ] 
+//#$~ 4442
+}

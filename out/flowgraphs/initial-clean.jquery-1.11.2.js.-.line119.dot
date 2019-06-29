@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB54 [tailport=s, headport=n, headlabel="    54"]
+BB54 [shape=record label="{107: constant[undefined,v1]|108: vardecl['ret']}" ] 
+BB54 -> BB55 [tailport=s, headport=n, headlabel="      55"]
+BB55 [shape=record label="{109: read-variable['jQuery',v4,-]|110: read-property[v4,'merge',-]|111: \<variable-non-null-undef\>['jQuery']|112: read-variable['this',v7,-]|113: read-property[v7,'constructor',-]}" ] 
+BB55 -> BB56 [tailport=s, headport=n, headlabel="      56"]
+BB55 -> BB61 [tailport=s, headport=n, color=gray, headlabel="      61"]
+BB56 [shape=record label="{114: call-0:0[v7,'constructor',v5]}" ] 
+BB56 -> BB57 [tailport=s, headport=n, headlabel="      57"]
+BB56 -> BB61 [tailport=s, headport=n, color=gray]
+BB57 [shape=record label="{115: read-variable['elems',v8,-]}" ] 
+BB57 -> BB58 [tailport=s, headport=n, headlabel="      58"]
+BB57 -> BB61 [tailport=s, headport=n, color=gray]
+BB58 [shape=record label="{116: call-0:0[v4,'merge',v5,v8,v2]}" ] 
+BB58 -> BB59 [tailport=s, headport=n, headlabel="      59"]
+BB58 -> BB61 [tailport=s, headport=n, color=gray]
+BB59 [shape=record label="{117: write-variable[v2,'ret']*|118: read-variable['ret',v10,-]|119: read-variable['this',v9,-]|120: write-property[v10,'prevObject',v9]|121: \<variable-non-null-undef\>['ret']*|122: read-variable['ret',v12,-]|123: read-variable['this',v13,-]|124: read-property[v13,'context',v11]|125: write-property[v12,'context',v11]|126: \<variable-non-null-undef\>['ret']*|127: read-variable['ret',v1,-]}" ] 
+BB59 -> BB60 [tailport=s, headport=n, headlabel="      60"]
+BB59 -> BB61 [tailport=s, headport=n, color=gray]
+BB60 [shape=record label="{128: return[v1]}" ] 
+BB61 [shape=record label="{129: exceptional-return}" ] 
+}

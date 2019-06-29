@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2170[shape=none,label=""];
+BB_entry2170 -> BB24717 [tailport=s, headport=n, headlabel="    24717"]
+BB24717 [shape=record label="{81490: constant[undefined,v1]|81491: vardecl['sanitized']}" ] 
+BB24717 -> BB24718 [tailport=s, headport=n, headlabel="      24718"]
+BB24718 [shape=record label="{81492: read-variable['this',v3,-]|81493: read-property[v3,'escaped',v2]|81494: if[v2](true-block:24719,false-block:24720)}" ] 
+BB24718 -> BB24719 [tailport=s, headport=n, headlabel="      24719"]
+BB24718 -> BB24720 [tailport=s, headport=n, headlabel="      24720"]
+BB24718 -> BB24726 [tailport=s, headport=n, color=gray, headlabel="      24726"]
+BB24719 [shape=record label="{81495: read-variable['sanitizeAttributeValue',v6,v5]|81496: read-variable['this',v8,-]|81497: read-property[v8,'element',v7]|81498: read-variable['this',v10,-]|81499: read-property[v10,'attrName',v9]|81500: read-variable['value',v11,-]}" ] 
+BB24719 -> BB24721 [tailport=s, headport=n, headlabel="      24721"]
+BB24719 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24720 [shape=record label="{81501: read-variable['this',v5,-]|81502: read-property[v5,'_update',-]|81503: read-variable['value',v6,-]|81504: read-variable['this',v8,-]|81505: read-property[v8,'namespace',v7]}" ] 
+BB24720 -> BB24724 [tailport=s, headport=n, headlabel="      24724"]
+BB24720 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24721 [shape=record label="{81506: call-sanitizeAttributeValue [v5,v6,v7,v9,v11,v4]}" ] 
+BB24721 -> BB24722 [tailport=s, headport=n, headlabel="      24722"]
+BB24721 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24722 [shape=record label="{81507: write-variable[v4,'sanitized']*|81508: read-variable['this',v13,-]|81509: read-property[v13,'_update',-]|81510: read-variable['sanitized',v14,-]|81511: read-variable['this',v16,-]|81512: read-property[v16,'namespace',v15]}" ] 
+BB24722 -> BB24723 [tailport=s, headport=n, headlabel="      24723"]
+BB24722 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24723 [shape=record label="{81513: call-this._update [v13,'_update',v14,v15,-]*}" ] 
+BB24723 -> BB24725 [tailport=s, headport=n, headlabel="      24725"]
+BB24723 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24724 [shape=record label="{81514: call-this._update [v5,'_update',v6,v7,-]*}" ] 
+BB24724 -> BB24725 [tailport=s, headport=n]
+BB24724 -> BB24726 [tailport=s, headport=n, color=gray]
+BB24725 [shape=record label="{81515: return[v1]}" ] 
+BB24726 [shape=record label="{81516: exceptional-return}" ] 
+//#$~ 46246
+}

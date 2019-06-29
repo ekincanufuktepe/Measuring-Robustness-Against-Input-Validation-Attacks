@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry240[shape=none,label=""];
+BB_entry240 -> BB2858 [tailport=s, headport=n, headlabel="    2858"]
+BB2858 [shape=record label="{7272: constant[undefined,v1]|7273: vardecl['type']|7274: vardecl['array']|7275: vardecl['hash']}" ] 
+BB2858 -> BB2859 [tailport=s, headport=n, headlabel="      2859"]
+BB2859 [shape=record label="{7276: read-variable['$',v4,-]|7277: read-property[v4,'isArray',-]|7278: \<variable-non-null-undef\>['$']|7279: read-variable['obj',v5,-]}" ] 
+BB2859 -> BB2860 [tailport=s, headport=n, headlabel="      2860"]
+BB2859 -> BB2866 [tailport=s, headport=n, color=gray, headlabel="      2866"]
+BB2860 [shape=record label="{7280: call-$.isArray [v4,'isArray',v5,v2]}" ] 
+BB2860 -> BB2861 [tailport=s, headport=n, headlabel="      2861"]
+BB2860 -> BB2866 [tailport=s, headport=n, color=gray]
+BB2861 [shape=record label="{7281: write-variable[v2,'array']*|7282: read-variable['$',v8,-]|7283: read-property[v8,'isPlainObject',-]|7284: \<variable-non-null-undef\>['$']|7285: read-variable['obj',v9,-]}" ] 
+BB2861 -> BB2862 [tailport=s, headport=n, headlabel="      2862"]
+BB2861 -> BB2866 [tailport=s, headport=n, color=gray]
+BB2862 [shape=record label="{7286: call-$.isPlainObject [v8,'isPlainObject',v9,v6]}" ] 
+BB2862 -> BB2863 [tailport=s, headport=n, headlabel="      2863"]
+BB2862 -> BB2866 [tailport=s, headport=n, color=gray]
+BB2863 [shape=record label="{7287: write-variable[v6,'hash']*|7288: read-variable['$',v11,-]|7289: read-property[v11,'each',-]|7290: \<variable-non-null-undef\>['$']|7291: read-variable['obj',v12,-]|7292: function-expr[function ( key value ),v13]}" ] 
+BB2863 -> BB2864 [tailport=s, headport=n, headlabel="      2864"]
+BB2863 -> BB2866 [tailport=s, headport=n, color=gray]
+BB2864 [shape=record label="{7293: call-$.each [v11,'each',v12,v13,-]*}" ] 
+BB2864 -> BB2865 [tailport=s, headport=n, headlabel="      2865"]
+BB2864 -> BB2866 [tailport=s, headport=n, color=gray]
+BB2865 [shape=record label="{7294: return[v1]}" ] 
+BB2866 [shape=record label="{7295: exceptional-return}" ] 
+//#$~ 1501
+}

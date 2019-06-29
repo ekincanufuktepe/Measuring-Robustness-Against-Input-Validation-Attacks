@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry619[shape=none,label=""];
+BB_entry619 -> BB7429 [tailport=s, headport=n, headlabel="    7429"]
+BB7429 [shape=record label="{25983: constant[undefined,v1]}" ] 
+BB7429 -> BB7430 [tailport=s, headport=n, headlabel="      7430"]
+BB7430 [shape=record label="{25984: read-variable['Ember',v3,-]|25985: read-property[v3,'deprecate',-]|25986: \<variable-non-null-undef\>['Ember']|25987: constant[\"Using Ember.libraries.each() is deprecated. Access to a list of registered libraries is currently a private API. If you are not knowingly accessing this method, your out-of-date Ember Inspector may be doing so.\",v4]}" ] 
+BB7430 -> BB7431 [tailport=s, headport=n, headlabel="      7431"]
+BB7430 -> BB7435 [tailport=s, headport=n, color=gray, headlabel="      7435"]
+BB7431 [shape=record label="{25988: call-Ember.deprecate [v3,'deprecate',v4,-]*}" ] 
+BB7431 -> BB7432 [tailport=s, headport=n, headlabel="      7432"]
+BB7431 -> BB7435 [tailport=s, headport=n, color=gray]
+BB7432 [shape=record label="{25989: read-variable['forEach',v6,v5]|25990: read-variable['this',v8,-]|25991: read-property[v8,'_registry',v7]|25992: function-expr[function ( lib ),v9]}" ] 
+BB7432 -> BB7433 [tailport=s, headport=n, headlabel="      7433"]
+BB7432 -> BB7435 [tailport=s, headport=n, color=gray]
+BB7433 [shape=record label="{25993: call-forEach [v5,v6,v7,v9,-]*}" ] 
+BB7433 -> BB7434 [tailport=s, headport=n, headlabel="      7434"]
+BB7433 -> BB7435 [tailport=s, headport=n, color=gray]
+BB7434 [shape=record label="{25994: return[v1]}" ] 
+BB7435 [shape=record label="{25995: exceptional-return}" ] 
+//#$~ 13702
+}

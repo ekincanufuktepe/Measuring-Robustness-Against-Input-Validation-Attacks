@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry89[shape=none,label=""];
+BB_entry89 -> BB1009 [tailport=s, headport=n, headlabel="    1009"]
+BB1009 [shape=record label="{3313: constant[undefined,v1]}" ] 
+BB1009 -> BB1010 [tailport=s, headport=n, headlabel="      1010"]
+BB1010 [shape=record label="{3314: read-variable['name',v3,-]|3315: constant[null,v4]|3316: !=[v3,v4,v2]|3317: if[v2](true-block:1011,false-block:1012)}" ] 
+BB1010 -> BB1011 [tailport=s, headport=n, headlabel="      1011"]
+BB1010 -> BB1012 [tailport=s, headport=n, headlabel="      1012"]
+BB1010 -> BB1016 [tailport=s, headport=n, color=gray, headlabel="      1016"]
+BB1011 [shape=record label="{3318: read-variable['this',v6,-]|3319: read-property[v6,'registerGlobalRegion',-]|3320: read-variable['instance',v7,-]|3321: read-variable['name',v8,-]|3322: read-variable['selector',v9,-]}" ] 
+BB1011 -> BB1013 [tailport=s, headport=n, headlabel="      1013"]
+BB1011 -> BB1016 [tailport=s, headport=n, color=gray]
+BB1012 [shape=record label="{3323: read-variable['this',v6,-]|3324: read-property[v6,'registerGlobalRegions',-]|3325: read-variable['instance',v7,-]}" ] 
+BB1012 -> BB1014 [tailport=s, headport=n, headlabel="      1014"]
+BB1012 -> BB1016 [tailport=s, headport=n, color=gray]
+BB1013 [shape=record label="{3326: call-this.registerGlobalRegion [v6,'registerGlobalRegion',v7,v8,v9,v1]}" ] 
+BB1013 -> BB1015 [tailport=s, headport=n, headlabel="      1015"]
+BB1013 -> BB1016 [tailport=s, headport=n, color=gray]
+BB1014 [shape=record label="{3327: call-this.registerGlobalRegions [v6,'registerGlobalRegions',v7,v1]}" ] 
+BB1014 -> BB1015 [tailport=s, headport=n]
+BB1014 -> BB1016 [tailport=s, headport=n, color=gray]
+BB1015 [shape=record label="{3328: return[v1]}" ] 
+BB1016 [shape=record label="{3329: exceptional-return}" ] 
+//#$~ 948
+}

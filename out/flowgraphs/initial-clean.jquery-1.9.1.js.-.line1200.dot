@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry80[shape=none,label=""];
+BB_entry80 -> BB1042 [tailport=s, headport=n, headlabel="    1042"]
+BB1042 [shape=record label="{2658: constant[undefined,v1]}" ] 
+BB1042 -> BB1043 [tailport=s, headport=n, headlabel="      1043"]
+BB1043 [shape=record label="{2659: read-variable['jQuery',v3,-]|2660: read-property[v3,'each',-]|2661: \<variable-non-null-undef\>['jQuery']|2662: read-variable['tuples',v4,-]|2663: function-expr[function ( i tuple ),v5]}" ] 
+BB1043 -> BB1044 [tailport=s, headport=n, headlabel="      1044"]
+BB1043 -> BB1047 [tailport=s, headport=n, color=gray, headlabel="      1047"]
+BB1044 [shape=record label="{2664: call[v3,'each',v4,v5,-]*}" ] 
+BB1044 -> BB1045 [tailport=s, headport=n, headlabel="      1045"]
+BB1044 -> BB1047 [tailport=s, headport=n, color=gray]
+BB1045 [shape=record label="{2665: constant[null,v6]|2666: write-variable[v6,'fns']*}" ] 
+BB1045 -> BB1046 [tailport=s, headport=n, headlabel="      1046"]
+BB1046 [shape=record label="{2667: return[v1]}" ] 
+BB1047 [shape=record label="{2668: exceptional-return}" ] 
+}

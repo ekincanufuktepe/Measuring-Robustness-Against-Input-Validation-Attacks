@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry349[shape=none,label=""];
+BB_entry349 -> BB5182 [tailport=s, headport=n, headlabel="    5182"]
+BB5182 [shape=record label="{17896: constant[undefined,v1]|17897: vardecl['summary']}" ] 
+BB5182 -> BB5183 [tailport=s, headport=n, headlabel="      5183"]
+BB5183 [shape=record label="{17898: read-variable['measurements',v2,-]|17899: if[v2](true-block:5185,false-block:5184)}" ] 
+BB5183 -> BB5185 [tailport=s, headport=n, headlabel="      5185"]
+BB5183 -> BB5184 [tailport=s, headport=n, headlabel="      5184"]
+BB5183 -> BB5191 [tailport=s, headport=n, color=gray, headlabel="      5191"]
+BB5184 [shape=record label="{17900: read-variable['ReactDefaultPerf',v3,-]|17901: read-property[v3,'_allMeasurements',v2]|17902: \<variable-non-null-undef\>['ReactDefaultPerf']}" ] 
+BB5184 -> BB5185 [tailport=s, headport=n]
+BB5184 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5185 [shape=record label="{17903: write-variable[v2,'measurements']*|17904: read-variable['ReactDefaultPerfAnalysis',v5,-]|17905: read-property[v5,'getExclusiveSummary',-]|17906: \<variable-non-null-undef\>['ReactDefaultPerfAnalysis']|17907: read-variable['measurements',v6,-]}" ] 
+BB5185 -> BB5186 [tailport=s, headport=n, headlabel="      5186"]
+BB5185 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5186 [shape=record label="{17908: call-ReactDefaultPerfAnalysis.getExclusiveSummary [v5,'getExclusiveSummary',v6,v3]}" ] 
+BB5186 -> BB5187 [tailport=s, headport=n, headlabel="      5187"]
+BB5186 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5187 [shape=record label="{17909: write-variable[v3,'summary']*|17910: read-variable['console',v8,-]|17911: read-property[v8,'table',-]|17912: \<variable-non-null-undef\>['console']|17913: read-variable['summary',v11,-]|17914: read-property[v11,'map',-]|17915: \<variable-non-null-undef\>['summary']|17916: function-expr[function ( item ),v12]}" ] 
+BB5187 -> BB5188 [tailport=s, headport=n, headlabel="      5188"]
+BB5187 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5188 [shape=record label="{17917: call-summary.map [v11,'map',v12,v9]}" ] 
+BB5188 -> BB5189 [tailport=s, headport=n, headlabel="      5189"]
+BB5188 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5189 [shape=record label="{17918: call-console.table [v8,'table',v9,-]*}" ] 
+BB5189 -> BB5190 [tailport=s, headport=n, headlabel="      5190"]
+BB5189 -> BB5191 [tailport=s, headport=n, color=gray]
+BB5190 [shape=record label="{17919: return[v1]}" ] 
+BB5191 [shape=record label="{17920: exceptional-return}" ] 
+//#$~ 9426
+}

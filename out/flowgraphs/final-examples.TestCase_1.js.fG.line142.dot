@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB80 [tailport=s, headport=n, headlabel="    80"]
+BB80 [shape=record label="{257: constant[undefined,v1]|258: vardecl['x']|259: vardecl['c']}" ] 
+BB80 -> BB81 [tailport=s, headport=n, headlabel="      81"]
+BB81 [shape=record label="{260: constant[\"ads\",v2]|261: write-variable[v2,'c']*|262: read-variable['a',v4,-]|263: constant[null,v5]|264: !=[v4,v5,v3]|265: if[v3](true-block:82,false-block:84)}" ] 
+BB81 -> BB82 [tailport=s, headport=n, headlabel="      82"]
+BB81 -> BB84 [tailport=s, headport=n, headlabel="      84"]
+BB81 -> BB87 [tailport=s, headport=n, color=gray, headlabel="      87"]
+BB82 [shape=record label="{266: read-variable['alert',v7,v6]|267: constant[\"a is not null\",v8]}" ] 
+BB82 -> BB83 [tailport=s, headport=n, headlabel="      83"]
+BB82 -> BB87 [tailport=s, headport=n, color=gray]
+BB83 [shape=record label="{268: call-alert [v6,v7,v8,-]*}" ] 
+BB83 -> BB84 [tailport=s, headport=n]
+BB83 -> BB87 [tailport=s, headport=n, color=gray]
+BB84 [shape=record label="{269: read-variable['b',v7,-]|270: read-variable['b',v8,-]|271: *[v7,v8,v6]|272: write-variable[v6,'c']*|273: read-variable['document',v10,-]|274: read-property[v10,'write',-]|275: \<variable-non-null-undef\>['document']|276: constant[\"b square: \",v12]|277: read-variable['c',v13,-]|278: +[v12,v13,v11]}" ] 
+BB84 -> BB85 [tailport=s, headport=n, headlabel="      85"]
+BB84 -> BB87 [tailport=s, headport=n, color=gray]
+BB85 [shape=record label="{279: call-document.write [v10,'write',v11,-]*}" ] 
+BB85 -> BB86 [tailport=s, headport=n, headlabel="      86"]
+BB85 -> BB87 [tailport=s, headport=n, color=gray]
+BB86 [shape=record label="{280: return[v1]}" ] 
+BB87 [shape=record label="{281: exceptional-return}" ] 
+//#$~ 152
+}

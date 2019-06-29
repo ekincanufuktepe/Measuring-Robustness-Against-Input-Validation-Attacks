@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB40 [tailport=s, headport=n, headlabel="    40"]
+BB40 [shape=record label="{138: constant[undefined,v1]}" ] 
+BB40 -> BB41 [tailport=s, headport=n, headlabel="      41"]
+BB41 [shape=record label="{139: read-variable['this',v5,-]|140: read-property[v5,'left',v3]|141: constant[null,v4]|142: ==[v3,v4,v2]|143: if[v2](true-block:42,false-block:43)}" ] 
+BB41 -> BB42 [tailport=s, headport=n, headlabel="      42"]
+BB41 -> BB43 [tailport=s, headport=n, headlabel="      43"]
+BB41 -> BB49 [tailport=s, headport=n, color=gray, headlabel="      49"]
+BB42 [shape=record label="{144: read-variable['this',v6,-]|145: read-property[v6,'item',v1]}" ] 
+BB42 -> BB48 [tailport=s, headport=n, headlabel="      48"]
+BB42 -> BB49 [tailport=s, headport=n, color=gray]
+BB43 [shape=record label="{146: read-variable['this',v10,-]|147: read-property[v10,'item',v8]|148: read-variable['this',v13,-]|149: read-property[v13,'left',v12]|150: read-property[v12,'itemCheck',-]|151: \<property-non-null-undef\>[v13,'left']}" ] 
+BB43 -> BB44 [tailport=s, headport=n, headlabel="      44"]
+BB43 -> BB49 [tailport=s, headport=n, color=gray]
+BB44 [shape=record label="{152: call-this.left.itemCheck [v12,'itemCheck',v9]}" ] 
+BB44 -> BB45 [tailport=s, headport=n, headlabel="      45"]
+BB44 -> BB49 [tailport=s, headport=n, color=gray]
+BB45 [shape=record label="{153: +[v8,v9,v6]|154: read-variable['this',v16,-]|155: read-property[v16,'right',v15]|156: read-property[v15,'itemCheck',-]|157: \<property-non-null-undef\>[v16,'right']}" ] 
+BB45 -> BB46 [tailport=s, headport=n, headlabel="      46"]
+BB45 -> BB49 [tailport=s, headport=n, color=gray]
+BB46 [shape=record label="{158: call-this.right.itemCheck [v15,'itemCheck',v7]}" ] 
+BB46 -> BB47 [tailport=s, headport=n, headlabel="      47"]
+BB46 -> BB49 [tailport=s, headport=n, color=gray]
+BB47 [shape=record label="{159: -[v6,v7,v1]}" ] 
+BB47 -> BB48 [tailport=s, headport=n]
+BB47 -> BB49 [tailport=s, headport=n, color=gray]
+BB48 [shape=record label="{160: return[v1]}" ] 
+BB49 [shape=record label="{161: exceptional-return}" ] 
+//#$~ 17
+}

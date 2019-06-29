@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry720[shape=none,label=""];
+BB_entry720 -> BB9774 [tailport=s, headport=n, headlabel="    9774"]
+BB9774 [shape=record label="{25698: constant[undefined,v1]|25699: vardecl['arg']}" ] 
+BB9774 -> BB9775 [tailport=s, headport=n, headlabel="      9775"]
+BB9775 [shape=record label="{25700: read-variable['argument',v5,v4]|25701: read-variable['scope',v6,-]|25702: read-variable['locals',v7,-]|25703: read-variable['assign',v8,-]|25704: read-variable['inputs',v9,-]}" ] 
+BB9775 -> BB9776 [tailport=s, headport=n, headlabel="      9776"]
+BB9775 -> BB9781 [tailport=s, headport=n, color=gray, headlabel="      9781"]
+BB9776 [shape=record label="{25705: call-argument [v4,v5,v6,v7,v8,v9,v3]}" ] 
+BB9776 -> BB9777 [tailport=s, headport=n, headlabel="      9777"]
+BB9776 -> BB9781 [tailport=s, headport=n, color=gray]
+BB9777 [shape=record label="{25706: ![v3,v2]|25707: write-variable[v2,'arg']*|25708: read-variable['context',v10,-]|25709: if[v10](true-block:9778,false-block:9779)}" ] 
+BB9777 -> BB9778 [tailport=s, headport=n, headlabel="      9778"]
+BB9777 -> BB9779 [tailport=s, headport=n, headlabel="      9779"]
+BB9777 -> BB9781 [tailport=s, headport=n, color=gray]
+BB9778 [shape=record label="{25710: new[v1]|25711: read-variable['arg',v11,-]|25712: write-property[v1,'value',v11]}" ] 
+BB9778 -> BB9780 [tailport=s, headport=n, headlabel="      9780"]
+BB9778 -> BB9781 [tailport=s, headport=n, color=gray]
+BB9779 [shape=record label="{25713: read-variable['arg',v1,-]}" ] 
+BB9779 -> BB9780 [tailport=s, headport=n]
+BB9779 -> BB9781 [tailport=s, headport=n, color=gray]
+BB9780 [shape=record label="{25714: return[v1]}" ] 
+BB9781 [shape=record label="{25715: exceptional-return}" ] 
+//#$~ 13766
+}

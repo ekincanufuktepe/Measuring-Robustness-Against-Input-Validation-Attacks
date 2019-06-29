@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry60[shape=none,label=""];
+BB_entry60 -> BB667 [tailport=s, headport=n, headlabel="    667"]
+BB667 [shape=record label="{1679: constant[undefined,v1]}" ] 
+BB667 -> BB668 [tailport=s, headport=n, headlabel="      668"]
+BB668 [shape=record label="{1680: read-variable['flatten',v3,v2]|1681: read-variable['array',v4,-]|1682: read-variable['shallow',v5,-]|1683: constant[false,v6]}" ] 
+BB668 -> BB669 [tailport=s, headport=n, headlabel="      669"]
+BB668 -> BB671 [tailport=s, headport=n, color=gray, headlabel="      671"]
+BB669 [shape=record label="{1684: call-flatten [v2,v3,v4,v5,v6,v1]}" ] 
+BB669 -> BB670 [tailport=s, headport=n, headlabel="      670"]
+BB669 -> BB671 [tailport=s, headport=n, color=gray]
+BB670 [shape=record label="{1685: return[v1]}" ] 
+BB671 [shape=record label="{1686: exceptional-return}" ] 
+//#$~ 511
+}

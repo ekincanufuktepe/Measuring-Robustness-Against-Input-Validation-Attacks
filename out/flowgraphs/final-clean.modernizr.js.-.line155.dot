@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB108 [tailport=s, headport=n, headlabel="    108"]
+BB108 [shape=record label="{345: constant[undefined,v1]}" ] 
+BB108 -> BB109 [tailport=s, headport=n, headlabel="      109"]
+BB109 [shape=record label="{346: read-variable['property',v2,-]|347: read-variable['object',v3,-]|348: in[v2,v3,v1]|349: if[v1](true-block:110,false-block:112)}" ] 
+BB109 -> BB112 [tailport=s, headport=n, headlabel="      112"]
+BB109 -> BB110 [tailport=s, headport=n, headlabel="      110"]
+BB109 -> BB113 [tailport=s, headport=n, color=gray, headlabel="      113"]
+BB110 [shape=record label="{350: read-variable['is',v5,v4]|351: read-variable['object',v9,-]|352: read-property[v9,'constructor',v8]|353: \<variable-non-null-undef\>['object']|354: read-property[v8,'prototype',v7]|355: \<property-non-null-undef\>[v9,'constructor']|356: read-variable['property',v10,-]|357: read-property[v7,v10,v6]|358: \<property-non-null-undef\>[v8,'prototype']|359: constant[\"undefined\",v11]}" ] 
+BB110 -> BB111 [tailport=s, headport=n, headlabel="      111"]
+BB110 -> BB113 [tailport=s, headport=n, color=gray]
+BB111 [shape=record label="{360: call-is [v4,v5,v6,v11,v1]}" ] 
+BB111 -> BB112 [tailport=s, headport=n]
+BB111 -> BB113 [tailport=s, headport=n, color=gray]
+BB112 [shape=record label="{361: return[v1]}" ] 
+BB113 [shape=record label="{362: exceptional-return}" ] 
+//#$~ 156
+}

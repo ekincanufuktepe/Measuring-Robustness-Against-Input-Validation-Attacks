@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry31[shape=none,label=""];
+BB_entry31 -> BB558 [tailport=s, headport=n, headlabel="    558"]
+BB558 [shape=record label="{1948: constant[undefined,v1]}" ] 
+BB558 -> BB559 [tailport=s, headport=n, headlabel="      559"]
+BB559 [shape=record label="{1949: read-variable['comment',v4,-]|1950: read-property[v4,'buffer',v3]|1951: \<variable-non-null-undef\>['comment']|1952: ![v3,v2]|1953: if[v2](true-block:560,false-block:561)}" ] 
+BB559 -> BB560 [tailport=s, headport=n, headlabel="      560"]
+BB559 -> BB561 [tailport=s, headport=n, headlabel="      561"]
+BB559 -> BB567 [tailport=s, headport=n, color=gray, headlabel="      567"]
+BB560 [shape=record label="{1954: constant[undefined,v1]}" ] 
+BB560 -> BB566 [tailport=s, headport=n, headlabel="      566"]
+BB561 [shape=record label="{1955: read-variable['this',v6,-]|1956: read-property[v6,'pp',v5]|1957: if[v5](true-block:562,false-block:564)}" ] 
+BB561 -> BB562 [tailport=s, headport=n, headlabel="      562"]
+BB561 -> BB564 [tailport=s, headport=n, headlabel="      564"]
+BB561 -> BB567 [tailport=s, headport=n, color=gray]
+BB562 [shape=record label="{1958: read-variable['this',v8,-]|1959: read-property[v8,'prettyIndent',-]|1960: constant[1.0,v9]|1961: constant[true,v10]}" ] 
+BB562 -> BB563 [tailport=s, headport=n, headlabel="      563"]
+BB562 -> BB567 [tailport=s, headport=n, color=gray]
+BB563 [shape=record label="{1962: call-this.prettyIndent [v8,'prettyIndent',v9,v10,-]*}" ] 
+BB563 -> BB564 [tailport=s, headport=n]
+BB563 -> BB567 [tailport=s, headport=n, color=gray]
+BB564 [shape=record label="{1963: read-variable['this',v8,-]|1964: read-property[v8,'buffer',-]|1965: constant[\"\\\<!--\",v12]|1966: read-variable['comment',v14,-]|1967: read-property[v14,'val',v13]|1968: \<variable-non-null-undef\>['comment']|1969: +[v12,v13,v10]|1970: constant[\"--\\\>\",v11]|1971: +[v10,v11,v9]}" ] 
+BB564 -> BB565 [tailport=s, headport=n, headlabel="      565"]
+BB564 -> BB567 [tailport=s, headport=n, color=gray]
+BB565 [shape=record label="{1972: call-this.buffer [v8,'buffer',v9,-]*}" ] 
+BB565 -> BB566 [tailport=s, headport=n]
+BB565 -> BB567 [tailport=s, headport=n, color=gray]
+BB566 [shape=record label="{1973: return[v1]}" ] 
+BB567 [shape=record label="{1974: exceptional-return}" ] 
+//#$~ 535
+}

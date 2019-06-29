@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry226[shape=none,label=""];
+BB_entry226 -> BB4943 [tailport=s, headport=n, headlabel="    4943"]
+BB4943 [shape=record label="{16025: constant[undefined,v1]}" ] 
+BB4943 -> BB4944 [tailport=s, headport=n, headlabel="      4944"]
+BB4944 [shape=record label="{16026: read-variable['depth',v3,-]|16027: ![v3,v2]|16028: if[v2](true-block:4945,false-block:4946)}" ] 
+BB4944 -> BB4945 [tailport=s, headport=n, headlabel="      4945"]
+BB4944 -> BB4946 [tailport=s, headport=n, headlabel="      4946"]
+BB4944 -> BB4952 [tailport=s, headport=n, color=gray, headlabel="      4952"]
+BB4945 [shape=record label="{16029: read-variable['this',v5,-]|16030: read-property[v5,'pushStackLiteral',-]|16031: constant[\"data\",v6]}" ] 
+BB4945 -> BB4947 [tailport=s, headport=n, headlabel="      4947"]
+BB4945 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4946 [shape=record label="{16032: read-variable['this',v5,-]|16033: read-property[v5,'pushStackLiteral',-]|16034: constant[\"this.data(data, \",v9]|16035: read-variable['depth',v10,-]|16036: +[v9,v10,v7]|16037: constant[\")\",v8]|16038: +[v7,v8,v6]}" ] 
+BB4946 -> BB4948 [tailport=s, headport=n, headlabel="      4948"]
+BB4946 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4947 [shape=record label="{16039: call-this.pushStackLiteral [v5,'pushStackLiteral',v6,-]*}" ] 
+BB4947 -> BB4949 [tailport=s, headport=n, headlabel="      4949"]
+BB4947 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4948 [shape=record label="{16040: call-this.pushStackLiteral [v5,'pushStackLiteral',v6,-]*}" ] 
+BB4948 -> BB4949 [tailport=s, headport=n]
+BB4948 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4949 [shape=record label="{16041: read-variable['this',v5,-]|16042: read-property[v5,'resolvePath',-]|16043: constant[\"data\",v6]|16044: read-variable['parts',v7,-]|16045: constant[0.0,v8]|16046: constant[true,v9]}" ] 
+BB4949 -> BB4950 [tailport=s, headport=n, headlabel="      4950"]
+BB4949 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4950 [shape=record label="{16047: call-this.resolvePath [v5,'resolvePath',v6,v7,v8,v9,-]*}" ] 
+BB4950 -> BB4951 [tailport=s, headport=n, headlabel="      4951"]
+BB4950 -> BB4952 [tailport=s, headport=n, color=gray]
+BB4951 [shape=record label="{16048: return[v1]}" ] 
+BB4952 [shape=record label="{16049: exceptional-return}" ] 
+//#$~ 3051
+}

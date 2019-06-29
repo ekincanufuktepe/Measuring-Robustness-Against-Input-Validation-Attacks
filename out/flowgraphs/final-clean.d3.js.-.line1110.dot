@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry184[shape=none,label=""];
+BB_entry184 -> BB1912 [tailport=s, headport=n, headlabel="    1912"]
+BB1912 [shape=record label="{5532: constant[undefined,v1]}" ] 
+BB1912 -> BB1913 [tailport=s, headport=n, headlabel="      1913"]
+BB1913 [shape=record label="{5533: constant[\"on\",v5]|5534: read-variable['k',v6,-]|5535: +[v5,v6,v3]|5536: read-variable['d3_document',v4,-]|5537: in[v3,v4,v2]|5538: if[v2](true-block:1914,false-block:1916)}" ] 
+BB1913 -> BB1914 [tailport=s, headport=n, headlabel="      1914"]
+BB1913 -> BB1916 [tailport=s, headport=n, headlabel="      1916"]
+BB1913 -> BB1917 [tailport=s, headport=n, color=gray, headlabel="      1917"]
+BB1914 [shape=record label="{5539: read-variable['d3_selection_onFilters',v8,-]|5540: read-property[v8,'remove',-]|5541: \<variable-non-null-undef\>['d3_selection_onFilters']|5542: read-variable['k',v9,-]}" ] 
+BB1914 -> BB1915 [tailport=s, headport=n, headlabel="      1915"]
+BB1914 -> BB1917 [tailport=s, headport=n, color=gray]
+BB1915 [shape=record label="{5543: call-d3_selection_onFilters.remove [v8,'remove',v9,-]*}" ] 
+BB1915 -> BB1916 [tailport=s, headport=n]
+BB1915 -> BB1917 [tailport=s, headport=n, color=gray]
+BB1916 [shape=record label="{5544: return[v1]}" ] 
+BB1917 [shape=record label="{5545: exceptional-return}" ] 
+//#$~ 1111
+}

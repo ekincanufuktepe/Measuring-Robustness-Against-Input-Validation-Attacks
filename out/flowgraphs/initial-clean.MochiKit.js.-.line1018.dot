@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry117[shape=none,label=""];
+BB_entry117 -> BB1757 [tailport=s, headport=n, headlabel="    1757"]
+BB1757 [shape=record label="{8679: constant[undefined,v1]|8680: vardecl['i']|8681: vardecl['pair']}" ] 
+BB1757 -> BB1758 [tailport=s, headport=n, headlabel="      1758"]
+BB1758 [shape=record label="{8682: constant[0.0,v3]|8683: write-variable[v3,'i']*}" ] 
+BB1758 -> BB1759 [tailport=s, headport=n, headlabel="      1759"]
+BB1759 [shape=record label="{8684: read-variable['i',v4,-]|8685: read-variable['this',v7,-]|8686: read-property[v7,'pairs',v6]|8687: read-property[v6,'length',v5]|8688: \<property-non-null-undef\>[v7,'pairs']|8689: \<[v4,v5,v2]|8690: if[v2](true-block:1760,false-block:1761)}" ] 
+BB1759 -> BB1760 [tailport=s, headport=n, headlabel="      1760"]
+BB1759 -> BB1761 [tailport=s, headport=n, headlabel="      1761"]
+BB1759 -> BB1767 [tailport=s, headport=n, color=gray, headlabel="      1767"]
+BB1760 [shape=record label="{8691: read-variable['this',v10,-]|8692: read-property[v10,'pairs',v9]|8693: read-variable['i',v11,-]|8694: read-property[v9,v11,v8]|8695: \<property-non-null-undef\>[v10,'pairs']|8696: write-variable[v8,'pair']*|8697: read-variable['pair',v15,-]|8698: constant[0.0,v16]|8699: read-property[v15,v16,v13]|8700: \<variable-non-null-undef\>['pair']|8701: read-variable['name',v14,-]|8702: ==[v13,v14,v12]|8703: if[v12](true-block:1762,false-block:1765)}" ] 
+BB1760 -> BB1762 [tailport=s, headport=n, headlabel="      1762"]
+BB1760 -> BB1765 [tailport=s, headport=n, headlabel="      1765"]
+BB1760 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1761 [shape=record label="{8704: constant[false,v1]}" ] 
+BB1761 -> BB1766 [tailport=s, headport=n, headlabel="      1766"]
+BB1762 [shape=record label="{8705: read-variable['this',v19,-]|8706: read-property[v19,'pairs',v18]|8707: read-property[v18,'splice',-]|8708: \<property-non-null-undef\>[v19,'pairs']|8709: read-variable['i',v20,-]|8710: constant[1.0,v21]}" ] 
+BB1762 -> BB1763 [tailport=s, headport=n, headlabel="      1763"]
+BB1762 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1763 [shape=record label="{8711: call-this.pairs.splice [v18,'splice',v20,v21,-]*}" ] 
+BB1763 -> BB1764 [tailport=s, headport=n, headlabel="      1764"]
+BB1763 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1764 [shape=record label="{8712: constant[true,v1]}" ] 
+BB1764 -> BB1766 [tailport=s, headport=n]
+BB1765 [shape=record label="{8713: constant[1.0,v17]|8714: read-variable['i',v18,-]|8715: +[v18,v19]|8716: +[v19,v17,v20]|8717: write-variable[v20,'i']}" ] 
+BB1765 -> BB1759 [tailport=s, headport=n]
+BB1765 -> BB1767 [tailport=s, headport=n, color=gray]
+BB1766 [shape=record label="{8718: return[v1]}" ] 
+BB1767 [shape=record label="{8719: exceptional-return}" ] 
+//#$~ 1026
+}

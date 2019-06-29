@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry67[shape=none,label=""];
+BB_entry67 -> BB899 [tailport=s, headport=n, headlabel="    899"]
+BB899 [shape=record label="{3069: constant[undefined,v1]}" ] 
+BB899 -> BB900 [tailport=s, headport=n, headlabel="      900"]
+BB900 [shape=record label="{3070: read-variable['func',v3,-]|3071: read-property[v3,'apply',-]|3072: \<variable-non-null-undef\>['func']|3073: read-variable['this',v4,-]|3074: read-variable['arguments',v5,-]}" ] 
+BB900 -> BB901 [tailport=s, headport=n, headlabel="      901"]
+BB900 -> BB902 [tailport=s, headport=n, color=gray, headlabel="      902"]
+BB901 [shape=record label="{3075: call-func.apply [v3,'apply',v4,v5,v1]}" ] 
+BB901 -> BB905 [tailport=s, headport=n, headlabel="      905"]
+BB901 -> BB902 [tailport=s, headport=n, color=gray]
+BB902 [shape=record label="{3076: catch[e,v2]|3077: begin-with[v2]}" ] 
+BB902 -> BB903 [tailport=s, headport=n, headlabel="      903"]
+BB902 -> BB906 [tailport=s, headport=n, color=gray, headlabel="      906"]
+BB903 [shape=record label="{3078: read-variable['e',v4,v3]|3079: throw[v4]*|3080: end-with}" ] 
+BB903 -> BB905 [tailport=s, headport=n]
+BB903 -> BB904 [tailport=s, headport=n, color=gray, headlabel="      904"]
+BB904 [shape=record label="{3081: end-with}" ] 
+BB904 -> BB906 [tailport=s, headport=n]
+BB905 [shape=record label="{3082: return[v1]}" ] 
+BB906 [shape=record label="{3083: exceptional-return}" ] 
+//#$~ 1027
+}

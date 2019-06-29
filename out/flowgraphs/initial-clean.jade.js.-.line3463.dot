@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry190[shape=none,label=""];
+BB_entry190 -> BB3232 [tailport=s, headport=n, headlabel="    3232"]
+BB3232 [shape=record label="{10168: constant[undefined,v1]|10169: vardecl['tok']|10170: vardecl['tag']}" ] 
+BB3232 -> BB3233 [tailport=s, headport=n, headlabel="      3233"]
+BB3233 [shape=record label="{10171: read-variable['this',v4,-]|10172: read-property[v4,'advance',-]}" ] 
+BB3233 -> BB3234 [tailport=s, headport=n, headlabel="      3234"]
+BB3233 -> BB3240 [tailport=s, headport=n, color=gray, headlabel="      3240"]
+BB3234 [shape=record label="{10173: call-this.advance [v4,'advance',v2]}" ] 
+BB3234 -> BB3235 [tailport=s, headport=n, headlabel="      3235"]
+BB3234 -> BB3240 [tailport=s, headport=n, color=gray]
+BB3235 [shape=record label="{10174: write-variable[v2,'tok']*|10175: read-variable['nodes',v7,-]|10176: read-property[v7,'Tag',-]|10177: \<variable-non-null-undef\>['nodes']|10178: read-variable['tok',v9,-]|10179: read-property[v9,'val',v8]|10180: \<variable-non-null-undef\>['tok']}" ] 
+BB3235 -> BB3236 [tailport=s, headport=n, headlabel="      3236"]
+BB3235 -> BB3240 [tailport=s, headport=n, color=gray]
+BB3236 [shape=record label="{10181: construct [v7,'Tag',v8,v5]}" ] 
+BB3236 -> BB3237 [tailport=s, headport=n, headlabel="      3237"]
+BB3236 -> BB3240 [tailport=s, headport=n, color=gray]
+BB3237 [shape=record label="{10182: write-variable[v5,'tag']*|10183: read-variable['tag',v11,-]|10184: constant[true,v10]|10185: write-property[v11,'buffer',v10]|10186: \<variable-non-null-undef\>['tag']*|10187: read-variable['this',v13,-]|10188: read-property[v13,'tag',-]|10189: read-variable['tag',v14,-]}" ] 
+BB3237 -> BB3238 [tailport=s, headport=n, headlabel="      3238"]
+BB3237 -> BB3240 [tailport=s, headport=n, color=gray]
+BB3238 [shape=record label="{10190: call-this.tag [v13,'tag',v14,v1]}" ] 
+BB3238 -> BB3239 [tailport=s, headport=n, headlabel="      3239"]
+BB3238 -> BB3240 [tailport=s, headport=n, color=gray]
+BB3239 [shape=record label="{10191: return[v1]}" ] 
+BB3240 [shape=record label="{10192: exceptional-return}" ] 
+//#$~ 3467
+}

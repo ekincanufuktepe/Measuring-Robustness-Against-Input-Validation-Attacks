@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB223 [tailport=s, headport=n, headlabel="    223"]
+BB223 [shape=record label="{553: constant[undefined,v1]}" ] 
+BB223 -> BB224 [tailport=s, headport=n, headlabel="      224"]
+BB224 [shape=record label="{554: read-variable['boolOrFn',v4,v3]|555: read-variable['manager',v7,-]|556: read-property[v7,'options',v6]|557: \<variable-non-null-undef\>['manager']|558: read-property[v6,'enable',v5]|559: \<property-non-null-undef\>[v7,'options']|560: read-variable['Array',v9,-]|561: read-variable['manager',v10,-]}" ] 
+BB224 -> BB225 [tailport=s, headport=n, headlabel="      225"]
+BB224 -> BB231 [tailport=s, headport=n, color=gray, headlabel="      231"]
+BB225 [shape=record label="{562: construct [-,v9,v10,v8]}" ] 
+BB225 -> BB226 [tailport=s, headport=n, headlabel="      226"]
+BB225 -> BB231 [tailport=s, headport=n, color=gray]
+BB226 [shape=record label="{563: call-boolOrFn [v3,v4,v5,v8,v2]}" ] 
+BB226 -> BB227 [tailport=s, headport=n, headlabel="      227"]
+BB226 -> BB231 [tailport=s, headport=n, color=gray]
+BB227 [shape=record label="{564: if[v2](true-block:228,false-block:230)}" ] 
+BB227 -> BB228 [tailport=s, headport=n, headlabel="      228"]
+BB227 -> BB230 [tailport=s, headport=n, headlabel="      230"]
+BB228 [shape=record label="{565: read-variable['self',v12,-]|566: read-property[v12,'handler',-]|567: \<variable-non-null-undef\>['self']|568: read-variable['ev',v13,-]}" ] 
+BB228 -> BB229 [tailport=s, headport=n, headlabel="      229"]
+BB228 -> BB231 [tailport=s, headport=n, color=gray]
+BB229 [shape=record label="{569: call-self.handler [v12,'handler',v13,-]*}" ] 
+BB229 -> BB230 [tailport=s, headport=n]
+BB229 -> BB231 [tailport=s, headport=n, color=gray]
+BB230 [shape=record label="{570: return[v1]}" ] 
+BB231 [shape=record label="{571: exceptional-return}" ] 
+//#$~ 376
+}

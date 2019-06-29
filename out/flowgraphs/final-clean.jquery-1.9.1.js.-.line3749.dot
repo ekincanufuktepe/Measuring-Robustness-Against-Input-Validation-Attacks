@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry224[shape=none,label=""];
+BB_entry224 -> BB3413 [tailport=s, headport=n, headlabel="    3413"]
+BB3413 [shape=record label="{9961: constant[undefined,v1]|9962: vardecl['i']|9963: vardecl['len']}" ] 
+BB3413 -> BB3414 [tailport=s, headport=n, headlabel="      3414"]
+BB3414 [shape=record label="{9964: constant[0.0,v2]|9965: write-variable[v2,'i']*|9966: read-variable['this',v4,-]|9967: read-property[v4,'length',v3]|9968: write-variable[v3,'len']*}" ] 
+BB3414 -> BB3415 [tailport=s, headport=n, headlabel="      3415"]
+BB3414 -> BB3421 [tailport=s, headport=n, color=gray, headlabel="      3421"]
+BB3415 [shape=record label="{9969: read-variable['i',v6,-]|9970: read-variable['len',v7,-]|9971: \<[v6,v7,v5]|9972: if[v5](true-block:3416,false-block:3417)}" ] 
+BB3415 -> BB3416 [tailport=s, headport=n, headlabel="      3416"]
+BB3415 -> BB3417 [tailport=s, headport=n, headlabel="      3417"]
+BB3415 -> BB3421 [tailport=s, headport=n, color=gray]
+BB3416 [shape=record label="{9973: read-variable['this',v11,-]|9974: read-variable['i',v12,-]|9975: read-property[v11,v12,v9]|9976: read-variable['elem',v10,-]|9977: ===[v9,v10,v8]|9978: if[v8](true-block:3418,false-block:3419)}" ] 
+BB3416 -> BB3418 [tailport=s, headport=n, headlabel="      3418"]
+BB3416 -> BB3419 [tailport=s, headport=n, headlabel="      3419"]
+BB3416 -> BB3421 [tailport=s, headport=n, color=gray]
+BB3417 [shape=record label="{9979: constant[-1.0,v1]}" ] 
+BB3417 -> BB3420 [tailport=s, headport=n, headlabel="      3420"]
+BB3418 [shape=record label="{9980: read-variable['i',v1,-]}" ] 
+BB3418 -> BB3420 [tailport=s, headport=n]
+BB3418 -> BB3421 [tailport=s, headport=n, color=gray]
+BB3419 [shape=record label="{9981: constant[1.0,v13]|9982: read-variable['i',v14,-]|9983: +[v14,v15]|9984: +[v15,v13,v16]|9985: write-variable[v16,'i']}" ] 
+BB3419 -> BB3415 [tailport=s, headport=n]
+BB3419 -> BB3421 [tailport=s, headport=n, color=gray]
+BB3420 [shape=record label="{9986: return[v1]}" ] 
+BB3421 [shape=record label="{9987: exceptional-return}" ] 
+}

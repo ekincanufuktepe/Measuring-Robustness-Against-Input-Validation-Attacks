@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry735[shape=none,label=""];
+BB_entry735 -> BB8698 [tailport=s, headport=n, headlabel="    8698"]
+BB8698 [shape=record label="{30017: constant[undefined,v1]|30018: vardecl['index']}" ] 
+BB8698 -> BB8699 [tailport=s, headport=n, headlabel="      8699"]
+BB8699 [shape=record label="{30019: read-variable['firstDotIndexCache',v4,-]|30020: read-property[v4,'get',-]|30021: \<variable-non-null-undef\>['firstDotIndexCache']|30022: read-variable['path',v5,-]}" ] 
+BB8699 -> BB8700 [tailport=s, headport=n, headlabel="      8700"]
+BB8699 -> BB8705 [tailport=s, headport=n, color=gray, headlabel="      8705"]
+BB8700 [shape=record label="{30023: call-firstDotIndexCache.get [v4,'get',v5,v2]}" ] 
+BB8700 -> BB8701 [tailport=s, headport=n, headlabel="      8701"]
+BB8700 -> BB8705 [tailport=s, headport=n, color=gray]
+BB8701 [shape=record label="{30024: write-variable[v2,'index']*|30025: read-variable['index',v7,-]|30026: constant[-1.0,v8]|30027: !==[v7,v8,v6]|30028: if[v6](true-block:8702,false-block:8704)}" ] 
+BB8701 -> BB8702 [tailport=s, headport=n, headlabel="      8702"]
+BB8701 -> BB8704 [tailport=s, headport=n, headlabel="      8704"]
+BB8701 -> BB8705 [tailport=s, headport=n, color=gray]
+BB8702 [shape=record label="{30029: read-variable['path',v10,-]|30030: read-property[v10,'slice',-]|30031: \<variable-non-null-undef\>['path']|30032: read-variable['index',v12,-]|30033: constant[1.0,v13]|30034: +[v12,v13,v11]}" ] 
+BB8702 -> BB8703 [tailport=s, headport=n, headlabel="      8703"]
+BB8702 -> BB8705 [tailport=s, headport=n, color=gray]
+BB8703 [shape=record label="{30035: call-path.slice [v10,'slice',v11,v1]}" ] 
+BB8703 -> BB8704 [tailport=s, headport=n]
+BB8703 -> BB8705 [tailport=s, headport=n, color=gray]
+BB8704 [shape=record label="{30036: return[v1]}" ] 
+BB8705 [shape=record label="{30037: exceptional-return}" ] 
+//#$~ 15559
+}

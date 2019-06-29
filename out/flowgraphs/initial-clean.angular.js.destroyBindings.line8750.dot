@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry414[shape=none,label=""];
+BB_entry414 -> BB5608 [tailport=s, headport=n, headlabel="    5608"]
+BB5608 [shape=record label="{14599: constant[undefined,v1]|14600: vardecl['i']|14601: vardecl['ii']}" ] 
+BB5608 -> BB5609 [tailport=s, headport=n, headlabel="      5609"]
+BB5609 [shape=record label="{14602: constant[0.0,v4]|14603: write-variable[v4,'i']*|14604: read-variable['onNewScopeDestroyed',v6,v2]|14605: read-property[v6,'length',v5]|14606: \<variable-non-null-undef\>['onNewScopeDestroyed']|14607: write-variable[v5,'ii']*}" ] 
+BB5609 -> BB5610 [tailport=s, headport=n, headlabel="      5610"]
+BB5609 -> BB5615 [tailport=s, headport=n, color=gray, headlabel="      5615"]
+BB5610 [shape=record label="{14608: read-variable['i',v7,v2]|14609: read-variable['ii',v8,v2]|14610: \<[v7,v8,v3]|14611: if[v3](true-block:5611,false-block:5614)}" ] 
+BB5610 -> BB5611 [tailport=s, headport=n, headlabel="      5611"]
+BB5610 -> BB5614 [tailport=s, headport=n, headlabel="      5614"]
+BB5610 -> BB5615 [tailport=s, headport=n, color=gray]
+BB5611 [shape=record label="{14612: read-variable['onNewScopeDestroyed',v10,-]|14613: read-variable['i',v11,-]|14614: read-property[v10,v11,-]|14615: \<variable-non-null-undef\>['onNewScopeDestroyed']}" ] 
+BB5611 -> BB5612 [tailport=s, headport=n, headlabel="      5612"]
+BB5611 -> BB5615 [tailport=s, headport=n, color=gray]
+BB5612 [shape=record label="{14616: call-null [v10,[v11],-]*}" ] 
+BB5612 -> BB5613 [tailport=s, headport=n, headlabel="      5613"]
+BB5612 -> BB5615 [tailport=s, headport=n, color=gray]
+BB5613 [shape=record label="{14617: constant[1.0,v12]|14618: read-variable['i',v13,v2]|14619: +[v13,v14]|14620: +[v14,v12,v15]|14621: write-variable[v15,'i']}" ] 
+BB5613 -> BB5610 [tailport=s, headport=n]
+BB5613 -> BB5615 [tailport=s, headport=n, color=gray]
+BB5614 [shape=record label="{14622: return[v1]}" ] 
+BB5615 [shape=record label="{14623: exceptional-return}" ] 
+//#$~ 8751
+}

@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry102[shape=none,label=""];
+BB_entry102 -> BB1274 [tailport=s, headport=n, headlabel="    1274"]
+BB1274 [shape=record label="{3874: constant[undefined,v1]|3875: vardecl['propName']}" ] 
+BB1274 -> BB1275 [tailport=s, headport=n, headlabel="      1275"]
+BB1275 [shape=record label="{3876: read-variable['this',v3,-]}" ] 
+BB1275 -> BB1276 [tailport=s, headport=n, headlabel="      1276"]
+BB1275 -> BB1282 [tailport=s, headport=n, color=gray, headlabel="      1282"]
+BB1276 [shape=record label="{3877: begin-for-in[v3,v4]}" ] 
+BB1276 -> BB1277 [tailport=s, headport=n, headlabel="      1277"]
+BB1276 -> BB1282 [tailport=s, headport=n, color=gray]
+BB1277 [shape=record label="{3878: has-next[v4,v5]|3879: if[v5](true-block:1278,false-block:1281)}" ] 
+BB1277 -> BB1278 [tailport=s, headport=n, headlabel="      1278"]
+BB1277 -> BB1281 [tailport=s, headport=n, headlabel="      1281"]
+BB1278 [shape=record label="{3880: next-property[v4,v6]|3881: write-variable[v6,'propName']|3882: read-variable['this',v8,-]|3883: read-property[v8,'bind',-]|3884: read-variable['propName',v9,-]}" ] 
+BB1278 -> BB1279 [tailport=s, headport=n, headlabel="      1279"]
+BB1278 -> BB1282 [tailport=s, headport=n, color=gray]
+BB1279 [shape=record label="{3885: call-this.bind [v8,'bind',v9,-]*}" ] 
+BB1279 -> BB1280 [tailport=s, headport=n, headlabel="      1280"]
+BB1279 -> BB1282 [tailport=s, headport=n, color=gray]
+BB1280 [shape=record label="{3886: end-for-in(begin-node:3877)}" ] 
+BB1280 -> BB1277 [tailport=s, headport=n]
+BB1281 [shape=record label="{3887: return[v1]}" ] 
+BB1282 [shape=record label="{3888: exceptional-return}" ] 
+//#$~ 1073
+}

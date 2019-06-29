@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry133[shape=none,label=""];
+BB_entry133 -> BB1585 [tailport=s, headport=n, headlabel="    1585"]
+BB1585 [shape=record label="{4196: constant[undefined,v1]}" ] 
+BB1585 -> BB1586 [tailport=s, headport=n, headlabel="      1586"]
+BB1586 [shape=record label="{4197: read-variable['obj',v2,-]|4198: constant[null,v3]|4199: !=[v2,v3,v1]|4200: if[v1](true-block:1587,false-block:1589)}" ] 
+BB1586 -> BB1589 [tailport=s, headport=n, headlabel="      1589"]
+BB1586 -> BB1587 [tailport=s, headport=n, headlabel="      1587"]
+BB1586 -> BB1590 [tailport=s, headport=n, color=gray, headlabel="      1590"]
+BB1587 [shape=record label="{4201: read-variable['hasOwnProperty',v5,-]|4202: read-property[v5,'call',-]|4203: \<variable-non-null-undef\>['hasOwnProperty']|4204: read-variable['obj',v6,-]|4205: read-variable['key',v7,-]}" ] 
+BB1587 -> BB1588 [tailport=s, headport=n, headlabel="      1588"]
+BB1587 -> BB1590 [tailport=s, headport=n, color=gray]
+BB1588 [shape=record label="{4206: call-hasOwnProperty.call [v5,'call',v6,v7,v1]}" ] 
+BB1588 -> BB1589 [tailport=s, headport=n]
+BB1588 -> BB1590 [tailport=s, headport=n, color=gray]
+BB1589 [shape=record label="{4207: return[v1]}" ] 
+BB1590 [shape=record label="{4208: exceptional-return}" ] 
+//#$~ 1268
+}

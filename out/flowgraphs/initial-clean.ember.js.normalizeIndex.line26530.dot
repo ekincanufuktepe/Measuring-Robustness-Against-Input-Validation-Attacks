@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry1201[shape=none,label=""];
+BB_entry1201 -> BB14417 [tailport=s, headport=n, headlabel="    14417"]
+BB14417 [shape=record label="{49805: constant[undefined,v1]}" ] 
+BB14417 -> BB14418 [tailport=s, headport=n, headlabel="      14418"]
+BB14418 [shape=record label="{49806: read-variable['index',v3,-]|49807: constant[0.0,v4]|49808: \<[v3,v4,v2]|49809: if[v2](true-block:14419,false-block:14420)}" ] 
+BB14418 -> BB14419 [tailport=s, headport=n, headlabel="      14419"]
+BB14418 -> BB14420 [tailport=s, headport=n, headlabel="      14420"]
+BB14418 -> BB14426 [tailport=s, headport=n, color=gray, headlabel="      14426"]
+BB14419 [shape=record label="{49810: read-variable['Math',v6,-]|49811: read-property[v6,'max',-]|49812: \<variable-non-null-undef\>['Math']|49813: constant[0.0,v7]|49814: read-variable['length',v9,-]|49815: read-variable['index',v10,-]|49816: +[v9,v10,v8]}" ] 
+BB14419 -> BB14421 [tailport=s, headport=n, headlabel="      14421"]
+BB14419 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14420 [shape=record label="{49817: read-variable['index',v6,-]|49818: read-variable['length',v7,-]|49819: \<[v6,v7,v5]|49820: if[v5](true-block:14422,false-block:14423)}" ] 
+BB14420 -> BB14422 [tailport=s, headport=n, headlabel="      14422"]
+BB14420 -> BB14423 [tailport=s, headport=n, headlabel="      14423"]
+BB14420 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14421 [shape=record label="{49821: call-Math.max [v6,'max',v7,v8,v1]}" ] 
+BB14421 -> BB14425 [tailport=s, headport=n, headlabel="      14425"]
+BB14421 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14422 [shape=record label="{49822: read-variable['index',v1,-]}" ] 
+BB14422 -> BB14425 [tailport=s, headport=n]
+BB14422 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14423 [shape=record label="{49823: read-variable['Math',v9,-]|49824: read-property[v9,'min',-]|49825: \<variable-non-null-undef\>['Math']|49826: read-variable['length',v11,-]|49827: read-variable['newItemsOffset',v12,-]|49828: -[v11,v12,v10]|49829: read-variable['index',v13,-]}" ] 
+BB14423 -> BB14424 [tailport=s, headport=n, headlabel="      14424"]
+BB14423 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14424 [shape=record label="{49830: call-Math.min [v9,'min',v10,v13,v1]}" ] 
+BB14424 -> BB14425 [tailport=s, headport=n]
+BB14424 -> BB14426 [tailport=s, headport=n, color=gray]
+BB14425 [shape=record label="{49831: return[v1]}" ] 
+BB14426 [shape=record label="{49832: exceptional-return}" ] 
+//#$~ 26536
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry254[shape=none,label=""];
+BB_entry254 -> BB3269 [tailport=s, headport=n, headlabel="    3269"]
+BB3269 [shape=record label="{10748: constant[undefined,v1]}" ] 
+BB3269 -> BB3270 [tailport=s, headport=n, headlabel="      3270"]
+BB3270 [shape=record label="{10749: read-variable['this',v5,-]|10750: read-property[v5,'_syncState',v3]|10751: read-variable['SYNCING',v4,-]|10752: ===[v3,v4,v2]|10753: if[v2](true-block:3271,false-block:3275)}" ] 
+BB3270 -> BB3271 [tailport=s, headport=n, headlabel="      3271"]
+BB3270 -> BB3275 [tailport=s, headport=n, headlabel="      3275"]
+BB3270 -> BB3276 [tailport=s, headport=n, color=gray, headlabel="      3276"]
+BB3271 [shape=record label="{10754: read-variable['this',v7,-]|10755: read-variable['this',v8,-]|10756: read-property[v8,'_syncState',v6]|10757: write-property[v7,'_previousSync',v6]*|10758: read-variable['this',v10,-]|10759: read-variable['SYNCED',v9,-]|10760: write-property[v10,'_syncState',v9]*|10761: read-variable['this',v12,-]|10762: read-property[v12,'trigger',-]|10763: read-variable['this',v14,-]|10764: read-property[v14,'_syncState',v13]|10765: read-variable['this',v15,-]|10766: read-variable['this',v17,-]|10767: read-property[v17,'_syncState',v16]}" ] 
+BB3271 -> BB3272 [tailport=s, headport=n, headlabel="      3272"]
+BB3271 -> BB3276 [tailport=s, headport=n, color=gray]
+BB3272 [shape=record label="{10768: call-this.trigger [v12,'trigger',v13,v15,v16,-]*}" ] 
+BB3272 -> BB3273 [tailport=s, headport=n, headlabel="      3273"]
+BB3272 -> BB3276 [tailport=s, headport=n, color=gray]
+BB3273 [shape=record label="{10769: read-variable['this',v19,-]|10770: read-property[v19,'trigger',-]|10771: read-variable['STATE_CHANGE',v20,-]|10772: read-variable['this',v21,-]|10773: read-variable['this',v23,-]|10774: read-property[v23,'_syncState',v22]}" ] 
+BB3273 -> BB3274 [tailport=s, headport=n, headlabel="      3274"]
+BB3273 -> BB3276 [tailport=s, headport=n, color=gray]
+BB3274 [shape=record label="{10775: call-this.trigger [v19,'trigger',v20,v21,v22,-]*}" ] 
+BB3274 -> BB3275 [tailport=s, headport=n]
+BB3274 -> BB3276 [tailport=s, headport=n, color=gray]
+BB3275 [shape=record label="{10776: return[v1]}" ] 
+BB3276 [shape=record label="{10777: exceptional-return}" ] 
+//#$~ 2853
+}

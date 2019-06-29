@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry753[shape=none,label=""];
+BB_entry753 -> BB10058 [tailport=s, headport=n, headlabel="    10058"]
+BB10058 [shape=record label="{33323: constant[undefined,v1]}" ] 
+BB10058 -> BB10059 [tailport=s, headport=n, headlabel="      10059"]
+BB10059 [shape=record label="{33324: read-variable['node',v2,-]|33325: if[v2](true-block:10060,false-block:10063)}" ] 
+BB10059 -> BB10060 [tailport=s, headport=n, headlabel="      10060"]
+BB10059 -> BB10063 [tailport=s, headport=n, headlabel="      10063"]
+BB10059 -> BB10064 [tailport=s, headport=n, color=gray, headlabel="      10064"]
+BB10060 [shape=record label="{33326: read-variable['node',v4,-]|33327: read-property[v4,'nextSibling',v3]|33328: \<variable-non-null-undef\>['node']|33329: if[v3](true-block:10061,false-block:10062)}" ] 
+BB10060 -> BB10061 [tailport=s, headport=n, headlabel="      10061"]
+BB10060 -> BB10062 [tailport=s, headport=n, headlabel="      10062"]
+BB10060 -> BB10064 [tailport=s, headport=n, color=gray]
+BB10061 [shape=record label="{33330: read-variable['node',v5,-]|33331: read-property[v5,'nextSibling',v1]|33332: \<variable-non-null-undef\>['node']}" ] 
+BB10061 -> BB10063 [tailport=s, headport=n]
+BB10061 -> BB10064 [tailport=s, headport=n, color=gray]
+BB10062 [shape=record label="{33333: read-variable['node',v6,-]|33334: read-property[v6,'parentNode',v5]|33335: \<variable-non-null-undef\>['node']|33336: write-variable[v5,'node']*}" ] 
+BB10062 -> BB10059 [tailport=s, headport=n]
+BB10062 -> BB10064 [tailport=s, headport=n, color=gray]
+BB10063 [shape=record label="{33337: return[v1]}" ] 
+BB10064 [shape=record label="{33338: exceptional-return}" ] 
+//#$~ 18032
+}

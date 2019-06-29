@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB596 [tailport=s, headport=n, headlabel="    596"]
+BB596 [shape=record label="{2243: constant[undefined,v1]}" ] 
+BB596 -> BB597 [tailport=s, headport=n, headlabel="      597"]
+BB597 [shape=record label="{2244: read-variable['this',v5,-]|2245: read-property[v5,'browserType',v3]|2246: constant[\"MSIE\",v4]|2247: ==[v3,v4,v2]|2248: if[v2](true-block:598,false-block:599)}" ] 
+BB597 -> BB598 [tailport=s, headport=n, headlabel="      598"]
+BB597 -> BB599 [tailport=s, headport=n, headlabel="      599"]
+BB597 -> BB602 [tailport=s, headport=n, color=gray, headlabel="      602"]
+BB598 [shape=record label="{2249: read-variable['cursorPos',v6,-]|2250: read-property[v6,'htmlText',v1]|2251: \<variable-non-null-undef\>['cursorPos']}" ] 
+BB598 -> BB601 [tailport=s, headport=n, headlabel="      601"]
+BB598 -> BB602 [tailport=s, headport=n, color=gray]
+BB599 [shape=record label="{2252: read-variable['cursorPos',v7,-]|2253: read-property[v7,'toString',-]|2254: \<variable-non-null-undef\>['cursorPos']}" ] 
+BB599 -> BB600 [tailport=s, headport=n, headlabel="      600"]
+BB599 -> BB602 [tailport=s, headport=n, color=gray]
+BB600 [shape=record label="{2255: call-cursorPos.toString [v7,'toString',v1]}" ] 
+BB600 -> BB601 [tailport=s, headport=n]
+BB600 -> BB602 [tailport=s, headport=n, color=gray]
+BB601 [shape=record label="{2256: return[v1]}" ] 
+BB602 [shape=record label="{2257: exceptional-return}" ] 
+//#$~ 439
+}

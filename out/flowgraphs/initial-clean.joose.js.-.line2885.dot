@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry272[shape=none,label=""];
+BB_entry272 -> BB2495 [tailport=s, headport=n, headlabel="    2495"]
+BB2495 [shape=record label="{7441: constant[undefined,v1]|7442: vardecl['me']|7443: vardecl['methods']}" ] 
+BB2495 -> BB2496 [tailport=s, headport=n, headlabel="      2496"]
+BB2496 [shape=record label="{7444: read-variable['this',v2,-]|7445: write-variable[v2,'me']*|7446: read-variable['classObject',v6,-]|7447: read-property[v6,'meta',v5]|7448: \<variable-non-null-undef\>['classObject']|7449: read-property[v5,'getInstanceMethods',-]|7450: \<property-non-null-undef\>[v6,'meta']}" ] 
+BB2496 -> BB2497 [tailport=s, headport=n, headlabel="      2497"]
+BB2496 -> BB2501 [tailport=s, headport=n, color=gray, headlabel="      2501"]
+BB2497 [shape=record label="{7451: call-classObject.meta.getInstanceMethods [v5,'getInstanceMethods',v3]}" ] 
+BB2497 -> BB2498 [tailport=s, headport=n, headlabel="      2498"]
+BB2497 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2498 [shape=record label="{7452: write-variable[v3,'methods']*|7453: read-variable['Joose',v9,-]|7454: read-property[v9,'A',v8]|7455: \<variable-non-null-undef\>['Joose']|7456: read-property[v8,'each',-]|7457: \<property-non-null-undef\>[v9,'A']|7458: read-variable['methods',v10,-]|7459: function-expr[function ( m ),v11]}" ] 
+BB2498 -> BB2499 [tailport=s, headport=n, headlabel="      2499"]
+BB2498 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2499 [shape=record label="{7460: call-Joose.A.each [v8,'each',v10,v11,-]*}" ] 
+BB2499 -> BB2500 [tailport=s, headport=n, headlabel="      2500"]
+BB2499 -> BB2501 [tailport=s, headport=n, color=gray]
+BB2500 [shape=record label="{7461: return[v1]}" ] 
+BB2501 [shape=record label="{7462: exceptional-return}" ] 
+//#$~ 2903
+}

@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry140[shape=none,label=""];
+BB_entry140 -> BB1492 [tailport=s, headport=n, headlabel="    1492"]
+BB1492 [shape=record label="{4121: constant[undefined,v1]}" ] 
+BB1492 -> BB1493 [tailport=s, headport=n, headlabel="      1493"]
+BB1493 [shape=record label="{4122: read-variable['console',v3,-]|4123: read-property[v3,'error',-]|4124: \<variable-non-null-undef\>['console']|4125: constant[\"Use execution.resolve|reject()\",v4]}" ] 
+BB1493 -> BB1494 [tailport=s, headport=n, headlabel="      1494"]
+BB1493 -> BB1496 [tailport=s, headport=n, color=gray, headlabel="      1496"]
+BB1494 [shape=record label="{4126: call-console.error [v3,'error',v4,-]*}" ] 
+BB1494 -> BB1495 [tailport=s, headport=n, headlabel="      1495"]
+BB1494 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1495 [shape=record label="{4127: return[v1]}" ] 
+BB1496 [shape=record label="{4128: exceptional-return}" ] 
+//#$~ 1366
+}

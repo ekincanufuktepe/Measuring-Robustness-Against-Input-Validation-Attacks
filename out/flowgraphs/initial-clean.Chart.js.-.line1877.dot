@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry157[shape=none,label=""];
+BB_entry157 -> BB1693 [tailport=s, headport=n, headlabel="    1693"]
+BB1693 [shape=record label="{6532: constant[undefined,v1]|6533: vardecl['thisAngle']}" ] 
+BB1693 -> BB1694 [tailport=s, headport=n, headlabel="      1694"]
+BB1694 [shape=record label="{6534: read-variable['this',v4,-]|6535: read-property[v4,'getIndexAngle',-]|6536: read-variable['index',v5,-]}" ] 
+BB1694 -> BB1695 [tailport=s, headport=n, headlabel="      1695"]
+BB1694 -> BB1702 [tailport=s, headport=n, color=gray, headlabel="      1702"]
+BB1695 [shape=record label="{6537: call-this.getIndexAngle [v4,'getIndexAngle',v5,v2]}" ] 
+BB1695 -> BB1696 [tailport=s, headport=n, headlabel="      1696"]
+BB1695 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1696 [shape=record label="{6538: write-variable[v2,'thisAngle']*|6539: new[v1]|6540: read-variable['Math',v12,-]|6541: read-property[v12,'cos',-]|6542: \<variable-non-null-undef\>['Math']|6543: read-variable['thisAngle',v13,-]}" ] 
+BB1696 -> BB1697 [tailport=s, headport=n, headlabel="      1697"]
+BB1696 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1697 [shape=record label="{6544: call-Math.cos [v12,'cos',v13,v9]}" ] 
+BB1697 -> BB1698 [tailport=s, headport=n, headlabel="      1698"]
+BB1697 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1698 [shape=record label="{6545: read-variable['distanceFromCenter',v10,-]|6546: *[v9,v10,v7]|6547: read-variable['this',v14,-]|6548: read-property[v14,'xCenter',v8]|6549: +[v7,v8,v6]|6550: write-property[v1,'x',v6]|6551: read-variable['Math',v21,-]|6552: read-property[v21,'sin',-]|6553: \<variable-non-null-undef\>['Math']|6554: read-variable['thisAngle',v22,-]}" ] 
+BB1698 -> BB1699 [tailport=s, headport=n, headlabel="      1699"]
+BB1698 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1699 [shape=record label="{6555: call-Math.sin [v21,'sin',v22,v18]}" ] 
+BB1699 -> BB1700 [tailport=s, headport=n, headlabel="      1700"]
+BB1699 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1700 [shape=record label="{6556: read-variable['distanceFromCenter',v19,-]|6557: *[v18,v19,v16]|6558: read-variable['this',v23,-]|6559: read-property[v23,'yCenter',v17]|6560: +[v16,v17,v15]|6561: write-property[v1,'y',v15]}" ] 
+BB1700 -> BB1701 [tailport=s, headport=n, headlabel="      1701"]
+BB1700 -> BB1702 [tailport=s, headport=n, color=gray]
+BB1701 [shape=record label="{6562: return[v1]}" ] 
+BB1702 [shape=record label="{6563: exceptional-return}" ] 
+//#$~ 1881
+}

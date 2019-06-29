@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry466[shape=none,label=""];
+BB_entry466 -> BB8212 [tailport=s, headport=n, headlabel="    8212"]
+BB8212 [shape=record label="{25010: constant[undefined,v1]}" ] 
+BB8212 -> BB8213 [tailport=s, headport=n, headlabel="      8213"]
+BB8213 [shape=record label="{25011: read-variable['node',v3,-]|25012: read-variable['fn',v4,-]|25013: ===[v3,v4,v2]|25014: if[v2](true-block:8214,false-block:8216)}" ] 
+BB8213 -> BB8214 [tailport=s, headport=n, headlabel="      8214"]
+BB8213 -> BB8216 [tailport=s, headport=n, headlabel="      8216"]
+BB8213 -> BB8217 [tailport=s, headport=n, color=gray, headlabel="      8217"]
+BB8214 [shape=record label="{25015: read-variable['c',v6,v5]|25016: read-variable['node',v8,-]|25017: read-property[v8,'body',v7]|25018: \<variable-non-null-undef\>['node']|25019: read-variable['st',v9,-]|25020: constant[\"ScopeBody\",v10]}" ] 
+BB8214 -> BB8215 [tailport=s, headport=n, headlabel="      8215"]
+BB8214 -> BB8217 [tailport=s, headport=n, color=gray]
+BB8215 [shape=record label="{25021: call-c [v5,v6,v7,v9,v10,-]*}" ] 
+BB8215 -> BB8216 [tailport=s, headport=n]
+BB8215 -> BB8217 [tailport=s, headport=n, color=gray]
+BB8216 [shape=record label="{25022: return[v1]}" ] 
+BB8217 [shape=record label="{25023: exceptional-return}" ] 
+//#$~ 7574
+}

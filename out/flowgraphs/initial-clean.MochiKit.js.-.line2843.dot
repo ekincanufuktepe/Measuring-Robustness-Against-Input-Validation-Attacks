@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry318[shape=none,label=""];
+BB_entry318 -> BB4191 [tailport=s, headport=n, headlabel="    4191"]
+BB4191 [shape=record label="{16100: constant[undefined,v1]|16101: vardecl['self']|16102: vardecl['_309']|16103: vardecl['rval']}" ] 
+BB4191 -> BB4192 [tailport=s, headport=n, headlabel="      4192"]
+BB4192 [shape=record label="{16104: read-variable['MochiKit',v3,-]|16105: read-property[v3,'DOM',v2]|16106: \<variable-non-null-undef\>['MochiKit']|16107: write-variable[v2,'self']*|16108: read-variable['self',v5,-]|16109: read-property[v5,'_document',v4]|16110: \<variable-non-null-undef\>['self']|16111: write-variable[v4,'_309']*}" ] 
+BB4192 -> BB4193 [tailport=s, headport=n, headlabel="      4193"]
+BB4192 -> BB4201 [tailport=s, headport=n, color=gray, headlabel="      4201"]
+BB4193 [shape=record label="{16112: read-variable['self',v7,-]|16113: read-variable['doc',v6,-]|16114: write-property[v7,'_document',v6]|16115: \<variable-non-null-undef\>['self']*|16116: read-variable['func',v10,v9]}" ] 
+BB4193 -> BB4194 [tailport=s, headport=n, headlabel="      4194"]
+BB4193 -> BB4197 [tailport=s, headport=n, color=gray, headlabel="      4197"]
+BB4194 [shape=record label="{16117: call-func [v9,v10,v8]}" ] 
+BB4194 -> BB4195 [tailport=s, headport=n, headlabel="      4195"]
+BB4194 -> BB4197 [tailport=s, headport=n, color=gray]
+BB4195 [shape=record label="{16118: write-variable[v8,'rval']*}" ] 
+BB4195 -> BB4196 [tailport=s, headport=n, headlabel="      4196"]
+BB4196 [shape=record label="{16119: read-variable['self',v9,-]|16120: read-variable['_309',v8,-]|16121: write-property[v9,'_document',v8]|16122: \<variable-non-null-undef\>['self']*|16123: read-variable['rval',v1,-]}" ] 
+BB4196 -> BB4200 [tailport=s, headport=n, headlabel="      4200"]
+BB4196 -> BB4201 [tailport=s, headport=n, color=gray]
+BB4197 [shape=record label="{16124: catch[e,v6]|16125: begin-with[v6]}" ] 
+BB4197 -> BB4198 [tailport=s, headport=n, headlabel="      4198"]
+BB4197 -> BB4201 [tailport=s, headport=n, color=gray]
+BB4198 [shape=record label="{16126: read-variable['self',v9,v7]|16127: read-variable['_309',v8,v7]|16128: write-property[v9,'_document',v8]|16129: \<variable-non-null-undef\>['self']*|16130: read-variable['e',v10,v7]|16131: throw[v10]*|16132: end-with}" ] 
+BB4198 -> BB4196 [tailport=s, headport=n]
+BB4198 -> BB4199 [tailport=s, headport=n, color=gray, headlabel="      4199"]
+BB4199 [shape=record label="{16133: end-with}" ] 
+BB4199 -> BB4201 [tailport=s, headport=n]
+BB4200 [shape=record label="{16134: return[v1]}" ] 
+BB4201 [shape=record label="{16135: exceptional-return}" ] 
+//#$~ 2856
+}

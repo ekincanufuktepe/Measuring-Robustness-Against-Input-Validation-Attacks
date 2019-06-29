@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB78 [tailport=s, headport=n, headlabel="    78"]
+BB78 [shape=record label="{304: constant[undefined,v1]}" ] 
+BB78 -> BB79 [tailport=s, headport=n, headlabel="      79"]
+BB79 [shape=record label="{305: read-variable['isFunction',v4,v3]|306: read-variable['hasCache',v6,-]|307: read-variable['name',v7,-]|308: read-property[v6,v7,v5]|309: \<variable-non-null-undef\>['hasCache']}" ] 
+BB79 -> BB80 [tailport=s, headport=n, headlabel="      80"]
+BB79 -> BB87 [tailport=s, headport=n, color=gray, headlabel="      87"]
+BB80 [shape=record label="{310: call-isFunction [v3,v4,v5,v2]}" ] 
+BB80 -> BB81 [tailport=s, headport=n, headlabel="      81"]
+BB80 -> BB87 [tailport=s, headport=n, color=gray]
+BB81 [shape=record label="{311: if[v2](true-block:82,false-block:83)}" ] 
+BB81 -> BB82 [tailport=s, headport=n, headlabel="      82"]
+BB81 -> BB83 [tailport=s, headport=n, headlabel="      83"]
+BB82 [shape=record label="{312: read-variable['hasCache',v8,-]|313: read-variable['name',v9,-]|314: read-variable['hasCache',v11,-]|315: read-variable['name',v12,-]|316: read-property[v11,v12,-]|317: \<variable-non-null-undef\>['hasCache']|318: read-variable['global',v13,-]|319: read-variable['doc',v14,-]|320: read-variable['element',v15,-]}" ] 
+BB82 -> BB84 [tailport=s, headport=n, headlabel="      84"]
+BB82 -> BB87 [tailport=s, headport=n, color=gray]
+BB83 [shape=record label="{321: read-variable['hasCache',v8,-]|322: read-variable['name',v9,-]|323: read-property[v8,v9,v1]|324: \<variable-non-null-undef\>['hasCache']}" ] 
+BB83 -> BB86 [tailport=s, headport=n, headlabel="      86"]
+BB83 -> BB87 [tailport=s, headport=n, color=gray]
+BB84 [shape=record label="{325: call-null [v11,[v12],v13,v14,v15,v1]}" ] 
+BB84 -> BB85 [tailport=s, headport=n, headlabel="      85"]
+BB84 -> BB87 [tailport=s, headport=n, color=gray]
+BB85 [shape=record label="{326: write-property[v8,v9,v1]|327: \<variable-non-null-undef\>['hasCache']}" ] 
+BB85 -> BB86 [tailport=s, headport=n]
+BB85 -> BB87 [tailport=s, headport=n, color=gray]
+BB86 [shape=record label="{328: return[v1]}" ] 
+BB87 [shape=record label="{329: exceptional-return}" ] 
+//#$~ 148
+}

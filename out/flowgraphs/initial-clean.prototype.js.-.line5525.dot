@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry532[shape=none,label=""];
+BB_entry532 -> BB6967 [tailport=s, headport=n, headlabel="    6967"]
+BB6967 [shape=record label="{19524: constant[undefined,v1]|19525: vardecl['elem']|19526: vardecl['unmatched']|19527: vardecl['i']}" ] 
+BB6967 -> BB6968 [tailport=s, headport=n, headlabel="      6968"]
+BB6968 [shape=record label="{19528: read-variable['matcher',v4,v3]|19529: read-variable['seed',v5,-]|19530: constant[null,v6]|19531: read-variable['xml',v7,-]|19532: read-variable['Array',v9,-]}" ] 
+BB6968 -> BB6969 [tailport=s, headport=n, headlabel="      6969"]
+BB6968 -> BB6976 [tailport=s, headport=n, color=gray, headlabel="      6976"]
+BB6969 [shape=record label="{19533: construct [-,v9,v8]}" ] 
+BB6969 -> BB6970 [tailport=s, headport=n, headlabel="      6970"]
+BB6969 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6970 [shape=record label="{19534: call-matcher [v3,v4,v5,v6,v7,v8,v2]}" ] 
+BB6970 -> BB6971 [tailport=s, headport=n, headlabel="      6971"]
+BB6970 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6971 [shape=record label="{19535: write-variable[v2,'unmatched']*|19536: read-variable['seed',v11,-]|19537: read-property[v11,'length',v10]|19538: \<variable-non-null-undef\>['seed']|19539: write-variable[v10,'i']*}" ] 
+BB6971 -> BB6972 [tailport=s, headport=n, headlabel="      6972"]
+BB6971 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6972 [shape=record label="{19540: constant[1.0,v13]|19541: read-variable['i',v14,-]|19542: +[v14,v12]|19543: -[v12,v13,v15]|19544: write-variable[v15,'i']|19545: if[v12](true-block:6973,false-block:6975)}" ] 
+BB6972 -> BB6973 [tailport=s, headport=n, headlabel="      6973"]
+BB6972 -> BB6975 [tailport=s, headport=n, headlabel="      6975"]
+BB6972 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6973 [shape=record label="{19546: read-variable['unmatched',v17,-]|19547: read-variable['i',v18,-]|19548: read-property[v17,v18,v16]|19549: \<variable-non-null-undef\>['unmatched']|19550: write-variable[v16,'elem']|19551: if[v16](true-block:6974,false-block:6972)}" ] 
+BB6973 -> BB6974 [tailport=s, headport=n, headlabel="      6974"]
+BB6973 -> BB6972 [tailport=s, headport=n]
+BB6973 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6974 [shape=record label="{19552: read-variable['seed',v20,-]|19553: read-variable['i',v21,-]|19554: read-variable['matches',v23,-]|19555: read-variable['i',v24,-]|19556: read-variable['elem',v22,-]|19557: write-property[v23,v24,v22]|19558: \<variable-non-null-undef\>['matches']|19559: ![v22,v19]|19560: write-property[v20,v21,v19]|19561: \<variable-non-null-undef\>['seed']*}" ] 
+BB6974 -> BB6972 [tailport=s, headport=n]
+BB6974 -> BB6976 [tailport=s, headport=n, color=gray]
+BB6975 [shape=record label="{19562: return[v1]}" ] 
+BB6976 [shape=record label="{19563: exceptional-return}" ] 
+//#$~ 5532
+}

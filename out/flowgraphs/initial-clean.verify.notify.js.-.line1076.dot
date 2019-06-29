@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry103[shape=none,label=""];
+BB_entry103 -> BB1288 [tailport=s, headport=n, headlabel="    1288"]
+BB1288 [shape=record label="{3898: constant[undefined,v1]|3899: vardecl['_this']}" ] 
+BB1288 -> BB1289 [tailport=s, headport=n, headlabel="      1289"]
+BB1289 [shape=record label="{3900: read-variable['this',v2,-]|3901: write-variable[v2,'_this']*|3902: read-variable['window',v4,-]|3903: read-property[v4,'setTimeout',-]|3904: \<variable-non-null-undef\>['window']|3905: function-expr[function ( ),v5]|3906: read-variable['ms',v6,-]|3907: if[v6](true-block:1291,false-block:1290)}" ] 
+BB1289 -> BB1291 [tailport=s, headport=n, headlabel="      1291"]
+BB1289 -> BB1290 [tailport=s, headport=n, headlabel="      1290"]
+BB1289 -> BB1293 [tailport=s, headport=n, color=gray, headlabel="      1293"]
+BB1290 [shape=record label="{3908: constant[0.0,v6]}" ] 
+BB1290 -> BB1291 [tailport=s, headport=n]
+BB1291 [shape=record label="{3909: call-window.setTimeout [v4,'setTimeout',v5,v6,v1]}" ] 
+BB1291 -> BB1292 [tailport=s, headport=n, headlabel="      1292"]
+BB1291 -> BB1293 [tailport=s, headport=n, color=gray]
+BB1292 [shape=record label="{3910: return[v1]}" ] 
+BB1293 [shape=record label="{3911: exceptional-return}" ] 
+//#$~ 1080
+}

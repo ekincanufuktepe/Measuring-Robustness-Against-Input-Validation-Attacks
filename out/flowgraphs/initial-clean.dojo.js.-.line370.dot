@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry22[shape=none,label=""];
+BB_entry22 -> BB191 [tailport=s, headport=n, headlabel="    191"]
+BB191 [shape=record label="{568: constant[undefined,v1]|569: vardecl['queue']}" ] 
+BB191 -> BB192 [tailport=s, headport=n, headlabel="      192"]
+BB192 [shape=record label="{570: read-variable['listenerQueues',v3,-]|571: read-variable['type',v4,-]|572: read-property[v3,v4,v2]|573: \<variable-non-null-undef\>['listenerQueues']|574: write-variable[v2,'queue']*|575: read-variable['forEach',v6,v5]|576: read-variable['queue',v7,-]|577: if[v7](true-block:193,false-block:195)}" ] 
+BB192 -> BB195 [tailport=s, headport=n, headlabel="      195"]
+BB192 -> BB193 [tailport=s, headport=n, headlabel="      193"]
+BB192 -> BB198 [tailport=s, headport=n, color=gray, headlabel="      198"]
+BB193 [shape=record label="{578: read-variable['queue',v9,-]|579: read-property[v9,'slice',-]|580: \<variable-non-null-undef\>['queue']|581: constant[0.0,v10]}" ] 
+BB193 -> BB194 [tailport=s, headport=n, headlabel="      194"]
+BB193 -> BB198 [tailport=s, headport=n, color=gray]
+BB194 [shape=record label="{582: call-queue.slice [v9,'slice',v10,v7]}" ] 
+BB194 -> BB195 [tailport=s, headport=n]
+BB194 -> BB198 [tailport=s, headport=n, color=gray]
+BB195 [shape=record label="{583: function-expr[function ( listener ),v8]}" ] 
+BB195 -> BB196 [tailport=s, headport=n, headlabel="      196"]
+BB196 [shape=record label="{584: call-forEach [v5,v6,v7,v8,-]*}" ] 
+BB196 -> BB197 [tailport=s, headport=n, headlabel="      197"]
+BB196 -> BB198 [tailport=s, headport=n, color=gray]
+BB197 [shape=record label="{585: return[v1]}" ] 
+BB198 [shape=record label="{586: exceptional-return}" ] 
+//#$~ 375
+}

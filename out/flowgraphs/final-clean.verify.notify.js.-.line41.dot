@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry4[shape=none,label=""];
+BB_entry4 -> BB26 [tailport=s, headport=n, headlabel="    26"]
+BB26 [shape=record label="{60: constant[undefined,v1]|61: vardecl['pos']}" ] 
+BB26 -> BB27 [tailport=s, headport=n, headlabel="      27"]
+BB27 [shape=record label="{62: read-variable['Array',v3,-]}" ] 
+BB27 -> BB28 [tailport=s, headport=n, headlabel="      28"]
+BB27 -> BB36 [tailport=s, headport=n, color=gray, headlabel="      36"]
+BB28 [shape=record label="{63: construct [-,v3,v2]}" ] 
+BB28 -> BB29 [tailport=s, headport=n, headlabel="      29"]
+BB28 -> BB36 [tailport=s, headport=n, color=gray]
+BB29 [shape=record label="{64: write-variable[v2,'pos']*|65: read-variable['$',v5,-]|66: read-property[v5,'each',-]|67: \<variable-non-null-undef\>['$']|68: read-variable['str',v8,-]|69: read-property[v8,'split',-]|70: \<variable-non-null-undef\>['str']|71: read-variable['RegExp',v10,-]|72: constant[\"\\\\W+\",v11]}" ] 
+BB29 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB29 -> BB36 [tailport=s, headport=n, color=gray]
+BB30 [shape=record label="{73: construct [-,v10,v11,v9]}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB30 -> BB36 [tailport=s, headport=n, color=gray]
+BB31 [shape=record label="{74: call-str.split [v8,'split',v9,v6]}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB36 [tailport=s, headport=n, color=gray]
+BB32 [shape=record label="{75: function-expr[function ( i word ),v12]}" ] 
+BB32 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB33 [shape=record label="{76: call-$.each [v5,'each',v6,v12,-]*}" ] 
+BB33 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB33 -> BB36 [tailport=s, headport=n, color=gray]
+BB34 [shape=record label="{77: read-variable['pos',v1,-]}" ] 
+BB34 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB34 -> BB36 [tailport=s, headport=n, color=gray]
+BB35 [shape=record label="{78: return[v1]}" ] 
+BB36 [shape=record label="{79: exceptional-return}" ] 
+//#$~ 51
+}

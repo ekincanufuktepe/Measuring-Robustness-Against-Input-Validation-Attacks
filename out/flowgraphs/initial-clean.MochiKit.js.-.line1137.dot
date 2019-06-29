@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry132[shape=none,label=""];
+BB_entry132 -> BB1958 [tailport=s, headport=n, headlabel="    1958"]
+BB1958 [shape=record label="{9342: constant[undefined,v1]|9343: vardecl['self']|9344: vardecl['m']|9345: vardecl['lst']|9346: vardecl['_16b']}" ] 
+BB1958 -> BB1959 [tailport=s, headport=n, headlabel="      1959"]
+BB1959 [shape=record label="{9347: read-variable['MochiKit',v3,-]|9348: read-property[v3,'Iter',v2]|9349: \<variable-non-null-undef\>['MochiKit']|9350: write-variable[v2,'self']*|9351: read-variable['MochiKit',v5,-]|9352: read-property[v5,'Base',v4]|9353: \<variable-non-null-undef\>['MochiKit']|9354: write-variable[v4,'m']*|9355: read-variable['Array',v7,-]}" ] 
+BB1959 -> BB1960 [tailport=s, headport=n, headlabel="      1960"]
+BB1959 -> BB1967 [tailport=s, headport=n, color=gray, headlabel="      1967"]
+BB1960 [shape=record label="{9356: construct [-,v7,v6]}" ] 
+BB1960 -> BB1961 [tailport=s, headport=n, headlabel="      1961"]
+BB1960 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1961 [shape=record label="{9357: write-variable[v6,'lst']*|9358: read-variable['self',v10,-]|9359: read-property[v10,'iter',-]|9360: \<variable-non-null-undef\>['self']|9361: read-variable['p',v11,-]}" ] 
+BB1961 -> BB1962 [tailport=s, headport=n, headlabel="      1962"]
+BB1961 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1962 [shape=record label="{9362: call-self.iter [v10,'iter',v11,v8]}" ] 
+BB1962 -> BB1963 [tailport=s, headport=n, headlabel="      1963"]
+BB1962 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1963 [shape=record label="{9363: write-variable[v8,'_16b']*|9364: new[v1]|9365: function-expr[function ( ),v12]|9366: write-property[v1,'repr',v12]|9367: read-variable['m',v15,-]|9368: read-property[v15,'forwardCall',-]|9369: \<variable-non-null-undef\>['m']|9370: constant[\"repr\",v16]}" ] 
+BB1963 -> BB1964 [tailport=s, headport=n, headlabel="      1964"]
+BB1963 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1964 [shape=record label="{9371: call-m.forwardCall [v15,'forwardCall',v16,v13]}" ] 
+BB1964 -> BB1965 [tailport=s, headport=n, headlabel="      1965"]
+BB1964 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1965 [shape=record label="{9372: write-property[v1,'toString',v13]|9373: function-expr[function ( ),v17]|9374: write-property[v1,'next',v17]}" ] 
+BB1965 -> BB1966 [tailport=s, headport=n, headlabel="      1966"]
+BB1965 -> BB1967 [tailport=s, headport=n, color=gray]
+BB1966 [shape=record label="{9375: return[v1]}" ] 
+BB1967 [shape=record label="{9376: exceptional-return}" ] 
+//#$~ 1165
+}

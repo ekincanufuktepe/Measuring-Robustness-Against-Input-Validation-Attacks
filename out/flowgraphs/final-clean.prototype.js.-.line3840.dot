@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry400[shape=none,label=""];
+BB_entry400 -> BB5085 [tailport=s, headport=n, headlabel="    5085"]
+BB5085 [shape=record label="{14095: constant[undefined,v1]|14096: vardecl['width']}" ] 
+BB5085 -> BB5086 [tailport=s, headport=n, headlabel="      5086"]
+BB5086 [shape=record label="{14097: read-variable['this',v4,-]|14098: read-property[v4,'_preComputing',v3]|14099: ![v3,v2]|14100: if[v2](true-block:5087,false-block:5089)}" ] 
+BB5086 -> BB5087 [tailport=s, headport=n, headlabel="      5087"]
+BB5086 -> BB5089 [tailport=s, headport=n, headlabel="      5089"]
+BB5086 -> BB5094 [tailport=s, headport=n, color=gray, headlabel="      5094"]
+BB5087 [shape=record label="{14101: read-variable['this',v6,-]|14102: read-property[v6,'_begin',-]}" ] 
+BB5087 -> BB5088 [tailport=s, headport=n, headlabel="      5088"]
+BB5087 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5088 [shape=record label="{14103: call-this._begin [v6,'_begin',-]*}" ] 
+BB5088 -> BB5089 [tailport=s, headport=n]
+BB5088 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5089 [shape=record label="{14104: read-variable['element',v6,-]|14105: read-property[v6,'offsetWidth',v5]|14106: \<variable-non-null-undef\>['element']|14107: write-variable[v5,'width']*|14108: read-variable['this',v9,-]|14109: read-property[v9,'_preComputing',v8]|14110: ![v8,v7]|14111: if[v7](true-block:5090,false-block:5092)}" ] 
+BB5089 -> BB5090 [tailport=s, headport=n, headlabel="      5090"]
+BB5089 -> BB5092 [tailport=s, headport=n, headlabel="      5092"]
+BB5089 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5090 [shape=record label="{14112: read-variable['this',v11,-]|14113: read-property[v11,'_end',-]}" ] 
+BB5090 -> BB5091 [tailport=s, headport=n, headlabel="      5091"]
+BB5090 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5091 [shape=record label="{14114: call-this._end [v11,'_end',-]*}" ] 
+BB5091 -> BB5092 [tailport=s, headport=n]
+BB5091 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5092 [shape=record label="{14115: read-variable['width',v1,-]}" ] 
+BB5092 -> BB5093 [tailport=s, headport=n, headlabel="      5093"]
+BB5092 -> BB5094 [tailport=s, headport=n, color=gray]
+BB5093 [shape=record label="{14116: return[v1]}" ] 
+BB5094 [shape=record label="{14117: exceptional-return}" ] 
+//#$~ 3844
+}

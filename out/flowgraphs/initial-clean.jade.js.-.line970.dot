@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry47[shape=none,label=""];
+BB_entry47 -> BB905 [tailport=s, headport=n, headlabel="    905"]
+BB905 [shape=record label="{3124: constant[undefined,v1]|3125: vardecl['err']}" ] 
+BB905 -> BB906 [tailport=s, headport=n, headlabel="      906"]
+BB906 [shape=record label="{3126: read-variable['Error',v3,-]|3127: constant[\"The `client` option is deprecated, use the `jade.compileClient` method instead\",v4]}" ] 
+BB906 -> BB907 [tailport=s, headport=n, headlabel="      907"]
+BB906 -> BB914 [tailport=s, headport=n, color=gray, headlabel="      914"]
+BB907 [shape=record label="{3128: construct [-,v3,v4,v2]}" ] 
+BB907 -> BB908 [tailport=s, headport=n, headlabel="      908"]
+BB907 -> BB914 [tailport=s, headport=n, color=gray]
+BB908 [shape=record label="{3129: write-variable[v2,'err']*|3130: read-variable['err',v6,-]|3131: constant[\"Warning\",v5]|3132: write-property[v6,'name',v5]|3133: \<variable-non-null-undef\>['err']*|3134: read-variable['console',v8,-]|3135: read-property[v8,'error',-]|3136: \<variable-non-null-undef\>['console']|3137: read-variable['err',v10,-]|3138: read-property[v10,'stack',v9]|3139: \<variable-non-null-undef\>['err']|3140: if[v9](true-block:910,false-block:909)}" ] 
+BB908 -> BB910 [tailport=s, headport=n, headlabel="      910"]
+BB908 -> BB909 [tailport=s, headport=n, headlabel="      909"]
+BB908 -> BB914 [tailport=s, headport=n, color=gray]
+BB909 [shape=record label="{3141: read-variable['err',v10,-]|3142: read-property[v10,'message',v9]|3143: \<variable-non-null-undef\>['err']}" ] 
+BB909 -> BB910 [tailport=s, headport=n]
+BB909 -> BB914 [tailport=s, headport=n, color=gray]
+BB910 [shape=record label="{3144: call-console.error [v8,'error',v9,-]*}" ] 
+BB910 -> BB911 [tailport=s, headport=n, headlabel="      911"]
+BB910 -> BB914 [tailport=s, headport=n, color=gray]
+BB911 [shape=record label="{3145: read-variable['exports',v11,-]|3146: read-property[v11,'compileClient',-]|3147: \<variable-non-null-undef\>['exports']|3148: read-variable['str',v12,-]|3149: read-variable['options',v13,-]}" ] 
+BB911 -> BB912 [tailport=s, headport=n, headlabel="      912"]
+BB911 -> BB914 [tailport=s, headport=n, color=gray]
+BB912 [shape=record label="{3150: call-exports.compileClient [v11,'compileClient',v12,v13,v1]}" ] 
+BB912 -> BB913 [tailport=s, headport=n, headlabel="      913"]
+BB912 -> BB914 [tailport=s, headport=n, color=gray]
+BB913 [shape=record label="{3151: return[v1]}" ] 
+BB914 [shape=record label="{3152: exceptional-return}" ] 
+//#$~ 974
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry133[shape=none,label=""];
+BB_entry133 -> BB1464 [tailport=s, headport=n, headlabel="    1464"]
+BB1464 [shape=record label="{4340: constant[undefined,v1]}" ] 
+BB1464 -> BB1465 [tailport=s, headport=n, headlabel="      1465"]
+BB1465 [shape=record label="{4341: read-variable['this',v4,-]|4342: read-property[v4,'isHidden',v3]|4343: ![v3,v2]|4344: if[v2](true-block:1466,false-block:1468)}" ] 
+BB1465 -> BB1466 [tailport=s, headport=n, headlabel="      1466"]
+BB1465 -> BB1468 [tailport=s, headport=n, headlabel="      1468"]
+BB1465 -> BB1469 [tailport=s, headport=n, color=gray, headlabel="      1469"]
+BB1466 [shape=record label="{4345: read-variable['this',v6,-]|4346: read-property[v6,'emitEvent',-]|4347: constant[\"reveal\",v7]}" ] 
+BB1466 -> BB1467 [tailport=s, headport=n, headlabel="      1467"]
+BB1466 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1467 [shape=record label="{4348: call-this.emitEvent [v6,'emitEvent',v7,-]*}" ] 
+BB1467 -> BB1468 [tailport=s, headport=n]
+BB1467 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1468 [shape=record label="{4349: return[v1]}" ] 
+BB1469 [shape=record label="{4350: exceptional-return}" ] 
+//#$~ 1994
+}

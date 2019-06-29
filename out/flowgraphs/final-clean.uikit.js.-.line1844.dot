@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry186[shape=none,label=""];
+BB_entry186 -> BB2404 [tailport=s, headport=n, headlabel="    2404"]
+BB2404 [shape=record label="{6829: constant[undefined,v1]|6830: vardecl['$this']}" ] 
+BB2404 -> BB2405 [tailport=s, headport=n, headlabel="      2405"]
+BB2405 [shape=record label="{6831: read-variable['this',v2,-]|6832: write-variable[v2,'$this']*|6833: read-variable['UI',v5,-]|6834: read-property[v5,'$html',v4]|6835: \<variable-non-null-undef\>['UI']|6836: read-property[v4,'off',-]|6837: \<property-non-null-undef\>[v5,'$html']|6838: constant[\"click.outer.dropdown\",v6]}" ] 
+BB2405 -> BB2406 [tailport=s, headport=n, headlabel="      2406"]
+BB2405 -> BB2410 [tailport=s, headport=n, color=gray, headlabel="      2410"]
+BB2406 [shape=record label="{6839: call-UI.$html.off [v4,'off',v6,-]*}" ] 
+BB2406 -> BB2407 [tailport=s, headport=n, headlabel="      2407"]
+BB2406 -> BB2410 [tailport=s, headport=n, color=gray]
+BB2407 [shape=record label="{6840: read-variable['setTimeout',v8,v7]|6841: function-expr[function ( ),v9]|6842: constant[10.0,v10]}" ] 
+BB2407 -> BB2408 [tailport=s, headport=n, headlabel="      2408"]
+BB2407 -> BB2410 [tailport=s, headport=n, color=gray]
+BB2408 [shape=record label="{6843: call-setTimeout [v7,v8,v9,v10,-]*}" ] 
+BB2408 -> BB2409 [tailport=s, headport=n, headlabel="      2409"]
+BB2408 -> BB2410 [tailport=s, headport=n, color=gray]
+BB2409 [shape=record label="{6844: return[v1]}" ] 
+BB2410 [shape=record label="{6845: exceptional-return}" ] 
+//#$~ 1865
+}

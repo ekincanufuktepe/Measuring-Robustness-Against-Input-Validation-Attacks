@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry2124[shape=none,label=""];
+BB_entry2124 -> BB24243 [tailport=s, headport=n, headlabel="    24243"]
+BB24243 [shape=record label="{79753: constant[undefined,v1]|79754: vardecl['key']|79755: vardecl['streamBinding']|79756: vardecl['callback']}" ] 
+BB24243 -> BB24244 [tailport=s, headport=n, headlabel="      24244"]
+BB24244 [shape=record label="{79757: read-variable['this',v7,-]|79758: read-property[v7,'_streamBindingSubscriptions',v3]}" ] 
+BB24244 -> BB24245 [tailport=s, headport=n, headlabel="      24245"]
+BB24244 -> BB24251 [tailport=s, headport=n, color=gray, headlabel="      24251"]
+BB24245 [shape=record label="{79759: begin-for-in[v3,v4]}" ] 
+BB24245 -> BB24246 [tailport=s, headport=n, headlabel="      24246"]
+BB24245 -> BB24251 [tailport=s, headport=n, color=gray]
+BB24246 [shape=record label="{79760: has-next[v4,v5]|79761: if[v5](true-block:24247,false-block:24250)}" ] 
+BB24246 -> BB24247 [tailport=s, headport=n, headlabel="      24247"]
+BB24246 -> BB24250 [tailport=s, headport=n, headlabel="      24250"]
+BB24247 [shape=record label="{79762: next-property[v4,v6]|79763: write-variable[v6,'key']|79764: read-variable['this',v9,-]|79765: read-variable['key',v11,-]|79766: constant[\"Binding\",v12]|79767: +[v11,v12,v10]|79768: read-property[v9,v10,v8]|79769: write-variable[v8,'streamBinding']*|79770: read-variable['this',v15,-]|79771: read-property[v15,'_streamBindingSubscriptions',v14]|79772: read-variable['key',v16,-]|79773: read-property[v14,v16,v13]|79774: \<property-non-null-undef\>[v15,'_streamBindingSubscriptions']|79775: write-variable[v13,'callback']*|79776: read-variable['streamBinding',v18,-]|79777: read-property[v18,'unsubscribe',-]|79778: \<variable-non-null-undef\>['streamBinding']|79779: read-variable['callback',v19,-]}" ] 
+BB24247 -> BB24248 [tailport=s, headport=n, headlabel="      24248"]
+BB24247 -> BB24251 [tailport=s, headport=n, color=gray]
+BB24248 [shape=record label="{79780: call-streamBinding.unsubscribe [v18,'unsubscribe',v19,-]*}" ] 
+BB24248 -> BB24249 [tailport=s, headport=n, headlabel="      24249"]
+BB24248 -> BB24251 [tailport=s, headport=n, color=gray]
+BB24249 [shape=record label="{79781: end-for-in(begin-node:79759)}" ] 
+BB24249 -> BB24246 [tailport=s, headport=n]
+BB24250 [shape=record label="{79782: return[v1]}" ] 
+BB24251 [shape=record label="{79783: exceptional-return}" ] 
+//#$~ 45734
+}

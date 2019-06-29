@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry793[shape=none,label=""];
+BB_entry793 -> BB10811 [tailport=s, headport=n, headlabel="    10811"]
+BB10811 [shape=record label="{31904: constant[undefined,v1]}" ] 
+BB10811 -> BB10812 [tailport=s, headport=n, headlabel="      10812"]
+BB10812 [shape=record label="{31905: read-variable['obj',v5,-]|31906: read-property[v5,'error',v3]|31907: \<variable-non-null-undef\>['obj']|31908: read-variable['error',v4,-]|31909: ===[v3,v4,v2]|31910: if[v2](true-block:10813,false-block:10816)}" ] 
+BB10812 -> BB10813 [tailport=s, headport=n, headlabel="      10813"]
+BB10812 -> BB10816 [tailport=s, headport=n, headlabel="      10816"]
+BB10812 -> BB10817 [tailport=s, headport=n, color=gray, headlabel="      10817"]
+BB10813 [shape=record label="{31911: read-variable['handled',v6,-]|31912: if[v6](true-block:10814,false-block:10815)}" ] 
+BB10813 -> BB10814 [tailport=s, headport=n, headlabel="      10814"]
+BB10813 -> BB10815 [tailport=s, headport=n, headlabel="      10815"]
+BB10813 -> BB10817 [tailport=s, headport=n, color=gray]
+BB10814 [shape=record label="{31913: read-variable['obj',v8,-]|31914: constant[true,v7]|31915: write-property[v8,'handled',v7]|31916: \<variable-non-null-undef\>['obj']*}" ] 
+BB10814 -> BB10815 [tailport=s, headport=n]
+BB10814 -> BB10817 [tailport=s, headport=n, color=gray]
+BB10815 [shape=record label="{31917: constant[true,v1]}" ] 
+BB10815 -> BB10816 [tailport=s, headport=n]
+BB10816 [shape=record label="{31918: return[v1]}" ] 
+BB10817 [shape=record label="{31919: exceptional-return}" ] 
+//#$~ 15256
+}

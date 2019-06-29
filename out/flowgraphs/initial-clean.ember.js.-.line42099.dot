@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1953[shape=none,label=""];
+BB_entry1953 -> BB22375 [tailport=s, headport=n, headlabel="    22375"]
+BB22375 [shape=record label="{74718: constant[undefined,v1]}" ] 
+BB22375 -> BB22376 [tailport=s, headport=n, headlabel="      22376"]
+BB22376 [shape=record label="{74719: read-variable['this',v4,-]|74720: read-property[v4,'isVirtual',v3]|74721: ![v3,v2]|74722: if[v2](true-block:22377,false-block:22378)}" ] 
+BB22376 -> BB22377 [tailport=s, headport=n, headlabel="      22377"]
+BB22376 -> BB22378 [tailport=s, headport=n, headlabel="      22378"]
+BB22376 -> BB22381 [tailport=s, headport=n, color=gray, headlabel="      22381"]
+BB22377 [shape=record label="{74723: read-variable['this',v1,-]}" ] 
+BB22377 -> BB22380 [tailport=s, headport=n, headlabel="      22380"]
+BB22377 -> BB22381 [tailport=s, headport=n, color=gray]
+BB22378 [shape=record label="{74724: read-variable['get',v6,v5]|74725: read-variable['this',v7,-]|74726: constant[\"parentView.concreteView\",v8]}" ] 
+BB22378 -> BB22379 [tailport=s, headport=n, headlabel="      22379"]
+BB22378 -> BB22381 [tailport=s, headport=n, color=gray]
+BB22379 [shape=record label="{74727: call-get [v5,v6,v7,v8,v1]}" ] 
+BB22379 -> BB22380 [tailport=s, headport=n]
+BB22379 -> BB22381 [tailport=s, headport=n, color=gray]
+BB22380 [shape=record label="{74728: return[v1]}" ] 
+BB22381 [shape=record label="{74729: exceptional-return}" ] 
+//#$~ 42101
+}

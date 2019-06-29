@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry110[shape=none,label=""];
+BB_entry110 -> BB1488 [tailport=s, headport=n, headlabel="    1488"]
+BB1488 [shape=record label="{4748: constant[undefined,v1]|4749: vardecl['injections']}" ] 
+BB1488 -> BB1489 [tailport=s, headport=n, headlabel="      1489"]
+BB1489 [shape=record label="{4750: read-variable['rules',v3,-]|4751: read-variable['type',v4,-]|4752: read-property[v3,v4,v2]|4753: \<variable-non-null-undef\>['rules']|4754: write-variable[v2,'injections']*|4755: read-variable['injections',v6,-]|4756: ![v6,v5]|4757: if[v5](true-block:1490,false-block:1493)}" ] 
+BB1489 -> BB1490 [tailport=s, headport=n, headlabel="      1490"]
+BB1489 -> BB1493 [tailport=s, headport=n, headlabel="      1493"]
+BB1489 -> BB1496 [tailport=s, headport=n, color=gray, headlabel="      1496"]
+BB1490 [shape=record label="{4758: read-variable['Array',v8,-]}" ] 
+BB1490 -> BB1491 [tailport=s, headport=n, headlabel="      1491"]
+BB1490 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1491 [shape=record label="{4759: construct [-,v8,v7]}" ] 
+BB1491 -> BB1492 [tailport=s, headport=n, headlabel="      1492"]
+BB1491 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1492 [shape=record label="{4760: write-variable[v7,'injections']*|4761: read-variable['rules',v10,-]|4762: read-variable['type',v11,-]|4763: read-variable['injections',v9,-]|4764: write-property[v10,v11,v9]|4765: \<variable-non-null-undef\>['rules']*}" ] 
+BB1492 -> BB1493 [tailport=s, headport=n]
+BB1492 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1493 [shape=record label="{4766: read-variable['injections',v8,-]|4767: read-property[v8,'push',-]|4768: \<variable-non-null-undef\>['injections']|4769: new[v9]|4770: read-variable['property',v10,-]|4771: write-property[v9,'property',v10]|4772: read-variable['fullName',v11,-]|4773: write-property[v9,'fullName',v11]}" ] 
+BB1493 -> BB1494 [tailport=s, headport=n, headlabel="      1494"]
+BB1493 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1494 [shape=record label="{4774: call-injections.push [v8,'push',v9,-]*}" ] 
+BB1494 -> BB1495 [tailport=s, headport=n, headlabel="      1495"]
+BB1494 -> BB1496 [tailport=s, headport=n, color=gray]
+BB1495 [shape=record label="{4775: return[v1]}" ] 
+BB1496 [shape=record label="{4776: exceptional-return}" ] 
+//#$~ 1984
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB637 [tailport=s, headport=n, headlabel="    637"]
+BB637 [shape=record label="{2155: constant[undefined,v1]}" ] 
+BB637 -> BB638 [tailport=s, headport=n, headlabel="      638"]
+BB638 [shape=record label="{2156: read-variable['this',v5,-]|2157: read-property[v5,'getMethodObject',-]|2158: read-variable['name',v6,-]}" ] 
+BB638 -> BB639 [tailport=s, headport=n, headlabel="      639"]
+BB638 -> BB643 [tailport=s, headport=n, color=gray, headlabel="      643"]
+BB639 [shape=record label="{2159: call-this.getMethodObject [v5,'getMethodObject',v6,v3]}" ] 
+BB639 -> BB640 [tailport=s, headport=n, headlabel="      640"]
+BB639 -> BB643 [tailport=s, headport=n, color=gray]
+BB640 [shape=record label="{2160: read-property[v3,'asFunction',-]}" ] 
+BB640 -> BB641 [tailport=s, headport=n, headlabel="      641"]
+BB640 -> BB643 [tailport=s, headport=n, color=gray]
+BB641 [shape=record label="{2161: call-null [v3,'asFunction',v1]}" ] 
+BB641 -> BB642 [tailport=s, headport=n, headlabel="      642"]
+BB641 -> BB643 [tailport=s, headport=n, color=gray]
+BB642 [shape=record label="{2162: return[v1]}" ] 
+BB643 [shape=record label="{2163: exceptional-return}" ] 
+//#$~ 673
+}

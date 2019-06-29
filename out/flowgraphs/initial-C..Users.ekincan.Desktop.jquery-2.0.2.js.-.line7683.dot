@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry474[shape=none,label=""];
+BB_entry474 -> BB7366 [tailport=s, headport=n, headlabel="    7366"]
+BB7366 [shape=record label="{21505: constant[undefined,v1]|21506: vardecl['callback']}" ] 
+BB7366 -> BB7367 [tailport=s, headport=n, headlabel="      7367"]
+BB7367 [shape=record label="{21507: read-variable['oldCallbacks',v4,-]|21508: read-property[v4,'pop',-]|21509: \<variable-non-null-undef\>['oldCallbacks']}" ] 
+BB7367 -> BB7368 [tailport=s, headport=n, headlabel="      7368"]
+BB7367 -> BB7373 [tailport=s, headport=n, color=gray, headlabel="      7373"]
+BB7368 [shape=record label="{21510: call[v4,'pop',v2]}" ] 
+BB7368 -> BB7369 [tailport=s, headport=n, headlabel="      7369"]
+BB7368 -> BB7373 [tailport=s, headport=n, color=gray]
+BB7369 [shape=record label="{21511: if[v2](true-block:7371,false-block:7370)}" ] 
+BB7369 -> BB7371 [tailport=s, headport=n, headlabel="      7371"]
+BB7369 -> BB7370 [tailport=s, headport=n, headlabel="      7370"]
+BB7370 [shape=record label="{21512: read-variable['jQuery',v7,-]|21513: read-property[v7,'expando',v5]|21514: \<variable-non-null-undef\>['jQuery']|21515: constant[\"_\",v6]|21516: +[v5,v6,v3]|21517: constant[1.0,v8]|21518: read-variable['ajax_nonce',v9,-]|21519: +[v9,v4]|21520: +[v4,v8,v10]|21521: write-variable[v10,'ajax_nonce']|21522: +[v3,v4,v2]}" ] 
+BB7370 -> BB7371 [tailport=s, headport=n]
+BB7370 -> BB7373 [tailport=s, headport=n, color=gray]
+BB7371 [shape=record label="{21523: write-variable[v2,'callback']*|21524: read-variable['this',v4,-]|21525: read-variable['callback',v5,-]|21526: constant[true,v3]|21527: write-property[v4,v5,v3]*|21528: read-variable['callback',v1,-]}" ] 
+BB7371 -> BB7372 [tailport=s, headport=n, headlabel="      7372"]
+BB7371 -> BB7373 [tailport=s, headport=n, color=gray]
+BB7372 [shape=record label="{21529: return[v1]}" ] 
+BB7373 [shape=record label="{21530: exceptional-return}" ] 
+}

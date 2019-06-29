@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry234[shape=none,label=""];
+BB_entry234 -> BB2476 [tailport=s, headport=n, headlabel="    2476"]
+BB2476 [shape=record label="{9949: constant[undefined,v1]|9950: vardecl['values']}" ] 
+BB2476 -> BB2477 [tailport=s, headport=n, headlabel="      2477"]
+BB2477 [shape=record label="{9951: read-variable['Array',v3,-]}" ] 
+BB2477 -> BB2478 [tailport=s, headport=n, headlabel="      2478"]
+BB2477 -> BB2483 [tailport=s, headport=n, color=gray, headlabel="      2483"]
+BB2478 [shape=record label="{9952: construct [-,v3,v2]}" ] 
+BB2478 -> BB2479 [tailport=s, headport=n, headlabel="      2479"]
+BB2478 -> BB2483 [tailport=s, headport=n, color=gray]
+BB2479 [shape=record label="{9953: write-variable[v2,'values']*|9954: read-variable['self',v5,-]|9955: read-property[v5,'eachPoints',-]|9956: \<variable-non-null-undef\>['self']|9957: function-expr[function ( point ),v6]}" ] 
+BB2479 -> BB2480 [tailport=s, headport=n, headlabel="      2480"]
+BB2479 -> BB2483 [tailport=s, headport=n, color=gray]
+BB2480 [shape=record label="{9958: call-self.eachPoints [v5,'eachPoints',v6,-]*}" ] 
+BB2480 -> BB2481 [tailport=s, headport=n, headlabel="      2481"]
+BB2480 -> BB2483 [tailport=s, headport=n, color=gray]
+BB2481 [shape=record label="{9959: read-variable['values',v1,-]}" ] 
+BB2481 -> BB2482 [tailport=s, headport=n, headlabel="      2482"]
+BB2481 -> BB2483 [tailport=s, headport=n, color=gray]
+BB2482 [shape=record label="{9960: return[v1]}" ] 
+BB2483 [shape=record label="{9961: exceptional-return}" ] 
+//#$~ 2679
+}

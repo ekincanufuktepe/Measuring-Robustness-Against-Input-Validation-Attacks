@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2204[shape=none,label=""];
+BB_entry2204 -> BB25024 [tailport=s, headport=n, headlabel="    25024"]
+BB25024 [shape=record label="{82323: constant[undefined,v1]|82324: vardecl['clone']}" ] 
+BB25024 -> BB25025 [tailport=s, headport=n, headlabel="      25025"]
+BB25025 [shape=record label="{82325: read-variable['element',v4,-]|82326: read-property[v4,'cloneNode',-]|82327: \<variable-non-null-undef\>['element']|82328: read-variable['deep',v7,-]|82329: ![v7,v6]|82330: ![v6,v5]}" ] 
+BB25025 -> BB25026 [tailport=s, headport=n, headlabel="      25026"]
+BB25025 -> BB25029 [tailport=s, headport=n, color=gray, headlabel="      25029"]
+BB25026 [shape=record label="{82331: call-element.cloneNode [v4,'cloneNode',v5,v2]}" ] 
+BB25026 -> BB25027 [tailport=s, headport=n, headlabel="      25027"]
+BB25026 -> BB25029 [tailport=s, headport=n, color=gray]
+BB25027 [shape=record label="{82332: write-variable[v2,'clone']*|82333: read-variable['clone',v1,-]}" ] 
+BB25027 -> BB25028 [tailport=s, headport=n, headlabel="      25028"]
+BB25027 -> BB25029 [tailport=s, headport=n, color=gray]
+BB25028 [shape=record label="{82334: return[v1]}" ] 
+BB25029 [shape=record label="{82335: exceptional-return}" ] 
+//#$~ 46647
+}

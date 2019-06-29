@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry204[shape=none,label=""];
+BB_entry204 -> BB2552 [tailport=s, headport=n, headlabel="    2552"]
+BB2552 [shape=record label="{6144: constant[undefined,v1]}" ] 
+BB2552 -> BB2553 [tailport=s, headport=n, headlabel="      2553"]
+BB2553 [shape=record label="{6145: read-variable['dummyEvent',v5,-]|6146: read-property[v5,'isImmediatePropagationStopped',-]|6147: \<variable-non-null-undef\>['dummyEvent']}" ] 
+BB2553 -> BB2554 [tailport=s, headport=n, headlabel="      2554"]
+BB2553 -> BB2559 [tailport=s, headport=n, color=gray, headlabel="      2559"]
+BB2554 [shape=record label="{6148: call-dummyEvent.isImmediatePropagationStopped [v5,'isImmediatePropagationStopped',v3]}" ] 
+BB2554 -> BB2555 [tailport=s, headport=n, headlabel="      2555"]
+BB2554 -> BB2559 [tailport=s, headport=n, color=gray]
+BB2555 [shape=record label="{6149: ![v3,v2]|6150: if[v2](true-block:2556,false-block:2558)}" ] 
+BB2555 -> BB2556 [tailport=s, headport=n, headlabel="      2556"]
+BB2555 -> BB2558 [tailport=s, headport=n, headlabel="      2558"]
+BB2555 -> BB2559 [tailport=s, headport=n, color=gray]
+BB2556 [shape=record label="{6151: read-variable['fn',v7,-]|6152: read-property[v7,'apply',-]|6153: \<variable-non-null-undef\>['fn']|6154: read-variable['element',v8,-]|6155: read-variable['handlerArgs',v9,-]}" ] 
+BB2556 -> BB2557 [tailport=s, headport=n, headlabel="      2557"]
+BB2556 -> BB2559 [tailport=s, headport=n, color=gray]
+BB2557 [shape=record label="{6156: call-fn.apply [v7,'apply',v8,v9,-]*}" ] 
+BB2557 -> BB2558 [tailport=s, headport=n]
+BB2557 -> BB2559 [tailport=s, headport=n, color=gray]
+BB2558 [shape=record label="{6157: return[v1]}" ] 
+BB2559 [shape=record label="{6158: exceptional-return}" ] 
+//#$~ 3498
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry177[shape=none,label=""];
+BB_entry177 -> BB2883 [tailport=s, headport=n, headlabel="    2883"]
+BB2883 [shape=record label="{8608: constant[undefined,v1]}" ] 
+BB2883 -> BB2884 [tailport=s, headport=n, headlabel="      2884"]
+BB2884 [shape=record label="{8609: read-variable['sorted',v3,-]|8610: read-property[v3,'push',-]|8611: \<variable-non-null-undef\>['sorted']|8612: read-variable['fragment',v4,-]}" ] 
+BB2884 -> BB2885 [tailport=s, headport=n, headlabel="      2885"]
+BB2884 -> BB2889 [tailport=s, headport=n, color=gray, headlabel="      2889"]
+BB2885 [shape=record label="{8613: call-sorted.push [v3,'push',v4,-]*}" ] 
+BB2885 -> BB2886 [tailport=s, headport=n, headlabel="      2886"]
+BB2885 -> BB2889 [tailport=s, headport=n, color=gray]
+BB2886 [shape=record label="{8614: read-variable['fragment',v6,-]|8615: read-property[v6,'setAttribute',-]|8616: \<variable-non-null-undef\>['fragment']|8617: constant[\"data-fragment-index\",v7]|8618: read-variable['index',v8,-]}" ] 
+BB2886 -> BB2887 [tailport=s, headport=n, headlabel="      2887"]
+BB2886 -> BB2889 [tailport=s, headport=n, color=gray]
+BB2887 [shape=record label="{8619: call-fragment.setAttribute [v6,'setAttribute',v7,v8,-]*}" ] 
+BB2887 -> BB2888 [tailport=s, headport=n, headlabel="      2888"]
+BB2887 -> BB2889 [tailport=s, headport=n, color=gray]
+BB2888 [shape=record label="{8620: return[v1]}" ] 
+BB2889 [shape=record label="{8621: exceptional-return}" ] 
+//#$~ 3380
+}

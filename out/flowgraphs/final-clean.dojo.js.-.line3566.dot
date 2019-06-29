@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry201[shape=none,label=""];
+BB_entry201 -> BB3214 [tailport=s, headport=n, headlabel="    3214"]
+BB3214 [shape=record label="{9608: constant[undefined,v1]|9609: vardecl['args']}" ] 
+BB3214 -> BB3215 [tailport=s, headport=n, headlabel="      3215"]
+BB3215 [shape=record label="{9610: read-variable['lang',v4,-]|9611: read-property[v4,'_toArray',-]|9612: \<variable-non-null-undef\>['lang']|9613: read-variable['arguments',v5,-]}" ] 
+BB3215 -> BB3216 [tailport=s, headport=n, headlabel="      3216"]
+BB3215 -> BB3221 [tailport=s, headport=n, color=gray, headlabel="      3221"]
+BB3216 [shape=record label="{9614: call-lang._toArray [v4,'_toArray',v5,v2]}" ] 
+BB3216 -> BB3217 [tailport=s, headport=n, headlabel="      3217"]
+BB3216 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3217 [shape=record label="{9615: write-variable[v2,'args']*|9616: read-variable['this',v7,-]|9617: read-property[v7,'otherwise',-]|9618: function-expr[function ( error ),v8]}" ] 
+BB3217 -> BB3218 [tailport=s, headport=n, headlabel="      3218"]
+BB3217 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3218 [shape=record label="{9619: call-this.otherwise [v7,'otherwise',v8,-]*}" ] 
+BB3218 -> BB3219 [tailport=s, headport=n, headlabel="      3219"]
+BB3218 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3219 [shape=record label="{9620: read-variable['this',v1,-]}" ] 
+BB3219 -> BB3220 [tailport=s, headport=n, headlabel="      3220"]
+BB3219 -> BB3221 [tailport=s, headport=n, color=gray]
+BB3220 [shape=record label="{9621: return[v1]}" ] 
+BB3221 [shape=record label="{9622: exceptional-return}" ] 
+//#$~ 3582
+}

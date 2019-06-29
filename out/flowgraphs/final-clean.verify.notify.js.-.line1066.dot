@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry101[shape=none,label=""];
+BB_entry101 -> BB1264 [tailport=s, headport=n, headlabel="    1264"]
+BB1264 [shape=record label="{3849: constant[undefined,v1]|3850: vardecl['prop']}" ] 
+BB1264 -> BB1265 [tailport=s, headport=n, headlabel="      1265"]
+BB1265 [shape=record label="{3851: read-variable['this',v3,-]|3852: read-variable['name',v4,-]|3853: read-property[v3,v4,v2]|3854: write-variable[v2,'prop']*|3855: read-variable['prop',v5,-]|3856: if[v5](true-block:1266,false-block:1268)}" ] 
+BB1265 -> BB1268 [tailport=s, headport=n, headlabel="      1268"]
+BB1265 -> BB1266 [tailport=s, headport=n, headlabel="      1266"]
+BB1265 -> BB1273 [tailport=s, headport=n, color=gray, headlabel="      1273"]
+BB1266 [shape=record label="{3857: read-variable['$',v7,-]|3858: read-property[v7,'isFunction',-]|3859: \<variable-non-null-undef\>['$']|3860: read-variable['prop',v8,-]}" ] 
+BB1266 -> BB1267 [tailport=s, headport=n, headlabel="      1267"]
+BB1266 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1267 [shape=record label="{3861: call-$.isFunction [v7,'isFunction',v8,v5]}" ] 
+BB1267 -> BB1268 [tailport=s, headport=n]
+BB1267 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1268 [shape=record label="{3862: if[v5](true-block:1269,false-block:1272)}" ] 
+BB1268 -> BB1269 [tailport=s, headport=n, headlabel="      1269"]
+BB1268 -> BB1272 [tailport=s, headport=n, headlabel="      1272"]
+BB1269 [shape=record label="{3863: read-variable['this',v7,-]|3864: read-variable['name',v8,-]|3865: read-variable['Utils',v10,-]|3866: read-property[v10,'bind',-]|3867: \<variable-non-null-undef\>['Utils']|3868: read-variable['prop',v11,-]|3869: read-variable['this',v12,-]}" ] 
+BB1269 -> BB1270 [tailport=s, headport=n, headlabel="      1270"]
+BB1269 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1270 [shape=record label="{3870: call-Utils.bind [v10,'bind',v11,v12,v6]}" ] 
+BB1270 -> BB1271 [tailport=s, headport=n, headlabel="      1271"]
+BB1270 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1271 [shape=record label="{3871: write-property[v7,v8,v6]*}" ] 
+BB1271 -> BB1272 [tailport=s, headport=n]
+BB1271 -> BB1273 [tailport=s, headport=n, color=gray]
+BB1272 [shape=record label="{3872: return[v1]}" ] 
+BB1273 [shape=record label="{3873: exceptional-return}" ] 
+//#$~ 1069
+}

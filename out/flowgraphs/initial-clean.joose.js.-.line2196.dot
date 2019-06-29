@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry221[shape=none,label=""];
+BB_entry221 -> BB1907 [tailport=s, headport=n, headlabel="    1907"]
+BB1907 [shape=record label="{5578: constant[undefined,v1]}" ] 
+BB1907 -> BB1908 [tailport=s, headport=n, headlabel="      1908"]
+BB1908 [shape=record label="{5579: read-variable['window',v3,-]|5580: read-property[v3,'XMLHttpRequest',v2]|5581: \<variable-non-null-undef\>['window']|5582: if[v2](true-block:1909,false-block:1910)}" ] 
+BB1908 -> BB1909 [tailport=s, headport=n, headlabel="      1909"]
+BB1908 -> BB1910 [tailport=s, headport=n, headlabel="      1910"]
+BB1908 -> BB1916 [tailport=s, headport=n, color=gray, headlabel="      1916"]
+BB1909 [shape=record label="{5583: read-variable['this',v5,-]|5584: read-variable['XMLHttpRequest',v6,-]}" ] 
+BB1909 -> BB1911 [tailport=s, headport=n, headlabel="      1911"]
+BB1909 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1910 [shape=record label="{5585: read-variable['this',v5,-]|5586: read-variable['ActiveXObject',v6,-]|5587: constant[\"Microsoft.XMLHTTP\",v7]}" ] 
+BB1910 -> BB1913 [tailport=s, headport=n, headlabel="      1913"]
+BB1910 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1911 [shape=record label="{5588: construct [-,v6,v4]}" ] 
+BB1911 -> BB1912 [tailport=s, headport=n, headlabel="      1912"]
+BB1911 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1912 [shape=record label="{5589: write-property[v5,'_req',v4]*}" ] 
+BB1912 -> BB1915 [tailport=s, headport=n, headlabel="      1915"]
+BB1912 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1913 [shape=record label="{5590: construct [-,v6,v7,v4]}" ] 
+BB1913 -> BB1914 [tailport=s, headport=n, headlabel="      1914"]
+BB1913 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1914 [shape=record label="{5591: write-property[v5,'_req',v4]*}" ] 
+BB1914 -> BB1915 [tailport=s, headport=n]
+BB1914 -> BB1916 [tailport=s, headport=n, color=gray]
+BB1915 [shape=record label="{5592: return[v1]}" ] 
+BB1916 [shape=record label="{5593: exceptional-return}" ] 
+//#$~ 2200
+}

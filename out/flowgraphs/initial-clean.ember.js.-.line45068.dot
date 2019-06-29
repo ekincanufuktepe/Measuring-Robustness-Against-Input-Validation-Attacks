@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry2086[shape=none,label=""];
+BB_entry2086 -> BB23847 [tailport=s, headport=n, headlabel="    23847"]
+BB23847 [shape=record label="{78815: constant[undefined,v1]}" ] 
+BB23847 -> BB23848 [tailport=s, headport=n, headlabel="      23848"]
+BB23848 [shape=record label="{78816: read-variable['this',v4,-]|78817: read-property[v4,'removedFromDOM',v3]|78818: ![v3,v2]|78819: if[v2](true-block:23849,false-block:23851)}" ] 
+BB23848 -> BB23849 [tailport=s, headport=n, headlabel="      23849"]
+BB23848 -> BB23851 [tailport=s, headport=n, headlabel="      23851"]
+BB23848 -> BB23852 [tailport=s, headport=n, color=gray, headlabel="      23852"]
+BB23849 [shape=record label="{78820: read-variable['this',v6,-]|78821: read-property[v6,'destroyElement',-]}" ] 
+BB23849 -> BB23850 [tailport=s, headport=n, headlabel="      23850"]
+BB23849 -> BB23852 [tailport=s, headport=n, color=gray]
+BB23850 [shape=record label="{78822: call-this.destroyElement [v6,'destroyElement',-]*}" ] 
+BB23850 -> BB23851 [tailport=s, headport=n]
+BB23850 -> BB23852 [tailport=s, headport=n, color=gray]
+BB23851 [shape=record label="{78823: return[v1]}" ] 
+BB23852 [shape=record label="{78824: exceptional-return}" ] 
+//#$~ 45074
+}

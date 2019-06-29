@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry191[shape=none,label=""];
+BB_entry191 -> BB2966 [tailport=s, headport=n, headlabel="    2966"]
+BB2966 [shape=record label="{8591: constant[undefined,v1]|8592: vardecl['fns']}" ] 
+BB2966 -> BB2967 [tailport=s, headport=n, headlabel="      2967"]
+BB2967 [shape=record label="{8593: read-variable['arguments',v2,-]|8594: write-variable[v2,'fns']*|8595: read-variable['jQuery',v6,-]|8596: read-property[v6,'Deferred',-]|8597: \<variable-non-null-undef\>['jQuery']|8598: function-expr[function(newDefer),v7]}" ] 
+BB2967 -> BB2968 [tailport=s, headport=n, headlabel="      2968"]
+BB2967 -> BB2972 [tailport=s, headport=n, color=gray, headlabel="      2972"]
+BB2968 [shape=record label="{8599: call[v6,'Deferred',v7,v4]}" ] 
+BB2968 -> BB2969 [tailport=s, headport=n, headlabel="      2969"]
+BB2968 -> BB2972 [tailport=s, headport=n, color=gray]
+BB2969 [shape=record label="{8600: read-property[v4,'promise',-]}" ] 
+BB2969 -> BB2970 [tailport=s, headport=n, headlabel="      2970"]
+BB2969 -> BB2972 [tailport=s, headport=n, color=gray]
+BB2970 [shape=record label="{8601: call[v4,'promise',v1]}" ] 
+BB2970 -> BB2971 [tailport=s, headport=n, headlabel="      2971"]
+BB2970 -> BB2972 [tailport=s, headport=n, color=gray]
+BB2971 [shape=record label="{8602: return[v1]}" ] 
+BB2972 [shape=record label="{8603: exceptional-return}" ] 
+}

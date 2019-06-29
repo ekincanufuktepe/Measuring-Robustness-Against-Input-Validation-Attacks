@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry87[shape=none,label=""];
+BB_entry87 -> BB923 [tailport=s, headport=n, headlabel="    923"]
+BB923 [shape=record label="{2642: constant[undefined,v1]}" ] 
+BB923 -> BB924 [tailport=s, headport=n, headlabel="      924"]
+BB924 [shape=record label="{2643: read-variable['elem',v3,-]|2644: read-variable['document',v5,-]|2645: read-property[v5,'body',v4]|2646: \<variable-non-null-undef\>['document']|2647: !=[v3,v4,v2]|2648: if[v2](true-block:925,false-block:929)}" ] 
+BB924 -> BB925 [tailport=s, headport=n, headlabel="      925"]
+BB924 -> BB929 [tailport=s, headport=n, headlabel="      929"]
+BB924 -> BB930 [tailport=s, headport=n, color=gray, headlabel="      930"]
+BB925 [shape=record label="{2649: read-variable['elem',v7,-]|2650: read-property[v7,'parentNode',v6]|2651: \<variable-non-null-undef\>['elem']|2652: write-variable[v6,'elem']*|2653: read-variable['matchesSelector',v10,v9]|2654: read-variable['elem',v11,-]|2655: read-variable['selector',v12,-]}" ] 
+BB925 -> BB926 [tailport=s, headport=n, headlabel="      926"]
+BB925 -> BB930 [tailport=s, headport=n, color=gray]
+BB926 [shape=record label="{2656: call-matchesSelector [v9,v10,v11,v12,v8]}" ] 
+BB926 -> BB927 [tailport=s, headport=n, headlabel="      927"]
+BB926 -> BB930 [tailport=s, headport=n, color=gray]
+BB927 [shape=record label="{2657: if[v8](true-block:928,false-block:924)}" ] 
+BB927 -> BB928 [tailport=s, headport=n, headlabel="      928"]
+BB927 -> BB924 [tailport=s, headport=n]
+BB928 [shape=record label="{2658: read-variable['elem',v1,-]}" ] 
+BB928 -> BB929 [tailport=s, headport=n]
+BB928 -> BB930 [tailport=s, headport=n, color=gray]
+BB929 [shape=record label="{2659: return[v1]}" ] 
+BB930 [shape=record label="{2660: exceptional-return}" ] 
+//#$~ 1339
+}

@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry470[shape=none,label=""];
+BB_entry470 -> BB7361 [tailport=s, headport=n, headlabel="    7361"]
+BB7361 [shape=record label="{21491: constant[undefined,v1]|21492: vardecl['script']|21493: vardecl['callback']}" ] 
+BB7361 -> BB7362 [tailport=s, headport=n, headlabel="      7362"]
+BB7362 [shape=record label="{21494: read-variable['s',v3,-]|21495: read-property[v3,'crossDomain',v2]|21496: \<variable-non-null-undef\>['s']|21497: if[v2](true-block:7363,false-block:7364)}" ] 
+BB7362 -> BB7363 [tailport=s, headport=n, headlabel="      7363"]
+BB7362 -> BB7364 [tailport=s, headport=n, headlabel="      7364"]
+BB7362 -> BB7365 [tailport=s, headport=n, color=gray, headlabel="      7365"]
+BB7363 [shape=record label="{21498: new[v1]|21499: function-expr[function(_,complete),v4]|21500: write-property[v1,'send',v4]|21501: function-expr[function(),v5]|21502: write-property[v1,'abort',v5]}" ] 
+BB7363 -> BB7364 [tailport=s, headport=n]
+BB7363 -> BB7365 [tailport=s, headport=n, color=gray]
+BB7364 [shape=record label="{21503: return[v1]}" ] 
+BB7365 [shape=record label="{21504: exceptional-return}" ] 
+}

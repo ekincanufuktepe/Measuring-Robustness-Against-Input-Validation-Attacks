@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry235[shape=none,label=""];
+BB_entry235 -> BB2697 [tailport=s, headport=n, headlabel="    2697"]
+BB2697 [shape=record label="{8792: constant[undefined,v1]}" ] 
+BB2697 -> BB2698 [tailport=s, headport=n, headlabel="      2698"]
+BB2698 [shape=record label="{8793: read-variable['clean',v4,v3]|8794: read-variable['test',v5,-]}" ] 
+BB2698 -> BB2699 [tailport=s, headport=n, headlabel="      2699"]
+BB2698 -> BB2705 [tailport=s, headport=n, color=gray, headlabel="      2705"]
+BB2699 [shape=record label="{8795: call-clean [v3,v4,v5,v2]}" ] 
+BB2699 -> BB2700 [tailport=s, headport=n, headlabel="      2700"]
+BB2699 -> BB2705 [tailport=s, headport=n, color=gray]
+BB2700 [shape=record label="{8796: write-variable[v2,'test']*|8797: read-variable['test',v7,-]|8798: read-variable['err',v8,-]|8799: read-property[v8,'message',v6]|8800: \<variable-non-null-undef\>['err']|8801: write-property[v7,'err',v6]|8802: \<variable-non-null-undef\>['test']*|8803: read-variable['console',v10,-]|8804: read-property[v10,'log',-]|8805: \<variable-non-null-undef\>['console']|8806: read-variable['JSON',v13,-]|8807: read-property[v13,'stringify',-]|8808: \<variable-non-null-undef\>['JSON']|8809: read-variable['Array',v15,-]|8810: constant[\"fail\",v16]|8811: read-variable['test',v17,-]}" ] 
+BB2700 -> BB2701 [tailport=s, headport=n, headlabel="      2701"]
+BB2700 -> BB2705 [tailport=s, headport=n, color=gray]
+BB2701 [shape=record label="{8812: construct [-,v15,v16,v17,v14]}" ] 
+BB2701 -> BB2702 [tailport=s, headport=n, headlabel="      2702"]
+BB2701 -> BB2705 [tailport=s, headport=n, color=gray]
+BB2702 [shape=record label="{8813: call-JSON.stringify [v13,'stringify',v14,v11]}" ] 
+BB2702 -> BB2703 [tailport=s, headport=n, headlabel="      2703"]
+BB2702 -> BB2705 [tailport=s, headport=n, color=gray]
+BB2703 [shape=record label="{8814: call-console.log [v10,'log',v11,-]*}" ] 
+BB2703 -> BB2704 [tailport=s, headport=n, headlabel="      2704"]
+BB2703 -> BB2705 [tailport=s, headport=n, color=gray]
+BB2704 [shape=record label="{8815: return[v1]}" ] 
+BB2705 [shape=record label="{8816: exceptional-return}" ] 
+//#$~ 3154
+}

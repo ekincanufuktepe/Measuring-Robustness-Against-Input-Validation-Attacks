@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry155[shape=none,label=""];
+BB_entry155 -> BB2350 [tailport=s, headport=n, headlabel="    2350"]
+BB2350 [shape=record label="{6693: constant[undefined,v1]}" ] 
+BB2350 -> BB2351 [tailport=s, headport=n, headlabel="      2351"]
+BB2351 [shape=record label="{6694: read-variable['nodeHook',v3,-]|6695: read-property[v3,'set',-]|6696: \<variable-non-null-undef\>['nodeHook']|6697: read-variable['elem',v4,-]|6698: read-variable['value',v7,-]|6699: constant[\"\",v8]|6700: ===[v7,v8,v6]|6701: if[v6](true-block:2352,false-block:2353)}" ] 
+BB2351 -> BB2352 [tailport=s, headport=n, headlabel="      2352"]
+BB2351 -> BB2353 [tailport=s, headport=n, headlabel="      2353"]
+BB2351 -> BB2357 [tailport=s, headport=n, color=gray, headlabel="      2357"]
+BB2352 [shape=record label="{6702: constant[false,v5]}" ] 
+BB2352 -> BB2354 [tailport=s, headport=n, headlabel="      2354"]
+BB2353 [shape=record label="{6703: read-variable['value',v5,-]}" ] 
+BB2353 -> BB2354 [tailport=s, headport=n]
+BB2353 -> BB2357 [tailport=s, headport=n, color=gray]
+BB2354 [shape=record label="{6704: read-variable['name',v9,-]}" ] 
+BB2354 -> BB2355 [tailport=s, headport=n, headlabel="      2355"]
+BB2354 -> BB2357 [tailport=s, headport=n, color=gray]
+BB2355 [shape=record label="{6705: call[v3,'set',v4,v5,v9,-]*}" ] 
+BB2355 -> BB2356 [tailport=s, headport=n, headlabel="      2356"]
+BB2355 -> BB2357 [tailport=s, headport=n, color=gray]
+BB2356 [shape=record label="{6706: return[v1]}" ] 
+BB2357 [shape=record label="{6707: exceptional-return}" ] 
+}

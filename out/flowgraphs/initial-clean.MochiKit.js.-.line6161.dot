@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry580[shape=none,label=""];
+BB_entry580 -> BB8596 [tailport=s, headport=n, headlabel="    8596"]
+BB8596 [shape=record label="{31474: constant[undefined,v1]}" ] 
+BB8596 -> BB8597 [tailport=s, headport=n, headlabel="      8597"]
+BB8597 [shape=record label="{31475: typeof['_65c',v3]|31476: constant[\"string\",v4]|31477: !=[v3,v4,v2]|31478: if[v2](true-block:8598,false-block:8599)}" ] 
+BB8597 -> BB8598 [tailport=s, headport=n, headlabel="      8598"]
+BB8597 -> BB8599 [tailport=s, headport=n, headlabel="      8599"]
+BB8597 -> BB8605 [tailport=s, headport=n, color=gray, headlabel="      8605"]
+BB8598 [shape=record label="{31479: read-variable['_65c',v1,-]}" ] 
+BB8598 -> BB8604 [tailport=s, headport=n, headlabel="      8604"]
+BB8598 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8599 [shape=record label="{31480: read-variable['this',v8,-]|31481: read-property[v8,'instances',v7]|31482: read-variable['_65c',v9,-]|31483: read-property[v7,v9,v6]|31484: \<property-non-null-undef\>[v8,'instances']|31485: ![v6,v5]|31486: if[v5](true-block:8600,false-block:8603)}" ] 
+BB8599 -> BB8600 [tailport=s, headport=n, headlabel="      8600"]
+BB8599 -> BB8603 [tailport=s, headport=n, headlabel="      8603"]
+BB8599 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8600 [shape=record label="{31487: read-variable['this',v13,-]|31488: read-property[v13,'instances',v11]|31489: read-variable['_65c',v12,-]|31490: read-variable['MochiKit',v16,-]|31491: read-property[v16,'Visual',v15]|31492: \<variable-non-null-undef\>['MochiKit']|31493: read-property[v15,'ScopedQueue',-]|31494: \<property-non-null-undef\>[v16,'Visual']}" ] 
+BB8600 -> BB8601 [tailport=s, headport=n, headlabel="      8601"]
+BB8600 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8601 [shape=record label="{31495: construct [v15,'ScopedQueue',v10]}" ] 
+BB8601 -> BB8602 [tailport=s, headport=n, headlabel="      8602"]
+BB8601 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8602 [shape=record label="{31496: write-property[v11,v12,v10]|31497: \<property-non-null-undef\>[v13,'instances']*}" ] 
+BB8602 -> BB8603 [tailport=s, headport=n]
+BB8602 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8603 [shape=record label="{31498: read-variable['this',v11,-]|31499: read-property[v11,'instances',v10]|31500: read-variable['_65c',v12,-]|31501: read-property[v10,v12,v1]|31502: \<property-non-null-undef\>[v11,'instances']}" ] 
+BB8603 -> BB8604 [tailport=s, headport=n]
+BB8603 -> BB8605 [tailport=s, headport=n, color=gray]
+BB8604 [shape=record label="{31503: return[v1]}" ] 
+BB8605 [shape=record label="{31504: exceptional-return}" ] 
+//#$~ 6168
+}

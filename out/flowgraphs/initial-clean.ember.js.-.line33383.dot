@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1523[shape=none,label=""];
+BB_entry1523 -> BB17667 [tailport=s, headport=n, headlabel="    17667"]
+BB17667 [shape=record label="{59222: constant[undefined,v1]|59223: vardecl['arrangedContent']}" ] 
+BB17667 -> BB17668 [tailport=s, headport=n, headlabel="      17668"]
+BB17668 [shape=record label="{59224: read-variable['get',v4,v3]|59225: read-variable['this',v5,-]|59226: constant[\"arrangedContent\",v6]}" ] 
+BB17668 -> BB17669 [tailport=s, headport=n, headlabel="      17669"]
+BB17668 -> BB17674 [tailport=s, headport=n, color=gray, headlabel="      17674"]
+BB17669 [shape=record label="{59227: call-get [v3,v4,v5,v6,v2]}" ] 
+BB17669 -> BB17670 [tailport=s, headport=n, headlabel="      17670"]
+BB17669 -> BB17674 [tailport=s, headport=n, color=gray]
+BB17670 [shape=record label="{59228: write-variable[v2,'arrangedContent']*|59229: read-variable['arrangedContent',v7,-]|59230: if[v7](true-block:17671,false-block:17673)}" ] 
+BB17670 -> BB17671 [tailport=s, headport=n, headlabel="      17671"]
+BB17670 -> BB17673 [tailport=s, headport=n, headlabel="      17673"]
+BB17670 -> BB17674 [tailport=s, headport=n, color=gray]
+BB17671 [shape=record label="{59231: read-variable['arrangedContent',v9,-]|59232: read-property[v9,'removeArrayObserver',-]|59233: \<variable-non-null-undef\>['arrangedContent']|59234: read-variable['this',v10,-]|59235: new[v11]|59236: constant[\"arrangedContentArrayWillChange\",v12]|59237: write-property[v11,'willChange',v12]|59238: constant[\"arrangedContentArrayDidChange\",v13]|59239: write-property[v11,'didChange',v13]}" ] 
+BB17671 -> BB17672 [tailport=s, headport=n, headlabel="      17672"]
+BB17671 -> BB17674 [tailport=s, headport=n, color=gray]
+BB17672 [shape=record label="{59240: call-arrangedContent.removeArrayObserver [v9,'removeArrayObserver',v10,v11,-]*}" ] 
+BB17672 -> BB17673 [tailport=s, headport=n]
+BB17672 -> BB17674 [tailport=s, headport=n, color=gray]
+BB17673 [shape=record label="{59241: return[v1]}" ] 
+BB17674 [shape=record label="{59242: exceptional-return}" ] 
+//#$~ 33389
+}

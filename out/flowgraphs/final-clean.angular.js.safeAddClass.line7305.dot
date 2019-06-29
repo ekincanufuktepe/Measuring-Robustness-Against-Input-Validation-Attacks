@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry355[shape=none,label=""];
+BB_entry355 -> BB4291 [tailport=s, headport=n, headlabel="    4291"]
+BB4291 [shape=record label="{10512: constant[undefined,v1]}" ] 
+BB4291 -> BB4292 [tailport=s, headport=n, headlabel="      4292"]
+BB4292 [shape=record label="{10513: read-variable['$element',v3,-]|10514: read-property[v3,'addClass',-]|10515: \<variable-non-null-undef\>['$element']|10516: read-variable['className',v4,-]}" ] 
+BB4292 -> BB4293 [tailport=s, headport=n, headlabel="      4293"]
+BB4292 -> BB4294 [tailport=s, headport=n, color=gray, headlabel="      4294"]
+BB4293 [shape=record label="{10517: call-$element.addClass [v3,'addClass',v4,-]*}" ] 
+BB4293 -> BB4297 [tailport=s, headport=n, headlabel="      4297"]
+BB4293 -> BB4294 [tailport=s, headport=n, color=gray]
+BB4294 [shape=record label="{10518: catch[e,v2]|10519: begin-with[v2]}" ] 
+BB4294 -> BB4295 [tailport=s, headport=n, headlabel="      4295"]
+BB4294 -> BB4298 [tailport=s, headport=n, color=gray, headlabel="      4298"]
+BB4295 [shape=record label="{10520: end-with}" ] 
+BB4295 -> BB4297 [tailport=s, headport=n]
+BB4296 [shape=record label="{10521: end-with}" ] 
+BB4296 -> BB4298 [tailport=s, headport=n]
+BB4297 [shape=record label="{10522: return[v1]}" ] 
+BB4298 [shape=record label="{10523: exceptional-return}" ] 
+//#$~ 7308
+}

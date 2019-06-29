@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry65[shape=none,label=""];
+BB_entry65 -> BB1168 [tailport=s, headport=n, headlabel="    1168"]
+BB1168 [shape=record label="{3946: constant[undefined,v1]}" ] 
+BB1168 -> BB1169 [tailport=s, headport=n, headlabel="      1169"]
+BB1169 [shape=record label="{3947: read-variable['this',v3,-]|3948: read-property[v3,'stash',v2]|3949: read-property[v2,'length',v1]|3950: \<property-non-null-undef\>[v3,'stash']|3951: if[v1](true-block:1170,false-block:1172)}" ] 
+BB1169 -> BB1172 [tailport=s, headport=n, headlabel="      1172"]
+BB1169 -> BB1170 [tailport=s, headport=n, headlabel="      1170"]
+BB1169 -> BB1173 [tailport=s, headport=n, color=gray, headlabel="      1173"]
+BB1170 [shape=record label="{3952: read-variable['this',v6,-]|3953: read-property[v6,'stash',v5]|3954: read-property[v5,'shift',-]|3955: \<property-non-null-undef\>[v6,'stash']}" ] 
+BB1170 -> BB1171 [tailport=s, headport=n, headlabel="      1171"]
+BB1170 -> BB1173 [tailport=s, headport=n, color=gray]
+BB1171 [shape=record label="{3956: call-this.stash.shift [v5,'shift',v1]}" ] 
+BB1171 -> BB1172 [tailport=s, headport=n]
+BB1171 -> BB1173 [tailport=s, headport=n, color=gray]
+BB1172 [shape=record label="{3957: return[v1]}" ] 
+BB1173 [shape=record label="{3958: exceptional-return}" ] 
+//#$~ 1328
+}

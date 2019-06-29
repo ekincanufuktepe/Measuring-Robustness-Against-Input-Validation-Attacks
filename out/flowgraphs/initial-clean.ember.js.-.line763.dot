@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry50[shape=none,label=""];
+BB_entry50 -> BB707 [tailport=s, headport=n, headlabel="    707"]
+BB707 [shape=record label="{2330: constant[undefined,v1]|2331: vardecl['queue']}" ] 
+BB707 -> BB708 [tailport=s, headport=n, headlabel="      708"]
+BB708 [shape=record label="{2332: read-variable['this',v3,-]|2333: read-property[v3,'_queue',v2]|2334: write-variable[v2,'queue']*|2335: read-variable['queue',v5,-]|2336: read-property[v5,'push',-]|2337: \<variable-non-null-undef\>['queue']|2338: read-variable['target',v6,-]|2339: read-variable['method',v7,-]|2340: read-variable['args',v8,-]|2341: read-variable['stack',v9,-]}" ] 
+BB708 -> BB709 [tailport=s, headport=n, headlabel="      709"]
+BB708 -> BB712 [tailport=s, headport=n, color=gray, headlabel="      712"]
+BB709 [shape=record label="{2342: call-queue.push [v5,'push',v6,v7,v8,v9,-]*}" ] 
+BB709 -> BB710 [tailport=s, headport=n, headlabel="      710"]
+BB709 -> BB712 [tailport=s, headport=n, color=gray]
+BB710 [shape=record label="{2343: new[v1]|2344: read-variable['this',v10,-]|2345: write-property[v1,'queue',v10]|2346: read-variable['target',v11,-]|2347: write-property[v1,'target',v11]|2348: read-variable['method',v12,-]|2349: write-property[v1,'method',v12]}" ] 
+BB710 -> BB711 [tailport=s, headport=n, headlabel="      711"]
+BB710 -> BB712 [tailport=s, headport=n, color=gray]
+BB711 [shape=record label="{2350: return[v1]}" ] 
+BB712 [shape=record label="{2351: exceptional-return}" ] 
+//#$~ 770
+}

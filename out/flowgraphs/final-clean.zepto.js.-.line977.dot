@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry181[shape=none,label=""];
+BB_entry181 -> BB1991 [tailport=s, headport=n, headlabel="    1991"]
+BB1991 [shape=record label="{4834: constant[undefined,v1]}" ] 
+BB1991 -> BB1992 [tailport=s, headport=n, headlabel="      1992"]
+BB1992 [shape=record label="{4835: read-variable['fn',v3,-]|4836: read-property[v3,'apply',-]|4837: \<variable-non-null-undef\>['fn']|4838: read-variable['context',v4,-]|4839: read-variable['args',v6,-]|4840: if[v6](true-block:1993,false-block:1994)}" ] 
+BB1992 -> BB1993 [tailport=s, headport=n, headlabel="      1993"]
+BB1992 -> BB1994 [tailport=s, headport=n, headlabel="      1994"]
+BB1992 -> BB1999 [tailport=s, headport=n, color=gray, headlabel="      1999"]
+BB1993 [shape=record label="{4841: read-variable['args',v8,-]|4842: read-property[v8,'concat',-]|4843: \<variable-non-null-undef\>['args']|4844: read-variable['slice',v11,-]|4845: read-property[v11,'call',-]|4846: \<variable-non-null-undef\>['slice']|4847: read-variable['arguments',v12,-]}" ] 
+BB1993 -> BB1995 [tailport=s, headport=n, headlabel="      1995"]
+BB1993 -> BB1999 [tailport=s, headport=n, color=gray]
+BB1994 [shape=record label="{4848: read-variable['arguments',v5,-]}" ] 
+BB1994 -> BB1997 [tailport=s, headport=n, headlabel="      1997"]
+BB1994 -> BB1999 [tailport=s, headport=n, color=gray]
+BB1995 [shape=record label="{4849: call-slice.call [v11,'call',v12,v9]}" ] 
+BB1995 -> BB1996 [tailport=s, headport=n, headlabel="      1996"]
+BB1995 -> BB1999 [tailport=s, headport=n, color=gray]
+BB1996 [shape=record label="{4850: call-args.concat [v8,'concat',v9,v5]}" ] 
+BB1996 -> BB1997 [tailport=s, headport=n]
+BB1996 -> BB1999 [tailport=s, headport=n, color=gray]
+BB1997 [shape=record label="{4851: call-fn.apply [v3,'apply',v4,v5,v1]}" ] 
+BB1997 -> BB1998 [tailport=s, headport=n, headlabel="      1998"]
+BB1997 -> BB1999 [tailport=s, headport=n, color=gray]
+BB1998 [shape=record label="{4852: return[v1]}" ] 
+BB1999 [shape=record label="{4853: exceptional-return}" ] 
+//#$~ 977
+}

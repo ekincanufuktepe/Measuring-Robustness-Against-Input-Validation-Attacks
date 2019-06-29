@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry731[shape=none,label=""];
+BB_entry731 -> BB9849 [tailport=s, headport=n, headlabel="    9849"]
+BB9849 [shape=record label="{32592: constant[undefined,v1]|32593: vardecl['result']}" ] 
+BB9849 -> BB9850 [tailport=s, headport=n, headlabel="      9850"]
+BB9850 [shape=record label="{32594: read-variable['children',v3,-]|32595: constant[null,v4]|32596: ==[v3,v4,v2]|32597: if[v2](true-block:9851,false-block:9852)}" ] 
+BB9850 -> BB9851 [tailport=s, headport=n, headlabel="      9851"]
+BB9850 -> BB9852 [tailport=s, headport=n, headlabel="      9852"]
+BB9850 -> BB9856 [tailport=s, headport=n, color=gray, headlabel="      9856"]
+BB9851 [shape=record label="{32598: read-variable['children',v1,-]}" ] 
+BB9851 -> BB9855 [tailport=s, headport=n, headlabel="      9855"]
+BB9851 -> BB9856 [tailport=s, headport=n, color=gray]
+BB9852 [shape=record label="{32599: new[v5]|32600: write-variable[v5,'result']*|32601: read-variable['traverseAllChildren',v7,v6]|32602: read-variable['children',v8,-]|32603: read-variable['flattenSingleChildIntoContext',v9,-]|32604: read-variable['result',v10,-]}" ] 
+BB9852 -> BB9853 [tailport=s, headport=n, headlabel="      9853"]
+BB9852 -> BB9856 [tailport=s, headport=n, color=gray]
+BB9853 [shape=record label="{32605: call-traverseAllChildren [v6,v7,v8,v9,v10,-]*}" ] 
+BB9853 -> BB9854 [tailport=s, headport=n, headlabel="      9854"]
+BB9853 -> BB9856 [tailport=s, headport=n, color=gray]
+BB9854 [shape=record label="{32606: read-variable['result',v1,-]}" ] 
+BB9854 -> BB9855 [tailport=s, headport=n]
+BB9854 -> BB9856 [tailport=s, headport=n, color=gray]
+BB9855 [shape=record label="{32607: return[v1]}" ] 
+BB9856 [shape=record label="{32608: exceptional-return}" ] 
+//#$~ 17505
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry568[shape=none,label=""];
+BB_entry568 -> BB8441 [tailport=s, headport=n, headlabel="    8441"]
+BB8441 [shape=record label="{25248: constant[undefined,v1]}" ] 
+BB8441 -> BB8442 [tailport=s, headport=n, headlabel="      8442"]
+BB8442 [shape=record label="{25249: read-variable['has',v3,v2]|25250: constant[\"native-xhr\",v4]}" ] 
+BB8442 -> BB8443 [tailport=s, headport=n, headlabel="      8443"]
+BB8442 -> BB8449 [tailport=s, headport=n, color=gray, headlabel="      8449"]
+BB8443 [shape=record label="{25251: call-has [v2,v3,v4,v1]}" ] 
+BB8443 -> BB8444 [tailport=s, headport=n, headlabel="      8444"]
+BB8443 -> BB8449 [tailport=s, headport=n, color=gray]
+BB8444 [shape=record label="{25252: if[v1](true-block:8445,false-block:8448)}" ] 
+BB8444 -> BB8448 [tailport=s, headport=n, headlabel="      8448"]
+BB8444 -> BB8445 [tailport=s, headport=n, headlabel="      8445"]
+BB8445 [shape=record label="{25253: read-variable['XMLHttpRequest',v9,-]}" ] 
+BB8445 -> BB8446 [tailport=s, headport=n, headlabel="      8446"]
+BB8445 -> BB8449 [tailport=s, headport=n, color=gray]
+BB8446 [shape=record label="{25254: construct [-,v9,v8]}" ] 
+BB8446 -> BB8447 [tailport=s, headport=n, headlabel="      8447"]
+BB8446 -> BB8449 [tailport=s, headport=n, color=gray]
+BB8447 [shape=record label="{25255: read-property[v8,'responseType',v7]|25256: typeof[v7,v5]|25257: constant[\"undefined\",v6]|25258: !==[v5,v6,v1]}" ] 
+BB8447 -> BB8448 [tailport=s, headport=n]
+BB8447 -> BB8449 [tailport=s, headport=n, color=gray]
+BB8448 [shape=record label="{25259: return[v1]}" ] 
+BB8449 [shape=record label="{25260: exceptional-return}" ] 
+//#$~ 11848
+}

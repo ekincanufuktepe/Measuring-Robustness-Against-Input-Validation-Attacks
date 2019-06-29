@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry253[shape=none,label=""];
+BB_entry253 -> BB3101 [tailport=s, headport=n, headlabel="    3101"]
+BB3101 [shape=record label="{10099: constant[undefined,v1]}" ] 
+BB3101 -> BB3102 [tailport=s, headport=n, headlabel="      3102"]
+BB3102 [shape=record label="{10100: read-variable['stream',v4,-]|10101: read-property[v4,'value',-]|10102: \<variable-non-null-undef\>['stream']}" ] 
+BB3102 -> BB3103 [tailport=s, headport=n, headlabel="      3103"]
+BB3102 -> BB3107 [tailport=s, headport=n, color=gray, headlabel="      3107"]
+BB3103 [shape=record label="{10103: call-stream.value [v4,'value',-]*}" ] 
+BB3103 -> BB3104 [tailport=s, headport=n, headlabel="      3104"]
+BB3103 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3104 [shape=record label="{10104: read-variable['lazyValue',v6,-]|10105: read-property[v6,'notify',-]|10106: \<variable-non-null-undef\>['lazyValue']}" ] 
+BB3104 -> BB3105 [tailport=s, headport=n, headlabel="      3105"]
+BB3104 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3105 [shape=record label="{10107: call-lazyValue.notify [v6,'notify',-]*}" ] 
+BB3105 -> BB3106 [tailport=s, headport=n, headlabel="      3106"]
+BB3105 -> BB3107 [tailport=s, headport=n, color=gray]
+BB3106 [shape=record label="{10108: return[v1]}" ] 
+BB3107 [shape=record label="{10109: exceptional-return}" ] 
+//#$~ 5194
+}

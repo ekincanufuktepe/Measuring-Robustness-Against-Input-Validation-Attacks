@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry35[shape=none,label=""];
+BB_entry35 -> BB1013 [tailport=s, headport=n, headlabel="    1013"]
+BB1013 [shape=record label="{3674: constant[undefined,v1]}" ] 
+BB1013 -> BB1014 [tailport=s, headport=n, headlabel="      1014"]
+BB1014 [shape=record label="{3675: read-variable['Math',v4,-]|3676: read-property[v4,'max',-]|3677: \<variable-non-null-undef\>['Math']|3678: read-variable['pendingRequests',v6,-]|3679: constant[1.0,v7]|3680: -[v6,v7,v5]|3681: constant[0.0,v8]}" ] 
+BB1014 -> BB1015 [tailport=s, headport=n, headlabel="      1015"]
+BB1014 -> BB1020 [tailport=s, headport=n, color=gray, headlabel="      1020"]
+BB1015 [shape=record label="{3682: call-Math.max [v4,'max',v5,v8,v2]}" ] 
+BB1015 -> BB1016 [tailport=s, headport=n, headlabel="      1016"]
+BB1015 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1016 [shape=record label="{3683: write-variable[v2,'pendingRequests']*|3684: read-variable['pendingRequests',v10,-]|3685: constant[0.0,v11]|3686: ===[v10,v11,v9]|3687: if[v9](true-block:1017,false-block:1019)}" ] 
+BB1016 -> BB1017 [tailport=s, headport=n, headlabel="      1017"]
+BB1016 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1016 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1017 [shape=record label="{3688: read-variable['m',v13,-]|3689: read-property[v13,'redraw',-]|3690: \<variable-non-null-undef\>['m']}" ] 
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1017 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1018 [shape=record label="{3691: call-m.redraw [v13,'redraw',-]*}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n]
+BB1018 -> BB1020 [tailport=s, headport=n, color=gray]
+BB1019 [shape=record label="{3692: return[v1]}" ] 
+BB1020 [shape=record label="{3693: exceptional-return}" ] 
+//#$~ 655
+}

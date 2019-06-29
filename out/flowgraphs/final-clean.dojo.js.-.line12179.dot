@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry590[shape=none,label=""];
+BB_entry590 -> BB8733 [tailport=s, headport=n, headlabel="    8733"]
+BB8733 [shape=record label="{26047: constant[undefined,v1]}" ] 
+BB8733 -> BB8734 [tailport=s, headport=n, headlabel="      8734"]
+BB8734 [shape=record label="{26048: read-variable['request',v5,v4]|26049: read-variable['url',v6,-]|26050: new[v7]|26051: read-variable['sync',v10,-]|26052: ![v10,v9]|26053: ![v9,v8]|26054: write-property[v7,'sync',v8]|26055: new[v11]|26056: constant[null,v12]|26057: write-property[v11,'X-Requested-With',v12]|26058: write-property[v7,'headers',v11]}" ] 
+BB8734 -> BB8735 [tailport=s, headport=n, headlabel="      8735"]
+BB8734 -> BB8739 [tailport=s, headport=n, color=gray, headlabel="      8739"]
+BB8735 [shape=record label="{26059: call-request [v4,v5,v6,v7,v3]}" ] 
+BB8735 -> BB8736 [tailport=s, headport=n, headlabel="      8736"]
+BB8735 -> BB8739 [tailport=s, headport=n, color=gray]
+BB8736 [shape=record label="{26060: read-property[v3,'then',-]|26061: read-variable['load',v13,-]}" ] 
+BB8736 -> BB8737 [tailport=s, headport=n, headlabel="      8737"]
+BB8736 -> BB8739 [tailport=s, headport=n, color=gray]
+BB8737 [shape=record label="{26062: call-null [v3,'then',v13,-]*}" ] 
+BB8737 -> BB8738 [tailport=s, headport=n, headlabel="      8738"]
+BB8737 -> BB8739 [tailport=s, headport=n, color=gray]
+BB8738 [shape=record label="{26063: return[v1]}" ] 
+BB8739 [shape=record label="{26064: exceptional-return}" ] 
+//#$~ 12180
+}

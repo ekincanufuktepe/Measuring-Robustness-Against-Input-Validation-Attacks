@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2217[shape=none,label=""];
+BB_entry2217 -> BB25169 [tailport=s, headport=n, headlabel="    25169"]
+BB25169 [shape=record label="{82891: constant[undefined,v1]|82892: vardecl['testEl']}" ] 
+BB25169 -> BB25170 [tailport=s, headport=n, headlabel="      25170"]
+BB25170 [shape=record label="{82893: read-variable['document',v4,-]|82894: read-property[v4,'createElement',-]|82895: \<variable-non-null-undef\>['document']|82896: constant[\"div\",v5]}" ] 
+BB25170 -> BB25171 [tailport=s, headport=n, headlabel="      25171"]
+BB25170 -> BB25174 [tailport=s, headport=n, color=gray, headlabel="      25174"]
+BB25171 [shape=record label="{82897: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB25171 -> BB25172 [tailport=s, headport=n, headlabel="      25172"]
+BB25171 -> BB25174 [tailport=s, headport=n, color=gray]
+BB25172 [shape=record label="{82898: write-variable[v2,'testEl']*|82899: read-variable['testEl',v7,-]|82900: constant[\"\\\<div\\\>\\\</div\\\>\",v6]|82901: write-property[v7,'innerHTML',v6]|82902: \<variable-non-null-undef\>['testEl']*|82903: read-variable['testEl',v10,-]|82904: read-property[v10,'firstChild',v9]|82905: \<variable-non-null-undef\>['testEl']|82906: constant[\"\\\<script\\\>\\\</script\\\>\",v8]|82907: write-property[v9,'innerHTML',v8]|82908: \<property-non-null-undef\>[v10,'firstChild']*|82909: read-variable['testEl',v14,-]|82910: read-property[v14,'firstChild',v13]|82911: \<variable-non-null-undef\>['testEl']|82912: read-property[v13,'innerHTML',v11]|82913: \<property-non-null-undef\>[v14,'firstChild']|82914: constant[\"\",v12]|82915: ===[v11,v12,v1]}" ] 
+BB25172 -> BB25173 [tailport=s, headport=n, headlabel="      25173"]
+BB25172 -> BB25174 [tailport=s, headport=n, color=gray]
+BB25173 [shape=record label="{82916: return[v1]}" ] 
+BB25174 [shape=record label="{82917: exceptional-return}" ] 
+//#$~ 46763
+}

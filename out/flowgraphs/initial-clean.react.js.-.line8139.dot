@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry288[shape=none,label=""];
+BB_entry288 -> BB4269 [tailport=s, headport=n, headlabel="    4269"]
+BB4269 [shape=record label="{14997: constant[undefined,v1]|14998: vardecl['node']}" ] 
+BB4269 -> BB4270 [tailport=s, headport=n, headlabel="      4270"]
+BB4270 [shape=record label="{14999: read-variable['ReactMount',v4,-]|15000: read-property[v4,'getNode',-]|15001: \<variable-non-null-undef\>['ReactMount']|15002: read-variable['id',v5,-]}" ] 
+BB4270 -> BB4271 [tailport=s, headport=n, headlabel="      4271"]
+BB4270 -> BB4275 [tailport=s, headport=n, color=gray, headlabel="      4275"]
+BB4271 [shape=record label="{15003: call-ReactMount.getNode [v4,'getNode',v5,v2]}" ] 
+BB4271 -> BB4272 [tailport=s, headport=n, headlabel="      4272"]
+BB4271 -> BB4275 [tailport=s, headport=n, color=gray]
+BB4272 [shape=record label="{15004: write-variable[v2,'node']*|15005: read-variable['DOMChildrenOperations',v7,-]|15006: read-property[v7,'dangerouslyReplaceNodeWithMarkup',-]|15007: \<variable-non-null-undef\>['DOMChildrenOperations']|15008: read-variable['node',v8,-]|15009: read-variable['markup',v9,-]}" ] 
+BB4272 -> BB4273 [tailport=s, headport=n, headlabel="      4273"]
+BB4272 -> BB4275 [tailport=s, headport=n, color=gray]
+BB4273 [shape=record label="{15010: call-DOMChildrenOperations.dangerouslyReplaceNodeWithMarkup [v7,'dangerouslyReplaceNodeWithMarkup',v8,v9,-]*}" ] 
+BB4273 -> BB4274 [tailport=s, headport=n, headlabel="      4274"]
+BB4273 -> BB4275 [tailport=s, headport=n, color=gray]
+BB4274 [shape=record label="{15011: return[v1]}" ] 
+BB4275 [shape=record label="{15012: exceptional-return}" ] 
+//#$~ 8141
+}

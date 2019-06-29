@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry457[shape=none,label=""];
+BB_entry457 -> BB6498 [tailport=s, headport=n, headlabel="    6498"]
+BB6498 [shape=record label="{19381: constant[undefined,v1]}" ] 
+BB6498 -> BB6499 [tailport=s, headport=n, headlabel="      6499"]
+BB6499 [shape=record label="{19382: read-variable['caseSensitive',v2,-]|19383: if[v2](true-block:6500,false-block:6501)}" ] 
+BB6499 -> BB6500 [tailport=s, headport=n, headlabel="      6500"]
+BB6499 -> BB6501 [tailport=s, headport=n, headlabel="      6501"]
+BB6499 -> BB6505 [tailport=s, headport=n, color=gray, headlabel="      6505"]
+BB6500 [shape=record label="{19384: read-variable['elem',v4,-]|19385: read-property[v4,'getAttribute',-]|19386: \<variable-non-null-undef\>['elem']|19387: read-variable['cond',v5,-]}" ] 
+BB6500 -> BB6502 [tailport=s, headport=n, headlabel="      6502"]
+BB6500 -> BB6505 [tailport=s, headport=n, color=gray]
+BB6501 [shape=record label="{19388: read-variable['elem',v3,-]|19389: read-variable['cond',v4,-]|19390: read-property[v3,v4,v1]|19391: \<variable-non-null-undef\>['elem']|19392: if[v1](true-block:6504,false-block:6503)}" ] 
+BB6501 -> BB6504 [tailport=s, headport=n, headlabel="      6504"]
+BB6501 -> BB6503 [tailport=s, headport=n, headlabel="      6503"]
+BB6501 -> BB6505 [tailport=s, headport=n, color=gray]
+BB6502 [shape=record label="{19393: call-elem.getAttribute [v4,'getAttribute',v5,v1]}" ] 
+BB6502 -> BB6504 [tailport=s, headport=n]
+BB6502 -> BB6505 [tailport=s, headport=n, color=gray]
+BB6503 [shape=record label="{19394: read-variable['elem',v3,-]|19395: read-variable['clc',v4,-]|19396: read-property[v3,v4,v1]|19397: \<variable-non-null-undef\>['elem']}" ] 
+BB6503 -> BB6504 [tailport=s, headport=n]
+BB6503 -> BB6505 [tailport=s, headport=n, color=gray]
+BB6504 [shape=record label="{19398: return[v1]}" ] 
+BB6505 [shape=record label="{19399: exceptional-return}" ] 
+//#$~ 9213
+}

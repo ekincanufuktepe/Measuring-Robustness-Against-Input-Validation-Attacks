@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry333[shape=none,label=""];
+BB_entry333 -> BB4575 [tailport=s, headport=n, headlabel="    4575"]
+BB4575 [shape=record label="{13650: constant[undefined,v1]|13651: vardecl['oldCallbacks']}" ] 
+BB4575 -> BB4576 [tailport=s, headport=n, headlabel="      4576"]
+BB4576 [shape=record label="{13652: read-variable['dojoRequireCallbacks',v2,-]|13653: write-variable[v2,'oldCallbacks']*|13654: read-variable['Array',v4,-]}" ] 
+BB4576 -> BB4577 [tailport=s, headport=n, headlabel="      4577"]
+BB4576 -> BB4581 [tailport=s, headport=n, color=gray, headlabel="      4581"]
+BB4577 [shape=record label="{13655: construct [-,v4,v3]}" ] 
+BB4577 -> BB4578 [tailport=s, headport=n, headlabel="      4578"]
+BB4577 -> BB4581 [tailport=s, headport=n, color=gray]
+BB4578 [shape=record label="{13656: write-variable[v3,'dojoRequireCallbacks']*|13657: read-variable['array',v6,-]|13658: read-property[v6,'forEach',-]|13659: \<variable-non-null-undef\>['array']|13660: read-variable['oldCallbacks',v7,-]|13661: function-expr[function ( cb ),v8]}" ] 
+BB4578 -> BB4579 [tailport=s, headport=n, headlabel="      4579"]
+BB4578 -> BB4581 [tailport=s, headport=n, color=gray]
+BB4579 [shape=record label="{13662: call-array.forEach [v6,'forEach',v7,v8,-]*}" ] 
+BB4579 -> BB4580 [tailport=s, headport=n, headlabel="      4580"]
+BB4579 -> BB4581 [tailport=s, headport=n, color=gray]
+BB4580 [shape=record label="{13663: return[v1]}" ] 
+BB4581 [shape=record label="{13664: exceptional-return}" ] 
+//#$~ 6309
+}

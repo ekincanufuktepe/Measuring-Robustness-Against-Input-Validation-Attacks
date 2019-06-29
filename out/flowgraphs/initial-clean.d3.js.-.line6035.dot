@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry945[shape=none,label=""];
+BB_entry945 -> BB10235 [tailport=s, headport=n, headlabel="    10235"]
+BB10235 [shape=record label="{34024: constant[undefined,v1]|34025: vardecl['i']|34026: vardecl['o']}" ] 
+BB10235 -> BB10236 [tailport=s, headport=n, headlabel="      10236"]
+BB10236 [shape=record label="{34027: constant[-1.0,v2]|34028: write-variable[v2,'i']*}" ] 
+BB10236 -> BB10237 [tailport=s, headport=n, headlabel="      10237"]
+BB10237 [shape=record label="{34029: constant[1.0,v6]|34030: read-variable['i',v7,-]|34031: +[v7,v8]|34032: +[v8,v6,v4]|34033: write-variable[v4,'i']|34034: read-variable['n',v5,-]|34035: \<[v4,v5,v3]|34036: if[v3](true-block:10238,false-block:10239)}" ] 
+BB10237 -> BB10238 [tailport=s, headport=n, headlabel="      10238"]
+BB10237 -> BB10239 [tailport=s, headport=n, headlabel="      10239"]
+BB10237 -> BB10244 [tailport=s, headport=n, color=gray, headlabel="      10244"]
+BB10238 [shape=record label="{34037: read-variable['s',v10,-]|34038: read-variable['q',v13,-]|34039: read-variable['i',v14,-]|34040: read-property[v13,v14,v12]|34041: \<variable-non-null-undef\>['q']|34042: write-variable[v12,'o']|34043: read-property[v12,'i',v11]|34044: \<property-non-null-undef\>[v13,v14]|34045: read-variable['o',v16,-]|34046: read-property[v16,'x',-]|34047: \<variable-non-null-undef\>['o']|34048: read-variable['t',v17,-]}" ] 
+BB10238 -> BB10240 [tailport=s, headport=n, headlabel="      10240"]
+BB10238 -> BB10244 [tailport=s, headport=n, color=gray]
+BB10239 [shape=record label="{34049: read-variable['s',v10,-]|34050: read-property[v10,'join',-]|34051: \<variable-non-null-undef\>['s']|34052: constant[\"\",v11]}" ] 
+BB10239 -> BB10242 [tailport=s, headport=n, headlabel="      10242"]
+BB10239 -> BB10244 [tailport=s, headport=n, color=gray]
+BB10240 [shape=record label="{34053: call-o.x [v16,'x',v17,v9]}" ] 
+BB10240 -> BB10241 [tailport=s, headport=n, headlabel="      10241"]
+BB10240 -> BB10244 [tailport=s, headport=n, color=gray]
+BB10241 [shape=record label="{34054: write-property[v10,v11,v9]|34055: \<variable-non-null-undef\>['s']*}" ] 
+BB10241 -> BB10237 [tailport=s, headport=n]
+BB10241 -> BB10244 [tailport=s, headport=n, color=gray]
+BB10242 [shape=record label="{34056: call-s.join [v10,'join',v11,v1]}" ] 
+BB10242 -> BB10243 [tailport=s, headport=n, headlabel="      10243"]
+BB10242 -> BB10244 [tailport=s, headport=n, color=gray]
+BB10243 [shape=record label="{34057: return[v1]}" ] 
+BB10244 [shape=record label="{34058: exceptional-return}" ] 
+//#$~ 6038
+}

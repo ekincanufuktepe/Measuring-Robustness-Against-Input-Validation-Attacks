@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry245[shape=none,label=""];
+BB_entry245 -> BB2489 [tailport=s, headport=n, headlabel="    2489"]
+BB2489 [shape=record label="{7485: constant[undefined,v1]}" ] 
+BB2489 -> BB2490 [tailport=s, headport=n, headlabel="      2490"]
+BB2490 [shape=record label="{7486: read-variable['rescale',v3,v2]}" ] 
+BB2490 -> BB2491 [tailport=s, headport=n, headlabel="      2491"]
+BB2490 -> BB2497 [tailport=s, headport=n, color=gray, headlabel="      2497"]
+BB2491 [shape=record label="{7487: call-rescale [v2,v3,-]*}" ] 
+BB2491 -> BB2492 [tailport=s, headport=n, headlabel="      2492"]
+BB2491 -> BB2497 [tailport=s, headport=n, color=gray]
+BB2492 [shape=record label="{7488: read-variable['dispatch',v5,v4]|7489: new[v6]|7490: constant[\"zoom\",v7]|7491: write-property[v6,'type',v7]|7492: read-variable['view',v9,-]|7493: read-property[v9,'k',v8]|7494: \<variable-non-null-undef\>['view']|7495: write-property[v6,'scale',v8]|7496: read-variable['Array',v11,-]|7497: read-variable['view',v13,-]|7498: read-property[v13,'x',v12]|7499: \<variable-non-null-undef\>['view']|7500: read-variable['view',v15,-]|7501: read-property[v15,'y',v14]|7502: \<variable-non-null-undef\>['view']}" ] 
+BB2492 -> BB2493 [tailport=s, headport=n, headlabel="      2493"]
+BB2492 -> BB2497 [tailport=s, headport=n, color=gray]
+BB2493 [shape=record label="{7503: construct [-,v11,v12,v14,v10]}" ] 
+BB2493 -> BB2494 [tailport=s, headport=n, headlabel="      2494"]
+BB2493 -> BB2497 [tailport=s, headport=n, color=gray]
+BB2494 [shape=record label="{7504: write-property[v6,'translate',v10]}" ] 
+BB2494 -> BB2495 [tailport=s, headport=n, headlabel="      2495"]
+BB2494 -> BB2497 [tailport=s, headport=n, color=gray]
+BB2495 [shape=record label="{7505: call-dispatch [v4,v5,v6,-]*}" ] 
+BB2495 -> BB2496 [tailport=s, headport=n, headlabel="      2496"]
+BB2495 -> BB2497 [tailport=s, headport=n, color=gray]
+BB2496 [shape=record label="{7506: return[v1]}" ] 
+BB2497 [shape=record label="{7507: exceptional-return}" ] 
+//#$~ 1460
+}

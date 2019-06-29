@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1805[shape=none,label=""];
+BB_entry1805 -> BB20602 [tailport=s, headport=n, headlabel="    20602"]
+BB20602 [shape=record label="{68981: constant[undefined,v1]}" ] 
+BB20602 -> BB20603 [tailport=s, headport=n, headlabel="      20603"]
+BB20603 [shape=record label="{68982: read-variable['this',v3,-]|68983: read-property[v3,'interpretKeyEvents',-]|68984: read-variable['event',v4,-]}" ] 
+BB20603 -> BB20604 [tailport=s, headport=n, headlabel="      20604"]
+BB20603 -> BB20610 [tailport=s, headport=n, color=gray, headlabel="      20610"]
+BB20604 [shape=record label="{68985: call-this.interpretKeyEvents [v3,'interpretKeyEvents',v4,-]*}" ] 
+BB20604 -> BB20605 [tailport=s, headport=n, headlabel="      20605"]
+BB20604 -> BB20610 [tailport=s, headport=n, color=gray]
+BB20605 [shape=record label="{68986: read-variable['this',v6,-]|68987: read-property[v6,'sendAction',-]|68988: constant[\"key-up\",v7]|68989: read-variable['get',v10,v9]|68990: read-variable['this',v11,-]|68991: constant[\"value\",v12]}" ] 
+BB20605 -> BB20606 [tailport=s, headport=n, headlabel="      20606"]
+BB20605 -> BB20610 [tailport=s, headport=n, color=gray]
+BB20606 [shape=record label="{68992: call-get [v9,v10,v11,v12,v8]}" ] 
+BB20606 -> BB20607 [tailport=s, headport=n, headlabel="      20607"]
+BB20606 -> BB20610 [tailport=s, headport=n, color=gray]
+BB20607 [shape=record label="{68993: read-variable['event',v13,-]}" ] 
+BB20607 -> BB20608 [tailport=s, headport=n, headlabel="      20608"]
+BB20607 -> BB20610 [tailport=s, headport=n, color=gray]
+BB20608 [shape=record label="{68994: call-this.sendAction [v6,'sendAction',v7,v8,v13,-]*}" ] 
+BB20608 -> BB20609 [tailport=s, headport=n, headlabel="      20609"]
+BB20608 -> BB20610 [tailport=s, headport=n, color=gray]
+BB20609 [shape=record label="{68995: return[v1]}" ] 
+BB20610 [shape=record label="{68996: exceptional-return}" ] 
+//#$~ 38839
+}

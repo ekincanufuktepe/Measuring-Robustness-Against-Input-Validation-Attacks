@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry835[shape=none,label=""];
+BB_entry835 -> BB9804 [tailport=s, headport=n, headlabel="    9804"]
+BB9804 [shape=record label="{33581: constant[undefined,v1]|33582: vardecl['stream']}" ] 
+BB9804 -> BB9805 [tailport=s, headport=n, headlabel="      9805"]
+BB9805 [shape=record label="{33583: read-variable['this',v2,-]|33584: write-variable[v2,'stream']*}" ] 
+BB9805 -> BB9806 [tailport=s, headport=n, headlabel="      9806"]
+BB9805 -> BB9811 [tailport=s, headport=n, color=gray, headlabel="      9811"]
+BB9806 [shape=record label="{33585: read-variable['stream',v4,-]|33586: read-variable['undefined',v5,-]|33587: !==[v4,v5,v3]|33588: if[v3](true-block:9807,false-block:9810)}" ] 
+BB9806 -> BB9807 [tailport=s, headport=n, headlabel="      9807"]
+BB9806 -> BB9810 [tailport=s, headport=n, headlabel="      9810"]
+BB9806 -> BB9811 [tailport=s, headport=n, color=gray]
+BB9807 [shape=record label="{33589: read-variable['stream',v7,-]|33590: read-property[v7,'_isRoot',v6]|33591: \<variable-non-null-undef\>['stream']|33592: if[v6](true-block:9808,false-block:9809)}" ] 
+BB9807 -> BB9808 [tailport=s, headport=n, headlabel="      9808"]
+BB9807 -> BB9809 [tailport=s, headport=n, headlabel="      9809"]
+BB9807 -> BB9811 [tailport=s, headport=n, color=gray]
+BB9808 [shape=record label="{33593: read-variable['stream',v8,-]|33594: read-property[v8,'_isGlobal',v1]|33595: \<variable-non-null-undef\>['stream']}" ] 
+BB9808 -> BB9810 [tailport=s, headport=n]
+BB9808 -> BB9811 [tailport=s, headport=n, color=gray]
+BB9809 [shape=record label="{33596: read-variable['stream',v9,-]|33597: read-property[v9,'source',v8]|33598: \<variable-non-null-undef\>['stream']|33599: write-variable[v8,'stream']*}" ] 
+BB9809 -> BB9806 [tailport=s, headport=n]
+BB9809 -> BB9811 [tailport=s, headport=n, color=gray]
+BB9810 [shape=record label="{33600: return[v1]}" ] 
+BB9811 [shape=record label="{33601: exceptional-return}" ] 
+//#$~ 17552
+}

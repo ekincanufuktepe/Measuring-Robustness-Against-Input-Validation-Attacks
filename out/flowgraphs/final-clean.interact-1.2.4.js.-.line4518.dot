@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry144[shape=none,label=""];
+BB_entry144 -> BB3454 [tailport=s, headport=n, headlabel="    3454"]
+BB3454 [shape=record label="{14259: constant[undefined,v1]|14260: vardecl['action']}" ] 
+BB3454 -> BB3455 [tailport=s, headport=n, headlabel="      3455"]
+BB3455 [shape=record label="{14261: read-variable['this',v4,-]|14262: read-property[v4,'defaultActionChecker',-]|14263: read-variable['pointer',v5,-]|14264: read-variable['interaction',v6,-]|14265: read-variable['element',v7,-]}" ] 
+BB3455 -> BB3456 [tailport=s, headport=n, headlabel="      3456"]
+BB3455 -> BB3462 [tailport=s, headport=n, color=gray, headlabel="      3462"]
+BB3456 [shape=record label="{14266: call-this.defaultActionChecker [v4,'defaultActionChecker',v5,v6,v7,v2]}" ] 
+BB3456 -> BB3457 [tailport=s, headport=n, headlabel="      3457"]
+BB3456 -> BB3462 [tailport=s, headport=n, color=gray]
+BB3457 [shape=record label="{14267: write-variable[v2,'action']*|14268: read-variable['this',v10,-]|14269: read-property[v10,'options',v9]|14270: read-property[v9,'actionChecker',v8]|14271: \<property-non-null-undef\>[v10,'options']|14272: if[v8](true-block:3458,false-block:3460)}" ] 
+BB3457 -> BB3458 [tailport=s, headport=n, headlabel="      3458"]
+BB3457 -> BB3460 [tailport=s, headport=n, headlabel="      3460"]
+BB3457 -> BB3462 [tailport=s, headport=n, color=gray]
+BB3458 [shape=record label="{14273: read-variable['this',v13,-]|14274: read-property[v13,'options',v12]|14275: read-property[v12,'actionChecker',-]|14276: \<property-non-null-undef\>[v13,'options']|14277: read-variable['pointer',v14,-]|14278: read-variable['action',v15,-]|14279: read-variable['this',v16,-]|14280: read-variable['element',v17,-]|14281: read-variable['interaction',v18,-]}" ] 
+BB3458 -> BB3459 [tailport=s, headport=n, headlabel="      3459"]
+BB3458 -> BB3462 [tailport=s, headport=n, color=gray]
+BB3459 [shape=record label="{14282: call-this.options.actionChecker [v12,'actionChecker',v14,v15,v16,v17,v18,v1]}" ] 
+BB3459 -> BB3461 [tailport=s, headport=n, headlabel="      3461"]
+BB3459 -> BB3462 [tailport=s, headport=n, color=gray]
+BB3460 [shape=record label="{14283: read-variable['action',v1,-]}" ] 
+BB3460 -> BB3461 [tailport=s, headport=n]
+BB3460 -> BB3462 [tailport=s, headport=n, color=gray]
+BB3461 [shape=record label="{14284: return[v1]}" ] 
+BB3462 [shape=record label="{14285: exceptional-return}" ] 
+//#$~ 4525
+}

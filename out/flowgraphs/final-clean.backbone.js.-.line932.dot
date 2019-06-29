@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry74[shape=none,label=""];
+BB_entry74 -> BB1062 [tailport=s, headport=n, headlabel="    1062"]
+BB1062 [shape=record label="{3078: constant[undefined,v1]}" ] 
+BB1062 -> BB1063 [tailport=s, headport=n, headlabel="      1063"]
+BB1063 [shape=record label="{3079: read-variable['this',v3,-]|3080: read-variable['model',v5,-]|3081: read-property[v5,'collection',v4]|3082: \<variable-non-null-undef\>['model']|3083: ===[v3,v4,v2]|3084: if[v2](true-block:1064,false-block:1065)}" ] 
+BB1063 -> BB1064 [tailport=s, headport=n, headlabel="      1064"]
+BB1063 -> BB1065 [tailport=s, headport=n, headlabel="      1065"]
+BB1063 -> BB1068 [tailport=s, headport=n, color=gray, headlabel="      1068"]
+BB1064 [shape=record label="{3085: read-variable['model',v7,-]|3086: constant[\"collection\",v8]|3087: delete-property[v7,v8,v6]*}" ] 
+BB1064 -> BB1065 [tailport=s, headport=n]
+BB1064 -> BB1068 [tailport=s, headport=n, color=gray]
+BB1065 [shape=record label="{3088: read-variable['model',v7,-]|3089: read-property[v7,'off',-]|3090: \<variable-non-null-undef\>['model']|3091: constant[\"all\",v8]|3092: read-variable['this',v10,-]|3093: read-property[v10,'_onModelEvent',v9]|3094: read-variable['this',v11,-]}" ] 
+BB1065 -> BB1066 [tailport=s, headport=n, headlabel="      1066"]
+BB1065 -> BB1068 [tailport=s, headport=n, color=gray]
+BB1066 [shape=record label="{3095: call-model.off [v7,'off',v8,v9,v11,-]*}" ] 
+BB1066 -> BB1067 [tailport=s, headport=n, headlabel="      1067"]
+BB1066 -> BB1068 [tailport=s, headport=n, color=gray]
+BB1067 [shape=record label="{3096: return[v1]}" ] 
+BB1068 [shape=record label="{3097: exceptional-return}" ] 
+//#$~ 934
+}

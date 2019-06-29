@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2053[shape=none,label=""];
+BB_entry2053 -> BB23467 [tailport=s, headport=n, headlabel="    23467"]
+BB23467 [shape=record label="{77910: constant[undefined,v1]}" ] 
+BB23467 -> BB23468 [tailport=s, headport=n, headlabel="      23468"]
+BB23468 [shape=record label="{77911: read-variable['arguments',v5,-]|77912: read-property[v5,'length',v3]|77913: \<variable-non-null-undef\>['arguments']|77914: constant[2.0,v4]|77915: ===[v3,v4,v2]|77916: if[v2](true-block:23469,false-block:23470)}" ] 
+BB23468 -> BB23469 [tailport=s, headport=n, headlabel="      23469"]
+BB23468 -> BB23470 [tailport=s, headport=n, headlabel="      23470"]
+BB23468 -> BB23475 [tailport=s, headport=n, color=gray, headlabel="      23475"]
+BB23469 [shape=record label="{77917: read-variable['set',v7,v6]|77918: read-variable['this',v8,-]|77919: constant[\"_context\",v9]|77920: read-variable['value',v10,-]}" ] 
+BB23469 -> BB23471 [tailport=s, headport=n, headlabel="      23471"]
+BB23469 -> BB23475 [tailport=s, headport=n, color=gray]
+BB23470 [shape=record label="{77921: read-variable['get',v7,v6]|77922: read-variable['this',v8,-]|77923: constant[\"_context\",v9]}" ] 
+BB23470 -> BB23473 [tailport=s, headport=n, headlabel="      23473"]
+BB23470 -> BB23475 [tailport=s, headport=n, color=gray]
+BB23471 [shape=record label="{77924: call-set [v6,v7,v8,v9,v10,-]*}" ] 
+BB23471 -> BB23472 [tailport=s, headport=n, headlabel="      23472"]
+BB23471 -> BB23475 [tailport=s, headport=n, color=gray]
+BB23472 [shape=record label="{77925: read-variable['value',v1,-]}" ] 
+BB23472 -> BB23474 [tailport=s, headport=n, headlabel="      23474"]
+BB23472 -> BB23475 [tailport=s, headport=n, color=gray]
+BB23473 [shape=record label="{77926: call-get [v6,v7,v8,v9,v1]}" ] 
+BB23473 -> BB23474 [tailport=s, headport=n]
+BB23473 -> BB23475 [tailport=s, headport=n, color=gray]
+BB23474 [shape=record label="{77927: return[v1]}" ] 
+BB23475 [shape=record label="{77928: exceptional-return}" ] 
+//#$~ 44470
+}

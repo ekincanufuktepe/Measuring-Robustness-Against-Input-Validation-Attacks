@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry19[shape=none,label=""];
+BB_entry19 -> BB810 [tailport=s, headport=n, headlabel="    810"]
+BB810 [shape=record label="{3110: constant[undefined,v1]}" ] 
+BB810 -> BB811 [tailport=s, headport=n, headlabel="      811"]
+BB811 [shape=record label="{3111: read-variable['String',v3,-]|3112: read-variable['value',v4,-]}" ] 
+BB811 -> BB812 [tailport=s, headport=n, headlabel="      812"]
+BB811 -> BB815 [tailport=s, headport=n, color=gray, headlabel="      815"]
+BB812 [shape=record label="{3113: construct [-,v3,v4,v2]}" ] 
+BB812 -> BB813 [tailport=s, headport=n, headlabel="      813"]
+BB812 -> BB815 [tailport=s, headport=n, color=gray]
+BB813 [shape=record label="{3114: write-variable[v2,'value']*|3115: read-variable['value',v6,-]|3116: constant[true,v5]|3117: write-property[v6,'$trusted',v5]|3118: \<variable-non-null-undef\>['value']*|3119: read-variable['value',v1,-]}" ] 
+BB813 -> BB814 [tailport=s, headport=n, headlabel="      814"]
+BB813 -> BB815 [tailport=s, headport=n, color=gray]
+BB814 [shape=record label="{3120: return[v1]}" ] 
+BB815 [shape=record label="{3121: exceptional-return}" ] 
+//#$~ 525
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry1770[shape=none,label=""];
+BB_entry1770 -> BB20321 [tailport=s, headport=n, headlabel="    20321"]
+BB20321 [shape=record label="{67808: constant[undefined,v1]|67809: vardecl['name']}" ] 
+BB20321 -> BB20322 [tailport=s, headport=n, headlabel="      20322"]
+BB20322 [shape=record label="{67810: read-variable['helpers',v3,-]}" ] 
+BB20322 -> BB20323 [tailport=s, headport=n, headlabel="      20323"]
+BB20322 -> BB20328 [tailport=s, headport=n, color=gray, headlabel="      20328"]
+BB20323 [shape=record label="{67811: begin-for-in[v3,v4]}" ] 
+BB20323 -> BB20324 [tailport=s, headport=n, headlabel="      20324"]
+BB20323 -> BB20328 [tailport=s, headport=n, color=gray]
+BB20324 [shape=record label="{67812: has-next[v4,v5]|67813: if[v5](true-block:20325,false-block:20327)}" ] 
+BB20324 -> BB20325 [tailport=s, headport=n, headlabel="      20325"]
+BB20324 -> BB20327 [tailport=s, headport=n, headlabel="      20327"]
+BB20325 [shape=record label="{67814: next-property[v4,v6]|67815: write-variable[v6,'name']|67816: read-variable['this',v10,-]|67817: read-property[v10,'helperContainer',v8]|67818: read-variable['name',v9,-]|67819: read-variable['this',v12,-]|67820: read-property[v12,'originalMethods',v11]|67821: read-variable['name',v13,-]|67822: read-property[v11,v13,v7]|67823: \<property-non-null-undef\>[v12,'originalMethods']|67824: write-property[v8,v9,v7]|67825: \<property-non-null-undef\>[v10,'helperContainer']*|67826: read-variable['this',v17,-]|67827: read-property[v17,'testHelpers',v15]|67828: read-variable['name',v16,-]|67829: delete-property[v15,v16,v14]*|67830: read-variable['this',v21,-]|67831: read-property[v21,'originalMethods',v19]|67832: read-variable['name',v20,-]|67833: delete-property[v19,v20,v18]*}" ] 
+BB20325 -> BB20326 [tailport=s, headport=n, headlabel="      20326"]
+BB20325 -> BB20328 [tailport=s, headport=n, color=gray]
+BB20326 [shape=record label="{67834: end-for-in(begin-node:67811)}" ] 
+BB20326 -> BB20324 [tailport=s, headport=n]
+BB20327 [shape=record label="{67835: return[v1]}" ] 
+BB20328 [shape=record label="{67836: exceptional-return}" ] 
+//#$~ 38168
+}

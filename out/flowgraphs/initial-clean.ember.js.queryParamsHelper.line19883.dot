@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry913[shape=none,label=""];
+BB_entry913 -> BB10946 [tailport=s, headport=n, headlabel="    10946"]
+BB10946 [shape=record label="{37579: constant[undefined,v1]}" ] 
+BB10946 -> BB10947 [tailport=s, headport=n, headlabel="      10947"]
+BB10947 [shape=record label="{37580: read-variable['Ember',v3,-]|37581: read-property[v3,'assert',-]|37582: \<variable-non-null-undef\>['Ember']|37583: constant[\"The `query-params` helper only accepts hash parameters, e.g. (query-params queryParamPropertyName='foo') as opposed to just (query-params 'foo')\",v4]|37584: read-variable['params',v8,-]|37585: read-property[v8,'length',v6]|37586: \<variable-non-null-undef\>['params']|37587: constant[0.0,v7]|37588: ===[v6,v7,v5]}" ] 
+BB10947 -> BB10948 [tailport=s, headport=n, headlabel="      10948"]
+BB10947 -> BB10952 [tailport=s, headport=n, color=gray, headlabel="      10952"]
+BB10948 [shape=record label="{37589: call-Ember.assert [v3,'assert',v4,v5,-]*}" ] 
+BB10948 -> BB10949 [tailport=s, headport=n, headlabel="      10949"]
+BB10948 -> BB10952 [tailport=s, headport=n, color=gray]
+BB10949 [shape=record label="{37590: read-variable['QueryParams',v10,-]|37591: read-property[v10,'create',-]|37592: \<variable-non-null-undef\>['QueryParams']|37593: new[v11]|37594: read-variable['hash',v12,-]|37595: write-property[v11,'values',v12]}" ] 
+BB10949 -> BB10950 [tailport=s, headport=n, headlabel="      10950"]
+BB10949 -> BB10952 [tailport=s, headport=n, color=gray]
+BB10950 [shape=record label="{37596: call-QueryParams.create [v10,'create',v11,v1]}" ] 
+BB10950 -> BB10951 [tailport=s, headport=n, headlabel="      10951"]
+BB10950 -> BB10952 [tailport=s, headport=n, color=gray]
+BB10951 [shape=record label="{37597: return[v1]}" ] 
+BB10952 [shape=record label="{37598: exceptional-return}" ] 
+//#$~ 19887
+}

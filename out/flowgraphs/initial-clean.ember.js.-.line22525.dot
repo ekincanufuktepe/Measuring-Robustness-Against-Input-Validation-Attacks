@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1017[shape=none,label=""];
+BB_entry1017 -> BB12285 [tailport=s, headport=n, headlabel="    12285"]
+BB12285 [shape=record label="{41932: constant[undefined,v1]|41933: vardecl['dslMatches']}" ] 
+BB12285 -> BB12286 [tailport=s, headport=n, headlabel="      12286"]
+BB12286 [shape=record label="{41934: read-variable['this',v3,-]|41935: read-property[v3,'matches',v2]|41936: write-variable[v2,'dslMatches']*|41937: read-variable['this',v6,-]|41938: read-property[v6,'explicitIndex',v5]|41939: ![v5,v4]|41940: if[v4](true-block:12287,false-block:12289)}" ] 
+BB12286 -> BB12287 [tailport=s, headport=n, headlabel="      12287"]
+BB12286 -> BB12289 [tailport=s, headport=n, headlabel="      12289"]
+BB12286 -> BB12291 [tailport=s, headport=n, color=gray, headlabel="      12291"]
+BB12287 [shape=record label="{41941: read-variable['this',v8,-]|41942: read-property[v8,'route',-]|41943: constant[\"index\",v9]|41944: new[v10]|41945: constant[\"/\",v11]|41946: write-property[v10,'path',v11]}" ] 
+BB12287 -> BB12288 [tailport=s, headport=n, headlabel="      12288"]
+BB12287 -> BB12291 [tailport=s, headport=n, color=gray]
+BB12288 [shape=record label="{41947: call-this.route [v8,'route',v9,v10,-]*}" ] 
+BB12288 -> BB12289 [tailport=s, headport=n]
+BB12288 -> BB12291 [tailport=s, headport=n, color=gray]
+BB12289 [shape=record label="{41948: function-expr[function ( match ),v1]}" ] 
+BB12289 -> BB12290 [tailport=s, headport=n, headlabel="      12290"]
+BB12290 [shape=record label="{41949: return[v1]}" ] 
+BB12291 [shape=record label="{41950: exceptional-return}" ] 
+//#$~ 22533
+}

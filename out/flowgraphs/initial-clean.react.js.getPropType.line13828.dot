@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry561[shape=none,label=""];
+BB_entry561 -> BB7867 [tailport=s, headport=n, headlabel="    7867"]
+BB7867 [shape=record label="{26413: constant[undefined,v1]|26414: vardecl['propType']}" ] 
+BB7867 -> BB7868 [tailport=s, headport=n, headlabel="      7868"]
+BB7868 [shape=record label="{26415: typeof['propValue',v2]|26416: write-variable[v2,'propType']*|26417: read-variable['Array',v5,-]|26418: read-property[v5,'isArray',-]|26419: \<variable-non-null-undef\>['Array']|26420: read-variable['propValue',v6,-]}" ] 
+BB7868 -> BB7869 [tailport=s, headport=n, headlabel="      7869"]
+BB7868 -> BB7876 [tailport=s, headport=n, color=gray, headlabel="      7876"]
+BB7869 [shape=record label="{26421: call-Array.isArray [v5,'isArray',v6,v3]}" ] 
+BB7869 -> BB7870 [tailport=s, headport=n, headlabel="      7870"]
+BB7869 -> BB7876 [tailport=s, headport=n, color=gray]
+BB7870 [shape=record label="{26422: if[v3](true-block:7871,false-block:7872)}" ] 
+BB7870 -> BB7871 [tailport=s, headport=n, headlabel="      7871"]
+BB7870 -> BB7872 [tailport=s, headport=n, headlabel="      7872"]
+BB7871 [shape=record label="{26423: constant[\"array\",v1]}" ] 
+BB7871 -> BB7875 [tailport=s, headport=n, headlabel="      7875"]
+BB7872 [shape=record label="{26424: read-variable['propValue',v8,-]|26425: read-variable['RegExp',v9,-]|26426: instanceof[v8,v9,v7]|26427: if[v7](true-block:7873,false-block:7874)}" ] 
+BB7872 -> BB7873 [tailport=s, headport=n, headlabel="      7873"]
+BB7872 -> BB7874 [tailport=s, headport=n, headlabel="      7874"]
+BB7872 -> BB7876 [tailport=s, headport=n, color=gray]
+BB7873 [shape=record label="{26428: constant[\"object\",v1]}" ] 
+BB7873 -> BB7875 [tailport=s, headport=n]
+BB7874 [shape=record label="{26429: read-variable['propType',v1,-]}" ] 
+BB7874 -> BB7875 [tailport=s, headport=n]
+BB7874 -> BB7876 [tailport=s, headport=n, color=gray]
+BB7875 [shape=record label="{26430: return[v1]}" ] 
+BB7876 [shape=record label="{26431: exceptional-return}" ] 
+//#$~ 13839
+}

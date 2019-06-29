@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry61[shape=none,label=""];
+BB_entry61 -> BB696 [tailport=s, headport=n, headlabel="    696"]
+BB696 [shape=record label="{2322: constant[undefined,v1]|2323: vardecl['actions']}" ] 
+BB696 -> BB697 [tailport=s, headport=n, headlabel="      697"]
+BB697 [shape=record label="{2324: read-variable['Array',v3,-]}" ] 
+BB697 -> BB698 [tailport=s, headport=n, headlabel="      698"]
+BB697 -> BB705 [tailport=s, headport=n, color=gray, headlabel="      705"]
+BB698 [shape=record label="{2325: construct [-,v3,v2]}" ] 
+BB698 -> BB699 [tailport=s, headport=n, headlabel="      699"]
+BB698 -> BB705 [tailport=s, headport=n, color=gray]
+BB699 [shape=record label="{2326: write-variable[v2,'actions']*|2327: read-variable['each',v5,v4]|2328: read-variable['this',v8,-]|2329: read-property[v8,'manager',v7]|2330: read-property[v7,'recognizers',v6]|2331: \<property-non-null-undef\>[v8,'manager']|2332: function-expr[function ( recognizer ),v9]}" ] 
+BB699 -> BB700 [tailport=s, headport=n, headlabel="      700"]
+BB699 -> BB705 [tailport=s, headport=n, color=gray]
+BB700 [shape=record label="{2333: call-each [v4,v5,v6,v9,-]*}" ] 
+BB700 -> BB701 [tailport=s, headport=n, headlabel="      701"]
+BB700 -> BB705 [tailport=s, headport=n, color=gray]
+BB701 [shape=record label="{2334: read-variable['cleanTouchActions',v11,v10]|2335: read-variable['actions',v14,-]|2336: read-property[v14,'join',-]|2337: \<variable-non-null-undef\>['actions']|2338: constant[\" \",v15]}" ] 
+BB701 -> BB702 [tailport=s, headport=n, headlabel="      702"]
+BB701 -> BB705 [tailport=s, headport=n, color=gray]
+BB702 [shape=record label="{2339: call-actions.join [v14,'join',v15,v12]}" ] 
+BB702 -> BB703 [tailport=s, headport=n, headlabel="      703"]
+BB702 -> BB705 [tailport=s, headport=n, color=gray]
+BB703 [shape=record label="{2340: call-cleanTouchActions [v10,v11,v12,v1]}" ] 
+BB703 -> BB704 [tailport=s, headport=n, headlabel="      704"]
+BB703 -> BB705 [tailport=s, headport=n, color=gray]
+BB704 [shape=record label="{2341: return[v1]}" ] 
+BB705 [shape=record label="{2342: exceptional-return}" ] 
+//#$~ 1142
+}

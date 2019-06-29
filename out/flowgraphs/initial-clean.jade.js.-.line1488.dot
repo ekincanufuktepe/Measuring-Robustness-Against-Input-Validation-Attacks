@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry78[shape=none,label=""];
+BB_entry78 -> BB1339 [tailport=s, headport=n, headlabel="    1339"]
+BB1339 [shape=record label="{4369: constant[undefined,v1]|4370: vardecl['match']}" ] 
+BB1339 -> BB1340 [tailport=s, headport=n, headlabel="      1340"]
+BB1340 [shape=record label="{4371: read-variable['this',v4,-]|4372: read-property[v4,'scan',-]|4373: read-variable['RegExp',v6,-]|4374: constant[\"^\\\\.\",v7]}" ] 
+BB1340 -> BB1341 [tailport=s, headport=n, headlabel="      1341"]
+BB1340 -> BB1347 [tailport=s, headport=n, color=gray, headlabel="      1347"]
+BB1341 [shape=record label="{4375: construct [-,v6,v7,v5]}" ] 
+BB1341 -> BB1342 [tailport=s, headport=n, headlabel="      1342"]
+BB1341 -> BB1347 [tailport=s, headport=n, color=gray]
+BB1342 [shape=record label="{4376: constant[\"dot\",v8]}" ] 
+BB1342 -> BB1343 [tailport=s, headport=n, headlabel="      1343"]
+BB1343 [shape=record label="{4377: call-this.scan [v4,'scan',v5,v8,v2]}" ] 
+BB1343 -> BB1344 [tailport=s, headport=n, headlabel="      1344"]
+BB1343 -> BB1347 [tailport=s, headport=n, color=gray]
+BB1344 [shape=record label="{4378: write-variable[v2,'match']|4379: if[v2](true-block:1345,false-block:1346)}" ] 
+BB1344 -> BB1345 [tailport=s, headport=n, headlabel="      1345"]
+BB1344 -> BB1346 [tailport=s, headport=n, headlabel="      1346"]
+BB1345 [shape=record label="{4380: read-variable['this',v10,-]|4381: constant[true,v9]|4382: write-property[v10,'pipeless',v9]*|4383: read-variable['match',v1,-]}" ] 
+BB1345 -> BB1346 [tailport=s, headport=n]
+BB1345 -> BB1347 [tailport=s, headport=n, color=gray]
+BB1346 [shape=record label="{4384: return[v1]}" ] 
+BB1347 [shape=record label="{4385: exceptional-return}" ] 
+//#$~ 1492
+}

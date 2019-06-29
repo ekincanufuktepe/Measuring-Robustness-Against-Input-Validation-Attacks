@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry182[shape=none,label=""];
+BB_entry182 -> BB4099 [tailport=s, headport=n, headlabel="    4099"]
+BB4099 [shape=record label="{16292: constant[undefined,v1]|16293: vardecl['interaction']}" ] 
+BB4099 -> BB4100 [tailport=s, headport=n, headlabel="      4100"]
+BB4100 [shape=record label="{16294: read-variable['interactions',v3,-]|16295: constant[0.0,v4]|16296: read-property[v3,v4,v2]|16297: \<variable-non-null-undef\>['interactions']|16298: write-variable[v2,'interaction']*|16299: read-variable['interaction',v7,-]|16300: read-property[v7,'currentAction',-]|16301: \<variable-non-null-undef\>['interaction']}" ] 
+BB4100 -> BB4101 [tailport=s, headport=n, headlabel="      4101"]
+BB4100 -> BB4106 [tailport=s, headport=n, color=gray, headlabel="      4106"]
+BB4101 [shape=record label="{16302: call-interaction.currentAction [v7,'currentAction',v5]}" ] 
+BB4101 -> BB4102 [tailport=s, headport=n, headlabel="      4102"]
+BB4101 -> BB4106 [tailport=s, headport=n, color=gray]
+BB4102 [shape=record label="{16303: if[v5](true-block:4103,false-block:4105)}" ] 
+BB4102 -> BB4103 [tailport=s, headport=n, headlabel="      4103"]
+BB4102 -> BB4105 [tailport=s, headport=n, headlabel="      4105"]
+BB4103 [shape=record label="{16304: read-variable['interaction',v9,-]|16305: read-property[v9,'checkAndPreventDefault',-]|16306: \<variable-non-null-undef\>['interaction']|16307: read-variable['event',v10,-]}" ] 
+BB4103 -> BB4104 [tailport=s, headport=n, headlabel="      4104"]
+BB4103 -> BB4106 [tailport=s, headport=n, color=gray]
+BB4104 [shape=record label="{16308: call-interaction.checkAndPreventDefault [v9,'checkAndPreventDefault',v10,-]*}" ] 
+BB4104 -> BB4105 [tailport=s, headport=n]
+BB4104 -> BB4106 [tailport=s, headport=n, color=gray]
+BB4105 [shape=record label="{16309: return[v1]}" ] 
+BB4106 [shape=record label="{16310: exceptional-return}" ] 
+//#$~ 5712
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry0[shape=none,label=""];
+BB_entry0 -> BB0 [tailport=s, headport=n, headlabel="    0"]
+BB0 [shape=record label="{0: constant[undefined,v1]}" ] 
+BB0 -> BB1 [tailport=s, headport=n, headlabel="      1"]
+BB1 [shape=record label="{1: function-expr[function ( global factory ),v2]|2: typeof['window',v5]|3: constant[\"undefined\",v6]|4: !==[v5,v6,v4]|5: if[v4](true-block:2,false-block:3)}" ] 
+BB1 -> BB2 [tailport=s, headport=n, headlabel="      2"]
+BB1 -> BB3 [tailport=s, headport=n, headlabel="      3"]
+BB1 -> BB7 [tailport=s, headport=n, color=gray, headlabel="      7"]
+BB2 [shape=record label="{6: read-variable['window',v3,-]}" ] 
+BB2 -> BB4 [tailport=s, headport=n, headlabel="      4"]
+BB2 -> BB7 [tailport=s, headport=n, color=gray]
+BB3 [shape=record label="{7: read-variable['this',v3,-]}" ] 
+BB3 -> BB4 [tailport=s, headport=n]
+BB3 -> BB7 [tailport=s, headport=n, color=gray]
+BB4 [shape=record label="{8: function-expr[function ( window noGlobal ),v7]}" ] 
+BB4 -> BB5 [tailport=s, headport=n, headlabel="      5"]
+BB5 [shape=record label="{9: call-0:0[-,v2,v3,v7,-]*}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB5 -> BB7 [tailport=s, headport=n, color=gray]
+BB6 [shape=record label="{10: return[v1]}" ] 
+BB7 [shape=record label="{11: exceptional-return}" ] 
+}

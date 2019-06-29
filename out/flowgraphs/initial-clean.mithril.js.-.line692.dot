@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry41[shape=none,label=""];
+BB_entry41 -> BB1062 [tailport=s, headport=n, headlabel="    1062"]
+BB1062 [shape=record label="{3787: constant[undefined,v1]|3788: vardecl['path']}" ] 
+BB1062 -> BB1063 [tailport=s, headport=n, headlabel="      1063"]
+BB1063 [shape=record label="{3789: read-variable['$location',v3,-]|3790: read-variable['m',v6,-]|3791: read-property[v6,'route',v5]|3792: \<variable-non-null-undef\>['m']|3793: read-property[v5,'mode',v4]|3794: \<property-non-null-undef\>[v6,'route']|3795: read-property[v3,v4,v2]|3796: \<variable-non-null-undef\>['$location']|3797: write-variable[v2,'path']*|3798: read-variable['m',v11,-]|3799: read-property[v11,'route',v10]|3800: \<variable-non-null-undef\>['m']|3801: read-property[v10,'mode',v8]|3802: \<property-non-null-undef\>[v11,'route']|3803: constant[\"pathname\",v9]|3804: ===[v8,v9,v7]|3805: if[v7](true-block:1064,false-block:1065)}" ] 
+BB1063 -> BB1064 [tailport=s, headport=n, headlabel="      1064"]
+BB1063 -> BB1065 [tailport=s, headport=n, headlabel="      1065"]
+BB1063 -> BB1071 [tailport=s, headport=n, color=gray, headlabel="      1071"]
+BB1064 [shape=record label="{3806: read-variable['path',v13,-]|3807: read-variable['$location',v15,-]|3808: read-property[v15,'search',v14]|3809: \<variable-non-null-undef\>['$location']|3810: +[v13,v14,v12]|3811: write-variable[v12,'path']*}" ] 
+BB1064 -> BB1065 [tailport=s, headport=n]
+BB1064 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1065 [shape=record label="{3812: read-variable['currentRoute',v13,-]|3813: read-variable['normalizeRoute',v16,v15]|3814: read-variable['path',v17,-]}" ] 
+BB1065 -> BB1066 [tailport=s, headport=n, headlabel="      1066"]
+BB1065 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1066 [shape=record label="{3815: call-normalizeRoute [v15,v16,v17,v14]}" ] 
+BB1066 -> BB1067 [tailport=s, headport=n, headlabel="      1067"]
+BB1066 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1067 [shape=record label="{3816: !=[v13,v14,v12]|3817: if[v12](true-block:1068,false-block:1070)}" ] 
+BB1067 -> BB1068 [tailport=s, headport=n, headlabel="      1068"]
+BB1067 -> BB1070 [tailport=s, headport=n, headlabel="      1070"]
+BB1067 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1068 [shape=record label="{3818: read-variable['redirect',v19,v18]|3819: read-variable['path',v20,-]}" ] 
+BB1068 -> BB1069 [tailport=s, headport=n, headlabel="      1069"]
+BB1068 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1069 [shape=record label="{3820: call-redirect [v18,v19,v20,-]*}" ] 
+BB1069 -> BB1070 [tailport=s, headport=n]
+BB1069 -> BB1071 [tailport=s, headport=n, color=gray]
+BB1070 [shape=record label="{3821: return[v1]}" ] 
+BB1071 [shape=record label="{3822: exceptional-return}" ] 
+//#$~ 696
+}

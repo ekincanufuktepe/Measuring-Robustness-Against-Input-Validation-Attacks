@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry17[shape=none,label=""];
+BB_entry17 -> BB490 [tailport=s, headport=n, headlabel="    490"]
+BB490 [shape=record label="{1898: constant[undefined,v1]}" ] 
+BB490 -> BB491 [tailport=s, headport=n, headlabel="      491"]
+BB491 [shape=record label="{1899: read-variable['document',v3,-]|1900: read-property[v3,'write',-]|1901: \<variable-non-null-undef\>['document']|1902: constant[\"\\\<script id=\\\"midori_onload\\\" src=\\\"javascript: \\\{\\\}\\\" defer=\\\"true\\\"\\\>\\\</script\\\>\",v4]}" ] 
+BB491 -> BB492 [tailport=s, headport=n, headlabel="      492"]
+BB491 -> BB497 [tailport=s, headport=n, color=gray, headlabel="      497"]
+BB492 [shape=record label="{1903: call-document.write [v3,'write',v4,-]*}" ] 
+BB492 -> BB493 [tailport=s, headport=n, headlabel="      493"]
+BB492 -> BB497 [tailport=s, headport=n, color=gray]
+BB493 [shape=record label="{1904: read-variable['this',v8,-]|1905: read-property[v8,'get',-]|1906: constant[\"#midori_onload\",v9]}" ] 
+BB493 -> BB494 [tailport=s, headport=n, headlabel="      494"]
+BB493 -> BB497 [tailport=s, headport=n, color=gray]
+BB494 [shape=record label="{1907: call-this.get [v8,'get',v9,v6]}" ] 
+BB494 -> BB495 [tailport=s, headport=n, headlabel="      495"]
+BB494 -> BB497 [tailport=s, headport=n, color=gray]
+BB495 [shape=record label="{1908: function-expr[function ( ),v5]|1909: write-property[v6,'onreadystatechange',v5]*}" ] 
+BB495 -> BB496 [tailport=s, headport=n, headlabel="      496"]
+BB495 -> BB497 [tailport=s, headport=n, color=gray]
+BB496 [shape=record label="{1910: return[v1]}" ] 
+BB497 [shape=record label="{1911: exceptional-return}" ] 
+//#$~ 347
+}

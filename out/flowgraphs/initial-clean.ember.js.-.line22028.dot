@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry981[shape=none,label=""];
+BB_entry981 -> BB11942 [tailport=s, headport=n, headlabel="    11942"]
+BB11942 [shape=record label="{40950: constant[undefined,v1]|40951: vardecl['self']|40952: vardecl['guid']}" ] 
+BB11942 -> BB11943 [tailport=s, headport=n, headlabel="      11943"]
+BB11943 [shape=record label="{40953: read-variable['this',v2,-]|40954: write-variable[v2,'self']*|40955: read-variable['guidFor',v5,v4]|40956: read-variable['this',v6,-]}" ] 
+BB11943 -> BB11944 [tailport=s, headport=n, headlabel="      11944"]
+BB11943 -> BB11950 [tailport=s, headport=n, color=gray, headlabel="      11950"]
+BB11944 [shape=record label="{40957: call-guidFor [v4,v5,v6,v3]}" ] 
+BB11944 -> BB11945 [tailport=s, headport=n, headlabel="      11945"]
+BB11944 -> BB11950 [tailport=s, headport=n, color=gray]
+BB11945 [shape=record label="{40958: write-variable[v3,'guid']*|40959: read-variable['Ember',v10,-]|40960: read-property[v10,'$',-]|40961: \<variable-non-null-undef\>['Ember']|40962: read-variable['window',v11,-]}" ] 
+BB11945 -> BB11946 [tailport=s, headport=n, headlabel="      11946"]
+BB11945 -> BB11950 [tailport=s, headport=n, color=gray]
+BB11946 [shape=record label="{40963: call-Ember.$ [v10,'$',v11,v8]}" ] 
+BB11946 -> BB11947 [tailport=s, headport=n, headlabel="      11947"]
+BB11946 -> BB11950 [tailport=s, headport=n, color=gray]
+BB11947 [shape=record label="{40964: read-property[v8,'on',-]|40965: constant[\"hashchange.ember-location-\",v13]|40966: read-variable['guid',v14,-]|40967: +[v13,v14,v12]|40968: function-expr[function ( ),v15]}" ] 
+BB11947 -> BB11948 [tailport=s, headport=n, headlabel="      11948"]
+BB11947 -> BB11950 [tailport=s, headport=n, color=gray]
+BB11948 [shape=record label="{40969: call-null [v8,'on',v12,v15,-]*}" ] 
+BB11948 -> BB11949 [tailport=s, headport=n, headlabel="      11949"]
+BB11948 -> BB11950 [tailport=s, headport=n, color=gray]
+BB11949 [shape=record label="{40970: return[v1]}" ] 
+BB11950 [shape=record label="{40971: exceptional-return}" ] 
+//#$~ 22039
+}

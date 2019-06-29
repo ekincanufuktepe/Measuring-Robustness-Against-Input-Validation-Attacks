@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry143[shape=none,label=""];
+BB_entry143 -> BB2281 [tailport=s, headport=n, headlabel="    2281"]
+BB2281 [shape=record label="{7006: constant[undefined,v1]}" ] 
+BB2281 -> BB2282 [tailport=s, headport=n, headlabel="      2282"]
+BB2282 [shape=record label="{7007: read-variable['source',v3,-]|7008: read-property[v3,'setAttribute',-]|7009: \<variable-non-null-undef\>['source']|7010: constant[\"src\",v4]|7011: read-variable['source',v7,-]|7012: read-property[v7,'getAttribute',-]|7013: \<variable-non-null-undef\>['source']|7014: constant[\"data-src\",v8]}" ] 
+BB2282 -> BB2283 [tailport=s, headport=n, headlabel="      2283"]
+BB2282 -> BB2289 [tailport=s, headport=n, color=gray, headlabel="      2289"]
+BB2283 [shape=record label="{7015: call-source.getAttribute [v7,'getAttribute',v8,v5]}" ] 
+BB2283 -> BB2284 [tailport=s, headport=n, headlabel="      2284"]
+BB2283 -> BB2289 [tailport=s, headport=n, color=gray]
+BB2284 [shape=record label="{7016: call-source.setAttribute [v3,'setAttribute',v4,v5,-]*}" ] 
+BB2284 -> BB2285 [tailport=s, headport=n, headlabel="      2285"]
+BB2284 -> BB2289 [tailport=s, headport=n, color=gray]
+BB2285 [shape=record label="{7017: read-variable['source',v10,-]|7018: read-property[v10,'removeAttribute',-]|7019: \<variable-non-null-undef\>['source']|7020: constant[\"data-src\",v11]}" ] 
+BB2285 -> BB2286 [tailport=s, headport=n, headlabel="      2286"]
+BB2285 -> BB2289 [tailport=s, headport=n, color=gray]
+BB2286 [shape=record label="{7021: call-source.removeAttribute [v10,'removeAttribute',v11,-]*}" ] 
+BB2286 -> BB2287 [tailport=s, headport=n, headlabel="      2287"]
+BB2286 -> BB2289 [tailport=s, headport=n, color=gray]
+BB2287 [shape=record label="{7022: read-variable['sources',v13,-]|7023: constant[1.0,v14]|7024: +[v13,v14,v12]|7025: write-variable[v12,'sources']*}" ] 
+BB2287 -> BB2288 [tailport=s, headport=n, headlabel="      2288"]
+BB2287 -> BB2289 [tailport=s, headport=n, color=gray]
+BB2288 [shape=record label="{7026: return[v1]}" ] 
+BB2289 [shape=record label="{7027: exceptional-return}" ] 
+//#$~ 2739
+}

@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry414[shape=none,label=""];
+BB_entry414 -> BB6677 [tailport=s, headport=n, headlabel="    6677"]
+BB6677 [shape=record label="{19835: constant[undefined,v1]}" ] 
+BB6677 -> BB6678 [tailport=s, headport=n, headlabel="      6678"]
+BB6678 [shape=record label="{19836: read-variable['hooks',v4,-]|19837: read-property[v4,'unqueued',v3]|19838: \<variable-non-null-undef\>['hooks']|19839: ![v3,v2]|19840: if[v2](true-block:6679,false-block:6681)}" ] 
+BB6678 -> BB6679 [tailport=s, headport=n, headlabel="      6679"]
+BB6678 -> BB6681 [tailport=s, headport=n, headlabel="      6681"]
+BB6678 -> BB6682 [tailport=s, headport=n, color=gray, headlabel="      6682"]
+BB6679 [shape=record label="{19841: read-variable['oldfire',v6,v5]}" ] 
+BB6679 -> BB6680 [tailport=s, headport=n, headlabel="      6680"]
+BB6679 -> BB6682 [tailport=s, headport=n, color=gray]
+BB6680 [shape=record label="{19842: call-0:0[v5,v6,-]*}" ] 
+BB6680 -> BB6681 [tailport=s, headport=n]
+BB6680 -> BB6682 [tailport=s, headport=n, color=gray]
+BB6681 [shape=record label="{19843: return[v1]}" ] 
+BB6682 [shape=record label="{19844: exceptional-return}" ] 
+}

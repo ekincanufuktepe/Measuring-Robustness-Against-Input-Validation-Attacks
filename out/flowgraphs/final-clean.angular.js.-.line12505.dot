@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry589[shape=none,label=""];
+BB_entry589 -> BB7933 [tailport=s, headport=n, headlabel="    7933"]
+BB7933 [shape=record label="{20387: constant[undefined,v1]}" ] 
+BB7933 -> BB7934 [tailport=s, headport=n, headlabel="      7934"]
+BB7934 [shape=record label="{20388: read-variable['ch',v2,-]|20389: constant[\" \",v3]|20390: ===[v2,v3,v1]|20391: if[v1](true-block:7940,false-block:7935)}" ] 
+BB7934 -> BB7940 [tailport=s, headport=n, headlabel="      7940"]
+BB7934 -> BB7935 [tailport=s, headport=n, headlabel="      7935"]
+BB7934 -> BB7941 [tailport=s, headport=n, color=gray, headlabel="      7941"]
+BB7935 [shape=record label="{20392: read-variable['ch',v2,-]|20393: constant[\"\\r\",v3]|20394: ===[v2,v3,v1]|20395: if[v1](true-block:7940,false-block:7936)}" ] 
+BB7935 -> BB7940 [tailport=s, headport=n]
+BB7935 -> BB7936 [tailport=s, headport=n, headlabel="      7936"]
+BB7935 -> BB7941 [tailport=s, headport=n, color=gray]
+BB7936 [shape=record label="{20396: read-variable['ch',v2,-]|20397: constant[\"\\t\",v3]|20398: ===[v2,v3,v1]|20399: if[v1](true-block:7940,false-block:7937)}" ] 
+BB7936 -> BB7940 [tailport=s, headport=n]
+BB7936 -> BB7937 [tailport=s, headport=n, headlabel="      7937"]
+BB7936 -> BB7941 [tailport=s, headport=n, color=gray]
+BB7937 [shape=record label="{20400: read-variable['ch',v2,-]|20401: constant[\"\\n\",v3]|20402: ===[v2,v3,v1]|20403: if[v1](true-block:7940,false-block:7938)}" ] 
+BB7937 -> BB7940 [tailport=s, headport=n]
+BB7937 -> BB7938 [tailport=s, headport=n, headlabel="      7938"]
+BB7937 -> BB7941 [tailport=s, headport=n, color=gray]
+BB7938 [shape=record label="{20404: read-variable['ch',v2,-]|20405: constant[\"\\u000b\",v3]|20406: ===[v2,v3,v1]|20407: if[v1](true-block:7940,false-block:7939)}" ] 
+BB7938 -> BB7940 [tailport=s, headport=n]
+BB7938 -> BB7939 [tailport=s, headport=n, headlabel="      7939"]
+BB7938 -> BB7941 [tailport=s, headport=n, color=gray]
+BB7939 [shape=record label="{20408: read-variable['ch',v2,-]|20409: constant[\"\\u00a0\",v3]|20410: ===[v2,v3,v1]}" ] 
+BB7939 -> BB7940 [tailport=s, headport=n]
+BB7939 -> BB7941 [tailport=s, headport=n, color=gray]
+BB7940 [shape=record label="{20411: return[v1]}" ] 
+BB7941 [shape=record label="{20412: exceptional-return}" ] 
+//#$~ 12508
+}

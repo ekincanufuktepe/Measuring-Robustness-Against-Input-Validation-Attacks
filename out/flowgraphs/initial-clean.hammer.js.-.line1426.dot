@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry77[shape=none,label=""];
+BB_entry77 -> BB876 [tailport=s, headport=n, headlabel="    876"]
+BB876 [shape=record label="{2746: constant[undefined,v1]|2747: vardecl['i']}" ] 
+BB876 -> BB877 [tailport=s, headport=n, headlabel="      877"]
+BB877 [shape=record label="{2748: constant[0.0,v2]|2749: write-variable[v2,'i']*}" ] 
+BB877 -> BB878 [tailport=s, headport=n, headlabel="      878"]
+BB878 [shape=record label="{2750: read-variable['i',v4,-]|2751: read-variable['this',v7,-]|2752: read-property[v7,'requireFail',v6]|2753: read-property[v6,'length',v5]|2754: \<property-non-null-undef\>[v7,'requireFail']|2755: \<[v4,v5,v3]|2756: if[v3](true-block:879,false-block:880)}" ] 
+BB878 -> BB879 [tailport=s, headport=n, headlabel="      879"]
+BB878 -> BB880 [tailport=s, headport=n, headlabel="      880"]
+BB878 -> BB884 [tailport=s, headport=n, color=gray, headlabel="      884"]
+BB879 [shape=record label="{2757: read-variable['this',v14,-]|2758: read-property[v14,'requireFail',v13]|2759: read-variable['i',v15,-]|2760: read-property[v13,v15,v12]|2761: \<property-non-null-undef\>[v14,'requireFail']|2762: read-property[v12,'state',v10]|2763: \<property-non-null-undef\>[v13,v15]|2764: read-variable['STATE_FAILED',v16,-]|2765: read-variable['STATE_POSSIBLE',v17,-]|2766: |[v16,v17,v11]|2767: &[v10,v11,v9]|2768: ![v9,v8]|2769: if[v8](true-block:881,false-block:882)}" ] 
+BB879 -> BB881 [tailport=s, headport=n, headlabel="      881"]
+BB879 -> BB882 [tailport=s, headport=n, headlabel="      882"]
+BB879 -> BB884 [tailport=s, headport=n, color=gray]
+BB880 [shape=record label="{2770: constant[true,v1]}" ] 
+BB880 -> BB883 [tailport=s, headport=n, headlabel="      883"]
+BB881 [shape=record label="{2771: constant[false,v1]}" ] 
+BB881 -> BB883 [tailport=s, headport=n]
+BB882 [shape=record label="{2772: constant[1.0,v18]|2773: read-variable['i',v19,-]|2774: +[v19,v20]|2775: +[v20,v18,v21]|2776: write-variable[v21,'i']*}" ] 
+BB882 -> BB878 [tailport=s, headport=n]
+BB882 -> BB884 [tailport=s, headport=n, color=gray]
+BB883 [shape=record label="{2777: return[v1]}" ] 
+BB884 [shape=record label="{2778: exceptional-return}" ] 
+//#$~ 1434
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry146[shape=none,label=""];
+BB_entry146 -> BB1579 [tailport=s, headport=n, headlabel="    1579"]
+BB1579 [shape=record label="{6022: constant[undefined,v1]|6023: vardecl['ctx']|6024: vardecl['yLabelGap']|6025: vardecl['xStart']}" ] 
+BB1579 -> BB1580 [tailport=s, headport=n, headlabel="      1580"]
+BB1580 [shape=record label="{6026: read-variable['this',v3,-]|6027: read-property[v3,'ctx',v2]|6028: write-variable[v2,'ctx']*|6029: read-variable['this',v9,-]|6030: read-property[v9,'endPoint',v7]|6031: read-variable['this',v10,-]|6032: read-property[v10,'startPoint',v8]|6033: -[v7,v8,v5]|6034: read-variable['this',v11,-]|6035: read-property[v11,'steps',v6]|6036: /[v5,v6,v4]|6037: write-variable[v4,'yLabelGap']*|6038: read-variable['Math',v14,-]|6039: read-property[v14,'round',-]|6040: \<variable-non-null-undef\>['Math']|6041: read-variable['this',v16,-]|6042: read-property[v16,'xScalePaddingLeft',v15]}" ] 
+BB1580 -> BB1581 [tailport=s, headport=n, headlabel="      1581"]
+BB1580 -> BB1588 [tailport=s, headport=n, color=gray, headlabel="      1588"]
+BB1581 [shape=record label="{6043: call-Math.round [v14,'round',v15,v12]}" ] 
+BB1581 -> BB1582 [tailport=s, headport=n, headlabel="      1582"]
+BB1581 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1582 [shape=record label="{6044: write-variable[v12,'xStart']*|6045: read-variable['this',v18,-]|6046: read-property[v18,'display',v17]|6047: if[v17](true-block:1583,false-block:1587)}" ] 
+BB1582 -> BB1583 [tailport=s, headport=n, headlabel="      1583"]
+BB1582 -> BB1587 [tailport=s, headport=n, headlabel="      1587"]
+BB1582 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1583 [shape=record label="{6048: read-variable['ctx',v20,-]|6049: read-variable['this',v21,-]|6050: read-property[v21,'textColor',v19]|6051: write-property[v20,'fillStyle',v19]|6052: \<variable-non-null-undef\>['ctx']*|6053: read-variable['ctx',v23,-]|6054: read-variable['this',v24,-]|6055: read-property[v24,'font',v22]|6056: write-property[v23,'font',v22]|6057: \<variable-non-null-undef\>['ctx']*|6058: read-variable['each',v26,v25]|6059: read-variable['this',v28,-]|6060: read-property[v28,'yLabels',v27]|6061: function-expr[function ( labelString index ),v29]|6062: read-variable['this',v30,-]}" ] 
+BB1583 -> BB1584 [tailport=s, headport=n, headlabel="      1584"]
+BB1583 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1584 [shape=record label="{6063: call-each [v25,v26,v27,v29,v30,-]*}" ] 
+BB1584 -> BB1585 [tailport=s, headport=n, headlabel="      1585"]
+BB1584 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1585 [shape=record label="{6064: read-variable['each',v32,v31]|6065: read-variable['this',v34,-]|6066: read-property[v34,'xLabels',v33]|6067: function-expr[function ( label index ),v35]|6068: read-variable['this',v36,-]}" ] 
+BB1585 -> BB1586 [tailport=s, headport=n, headlabel="      1586"]
+BB1585 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1586 [shape=record label="{6069: call-each [v31,v32,v33,v35,v36,-]*}" ] 
+BB1586 -> BB1587 [tailport=s, headport=n]
+BB1586 -> BB1588 [tailport=s, headport=n, color=gray]
+BB1587 [shape=record label="{6070: return[v1]}" ] 
+BB1588 [shape=record label="{6071: exceptional-return}" ] 
+//#$~ 1718
+}

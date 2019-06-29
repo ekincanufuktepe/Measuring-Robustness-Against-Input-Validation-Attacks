@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry62[shape=none,label=""];
+BB_entry62 -> BB675 [tailport=s, headport=n, headlabel="    675"]
+BB675 [shape=record label="{2018: constant[undefined,v1]}" ] 
+BB675 -> BB676 [tailport=s, headport=n, headlabel="      676"]
+BB676 [shape=record label="{2019: typeof['fn',v3]|2020: constant[\"function\",v4]|2021: !==[v3,v4,v2]|2022: if[v2](true-block:677,false-block:678)}" ] 
+BB676 -> BB677 [tailport=s, headport=n, headlabel="      677"]
+BB676 -> BB678 [tailport=s, headport=n, headlabel="      678"]
+BB676 -> BB684 [tailport=s, headport=n, color=gray, headlabel="      684"]
+BB677 [shape=record label="{2023: constant[undefined,v1]}" ] 
+BB677 -> BB683 [tailport=s, headport=n, headlabel="      683"]
+BB678 [shape=record label="{2024: read-variable['docReady',v6,-]|2025: read-property[v6,'isReady',v5]|2026: \<variable-non-null-undef\>['docReady']|2027: if[v5](true-block:679,false-block:680)}" ] 
+BB678 -> BB679 [tailport=s, headport=n, headlabel="      679"]
+BB678 -> BB680 [tailport=s, headport=n, headlabel="      680"]
+BB678 -> BB684 [tailport=s, headport=n, color=gray]
+BB679 [shape=record label="{2028: read-variable['fn',v8,v7]}" ] 
+BB679 -> BB681 [tailport=s, headport=n, headlabel="      681"]
+BB679 -> BB684 [tailport=s, headport=n, color=gray]
+BB680 [shape=record label="{2029: read-variable['queue',v8,-]|2030: read-property[v8,'push',-]|2031: \<variable-non-null-undef\>['queue']|2032: read-variable['fn',v9,-]}" ] 
+BB680 -> BB682 [tailport=s, headport=n, headlabel="      682"]
+BB680 -> BB684 [tailport=s, headport=n, color=gray]
+BB681 [shape=record label="{2033: call-fn [v7,v8,-]*}" ] 
+BB681 -> BB683 [tailport=s, headport=n]
+BB681 -> BB684 [tailport=s, headport=n, color=gray]
+BB682 [shape=record label="{2034: call-queue.push [v8,'push',v9,-]*}" ] 
+BB682 -> BB683 [tailport=s, headport=n]
+BB682 -> BB684 [tailport=s, headport=n, color=gray]
+BB683 [shape=record label="{2035: return[v1]}" ] 
+BB684 [shape=record label="{2036: exceptional-return}" ] 
+//#$~ 1040
+}

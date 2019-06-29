@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry672[shape=none,label=""];
+BB_entry672 -> BB9212 [tailport=s, headport=n, headlabel="    9212"]
+BB9212 [shape=record label="{30835: constant[undefined,v1]}" ] 
+BB9212 -> BB9213 [tailport=s, headport=n, headlabel="      9213"]
+BB9213 [shape=record label="{30836: read-variable['event',v2,-]|30837: read-property[v2,'relatedTarget',v1]|30838: \<variable-non-null-undef\>['event']|30839: if[v1](true-block:9217,false-block:9214)}" ] 
+BB9213 -> BB9217 [tailport=s, headport=n, headlabel="      9217"]
+BB9213 -> BB9214 [tailport=s, headport=n, headlabel="      9214"]
+BB9213 -> BB9218 [tailport=s, headport=n, color=gray, headlabel="      9218"]
+BB9214 [shape=record label="{30840: read-variable['event',v5,-]|30841: read-property[v5,'fromElement',v3]|30842: \<variable-non-null-undef\>['event']|30843: read-variable['event',v6,-]|30844: read-property[v6,'srcElement',v4]|30845: \<variable-non-null-undef\>['event']|30846: ===[v3,v4,v2]|30847: if[v2](true-block:9215,false-block:9216)}" ] 
+BB9214 -> BB9215 [tailport=s, headport=n, headlabel="      9215"]
+BB9214 -> BB9216 [tailport=s, headport=n, headlabel="      9216"]
+BB9214 -> BB9218 [tailport=s, headport=n, color=gray]
+BB9215 [shape=record label="{30848: read-variable['event',v7,-]|30849: read-property[v7,'toElement',v1]|30850: \<variable-non-null-undef\>['event']}" ] 
+BB9215 -> BB9217 [tailport=s, headport=n]
+BB9215 -> BB9218 [tailport=s, headport=n, color=gray]
+BB9216 [shape=record label="{30851: read-variable['event',v7,-]|30852: read-property[v7,'fromElement',v1]|30853: \<variable-non-null-undef\>['event']}" ] 
+BB9216 -> BB9217 [tailport=s, headport=n]
+BB9216 -> BB9218 [tailport=s, headport=n, color=gray]
+BB9217 [shape=record label="{30854: return[v1]}" ] 
+BB9218 [shape=record label="{30855: exceptional-return}" ] 
+//#$~ 16310
+}

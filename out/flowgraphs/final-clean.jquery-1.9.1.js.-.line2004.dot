@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry120[shape=none,label=""];
+BB_entry120 -> BB1711 [tailport=s, headport=n, headlabel="    1711"]
+BB1711 [shape=record label="{4932: constant[undefined,v1]}" ] 
+BB1711 -> BB1712 [tailport=s, headport=n, headlabel="      1712"]
+BB1712 [shape=record label="{4933: read-variable['this',v3,-]|4934: read-property[v3,'queue',-]|4935: read-variable['type',v4,-]|4936: if[v4](true-block:1714,false-block:1713)}" ] 
+BB1712 -> BB1714 [tailport=s, headport=n, headlabel="      1714"]
+BB1712 -> BB1713 [tailport=s, headport=n, headlabel="      1713"]
+BB1712 -> BB1718 [tailport=s, headport=n, color=gray, headlabel="      1718"]
+BB1713 [shape=record label="{4937: constant[\"fx\",v4]}" ] 
+BB1713 -> BB1714 [tailport=s, headport=n]
+BB1714 [shape=record label="{4938: read-variable['Array',v6,-]}" ] 
+BB1714 -> BB1715 [tailport=s, headport=n, headlabel="      1715"]
+BB1714 -> BB1718 [tailport=s, headport=n, color=gray]
+BB1715 [shape=record label="{4939: construct [-,v6,v5]}" ] 
+BB1715 -> BB1716 [tailport=s, headport=n, headlabel="      1716"]
+BB1715 -> BB1718 [tailport=s, headport=n, color=gray]
+BB1716 [shape=record label="{4940: call-this.queue [v3,'queue',v4,v5,v1]}" ] 
+BB1716 -> BB1717 [tailport=s, headport=n, headlabel="      1717"]
+BB1716 -> BB1718 [tailport=s, headport=n, color=gray]
+BB1717 [shape=record label="{4941: return[v1]}" ] 
+BB1718 [shape=record label="{4942: exceptional-return}" ] 
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry470[shape=none,label=""];
+BB_entry470 -> BB6752 [tailport=s, headport=n, headlabel="    6752"]
+BB6752 [shape=record label="{22991: constant[undefined,v1]}" ] 
+BB6752 -> BB6753 [tailport=s, headport=n, headlabel="      6753"]
+BB6753 [shape=record label="{22992: read-variable['node',v1,-]|22993: if[v1](true-block:6754,false-block:6757)}" ] 
+BB6753 -> BB6757 [tailport=s, headport=n, headlabel="      6757"]
+BB6753 -> BB6754 [tailport=s, headport=n, headlabel="      6754"]
+BB6753 -> BB6760 [tailport=s, headport=n, color=gray, headlabel="      6760"]
+BB6754 [shape=record label="{22994: read-variable['node',v2,-]|22995: read-property[v2,'getAttribute',v1]|22996: \<variable-non-null-undef\>['node']|22997: if[v1](true-block:6755,false-block:6757)}" ] 
+BB6754 -> BB6757 [tailport=s, headport=n]
+BB6754 -> BB6755 [tailport=s, headport=n, headlabel="      6755"]
+BB6754 -> BB6760 [tailport=s, headport=n, color=gray]
+BB6755 [shape=record label="{22998: read-variable['node',v4,-]|22999: read-property[v4,'getAttribute',-]|23000: \<variable-non-null-undef\>['node']|23001: read-variable['ATTR_NAME',v5,-]}" ] 
+BB6755 -> BB6756 [tailport=s, headport=n, headlabel="      6756"]
+BB6755 -> BB6760 [tailport=s, headport=n, color=gray]
+BB6756 [shape=record label="{23002: call-node.getAttribute [v4,'getAttribute',v5,v1]}" ] 
+BB6756 -> BB6757 [tailport=s, headport=n]
+BB6756 -> BB6760 [tailport=s, headport=n, color=gray]
+BB6757 [shape=record label="{23003: if[v1](true-block:6759,false-block:6758)}" ] 
+BB6757 -> BB6759 [tailport=s, headport=n, headlabel="      6759"]
+BB6757 -> BB6758 [tailport=s, headport=n, headlabel="      6758"]
+BB6758 [shape=record label="{23004: constant[\"\",v1]}" ] 
+BB6758 -> BB6759 [tailport=s, headport=n]
+BB6759 [shape=record label="{23005: return[v1]}" ] 
+BB6760 [shape=record label="{23006: exceptional-return}" ] 
+//#$~ 11874
+}

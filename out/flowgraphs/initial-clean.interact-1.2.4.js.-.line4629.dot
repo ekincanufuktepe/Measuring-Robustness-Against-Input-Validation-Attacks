@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry148[shape=none,label=""];
+BB_entry148 -> BB3498 [tailport=s, headport=n, headlabel="    3498"]
+BB3498 [shape=record label="{14361: constant[undefined,v1]}" ] 
+BB3498 -> BB3499 [tailport=s, headport=n, headlabel="      3499"]
+BB3499 [shape=record label="{14362: read-variable['isBool',v4,v3]|14363: read-variable['newValue',v5,-]}" ] 
+BB3499 -> BB3500 [tailport=s, headport=n, headlabel="      3500"]
+BB3499 -> BB3507 [tailport=s, headport=n, color=gray, headlabel="      3507"]
+BB3500 [shape=record label="{14364: call-isBool [v3,v4,v5,v2]}" ] 
+BB3500 -> BB3501 [tailport=s, headport=n, headlabel="      3501"]
+BB3500 -> BB3507 [tailport=s, headport=n, color=gray]
+BB3501 [shape=record label="{14365: if[v2](true-block:3502,false-block:3503)}" ] 
+BB3501 -> BB3502 [tailport=s, headport=n, headlabel="      3502"]
+BB3501 -> BB3503 [tailport=s, headport=n, headlabel="      3503"]
+BB3502 [shape=record label="{14366: read-variable['this',v8,-]|14367: read-property[v8,'options',v7]|14368: read-variable['newValue',v6,-]|14369: write-property[v7,'styleCursor',v6]|14370: \<property-non-null-undef\>[v8,'options']*|14371: read-variable['this',v1,-]}" ] 
+BB3502 -> BB3506 [tailport=s, headport=n, headlabel="      3506"]
+BB3502 -> BB3507 [tailport=s, headport=n, color=gray]
+BB3503 [shape=record label="{14372: read-variable['newValue',v7,-]|14373: constant[null,v8]|14374: ===[v7,v8,v6]|14375: if[v6](true-block:3504,false-block:3505)}" ] 
+BB3503 -> BB3504 [tailport=s, headport=n, headlabel="      3504"]
+BB3503 -> BB3505 [tailport=s, headport=n, headlabel="      3505"]
+BB3503 -> BB3507 [tailport=s, headport=n, color=gray]
+BB3504 [shape=record label="{14376: read-variable['this',v12,-]|14377: read-property[v12,'options',v10]|14378: constant[\"styleCursor\",v11]|14379: delete-property[v10,v11,v9]*|14380: read-variable['this',v1,-]}" ] 
+BB3504 -> BB3506 [tailport=s, headport=n]
+BB3504 -> BB3507 [tailport=s, headport=n, color=gray]
+BB3505 [shape=record label="{14381: read-variable['this',v10,-]|14382: read-property[v10,'options',v9]|14383: read-property[v9,'styleCursor',v1]|14384: \<property-non-null-undef\>[v10,'options']}" ] 
+BB3505 -> BB3506 [tailport=s, headport=n]
+BB3505 -> BB3507 [tailport=s, headport=n, color=gray]
+BB3506 [shape=record label="{14385: return[v1]}" ] 
+BB3507 [shape=record label="{14386: exceptional-return}" ] 
+//#$~ 4642
+}

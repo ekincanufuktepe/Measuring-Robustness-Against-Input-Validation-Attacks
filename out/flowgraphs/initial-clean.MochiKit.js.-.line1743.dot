@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry212[shape=none,label=""];
+BB_entry212 -> BB2720 [tailport=s, headport=n, headlabel="    2720"]
+BB2720 [shape=record label="{11563: constant[undefined,v1]}" ] 
+BB2720 -> BB2721 [tailport=s, headport=n, headlabel="      2721"]
+BB2721 [shape=record label="{11564: read-variable['this',v3,-]|11565: constant[0.0,v2]|11566: write-property[v3,'counter',v2]*|11567: typeof['_205',v5]|11568: constant[\"undefined\",v6]|11569: ==[v5,v6,v4]|11570: if[v4](true-block:2723,false-block:2722)}" ] 
+BB2721 -> BB2723 [tailport=s, headport=n, headlabel="      2723"]
+BB2721 -> BB2722 [tailport=s, headport=n, headlabel="      2722"]
+BB2721 -> BB2729 [tailport=s, headport=n, color=gray, headlabel="      2729"]
+BB2722 [shape=record label="{11571: read-variable['_205',v5,-]|11572: constant[null,v6]|11573: ===[v5,v6,v4]}" ] 
+BB2722 -> BB2723 [tailport=s, headport=n]
+BB2722 -> BB2729 [tailport=s, headport=n, color=gray]
+BB2723 [shape=record label="{11574: if[v4](true-block:2724,false-block:2725)}" ] 
+BB2723 -> BB2724 [tailport=s, headport=n, headlabel="      2724"]
+BB2723 -> BB2725 [tailport=s, headport=n, headlabel="      2725"]
+BB2724 [shape=record label="{11575: constant[-1.0,v5]|11576: write-variable[v5,'_205']*}" ] 
+BB2724 -> BB2725 [tailport=s, headport=n]
+BB2725 [shape=record label="{11577: read-variable['this',v6,-]|11578: read-variable['_205',v5,-]|11579: write-property[v6,'maxSize',v5]*|11580: read-variable['this',v8,-]|11581: read-variable['Array',v9,-]}" ] 
+BB2725 -> BB2726 [tailport=s, headport=n, headlabel="      2726"]
+BB2725 -> BB2729 [tailport=s, headport=n, color=gray]
+BB2726 [shape=record label="{11582: construct [-,v9,v7]}" ] 
+BB2726 -> BB2727 [tailport=s, headport=n, headlabel="      2727"]
+BB2726 -> BB2729 [tailport=s, headport=n, color=gray]
+BB2727 [shape=record label="{11583: write-property[v8,'_messages',v7]*|11584: read-variable['this',v11,-]|11585: new[v10]|11586: write-property[v11,'listeners',v10]*|11587: read-variable['this',v13,-]|11588: constant[false,v12]|11589: write-property[v13,'useNativeConsole',v12]*}" ] 
+BB2727 -> BB2728 [tailport=s, headport=n, headlabel="      2728"]
+BB2727 -> BB2729 [tailport=s, headport=n, color=gray]
+BB2728 [shape=record label="{11590: return[v1]}" ] 
+BB2729 [shape=record label="{11591: exceptional-return}" ] 
+//#$~ 1751
+}

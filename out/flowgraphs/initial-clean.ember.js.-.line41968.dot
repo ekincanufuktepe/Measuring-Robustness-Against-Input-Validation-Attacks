@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1942[shape=none,label=""];
+BB_entry1942 -> BB22277 [tailport=s, headport=n, headlabel="    22277"]
+BB22277 [shape=record label="{74355: constant[undefined,v1]|74356: vardecl['currentView']}" ] 
+BB22277 -> BB22278 [tailport=s, headport=n, headlabel="      22278"]
+BB22278 [shape=record label="{74357: read-variable['get',v4,v3]|74358: read-variable['this',v5,-]|74359: constant[\"currentView\",v6]}" ] 
+BB22278 -> BB22279 [tailport=s, headport=n, headlabel="      22279"]
+BB22278 -> BB22284 [tailport=s, headport=n, color=gray, headlabel="      22284"]
+BB22279 [shape=record label="{74360: call-get [v3,v4,v5,v6,v2]}" ] 
+BB22279 -> BB22280 [tailport=s, headport=n, headlabel="      22280"]
+BB22279 -> BB22284 [tailport=s, headport=n, color=gray]
+BB22280 [shape=record label="{74361: write-variable[v2,'currentView']*|74362: read-variable['currentView',v7,-]|74363: if[v7](true-block:22281,false-block:22283)}" ] 
+BB22280 -> BB22281 [tailport=s, headport=n, headlabel="      22281"]
+BB22280 -> BB22283 [tailport=s, headport=n, headlabel="      22283"]
+BB22280 -> BB22284 [tailport=s, headport=n, color=gray]
+BB22281 [shape=record label="{74364: read-variable['currentView',v9,-]|74365: read-property[v9,'destroy',-]|74366: \<variable-non-null-undef\>['currentView']}" ] 
+BB22281 -> BB22282 [tailport=s, headport=n, headlabel="      22282"]
+BB22281 -> BB22284 [tailport=s, headport=n, color=gray]
+BB22282 [shape=record label="{74367: call-currentView.destroy [v9,'destroy',-]*}" ] 
+BB22282 -> BB22283 [tailport=s, headport=n]
+BB22282 -> BB22284 [tailport=s, headport=n, color=gray]
+BB22283 [shape=record label="{74368: return[v1]}" ] 
+BB22284 [shape=record label="{74369: exceptional-return}" ] 
+//#$~ 41971
+}

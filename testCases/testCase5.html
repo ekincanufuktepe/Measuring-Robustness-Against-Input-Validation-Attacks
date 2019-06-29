@@ -1,0 +1,5111 @@
+<html>
+<head>
+	<script src="C:/Users/ekincan/InputAnalysisJS/TAJS/clean/joose.js"></script>
+</head>
+
+<script>
+function assertEqual(a, b, message)
+{
+	try {
+		if (a != b)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else if(a == RangeError)
+			throw new Error(message + " mismatch: " + a + " != " + b);
+		else
+			console.log("passed");
+	} catch (e) {
+		console.log(e.message);  // 'Default Message'
+		countErrs++;
+	}
+}
+
+Array.prototype.allValuesSame = function() {
+	for(var i = 1; i < this.length; i++)
+	{
+		if(this[i] !== this[0])
+			return false;
+	}
+	return true;
+}
+
+function mode(array)
+{
+	if(array.length == 0)
+		return null;
+	var modeMap = {};	var maxEl = array[0], maxCount = 1;
+	for(var i = 0; i < array.length; i++)
+	{
+		var el = array[i];
+		if(modeMap[el] == null)
+			modeMap[el] = 1;
+		else
+			modeMap[el]++;
+		if(modeMap[el] > maxCount)
+		{
+			maxEl = el;
+			maxCount = modeMap[el];
+		}
+	}
+	return maxEl;
+}
+
+var ar = [];
+var testCases = [undefined, null, true, false, 'abcde', NaN, -Infinity, Infinity, 5, -5, 0.15, -0.15, Error, RangeError, ReferenceError, SyntaxError, TypeError, URIError, 1.3987869234598501e+308];
+document.write('Length of Test Cases: '+testCases.length+'<br><br>');
+var testRes = [];
+var countPassed = 0, countNotExist = 0, countFailed = 0;
+
+if((typeof Joose.Class.addToString) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addToString(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('15. FUNCTION: [addToString] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.isInstance) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.isInstance(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('16. FUNCTION: [isInstance] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.loadComponents) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.loadComponents(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('19. FUNCTION: [loadComponents] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.createClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.createClass(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('37. FUNCTION: [createClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.initializeFromProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.initializeFromProps(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('39. FUNCTION: [initializeFromProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class._initializeFromProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class._initializeFromProps(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('40. FUNCTION: [_initializeFromProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class._initializeFromProp) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class._initializeFromProp(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('43. FUNCTION: [_initializeFromProp] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.initialize) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.initialize(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('53. FUNCTION: [initialize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.dieIfString) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.dieIfString(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('54. FUNCTION: [dieIfString] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addRole) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addRole(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('55. FUNCTION: [addRole] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.classNameToClassObject) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.classNameToClassObject(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('57. FUNCTION: [classNameToClassObject] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addNonJooseSuperClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addNonJooseSuperClass(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('58. FUNCTION: [addNonJooseSuperClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addSuperClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addSuperClass(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('60. FUNCTION: [addSuperClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class._fixMetaclassIncompatability) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class._fixMetaclassIncompatability(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('62. FUNCTION: [_fixMetaclassIncompatability] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.isa) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.isa(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('63. FUNCTION: [isa] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.wrapMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				for(i3=0; i3<testCases.length; i3++)
+				{
+					try{
+				var x = (typeof Joose.Class.wrapMethod(	testCases[i0],	testCases[i1],	testCases[i2],	testCases[i3]));
+						ar.push(x);
+					} catch(e){}
+				}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('64. FUNCTION: [wrapMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 130321.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.dispatch) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.dispatch(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('65. FUNCTION: [dispatch] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.hasMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.hasMethod(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('66. FUNCTION: [hasMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.addMethod(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('67. FUNCTION: [addMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addClassMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.addClassMethod(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('68. FUNCTION: [addClassMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addMethodObject) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addMethodObject(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('69. FUNCTION: [addMethodObject] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addAttribute) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addAttribute(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('71. FUNCTION: [addAttribute] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.getAttribute) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.getAttribute(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('73. FUNCTION: [getAttribute] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setAttribute) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.setAttribute(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('74. FUNCTION: [setAttribute] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.getMethodObject) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.getMethodObject(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('75. FUNCTION: [getMethodObject] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.getClassMethodObject) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.getClassMethodObject(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('76. FUNCTION: [getClassMethodObject] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.can) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.can(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('91. FUNCTION: [can] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.classCan) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.classCan(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('92. FUNCTION: [classCan] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.does) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.does(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('93. FUNCTION: [does] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.implementsMyMethods) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.implementsMyMethods(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('94. FUNCTION: [implementsMyMethods] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleProprequires) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleProprequires(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('96. FUNCTION: [handleProprequires] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropisAbstract) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropisAbstract(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('98. FUNCTION: [handlePropisAbstract] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropisa) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropisa(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('99. FUNCTION: [handlePropisa] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropdoes) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropdoes(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('100. FUNCTION: [handlePropdoes] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleProphas) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleProphas(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('102. FUNCTION: [handleProphas] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropmethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.handlePropmethod(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('104. FUNCTION: [handlePropmethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropmethods) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropmethods(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('105. FUNCTION: [handlePropmethods] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropclassMethods) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropclassMethods(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('107. FUNCTION: [handlePropclassMethods] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropworkers) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropworkers(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('109. FUNCTION: [handlePropworkers] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropbefore) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropbefore(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('111. FUNCTION: [handlePropbefore] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropafter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropafter(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('113. FUNCTION: [handlePropafter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleProparound) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleProparound(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('115. FUNCTION: [handleProparound] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropoverride) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropoverride(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('117. FUNCTION: [handlePropoverride] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropaugment) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropaugment(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('119. FUNCTION: [handlePropaugment] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropdecorates) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropdecorates(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('122. FUNCTION: [handlePropdecorates] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.initialize) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.initialize(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('127. FUNCTION: [initialize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.setProps(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('128. FUNCTION: [setProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addSetter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addSetter(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('130. FUNCTION: [addSetter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setterWithIsaCheck) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.setterWithIsaCheck(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('131. FUNCTION: [setterWithIsaCheck] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.setter(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('132. FUNCTION: [setter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addGetter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addGetter(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('133. FUNCTION: [addGetter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleIs) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleIs(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('141. FUNCTION: [handleIs] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleInit) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleInit(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('142. FUNCTION: [handleInit] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleProps(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('143. FUNCTION: [handleProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.apply) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.apply(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('144. FUNCTION: [apply] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setIsFromSuperClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.setIsFromSuperClass(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('150. FUNCTION: [setIsFromSuperClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.initialize) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.initialize(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('152. FUNCTION: [initialize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.apply) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.apply(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('154. FUNCTION: [apply] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addToClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addToClass(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('155. FUNCTION: [addToClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.Module) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.Module(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('160. FUNCTION: [Module] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.Role) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.Role(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('161. FUNCTION: [Role] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.Prototype) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.Prototype(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('162. FUNCTION: [Prototype] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.Class) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.Class(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('163. FUNCTION: [Class] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.Type) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.Type(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('164. FUNCTION: [Type] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.joosify) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.joosify(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('165. FUNCTION: [joosify] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class._makeWrapped) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class._makeWrapped(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('169. FUNCTION: [_makeWrapped] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.around) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.around(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('170. FUNCTION: [around] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.before) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.before(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('173. FUNCTION: [before] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.after) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.after(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('175. FUNCTION: [after] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.override) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.override(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('177. FUNCTION: [override] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.augment) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.augment(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('180. FUNCTION: [augment] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addToClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addToClass(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('185. FUNCTION: [addToClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleProps(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('188. FUNCTION: [handleProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.doInitialization) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.doInitialization(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('190. FUNCTION: [doInitialization] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleHandles) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleHandles(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('191. FUNCTION: [handleHandles] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePredicate) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePredicate(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('192. FUNCTION: [handlePredicate] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.wrapMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				for(i3=0; i3<testCases.length; i3++)
+				{
+					try{
+				var x = (typeof Joose.Class.wrapMethod(	testCases[i0],	testCases[i1],	testCases[i2],	testCases[i3]));
+						ar.push(x);
+					} catch(e){}
+				}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('195. FUNCTION: [wrapMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 130321.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.requiresMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.requiresMethod(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('196. FUNCTION: [requiresMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addRequirement) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addRequirement(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('203. FUNCTION: [addRequirement] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unapply) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.unapply(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('204. FUNCTION: [unapply] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addMethodToClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addMethodToClass(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('205. FUNCTION: [addMethodToClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addAttributeToClass) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addAttributeToClass(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('206. FUNCTION: [addAttributeToClass] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.apply) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.apply(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('207. FUNCTION: [apply] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.applyAttrs) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.applyAttrs(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('208. FUNCTION: [applyAttrs] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.applyMethod) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.applyMethod(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('209. FUNCTION: [applyMethod] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.applyMetaRole) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.applyMetaRole(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('210. FUNCTION: [applyMetaRole] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.applyMethodModifiers) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.applyMethodModifiers(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('211. FUNCTION: [applyMethodModifiers] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.applyMethodModifier) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.applyMethodModifier(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('212. FUNCTION: [applyMethodModifier] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.hasRequiredMethods) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.hasRequiredMethods(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('213. FUNCTION: [hasRequiredMethods] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.isImplementedBy) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.isImplementedBy(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('215. FUNCTION: [isImplementedBy] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handlePropmetaRoles) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handlePropmetaRoles(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('216. FUNCTION: [handlePropmetaRoles] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.getText) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.getText(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('223. FUNCTION: [getText] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleGearsMessage) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleGearsMessage(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('227. FUNCTION: [handleGearsMessage] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addWorker) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.addWorker(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('229. FUNCTION: [addWorker] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.sendReturn) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.sendReturn(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('231. FUNCTION: [sendReturn] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setTimeout) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.setTimeout(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('235. FUNCTION: [setTimeout] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setInterval) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.setInterval(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('236. FUNCTION: [setInterval] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.clearTimeout) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.clearTimeout(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('237. FUNCTION: [clearTimeout] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.clearInterval) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.clearInterval(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('238. FUNCTION: [clearInterval] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.pack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.pack(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('246. FUNCTION: [pack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.unpack(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('248. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.pack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.pack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('250. FUNCTION: [pack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packAttr) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.packAttr(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('251. FUNCTION: [packAttr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.unpack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('252. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.unpack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('253. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packedClassName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.packedClassName(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('254. FUNCTION: [packedClassName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.pack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.pack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('255. FUNCTION: [pack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packAttr) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.packAttr(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('256. FUNCTION: [packAttr] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.unpack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('257. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.unpack(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('258. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packedClassName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.packedClassName(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('259. FUNCTION: [packedClassName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packedModuleName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.packedModuleName(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('260. FUNCTION: [packedModuleName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.unpack(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('262. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packedClassNameToJSClassName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.packedClassNameToJSClassName(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('263. FUNCTION: [packedClassNameToJSClassName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.jsonParseFilter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.jsonParseFilter(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('264. FUNCTION: [jsonParseFilter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.JooseJSONParseFilter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.JooseJSONParseFilter(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('267. FUNCTION: [JooseJSONParseFilter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.unpack) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.unpack(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('269. FUNCTION: [unpack] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.packedClassNameToJSClassName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.packedClassNameToJSClassName(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('270. FUNCTION: [packedClassNameToJSClassName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.jsonParseFilter) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.jsonParseFilter(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('271. FUNCTION: [jsonParseFilter] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.decorate) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				try{
+			var x = (typeof Joose.Class.decorate(	testCases[i0],	testCases[i1],	testCases[i2]));
+					ar.push(x);
+				} catch(e){}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('273. FUNCTION: [decorate] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 6859.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.setup) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.setup(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('278. FUNCTION: [setup] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.alias) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.alias(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('280. FUNCTION: [alias] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.globalName) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.globalName(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('282. FUNCTION: [globalName] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.initialize) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.initialize(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('285. FUNCTION: [initialize] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addElement) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addElement(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('287. FUNCTION: [addElement] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.makeTypeChecker) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			for(i2=0; i2<testCases.length; i2++)
+			{
+				for(i3=0; i3<testCases.length; i3++)
+				{
+					try{
+				var x = (typeof Joose.Class.makeTypeChecker(	testCases[i0],	testCases[i1],	testCases[i2],	testCases[i3]));
+						ar.push(x);
+					} catch(e){}
+				}
+			}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('292. FUNCTION: [makeTypeChecker] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 130321.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.doTypeCheck) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.doTypeCheck(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('293. FUNCTION: [doTypeCheck] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.newFromTypeBuilder) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.newFromTypeBuilder(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('300. FUNCTION: [newFromTypeBuilder] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.makeSubType) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.makeSubType(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('302. FUNCTION: [makeSubType] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addCoercion) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.addCoercion(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('304. FUNCTION: [addCoercion] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.addConstraint) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.addConstraint(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('305. FUNCTION: [addConstraint] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.validateBool) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.validateBool(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('308. FUNCTION: [validateBool] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.validate) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.validate(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('309. FUNCTION: [validate] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class._validate) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class._validate(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('310. FUNCTION: [_validate] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.coerce) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.coerce(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('311. FUNCTION: [coerce] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('313. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.coerce) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.coerce(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('314. FUNCTION: [coerce] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('316. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('317. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('318. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.message) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.message(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('319. FUNCTION: [message] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('320. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('322. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('323. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.via) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.via(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('324. FUNCTION: [via] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('325. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.via) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.via(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('326. FUNCTION: [via] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('327. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.via) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.via(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('328. FUNCTION: [via] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('329. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.via) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.via(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('330. FUNCTION: [via] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('331. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('332. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('333. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('334. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.via) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.via(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('335. FUNCTION: [via] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('336. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.handleWith) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.handleWith(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('340. FUNCTION: [handleWith] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.wrapTypeChecker) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.wrapTypeChecker(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('348. FUNCTION: [wrapTypeChecker] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.newFromProps) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.newFromProps(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('351. FUNCTION: [newFromProps] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.where) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		try{
+	var x = (typeof Joose.Class.where(	testCases[i0]));
+			ar.push(x);
+		} catch(e){}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('353. FUNCTION: [where] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 19.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+if((typeof Joose.Class.newFromPatterns) == 'function')
+{
+	for(i0=0; i0<testCases.length; i0++)
+	{
+		for(i1=0; i1<testCases.length; i1++)
+		{
+			try{
+		var x = (typeof Joose.Class.newFromPatterns(	testCases[i0],	testCases[i1]));
+				ar.push(x);
+			} catch(e){}
+		}
+	}
+
+	//document.write(ar+'<br>');
+	document.write('360. FUNCTION: [newFromPatterns] Result: '+ar.allValuesSame()+ ', Expected Return: '+mode(ar)+'<br><br>');
+	if(ar.length != 361.0 )
+	{
+		countFailed++;
+	}
+	else if(ar.allValuesSame() == true && mode(ar) != null)
+	{
+		countPassed++;
+	}
+	else if(ar.allValuesSame() == false)
+	{
+		countFailed++;
+	}
+}
+else
+{	
+	countNotExist++;
+}
+ar.length = 0;
+document.write('Total Test Run             : '+162+'<br>');document.write('Tests Skipped (Complexity) : '+1+'<br>');document.write('Total Test Failed          : '+countFailed+'<br>');document.write('Total Test Passed   		 : '+countPassed+'<br>');document.write('Total Test Not Exist		 : '+countNotExist+'<br><br>');</script>
+</html>

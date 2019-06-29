@@ -1,0 +1,15 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB5 [tailport=s, headport=n, headlabel="    5"]
+BB5 [shape=record label="{6: constant[undefined,v1]}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB6 [shape=record label="{7: read-variable['jQuery-64:14',v5,-]|8: read-property[v5,'fn',v4]|9: \<variable-non-null-undef\>['jQuery']|10: read-property[v4,'init',-]|11: \<property-non-null-undef\>[v5,'fn']|12: read-variable['selector-64:30',v6,v2]|13: read-variable['context-64:40',v7,v2]|14: read-variable['rootjQuery-64:49',v8,v2]}" ] 
+BB6 -> BB7 [tailport=s, headport=n, headlabel="      7"]
+BB6 -> BB9 [tailport=s, headport=n, color=gray, headlabel="      9"]
+BB7 [shape=record label="{15: construct[v4,'init',v6,v7,v8,v1]}" ] 
+BB7 -> BB8 [tailport=s, headport=n, headlabel="      8"]
+BB7 -> BB9 [tailport=s, headport=n, color=gray]
+BB8 [shape=record label="{16: return[v1]}" ] 
+BB9 [shape=record label="{17: exceptional-return}" ] 
+}

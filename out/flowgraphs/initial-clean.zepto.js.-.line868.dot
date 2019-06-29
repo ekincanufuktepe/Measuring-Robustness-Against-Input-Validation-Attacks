@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB1744 [tailport=s, headport=n, headlabel="    1744"]
+BB1744 [shape=record label="{3830: constant[undefined,v1]}" ] 
+BB1744 -> BB1745 [tailport=s, headport=n, headlabel="      1745"]
+BB1745 [shape=record label="{3831: read-variable['$',v5,v4]|3832: read-variable['html',v6,-]}" ] 
+BB1745 -> BB1746 [tailport=s, headport=n, headlabel="      1746"]
+BB1745 -> BB1751 [tailport=s, headport=n, color=gray, headlabel="      1751"]
+BB1746 [shape=record label="{3833: call-$ [v4,v5,v6,v3]}" ] 
+BB1746 -> BB1747 [tailport=s, headport=n, headlabel="      1747"]
+BB1746 -> BB1751 [tailport=s, headport=n, color=gray]
+BB1747 [shape=record label="{3834: read-variable['operator',v7,-]|3835: read-property[v3,v7,-]|3836: read-variable['this',v8,-]}" ] 
+BB1747 -> BB1748 [tailport=s, headport=n, headlabel="      1748"]
+BB1747 -> BB1751 [tailport=s, headport=n, color=gray]
+BB1748 [shape=record label="{3837: call-null [v3,[v7],v8,-]*}" ] 
+BB1748 -> BB1749 [tailport=s, headport=n, headlabel="      1749"]
+BB1748 -> BB1751 [tailport=s, headport=n, color=gray]
+BB1749 [shape=record label="{3838: read-variable['this',v1,-]}" ] 
+BB1749 -> BB1750 [tailport=s, headport=n, headlabel="      1750"]
+BB1749 -> BB1751 [tailport=s, headport=n, color=gray]
+BB1750 [shape=record label="{3839: return[v1]}" ] 
+BB1751 [shape=record label="{3840: exceptional-return}" ] 
+//#$~ 870
+}

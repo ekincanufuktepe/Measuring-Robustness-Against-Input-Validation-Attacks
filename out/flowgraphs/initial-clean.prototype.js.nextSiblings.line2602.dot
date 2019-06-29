@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry301[shape=none,label=""];
+BB_entry301 -> BB3545 [tailport=s, headport=n, headlabel="    3545"]
+BB3545 [shape=record label="{9500: constant[undefined,v1]}" ] 
+BB3545 -> BB3546 [tailport=s, headport=n, headlabel="      3546"]
+BB3546 [shape=record label="{9501: read-variable['recursivelyCollect',v3,v2]|9502: read-variable['element',v4,-]|9503: constant[\"nextSibling\",v5]}" ] 
+BB3546 -> BB3547 [tailport=s, headport=n, headlabel="      3547"]
+BB3546 -> BB3549 [tailport=s, headport=n, color=gray, headlabel="      3549"]
+BB3547 [shape=record label="{9504: call-recursivelyCollect [v2,v3,v4,v5,v1]}" ] 
+BB3547 -> BB3548 [tailport=s, headport=n, headlabel="      3548"]
+BB3547 -> BB3549 [tailport=s, headport=n, color=gray]
+BB3548 [shape=record label="{9505: return[v1]}" ] 
+BB3549 [shape=record label="{9506: exceptional-return}" ] 
+//#$~ 2603
+}

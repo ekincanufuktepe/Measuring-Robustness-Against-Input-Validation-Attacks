@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry340[shape=none,label=""];
+BB_entry340 -> BB5788 [tailport=s, headport=n, headlabel="    5788"]
+BB5788 [shape=record label="{17710: constant[undefined,v1]}" ] 
+BB5788 -> BB5789 [tailport=s, headport=n, headlabel="      5789"]
+BB5789 [shape=record label="{17711: read-variable['raise',v3,v2]|17712: read-variable['pos',v6,-]|17713: constant[null,v7]|17714: !=[v6,v7,v5]|17715: if[v5](true-block:5790,false-block:5791)}" ] 
+BB5789 -> BB5790 [tailport=s, headport=n, headlabel="      5790"]
+BB5789 -> BB5791 [tailport=s, headport=n, headlabel="      5791"]
+BB5789 -> BB5795 [tailport=s, headport=n, color=gray, headlabel="      5795"]
+BB5790 [shape=record label="{17716: read-variable['pos',v4,-]}" ] 
+BB5790 -> BB5792 [tailport=s, headport=n, headlabel="      5792"]
+BB5790 -> BB5795 [tailport=s, headport=n, color=gray]
+BB5791 [shape=record label="{17717: read-variable['tokStart',v4,-]}" ] 
+BB5791 -> BB5792 [tailport=s, headport=n]
+BB5791 -> BB5795 [tailport=s, headport=n, color=gray]
+BB5792 [shape=record label="{17718: constant[\"Unexpected token\",v8]}" ] 
+BB5792 -> BB5793 [tailport=s, headport=n, headlabel="      5793"]
+BB5793 [shape=record label="{17719: call-raise [v2,v3,v4,v8,-]*}" ] 
+BB5793 -> BB5794 [tailport=s, headport=n, headlabel="      5794"]
+BB5793 -> BB5795 [tailport=s, headport=n, color=gray]
+BB5794 [shape=record label="{17720: return[v1]}" ] 
+BB5795 [shape=record label="{17721: exceptional-return}" ] 
+//#$~ 5839
+}

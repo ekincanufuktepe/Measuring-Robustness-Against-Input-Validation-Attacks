@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB29 [tailport=s, headport=n, headlabel="    29"]
+BB29 [shape=record label="{86: constant[undefined,v1]}" ] 
+BB29 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB30 [shape=record label="{87: read-variable['n',v3,-]|88: constant[2.0,v4]|89: \<[v3,v4,v2]|90: if[v2](true-block:31,false-block:32)}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB30 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB30 -> BB38 [tailport=s, headport=n, color=gray, headlabel="      38"]
+BB31 [shape=record label="{91: constant[1.0,v1]}" ] 
+BB31 -> BB37 [tailport=s, headport=n, headlabel="      37"]
+BB32 [shape=record label="{92: read-variable['fib',v8,v7]|93: read-variable['n',v10,-]|94: constant[2.0,v11]|95: -[v10,v11,v9]}" ] 
+BB32 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB32 -> BB38 [tailport=s, headport=n, color=gray]
+BB33 [shape=record label="{96: call-fib [v7,v8,v9,v5]}" ] 
+BB33 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB33 -> BB38 [tailport=s, headport=n, color=gray]
+BB34 [shape=record label="{97: read-variable['fib',v13,v12]|98: read-variable['n',v15,-]|99: constant[1.0,v16]|100: -[v15,v16,v14]}" ] 
+BB34 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB34 -> BB38 [tailport=s, headport=n, color=gray]
+BB35 [shape=record label="{101: call-fib [v12,v13,v14,v6]}" ] 
+BB35 -> BB36 [tailport=s, headport=n, headlabel="      36"]
+BB35 -> BB38 [tailport=s, headport=n, color=gray]
+BB36 [shape=record label="{102: +[v5,v6,v1]}" ] 
+BB36 -> BB37 [tailport=s, headport=n]
+BB36 -> BB38 [tailport=s, headport=n, color=gray]
+BB37 [shape=record label="{103: return[v1]}" ] 
+BB38 [shape=record label="{104: exceptional-return}" ] 
+//#$~ 17
+}

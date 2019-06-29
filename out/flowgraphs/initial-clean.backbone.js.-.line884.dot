@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry68[shape=none,label=""];
+BB_entry68 -> BB996 [tailport=s, headport=n, headlabel="    996"]
+BB996 [shape=record label="{2897: constant[undefined,v1]}" ] 
+BB996 -> BB997 [tailport=s, headport=n, headlabel="      997"]
+BB997 [shape=record label="{2898: read-variable['options',v3,-]|2899: read-property[v3,'wait',v2]|2900: \<variable-non-null-undef\>['options']|2901: if[v2](true-block:998,false-block:1000)}" ] 
+BB997 -> BB998 [tailport=s, headport=n, headlabel="      998"]
+BB997 -> BB1000 [tailport=s, headport=n, headlabel="      1000"]
+BB997 -> BB1004 [tailport=s, headport=n, color=gray, headlabel="      1004"]
+BB998 [shape=record label="{2902: read-variable['collection',v5,-]|2903: read-property[v5,'add',-]|2904: \<variable-non-null-undef\>['collection']|2905: read-variable['model',v6,-]|2906: read-variable['options',v7,-]}" ] 
+BB998 -> BB999 [tailport=s, headport=n, headlabel="      999"]
+BB998 -> BB1004 [tailport=s, headport=n, color=gray]
+BB999 [shape=record label="{2907: call-collection.add [v5,'add',v6,v7,-]*}" ] 
+BB999 -> BB1000 [tailport=s, headport=n]
+BB999 -> BB1004 [tailport=s, headport=n, color=gray]
+BB1000 [shape=record label="{2908: read-variable['success',v4,-]|2909: if[v4](true-block:1001,false-block:1003)}" ] 
+BB1000 -> BB1001 [tailport=s, headport=n, headlabel="      1001"]
+BB1000 -> BB1003 [tailport=s, headport=n, headlabel="      1003"]
+BB1000 -> BB1004 [tailport=s, headport=n, color=gray]
+BB1001 [shape=record label="{2910: read-variable['success',v6,v5]|2911: read-variable['model',v7,-]|2912: read-variable['resp',v8,-]|2913: read-variable['options',v9,-]}" ] 
+BB1001 -> BB1002 [tailport=s, headport=n, headlabel="      1002"]
+BB1001 -> BB1004 [tailport=s, headport=n, color=gray]
+BB1002 [shape=record label="{2914: call-success [v5,v6,v7,v8,v9,-]*}" ] 
+BB1002 -> BB1003 [tailport=s, headport=n]
+BB1002 -> BB1004 [tailport=s, headport=n, color=gray]
+BB1003 [shape=record label="{2915: return[v1]}" ] 
+BB1004 [shape=record label="{2916: exceptional-return}" ] 
+//#$~ 886
+}

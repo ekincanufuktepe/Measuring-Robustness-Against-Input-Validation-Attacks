@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry230[shape=none,label=""];
+BB_entry230 -> BB2670 [tailport=s, headport=n, headlabel="    2670"]
+BB2670 [shape=record label="{8724: constant[undefined,v1]}" ] 
+BB2670 -> BB2671 [tailport=s, headport=n, headlabel="      2671"]
+BB2671 [shape=record label="{8725: new[v1]|8726: read-variable['test',v3,-]|8727: read-property[v3,'title',v2]|8728: \<variable-non-null-undef\>['test']|8729: write-property[v1,'title',v2]|8730: read-variable['test',v6,-]|8731: read-property[v6,'fullTitle',-]|8732: \<variable-non-null-undef\>['test']}" ] 
+BB2671 -> BB2672 [tailport=s, headport=n, headlabel="      2672"]
+BB2671 -> BB2675 [tailport=s, headport=n, color=gray, headlabel="      2675"]
+BB2672 [shape=record label="{8733: call-test.fullTitle [v6,'fullTitle',v4]}" ] 
+BB2672 -> BB2673 [tailport=s, headport=n, headlabel="      2673"]
+BB2672 -> BB2675 [tailport=s, headport=n, color=gray]
+BB2673 [shape=record label="{8734: write-property[v1,'fullTitle',v4]|8735: read-variable['test',v8,-]|8736: read-property[v8,'duration',v7]|8737: \<variable-non-null-undef\>['test']|8738: write-property[v1,'duration',v7]}" ] 
+BB2673 -> BB2674 [tailport=s, headport=n, headlabel="      2674"]
+BB2673 -> BB2675 [tailport=s, headport=n, color=gray]
+BB2674 [shape=record label="{8739: return[v1]}" ] 
+BB2675 [shape=record label="{8740: exceptional-return}" ] 
+//#$~ 3109
+}

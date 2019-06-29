@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1517[shape=none,label=""];
+BB_entry1517 -> BB17586 [tailport=s, headport=n, headlabel="    17586"]
+BB17586 [shape=record label="{59028: constant[undefined,v1]|59029: vardecl['content']}" ] 
+BB17586 -> BB17587 [tailport=s, headport=n, headlabel="      17587"]
+BB17587 [shape=record label="{59030: read-variable['get',v4,v3]|59031: read-variable['this',v5,-]|59032: constant[\"content\",v6]}" ] 
+BB17587 -> BB17588 [tailport=s, headport=n, headlabel="      17588"]
+BB17587 -> BB17593 [tailport=s, headport=n, color=gray, headlabel="      17593"]
+BB17588 [shape=record label="{59033: call-get [v3,v4,v5,v6,v2]}" ] 
+BB17588 -> BB17589 [tailport=s, headport=n, headlabel="      17589"]
+BB17588 -> BB17593 [tailport=s, headport=n, color=gray]
+BB17589 [shape=record label="{59034: write-variable[v2,'content']*|59035: read-variable['content',v7,-]|59036: if[v7](true-block:17590,false-block:17592)}" ] 
+BB17589 -> BB17590 [tailport=s, headport=n, headlabel="      17590"]
+BB17589 -> BB17592 [tailport=s, headport=n, headlabel="      17592"]
+BB17589 -> BB17593 [tailport=s, headport=n, color=gray]
+BB17590 [shape=record label="{59037: read-variable['content',v9,-]|59038: read-property[v9,'removeArrayObserver',-]|59039: \<variable-non-null-undef\>['content']|59040: read-variable['this',v10,-]|59041: new[v11]|59042: constant[\"contentArrayWillChange\",v12]|59043: write-property[v11,'willChange',v12]|59044: constant[\"contentArrayDidChange\",v13]|59045: write-property[v11,'didChange',v13]}" ] 
+BB17590 -> BB17591 [tailport=s, headport=n, headlabel="      17591"]
+BB17590 -> BB17593 [tailport=s, headport=n, color=gray]
+BB17591 [shape=record label="{59046: call-content.removeArrayObserver [v9,'removeArrayObserver',v10,v11,-]*}" ] 
+BB17591 -> BB17592 [tailport=s, headport=n]
+BB17591 -> BB17593 [tailport=s, headport=n, color=gray]
+BB17592 [shape=record label="{59047: return[v1]}" ] 
+BB17593 [shape=record label="{59048: exceptional-return}" ] 
+//#$~ 33287
+}

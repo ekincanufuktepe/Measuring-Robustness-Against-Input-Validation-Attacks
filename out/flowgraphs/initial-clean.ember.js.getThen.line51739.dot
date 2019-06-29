@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2549[shape=none,label=""];
+BB_entry2549 -> BB28870 [tailport=s, headport=n, headlabel="    28870"]
+BB28870 [shape=record label="{95995: constant[undefined,v1]}" ] 
+BB28870 -> BB28871 [tailport=s, headport=n, headlabel="      28871"]
+BB28871 [shape=record label="{95996: read-variable['obj',v2,-]|95997: read-property[v2,'then',v1]|95998: \<variable-non-null-undef\>['obj']}" ] 
+BB28871 -> BB28876 [tailport=s, headport=n, headlabel="      28876"]
+BB28871 -> BB28872 [tailport=s, headport=n, color=gray, headlabel="      28872"]
+BB28872 [shape=record label="{95999: catch[error,v2]|96000: begin-with[v2]}" ] 
+BB28872 -> BB28873 [tailport=s, headport=n, headlabel="      28873"]
+BB28872 -> BB28877 [tailport=s, headport=n, color=gray, headlabel="      28877"]
+BB28873 [shape=record label="{96001: read-variable['ERROR',v5,v3]|96002: read-variable['error',v4,v3]|96003: write-property[v5,'value',v4]|96004: \<variable-non-null-undef\>['ERROR']*|96005: read-variable['ERROR',v1,v3]}" ] 
+BB28873 -> BB28876 [tailport=s, headport=n]
+BB28873 -> BB28874 [tailport=s, headport=n, color=gray, headlabel="      28874"]
+BB28874 [shape=record label="{96006: end-with}" ] 
+BB28874 -> BB28877 [tailport=s, headport=n]
+BB28875 [shape=record label="{96007: end-with}" ] 
+BB28875 -> BB28876 [tailport=s, headport=n]
+BB28876 [shape=record label="{96008: return[v1]}" ] 
+BB28877 [shape=record label="{96009: exceptional-return}" ] 
+//#$~ 51744
+}

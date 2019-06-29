@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry396[shape=none,label=""];
+BB_entry396 -> BB5910 [tailport=s, headport=n, headlabel="    5910"]
+BB5910 [shape=record label="{20587: constant[undefined,v1]}" ] 
+BB5910 -> BB5911 [tailport=s, headport=n, headlabel="      5911"]
+BB5911 [shape=record label="{20588: constant[\"production\",v3]|20589: constant[\"development\",v4]|20590: !==[v3,v4,v2]|20591: if[v2](true-block:5912,false-block:5913)}" ] 
+BB5911 -> BB5912 [tailport=s, headport=n, headlabel="      5912"]
+BB5911 -> BB5913 [tailport=s, headport=n, headlabel="      5913"]
+BB5911 -> BB5919 [tailport=s, headport=n, color=gray, headlabel="      5919"]
+BB5912 [shape=record label="{20592: read-variable['warning',v6,v5]|20593: constant[false,v7]|20594: constant[\"Factory.type is deprecated. Access the class directly \",v9]|20595: constant[\"before passing it to createFactory.\",v10]|20596: +[v9,v10,v8]}" ] 
+BB5912 -> BB5914 [tailport=s, headport=n, headlabel="      5914"]
+BB5912 -> BB5919 [tailport=s, headport=n, color=gray]
+BB5913 [shape=record label="{20597: constant[null,-]}" ] 
+BB5913 -> BB5915 [tailport=s, headport=n, headlabel="      5915"]
+BB5914 [shape=record label="{20598: call-warning [v5,v6,v7,v8,-]}" ] 
+BB5914 -> BB5915 [tailport=s, headport=n]
+BB5914 -> BB5919 [tailport=s, headport=n, color=gray]
+BB5915 [shape=record label="{20599: read-variable['Object',v6,-]|20600: read-property[v6,'defineProperty',-]|20601: \<variable-non-null-undef\>['Object']|20602: read-variable['this',v7,-]|20603: constant[\"type\",v8]|20604: new[v9]|20605: read-variable['type',v10,-]|20606: write-property[v9,'value',v10]}" ] 
+BB5915 -> BB5916 [tailport=s, headport=n, headlabel="      5916"]
+BB5915 -> BB5919 [tailport=s, headport=n, color=gray]
+BB5916 [shape=record label="{20607: call-Object.defineProperty [v6,'defineProperty',v7,v8,v9,-]*}" ] 
+BB5916 -> BB5917 [tailport=s, headport=n, headlabel="      5917"]
+BB5916 -> BB5919 [tailport=s, headport=n, color=gray]
+BB5917 [shape=record label="{20608: read-variable['type',v1,-]}" ] 
+BB5917 -> BB5918 [tailport=s, headport=n, headlabel="      5918"]
+BB5917 -> BB5919 [tailport=s, headport=n, color=gray]
+BB5918 [shape=record label="{20609: return[v1]}" ] 
+BB5919 [shape=record label="{20610: exceptional-return}" ] 
+//#$~ 10542
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry145[shape=none,label=""];
+BB_entry145 -> BB2361 [tailport=s, headport=n, headlabel="    2361"]
+BB2361 [shape=record label="{7250: constant[undefined,v1]|7251: vardecl['indices']|7252: vardecl['background']}" ] 
+BB2361 -> BB2362 [tailport=s, headport=n, headlabel="      2362"]
+BB2362 [shape=record label="{7253: read-variable['slide',v4,-]|7254: read-property[v4,'style',v3]|7255: \<variable-non-null-undef\>['slide']|7256: constant[\"none\",v2]|7257: write-property[v3,'display',v2]|7258: \<property-non-null-undef\>[v4,'style']*|7259: read-variable['getIndices',v7,v6]|7260: read-variable['slide',v8,-]}" ] 
+BB2362 -> BB2363 [tailport=s, headport=n, headlabel="      2363"]
+BB2362 -> BB2369 [tailport=s, headport=n, color=gray, headlabel="      2369"]
+BB2363 [shape=record label="{7261: call-getIndices [v6,v7,v8,v5]}" ] 
+BB2363 -> BB2364 [tailport=s, headport=n, headlabel="      2364"]
+BB2363 -> BB2369 [tailport=s, headport=n, color=gray]
+BB2364 [shape=record label="{7262: write-variable[v5,'indices']*|7263: read-variable['getSlideBackground',v11,v10]|7264: read-variable['indices',v13,-]|7265: read-property[v13,'h',v12]|7266: \<variable-non-null-undef\>['indices']|7267: read-variable['indices',v15,-]|7268: read-property[v15,'v',v14]|7269: \<variable-non-null-undef\>['indices']}" ] 
+BB2364 -> BB2365 [tailport=s, headport=n, headlabel="      2365"]
+BB2364 -> BB2369 [tailport=s, headport=n, color=gray]
+BB2365 [shape=record label="{7270: call-getSlideBackground [v10,v11,v12,v14,v9]}" ] 
+BB2365 -> BB2366 [tailport=s, headport=n, headlabel="      2366"]
+BB2365 -> BB2369 [tailport=s, headport=n, color=gray]
+BB2366 [shape=record label="{7271: write-variable[v9,'background']*|7272: read-variable['background',v16,-]|7273: if[v16](true-block:2367,false-block:2368)}" ] 
+BB2366 -> BB2367 [tailport=s, headport=n, headlabel="      2367"]
+BB2366 -> BB2368 [tailport=s, headport=n, headlabel="      2368"]
+BB2366 -> BB2369 [tailport=s, headport=n, color=gray]
+BB2367 [shape=record label="{7274: read-variable['background',v19,-]|7275: read-property[v19,'style',v18]|7276: \<variable-non-null-undef\>['background']|7277: constant[\"none\",v17]|7278: write-property[v18,'display',v17]|7279: \<property-non-null-undef\>[v19,'style']*}" ] 
+BB2367 -> BB2368 [tailport=s, headport=n]
+BB2367 -> BB2369 [tailport=s, headport=n, color=gray]
+BB2368 [shape=record label="{7280: return[v1]}" ] 
+BB2369 [shape=record label="{7281: exceptional-return}" ] 
+//#$~ 2813
+}

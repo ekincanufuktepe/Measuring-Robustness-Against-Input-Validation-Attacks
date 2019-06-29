@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry234[shape=none,label=""];
+BB_entry234 -> BB2542 [tailport=s, headport=n, headlabel="    2542"]
+BB2542 [shape=record label="{6869: constant[undefined,v1]|6870: vardecl['readyState']}" ] 
+BB2542 -> BB2543 [tailport=s, headport=n, headlabel="      2543"]
+BB2543 [shape=record label="{6871: read-variable['this',v4,-]|6872: read-property[v4,'transport',v3]|6873: read-property[v3,'readyState',v2]|6874: \<property-non-null-undef\>[v4,'transport']|6875: write-variable[v2,'readyState']*|6876: read-variable['readyState',v6,-]|6877: constant[1.0,v7]|6878: \>[v6,v7,v5]|6879: if[v5](true-block:2544,false-block:2547)}" ] 
+BB2543 -> BB2547 [tailport=s, headport=n, headlabel="      2547"]
+BB2543 -> BB2544 [tailport=s, headport=n, headlabel="      2544"]
+BB2543 -> BB2551 [tailport=s, headport=n, color=gray, headlabel="      2551"]
+BB2544 [shape=record label="{6880: read-variable['readyState',v9,-]|6881: constant[4.0,v10]|6882: ==[v9,v10,v8]|6883: if[v8](true-block:2545,false-block:2546)}" ] 
+BB2544 -> BB2546 [tailport=s, headport=n, headlabel="      2546"]
+BB2544 -> BB2545 [tailport=s, headport=n, headlabel="      2545"]
+BB2544 -> BB2551 [tailport=s, headport=n, color=gray]
+BB2545 [shape=record label="{6884: read-variable['this',v11,-]|6885: read-property[v11,'_complete',v8]}" ] 
+BB2545 -> BB2546 [tailport=s, headport=n]
+BB2545 -> BB2551 [tailport=s, headport=n, color=gray]
+BB2546 [shape=record label="{6886: ![v8,v5]}" ] 
+BB2546 -> BB2547 [tailport=s, headport=n]
+BB2546 -> BB2551 [tailport=s, headport=n, color=gray]
+BB2547 [shape=record label="{6887: if[v5](true-block:2548,false-block:2550)}" ] 
+BB2547 -> BB2548 [tailport=s, headport=n, headlabel="      2548"]
+BB2547 -> BB2550 [tailport=s, headport=n, headlabel="      2550"]
+BB2548 [shape=record label="{6888: read-variable['this',v9,-]|6889: read-property[v9,'respondToReadyState',-]|6890: read-variable['this',v12,-]|6891: read-property[v12,'transport',v11]|6892: read-property[v11,'readyState',v10]|6893: \<property-non-null-undef\>[v12,'transport']}" ] 
+BB2548 -> BB2549 [tailport=s, headport=n, headlabel="      2549"]
+BB2548 -> BB2551 [tailport=s, headport=n, color=gray]
+BB2549 [shape=record label="{6894: call-this.respondToReadyState [v9,'respondToReadyState',v10,-]*}" ] 
+BB2549 -> BB2550 [tailport=s, headport=n]
+BB2549 -> BB2551 [tailport=s, headport=n, color=gray]
+BB2550 [shape=record label="{6895: return[v1]}" ] 
+BB2551 [shape=record label="{6896: exceptional-return}" ] 
+//#$~ 1762
+}

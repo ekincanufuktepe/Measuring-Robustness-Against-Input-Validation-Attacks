@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry479[shape=none,label=""];
+BB_entry479 -> BB6852 [tailport=s, headport=n, headlabel="    6852"]
+BB6852 [shape=record label="{23219: constant[undefined,v1]|23220: vardecl['transaction']}" ] 
+BB6852 -> BB6853 [tailport=s, headport=n, headlabel="      6853"]
+BB6853 [shape=record label="{23221: read-variable['ReactUpdates',v5,-]|23222: read-property[v5,'ReactReconcileTransaction',v4]|23223: \<variable-non-null-undef\>['ReactUpdates']|23224: read-property[v4,'getPooled',-]|23225: \<property-non-null-undef\>[v5,'ReactReconcileTransaction']}" ] 
+BB6853 -> BB6854 [tailport=s, headport=n, headlabel="      6854"]
+BB6853 -> BB6860 [tailport=s, headport=n, color=gray, headlabel="      6860"]
+BB6854 [shape=record label="{23226: call-ReactUpdates.ReactReconcileTransaction.getPooled [v4,'getPooled',v2]}" ] 
+BB6854 -> BB6855 [tailport=s, headport=n, headlabel="      6855"]
+BB6854 -> BB6860 [tailport=s, headport=n, color=gray]
+BB6855 [shape=record label="{23227: write-variable[v2,'transaction']*|23228: read-variable['transaction',v7,-]|23229: read-property[v7,'perform',-]|23230: \<variable-non-null-undef\>['transaction']|23231: read-variable['mountComponentIntoNode',v8,-]|23232: constant[null,v9]|23233: read-variable['componentInstance',v10,-]|23234: read-variable['rootID',v11,-]|23235: read-variable['container',v12,-]|23236: read-variable['transaction',v13,-]|23237: read-variable['shouldReuseMarkup',v14,-]}" ] 
+BB6855 -> BB6856 [tailport=s, headport=n, headlabel="      6856"]
+BB6855 -> BB6860 [tailport=s, headport=n, color=gray]
+BB6856 [shape=record label="{23238: call-transaction.perform [v7,'perform',v8,v9,v10,v11,v12,v13,v14,-]*}" ] 
+BB6856 -> BB6857 [tailport=s, headport=n, headlabel="      6857"]
+BB6856 -> BB6860 [tailport=s, headport=n, color=gray]
+BB6857 [shape=record label="{23239: read-variable['ReactUpdates',v17,-]|23240: read-property[v17,'ReactReconcileTransaction',v16]|23241: \<variable-non-null-undef\>['ReactUpdates']|23242: read-property[v16,'release',-]|23243: \<property-non-null-undef\>[v17,'ReactReconcileTransaction']|23244: read-variable['transaction',v18,-]}" ] 
+BB6857 -> BB6858 [tailport=s, headport=n, headlabel="      6858"]
+BB6857 -> BB6860 [tailport=s, headport=n, color=gray]
+BB6858 [shape=record label="{23245: call-ReactUpdates.ReactReconcileTransaction.release [v16,'release',v18,-]*}" ] 
+BB6858 -> BB6859 [tailport=s, headport=n, headlabel="      6859"]
+BB6858 -> BB6860 [tailport=s, headport=n, color=gray]
+BB6859 [shape=record label="{23246: return[v1]}" ] 
+BB6860 [shape=record label="{23247: exceptional-return}" ] 
+//#$~ 12032
+}

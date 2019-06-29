@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry122[shape=none,label=""];
+BB_entry122 -> BB1692 [tailport=s, headport=n, headlabel="    1692"]
+BB1692 [shape=record label="{4811: constant[undefined,v1]}" ] 
+BB1692 -> BB1693 [tailport=s, headport=n, headlabel="      1693"]
+BB1693 [shape=record label="{4812: read-variable['error',v2,-]|4813: if[v2](true-block:1694,false-block:1696)}" ] 
+BB1693 -> BB1694 [tailport=s, headport=n, headlabel="      1694"]
+BB1693 -> BB1696 [tailport=s, headport=n, headlabel="      1696"]
+BB1693 -> BB1699 [tailport=s, headport=n, color=gray, headlabel="      1699"]
+BB1694 [shape=record label="{4814: read-variable['error',v4,v3]|4815: read-variable['model',v5,-]|4816: read-variable['resp',v6,-]|4817: read-variable['options',v7,-]}" ] 
+BB1694 -> BB1695 [tailport=s, headport=n, headlabel="      1695"]
+BB1694 -> BB1699 [tailport=s, headport=n, color=gray]
+BB1695 [shape=record label="{4818: call-error [v3,v4,v5,v6,v7,-]*}" ] 
+BB1695 -> BB1696 [tailport=s, headport=n]
+BB1695 -> BB1699 [tailport=s, headport=n, color=gray]
+BB1696 [shape=record label="{4819: read-variable['model',v4,-]|4820: read-property[v4,'trigger',-]|4821: \<variable-non-null-undef\>['model']|4822: constant[\"error\",v5]|4823: read-variable['model',v6,-]|4824: read-variable['resp',v7,-]|4825: read-variable['options',v8,-]}" ] 
+BB1696 -> BB1697 [tailport=s, headport=n, headlabel="      1697"]
+BB1696 -> BB1699 [tailport=s, headport=n, color=gray]
+BB1697 [shape=record label="{4826: call-model.trigger [v4,'trigger',v5,v6,v7,v8,-]*}" ] 
+BB1697 -> BB1698 [tailport=s, headport=n, headlabel="      1698"]
+BB1697 -> BB1699 [tailport=s, headport=n, color=gray]
+BB1698 [shape=record label="{4827: return[v1]}" ] 
+BB1699 [shape=record label="{4828: exceptional-return}" ] 
+//#$~ 1604
+}

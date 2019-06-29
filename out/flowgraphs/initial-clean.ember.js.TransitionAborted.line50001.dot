@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2433[shape=none,label=""];
+BB_entry2433 -> BB27840 [tailport=s, headport=n, headlabel="    27840"]
+BB27840 [shape=record label="{92388: constant[undefined,v1]}" ] 
+BB27840 -> BB27841 [tailport=s, headport=n, headlabel="      27841"]
+BB27841 [shape=record label="{92389: read-variable['this',v3,-]|92390: read-variable['message',v2,-]|92391: if[v2](true-block:27843,false-block:27842)}" ] 
+BB27841 -> BB27843 [tailport=s, headport=n, headlabel="      27843"]
+BB27841 -> BB27842 [tailport=s, headport=n, headlabel="      27842"]
+BB27841 -> BB27845 [tailport=s, headport=n, color=gray, headlabel="      27845"]
+BB27842 [shape=record label="{92392: constant[\"TransitionAborted\",v2]}" ] 
+BB27842 -> BB27843 [tailport=s, headport=n]
+BB27843 [shape=record label="{92393: write-property[v3,'message',v2]*|92394: read-variable['this',v5,-]|92395: constant[\"TransitionAborted\",v4]|92396: write-property[v5,'name',v4]*}" ] 
+BB27843 -> BB27844 [tailport=s, headport=n, headlabel="      27844"]
+BB27843 -> BB27845 [tailport=s, headport=n, color=gray]
+BB27844 [shape=record label="{92397: return[v1]}" ] 
+BB27845 [shape=record label="{92398: exceptional-return}" ] 
+//#$~ 50003
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry203[shape=none,label=""];
+BB_entry203 -> BB2621 [tailport=s, headport=n, headlabel="    2621"]
+BB2621 [shape=record label="{8512: constant[undefined,v1]|8513: vardecl['klass']|8514: vardecl['wrapped']}" ] 
+BB2621 -> BB2622 [tailport=s, headport=n, headlabel="      2622"]
+BB2622 [shape=record label="{8515: read-variable['type',v3,-]|8516: read-property[v3,'klass',v2]|8517: \<variable-non-null-undef\>['type']|8518: write-variable[v2,'klass']*|8519: read-variable['self',v6,-]|8520: read-property[v6,'wrapModelType',-]|8521: \<variable-non-null-undef\>['self']|8522: read-variable['klass',v7,-]|8523: read-variable['type',v9,-]|8524: read-property[v9,'name',v8]|8525: \<variable-non-null-undef\>['type']}" ] 
+BB2622 -> BB2623 [tailport=s, headport=n, headlabel="      2623"]
+BB2622 -> BB2629 [tailport=s, headport=n, color=gray, headlabel="      2629"]
+BB2623 [shape=record label="{8526: call-self.wrapModelType [v6,'wrapModelType',v7,v8,v4]}" ] 
+BB2623 -> BB2624 [tailport=s, headport=n, headlabel="      2624"]
+BB2623 -> BB2629 [tailport=s, headport=n, color=gray]
+BB2624 [shape=record label="{8527: write-variable[v4,'wrapped']*|8528: read-variable['releaseMethods',v11,-]|8529: read-property[v11,'push',-]|8530: \<variable-non-null-undef\>['releaseMethods']|8531: read-variable['self',v14,-]|8532: read-property[v14,'observeModelType',-]|8533: \<variable-non-null-undef\>['self']|8534: read-variable['klass',v15,-]|8535: read-variable['typesUpdated',v16,-]}" ] 
+BB2624 -> BB2625 [tailport=s, headport=n, headlabel="      2625"]
+BB2624 -> BB2629 [tailport=s, headport=n, color=gray]
+BB2625 [shape=record label="{8536: call-self.observeModelType [v14,'observeModelType',v15,v16,v12]}" ] 
+BB2625 -> BB2626 [tailport=s, headport=n, headlabel="      2626"]
+BB2625 -> BB2629 [tailport=s, headport=n, color=gray]
+BB2626 [shape=record label="{8537: call-releaseMethods.push [v11,'push',v12,-]*}" ] 
+BB2626 -> BB2627 [tailport=s, headport=n, headlabel="      2627"]
+BB2626 -> BB2629 [tailport=s, headport=n, color=gray]
+BB2627 [shape=record label="{8538: read-variable['wrapped',v1,-]}" ] 
+BB2627 -> BB2628 [tailport=s, headport=n, headlabel="      2628"]
+BB2627 -> BB2629 [tailport=s, headport=n, color=gray]
+BB2628 [shape=record label="{8539: return[v1]}" ] 
+BB2629 [shape=record label="{8540: exceptional-return}" ] 
+//#$~ 4432
+}

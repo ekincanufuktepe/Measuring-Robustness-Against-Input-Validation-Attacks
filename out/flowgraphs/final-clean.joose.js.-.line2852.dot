@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry269[shape=none,label=""];
+BB_entry269 -> BB2448 [tailport=s, headport=n, headlabel="    2448"]
+BB2448 [shape=record label="{7278: constant[undefined,v1]|7279: vardecl['name']}" ] 
+BB2448 -> BB2449 [tailport=s, headport=n, headlabel="      2449"]
+BB2449 [shape=record label="{7280: constant[\"\",v2]|7281: write-variable[v2,'name']*|7282: read-variable['moduleName',v3,-]|7283: if[v3](true-block:2450,false-block:2451)}" ] 
+BB2449 -> BB2450 [tailport=s, headport=n, headlabel="      2450"]
+BB2449 -> BB2451 [tailport=s, headport=n, headlabel="      2451"]
+BB2449 -> BB2453 [tailport=s, headport=n, color=gray, headlabel="      2453"]
+BB2450 [shape=record label="{7284: read-variable['name',v5,-]|7285: read-variable['moduleName',v7,-]|7286: constant[\".\",v8]|7287: +[v7,v8,v6]|7288: +[v5,v6,v4]|7289: write-variable[v4,'name']*}" ] 
+BB2450 -> BB2451 [tailport=s, headport=n]
+BB2450 -> BB2453 [tailport=s, headport=n, color=gray]
+BB2451 [shape=record label="{7290: read-variable['name',v5,-]|7291: read-variable['className',v6,-]|7292: +[v5,v6,v4]|7293: write-variable[v4,'name']*|7294: read-variable['name',v1,-]}" ] 
+BB2451 -> BB2452 [tailport=s, headport=n, headlabel="      2452"]
+BB2451 -> BB2453 [tailport=s, headport=n, color=gray]
+BB2452 [shape=record label="{7295: return[v1]}" ] 
+BB2453 [shape=record label="{7296: exceptional-return}" ] 
+//#$~ 2858
+}

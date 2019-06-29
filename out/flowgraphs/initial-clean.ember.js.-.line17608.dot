@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry842[shape=none,label=""];
+BB_entry842 -> BB9851 [tailport=s, headport=n, headlabel="    9851"]
+BB9851 [shape=record label="{33760: constant[undefined,v1]|33761: vardecl['senderCallback']|33762: vardecl['senderContext']}" ] 
+BB9851 -> BB9852 [tailport=s, headport=n, headlabel="      9852"]
+BB9852 [shape=record label="{33763: read-variable['this',v5,-]|33764: read-property[v5,'state',v3]|33765: constant[\"destroyed\",v4]|33766: ===[v3,v4,v2]|33767: if[v2](true-block:9853,false-block:9854)}" ] 
+BB9852 -> BB9853 [tailport=s, headport=n, headlabel="      9853"]
+BB9852 -> BB9854 [tailport=s, headport=n, headlabel="      9854"]
+BB9852 -> BB9860 [tailport=s, headport=n, color=gray, headlabel="      9860"]
+BB9853 [shape=record label="{33768: constant[undefined,v1]}" ] 
+BB9853 -> BB9859 [tailport=s, headport=n, headlabel="      9859"]
+BB9854 [shape=record label="{33769: read-variable['this',v9,-]|33770: read-property[v9,'senderContext',v7]|33771: read-variable['this',v8,-]|33772: !==[v7,v8,v6]|33773: if[v6](true-block:9855,false-block:9857)}" ] 
+BB9854 -> BB9855 [tailport=s, headport=n, headlabel="      9855"]
+BB9854 -> BB9857 [tailport=s, headport=n, headlabel="      9857"]
+BB9854 -> BB9860 [tailport=s, headport=n, color=gray]
+BB9855 [shape=record label="{33774: read-variable['this',v12,-]|33775: read-property[v12,'stream',v11]|33776: read-property[v11,'setValue',-]|33777: \<property-non-null-undef\>[v12,'stream']|33778: read-variable['this',v14,-]|33779: read-property[v14,'senderValue',v13]}" ] 
+BB9855 -> BB9856 [tailport=s, headport=n, headlabel="      9856"]
+BB9855 -> BB9860 [tailport=s, headport=n, color=gray]
+BB9856 [shape=record label="{33780: call-this.stream.setValue [v11,'setValue',v13,-]*}" ] 
+BB9856 -> BB9857 [tailport=s, headport=n]
+BB9856 -> BB9860 [tailport=s, headport=n, color=gray]
+BB9857 [shape=record label="{33781: read-variable['this',v11,-]|33782: read-property[v11,'senderCallback',v10]|33783: write-variable[v10,'senderCallback']*|33784: read-variable['this',v13,-]|33785: read-property[v13,'senderContext',v12]|33786: write-variable[v12,'senderContext']*|33787: read-variable['this',v15,-]|33788: read-variable['undefined',v14,-]|33789: write-property[v15,'senderCallback',v14]*|33790: read-variable['this',v17,-]|33791: read-variable['undefined',v16,-]|33792: write-property[v17,'senderContext',v16]*|33793: read-variable['this',v19,-]|33794: read-variable['undefined',v18,-]|33795: write-property[v19,'senderValue',v18]*|33796: read-variable['this',v21,-]|33797: constant[\"clean\",v20]|33798: write-property[v21,'state',v20]*|33799: read-variable['this',v23,-]|33800: read-property[v23,'notifyExcept',-]|33801: read-variable['senderCallback',v24,-]|33802: read-variable['senderContext',v25,-]}" ] 
+BB9857 -> BB9858 [tailport=s, headport=n, headlabel="      9858"]
+BB9857 -> BB9860 [tailport=s, headport=n, color=gray]
+BB9858 [shape=record label="{33803: call-this.notifyExcept [v23,'notifyExcept',v24,v25,-]*}" ] 
+BB9858 -> BB9859 [tailport=s, headport=n]
+BB9858 -> BB9860 [tailport=s, headport=n, color=gray]
+BB9859 [shape=record label="{33804: return[v1]}" ] 
+BB9860 [shape=record label="{33805: exceptional-return}" ] 
+//#$~ 17626
+}

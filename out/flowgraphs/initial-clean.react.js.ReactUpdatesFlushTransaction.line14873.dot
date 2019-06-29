@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry625[shape=none,label=""];
+BB_entry625 -> BB8491 [tailport=s, headport=n, headlabel="    8491"]
+BB8491 [shape=record label="{28070: constant[undefined,v1]}" ] 
+BB8491 -> BB8492 [tailport=s, headport=n, headlabel="      8492"]
+BB8492 [shape=record label="{28071: read-variable['this',v3,-]|28072: read-property[v3,'reinitializeTransaction',-]}" ] 
+BB8492 -> BB8493 [tailport=s, headport=n, headlabel="      8493"]
+BB8492 -> BB8500 [tailport=s, headport=n, color=gray, headlabel="      8500"]
+BB8493 [shape=record label="{28073: call-this.reinitializeTransaction [v3,'reinitializeTransaction',-]*}" ] 
+BB8493 -> BB8494 [tailport=s, headport=n, headlabel="      8494"]
+BB8493 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8494 [shape=record label="{28074: read-variable['this',v5,-]|28075: constant[null,v4]|28076: write-property[v5,'dirtyComponentsLength',v4]*|28077: read-variable['this',v7,-]|28078: read-variable['CallbackQueue',v9,-]|28079: read-property[v9,'getPooled',-]|28080: \<variable-non-null-undef\>['CallbackQueue']}" ] 
+BB8494 -> BB8495 [tailport=s, headport=n, headlabel="      8495"]
+BB8494 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8495 [shape=record label="{28081: call-CallbackQueue.getPooled [v9,'getPooled',v6]}" ] 
+BB8495 -> BB8496 [tailport=s, headport=n, headlabel="      8496"]
+BB8495 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8496 [shape=record label="{28082: write-property[v7,'callbackQueue',v6]*|28083: read-variable['this',v11,-]|28084: read-variable['ReactUpdates',v14,-]|28085: read-property[v14,'ReactReconcileTransaction',v13]|28086: \<variable-non-null-undef\>['ReactUpdates']|28087: read-property[v13,'getPooled',-]|28088: \<property-non-null-undef\>[v14,'ReactReconcileTransaction']}" ] 
+BB8496 -> BB8497 [tailport=s, headport=n, headlabel="      8497"]
+BB8496 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8497 [shape=record label="{28089: call-ReactUpdates.ReactReconcileTransaction.getPooled [v13,'getPooled',v10]}" ] 
+BB8497 -> BB8498 [tailport=s, headport=n, headlabel="      8498"]
+BB8497 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8498 [shape=record label="{28090: write-property[v11,'reconcileTransaction',v10]*}" ] 
+BB8498 -> BB8499 [tailport=s, headport=n, headlabel="      8499"]
+BB8498 -> BB8500 [tailport=s, headport=n, color=gray]
+BB8499 [shape=record label="{28091: return[v1]}" ] 
+BB8500 [shape=record label="{28092: exceptional-return}" ] 
+//#$~ 14878
+}

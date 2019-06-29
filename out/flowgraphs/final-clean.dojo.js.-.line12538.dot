@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry608[shape=none,label=""];
+BB_entry608 -> BB8962 [tailport=s, headport=n, headlabel="    8962"]
+BB8962 [shape=record label="{26750: constant[undefined,v1]}" ] 
+BB8962 -> BB8963 [tailport=s, headport=n, headlabel="      8963"]
+BB8963 [shape=record label="{26751: read-variable['node',v3,-]|26752: read-property[v3,'addEventListener',-]|26753: \<variable-non-null-undef\>['node']|26754: read-variable['event',v4,-]|26755: read-variable['detectReady',v5,-]|26756: constant[false,v6]}" ] 
+BB8963 -> BB8964 [tailport=s, headport=n, headlabel="      8964"]
+BB8963 -> BB8968 [tailport=s, headport=n, color=gray, headlabel="      8968"]
+BB8964 [shape=record label="{26757: call-node.addEventListener [v3,'addEventListener',v4,v5,v6,-]*}" ] 
+BB8964 -> BB8965 [tailport=s, headport=n, headlabel="      8965"]
+BB8964 -> BB8968 [tailport=s, headport=n, color=gray]
+BB8965 [shape=record label="{26758: read-variable['readyQ',v8,-]|26759: read-property[v8,'push',-]|26760: \<variable-non-null-undef\>['readyQ']|26761: function-expr[function ( ),v9]}" ] 
+BB8965 -> BB8966 [tailport=s, headport=n, headlabel="      8966"]
+BB8965 -> BB8968 [tailport=s, headport=n, color=gray]
+BB8966 [shape=record label="{26762: call-readyQ.push [v8,'push',v9,-]*}" ] 
+BB8966 -> BB8967 [tailport=s, headport=n, headlabel="      8967"]
+BB8966 -> BB8968 [tailport=s, headport=n, color=gray]
+BB8967 [shape=record label="{26763: return[v1]}" ] 
+BB8968 [shape=record label="{26764: exceptional-return}" ] 
+//#$~ 12540
+}

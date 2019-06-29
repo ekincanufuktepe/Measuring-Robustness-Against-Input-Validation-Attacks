@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry225[shape=none,label=""];
+BB_entry225 -> BB3144 [tailport=s, headport=n, headlabel="    3144"]
+BB3144 [shape=record label="{10968: constant[undefined,v1]}" ] 
+BB3144 -> BB3145 [tailport=s, headport=n, headlabel="      3145"]
+BB3145 [shape=record label="{10969: read-variable['Object',v3,-]|10970: read-property[v3,'defineProperty',-]|10971: \<variable-non-null-undef\>['Object']|10972: read-variable['ReactComponent',v5,-]|10973: read-property[v5,'prototype',v4]|10974: \<variable-non-null-undef\>['ReactComponent']|10975: read-variable['methodName',v6,-]|10976: new[v7]|10977: function-expr[function ( ),v8]|10978: write-property[v7,'get',v8]}" ] 
+BB3145 -> BB3146 [tailport=s, headport=n, headlabel="      3146"]
+BB3145 -> BB3147 [tailport=s, headport=n, color=gray, headlabel="      3147"]
+BB3146 [shape=record label="{10979: call-Object.defineProperty [v3,'defineProperty',v4,v6,v7,-]*}" ] 
+BB3146 -> BB3150 [tailport=s, headport=n, headlabel="      3150"]
+BB3146 -> BB3147 [tailport=s, headport=n, color=gray]
+BB3147 [shape=record label="{10980: catch[x,v2]|10981: begin-with[v2]}" ] 
+BB3147 -> BB3148 [tailport=s, headport=n, headlabel="      3148"]
+BB3147 -> BB3151 [tailport=s, headport=n, color=gray, headlabel="      3151"]
+BB3148 [shape=record label="{10982: end-with}" ] 
+BB3148 -> BB3150 [tailport=s, headport=n]
+BB3149 [shape=record label="{10983: end-with}" ] 
+BB3149 -> BB3151 [tailport=s, headport=n]
+BB3150 [shape=record label="{10984: return[v1]}" ] 
+BB3151 [shape=record label="{10985: exceptional-return}" ] 
+//#$~ 6049
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry576[shape=none,label=""];
+BB_entry576 -> BB7993 [tailport=s, headport=n, headlabel="    7993"]
+BB7993 [shape=record label="{26724: constant[undefined,v1]}" ] 
+BB7993 -> BB7994 [tailport=s, headport=n, headlabel="      7994"]
+BB7994 [shape=record label="{26725: read-variable['this',v3,-]|26726: read-property[v3,'reinitializeTransaction',-]}" ] 
+BB7994 -> BB7995 [tailport=s, headport=n, headlabel="      7995"]
+BB7994 -> BB8002 [tailport=s, headport=n, color=gray, headlabel="      8002"]
+BB7995 [shape=record label="{26727: call-this.reinitializeTransaction [v3,'reinitializeTransaction',-]*}" ] 
+BB7995 -> BB7996 [tailport=s, headport=n, headlabel="      7996"]
+BB7995 -> BB8002 [tailport=s, headport=n, color=gray]
+BB7996 [shape=record label="{26728: read-variable['this',v5,-]|26729: constant[false,v4]|26730: write-property[v5,'renderToStaticMarkup',v4]*|26731: read-variable['this',v7,-]|26732: read-variable['CallbackQueue',v9,-]|26733: read-property[v9,'getPooled',-]|26734: \<variable-non-null-undef\>['CallbackQueue']|26735: constant[null,v10]}" ] 
+BB7996 -> BB7997 [tailport=s, headport=n, headlabel="      7997"]
+BB7996 -> BB8002 [tailport=s, headport=n, color=gray]
+BB7997 [shape=record label="{26736: call-CallbackQueue.getPooled [v9,'getPooled',v10,v6]}" ] 
+BB7997 -> BB7998 [tailport=s, headport=n, headlabel="      7998"]
+BB7997 -> BB8002 [tailport=s, headport=n, color=gray]
+BB7998 [shape=record label="{26737: write-property[v7,'reactMountReady',v6]*|26738: read-variable['this',v12,-]|26739: read-variable['ReactPutListenerQueue',v14,-]|26740: read-property[v14,'getPooled',-]|26741: \<variable-non-null-undef\>['ReactPutListenerQueue']}" ] 
+BB7998 -> BB7999 [tailport=s, headport=n, headlabel="      7999"]
+BB7998 -> BB8002 [tailport=s, headport=n, color=gray]
+BB7999 [shape=record label="{26742: call-ReactPutListenerQueue.getPooled [v14,'getPooled',v11]}" ] 
+BB7999 -> BB8000 [tailport=s, headport=n, headlabel="      8000"]
+BB7999 -> BB8002 [tailport=s, headport=n, color=gray]
+BB8000 [shape=record label="{26743: write-property[v12,'putListenerQueue',v11]*}" ] 
+BB8000 -> BB8001 [tailport=s, headport=n, headlabel="      8001"]
+BB8000 -> BB8002 [tailport=s, headport=n, color=gray]
+BB8001 [shape=record label="{26744: return[v1]}" ] 
+BB8002 [shape=record label="{26745: exceptional-return}" ] 
+//#$~ 14044
+}

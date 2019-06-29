@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry90[shape=none,label=""];
+BB_entry90 -> BB1901 [tailport=s, headport=n, headlabel="    1901"]
+BB1901 [shape=record label="{7617: constant[undefined,v1]|7618: vardecl['i']|7619: vardecl['current']|7620: vardecl['currentElement']|7621: vardecl['prevElement']}" ] 
+BB1901 -> BB1902 [tailport=s, headport=n, headlabel="      1902"]
+BB1902 [shape=record label="{7622: constant[0.0,v3]|7623: write-variable[v3,'i']}" ] 
+BB1902 -> BB1903 [tailport=s, headport=n, headlabel="      1903"]
+BB1903 [shape=record label="{7624: read-variable['i',v4,-]|7625: read-variable['this',v8,-]|7626: read-property[v8,'activeDrops',v7]|7627: read-property[v7,'dropzones',v6]|7628: \<property-non-null-undef\>[v8,'activeDrops']|7629: read-property[v6,'length',v5]|7630: \<property-non-null-undef\>[v7,'dropzones']|7631: \<[v4,v5,v2]|7632: if[v2](true-block:1904,false-block:1908)}" ] 
+BB1903 -> BB1904 [tailport=s, headport=n, headlabel="      1904"]
+BB1903 -> BB1908 [tailport=s, headport=n, headlabel="      1908"]
+BB1903 -> BB1909 [tailport=s, headport=n, color=gray, headlabel="      1909"]
+BB1904 [shape=record label="{7633: read-variable['this',v12,-]|7634: read-property[v12,'activeDrops',v11]|7635: read-property[v11,'dropzones',v10]|7636: \<property-non-null-undef\>[v12,'activeDrops']|7637: read-variable['i',v13,-]|7638: read-property[v10,v13,v9]|7639: \<property-non-null-undef\>[v11,'dropzones']|7640: write-variable[v9,'current']*|7641: read-variable['this',v17,-]|7642: read-property[v17,'activeDrops',v16]|7643: read-property[v16,'elements',v15]|7644: \<property-non-null-undef\>[v17,'activeDrops']|7645: read-variable['i',v18,-]|7646: read-property[v15,v18,v14]|7647: \<property-non-null-undef\>[v16,'elements']|7648: write-variable[v14,'currentElement']*|7649: read-variable['currentElement',v20,-]|7650: read-variable['prevElement',v21,-]|7651: !==[v20,v21,v19]|7652: if[v19](true-block:1905,false-block:1907)}" ] 
+BB1904 -> BB1905 [tailport=s, headport=n, headlabel="      1905"]
+BB1904 -> BB1907 [tailport=s, headport=n, headlabel="      1907"]
+BB1904 -> BB1909 [tailport=s, headport=n, color=gray]
+BB1905 [shape=record label="{7653: read-variable['event',v23,-]|7654: read-variable['currentElement',v22,-]|7655: write-property[v23,'target',v22]|7656: \<variable-non-null-undef\>['event']*|7657: read-variable['current',v25,-]|7658: read-property[v25,'fire',-]|7659: \<variable-non-null-undef\>['current']|7660: read-variable['event',v26,-]}" ] 
+BB1905 -> BB1906 [tailport=s, headport=n, headlabel="      1906"]
+BB1905 -> BB1909 [tailport=s, headport=n, color=gray]
+BB1906 [shape=record label="{7661: call-current.fire [v25,'fire',v26,-]*}" ] 
+BB1906 -> BB1907 [tailport=s, headport=n]
+BB1906 -> BB1909 [tailport=s, headport=n, color=gray]
+BB1907 [shape=record label="{7662: read-variable['currentElement',v22,-]|7663: write-variable[v22,'prevElement']*|7664: constant[1.0,v23]|7665: read-variable['i',v24,-]|7666: +[v24,v25]|7667: +[v25,v23,v26]|7668: write-variable[v26,'i']}" ] 
+BB1907 -> BB1903 [tailport=s, headport=n]
+BB1907 -> BB1909 [tailport=s, headport=n, color=gray]
+BB1908 [shape=record label="{7669: return[v1]}" ] 
+BB1909 [shape=record label="{7670: exceptional-return}" ] 
+//#$~ 2408
+}

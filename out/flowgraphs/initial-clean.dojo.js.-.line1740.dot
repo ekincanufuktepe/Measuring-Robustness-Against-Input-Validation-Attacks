@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry102[shape=none,label=""];
+BB_entry102 -> BB1525 [tailport=s, headport=n, headlabel="    1525"]
+BB1525 [shape=record label="{4227: constant[undefined,v1]|4228: vardecl['i']}" ] 
+BB1525 -> BB1526 [tailport=s, headport=n, headlabel="      1526"]
+BB1526 [shape=record label="{4229: constant[0.0,v3]|4230: write-variable[v3,'i']*}" ] 
+BB1526 -> BB1527 [tailport=s, headport=n, headlabel="      1527"]
+BB1527 [shape=record label="{4231: read-variable['i',v4,-]|4232: read-variable['arguments',v6,-]|4233: read-property[v6,'length',v5]|4234: \<variable-non-null-undef\>['arguments']|4235: \<[v4,v5,v2]|4236: if[v2](true-block:1528,false-block:1534)}" ] 
+BB1527 -> BB1528 [tailport=s, headport=n, headlabel="      1528"]
+BB1527 -> BB1534 [tailport=s, headport=n, headlabel="      1534"]
+BB1527 -> BB1531 [tailport=s, headport=n, color=gray, headlabel="      1531"]
+BB1528 [shape=record label="{4237: read-variable['console',v8,-]|4238: read-property[v8,'log',-]|4239: \<variable-non-null-undef\>['console']|4240: read-variable['arguments',v10,-]|4241: read-variable['i',v11,-]|4242: read-property[v10,v11,v9]|4243: \<variable-non-null-undef\>['arguments']}" ] 
+BB1528 -> BB1529 [tailport=s, headport=n, headlabel="      1529"]
+BB1528 -> BB1531 [tailport=s, headport=n, color=gray]
+BB1529 [shape=record label="{4244: call-console.log [v8,'log',v9,-]*}" ] 
+BB1529 -> BB1530 [tailport=s, headport=n, headlabel="      1530"]
+BB1529 -> BB1531 [tailport=s, headport=n, color=gray]
+BB1530 [shape=record label="{4245: constant[1.0,v12]|4246: read-variable['i',v13,-]|4247: +[v13,v14]|4248: +[v14,v12,v15]|4249: write-variable[v15,'i']}" ] 
+BB1530 -> BB1527 [tailport=s, headport=n]
+BB1530 -> BB1531 [tailport=s, headport=n, color=gray]
+BB1531 [shape=record label="{4250: catch[e,v2]|4251: begin-with[v2]}" ] 
+BB1531 -> BB1532 [tailport=s, headport=n, headlabel="      1532"]
+BB1531 -> BB1535 [tailport=s, headport=n, color=gray, headlabel="      1535"]
+BB1532 [shape=record label="{4252: end-with}" ] 
+BB1532 -> BB1534 [tailport=s, headport=n]
+BB1533 [shape=record label="{4253: end-with}" ] 
+BB1533 -> BB1535 [tailport=s, headport=n]
+BB1534 [shape=record label="{4254: return[v1]}" ] 
+BB1535 [shape=record label="{4255: exceptional-return}" ] 
+//#$~ 1745
+}

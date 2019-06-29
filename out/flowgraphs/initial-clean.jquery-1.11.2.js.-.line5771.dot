@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry343[shape=none,label=""];
+BB_entry343 -> BB5500 [tailport=s, headport=n, headlabel="    5500"]
+BB5500 [shape=record label="{16074: constant[undefined,v1]}" ] 
+BB5500 -> BB5501 [tailport=s, headport=n, headlabel="      5501"]
+BB5501 [shape=record label="{16075: read-variable['this',v3,-]|16076: read-property[v3,'parentNode',v2]|16077: if[v2](true-block:5502,false-block:5504)}" ] 
+BB5501 -> BB5502 [tailport=s, headport=n, headlabel="      5502"]
+BB5501 -> BB5504 [tailport=s, headport=n, headlabel="      5504"]
+BB5501 -> BB5505 [tailport=s, headport=n, color=gray, headlabel="      5505"]
+BB5502 [shape=record label="{16078: read-variable['this',v6,-]|16079: read-property[v6,'parentNode',v5]|16080: read-property[v5,'insertBefore',-]|16081: \<property-non-null-undef\>[v6,'parentNode']|16082: read-variable['elem',v7,-]|16083: read-variable['this',v8,-]}" ] 
+BB5502 -> BB5503 [tailport=s, headport=n, headlabel="      5503"]
+BB5502 -> BB5505 [tailport=s, headport=n, color=gray]
+BB5503 [shape=record label="{16084: call-0:0[v5,'insertBefore',v7,v8,-]*}" ] 
+BB5503 -> BB5504 [tailport=s, headport=n]
+BB5503 -> BB5505 [tailport=s, headport=n, color=gray]
+BB5504 [shape=record label="{16085: return[v1]}" ] 
+BB5505 [shape=record label="{16086: exceptional-return}" ] 
+}

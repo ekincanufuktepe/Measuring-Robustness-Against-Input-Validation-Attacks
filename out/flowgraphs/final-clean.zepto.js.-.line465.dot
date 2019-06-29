@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry70[shape=none,label=""];
+BB_entry70 -> BB768 [tailport=s, headport=n, headlabel="    768"]
+BB768 [shape=record label="{1670: constant[undefined,v1]}" ] 
+BB768 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB769 [shape=record label="{1671: read-variable['idx',v3,-]|1672: constant[-1.0,v4]|1673: ===[v3,v4,v2]|1674: if[v2](true-block:770,false-block:771)}" ] 
+BB769 -> BB770 [tailport=s, headport=n, headlabel="      770"]
+BB769 -> BB771 [tailport=s, headport=n, headlabel="      771"]
+BB769 -> BB775 [tailport=s, headport=n, color=gray, headlabel="      775"]
+BB770 [shape=record label="{1675: read-variable['this',v6,-]|1676: read-property[v6,'slice',-]|1677: read-variable['idx',v7,-]}" ] 
+BB770 -> BB772 [tailport=s, headport=n, headlabel="      772"]
+BB770 -> BB775 [tailport=s, headport=n, color=gray]
+BB771 [shape=record label="{1678: read-variable['this',v6,-]|1679: read-property[v6,'slice',-]|1680: read-variable['idx',v7,-]|1681: read-variable['idx',v11,-]|1682: +[v11,v9]|1683: constant[1.0,v10]|1684: +[v9,v10,v8]}" ] 
+BB771 -> BB773 [tailport=s, headport=n, headlabel="      773"]
+BB771 -> BB775 [tailport=s, headport=n, color=gray]
+BB772 [shape=record label="{1685: call-this.slice [v6,'slice',v7,v1]}" ] 
+BB772 -> BB774 [tailport=s, headport=n, headlabel="      774"]
+BB772 -> BB775 [tailport=s, headport=n, color=gray]
+BB773 [shape=record label="{1686: call-this.slice [v6,'slice',v7,v8,v1]}" ] 
+BB773 -> BB774 [tailport=s, headport=n]
+BB773 -> BB775 [tailport=s, headport=n, color=gray]
+BB774 [shape=record label="{1687: return[v1]}" ] 
+BB775 [shape=record label="{1688: exceptional-return}" ] 
+//#$~ 466
+}

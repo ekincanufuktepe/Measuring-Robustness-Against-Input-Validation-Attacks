@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry818[shape=none,label=""];
+BB_entry818 -> BB9646 [tailport=s, headport=n, headlabel="    9646"]
+BB9646 [shape=record label="{33127: constant[undefined,v1]|33128: vardecl['source']}" ] 
+BB9646 -> BB9647 [tailport=s, headport=n, headlabel="      9647"]
+BB9647 [shape=record label="{33129: read-variable['this',v3,-]|33130: read-property[v3,'source',v2]|33131: write-variable[v2,'source']*|33132: read-variable['isStream',v6,v5]|33133: read-variable['source',v7,-]}" ] 
+BB9647 -> BB9648 [tailport=s, headport=n, headlabel="      9648"]
+BB9647 -> BB9653 [tailport=s, headport=n, color=gray, headlabel="      9653"]
+BB9648 [shape=record label="{33134: call-isStream [v5,v6,v7,v4]}" ] 
+BB9648 -> BB9649 [tailport=s, headport=n, headlabel="      9649"]
+BB9648 -> BB9653 [tailport=s, headport=n, color=gray]
+BB9649 [shape=record label="{33135: if[v4](true-block:9650,false-block:9652)}" ] 
+BB9649 -> BB9650 [tailport=s, headport=n, headlabel="      9650"]
+BB9649 -> BB9652 [tailport=s, headport=n, headlabel="      9652"]
+BB9650 [shape=record label="{33136: read-variable['source',v9,-]|33137: read-property[v9,'setValue',-]|33138: \<variable-non-null-undef\>['source']|33139: read-variable['value',v10,-]}" ] 
+BB9650 -> BB9651 [tailport=s, headport=n, headlabel="      9651"]
+BB9650 -> BB9653 [tailport=s, headport=n, color=gray]
+BB9651 [shape=record label="{33140: call-source.setValue [v9,'setValue',v10,-]*}" ] 
+BB9651 -> BB9652 [tailport=s, headport=n]
+BB9651 -> BB9653 [tailport=s, headport=n, color=gray]
+BB9652 [shape=record label="{33141: return[v1]}" ] 
+BB9653 [shape=record label="{33142: exceptional-return}" ] 
+//#$~ 17374
+}

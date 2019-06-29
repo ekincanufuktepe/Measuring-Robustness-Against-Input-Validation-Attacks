@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2453[shape=none,label=""];
+BB_entry2453 -> BB28058 [tailport=s, headport=n, headlabel="    28058"]
+BB28058 [shape=record label="{93181: constant[undefined,v1]|93182: vardecl['hookName']}" ] 
+BB28058 -> BB28059 [tailport=s, headport=n, headlabel="      28059"]
+BB28059 [shape=record label="{93183: read-variable['resolveHook',v4,v3]|93184: read-variable['obj',v5,-]|93185: read-variable['_hookName',v6,-]}" ] 
+BB28059 -> BB28060 [tailport=s, headport=n, headlabel="      28060"]
+BB28059 -> BB28065 [tailport=s, headport=n, color=gray, headlabel="      28065"]
+BB28060 [shape=record label="{93186: call-resolveHook [v3,v4,v5,v6,v2]}" ] 
+BB28060 -> BB28061 [tailport=s, headport=n, headlabel="      28061"]
+BB28060 -> BB28065 [tailport=s, headport=n, color=gray]
+BB28061 [shape=record label="{93187: write-variable[v2,'hookName']*|93188: read-variable['hookName',v7,-]|93189: if[v7](true-block:28062,false-block:28064)}" ] 
+BB28061 -> BB28062 [tailport=s, headport=n, headlabel="      28062"]
+BB28061 -> BB28064 [tailport=s, headport=n, headlabel="      28064"]
+BB28061 -> BB28065 [tailport=s, headport=n, color=gray]
+BB28062 [shape=record label="{93190: read-variable['obj',v10,-]|93191: read-variable['hookName',v11,-]|93192: read-property[v10,v11,v9]|93193: \<variable-non-null-undef\>['obj']|93194: read-property[v9,'apply',-]|93195: \<property-non-null-undef\>[v10,v11]|93196: read-variable['obj',v12,-]|93197: read-variable['args',v13,-]}" ] 
+BB28062 -> BB28063 [tailport=s, headport=n, headlabel="      28063"]
+BB28062 -> BB28065 [tailport=s, headport=n, color=gray]
+BB28063 [shape=record label="{93198: call-null [v9,'apply',v12,v13,v1]}" ] 
+BB28063 -> BB28064 [tailport=s, headport=n]
+BB28063 -> BB28065 [tailport=s, headport=n, color=gray]
+BB28064 [shape=record label="{93199: return[v1]}" ] 
+BB28065 [shape=record label="{93200: exceptional-return}" ] 
+//#$~ 50217
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry85[shape=none,label=""];
+BB_entry85 -> BB1129 [tailport=s, headport=n, headlabel="    1129"]
+BB1129 [shape=record label="{3666: constant[undefined,v1]}" ] 
+BB1129 -> BB1130 [tailport=s, headport=n, headlabel="      1130"]
+BB1130 [shape=record label="{3667: read-variable['this',v3,-]|3668: read-property[v3,'parent',v2]|3669: if[v2](true-block:1131,false-block:1133)}" ] 
+BB1130 -> BB1131 [tailport=s, headport=n, headlabel="      1131"]
+BB1130 -> BB1133 [tailport=s, headport=n, headlabel="      1133"]
+BB1130 -> BB1135 [tailport=s, headport=n, color=gray, headlabel="      1135"]
+BB1131 [shape=record label="{3670: read-variable['illegalChildOperation',v5,v4]|3671: constant[\"optionsForType\",v6]}" ] 
+BB1131 -> BB1132 [tailport=s, headport=n, headlabel="      1132"]
+BB1131 -> BB1135 [tailport=s, headport=n, color=gray]
+BB1132 [shape=record label="{3672: call-illegalChildOperation [v4,v5,v6,-]*}" ] 
+BB1132 -> BB1133 [tailport=s, headport=n]
+BB1132 -> BB1135 [tailport=s, headport=n, color=gray]
+BB1133 [shape=record label="{3673: read-variable['this',v7,-]|3674: read-property[v7,'_typeOptions',v5]|3675: read-variable['type',v6,-]|3676: read-variable['options',v4,-]|3677: write-property[v5,v6,v4]|3678: \<property-non-null-undef\>[v7,'_typeOptions']*}" ] 
+BB1133 -> BB1134 [tailport=s, headport=n, headlabel="      1134"]
+BB1133 -> BB1135 [tailport=s, headport=n, color=gray]
+BB1134 [shape=record label="{3679: return[v1]}" ] 
+BB1135 [shape=record label="{3680: exceptional-return}" ] 
+//#$~ 1468
+}

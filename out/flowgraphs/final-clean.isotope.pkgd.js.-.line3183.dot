@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry213[shape=none,label=""];
+BB_entry213 -> BB2301 [tailport=s, headport=n, headlabel="    2301"]
+BB2301 [shape=record label="{7495: constant[undefined,v1]|7496: vardecl['firstItem']}" ] 
+BB2301 -> BB2302 [tailport=s, headport=n, headlabel="      2302"]
+BB2302 [shape=record label="{7497: read-variable['this',v5,-]|7498: read-property[v5,'isotope',v4]|7499: read-property[v4,'filteredItems',v3]|7500: \<property-non-null-undef\>[v5,'isotope']|7501: constant[0.0,v6]|7502: read-property[v3,v6,v2]|7503: \<property-non-null-undef\>[v4,'filteredItems']|7504: write-variable[v2,'firstItem']*|7505: read-variable['firstItem',v1,-]|7506: if[v1](true-block:2303,false-block:2306)}" ] 
+BB2302 -> BB2306 [tailport=s, headport=n, headlabel="      2306"]
+BB2302 -> BB2303 [tailport=s, headport=n, headlabel="      2303"]
+BB2302 -> BB2307 [tailport=s, headport=n, color=gray, headlabel="      2307"]
+BB2303 [shape=record label="{7507: read-variable['firstItem',v7,-]|7508: read-property[v7,'element',v1]|7509: \<variable-non-null-undef\>['firstItem']|7510: if[v1](true-block:2304,false-block:2306)}" ] 
+BB2303 -> BB2306 [tailport=s, headport=n]
+BB2303 -> BB2304 [tailport=s, headport=n, headlabel="      2304"]
+BB2303 -> BB2307 [tailport=s, headport=n, color=gray]
+BB2304 [shape=record label="{7511: read-variable['getSize',v9,v8]|7512: read-variable['firstItem',v11,-]|7513: read-property[v11,'element',v10]|7514: \<variable-non-null-undef\>['firstItem']}" ] 
+BB2304 -> BB2305 [tailport=s, headport=n, headlabel="      2305"]
+BB2304 -> BB2307 [tailport=s, headport=n, color=gray]
+BB2305 [shape=record label="{7515: call-getSize [v8,v9,v10,v1]}" ] 
+BB2305 -> BB2306 [tailport=s, headport=n]
+BB2305 -> BB2307 [tailport=s, headport=n, color=gray]
+BB2306 [shape=record label="{7516: return[v1]}" ] 
+BB2307 [shape=record label="{7517: exceptional-return}" ] 
+//#$~ 3185
+}

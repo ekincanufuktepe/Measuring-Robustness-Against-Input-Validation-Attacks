@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry61[shape=none,label=""];
+BB_entry61 -> BB1176 [tailport=s, headport=n, headlabel="    1176"]
+BB1176 [shape=record label="{4137: constant[undefined,v1]}" ] 
+BB1176 -> BB1177 [tailport=s, headport=n, headlabel="      1177"]
+BB1177 [shape=record label="{4138: read-variable['s',v3,-]|4139: read-property[v3,'replace',-]|4140: \<variable-non-null-undef\>['s']|4141: read-variable['TRIMREGEX',v4,-]|4142: constant[\"\",v5]}" ] 
+BB1177 -> BB1178 [tailport=s, headport=n, headlabel="      1178"]
+BB1177 -> BB1179 [tailport=s, headport=n, color=gray, headlabel="      1179"]
+BB1178 [shape=record label="{4143: call-s.replace [v3,'replace',v4,v5,v1]}" ] 
+BB1178 -> BB1183 [tailport=s, headport=n, headlabel="      1183"]
+BB1178 -> BB1179 [tailport=s, headport=n, color=gray]
+BB1179 [shape=record label="{4144: catch[e,v2]|4145: begin-with[v2]}" ] 
+BB1179 -> BB1180 [tailport=s, headport=n, headlabel="      1180"]
+BB1179 -> BB1184 [tailport=s, headport=n, color=gray, headlabel="      1184"]
+BB1180 [shape=record label="{4146: read-variable['s',v1,v3]}" ] 
+BB1180 -> BB1183 [tailport=s, headport=n]
+BB1180 -> BB1181 [tailport=s, headport=n, color=gray, headlabel="      1181"]
+BB1181 [shape=record label="{4147: end-with}" ] 
+BB1181 -> BB1184 [tailport=s, headport=n]
+BB1182 [shape=record label="{4148: end-with}" ] 
+BB1182 -> BB1183 [tailport=s, headport=n]
+BB1183 [shape=record label="{4149: return[v1]}" ] 
+BB1184 [shape=record label="{4150: exceptional-return}" ] 
+//#$~ 1960
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1510[shape=none,label=""];
+BB_entry1510 -> BB17498 [tailport=s, headport=n, headlabel="    17498"]
+BB17498 [shape=record label="{58798: constant[undefined,v1]|58799: vardecl['ret']}" ] 
+BB17498 -> BB17499 [tailport=s, headport=n, headlabel="      17499"]
+BB17499 [shape=record label="{58800: read-variable['Array',v3,-]}" ] 
+BB17499 -> BB17500 [tailport=s, headport=n, headlabel="      17500"]
+BB17499 -> BB17507 [tailport=s, headport=n, color=gray, headlabel="      17507"]
+BB17500 [shape=record label="{58801: construct [-,v3,v2]}" ] 
+BB17500 -> BB17501 [tailport=s, headport=n, headlabel="      17501"]
+BB17500 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17501 [shape=record label="{58802: write-variable[v2,'ret']*|58803: read-variable['actionName',v4,-]|58804: if[v4](true-block:17502,false-block:17504)}" ] 
+BB17501 -> BB17502 [tailport=s, headport=n, headlabel="      17502"]
+BB17501 -> BB17504 [tailport=s, headport=n, headlabel="      17504"]
+BB17501 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17502 [shape=record label="{58805: read-variable['ret',v6,-]|58806: read-property[v6,'push',-]|58807: \<variable-non-null-undef\>['ret']|58808: read-variable['actionName',v7,-]}" ] 
+BB17502 -> BB17503 [tailport=s, headport=n, headlabel="      17503"]
+BB17502 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17503 [shape=record label="{58809: call-ret.push [v6,'push',v7,-]*}" ] 
+BB17503 -> BB17504 [tailport=s, headport=n]
+BB17503 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17504 [shape=record label="{58810: read-variable['ret',v6,-]|58811: read-property[v6,'concat',-]|58812: \<variable-non-null-undef\>['ret']|58813: read-variable['options',v7,-]}" ] 
+BB17504 -> BB17505 [tailport=s, headport=n, headlabel="      17505"]
+BB17504 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17505 [shape=record label="{58814: call-ret.concat [v6,'concat',v7,v1]}" ] 
+BB17505 -> BB17506 [tailport=s, headport=n, headlabel="      17506"]
+BB17505 -> BB17507 [tailport=s, headport=n, color=gray]
+BB17506 [shape=record label="{58815: return[v1]}" ] 
+BB17507 [shape=record label="{58816: exceptional-return}" ] 
+//#$~ 33112
+}

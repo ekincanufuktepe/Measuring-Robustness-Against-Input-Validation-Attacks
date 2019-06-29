@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry45[shape=none,label=""];
+BB_entry45 -> BB572 [tailport=s, headport=n, headlabel="    572"]
+BB572 [shape=record label="{1554: constant[undefined,v1]}" ] 
+BB572 -> BB573 [tailport=s, headport=n, headlabel="      573"]
+BB573 [shape=record label="{1555: read-variable['$this',v4,-]|1556: read-variable['method',v5,-]|1557: read-property[v4,v5,v3]|1558: \<variable-non-null-undef\>['$this']|1559: ![v3,v2]|1560: if[v2](true-block:574,false-block:575)}" ] 
+BB573 -> BB574 [tailport=s, headport=n, headlabel="      574"]
+BB573 -> BB575 [tailport=s, headport=n, headlabel="      575"]
+BB573 -> BB576 [tailport=s, headport=n, color=gray, headlabel="      576"]
+BB574 [shape=record label="{1561: read-variable['$this',v7,-]|1562: read-variable['method',v8,-]|1563: function-expr[function ( ),v6]|1564: write-property[v7,v8,v6]|1565: \<variable-non-null-undef\>['$this']*}" ] 
+BB574 -> BB575 [tailport=s, headport=n]
+BB574 -> BB576 [tailport=s, headport=n, color=gray]
+BB575 [shape=record label="{1566: return[v1]}" ] 
+BB576 [shape=record label="{1567: exceptional-return}" ] 
+//#$~ 445
+}

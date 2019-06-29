@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry44[shape=none,label=""];
+BB_entry44 -> BB580 [tailport=s, headport=n, headlabel="    580"]
+BB580 [shape=record label="{2035: constant[undefined,v1]|2036: vardecl['self']|2037: function-decl[function on ( ),-]}" ] 
+BB580 -> BB581 [tailport=s, headport=n, headlabel="      581"]
+BB581 [shape=record label="{2038: read-variable['this',v2,-]|2039: write-variable[v2,'self']*|2040: read-variable['on',v4,-]|2041: read-variable['fn',v3,-]|2042: write-property[v4,'listener',v3]|2043: \<variable-non-null-undef\>['on']*|2044: read-variable['this',v6,-]|2045: read-property[v6,'on',-]|2046: read-variable['name',v7,-]|2047: read-variable['on',v8,-]}" ] 
+BB581 -> BB582 [tailport=s, headport=n, headlabel="      582"]
+BB581 -> BB585 [tailport=s, headport=n, color=gray, headlabel="      585"]
+BB582 [shape=record label="{2048: call-this.on [v6,'on',v7,v8,-]*}" ] 
+BB582 -> BB583 [tailport=s, headport=n, headlabel="      583"]
+BB582 -> BB585 [tailport=s, headport=n, color=gray]
+BB583 [shape=record label="{2049: read-variable['this',v1,-]}" ] 
+BB583 -> BB584 [tailport=s, headport=n, headlabel="      584"]
+BB583 -> BB585 [tailport=s, headport=n, color=gray]
+BB584 [shape=record label="{2050: return[v1]}" ] 
+BB585 [shape=record label="{2051: exceptional-return}" ] 
+//#$~ 510
+}

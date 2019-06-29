@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry453[shape=none,label=""];
+BB_entry453 -> BB5773 [tailport=s, headport=n, headlabel="    5773"]
+BB5773 [shape=record label="{16128: constant[undefined,v1]}" ] 
+BB5773 -> BB5774 [tailport=s, headport=n, headlabel="      5774"]
+BB5774 [shape=record label="{16129: read-variable['ROOT',v2,-]|16130: if[v2](true-block:5775,false-block:5776)}" ] 
+BB5774 -> BB5775 [tailport=s, headport=n, headlabel="      5775"]
+BB5774 -> BB5776 [tailport=s, headport=n, headlabel="      5776"]
+BB5774 -> BB5781 [tailport=s, headport=n, color=gray, headlabel="      5781"]
+BB5775 [shape=record label="{16131: read-variable['ROOT',v1,-]}" ] 
+BB5775 -> BB5780 [tailport=s, headport=n, headlabel="      5780"]
+BB5775 -> BB5781 [tailport=s, headport=n, color=gray]
+BB5776 [shape=record label="{16132: read-variable['IS_OLD_OPERA',v4,-]|16133: if[v4](true-block:5777,false-block:5778)}" ] 
+BB5776 -> BB5777 [tailport=s, headport=n, headlabel="      5777"]
+BB5776 -> BB5778 [tailport=s, headport=n, headlabel="      5778"]
+BB5776 -> BB5781 [tailport=s, headport=n, color=gray]
+BB5777 [shape=record label="{16134: read-variable['document',v5,-]|16135: read-property[v5,'body',v3]|16136: \<variable-non-null-undef\>['document']}" ] 
+BB5777 -> BB5779 [tailport=s, headport=n, headlabel="      5779"]
+BB5777 -> BB5781 [tailport=s, headport=n, color=gray]
+BB5778 [shape=record label="{16137: read-variable['document',v5,-]|16138: read-property[v5,'documentElement',v3]|16139: \<variable-non-null-undef\>['document']}" ] 
+BB5778 -> BB5779 [tailport=s, headport=n]
+BB5778 -> BB5781 [tailport=s, headport=n, color=gray]
+BB5779 [shape=record label="{16140: write-variable[v3,'ROOT']*|16141: read-variable['ROOT',v1,-]}" ] 
+BB5779 -> BB5780 [tailport=s, headport=n]
+BB5779 -> BB5781 [tailport=s, headport=n, color=gray]
+BB5780 [shape=record label="{16142: return[v1]}" ] 
+BB5781 [shape=record label="{16143: exceptional-return}" ] 
+//#$~ 4414
+}

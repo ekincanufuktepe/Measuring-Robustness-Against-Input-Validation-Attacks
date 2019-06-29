@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry160[shape=none,label=""];
+BB_entry160 -> BB1871 [tailport=s, headport=n, headlabel="    1871"]
+BB1871 [shape=record label="{5297: constant[undefined,v1]}" ] 
+BB1871 -> BB1872 [tailport=s, headport=n, headlabel="      1872"]
+BB1872 [shape=record label="{5298: read-variable['globalOptions',v3,-]|5299: read-property[v3,'autoInit',v2]|5300: \<variable-non-null-undef\>['globalOptions']|5301: if[v2](true-block:1873,false-block:1879)}" ] 
+BB1872 -> BB1873 [tailport=s, headport=n, headlabel="      1873"]
+BB1872 -> BB1879 [tailport=s, headport=n, headlabel="      1879"]
+BB1872 -> BB1880 [tailport=s, headport=n, color=gray, headlabel="      1880"]
+BB1873 [shape=record label="{5302: read-variable['$',v9,v8]|5303: constant[\"form\",v10]}" ] 
+BB1873 -> BB1874 [tailport=s, headport=n, headlabel="      1874"]
+BB1873 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1874 [shape=record label="{5304: call-$ [v8,v9,v10,v7]}" ] 
+BB1874 -> BB1875 [tailport=s, headport=n, headlabel="      1875"]
+BB1874 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1875 [shape=record label="{5305: read-property[v7,'filter',-]|5306: function-expr[function ( ),v11]}" ] 
+BB1875 -> BB1876 [tailport=s, headport=n, headlabel="      1876"]
+BB1875 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1876 [shape=record label="{5307: call-null [v7,'filter',v11,v5]}" ] 
+BB1876 -> BB1877 [tailport=s, headport=n, headlabel="      1877"]
+BB1876 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1877 [shape=record label="{5308: read-property[v5,'verify',-]}" ] 
+BB1877 -> BB1878 [tailport=s, headport=n, headlabel="      1878"]
+BB1877 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1878 [shape=record label="{5309: call-null [v5,'verify',-]*}" ] 
+BB1878 -> BB1879 [tailport=s, headport=n]
+BB1878 -> BB1880 [tailport=s, headport=n, color=gray]
+BB1879 [shape=record label="{5310: return[v1]}" ] 
+BB1880 [shape=record label="{5311: exceptional-return}" ] 
+//#$~ 1738
+}

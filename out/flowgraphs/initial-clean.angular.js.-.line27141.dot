@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry1282[shape=none,label=""];
+BB_entry1282 -> BB15901 [tailport=s, headport=n, headlabel="    15901"]
+BB15901 [shape=record label="{41543: constant[undefined,v1]}" ] 
+BB15901 -> BB15902 [tailport=s, headport=n, headlabel="      15902"]
+BB15902 [shape=record label="{41544: read-variable['block',v2,-]|41545: if[v2](true-block:15903,false-block:15904)}" ] 
+BB15902 -> BB15904 [tailport=s, headport=n, headlabel="      15904"]
+BB15902 -> BB15903 [tailport=s, headport=n, headlabel="      15903"]
+BB15902 -> BB15907 [tailport=s, headport=n, color=gray, headlabel="      15907"]
+BB15903 [shape=record label="{41546: read-variable['block',v3,-]|41547: read-property[v3,'scope',v2]|41548: \<variable-non-null-undef\>['block']}" ] 
+BB15903 -> BB15904 [tailport=s, headport=n]
+BB15903 -> BB15907 [tailport=s, headport=n, color=gray]
+BB15904 [shape=record label="{41549: if[v2](true-block:15905,false-block:15906)}" ] 
+BB15904 -> BB15905 [tailport=s, headport=n, headlabel="      15905"]
+BB15904 -> BB15906 [tailport=s, headport=n, headlabel="      15906"]
+BB15905 [shape=record label="{41550: read-variable['lastBlockMap',v4,-]|41551: read-variable['block',v6,-]|41552: read-property[v6,'id',v5]|41553: \<variable-non-null-undef\>['block']|41554: read-variable['block',v3,-]|41555: write-property[v4,v5,v3]|41556: \<variable-non-null-undef\>['lastBlockMap']*}" ] 
+BB15905 -> BB15906 [tailport=s, headport=n]
+BB15905 -> BB15907 [tailport=s, headport=n, color=gray]
+BB15906 [shape=record label="{41557: return[v1]}" ] 
+BB15907 [shape=record label="{41558: exceptional-return}" ] 
+//#$~ 27142
+}

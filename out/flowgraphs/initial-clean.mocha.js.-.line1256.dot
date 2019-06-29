@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry103[shape=none,label=""];
+BB_entry103 -> BB1044 [tailport=s, headport=n, headlabel="    1044"]
+BB1044 [shape=record label="{3465: constant[undefined,v1]|3466: vardecl['suite']}" ] 
+BB1044 -> BB1045 [tailport=s, headport=n, headlabel="      1045"]
+BB1045 [shape=record label="{3467: read-variable['context',v4,-]|3468: read-property[v4,'suite',-]|3469: \<variable-non-null-undef\>['context']|3470: read-variable['title',v5,-]|3471: read-variable['fn',v6,-]}" ] 
+BB1045 -> BB1046 [tailport=s, headport=n, headlabel="      1046"]
+BB1045 -> BB1051 [tailport=s, headport=n, color=gray, headlabel="      1051"]
+BB1046 [shape=record label="{3472: call-context.suite [v4,'suite',v5,v6,v2]}" ] 
+BB1046 -> BB1047 [tailport=s, headport=n, headlabel="      1047"]
+BB1046 -> BB1051 [tailport=s, headport=n, color=gray]
+BB1047 [shape=record label="{3473: write-variable[v2,'suite']*|3474: read-variable['mocha',v8,-]|3475: read-property[v8,'grep',-]|3476: \<variable-non-null-undef\>['mocha']|3477: read-variable['suite',v11,-]|3478: read-property[v11,'fullTitle',-]|3479: \<variable-non-null-undef\>['suite']}" ] 
+BB1047 -> BB1048 [tailport=s, headport=n, headlabel="      1048"]
+BB1047 -> BB1051 [tailport=s, headport=n, color=gray]
+BB1048 [shape=record label="{3480: call-suite.fullTitle [v11,'fullTitle',v9]}" ] 
+BB1048 -> BB1049 [tailport=s, headport=n, headlabel="      1049"]
+BB1048 -> BB1051 [tailport=s, headport=n, color=gray]
+BB1049 [shape=record label="{3481: call-mocha.grep [v8,'grep',v9,-]*}" ] 
+BB1049 -> BB1050 [tailport=s, headport=n, headlabel="      1050"]
+BB1049 -> BB1051 [tailport=s, headport=n, color=gray]
+BB1050 [shape=record label="{3482: return[v1]}" ] 
+BB1051 [shape=record label="{3483: exceptional-return}" ] 
+//#$~ 1258
+}

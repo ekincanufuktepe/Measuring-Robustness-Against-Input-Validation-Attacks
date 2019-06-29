@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry1228[shape=none,label=""];
+BB_entry1228 -> BB13244 [tailport=s, headport=n, headlabel="    13244"]
+BB13244 [shape=record label="{45100: constant[undefined,v1]|45101: vardecl['kx']|45102: vardecl['i']|45103: function-decl[function scale ( x ),-]|45104: function-decl[function rescale ( ),-]}" ] 
+BB13244 -> BB13245 [tailport=s, headport=n, headlabel="      13245"]
+BB13245 [shape=record label="{45105: read-variable['scale',v3,-]|45106: function-expr[function ( x ),v2]|45107: write-property[v3,'domain',v2]|45108: \<variable-non-null-undef\>['scale']*|45109: read-variable['scale',v5,-]|45110: function-expr[function ( x ),v4]|45111: write-property[v5,'range',v4]|45112: \<variable-non-null-undef\>['scale']*|45113: read-variable['scale',v7,-]|45114: function-expr[function ( y ),v6]|45115: write-property[v7,'invertExtent',v6]|45116: \<variable-non-null-undef\>['scale']*|45117: read-variable['scale',v9,-]|45118: function-expr[function ( ),v8]|45119: write-property[v9,'copy',v8]|45120: \<variable-non-null-undef\>['scale']*|45121: read-variable['rescale',v11,v10]}" ] 
+BB13245 -> BB13246 [tailport=s, headport=n, headlabel="      13246"]
+BB13245 -> BB13248 [tailport=s, headport=n, color=gray, headlabel="      13248"]
+BB13246 [shape=record label="{45122: call-rescale [v10,v11,v1]}" ] 
+BB13246 -> BB13247 [tailport=s, headport=n, headlabel="      13247"]
+BB13246 -> BB13248 [tailport=s, headport=n, color=gray]
+BB13247 [shape=record label="{45123: return[v1]}" ] 
+BB13248 [shape=record label="{45124: exceptional-return}" ] 
+//#$~ 7886
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry189[shape=none,label=""];
+BB_entry189 -> BB3102 [tailport=s, headport=n, headlabel="    3102"]
+BB3102 [shape=record label="{9174: constant[undefined,v1]|9175: vardecl['e']}" ] 
+BB3102 -> BB3103 [tailport=s, headport=n, headlabel="      3103"]
+BB3103 [shape=record label="{9176: read-variable['thisCUBUR3-3394:13',v4,-]|9177: read-property[v4,'originalEvent',v3]|9178: \<variable-non-null-undef\>['thisCUBUR3']|9179: write-variable[v3,'e']*|9180: read-variable['thisCUBUR3-3396:5',v6,-]|9181: read-variable['returnTrue-3396:33',v5,v2]|9182: write-property[v6,'isPropagationStopped',v5]|9183: \<variable-non-null-undef\>['thisCUBUR3']*|9184: read-variable['e-3397:11',v8,v2]|9185: ![v8,v7]|9186: if[v7](true-block:3104,false-block:3105)}" ] 
+BB3103 -> BB3104 [tailport=s, headport=n, headlabel="      3104"]
+BB3103 -> BB3105 [tailport=s, headport=n, headlabel="      3105"]
+BB3103 -> BB3110 [tailport=s, headport=n, color=gray, headlabel="      3110"]
+BB3104 [shape=record label="{9187: constant[undefined,v1]}" ] 
+BB3104 -> BB3109 [tailport=s, headport=n, headlabel="      3109"]
+BB3105 [shape=record label="{9188: read-variable['e-3401:10',v10,v2]|9189: read-property[v10,'stopPropagation',v9]|9190: \<variable-non-null-undef\>['e']|9191: if[v9](true-block:3106,false-block:3108)}" ] 
+BB3105 -> BB3106 [tailport=s, headport=n, headlabel="      3106"]
+BB3105 -> BB3108 [tailport=s, headport=n, headlabel="      3108"]
+BB3105 -> BB3110 [tailport=s, headport=n, color=gray]
+BB3106 [shape=record label="{9192: read-variable['e-3402:6',v12,-]|9193: read-property[v12,'stopPropagation',-]|9194: \<variable-non-null-undef\>['e']}" ] 
+BB3106 -> BB3107 [tailport=s, headport=n, headlabel="      3107"]
+BB3106 -> BB3110 [tailport=s, headport=n, color=gray]
+BB3107 [shape=record label="{9195: call-0:0[v12,'stopPropagation',-]*}" ] 
+BB3107 -> BB3108 [tailport=s, headport=n]
+BB3107 -> BB3110 [tailport=s, headport=n, color=gray]
+BB3108 [shape=record label="{9196: read-variable['e-3407:5',v12,v2]|9197: constant[true,v11]|9198: write-property[v12,'cancelBubble',v11]|9199: \<variable-non-null-undef\>['e']*}" ] 
+BB3108 -> BB3109 [tailport=s, headport=n]
+BB3108 -> BB3110 [tailport=s, headport=n, color=gray]
+BB3109 [shape=record label="{9200: return[v1]}" ] 
+BB3110 [shape=record label="{9201: exceptional-return}" ] 
+}

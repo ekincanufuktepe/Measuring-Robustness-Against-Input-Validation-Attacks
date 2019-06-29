@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry442[shape=none,label=""];
+BB_entry442 -> BB7981 [tailport=s, headport=n, headlabel="    7981"]
+BB7981 [shape=record label="{23988: constant[undefined,v1]|23989: vardecl['i']}" ] 
+BB7981 -> BB7982 [tailport=s, headport=n, headlabel="      7982"]
+BB7982 [shape=record label="{23990: constant[0.0,v3]|23991: write-variable[v3,'i']*}" ] 
+BB7982 -> BB7983 [tailport=s, headport=n, headlabel="      7983"]
+BB7983 [shape=record label="{23992: read-variable['i',v4,-]|23993: read-variable['node',v7,-]|23994: read-property[v7,'expressions',v6]|23995: \<variable-non-null-undef\>['node']|23996: read-property[v6,'length',v5]|23997: \<property-non-null-undef\>[v7,'expressions']|23998: \<[v4,v5,v2]|23999: if[v2](true-block:7984,false-block:7987)}" ] 
+BB7983 -> BB7984 [tailport=s, headport=n, headlabel="      7984"]
+BB7983 -> BB7987 [tailport=s, headport=n, headlabel="      7987"]
+BB7983 -> BB7988 [tailport=s, headport=n, color=gray, headlabel="      7988"]
+BB7984 [shape=record label="{24000: read-variable['c',v9,v8]|24001: read-variable['node',v12,-]|24002: read-property[v12,'expressions',v11]|24003: \<variable-non-null-undef\>['node']|24004: read-variable['i',v13,-]|24005: read-property[v11,v13,v10]|24006: \<property-non-null-undef\>[v12,'expressions']|24007: read-variable['st',v14,-]|24008: constant[\"Expression\",v15]}" ] 
+BB7984 -> BB7985 [tailport=s, headport=n, headlabel="      7985"]
+BB7984 -> BB7988 [tailport=s, headport=n, color=gray]
+BB7985 [shape=record label="{24009: call-c [v8,v9,v10,v14,v15,-]*}" ] 
+BB7985 -> BB7986 [tailport=s, headport=n, headlabel="      7986"]
+BB7985 -> BB7988 [tailport=s, headport=n, color=gray]
+BB7986 [shape=record label="{24010: constant[1.0,v16]|24011: read-variable['i',v17,-]|24012: +[v17,v18]|24013: +[v18,v16,v19]|24014: write-variable[v19,'i']}" ] 
+BB7986 -> BB7983 [tailport=s, headport=n]
+BB7986 -> BB7988 [tailport=s, headport=n, color=gray]
+BB7987 [shape=record label="{24015: return[v1]}" ] 
+BB7988 [shape=record label="{24016: exceptional-return}" ] 
+//#$~ 7380
+}

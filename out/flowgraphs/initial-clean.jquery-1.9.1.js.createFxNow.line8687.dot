@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry514[shape=none,label=""];
+BB_entry514 -> BB8314 [tailport=s, headport=n, headlabel="    8314"]
+BB8314 [shape=record label="{24442: constant[undefined,v1]}" ] 
+BB8314 -> BB8315 [tailport=s, headport=n, headlabel="      8315"]
+BB8315 [shape=record label="{24443: read-variable['setTimeout',v3,v2]|24444: function-expr[function ( ),v4]}" ] 
+BB8315 -> BB8316 [tailport=s, headport=n, headlabel="      8316"]
+BB8315 -> BB8321 [tailport=s, headport=n, color=gray, headlabel="      8321"]
+BB8316 [shape=record label="{24445: call-setTimeout [v2,v3,v4,-]*}" ] 
+BB8316 -> BB8317 [tailport=s, headport=n, headlabel="      8317"]
+BB8316 -> BB8321 [tailport=s, headport=n, color=gray]
+BB8317 [shape=record label="{24446: read-variable['jQuery',v6,-]|24447: read-property[v6,'now',-]|24448: \<variable-non-null-undef\>['jQuery']}" ] 
+BB8317 -> BB8318 [tailport=s, headport=n, headlabel="      8318"]
+BB8317 -> BB8321 [tailport=s, headport=n, color=gray]
+BB8318 [shape=record label="{24449: call-jQuery.now [v6,'now',v1]}" ] 
+BB8318 -> BB8319 [tailport=s, headport=n, headlabel="      8319"]
+BB8318 -> BB8321 [tailport=s, headport=n, color=gray]
+BB8319 [shape=record label="{24450: write-variable[v1,'fxNow']}" ] 
+BB8319 -> BB8320 [tailport=s, headport=n, headlabel="      8320"]
+BB8320 [shape=record label="{24451: return[v1]}" ] 
+BB8321 [shape=record label="{24452: exceptional-return}" ] 
+}

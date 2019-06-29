@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1279[shape=none,label=""];
+BB_entry1279 -> BB15146 [tailport=s, headport=n, headlabel="    15146"]
+BB15146 [shape=record label="{52131: constant[undefined,v1]|52132: vardecl['index']}" ] 
+BB15146 -> BB15147 [tailport=s, headport=n, headlabel="      15147"]
+BB15147 [shape=record label="{52133: read-variable['instanceMeta',v4,-]|52134: read-property[v4,'binarySearch',-]|52135: \<variable-non-null-undef\>['instanceMeta']|52136: read-variable['array',v5,-]|52137: read-variable['item',v6,-]}" ] 
+BB15147 -> BB15148 [tailport=s, headport=n, headlabel="      15148"]
+BB15147 -> BB15153 [tailport=s, headport=n, color=gray, headlabel="      15153"]
+BB15148 [shape=record label="{52138: call-instanceMeta.binarySearch [v4,'binarySearch',v5,v6,v2]}" ] 
+BB15148 -> BB15149 [tailport=s, headport=n, headlabel="      15149"]
+BB15148 -> BB15153 [tailport=s, headport=n, color=gray]
+BB15149 [shape=record label="{52139: write-variable[v2,'index']*|52140: read-variable['array',v8,-]|52141: read-property[v8,'insertAt',-]|52142: \<variable-non-null-undef\>['array']|52143: read-variable['index',v9,-]|52144: read-variable['item',v10,-]}" ] 
+BB15149 -> BB15150 [tailport=s, headport=n, headlabel="      15150"]
+BB15149 -> BB15153 [tailport=s, headport=n, color=gray]
+BB15150 [shape=record label="{52145: call-array.insertAt [v8,'insertAt',v9,v10,-]*}" ] 
+BB15150 -> BB15151 [tailport=s, headport=n, headlabel="      15151"]
+BB15150 -> BB15153 [tailport=s, headport=n, color=gray]
+BB15151 [shape=record label="{52146: read-variable['array',v1,-]}" ] 
+BB15151 -> BB15152 [tailport=s, headport=n, headlabel="      15152"]
+BB15151 -> BB15153 [tailport=s, headport=n, color=gray]
+BB15152 [shape=record label="{52147: return[v1]}" ] 
+BB15153 [shape=record label="{52148: exceptional-return}" ] 
+//#$~ 27839
+}

@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry177[shape=none,label=""];
+BB_entry177 -> BB2070 [tailport=s, headport=n, headlabel="    2070"]
+BB2070 [shape=record label="{6029: constant[undefined,v1]}" ] 
+BB2070 -> BB2071 [tailport=s, headport=n, headlabel="      2071"]
+BB2071 [shape=record label="{6030: read-variable['this',v3,-]|6031: read-variable['Array',v4,-]}" ] 
+BB2071 -> BB2072 [tailport=s, headport=n, headlabel="      2072"]
+BB2071 -> BB2077 [tailport=s, headport=n, color=gray, headlabel="      2077"]
+BB2072 [shape=record label="{6032: construct [-,v4,v2]}" ] 
+BB2072 -> BB2073 [tailport=s, headport=n, headlabel="      2073"]
+BB2072 -> BB2077 [tailport=s, headport=n, color=gray]
+BB2073 [shape=record label="{6033: write-property[v3,'keys',v2]*|6034: read-variable['this',v6,-]|6035: read-variable['Array',v7,-]}" ] 
+BB2073 -> BB2074 [tailport=s, headport=n, headlabel="      2074"]
+BB2073 -> BB2077 [tailport=s, headport=n, color=gray]
+BB2074 [shape=record label="{6036: construct [-,v7,v5]}" ] 
+BB2074 -> BB2075 [tailport=s, headport=n, headlabel="      2075"]
+BB2074 -> BB2077 [tailport=s, headport=n, color=gray]
+BB2075 [shape=record label="{6037: write-property[v6,'ab',v5]*}" ] 
+BB2075 -> BB2076 [tailport=s, headport=n, headlabel="      2076"]
+BB2075 -> BB2077 [tailport=s, headport=n, color=gray]
+BB2076 [shape=record label="{6038: return[v1]}" ] 
+BB2077 [shape=record label="{6039: exceptional-return}" ] 
+}

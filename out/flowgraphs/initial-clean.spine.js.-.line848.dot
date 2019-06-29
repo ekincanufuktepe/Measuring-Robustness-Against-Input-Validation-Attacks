@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry86[shape=none,label=""];
+BB_entry86 -> BB1016 [tailport=s, headport=n, headlabel="    1016"]
+BB1016 [shape=record label="{3000: constant[undefined,v1]|3001: vardecl['record']}" ] 
+BB1016 -> BB1017 [tailport=s, headport=n, headlabel="      1017"]
+BB1017 [shape=record label="{3002: read-variable['this',v5,-]|3003: read-property[v5,'constructor',v4]|3004: read-property[v4,'irecords',v3]|3005: \<property-non-null-undef\>[v5,'constructor']|3006: read-variable['this',v7,-]|3007: read-property[v7,'id',v6]|3008: read-property[v3,v6,v2]|3009: \<property-non-null-undef\>[v4,'irecords']|3010: if[v2](true-block:1019,false-block:1018)}" ] 
+BB1017 -> BB1019 [tailport=s, headport=n, headlabel="      1019"]
+BB1017 -> BB1018 [tailport=s, headport=n, headlabel="      1018"]
+BB1017 -> BB1022 [tailport=s, headport=n, color=gray, headlabel="      1022"]
+BB1018 [shape=record label="{3011: read-variable['this',v2,-]}" ] 
+BB1018 -> BB1019 [tailport=s, headport=n]
+BB1018 -> BB1022 [tailport=s, headport=n, color=gray]
+BB1019 [shape=record label="{3012: write-variable[v2,'record']*|3013: read-variable['Events',v5,-]|3014: read-property[v5,'one',v4]|3015: \<variable-non-null-undef\>['Events']|3016: read-property[v4,'apply',-]|3017: \<property-non-null-undef\>[v5,'one']|3018: read-variable['record',v6,-]|3019: read-variable['arguments',v7,-]}" ] 
+BB1019 -> BB1020 [tailport=s, headport=n, headlabel="      1020"]
+BB1019 -> BB1022 [tailport=s, headport=n, color=gray]
+BB1020 [shape=record label="{3020: call-Events.one.apply [v4,'apply',v6,v7,v1]}" ] 
+BB1020 -> BB1021 [tailport=s, headport=n, headlabel="      1021"]
+BB1020 -> BB1022 [tailport=s, headport=n, color=gray]
+BB1021 [shape=record label="{3021: return[v1]}" ] 
+BB1022 [shape=record label="{3022: exceptional-return}" ] 
+//#$~ 851
+}

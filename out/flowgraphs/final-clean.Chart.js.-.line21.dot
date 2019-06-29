@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB24 [tailport=s, headport=n, headlabel="    24"]
+BB24 [shape=record label="{53: constant[undefined,v1]|54: vardecl['chart']|55: vardecl['computeDimension']|56: vardecl['width']|57: vardecl['height']|58: vardecl['width']|59: vardecl['height']}" ] 
+BB24 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB25 [shape=record label="{60: read-variable['this',v2,-]|61: write-variable[v2,'chart']*|62: read-variable['this',v4,-]|63: read-variable['context',v5,-]|64: read-property[v5,'canvas',v3]|65: \<variable-non-null-undef\>['context']|66: write-property[v4,'canvas',v3]*|67: read-variable['this',v7,-]|68: read-variable['context',v6,-]|69: write-property[v7,'ctx',v6]*|70: function-expr[function ( element dimension ),v8]|71: write-variable[v8,'computeDimension']*|72: read-variable['this',v10,-]|73: read-variable['computeDimension',v12,v11]|74: read-variable['context',v14,-]|75: read-property[v14,'canvas',v13]|76: \<variable-non-null-undef\>['context']|77: constant[\"Width\",v15]}" ] 
+BB25 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB25 -> BB33 [tailport=s, headport=n, color=gray, headlabel="      33"]
+BB26 [shape=record label="{78: call-computeDimension [v11,v12,v13,v15,v9]}" ] 
+BB26 -> BB27 [tailport=s, headport=n, headlabel="      27"]
+BB26 -> BB33 [tailport=s, headport=n, color=gray]
+BB27 [shape=record label="{79: write-property[v10,'width',v9]|80: write-variable[v9,'width']*|81: read-variable['this',v17,-]|82: read-variable['computeDimension',v19,v18]|83: read-variable['context',v21,-]|84: read-property[v21,'canvas',v20]|85: \<variable-non-null-undef\>['context']|86: constant[\"Height\",v22]}" ] 
+BB27 -> BB28 [tailport=s, headport=n, headlabel="      28"]
+BB27 -> BB33 [tailport=s, headport=n, color=gray]
+BB28 [shape=record label="{87: call-computeDimension [v18,v19,v20,v22,v16]}" ] 
+BB28 -> BB29 [tailport=s, headport=n, headlabel="      29"]
+BB28 -> BB33 [tailport=s, headport=n, color=gray]
+BB29 [shape=record label="{88: write-property[v17,'height',v16]|89: write-variable[v16,'height']*|90: read-variable['context',v25,-]|91: read-property[v25,'canvas',v24]|92: \<variable-non-null-undef\>['context']|93: read-variable['width',v23,-]|94: write-property[v24,'width',v23]|95: \<property-non-null-undef\>[v25,'canvas']*|96: read-variable['context',v28,-]|97: read-property[v28,'canvas',v27]|98: \<variable-non-null-undef\>['context']|99: read-variable['height',v26,-]|100: write-property[v27,'height',v26]|101: \<property-non-null-undef\>[v28,'canvas']*|102: read-variable['this',v30,-]|103: read-variable['context',v32,-]|104: read-property[v32,'canvas',v31]|105: \<variable-non-null-undef\>['context']|106: read-property[v31,'width',v29]|107: \<property-non-null-undef\>[v32,'canvas']|108: write-property[v30,'width',v29]|109: write-variable[v29,'width']*|110: read-variable['this',v34,-]|111: read-variable['context',v36,-]|112: read-property[v36,'canvas',v35]|113: \<variable-non-null-undef\>['context']|114: read-property[v35,'height',v33]|115: \<property-non-null-undef\>[v36,'canvas']|116: write-property[v34,'height',v33]|117: write-variable[v33,'height']*|118: read-variable['this',v38,-]|119: read-variable['this',v41,-]|120: read-property[v41,'width',v39]|121: read-variable['this',v42,-]|122: read-property[v42,'height',v40]|123: /[v39,v40,v37]|124: write-property[v38,'aspectRatio',v37]*|125: read-variable['helpers',v44,-]|126: read-property[v44,'retinaScale',-]|127: \<variable-non-null-undef\>['helpers']|128: read-variable['this',v45,-]}" ] 
+BB29 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB29 -> BB33 [tailport=s, headport=n, color=gray]
+BB30 [shape=record label="{129: call-helpers.retinaScale [v44,'retinaScale',v45,-]*}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB30 -> BB33 [tailport=s, headport=n, color=gray]
+BB31 [shape=record label="{130: read-variable['this',v1,-]}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB33 [tailport=s, headport=n, color=gray]
+BB32 [shape=record label="{131: return[v1]}" ] 
+BB33 [shape=record label="{132: exceptional-return}" ] 
+//#$~ 53
+}

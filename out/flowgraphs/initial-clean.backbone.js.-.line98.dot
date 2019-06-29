@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB57 [tailport=s, headport=n, headlabel="    57"]
+BB57 [shape=record label="{138: constant[undefined,v1]}" ] 
+BB57 -> BB58 [tailport=s, headport=n, headlabel="      58"]
+BB58 [shape=record label="{139: read-variable['self',v3,-]|140: read-property[v3,'off',-]|141: \<variable-non-null-undef\>['self']|142: read-variable['name',v4,-]|143: read-variable['once',v5,-]}" ] 
+BB58 -> BB59 [tailport=s, headport=n, headlabel="      59"]
+BB58 -> BB63 [tailport=s, headport=n, color=gray, headlabel="      63"]
+BB59 [shape=record label="{144: call-self.off [v3,'off',v4,v5,-]*}" ] 
+BB59 -> BB60 [tailport=s, headport=n, headlabel="      60"]
+BB59 -> BB63 [tailport=s, headport=n, color=gray]
+BB60 [shape=record label="{145: read-variable['callback',v7,-]|146: read-property[v7,'apply',-]|147: \<variable-non-null-undef\>['callback']|148: read-variable['this',v8,-]|149: read-variable['arguments',v9,-]}" ] 
+BB60 -> BB61 [tailport=s, headport=n, headlabel="      61"]
+BB60 -> BB63 [tailport=s, headport=n, color=gray]
+BB61 [shape=record label="{150: call-callback.apply [v7,'apply',v8,v9,-]*}" ] 
+BB61 -> BB62 [tailport=s, headport=n, headlabel="      62"]
+BB61 -> BB63 [tailport=s, headport=n, color=gray]
+BB62 [shape=record label="{151: return[v1]}" ] 
+BB63 [shape=record label="{152: exceptional-return}" ] 
+//#$~ 100
+}

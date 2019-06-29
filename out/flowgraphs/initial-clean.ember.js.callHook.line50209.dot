@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2452[shape=none,label=""];
+BB_entry2452 -> BB28051 [tailport=s, headport=n, headlabel="    28051"]
+BB28051 [shape=record label="{93165: constant[undefined,v1]|93166: vardecl['args']}" ] 
+BB28051 -> BB28052 [tailport=s, headport=n, headlabel="      28052"]
+BB28052 [shape=record label="{93167: read-variable['slice',v4,-]|93168: read-property[v4,'call',-]|93169: \<variable-non-null-undef\>['slice']|93170: read-variable['arguments',v5,-]|93171: constant[2.0,v6]}" ] 
+BB28052 -> BB28053 [tailport=s, headport=n, headlabel="      28053"]
+BB28052 -> BB28057 [tailport=s, headport=n, color=gray, headlabel="      28057"]
+BB28053 [shape=record label="{93172: call-slice.call [v4,'call',v5,v6,v2]}" ] 
+BB28053 -> BB28054 [tailport=s, headport=n, headlabel="      28054"]
+BB28053 -> BB28057 [tailport=s, headport=n, color=gray]
+BB28054 [shape=record label="{93173: write-variable[v2,'args']*|93174: read-variable['applyHook',v8,v7]|93175: read-variable['obj',v9,-]|93176: read-variable['hookName',v10,-]|93177: read-variable['args',v11,-]}" ] 
+BB28054 -> BB28055 [tailport=s, headport=n, headlabel="      28055"]
+BB28054 -> BB28057 [tailport=s, headport=n, color=gray]
+BB28055 [shape=record label="{93178: call-applyHook [v7,v8,v9,v10,v11,v1]}" ] 
+BB28055 -> BB28056 [tailport=s, headport=n, headlabel="      28056"]
+BB28055 -> BB28057 [tailport=s, headport=n, color=gray]
+BB28056 [shape=record label="{93179: return[v1]}" ] 
+BB28057 [shape=record label="{93180: exceptional-return}" ] 
+//#$~ 50211
+}

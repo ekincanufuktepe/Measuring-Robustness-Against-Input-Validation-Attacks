@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry156[shape=none,label=""];
+BB_entry156 -> BB2186 [tailport=s, headport=n, headlabel="    2186"]
+BB2186 [shape=record label="{7772: constant[undefined,v1]}" ] 
+BB2186 -> BB2187 [tailport=s, headport=n, headlabel="      2187"]
+BB2187 [shape=record label="{7773: read-variable['this',v3,-]|7774: read-property[v3,'_localEventListeners',v2]|7775: if[v2](true-block:2188,false-block:2190)}" ] 
+BB2187 -> BB2188 [tailport=s, headport=n, headlabel="      2188"]
+BB2187 -> BB2190 [tailport=s, headport=n, headlabel="      2190"]
+BB2187 -> BB2191 [tailport=s, headport=n, color=gray, headlabel="      2191"]
+BB2188 [shape=record label="{7776: read-variable['forEachAccumulated',v5,v4]|7777: read-variable['this',v7,-]|7778: read-property[v7,'_localEventListeners',v6]|7779: read-variable['remove',v8,-]}" ] 
+BB2188 -> BB2189 [tailport=s, headport=n, headlabel="      2189"]
+BB2188 -> BB2191 [tailport=s, headport=n, color=gray]
+BB2189 [shape=record label="{7780: call-forEachAccumulated [v4,v5,v6,v8,-]*}" ] 
+BB2189 -> BB2190 [tailport=s, headport=n]
+BB2189 -> BB2191 [tailport=s, headport=n, color=gray]
+BB2190 [shape=record label="{7781: return[v1]}" ] 
+BB2191 [shape=record label="{7782: exceptional-return}" ] 
+//#$~ 4094
+}

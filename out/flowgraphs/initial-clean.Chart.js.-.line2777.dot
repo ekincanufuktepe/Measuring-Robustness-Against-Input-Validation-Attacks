@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry245[shape=none,label=""];
+BB_entry245 -> BB2562 [tailport=s, headport=n, headlabel="    2562"]
+BB2562 [shape=record label="{10340: constant[undefined,v1]}" ] 
+BB2562 -> BB2563 [tailport=s, headport=n, headlabel="      2563"]
+BB2563 [shape=record label="{10341: read-variable['helpers',v3,-]|10342: read-property[v3,'findPreviousWhere',-]|10343: \<variable-non-null-undef\>['helpers']|10344: read-variable['collection',v4,-]|10345: read-variable['hasValue',v5,-]|10346: read-variable['index',v6,-]}" ] 
+BB2563 -> BB2564 [tailport=s, headport=n, headlabel="      2564"]
+BB2563 -> BB2568 [tailport=s, headport=n, color=gray, headlabel="      2568"]
+BB2564 [shape=record label="{10347: call-helpers.findPreviousWhere [v3,'findPreviousWhere',v4,v5,v6,v1]}" ] 
+BB2564 -> BB2565 [tailport=s, headport=n, headlabel="      2565"]
+BB2564 -> BB2568 [tailport=s, headport=n, color=gray]
+BB2565 [shape=record label="{10348: if[v1](true-block:2567,false-block:2566)}" ] 
+BB2565 -> BB2567 [tailport=s, headport=n, headlabel="      2567"]
+BB2565 -> BB2566 [tailport=s, headport=n, headlabel="      2566"]
+BB2566 [shape=record label="{10349: read-variable['point',v1,-]}" ] 
+BB2566 -> BB2567 [tailport=s, headport=n]
+BB2566 -> BB2568 [tailport=s, headport=n, color=gray]
+BB2567 [shape=record label="{10350: return[v1]}" ] 
+BB2568 [shape=record label="{10351: exceptional-return}" ] 
+//#$~ 2778
+}

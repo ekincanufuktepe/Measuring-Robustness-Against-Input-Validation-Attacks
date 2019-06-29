@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry778[shape=none,label=""];
+BB_entry778 -> BB10352 [tailport=s, headport=n, headlabel="    10352"]
+BB10352 [shape=record label="{34155: constant[undefined,v1]}" ] 
+BB10352 -> BB10353 [tailport=s, headport=n, headlabel="      10353"]
+BB10353 [shape=record label="{34156: read-variable['elem',v1,-]|34157: if[v1](true-block:10354,false-block:10358)}" ] 
+BB10353 -> BB10358 [tailport=s, headport=n, headlabel="      10358"]
+BB10353 -> BB10354 [tailport=s, headport=n, headlabel="      10354"]
+BB10353 -> BB10359 [tailport=s, headport=n, color=gray, headlabel="      10359"]
+BB10354 [shape=record label="{34158: read-variable['elem',v4,-]|34159: read-property[v4,'nodeName',v2]|34160: \<variable-non-null-undef\>['elem']|34161: constant[\"INPUT\",v3]|34162: ===[v2,v3,v1]|34163: if[v1](true-block:10355,false-block:10356)}" ] 
+BB10354 -> BB10356 [tailport=s, headport=n, headlabel="      10356"]
+BB10354 -> BB10355 [tailport=s, headport=n, headlabel="      10355"]
+BB10354 -> BB10359 [tailport=s, headport=n, color=gray]
+BB10355 [shape=record label="{34164: read-variable['supportedInputTypes',v5,-]|34165: read-variable['elem',v7,-]|34166: read-property[v7,'type',v6]|34167: \<variable-non-null-undef\>['elem']|34168: read-property[v5,v6,v1]|34169: \<variable-non-null-undef\>['supportedInputTypes']}" ] 
+BB10355 -> BB10356 [tailport=s, headport=n]
+BB10355 -> BB10359 [tailport=s, headport=n, color=gray]
+BB10356 [shape=record label="{34170: if[v1](true-block:10358,false-block:10357)}" ] 
+BB10356 -> BB10358 [tailport=s, headport=n]
+BB10356 -> BB10357 [tailport=s, headport=n, headlabel="      10357"]
+BB10357 [shape=record label="{34171: read-variable['elem',v4,-]|34172: read-property[v4,'nodeName',v2]|34173: \<variable-non-null-undef\>['elem']|34174: constant[\"TEXTAREA\",v3]|34175: ===[v2,v3,v1]}" ] 
+BB10357 -> BB10358 [tailport=s, headport=n]
+BB10357 -> BB10359 [tailport=s, headport=n, color=gray]
+BB10358 [shape=record label="{34176: return[v1]}" ] 
+BB10359 [shape=record label="{34177: exceptional-return}" ] 
+//#$~ 18614
+}

@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry158[shape=none,label=""];
+BB_entry158 -> BB2204 [tailport=s, headport=n, headlabel="    2204"]
+BB2204 [shape=record label="{7818: constant[undefined,v1]|7819: vardecl['target']}" ] 
+BB2204 -> BB2205 [tailport=s, headport=n, headlabel="      2205"]
+BB2205 [shape=record label="{7820: read-variable['topLevelType',v3,-]|7821: read-variable['topLevelTypes',v5,-]|7822: read-property[v5,'topTouchStart',v4]|7823: \<variable-non-null-undef\>['topLevelTypes']|7824: ===[v3,v4,v2]|7825: if[v2](true-block:2206,false-block:2210)}" ] 
+BB2205 -> BB2206 [tailport=s, headport=n, headlabel="      2206"]
+BB2205 -> BB2210 [tailport=s, headport=n, headlabel="      2210"]
+BB2205 -> BB2211 [tailport=s, headport=n, color=gray, headlabel="      2211"]
+BB2206 [shape=record label="{7826: read-variable['nativeEvent',v7,-]|7827: read-property[v7,'target',v6]|7828: \<variable-non-null-undef\>['nativeEvent']|7829: write-variable[v6,'target']*|7830: read-variable['target',v8,-]|7831: if[v8](true-block:2207,false-block:2208)}" ] 
+BB2206 -> BB2208 [tailport=s, headport=n, headlabel="      2208"]
+BB2206 -> BB2207 [tailport=s, headport=n, headlabel="      2207"]
+BB2206 -> BB2211 [tailport=s, headport=n, color=gray]
+BB2207 [shape=record label="{7832: read-variable['target',v10,-]|7833: read-property[v10,'onclick',v9]|7834: \<variable-non-null-undef\>['target']|7835: ![v9,v8]}" ] 
+BB2207 -> BB2208 [tailport=s, headport=n]
+BB2207 -> BB2211 [tailport=s, headport=n, color=gray]
+BB2208 [shape=record label="{7836: if[v8](true-block:2209,false-block:2210)}" ] 
+BB2208 -> BB2209 [tailport=s, headport=n, headlabel="      2209"]
+BB2208 -> BB2210 [tailport=s, headport=n]
+BB2209 [shape=record label="{7837: read-variable['target',v10,-]|7838: read-variable['emptyFunction',v9,-]|7839: write-property[v10,'onclick',v9]|7840: \<variable-non-null-undef\>['target']*}" ] 
+BB2209 -> BB2210 [tailport=s, headport=n]
+BB2209 -> BB2211 [tailport=s, headport=n, color=gray]
+BB2210 [shape=record label="{7841: return[v1]}" ] 
+BB2211 [shape=record label="{7842: exceptional-return}" ] 
+//#$~ 4150
+}

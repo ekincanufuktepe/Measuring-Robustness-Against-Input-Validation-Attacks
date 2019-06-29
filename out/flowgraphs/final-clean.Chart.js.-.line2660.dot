@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry230[shape=none,label=""];
+BB_entry230 -> BB2461 [tailport=s, headport=n, headlabel="    2461"]
+BB2461 [shape=record label="{9916: constant[undefined,v1]|9917: vardecl['pointsArray']|9918: vardecl['eventPosition']}" ] 
+BB2461 -> BB2462 [tailport=s, headport=n, headlabel="      2462"]
+BB2462 [shape=record label="{9919: read-variable['Array',v3,-]}" ] 
+BB2462 -> BB2463 [tailport=s, headport=n, headlabel="      2463"]
+BB2462 -> BB2470 [tailport=s, headport=n, color=gray, headlabel="      2470"]
+BB2463 [shape=record label="{9920: construct [-,v3,v2]}" ] 
+BB2463 -> BB2464 [tailport=s, headport=n, headlabel="      2464"]
+BB2463 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2464 [shape=record label="{9921: write-variable[v2,'pointsArray']*|9922: read-variable['helpers',v6,-]|9923: read-property[v6,'getRelativePosition',-]|9924: \<variable-non-null-undef\>['helpers']|9925: read-variable['e',v7,-]}" ] 
+BB2464 -> BB2465 [tailport=s, headport=n, headlabel="      2465"]
+BB2464 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2465 [shape=record label="{9926: call-helpers.getRelativePosition [v6,'getRelativePosition',v7,v4]}" ] 
+BB2465 -> BB2466 [tailport=s, headport=n, headlabel="      2466"]
+BB2465 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2466 [shape=record label="{9927: write-variable[v4,'eventPosition']*|9928: read-variable['helpers',v9,-]|9929: read-property[v9,'each',-]|9930: \<variable-non-null-undef\>['helpers']|9931: read-variable['this',v11,-]|9932: read-property[v11,'datasets',v10]|9933: function-expr[function ( dataset ),v12]|9934: read-variable['this',v13,-]}" ] 
+BB2466 -> BB2467 [tailport=s, headport=n, headlabel="      2467"]
+BB2466 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2467 [shape=record label="{9935: call-helpers.each [v9,'each',v10,v12,v13,-]*}" ] 
+BB2467 -> BB2468 [tailport=s, headport=n, headlabel="      2468"]
+BB2467 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2468 [shape=record label="{9936: read-variable['pointsArray',v1,-]}" ] 
+BB2468 -> BB2469 [tailport=s, headport=n, headlabel="      2469"]
+BB2468 -> BB2470 [tailport=s, headport=n, color=gray]
+BB2469 [shape=record label="{9937: return[v1]}" ] 
+BB2470 [shape=record label="{9938: exceptional-return}" ] 
+//#$~ 2668
+}

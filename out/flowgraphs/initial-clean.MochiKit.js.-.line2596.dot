@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry294[shape=none,label=""];
+BB_entry294 -> BB3890 [tailport=s, headport=n, headlabel="    3890"]
+BB3890 [shape=record label="{15194: constant[undefined,v1]|15195: vardecl['m']|15196: vardecl['_2d2']}" ] 
+BB3890 -> BB3891 [tailport=s, headport=n, headlabel="      3891"]
+BB3891 [shape=record label="{15197: read-variable['MochiKit',v3,-]|15198: read-property[v3,'Base',v2]|15199: \<variable-non-null-undef\>['MochiKit']|15200: write-variable[v2,'m']*|15201: read-variable['m',v7,-]|15202: read-property[v7,'partial',v6]|15203: \<variable-non-null-undef\>['m']|15204: read-property[v6,'apply',-]|15205: \<property-non-null-undef\>[v7,'partial']|15206: read-variable['m',v8,-]|15207: read-variable['m',v11,-]|15208: read-property[v11,'extend',-]|15209: \<variable-non-null-undef\>['m']|15210: constant[null,v12]|15211: read-variable['arguments',v13,-]|15212: constant[1.0,v14]}" ] 
+BB3891 -> BB3892 [tailport=s, headport=n, headlabel="      3892"]
+BB3891 -> BB3899 [tailport=s, headport=n, color=gray, headlabel="      3899"]
+BB3892 [shape=record label="{15213: call-m.extend [v11,'extend',v12,v13,v14,v9]}" ] 
+BB3892 -> BB3893 [tailport=s, headport=n, headlabel="      3893"]
+BB3892 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3893 [shape=record label="{15214: call-m.partial.apply [v6,'apply',v8,v9,v4]}" ] 
+BB3893 -> BB3894 [tailport=s, headport=n, headlabel="      3894"]
+BB3893 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3894 [shape=record label="{15215: write-variable[v4,'_2d2']*|15216: read-variable['MochiKit',v19,-]|15217: read-property[v19,'Async',v18]|15218: \<variable-non-null-undef\>['MochiKit']|15219: read-property[v18,'wait',-]|15220: \<property-non-null-undef\>[v19,'Async']|15221: read-variable['_2cf',v20,-]}" ] 
+BB3894 -> BB3895 [tailport=s, headport=n, headlabel="      3895"]
+BB3894 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3895 [shape=record label="{15222: call-MochiKit.Async.wait [v18,'wait',v20,v16]}" ] 
+BB3895 -> BB3896 [tailport=s, headport=n, headlabel="      3896"]
+BB3895 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3896 [shape=record label="{15223: read-property[v16,'addCallback',-]|15224: function-expr[function ( res ),v21]}" ] 
+BB3896 -> BB3897 [tailport=s, headport=n, headlabel="      3897"]
+BB3896 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3897 [shape=record label="{15225: call-null [v16,'addCallback',v21,v1]}" ] 
+BB3897 -> BB3898 [tailport=s, headport=n, headlabel="      3898"]
+BB3897 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3898 [shape=record label="{15226: return[v1]}" ] 
+BB3899 [shape=record label="{15227: exceptional-return}" ] 
+//#$~ 2600
+}

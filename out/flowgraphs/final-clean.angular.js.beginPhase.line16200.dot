@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry880[shape=none,label=""];
+BB_entry880 -> BB11453 [tailport=s, headport=n, headlabel="    11453"]
+BB11453 [shape=record label="{30096: constant[undefined,v1]}" ] 
+BB11453 -> BB11454 [tailport=s, headport=n, headlabel="      11454"]
+BB11454 [shape=record label="{30097: read-variable['$rootScope',v3,-]|30098: read-property[v3,'$$phase',v2]|30099: \<variable-non-null-undef\>['$rootScope']|30100: if[v2](true-block:11455,false-block:11458)}" ] 
+BB11454 -> BB11455 [tailport=s, headport=n, headlabel="      11455"]
+BB11454 -> BB11458 [tailport=s, headport=n, headlabel="      11458"]
+BB11454 -> BB11460 [tailport=s, headport=n, color=gray, headlabel="      11460"]
+BB11455 [shape=record label="{30101: read-variable['$rootScopeMinErr',v6,v5]|30102: constant[\"inprog\",v7]|30103: constant[\"\\\{0\\\} already in progress\",v8]|30104: read-variable['$rootScope',v10,-]|30105: read-property[v10,'$$phase',v9]|30106: \<variable-non-null-undef\>['$rootScope']}" ] 
+BB11455 -> BB11456 [tailport=s, headport=n, headlabel="      11456"]
+BB11455 -> BB11460 [tailport=s, headport=n, color=gray]
+BB11456 [shape=record label="{30107: call-$rootScopeMinErr [v5,v6,v7,v8,v9,v4]}" ] 
+BB11456 -> BB11457 [tailport=s, headport=n, headlabel="      11457"]
+BB11456 -> BB11460 [tailport=s, headport=n, color=gray]
+BB11457 [shape=record label="{30108: throw[v4]*}" ] 
+BB11457 -> BB11458 [tailport=s, headport=n]
+BB11457 -> BB11460 [tailport=s, headport=n, color=gray]
+BB11458 [shape=record label="{30109: read-variable['$rootScope',v5,-]|30110: read-variable['phase',v4,-]|30111: write-property[v5,'$$phase',v4]|30112: \<variable-non-null-undef\>['$rootScope']*}" ] 
+BB11458 -> BB11459 [tailport=s, headport=n, headlabel="      11459"]
+BB11458 -> BB11460 [tailport=s, headport=n, color=gray]
+BB11459 [shape=record label="{30113: return[v1]}" ] 
+BB11460 [shape=record label="{30114: exceptional-return}" ] 
+//#$~ 16205
+}

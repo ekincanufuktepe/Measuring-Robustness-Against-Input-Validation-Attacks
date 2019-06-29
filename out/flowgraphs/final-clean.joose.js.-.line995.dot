@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry101[shape=none,label=""];
+BB_entry101 -> BB902 [tailport=s, headport=n, headlabel="    902"]
+BB902 [shape=record label="{2831: constant[undefined,v1]|2832: vardecl['me']|2833: vardecl['name']|2834: vardecl['props']}" ] 
+BB902 -> BB903 [tailport=s, headport=n, headlabel="      903"]
+BB903 [shape=record label="{2835: read-variable['this',v2,-]|2836: write-variable[v2,'me']*|2837: typeof['map',v4]|2838: constant[\"string\",v5]|2839: ==[v4,v5,v3]|2840: if[v3](true-block:904,false-block:905)}" ] 
+BB903 -> BB904 [tailport=s, headport=n, headlabel="      904"]
+BB903 -> BB905 [tailport=s, headport=n, headlabel="      905"]
+BB903 -> BB909 [tailport=s, headport=n, color=gray, headlabel="      909"]
+BB904 [shape=record label="{2841: read-variable['arguments',v7,-]|2842: constant[0.0,v8]|2843: read-property[v7,v8,v6]|2844: \<variable-non-null-undef\>['arguments']|2845: write-variable[v6,'name']*|2846: read-variable['arguments',v10,-]|2847: constant[1.0,v11]|2848: read-property[v10,v11,v9]|2849: \<variable-non-null-undef\>['arguments']|2850: write-variable[v9,'props']*|2851: read-variable['me',v13,-]|2852: read-property[v13,'addAttribute',-]|2853: \<variable-non-null-undef\>['me']|2854: read-variable['name',v14,-]|2855: read-variable['props',v15,-]}" ] 
+BB904 -> BB906 [tailport=s, headport=n, headlabel="      906"]
+BB904 -> BB909 [tailport=s, headport=n, color=gray]
+BB905 [shape=record label="{2856: read-variable['Joose',v8,-]|2857: read-property[v8,'O',v7]|2858: \<variable-non-null-undef\>['Joose']|2859: read-property[v7,'eachSafe',-]|2860: \<property-non-null-undef\>[v8,'O']|2861: read-variable['map',v9,-]|2862: function-expr[function ( props name ),v10]}" ] 
+BB905 -> BB907 [tailport=s, headport=n, headlabel="      907"]
+BB905 -> BB909 [tailport=s, headport=n, color=gray]
+BB906 [shape=record label="{2863: call-me.addAttribute [v13,'addAttribute',v14,v15,-]*}" ] 
+BB906 -> BB908 [tailport=s, headport=n, headlabel="      908"]
+BB906 -> BB909 [tailport=s, headport=n, color=gray]
+BB907 [shape=record label="{2864: call-Joose.O.eachSafe [v7,'eachSafe',v9,v10,-]*}" ] 
+BB907 -> BB908 [tailport=s, headport=n]
+BB907 -> BB909 [tailport=s, headport=n, color=gray]
+BB908 [shape=record label="{2865: return[v1]}" ] 
+BB909 [shape=record label="{2866: exceptional-return}" ] 
+//#$~ 1003
+}

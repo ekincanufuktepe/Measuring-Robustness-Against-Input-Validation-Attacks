@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB292 [tailport=s, headport=n, headlabel="    292"]
+BB292 [shape=record label="{1171: constant[undefined,v1]}" ] 
+BB292 -> BB293 [tailport=s, headport=n, headlabel="      293"]
+BB293 [shape=record label="{1172: read-variable['this',v3,-]|1173: read-property[v3,'meta',v2]|1174: if[v2](true-block:294,false-block:297)}" ] 
+BB293 -> BB294 [tailport=s, headport=n, headlabel="      294"]
+BB293 -> BB297 [tailport=s, headport=n, headlabel="      297"]
+BB293 -> BB299 [tailport=s, headport=n, color=gray, headlabel="      299"]
+BB294 [shape=record label="{1175: constant[\"a \",v4]|1176: read-variable['this',v8,-]|1177: read-property[v8,'meta',v7]|1178: read-property[v7,'className',-]|1179: \<property-non-null-undef\>[v8,'meta']}" ] 
+BB294 -> BB295 [tailport=s, headport=n, headlabel="      295"]
+BB294 -> BB299 [tailport=s, headport=n, color=gray]
+BB295 [shape=record label="{1180: call-this.meta.className [v7,'className',v5]}" ] 
+BB295 -> BB296 [tailport=s, headport=n, headlabel="      296"]
+BB295 -> BB299 [tailport=s, headport=n, color=gray]
+BB296 [shape=record label="{1181: +[v4,v5,v1]}" ] 
+BB296 -> BB298 [tailport=s, headport=n, headlabel="      298"]
+BB296 -> BB299 [tailport=s, headport=n, color=gray]
+BB297 [shape=record label="{1182: constant[\"NoMeta\",v1]}" ] 
+BB297 -> BB298 [tailport=s, headport=n]
+BB298 [shape=record label="{1183: return[v1]}" ] 
+BB299 [shape=record label="{1184: exceptional-return}" ] 
+//#$~ 264
+}

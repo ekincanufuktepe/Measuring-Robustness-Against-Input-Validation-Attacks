@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry143[shape=none,label=""];
+BB_entry143 -> BB2014 [tailport=s, headport=n, headlabel="    2014"]
+BB2014 [shape=record label="{9481: constant[undefined,v1]|9482: vardecl['m']|9483: vardecl['self']|9484: vardecl['next']|9485: vardecl['_177']}" ] 
+BB2014 -> BB2015 [tailport=s, headport=n, headlabel="      2015"]
+BB2015 [shape=record label="{9486: read-variable['MochiKit',v3,-]|9487: read-property[v3,'Base',v2]|9488: \<variable-non-null-undef\>['MochiKit']|9489: write-variable[v2,'m']*|9490: read-variable['MochiKit',v5,-]|9491: read-property[v5,'Iter',v4]|9492: \<variable-non-null-undef\>['MochiKit']|9493: write-variable[v4,'self']*|9494: read-variable['self',v7,-]|9495: read-property[v7,'next',v6]|9496: \<variable-non-null-undef\>['self']|9497: write-variable[v6,'next']*|9498: read-variable['m',v10,-]|9499: read-property[v10,'map',-]|9500: \<variable-non-null-undef\>['m']|9501: read-variable['self',v12,-]|9502: read-property[v12,'iter',v11]|9503: \<variable-non-null-undef\>['self']|9504: read-variable['arguments',v13,-]}" ] 
+BB2015 -> BB2016 [tailport=s, headport=n, headlabel="      2016"]
+BB2015 -> BB2021 [tailport=s, headport=n, color=gray, headlabel="      2021"]
+BB2016 [shape=record label="{9505: call-m.map [v10,'map',v11,v13,v8]}" ] 
+BB2016 -> BB2017 [tailport=s, headport=n, headlabel="      2017"]
+BB2016 -> BB2021 [tailport=s, headport=n, color=gray]
+BB2017 [shape=record label="{9506: write-variable[v8,'_177']*|9507: new[v1]|9508: function-expr[function ( ),v14]|9509: write-property[v1,'repr',v14]|9510: read-variable['m',v17,-]|9511: read-property[v17,'forwardCall',-]|9512: \<variable-non-null-undef\>['m']|9513: constant[\"repr\",v18]}" ] 
+BB2017 -> BB2018 [tailport=s, headport=n, headlabel="      2018"]
+BB2017 -> BB2021 [tailport=s, headport=n, color=gray]
+BB2018 [shape=record label="{9514: call-m.forwardCall [v17,'forwardCall',v18,v15]}" ] 
+BB2018 -> BB2019 [tailport=s, headport=n, headlabel="      2019"]
+BB2018 -> BB2021 [tailport=s, headport=n, color=gray]
+BB2019 [shape=record label="{9515: write-property[v1,'toString',v15]|9516: function-expr[function ( ),v19]|9517: write-property[v1,'next',v19]}" ] 
+BB2019 -> BB2020 [tailport=s, headport=n, headlabel="      2020"]
+BB2019 -> BB2021 [tailport=s, headport=n, color=gray]
+BB2020 [shape=record label="{9518: return[v1]}" ] 
+BB2021 [shape=record label="{9519: exceptional-return}" ] 
+//#$~ 1196
+}

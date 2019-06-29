@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry5[shape=none,label=""];
+BB_entry5 -> BB16 [tailport=s, headport=n, headlabel="    16"]
+BB16 [shape=record label="{38: constant[undefined,v1]|39: vardecl['w']}" ] 
+BB16 -> BB17 [tailport=s, headport=n, headlabel="      17"]
+BB17 [shape=record label="{40: read-variable['word',v6,-]|41: read-property[v6,'toLowerCase',-]|42: \<variable-non-null-undef\>['word']}" ] 
+BB17 -> BB18 [tailport=s, headport=n, headlabel="      18"]
+BB17 -> BB25 [tailport=s, headport=n, color=gray, headlabel="      25"]
+BB18 [shape=record label="{43: call-word.toLowerCase [v6,'toLowerCase',v4]}" ] 
+BB18 -> BB19 [tailport=s, headport=n, headlabel="      19"]
+BB18 -> BB25 [tailport=s, headport=n, color=gray]
+BB19 [shape=record label="{44: read-property[v4,'charAt',-]|45: constant[0.0,v7]}" ] 
+BB19 -> BB20 [tailport=s, headport=n, headlabel="      20"]
+BB19 -> BB25 [tailport=s, headport=n, color=gray]
+BB20 [shape=record label="{46: call-null [v4,'charAt',v7,v2]}" ] 
+BB20 -> BB21 [tailport=s, headport=n, headlabel="      21"]
+BB20 -> BB25 [tailport=s, headport=n, color=gray]
+BB21 [shape=record label="{47: write-variable[v2,'w']*|48: read-variable['positions',v9,-]|49: read-variable['w',v10,-]|50: read-property[v9,v10,v8]|51: \<variable-non-null-undef\>['positions']|52: if[v8](true-block:22,false-block:24)}" ] 
+BB21 -> BB22 [tailport=s, headport=n, headlabel="      22"]
+BB21 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB21 -> BB25 [tailport=s, headport=n, color=gray]
+BB22 [shape=record label="{53: read-variable['pos',v12,-]|54: read-property[v12,'push',-]|55: \<variable-non-null-undef\>['pos']|56: read-variable['w',v13,-]}" ] 
+BB22 -> BB23 [tailport=s, headport=n, headlabel="      23"]
+BB22 -> BB25 [tailport=s, headport=n, color=gray]
+BB23 [shape=record label="{57: call-pos.push [v12,'push',v13,v1]}" ] 
+BB23 -> BB24 [tailport=s, headport=n]
+BB23 -> BB25 [tailport=s, headport=n, color=gray]
+BB24 [shape=record label="{58: return[v1]}" ] 
+BB25 [shape=record label="{59: exceptional-return}" ] 
+//#$~ 48
+}

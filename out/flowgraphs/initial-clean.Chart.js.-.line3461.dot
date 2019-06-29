@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry298[shape=none,label=""];
+BB_entry298 -> BB3116 [tailport=s, headport=n, headlabel="    3116"]
+BB3116 [shape=record label="{12689: constant[undefined,v1]}" ] 
+BB3116 -> BB3117 [tailport=s, headport=n, headlabel="      3117"]
+BB3117 [shape=record label="{12690: read-variable['point',v4,-]|12691: read-property[v4,'hasValue',-]|12692: \<variable-non-null-undef\>['point']}" ] 
+BB3117 -> BB3118 [tailport=s, headport=n, headlabel="      3118"]
+BB3117 -> BB3123 [tailport=s, headport=n, color=gray, headlabel="      3123"]
+BB3118 [shape=record label="{12693: call-point.hasValue [v4,'hasValue',v2]}" ] 
+BB3118 -> BB3119 [tailport=s, headport=n, headlabel="      3119"]
+BB3118 -> BB3123 [tailport=s, headport=n, color=gray]
+BB3119 [shape=record label="{12694: if[v2](true-block:3120,false-block:3122)}" ] 
+BB3119 -> BB3120 [tailport=s, headport=n, headlabel="      3120"]
+BB3119 -> BB3122 [tailport=s, headport=n, headlabel="      3122"]
+BB3120 [shape=record label="{12695: read-variable['point',v6,-]|12696: read-property[v6,'draw',-]|12697: \<variable-non-null-undef\>['point']}" ] 
+BB3120 -> BB3121 [tailport=s, headport=n, headlabel="      3121"]
+BB3120 -> BB3123 [tailport=s, headport=n, color=gray]
+BB3121 [shape=record label="{12698: call-point.draw [v6,'draw',-]*}" ] 
+BB3121 -> BB3122 [tailport=s, headport=n]
+BB3121 -> BB3123 [tailport=s, headport=n, color=gray]
+BB3122 [shape=record label="{12699: return[v1]}" ] 
+BB3123 [shape=record label="{12700: exceptional-return}" ] 
+//#$~ 3463
+}

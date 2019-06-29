@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1340[shape=none,label=""];
+BB_entry1340 -> BB14443 [tailport=s, headport=n, headlabel="    14443"]
+BB14443 [shape=record label="{49927: constant[undefined,v1]}" ] 
+BB14443 -> BB14444 [tailport=s, headport=n, headlabel="      14444"]
+BB14444 [shape=record label="{49928: read-variable['arguments',v4,-]|49929: read-property[v4,'length',v3]|49930: \<variable-non-null-undef\>['arguments']|49931: ![v3,v2]|49932: if[v2](true-block:14445,false-block:14446)}" ] 
+BB14444 -> BB14445 [tailport=s, headport=n, headlabel="      14445"]
+BB14444 -> BB14446 [tailport=s, headport=n, headlabel="      14446"]
+BB14444 -> BB14450 [tailport=s, headport=n, color=gray, headlabel="      14450"]
+BB14445 [shape=record label="{49933: read-variable['type',v1,-]}" ] 
+BB14445 -> BB14449 [tailport=s, headport=n, headlabel="      14449"]
+BB14445 -> BB14450 [tailport=s, headport=n, color=gray]
+BB14446 [shape=record label="{49934: read-variable['d3_functor',v7,v6]|49935: read-variable['x',v8,-]}" ] 
+BB14446 -> BB14447 [tailport=s, headport=n, headlabel="      14447"]
+BB14446 -> BB14450 [tailport=s, headport=n, color=gray]
+BB14447 [shape=record label="{49936: call-d3_functor [v6,v7,v8,v5]}" ] 
+BB14447 -> BB14448 [tailport=s, headport=n, headlabel="      14448"]
+BB14447 -> BB14450 [tailport=s, headport=n, color=gray]
+BB14448 [shape=record label="{49937: write-variable[v5,'type']*|49938: read-variable['symbol',v1,-]}" ] 
+BB14448 -> BB14449 [tailport=s, headport=n]
+BB14448 -> BB14450 [tailport=s, headport=n, color=gray]
+BB14449 [shape=record label="{49939: return[v1]}" ] 
+BB14450 [shape=record label="{49940: exceptional-return}" ] 
+//#$~ 8548
+}

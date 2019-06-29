@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry465[shape=none,label=""];
+BB_entry465 -> BB5397 [tailport=s, headport=n, headlabel="    5397"]
+BB5397 [shape=record label="{16400: constant[undefined,v1]}" ] 
+BB5397 -> BB5398 [tailport=s, headport=n, headlabel="      5398"]
+BB5398 [shape=record label="{16401: typeof['Buffer',v2]|16402: constant[\"undefined\",v3]|16403: !==[v2,v3,v1]|16404: if[v1](true-block:5399,false-block:5401)}" ] 
+BB5398 -> BB5401 [tailport=s, headport=n, headlabel="      5401"]
+BB5398 -> BB5399 [tailport=s, headport=n, headlabel="      5399"]
+BB5398 -> BB5402 [tailport=s, headport=n, color=gray, headlabel="      5402"]
+BB5399 [shape=record label="{16405: read-variable['Buffer',v5,-]|16406: read-property[v5,'isBuffer',-]|16407: \<variable-non-null-undef\>['Buffer']|16408: read-variable['arg',v6,-]}" ] 
+BB5399 -> BB5400 [tailport=s, headport=n, headlabel="      5400"]
+BB5399 -> BB5402 [tailport=s, headport=n, color=gray]
+BB5400 [shape=record label="{16409: call-Buffer.isBuffer [v5,'isBuffer',v6,v1]}" ] 
+BB5400 -> BB5401 [tailport=s, headport=n]
+BB5400 -> BB5402 [tailport=s, headport=n, color=gray]
+BB5401 [shape=record label="{16410: return[v1]}" ] 
+BB5402 [shape=record label="{16411: exceptional-return}" ] 
+//#$~ 6190
+}

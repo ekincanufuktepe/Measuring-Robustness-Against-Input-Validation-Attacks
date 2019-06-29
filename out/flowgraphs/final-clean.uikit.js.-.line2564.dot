@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry255[shape=none,label=""];
+BB_entry255 -> BB3590 [tailport=s, headport=n, headlabel="    3590"]
+BB3590 [shape=record label="{10004: constant[undefined,v1]|10005: vardecl['scrollpos']|10006: vardecl['$win']|10007: vardecl['$doc']|10008: vardecl['$html']|10009: vardecl['Offcanvas']}" ] 
+BB3590 -> BB3591 [tailport=s, headport=n, headlabel="      3591"]
+BB3591 [shape=record label="{10010: new[v2]|10011: read-variable['window',v4,-]|10012: read-property[v4,'scrollX',v3]|10013: \<variable-non-null-undef\>['window']|10014: write-property[v2,'x',v3]|10015: read-variable['window',v6,-]|10016: read-property[v6,'scrollY',v5]|10017: \<variable-non-null-undef\>['window']|10018: write-property[v2,'y',v5]|10019: write-variable[v2,'scrollpos']*|10020: read-variable['UI',v8,-]|10021: read-property[v8,'$win',v7]|10022: \<variable-non-null-undef\>['UI']|10023: write-variable[v7,'$win']*|10024: read-variable['UI',v10,-]|10025: read-property[v10,'$doc',v9]|10026: \<variable-non-null-undef\>['UI']|10027: write-variable[v9,'$doc']*|10028: read-variable['UI',v12,-]|10029: read-property[v12,'$html',v11]|10030: \<variable-non-null-undef\>['UI']|10031: write-variable[v11,'$html']*|10032: new[v13]|10033: function-expr[function ( element ),v14]|10034: write-property[v13,'show',v14]|10035: function-expr[function ( force ),v15]|10036: write-property[v13,'hide',v15]|10037: function-expr[function ( element ),v16]|10038: write-property[v13,'_initElement',v16]|10039: write-variable[v13,'Offcanvas']*|10040: read-variable['UI',v18,-]|10041: read-property[v18,'component',-]|10042: \<variable-non-null-undef\>['UI']|10043: constant[\"offcanvasTrigger\",v19]|10044: new[v20]|10045: function-expr[function ( ),v21]|10046: write-property[v20,'boot',v21]|10047: function-expr[function ( ),v22]|10048: write-property[v20,'init',v22]}" ] 
+BB3591 -> BB3592 [tailport=s, headport=n, headlabel="      3592"]
+BB3591 -> BB3595 [tailport=s, headport=n, color=gray, headlabel="      3595"]
+BB3592 [shape=record label="{10049: call-UI.component [v18,'component',v19,v20,-]*}" ] 
+BB3592 -> BB3593 [tailport=s, headport=n, headlabel="      3593"]
+BB3592 -> BB3595 [tailport=s, headport=n, color=gray]
+BB3593 [shape=record label="{10050: read-variable['UI',v24,-]|10051: read-variable['Offcanvas',v23,-]|10052: write-property[v24,'offcanvas',v23]|10053: \<variable-non-null-undef\>['UI']*}" ] 
+BB3593 -> BB3594 [tailport=s, headport=n, headlabel="      3594"]
+BB3593 -> BB3595 [tailport=s, headport=n, color=gray]
+BB3594 [shape=record label="{10054: return[v1]}" ] 
+BB3595 [shape=record label="{10055: exceptional-return}" ] 
+//#$~ 2738
+}

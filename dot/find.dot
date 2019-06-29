@@ -1,0 +1,127 @@
+digraph {
+compound=true
+subgraph cluster0 {
+label="<main> function ( )\njquery/find.js:1:1";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry0[shape=none,label=""];
+BB_entry0 -> BB0 [tailport=s, headport=n, headlabel="    0"]
+BB0 [shape=record label="{0: constant[undefined,v1]|1: function-decl[function find ( selector ),-]}" ] 
+BB0 -> BB1 [tailport=s, headport=n, headlabel="      1"]
+BB1 [shape=record label="{2: return[v1]}" ] 
+BB2 [shape=record label="{3: exceptional-return}" ] 
+}
+subgraph cluster1 {
+label="function find ( selector )\njquery/find.js:1:1\nouter: <main>";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry1[shape=none,label=""];
+BB_entry1 -> BB13 [tailport=s, headport=n, headlabel="    13"]
+BB13 [shape=record label="{29: constant[undefined,v1]|30: vardecl['i']|31: vardecl['ret']|32: vardecl['self']|33: vardecl['len']}" ] 
+BB13 -> BB14 [tailport=s, headport=n, headlabel="      14"]
+BB14 [shape=record label="{34: read-variable['this',v3,-]|35: read-property[v3,'length',v2]|36: write-variable[v2,'len']*|37: typeof['selector',v5]|38: constant[\"string\",v6]|39: !==[v5,v6,v4]|40: if[v4](true-block:15,false-block:20)}" ] 
+BB14 -> BB15 [tailport=s, headport=n, headlabel="      15"]
+BB14 -> BB20 [tailport=s, headport=n, headlabel="      20"]
+BB14 -> BB37 [tailport=s, headport=n, color=gray, headlabel="      37"]
+BB15 [shape=record label="{41: read-variable['this',v7,-]|42: write-variable[v7,'self']*|43: read-variable['this',v9,-]|44: read-property[v9,'pushStack',-]|45: read-variable['jQuery',v14,v13]|46: read-variable['selector',v15,-]}" ] 
+BB15 -> BB16 [tailport=s, headport=n, headlabel="      16"]
+BB15 -> BB37 [tailport=s, headport=n, color=gray]
+BB16 [shape=record label="{47: call[v13,v14,v15,v12]}" ] 
+BB16 -> BB17 [tailport=s, headport=n, headlabel="      17"]
+BB16 -> BB37 [tailport=s, headport=n, color=gray]
+BB17 [shape=record label="{48: read-property[v12,'filter',-]|49: function-expr[function ( ),v16]}" ] 
+BB17 -> BB18 [tailport=s, headport=n, headlabel="      18"]
+BB17 -> BB37 [tailport=s, headport=n, color=gray]
+BB18 [shape=record label="{50: call[v12,'filter',v16,v10]}" ] 
+BB18 -> BB19 [tailport=s, headport=n, headlabel="      19"]
+BB18 -> BB37 [tailport=s, headport=n, color=gray]
+BB19 [shape=record label="{51: call[v9,'pushStack',v10,v1]}" ] 
+BB19 -> BB36 [tailport=s, headport=n, headlabel="      36"]
+BB19 -> BB37 [tailport=s, headport=n, color=gray]
+BB20 [shape=record label="{52: read-variable['Array',v8,-]}" ] 
+BB20 -> BB21 [tailport=s, headport=n, headlabel="      21"]
+BB20 -> BB37 [tailport=s, headport=n, color=gray]
+BB21 [shape=record label="{53: construct[-,v8,v7]}" ] 
+BB21 -> BB22 [tailport=s, headport=n, headlabel="      22"]
+BB21 -> BB37 [tailport=s, headport=n, color=gray]
+BB22 [shape=record label="{54: write-variable[v7,'ret']*|55: constant[0.0,v10]|56: write-variable[v10,'i']}" ] 
+BB22 -> BB23 [tailport=s, headport=n, headlabel="      23"]
+BB23 [shape=record label="{57: read-variable['i',v11,-]|58: read-variable['len',v12,-]|59: \<[v11,v12,v9]|60: if[v9](true-block:24,false-block:25)}" ] 
+BB23 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB23 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB23 -> BB37 [tailport=s, headport=n, color=gray]
+BB24 [shape=record label="{61: read-variable['jQuery',v14,-]|62: read-property[v14,'find',-]|63: \<variable-non-null-undef\>['jQuery']|64: read-variable['selector',v15,-]|65: read-variable['this',v17,-]|66: read-variable['i',v18,-]|67: read-property[v17,v18,v16]|68: read-variable['ret',v19,-]}" ] 
+BB24 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB24 -> BB37 [tailport=s, headport=n, color=gray]
+BB25 [shape=record label="{69: read-variable['this',v15,-]|70: read-property[v15,'pushStack',-]|71: read-variable['len',v18,-]|72: constant[1.0,v19]|73: \>[v18,v19,v17]|74: if[v17](true-block:28,false-block:29)}" ] 
+BB25 -> BB28 [tailport=s, headport=n, headlabel="      28"]
+BB25 -> BB29 [tailport=s, headport=n, headlabel="      29"]
+BB25 -> BB37 [tailport=s, headport=n, color=gray]
+BB26 [shape=record label="{75: call[v14,'find',v15,v16,v19,-]*}" ] 
+BB26 -> BB27 [tailport=s, headport=n, headlabel="      27"]
+BB26 -> BB37 [tailport=s, headport=n, color=gray]
+BB27 [shape=record label="{76: constant[1.0,v20]|77: read-variable['i',v21,-]|78: +[v21,v22]|79: +[v22,v20,v23]|80: write-variable[v23,'i']}" ] 
+BB27 -> BB23 [tailport=s, headport=n]
+BB27 -> BB37 [tailport=s, headport=n, color=gray]
+BB28 [shape=record label="{81: read-variable['jQuery',v21,-]|82: read-property[v21,'unique',-]|83: \<variable-non-null-undef\>['jQuery']|84: read-variable['ret',v22,-]}" ] 
+BB28 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB28 -> BB37 [tailport=s, headport=n, color=gray]
+BB29 [shape=record label="{85: read-variable['ret',v16,-]}" ] 
+BB29 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB29 -> BB37 [tailport=s, headport=n, color=gray]
+BB30 [shape=record label="{86: call[v21,'unique',v22,v16]}" ] 
+BB30 -> BB31 [tailport=s, headport=n]
+BB30 -> BB37 [tailport=s, headport=n, color=gray]
+BB31 [shape=record label="{87: call[v15,'pushStack',v16,v13]}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB37 [tailport=s, headport=n, color=gray]
+BB32 [shape=record label="{88: write-variable[v13,'ret']*|89: read-variable['ret',v21,-]|90: read-variable['this',v25,-]|91: read-property[v25,'selector',v24]|92: if[v24](true-block:33,false-block:34)}" ] 
+BB32 -> BB33 [tailport=s, headport=n, headlabel="      33"]
+BB32 -> BB34 [tailport=s, headport=n, headlabel="      34"]
+BB32 -> BB37 [tailport=s, headport=n, color=gray]
+BB33 [shape=record label="{93: read-variable['this',v28,-]|94: read-property[v28,'selector',v26]|95: constant[\" \",v27]|96: +[v26,v27,v22]}" ] 
+BB33 -> BB35 [tailport=s, headport=n, headlabel="      35"]
+BB33 -> BB37 [tailport=s, headport=n, color=gray]
+BB34 [shape=record label="{97: constant[\"\",v22]}" ] 
+BB34 -> BB35 [tailport=s, headport=n]
+BB35 [shape=record label="{98: read-variable['selector',v23,-]|99: +[v22,v23,v20]|100: write-property[v21,'selector',v20]|101: \<variable-non-null-undef\>['ret']*|102: read-variable['ret',v1,-]}" ] 
+BB35 -> BB36 [tailport=s, headport=n]
+BB35 -> BB37 [tailport=s, headport=n, color=gray]
+BB36 [shape=record label="{103: return[v1]}" ] 
+BB37 [shape=record label="{104: exceptional-return}" ] 
+}
+subgraph cluster2 {
+label="function ( )\njquery/find.js:6:55\nouter: find";
+labelloc="t";
+fontsize=18;
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB3 [tailport=s, headport=n, headlabel="    3"]
+BB3 [shape=record label="{4: constant[undefined,v1]}" ] 
+BB3 -> BB4 [tailport=s, headport=n, headlabel="      4"]
+BB4 [shape=record label="{5: constant[0.0,v3]|6: write-variable[v3,'i']}" ] 
+BB4 -> BB5 [tailport=s, headport=n, headlabel="      5"]
+BB5 [shape=record label="{7: read-variable['i',v4,-]|8: read-variable['len',v5,-]|9: \<[v4,v5,v2]|10: if[v2](true-block:6,false-block:11)}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB5 -> BB11 [tailport=s, headport=n, headlabel="      11"]
+BB5 -> BB12 [tailport=s, headport=n, color=gray, headlabel="      12"]
+BB6 [shape=record label="{11: read-variable['jQuery',v8,-]|12: read-property[v8,'contains',-]|13: \<variable-non-null-undef\>['jQuery']|14: read-variable['self',v10,-]|15: read-variable['i',v11,-]|16: read-property[v10,v11,v9]|17: \<variable-non-null-undef\>['self']|18: read-variable['this',v12,-]}" ] 
+BB6 -> BB7 [tailport=s, headport=n, headlabel="      7"]
+BB6 -> BB12 [tailport=s, headport=n, color=gray]
+BB7 [shape=record label="{19: call[v8,'contains',v9,v12,v6]}" ] 
+BB7 -> BB8 [tailport=s, headport=n, headlabel="      8"]
+BB7 -> BB12 [tailport=s, headport=n, color=gray]
+BB8 [shape=record label="{20: if[v6](true-block:9,false-block:10)}" ] 
+BB8 -> BB9 [tailport=s, headport=n, headlabel="      9"]
+BB8 -> BB10 [tailport=s, headport=n, headlabel="      10"]
+BB9 [shape=record label="{21: constant[true,v1]}" ] 
+BB9 -> BB11 [tailport=s, headport=n]
+BB10 [shape=record label="{22: constant[1.0,v13]|23: read-variable['i',v14,-]|24: +[v14,v15]|25: +[v15,v13,v16]|26: write-variable[v16,'i']}" ] 
+BB10 -> BB5 [tailport=s, headport=n]
+BB10 -> BB12 [tailport=s, headport=n, color=gray]
+BB11 [shape=record label="{27: return[v1]}" ] 
+BB12 [shape=record label="{28: exceptional-return}" ] 
+}
+}

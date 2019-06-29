@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB74 [tailport=s, headport=n, headlabel="    74"]
+BB74 [shape=record label="{201: constant[undefined,v1]}" ] 
+BB74 -> BB75 [tailport=s, headport=n, headlabel="      75"]
+BB75 [shape=record label="{202: new[v1]|203: read-variable['path',v3,-]|204: read-property[v3,'newPos',v2]|205: \<variable-non-null-undef\>['path']|206: write-property[v1,'newPos',v2]|207: read-variable['path',v7,-]|208: read-property[v7,'components',v6]|209: \<variable-non-null-undef\>['path']|210: read-property[v6,'slice',-]|211: \<property-non-null-undef\>[v7,'components']|212: constant[0.0,v8]}" ] 
+BB75 -> BB76 [tailport=s, headport=n, headlabel="      76"]
+BB75 -> BB79 [tailport=s, headport=n, color=gray, headlabel="      79"]
+BB76 [shape=record label="{213: call-path.components.slice [v6,'slice',v8,v4]}" ] 
+BB76 -> BB77 [tailport=s, headport=n, headlabel="      77"]
+BB76 -> BB79 [tailport=s, headport=n, color=gray]
+BB77 [shape=record label="{214: write-property[v1,'components',v4]}" ] 
+BB77 -> BB78 [tailport=s, headport=n, headlabel="      78"]
+BB77 -> BB79 [tailport=s, headport=n, color=gray]
+BB78 [shape=record label="{215: return[v1]}" ] 
+BB79 [shape=record label="{216: exceptional-return}" ] 
+//#$~ 78
+}

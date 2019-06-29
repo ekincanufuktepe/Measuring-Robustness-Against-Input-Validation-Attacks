@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry14[shape=none,label=""];
+BB_entry14 -> BB108 [tailport=s, headport=n, headlabel="    108"]
+BB108 [shape=record label="{342: constant[undefined,v1]}" ] 
+BB108 -> BB109 [tailport=s, headport=n, headlabel="      109"]
+BB109 [shape=record label="{343: read-variable['log',v3,v2]|344: constant[\"ajax error\",v4]}" ] 
+BB109 -> BB110 [tailport=s, headport=n, headlabel="      110"]
+BB109 -> BB114 [tailport=s, headport=n, color=gray, headlabel="      114"]
+BB110 [shape=record label="{345: call-log [v2,v3,v4,-]*}" ] 
+BB110 -> BB111 [tailport=s, headport=n, headlabel="      111"]
+BB110 -> BB114 [tailport=s, headport=n, color=gray]
+BB111 [shape=record label="{346: read-variable['r',v6,-]|347: read-property[v6,'callback',-]|348: \<variable-non-null-undef\>['r']|349: constant[\"There has been an error\",v7]}" ] 
+BB111 -> BB112 [tailport=s, headport=n, headlabel="      112"]
+BB111 -> BB114 [tailport=s, headport=n, color=gray]
+BB112 [shape=record label="{350: call-r.callback [v6,'callback',v7,-]*}" ] 
+BB112 -> BB113 [tailport=s, headport=n, headlabel="      113"]
+BB112 -> BB114 [tailport=s, headport=n, color=gray]
+BB113 [shape=record label="{351: return[v1]}" ] 
+BB114 [shape=record label="{352: exceptional-return}" ] 
+//#$~ 103
+}

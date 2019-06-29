@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry175[shape=none,label=""];
+BB_entry175 -> BB2183 [tailport=s, headport=n, headlabel="    2183"]
+BB2183 [shape=record label="{6277: constant[undefined,v1]|6278: vardecl['triggerevent']}" ] 
+BB2183 -> BB2184 [tailport=s, headport=n, headlabel="      2184"]
+BB2184 [shape=record label="{6279: read-variable['UI',v5,-]|6280: read-property[v5,'support',v4]|6281: \<variable-non-null-undef\>['UI']|6282: read-property[v4,'touch',v3]|6283: \<property-non-null-undef\>[v5,'support']|6284: if[v3](true-block:2185,false-block:2186)}" ] 
+BB2184 -> BB2185 [tailport=s, headport=n, headlabel="      2185"]
+BB2184 -> BB2186 [tailport=s, headport=n, headlabel="      2186"]
+BB2184 -> BB2190 [tailport=s, headport=n, color=gray, headlabel="      2190"]
+BB2185 [shape=record label="{6285: constant[\"click\",v2]}" ] 
+BB2185 -> BB2187 [tailport=s, headport=n, headlabel="      2187"]
+BB2186 [shape=record label="{6286: constant[\"mouseenter\",v2]}" ] 
+BB2186 -> BB2187 [tailport=s, headport=n]
+BB2187 [shape=record label="{6287: write-variable[v2,'triggerevent']*|6288: read-variable['UI',v8,-]|6289: read-property[v8,'$html',v7]|6290: \<variable-non-null-undef\>['UI']|6291: read-property[v7,'on',-]|6292: \<property-non-null-undef\>[v8,'$html']|6293: read-variable['triggerevent',v10,-]|6294: constant[\".dropdown.uikit\",v11]|6295: +[v10,v11,v9]|6296: constant[\"[data-uk-dropdown]\",v12]|6297: function-expr[function ( e ),v13]}" ] 
+BB2187 -> BB2188 [tailport=s, headport=n, headlabel="      2188"]
+BB2187 -> BB2190 [tailport=s, headport=n, color=gray]
+BB2188 [shape=record label="{6298: call-UI.$html.on [v7,'on',v9,v12,v13,-]*}" ] 
+BB2188 -> BB2189 [tailport=s, headport=n, headlabel="      2189"]
+BB2188 -> BB2190 [tailport=s, headport=n, color=gray]
+BB2189 [shape=record label="{6299: return[v1]}" ] 
+BB2190 [shape=record label="{6300: exceptional-return}" ] 
+//#$~ 1693
+}

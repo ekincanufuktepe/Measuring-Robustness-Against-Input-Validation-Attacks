@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry36[shape=none,label=""];
+BB_entry36 -> BB360 [tailport=s, headport=n, headlabel="    360"]
+BB360 [shape=record label="{874: constant[undefined,v1]}" ] 
+BB360 -> BB361 [tailport=s, headport=n, headlabel="      361"]
+BB361 [shape=record label="{875: read-variable['iteratee',v4,v3]|876: read-variable['value',v5,-]|877: read-variable['index',v6,-]|878: read-variable['list',v7,-]}" ] 
+BB361 -> BB362 [tailport=s, headport=n, headlabel="      362"]
+BB361 -> BB369 [tailport=s, headport=n, color=gray, headlabel="      369"]
+BB362 [shape=record label="{879: call-iteratee [v3,v4,v5,v6,v7,v2]}" ] 
+BB362 -> BB363 [tailport=s, headport=n, headlabel="      363"]
+BB362 -> BB369 [tailport=s, headport=n, color=gray]
+BB363 [shape=record label="{880: write-variable[v2,'computed']*|881: read-variable['computed',v9,-]|882: read-variable['lastComputed',v10,-]|883: \>[v9,v10,v8]|884: if[v8](true-block:366,false-block:364)}" ] 
+BB363 -> BB366 [tailport=s, headport=n, headlabel="      366"]
+BB363 -> BB364 [tailport=s, headport=n, headlabel="      364"]
+BB363 -> BB369 [tailport=s, headport=n, color=gray]
+BB364 [shape=record label="{885: read-variable['computed',v9,-]|886: read-variable['Infinity',v11,-]|887: -[v11,v10]|888: ===[v9,v10,v8]|889: if[v8](true-block:365,false-block:366)}" ] 
+BB364 -> BB366 [tailport=s, headport=n]
+BB364 -> BB365 [tailport=s, headport=n, headlabel="      365"]
+BB364 -> BB369 [tailport=s, headport=n, color=gray]
+BB365 [shape=record label="{890: read-variable['result',v12,-]|891: read-variable['Infinity',v14,-]|892: -[v14,v13]|893: ===[v12,v13,v8]}" ] 
+BB365 -> BB366 [tailport=s, headport=n]
+BB365 -> BB369 [tailport=s, headport=n, color=gray]
+BB366 [shape=record label="{894: if[v8](true-block:367,false-block:368)}" ] 
+BB366 -> BB367 [tailport=s, headport=n, headlabel="      367"]
+BB366 -> BB368 [tailport=s, headport=n, headlabel="      368"]
+BB367 [shape=record label="{895: read-variable['value',v9,-]|896: write-variable[v9,'result']*|897: read-variable['computed',v10,-]|898: write-variable[v10,'lastComputed']*}" ] 
+BB367 -> BB368 [tailport=s, headport=n]
+BB367 -> BB369 [tailport=s, headport=n, color=gray]
+BB368 [shape=record label="{899: return[v1]}" ] 
+BB369 [shape=record label="{900: exceptional-return}" ] 
+//#$~ 316
+}

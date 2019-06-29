@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB239 [tailport=s, headport=n, headlabel="    239"]
+BB239 [shape=record label="{759: constant[undefined,v1]|760: vardecl['tmp']|761: vardecl['ret']}" ] 
+BB239 -> BB240 [tailport=s, headport=n, headlabel="      240"]
+BB240 [shape=record label="{762: read-variable['this',v3,-]|763: read-property[v3,'_super',v2]|764: write-variable[v2,'tmp']*|765: read-variable['this',v5,-]|766: read-variable['_super',v6,-]|767: read-variable['name',v7,-]|768: read-property[v6,v7,v4]|769: \<variable-non-null-undef\>['_super']|770: write-property[v5,'_super',v4]*|771: read-variable['fn',v10,-]|772: read-property[v10,'apply',-]|773: \<variable-non-null-undef\>['fn']|774: read-variable['this',v11,-]|775: read-variable['arguments',v12,-]}" ] 
+BB240 -> BB241 [tailport=s, headport=n, headlabel="      241"]
+BB240 -> BB244 [tailport=s, headport=n, color=gray, headlabel="      244"]
+BB241 [shape=record label="{776: call-fn.apply [v10,'apply',v11,v12,v8]}" ] 
+BB241 -> BB242 [tailport=s, headport=n, headlabel="      242"]
+BB241 -> BB244 [tailport=s, headport=n, color=gray]
+BB242 [shape=record label="{777: write-variable[v8,'ret']*|778: read-variable['this',v14,-]|779: read-variable['tmp',v13,-]|780: write-property[v14,'_super',v13]*|781: read-variable['ret',v1,-]}" ] 
+BB242 -> BB243 [tailport=s, headport=n, headlabel="      243"]
+BB242 -> BB244 [tailport=s, headport=n, color=gray]
+BB243 [shape=record label="{782: return[v1]}" ] 
+BB244 [shape=record label="{783: exceptional-return}" ] 
+//#$~ 231
+}

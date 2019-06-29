@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry352[shape=none,label=""];
+BB_entry352 -> BB5191 [tailport=s, headport=n, headlabel="    5191"]
+BB5191 [shape=record label="{17919: constant[undefined,v1]|17920: vardecl['summary']}" ] 
+BB5191 -> BB5192 [tailport=s, headport=n, headlabel="      5192"]
+BB5192 [shape=record label="{17921: read-variable['ReactDefaultPerfAnalysis',v4,-]|17922: read-property[v4,'getInclusiveSummary',-]|17923: \<variable-non-null-undef\>['ReactDefaultPerfAnalysis']|17924: read-variable['measurements',v5,-]|17925: constant[true,v6]}" ] 
+BB5192 -> BB5193 [tailport=s, headport=n, headlabel="      5193"]
+BB5192 -> BB5197 [tailport=s, headport=n, color=gray, headlabel="      5197"]
+BB5193 [shape=record label="{17926: call-ReactDefaultPerfAnalysis.getInclusiveSummary [v4,'getInclusiveSummary',v5,v6,v2]}" ] 
+BB5193 -> BB5194 [tailport=s, headport=n, headlabel="      5194"]
+BB5193 -> BB5197 [tailport=s, headport=n, color=gray]
+BB5194 [shape=record label="{17927: write-variable[v2,'summary']*|17928: read-variable['summary',v8,-]|17929: read-property[v8,'map',-]|17930: \<variable-non-null-undef\>['summary']|17931: function-expr[function ( item ),v9]}" ] 
+BB5194 -> BB5195 [tailport=s, headport=n, headlabel="      5195"]
+BB5194 -> BB5197 [tailport=s, headport=n, color=gray]
+BB5195 [shape=record label="{17932: call-summary.map [v8,'map',v9,v1]}" ] 
+BB5195 -> BB5196 [tailport=s, headport=n, headlabel="      5196"]
+BB5195 -> BB5197 [tailport=s, headport=n, color=gray]
+BB5196 [shape=record label="{17933: return[v1]}" ] 
+BB5197 [shape=record label="{17934: exceptional-return}" ] 
+//#$~ 9422
+}

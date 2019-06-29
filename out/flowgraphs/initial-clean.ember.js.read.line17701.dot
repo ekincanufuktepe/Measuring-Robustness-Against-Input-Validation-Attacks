@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry848[shape=none,label=""];
+BB_entry848 -> BB9899 [tailport=s, headport=n, headlabel="    9899"]
+BB9899 [shape=record label="{33920: constant[undefined,v1]}" ] 
+BB9899 -> BB9900 [tailport=s, headport=n, headlabel="      9900"]
+BB9900 [shape=record label="{33921: read-variable['object',v2,-]|33922: if[v2](true-block:9901,false-block:9902)}" ] 
+BB9900 -> BB9902 [tailport=s, headport=n, headlabel="      9902"]
+BB9900 -> BB9901 [tailport=s, headport=n, headlabel="      9901"]
+BB9900 -> BB9907 [tailport=s, headport=n, color=gray, headlabel="      9907"]
+BB9901 [shape=record label="{33923: read-variable['object',v3,-]|33924: read-property[v3,'isStream',v2]|33925: \<variable-non-null-undef\>['object']}" ] 
+BB9901 -> BB9902 [tailport=s, headport=n]
+BB9901 -> BB9907 [tailport=s, headport=n, color=gray]
+BB9902 [shape=record label="{33926: if[v2](true-block:9903,false-block:9904)}" ] 
+BB9902 -> BB9903 [tailport=s, headport=n, headlabel="      9903"]
+BB9902 -> BB9904 [tailport=s, headport=n, headlabel="      9904"]
+BB9903 [shape=record label="{33927: read-variable['object',v4,-]|33928: read-property[v4,'value',-]|33929: \<variable-non-null-undef\>['object']}" ] 
+BB9903 -> BB9905 [tailport=s, headport=n, headlabel="      9905"]
+BB9903 -> BB9907 [tailport=s, headport=n, color=gray]
+BB9904 [shape=record label="{33930: read-variable['object',v1,-]}" ] 
+BB9904 -> BB9906 [tailport=s, headport=n, headlabel="      9906"]
+BB9904 -> BB9907 [tailport=s, headport=n, color=gray]
+BB9905 [shape=record label="{33931: call-object.value [v4,'value',v1]}" ] 
+BB9905 -> BB9906 [tailport=s, headport=n]
+BB9905 -> BB9907 [tailport=s, headport=n, color=gray]
+BB9906 [shape=record label="{33932: return[v1]}" ] 
+BB9907 [shape=record label="{33933: exceptional-return}" ] 
+//#$~ 17705
+}

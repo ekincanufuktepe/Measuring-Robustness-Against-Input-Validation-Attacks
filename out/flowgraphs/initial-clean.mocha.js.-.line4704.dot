@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry367[shape=none,label=""];
+BB_entry367 -> BB4060 [tailport=s, headport=n, headlabel="    4060"]
+BB4060 [shape=record label="{12858: constant[undefined,v1]|12859: vardecl['match']}" ] 
+BB4060 -> BB4061 [tailport=s, headport=n, headlabel="      4061"]
+BB4061 [shape=record label="{12860: read-variable['self',v5,-]|12861: read-property[v5,'_grep',v4]|12862: \<variable-non-null-undef\>['self']|12863: read-property[v4,'test',-]|12864: \<property-non-null-undef\>[v5,'_grep']|12865: read-variable['test',v8,-]|12866: read-property[v8,'fullTitle',-]|12867: \<variable-non-null-undef\>['test']}" ] 
+BB4061 -> BB4062 [tailport=s, headport=n, headlabel="      4062"]
+BB4061 -> BB4069 [tailport=s, headport=n, color=gray, headlabel="      4069"]
+BB4062 [shape=record label="{12868: call-test.fullTitle [v8,'fullTitle',v6]}" ] 
+BB4062 -> BB4063 [tailport=s, headport=n, headlabel="      4063"]
+BB4062 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4063 [shape=record label="{12869: call-self._grep.test [v4,'test',v6,v2]}" ] 
+BB4063 -> BB4064 [tailport=s, headport=n, headlabel="      4064"]
+BB4063 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4064 [shape=record label="{12870: write-variable[v2,'match']*|12871: read-variable['self',v10,-]|12872: read-property[v10,'_invert',v9]|12873: \<variable-non-null-undef\>['self']|12874: if[v9](true-block:4065,false-block:4066)}" ] 
+BB4064 -> BB4065 [tailport=s, headport=n, headlabel="      4065"]
+BB4064 -> BB4066 [tailport=s, headport=n, headlabel="      4066"]
+BB4064 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4065 [shape=record label="{12875: read-variable['match',v12,-]|12876: ![v12,v11]|12877: write-variable[v11,'match']*}" ] 
+BB4065 -> BB4066 [tailport=s, headport=n]
+BB4065 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4066 [shape=record label="{12878: read-variable['match',v11,-]|12879: if[v11](true-block:4067,false-block:4068)}" ] 
+BB4066 -> BB4067 [tailport=s, headport=n, headlabel="      4067"]
+BB4066 -> BB4068 [tailport=s, headport=n, headlabel="      4068"]
+BB4066 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4067 [shape=record label="{12880: constant[1.0,v12]|12881: read-variable['total',v13,-]|12882: +[v13,v14]|12883: +[v14,v12,v15]|12884: write-variable[v15,'total']*}" ] 
+BB4067 -> BB4068 [tailport=s, headport=n]
+BB4067 -> BB4069 [tailport=s, headport=n, color=gray]
+BB4068 [shape=record label="{12885: return[v1]}" ] 
+BB4069 [shape=record label="{12886: exceptional-return}" ] 
+//#$~ 4707
+}

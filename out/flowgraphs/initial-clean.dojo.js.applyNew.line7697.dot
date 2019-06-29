@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry391[shape=none,label=""];
+BB_entry391 -> BB5670 [tailport=s, headport=n, headlabel="    5670"]
+BB5670 [shape=record label="{17058: constant[undefined,v1]|17059: vardecl['ctor']|17060: vardecl['t']}" ] 
+BB5670 -> BB5671 [tailport=s, headport=n, headlabel="      5671"]
+BB5671 [shape=record label="{17061: read-variable['args',v3,-]|17062: read-property[v3,'callee',v2]|17063: \<variable-non-null-undef\>['args']|17064: write-variable[v2,'ctor']*|17065: read-variable['forceNew',v6,v5]|17066: read-variable['ctor',v7,-]}" ] 
+BB5671 -> BB5672 [tailport=s, headport=n, headlabel="      5672"]
+BB5671 -> BB5677 [tailport=s, headport=n, color=gray, headlabel="      5677"]
+BB5672 [shape=record label="{17067: call-forceNew [v5,v6,v7,v4]}" ] 
+BB5672 -> BB5673 [tailport=s, headport=n, headlabel="      5673"]
+BB5672 -> BB5677 [tailport=s, headport=n, color=gray]
+BB5673 [shape=record label="{17068: write-variable[v4,'t']*|17069: read-variable['ctor',v9,-]|17070: read-property[v9,'apply',-]|17071: \<variable-non-null-undef\>['ctor']|17072: read-variable['t',v10,-]|17073: read-variable['args',v11,-]}" ] 
+BB5673 -> BB5674 [tailport=s, headport=n, headlabel="      5674"]
+BB5673 -> BB5677 [tailport=s, headport=n, color=gray]
+BB5674 [shape=record label="{17074: call-ctor.apply [v9,'apply',v10,v11,-]*}" ] 
+BB5674 -> BB5675 [tailport=s, headport=n, headlabel="      5675"]
+BB5674 -> BB5677 [tailport=s, headport=n, color=gray]
+BB5675 [shape=record label="{17075: read-variable['t',v1,-]}" ] 
+BB5675 -> BB5676 [tailport=s, headport=n, headlabel="      5676"]
+BB5675 -> BB5677 [tailport=s, headport=n, color=gray]
+BB5676 [shape=record label="{17076: return[v1]}" ] 
+BB5677 [shape=record label="{17077: exceptional-return}" ] 
+//#$~ 7703
+}

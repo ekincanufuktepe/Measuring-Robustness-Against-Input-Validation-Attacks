@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry132[shape=none,label=""];
+BB_entry132 -> BB1933 [tailport=s, headport=n, headlabel="    1933"]
+BB1933 [shape=record label="{6609: constant[undefined,v1]}" ] 
+BB1933 -> BB1934 [tailport=s, headport=n, headlabel="      1934"]
+BB1934 [shape=record label="{6610: read-variable['event',v2,-]|6611: if[v2](true-block:1935,false-block:1936)}" ] 
+BB1934 -> BB1936 [tailport=s, headport=n, headlabel="      1936"]
+BB1934 -> BB1935 [tailport=s, headport=n, headlabel="      1935"]
+BB1934 -> BB1940 [tailport=s, headport=n, color=gray, headlabel="      1940"]
+BB1935 [shape=record label="{6612: read-variable['event',v4,-]|6613: read-property[v4,'dispatchConfig',v3]|6614: \<variable-non-null-undef\>['event']|6615: read-property[v3,'registrationName',v2]|6616: \<property-non-null-undef\>[v4,'dispatchConfig']}" ] 
+BB1935 -> BB1936 [tailport=s, headport=n]
+BB1935 -> BB1940 [tailport=s, headport=n, color=gray]
+BB1936 [shape=record label="{6617: if[v2](true-block:1937,false-block:1939)}" ] 
+BB1936 -> BB1937 [tailport=s, headport=n, headlabel="      1937"]
+BB1936 -> BB1939 [tailport=s, headport=n, headlabel="      1939"]
+BB1937 [shape=record label="{6618: read-variable['accumulateDispatches',v4,v3]|6619: read-variable['event',v6,-]|6620: read-property[v6,'dispatchMarker',v5]|6621: \<variable-non-null-undef\>['event']|6622: constant[null,v7]|6623: read-variable['event',v8,-]}" ] 
+BB1937 -> BB1938 [tailport=s, headport=n, headlabel="      1938"]
+BB1937 -> BB1940 [tailport=s, headport=n, color=gray]
+BB1938 [shape=record label="{6624: call-accumulateDispatches [v3,v4,v5,v7,v8,-]*}" ] 
+BB1938 -> BB1939 [tailport=s, headport=n]
+BB1938 -> BB1940 [tailport=s, headport=n, color=gray]
+BB1939 [shape=record label="{6625: return[v1]}" ] 
+BB1940 [shape=record label="{6626: exceptional-return}" ] 
+//#$~ 3502
+}

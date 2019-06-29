@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry90[shape=none,label=""];
+BB_entry90 -> BB803 [tailport=s, headport=n, headlabel="    803"]
+BB803 [shape=record label="{2802: constant[undefined,v1]|2803: vardecl['longest']}" ] 
+BB803 -> BB804 [tailport=s, headport=n, headlabel="      804"]
+BB804 [shape=record label="{2804: read-variable['ctx',v3,-]|2805: read-variable['font',v2,-]|2806: write-property[v3,'font',v2]|2807: \<variable-non-null-undef\>['ctx']*|2808: constant[0.0,v4]|2809: write-variable[v4,'longest']*|2810: read-variable['each',v6,v5]|2811: read-variable['arrayOfStrings',v7,-]|2812: function-expr[function ( string ),v8]}" ] 
+BB804 -> BB805 [tailport=s, headport=n, headlabel="      805"]
+BB804 -> BB808 [tailport=s, headport=n, color=gray, headlabel="      808"]
+BB805 [shape=record label="{2813: call-each [v5,v6,v7,v8,-]*}" ] 
+BB805 -> BB806 [tailport=s, headport=n, headlabel="      806"]
+BB805 -> BB808 [tailport=s, headport=n, color=gray]
+BB806 [shape=record label="{2814: read-variable['longest',v1,-]}" ] 
+BB806 -> BB807 [tailport=s, headport=n, headlabel="      807"]
+BB806 -> BB808 [tailport=s, headport=n, color=gray]
+BB807 [shape=record label="{2815: return[v1]}" ] 
+BB808 [shape=record label="{2816: exceptional-return}" ] 
+//#$~ 802
+}

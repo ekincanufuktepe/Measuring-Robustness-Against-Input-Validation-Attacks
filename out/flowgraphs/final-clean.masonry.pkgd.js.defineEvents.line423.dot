@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB296 [tailport=s, headport=n, headlabel="    296"]
+BB296 [shape=record label="{755: constant[undefined,v1]|756: vardecl['i']}" ] 
+BB296 -> BB297 [tailport=s, headport=n, headlabel="      297"]
+BB297 [shape=record label="{757: constant[0.0,v4]|758: write-variable[v4,'i']*}" ] 
+BB297 -> BB298 [tailport=s, headport=n, headlabel="      298"]
+BB298 [shape=record label="{759: read-variable['i',v5,v2]|760: read-variable['evts',v7,v2]|761: read-property[v7,'length',v6]|762: \<variable-non-null-undef\>['evts']|763: \<[v5,v6,v3]|764: if[v3](true-block:299,false-block:300)}" ] 
+BB298 -> BB299 [tailport=s, headport=n, headlabel="      299"]
+BB298 -> BB300 [tailport=s, headport=n, headlabel="      300"]
+BB298 -> BB304 [tailport=s, headport=n, color=gray, headlabel="      304"]
+BB299 [shape=record label="{765: read-variable['this',v9,-]|766: read-property[v9,'defineEvent',-]|767: read-variable['evts',v11,v2]|768: read-variable['i',v12,v2]|769: read-property[v11,v12,v10]|770: \<variable-non-null-undef\>['evts']}" ] 
+BB299 -> BB301 [tailport=s, headport=n, headlabel="      301"]
+BB299 -> BB304 [tailport=s, headport=n, color=gray]
+BB300 [shape=record label="{771: read-variable['this',v1,-]}" ] 
+BB300 -> BB303 [tailport=s, headport=n, headlabel="      303"]
+BB300 -> BB304 [tailport=s, headport=n, color=gray]
+BB301 [shape=record label="{772: call-this.defineEvent [v9,'defineEvent',v10,-]*}" ] 
+BB301 -> BB302 [tailport=s, headport=n, headlabel="      302"]
+BB301 -> BB304 [tailport=s, headport=n, color=gray]
+BB302 [shape=record label="{773: read-variable['i',v14,v2]|774: constant[1.0,v15]|775: +[v14,v15,v13]|776: write-variable[v13,'i']}" ] 
+BB302 -> BB298 [tailport=s, headport=n]
+BB302 -> BB304 [tailport=s, headport=n, color=gray]
+BB303 [shape=record label="{777: return[v1]}" ] 
+BB304 [shape=record label="{778: exceptional-return}" ] 
+//#$~ 427
+}

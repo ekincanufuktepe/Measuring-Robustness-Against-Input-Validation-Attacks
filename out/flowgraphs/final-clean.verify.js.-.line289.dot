@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry34[shape=none,label=""];
+BB_entry34 -> BB338 [tailport=s, headport=n, headlabel="    338"]
+BB338 [shape=record label="{1007: constant[undefined,v1]}" ] 
+BB338 -> BB339 [tailport=s, headport=n, headlabel="      339"]
+BB339 [shape=record label="{1008: read-variable['this',v5,-]|1009: read-property[v5,'has',-]|1010: read-variable['item',v6,-]}" ] 
+BB339 -> BB340 [tailport=s, headport=n, headlabel="      340"]
+BB339 -> BB347 [tailport=s, headport=n, color=gray, headlabel="      347"]
+BB340 [shape=record label="{1011: call-this.has [v5,'has',v6,v3]}" ] 
+BB340 -> BB341 [tailport=s, headport=n, headlabel="      341"]
+BB340 -> BB347 [tailport=s, headport=n, color=gray]
+BB341 [shape=record label="{1012: ![v3,v2]|1013: if[v2](true-block:342,false-block:345)}" ] 
+BB341 -> BB342 [tailport=s, headport=n, headlabel="      342"]
+BB341 -> BB345 [tailport=s, headport=n, headlabel="      345"]
+BB341 -> BB347 [tailport=s, headport=n, color=gray]
+BB342 [shape=record label="{1014: read-variable['this',v9,-]|1015: read-property[v9,'array',v8]|1016: read-property[v8,'push',-]|1017: \<property-non-null-undef\>[v9,'array']|1018: read-variable['item',v10,-]}" ] 
+BB342 -> BB343 [tailport=s, headport=n, headlabel="      343"]
+BB342 -> BB347 [tailport=s, headport=n, color=gray]
+BB343 [shape=record label="{1019: call-this.array.push [v8,'push',v10,-]*}" ] 
+BB343 -> BB344 [tailport=s, headport=n, headlabel="      344"]
+BB343 -> BB347 [tailport=s, headport=n, color=gray]
+BB344 [shape=record label="{1020: constant[true,v1]}" ] 
+BB344 -> BB346 [tailport=s, headport=n, headlabel="      346"]
+BB345 [shape=record label="{1021: constant[false,v1]}" ] 
+BB345 -> BB346 [tailport=s, headport=n]
+BB346 [shape=record label="{1022: return[v1]}" ] 
+BB347 [shape=record label="{1023: exceptional-return}" ] 
+//#$~ 294
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry202[shape=none,label=""];
+BB_entry202 -> BB2201 [tailport=s, headport=n, headlabel="    2201"]
+BB2201 [shape=record label="{9029: constant[undefined,v1]|9030: vardecl['segmentsArray']|9031: vardecl['location']}" ] 
+BB2201 -> BB2202 [tailport=s, headport=n, headlabel="      2202"]
+BB2202 [shape=record label="{9032: read-variable['Array',v3,-]}" ] 
+BB2202 -> BB2203 [tailport=s, headport=n, headlabel="      2203"]
+BB2202 -> BB2210 [tailport=s, headport=n, color=gray, headlabel="      2210"]
+BB2203 [shape=record label="{9033: construct [-,v3,v2]}" ] 
+BB2203 -> BB2204 [tailport=s, headport=n, headlabel="      2204"]
+BB2203 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2204 [shape=record label="{9034: write-variable[v2,'segmentsArray']*|9035: read-variable['helpers',v6,-]|9036: read-property[v6,'getRelativePosition',-]|9037: \<variable-non-null-undef\>['helpers']|9038: read-variable['e',v7,-]}" ] 
+BB2204 -> BB2205 [tailport=s, headport=n, headlabel="      2205"]
+BB2204 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2205 [shape=record label="{9039: call-helpers.getRelativePosition [v6,'getRelativePosition',v7,v4]}" ] 
+BB2205 -> BB2206 [tailport=s, headport=n, headlabel="      2206"]
+BB2205 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2206 [shape=record label="{9040: write-variable[v4,'location']*|9041: read-variable['helpers',v9,-]|9042: read-property[v9,'each',-]|9043: \<variable-non-null-undef\>['helpers']|9044: read-variable['this',v11,-]|9045: read-property[v11,'segments',v10]|9046: function-expr[function ( segment ),v12]|9047: read-variable['this',v13,-]}" ] 
+BB2206 -> BB2207 [tailport=s, headport=n, headlabel="      2207"]
+BB2206 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2207 [shape=record label="{9048: call-helpers.each [v9,'each',v10,v12,v13,-]*}" ] 
+BB2207 -> BB2208 [tailport=s, headport=n, headlabel="      2208"]
+BB2207 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2208 [shape=record label="{9049: read-variable['segmentsArray',v1,-]}" ] 
+BB2208 -> BB2209 [tailport=s, headport=n, headlabel="      2209"]
+BB2208 -> BB2210 [tailport=s, headport=n, color=gray]
+BB2209 [shape=record label="{9050: return[v1]}" ] 
+BB2210 [shape=record label="{9051: exceptional-return}" ] 
+//#$~ 2414
+}

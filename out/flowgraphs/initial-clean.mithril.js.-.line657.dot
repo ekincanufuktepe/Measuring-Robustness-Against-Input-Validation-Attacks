@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry36[shape=none,label=""];
+BB_entry36 -> BB1021 [tailport=s, headport=n, headlabel="    1021"]
+BB1021 [shape=record label="{3694: constant[undefined,v1]}" ] 
+BB1021 -> BB1022 [tailport=s, headport=n, headlabel="      1022"]
+BB1022 [shape=record label="{3695: read-variable['m',v7,-]|3696: read-property[v7,'redraw',v6]|3697: \<variable-non-null-undef\>['m']|3698: read-property[v6,'strategy',-]|3699: \<property-non-null-undef\>[v7,'redraw']}" ] 
+BB1022 -> BB1023 [tailport=s, headport=n, headlabel="      1023"]
+BB1022 -> BB1030 [tailport=s, headport=n, color=gray, headlabel="      1030"]
+BB1023 [shape=record label="{3700: call-m.redraw.strategy [v6,'strategy',v3]}" ] 
+BB1023 -> BB1024 [tailport=s, headport=n, headlabel="      1024"]
+BB1023 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1024 [shape=record label="{3701: constant[\"none\",v4]|3702: ==[v3,v4,v2]|3703: if[v2](true-block:1025,false-block:1026)}" ] 
+BB1024 -> BB1025 [tailport=s, headport=n, headlabel="      1025"]
+BB1024 -> BB1026 [tailport=s, headport=n, headlabel="      1026"]
+BB1024 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1025 [shape=record label="{3704: constant[1.0,v8]|3705: read-variable['pendingRequests',v9,-]|3706: +[v9,v10]|3707: -[v10,v8,v11]|3708: write-variable[v11,'pendingRequests']*|3709: read-variable['m',v14,-]|3710: read-property[v14,'redraw',v13]|3711: \<variable-non-null-undef\>['m']|3712: read-property[v13,'strategy',-]|3713: \<property-non-null-undef\>[v14,'redraw']|3714: constant[\"diff\",v15]}" ] 
+BB1025 -> BB1027 [tailport=s, headport=n, headlabel="      1027"]
+BB1025 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1026 [shape=record label="{3715: read-variable['m',v9,-]|3716: read-property[v9,'endComputation',-]|3717: \<variable-non-null-undef\>['m']}" ] 
+BB1026 -> BB1028 [tailport=s, headport=n, headlabel="      1028"]
+BB1026 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1027 [shape=record label="{3718: call-m.redraw.strategy [v13,'strategy',v15,-]*}" ] 
+BB1027 -> BB1029 [tailport=s, headport=n, headlabel="      1029"]
+BB1027 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1028 [shape=record label="{3719: call-m.endComputation [v9,'endComputation',-]*}" ] 
+BB1028 -> BB1029 [tailport=s, headport=n]
+BB1028 -> BB1030 [tailport=s, headport=n, color=gray]
+BB1029 [shape=record label="{3720: return[v1]}" ] 
+BB1030 [shape=record label="{3721: exceptional-return}" ] 
+//#$~ 662
+}

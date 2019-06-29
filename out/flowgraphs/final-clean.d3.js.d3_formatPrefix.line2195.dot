@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry344[shape=none,label=""];
+BB_entry344 -> BB3766 [tailport=s, headport=n, headlabel="    3766"]
+BB3766 [shape=record label="{11361: constant[undefined,v1]|11362: vardecl['k']}" ] 
+BB3766 -> BB3767 [tailport=s, headport=n, headlabel="      3767"]
+BB3767 [shape=record label="{11363: read-variable['Math',v4,-]|11364: read-property[v4,'pow',-]|11365: \<variable-non-null-undef\>['Math']|11366: constant[10.0,v5]|11367: read-variable['abs',v10,v9]|11368: constant[8.0,v12]|11369: read-variable['i',v13,-]|11370: -[v12,v13,v11]}" ] 
+BB3767 -> BB3768 [tailport=s, headport=n, headlabel="      3768"]
+BB3767 -> BB3776 [tailport=s, headport=n, color=gray, headlabel="      3776"]
+BB3768 [shape=record label="{11371: call-abs [v9,v10,v11,v7]}" ] 
+BB3768 -> BB3769 [tailport=s, headport=n, headlabel="      3769"]
+BB3768 -> BB3776 [tailport=s, headport=n, color=gray]
+BB3769 [shape=record label="{11372: constant[3.0,v8]|11373: *[v7,v8,v6]}" ] 
+BB3769 -> BB3770 [tailport=s, headport=n, headlabel="      3770"]
+BB3769 -> BB3776 [tailport=s, headport=n, color=gray]
+BB3770 [shape=record label="{11374: call-Math.pow [v4,'pow',v5,v6,v2]}" ] 
+BB3770 -> BB3771 [tailport=s, headport=n, headlabel="      3771"]
+BB3770 -> BB3776 [tailport=s, headport=n, color=gray]
+BB3771 [shape=record label="{11375: write-variable[v2,'k']*|11376: new[v1]|11377: read-variable['i',v16,-]|11378: constant[8.0,v17]|11379: \>[v16,v17,v15]|11380: if[v15](true-block:3772,false-block:3773)}" ] 
+BB3771 -> BB3772 [tailport=s, headport=n, headlabel="      3772"]
+BB3771 -> BB3773 [tailport=s, headport=n, headlabel="      3773"]
+BB3771 -> BB3776 [tailport=s, headport=n, color=gray]
+BB3772 [shape=record label="{11381: function-expr[function ( d ),v14]}" ] 
+BB3772 -> BB3774 [tailport=s, headport=n, headlabel="      3774"]
+BB3773 [shape=record label="{11382: function-expr[function ( d ),v14]}" ] 
+BB3773 -> BB3774 [tailport=s, headport=n]
+BB3774 [shape=record label="{11383: write-property[v1,'scale',v14]|11384: read-variable['d',v18,-]|11385: write-property[v1,'symbol',v18]}" ] 
+BB3774 -> BB3775 [tailport=s, headport=n, headlabel="      3775"]
+BB3774 -> BB3776 [tailport=s, headport=n, color=gray]
+BB3775 [shape=record label="{11386: return[v1]}" ] 
+BB3776 [shape=record label="{11387: exceptional-return}" ] 
+//#$~ 2203
+}

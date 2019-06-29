@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry388[shape=none,label=""];
+BB_entry388 -> BB4280 [tailport=s, headport=n, headlabel="    4280"]
+BB4280 [shape=record label="{13455: constant[undefined,v1]}" ] 
+BB4280 -> BB4281 [tailport=s, headport=n, headlabel="      4281"]
+BB4281 [shape=record label="{13456: read-variable['self',v3,-]|13457: read-variable['orig',v2,-]|13458: write-property[v3,'suite',v2]|13459: \<variable-non-null-undef\>['self']*|13460: read-variable['err2',v4,-]|13461: if[v4](true-block:4282,false-block:4284)}" ] 
+BB4281 -> BB4282 [tailport=s, headport=n, headlabel="      4282"]
+BB4281 -> BB4284 [tailport=s, headport=n, headlabel="      4284"]
+BB4281 -> BB4287 [tailport=s, headport=n, color=gray, headlabel="      4287"]
+BB4282 [shape=record label="{13462: read-variable['hookErr',v6,v5]|13463: read-variable['err2',v7,-]|13464: read-variable['errSuite2',v8,-]|13465: constant[true,v9]}" ] 
+BB4282 -> BB4283 [tailport=s, headport=n, headlabel="      4283"]
+BB4282 -> BB4287 [tailport=s, headport=n, color=gray]
+BB4283 [shape=record label="{13466: call-hookErr [v5,v6,v7,v8,v9,v1]}" ] 
+BB4283 -> BB4286 [tailport=s, headport=n, headlabel="      4286"]
+BB4283 -> BB4287 [tailport=s, headport=n, color=gray]
+BB4284 [shape=record label="{13467: read-variable['fn',v6,v5]|13468: read-variable['errSuite',v7,-]}" ] 
+BB4284 -> BB4285 [tailport=s, headport=n, headlabel="      4285"]
+BB4284 -> BB4287 [tailport=s, headport=n, color=gray]
+BB4285 [shape=record label="{13469: call-fn [v5,v6,v7,-]*}" ] 
+BB4285 -> BB4286 [tailport=s, headport=n]
+BB4285 -> BB4287 [tailport=s, headport=n, color=gray]
+BB4286 [shape=record label="{13470: return[v1]}" ] 
+BB4287 [shape=record label="{13471: exceptional-return}" ] 
+//#$~ 5010
+}

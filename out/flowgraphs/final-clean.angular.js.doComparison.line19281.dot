@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry997[shape=none,label=""];
+BB_entry997 -> BB12944 [tailport=s, headport=n, headlabel="    12944"]
+BB12944 [shape=record label="{33865: constant[undefined,v1]|33866: vardecl['result']|33867: vardecl['index']|33868: vardecl['length']}" ] 
+BB12944 -> BB12945 [tailport=s, headport=n, headlabel="      12945"]
+BB12945 [shape=record label="{33869: constant[0.0,v2]|33870: write-variable[v2,'result']*|33871: constant[0.0,v4]|33872: write-variable[v4,'index']*|33873: read-variable['predicates',v6,-]|33874: read-property[v6,'length',v5]|33875: \<variable-non-null-undef\>['predicates']|33876: write-variable[v5,'length']*}" ] 
+BB12945 -> BB12946 [tailport=s, headport=n, headlabel="      12946"]
+BB12945 -> BB12953 [tailport=s, headport=n, color=gray, headlabel="      12953"]
+BB12946 [shape=record label="{33877: read-variable['index',v7,-]|33878: read-variable['length',v8,-]|33879: \<[v7,v8,v3]|33880: if[v3](true-block:12947,false-block:12948)}" ] 
+BB12946 -> BB12947 [tailport=s, headport=n, headlabel="      12947"]
+BB12946 -> BB12948 [tailport=s, headport=n, headlabel="      12948"]
+BB12946 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12947 [shape=record label="{33881: read-variable['compare',v13,v12]|33882: read-variable['v1',v16,-]|33883: read-property[v16,'predicateValues',v15]|33884: \<variable-non-null-undef\>['v1']|33885: read-variable['index',v17,-]|33886: read-property[v15,v17,v14]|33887: \<property-non-null-undef\>[v16,'predicateValues']|33888: read-variable['v2',v20,-]|33889: read-property[v20,'predicateValues',v19]|33890: \<variable-non-null-undef\>['v2']|33891: read-variable['index',v21,-]|33892: read-property[v19,v21,v18]|33893: \<property-non-null-undef\>[v20,'predicateValues']}" ] 
+BB12947 -> BB12949 [tailport=s, headport=n, headlabel="      12949"]
+BB12947 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12948 [shape=record label="{33894: read-variable['result',v1,-]}" ] 
+BB12948 -> BB12952 [tailport=s, headport=n, headlabel="      12952"]
+BB12948 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12949 [shape=record label="{33895: call-compare [v12,v13,v14,v18,v10]}" ] 
+BB12949 -> BB12950 [tailport=s, headport=n, headlabel="      12950"]
+BB12949 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12950 [shape=record label="{33896: read-variable['predicates',v23,-]|33897: read-variable['index',v24,-]|33898: read-property[v23,v24,v22]|33899: \<variable-non-null-undef\>['predicates']|33900: read-property[v22,'descending',v11]|33901: \<property-non-null-undef\>[v23,v24]|33902: *[v10,v11,v9]|33903: write-variable[v9,'result']*|33904: read-variable['result',v25,-]|33905: if[v25](true-block:12948,false-block:12951)}" ] 
+BB12950 -> BB12948 [tailport=s, headport=n]
+BB12950 -> BB12951 [tailport=s, headport=n, headlabel="      12951"]
+BB12950 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12951 [shape=record label="{33906: constant[1.0,v26]|33907: read-variable['index',v27,-]|33908: +[v27,v28]|33909: +[v28,v26,v29]|33910: write-variable[v29,'index']}" ] 
+BB12951 -> BB12946 [tailport=s, headport=n]
+BB12951 -> BB12953 [tailport=s, headport=n, color=gray]
+BB12952 [shape=record label="{33911: return[v1]}" ] 
+BB12953 [shape=record label="{33912: exceptional-return}" ] 
+//#$~ 19287
+}

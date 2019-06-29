@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry237[shape=none,label=""];
+BB_entry237 -> BB2591 [tailport=s, headport=n, headlabel="    2591"]
+BB2591 [shape=record label="{7058: constant[undefined,v1]|7059: vardecl['status']}" ] 
+BB2591 -> BB2592 [tailport=s, headport=n, headlabel="      2592"]
+BB2592 [shape=record label="{7060: read-variable['this',v4,-]|7061: read-property[v4,'getStatus',-]}" ] 
+BB2592 -> BB2593 [tailport=s, headport=n, headlabel="      2593"]
+BB2592 -> BB2600 [tailport=s, headport=n, color=gray, headlabel="      2600"]
+BB2593 [shape=record label="{7062: call-this.getStatus [v4,'getStatus',v2]}" ] 
+BB2593 -> BB2594 [tailport=s, headport=n, headlabel="      2594"]
+BB2593 -> BB2600 [tailport=s, headport=n, color=gray]
+BB2594 [shape=record label="{7063: write-variable[v2,'status']*|7064: read-variable['status',v5,-]|7065: ![v5,v1]|7066: if[v1](true-block:2599,false-block:2595)}" ] 
+BB2594 -> BB2599 [tailport=s, headport=n, headlabel="      2599"]
+BB2594 -> BB2595 [tailport=s, headport=n, headlabel="      2595"]
+BB2594 -> BB2600 [tailport=s, headport=n, color=gray]
+BB2595 [shape=record label="{7067: read-variable['status',v5,-]|7068: constant[200.0,v6]|7069: \>=[v5,v6,v1]|7070: if[v1](true-block:2596,false-block:2597)}" ] 
+BB2595 -> BB2597 [tailport=s, headport=n, headlabel="      2597"]
+BB2595 -> BB2596 [tailport=s, headport=n, headlabel="      2596"]
+BB2595 -> BB2600 [tailport=s, headport=n, color=gray]
+BB2596 [shape=record label="{7071: read-variable['status',v7,-]|7072: constant[300.0,v8]|7073: \<[v7,v8,v1]}" ] 
+BB2596 -> BB2597 [tailport=s, headport=n]
+BB2596 -> BB2600 [tailport=s, headport=n, color=gray]
+BB2597 [shape=record label="{7074: if[v1](true-block:2599,false-block:2598)}" ] 
+BB2597 -> BB2599 [tailport=s, headport=n]
+BB2597 -> BB2598 [tailport=s, headport=n, headlabel="      2598"]
+BB2598 [shape=record label="{7075: read-variable['status',v5,-]|7076: constant[304.0,v6]|7077: ==[v5,v6,v1]}" ] 
+BB2598 -> BB2599 [tailport=s, headport=n]
+BB2598 -> BB2600 [tailport=s, headport=n, color=gray]
+BB2599 [shape=record label="{7078: return[v1]}" ] 
+BB2600 [shape=record label="{7079: exceptional-return}" ] 
+//#$~ 1802
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1372[shape=none,label=""];
+BB_entry1372 -> BB16165 [tailport=s, headport=n, headlabel="    16165"]
+BB16165 [shape=record label="{55378: constant[undefined,v1]|55379: vardecl['deferred']|55380: vardecl['promise']}" ] 
+BB16165 -> BB16166 [tailport=s, headport=n, headlabel="      16166"]
+BB16166 [shape=record label="{55381: read-variable['get',v4,v3]|55382: read-variable['this',v5,-]|55383: constant[\"_deferred\",v6]}" ] 
+BB16166 -> BB16167 [tailport=s, headport=n, headlabel="      16167"]
+BB16166 -> BB16174 [tailport=s, headport=n, color=gray, headlabel="      16174"]
+BB16167 [shape=record label="{55384: call-get [v3,v4,v5,v6,v2]}" ] 
+BB16167 -> BB16168 [tailport=s, headport=n, headlabel="      16168"]
+BB16167 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16168 [shape=record label="{55385: write-variable[v2,'deferred']*|55386: read-variable['deferred',v8,-]|55387: read-property[v8,'promise',v7]|55388: \<variable-non-null-undef\>['deferred']|55389: write-variable[v7,'promise']*|55390: read-variable['value',v10,-]|55391: read-variable['this',v11,-]|55392: ===[v10,v11,v9]|55393: if[v9](true-block:16169,false-block:16170)}" ] 
+BB16168 -> BB16169 [tailport=s, headport=n, headlabel="      16169"]
+BB16168 -> BB16170 [tailport=s, headport=n, headlabel="      16170"]
+BB16168 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16169 [shape=record label="{55394: read-variable['deferred',v13,-]|55395: read-property[v13,'resolve',-]|55396: \<variable-non-null-undef\>['deferred']|55397: read-variable['promise',v14,-]}" ] 
+BB16169 -> BB16171 [tailport=s, headport=n, headlabel="      16171"]
+BB16169 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16170 [shape=record label="{55398: read-variable['deferred',v13,-]|55399: read-property[v13,'resolve',-]|55400: \<variable-non-null-undef\>['deferred']|55401: read-variable['value',v14,-]}" ] 
+BB16170 -> BB16172 [tailport=s, headport=n, headlabel="      16172"]
+BB16170 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16171 [shape=record label="{55402: call-deferred.resolve [v13,'resolve',v14,-]*}" ] 
+BB16171 -> BB16173 [tailport=s, headport=n, headlabel="      16173"]
+BB16171 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16172 [shape=record label="{55403: call-deferred.resolve [v13,'resolve',v14,-]*}" ] 
+BB16172 -> BB16173 [tailport=s, headport=n]
+BB16172 -> BB16174 [tailport=s, headport=n, color=gray]
+BB16173 [shape=record label="{55404: return[v1]}" ] 
+BB16174 [shape=record label="{55405: exceptional-return}" ] 
+//#$~ 30035
+}

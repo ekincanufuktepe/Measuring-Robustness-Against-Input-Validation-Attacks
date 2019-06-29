@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry346[shape=none,label=""];
+BB_entry346 -> BB5153 [tailport=s, headport=n, headlabel="    5153"]
+BB5153 [shape=record label="{17806: constant[undefined,v1]}" ] 
+BB5153 -> BB5154 [tailport=s, headport=n, headlabel="      5154"]
+BB5154 [shape=record label="{17807: read-variable['ReactDefaultPerf',v4,-]|17808: read-property[v4,'_injected',v3]|17809: \<variable-non-null-undef\>['ReactDefaultPerf']|17810: ![v3,v2]|17811: if[v2](true-block:5155,false-block:5157)}" ] 
+BB5154 -> BB5155 [tailport=s, headport=n, headlabel="      5155"]
+BB5154 -> BB5157 [tailport=s, headport=n, headlabel="      5157"]
+BB5154 -> BB5159 [tailport=s, headport=n, color=gray, headlabel="      5159"]
+BB5155 [shape=record label="{17812: read-variable['ReactPerf',v7,-]|17813: read-property[v7,'injection',v6]|17814: \<variable-non-null-undef\>['ReactPerf']|17815: read-property[v6,'injectMeasure',-]|17816: \<property-non-null-undef\>[v7,'injection']|17817: read-variable['ReactDefaultPerf',v9,-]|17818: read-property[v9,'measure',v8]|17819: \<variable-non-null-undef\>['ReactDefaultPerf']}" ] 
+BB5155 -> BB5156 [tailport=s, headport=n, headlabel="      5156"]
+BB5155 -> BB5159 [tailport=s, headport=n, color=gray]
+BB5156 [shape=record label="{17820: call-ReactPerf.injection.injectMeasure [v6,'injectMeasure',v8,-]*}" ] 
+BB5156 -> BB5157 [tailport=s, headport=n]
+BB5156 -> BB5159 [tailport=s, headport=n, color=gray]
+BB5157 [shape=record label="{17821: read-variable['ReactDefaultPerf',v7,-]|17822: read-property[v7,'_allMeasurements',v6]|17823: \<variable-non-null-undef\>['ReactDefaultPerf']|17824: constant[0.0,v5]|17825: write-property[v6,'length',v5]|17826: \<property-non-null-undef\>[v7,'_allMeasurements']*|17827: read-variable['ReactPerf',v9,-]|17828: constant[true,v8]|17829: write-property[v9,'enableMeasure',v8]|17830: \<variable-non-null-undef\>['ReactPerf']*}" ] 
+BB5157 -> BB5158 [tailport=s, headport=n, headlabel="      5158"]
+BB5157 -> BB5159 [tailport=s, headport=n, color=gray]
+BB5158 [shape=record label="{17831: return[v1]}" ] 
+BB5159 [shape=record label="{17832: exceptional-return}" ] 
+//#$~ 9404
+}

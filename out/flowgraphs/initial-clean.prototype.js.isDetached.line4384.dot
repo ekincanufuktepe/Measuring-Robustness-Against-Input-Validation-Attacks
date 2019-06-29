@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry450[shape=none,label=""];
+BB_entry450 -> BB5719 [tailport=s, headport=n, headlabel="    5719"]
+BB5719 [shape=record label="{15791: constant[undefined,v1]}" ] 
+BB5719 -> BB5720 [tailport=s, headport=n, headlabel="      5720"]
+BB5720 [shape=record label="{15792: read-variable['element',v2,-]|15793: read-variable['document',v4,-]|15794: read-property[v4,'body',v3]|15795: \<variable-non-null-undef\>['document']|15796: !==[v2,v3,v1]|15797: if[v1](true-block:5721,false-block:5724)}" ] 
+BB5720 -> BB5724 [tailport=s, headport=n, headlabel="      5724"]
+BB5720 -> BB5721 [tailport=s, headport=n, headlabel="      5721"]
+BB5720 -> BB5725 [tailport=s, headport=n, color=gray, headlabel="      5725"]
+BB5721 [shape=record label="{15798: read-variable['Element',v7,-]|15799: read-property[v7,'descendantOf',-]|15800: \<variable-non-null-undef\>['Element']|15801: read-variable['element',v8,-]|15802: read-variable['document',v10,-]|15803: read-property[v10,'body',v9]|15804: \<variable-non-null-undef\>['document']}" ] 
+BB5721 -> BB5722 [tailport=s, headport=n, headlabel="      5722"]
+BB5721 -> BB5725 [tailport=s, headport=n, color=gray]
+BB5722 [shape=record label="{15805: call-Element.descendantOf [v7,'descendantOf',v8,v9,v5]}" ] 
+BB5722 -> BB5723 [tailport=s, headport=n, headlabel="      5723"]
+BB5722 -> BB5725 [tailport=s, headport=n, color=gray]
+BB5723 [shape=record label="{15806: ![v5,v1]}" ] 
+BB5723 -> BB5724 [tailport=s, headport=n]
+BB5723 -> BB5725 [tailport=s, headport=n, color=gray]
+BB5724 [shape=record label="{15807: return[v1]}" ] 
+BB5725 [shape=record label="{15808: exceptional-return}" ] 
+//#$~ 4386
+}

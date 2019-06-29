@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry822[shape=none,label=""];
+BB_entry822 -> BB8643 [tailport=s, headport=n, headlabel="    8643"]
+BB8643 [shape=record label="{27718: constant[undefined,v1]|27719: vardecl['beach']}" ] 
+BB8643 -> BB8644 [tailport=s, headport=n, headlabel="      8644"]
+BB8644 [shape=record label="{27720: read-variable['d3_geom_voronoiBeachPool',v4,-]|27721: read-property[v4,'pop',-]|27722: \<variable-non-null-undef\>['d3_geom_voronoiBeachPool']}" ] 
+BB8644 -> BB8645 [tailport=s, headport=n, headlabel="      8645"]
+BB8644 -> BB8651 [tailport=s, headport=n, color=gray, headlabel="      8651"]
+BB8645 [shape=record label="{27723: call-d3_geom_voronoiBeachPool.pop [v4,'pop',v2]}" ] 
+BB8645 -> BB8646 [tailport=s, headport=n, headlabel="      8646"]
+BB8645 -> BB8651 [tailport=s, headport=n, color=gray]
+BB8646 [shape=record label="{27724: if[v2](true-block:8649,false-block:8647)}" ] 
+BB8646 -> BB8649 [tailport=s, headport=n, headlabel="      8649"]
+BB8646 -> BB8647 [tailport=s, headport=n, headlabel="      8647"]
+BB8647 [shape=record label="{27725: read-variable['d3_geom_voronoiBeach',v3,-]}" ] 
+BB8647 -> BB8648 [tailport=s, headport=n, headlabel="      8648"]
+BB8647 -> BB8651 [tailport=s, headport=n, color=gray]
+BB8648 [shape=record label="{27726: construct [-,v3,v2]}" ] 
+BB8648 -> BB8649 [tailport=s, headport=n]
+BB8648 -> BB8651 [tailport=s, headport=n, color=gray]
+BB8649 [shape=record label="{27727: write-variable[v2,'beach']*|27728: read-variable['beach',v4,-]|27729: read-variable['site',v3,-]|27730: write-property[v4,'site',v3]|27731: \<variable-non-null-undef\>['beach']*|27732: read-variable['beach',v1,-]}" ] 
+BB8649 -> BB8650 [tailport=s, headport=n, headlabel="      8650"]
+BB8649 -> BB8651 [tailport=s, headport=n, color=gray]
+BB8650 [shape=record label="{27733: return[v1]}" ] 
+BB8651 [shape=record label="{27734: exceptional-return}" ] 
+//#$~ 4903
+}

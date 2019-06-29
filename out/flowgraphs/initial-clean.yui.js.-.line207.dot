@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB119 [tailport=s, headport=n, headlabel="    119"]
+BB119 [shape=record label="{333: constant[undefined,v1]}" ] 
+BB119 -> BB120 [tailport=s, headport=n, headlabel="      120"]
+BB120 [shape=record label="{334: read-variable['YUI',v4,-]|335: read-property[v4,'Env',v3]|336: \<variable-non-null-undef\>['YUI']|337: constant[true,v2]|338: write-property[v3,'DOMReady',v2]|339: \<property-non-null-undef\>[v4,'Env']*|340: read-variable['hasWin',v5,-]|341: if[v5](true-block:121,false-block:123)}" ] 
+BB120 -> BB121 [tailport=s, headport=n, headlabel="      121"]
+BB120 -> BB123 [tailport=s, headport=n, headlabel="      123"]
+BB120 -> BB124 [tailport=s, headport=n, color=gray, headlabel="      124"]
+BB121 [shape=record label="{342: read-variable['remove',v7,v6]|343: read-variable['doc',v8,-]|344: constant[\"DOMContentLoaded\",v9]|345: read-variable['handleReady',v10,-]}" ] 
+BB121 -> BB122 [tailport=s, headport=n, headlabel="      122"]
+BB121 -> BB124 [tailport=s, headport=n, color=gray]
+BB122 [shape=record label="{346: call-remove [v6,v7,v8,v9,v10,-]*}" ] 
+BB122 -> BB123 [tailport=s, headport=n]
+BB122 -> BB124 [tailport=s, headport=n, color=gray]
+BB123 [shape=record label="{347: return[v1]}" ] 
+BB124 [shape=record label="{348: exceptional-return}" ] 
+//#$~ 210
+}

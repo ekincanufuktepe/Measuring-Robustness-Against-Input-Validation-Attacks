@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry173[shape=none,label=""];
+BB_entry173 -> BB1450 [tailport=s, headport=n, headlabel="    1450"]
+BB1450 [shape=record label="{4329: constant[undefined,v1]}" ] 
+BB1450 -> BB1451 [tailport=s, headport=n, headlabel="      1451"]
+BB1451 [shape=record label="{4330: read-variable['func',v4,-]|4331: read-property[v4,'apply',-]|4332: \<variable-non-null-undef\>['func']|4333: read-variable['this',v5,-]|4334: read-variable['arguments',v6,v2]}" ] 
+BB1451 -> BB1452 [tailport=s, headport=n, headlabel="      1452"]
+BB1451 -> BB1456 [tailport=s, headport=n, color=gray, headlabel="      1456"]
+BB1452 [shape=record label="{4335: call-func.apply [v4,'apply',v5,v6,-]*}" ] 
+BB1452 -> BB1453 [tailport=s, headport=n, headlabel="      1453"]
+BB1452 -> BB1456 [tailport=s, headport=n, color=gray]
+BB1453 [shape=record label="{4336: read-variable['orig',v8,-]|4337: read-property[v8,'apply',-]|4338: \<variable-non-null-undef\>['orig']|4339: read-variable['this',v9,-]|4340: read-variable['arguments',v10,v2]}" ] 
+BB1453 -> BB1454 [tailport=s, headport=n, headlabel="      1454"]
+BB1453 -> BB1456 [tailport=s, headport=n, color=gray]
+BB1454 [shape=record label="{4341: call-orig.apply [v8,'apply',v9,v10,v1]}" ] 
+BB1454 -> BB1455 [tailport=s, headport=n, headlabel="      1455"]
+BB1454 -> BB1456 [tailport=s, headport=n, color=gray]
+BB1455 [shape=record label="{4342: return[v1]}" ] 
+BB1456 [shape=record label="{4343: exceptional-return}" ] 
+//#$~ 1705
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry2588[shape=none,label=""];
+BB_entry2588 -> BB29214 [tailport=s, headport=n, headlabel="    29214"]
+BB29214 [shape=record label="{97090: constant[undefined,v1]|97091: vardecl['Constructor']|97092: vardecl['promise']}" ] 
+BB29214 -> BB29215 [tailport=s, headport=n, headlabel="      29215"]
+BB29215 [shape=record label="{97093: read-variable['this',v3,-]|97094: write-variable[v3,'Constructor']*|97095: read-variable['Constructor',v5,-]|97096: read-variable['noop',v6,v2]|97097: read-variable['label',v7,v2]}" ] 
+BB29215 -> BB29216 [tailport=s, headport=n, headlabel="      29216"]
+BB29215 -> BB29221 [tailport=s, headport=n, color=gray, headlabel="      29221"]
+BB29216 [shape=record label="{97098: construct [-,v5,v6,v7,v4]}" ] 
+BB29216 -> BB29217 [tailport=s, headport=n, headlabel="      29217"]
+BB29216 -> BB29221 [tailport=s, headport=n, color=gray]
+BB29217 [shape=record label="{97099: write-variable[v4,'promise']*|97100: read-variable['_reject',v9,v8]|97101: read-variable['promise',v10,v2]|97102: read-variable['reason',v11,v2]}" ] 
+BB29217 -> BB29218 [tailport=s, headport=n, headlabel="      29218"]
+BB29217 -> BB29221 [tailport=s, headport=n, color=gray]
+BB29218 [shape=record label="{97103: call-_reject [v8,v9,v10,v11,-]*}" ] 
+BB29218 -> BB29219 [tailport=s, headport=n, headlabel="      29219"]
+BB29218 -> BB29221 [tailport=s, headport=n, color=gray]
+BB29219 [shape=record label="{97104: read-variable['promise',v1,v2]}" ] 
+BB29219 -> BB29220 [tailport=s, headport=n, headlabel="      29220"]
+BB29219 -> BB29221 [tailport=s, headport=n, color=gray]
+BB29220 [shape=record label="{97105: return[v1]}" ] 
+BB29221 [shape=record label="{97106: exceptional-return}" ] 
+//#$~ 52757
+}

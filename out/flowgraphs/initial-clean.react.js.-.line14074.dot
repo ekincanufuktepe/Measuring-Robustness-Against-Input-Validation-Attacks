@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry580[shape=none,label=""];
+BB_entry580 -> BB8015 [tailport=s, headport=n, headlabel="    8015"]
+BB8015 [shape=record label="{26760: constant[undefined,v1]}" ] 
+BB8015 -> BB8016 [tailport=s, headport=n, headlabel="      8016"]
+BB8016 [shape=record label="{26761: read-variable['CallbackQueue',v3,-]|26762: read-property[v3,'release',-]|26763: \<variable-non-null-undef\>['CallbackQueue']|26764: read-variable['this',v5,-]|26765: read-property[v5,'reactMountReady',v4]}" ] 
+BB8016 -> BB8017 [tailport=s, headport=n, headlabel="      8017"]
+BB8016 -> BB8022 [tailport=s, headport=n, color=gray, headlabel="      8022"]
+BB8017 [shape=record label="{26766: call-CallbackQueue.release [v3,'release',v4,-]*}" ] 
+BB8017 -> BB8018 [tailport=s, headport=n, headlabel="      8018"]
+BB8017 -> BB8022 [tailport=s, headport=n, color=gray]
+BB8018 [shape=record label="{26767: read-variable['this',v7,-]|26768: constant[null,v6]|26769: write-property[v7,'reactMountReady',v6]*|26770: read-variable['ReactPutListenerQueue',v9,-]|26771: read-property[v9,'release',-]|26772: \<variable-non-null-undef\>['ReactPutListenerQueue']|26773: read-variable['this',v11,-]|26774: read-property[v11,'putListenerQueue',v10]}" ] 
+BB8018 -> BB8019 [tailport=s, headport=n, headlabel="      8019"]
+BB8018 -> BB8022 [tailport=s, headport=n, color=gray]
+BB8019 [shape=record label="{26775: call-ReactPutListenerQueue.release [v9,'release',v10,-]*}" ] 
+BB8019 -> BB8020 [tailport=s, headport=n, headlabel="      8020"]
+BB8019 -> BB8022 [tailport=s, headport=n, color=gray]
+BB8020 [shape=record label="{26776: read-variable['this',v13,-]|26777: constant[null,v12]|26778: write-property[v13,'putListenerQueue',v12]*}" ] 
+BB8020 -> BB8021 [tailport=s, headport=n, headlabel="      8021"]
+BB8020 -> BB8022 [tailport=s, headport=n, color=gray]
+BB8021 [shape=record label="{26779: return[v1]}" ] 
+BB8022 [shape=record label="{26780: exceptional-return}" ] 
+//#$~ 14079
+}

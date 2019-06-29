@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry867[shape=none,label=""];
+BB_entry867 -> BB11289 [tailport=s, headport=n, headlabel="    11289"]
+BB11289 [shape=record label="{29603: constant[undefined,v1]}" ] 
+BB11289 -> BB11290 [tailport=s, headport=n, headlabel="      11290"]
+BB11290 [shape=record label="{29604: read-variable['$rootScope',v4,-]|29605: read-property[v4,'$$phase',v3]|29606: \<variable-non-null-undef\>['$rootScope']|29607: ![v3,v2]|29608: if[v2](true-block:11291,false-block:11292)}" ] 
+BB11290 -> BB11292 [tailport=s, headport=n, headlabel="      11292"]
+BB11290 -> BB11291 [tailport=s, headport=n, headlabel="      11291"]
+BB11290 -> BB11298 [tailport=s, headport=n, color=gray, headlabel="      11298"]
+BB11291 [shape=record label="{29609: read-variable['asyncQueue',v6,-]|29610: read-property[v6,'length',v5]|29611: \<variable-non-null-undef\>['asyncQueue']|29612: ![v5,v2]}" ] 
+BB11291 -> BB11292 [tailport=s, headport=n]
+BB11291 -> BB11298 [tailport=s, headport=n, color=gray]
+BB11292 [shape=record label="{29613: if[v2](true-block:11293,false-block:11295)}" ] 
+BB11292 -> BB11293 [tailport=s, headport=n, headlabel="      11293"]
+BB11292 -> BB11295 [tailport=s, headport=n, headlabel="      11295"]
+BB11293 [shape=record label="{29614: read-variable['$browser',v6,-]|29615: read-property[v6,'defer',-]|29616: \<variable-non-null-undef\>['$browser']|29617: function-expr[function ( ),v7]}" ] 
+BB11293 -> BB11294 [tailport=s, headport=n, headlabel="      11294"]
+BB11293 -> BB11298 [tailport=s, headport=n, color=gray]
+BB11294 [shape=record label="{29618: call-$browser.defer [v6,'defer',v7,-]*}" ] 
+BB11294 -> BB11295 [tailport=s, headport=n]
+BB11294 -> BB11298 [tailport=s, headport=n, color=gray]
+BB11295 [shape=record label="{29619: read-variable['asyncQueue',v6,-]|29620: read-property[v6,'push',-]|29621: \<variable-non-null-undef\>['asyncQueue']|29622: new[v7]|29623: read-variable['this',v8,-]|29624: write-property[v7,'scope',v8]|29625: read-variable['expr',v9,-]|29626: write-property[v7,'expression',v9]|29627: read-variable['locals',v10,-]|29628: write-property[v7,'locals',v10]}" ] 
+BB11295 -> BB11296 [tailport=s, headport=n, headlabel="      11296"]
+BB11295 -> BB11298 [tailport=s, headport=n, color=gray]
+BB11296 [shape=record label="{29629: call-asyncQueue.push [v6,'push',v7,-]*}" ] 
+BB11296 -> BB11297 [tailport=s, headport=n, headlabel="      11297"]
+BB11296 -> BB11298 [tailport=s, headport=n, color=gray]
+BB11297 [shape=record label="{29630: return[v1]}" ] 
+BB11298 [shape=record label="{29631: exceptional-return}" ] 
+//#$~ 15892
+}

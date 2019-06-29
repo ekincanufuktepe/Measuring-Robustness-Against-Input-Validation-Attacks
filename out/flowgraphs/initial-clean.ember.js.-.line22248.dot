@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry995[shape=none,label=""];
+BB_entry995 -> BB12090 [tailport=s, headport=n, headlabel="    12090"]
+BB12090 [shape=record label="{41331: constant[undefined,v1]|41332: vardecl['guid']|41333: vardecl['self']}" ] 
+BB12090 -> BB12091 [tailport=s, headport=n, headlabel="      12091"]
+BB12091 [shape=record label="{41334: read-variable['guidFor',v4,v3]|41335: read-variable['this',v5,-]}" ] 
+BB12091 -> BB12092 [tailport=s, headport=n, headlabel="      12092"]
+BB12091 -> BB12098 [tailport=s, headport=n, color=gray, headlabel="      12098"]
+BB12092 [shape=record label="{41336: call-guidFor [v3,v4,v5,v2]}" ] 
+BB12092 -> BB12093 [tailport=s, headport=n, headlabel="      12093"]
+BB12092 -> BB12098 [tailport=s, headport=n, color=gray]
+BB12093 [shape=record label="{41337: write-variable[v2,'guid']*|41338: read-variable['this',v6,-]|41339: write-variable[v6,'self']*|41340: read-variable['jQuery',v10,v9]|41341: read-variable['window',v11,-]}" ] 
+BB12093 -> BB12094 [tailport=s, headport=n, headlabel="      12094"]
+BB12093 -> BB12098 [tailport=s, headport=n, color=gray]
+BB12094 [shape=record label="{41342: call-jQuery [v9,v10,v11,v8]}" ] 
+BB12094 -> BB12095 [tailport=s, headport=n, headlabel="      12095"]
+BB12094 -> BB12098 [tailport=s, headport=n, color=gray]
+BB12095 [shape=record label="{41343: read-property[v8,'on',-]|41344: constant[\"popstate.ember-location-\",v13]|41345: read-variable['guid',v14,-]|41346: +[v13,v14,v12]|41347: function-expr[function ( e ),v15]}" ] 
+BB12095 -> BB12096 [tailport=s, headport=n, headlabel="      12096"]
+BB12095 -> BB12098 [tailport=s, headport=n, color=gray]
+BB12096 [shape=record label="{41348: call-null [v8,'on',v12,v15,-]*}" ] 
+BB12096 -> BB12097 [tailport=s, headport=n, headlabel="      12097"]
+BB12096 -> BB12098 [tailport=s, headport=n, color=gray]
+BB12097 [shape=record label="{41349: return[v1]}" ] 
+BB12098 [shape=record label="{41350: exceptional-return}" ] 
+//#$~ 22258
+}

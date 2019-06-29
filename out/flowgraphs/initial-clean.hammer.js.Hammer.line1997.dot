@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry118[shape=none,label=""];
+BB_entry118 -> BB1253 [tailport=s, headport=n, headlabel="    1253"]
+BB1253 [shape=record label="{3907: constant[undefined,v1]}" ] 
+BB1253 -> BB1254 [tailport=s, headport=n, headlabel="      1254"]
+BB1254 [shape=record label="{3908: read-variable['options',v2,-]|3909: if[v2](true-block:1256,false-block:1255)}" ] 
+BB1254 -> BB1256 [tailport=s, headport=n, headlabel="      1256"]
+BB1254 -> BB1255 [tailport=s, headport=n, headlabel="      1255"]
+BB1254 -> BB1261 [tailport=s, headport=n, color=gray, headlabel="      1261"]
+BB1255 [shape=record label="{3910: new[v2]}" ] 
+BB1255 -> BB1256 [tailport=s, headport=n]
+BB1256 [shape=record label="{3911: write-variable[v2,'options']*|3912: read-variable['options',v4,-]|3913: read-variable['ifUndefined',v6,v5]|3914: read-variable['options',v8,-]|3915: read-property[v8,'recognizers',v7]|3916: \<variable-non-null-undef\>['options']|3917: read-variable['Hammer',v11,-]|3918: read-property[v11,'defaults',v10]|3919: \<variable-non-null-undef\>['Hammer']|3920: read-property[v10,'preset',v9]|3921: \<property-non-null-undef\>[v11,'defaults']}" ] 
+BB1256 -> BB1257 [tailport=s, headport=n, headlabel="      1257"]
+BB1256 -> BB1261 [tailport=s, headport=n, color=gray]
+BB1257 [shape=record label="{3922: call-ifUndefined [v5,v6,v7,v9,v3]}" ] 
+BB1257 -> BB1258 [tailport=s, headport=n, headlabel="      1258"]
+BB1257 -> BB1261 [tailport=s, headport=n, color=gray]
+BB1258 [shape=record label="{3923: write-property[v4,'recognizers',v3]|3924: \<variable-non-null-undef\>['options']*|3925: read-variable['Manager',v12,-]|3926: read-variable['element',v13,-]|3927: read-variable['options',v14,-]}" ] 
+BB1258 -> BB1259 [tailport=s, headport=n, headlabel="      1259"]
+BB1258 -> BB1261 [tailport=s, headport=n, color=gray]
+BB1259 [shape=record label="{3928: construct [-,v12,v13,v14,v1]}" ] 
+BB1259 -> BB1260 [tailport=s, headport=n, headlabel="      1260"]
+BB1259 -> BB1261 [tailport=s, headport=n, color=gray]
+BB1260 [shape=record label="{3929: return[v1]}" ] 
+BB1261 [shape=record label="{3930: exceptional-return}" ] 
+//#$~ 2000
+}

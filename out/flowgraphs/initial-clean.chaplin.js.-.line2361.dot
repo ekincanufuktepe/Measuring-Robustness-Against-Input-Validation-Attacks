@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry214[shape=none,label=""];
+BB_entry214 -> BB2674 [tailport=s, headport=n, headlabel="    2674"]
+BB2674 [shape=record label="{8815: constant[undefined,v1]}" ] 
+BB2674 -> BB2675 [tailport=s, headport=n, headlabel="      2675"]
+BB2675 [shape=record label="{8816: read-variable['Backbone',v4,-]|8817: read-property[v4,'History',v3]|8818: \<variable-non-null-undef\>['Backbone']|8819: read-property[v3,'started',v2]|8820: \<property-non-null-undef\>[v4,'History']|8821: if[v2](true-block:2676,false-block:2678)}" ] 
+BB2675 -> BB2676 [tailport=s, headport=n, headlabel="      2676"]
+BB2675 -> BB2678 [tailport=s, headport=n, headlabel="      2678"]
+BB2675 -> BB2679 [tailport=s, headport=n, color=gray, headlabel="      2679"]
+BB2676 [shape=record label="{8822: read-variable['Backbone',v7,-]|8823: read-property[v7,'history',v6]|8824: \<variable-non-null-undef\>['Backbone']|8825: read-property[v6,'stop',-]|8826: \<property-non-null-undef\>[v7,'history']}" ] 
+BB2676 -> BB2677 [tailport=s, headport=n, headlabel="      2677"]
+BB2676 -> BB2679 [tailport=s, headport=n, color=gray]
+BB2677 [shape=record label="{8827: call-Backbone.history.stop [v6,'stop',v1]}" ] 
+BB2677 -> BB2678 [tailport=s, headport=n]
+BB2677 -> BB2679 [tailport=s, headport=n, color=gray]
+BB2678 [shape=record label="{8828: return[v1]}" ] 
+BB2679 [shape=record label="{8829: exceptional-return}" ] 
+//#$~ 2363
+}

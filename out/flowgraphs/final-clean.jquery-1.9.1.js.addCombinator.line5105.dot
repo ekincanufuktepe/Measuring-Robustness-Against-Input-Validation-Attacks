@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry321[shape=none,label=""];
+BB_entry321 -> BB4855 [tailport=s, headport=n, headlabel="    4855"]
+BB4855 [shape=record label="{13955: constant[undefined,v1]|13956: vardecl['dir']|13957: vardecl['checkNonElements']|13958: vardecl['doneName']}" ] 
+BB4855 -> BB4856 [tailport=s, headport=n, headlabel="      4856"]
+BB4856 [shape=record label="{13959: read-variable['combinator',v3,-]|13960: read-property[v3,'dir',v2]|13961: \<variable-non-null-undef\>['combinator']|13962: write-variable[v2,'dir']*|13963: read-variable['base',v4,-]|13964: if[v4](true-block:4857,false-block:4858)}" ] 
+BB4856 -> BB4858 [tailport=s, headport=n, headlabel="      4858"]
+BB4856 -> BB4857 [tailport=s, headport=n, headlabel="      4857"]
+BB4856 -> BB4862 [tailport=s, headport=n, color=gray, headlabel="      4862"]
+BB4857 [shape=record label="{13965: read-variable['dir',v5,-]|13966: constant[\"parentNode\",v6]|13967: ===[v5,v6,v4]}" ] 
+BB4857 -> BB4858 [tailport=s, headport=n]
+BB4857 -> BB4862 [tailport=s, headport=n, color=gray]
+BB4858 [shape=record label="{13968: write-variable[v4,'checkNonElements']*|13969: constant[1.0,v6]|13970: read-variable['done',v7,-]|13971: +[v7,v5]|13972: +[v5,v6,v8]|13973: write-variable[v8,'done']|13974: write-variable[v5,'doneName']*|13975: read-variable['combinator',v10,-]|13976: read-property[v10,'first',v9]|13977: \<variable-non-null-undef\>['combinator']|13978: if[v9](true-block:4859,false-block:4860)}" ] 
+BB4858 -> BB4859 [tailport=s, headport=n, headlabel="      4859"]
+BB4858 -> BB4860 [tailport=s, headport=n, headlabel="      4860"]
+BB4858 -> BB4862 [tailport=s, headport=n, color=gray]
+BB4859 [shape=record label="{13979: function-expr[function ( elem context xml ),v1]}" ] 
+BB4859 -> BB4861 [tailport=s, headport=n, headlabel="      4861"]
+BB4860 [shape=record label="{13980: function-expr[function ( elem context xml ),v1]}" ] 
+BB4860 -> BB4861 [tailport=s, headport=n]
+BB4861 [shape=record label="{13981: return[v1]}" ] 
+BB4862 [shape=record label="{13982: exceptional-return}" ] 
+}

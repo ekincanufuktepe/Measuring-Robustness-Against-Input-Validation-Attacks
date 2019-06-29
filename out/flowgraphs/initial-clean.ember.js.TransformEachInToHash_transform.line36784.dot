@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1695[shape=none,label=""];
+BB_entry1695 -> BB19682 [tailport=s, headport=n, headlabel="    19682"]
+BB19682 [shape=record label="{65973: constant[undefined,v1]|65974: vardecl['pluginContext']|65975: vardecl['walker']|65976: vardecl['b']}" ] 
+BB19682 -> BB19683 [tailport=s, headport=n, headlabel="      19683"]
+BB19683 [shape=record label="{65977: read-variable['this',v3,-]|65978: write-variable[v3,'pluginContext']*|65979: read-variable['pluginContext',v7,-]|65980: read-property[v7,'syntax',v6]|65981: \<variable-non-null-undef\>['pluginContext']|65982: read-property[v6,'Walker',-]|65983: \<property-non-null-undef\>[v7,'syntax']}" ] 
+BB19683 -> BB19684 [tailport=s, headport=n, headlabel="      19684"]
+BB19683 -> BB19689 [tailport=s, headport=n, color=gray, headlabel="      19689"]
+BB19684 [shape=record label="{65984: construct [v6,'Walker',v4]}" ] 
+BB19684 -> BB19685 [tailport=s, headport=n, headlabel="      19685"]
+BB19684 -> BB19689 [tailport=s, headport=n, color=gray]
+BB19685 [shape=record label="{65985: write-variable[v4,'walker']*|65986: read-variable['pluginContext',v10,v2]|65987: read-property[v10,'syntax',v9]|65988: \<variable-non-null-undef\>['pluginContext']|65989: read-property[v9,'builders',v8]|65990: \<property-non-null-undef\>[v10,'syntax']|65991: write-variable[v8,'b']*|65992: read-variable['walker',v12,-]|65993: read-property[v12,'visit',-]|65994: \<variable-non-null-undef\>['walker']|65995: read-variable['ast',v13,v2]|65996: function-expr[function ( node ),v14]}" ] 
+BB19685 -> BB19686 [tailport=s, headport=n, headlabel="      19686"]
+BB19685 -> BB19689 [tailport=s, headport=n, color=gray]
+BB19686 [shape=record label="{65997: call-walker.visit [v12,'visit',v13,v14,-]*}" ] 
+BB19686 -> BB19687 [tailport=s, headport=n, headlabel="      19687"]
+BB19686 -> BB19689 [tailport=s, headport=n, color=gray]
+BB19687 [shape=record label="{65998: read-variable['ast',v1,v2]}" ] 
+BB19687 -> BB19688 [tailport=s, headport=n, headlabel="      19688"]
+BB19687 -> BB19689 [tailport=s, headport=n, color=gray]
+BB19688 [shape=record label="{65999: return[v1]}" ] 
+BB19689 [shape=record label="{66000: exceptional-return}" ] 
+//#$~ 36811
+}

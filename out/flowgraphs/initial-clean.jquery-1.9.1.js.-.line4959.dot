@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry310[shape=none,label=""];
+BB_entry310 -> BB4659 [tailport=s, headport=n, headlabel="    4659"]
+BB4659 [shape=record label="{13414: constant[undefined,v1]|13415: vardecl['name']}" ] 
+BB4659 -> BB4660 [tailport=s, headport=n, headlabel="      4660"]
+BB4660 [shape=record label="{13416: read-variable['elem',v5,-]|13417: read-property[v5,'nodeName',v4]|13418: \<variable-non-null-undef\>['elem']|13419: read-property[v4,'toLowerCase',-]|13420: \<property-non-null-undef\>[v5,'nodeName']}" ] 
+BB4660 -> BB4661 [tailport=s, headport=n, headlabel="      4661"]
+BB4660 -> BB4667 [tailport=s, headport=n, color=gray, headlabel="      4667"]
+BB4661 [shape=record label="{13421: call[v4,'toLowerCase',v2]}" ] 
+BB4661 -> BB4662 [tailport=s, headport=n, headlabel="      4662"]
+BB4661 -> BB4667 [tailport=s, headport=n, color=gray]
+BB4662 [shape=record label="{13422: write-variable[v2,'name']*|13423: read-variable['name',v6,-]|13424: constant[\"input\",v7]|13425: ===[v6,v7,v1]|13426: if[v1](true-block:4663,false-block:4664)}" ] 
+BB4662 -> BB4664 [tailport=s, headport=n, headlabel="      4664"]
+BB4662 -> BB4663 [tailport=s, headport=n, headlabel="      4663"]
+BB4662 -> BB4667 [tailport=s, headport=n, color=gray]
+BB4663 [shape=record label="{13427: read-variable['elem',v10,-]|13428: read-property[v10,'type',v8]|13429: \<variable-non-null-undef\>['elem']|13430: constant[\"button\",v9]|13431: ===[v8,v9,v1]}" ] 
+BB4663 -> BB4664 [tailport=s, headport=n]
+BB4663 -> BB4667 [tailport=s, headport=n, color=gray]
+BB4664 [shape=record label="{13432: if[v1](true-block:4666,false-block:4665)}" ] 
+BB4664 -> BB4666 [tailport=s, headport=n, headlabel="      4666"]
+BB4664 -> BB4665 [tailport=s, headport=n, headlabel="      4665"]
+BB4665 [shape=record label="{13433: read-variable['name',v6,-]|13434: constant[\"button\",v7]|13435: ===[v6,v7,v1]}" ] 
+BB4665 -> BB4666 [tailport=s, headport=n]
+BB4665 -> BB4667 [tailport=s, headport=n, color=gray]
+BB4666 [shape=record label="{13436: return[v1]}" ] 
+BB4667 [shape=record label="{13437: exceptional-return}" ] 
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry19[shape=none,label=""];
+BB_entry19 -> BB305 [tailport=s, headport=n, headlabel="    305"]
+BB305 [shape=record label="{1150: constant[undefined,v1]}" ] 
+BB305 -> BB306 [tailport=s, headport=n, headlabel="      306"]
+BB306 [shape=record label="{1151: read-variable['isObject',v3,v2]|1152: read-variable['thing',v4,-]}" ] 
+BB306 -> BB307 [tailport=s, headport=n, headlabel="      307"]
+BB306 -> BB313 [tailport=s, headport=n, color=gray, headlabel="      313"]
+BB307 [shape=record label="{1153: call-isObject [v2,v3,v4,v1]}" ] 
+BB307 -> BB308 [tailport=s, headport=n, headlabel="      308"]
+BB307 -> BB313 [tailport=s, headport=n, color=gray]
+BB308 [shape=record label="{1154: if[v1](true-block:309,false-block:312)}" ] 
+BB308 -> BB312 [tailport=s, headport=n, headlabel="      312"]
+BB308 -> BB309 [tailport=s, headport=n, headlabel="      309"]
+BB309 [shape=record label="{1155: read-variable['thing',v8,-]|1156: read-property[v8,'length',v7]|1157: \<variable-non-null-undef\>['thing']|1158: typeof[v7,v5]|1159: read-variable['undefined',v6,-]|1160: !==[v5,v6,v1]|1161: if[v1](true-block:310,false-block:312)}" ] 
+BB309 -> BB312 [tailport=s, headport=n]
+BB309 -> BB310 [tailport=s, headport=n, headlabel="      310"]
+BB309 -> BB313 [tailport=s, headport=n, color=gray]
+BB310 [shape=record label="{1162: read-variable['isFunction',v10,v9]|1163: read-variable['thing',v12,-]|1164: read-property[v12,'splice',v11]|1165: \<variable-non-null-undef\>['thing']}" ] 
+BB310 -> BB311 [tailport=s, headport=n, headlabel="      311"]
+BB310 -> BB313 [tailport=s, headport=n, color=gray]
+BB311 [shape=record label="{1166: call-isFunction [v9,v10,v11,v1]}" ] 
+BB311 -> BB312 [tailport=s, headport=n]
+BB311 -> BB313 [tailport=s, headport=n, color=gray]
+BB312 [shape=record label="{1167: return[v1]}" ] 
+BB313 [shape=record label="{1168: exceptional-return}" ] 
+//#$~ 578
+}

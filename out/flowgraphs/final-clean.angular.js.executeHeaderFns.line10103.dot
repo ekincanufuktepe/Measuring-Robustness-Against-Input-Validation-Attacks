@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry470[shape=none,label=""];
+BB_entry470 -> BB6249 [tailport=s, headport=n, headlabel="    6249"]
+BB6249 [shape=record label="{16043: constant[undefined,v1]|16044: vardecl['headerContent']|16045: vardecl['processedHeaders']}" ] 
+BB6249 -> BB6250 [tailport=s, headport=n, headlabel="      6250"]
+BB6250 [shape=record label="{16046: new[v2]|16047: write-variable[v2,'processedHeaders']*|16048: read-variable['forEach',v4,v3]|16049: read-variable['headers',v5,-]|16050: function-expr[function ( headerFn header ),v6]}" ] 
+BB6250 -> BB6251 [tailport=s, headport=n, headlabel="      6251"]
+BB6250 -> BB6254 [tailport=s, headport=n, color=gray, headlabel="      6254"]
+BB6251 [shape=record label="{16051: call-forEach [v3,v4,v5,v6,-]*}" ] 
+BB6251 -> BB6252 [tailport=s, headport=n, headlabel="      6252"]
+BB6251 -> BB6254 [tailport=s, headport=n, color=gray]
+BB6252 [shape=record label="{16052: read-variable['processedHeaders',v1,-]}" ] 
+BB6252 -> BB6253 [tailport=s, headport=n, headlabel="      6253"]
+BB6252 -> BB6254 [tailport=s, headport=n, color=gray]
+BB6253 [shape=record label="{16053: return[v1]}" ] 
+BB6254 [shape=record label="{16054: exceptional-return}" ] 
+//#$~ 10117
+}

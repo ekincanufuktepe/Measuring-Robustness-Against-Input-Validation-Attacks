@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2407[shape=none,label=""];
+BB_entry2407 -> BB27624 [tailport=s, headport=n, headlabel="    27624"]
+BB27624 [shape=record label="{91629: constant[undefined,v1]|91630: vardecl['targetName']}" ] 
+BB27624 -> BB27625 [tailport=s, headport=n, headlabel="      27625"]
+BB27625 [shape=record label="{91631: constant[\"\",v2]|91632: write-variable[v2,'targetName']*|91633: read-variable['forEach',v4,v3]|91634: read-variable['this',v6,-]|91635: read-property[v6,'handlerInfos',v5]|91636: function-expr[function ( handlerInfo ),v7]}" ] 
+BB27625 -> BB27626 [tailport=s, headport=n, headlabel="      27626"]
+BB27625 -> BB27630 [tailport=s, headport=n, color=gray, headlabel="      27630"]
+BB27626 [shape=record label="{91637: call-forEach [v3,v4,v5,v7,-]*}" ] 
+BB27626 -> BB27627 [tailport=s, headport=n, headlabel="      27627"]
+BB27626 -> BB27630 [tailport=s, headport=n, color=gray]
+BB27627 [shape=record label="{91638: read-variable['promiseLabel',v9,v8]|91639: constant[\"'\",v15]|91640: read-variable['targetName',v16,-]|91641: +[v15,v16,v13]|91642: constant[\"': \",v14]|91643: +[v13,v14,v11]|91644: read-variable['label',v12,-]|91645: +[v11,v12,v10]}" ] 
+BB27627 -> BB27628 [tailport=s, headport=n, headlabel="      27628"]
+BB27627 -> BB27630 [tailport=s, headport=n, color=gray]
+BB27628 [shape=record label="{91646: call-promiseLabel [v8,v9,v10,v1]}" ] 
+BB27628 -> BB27629 [tailport=s, headport=n, headlabel="      27629"]
+BB27628 -> BB27630 [tailport=s, headport=n, color=gray]
+BB27629 [shape=record label="{91647: return[v1]}" ] 
+BB27630 [shape=record label="{91648: exceptional-return}" ] 
+//#$~ 49611
+}

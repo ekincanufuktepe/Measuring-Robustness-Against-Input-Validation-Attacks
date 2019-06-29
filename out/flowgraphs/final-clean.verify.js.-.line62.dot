@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB81 [tailport=s, headport=n, headlabel="    81"]
+BB81 [shape=record label="{212: constant[undefined,v1]}" ] 
+BB81 -> BB82 [tailport=s, headport=n, headlabel="      82"]
+BB82 [shape=record label="{213: read-variable['$',v4,-]|214: read-property[v4,'extend',-]|215: \<variable-non-null-undef\>['$']|216: new[v5]|217: read-variable['console',v7,-]|218: read-property[v7,'defaults',v6]|219: \<variable-non-null-undef\>['console']|220: read-variable['opts',v8,-]}" ] 
+BB82 -> BB83 [tailport=s, headport=n, headlabel="      83"]
+BB82 -> BB87 [tailport=s, headport=n, color=gray, headlabel="      87"]
+BB83 [shape=record label="{221: call-$.extend [v4,'extend',v5,v6,v8,v2]}" ] 
+BB83 -> BB84 [tailport=s, headport=n, headlabel="      84"]
+BB83 -> BB87 [tailport=s, headport=n, color=gray]
+BB84 [shape=record label="{222: write-variable[v2,'opts']*|223: read-variable['withOptions',v10,v9]|224: read-variable['opts',v11,-]}" ] 
+BB84 -> BB85 [tailport=s, headport=n, headlabel="      85"]
+BB84 -> BB87 [tailport=s, headport=n, color=gray]
+BB85 [shape=record label="{225: call-withOptions [v9,v10,v11,v1]}" ] 
+BB85 -> BB86 [tailport=s, headport=n, headlabel="      86"]
+BB85 -> BB87 [tailport=s, headport=n, color=gray]
+BB86 [shape=record label="{226: return[v1]}" ] 
+BB87 [shape=record label="{227: exceptional-return}" ] 
+//#$~ 64
+}

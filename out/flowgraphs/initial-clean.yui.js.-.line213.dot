@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry8[shape=none,label=""];
+BB_entry8 -> BB125 [tailport=s, headport=n, headlabel="    125"]
+BB125 [shape=record label="{349: constant[undefined,v1]}" ] 
+BB125 -> BB126 [tailport=s, headport=n, headlabel="      126"]
+BB126 [shape=record label="{350: read-variable['YUI',v4,-]|351: read-property[v4,'Env',v3]|352: \<variable-non-null-undef\>['YUI']|353: constant[true,v2]|354: write-property[v3,'windowLoaded',v2]|355: \<property-non-null-undef\>[v4,'Env']*|356: read-variable['YUI',v7,-]|357: read-property[v7,'Env',v6]|358: \<variable-non-null-undef\>['YUI']|359: constant[true,v5]|360: write-property[v6,'DOMReady',v5]|361: \<property-non-null-undef\>[v7,'Env']*|362: read-variable['hasWin',v8,-]|363: if[v8](true-block:127,false-block:129)}" ] 
+BB126 -> BB127 [tailport=s, headport=n, headlabel="      127"]
+BB126 -> BB129 [tailport=s, headport=n, headlabel="      129"]
+BB126 -> BB130 [tailport=s, headport=n, color=gray, headlabel="      130"]
+BB127 [shape=record label="{364: read-variable['remove',v10,v9]|365: read-variable['window',v11,-]|366: constant[\"load\",v12]|367: read-variable['handleLoad',v13,-]}" ] 
+BB127 -> BB128 [tailport=s, headport=n, headlabel="      128"]
+BB127 -> BB130 [tailport=s, headport=n, color=gray]
+BB128 [shape=record label="{368: call-remove [v9,v10,v11,v12,v13,-]*}" ] 
+BB128 -> BB129 [tailport=s, headport=n]
+BB128 -> BB130 [tailport=s, headport=n, color=gray]
+BB129 [shape=record label="{369: return[v1]}" ] 
+BB130 [shape=record label="{370: exceptional-return}" ] 
+//#$~ 217
+}

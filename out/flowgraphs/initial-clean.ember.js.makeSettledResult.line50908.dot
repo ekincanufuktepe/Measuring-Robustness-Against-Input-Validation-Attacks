@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry2511[shape=none,label=""];
+BB_entry2511 -> BB28552 [tailport=s, headport=n, headlabel="    28552"]
+BB28552 [shape=record label="{94905: constant[undefined,v1]}" ] 
+BB28552 -> BB28553 [tailport=s, headport=n, headlabel="      28553"]
+BB28553 [shape=record label="{94906: read-variable['state',v3,-]|94907: read-variable['FULFILLED',v4,-]|94908: ===[v3,v4,v2]|94909: if[v2](true-block:28554,false-block:28555)}" ] 
+BB28553 -> BB28554 [tailport=s, headport=n, headlabel="      28554"]
+BB28553 -> BB28555 [tailport=s, headport=n, headlabel="      28555"]
+BB28553 -> BB28557 [tailport=s, headport=n, color=gray, headlabel="      28557"]
+BB28554 [shape=record label="{94910: new[v1]|94911: constant[\"fulfilled\",v5]|94912: write-property[v1,'state',v5]|94913: read-variable['value',v6,-]|94914: write-property[v1,'value',v6]}" ] 
+BB28554 -> BB28556 [tailport=s, headport=n, headlabel="      28556"]
+BB28554 -> BB28557 [tailport=s, headport=n, color=gray]
+BB28555 [shape=record label="{94915: new[v1]|94916: constant[\"rejected\",v5]|94917: write-property[v1,'state',v5]|94918: read-variable['value',v6,-]|94919: write-property[v1,'reason',v6]}" ] 
+BB28555 -> BB28556 [tailport=s, headport=n]
+BB28555 -> BB28557 [tailport=s, headport=n, color=gray]
+BB28556 [shape=record label="{94920: return[v1]}" ] 
+BB28557 [shape=record label="{94921: exceptional-return}" ] 
+//#$~ 50917
+}

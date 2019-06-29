@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry88[shape=none,label=""];
+BB_entry88 -> BB973 [tailport=s, headport=n, headlabel="    973"]
+BB973 [shape=record label="{3000: constant[undefined,v1]}" ] 
+BB973 -> BB974 [tailport=s, headport=n, headlabel="      974"]
+BB974 [shape=record label="{3001: read-variable['AttrRecognizer',v3,-]|3002: read-property[v3,'apply',-]|3003: \<variable-non-null-undef\>['AttrRecognizer']|3004: read-variable['this',v4,-]|3005: read-variable['arguments',v5,-]}" ] 
+BB974 -> BB975 [tailport=s, headport=n, headlabel="      975"]
+BB974 -> BB978 [tailport=s, headport=n, color=gray, headlabel="      978"]
+BB975 [shape=record label="{3006: call-AttrRecognizer.apply [v3,'apply',v4,v5,-]*}" ] 
+BB975 -> BB976 [tailport=s, headport=n, headlabel="      976"]
+BB975 -> BB978 [tailport=s, headport=n, color=gray]
+BB976 [shape=record label="{3007: read-variable['this',v7,-]|3008: constant[null,v6]|3009: write-property[v7,'pX',v6]*|3010: read-variable['this',v9,-]|3011: constant[null,v8]|3012: write-property[v9,'pY',v8]*}" ] 
+BB976 -> BB977 [tailport=s, headport=n, headlabel="      977"]
+BB976 -> BB978 [tailport=s, headport=n, color=gray]
+BB977 [shape=record label="{3013: return[v1]}" ] 
+BB978 [shape=record label="{3014: exceptional-return}" ] 
+//#$~ 1612
+}

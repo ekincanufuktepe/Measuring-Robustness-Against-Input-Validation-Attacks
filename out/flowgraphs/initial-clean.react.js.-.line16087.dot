@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry660[shape=none,label=""];
+BB_entry660 -> BB9122 [tailport=s, headport=n, headlabel="    9122"]
+BB9122 [shape=record label="{30519: constant[undefined,v1]|30520: vardecl['Interface']|30521: vardecl['propName']}" ] 
+BB9122 -> BB9123 [tailport=s, headport=n, headlabel="      9123"]
+BB9123 [shape=record label="{30522: read-variable['this',v4,-]|30523: read-property[v4,'constructor',v3]|30524: read-property[v3,'Interface',v2]|30525: \<property-non-null-undef\>[v4,'constructor']|30526: write-variable[v2,'Interface']*|30527: read-variable['Interface',v6,-]}" ] 
+BB9123 -> BB9124 [tailport=s, headport=n, headlabel="      9124"]
+BB9123 -> BB9130 [tailport=s, headport=n, color=gray, headlabel="      9130"]
+BB9124 [shape=record label="{30528: begin-for-in[v6,v7]}" ] 
+BB9124 -> BB9125 [tailport=s, headport=n, headlabel="      9125"]
+BB9124 -> BB9130 [tailport=s, headport=n, color=gray]
+BB9125 [shape=record label="{30529: has-next[v7,v8]|30530: if[v8](true-block:9126,false-block:9128)}" ] 
+BB9125 -> BB9126 [tailport=s, headport=n, headlabel="      9126"]
+BB9125 -> BB9128 [tailport=s, headport=n, headlabel="      9128"]
+BB9126 [shape=record label="{30531: next-property[v7,v9]|30532: write-variable[v9,'propName']|30533: read-variable['this',v11,-]|30534: read-variable['propName',v12,-]|30535: constant[null,v10]|30536: write-property[v11,v12,v10]*}" ] 
+BB9126 -> BB9127 [tailport=s, headport=n, headlabel="      9127"]
+BB9126 -> BB9130 [tailport=s, headport=n, color=gray]
+BB9127 [shape=record label="{30537: end-for-in(begin-node:30528)}" ] 
+BB9127 -> BB9125 [tailport=s, headport=n]
+BB9128 [shape=record label="{30538: read-variable['this',v11,-]|30539: constant[null,v10]|30540: write-property[v11,'dispatchConfig',v10]*|30541: read-variable['this',v13,-]|30542: constant[null,v12]|30543: write-property[v13,'dispatchMarker',v12]*|30544: read-variable['this',v15,-]|30545: constant[null,v14]|30546: write-property[v15,'nativeEvent',v14]*}" ] 
+BB9128 -> BB9129 [tailport=s, headport=n, headlabel="      9129"]
+BB9128 -> BB9130 [tailport=s, headport=n, color=gray]
+BB9129 [shape=record label="{30547: return[v1]}" ] 
+BB9130 [shape=record label="{30548: exceptional-return}" ] 
+//#$~ 16094
+}

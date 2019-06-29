@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry321[shape=none,label=""];
+BB_entry321 -> BB4407 [tailport=s, headport=n, headlabel="    4407"]
+BB4407 [shape=record label="{13179: constant[undefined,v1]}" ] 
+BB4407 -> BB4408 [tailport=s, headport=n, headlabel="      4408"]
+BB4408 [shape=record label="{13180: read-variable['cache',v6,-]|13181: read-variable['name',v7,-]|13182: read-property[v6,v7,v5]|13183: \<variable-non-null-undef\>['cache']|13184: typeof[v5,v3]|13185: constant[\"undefined\",v4]|13186: ==[v3,v4,v2]|13187: if[v2](true-block:4410,false-block:4409)}" ] 
+BB4408 -> BB4410 [tailport=s, headport=n, headlabel="      4410"]
+BB4408 -> BB4409 [tailport=s, headport=n, headlabel="      4409"]
+BB4408 -> BB4416 [tailport=s, headport=n, color=gray, headlabel="      4416"]
+BB4409 [shape=record label="{13188: read-variable['force',v2,-]}" ] 
+BB4409 -> BB4410 [tailport=s, headport=n]
+BB4409 -> BB4416 [tailport=s, headport=n, color=gray]
+BB4410 [shape=record label="{13189: if[v2](true-block:4411,false-block:4412)}" ] 
+BB4410 -> BB4412 [tailport=s, headport=n, headlabel="      4412"]
+BB4410 -> BB4411 [tailport=s, headport=n, headlabel="      4411"]
+BB4411 [shape=record label="{13190: read-variable['cache',v4,-]|13191: read-variable['name',v5,-]|13192: read-variable['test',v3,-]|13193: write-property[v4,v5,v3]|13194: \<variable-non-null-undef\>['cache']}" ] 
+BB4411 -> BB4412 [tailport=s, headport=n]
+BB4411 -> BB4416 [tailport=s, headport=n, color=gray]
+BB4412 [shape=record label="{13195: read-variable['now',v1,-]|13196: if[v1](true-block:4413,false-block:4415)}" ] 
+BB4412 -> BB4415 [tailport=s, headport=n, headlabel="      4415"]
+BB4412 -> BB4413 [tailport=s, headport=n, headlabel="      4413"]
+BB4412 -> BB4416 [tailport=s, headport=n, color=gray]
+BB4413 [shape=record label="{13197: read-variable['has',v4,v3]|13198: read-variable['name',v5,-]}" ] 
+BB4413 -> BB4414 [tailport=s, headport=n, headlabel="      4414"]
+BB4413 -> BB4416 [tailport=s, headport=n, color=gray]
+BB4414 [shape=record label="{13199: call-has [v3,v4,v5,v1]}" ] 
+BB4414 -> BB4415 [tailport=s, headport=n]
+BB4414 -> BB4416 [tailport=s, headport=n, color=gray]
+BB4415 [shape=record label="{13200: return[v1]}" ] 
+BB4416 [shape=record label="{13201: exceptional-return}" ] 
+//#$~ 6137
+}

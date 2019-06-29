@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry810[shape=none,label=""];
+BB_entry810 -> BB8522 [tailport=s, headport=n, headlabel="    8522"]
+BB8522 [shape=record label="{27067: constant[undefined,v1]}" ] 
+BB8522 -> BB8523 [tailport=s, headport=n, headlabel="      8523"]
+BB8523 [shape=record label="{27068: read-variable['arguments',v3,-]|27069: read-property[v3,'length',v2]|27070: \<variable-non-null-undef\>['arguments']|27071: if[v2](true-block:8524,false-block:8525)}" ] 
+BB8523 -> BB8524 [tailport=s, headport=n, headlabel="      8524"]
+BB8523 -> BB8525 [tailport=s, headport=n, headlabel="      8525"]
+BB8523 -> BB8527 [tailport=s, headport=n, color=gray, headlabel="      8527"]
+BB8524 [shape=record label="{27072: read-variable['_',v4,-]|27073: write-variable[v4,'x']|27074: read-variable['hull',v1,-]}" ] 
+BB8524 -> BB8526 [tailport=s, headport=n, headlabel="      8526"]
+BB8524 -> BB8527 [tailport=s, headport=n, color=gray]
+BB8525 [shape=record label="{27075: read-variable['x',v1,-]}" ] 
+BB8525 -> BB8526 [tailport=s, headport=n]
+BB8525 -> BB8527 [tailport=s, headport=n, color=gray]
+BB8526 [shape=record label="{27076: return[v1]}" ] 
+BB8527 [shape=record label="{27077: exceptional-return}" ] 
+//#$~ 4815
+}

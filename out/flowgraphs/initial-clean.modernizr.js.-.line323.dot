@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB320 [tailport=s, headport=n, headlabel="    320"]
+BB320 [shape=record label="{829: constant[undefined,v1]}" ] 
+BB320 -> BB321 [tailport=s, headport=n, headlabel="      321"]
+BB321 [shape=record label="{830: constant[\"WebSocket\",v2]|831: read-variable['window',v3,-]|832: in[v2,v3,v1]|833: if[v1](true-block:323,false-block:322)}" ] 
+BB321 -> BB323 [tailport=s, headport=n, headlabel="      323"]
+BB321 -> BB322 [tailport=s, headport=n, headlabel="      322"]
+BB321 -> BB324 [tailport=s, headport=n, color=gray, headlabel="      324"]
+BB322 [shape=record label="{834: constant[\"MozWebSocket\",v2]|835: read-variable['window',v3,-]|836: in[v2,v3,v1]}" ] 
+BB322 -> BB323 [tailport=s, headport=n]
+BB322 -> BB324 [tailport=s, headport=n, color=gray]
+BB323 [shape=record label="{837: return[v1]}" ] 
+BB324 [shape=record label="{838: exceptional-return}" ] 
+//#$~ 324
+}

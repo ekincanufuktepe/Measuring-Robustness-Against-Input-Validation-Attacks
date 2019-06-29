@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry808[shape=none,label=""];
+BB_entry808 -> BB8534 [tailport=s, headport=n, headlabel="    8534"]
+BB8534 [shape=record label="{27089: constant[undefined,v1]|27090: vardecl['x']|27091: vardecl['y']|27092: function-decl[function hull ( data ),-]}" ] 
+BB8534 -> BB8535 [tailport=s, headport=n, headlabel="      8535"]
+BB8535 [shape=record label="{27093: read-variable['d3_geom_pointX',v2,-]|27094: write-variable[v2,'x']*|27095: read-variable['d3_geom_pointY',v3,-]|27096: write-variable[v3,'y']*|27097: read-variable['arguments',v5,-]|27098: read-property[v5,'length',v4]|27099: \<variable-non-null-undef\>['arguments']|27100: if[v4](true-block:8536,false-block:8538)}" ] 
+BB8535 -> BB8536 [tailport=s, headport=n, headlabel="      8536"]
+BB8535 -> BB8538 [tailport=s, headport=n, headlabel="      8538"]
+BB8535 -> BB8540 [tailport=s, headport=n, color=gray, headlabel="      8540"]
+BB8536 [shape=record label="{27101: read-variable['hull',v7,v6]|27102: read-variable['vertices',v8,-]}" ] 
+BB8536 -> BB8537 [tailport=s, headport=n, headlabel="      8537"]
+BB8536 -> BB8540 [tailport=s, headport=n, color=gray]
+BB8537 [shape=record label="{27103: call-hull [v6,v7,v8,v1]}" ] 
+BB8537 -> BB8539 [tailport=s, headport=n, headlabel="      8539"]
+BB8537 -> BB8540 [tailport=s, headport=n, color=gray]
+BB8538 [shape=record label="{27104: read-variable['hull',v7,-]|27105: function-expr[function ( _ ),v6]|27106: write-property[v7,'x',v6]|27107: \<variable-non-null-undef\>['hull']*|27108: read-variable['hull',v9,-]|27109: function-expr[function ( _ ),v8]|27110: write-property[v9,'y',v8]|27111: \<variable-non-null-undef\>['hull']*|27112: read-variable['hull',v1,-]}" ] 
+BB8538 -> BB8539 [tailport=s, headport=n]
+BB8538 -> BB8540 [tailport=s, headport=n, color=gray]
+BB8539 [shape=record label="{27113: return[v1]}" ] 
+BB8540 [shape=record label="{27114: exceptional-return}" ] 
+//#$~ 4820
+}

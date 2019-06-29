@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB18 [tailport=s, headport=n, headlabel="    18"]
+BB18 [shape=record label="{184: constant[undefined,v1]|185: vardecl['p']}" ] 
+BB18 -> BB19 [tailport=s, headport=n, headlabel="      19"]
+BB19 [shape=record label="{186: read-variable['it',v3,-]}" ] 
+BB19 -> BB20 [tailport=s, headport=n, headlabel="      20"]
+BB19 -> BB26 [tailport=s, headport=n, color=gray, headlabel="      26"]
+BB20 [shape=record label="{187: begin-for-in[v3,v4]}" ] 
+BB20 -> BB21 [tailport=s, headport=n, headlabel="      21"]
+BB20 -> BB26 [tailport=s, headport=n, color=gray]
+BB21 [shape=record label="{188: has-next[v4,v5]|189: if[v5](true-block:22,false-block:24)}" ] 
+BB21 -> BB22 [tailport=s, headport=n, headlabel="      22"]
+BB21 -> BB24 [tailport=s, headport=n, headlabel="      24"]
+BB22 [shape=record label="{190: next-property[v4,v6]|191: write-variable[v6,'p']|192: constant[0.0,v1]}" ] 
+BB22 -> BB25 [tailport=s, headport=n, headlabel="      25"]
+BB23 [shape=record label="{193: end-for-in(begin-node:187)}" ] 
+BB23 -> BB21 [tailport=s, headport=n]
+BB24 [shape=record label="{194: constant[1.0,v1]}" ] 
+BB24 -> BB25 [tailport=s, headport=n]
+BB25 [shape=record label="{195: return[v1]}" ] 
+BB26 [shape=record label="{196: exceptional-return}" ] 
+//#$~ 86
+}

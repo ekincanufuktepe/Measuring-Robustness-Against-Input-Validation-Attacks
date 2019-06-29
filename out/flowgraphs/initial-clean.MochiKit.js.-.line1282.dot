@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry160[shape=none,label=""];
+BB_entry160 -> BB2126 [tailport=s, headport=n, headlabel="    2126"]
+BB2126 [shape=record label="{9838: constant[undefined,v1]}" ] 
+BB2126 -> BB2127 [tailport=s, headport=n, headlabel="      2127"]
+BB2127 [shape=record label="{9839: read-variable['fun',v3,-]|9840: read-property[v3,'apply',-]|9841: \<variable-non-null-undef\>['fun']|9842: read-variable['self',v4,-]|9843: read-variable['seq',v7,-]|9844: read-property[v7,'next',-]|9845: \<variable-non-null-undef\>['seq']}" ] 
+BB2127 -> BB2128 [tailport=s, headport=n, headlabel="      2128"]
+BB2127 -> BB2131 [tailport=s, headport=n, color=gray, headlabel="      2131"]
+BB2128 [shape=record label="{9846: call-seq.next [v7,'next',v5]}" ] 
+BB2128 -> BB2129 [tailport=s, headport=n, headlabel="      2129"]
+BB2128 -> BB2131 [tailport=s, headport=n, color=gray]
+BB2129 [shape=record label="{9847: call-fun.apply [v3,'apply',v4,v5,v1]}" ] 
+BB2129 -> BB2130 [tailport=s, headport=n, headlabel="      2130"]
+BB2129 -> BB2131 [tailport=s, headport=n, color=gray]
+BB2130 [shape=record label="{9848: return[v1]}" ] 
+BB2131 [shape=record label="{9849: exceptional-return}" ] 
+//#$~ 1283
+}

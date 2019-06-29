@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry346[shape=none,label=""];
+BB_entry346 -> BB4162 [tailport=s, headport=n, headlabel="    4162"]
+BB4162 [shape=record label="{11988: constant[undefined,v1]|11989: vardecl['k']}" ] 
+BB4162 -> BB4163 [tailport=s, headport=n, headlabel="      4163"]
+BB4163 [shape=record label="{11990: read-variable['d',v4,v3]}" ] 
+BB4163 -> BB4164 [tailport=s, headport=n, headlabel="      4164"]
+BB4163 -> BB4170 [tailport=s, headport=n, color=gray, headlabel="      4170"]
+BB4164 [shape=record label="{11991: call-d [v3,v4,v2]}" ] 
+BB4164 -> BB4165 [tailport=s, headport=n, headlabel="      4165"]
+BB4164 -> BB4170 [tailport=s, headport=n, color=gray]
+BB4165 [shape=record label="{11992: if[v2](true-block:4167,false-block:4166)}" ] 
+BB4165 -> BB4167 [tailport=s, headport=n, headlabel="      4167"]
+BB4165 -> BB4166 [tailport=s, headport=n, headlabel="      4166"]
+BB4166 [shape=record label="{11993: new[v2]}" ] 
+BB4166 -> BB4167 [tailport=s, headport=n]
+BB4167 [shape=record label="{11994: write-variable[v2,'k']*|11995: read-variable['a',v5,-]|11996: read-property[v5,'a',v4]|11997: \<variable-non-null-undef\>['a']|11998: read-property[v4,'A',-]|11999: \<property-non-null-undef\>[v5,'a']|12000: read-variable['k',v6,-]|12001: function-expr[function ( h ),v7]}" ] 
+BB4167 -> BB4168 [tailport=s, headport=n, headlabel="      4168"]
+BB4167 -> BB4170 [tailport=s, headport=n, color=gray]
+BB4168 [shape=record label="{12002: call-a.a.A [v4,'A',v6,v7,-]*}" ] 
+BB4168 -> BB4169 [tailport=s, headport=n, headlabel="      4169"]
+BB4168 -> BB4170 [tailport=s, headport=n, color=gray]
+BB4169 [shape=record label="{12003: return[v1]}" ] 
+BB4170 [shape=record label="{12004: exceptional-return}" ] 
+}

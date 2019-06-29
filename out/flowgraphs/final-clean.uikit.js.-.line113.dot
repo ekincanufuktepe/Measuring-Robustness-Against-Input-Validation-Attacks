@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry12[shape=none,label=""];
+BB_entry12 -> BB164 [tailport=s, headport=n, headlabel="    164"]
+BB164 [shape=record label="{401: constant[undefined,v1]|402: vardecl['lastTime']}" ] 
+BB164 -> BB165 [tailport=s, headport=n, headlabel="      165"]
+BB165 [shape=record label="{403: constant[0.0,v2]|404: write-variable[v2,'lastTime']*|405: read-variable['global',v4,-]|406: read-variable['global',v5,-]|407: read-property[v5,'requestAnimationFrame',v3]|408: \<variable-non-null-undef\>['global']|409: if[v3](true-block:168,false-block:166)}" ] 
+BB165 -> BB168 [tailport=s, headport=n, headlabel="      168"]
+BB165 -> BB166 [tailport=s, headport=n, headlabel="      166"]
+BB165 -> BB171 [tailport=s, headport=n, color=gray, headlabel="      171"]
+BB166 [shape=record label="{410: read-variable['global',v5,-]|411: read-property[v5,'webkitRequestAnimationFrame',v3]|412: \<variable-non-null-undef\>['global']|413: if[v3](true-block:168,false-block:167)}" ] 
+BB166 -> BB168 [tailport=s, headport=n]
+BB166 -> BB167 [tailport=s, headport=n, headlabel="      167"]
+BB166 -> BB171 [tailport=s, headport=n, color=gray]
+BB167 [shape=record label="{414: function-expr[function ( callback element ),v3]}" ] 
+BB167 -> BB168 [tailport=s, headport=n]
+BB168 [shape=record label="{415: write-property[v4,'requestAnimationFrame',v3]|416: \<variable-non-null-undef\>['global']*|417: read-variable['global',v7,-]|418: read-property[v7,'cancelAnimationFrame',v6]|419: \<variable-non-null-undef\>['global']|420: ![v6,v5]|421: if[v5](true-block:169,false-block:170)}" ] 
+BB168 -> BB169 [tailport=s, headport=n, headlabel="      169"]
+BB168 -> BB170 [tailport=s, headport=n, headlabel="      170"]
+BB168 -> BB171 [tailport=s, headport=n, color=gray]
+BB169 [shape=record label="{422: read-variable['global',v9,-]|423: function-expr[function ( id ),v8]|424: write-property[v9,'cancelAnimationFrame',v8]|425: \<variable-non-null-undef\>['global']*}" ] 
+BB169 -> BB170 [tailport=s, headport=n]
+BB169 -> BB171 [tailport=s, headport=n, color=gray]
+BB170 [shape=record label="{426: return[v1]}" ] 
+BB171 [shape=record label="{427: exceptional-return}" ] 
+//#$~ 128
+}

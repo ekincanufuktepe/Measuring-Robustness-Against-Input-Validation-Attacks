@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1190[shape=none,label=""];
+BB_entry1190 -> BB12874 [tailport=s, headport=n, headlabel="    12874"]
+BB12874 [shape=record label="{43950: constant[undefined,v1]}" ] 
+BB12874 -> BB12875 [tailport=s, headport=n, headlabel="      12875"]
+BB12875 [shape=record label="{43951: read-variable['powb',v3,v2]|43952: read-variable['linear',v6,-]|43953: read-property[v6,'invert',-]|43954: \<variable-non-null-undef\>['linear']|43955: read-variable['x',v7,-]}" ] 
+BB12875 -> BB12876 [tailport=s, headport=n, headlabel="      12876"]
+BB12875 -> BB12879 [tailport=s, headport=n, color=gray, headlabel="      12879"]
+BB12876 [shape=record label="{43956: call-linear.invert [v6,'invert',v7,v4]}" ] 
+BB12876 -> BB12877 [tailport=s, headport=n, headlabel="      12877"]
+BB12876 -> BB12879 [tailport=s, headport=n, color=gray]
+BB12877 [shape=record label="{43957: call-powb [v2,v3,v4,v1]}" ] 
+BB12877 -> BB12878 [tailport=s, headport=n, headlabel="      12878"]
+BB12877 -> BB12879 [tailport=s, headport=n, color=gray]
+BB12878 [shape=record label="{43958: return[v1]}" ] 
+BB12879 [shape=record label="{43959: exceptional-return}" ] 
+//#$~ 7671
+}

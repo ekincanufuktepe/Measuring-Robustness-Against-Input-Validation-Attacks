@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1252[shape=none,label=""];
+BB_entry1252 -> BB14885 [tailport=s, headport=n, headlabel="    14885"]
+BB14885 [shape=record label="{51317: constant[undefined,v1]|51318: vardecl['args']}" ] 
+BB14885 -> BB14886 [tailport=s, headport=n, headlabel="      14886"]
+BB14886 [shape=record label="{51319: read-variable['a_slice',v4,-]|51320: read-property[v4,'call',-]|51321: \<variable-non-null-undef\>['a_slice']|51322: read-variable['arguments',v5,-]}" ] 
+BB14886 -> BB14887 [tailport=s, headport=n, headlabel="      14887"]
+BB14886 -> BB14893 [tailport=s, headport=n, color=gray, headlabel="      14893"]
+BB14887 [shape=record label="{51323: call-a_slice.call [v4,'call',v5,v2]}" ] 
+BB14887 -> BB14888 [tailport=s, headport=n, headlabel="      14888"]
+BB14887 -> BB14893 [tailport=s, headport=n, color=gray]
+BB14888 [shape=record label="{51324: write-variable[v2,'args']*|51325: read-variable['args',v7,-]|51326: read-property[v7,'push',-]|51327: \<variable-non-null-undef\>['args']|51328: new[v8]|51329: function-expr[function ( array changeMeta instanceMeta ),v9]|51330: write-property[v8,'initialize',v9]|51331: function-expr[function ( array item changeMeta instanceMeta ),v10]|51332: write-property[v8,'addedItem',v10]|51333: function-expr[function ( array item _ instanceMeta ),v11]|51334: write-property[v8,'removedItem',v11]}" ] 
+BB14888 -> BB14889 [tailport=s, headport=n, headlabel="      14889"]
+BB14888 -> BB14893 [tailport=s, headport=n, color=gray]
+BB14889 [shape=record label="{51335: call-args.push [v7,'push',v8,-]*}" ] 
+BB14889 -> BB14890 [tailport=s, headport=n, headlabel="      14890"]
+BB14889 -> BB14893 [tailport=s, headport=n, color=gray]
+BB14890 [shape=record label="{51336: read-variable['arrayComputed',v13,-]|51337: read-property[v13,'apply',-]|51338: \<variable-non-null-undef\>['arrayComputed']|51339: constant[null,v14]|51340: read-variable['args',v15,-]}" ] 
+BB14890 -> BB14891 [tailport=s, headport=n, headlabel="      14891"]
+BB14890 -> BB14893 [tailport=s, headport=n, color=gray]
+BB14891 [shape=record label="{51341: call-arrayComputed.apply [v13,'apply',v14,v15,v1]}" ] 
+BB14891 -> BB14892 [tailport=s, headport=n, headlabel="      14892"]
+BB14891 -> BB14893 [tailport=s, headport=n, color=gray]
+BB14892 [shape=record label="{51342: return[v1]}" ] 
+BB14893 [shape=record label="{51343: exceptional-return}" ] 
+//#$~ 27453
+}

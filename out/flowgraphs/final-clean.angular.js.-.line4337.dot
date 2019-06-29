@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry239[shape=none,label=""];
+BB_entry239 -> BB2884 [tailport=s, headport=n, headlabel="    2884"]
+BB2884 [shape=record label="{6894: constant[undefined,v1]|6895: vardecl['origInstance']}" ] 
+BB2884 -> BB2885 [tailport=s, headport=n, headlabel="      2885"]
+BB2885 [shape=record label="{6896: read-variable['instanceInjector',v4,-]|6897: read-property[v4,'invoke',-]|6898: \<variable-non-null-undef\>['instanceInjector']|6899: read-variable['orig$get',v5,-]|6900: read-variable['origProvider',v6,-]}" ] 
+BB2885 -> BB2886 [tailport=s, headport=n, headlabel="      2886"]
+BB2885 -> BB2890 [tailport=s, headport=n, color=gray, headlabel="      2890"]
+BB2886 [shape=record label="{6901: call-instanceInjector.invoke [v4,'invoke',v5,v6,v2]}" ] 
+BB2886 -> BB2887 [tailport=s, headport=n, headlabel="      2887"]
+BB2886 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2887 [shape=record label="{6902: write-variable[v2,'origInstance']*|6903: read-variable['instanceInjector',v8,-]|6904: read-property[v8,'invoke',-]|6905: \<variable-non-null-undef\>['instanceInjector']|6906: read-variable['decorFn',v9,-]|6907: constant[null,v10]|6908: new[v11]|6909: read-variable['origInstance',v12,-]|6910: write-property[v11,'$delegate',v12]}" ] 
+BB2887 -> BB2888 [tailport=s, headport=n, headlabel="      2888"]
+BB2887 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2888 [shape=record label="{6911: call-instanceInjector.invoke [v8,'invoke',v9,v10,v11,v1]}" ] 
+BB2888 -> BB2889 [tailport=s, headport=n, headlabel="      2889"]
+BB2888 -> BB2890 [tailport=s, headport=n, color=gray]
+BB2889 [shape=record label="{6912: return[v1]}" ] 
+BB2890 [shape=record label="{6913: exceptional-return}" ] 
+//#$~ 4339
+}

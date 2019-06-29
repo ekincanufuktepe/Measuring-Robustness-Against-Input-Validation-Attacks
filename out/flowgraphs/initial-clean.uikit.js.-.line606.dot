@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB759 [tailport=s, headport=n, headlabel="    759"]
+BB759 [shape=record label="{2113: constant[undefined,v1]}" ] 
+BB759 -> BB760 [tailport=s, headport=n, headlabel="      760"]
+BB760 [shape=record label="{2114: read-variable['UI',v3,-]|2115: read-property[v3,'init',-]|2116: \<variable-non-null-undef\>['UI']}" ] 
+BB760 -> BB761 [tailport=s, headport=n, headlabel="      761"]
+BB760 -> BB766 [tailport=s, headport=n, color=gray, headlabel="      766"]
+BB761 [shape=record label="{2117: call-UI.init [v3,'init',-]*}" ] 
+BB761 -> BB762 [tailport=s, headport=n, headlabel="      762"]
+BB761 -> BB766 [tailport=s, headport=n, color=gray]
+BB762 [shape=record label="{2118: read-variable['UI',v5,-]|2119: read-property[v5,'domready',v4]|2120: \<variable-non-null-undef\>['UI']|2121: if[v4](true-block:763,false-block:765)}" ] 
+BB762 -> BB763 [tailport=s, headport=n, headlabel="      763"]
+BB762 -> BB765 [tailport=s, headport=n, headlabel="      765"]
+BB762 -> BB766 [tailport=s, headport=n, color=gray]
+BB763 [shape=record label="{2122: read-variable['UI',v8,-]|2123: read-property[v8,'Utils',v7]|2124: \<variable-non-null-undef\>['UI']|2125: read-property[v7,'checkDisplay',-]|2126: \<property-non-null-undef\>[v8,'Utils']}" ] 
+BB763 -> BB764 [tailport=s, headport=n, headlabel="      764"]
+BB763 -> BB766 [tailport=s, headport=n, color=gray]
+BB764 [shape=record label="{2127: call-UI.Utils.checkDisplay [v7,'checkDisplay',-]*}" ] 
+BB764 -> BB765 [tailport=s, headport=n]
+BB764 -> BB766 [tailport=s, headport=n, color=gray]
+BB765 [shape=record label="{2128: return[v1]}" ] 
+BB766 [shape=record label="{2129: exceptional-return}" ] 
+//#$~ 610
+}

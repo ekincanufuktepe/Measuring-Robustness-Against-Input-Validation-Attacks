@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry252[shape=none,label=""];
+BB_entry252 -> BB3251 [tailport=s, headport=n, headlabel="    3251"]
+BB3251 [shape=record label="{10679: constant[undefined,v1]|10680: vardecl['_ref']}" ] 
+BB3251 -> BB3252 [tailport=s, headport=n, headlabel="      3252"]
+BB3252 [shape=record label="{10681: read-variable['this',v5,-]|10682: read-property[v5,'_syncState',v3]|10683: write-variable[v3,'_ref']|10684: read-variable['SYNCING',v4,-]|10685: ===[v3,v4,v2]|10686: if[v2](true-block:3254,false-block:3253)}" ] 
+BB3252 -> BB3254 [tailport=s, headport=n, headlabel="      3254"]
+BB3252 -> BB3253 [tailport=s, headport=n, headlabel="      3253"]
+BB3252 -> BB3260 [tailport=s, headport=n, color=gray, headlabel="      3260"]
+BB3253 [shape=record label="{10687: read-variable['_ref',v3,-]|10688: read-variable['SYNCED',v4,-]|10689: ===[v3,v4,v2]}" ] 
+BB3253 -> BB3254 [tailport=s, headport=n]
+BB3253 -> BB3260 [tailport=s, headport=n, color=gray]
+BB3254 [shape=record label="{10690: if[v2](true-block:3255,false-block:3259)}" ] 
+BB3254 -> BB3255 [tailport=s, headport=n, headlabel="      3255"]
+BB3254 -> BB3259 [tailport=s, headport=n, headlabel="      3259"]
+BB3255 [shape=record label="{10691: read-variable['this',v4,-]|10692: read-variable['this',v5,-]|10693: read-property[v5,'_syncState',v3]|10694: write-property[v4,'_previousSync',v3]*|10695: read-variable['this',v7,-]|10696: read-variable['UNSYNCED',v6,-]|10697: write-property[v7,'_syncState',v6]*|10698: read-variable['this',v9,-]|10699: read-property[v9,'trigger',-]|10700: read-variable['this',v11,-]|10701: read-property[v11,'_syncState',v10]|10702: read-variable['this',v12,-]|10703: read-variable['this',v14,-]|10704: read-property[v14,'_syncState',v13]}" ] 
+BB3255 -> BB3256 [tailport=s, headport=n, headlabel="      3256"]
+BB3255 -> BB3260 [tailport=s, headport=n, color=gray]
+BB3256 [shape=record label="{10705: call-this.trigger [v9,'trigger',v10,v12,v13,-]*}" ] 
+BB3256 -> BB3257 [tailport=s, headport=n, headlabel="      3257"]
+BB3256 -> BB3260 [tailport=s, headport=n, color=gray]
+BB3257 [shape=record label="{10706: read-variable['this',v16,-]|10707: read-property[v16,'trigger',-]|10708: read-variable['STATE_CHANGE',v17,-]|10709: read-variable['this',v18,-]|10710: read-variable['this',v20,-]|10711: read-property[v20,'_syncState',v19]}" ] 
+BB3257 -> BB3258 [tailport=s, headport=n, headlabel="      3258"]
+BB3257 -> BB3260 [tailport=s, headport=n, color=gray]
+BB3258 [shape=record label="{10712: call-this.trigger [v16,'trigger',v17,v18,v19,-]*}" ] 
+BB3258 -> BB3259 [tailport=s, headport=n]
+BB3258 -> BB3260 [tailport=s, headport=n, color=gray]
+BB3259 [shape=record label="{10713: return[v1]}" ] 
+BB3260 [shape=record label="{10714: exceptional-return}" ] 
+//#$~ 2838
+}

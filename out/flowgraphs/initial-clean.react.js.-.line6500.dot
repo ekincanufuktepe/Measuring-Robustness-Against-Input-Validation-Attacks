@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry236[shape=none,label=""];
+BB_entry236 -> BB3343 [tailport=s, headport=n, headlabel="    3343"]
+BB3343 [shape=record label="{11711: constant[undefined,v1]|11712: vardecl['element']}" ] 
+BB3343 -> BB3344 [tailport=s, headport=n, headlabel="      3344"]
+BB3344 [shape=record label="{11713: read-variable['this',v3,-]|11714: read-property[v3,'_pendingElement',v2]|11715: if[v2](true-block:3346,false-block:3345)}" ] 
+BB3344 -> BB3346 [tailport=s, headport=n, headlabel="      3346"]
+BB3344 -> BB3345 [tailport=s, headport=n, headlabel="      3345"]
+BB3344 -> BB3352 [tailport=s, headport=n, color=gray, headlabel="      3352"]
+BB3345 [shape=record label="{11716: read-variable['this',v3,-]|11717: read-property[v3,'_currentElement',v2]}" ] 
+BB3345 -> BB3346 [tailport=s, headport=n]
+BB3345 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3346 [shape=record label="{11718: write-variable[v2,'element']*|11719: read-variable['this',v4,-]|11720: read-variable['ReactElement',v6,-]|11721: read-property[v6,'cloneAndReplaceProps',-]|11722: \<variable-non-null-undef\>['ReactElement']|11723: read-variable['element',v7,-]|11724: read-variable['assign',v10,v9]|11725: new[v11]|11726: read-variable['element',v13,-]|11727: read-property[v13,'props',v12]|11728: \<variable-non-null-undef\>['element']|11729: read-variable['partialProps',v14,-]}" ] 
+BB3346 -> BB3347 [tailport=s, headport=n, headlabel="      3347"]
+BB3346 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3347 [shape=record label="{11730: call-assign [v9,v10,v11,v12,v14,v8]}" ] 
+BB3347 -> BB3348 [tailport=s, headport=n, headlabel="      3348"]
+BB3347 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3348 [shape=record label="{11731: call-ReactElement.cloneAndReplaceProps [v6,'cloneAndReplaceProps',v7,v8,v3]}" ] 
+BB3348 -> BB3349 [tailport=s, headport=n, headlabel="      3349"]
+BB3348 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3349 [shape=record label="{11732: write-property[v4,'_pendingElement',v3]*|11733: read-variable['ReactUpdates',v16,-]|11734: read-property[v16,'enqueueUpdate',-]|11735: \<variable-non-null-undef\>['ReactUpdates']|11736: read-variable['this',v17,-]|11737: read-variable['callback',v18,-]}" ] 
+BB3349 -> BB3350 [tailport=s, headport=n, headlabel="      3350"]
+BB3349 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3350 [shape=record label="{11738: call-ReactUpdates.enqueueUpdate [v16,'enqueueUpdate',v17,v18,-]*}" ] 
+BB3350 -> BB3351 [tailport=s, headport=n, headlabel="      3351"]
+BB3350 -> BB3352 [tailport=s, headport=n, color=gray]
+BB3351 [shape=record label="{11739: return[v1]}" ] 
+BB3352 [shape=record label="{11740: exceptional-return}" ] 
+//#$~ 6508
+}

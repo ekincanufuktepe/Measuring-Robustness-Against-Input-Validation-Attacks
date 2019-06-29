@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry138[shape=none,label=""];
+BB_entry138 -> BB3322 [tailport=s, headport=n, headlabel="    3322"]
+BB3322 [shape=record label="{13878: constant[undefined,v1]}" ] 
+BB3322 -> BB3323 [tailport=s, headport=n, headlabel="      3323"]
+BB3323 [shape=record label="{13879: read-variable['isBool',v4,v3]|13880: read-variable['newValue',v5,-]}" ] 
+BB3323 -> BB3324 [tailport=s, headport=n, headlabel="      3324"]
+BB3323 -> BB3331 [tailport=s, headport=n, color=gray, headlabel="      3331"]
+BB3324 [shape=record label="{13881: call-isBool [v3,v4,v5,v2]}" ] 
+BB3324 -> BB3325 [tailport=s, headport=n, headlabel="      3325"]
+BB3324 -> BB3331 [tailport=s, headport=n, color=gray]
+BB3325 [shape=record label="{13882: if[v2](true-block:3326,false-block:3327)}" ] 
+BB3325 -> BB3326 [tailport=s, headport=n, headlabel="      3326"]
+BB3325 -> BB3327 [tailport=s, headport=n, headlabel="      3327"]
+BB3326 [shape=record label="{13883: read-variable['this',v9,-]|13884: read-property[v9,'options',v8]|13885: read-property[v8,'resize',v7]|13886: \<property-non-null-undef\>[v9,'options']|13887: read-variable['newValue',v6,-]|13888: write-property[v7,'square',v6]|13889: \<property-non-null-undef\>[v8,'resize']*|13890: read-variable['this',v1,-]}" ] 
+BB3326 -> BB3330 [tailport=s, headport=n, headlabel="      3330"]
+BB3326 -> BB3331 [tailport=s, headport=n, color=gray]
+BB3327 [shape=record label="{13891: read-variable['newValue',v7,-]|13892: constant[null,v8]|13893: ===[v7,v8,v6]|13894: if[v6](true-block:3328,false-block:3329)}" ] 
+BB3327 -> BB3328 [tailport=s, headport=n, headlabel="      3328"]
+BB3327 -> BB3329 [tailport=s, headport=n, headlabel="      3329"]
+BB3327 -> BB3331 [tailport=s, headport=n, color=gray]
+BB3328 [shape=record label="{13895: read-variable['this',v13,-]|13896: read-property[v13,'options',v12]|13897: read-property[v12,'resize',v10]|13898: \<property-non-null-undef\>[v13,'options']|13899: constant[\"square\",v11]|13900: delete-property[v10,v11,v9]*|13901: read-variable['this',v1,-]}" ] 
+BB3328 -> BB3330 [tailport=s, headport=n]
+BB3328 -> BB3331 [tailport=s, headport=n, color=gray]
+BB3329 [shape=record label="{13902: read-variable['this',v11,-]|13903: read-property[v11,'options',v10]|13904: read-property[v10,'resize',v9]|13905: \<property-non-null-undef\>[v11,'options']|13906: read-property[v9,'square',v1]|13907: \<property-non-null-undef\>[v10,'resize']}" ] 
+BB3329 -> BB3330 [tailport=s, headport=n]
+BB3329 -> BB3331 [tailport=s, headport=n, color=gray]
+BB3330 [shape=record label="{13908: return[v1]}" ] 
+BB3331 [shape=record label="{13909: exceptional-return}" ] 
+//#$~ 4259
+}

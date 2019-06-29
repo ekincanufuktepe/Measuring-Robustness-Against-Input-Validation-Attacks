@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry549[shape=none,label=""];
+BB_entry549 -> BB8871 [tailport=s, headport=n, headlabel="    8871"]
+BB8871 [shape=record label="{26396: constant[undefined,v1]}" ] 
+BB8871 -> BB8872 [tailport=s, headport=n, headlabel="      8872"]
+BB8872 [shape=record label="{26397: read-variable['type',v3,-]|26398: constant[false,v4]|26399: !==[v3,v4,v2]|26400: if[v2](true-block:8873,false-block:8876)}" ] 
+BB8872 -> BB8873 [tailport=s, headport=n, headlabel="      8873"]
+BB8872 -> BB8876 [tailport=s, headport=n, headlabel="      8876"]
+BB8872 -> BB8879 [tailport=s, headport=n, color=gray, headlabel="      8879"]
+BB8873 [shape=record label="{26401: read-variable['type',v5,-]|26402: if[v5](true-block:8875,false-block:8874)}" ] 
+BB8873 -> BB8875 [tailport=s, headport=n, headlabel="      8875"]
+BB8873 -> BB8874 [tailport=s, headport=n, headlabel="      8874"]
+BB8873 -> BB8879 [tailport=s, headport=n, color=gray]
+BB8874 [shape=record label="{26403: constant[\"fx\",v5]}" ] 
+BB8874 -> BB8875 [tailport=s, headport=n]
+BB8875 [shape=record label="{26404: write-variable[v5,'type']*}" ] 
+BB8875 -> BB8876 [tailport=s, headport=n]
+BB8876 [shape=record label="{26405: read-variable['this',v6,-]|26406: read-property[v6,'each',-]|26407: function-expr[function ( ),v7]}" ] 
+BB8876 -> BB8877 [tailport=s, headport=n, headlabel="      8877"]
+BB8876 -> BB8879 [tailport=s, headport=n, color=gray]
+BB8877 [shape=record label="{26408: call-this.each [v6,'each',v7,v1]}" ] 
+BB8877 -> BB8878 [tailport=s, headport=n, headlabel="      8878"]
+BB8877 -> BB8879 [tailport=s, headport=n, color=gray]
+BB8878 [shape=record label="{26409: return[v1]}" ] 
+BB8879 [shape=record label="{26410: exceptional-return}" ] 
+//#$~ 9224
+}

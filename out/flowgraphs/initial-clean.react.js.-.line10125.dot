@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry381[shape=none,label=""];
+BB_entry381 -> BB5666 [tailport=s, headport=n, headlabel="    5666"]
+BB5666 [shape=record label="{19806: constant[undefined,v1]|19807: vardecl['isElement']}" ] 
+BB5666 -> BB5667 [tailport=s, headport=n, headlabel="      5667"]
+BB5667 [shape=record label="{19808: read-variable['object',v4,-]|19809: if[v4](true-block:5668,false-block:5669)}" ] 
+BB5667 -> BB5669 [tailport=s, headport=n, headlabel="      5669"]
+BB5667 -> BB5668 [tailport=s, headport=n, headlabel="      5668"]
+BB5667 -> BB5671 [tailport=s, headport=n, color=gray, headlabel="      5671"]
+BB5668 [shape=record label="{19810: read-variable['object',v5,-]|19811: read-property[v5,'_isReactElement',v4]|19812: \<variable-non-null-undef\>['object']}" ] 
+BB5668 -> BB5669 [tailport=s, headport=n]
+BB5668 -> BB5671 [tailport=s, headport=n, color=gray]
+BB5669 [shape=record label="{19813: ![v4,v3]|19814: ![v3,v2]|19815: write-variable[v2,'isElement']*|19816: read-variable['isElement',v1,-]}" ] 
+BB5669 -> BB5670 [tailport=s, headport=n, headlabel="      5670"]
+BB5669 -> BB5671 [tailport=s, headport=n, color=gray]
+BB5670 [shape=record label="{19817: return[v1]}" ] 
+BB5671 [shape=record label="{19818: exceptional-return}" ] 
+//#$~ 10136
+}

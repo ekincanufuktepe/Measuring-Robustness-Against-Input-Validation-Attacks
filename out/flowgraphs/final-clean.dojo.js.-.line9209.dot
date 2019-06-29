@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry456[shape=none,label=""];
+BB_entry456 -> BB6506 [tailport=s, headport=n, headlabel="    6506"]
+BB6506 [shape=record label="{19400: constant[undefined,v1]|19401: vardecl['clc']}" ] 
+BB6506 -> BB6507 [tailport=s, headport=n, headlabel="      6507"]
+BB6507 [shape=record label="{19402: read-variable['cond',v4,-]|19403: read-property[v4,'toLowerCase',-]|19404: \<variable-non-null-undef\>['cond']}" ] 
+BB6507 -> BB6508 [tailport=s, headport=n, headlabel="      6508"]
+BB6507 -> BB6513 [tailport=s, headport=n, color=gray, headlabel="      6513"]
+BB6508 [shape=record label="{19405: call-cond.toLowerCase [v4,'toLowerCase',v2]}" ] 
+BB6508 -> BB6509 [tailport=s, headport=n, headlabel="      6509"]
+BB6508 -> BB6513 [tailport=s, headport=n, color=gray]
+BB6509 [shape=record label="{19406: write-variable[v2,'clc']*|19407: read-variable['clc',v6,-]|19408: constant[\"class\",v7]|19409: ==[v6,v7,v5]|19410: if[v5](true-block:6510,false-block:6511)}" ] 
+BB6509 -> BB6510 [tailport=s, headport=n, headlabel="      6510"]
+BB6509 -> BB6511 [tailport=s, headport=n, headlabel="      6511"]
+BB6509 -> BB6513 [tailport=s, headport=n, color=gray]
+BB6510 [shape=record label="{19411: constant[\"className\",v8]|19412: write-variable[v8,'cond']*}" ] 
+BB6510 -> BB6511 [tailport=s, headport=n]
+BB6511 [shape=record label="{19413: function-expr[function ( elem ),v1]}" ] 
+BB6511 -> BB6512 [tailport=s, headport=n, headlabel="      6512"]
+BB6512 [shape=record label="{19414: return[v1]}" ] 
+BB6513 [shape=record label="{19415: exceptional-return}" ] 
+//#$~ 9213
+}

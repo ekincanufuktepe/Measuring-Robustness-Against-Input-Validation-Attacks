@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry56[shape=none,label=""];
+BB_entry56 -> BB1124 [tailport=s, headport=n, headlabel="    1124"]
+BB1124 [shape=record label="{4014: constant[undefined,v1]}" ] 
+BB1124 -> BB1125 [tailport=s, headport=n, headlabel="      1125"]
+BB1125 [shape=record label="{4015: read-variable['Date',v4,-]}" ] 
+BB1125 -> BB1126 [tailport=s, headport=n, headlabel="      1126"]
+BB1125 -> BB1130 [tailport=s, headport=n, color=gray, headlabel="      1130"]
+BB1126 [shape=record label="{4016: construct [-,v4,v3]}" ] 
+BB1126 -> BB1127 [tailport=s, headport=n, headlabel="      1127"]
+BB1126 -> BB1130 [tailport=s, headport=n, color=gray]
+BB1127 [shape=record label="{4017: read-property[v3,'getTime',-]}" ] 
+BB1127 -> BB1128 [tailport=s, headport=n, headlabel="      1128"]
+BB1127 -> BB1130 [tailport=s, headport=n, color=gray]
+BB1128 [shape=record label="{4018: call-null [v3,'getTime',v1]}" ] 
+BB1128 -> BB1129 [tailport=s, headport=n, headlabel="      1129"]
+BB1128 -> BB1130 [tailport=s, headport=n, color=gray]
+BB1129 [shape=record label="{4019: return[v1]}" ] 
+BB1130 [shape=record label="{4020: exceptional-return}" ] 
+//#$~ 1888
+}

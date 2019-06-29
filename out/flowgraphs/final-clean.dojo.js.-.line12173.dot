@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry589[shape=none,label=""];
+BB_entry589 -> BB8859 [tailport=s, headport=n, headlabel="    8859"]
+BB8859 [shape=record label="{26421: constant[undefined,v1]|26422: vardecl['getText']|26423: vardecl['theCache']|26424: vardecl['strip']|26425: vardecl['notFound']|26426: vardecl['pending']}" ] 
+BB8859 -> BB8860 [tailport=s, headport=n, headlabel="      8860"]
+BB8860 [shape=record label="{26427: constant[1.0,v2]|26428: if[v2](true-block:8861,false-block:8862)}" ] 
+BB8860 -> BB8861 [tailport=s, headport=n, headlabel="      8861"]
+BB8860 -> BB8862 [tailport=s, headport=n, headlabel="      8862"]
+BB8861 [shape=record label="{26429: function-expr[function ( url sync load ),v3]|26430: write-variable[v3,'getText']*}" ] 
+BB8861 -> BB8866 [tailport=s, headport=n, headlabel="      8866"]
+BB8862 [shape=record label="{26431: read-variable['require',v4,-]|26432: read-property[v4,'getText',v3]|26433: \<variable-non-null-undef\>['require']|26434: if[v3](true-block:8863,false-block:8864)}" ] 
+BB8862 -> BB8863 [tailport=s, headport=n, headlabel="      8863"]
+BB8862 -> BB8864 [tailport=s, headport=n, headlabel="      8864"]
+BB8862 -> BB8868 [tailport=s, headport=n, color=gray, headlabel="      8868"]
+BB8863 [shape=record label="{26435: read-variable['require',v6,-]|26436: read-property[v6,'getText',v5]|26437: \<variable-non-null-undef\>['require']|26438: write-variable[v5,'getText']*}" ] 
+BB8863 -> BB8866 [tailport=s, headport=n]
+BB8863 -> BB8868 [tailport=s, headport=n, color=gray]
+BB8864 [shape=record label="{26439: read-variable['console',v6,-]|26440: read-property[v6,'error',-]|26441: \<variable-non-null-undef\>['console']|26442: constant[\"dojo/text plugin failed to load because loader does not support getText\",v7]}" ] 
+BB8864 -> BB8865 [tailport=s, headport=n, headlabel="      8865"]
+BB8864 -> BB8868 [tailport=s, headport=n, color=gray]
+BB8865 [shape=record label="{26443: call-console.error [v6,'error',v7,-]*}" ] 
+BB8865 -> BB8866 [tailport=s, headport=n]
+BB8865 -> BB8868 [tailport=s, headport=n, color=gray]
+BB8866 [shape=record label="{26444: new[v3]|26445: write-variable[v3,'theCache']*|26446: function-expr[function ( text ),v4]|26447: write-variable[v4,'strip']*|26448: new[v5]|26449: write-variable[v5,'notFound']*|26450: new[v6]|26451: write-variable[v6,'pending']*|26452: read-variable['dojo',v8,-]|26453: function-expr[function ( module url value ),v7]|26454: write-property[v8,'cache',v7]|26455: \<variable-non-null-undef\>['dojo']*|26456: new[v1]|26457: constant[true,v9]|26458: write-property[v1,'dynamic',v9]|26459: function-expr[function ( id toAbsMid ),v10]|26460: write-property[v1,'normalize',v10]|26461: function-expr[function ( id require load ),v11]|26462: write-property[v1,'load',v11]}" ] 
+BB8866 -> BB8867 [tailport=s, headport=n, headlabel="      8867"]
+BB8866 -> BB8868 [tailport=s, headport=n, color=gray]
+BB8867 [shape=record label="{26463: return[v1]}" ] 
+BB8868 [shape=record label="{26464: exceptional-return}" ] 
+//#$~ 12384
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry1741[shape=none,label=""];
+BB_entry1741 -> BB20074 [tailport=s, headport=n, headlabel="    20074"]
+BB20074 [shape=record label="{67157: constant[undefined,v1]}" ] 
+BB20074 -> BB20075 [tailport=s, headport=n, headlabel="      20075"]
+BB20075 [shape=record label="{67158: read-variable['application',v3,-]|67159: read-property[v3,'testing',v2]|67160: \<variable-non-null-undef\>['application']|67161: if[v2](true-block:20076,false-block:20078)}" ] 
+BB20075 -> BB20076 [tailport=s, headport=n, headlabel="      20076"]
+BB20075 -> BB20078 [tailport=s, headport=n, headlabel="      20078"]
+BB20075 -> BB20079 [tailport=s, headport=n, color=gray, headlabel="      20079"]
+BB20076 [shape=record label="{67162: read-variable['application',v5,-]|67163: read-property[v5,'deferReadiness',-]|67164: \<variable-non-null-undef\>['application']}" ] 
+BB20076 -> BB20077 [tailport=s, headport=n, headlabel="      20077"]
+BB20076 -> BB20079 [tailport=s, headport=n, color=gray]
+BB20077 [shape=record label="{67165: call-application.deferReadiness [v5,'deferReadiness',-]*}" ] 
+BB20077 -> BB20078 [tailport=s, headport=n]
+BB20077 -> BB20079 [tailport=s, headport=n, color=gray]
+BB20078 [shape=record label="{67166: return[v1]}" ] 
+BB20079 [shape=record label="{67167: exceptional-return}" ] 
+//#$~ 37597
+}

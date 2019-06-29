@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1733[shape=none,label=""];
+BB_entry1733 -> BB19981 [tailport=s, headport=n, headlabel="    19981"]
+BB19981 [shape=record label="{66890: constant[undefined,v1]|66891: vardecl['$el']}" ] 
+BB19981 -> BB19982 [tailport=s, headport=n, headlabel="      19982"]
+BB19982 [shape=record label="{66892: read-variable['context',v2,-]|66893: if[v2](true-block:19985,false-block:19983)}" ] 
+BB19982 -> BB19985 [tailport=s, headport=n, headlabel="      19985"]
+BB19982 -> BB19983 [tailport=s, headport=n, headlabel="      19983"]
+BB19982 -> BB19989 [tailport=s, headport=n, color=gray, headlabel="      19989"]
+BB19983 [shape=record label="{66894: read-variable['get',v4,v3]|66895: read-variable['app',v5,-]|66896: constant[\"rootElement\",v6]}" ] 
+BB19983 -> BB19984 [tailport=s, headport=n, headlabel="      19984"]
+BB19983 -> BB19989 [tailport=s, headport=n, color=gray]
+BB19984 [shape=record label="{66897: call-get [v3,v4,v5,v6,v2]}" ] 
+BB19984 -> BB19985 [tailport=s, headport=n]
+BB19984 -> BB19989 [tailport=s, headport=n, color=gray]
+BB19985 [shape=record label="{66898: write-variable[v2,'context']*|66899: read-variable['app',v5,-]|66900: read-property[v5,'$',-]|66901: \<variable-non-null-undef\>['app']|66902: read-variable['selector',v6,-]|66903: read-variable['context',v7,-]}" ] 
+BB19985 -> BB19986 [tailport=s, headport=n, headlabel="      19986"]
+BB19985 -> BB19989 [tailport=s, headport=n, color=gray]
+BB19986 [shape=record label="{66904: call-app.$ [v5,'$',v6,v7,v3]}" ] 
+BB19986 -> BB19987 [tailport=s, headport=n, headlabel="      19987"]
+BB19986 -> BB19989 [tailport=s, headport=n, color=gray]
+BB19987 [shape=record label="{66905: write-variable[v3,'$el']*|66906: read-variable['$el',v1,-]}" ] 
+BB19987 -> BB19988 [tailport=s, headport=n, headlabel="      19988"]
+BB19987 -> BB19989 [tailport=s, headport=n, color=gray]
+BB19988 [shape=record label="{66907: return[v1]}" ] 
+BB19989 [shape=record label="{66908: exceptional-return}" ] 
+//#$~ 37294
+}

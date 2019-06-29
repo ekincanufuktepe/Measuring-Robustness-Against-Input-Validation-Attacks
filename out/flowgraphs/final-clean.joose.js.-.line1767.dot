@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry184[shape=none,label=""];
+BB_entry184 -> BB1536 [tailport=s, headport=n, headlabel="    1536"]
+BB1536 [shape=record label="{4548: constant[undefined,v1]}" ] 
+BB1536 -> BB1537 [tailport=s, headport=n, headlabel="      1537"]
+BB1537 [shape=record label="{4549: read-variable['c',v3,-]|4550: read-variable['this',v6,-]|4551: read-property[v6,'getName',-]}" ] 
+BB1537 -> BB1538 [tailport=s, headport=n, headlabel="      1538"]
+BB1537 -> BB1543 [tailport=s, headport=n, color=gray, headlabel="      1543"]
+BB1538 [shape=record label="{4552: call-this.getName [v6,'getName',v4]}" ] 
+BB1538 -> BB1539 [tailport=s, headport=n, headlabel="      1539"]
+BB1538 -> BB1543 [tailport=s, headport=n, color=gray]
+BB1539 [shape=record label="{4553: read-variable['this',v8,-]|4554: read-property[v8,'asFunction',-]}" ] 
+BB1539 -> BB1540 [tailport=s, headport=n, headlabel="      1540"]
+BB1539 -> BB1543 [tailport=s, headport=n, color=gray]
+BB1540 [shape=record label="{4555: call-this.asFunction [v8,'asFunction',v2]}" ] 
+BB1540 -> BB1541 [tailport=s, headport=n, headlabel="      1541"]
+BB1540 -> BB1543 [tailport=s, headport=n, color=gray]
+BB1541 [shape=record label="{4556: write-property[v3,v4,v2]|4557: \<variable-non-null-undef\>['c']*}" ] 
+BB1541 -> BB1542 [tailport=s, headport=n, headlabel="      1542"]
+BB1541 -> BB1543 [tailport=s, headport=n, color=gray]
+BB1542 [shape=record label="{4558: return[v1]}" ] 
+BB1543 [shape=record label="{4559: exceptional-return}" ] 
+//#$~ 1768
+}

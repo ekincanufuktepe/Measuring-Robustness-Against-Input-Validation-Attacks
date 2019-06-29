@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1285[shape=none,label=""];
+BB_entry1285 -> BB13847 [tailport=s, headport=n, headlabel="    13847"]
+BB13847 [shape=record label="{47404: constant[undefined,v1]}" ] 
+BB13847 -> BB13848 [tailport=s, headport=n, headlabel="      13848"]
+BB13848 [shape=record label="{47405: read-variable['points',v5,-]|47406: read-property[v5,'length',v3]|47407: \<variable-non-null-undef\>['points']|47408: constant[3.0,v4]|47409: \<[v3,v4,v2]|47410: if[v2](true-block:13849,false-block:13850)}" ] 
+BB13848 -> BB13849 [tailport=s, headport=n, headlabel="      13849"]
+BB13848 -> BB13850 [tailport=s, headport=n, headlabel="      13850"]
+BB13848 -> BB13856 [tailport=s, headport=n, color=gray, headlabel="      13856"]
+BB13849 [shape=record label="{47411: read-variable['d3_svg_lineLinear',v7,v6]|47412: read-variable['points',v8,-]}" ] 
+BB13849 -> BB13851 [tailport=s, headport=n, headlabel="      13851"]
+BB13849 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13850 [shape=record label="{47413: read-variable['points',v8,-]|47414: constant[0.0,v9]|47415: read-property[v8,v9,v6]|47416: \<variable-non-null-undef\>['points']|47417: read-variable['d3_svg_lineHermite',v11,v10]|47418: read-variable['points',v12,-]|47419: read-variable['d3_svg_lineCardinalTangents',v15,v14]|47420: read-variable['points',v16,-]|47421: read-variable['tension',v17,-]}" ] 
+BB13850 -> BB13852 [tailport=s, headport=n, headlabel="      13852"]
+BB13850 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13851 [shape=record label="{47422: call-d3_svg_lineLinear [v6,v7,v8,v1]}" ] 
+BB13851 -> BB13855 [tailport=s, headport=n, headlabel="      13855"]
+BB13851 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13852 [shape=record label="{47423: call-d3_svg_lineCardinalTangents [v14,v15,v16,v17,v13]}" ] 
+BB13852 -> BB13853 [tailport=s, headport=n, headlabel="      13853"]
+BB13852 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13853 [shape=record label="{47424: call-d3_svg_lineHermite [v10,v11,v12,v13,v7]}" ] 
+BB13853 -> BB13854 [tailport=s, headport=n, headlabel="      13854"]
+BB13853 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13854 [shape=record label="{47425: +[v6,v7,v1]}" ] 
+BB13854 -> BB13855 [tailport=s, headport=n]
+BB13854 -> BB13856 [tailport=s, headport=n, color=gray]
+BB13855 [shape=record label="{47426: return[v1]}" ] 
+BB13856 [shape=record label="{47427: exceptional-return}" ] 
+//#$~ 8182
+}

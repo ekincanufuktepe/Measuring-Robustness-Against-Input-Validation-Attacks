@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry178[shape=none,label=""];
+BB_entry178 -> BB1982 [tailport=s, headport=n, headlabel="    1982"]
+BB1982 [shape=record label="{6340: constant[undefined,v1]}" ] 
+BB1982 -> BB1983 [tailport=s, headport=n, headlabel="      1983"]
+BB1983 [shape=record label="{6341: read-variable['str',v7,-]|6342: read-property[v7,'split',-]|6343: \<variable-non-null-undef\>['str']|6344: constant[\"\\n\",v8]}" ] 
+BB1983 -> BB1984 [tailport=s, headport=n, headlabel="      1984"]
+BB1983 -> BB1990 [tailport=s, headport=n, color=gray, headlabel="      1990"]
+BB1984 [shape=record label="{6345: call-str.split [v7,'split',v8,v5]}" ] 
+BB1984 -> BB1985 [tailport=s, headport=n, headlabel="      1985"]
+BB1984 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1985 [shape=record label="{6346: read-property[v5,'map',-]|6347: function-expr[function ( str ),v9]}" ] 
+BB1985 -> BB1986 [tailport=s, headport=n, headlabel="      1986"]
+BB1985 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1986 [shape=record label="{6348: call-null [v5,'map',v9,v3]}" ] 
+BB1986 -> BB1987 [tailport=s, headport=n, headlabel="      1987"]
+BB1986 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1987 [shape=record label="{6349: read-property[v3,'join',-]|6350: constant[\"\\n\",v10]}" ] 
+BB1987 -> BB1988 [tailport=s, headport=n, headlabel="      1988"]
+BB1987 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1988 [shape=record label="{6351: call-null [v3,'join',v10,v1]}" ] 
+BB1988 -> BB1989 [tailport=s, headport=n, headlabel="      1989"]
+BB1988 -> BB1990 [tailport=s, headport=n, color=gray]
+BB1989 [shape=record label="{6352: return[v1]}" ] 
+BB1990 [shape=record label="{6353: exceptional-return}" ] 
+//#$~ 2437
+}

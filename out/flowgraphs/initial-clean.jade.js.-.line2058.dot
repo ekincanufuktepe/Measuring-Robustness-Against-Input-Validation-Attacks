@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry104[shape=none,label=""];
+BB_entry104 -> BB1977 [tailport=s, headport=n, headlabel="    1977"]
+BB1977 [shape=record label="{6385: constant[undefined,v1]}" ] 
+BB1977 -> BB1978 [tailport=s, headport=n, headlabel="      1978"]
+BB1978 [shape=record label="{6386: read-variable['Error',v3,-]|6387: constant[\"unexpected text \",v5]|6388: read-variable['this',v9,-]|6389: read-property[v9,'input',v8]|6390: read-property[v8,'substr',-]|6391: \<property-non-null-undef\>[v9,'input']|6392: constant[0.0,v10]|6393: constant[5.0,v11]}" ] 
+BB1978 -> BB1979 [tailport=s, headport=n, headlabel="      1979"]
+BB1978 -> BB1984 [tailport=s, headport=n, color=gray, headlabel="      1984"]
+BB1979 [shape=record label="{6394: call-this.input.substr [v8,'substr',v10,v11,v6]}" ] 
+BB1979 -> BB1980 [tailport=s, headport=n, headlabel="      1980"]
+BB1979 -> BB1984 [tailport=s, headport=n, color=gray]
+BB1980 [shape=record label="{6395: +[v5,v6,v4]}" ] 
+BB1980 -> BB1981 [tailport=s, headport=n, headlabel="      1981"]
+BB1980 -> BB1984 [tailport=s, headport=n, color=gray]
+BB1981 [shape=record label="{6396: construct [-,v3,v4,v2]}" ] 
+BB1981 -> BB1982 [tailport=s, headport=n, headlabel="      1982"]
+BB1981 -> BB1984 [tailport=s, headport=n, color=gray]
+BB1982 [shape=record label="{6397: throw[v2]*}" ] 
+BB1982 -> BB1983 [tailport=s, headport=n, headlabel="      1983"]
+BB1982 -> BB1984 [tailport=s, headport=n, color=gray]
+BB1983 [shape=record label="{6398: return[v1]}" ] 
+BB1984 [shape=record label="{6399: exceptional-return}" ] 
+//#$~ 2059
+}

@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry360[shape=none,label=""];
+BB_entry360 -> BB5046 [tailport=s, headport=n, headlabel="    5046"]
+BB5046 [shape=record label="{14923: constant[undefined,v1]}" ] 
+BB5046 -> BB5047 [tailport=s, headport=n, headlabel="      5047"]
+BB5047 [shape=record label="{14924: read-variable['require',v3,v2]|14925: read-variable['Array',v5,-]|14926: constant[\"../i18n\",v6]}" ] 
+BB5047 -> BB5048 [tailport=s, headport=n, headlabel="      5048"]
+BB5047 -> BB5052 [tailport=s, headport=n, color=gray, headlabel="      5052"]
+BB5048 [shape=record label="{14927: construct [-,v5,v6,v4]}" ] 
+BB5048 -> BB5049 [tailport=s, headport=n, headlabel="      5049"]
+BB5048 -> BB5052 [tailport=s, headport=n, color=gray]
+BB5049 [shape=record label="{14928: function-expr[function ( i18n ),v7]}" ] 
+BB5049 -> BB5050 [tailport=s, headport=n, headlabel="      5050"]
+BB5050 [shape=record label="{14929: call-require [v2,v3,v4,v7,-]*}" ] 
+BB5050 -> BB5051 [tailport=s, headport=n, headlabel="      5051"]
+BB5050 -> BB5052 [tailport=s, headport=n, color=gray]
+BB5051 [shape=record label="{14930: return[v1]}" ] 
+BB5052 [shape=record label="{14931: exceptional-return}" ] 
+//#$~ 7005
+}

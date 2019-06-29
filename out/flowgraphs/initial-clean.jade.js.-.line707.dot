@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry38[shape=none,label=""];
+BB_entry38 -> BB720 [tailport=s, headport=n, headlabel="    720"]
+BB720 [shape=record label="{2528: constant[undefined,v1]}" ] 
+BB720 -> BB721 [tailport=s, headport=n, headlabel="      721"]
+BB721 [shape=record label="{2529: read-variable['classEscaping',v3,-]|2530: read-variable['i',v4,-]|2531: read-property[v3,v4,v2]|2532: \<variable-non-null-undef\>['classEscaping']|2533: if[v2](true-block:722,false-block:723)}" ] 
+BB721 -> BB722 [tailport=s, headport=n, headlabel="      722"]
+BB721 -> BB723 [tailport=s, headport=n, headlabel="      723"]
+BB721 -> BB726 [tailport=s, headport=n, color=gray, headlabel="      726"]
+BB722 [shape=record label="{2534: read-variable['runtime',v6,-]|2535: read-property[v6,'escape',-]|2536: \<variable-non-null-undef\>['runtime']|2537: read-variable['cls',v7,-]}" ] 
+BB722 -> BB724 [tailport=s, headport=n, headlabel="      724"]
+BB722 -> BB726 [tailport=s, headport=n, color=gray]
+BB723 [shape=record label="{2538: read-variable['cls',v1,-]}" ] 
+BB723 -> BB725 [tailport=s, headport=n, headlabel="      725"]
+BB723 -> BB726 [tailport=s, headport=n, color=gray]
+BB724 [shape=record label="{2539: call-runtime.escape [v6,'escape',v7,v1]}" ] 
+BB724 -> BB725 [tailport=s, headport=n]
+BB724 -> BB726 [tailport=s, headport=n, color=gray]
+BB725 [shape=record label="{2540: return[v1]}" ] 
+BB726 [shape=record label="{2541: exceptional-return}" ] 
+//#$~ 708
+}

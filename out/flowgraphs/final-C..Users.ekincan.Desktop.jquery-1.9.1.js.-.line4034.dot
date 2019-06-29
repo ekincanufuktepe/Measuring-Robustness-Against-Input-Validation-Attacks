@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry234[shape=none,label=""];
+BB_entry234 -> BB3614 [tailport=s, headport=n, headlabel="    3614"]
+BB3614 [shape=record label="{10488: constant[undefined,v1]}" ] 
+BB3614 -> BB3615 [tailport=s, headport=n, headlabel="      3615"]
+BB3615 [shape=record label="{10489: read-variable['div',v3,-]|10490: read-property[v3,'appendChild',-]|10491: \<variable-non-null-undef\>['div']|10492: read-variable['doc',v6,-]|10493: read-property[v6,'createComment',-]|10494: \<variable-non-null-undef\>['doc']|10495: constant[\"\",v7]}" ] 
+BB3615 -> BB3616 [tailport=s, headport=n, headlabel="      3616"]
+BB3615 -> BB3622 [tailport=s, headport=n, color=gray, headlabel="      3622"]
+BB3616 [shape=record label="{10496: call[v6,'createComment',v7,v4]}" ] 
+BB3616 -> BB3617 [tailport=s, headport=n, headlabel="      3617"]
+BB3616 -> BB3622 [tailport=s, headport=n, color=gray]
+BB3617 [shape=record label="{10497: call[v3,'appendChild',v4,-]*}" ] 
+BB3617 -> BB3618 [tailport=s, headport=n, headlabel="      3618"]
+BB3617 -> BB3622 [tailport=s, headport=n, color=gray]
+BB3618 [shape=record label="{10498: read-variable['div',v11,-]|10499: read-property[v11,'getElementsByTagName',-]|10500: \<variable-non-null-undef\>['div']|10501: constant[\"*\",v12]}" ] 
+BB3618 -> BB3619 [tailport=s, headport=n, headlabel="      3619"]
+BB3618 -> BB3622 [tailport=s, headport=n, color=gray]
+BB3619 [shape=record label="{10502: call[v11,'getElementsByTagName',v12,v9]}" ] 
+BB3619 -> BB3620 [tailport=s, headport=n, headlabel="      3620"]
+BB3619 -> BB3622 [tailport=s, headport=n, color=gray]
+BB3620 [shape=record label="{10503: read-property[v9,'length',v8]|10504: ![v8,v1]}" ] 
+BB3620 -> BB3621 [tailport=s, headport=n, headlabel="      3621"]
+BB3620 -> BB3622 [tailport=s, headport=n, color=gray]
+BB3621 [shape=record label="{10505: return[v1]}" ] 
+BB3622 [shape=record label="{10506: exceptional-return}" ] 
+}

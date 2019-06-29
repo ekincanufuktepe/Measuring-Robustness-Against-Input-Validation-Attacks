@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2191[shape=none,label=""];
+BB_entry2191 -> BB24897 [tailport=s, headport=n, headlabel="    24897"]
+BB24897 [shape=record label="{82029: constant[undefined,v1]}" ] 
+BB24897 -> BB24898 [tailport=s, headport=n, headlabel="      24898"]
+BB24898 [shape=record label="{82030: read-variable['element',v5,-]|82031: read-property[v5,'tagName',v3]|82032: \<variable-non-null-undef\>['element']|82033: constant[\"svg\",v4]|82034: ===[v3,v4,v2]|82035: if[v2](true-block:24899,false-block:24900)}" ] 
+BB24898 -> BB24900 [tailport=s, headport=n, headlabel="      24900"]
+BB24898 -> BB24899 [tailport=s, headport=n, headlabel="      24899"]
+BB24898 -> BB24906 [tailport=s, headport=n, color=gray, headlabel="      24906"]
+BB24899 [shape=record label="{82036: read-variable['name',v6,-]|82037: constant[\"viewBox\",v7]|82038: ===[v6,v7,v2]}" ] 
+BB24899 -> BB24900 [tailport=s, headport=n]
+BB24899 -> BB24906 [tailport=s, headport=n, color=gray]
+BB24900 [shape=record label="{82039: if[v2](true-block:24901,false-block:24902)}" ] 
+BB24900 -> BB24901 [tailport=s, headport=n, headlabel="      24901"]
+BB24900 -> BB24902 [tailport=s, headport=n, headlabel="      24902"]
+BB24901 [shape=record label="{82040: read-variable['element',v7,-]|82041: read-property[v7,'setAttribute',-]|82042: \<variable-non-null-undef\>['element']|82043: read-variable['name',v8,-]|82044: constant[null,v9]}" ] 
+BB24901 -> BB24903 [tailport=s, headport=n, headlabel="      24903"]
+BB24901 -> BB24906 [tailport=s, headport=n, color=gray]
+BB24902 [shape=record label="{82045: read-variable['element',v7,-]|82046: read-property[v7,'removeAttribute',-]|82047: \<variable-non-null-undef\>['element']|82048: read-variable['name',v8,-]}" ] 
+BB24902 -> BB24904 [tailport=s, headport=n, headlabel="      24904"]
+BB24902 -> BB24906 [tailport=s, headport=n, color=gray]
+BB24903 [shape=record label="{82049: call-element.setAttribute [v7,'setAttribute',v8,v9,-]*}" ] 
+BB24903 -> BB24905 [tailport=s, headport=n, headlabel="      24905"]
+BB24903 -> BB24906 [tailport=s, headport=n, color=gray]
+BB24904 [shape=record label="{82050: call-element.removeAttribute [v7,'removeAttribute',v8,-]*}" ] 
+BB24904 -> BB24905 [tailport=s, headport=n]
+BB24904 -> BB24906 [tailport=s, headport=n, color=gray]
+BB24905 [shape=record label="{82051: return[v1]}" ] 
+BB24906 [shape=record label="{82052: exceptional-return}" ] 
+//#$~ 46535
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry1314[shape=none,label=""];
+BB_entry1314 -> BB15531 [tailport=s, headport=n, headlabel="    15531"]
+BB15531 [shape=record label="{53426: constant[undefined,v1]|53427: vardecl['async']}" ] 
+BB15531 -> BB15532 [tailport=s, headport=n, headlabel="      15532"]
+BB15532 [shape=record label="{53428: read-variable['run',v4,-]|53429: read-property[v4,'currentRunLoop',v3]|53430: \<variable-non-null-undef\>['run']|53431: ![v3,v2]|53432: write-variable[v2,'async']*|53433: read-variable['Ember',v6,-]|53434: read-property[v6,'testing',v5]|53435: \<variable-non-null-undef\>['Ember']|53436: if[v5](true-block:15533,false-block:15534)}" ] 
+BB15532 -> BB15534 [tailport=s, headport=n, headlabel="      15534"]
+BB15532 -> BB15533 [tailport=s, headport=n, headlabel="      15533"]
+BB15532 -> BB15540 [tailport=s, headport=n, color=gray, headlabel="      15540"]
+BB15533 [shape=record label="{53437: read-variable['async',v5,-]}" ] 
+BB15533 -> BB15534 [tailport=s, headport=n]
+BB15533 -> BB15540 [tailport=s, headport=n, color=gray]
+BB15534 [shape=record label="{53438: if[v5](true-block:15535,false-block:15537)}" ] 
+BB15534 -> BB15535 [tailport=s, headport=n, headlabel="      15535"]
+BB15534 -> BB15537 [tailport=s, headport=n, headlabel="      15537"]
+BB15535 [shape=record label="{53439: read-variable['asyncStart',v8,v7]}" ] 
+BB15535 -> BB15536 [tailport=s, headport=n, headlabel="      15536"]
+BB15535 -> BB15540 [tailport=s, headport=n, color=gray]
+BB15536 [shape=record label="{53440: call-asyncStart [v7,v8,-]*}" ] 
+BB15536 -> BB15537 [tailport=s, headport=n]
+BB15536 -> BB15540 [tailport=s, headport=n, color=gray]
+BB15537 [shape=record label="{53441: read-variable['run',v9,-]|53442: read-property[v9,'backburner',v8]|53443: \<variable-non-null-undef\>['run']|53444: read-property[v8,'schedule',-]|53445: \<property-non-null-undef\>[v9,'backburner']|53446: constant[\"actions\",v10]|53447: function-expr[function ( ),v11]}" ] 
+BB15537 -> BB15538 [tailport=s, headport=n, headlabel="      15538"]
+BB15537 -> BB15540 [tailport=s, headport=n, color=gray]
+BB15538 [shape=record label="{53448: call-run.backburner.schedule [v8,'schedule',v10,v11,-]*}" ] 
+BB15538 -> BB15539 [tailport=s, headport=n, headlabel="      15539"]
+BB15538 -> BB15540 [tailport=s, headport=n, color=gray]
+BB15539 [shape=record label="{53449: return[v1]}" ] 
+BB15540 [shape=record label="{53450: exceptional-return}" ] 
+//#$~ 28647
+}

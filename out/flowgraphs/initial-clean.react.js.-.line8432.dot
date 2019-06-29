@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry304[shape=none,label=""];
+BB_entry304 -> BB4478 [tailport=s, headport=n, headlabel="    4478"]
+BB4478 [shape=record label="{15667: constant[undefined,v1]}" ] 
+BB4478 -> BB4479 [tailport=s, headport=n, headlabel="      4479"]
+BB4479 [shape=record label="{15668: constant[\"production\",v3]|15669: constant[\"development\",v4]|15670: !==[v3,v4,v2]|15671: if[v2](true-block:4480,false-block:4484)}" ] 
+BB4479 -> BB4480 [tailport=s, headport=n, headlabel="      4480"]
+BB4479 -> BB4484 [tailport=s, headport=n, headlabel="      4484"]
+BB4479 -> BB4485 [tailport=s, headport=n, color=gray, headlabel="      4485"]
+BB4480 [shape=record label="{15672: constant[\"production\",v6]|15673: constant[\"development\",v7]|15674: !==[v6,v7,v5]|15675: if[v5](true-block:4481,false-block:4482)}" ] 
+BB4480 -> BB4481 [tailport=s, headport=n, headlabel="      4481"]
+BB4480 -> BB4482 [tailport=s, headport=n, headlabel="      4482"]
+BB4480 -> BB4485 [tailport=s, headport=n, color=gray]
+BB4481 [shape=record label="{15676: read-variable['warning',v9,v8]|15677: read-variable['this',v14,-]|15678: read-property[v14,'props',v13]|15679: read-property[v13,'selected',v11]|15680: \<property-non-null-undef\>[v14,'props']|15681: constant[null,v12]|15682: ==[v11,v12,v10]|15683: constant[\"Use the `defaultValue` or `value` props on \\\<select\\\> instead of \",v16]|15684: constant[\"setting `selected` on \\\<option\\\>.\",v17]|15685: +[v16,v17,v15]}" ] 
+BB4481 -> BB4483 [tailport=s, headport=n, headlabel="      4483"]
+BB4481 -> BB4485 [tailport=s, headport=n, color=gray]
+BB4482 [shape=record label="{15686: constant[null,-]}" ] 
+BB4482 -> BB4484 [tailport=s, headport=n]
+BB4483 [shape=record label="{15687: call-warning [v8,v9,v10,v15,-]}" ] 
+BB4483 -> BB4484 [tailport=s, headport=n]
+BB4483 -> BB4485 [tailport=s, headport=n, color=gray]
+BB4484 [shape=record label="{15688: return[v1]}" ] 
+BB4485 [shape=record label="{15689: exceptional-return}" ] 
+//#$~ 8439
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry89[shape=none,label=""];
+BB_entry89 -> BB1189 [tailport=s, headport=n, headlabel="    1189"]
+BB1189 [shape=record label="{3830: constant[undefined,v1]}" ] 
+BB1189 -> BB1190 [tailport=s, headport=n, headlabel="      1190"]
+BB1190 [shape=record label="{3831: read-variable['this',v3,-]|3832: read-property[v3,'parent',v2]|3833: if[v2](true-block:1191,false-block:1193)}" ] 
+BB1190 -> BB1191 [tailport=s, headport=n, headlabel="      1191"]
+BB1190 -> BB1193 [tailport=s, headport=n, headlabel="      1193"]
+BB1190 -> BB1197 [tailport=s, headport=n, color=gray, headlabel="      1197"]
+BB1191 [shape=record label="{3834: read-variable['illegalChildOperation',v5,v4]|3835: constant[\"factoryTypeInjection\",v6]}" ] 
+BB1191 -> BB1192 [tailport=s, headport=n, headlabel="      1192"]
+BB1191 -> BB1197 [tailport=s, headport=n, color=gray]
+BB1192 [shape=record label="{3836: call-illegalChildOperation [v4,v5,v6,-]*}" ] 
+BB1192 -> BB1193 [tailport=s, headport=n]
+BB1192 -> BB1197 [tailport=s, headport=n, color=gray]
+BB1193 [shape=record label="{3837: read-variable['addTypeInjection',v5,v4]|3838: read-variable['this',v7,-]|3839: read-property[v7,'factoryTypeInjections',v6]|3840: read-variable['type',v8,-]|3841: read-variable['property',v9,-]|3842: read-variable['this',v12,-]|3843: read-property[v12,'normalize',-]|3844: read-variable['fullName',v13,-]}" ] 
+BB1193 -> BB1194 [tailport=s, headport=n, headlabel="      1194"]
+BB1193 -> BB1197 [tailport=s, headport=n, color=gray]
+BB1194 [shape=record label="{3845: call-this.normalize [v12,'normalize',v13,v10]}" ] 
+BB1194 -> BB1195 [tailport=s, headport=n, headlabel="      1195"]
+BB1194 -> BB1197 [tailport=s, headport=n, color=gray]
+BB1195 [shape=record label="{3846: call-addTypeInjection [v4,v5,v6,v8,v9,v10,-]*}" ] 
+BB1195 -> BB1196 [tailport=s, headport=n, headlabel="      1196"]
+BB1195 -> BB1197 [tailport=s, headport=n, color=gray]
+BB1196 [shape=record label="{3847: return[v1]}" ] 
+BB1197 [shape=record label="{3848: exceptional-return}" ] 
+//#$~ 1633
+}

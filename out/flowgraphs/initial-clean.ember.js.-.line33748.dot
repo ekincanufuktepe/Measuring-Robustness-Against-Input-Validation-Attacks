@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry1549[shape=none,label=""];
+BB_entry1549 -> BB18025 [tailport=s, headport=n, headlabel="    18025"]
+BB18025 [shape=record label="{60258: constant[undefined,v1]|60259: vardecl['superclass']}" ] 
+BB18025 -> BB18026 [tailport=s, headport=n, headlabel="      18026"]
+BB18026 [shape=record label="{60260: read-variable['Class',v3,-]|60261: read-property[v3,'superclass',v2]|60262: \<variable-non-null-undef\>['Class']|60263: write-variable[v2,'superclass']*|60264: read-variable['superclass',v4,-]|60265: if[v4](true-block:18027,false-block:18029)}" ] 
+BB18026 -> BB18027 [tailport=s, headport=n, headlabel="      18027"]
+BB18026 -> BB18029 [tailport=s, headport=n, headlabel="      18029"]
+BB18026 -> BB18034 [tailport=s, headport=n, color=gray, headlabel="      18034"]
+BB18027 [shape=record label="{60266: read-variable['superclass',v6,-]|60267: read-property[v6,'proto',-]|60268: \<variable-non-null-undef\>['superclass']}" ] 
+BB18027 -> BB18028 [tailport=s, headport=n, headlabel="      18028"]
+BB18027 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18028 [shape=record label="{60269: call-superclass.proto [v6,'proto',-]*}" ] 
+BB18028 -> BB18029 [tailport=s, headport=n]
+BB18028 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18029 [shape=record label="{60270: read-variable['wasApplied',v6,-]|60271: ![v6,v5]|60272: if[v5](true-block:18030,false-block:18032)}" ] 
+BB18029 -> BB18030 [tailport=s, headport=n, headlabel="      18030"]
+BB18029 -> BB18032 [tailport=s, headport=n, headlabel="      18032"]
+BB18029 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18030 [shape=record label="{60273: constant[true,v7]|60274: write-variable[v7,'wasApplied']*|60275: read-variable['Class',v10,-]|60276: read-property[v10,'PrototypeMixin',v9]|60277: \<variable-non-null-undef\>['Class']|60278: read-property[v9,'applyPartial',-]|60279: \<property-non-null-undef\>[v10,'PrototypeMixin']|60280: read-variable['Class',v12,-]|60281: read-property[v12,'prototype',v11]|60282: \<variable-non-null-undef\>['Class']}" ] 
+BB18030 -> BB18031 [tailport=s, headport=n, headlabel="      18031"]
+BB18030 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18031 [shape=record label="{60283: call-Class.PrototypeMixin.applyPartial [v9,'applyPartial',v11,-]*}" ] 
+BB18031 -> BB18032 [tailport=s, headport=n]
+BB18031 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18032 [shape=record label="{60284: read-variable['this',v7,-]|60285: read-property[v7,'prototype',v1]}" ] 
+BB18032 -> BB18033 [tailport=s, headport=n, headlabel="      18033"]
+BB18032 -> BB18034 [tailport=s, headport=n, color=gray]
+BB18033 [shape=record label="{60286: return[v1]}" ] 
+BB18034 [shape=record label="{60287: exceptional-return}" ] 
+//#$~ 33757
+}

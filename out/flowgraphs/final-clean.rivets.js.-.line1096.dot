@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry108[shape=none,label=""];
+BB_entry108 -> BB1388 [tailport=s, headport=n, headlabel="    1388"]
+BB1388 [shape=record label="{4906: constant[undefined,v1]}" ] 
+BB1388 -> BB1389 [tailport=s, headport=n, headlabel="      1389"]
+BB1389 [shape=record label="{4907: read-variable['this',v3,-]|4908: read-property[v3,'handler',v2]|4909: if[v2](true-block:1390,false-block:1392)}" ] 
+BB1389 -> BB1390 [tailport=s, headport=n, headlabel="      1390"]
+BB1389 -> BB1392 [tailport=s, headport=n, headlabel="      1392"]
+BB1389 -> BB1397 [tailport=s, headport=n, color=gray, headlabel="      1397"]
+BB1390 [shape=record label="{4910: read-variable['Rivets',v6,-]|4911: read-property[v6,'Util',v5]|4912: \<variable-non-null-undef\>['Rivets']|4913: read-property[v5,'unbindEvent',-]|4914: \<property-non-null-undef\>[v6,'Util']|4915: read-variable['el',v7,-]|4916: read-variable['this',v10,-]|4917: read-property[v10,'args',v9]|4918: constant[0.0,v11]|4919: read-property[v9,v11,v8]|4920: \<property-non-null-undef\>[v10,'args']|4921: read-variable['this',v13,-]|4922: read-property[v13,'handler',v12]}" ] 
+BB1390 -> BB1391 [tailport=s, headport=n, headlabel="      1391"]
+BB1390 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1391 [shape=record label="{4923: call-Rivets.Util.unbindEvent [v5,'unbindEvent',v7,v8,v12,-]*}" ] 
+BB1391 -> BB1392 [tailport=s, headport=n]
+BB1391 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1392 [shape=record label="{4924: read-variable['Rivets',v6,-]|4925: read-property[v6,'Util',v5]|4926: \<variable-non-null-undef\>['Rivets']|4927: read-property[v5,'bindEvent',-]|4928: \<property-non-null-undef\>[v6,'Util']|4929: read-variable['el',v7,-]|4930: read-variable['this',v10,-]|4931: read-property[v10,'args',v9]|4932: constant[0.0,v11]|4933: read-property[v9,v11,v8]|4934: \<property-non-null-undef\>[v10,'args']|4935: read-variable['this',v13,-]|4936: read-variable['this',v15,-]|4937: read-property[v15,'eventHandler',-]|4938: read-variable['value',v16,-]}" ] 
+BB1392 -> BB1393 [tailport=s, headport=n, headlabel="      1393"]
+BB1392 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1393 [shape=record label="{4939: call-this.eventHandler [v15,'eventHandler',v16,v12]}" ] 
+BB1393 -> BB1394 [tailport=s, headport=n, headlabel="      1394"]
+BB1393 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1394 [shape=record label="{4940: write-property[v13,'handler',v12]}" ] 
+BB1394 -> BB1395 [tailport=s, headport=n, headlabel="      1395"]
+BB1394 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1395 [shape=record label="{4941: call-Rivets.Util.bindEvent [v5,'bindEvent',v7,v8,v12,v1]}" ] 
+BB1395 -> BB1396 [tailport=s, headport=n, headlabel="      1396"]
+BB1395 -> BB1397 [tailport=s, headport=n, color=gray]
+BB1396 [shape=record label="{4942: return[v1]}" ] 
+BB1397 [shape=record label="{4943: exceptional-return}" ] 
+//#$~ 1100
+}

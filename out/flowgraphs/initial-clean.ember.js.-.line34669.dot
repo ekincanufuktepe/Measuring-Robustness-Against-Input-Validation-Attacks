@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1590[shape=none,label=""];
+BB_entry1590 -> BB18479 [tailport=s, headport=n, headlabel="    18479"]
+BB18479 [shape=record label="{61816: constant[undefined,v1]}" ] 
+BB18479 -> BB18480 [tailport=s, headport=n, headlabel="      18480"]
+BB18480 [shape=record label="{61817: read-variable['IS_OBSERVER',v4,-]|61818: read-property[v4,'test',-]|61819: \<variable-non-null-undef\>['IS_OBSERVER']|61820: read-variable['eventName',v5,-]}" ] 
+BB18480 -> BB18481 [tailport=s, headport=n, headlabel="      18481"]
+BB18480 -> BB18487 [tailport=s, headport=n, color=gray, headlabel="      18487"]
+BB18481 [shape=record label="{61821: call-IS_OBSERVER.test [v4,'test',v5,v2]}" ] 
+BB18481 -> BB18482 [tailport=s, headport=n, headlabel="      18482"]
+BB18481 -> BB18487 [tailport=s, headport=n, color=gray]
+BB18482 [shape=record label="{61822: if[v2](true-block:18483,false-block:18486)}" ] 
+BB18482 -> BB18483 [tailport=s, headport=n, headlabel="      18483"]
+BB18482 -> BB18486 [tailport=s, headport=n, headlabel="      18486"]
+BB18483 [shape=record label="{61823: read-variable['this',v7,-]|61824: read-property[v7,'stopObservingContentKey',-]|61825: read-variable['eventName',v10,-]|61826: read-property[v10,'slice',-]|61827: \<variable-non-null-undef\>['eventName']|61828: constant[0.0,v11]|61829: constant[-7.0,v12]}" ] 
+BB18483 -> BB18484 [tailport=s, headport=n, headlabel="      18484"]
+BB18483 -> BB18487 [tailport=s, headport=n, color=gray]
+BB18484 [shape=record label="{61830: call-eventName.slice [v10,'slice',v11,v12,v8]}" ] 
+BB18484 -> BB18485 [tailport=s, headport=n, headlabel="      18485"]
+BB18484 -> BB18487 [tailport=s, headport=n, color=gray]
+BB18485 [shape=record label="{61831: call-this.stopObservingContentKey [v7,'stopObservingContentKey',v8,-]*}" ] 
+BB18485 -> BB18486 [tailport=s, headport=n]
+BB18485 -> BB18487 [tailport=s, headport=n, color=gray]
+BB18486 [shape=record label="{61832: return[v1]}" ] 
+BB18487 [shape=record label="{61833: exceptional-return}" ] 
+//#$~ 34671
+}

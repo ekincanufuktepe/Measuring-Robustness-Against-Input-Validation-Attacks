@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry423[shape=none,label=""];
+BB_entry423 -> BB6158 [tailport=s, headport=n, headlabel="    6158"]
+BB6158 [shape=record label="{21272: constant[undefined,v1]|21273: vardecl['element']}" ] 
+BB6158 -> BB6159 [tailport=s, headport=n, headlabel="      6159"]
+BB6159 [shape=record label="{21274: read-variable['handle',v2,-]|21275: write-variable[v2,'element']*|21276: read-variable['element',v4,-]|21277: ![v4,v3]|21278: if[v3](true-block:6160,false-block:6161)}" ] 
+BB6159 -> BB6160 [tailport=s, headport=n, headlabel="      6160"]
+BB6159 -> BB6161 [tailport=s, headport=n, headlabel="      6161"]
+BB6159 -> BB6165 [tailport=s, headport=n, color=gray, headlabel="      6165"]
+BB6160 [shape=record label="{21279: constant[null,v1]}" ] 
+BB6160 -> BB6164 [tailport=s, headport=n, headlabel="      6164"]
+BB6161 [shape=record label="{21280: read-variable['EventListener',v6,-]|21281: read-property[v6,'capture',-]|21282: \<variable-non-null-undef\>['EventListener']|21283: read-variable['element',v7,-]|21284: read-variable['handlerBaseName',v8,-]|21285: read-variable['ReactEventListener',v12,-]|21286: read-property[v12,'dispatchEvent',v11]|21287: \<variable-non-null-undef\>['ReactEventListener']|21288: read-property[v11,'bind',-]|21289: \<property-non-null-undef\>[v12,'dispatchEvent']|21290: constant[null,v13]|21291: read-variable['topLevelType',v14,-]}" ] 
+BB6161 -> BB6162 [tailport=s, headport=n, headlabel="      6162"]
+BB6161 -> BB6165 [tailport=s, headport=n, color=gray]
+BB6162 [shape=record label="{21292: call-ReactEventListener.dispatchEvent.bind [v11,'bind',v13,v14,v9]}" ] 
+BB6162 -> BB6163 [tailport=s, headport=n, headlabel="      6163"]
+BB6162 -> BB6165 [tailport=s, headport=n, color=gray]
+BB6163 [shape=record label="{21293: call-EventListener.capture [v6,'capture',v7,v8,v9,v1]}" ] 
+BB6163 -> BB6164 [tailport=s, headport=n]
+BB6163 -> BB6165 [tailport=s, headport=n, color=gray]
+BB6164 [shape=record label="{21294: return[v1]}" ] 
+BB6165 [shape=record label="{21295: exceptional-return}" ] 
+//#$~ 10932
+}

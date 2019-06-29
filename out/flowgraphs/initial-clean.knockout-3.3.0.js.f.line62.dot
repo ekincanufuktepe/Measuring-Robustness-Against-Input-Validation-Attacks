@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry240[shape=none,label=""];
+BB_entry240 -> BB2939 [tailport=s, headport=n, headlabel="    2939"]
+BB2939 [shape=record label="{8514: constant[undefined,v1]}" ] 
+BB2939 -> BB2940 [tailport=s, headport=n, headlabel="      2940"]
+BB2940 [shape=record label="{8515: read-variable['c',v3,v2]|8516: read-variable['this',v7,-]|8517: read-property[v7,'getBindings',v6]|8518: read-property[v6,'bind',-]|8519: \<property-non-null-undef\>[v7,'getBindings']|8520: read-variable['this',v8,-]|8521: read-variable['a',v9,-]|8522: read-variable['b',v10,-]}" ] 
+BB2940 -> BB2941 [tailport=s, headport=n, headlabel="      2941"]
+BB2940 -> BB2944 [tailport=s, headport=n, color=gray, headlabel="      2944"]
+BB2941 [shape=record label="{8523: call-this.getBindings.bind [v6,'bind',v8,v9,v10,v4]}" ] 
+BB2941 -> BB2942 [tailport=s, headport=n, headlabel="      2942"]
+BB2941 -> BB2944 [tailport=s, headport=n, color=gray]
+BB2942 [shape=record label="{8524: call-c [v2,v3,v4,v1]}" ] 
+BB2942 -> BB2943 [tailport=s, headport=n, headlabel="      2943"]
+BB2942 -> BB2944 [tailport=s, headport=n, color=gray]
+BB2943 [shape=record label="{8525: return[v1]}" ] 
+BB2944 [shape=record label="{8526: exceptional-return}" ] 
+}

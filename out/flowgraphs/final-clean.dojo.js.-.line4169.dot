@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry223[shape=none,label=""];
+BB_entry223 -> BB3354 [tailport=s, headport=n, headlabel="    3354"]
+BB3354 [shape=record label="{10235: constant[undefined,v1]|10236: vardecl['a']}" ] 
+BB3354 -> BB3355 [tailport=s, headport=n, headlabel="      3355"]
+BB3355 [shape=record label="{10237: read-variable['Array',v6,-]|10238: read-property[v6,'prototype',v5]|10239: \<variable-non-null-undef\>['Array']|10240: read-property[v5,'slice',v4]|10241: \<property-non-null-undef\>[v6,'prototype']|10242: read-property[v4,'call',-]|10243: \<property-non-null-undef\>[v5,'slice']|10244: read-variable['arguments',v7,-]}" ] 
+BB3355 -> BB3356 [tailport=s, headport=n, headlabel="      3356"]
+BB3355 -> BB3363 [tailport=s, headport=n, color=gray, headlabel="      3363"]
+BB3356 [shape=record label="{10245: call-Array.prototype.slice.call [v4,'call',v7,v2]}" ] 
+BB3356 -> BB3357 [tailport=s, headport=n, headlabel="      3357"]
+BB3356 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3357 [shape=record label="{10246: write-variable[v2,'a']*|10247: read-variable['a',v9,-]|10248: read-property[v9,'unshift',-]|10249: \<variable-non-null-undef\>['a']|10250: read-variable['tcn',v11,-]|10251: constant[\":\",v12]|10252: +[v11,v12,v10]}" ] 
+BB3357 -> BB3358 [tailport=s, headport=n, headlabel="      3358"]
+BB3357 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3358 [shape=record label="{10253: call-a.unshift [v9,'unshift',v10,-]*}" ] 
+BB3358 -> BB3359 [tailport=s, headport=n, headlabel="      3359"]
+BB3358 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3359 [shape=record label="{10254: read-variable['console',v14,-]|10255: read-property[v14,'log',-]|10256: \<variable-non-null-undef\>['console']|10257: read-variable['a',v17,-]|10258: read-property[v17,'join',-]|10259: \<variable-non-null-undef\>['a']|10260: constant[\" \",v18]}" ] 
+BB3359 -> BB3360 [tailport=s, headport=n, headlabel="      3360"]
+BB3359 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3360 [shape=record label="{10261: call-a.join [v17,'join',v18,v15]}" ] 
+BB3360 -> BB3361 [tailport=s, headport=n, headlabel="      3361"]
+BB3360 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3361 [shape=record label="{10262: call-null [v14,'log',v15,-]*}" ] 
+BB3361 -> BB3362 [tailport=s, headport=n, headlabel="      3362"]
+BB3361 -> BB3363 [tailport=s, headport=n, color=gray]
+BB3362 [shape=record label="{10263: return[v1]}" ] 
+BB3363 [shape=record label="{10264: exceptional-return}" ] 
+//#$~ 4172
+}

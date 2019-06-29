@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry239[shape=none,label=""];
+BB_entry239 -> BB2930 [tailport=s, headport=n, headlabel="    2930"]
+BB2930 [shape=record label="{8490: constant[undefined,v1]}" ] 
+BB2930 -> BB2931 [tailport=s, headport=n, headlabel="      2931"]
+BB2931 [shape=record label="{8491: constant[\"function\",v3]|8492: typeof['d',v4]|8493: ===[v3,v4,v2]|8494: if[v2](true-block:2932,false-block:2933)}" ] 
+BB2931 -> BB2932 [tailport=s, headport=n, headlabel="      2932"]
+BB2931 -> BB2933 [tailport=s, headport=n, headlabel="      2933"]
+BB2931 -> BB2938 [tailport=s, headport=n, color=gray, headlabel="      2938"]
+BB2932 [shape=record label="{8495: read-variable['c',v6,v5]|8496: read-variable['d',v9,-]|8497: read-property[v9,'bind',-]|8498: \<variable-non-null-undef\>['d']|8499: constant[null,v10]|8500: read-variable['g',v11,-]|8501: read-variable['e',v12,-]}" ] 
+BB2932 -> BB2934 [tailport=s, headport=n, headlabel="      2934"]
+BB2932 -> BB2938 [tailport=s, headport=n, color=gray]
+BB2933 [shape=record label="{8502: read-variable['a',v7,-]|8503: read-property[v7,'a',v6]|8504: \<variable-non-null-undef\>['a']|8505: read-property[v6,'pa',-]|8506: \<property-non-null-undef\>[v7,'a']|8507: read-variable['d',v8,-]|8508: read-variable['b',v9,-]}" ] 
+BB2933 -> BB2936 [tailport=s, headport=n, headlabel="      2936"]
+BB2933 -> BB2938 [tailport=s, headport=n, color=gray]
+BB2934 [shape=record label="{8509: call-d.bind [v9,'bind',v10,v11,v12,v7]}" ] 
+BB2934 -> BB2935 [tailport=s, headport=n, headlabel="      2935"]
+BB2934 -> BB2938 [tailport=s, headport=n, color=gray]
+BB2935 [shape=record label="{8510: call-c [v5,v6,v7,v1]}" ] 
+BB2935 -> BB2937 [tailport=s, headport=n, headlabel="      2937"]
+BB2935 -> BB2938 [tailport=s, headport=n, color=gray]
+BB2936 [shape=record label="{8511: call-a.a.pa [v6,'pa',v8,v9,v1]}" ] 
+BB2936 -> BB2937 [tailport=s, headport=n]
+BB2936 -> BB2938 [tailport=s, headport=n, color=gray]
+BB2937 [shape=record label="{8512: return[v1]}" ] 
+BB2938 [shape=record label="{8513: exceptional-return}" ] 
+}

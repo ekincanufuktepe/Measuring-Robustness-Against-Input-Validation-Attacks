@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2260[shape=none,label=""];
+BB_entry2260 -> BB25776 [tailport=s, headport=n, headlabel="    25776"]
+BB25776 [shape=record label="{84844: constant[undefined,v1]|84845: vardecl['index']}" ] 
+BB25776 -> BB25777 [tailport=s, headport=n, headlabel="      25777"]
+BB25777 [shape=record label="{84846: read-variable['this',v5,-]|84847: read-property[v5,'morphs',v3]|84848: constant[null,v4]|84849: ===[v3,v4,v2]|84850: if[v2](true-block:25778,false-block:25781)}" ] 
+BB25777 -> BB25778 [tailport=s, headport=n, headlabel="      25778"]
+BB25777 -> BB25781 [tailport=s, headport=n, headlabel="      25781"]
+BB25777 -> BB25784 [tailport=s, headport=n, color=gray, headlabel="      25784"]
+BB25778 [shape=record label="{84851: read-variable['this',v7,-]|84852: read-variable['Array',v8,-]}" ] 
+BB25778 -> BB25779 [tailport=s, headport=n, headlabel="      25779"]
+BB25778 -> BB25784 [tailport=s, headport=n, color=gray]
+BB25779 [shape=record label="{84853: construct [-,v8,v6]}" ] 
+BB25779 -> BB25780 [tailport=s, headport=n, headlabel="      25780"]
+BB25779 -> BB25784 [tailport=s, headport=n, color=gray]
+BB25780 [shape=record label="{84854: write-property[v7,'morphs',v6]*}" ] 
+BB25780 -> BB25781 [tailport=s, headport=n]
+BB25780 -> BB25784 [tailport=s, headport=n, color=gray]
+BB25781 [shape=record label="{84855: read-variable['this',v8,-]|84856: read-property[v8,'morphs',v7]|84857: read-property[v7,'length',v6]|84858: \<property-non-null-undef\>[v8,'morphs']|84859: write-variable[v6,'index']*|84860: read-variable['this',v10,-]|84861: read-property[v10,'insert',-]|84862: read-variable['index',v11,-]|84863: read-variable['node',v12,-]}" ] 
+BB25781 -> BB25782 [tailport=s, headport=n, headlabel="      25782"]
+BB25781 -> BB25784 [tailport=s, headport=n, color=gray]
+BB25782 [shape=record label="{84864: call-this.insert [v10,'insert',v11,v12,v1]}" ] 
+BB25782 -> BB25783 [tailport=s, headport=n, headlabel="      25783"]
+BB25782 -> BB25784 [tailport=s, headport=n, color=gray]
+BB25783 [shape=record label="{84865: return[v1]}" ] 
+BB25784 [shape=record label="{84866: exceptional-return}" ] 
+//#$~ 47355
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry264[shape=none,label=""];
+BB_entry264 -> BB4598 [tailport=s, headport=n, headlabel="    4598"]
+BB4598 [shape=record label="{14314: constant[undefined,v1]|14315: vardecl['acorn']|14316: vardecl['walk']|14317: function-decl[function isScope ( node ),-]|14318: function-decl[function isBlockScope ( node ),-]|14319: function-decl[function declaresArguments ( node ),-]|14320: function-decl[function declaresThis ( node ),-]|14321: function-decl[function findGlobals ( source ),-]}" ] 
+BB4598 -> BB4599 [tailport=s, headport=n, headlabel="      4599"]
+BB4599 [shape=record label="{14322: read-variable['require',v4,v3]|14323: constant[\"acorn\",v5]}" ] 
+BB4599 -> BB4600 [tailport=s, headport=n, headlabel="      4600"]
+BB4599 -> BB4605 [tailport=s, headport=n, color=gray, headlabel="      4605"]
+BB4600 [shape=record label="{14324: call-require [v3,v4,v5,v2]}" ] 
+BB4600 -> BB4601 [tailport=s, headport=n, headlabel="      4601"]
+BB4600 -> BB4605 [tailport=s, headport=n, color=gray]
+BB4601 [shape=record label="{14325: write-variable[v2,'acorn']*|14326: read-variable['require',v8,v7]|14327: constant[\"acorn/util/walk\",v9]}" ] 
+BB4601 -> BB4602 [tailport=s, headport=n, headlabel="      4602"]
+BB4601 -> BB4605 [tailport=s, headport=n, color=gray]
+BB4602 [shape=record label="{14328: call-require [v7,v8,v9,v6]}" ] 
+BB4602 -> BB4603 [tailport=s, headport=n, headlabel="      4603"]
+BB4602 -> BB4605 [tailport=s, headport=n, color=gray]
+BB4603 [shape=record label="{14329: write-variable[v6,'walk']*|14330: read-variable['module',v11,-]|14331: read-variable['findGlobals',v10,-]|14332: write-property[v11,'exports',v10]|14333: \<variable-non-null-undef\>['module']*}" ] 
+BB4603 -> BB4604 [tailport=s, headport=n, headlabel="      4604"]
+BB4603 -> BB4605 [tailport=s, headport=n, color=gray]
+BB4604 [shape=record label="{14334: return[v1]}" ] 
+BB4605 [shape=record label="{14335: exceptional-return}" ] 
+//#$~ 4551
+}

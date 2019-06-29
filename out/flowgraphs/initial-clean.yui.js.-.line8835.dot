@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry244[shape=none,label=""];
+BB_entry244 -> BB5241 [tailport=s, headport=n, headlabel="    5241"]
+BB5241 [shape=record label="{18818: constant[undefined,v1]}" ] 
+BB5241 -> BB5242 [tailport=s, headport=n, headlabel="      5242"]
+BB5242 [shape=record label="{18819: read-variable['Y',v4,-]|18820: read-property[v4,'UA',v3]|18821: \<variable-non-null-undef\>['Y']|18822: read-property[v3,'ios',v2]|18823: \<property-non-null-undef\>[v4,'UA']|18824: if[v2](true-block:5244,false-block:5243)}" ] 
+BB5242 -> BB5244 [tailport=s, headport=n, headlabel="      5244"]
+BB5242 -> BB5243 [tailport=s, headport=n, headlabel="      5243"]
+BB5242 -> BB5246 [tailport=s, headport=n, color=gray, headlabel="      5246"]
+BB5243 [shape=record label="{18825: read-variable['Y',v4,-]|18826: read-property[v4,'UA',v3]|18827: \<variable-non-null-undef\>['Y']|18828: read-property[v3,'android',v2]|18829: \<property-non-null-undef\>[v4,'UA']}" ] 
+BB5243 -> BB5244 [tailport=s, headport=n]
+BB5243 -> BB5246 [tailport=s, headport=n, color=gray]
+BB5244 [shape=record label="{18830: ![v2,v1]}" ] 
+BB5244 -> BB5245 [tailport=s, headport=n, headlabel="      5245"]
+BB5244 -> BB5246 [tailport=s, headport=n, color=gray]
+BB5245 [shape=record label="{18831: return[v1]}" ] 
+BB5246 [shape=record label="{18832: exceptional-return}" ] 
+//#$~ 8847
+}

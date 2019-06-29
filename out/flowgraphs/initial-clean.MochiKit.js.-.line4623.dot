@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry439[shape=none,label=""];
+BB_entry439 -> BB6550 [tailport=s, headport=n, headlabel="    6550"]
+BB6550 [shape=record label="{24128: constant[undefined,v1]|24129: vardecl['hsl']|24130: vardecl['m']}" ] 
+BB6550 -> BB6551 [tailport=s, headport=n, headlabel="      6551"]
+BB6551 [shape=record label="{24131: read-variable['this',v4,-]|24132: read-property[v4,'asHSL',-]}" ] 
+BB6551 -> BB6552 [tailport=s, headport=n, headlabel="      6552"]
+BB6551 -> BB6558 [tailport=s, headport=n, color=gray, headlabel="      6558"]
+BB6552 [shape=record label="{24133: call-this.asHSL [v4,'asHSL',v2]}" ] 
+BB6552 -> BB6553 [tailport=s, headport=n, headlabel="      6553"]
+BB6552 -> BB6558 [tailport=s, headport=n, color=gray]
+BB6553 [shape=record label="{24134: write-variable[v2,'hsl']*|24135: read-variable['hsl',v6,-]|24136: read-variable['Math',v8,-]|24137: read-property[v8,'min',-]|24138: \<variable-non-null-undef\>['Math']|24139: read-variable['hsl',v12,-]|24140: read-property[v12,'l',v10]|24141: \<variable-non-null-undef\>['hsl']|24142: read-variable['_4be',v11,-]|24143: +[v10,v11,v9]|24144: constant[1.0,v13]}" ] 
+BB6553 -> BB6554 [tailport=s, headport=n, headlabel="      6554"]
+BB6553 -> BB6558 [tailport=s, headport=n, color=gray]
+BB6554 [shape=record label="{24145: call-Math.min [v8,'min',v9,v13,v5]}" ] 
+BB6554 -> BB6555 [tailport=s, headport=n, headlabel="      6555"]
+BB6554 -> BB6558 [tailport=s, headport=n, color=gray]
+BB6555 [shape=record label="{24146: write-property[v6,'l',v5]|24147: \<variable-non-null-undef\>['hsl']*|24148: read-variable['MochiKit',v15,-]|24149: read-property[v15,'Color',v14]|24150: \<variable-non-null-undef\>['MochiKit']|24151: write-variable[v14,'m']*|24152: read-variable['m',v18,-]|24153: read-property[v18,'Color',v17]|24154: \<variable-non-null-undef\>['m']|24155: read-property[v17,'fromHSL',-]|24156: \<property-non-null-undef\>[v18,'Color']|24157: read-variable['hsl',v19,-]}" ] 
+BB6555 -> BB6556 [tailport=s, headport=n, headlabel="      6556"]
+BB6555 -> BB6558 [tailport=s, headport=n, color=gray]
+BB6556 [shape=record label="{24158: call-m.Color.fromHSL [v17,'fromHSL',v19,v1]}" ] 
+BB6556 -> BB6557 [tailport=s, headport=n, headlabel="      6557"]
+BB6556 -> BB6558 [tailport=s, headport=n, color=gray]
+BB6557 [shape=record label="{24159: return[v1]}" ] 
+BB6558 [shape=record label="{24160: exceptional-return}" ] 
+//#$~ 4627
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry501[shape=none,label=""];
+BB_entry501 -> BB7780 [tailport=s, headport=n, headlabel="    7780"]
+BB7780 [shape=record label="{22862: constant[undefined,v1]}" ] 
+BB7780 -> BB7781 [tailport=s, headport=n, headlabel="      7781"]
+BB7781 [shape=record label="{22863: constant[1.0,v2]|22864: read-variable['hooks',v4,-]|22865: read-property[v4,'unqueued',v3]|22866: \<variable-non-null-undef\>['hooks']|22867: +[v3,v5]|22868: -[v5,v2,v6]|22869: write-property[v4,'unqueued',v6]|22870: \<variable-non-null-undef\>['hooks']*|22871: read-variable['jQuery',v11,-]|22872: read-property[v11,'queue',-]|22873: \<variable-non-null-undef\>['jQuery']|22874: read-variable['elem',v12,-]|22875: constant[\"fx\",v13]}" ] 
+BB7781 -> BB7782 [tailport=s, headport=n, headlabel="      7782"]
+BB7781 -> BB7787 [tailport=s, headport=n, color=gray, headlabel="      7787"]
+BB7782 [shape=record label="{22876: call[v11,'queue',v12,v13,v9]}" ] 
+BB7782 -> BB7783 [tailport=s, headport=n, headlabel="      7783"]
+BB7782 -> BB7787 [tailport=s, headport=n, color=gray]
+BB7783 [shape=record label="{22877: read-property[v9,'length',v8]|22878: ![v8,v7]|22879: if[v7](true-block:7784,false-block:7786)}" ] 
+BB7783 -> BB7784 [tailport=s, headport=n, headlabel="      7784"]
+BB7783 -> BB7786 [tailport=s, headport=n, headlabel="      7786"]
+BB7783 -> BB7787 [tailport=s, headport=n, color=gray]
+BB7784 [shape=record label="{22880: read-variable['hooks',v16,-]|22881: read-property[v16,'empty',v15]|22882: \<variable-non-null-undef\>['hooks']|22883: read-property[v15,'fire',-]|22884: \<property-non-null-undef\>[v16,'empty']}" ] 
+BB7784 -> BB7785 [tailport=s, headport=n, headlabel="      7785"]
+BB7784 -> BB7787 [tailport=s, headport=n, color=gray]
+BB7785 [shape=record label="{22885: call[v15,'fire',-]*}" ] 
+BB7785 -> BB7786 [tailport=s, headport=n]
+BB7785 -> BB7787 [tailport=s, headport=n, color=gray]
+BB7786 [shape=record label="{22886: return[v1]}" ] 
+BB7787 [shape=record label="{22887: exceptional-return}" ] 
+}

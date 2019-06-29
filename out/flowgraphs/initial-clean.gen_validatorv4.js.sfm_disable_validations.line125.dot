@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB66 [tailport=s, headport=n, headlabel="    66"]
+BB66 [shape=record label="{338: constant[undefined,v1]}" ] 
+BB66 -> BB67 [tailport=s, headport=n, headlabel="      67"]
+BB67 [shape=record label="{339: read-variable['this',v3,-]|340: read-property[v3,'old_onsubmit',v2]|341: if[v2](true-block:68,false-block:69)}" ] 
+BB67 -> BB68 [tailport=s, headport=n, headlabel="      68"]
+BB67 -> BB69 [tailport=s, headport=n, headlabel="      69"]
+BB67 -> BB71 [tailport=s, headport=n, color=gray, headlabel="      71"]
+BB68 [shape=record label="{342: read-variable['this',v5,-]|343: read-variable['this',v6,-]|344: read-property[v6,'old_onsubmit',v4]|345: write-property[v5,'onsubmit',v4]*}" ] 
+BB68 -> BB70 [tailport=s, headport=n, headlabel="      70"]
+BB68 -> BB71 [tailport=s, headport=n, color=gray]
+BB69 [shape=record label="{346: read-variable['this',v5,-]|347: constant[null,v4]|348: write-property[v5,'onsubmit',v4]*}" ] 
+BB69 -> BB70 [tailport=s, headport=n]
+BB69 -> BB71 [tailport=s, headport=n, color=gray]
+BB70 [shape=record label="{349: return[v1]}" ] 
+BB71 [shape=record label="{350: exceptional-return}" ] 
+//#$~ 133
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry3[shape=none,label=""];
+BB_entry3 -> BB104 [tailport=s, headport=n, headlabel="    104"]
+BB104 [shape=record label="{255: constant[undefined,v1]|256: function-decl[function addOptionMethod ( PluginClass ),-]|257: vardecl['logError']|258: function-decl[function bridge ( namespace PluginClass ),-]}" ] 
+BB104 -> BB105 [tailport=s, headport=n, headlabel="      105"]
+BB105 [shape=record label="{259: read-variable['$',v3,-]|260: ![v3,v2]|261: if[v2](true-block:106,false-block:107)}" ] 
+BB105 -> BB106 [tailport=s, headport=n, headlabel="      106"]
+BB105 -> BB107 [tailport=s, headport=n, headlabel="      107"]
+BB105 -> BB112 [tailport=s, headport=n, color=gray, headlabel="      112"]
+BB106 [shape=record label="{262: constant[undefined,v1]}" ] 
+BB106 -> BB111 [tailport=s, headport=n, headlabel="      111"]
+BB107 [shape=record label="{263: typeof['console',v6]|264: constant[\"undefined\",v7]|265: ===[v6,v7,v5]|266: if[v5](true-block:108,false-block:109)}" ] 
+BB107 -> BB108 [tailport=s, headport=n, headlabel="      108"]
+BB107 -> BB109 [tailport=s, headport=n, headlabel="      109"]
+BB107 -> BB112 [tailport=s, headport=n, color=gray]
+BB108 [shape=record label="{267: read-variable['noop',v4,-]}" ] 
+BB108 -> BB110 [tailport=s, headport=n, headlabel="      110"]
+BB108 -> BB112 [tailport=s, headport=n, color=gray]
+BB109 [shape=record label="{268: function-expr[function ( message ),v4]}" ] 
+BB109 -> BB110 [tailport=s, headport=n]
+BB110 [shape=record label="{269: write-variable[v4,'logError']*|270: read-variable['$',v9,-]|271: function-expr[function ( namespace PluginClass ),v8]|272: write-property[v9,'bridget',v8]|273: \<variable-non-null-undef\>['$']*|274: read-variable['$',v10,-]|275: read-property[v10,'bridget',v1]|276: \<variable-non-null-undef\>['$']}" ] 
+BB110 -> BB111 [tailport=s, headport=n]
+BB110 -> BB112 [tailport=s, headport=n, color=gray]
+BB111 [shape=record label="{277: return[v1]}" ] 
+BB112 [shape=record label="{278: exceptional-return}" ] 
+//#$~ 132
+}

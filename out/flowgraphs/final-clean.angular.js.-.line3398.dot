@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry189[shape=none,label=""];
+BB_entry189 -> BB2457 [tailport=s, headport=n, headlabel="    2457"]
+BB2457 [shape=record label="{5937: constant[undefined,v1]|5938: vardecl['index']}" ] 
+BB2457 -> BB2458 [tailport=s, headport=n, headlabel="      2458"]
+BB2458 [shape=record label="{5939: read-variable['element',v5,-]|5940: read-property[v5,'nodeType',v3]|5941: \<variable-non-null-undef\>['element']|5942: read-variable['NODE_TYPE_ELEMENT',v4,-]|5943: ===[v3,v4,v2]|5944: if[v2](true-block:2459,false-block:2463)}" ] 
+BB2458 -> BB2459 [tailport=s, headport=n, headlabel="      2459"]
+BB2458 -> BB2463 [tailport=s, headport=n, headlabel="      2463"]
+BB2458 -> BB2464 [tailport=s, headport=n, color=gray, headlabel="      2464"]
+BB2459 [shape=record label="{5945: read-variable['element',v7,-]|5946: read-property[v7,'firstChild',v6]|5947: \<variable-non-null-undef\>['element']|5948: write-variable[v6,'index']*|5949: read-variable['forEach',v9,v8]|5950: read-variable['JQLite',v11,-]|5951: read-variable['node',v12,-]}" ] 
+BB2459 -> BB2460 [tailport=s, headport=n, headlabel="      2460"]
+BB2459 -> BB2464 [tailport=s, headport=n, color=gray]
+BB2460 [shape=record label="{5952: construct [-,v11,v12,v10]}" ] 
+BB2460 -> BB2461 [tailport=s, headport=n, headlabel="      2461"]
+BB2460 -> BB2464 [tailport=s, headport=n, color=gray]
+BB2461 [shape=record label="{5953: function-expr[function ( child ),v13]}" ] 
+BB2461 -> BB2462 [tailport=s, headport=n, headlabel="      2462"]
+BB2462 [shape=record label="{5954: call-forEach [v8,v9,v10,v13,-]*}" ] 
+BB2462 -> BB2463 [tailport=s, headport=n]
+BB2462 -> BB2464 [tailport=s, headport=n, color=gray]
+BB2463 [shape=record label="{5955: return[v1]}" ] 
+BB2464 [shape=record label="{5956: exceptional-return}" ] 
+//#$~ 3402
+}

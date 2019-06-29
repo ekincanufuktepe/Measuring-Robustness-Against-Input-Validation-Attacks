@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry521[shape=none,label=""];
+BB_entry521 -> BB6767 [tailport=s, headport=n, headlabel="    6767"]
+BB6767 [shape=record label="{18893: constant[undefined,v1]|18894: vardecl['pattern']}" ] 
+BB6767 -> BB6768 [tailport=s, headport=n, headlabel="      6768"]
+BB6768 [shape=record label="{18895: read-variable['classCache',v3,-]|18896: read-variable['className',v5,-]|18897: constant[\" \",v6]|18898: +[v5,v6,v4]|18899: read-property[v3,v4,v2]|18900: \<variable-non-null-undef\>['classCache']|18901: write-variable[v2,'pattern']*|18902: read-variable['pattern',v1,-]|18903: if[v1](true-block:6774,false-block:6769)}" ] 
+BB6768 -> BB6774 [tailport=s, headport=n, headlabel="      6774"]
+BB6768 -> BB6769 [tailport=s, headport=n, headlabel="      6769"]
+BB6768 -> BB6775 [tailport=s, headport=n, color=gray, headlabel="      6775"]
+BB6769 [shape=record label="{18904: read-variable['RegExp',v7,-]|18905: constant[\"(^|\",v19]|18906: read-variable['whitespace',v20,-]|18907: +[v19,v20,v17]|18908: constant[\")\",v18]|18909: +[v17,v18,v15]|18910: read-variable['className',v16,-]|18911: +[v15,v16,v13]|18912: constant[\"(\",v14]|18913: +[v13,v14,v11]|18914: read-variable['whitespace',v12,-]|18915: +[v11,v12,v9]|18916: constant[\"|$)\",v10]|18917: +[v9,v10,v8]}" ] 
+BB6769 -> BB6770 [tailport=s, headport=n, headlabel="      6770"]
+BB6769 -> BB6775 [tailport=s, headport=n, color=gray]
+BB6770 [shape=record label="{18918: construct [-,v7,v8,v1]}" ] 
+BB6770 -> BB6771 [tailport=s, headport=n, headlabel="      6771"]
+BB6770 -> BB6775 [tailport=s, headport=n, color=gray]
+BB6771 [shape=record label="{18919: write-variable[v1,'pattern']|18920: if[v1](true-block:6772,false-block:6774)}" ] 
+BB6771 -> BB6774 [tailport=s, headport=n]
+BB6771 -> BB6772 [tailport=s, headport=n, headlabel="      6772"]
+BB6772 [shape=record label="{18921: read-variable['classCache',v22,v21]|18922: read-variable['className',v23,-]|18923: function-expr[function ( elem ),v24]}" ] 
+BB6772 -> BB6773 [tailport=s, headport=n, headlabel="      6773"]
+BB6772 -> BB6775 [tailport=s, headport=n, color=gray]
+BB6773 [shape=record label="{18924: call-classCache [v21,v22,v23,v24,v1]}" ] 
+BB6773 -> BB6774 [tailport=s, headport=n]
+BB6773 -> BB6775 [tailport=s, headport=n, color=gray]
+BB6774 [shape=record label="{18925: return[v1]}" ] 
+BB6775 [shape=record label="{18926: exceptional-return}" ] 
+//#$~ 5383
+}

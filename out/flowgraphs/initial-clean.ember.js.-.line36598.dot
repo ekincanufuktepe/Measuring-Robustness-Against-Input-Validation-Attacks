@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1683[shape=none,label=""];
+BB_entry1683 -> BB19579 [tailport=s, headport=n, headlabel="    19579"]
+BB19579 [shape=record label="{65552: constant[undefined,v1]|65553: vardecl['str']}" ] 
+BB19579 -> BB19580 [tailport=s, headport=n, headlabel="      19580"]
+BB19580 [shape=record label="{65554: constant[\"\",v2]|65555: write-variable[v2,'str']*|65556: read-variable['forEach',v4,v3]|65557: read-variable['this',v6,-]|65558: read-property[v6,'_operations',v5]|65559: function-expr[function ( operation ),v7]}" ] 
+BB19580 -> BB19581 [tailport=s, headport=n, headlabel="      19581"]
+BB19580 -> BB19585 [tailport=s, headport=n, color=gray, headlabel="      19585"]
+BB19581 [shape=record label="{65560: call-forEach [v3,v4,v5,v7,-]*}" ] 
+BB19581 -> BB19582 [tailport=s, headport=n, headlabel="      19582"]
+BB19581 -> BB19585 [tailport=s, headport=n, color=gray]
+BB19582 [shape=record label="{65561: read-variable['str',v9,-]|65562: read-property[v9,'substring',-]|65563: \<variable-non-null-undef\>['str']|65564: constant[1.0,v10]}" ] 
+BB19582 -> BB19583 [tailport=s, headport=n, headlabel="      19583"]
+BB19582 -> BB19585 [tailport=s, headport=n, color=gray]
+BB19583 [shape=record label="{65565: call-str.substring [v9,'substring',v10,v1]}" ] 
+BB19583 -> BB19584 [tailport=s, headport=n, headlabel="      19584"]
+BB19583 -> BB19585 [tailport=s, headport=n, color=gray]
+BB19584 [shape=record label="{65566: return[v1]}" ] 
+BB19585 [shape=record label="{65567: exceptional-return}" ] 
+//#$~ 36603
+}

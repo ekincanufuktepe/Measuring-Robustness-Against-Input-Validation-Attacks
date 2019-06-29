@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry126[shape=none,label=""];
+BB_entry126 -> BB1364 [tailport=s, headport=n, headlabel="    1364"]
+BB1364 [shape=record label="{4501: constant[undefined,v1]}" ] 
+BB1364 -> BB1365 [tailport=s, headport=n, headlabel="      1365"]
+BB1365 [shape=record label="{4502: read-variable['this',v4,-]|4503: read-property[v4,'options',v3]|4504: constant[\"string\",v6]|4505: typeof['re',v7]|4506: ==[v6,v7,v5]|4507: if[v5](true-block:1366,false-block:1367)}" ] 
+BB1365 -> BB1366 [tailport=s, headport=n, headlabel="      1366"]
+BB1365 -> BB1367 [tailport=s, headport=n, headlabel="      1367"]
+BB1365 -> BB1372 [tailport=s, headport=n, color=gray, headlabel="      1372"]
+BB1366 [shape=record label="{4508: read-variable['RegExp',v8,-]|4509: read-variable['escapeRe',v11,v10]|4510: read-variable['re',v12,-]}" ] 
+BB1366 -> BB1368 [tailport=s, headport=n, headlabel="      1368"]
+BB1366 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1367 [shape=record label="{4511: read-variable['re',v2,-]}" ] 
+BB1367 -> BB1370 [tailport=s, headport=n, headlabel="      1370"]
+BB1367 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1368 [shape=record label="{4512: call-escapeRe [v10,v11,v12,v9]}" ] 
+BB1368 -> BB1369 [tailport=s, headport=n, headlabel="      1369"]
+BB1368 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1369 [shape=record label="{4513: construct [-,v8,v9,v2]}" ] 
+BB1369 -> BB1370 [tailport=s, headport=n]
+BB1369 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1370 [shape=record label="{4514: write-property[v3,'grep',v2]|4515: \<property-non-null-undef\>[v4,'options']*|4516: read-variable['this',v1,-]}" ] 
+BB1370 -> BB1371 [tailport=s, headport=n, headlabel="      1371"]
+BB1370 -> BB1372 [tailport=s, headport=n, color=gray]
+BB1371 [shape=record label="{4517: return[v1]}" ] 
+BB1372 [shape=record label="{4518: exceptional-return}" ] 
+//#$~ 1638
+}

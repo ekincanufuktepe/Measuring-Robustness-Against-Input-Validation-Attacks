@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry150[shape=none,label=""];
+BB_entry150 -> BB1495 [tailport=s, headport=n, headlabel="    1495"]
+BB1495 [shape=record label="{4188: constant[undefined,v1]|4189: vardecl['parent']}" ] 
+BB1495 -> BB1496 [tailport=s, headport=n, headlabel="      1496"]
+BB1496 [shape=record label="{4190: read-variable['this',v3,-]|4191: read-property[v3,'parentNode',v2]|4192: write-variable[v2,'parent']*|4193: read-variable['parent',v4,-]|4194: if[v4](true-block:1497,false-block:1499)}" ] 
+BB1496 -> BB1497 [tailport=s, headport=n, headlabel="      1497"]
+BB1496 -> BB1499 [tailport=s, headport=n, headlabel="      1499"]
+BB1496 -> BB1500 [tailport=s, headport=n, color=gray, headlabel="      1500"]
+BB1497 [shape=record label="{4195: read-variable['parent',v6,-]|4196: read-property[v6,'removeChild',-]|4197: \<variable-non-null-undef\>['parent']|4198: read-variable['this',v7,-]}" ] 
+BB1497 -> BB1498 [tailport=s, headport=n, headlabel="      1498"]
+BB1497 -> BB1500 [tailport=s, headport=n, color=gray]
+BB1498 [shape=record label="{4199: call-parent.removeChild [v6,'removeChild',v7,-]*}" ] 
+BB1498 -> BB1499 [tailport=s, headport=n]
+BB1498 -> BB1500 [tailport=s, headport=n, color=gray]
+BB1499 [shape=record label="{4200: return[v1]}" ] 
+BB1500 [shape=record label="{4201: exceptional-return}" ] 
+//#$~ 830
+}

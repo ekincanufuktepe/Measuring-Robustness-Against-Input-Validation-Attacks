@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry130[shape=none,label=""];
+BB_entry130 -> BB1062 [tailport=s, headport=n, headlabel="    1062"]
+BB1062 [shape=record label="{3220: constant[undefined,v1]}" ] 
+BB1062 -> BB1063 [tailport=s, headport=n, headlabel="      1063"]
+BB1063 [shape=record label="{3221: read-variable['checkerFunc',v5,v4]|3222: read-variable['value',v6,v2]|3223: read-variable['errorHandler',v7,v2]}" ] 
+BB1063 -> BB1064 [tailport=s, headport=n, headlabel="      1064"]
+BB1063 -> BB1067 [tailport=s, headport=n, color=gray, headlabel="      1067"]
+BB1064 [shape=record label="{3224: call-checkerFunc [v4,v5,v6,v7,v3]}" ] 
+BB1064 -> BB1065 [tailport=s, headport=n, headlabel="      1065"]
+BB1064 -> BB1067 [tailport=s, headport=n, color=gray]
+BB1065 [shape=record label="{3225: write-variable[v3,'value']*|3226: read-variable['this',v9,-]|3227: read-variable['name',v10,v2]|3228: read-variable['value',v8,v2]|3229: write-property[v9,v10,v8]*|3230: read-variable['this',v1,-]}" ] 
+BB1065 -> BB1066 [tailport=s, headport=n, headlabel="      1066"]
+BB1065 -> BB1067 [tailport=s, headport=n, color=gray]
+BB1066 [shape=record label="{3231: return[v1]}" ] 
+BB1067 [shape=record label="{3232: exceptional-return}" ] 
+//#$~ 1245
+}

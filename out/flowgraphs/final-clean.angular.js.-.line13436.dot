@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry671[shape=none,label=""];
+BB_entry671 -> BB9260 [tailport=s, headport=n, headlabel="    9260"]
+BB9260 [shape=record label="{24329: constant[undefined,v1]}" ] 
+BB9260 -> BB9261 [tailport=s, headport=n, headlabel="      9261"]
+BB9261 [shape=record label="{24330: read-variable['id',v3,-]|24331: ![v3,v2]|24332: if[v2](true-block:9262,false-block:9263)}" ] 
+BB9261 -> BB9262 [tailport=s, headport=n, headlabel="      9262"]
+BB9261 -> BB9263 [tailport=s, headport=n, headlabel="      9263"]
+BB9261 -> BB9269 [tailport=s, headport=n, color=gray, headlabel="      9269"]
+BB9262 [shape=record label="{24333: constant[undefined,v1]}" ] 
+BB9262 -> BB9268 [tailport=s, headport=n, headlabel="      9268"]
+BB9263 [shape=record label="{24334: read-variable['this',v8,-]|24335: read-property[v8,'current',-]}" ] 
+BB9263 -> BB9264 [tailport=s, headport=n, headlabel="      9264"]
+BB9263 -> BB9269 [tailport=s, headport=n, color=gray]
+BB9264 [shape=record label="{24336: call-this.current [v8,'current',v6]}" ] 
+BB9264 -> BB9265 [tailport=s, headport=n, headlabel="      9265"]
+BB9264 -> BB9269 [tailport=s, headport=n, color=gray]
+BB9265 [shape=record label="{24337: read-property[v6,'body',v5]|24338: read-property[v5,'push',-]|24339: \<property-non-null-undef\>[v6,'body']|24340: read-variable['id',v9,-]|24341: constant[\"=\",v10]|24342: read-variable['value',v11,-]|24343: constant[\";\",v12]}" ] 
+BB9265 -> BB9266 [tailport=s, headport=n, headlabel="      9266"]
+BB9265 -> BB9269 [tailport=s, headport=n, color=gray]
+BB9266 [shape=record label="{24344: call-null [v5,'push',v9,v10,v11,v12,-]*}" ] 
+BB9266 -> BB9267 [tailport=s, headport=n, headlabel="      9267"]
+BB9266 -> BB9269 [tailport=s, headport=n, color=gray]
+BB9267 [shape=record label="{24345: read-variable['id',v1,-]}" ] 
+BB9267 -> BB9268 [tailport=s, headport=n]
+BB9267 -> BB9269 [tailport=s, headport=n, color=gray]
+BB9268 [shape=record label="{24346: return[v1]}" ] 
+BB9269 [shape=record label="{24347: exceptional-return}" ] 
+//#$~ 13439
+}

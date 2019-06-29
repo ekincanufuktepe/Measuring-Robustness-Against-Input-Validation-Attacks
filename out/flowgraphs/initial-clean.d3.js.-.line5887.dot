@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry925[shape=none,label=""];
+BB_entry925 -> BB10027 [tailport=s, headport=n, headlabel="    10027"]
+BB10027 [shape=record label="{33231: constant[undefined,v1]}" ] 
+BB10027 -> BB10028 [tailport=s, headport=n, headlabel="      10028"]
+BB10028 [shape=record label="{33232: constant[1.0,v2]|33233: read-variable['a',v6,-]|33234: read-variable['Math',v9,-]|33235: read-property[v9,'pow',-]|33236: \<variable-non-null-undef\>['Math']|33237: constant[2.0,v10]|33238: constant[-10.0,v12]|33239: read-variable['t',v13,-]|33240: *[v12,v13,v11]}" ] 
+BB10028 -> BB10029 [tailport=s, headport=n, headlabel="      10029"]
+BB10028 -> BB10034 [tailport=s, headport=n, color=gray, headlabel="      10034"]
+BB10029 [shape=record label="{33241: call-Math.pow [v9,'pow',v10,v11,v7]}" ] 
+BB10029 -> BB10030 [tailport=s, headport=n, headlabel="      10030"]
+BB10029 -> BB10034 [tailport=s, headport=n, color=gray]
+BB10030 [shape=record label="{33242: *[v6,v7,v4]|33243: read-variable['Math',v15,-]|33244: read-property[v15,'sin',-]|33245: \<variable-non-null-undef\>['Math']|33246: read-variable['t',v21,-]|33247: read-variable['s',v22,-]|33248: -[v21,v22,v19]|33249: read-variable['\\u03c4',v20,-]|33250: *[v19,v20,v17]|33251: read-variable['p',v18,-]|33252: /[v17,v18,v16]}" ] 
+BB10030 -> BB10031 [tailport=s, headport=n, headlabel="      10031"]
+BB10030 -> BB10034 [tailport=s, headport=n, color=gray]
+BB10031 [shape=record label="{33253: call-Math.sin [v15,'sin',v16,v5]}" ] 
+BB10031 -> BB10032 [tailport=s, headport=n, headlabel="      10032"]
+BB10031 -> BB10034 [tailport=s, headport=n, color=gray]
+BB10032 [shape=record label="{33254: *[v4,v5,v3]|33255: +[v2,v3,v1]}" ] 
+BB10032 -> BB10033 [tailport=s, headport=n, headlabel="      10033"]
+BB10032 -> BB10034 [tailport=s, headport=n, color=gray]
+BB10033 [shape=record label="{33256: return[v1]}" ] 
+BB10034 [shape=record label="{33257: exceptional-return}" ] 
+//#$~ 5888
+}

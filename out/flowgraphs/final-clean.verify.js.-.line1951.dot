@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry177[shape=none,label=""];
+BB_entry177 -> BB2125 [tailport=s, headport=n, headlabel="    2125"]
+BB2125 [shape=record label="{5997: constant[undefined,v1]}" ] 
+BB2125 -> BB2126 [tailport=s, headport=n, headlabel="      2126"]
+BB2126 [shape=record label="{5998: read-variable['r',v6,-]|5999: read-property[v6,'field',v5]|6000: \<variable-non-null-undef\>['r']|6001: read-property[v5,'is',-]|6002: \<property-non-null-undef\>[v6,'field']|6003: constant[\":checked\",v7]}" ] 
+BB2126 -> BB2127 [tailport=s, headport=n, headlabel="      2127"]
+BB2126 -> BB2132 [tailport=s, headport=n, color=gray, headlabel="      2132"]
+BB2127 [shape=record label="{6004: call-r.field.is [v5,'is',v7,v3]}" ] 
+BB2127 -> BB2128 [tailport=s, headport=n, headlabel="      2128"]
+BB2127 -> BB2132 [tailport=s, headport=n, color=gray]
+BB2128 [shape=record label="{6005: ![v3,v2]|6006: if[v2](true-block:2129,false-block:2130)}" ] 
+BB2128 -> BB2129 [tailport=s, headport=n, headlabel="      2129"]
+BB2128 -> BB2130 [tailport=s, headport=n, headlabel="      2130"]
+BB2128 -> BB2132 [tailport=s, headport=n, color=gray]
+BB2129 [shape=record label="{6007: constant[\"You must agree to continue\",v1]}" ] 
+BB2129 -> BB2131 [tailport=s, headport=n, headlabel="      2131"]
+BB2130 [shape=record label="{6008: constant[true,v1]}" ] 
+BB2130 -> BB2131 [tailport=s, headport=n]
+BB2131 [shape=record label="{6009: return[v1]}" ] 
+BB2132 [shape=record label="{6010: exceptional-return}" ] 
+//#$~ 1954
+}

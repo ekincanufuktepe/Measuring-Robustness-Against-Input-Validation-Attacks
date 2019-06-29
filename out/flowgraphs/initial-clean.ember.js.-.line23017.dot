@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1044[shape=none,label=""];
+BB_entry1044 -> BB12542 [tailport=s, headport=n, headlabel="    12542"]
+BB12542 [shape=record label="{42782: constant[undefined,v1]}" ] 
+BB12542 -> BB12543 [tailport=s, headport=n, headlabel="      12543"]
+BB12543 [shape=record label="{42783: read-variable['this',v3,-]|42784: read-property[v3,'deactivate',-]}" ] 
+BB12543 -> BB12544 [tailport=s, headport=n, headlabel="      12544"]
+BB12543 -> BB12550 [tailport=s, headport=n, color=gray, headlabel="      12550"]
+BB12544 [shape=record label="{42785: call-this.deactivate [v3,'deactivate',-]*}" ] 
+BB12544 -> BB12545 [tailport=s, headport=n, headlabel="      12545"]
+BB12544 -> BB12550 [tailport=s, headport=n, color=gray]
+BB12545 [shape=record label="{42786: read-variable['this',v5,-]|42787: read-property[v5,'trigger',-]|42788: constant[\"deactivate\",v6]}" ] 
+BB12545 -> BB12546 [tailport=s, headport=n, headlabel="      12546"]
+BB12545 -> BB12550 [tailport=s, headport=n, color=gray]
+BB12546 [shape=record label="{42789: call-this.trigger [v5,'trigger',v6,-]*}" ] 
+BB12546 -> BB12547 [tailport=s, headport=n, headlabel="      12547"]
+BB12546 -> BB12550 [tailport=s, headport=n, color=gray]
+BB12547 [shape=record label="{42790: read-variable['this',v8,-]|42791: read-property[v8,'teardownViews',-]}" ] 
+BB12547 -> BB12548 [tailport=s, headport=n, headlabel="      12548"]
+BB12547 -> BB12550 [tailport=s, headport=n, color=gray]
+BB12548 [shape=record label="{42792: call-this.teardownViews [v8,'teardownViews',-]*}" ] 
+BB12548 -> BB12549 [tailport=s, headport=n, headlabel="      12549"]
+BB12548 -> BB12550 [tailport=s, headport=n, color=gray]
+BB12549 [shape=record label="{42793: return[v1]}" ] 
+BB12550 [shape=record label="{42794: exceptional-return}" ] 
+//#$~ 23022
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry762[shape=none,label=""];
+BB_entry762 -> BB10129 [tailport=s, headport=n, headlabel="    10129"]
+BB10129 [shape=record label="{33513: constant[undefined,v1]}" ] 
+BB10129 -> BB10130 [tailport=s, headport=n, headlabel="      10130"]
+BB10130 [shape=record label="{33514: read-variable['string',v5,-]|33515: read-property[v5,'replace',-]|33516: \<variable-non-null-undef\>['string']|33517: read-variable['_uppercasePattern',v6,-]|33518: constant[\"-$1\",v7]}" ] 
+BB10130 -> BB10131 [tailport=s, headport=n, headlabel="      10131"]
+BB10130 -> BB10135 [tailport=s, headport=n, color=gray, headlabel="      10135"]
+BB10131 [shape=record label="{33519: call-string.replace [v5,'replace',v6,v7,v3]}" ] 
+BB10131 -> BB10132 [tailport=s, headport=n, headlabel="      10132"]
+BB10131 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10132 [shape=record label="{33520: read-property[v3,'toLowerCase',-]}" ] 
+BB10132 -> BB10133 [tailport=s, headport=n, headlabel="      10133"]
+BB10132 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10133 [shape=record label="{33521: call-null [v3,'toLowerCase',v1]}" ] 
+BB10133 -> BB10134 [tailport=s, headport=n, headlabel="      10134"]
+BB10133 -> BB10135 [tailport=s, headport=n, color=gray]
+BB10134 [shape=record label="{33522: return[v1]}" ] 
+BB10135 [shape=record label="{33523: exceptional-return}" ] 
+//#$~ 18208
+}

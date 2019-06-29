@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry446[shape=none,label=""];
+BB_entry446 -> BB6019 [tailport=s, headport=n, headlabel="    6019"]
+BB6019 [shape=record label="{15557: constant[undefined,v1]|15558: vardecl['jsonStart']}" ] 
+BB6019 -> BB6020 [tailport=s, headport=n, headlabel="      6020"]
+BB6020 [shape=record label="{15559: read-variable['str',v4,-]|15560: read-property[v4,'match',-]|15561: \<variable-non-null-undef\>['str']|15562: read-variable['JSON_START',v5,-]}" ] 
+BB6020 -> BB6021 [tailport=s, headport=n, headlabel="      6021"]
+BB6020 -> BB6026 [tailport=s, headport=n, color=gray, headlabel="      6026"]
+BB6021 [shape=record label="{15563: call-str.match [v4,'match',v5,v2]}" ] 
+BB6021 -> BB6022 [tailport=s, headport=n, headlabel="      6022"]
+BB6021 -> BB6026 [tailport=s, headport=n, color=gray]
+BB6022 [shape=record label="{15564: write-variable[v2,'jsonStart']*|15565: read-variable['jsonStart',v1,-]|15566: if[v1](true-block:6023,false-block:6025)}" ] 
+BB6022 -> BB6025 [tailport=s, headport=n, headlabel="      6025"]
+BB6022 -> BB6023 [tailport=s, headport=n, headlabel="      6023"]
+BB6022 -> BB6026 [tailport=s, headport=n, color=gray]
+BB6023 [shape=record label="{15567: read-variable['JSON_ENDS',v8,-]|15568: read-variable['jsonStart',v10,-]|15569: constant[0.0,v11]|15570: read-property[v10,v11,v9]|15571: \<variable-non-null-undef\>['jsonStart']|15572: read-property[v8,v9,v7]|15573: \<variable-non-null-undef\>['JSON_ENDS']|15574: read-property[v7,'test',-]|15575: \<property-non-null-undef\>[v8,v9]|15576: read-variable['str',v12,-]}" ] 
+BB6023 -> BB6024 [tailport=s, headport=n, headlabel="      6024"]
+BB6023 -> BB6026 [tailport=s, headport=n, color=gray]
+BB6024 [shape=record label="{15577: call-null [v7,'test',v12,v1]}" ] 
+BB6024 -> BB6025 [tailport=s, headport=n]
+BB6024 -> BB6026 [tailport=s, headport=n, color=gray]
+BB6025 [shape=record label="{15578: return[v1]}" ] 
+BB6026 [shape=record label="{15579: exceptional-return}" ] 
+//#$~ 9260
+}

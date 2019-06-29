@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry221[shape=none,label=""];
+BB_entry221 -> BB4900 [tailport=s, headport=n, headlabel="    4900"]
+BB4900 [shape=record label="{15918: constant[undefined,v1]}" ] 
+BB4900 -> BB4901 [tailport=s, headport=n, headlabel="      4901"]
+BB4901 [shape=record label="{15919: read-variable['this',v3,-]|15920: read-property[v3,'pushSource',-]|15921: read-variable['this',v6,-]|15922: read-property[v6,'appendToBuffer',-]|15923: read-variable['Array',v8,-]|15924: read-variable['this',v11,-]|15925: read-property[v11,'aliasable',-]|15926: constant[\"this.escapeExpression\",v12]}" ] 
+BB4901 -> BB4902 [tailport=s, headport=n, headlabel="      4902"]
+BB4901 -> BB4910 [tailport=s, headport=n, color=gray, headlabel="      4910"]
+BB4902 [shape=record label="{15927: call-this.aliasable [v11,'aliasable',v12,v9]}" ] 
+BB4902 -> BB4903 [tailport=s, headport=n, headlabel="      4903"]
+BB4902 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4903 [shape=record label="{15928: constant[\"(\",v13]|15929: read-variable['this',v16,-]|15930: read-property[v16,'popStack',-]}" ] 
+BB4903 -> BB4904 [tailport=s, headport=n, headlabel="      4904"]
+BB4903 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4904 [shape=record label="{15931: call-this.popStack [v16,'popStack',v14]}" ] 
+BB4904 -> BB4905 [tailport=s, headport=n, headlabel="      4905"]
+BB4904 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4905 [shape=record label="{15932: constant[\")\",v17]}" ] 
+BB4905 -> BB4906 [tailport=s, headport=n, headlabel="      4906"]
+BB4906 [shape=record label="{15933: construct [-,v8,v9,v13,v14,v17,v7]}" ] 
+BB4906 -> BB4907 [tailport=s, headport=n, headlabel="      4907"]
+BB4906 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4907 [shape=record label="{15934: call-this.appendToBuffer [v6,'appendToBuffer',v7,v4]}" ] 
+BB4907 -> BB4908 [tailport=s, headport=n, headlabel="      4908"]
+BB4907 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4908 [shape=record label="{15935: call-this.pushSource [v3,'pushSource',v4,-]*}" ] 
+BB4908 -> BB4909 [tailport=s, headport=n, headlabel="      4909"]
+BB4908 -> BB4910 [tailport=s, headport=n, color=gray]
+BB4909 [shape=record label="{15936: return[v1]}" ] 
+BB4910 [shape=record label="{15937: exceptional-return}" ] 
+//#$~ 2978
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry71[shape=none,label=""];
+BB_entry71 -> BB937 [tailport=s, headport=n, headlabel="    937"]
+BB937 [shape=record label="{2402: constant[undefined,v1]}" ] 
+BB937 -> BB938 [tailport=s, headport=n, headlabel="      938"]
+BB938 [shape=record label="{2403: read-variable['undefined',v2,-]|2404: write-variable[v2,'stack']*|2405: read-variable['memory',v4,-]|2406: ![v4,v3]|2407: if[v3](true-block:939,false-block:941)}" ] 
+BB938 -> BB939 [tailport=s, headport=n, headlabel="      939"]
+BB938 -> BB941 [tailport=s, headport=n, headlabel="      941"]
+BB938 -> BB943 [tailport=s, headport=n, color=gray, headlabel="      943"]
+BB939 [shape=record label="{2408: read-variable['self',v6,-]|2409: read-property[v6,'disable',-]|2410: \<variable-non-null-undef\>['self']}" ] 
+BB939 -> BB940 [tailport=s, headport=n, headlabel="      940"]
+BB939 -> BB943 [tailport=s, headport=n, color=gray]
+BB940 [shape=record label="{2411: call[v6,'disable',-]*}" ] 
+BB940 -> BB941 [tailport=s, headport=n]
+BB940 -> BB943 [tailport=s, headport=n, color=gray]
+BB941 [shape=record label="{2412: read-variable['this',v1,-]}" ] 
+BB941 -> BB942 [tailport=s, headport=n, headlabel="      942"]
+BB941 -> BB943 [tailport=s, headport=n, color=gray]
+BB942 [shape=record label="{2413: return[v1]}" ] 
+BB943 [shape=record label="{2414: exceptional-return}" ] 
+}

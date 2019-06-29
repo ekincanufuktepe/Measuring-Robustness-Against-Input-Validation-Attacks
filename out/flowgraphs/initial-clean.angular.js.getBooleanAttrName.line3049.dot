@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry157[shape=none,label=""];
+BB_entry157 -> BB2072 [tailport=s, headport=n, headlabel="    2072"]
+BB2072 [shape=record label="{4963: constant[undefined,v1]|4964: vardecl['booleanAttr']}" ] 
+BB2072 -> BB2073 [tailport=s, headport=n, headlabel="      2073"]
+BB2073 [shape=record label="{4965: read-variable['BOOLEAN_ATTR',v3,-]|4966: read-variable['name',v6,-]|4967: read-property[v6,'toLowerCase',-]|4968: \<variable-non-null-undef\>['name']}" ] 
+BB2073 -> BB2074 [tailport=s, headport=n, headlabel="      2074"]
+BB2073 -> BB2081 [tailport=s, headport=n, color=gray, headlabel="      2081"]
+BB2074 [shape=record label="{4969: call-name.toLowerCase [v6,'toLowerCase',v4]}" ] 
+BB2074 -> BB2075 [tailport=s, headport=n, headlabel="      2075"]
+BB2074 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2075 [shape=record label="{4970: read-property[v3,v4,v2]|4971: \<variable-non-null-undef\>['BOOLEAN_ATTR']|4972: write-variable[v2,'booleanAttr']*|4973: read-variable['booleanAttr',v1,-]|4974: if[v1](true-block:2076,false-block:2080)}" ] 
+BB2075 -> BB2080 [tailport=s, headport=n, headlabel="      2080"]
+BB2075 -> BB2076 [tailport=s, headport=n, headlabel="      2076"]
+BB2075 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2076 [shape=record label="{4975: read-variable['BOOLEAN_ELEMENTS',v7,-]|4976: read-variable['nodeName_',v10,v9]|4977: read-variable['element',v11,-]}" ] 
+BB2076 -> BB2077 [tailport=s, headport=n, headlabel="      2077"]
+BB2076 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2077 [shape=record label="{4978: call-nodeName_ [v9,v10,v11,v8]}" ] 
+BB2077 -> BB2078 [tailport=s, headport=n, headlabel="      2078"]
+BB2077 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2078 [shape=record label="{4979: read-property[v7,v8,v1]|4980: \<variable-non-null-undef\>['BOOLEAN_ELEMENTS']|4981: if[v1](true-block:2079,false-block:2080)}" ] 
+BB2078 -> BB2080 [tailport=s, headport=n]
+BB2078 -> BB2079 [tailport=s, headport=n, headlabel="      2079"]
+BB2078 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2079 [shape=record label="{4982: read-variable['booleanAttr',v1,-]}" ] 
+BB2079 -> BB2080 [tailport=s, headport=n]
+BB2079 -> BB2081 [tailport=s, headport=n, color=gray]
+BB2080 [shape=record label="{4983: return[v1]}" ] 
+BB2081 [shape=record label="{4984: exceptional-return}" ] 
+//#$~ 3054
+}

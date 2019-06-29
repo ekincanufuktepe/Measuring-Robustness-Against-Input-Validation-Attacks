@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry87[shape=none,label=""];
+BB_entry87 -> BB1175 [tailport=s, headport=n, headlabel="    1175"]
+BB1175 [shape=record label="{4619: constant[undefined,v1]}" ] 
+BB1175 -> BB1176 [tailport=s, headport=n, headlabel="      1176"]
+BB1176 [shape=record label="{4620: read-variable['this',v5,-]|4621: read-property[v5,'yy',v4]|4622: read-property[v4,'parser',v3]|4623: \<property-non-null-undef\>[v5,'yy']|4624: if[v3](true-block:1177,false-block:1178)}" ] 
+BB1176 -> BB1177 [tailport=s, headport=n, headlabel="      1177"]
+BB1176 -> BB1178 [tailport=s, headport=n, headlabel="      1178"]
+BB1176 -> BB1183 [tailport=s, headport=n, color=gray, headlabel="      1183"]
+BB1177 [shape=record label="{4625: read-variable['this',v9,-]|4626: read-property[v9,'yy',v8]|4627: read-property[v8,'parser',v7]|4628: \<property-non-null-undef\>[v9,'yy']|4629: read-property[v7,'parseError',-]|4630: \<property-non-null-undef\>[v8,'parser']|4631: read-variable['str',v10,v2]|4632: read-variable['hash',v11,v2]}" ] 
+BB1177 -> BB1179 [tailport=s, headport=n, headlabel="      1179"]
+BB1177 -> BB1183 [tailport=s, headport=n, color=gray]
+BB1178 [shape=record label="{4633: read-variable['Error',v7,-]|4634: read-variable['str',v8,v2]}" ] 
+BB1178 -> BB1180 [tailport=s, headport=n, headlabel="      1180"]
+BB1178 -> BB1183 [tailport=s, headport=n, color=gray]
+BB1179 [shape=record label="{4635: call-this.yy.parser.parseError [v7,'parseError',v10,v11,-]*}" ] 
+BB1179 -> BB1182 [tailport=s, headport=n, headlabel="      1182"]
+BB1179 -> BB1183 [tailport=s, headport=n, color=gray]
+BB1180 [shape=record label="{4636: construct [-,v7,v8,v6]}" ] 
+BB1180 -> BB1181 [tailport=s, headport=n, headlabel="      1181"]
+BB1180 -> BB1183 [tailport=s, headport=n, color=gray]
+BB1181 [shape=record label="{4637: throw[v6]*}" ] 
+BB1181 -> BB1182 [tailport=s, headport=n]
+BB1181 -> BB1183 [tailport=s, headport=n, color=gray]
+BB1182 [shape=record label="{4638: return[v1]}" ] 
+BB1183 [shape=record label="{4639: exceptional-return}" ] 
+//#$~ 1138
+}

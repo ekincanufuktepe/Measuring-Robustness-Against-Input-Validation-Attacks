@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB442 [tailport=s, headport=n, headlabel="    442"]
+BB442 [shape=record label="{1398: constant[undefined,v1]|1399: vardecl['x']|1400: vardecl['y']}" ] 
+BB442 -> BB443 [tailport=s, headport=n, headlabel="      443"]
+BB443 [shape=record label="{1401: read-variable['props',v3,-]|1402: ![v3,v2]|1403: if[v2](true-block:444,false-block:445)}" ] 
+BB443 -> BB444 [tailport=s, headport=n, headlabel="      444"]
+BB443 -> BB445 [tailport=s, headport=n, headlabel="      445"]
+BB443 -> BB448 [tailport=s, headport=n, color=gray, headlabel="      448"]
+BB444 [shape=record label="{1404: read-variable['PROPS_XY',v4,-]|1405: write-variable[v4,'props']*}" ] 
+BB444 -> BB445 [tailport=s, headport=n]
+BB444 -> BB448 [tailport=s, headport=n, color=gray]
+BB445 [shape=record label="{1406: read-variable['p2',v7,-]|1407: read-variable['props',v9,-]|1408: constant[0.0,v10]|1409: read-property[v9,v10,v8]|1410: \<variable-non-null-undef\>['props']|1411: read-property[v7,v8,v5]|1412: \<variable-non-null-undef\>['p2']|1413: read-variable['p1',v11,-]|1414: read-variable['props',v13,-]|1415: constant[0.0,v14]|1416: read-property[v13,v14,v12]|1417: \<variable-non-null-undef\>['props']|1418: read-property[v11,v12,v6]|1419: \<variable-non-null-undef\>['p1']|1420: -[v5,v6,v4]|1421: write-variable[v4,'x']*|1422: read-variable['p2',v18,-]|1423: read-variable['props',v20,-]|1424: constant[1.0,v21]|1425: read-property[v20,v21,v19]|1426: \<variable-non-null-undef\>['props']|1427: read-property[v18,v19,v16]|1428: \<variable-non-null-undef\>['p2']|1429: read-variable['p1',v22,-]|1430: read-variable['props',v24,-]|1431: constant[1.0,v25]|1432: read-property[v24,v25,v23]|1433: \<variable-non-null-undef\>['props']|1434: read-property[v22,v23,v17]|1435: \<variable-non-null-undef\>['p1']|1436: -[v16,v17,v15]|1437: write-variable[v15,'y']*|1438: read-variable['Math',v27,-]|1439: read-property[v27,'sqrt',-]|1440: \<variable-non-null-undef\>['Math']|1441: read-variable['x',v31,-]|1442: read-variable['x',v32,-]|1443: *[v31,v32,v29]|1444: read-variable['y',v33,-]|1445: read-variable['y',v34,-]|1446: *[v33,v34,v30]|1447: +[v29,v30,v28]}" ] 
+BB445 -> BB446 [tailport=s, headport=n, headlabel="      446"]
+BB445 -> BB448 [tailport=s, headport=n, color=gray]
+BB446 [shape=record label="{1448: call-Math.sqrt [v27,'sqrt',v28,v1]}" ] 
+BB446 -> BB447 [tailport=s, headport=n, headlabel="      447"]
+BB446 -> BB448 [tailport=s, headport=n, color=gray]
+BB447 [shape=record label="{1449: return[v1]}" ] 
+BB448 [shape=record label="{1450: exceptional-return}" ] 
+//#$~ 675
+}

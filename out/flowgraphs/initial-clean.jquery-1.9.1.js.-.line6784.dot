@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry427[shape=none,label=""];
+BB_entry427 -> BB6727 [tailport=s, headport=n, headlabel="    6727"]
+BB6727 [shape=record label="{19656: constant[undefined,v1]|19657: vardecl['ret']}" ] 
+BB6727 -> BB6728 [tailport=s, headport=n, headlabel="      6728"]
+BB6728 [shape=record label="{19658: read-variable['computed',v2,-]|19659: if[v2](true-block:6729,false-block:6734)}" ] 
+BB6728 -> BB6729 [tailport=s, headport=n, headlabel="      6729"]
+BB6728 -> BB6734 [tailport=s, headport=n, headlabel="      6734"]
+BB6728 -> BB6735 [tailport=s, headport=n, color=gray, headlabel="      6735"]
+BB6729 [shape=record label="{19660: read-variable['curCSS',v5,v4]|19661: read-variable['elem',v6,-]|19662: constant[\"opacity\",v7]}" ] 
+BB6729 -> BB6730 [tailport=s, headport=n, headlabel="      6730"]
+BB6729 -> BB6735 [tailport=s, headport=n, color=gray]
+BB6730 [shape=record label="{19663: call[v4,v5,v6,v7,v3]}" ] 
+BB6730 -> BB6731 [tailport=s, headport=n, headlabel="      6731"]
+BB6730 -> BB6735 [tailport=s, headport=n, color=gray]
+BB6731 [shape=record label="{19664: write-variable[v3,'ret']*|19665: read-variable['ret',v9,-]|19666: constant[\"\",v10]|19667: ===[v9,v10,v8]|19668: if[v8](true-block:6732,false-block:6733)}" ] 
+BB6731 -> BB6732 [tailport=s, headport=n, headlabel="      6732"]
+BB6731 -> BB6733 [tailport=s, headport=n, headlabel="      6733"]
+BB6731 -> BB6735 [tailport=s, headport=n, color=gray]
+BB6732 [shape=record label="{19669: constant[\"1\",v1]}" ] 
+BB6732 -> BB6734 [tailport=s, headport=n]
+BB6733 [shape=record label="{19670: read-variable['ret',v1,-]}" ] 
+BB6733 -> BB6734 [tailport=s, headport=n]
+BB6733 -> BB6735 [tailport=s, headport=n, color=gray]
+BB6734 [shape=record label="{19671: return[v1]}" ] 
+BB6735 [shape=record label="{19672: exceptional-return}" ] 
+}

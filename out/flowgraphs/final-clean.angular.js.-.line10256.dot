@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry475[shape=none,label=""];
+BB_entry475 -> BB6319 [tailport=s, headport=n, headlabel="    6319"]
+BB6319 [shape=record label="{16253: constant[undefined,v1]}" ] 
+BB6319 -> BB6320 [tailport=s, headport=n, headlabel="      6320"]
+BB6320 [shape=record label="{16254: read-variable['$http',v3,v2]|16255: read-variable['extend',v6,v5]|16256: new[v7]|16257: read-variable['config',v8,-]|16258: if[v8](true-block:6322,false-block:6321)}" ] 
+BB6320 -> BB6322 [tailport=s, headport=n, headlabel="      6322"]
+BB6320 -> BB6321 [tailport=s, headport=n, headlabel="      6321"]
+BB6320 -> BB6326 [tailport=s, headport=n, color=gray, headlabel="      6326"]
+BB6321 [shape=record label="{16259: new[v8]}" ] 
+BB6321 -> BB6322 [tailport=s, headport=n]
+BB6322 [shape=record label="{16260: new[v9]|16261: read-variable['name',v10,-]|16262: write-property[v9,'method',v10]|16263: read-variable['url',v11,-]|16264: write-property[v9,'url',v11]}" ] 
+BB6322 -> BB6323 [tailport=s, headport=n, headlabel="      6323"]
+BB6322 -> BB6326 [tailport=s, headport=n, color=gray]
+BB6323 [shape=record label="{16265: call-extend [v5,v6,v7,v8,v9,v4]}" ] 
+BB6323 -> BB6324 [tailport=s, headport=n, headlabel="      6324"]
+BB6323 -> BB6326 [tailport=s, headport=n, color=gray]
+BB6324 [shape=record label="{16266: call-$http [v2,v3,v4,v1]}" ] 
+BB6324 -> BB6325 [tailport=s, headport=n, headlabel="      6325"]
+BB6324 -> BB6326 [tailport=s, headport=n, color=gray]
+BB6325 [shape=record label="{16267: return[v1]}" ] 
+BB6326 [shape=record label="{16268: exceptional-return}" ] 
+//#$~ 10259
+}

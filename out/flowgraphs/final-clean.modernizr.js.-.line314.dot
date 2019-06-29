@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry30[shape=none,label=""];
+BB_entry30 -> BB306 [tailport=s, headport=n, headlabel="    306"]
+BB306 [shape=record label="{796: constant[undefined,v1]}" ] 
+BB306 -> BB307 [tailport=s, headport=n, headlabel="      307"]
+BB307 [shape=record label="{797: read-variable['window',v4,-]|798: read-property[v4,'history',v3]|799: \<variable-non-null-undef\>['window']|800: if[v3](true-block:308,false-block:309)}" ] 
+BB307 -> BB309 [tailport=s, headport=n, headlabel="      309"]
+BB307 -> BB308 [tailport=s, headport=n, headlabel="      308"]
+BB307 -> BB311 [tailport=s, headport=n, color=gray, headlabel="      311"]
+BB308 [shape=record label="{801: read-variable['history',v5,-]|802: read-property[v5,'pushState',v3]|803: \<variable-non-null-undef\>['history']}" ] 
+BB308 -> BB309 [tailport=s, headport=n]
+BB308 -> BB311 [tailport=s, headport=n, color=gray]
+BB309 [shape=record label="{804: ![v3,v2]|805: ![v2,v1]}" ] 
+BB309 -> BB310 [tailport=s, headport=n, headlabel="      310"]
+BB309 -> BB311 [tailport=s, headport=n, color=gray]
+BB310 [shape=record label="{806: return[v1]}" ] 
+BB311 [shape=record label="{807: exceptional-return}" ] 
+//#$~ 315
+}

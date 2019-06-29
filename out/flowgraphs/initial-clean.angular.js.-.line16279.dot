@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry889[shape=none,label=""];
+BB_entry889 -> BB11524 [tailport=s, headport=n, headlabel="    11524"]
+BB11524 [shape=record label="{30316: constant[undefined,v1]}" ] 
+BB11524 -> BB11525 [tailport=s, headport=n, headlabel="      11525"]
+BB11525 [shape=record label="{30317: read-variable['isDefined',v4,v3]|30318: read-variable['regexp',v5,-]}" ] 
+BB11525 -> BB11526 [tailport=s, headport=n, headlabel="      11526"]
+BB11525 -> BB11531 [tailport=s, headport=n, color=gray, headlabel="      11531"]
+BB11526 [shape=record label="{30319: call-isDefined [v3,v4,v5,v2]}" ] 
+BB11526 -> BB11527 [tailport=s, headport=n, headlabel="      11527"]
+BB11526 -> BB11531 [tailport=s, headport=n, color=gray]
+BB11527 [shape=record label="{30320: if[v2](true-block:11528,false-block:11529)}" ] 
+BB11527 -> BB11528 [tailport=s, headport=n, headlabel="      11528"]
+BB11527 -> BB11529 [tailport=s, headport=n, headlabel="      11529"]
+BB11528 [shape=record label="{30321: read-variable['regexp',v6,-]|30322: write-variable[v6,'aHrefSanitizationWhitelist']*|30323: read-variable['this',v1,-]}" ] 
+BB11528 -> BB11530 [tailport=s, headport=n, headlabel="      11530"]
+BB11528 -> BB11531 [tailport=s, headport=n, color=gray]
+BB11529 [shape=record label="{30324: read-variable['aHrefSanitizationWhitelist',v1,-]}" ] 
+BB11529 -> BB11530 [tailport=s, headport=n]
+BB11529 -> BB11531 [tailport=s, headport=n, color=gray]
+BB11530 [shape=record label="{30325: return[v1]}" ] 
+BB11531 [shape=record label="{30326: exceptional-return}" ] 
+//#$~ 16284
+}

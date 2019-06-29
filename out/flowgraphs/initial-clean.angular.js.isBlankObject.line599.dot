@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry31[shape=none,label=""];
+BB_entry31 -> BB338 [tailport=s, headport=n, headlabel="    338"]
+BB338 [shape=record label="{815: constant[undefined,v1]}" ] 
+BB338 -> BB339 [tailport=s, headport=n, headlabel="      339"]
+BB339 [shape=record label="{816: read-variable['value',v2,-]|817: constant[null,v3]|818: !==[v2,v3,v1]|819: if[v1](true-block:340,false-block:344)}" ] 
+BB339 -> BB344 [tailport=s, headport=n, headlabel="      344"]
+BB339 -> BB340 [tailport=s, headport=n, headlabel="      340"]
+BB339 -> BB345 [tailport=s, headport=n, color=gray, headlabel="      345"]
+BB340 [shape=record label="{820: typeof['value',v4]|821: constant[\"object\",v5]|822: ===[v4,v5,v1]|823: if[v1](true-block:341,false-block:344)}" ] 
+BB340 -> BB344 [tailport=s, headport=n]
+BB340 -> BB341 [tailport=s, headport=n, headlabel="      341"]
+BB340 -> BB345 [tailport=s, headport=n, color=gray]
+BB341 [shape=record label="{824: read-variable['getPrototypeOf',v8,v7]|825: read-variable['value',v9,-]}" ] 
+BB341 -> BB342 [tailport=s, headport=n, headlabel="      342"]
+BB341 -> BB345 [tailport=s, headport=n, color=gray]
+BB342 [shape=record label="{826: call-getPrototypeOf [v7,v8,v9,v6]}" ] 
+BB342 -> BB343 [tailport=s, headport=n, headlabel="      343"]
+BB342 -> BB345 [tailport=s, headport=n, color=gray]
+BB343 [shape=record label="{827: ![v6,v1]}" ] 
+BB343 -> BB344 [tailport=s, headport=n]
+BB343 -> BB345 [tailport=s, headport=n, color=gray]
+BB344 [shape=record label="{828: return[v1]}" ] 
+BB345 [shape=record label="{829: exceptional-return}" ] 
+//#$~ 600
+}

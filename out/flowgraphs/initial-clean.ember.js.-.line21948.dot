@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry977[shape=none,label=""];
+BB_entry977 -> BB11887 [tailport=s, headport=n, headlabel="    11887"]
+BB11887 [shape=record label="{40840: constant[undefined,v1]}" ] 
+BB11887 -> BB11888 [tailport=s, headport=n, headlabel="      11888"]
+BB11888 [shape=record label="{40841: read-variable['set',v3,v2]|40842: read-variable['this',v4,-]|40843: constant[\"location\",v5]|40844: read-variable['get',v8,v7]|40845: read-variable['this',v9,-]|40846: constant[\"_location\",v10]}" ] 
+BB11888 -> BB11889 [tailport=s, headport=n, headlabel="      11889"]
+BB11888 -> BB11894 [tailport=s, headport=n, color=gray, headlabel="      11894"]
+BB11889 [shape=record label="{40847: call-get [v7,v8,v9,v10,v6]}" ] 
+BB11889 -> BB11890 [tailport=s, headport=n, headlabel="      11890"]
+BB11889 -> BB11894 [tailport=s, headport=n, color=gray]
+BB11890 [shape=record label="{40848: if[v6](true-block:11892,false-block:11891)}" ] 
+BB11890 -> BB11892 [tailport=s, headport=n, headlabel="      11892"]
+BB11890 -> BB11891 [tailport=s, headport=n, headlabel="      11891"]
+BB11891 [shape=record label="{40849: read-variable['window',v7,-]|40850: read-property[v7,'location',v6]|40851: \<variable-non-null-undef\>['window']}" ] 
+BB11891 -> BB11892 [tailport=s, headport=n]
+BB11891 -> BB11894 [tailport=s, headport=n, color=gray]
+BB11892 [shape=record label="{40852: call-set [v2,v3,v4,v5,v6,-]*}" ] 
+BB11892 -> BB11893 [tailport=s, headport=n, headlabel="      11893"]
+BB11892 -> BB11894 [tailport=s, headport=n, color=gray]
+BB11893 [shape=record label="{40853: return[v1]}" ] 
+BB11894 [shape=record label="{40854: exceptional-return}" ] 
+//#$~ 21949
+}

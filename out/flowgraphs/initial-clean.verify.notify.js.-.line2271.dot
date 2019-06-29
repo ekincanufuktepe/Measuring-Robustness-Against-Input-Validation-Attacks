@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry197[shape=none,label=""];
+BB_entry197 -> BB2499 [tailport=s, headport=n, headlabel="    2499"]
+BB2499 [shape=record label="{7451: constant[undefined,v1]}" ] 
+BB2499 -> BB2500 [tailport=s, headport=n, headlabel="      2500"]
+BB2500 [shape=record label="{7452: read-variable['globalOptions',v3,-]|7453: read-property[v3,'autoInit',v2]|7454: \<variable-non-null-undef\>['globalOptions']|7455: if[v2](true-block:2501,false-block:2507)}" ] 
+BB2500 -> BB2501 [tailport=s, headport=n, headlabel="      2501"]
+BB2500 -> BB2507 [tailport=s, headport=n, headlabel="      2507"]
+BB2500 -> BB2508 [tailport=s, headport=n, color=gray, headlabel="      2508"]
+BB2501 [shape=record label="{7456: read-variable['$',v9,v8]|7457: constant[\"form\",v10]}" ] 
+BB2501 -> BB2502 [tailport=s, headport=n, headlabel="      2502"]
+BB2501 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2502 [shape=record label="{7458: call-$ [v8,v9,v10,v7]}" ] 
+BB2502 -> BB2503 [tailport=s, headport=n, headlabel="      2503"]
+BB2502 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2503 [shape=record label="{7459: read-property[v7,'filter',-]|7460: function-expr[function ( ),v11]}" ] 
+BB2503 -> BB2504 [tailport=s, headport=n, headlabel="      2504"]
+BB2503 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2504 [shape=record label="{7461: call-null [v7,'filter',v11,v5]}" ] 
+BB2504 -> BB2505 [tailport=s, headport=n, headlabel="      2505"]
+BB2504 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2505 [shape=record label="{7462: read-property[v5,'verify',-]}" ] 
+BB2505 -> BB2506 [tailport=s, headport=n, headlabel="      2506"]
+BB2505 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2506 [shape=record label="{7463: call-null [v5,'verify',-]*}" ] 
+BB2506 -> BB2507 [tailport=s, headport=n]
+BB2506 -> BB2508 [tailport=s, headport=n, color=gray]
+BB2507 [shape=record label="{7464: return[v1]}" ] 
+BB2508 [shape=record label="{7465: exceptional-return}" ] 
+//#$~ 2274
+}

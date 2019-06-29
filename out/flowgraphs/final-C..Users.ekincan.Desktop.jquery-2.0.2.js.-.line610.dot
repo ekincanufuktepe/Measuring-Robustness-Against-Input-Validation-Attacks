@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry36[shape=none,label=""];
+BB_entry36 -> BB481 [tailport=s, headport=n, headlabel="    481"]
+BB481 [shape=record label="{1192: constant[undefined,v1]}" ] 
+BB481 -> BB482 [tailport=s, headport=n, headlabel="      482"]
+BB482 [shape=record label="{1193: read-variable['text',v3,-]|1194: constant[null,v4]|1195: ==[v3,v4,v2]|1196: if[v2](true-block:483,false-block:484)}" ] 
+BB482 -> BB483 [tailport=s, headport=n, headlabel="      483"]
+BB482 -> BB484 [tailport=s, headport=n, headlabel="      484"]
+BB482 -> BB487 [tailport=s, headport=n, color=gray, headlabel="      487"]
+BB483 [shape=record label="{1197: constant[\"\",v1]}" ] 
+BB483 -> BB486 [tailport=s, headport=n, headlabel="      486"]
+BB484 [shape=record label="{1198: read-variable['core_trim',v6,-]|1199: read-property[v6,'call',-]|1200: \<variable-non-null-undef\>['core_trim']|1201: read-variable['text',v7,-]}" ] 
+BB484 -> BB485 [tailport=s, headport=n, headlabel="      485"]
+BB484 -> BB487 [tailport=s, headport=n, color=gray]
+BB485 [shape=record label="{1202: call[v6,'call',v7,v1]}" ] 
+BB485 -> BB486 [tailport=s, headport=n]
+BB485 -> BB487 [tailport=s, headport=n, color=gray]
+BB486 [shape=record label="{1203: return[v1]}" ] 
+BB487 [shape=record label="{1204: exceptional-return}" ] 
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry41[shape=none,label=""];
+BB_entry41 -> BB802 [tailport=s, headport=n, headlabel="    802"]
+BB802 [shape=record label="{2810: constant[undefined,v1]}" ] 
+BB802 -> BB803 [tailport=s, headport=n, headlabel="      803"]
+BB803 [shape=record label="{2811: read-variable['filter',v6,-]|2812: read-variable['name',v7,-]|2813: read-property[v6,v7,v5]|2814: \<variable-non-null-undef\>['filter']|2815: typeof[v5,v3]|2816: constant[\"function\",v4]|2817: ===[v3,v4,v2]|2818: if[v2](true-block:804,false-block:805)}" ] 
+BB803 -> BB804 [tailport=s, headport=n, headlabel="      804"]
+BB803 -> BB805 [tailport=s, headport=n, headlabel="      805"]
+BB803 -> BB810 [tailport=s, headport=n, color=gray, headlabel="      810"]
+BB804 [shape=record label="{2819: read-variable['filter',v9,-]|2820: read-variable['name',v10,-]|2821: read-property[v9,v10,-]|2822: \<variable-non-null-undef\>['filter']|2823: read-variable['str',v11,-]|2824: read-variable['options',v12,-]}" ] 
+BB804 -> BB806 [tailport=s, headport=n, headlabel="      806"]
+BB804 -> BB810 [tailport=s, headport=n, color=gray]
+BB805 [shape=record label="{2825: read-variable['Error',v9,-]|2826: constant[\"unknown filter \\\":\",v13]|2827: read-variable['name',v14,-]|2828: +[v13,v14,v11]|2829: constant[\"\\\"\",v12]|2830: +[v11,v12,v10]}" ] 
+BB805 -> BB807 [tailport=s, headport=n, headlabel="      807"]
+BB805 -> BB810 [tailport=s, headport=n, color=gray]
+BB806 [shape=record label="{2831: call-null [v9,[v10],v11,v12,v1]}" ] 
+BB806 -> BB809 [tailport=s, headport=n, headlabel="      809"]
+BB806 -> BB810 [tailport=s, headport=n, color=gray]
+BB807 [shape=record label="{2832: construct [-,v9,v10,v8]}" ] 
+BB807 -> BB808 [tailport=s, headport=n, headlabel="      808"]
+BB807 -> BB810 [tailport=s, headport=n, color=gray]
+BB808 [shape=record label="{2833: throw[v8]*}" ] 
+BB808 -> BB809 [tailport=s, headport=n]
+BB808 -> BB810 [tailport=s, headport=n, color=gray]
+BB809 [shape=record label="{2834: return[v1]}" ] 
+BB810 [shape=record label="{2835: exceptional-return}" ] 
+//#$~ 745
+}

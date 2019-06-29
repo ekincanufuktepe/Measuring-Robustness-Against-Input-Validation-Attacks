@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry107[shape=none,label=""];
+BB_entry107 -> BB1259 [tailport=s, headport=n, headlabel="    1259"]
+BB1259 [shape=record label="{3310: constant[undefined,v1]|3311: vardecl['result']|3312: vardecl['keys']|3313: vardecl['i']|3314: vardecl['length']}" ] 
+BB1259 -> BB1260 [tailport=s, headport=n, headlabel="      1260"]
+BB1260 [shape=record label="{3315: new[v2]|3316: write-variable[v2,'result']*|3317: read-variable['_',v5,-]|3318: read-property[v5,'keys',-]|3319: \<variable-non-null-undef\>['_']|3320: read-variable['obj',v6,-]}" ] 
+BB1260 -> BB1261 [tailport=s, headport=n, headlabel="      1261"]
+BB1260 -> BB1267 [tailport=s, headport=n, color=gray, headlabel="      1267"]
+BB1261 [shape=record label="{3321: call-_.keys [v5,'keys',v6,v3]}" ] 
+BB1261 -> BB1262 [tailport=s, headport=n, headlabel="      1262"]
+BB1261 -> BB1267 [tailport=s, headport=n, color=gray]
+BB1262 [shape=record label="{3322: write-variable[v3,'keys']*|3323: constant[0.0,v8]|3324: write-variable[v8,'i']*|3325: read-variable['keys',v10,-]|3326: read-property[v10,'length',v9]|3327: \<variable-non-null-undef\>['keys']|3328: write-variable[v9,'length']*}" ] 
+BB1262 -> BB1263 [tailport=s, headport=n, headlabel="      1263"]
+BB1262 -> BB1267 [tailport=s, headport=n, color=gray]
+BB1263 [shape=record label="{3329: read-variable['i',v11,-]|3330: read-variable['length',v12,-]|3331: \<[v11,v12,v7]|3332: if[v7](true-block:1264,false-block:1265)}" ] 
+BB1263 -> BB1264 [tailport=s, headport=n, headlabel="      1264"]
+BB1263 -> BB1265 [tailport=s, headport=n, headlabel="      1265"]
+BB1263 -> BB1267 [tailport=s, headport=n, color=gray]
+BB1264 [shape=record label="{3333: read-variable['result',v14,-]|3334: read-variable['obj',v16,-]|3335: read-variable['keys',v18,-]|3336: read-variable['i',v19,-]|3337: read-property[v18,v19,v17]|3338: \<variable-non-null-undef\>['keys']|3339: read-property[v16,v17,v15]|3340: \<variable-non-null-undef\>['obj']|3341: read-variable['keys',v20,-]|3342: read-variable['i',v21,-]|3343: read-property[v20,v21,v13]|3344: \<variable-non-null-undef\>['keys']|3345: write-property[v14,v15,v13]|3346: \<variable-non-null-undef\>['result']*|3347: constant[1.0,v22]|3348: read-variable['i',v23,-]|3349: +[v23,v24]|3350: +[v24,v22,v25]|3351: write-variable[v25,'i']}" ] 
+BB1264 -> BB1263 [tailport=s, headport=n]
+BB1264 -> BB1267 [tailport=s, headport=n, color=gray]
+BB1265 [shape=record label="{3352: read-variable['result',v1,-]}" ] 
+BB1265 -> BB1266 [tailport=s, headport=n, headlabel="      1266"]
+BB1265 -> BB1267 [tailport=s, headport=n, color=gray]
+BB1266 [shape=record label="{3353: return[v1]}" ] 
+BB1267 [shape=record label="{3354: exceptional-return}" ] 
+//#$~ 992
+}

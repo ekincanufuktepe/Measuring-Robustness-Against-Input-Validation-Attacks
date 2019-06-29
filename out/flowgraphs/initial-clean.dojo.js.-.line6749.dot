@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry352[shape=none,label=""];
+BB_entry352 -> BB4908 [tailport=s, headport=n, headlabel="    4908"]
+BB4908 [shape=record label="{14591: constant[undefined,v1]}" ] 
+BB4908 -> BB4909 [tailport=s, headport=n, headlabel="      4909"]
+BB4909 [shape=record label="{14592: read-variable['module',v3,-]|14593: read-variable['lang',v5,-]|14594: read-property[v5,'getObject',-]|14595: \<variable-non-null-undef\>['lang']|14596: read-variable['mid',v6,-]}" ] 
+BB4909 -> BB4910 [tailport=s, headport=n, headlabel="      4910"]
+BB4909 -> BB4915 [tailport=s, headport=n, color=gray, headlabel="      4915"]
+BB4910 [shape=record label="{14597: call-lang.getObject [v5,'getObject',v6,v2]}" ] 
+BB4910 -> BB4911 [tailport=s, headport=n, headlabel="      4911"]
+BB4910 -> BB4915 [tailport=s, headport=n, color=gray]
+BB4911 [shape=record label="{14598: write-property[v3,'result',v2]|14599: \<variable-non-null-undef\>['module']*|14600: read-variable['module',v8,-]|14601: constant[\"provides\",v9]|14602: delete-property[v8,v9,v7]*|14603: read-variable['module',v13,-]|14604: read-property[v13,'executed',v11]|14605: \<variable-non-null-undef\>['module']|14606: read-variable['executed',v12,-]|14607: !==[v11,v12,v10]|14608: if[v10](true-block:4912,false-block:4914)}" ] 
+BB4911 -> BB4914 [tailport=s, headport=n, headlabel="      4914"]
+BB4911 -> BB4912 [tailport=s, headport=n, headlabel="      4912"]
+BB4911 -> BB4915 [tailport=s, headport=n, color=gray]
+BB4912 [shape=record label="{14609: read-variable['finishExec',v15,v14]|14610: read-variable['module',v16,-]}" ] 
+BB4912 -> BB4913 [tailport=s, headport=n, headlabel="      4913"]
+BB4912 -> BB4915 [tailport=s, headport=n, color=gray]
+BB4913 [shape=record label="{14611: call-finishExec [v14,v15,v16,-]}" ] 
+BB4913 -> BB4914 [tailport=s, headport=n]
+BB4913 -> BB4915 [tailport=s, headport=n, color=gray]
+BB4914 [shape=record label="{14612: return[v1]}" ] 
+BB4915 [shape=record label="{14613: exceptional-return}" ] 
+//#$~ 6752
+}

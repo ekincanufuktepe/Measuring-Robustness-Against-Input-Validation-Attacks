@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry367[shape=none,label=""];
+BB_entry367 -> BB5237 [tailport=s, headport=n, headlabel="    5237"]
+BB5237 [shape=record label="{15534: constant[undefined,v1]|15535: vardecl['undef']|15536: function-decl[function stringify ( it indent key ),-]}" ] 
+BB5237 -> BB5238 [tailport=s, headport=n, headlabel="      5238"]
+BB5238 [shape=record label="{15537: typeof['replacer',v3]|15538: constant[\"string\",v4]|15539: ==[v3,v4,v2]|15540: if[v2](true-block:5239,false-block:5240)}" ] 
+BB5238 -> BB5239 [tailport=s, headport=n, headlabel="      5239"]
+BB5238 -> BB5240 [tailport=s, headport=n, headlabel="      5240"]
+BB5238 -> BB5243 [tailport=s, headport=n, color=gray, headlabel="      5243"]
+BB5239 [shape=record label="{15541: read-variable['replacer',v5,-]|15542: write-variable[v5,'spacer']*|15543: constant[null,v6]|15544: write-variable[v6,'replacer']*}" ] 
+BB5239 -> BB5240 [tailport=s, headport=n]
+BB5239 -> BB5243 [tailport=s, headport=n, color=gray]
+BB5240 [shape=record label="{15545: read-variable['stringify',v6,v5]|15546: read-variable['value',v7,-]|15547: constant[\"\",v8]|15548: constant[\"\",v9]}" ] 
+BB5240 -> BB5241 [tailport=s, headport=n, headlabel="      5241"]
+BB5240 -> BB5243 [tailport=s, headport=n, color=gray]
+BB5241 [shape=record label="{15549: call-stringify [v5,v6,v7,v8,v9,v1]}" ] 
+BB5241 -> BB5242 [tailport=s, headport=n, headlabel="      5242"]
+BB5241 -> BB5243 [tailport=s, headport=n, color=gray]
+BB5242 [shape=record label="{15550: return[v1]}" ] 
+BB5243 [shape=record label="{15551: exceptional-return}" ] 
+//#$~ 7178
+}

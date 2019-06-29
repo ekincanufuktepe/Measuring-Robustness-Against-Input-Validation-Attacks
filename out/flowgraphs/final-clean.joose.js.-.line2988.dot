@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry279[shape=none,label=""];
+BB_entry279 -> BB2564 [tailport=s, headport=n, headlabel="    2564"]
+BB2564 [shape=record label="{7711: constant[undefined,v1]|7712: vardecl['me']}" ] 
+BB2564 -> BB2565 [tailport=s, headport=n, headlabel="      2565"]
+BB2565 [shape=record label="{7713: read-variable['this',v2,-]|7714: write-variable[v2,'me']*|7715: read-variable['arguments',v6,-]|7716: read-property[v6,'length',v4]|7717: \<variable-non-null-undef\>['arguments']|7718: constant[0.0,v5]|7719: ==[v4,v5,v3]|7720: if[v3](true-block:2566,false-block:2567)}" ] 
+BB2565 -> BB2566 [tailport=s, headport=n, headlabel="      2566"]
+BB2565 -> BB2567 [tailport=s, headport=n, headlabel="      2567"]
+BB2565 -> BB2572 [tailport=s, headport=n, color=gray, headlabel="      2572"]
+BB2566 [shape=record label="{7721: read-variable['this',v1,-]}" ] 
+BB2566 -> BB2571 [tailport=s, headport=n, headlabel="      2571"]
+BB2566 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2567 [shape=record label="{7722: read-variable['Joose',v9,-]|7723: read-property[v9,'A',v8]|7724: \<variable-non-null-undef\>['Joose']|7725: read-property[v8,'each',-]|7726: \<property-non-null-undef\>[v9,'A']|7727: read-variable['this',v12,-]|7728: read-property[v12,'getElements',-]}" ] 
+BB2567 -> BB2568 [tailport=s, headport=n, headlabel="      2568"]
+BB2567 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2568 [shape=record label="{7729: call-this.getElements [v12,'getElements',v10]}" ] 
+BB2568 -> BB2569 [tailport=s, headport=n, headlabel="      2569"]
+BB2568 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2569 [shape=record label="{7730: function-expr[function ( thing ),v13]}" ] 
+BB2569 -> BB2570 [tailport=s, headport=n, headlabel="      2570"]
+BB2570 [shape=record label="{7731: call-Joose.A.each [v8,'each',v10,v13,-]*}" ] 
+BB2570 -> BB2571 [tailport=s, headport=n]
+BB2570 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2571 [shape=record label="{7732: return[v1]}" ] 
+BB2572 [shape=record label="{7733: exceptional-return}" ] 
+//#$~ 3005
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry15[shape=none,label=""];
+BB_entry15 -> BB169 [tailport=s, headport=n, headlabel="    169"]
+BB169 [shape=record label="{777: constant[undefined,v1]}" ] 
+BB169 -> BB170 [tailport=s, headport=n, headlabel="      170"]
+BB170 [shape=record label="{778: read-variable['obj',v4,-]|779: read-property[v4,'meta',v3]|780: \<variable-non-null-undef\>['obj']|781: ![v3,v2]|782: if[v2](true-block:171,false-block:172)}" ] 
+BB170 -> BB171 [tailport=s, headport=n, headlabel="      171"]
+BB170 -> BB172 [tailport=s, headport=n, headlabel="      172"]
+BB170 -> BB176 [tailport=s, headport=n, color=gray, headlabel="      176"]
+BB171 [shape=record label="{783: constant[\"isInstance only works with Joose objects and classes.\",v5]|784: throw[v5]*}" ] 
+BB171 -> BB172 [tailport=s, headport=n]
+BB171 -> BB176 [tailport=s, headport=n, color=gray]
+BB172 [shape=record label="{785: read-variable['obj',v8,-]|786: read-property[v8,'constructor',v6]|787: \<variable-non-null-undef\>['obj']|788: read-variable['obj',v10,-]|789: read-property[v10,'meta',v9]|790: \<variable-non-null-undef\>['obj']|791: read-property[v9,'c',v7]|792: \<property-non-null-undef\>[v10,'meta']|793: ===[v6,v7,v5]|794: if[v5](true-block:173,false-block:174)}" ] 
+BB172 -> BB173 [tailport=s, headport=n, headlabel="      173"]
+BB172 -> BB174 [tailport=s, headport=n, headlabel="      174"]
+BB172 -> BB176 [tailport=s, headport=n, color=gray]
+BB173 [shape=record label="{795: constant[true,v1]}" ] 
+BB173 -> BB175 [tailport=s, headport=n, headlabel="      175"]
+BB174 [shape=record label="{796: constant[false,v1]}" ] 
+BB174 -> BB175 [tailport=s, headport=n]
+BB175 [shape=record label="{797: return[v1]}" ] 
+BB176 [shape=record label="{798: exceptional-return}" ] 
+//#$~ 117
+}

@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry161[shape=none,label=""];
+BB_entry161 -> BB3034 [tailport=s, headport=n, headlabel="    3034"]
+BB3034 [shape=record label="{10165: constant[undefined,v1]|10166: vardecl['DOCUMENT']|10167: vardecl['ret']}" ] 
+BB3034 -> BB3035 [tailport=s, headport=n, headlabel="      3035"]
+BB3035 [shape=record label="{10168: read-variable['Y',v4,-]|10169: read-property[v4,'config',v3]|10170: \<variable-non-null-undef\>['Y']|10171: read-property[v3,'doc',v2]|10172: \<property-non-null-undef\>[v4,'config']|10173: write-variable[v2,'DOCUMENT']*|10174: read-variable['DOCUMENT',v5,-]|10175: if[v5](true-block:3036,false-block:3037)}" ] 
+BB3035 -> BB3037 [tailport=s, headport=n, headlabel="      3037"]
+BB3035 -> BB3036 [tailport=s, headport=n, headlabel="      3036"]
+BB3035 -> BB3039 [tailport=s, headport=n, color=gray, headlabel="      3039"]
+BB3036 [shape=record label="{10176: constant[\"querySelectorAll\",v7]|10177: read-variable['DOCUMENT',v8,-]|10178: in[v7,v8,v6]|10179: ![v6,v5]}" ] 
+BB3036 -> BB3037 [tailport=s, headport=n]
+BB3036 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3037 [shape=record label="{10180: write-variable[v5,'ret']*|10181: read-variable['ret',v1,-]}" ] 
+BB3037 -> BB3038 [tailport=s, headport=n, headlabel="      3038"]
+BB3037 -> BB3039 [tailport=s, headport=n, color=gray]
+BB3038 [shape=record label="{10182: return[v1]}" ] 
+BB3039 [shape=record label="{10183: exceptional-return}" ] 
+//#$~ 5286
+}

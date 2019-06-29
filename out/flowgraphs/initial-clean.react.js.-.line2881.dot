@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry103[shape=none,label=""];
+BB_entry103 -> BB1543 [tailport=s, headport=n, headlabel="    1543"]
+BB1543 [shape=record label="{5340: constant[undefined,v1]|5341: vardecl['processingEventQueue']}" ] 
+BB1543 -> BB1544 [tailport=s, headport=n, headlabel="      1544"]
+BB1544 [shape=record label="{5342: read-variable['eventQueue',v2,-]|5343: write-variable[v2,'processingEventQueue']*|5344: constant[null,v3]|5345: write-variable[v3,'eventQueue']*|5346: read-variable['forEachAccumulated',v5,v4]|5347: read-variable['processingEventQueue',v6,-]|5348: read-variable['executeDispatchesAndRelease',v7,-]}" ] 
+BB1544 -> BB1545 [tailport=s, headport=n, headlabel="      1545"]
+BB1544 -> BB1552 [tailport=s, headport=n, color=gray, headlabel="      1552"]
+BB1545 [shape=record label="{5349: call-forEachAccumulated [v4,v5,v6,v7,-]*}" ] 
+BB1545 -> BB1546 [tailport=s, headport=n, headlabel="      1546"]
+BB1545 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1546 [shape=record label="{5350: constant[\"production\",v9]|5351: constant[\"development\",v10]|5352: !==[v9,v10,v8]|5353: if[v8](true-block:1547,false-block:1548)}" ] 
+BB1546 -> BB1547 [tailport=s, headport=n, headlabel="      1547"]
+BB1546 -> BB1548 [tailport=s, headport=n, headlabel="      1548"]
+BB1546 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1547 [shape=record label="{5354: read-variable['invariant',v12,v11]|5355: read-variable['eventQueue',v14,-]|5356: ![v14,v13]|5357: constant[\"processEventQueue(): Additional events were enqueued while processing \",v16]|5358: constant[\"an event queue. Support for this has not yet been implemented.\",v17]|5359: +[v16,v17,v15]}" ] 
+BB1547 -> BB1549 [tailport=s, headport=n, headlabel="      1549"]
+BB1547 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1548 [shape=record label="{5360: read-variable['invariant',v12,v11]|5361: read-variable['eventQueue',v14,-]|5362: ![v14,v13]}" ] 
+BB1548 -> BB1550 [tailport=s, headport=n, headlabel="      1550"]
+BB1548 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1549 [shape=record label="{5363: call-invariant [v11,v12,v13,v15,-]}" ] 
+BB1549 -> BB1551 [tailport=s, headport=n, headlabel="      1551"]
+BB1549 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1550 [shape=record label="{5364: call-invariant [v11,v12,v13,-]}" ] 
+BB1550 -> BB1551 [tailport=s, headport=n]
+BB1550 -> BB1552 [tailport=s, headport=n, color=gray]
+BB1551 [shape=record label="{5365: return[v1]}" ] 
+BB1552 [shape=record label="{5366: exceptional-return}" ] 
+//#$~ 2891
+}

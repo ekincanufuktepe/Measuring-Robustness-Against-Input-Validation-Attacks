@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1884[shape=none,label=""];
+BB_entry1884 -> BB21562 [tailport=s, headport=n, headlabel="    21562"]
+BB21562 [shape=record label="{72145: constant[undefined,v1]|72146: vardecl['details']}" ] 
+BB21562 -> BB21563 [tailport=s, headport=n, headlabel="      21563"]
+BB21563 [shape=record label="{72147: new[v3]|72148: write-variable[v3,'details']*|72149: read-variable['view',v5,-]|72150: read-property[v5,'instrumentDetails',-]|72151: \<variable-non-null-undef\>['view']|72152: read-variable['details',v6,v2]}" ] 
+BB21563 -> BB21564 [tailport=s, headport=n, headlabel="      21564"]
+BB21563 -> BB21567 [tailport=s, headport=n, color=gray, headlabel="      21567"]
+BB21564 [shape=record label="{72153: call-view.instrumentDetails [v5,'instrumentDetails',v6,-]*}" ] 
+BB21564 -> BB21565 [tailport=s, headport=n, headlabel="      21565"]
+BB21564 -> BB21567 [tailport=s, headport=n, color=gray]
+BB21565 [shape=record label="{72154: read-variable['details',v1,v2]}" ] 
+BB21565 -> BB21566 [tailport=s, headport=n, headlabel="      21566"]
+BB21565 -> BB21567 [tailport=s, headport=n, color=gray]
+BB21566 [shape=record label="{72155: return[v1]}" ] 
+BB21567 [shape=record label="{72156: exceptional-return}" ] 
+//#$~ 40401
+}

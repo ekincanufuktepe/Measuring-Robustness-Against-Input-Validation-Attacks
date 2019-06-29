@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry217[shape=none,label=""];
+BB_entry217 -> BB3702 [tailport=s, headport=n, headlabel="    3702"]
+BB3702 [shape=record label="{10564: constant[undefined,v1]|10565: vardecl['wasPlaying']}" ] 
+BB3702 -> BB3703 [tailport=s, headport=n, headlabel="      3703"]
+BB3703 [shape=record label="{10566: read-variable['this',v3,-]|10567: read-property[v3,'playing',v2]|10568: write-variable[v2,'wasPlaying']*|10569: read-variable['this',v5,-]|10570: read-variable['value',v4,-]|10571: write-property[v5,'playing',v4]*|10572: read-variable['wasPlaying',v7,-]|10573: ![v7,v6]|10574: if[v6](true-block:3704,false-block:3705)}" ] 
+BB3703 -> BB3705 [tailport=s, headport=n, headlabel="      3705"]
+BB3703 -> BB3704 [tailport=s, headport=n, headlabel="      3704"]
+BB3703 -> BB3711 [tailport=s, headport=n, color=gray, headlabel="      3711"]
+BB3704 [shape=record label="{10575: read-variable['this',v8,-]|10576: read-property[v8,'playing',v6]}" ] 
+BB3704 -> BB3705 [tailport=s, headport=n]
+BB3704 -> BB3711 [tailport=s, headport=n, color=gray]
+BB3705 [shape=record label="{10577: if[v6](true-block:3706,false-block:3707)}" ] 
+BB3705 -> BB3706 [tailport=s, headport=n, headlabel="      3706"]
+BB3705 -> BB3707 [tailport=s, headport=n, headlabel="      3707"]
+BB3706 [shape=record label="{10578: read-variable['this',v9,-]|10579: read-property[v9,'animate',-]}" ] 
+BB3706 -> BB3708 [tailport=s, headport=n, headlabel="      3708"]
+BB3706 -> BB3711 [tailport=s, headport=n, color=gray]
+BB3707 [shape=record label="{10580: read-variable['this',v9,-]|10581: read-property[v9,'render',-]}" ] 
+BB3707 -> BB3709 [tailport=s, headport=n, headlabel="      3709"]
+BB3707 -> BB3711 [tailport=s, headport=n, color=gray]
+BB3708 [shape=record label="{10582: call-this.animate [v9,'animate',-]*}" ] 
+BB3708 -> BB3710 [tailport=s, headport=n, headlabel="      3710"]
+BB3708 -> BB3711 [tailport=s, headport=n, color=gray]
+BB3709 [shape=record label="{10583: call-this.render [v9,'render',-]*}" ] 
+BB3709 -> BB3710 [tailport=s, headport=n]
+BB3709 -> BB3711 [tailport=s, headport=n, color=gray]
+BB3710 [shape=record label="{10584: return[v1]}" ] 
+BB3711 [shape=record label="{10585: exceptional-return}" ] 
+//#$~ 4239
+}

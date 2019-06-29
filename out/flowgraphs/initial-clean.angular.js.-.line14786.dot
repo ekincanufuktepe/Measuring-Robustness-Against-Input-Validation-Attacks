@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry827[shape=none,label=""];
+BB_entry827 -> BB10761 [tailport=s, headport=n, headlabel="    10761"]
+BB10761 [shape=record label="{27949: constant[undefined,v1]}" ] 
+BB10761 -> BB10762 [tailport=s, headport=n, headlabel="      10762"]
+BB10762 [shape=record label="{27950: constant[1.0,v2]|27951: read-variable['counter',v3,-]|27952: +[v3,v4]|27953: +[v4,v2,v5]|27954: write-variable[v5,'counter']*|27955: read-variable['when',v9,v8]|27956: read-variable['promise',v10,-]}" ] 
+BB10762 -> BB10763 [tailport=s, headport=n, headlabel="      10763"]
+BB10762 -> BB10767 [tailport=s, headport=n, color=gray, headlabel="      10767"]
+BB10763 [shape=record label="{27957: call-when [v8,v9,v10,v7]}" ] 
+BB10763 -> BB10764 [tailport=s, headport=n, headlabel="      10764"]
+BB10763 -> BB10767 [tailport=s, headport=n, color=gray]
+BB10764 [shape=record label="{27958: read-property[v7,'then',-]|27959: function-expr[function ( value ),v11]|27960: function-expr[function ( reason ),v12]}" ] 
+BB10764 -> BB10765 [tailport=s, headport=n, headlabel="      10765"]
+BB10764 -> BB10767 [tailport=s, headport=n, color=gray]
+BB10765 [shape=record label="{27961: call-null [v7,'then',v11,v12,-]*}" ] 
+BB10765 -> BB10766 [tailport=s, headport=n, headlabel="      10766"]
+BB10765 -> BB10767 [tailport=s, headport=n, color=gray]
+BB10766 [shape=record label="{27962: return[v1]}" ] 
+BB10767 [shape=record label="{27963: exceptional-return}" ] 
+//#$~ 14794
+}

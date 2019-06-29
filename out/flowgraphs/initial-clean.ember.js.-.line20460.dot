@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry928[shape=none,label=""];
+BB_entry928 -> BB11177 [tailport=s, headport=n, headlabel="    11177"]
+BB11177 [shape=record label="{38393: constant[undefined,v1]|38394: vardecl['controller']}" ] 
+BB11177 -> BB11178 [tailport=s, headport=n, headlabel="      11178"]
+BB11178 [shape=record label="{38395: read-variable['get',v4,v3]|38396: read-variable['this',v5,-]|38397: constant[\"controller\",v6]}" ] 
+BB11178 -> BB11179 [tailport=s, headport=n, headlabel="      11179"]
+BB11178 -> BB11186 [tailport=s, headport=n, color=gray, headlabel="      11186"]
+BB11179 [shape=record label="{38398: call-get [v3,v4,v5,v6,v2]}" ] 
+BB11179 -> BB11180 [tailport=s, headport=n, headlabel="      11180"]
+BB11179 -> BB11186 [tailport=s, headport=n, color=gray]
+BB11180 [shape=record label="{38399: write-variable[v2,'controller']*|38400: read-variable['controller',v7,-]|38401: if[v7](true-block:11181,false-block:11182)}" ] 
+BB11180 -> BB11182 [tailport=s, headport=n, headlabel="      11182"]
+BB11180 -> BB11181 [tailport=s, headport=n, headlabel="      11181"]
+BB11180 -> BB11186 [tailport=s, headport=n, color=gray]
+BB11181 [shape=record label="{38402: read-variable['controller',v8,-]|38403: read-property[v8,'container',v7]|38404: \<variable-non-null-undef\>['controller']}" ] 
+BB11181 -> BB11182 [tailport=s, headport=n]
+BB11181 -> BB11186 [tailport=s, headport=n, color=gray]
+BB11182 [shape=record label="{38405: if[v7](true-block:11183,false-block:11185)}" ] 
+BB11182 -> BB11183 [tailport=s, headport=n, headlabel="      11183"]
+BB11182 -> BB11185 [tailport=s, headport=n, headlabel="      11185"]
+BB11183 [shape=record label="{38406: read-variable['controller',v10,-]|38407: read-property[v10,'container',v9]|38408: \<variable-non-null-undef\>['controller']|38409: read-property[v9,'lookup',-]|38410: \<property-non-null-undef\>[v10,'container']|38411: constant[\"router:main\",v11]}" ] 
+BB11183 -> BB11184 [tailport=s, headport=n, headlabel="      11184"]
+BB11183 -> BB11186 [tailport=s, headport=n, color=gray]
+BB11184 [shape=record label="{38412: call-controller.container.lookup [v9,'lookup',v11,v1]}" ] 
+BB11184 -> BB11185 [tailport=s, headport=n]
+BB11184 -> BB11186 [tailport=s, headport=n, color=gray]
+BB11185 [shape=record label="{38413: return[v1]}" ] 
+BB11186 [shape=record label="{38414: exceptional-return}" ] 
+//#$~ 20463
+}

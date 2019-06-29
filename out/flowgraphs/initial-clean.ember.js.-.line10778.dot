@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry478[shape=none,label=""];
+BB_entry478 -> BB5952 [tailport=s, headport=n, headlabel="    5952"]
+BB5952 [shape=record label="{21194: constant[undefined,v1]}" ] 
+BB5952 -> BB5953 [tailport=s, headport=n, headlabel="      5953"]
+BB5953 [shape=record label="{21195: read-variable['Ember',v3,-]|21196: read-property[v3,'deprecate',-]|21197: \<variable-non-null-undef\>['Ember']|21198: constant[\"Passing arguments to ComputedProperty.readOnly() is deprecated.\",v4]|21199: read-variable['arguments',v8,-]|21200: read-property[v8,'length',v6]|21201: \<variable-non-null-undef\>['arguments']|21202: constant[0.0,v7]|21203: ===[v6,v7,v5]}" ] 
+BB5953 -> BB5954 [tailport=s, headport=n, headlabel="      5954"]
+BB5953 -> BB5959 [tailport=s, headport=n, color=gray, headlabel="      5959"]
+BB5954 [shape=record label="{21204: call-Ember.deprecate [v3,'deprecate',v4,v5,-]*}" ] 
+BB5954 -> BB5955 [tailport=s, headport=n, headlabel="      5955"]
+BB5954 -> BB5959 [tailport=s, headport=n, color=gray]
+BB5955 [shape=record label="{21205: read-variable['this',v10,-]|21206: read-variable['readOnly',v11,-]|21207: read-variable['undefined',v12,-]|21208: ===[v11,v12,v9]|21209: if[v9](true-block:5957,false-block:5956)}" ] 
+BB5955 -> BB5957 [tailport=s, headport=n, headlabel="      5957"]
+BB5955 -> BB5956 [tailport=s, headport=n, headlabel="      5956"]
+BB5955 -> BB5959 [tailport=s, headport=n, color=gray]
+BB5956 [shape=record label="{21210: read-variable['readOnly',v12,-]|21211: ![v12,v11]|21212: ![v11,v9]}" ] 
+BB5956 -> BB5957 [tailport=s, headport=n]
+BB5956 -> BB5959 [tailport=s, headport=n, color=gray]
+BB5957 [shape=record label="{21213: write-property[v10,'_readOnly',v9]*|21214: read-variable['this',v1,-]}" ] 
+BB5957 -> BB5958 [tailport=s, headport=n, headlabel="      5958"]
+BB5957 -> BB5959 [tailport=s, headport=n, color=gray]
+BB5958 [shape=record label="{21215: return[v1]}" ] 
+BB5959 [shape=record label="{21216: exceptional-return}" ] 
+//#$~ 10781
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry214[shape=none,label=""];
+BB_entry214 -> BB2736 [tailport=s, headport=n, headlabel="    2736"]
+BB2736 [shape=record label="{8781: constant[undefined,v1]}" ] 
+BB2736 -> BB2737 [tailport=s, headport=n, headlabel="      2737"]
+BB2737 [shape=record label="{8782: read-variable['this',v3,-]|8783: read-property[v3,'_super',-]}" ] 
+BB2737 -> BB2738 [tailport=s, headport=n, headlabel="      2738"]
+BB2737 -> BB2742 [tailport=s, headport=n, color=gray, headlabel="      2742"]
+BB2738 [shape=record label="{8784: call-this._super [v3,'_super',-]*}" ] 
+BB2738 -> BB2739 [tailport=s, headport=n, headlabel="      2739"]
+BB2738 -> BB2742 [tailport=s, headport=n, color=gray]
+BB2739 [shape=record label="{8785: read-variable['this',v6,-]|8786: read-property[v6,'releaseMethods',v5]|8787: read-property[v5,'forEach',-]|8788: \<property-non-null-undef\>[v6,'releaseMethods']|8789: function-expr[function ( fn ),v7]}" ] 
+BB2739 -> BB2740 [tailport=s, headport=n, headlabel="      2740"]
+BB2739 -> BB2742 [tailport=s, headport=n, color=gray]
+BB2740 [shape=record label="{8790: call-this.releaseMethods.forEach [v5,'forEach',v7,-]*}" ] 
+BB2740 -> BB2741 [tailport=s, headport=n, headlabel="      2741"]
+BB2740 -> BB2742 [tailport=s, headport=n, color=gray]
+BB2741 [shape=record label="{8791: return[v1]}" ] 
+BB2742 [shape=record label="{8792: exceptional-return}" ] 
+//#$~ 4523
+}

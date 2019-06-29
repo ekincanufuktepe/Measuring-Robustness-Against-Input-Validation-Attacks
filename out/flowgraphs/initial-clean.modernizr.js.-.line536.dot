@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry63[shape=none,label=""];
+BB_entry63 -> BB619 [tailport=s, headport=n, headlabel="    619"]
+BB619 [shape=record label="{1450: constant[undefined,v1]}" ] 
+BB619 -> BB620 [tailport=s, headport=n, headlabel="      620"]
+BB620 [shape=record label="{1451: read-variable['document',v4,-]|1452: read-property[v4,'createElementNS',v3]|1453: \<variable-non-null-undef\>['document']|1454: ![v3,v2]|1455: ![v2,v1]|1456: if[v1](true-block:621,false-block:627)}" ] 
+BB620 -> BB627 [tailport=s, headport=n, headlabel="      627"]
+BB620 -> BB621 [tailport=s, headport=n, headlabel="      621"]
+BB620 -> BB628 [tailport=s, headport=n, color=gray, headlabel="      628"]
+BB621 [shape=record label="{1457: read-variable['RegExp',v7,-]|1458: constant[\"SVGClipPath\",v8]}" ] 
+BB621 -> BB622 [tailport=s, headport=n, headlabel="      622"]
+BB621 -> BB628 [tailport=s, headport=n, color=gray]
+BB622 [shape=record label="{1459: construct [-,v7,v8,v6]}" ] 
+BB622 -> BB623 [tailport=s, headport=n, headlabel="      623"]
+BB622 -> BB628 [tailport=s, headport=n, color=gray]
+BB623 [shape=record label="{1460: read-property[v6,'test',-]|1461: read-variable['toString',v11,-]|1462: read-property[v11,'call',-]|1463: \<variable-non-null-undef\>['toString']|1464: read-variable['document',v14,-]|1465: read-property[v14,'createElementNS',-]|1466: \<variable-non-null-undef\>['document']|1467: read-variable['ns',v16,-]|1468: read-property[v16,'svg',v15]|1469: \<variable-non-null-undef\>['ns']|1470: constant[\"clipPath\",v17]}" ] 
+BB623 -> BB624 [tailport=s, headport=n, headlabel="      624"]
+BB623 -> BB628 [tailport=s, headport=n, color=gray]
+BB624 [shape=record label="{1471: call-document.createElementNS [v14,'createElementNS',v15,v17,v12]}" ] 
+BB624 -> BB625 [tailport=s, headport=n, headlabel="      625"]
+BB624 -> BB628 [tailport=s, headport=n, color=gray]
+BB625 [shape=record label="{1472: call-toString.call [v11,'call',v12,v9]}" ] 
+BB625 -> BB626 [tailport=s, headport=n, headlabel="      626"]
+BB625 -> BB628 [tailport=s, headport=n, color=gray]
+BB626 [shape=record label="{1473: call-null [v6,'test',v9,v1]}" ] 
+BB626 -> BB627 [tailport=s, headport=n]
+BB626 -> BB628 [tailport=s, headport=n, color=gray]
+BB627 [shape=record label="{1474: return[v1]}" ] 
+BB628 [shape=record label="{1475: exceptional-return}" ] 
+//#$~ 537
+}

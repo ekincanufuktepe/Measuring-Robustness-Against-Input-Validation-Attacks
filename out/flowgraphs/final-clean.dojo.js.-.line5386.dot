@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry278[shape=none,label=""];
+BB_entry278 -> BB4046 [tailport=s, headport=n, headlabel="    4046"]
+BB4046 [shape=record label="{12281: constant[undefined,v1]}" ] 
+BB4046 -> BB4047 [tailport=s, headport=n, headlabel="      4047"]
+BB4047 [shape=record label="{12282: read-variable['this',v3,-]|12283: read-property[v3,'forEach',-]|12284: read-variable['loopBody',v6,v5]|12285: read-variable['f',v7,-]|12286: read-variable['arguments',v8,-]|12287: read-variable['o',v9,-]}" ] 
+BB4047 -> BB4048 [tailport=s, headport=n, headlabel="      4048"]
+BB4047 -> BB4052 [tailport=s, headport=n, color=gray, headlabel="      4052"]
+BB4048 [shape=record label="{12288: call-loopBody [v5,v6,v7,v8,v9,v4]}" ] 
+BB4048 -> BB4049 [tailport=s, headport=n, headlabel="      4049"]
+BB4048 -> BB4052 [tailport=s, headport=n, color=gray]
+BB4049 [shape=record label="{12289: call-this.forEach [v3,'forEach',v4,-]*}" ] 
+BB4049 -> BB4050 [tailport=s, headport=n, headlabel="      4050"]
+BB4049 -> BB4052 [tailport=s, headport=n, color=gray]
+BB4050 [shape=record label="{12290: read-variable['this',v1,-]}" ] 
+BB4050 -> BB4051 [tailport=s, headport=n, headlabel="      4051"]
+BB4050 -> BB4052 [tailport=s, headport=n, color=gray]
+BB4051 [shape=record label="{12291: return[v1]}" ] 
+BB4052 [shape=record label="{12292: exceptional-return}" ] 
+//#$~ 5388
+}

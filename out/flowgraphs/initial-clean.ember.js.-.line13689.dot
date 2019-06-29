@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry618[shape=none,label=""];
+BB_entry618 -> BB7414 [tailport=s, headport=n, headlabel="    7414"]
+BB7414 [shape=record label="{25947: constant[undefined,v1]|25948: vardecl['lib']|25949: vardecl['index']}" ] 
+BB7414 -> BB7415 [tailport=s, headport=n, headlabel="      7415"]
+BB7415 [shape=record label="{25950: read-variable['this',v4,-]|25951: read-property[v4,'_getLibraryByName',-]|25952: read-variable['name',v5,-]}" ] 
+BB7415 -> BB7416 [tailport=s, headport=n, headlabel="      7416"]
+BB7415 -> BB7423 [tailport=s, headport=n, color=gray, headlabel="      7423"]
+BB7416 [shape=record label="{25953: call-this._getLibraryByName [v4,'_getLibraryByName',v5,v2]}" ] 
+BB7416 -> BB7417 [tailport=s, headport=n, headlabel="      7417"]
+BB7416 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7417 [shape=record label="{25954: write-variable[v2,'lib']*|25955: read-variable['lib',v6,-]|25956: if[v6](true-block:7418,false-block:7422)}" ] 
+BB7417 -> BB7418 [tailport=s, headport=n, headlabel="      7418"]
+BB7417 -> BB7422 [tailport=s, headport=n, headlabel="      7422"]
+BB7417 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7418 [shape=record label="{25957: read-variable['indexOf',v9,v8]|25958: read-variable['this',v11,-]|25959: read-property[v11,'_registry',v10]|25960: read-variable['lib',v12,-]}" ] 
+BB7418 -> BB7419 [tailport=s, headport=n, headlabel="      7419"]
+BB7418 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7419 [shape=record label="{25961: call-indexOf [v8,v9,v10,v12,v7]}" ] 
+BB7419 -> BB7420 [tailport=s, headport=n, headlabel="      7420"]
+BB7419 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7420 [shape=record label="{25962: write-variable[v7,'index']*|25963: read-variable['this',v15,-]|25964: read-property[v15,'_registry',v14]|25965: read-property[v14,'splice',-]|25966: \<property-non-null-undef\>[v15,'_registry']|25967: read-variable['index',v16,-]|25968: constant[1.0,v17]}" ] 
+BB7420 -> BB7421 [tailport=s, headport=n, headlabel="      7421"]
+BB7420 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7421 [shape=record label="{25969: call-this._registry.splice [v14,'splice',v16,v17,-]*}" ] 
+BB7421 -> BB7422 [tailport=s, headport=n]
+BB7421 -> BB7423 [tailport=s, headport=n, color=gray]
+BB7422 [shape=record label="{25970: return[v1]}" ] 
+BB7423 [shape=record label="{25971: exceptional-return}" ] 
+//#$~ 13695
+}

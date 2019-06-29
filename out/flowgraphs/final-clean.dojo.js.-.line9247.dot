@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry462[shape=none,label=""];
+BB_entry462 -> BB6541 [tailport=s, headport=n, headlabel="    6541"]
+BB6541 [shape=record label="{19465: constant[undefined,v1]|19466: vardecl['re']}" ] 
+BB6541 -> BB6542 [tailport=s, headport=n, headlabel="      6542"]
+BB6542 [shape=record label="{19467: read-variable['RegExp',v3,-]|19468: constant[\"(?:^|\\\\s)\",v7]|19469: read-variable['cname',v8,-]|19470: +[v7,v8,v5]|19471: constant[\"(?:\\\\s|$)\",v6]|19472: +[v5,v6,v4]}" ] 
+BB6542 -> BB6543 [tailport=s, headport=n, headlabel="      6543"]
+BB6542 -> BB6548 [tailport=s, headport=n, color=gray, headlabel="      6548"]
+BB6543 [shape=record label="{19473: construct [-,v3,v4,v2]}" ] 
+BB6543 -> BB6544 [tailport=s, headport=n, headlabel="      6544"]
+BB6543 -> BB6548 [tailport=s, headport=n, color=gray]
+BB6544 [shape=record label="{19474: write-variable[v2,'re']*|19475: read-variable['agree',v11,v10]|19476: read-variable['ff',v12,-]|19477: function-expr[function ( elem ),v13]}" ] 
+BB6544 -> BB6545 [tailport=s, headport=n, headlabel="      6545"]
+BB6544 -> BB6548 [tailport=s, headport=n, color=gray]
+BB6545 [shape=record label="{19478: call-agree [v10,v11,v12,v13,v9]}" ] 
+BB6545 -> BB6546 [tailport=s, headport=n, headlabel="      6546"]
+BB6545 -> BB6548 [tailport=s, headport=n, color=gray]
+BB6546 [shape=record label="{19479: write-variable[v9,'ff']*|19480: read-variable['ff',v15,-]|19481: read-variable['idx',v14,-]|19482: write-property[v15,'count',v14]|19483: \<variable-non-null-undef\>['ff']*}" ] 
+BB6546 -> BB6547 [tailport=s, headport=n, headlabel="      6547"]
+BB6546 -> BB6548 [tailport=s, headport=n, color=gray]
+BB6547 [shape=record label="{19484: return[v1]}" ] 
+BB6548 [shape=record label="{19485: exceptional-return}" ] 
+//#$~ 9261
+}

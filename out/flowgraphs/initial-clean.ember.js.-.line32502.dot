@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1476[shape=none,label=""];
+BB_entry1476 -> BB17145 [tailport=s, headport=n, headlabel="    17145"]
+BB17145 [shape=record label="{57884: constant[undefined,v1]}" ] 
+BB17145 -> BB17146 [tailport=s, headport=n, headlabel="      17146"]
+BB17146 [shape=record label="{57885: read-variable['setProperties',v3,v2]|57886: read-variable['proxy',v4,-]|57887: new[v5]|57888: read-variable['reason',v6,-]|57889: write-property[v5,'reason',v6]|57890: constant[true,v7]|57891: write-property[v5,'isRejected',v7]}" ] 
+BB17146 -> BB17147 [tailport=s, headport=n, headlabel="      17147"]
+BB17146 -> BB17150 [tailport=s, headport=n, color=gray, headlabel="      17150"]
+BB17147 [shape=record label="{57892: call-setProperties [v2,v3,v4,v5,-]*}" ] 
+BB17147 -> BB17148 [tailport=s, headport=n, headlabel="      17148"]
+BB17147 -> BB17150 [tailport=s, headport=n, color=gray]
+BB17148 [shape=record label="{57893: read-variable['reason',v8,-]|57894: throw[v8]*}" ] 
+BB17148 -> BB17149 [tailport=s, headport=n, headlabel="      17149"]
+BB17148 -> BB17150 [tailport=s, headport=n, color=gray]
+BB17149 [shape=record label="{57895: return[v1]}" ] 
+BB17150 [shape=record label="{57896: exceptional-return}" ] 
+//#$~ 32507
+}

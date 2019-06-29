@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry2214[shape=none,label=""];
+BB_entry2214 -> BB25121 [tailport=s, headport=n, headlabel="    25121"]
+BB25121 [shape=record label="{82571: constant[undefined,v1]}" ] 
+BB25121 -> BB25122 [tailport=s, headport=n, headlabel="      25122"]
+BB25122 [shape=record label="{82572: read-variable['parsingNode',v3,-]|82573: ![v3,v2]|82574: if[v2](true-block:25123,false-block:25126)}" ] 
+BB25122 -> BB25123 [tailport=s, headport=n, headlabel="      25123"]
+BB25122 -> BB25126 [tailport=s, headport=n, headlabel="      25126"]
+BB25122 -> BB25128 [tailport=s, headport=n, color=gray, headlabel="      25128"]
+BB25123 [shape=record label="{82575: read-variable['this',v7,-]|82576: read-property[v7,'document',v6]|82577: read-property[v6,'createElement',-]|82578: \<property-non-null-undef\>[v7,'document']|82579: constant[\"a\",v8]}" ] 
+BB25123 -> BB25124 [tailport=s, headport=n, headlabel="      25124"]
+BB25123 -> BB25128 [tailport=s, headport=n, color=gray]
+BB25124 [shape=record label="{82580: call-this.document.createElement [v6,'createElement',v8,v4]}" ] 
+BB25124 -> BB25125 [tailport=s, headport=n, headlabel="      25125"]
+BB25124 -> BB25128 [tailport=s, headport=n, color=gray]
+BB25125 [shape=record label="{82581: write-variable[v4,'parsingNode']*}" ] 
+BB25125 -> BB25126 [tailport=s, headport=n]
+BB25126 [shape=record label="{82582: read-variable['parsingNode',v5,-]|82583: read-variable['url',v4,-]|82584: write-property[v5,'href',v4]|82585: \<variable-non-null-undef\>['parsingNode']*|82586: read-variable['parsingNode',v6,-]|82587: read-property[v6,'protocol',v1]|82588: \<variable-non-null-undef\>['parsingNode']}" ] 
+BB25126 -> BB25127 [tailport=s, headport=n, headlabel="      25127"]
+BB25126 -> BB25128 [tailport=s, headport=n, color=gray]
+BB25127 [shape=record label="{82589: return[v1]}" ] 
+BB25128 [shape=record label="{82590: exceptional-return}" ] 
+//#$~ 46729
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry227[shape=none,label=""];
+BB_entry227 -> BB2851 [tailport=s, headport=n, headlabel="    2851"]
+BB2851 [shape=record label="{9023: constant[undefined,v1]|9024: vardecl['namespaces']|9025: vardecl['types']|9026: vardecl['self']}" ] 
+BB2851 -> BB2852 [tailport=s, headport=n, headlabel="      2852"]
+BB2852 [shape=record label="{9027: read-variable['emberA',v4,v3]|9028: read-variable['Namespace',v6,-]|9029: read-property[v6,'NAMESPACES',v5]|9030: \<variable-non-null-undef\>['Namespace']}" ] 
+BB2852 -> BB2853 [tailport=s, headport=n, headlabel="      2853"]
+BB2852 -> BB2860 [tailport=s, headport=n, color=gray, headlabel="      2860"]
+BB2853 [shape=record label="{9031: call-emberA [v3,v4,v5,v2]}" ] 
+BB2853 -> BB2854 [tailport=s, headport=n, headlabel="      2854"]
+BB2853 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2854 [shape=record label="{9032: write-variable[v2,'namespaces']*|9033: read-variable['emberA',v9,v8]}" ] 
+BB2854 -> BB2855 [tailport=s, headport=n, headlabel="      2855"]
+BB2854 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2855 [shape=record label="{9034: call-emberA [v8,v9,v7]}" ] 
+BB2855 -> BB2856 [tailport=s, headport=n, headlabel="      2856"]
+BB2855 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2856 [shape=record label="{9035: write-variable[v7,'types']*|9036: read-variable['this',v10,-]|9037: write-variable[v10,'self']*|9038: read-variable['namespaces',v12,-]|9039: read-property[v12,'forEach',-]|9040: \<variable-non-null-undef\>['namespaces']|9041: function-expr[function ( namespace ),v13]}" ] 
+BB2856 -> BB2857 [tailport=s, headport=n, headlabel="      2857"]
+BB2856 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2857 [shape=record label="{9042: call-namespaces.forEach [v12,'forEach',v13,-]*}" ] 
+BB2857 -> BB2858 [tailport=s, headport=n, headlabel="      2858"]
+BB2857 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2858 [shape=record label="{9043: read-variable['types',v1,-]}" ] 
+BB2858 -> BB2859 [tailport=s, headport=n, headlabel="      2859"]
+BB2858 -> BB2860 [tailport=s, headport=n, color=gray]
+BB2859 [shape=record label="{9044: return[v1]}" ] 
+BB2860 [shape=record label="{9045: exceptional-return}" ] 
+//#$~ 4682
+}

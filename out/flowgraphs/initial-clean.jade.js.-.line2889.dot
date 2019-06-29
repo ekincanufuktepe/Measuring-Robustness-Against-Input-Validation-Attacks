@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry163[shape=none,label=""];
+BB_entry163 -> BB2563 [tailport=s, headport=n, headlabel="    2563"]
+BB2563 [shape=record label="{8206: constant[undefined,v1]}" ] 
+BB2563 -> BB2564 [tailport=s, headport=n, headlabel="      2564"]
+BB2564 [shape=record label="{8207: read-variable['blocks',v6,-]|8208: read-property[v6,'indexOf',-]|8209: \<variable-non-null-undef\>['blocks']|8210: read-variable['name',v7,-]}" ] 
+BB2564 -> BB2565 [tailport=s, headport=n, headlabel="      2565"]
+BB2564 -> BB2572 [tailport=s, headport=n, color=gray, headlabel="      2572"]
+BB2565 [shape=record label="{8211: call-blocks.indexOf [v6,'indexOf',v7,v3]}" ] 
+BB2565 -> BB2566 [tailport=s, headport=n, headlabel="      2566"]
+BB2565 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2566 [shape=record label="{8212: constant[-1.0,v4]|8213: ===[v3,v4,v2]|8214: if[v2](true-block:2567,false-block:2568)}" ] 
+BB2566 -> BB2568 [tailport=s, headport=n, headlabel="      2568"]
+BB2566 -> BB2567 [tailport=s, headport=n, headlabel="      2567"]
+BB2566 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2567 [shape=record label="{8215: read-variable['this',v11,-]|8216: read-property[v11,'blocks',v10]|8217: read-variable['name',v12,-]|8218: read-property[v10,v12,v9]|8219: \<property-non-null-undef\>[v11,'blocks']|8220: read-property[v9,'isSubBlock',v8]|8221: \<property-non-null-undef\>[v10,v12]|8222: ![v8,v2]}" ] 
+BB2567 -> BB2568 [tailport=s, headport=n]
+BB2567 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2568 [shape=record label="{8223: if[v2](true-block:2569,false-block:2571)}" ] 
+BB2568 -> BB2569 [tailport=s, headport=n, headlabel="      2569"]
+BB2568 -> BB2571 [tailport=s, headport=n, headlabel="      2571"]
+BB2569 [shape=record label="{8224: read-variable['console',v9,-]|8225: read-property[v9,'warn',-]|8226: \<variable-non-null-undef\>['console']|8227: constant[\"Warning: Unexpected block \\\"\",v23]|8228: read-variable['name',v24,-]|8229: +[v23,v24,v21]|8230: constant[\"\\\" \",v22]|8231: +[v21,v22,v19]|8232: constant[\" on line \",v20]|8233: +[v19,v20,v17]|8234: read-variable['this',v27,-]|8235: read-property[v27,'blocks',v26]|8236: read-variable['name',v28,-]|8237: read-property[v26,v28,v25]|8238: \<property-non-null-undef\>[v27,'blocks']|8239: read-property[v25,'line',v18]|8240: \<property-non-null-undef\>[v26,v28]|8241: +[v17,v18,v15]|8242: constant[\" of \",v16]|8243: +[v15,v16,v13]|8244: read-variable['this',v31,-]|8245: read-property[v31,'blocks',v30]|8246: read-variable['name',v32,-]|8247: read-property[v30,v32,v29]|8248: \<property-non-null-undef\>[v31,'blocks']|8249: read-property[v29,'filename',v14]|8250: \<property-non-null-undef\>[v30,v32]|8251: +[v13,v14,v11]|8252: constant[\". This block is never used. This warning will be an error in v2.0.0\",v12]|8253: +[v11,v12,v10]}" ] 
+BB2569 -> BB2570 [tailport=s, headport=n, headlabel="      2570"]
+BB2569 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2570 [shape=record label="{8254: call-console.warn [v9,'warn',v10,-]*}" ] 
+BB2570 -> BB2571 [tailport=s, headport=n]
+BB2570 -> BB2572 [tailport=s, headport=n, color=gray]
+BB2571 [shape=record label="{8255: return[v1]}" ] 
+BB2572 [shape=record label="{8256: exceptional-return}" ] 
+//#$~ 2898
+}

@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry670[shape=none,label=""];
+BB_entry670 -> BB8830 [tailport=s, headport=n, headlabel="    8830"]
+BB8830 [shape=record label="{24782: constant[undefined,v1]|24783: vardecl['actualEventName']}" ] 
+BB8830 -> BB8831 [tailport=s, headport=n, headlabel="      8831"]
+BB8831 [shape=record label="{24784: read-variable['getDOMEventName',v4,v3]|24785: read-variable['eventName',v5,-]}" ] 
+BB8831 -> BB8832 [tailport=s, headport=n, headlabel="      8832"]
+BB8831 -> BB8839 [tailport=s, headport=n, color=gray, headlabel="      8839"]
+BB8832 [shape=record label="{24786: call-getDOMEventName [v3,v4,v5,v2]}" ] 
+BB8832 -> BB8833 [tailport=s, headport=n, headlabel="      8833"]
+BB8832 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8833 [shape=record label="{24787: write-variable[v2,'actualEventName']*|24788: read-variable['element',v7,-]|24789: read-property[v7,'addEventListener',v6]|24790: \<variable-non-null-undef\>['element']|24791: if[v6](true-block:8834,false-block:8835)}" ] 
+BB8833 -> BB8834 [tailport=s, headport=n, headlabel="      8834"]
+BB8833 -> BB8835 [tailport=s, headport=n, headlabel="      8835"]
+BB8833 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8834 [shape=record label="{24792: read-variable['element',v9,-]|24793: read-property[v9,'addEventListener',-]|24794: \<variable-non-null-undef\>['element']|24795: read-variable['actualEventName',v10,-]|24796: read-variable['responder',v11,-]|24797: constant[false,v12]}" ] 
+BB8834 -> BB8836 [tailport=s, headport=n, headlabel="      8836"]
+BB8834 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8835 [shape=record label="{24798: read-variable['element',v9,-]|24799: read-property[v9,'attachEvent',-]|24800: \<variable-non-null-undef\>['element']|24801: constant[\"on\",v11]|24802: read-variable['actualEventName',v12,-]|24803: +[v11,v12,v10]|24804: read-variable['responder',v13,-]}" ] 
+BB8835 -> BB8837 [tailport=s, headport=n, headlabel="      8837"]
+BB8835 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8836 [shape=record label="{24805: call-element.addEventListener [v9,'addEventListener',v10,v11,v12,-]*}" ] 
+BB8836 -> BB8838 [tailport=s, headport=n, headlabel="      8838"]
+BB8836 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8837 [shape=record label="{24806: call-element.attachEvent [v9,'attachEvent',v10,v13,-]*}" ] 
+BB8837 -> BB8838 [tailport=s, headport=n]
+BB8837 -> BB8839 [tailport=s, headport=n, color=gray]
+BB8838 [shape=record label="{24807: return[v1]}" ] 
+BB8839 [shape=record label="{24808: exceptional-return}" ] 
+//#$~ 6950
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry181[shape=none,label=""];
+BB_entry181 -> BB2273 [tailport=s, headport=n, headlabel="    2273"]
+BB2273 [shape=record label="{6484: constant[undefined,v1]}" ] 
+BB2273 -> BB2274 [tailport=s, headport=n, headlabel="      2274"]
+BB2274 [shape=record label="{6485: read-variable['hoverIdle',v2,-]|6486: if[v2](true-block:2275,false-block:2277)}" ] 
+BB2274 -> BB2275 [tailport=s, headport=n, headlabel="      2275"]
+BB2274 -> BB2277 [tailport=s, headport=n, headlabel="      2277"]
+BB2274 -> BB2281 [tailport=s, headport=n, color=gray, headlabel="      2281"]
+BB2275 [shape=record label="{6487: read-variable['clearTimeout',v4,v3]|6488: read-variable['hoverIdle',v5,-]}" ] 
+BB2275 -> BB2276 [tailport=s, headport=n, headlabel="      2276"]
+BB2275 -> BB2281 [tailport=s, headport=n, color=gray]
+BB2276 [shape=record label="{6489: call-clearTimeout [v3,v4,v5,-]*}" ] 
+BB2276 -> BB2277 [tailport=s, headport=n]
+BB2276 -> BB2281 [tailport=s, headport=n, color=gray]
+BB2277 [shape=record label="{6490: read-variable['$this',v4,-]|6491: read-variable['setTimeout',v6,v5]|6492: function-expr[function ( ),v7]|6493: read-variable['$this',v10,-]|6494: read-property[v10,'options',v9]|6495: \<variable-non-null-undef\>['$this']|6496: read-property[v9,'remaintime',v8]|6497: \<property-non-null-undef\>[v10,'options']}" ] 
+BB2277 -> BB2278 [tailport=s, headport=n, headlabel="      2278"]
+BB2277 -> BB2281 [tailport=s, headport=n, color=gray]
+BB2278 [shape=record label="{6498: call-setTimeout [v5,v6,v7,v8,v3]}" ] 
+BB2278 -> BB2279 [tailport=s, headport=n, headlabel="      2279"]
+BB2278 -> BB2281 [tailport=s, headport=n, color=gray]
+BB2279 [shape=record label="{6499: write-property[v4,'remainIdle',v3]|6500: \<variable-non-null-undef\>['$this']*}" ] 
+BB2279 -> BB2280 [tailport=s, headport=n, headlabel="      2280"]
+BB2279 -> BB2281 [tailport=s, headport=n, color=gray]
+BB2280 [shape=record label="{6501: return[v1]}" ] 
+BB2281 [shape=record label="{6502: exceptional-return}" ] 
+//#$~ 1782
+}

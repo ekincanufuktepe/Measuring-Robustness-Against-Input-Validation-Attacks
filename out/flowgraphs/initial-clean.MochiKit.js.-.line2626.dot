@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry299[shape=none,label=""];
+BB_entry299 -> BB3931 [tailport=s, headport=n, headlabel="    3931"]
+BB3931 [shape=record label="{15304: constant[undefined,v1]|15305: vardecl['_2d5']}" ] 
+BB3931 -> BB3932 [tailport=s, headport=n, headlabel="      3932"]
+BB3932 [shape=record label="{15306: read-variable['this',v3,-]|15307: read-property[v3,'locked',v2]|15308: if[v2](true-block:3933,false-block:3934)}" ] 
+BB3932 -> BB3933 [tailport=s, headport=n, headlabel="      3933"]
+BB3932 -> BB3934 [tailport=s, headport=n, headlabel="      3934"]
+BB3932 -> BB3937 [tailport=s, headport=n, color=gray, headlabel="      3937"]
+BB3933 [shape=record label="{15309: constant[\"locked, \",v7]|15310: read-variable['this',v10,-]|15311: read-property[v10,'waiting',v9]|15312: read-property[v9,'length',v8]|15313: \<property-non-null-undef\>[v10,'waiting']|15314: +[v7,v8,v5]|15315: constant[\" waiting\",v6]|15316: +[v5,v6,v4]|15317: write-variable[v4,'_2d5']*}" ] 
+BB3933 -> BB3935 [tailport=s, headport=n, headlabel="      3935"]
+BB3933 -> BB3937 [tailport=s, headport=n, color=gray]
+BB3934 [shape=record label="{15318: constant[\"unlocked\",v4]|15319: write-variable[v4,'_2d5']*}" ] 
+BB3934 -> BB3935 [tailport=s, headport=n]
+BB3935 [shape=record label="{15320: constant[\"DeferredLock(\",v10]|15321: read-variable['this',v12,-]|15322: read-property[v12,'id',v11]|15323: +[v10,v11,v8]|15324: constant[\", \",v9]|15325: +[v8,v9,v6]|15326: read-variable['_2d5',v7,-]|15327: +[v6,v7,v4]|15328: constant[\")\",v5]|15329: +[v4,v5,v1]}" ] 
+BB3935 -> BB3936 [tailport=s, headport=n, headlabel="      3936"]
+BB3935 -> BB3937 [tailport=s, headport=n, color=gray]
+BB3936 [shape=record label="{15330: return[v1]}" ] 
+BB3937 [shape=record label="{15331: exceptional-return}" ] 
+//#$~ 2633
+}

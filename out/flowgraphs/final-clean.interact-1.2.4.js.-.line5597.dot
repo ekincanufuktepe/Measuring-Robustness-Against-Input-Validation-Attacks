@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry177[shape=none,label=""];
+BB_entry177 -> BB4067 [tailport=s, headport=n, headlabel="    4067"]
+BB4067 [shape=record label="{16171: constant[undefined,v1]}" ] 
+BB4067 -> BB4068 [tailport=s, headport=n, headlabel="      4068"]
+BB4068 [shape=record label="{16172: read-variable['isNumber',v4,v3]|16173: read-variable['newValue',v5,-]}" ] 
+BB4068 -> BB4069 [tailport=s, headport=n, headlabel="      4069"]
+BB4068 -> BB4074 [tailport=s, headport=n, color=gray, headlabel="      4074"]
+BB4069 [shape=record label="{16174: call-isNumber [v3,v4,v5,v2]}" ] 
+BB4069 -> BB4070 [tailport=s, headport=n, headlabel="      4070"]
+BB4069 -> BB4074 [tailport=s, headport=n, color=gray]
+BB4070 [shape=record label="{16175: if[v2](true-block:4071,false-block:4072)}" ] 
+BB4070 -> BB4071 [tailport=s, headport=n, headlabel="      4071"]
+BB4070 -> BB4072 [tailport=s, headport=n, headlabel="      4072"]
+BB4071 [shape=record label="{16176: read-variable['newValue',v6,-]|16177: write-variable[v6,'maxInteractions']*|16178: read-variable['this',v1,-]}" ] 
+BB4071 -> BB4073 [tailport=s, headport=n, headlabel="      4073"]
+BB4071 -> BB4074 [tailport=s, headport=n, color=gray]
+BB4072 [shape=record label="{16179: read-variable['maxInteractions',v1,-]}" ] 
+BB4072 -> BB4073 [tailport=s, headport=n]
+BB4072 -> BB4074 [tailport=s, headport=n, color=gray]
+BB4073 [shape=record label="{16180: return[v1]}" ] 
+BB4074 [shape=record label="{16181: exceptional-return}" ] 
+//#$~ 5604
+}

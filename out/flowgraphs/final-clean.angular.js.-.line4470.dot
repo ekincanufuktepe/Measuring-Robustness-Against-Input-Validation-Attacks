@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry247[shape=none,label=""];
+BB_entry247 -> BB3049 [tailport=s, headport=n, headlabel="    3049"]
+BB3049 [shape=record label="{7354: constant[undefined,v1]}" ] 
+BB3049 -> BB3050 [tailport=s, headport=n, headlabel="      3050"]
+BB3050 [shape=record label="{7355: read-variable['providerCache',v3,-]|7356: read-property[v3,'hasOwnProperty',-]|7357: \<variable-non-null-undef\>['providerCache']|7358: read-variable['name',v5,-]|7359: read-variable['providerSuffix',v6,-]|7360: +[v5,v6,v4]}" ] 
+BB3050 -> BB3051 [tailport=s, headport=n, headlabel="      3051"]
+BB3050 -> BB3056 [tailport=s, headport=n, color=gray, headlabel="      3056"]
+BB3051 [shape=record label="{7361: call-providerCache.hasOwnProperty [v3,'hasOwnProperty',v4,v1]}" ] 
+BB3051 -> BB3052 [tailport=s, headport=n, headlabel="      3052"]
+BB3051 -> BB3056 [tailport=s, headport=n, color=gray]
+BB3052 [shape=record label="{7362: if[v1](true-block:3055,false-block:3053)}" ] 
+BB3052 -> BB3055 [tailport=s, headport=n, headlabel="      3055"]
+BB3052 -> BB3053 [tailport=s, headport=n, headlabel="      3053"]
+BB3053 [shape=record label="{7363: read-variable['cache',v3,-]|7364: read-property[v3,'hasOwnProperty',-]|7365: \<variable-non-null-undef\>['cache']|7366: read-variable['name',v4,-]}" ] 
+BB3053 -> BB3054 [tailport=s, headport=n, headlabel="      3054"]
+BB3053 -> BB3056 [tailport=s, headport=n, color=gray]
+BB3054 [shape=record label="{7367: call-cache.hasOwnProperty [v3,'hasOwnProperty',v4,v1]}" ] 
+BB3054 -> BB3055 [tailport=s, headport=n]
+BB3054 -> BB3056 [tailport=s, headport=n, color=gray]
+BB3055 [shape=record label="{7368: return[v1]}" ] 
+BB3056 [shape=record label="{7369: exceptional-return}" ] 
+//#$~ 4471
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry130[shape=none,label=""];
+BB_entry130 -> BB1918 [tailport=s, headport=n, headlabel="    1918"]
+BB1918 [shape=record label="{9243: constant[undefined,v1]|9244: vardecl['m']}" ] 
+BB1918 -> BB1919 [tailport=s, headport=n, headlabel="      1919"]
+BB1919 [shape=record label="{9245: read-variable['n',v3,-]|9246: ![v3,v2]|9247: if[v2](true-block:1920,false-block:1921)}" ] 
+BB1919 -> BB1920 [tailport=s, headport=n, headlabel="      1920"]
+BB1919 -> BB1921 [tailport=s, headport=n, headlabel="      1921"]
+BB1919 -> BB1927 [tailport=s, headport=n, color=gray, headlabel="      1927"]
+BB1920 [shape=record label="{9248: constant[0.0,v4]|9249: write-variable[v4,'n']*}" ] 
+BB1920 -> BB1921 [tailport=s, headport=n]
+BB1921 [shape=record label="{9250: read-variable['MochiKit',v5,-]|9251: read-property[v5,'Base',v4]|9252: \<variable-non-null-undef\>['MochiKit']|9253: write-variable[v4,'m']*|9254: new[v1]|9255: function-expr[function ( ),v6]|9256: write-property[v1,'repr',v6]|9257: read-variable['m',v9,-]|9258: read-property[v9,'forwardCall',-]|9259: \<variable-non-null-undef\>['m']|9260: constant[\"repr\",v10]}" ] 
+BB1921 -> BB1922 [tailport=s, headport=n, headlabel="      1922"]
+BB1921 -> BB1927 [tailport=s, headport=n, color=gray]
+BB1922 [shape=record label="{9261: call-m.forwardCall [v9,'forwardCall',v10,v7]}" ] 
+BB1922 -> BB1923 [tailport=s, headport=n, headlabel="      1923"]
+BB1922 -> BB1927 [tailport=s, headport=n, color=gray]
+BB1923 [shape=record label="{9262: write-property[v1,'toString',v7]|9263: read-variable['m',v13,-]|9264: read-property[v13,'counter',-]|9265: \<variable-non-null-undef\>['m']|9266: read-variable['n',v14,-]}" ] 
+BB1923 -> BB1924 [tailport=s, headport=n, headlabel="      1924"]
+BB1923 -> BB1927 [tailport=s, headport=n, color=gray]
+BB1924 [shape=record label="{9267: call-m.counter [v13,'counter',v14,v11]}" ] 
+BB1924 -> BB1925 [tailport=s, headport=n, headlabel="      1925"]
+BB1924 -> BB1927 [tailport=s, headport=n, color=gray]
+BB1925 [shape=record label="{9268: write-property[v1,'next',v11]}" ] 
+BB1925 -> BB1926 [tailport=s, headport=n, headlabel="      1926"]
+BB1925 -> BB1927 [tailport=s, headport=n, color=gray]
+BB1926 [shape=record label="{9269: return[v1]}" ] 
+BB1927 [shape=record label="{9270: exceptional-return}" ] 
+//#$~ 1136
+}

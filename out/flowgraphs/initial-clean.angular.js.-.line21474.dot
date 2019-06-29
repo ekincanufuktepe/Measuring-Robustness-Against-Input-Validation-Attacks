@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry1059[shape=none,label=""];
+BB_entry1059 -> BB13524 [tailport=s, headport=n, headlabel="    13524"]
+BB13524 [shape=record label="{35349: constant[undefined,v1]}" ] 
+BB13524 -> BB13525 [tailport=s, headport=n, headlabel="      13525"]
+BB13525 [shape=record label="{35350: read-variable['timeout',v3,-]|35351: ![v3,v2]|35352: if[v2](true-block:13526,false-block:13529)}" ] 
+BB13525 -> BB13526 [tailport=s, headport=n, headlabel="      13526"]
+BB13525 -> BB13529 [tailport=s, headport=n, headlabel="      13529"]
+BB13525 -> BB13530 [tailport=s, headport=n, color=gray, headlabel="      13530"]
+BB13526 [shape=record label="{35353: read-variable['$browser',v6,-]|35354: read-property[v6,'defer',-]|35355: \<variable-non-null-undef\>['$browser']|35356: function-expr[function ( ),v7]}" ] 
+BB13526 -> BB13527 [tailport=s, headport=n, headlabel="      13527"]
+BB13526 -> BB13530 [tailport=s, headport=n, color=gray]
+BB13527 [shape=record label="{35357: call-$browser.defer [v6,'defer',v7,v4]}" ] 
+BB13527 -> BB13528 [tailport=s, headport=n, headlabel="      13528"]
+BB13527 -> BB13530 [tailport=s, headport=n, color=gray]
+BB13528 [shape=record label="{35358: write-variable[v4,'timeout']*}" ] 
+BB13528 -> BB13529 [tailport=s, headport=n]
+BB13529 [shape=record label="{35359: return[v1]}" ] 
+BB13530 [shape=record label="{35360: exceptional-return}" ] 
+//#$~ 21479
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry644[shape=none,label=""];
+BB_entry644 -> BB8564 [tailport=s, headport=n, headlabel="    8564"]
+BB8564 [shape=record label="{24080: constant[undefined,v1]}" ] 
+BB8564 -> BB8565 [tailport=s, headport=n, headlabel="      8565"]
+BB8565 [shape=record label="{24081: read-variable['isIELegacyEvent',v4,v3]|24082: read-variable['event',v5,-]}" ] 
+BB8565 -> BB8566 [tailport=s, headport=n, headlabel="      8566"]
+BB8565 -> BB8573 [tailport=s, headport=n, color=gray, headlabel="      8573"]
+BB8566 [shape=record label="{24083: call-isIELegacyEvent [v3,v4,v5,v2]}" ] 
+BB8566 -> BB8567 [tailport=s, headport=n, headlabel="      8567"]
+BB8566 -> BB8573 [tailport=s, headport=n, color=gray]
+BB8567 [shape=record label="{24084: if[v2](true-block:8568,false-block:8569)}" ] 
+BB8567 -> BB8568 [tailport=s, headport=n, headlabel="      8568"]
+BB8567 -> BB8569 [tailport=s, headport=n, headlabel="      8569"]
+BB8568 [shape=record label="{24085: read-variable['_isButtonForLegacyEvents',v7,v6]|24086: read-variable['event',v8,-]|24087: read-variable['code',v9,-]}" ] 
+BB8568 -> BB8570 [tailport=s, headport=n, headlabel="      8570"]
+BB8568 -> BB8573 [tailport=s, headport=n, color=gray]
+BB8569 [shape=record label="{24088: read-variable['_isButtonForDOMEvents',v7,v6]|24089: read-variable['event',v8,-]|24090: read-variable['code',v9,-]}" ] 
+BB8569 -> BB8571 [tailport=s, headport=n, headlabel="      8571"]
+BB8569 -> BB8573 [tailport=s, headport=n, color=gray]
+BB8570 [shape=record label="{24091: call-_isButtonForLegacyEvents [v6,v7,v8,v9,v1]}" ] 
+BB8570 -> BB8572 [tailport=s, headport=n, headlabel="      8572"]
+BB8570 -> BB8573 [tailport=s, headport=n, color=gray]
+BB8571 [shape=record label="{24092: call-_isButtonForDOMEvents [v6,v7,v8,v9,v1]}" ] 
+BB8571 -> BB8572 [tailport=s, headport=n]
+BB8571 -> BB8573 [tailport=s, headport=n, color=gray]
+BB8572 [shape=record label="{24093: return[v1]}" ] 
+BB8573 [shape=record label="{24094: exceptional-return}" ] 
+//#$~ 6686
+}

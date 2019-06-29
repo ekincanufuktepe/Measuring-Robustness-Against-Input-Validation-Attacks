@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry79[shape=none,label=""];
+BB_entry79 -> BB1108 [tailport=s, headport=n, headlabel="    1108"]
+BB1108 [shape=record label="{3207: constant[undefined,v1]|3208: vardecl['iterator']}" ] 
+BB1108 -> BB1109 [tailport=s, headport=n, headlabel="      1109"]
+BB1109 [shape=record label="{3209: read-variable['_',v5,-]|3210: read-property[v5,'isFunction',-]|3211: \<variable-non-null-undef\>['_']|3212: read-variable['value',v6,-]}" ] 
+BB1109 -> BB1110 [tailport=s, headport=n, headlabel="      1110"]
+BB1109 -> BB1117 [tailport=s, headport=n, color=gray, headlabel="      1117"]
+BB1110 [shape=record label="{3213: call-_.isFunction [v5,'isFunction',v6,v3]}" ] 
+BB1110 -> BB1111 [tailport=s, headport=n, headlabel="      1111"]
+BB1110 -> BB1117 [tailport=s, headport=n, color=gray]
+BB1111 [shape=record label="{3214: if[v3](true-block:1112,false-block:1113)}" ] 
+BB1111 -> BB1112 [tailport=s, headport=n, headlabel="      1112"]
+BB1111 -> BB1113 [tailport=s, headport=n, headlabel="      1113"]
+BB1112 [shape=record label="{3215: read-variable['value',v2,-]}" ] 
+BB1112 -> BB1114 [tailport=s, headport=n, headlabel="      1114"]
+BB1112 -> BB1117 [tailport=s, headport=n, color=gray]
+BB1113 [shape=record label="{3216: function-expr[function ( model ),v2]}" ] 
+BB1113 -> BB1114 [tailport=s, headport=n]
+BB1114 [shape=record label="{3217: write-variable[v2,'iterator']*|3218: read-variable['_',v8,-]|3219: read-variable['method',v9,-]|3220: read-property[v8,v9,-]|3221: \<variable-non-null-undef\>['_']|3222: read-variable['this',v11,-]|3223: read-property[v11,'models',v10]|3224: read-variable['iterator',v12,-]|3225: read-variable['context',v13,-]}" ] 
+BB1114 -> BB1115 [tailport=s, headport=n, headlabel="      1115"]
+BB1114 -> BB1117 [tailport=s, headport=n, color=gray]
+BB1115 [shape=record label="{3226: call-null [v8,[v9],v10,v12,v13,v1]}" ] 
+BB1115 -> BB1116 [tailport=s, headport=n, headlabel="      1116"]
+BB1115 -> BB1117 [tailport=s, headport=n, color=gray]
+BB1116 [shape=record label="{3227: return[v1]}" ] 
+BB1117 [shape=record label="{3228: exceptional-return}" ] 
+//#$~ 981
+}

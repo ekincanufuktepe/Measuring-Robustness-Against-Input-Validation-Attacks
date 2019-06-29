@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry68[shape=none,label=""];
+BB_entry68 -> BB982 [tailport=s, headport=n, headlabel="    982"]
+BB982 [shape=record label="{3436: constant[undefined,v1]|3437: vardecl['i']|3438: vardecl['isCustomAttributeFn']}" ] 
+BB982 -> BB983 [tailport=s, headport=n, headlabel="      983"]
+BB983 [shape=record label="{3439: constant[0.0,v3]|3440: write-variable[v3,'i']*}" ] 
+BB983 -> BB984 [tailport=s, headport=n, headlabel="      984"]
+BB984 [shape=record label="{3441: read-variable['i',v4,-]|3442: read-variable['DOMProperty',v7,-]|3443: read-property[v7,'_isCustomAttributeFunctions',v6]|3444: \<variable-non-null-undef\>['DOMProperty']|3445: read-property[v6,'length',v5]|3446: \<property-non-null-undef\>[v7,'_isCustomAttributeFunctions']|3447: \<[v4,v5,v2]|3448: if[v2](true-block:985,false-block:986)}" ] 
+BB984 -> BB985 [tailport=s, headport=n, headlabel="      985"]
+BB984 -> BB986 [tailport=s, headport=n, headlabel="      986"]
+BB984 -> BB992 [tailport=s, headport=n, color=gray, headlabel="      992"]
+BB985 [shape=record label="{3449: read-variable['DOMProperty',v10,-]|3450: read-property[v10,'_isCustomAttributeFunctions',v9]|3451: \<variable-non-null-undef\>['DOMProperty']|3452: read-variable['i',v11,-]|3453: read-property[v9,v11,v8]|3454: \<property-non-null-undef\>[v10,'_isCustomAttributeFunctions']|3455: write-variable[v8,'isCustomAttributeFn']*|3456: read-variable['isCustomAttributeFn',v14,v13]|3457: read-variable['attributeName',v15,-]}" ] 
+BB985 -> BB987 [tailport=s, headport=n, headlabel="      987"]
+BB985 -> BB992 [tailport=s, headport=n, color=gray]
+BB986 [shape=record label="{3458: constant[false,v1]}" ] 
+BB986 -> BB991 [tailport=s, headport=n, headlabel="      991"]
+BB987 [shape=record label="{3459: call-isCustomAttributeFn [v13,v14,v15,v12]}" ] 
+BB987 -> BB988 [tailport=s, headport=n, headlabel="      988"]
+BB987 -> BB992 [tailport=s, headport=n, color=gray]
+BB988 [shape=record label="{3460: if[v12](true-block:989,false-block:990)}" ] 
+BB988 -> BB989 [tailport=s, headport=n, headlabel="      989"]
+BB988 -> BB990 [tailport=s, headport=n, headlabel="      990"]
+BB989 [shape=record label="{3461: constant[true,v1]}" ] 
+BB989 -> BB991 [tailport=s, headport=n]
+BB990 [shape=record label="{3462: constant[1.0,v16]|3463: read-variable['i',v17,-]|3464: +[v17,v18]|3465: +[v18,v16,v19]|3466: write-variable[v19,'i']}" ] 
+BB990 -> BB984 [tailport=s, headport=n]
+BB990 -> BB992 [tailport=s, headport=n, color=gray]
+BB991 [shape=record label="{3467: return[v1]}" ] 
+BB992 [shape=record label="{3468: exceptional-return}" ] 
+//#$~ 1890
+}

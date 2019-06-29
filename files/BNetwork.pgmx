@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+	<ProbNet type="BayesianNetwork">
+	<Comment showWhenOpeningNetwork="false"><![CDATA[<<Double click to add/modify comment>>]]></Comment>
+	<Variables>
+	<Variable name="Application" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="682" y="37" />
+	<AdditionalProperties>
+	<Property name="Purpose" value="riskfactor" />
+	</AdditionalProperties>
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	 <State name="Not Robust" />
+	 <State name="Robust" />
+	</States>
+	</Variable>
+	<Variable name="Format String Vulnerability" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="126" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+	<Variable name="Path Traversal" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="346" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+	<Variable name="XSS" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="566" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+	<Variable name="SQL Injection" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="786" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+	<Variable name="Buffer Overflow" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="1006" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+	<Variable name="OS Command Injection" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="1226" y="186" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Contains Validation Code"/>
+	<State name="Not Contains Validation Code" />
+	</States>
+	</Variable>
+<Variable name="FIPS" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="126" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+<Variable name="FIPS'" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="346" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+<Variable name="FIPS''" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="566" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+<Variable name="FIPS'''" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="786" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+<Variable name="FIPS''''" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="1006" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+<Variable name="FIPS'''''" type="finiteStates" role="chance" isInput="false">
+	<Coordinates x="1226" y="415" />
+	<Unit />
+	<Precision>0.01</Precision>
+	<States>
+	<State name="Not Validated" />
+	<State name="Validated" />
+	</States>
+</Variable>
+	</Variables>
+<Links>
+	<Link directed="true">
+		<Variable name="OS Command Injection" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="Buffer Overflow" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="SQL Injection" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="XSS" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="Path Traversal" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="Format String Vulnerability" />
+		<Variable name="Application" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS" />
+		<Variable name="Format String Vulnerability" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS'" />
+		<Variable name="Path Traversal" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS''" />
+		<Variable name="XSS" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS'''" />
+		<Variable name="SQL Injection" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS''''" />
+		<Variable name="Buffer Overflow" />
+		</Link>
+	<Link directed="true">
+		<Variable name="FIPS'''''" />
+		<Variable name="OS Command Injection" />
+		</Link>
+</Links>
+<Potentials>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="Application" />
+		<Variable name="OS Command Injection" />
+		<Variable name="Buffer Overflow" />
+		<Variable name="SQL Injection" />
+		<Variable name="XSS" />
+		<Variable name="Path Traversal" />
+		<Variable name="Format String Vulnerability" />
+</Variables>
+<Values> 0.0 1.0 0.18 0.8200000000000001 0.17 0.83 0.35 0.65 0.2 0.8 0.38 0.62 0.37 0.63 0.55 0.44999999999999996 0.17 0.83 0.35 0.65 0.34 0.6599999999999999 0.52 0.48 0.37 0.63 0.55 0.44999999999999996 0.54 0.45999999999999996 0.72 0.28 0.15 0.85 0.33 0.6699999999999999 0.32 0.6799999999999999 0.5 0.5 0.35 0.65 0.53 0.47 0.52 0.48 0.7 0.30000000000000004 0.32 0.6799999999999999 0.5 0.5 0.49 0.51 0.67 0.32999999999999996 0.52 0.48 0.7 0.30000000000000004 0.69 0.31000000000000005 0.87 0.13 0.13 0.87 0.31 0.69 0.3 0.7 0.48 0.52 0.33 0.6699999999999999 0.51 0.49 0.5 0.5 0.68 0.31999999999999995 0.3 0.7 0.48 0.52 0.47 0.53 0.65 0.35 0.5 0.5 0.68 0.31999999999999995 0.67 0.32999999999999996 0.85 0.15000000000000002 0.28 0.72 0.46 0.54 0.45 0.55 0.63 0.37 0.48 0.52 0.66 0.33999999999999997 0.65 0.35 0.83 0.17000000000000004 0.45 0.55 0.63 0.37 0.62 0.38 0.8 0.19999999999999996 0.65 0.35 0.83 0.17000000000000004 0.82 0.18000000000000005 1.0 0.0</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="Format String Vulnerability" />
+		<Variable name="FIPS" />
+</Variables>
+<Values> 0.0 1.0 0.99 0.01</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="Path Traversal" />
+		<Variable name="FIPS'" />
+</Variables>
+<Values> 0.0 1.0 0.9 0.1</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="XSS" />
+		<Variable name="FIPS''" />
+</Variables>
+<Values> 0.0 1.0 0.6699999999999999 0.33</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="SQL Injection" />
+		<Variable name="FIPS'''" />
+</Variables>
+<Values> 0.0 1.0 0.77 0.23</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="Buffer Overflow" />
+		<Variable name="FIPS''''" />
+</Variables>
+<Values> 0.0 1.0 0.69 0.31</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="OS Command Injection" />
+		<Variable name="FIPS'''''" />
+</Variables>
+<Values> 0.0 1.0 0.99 0.01</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS" />
+</Variables>
+<Values>1.0 0.0</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS'" />
+</Variables>
+<Values>1.0 0.0</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS''" />
+</Variables>
+<Values>1.0 0.0</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS'''" />
+</Variables>
+<Values>1.0 0.0</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS''''" />
+</Variables>
+<Values>0.9963811821471653 0.0036188178528347406</Values>
+</Potential>
+	<Potential type="Table" role="conditionalProbability">
+	<Variables>
+		<Variable name="FIPS'''''" />
+</Variables>
+<Values>1.0 0.0</Values>
+</Potential>
+</Potentials>
+<AdditionalProperties />
+</ProbNet>
+</ProbModelXML>

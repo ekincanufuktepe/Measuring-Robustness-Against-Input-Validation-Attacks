@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry81[shape=none,label=""];
+BB_entry81 -> BB902 [tailport=s, headport=n, headlabel="    902"]
+BB902 [shape=record label="{2322: constant[undefined,v1]}" ] 
+BB902 -> BB903 [tailport=s, headport=n, headlabel="      903"]
+BB903 [shape=record label="{2323: read-variable['obj',v3,-]|2324: ![v3,v2]|2325: if[v2](true-block:904,false-block:905)}" ] 
+BB903 -> BB904 [tailport=s, headport=n, headlabel="      904"]
+BB903 -> BB905 [tailport=s, headport=n, headlabel="      905"]
+BB903 -> BB909 [tailport=s, headport=n, color=gray, headlabel="      909"]
+BB904 [shape=record label="{2326: read-variable['testPropsAll',v5,v4]|2327: read-variable['prop',v6,-]|2328: constant[\"pfx\",v7]}" ] 
+BB904 -> BB906 [tailport=s, headport=n, headlabel="      906"]
+BB904 -> BB909 [tailport=s, headport=n, color=gray]
+BB905 [shape=record label="{2329: read-variable['testPropsAll',v5,v4]|2330: read-variable['prop',v6,-]|2331: read-variable['obj',v7,-]|2332: read-variable['elem',v8,-]}" ] 
+BB905 -> BB907 [tailport=s, headport=n, headlabel="      907"]
+BB905 -> BB909 [tailport=s, headport=n, color=gray]
+BB906 [shape=record label="{2333: call-testPropsAll [v4,v5,v6,v7,v1]}" ] 
+BB906 -> BB908 [tailport=s, headport=n, headlabel="      908"]
+BB906 -> BB909 [tailport=s, headport=n, color=gray]
+BB907 [shape=record label="{2334: call-testPropsAll [v4,v5,v6,v7,v8,v1]}" ] 
+BB907 -> BB908 [tailport=s, headport=n]
+BB907 -> BB909 [tailport=s, headport=n, color=gray]
+BB908 [shape=record label="{2335: return[v1]}" ] 
+BB909 [shape=record label="{2336: exceptional-return}" ] 
+//#$~ 832
+}

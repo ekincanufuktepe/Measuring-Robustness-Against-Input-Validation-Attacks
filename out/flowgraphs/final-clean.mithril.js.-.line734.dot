@@ -1,0 +1,24 @@
+digraph {
+rankdir="TD"
+BB_entry42[shape=none,label=""];
+BB_entry42 -> BB1072 [tailport=s, headport=n, headlabel="    1072"]
+BB1072 [shape=record label="{3823: constant[undefined,v1]}" ] 
+BB1072 -> BB1073 [tailport=s, headport=n, headlabel="      1073"]
+BB1073 [shape=record label="{3824: read-variable['window',v4,-]|3825: read-property[v4,'history',v3]|3826: \<variable-non-null-undef\>['window']|3827: read-variable['shouldReplaceHistoryEntry',v6,-]|3828: if[v6](true-block:1074,false-block:1075)}" ] 
+BB1073 -> BB1074 [tailport=s, headport=n, headlabel="      1074"]
+BB1073 -> BB1075 [tailport=s, headport=n, headlabel="      1075"]
+BB1073 -> BB1079 [tailport=s, headport=n, color=gray, headlabel="      1079"]
+BB1074 [shape=record label="{3829: constant[\"replaceState\",v5]}" ] 
+BB1074 -> BB1076 [tailport=s, headport=n, headlabel="      1076"]
+BB1075 [shape=record label="{3830: constant[\"pushState\",v5]}" ] 
+BB1075 -> BB1076 [tailport=s, headport=n]
+BB1076 [shape=record label="{3831: read-property[v3,v5,-]|3832: \<property-non-null-undef\>[v4,'history']|3833: constant[null,v7]|3834: read-variable['$document',v9,-]|3835: read-property[v9,'title',v8]|3836: \<variable-non-null-undef\>['$document']|3837: read-variable['modes',v13,-]|3838: read-variable['m',v16,-]|3839: read-property[v16,'route',v15]|3840: \<variable-non-null-undef\>['m']|3841: read-property[v15,'mode',v14]|3842: \<property-non-null-undef\>[v16,'route']|3843: read-property[v13,v14,v11]|3844: \<variable-non-null-undef\>['modes']|3845: read-variable['currentRoute',v12,-]|3846: +[v11,v12,v10]}" ] 
+BB1076 -> BB1077 [tailport=s, headport=n, headlabel="      1077"]
+BB1076 -> BB1079 [tailport=s, headport=n, color=gray]
+BB1077 [shape=record label="{3847: call-null [v3,[v5],v7,v8,v10,-]*}" ] 
+BB1077 -> BB1078 [tailport=s, headport=n, headlabel="      1078"]
+BB1077 -> BB1079 [tailport=s, headport=n, color=gray]
+BB1078 [shape=record label="{3848: return[v1]}" ] 
+BB1079 [shape=record label="{3849: exceptional-return}" ] 
+//#$~ 735
+}

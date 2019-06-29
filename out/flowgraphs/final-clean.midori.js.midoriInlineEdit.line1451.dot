@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry111[shape=none,label=""];
+BB_entry111 -> BB2075 [tailport=s, headport=n, headlabel="    2075"]
+BB2075 [shape=record label="{7744: constant[undefined,v1]|7745: vardecl['thisObj']}" ] 
+BB2075 -> BB2076 [tailport=s, headport=n, headlabel="      2076"]
+BB2076 [shape=record label="{7746: read-variable['this',v2,-]|7747: write-variable[v2,'thisObj']*|7748: read-variable['this',v4,-]|7749: read-variable['midori',v6,-]|7750: read-property[v6,'get',-]|7751: \<variable-non-null-undef\>['midori']|7752: constant[\"#\",v8]|7753: read-variable['vars',v10,-]|7754: read-property[v10,'id',v9]|7755: \<variable-non-null-undef\>['vars']|7756: +[v8,v9,v7]}" ] 
+BB2076 -> BB2077 [tailport=s, headport=n, headlabel="      2077"]
+BB2076 -> BB2085 [tailport=s, headport=n, color=gray, headlabel="      2085"]
+BB2077 [shape=record label="{7757: call-midori.get [v6,'get',v7,v3]}" ] 
+BB2077 -> BB2078 [tailport=s, headport=n, headlabel="      2078"]
+BB2077 -> BB2085 [tailport=s, headport=n, color=gray]
+BB2078 [shape=record label="{7758: write-property[v4,'myObj',v3]*|7759: read-variable['this',v12,-]|7760: constant[\"\",v11]|7761: write-property[v12,'editObj',v11]*|7762: read-variable['this',v14,-]|7763: read-variable['vars',v16,-]|7764: read-property[v16,'textArea',v15]|7765: \<variable-non-null-undef\>['vars']|7766: if[v15](true-block:2079,false-block:2080)}" ] 
+BB2078 -> BB2079 [tailport=s, headport=n, headlabel="      2079"]
+BB2078 -> BB2080 [tailport=s, headport=n, headlabel="      2080"]
+BB2078 -> BB2085 [tailport=s, headport=n, color=gray]
+BB2079 [shape=record label="{7767: constant[\"textarea\",v13]}" ] 
+BB2079 -> BB2081 [tailport=s, headport=n, headlabel="      2081"]
+BB2080 [shape=record label="{7768: constant[\"input\",v13]}" ] 
+BB2080 -> BB2081 [tailport=s, headport=n]
+BB2081 [shape=record label="{7769: write-property[v14,'input',v13]*|7770: read-variable['midori',v18,-]|7771: read-property[v18,'addEventListener',-]|7772: \<variable-non-null-undef\>['midori']|7773: read-variable['document',v19,-]|7774: constant[\"mouseup\",v20]|7775: function-expr[function ( e ),v21]}" ] 
+BB2081 -> BB2082 [tailport=s, headport=n, headlabel="      2082"]
+BB2081 -> BB2085 [tailport=s, headport=n, color=gray]
+BB2082 [shape=record label="{7776: call-midori.addEventListener [v18,'addEventListener',v19,v20,v21,-]*}" ] 
+BB2082 -> BB2083 [tailport=s, headport=n, headlabel="      2083"]
+BB2082 -> BB2085 [tailport=s, headport=n, color=gray]
+BB2083 [shape=record label="{7777: read-variable['this',v23,-]|7778: function-expr[function ( ),v22]|7779: write-property[v23,'edit',v22]*|7780: read-variable['this',v25,-]|7781: function-expr[function ( ),v24]|7782: write-property[v25,'select',v24]*|7783: read-variable['this',v27,-]|7784: function-expr[function ( ),v26]|7785: write-property[v27,'save',v26]*}" ] 
+BB2083 -> BB2084 [tailport=s, headport=n, headlabel="      2084"]
+BB2083 -> BB2085 [tailport=s, headport=n, color=gray]
+BB2084 [shape=record label="{7786: return[v1]}" ] 
+BB2085 [shape=record label="{7787: exceptional-return}" ] 
+//#$~ 1500
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry126[shape=none,label=""];
+BB_entry126 -> BB1177 [tailport=s, headport=n, headlabel="    1177"]
+BB1177 [shape=record label="{4166: constant[undefined,v1]|4167: vardecl['centreAngle']|4168: vardecl['rangeFromCentre']}" ] 
+BB1177 -> BB1178 [tailport=s, headport=n, headlabel="      1178"]
+BB1178 [shape=record label="{4169: read-variable['this',v5,-]|4170: read-property[v5,'startAngle',v3]|4171: read-variable['this',v10,-]|4172: read-property[v10,'endAngle',v8]|4173: read-variable['this',v11,-]|4174: read-property[v11,'startAngle',v9]|4175: -[v8,v9,v6]|4176: constant[2.0,v7]|4177: /[v6,v7,v4]|4178: +[v3,v4,v2]|4179: write-variable[v2,'centreAngle']*|4180: read-variable['this',v19,-]|4181: read-property[v19,'outerRadius',v17]|4182: read-variable['this',v20,-]|4183: read-property[v20,'innerRadius',v18]|4184: -[v17,v18,v15]|4185: constant[2.0,v16]|4186: /[v15,v16,v13]|4187: read-variable['this',v21,-]|4188: read-property[v21,'innerRadius',v14]|4189: +[v13,v14,v12]|4190: write-variable[v12,'rangeFromCentre']*|4191: new[v1]|4192: read-variable['this',v25,-]|4193: read-property[v25,'x',v23]|4194: read-variable['Math',v29,-]|4195: read-property[v29,'cos',-]|4196: \<variable-non-null-undef\>['Math']|4197: read-variable['centreAngle',v30,-]}" ] 
+BB1178 -> BB1179 [tailport=s, headport=n, headlabel="      1179"]
+BB1178 -> BB1184 [tailport=s, headport=n, color=gray, headlabel="      1184"]
+BB1179 [shape=record label="{4198: call-Math.cos [v29,'cos',v30,v26]}" ] 
+BB1179 -> BB1180 [tailport=s, headport=n, headlabel="      1180"]
+BB1179 -> BB1184 [tailport=s, headport=n, color=gray]
+BB1180 [shape=record label="{4199: read-variable['rangeFromCentre',v27,-]|4200: *[v26,v27,v24]|4201: +[v23,v24,v22]|4202: write-property[v1,'x',v22]|4203: read-variable['this',v34,-]|4204: read-property[v34,'y',v32]|4205: read-variable['Math',v38,-]|4206: read-property[v38,'sin',-]|4207: \<variable-non-null-undef\>['Math']|4208: read-variable['centreAngle',v39,-]}" ] 
+BB1180 -> BB1181 [tailport=s, headport=n, headlabel="      1181"]
+BB1180 -> BB1184 [tailport=s, headport=n, color=gray]
+BB1181 [shape=record label="{4209: call-Math.sin [v38,'sin',v39,v35]}" ] 
+BB1181 -> BB1182 [tailport=s, headport=n, headlabel="      1182"]
+BB1181 -> BB1184 [tailport=s, headport=n, color=gray]
+BB1182 [shape=record label="{4210: read-variable['rangeFromCentre',v36,-]|4211: *[v35,v36,v33]|4212: +[v32,v33,v31]|4213: write-property[v1,'y',v31]}" ] 
+BB1182 -> BB1183 [tailport=s, headport=n, headlabel="      1183"]
+BB1182 -> BB1184 [tailport=s, headport=n, color=gray]
+BB1183 [shape=record label="{4214: return[v1]}" ] 
+BB1184 [shape=record label="{4215: exceptional-return}" ] 
+//#$~ 1214
+}

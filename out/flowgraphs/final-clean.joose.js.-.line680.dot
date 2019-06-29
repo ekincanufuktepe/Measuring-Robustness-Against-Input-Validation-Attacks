@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry66[shape=none,label=""];
+BB_entry66 -> BB649 [tailport=s, headport=n, headlabel="    649"]
+BB649 [shape=record label="{2182: constant[undefined,v1]|2183: vardecl['m']}" ] 
+BB649 -> BB650 [tailport=s, headport=n, headlabel="      650"]
+BB650 [shape=record label="{2184: read-variable['Joose',v4,-]|2185: read-property[v4,'Method',-]|2186: \<variable-non-null-undef\>['Joose']|2187: read-variable['name',v5,-]|2188: read-variable['func',v6,-]|2189: read-variable['props',v7,-]}" ] 
+BB650 -> BB651 [tailport=s, headport=n, headlabel="      651"]
+BB650 -> BB655 [tailport=s, headport=n, color=gray, headlabel="      655"]
+BB651 [shape=record label="{2190: construct [v4,'Method',v5,v6,v7,v2]}" ] 
+BB651 -> BB652 [tailport=s, headport=n, headlabel="      652"]
+BB651 -> BB655 [tailport=s, headport=n, color=gray]
+BB652 [shape=record label="{2191: write-variable[v2,'m']*|2192: read-variable['this',v9,-]|2193: read-property[v9,'addMethodObject',-]|2194: read-variable['m',v10,-]}" ] 
+BB652 -> BB653 [tailport=s, headport=n, headlabel="      653"]
+BB652 -> BB655 [tailport=s, headport=n, color=gray]
+BB653 [shape=record label="{2195: call-this.addMethodObject [v9,'addMethodObject',v10,-]*}" ] 
+BB653 -> BB654 [tailport=s, headport=n, headlabel="      654"]
+BB653 -> BB655 [tailport=s, headport=n, color=gray]
+BB654 [shape=record label="{2196: return[v1]}" ] 
+BB655 [shape=record label="{2197: exceptional-return}" ] 
+//#$~ 683
+}

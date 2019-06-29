@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry325[shape=none,label=""];
+BB_entry325 -> BB4450 [tailport=s, headport=n, headlabel="    4450"]
+BB4450 [shape=record label="{13284: constant[undefined,v1]}" ] 
+BB4450 -> BB4451 [tailport=s, headport=n, headlabel="      4451"]
+BB4451 [shape=record label="{13285: read-variable['id',v2,-]|13286: if[v2](true-block:4452,false-block:4453)}" ] 
+BB4451 -> BB4452 [tailport=s, headport=n, headlabel="      4452"]
+BB4451 -> BB4453 [tailport=s, headport=n, headlabel="      4453"]
+BB4451 -> BB4459 [tailport=s, headport=n, color=gray, headlabel="      4459"]
+BB4452 [shape=record label="{13287: read-variable['parentRequire',v4,v3]|13288: read-variable['Array',v6,-]|13289: read-variable['id',v7,-]}" ] 
+BB4452 -> BB4454 [tailport=s, headport=n, headlabel="      4454"]
+BB4452 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4453 [shape=record label="{13290: read-variable['loaded',v4,v3]}" ] 
+BB4453 -> BB4457 [tailport=s, headport=n, headlabel="      4457"]
+BB4453 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4454 [shape=record label="{13291: construct [-,v6,v7,v5]}" ] 
+BB4454 -> BB4455 [tailport=s, headport=n, headlabel="      4455"]
+BB4454 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4455 [shape=record label="{13292: read-variable['loaded',v8,-]}" ] 
+BB4455 -> BB4456 [tailport=s, headport=n, headlabel="      4456"]
+BB4455 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4456 [shape=record label="{13293: call-parentRequire [v3,v4,v5,v8,-]*}" ] 
+BB4456 -> BB4458 [tailport=s, headport=n, headlabel="      4458"]
+BB4456 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4457 [shape=record label="{13294: call-loaded [v3,v4,-]*}" ] 
+BB4457 -> BB4458 [tailport=s, headport=n]
+BB4457 -> BB4459 [tailport=s, headport=n, color=gray]
+BB4458 [shape=record label="{13295: return[v1]}" ] 
+BB4459 [shape=record label="{13296: exceptional-return}" ] 
+//#$~ 6233
+}

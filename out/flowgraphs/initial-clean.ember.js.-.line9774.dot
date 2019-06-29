@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry432[shape=none,label=""];
+BB_entry432 -> BB5387 [tailport=s, headport=n, headlabel="    5387"]
+BB5387 [shape=record label="{19228: constant[undefined,v1]|19229: vardecl['oneWay']}" ] 
+BB5387 -> BB5388 [tailport=s, headport=n, headlabel="      5388"]
+BB5388 [shape=record label="{19230: read-variable['this',v4,-]|19231: read-property[v4,'_oneWay',v3]|19232: if[v3](true-block:5389,false-block:5390)}" ] 
+BB5388 -> BB5389 [tailport=s, headport=n, headlabel="      5389"]
+BB5388 -> BB5390 [tailport=s, headport=n, headlabel="      5390"]
+BB5388 -> BB5395 [tailport=s, headport=n, color=gray, headlabel="      5395"]
+BB5389 [shape=record label="{19233: constant[\"[oneWay]\",v2]}" ] 
+BB5389 -> BB5391 [tailport=s, headport=n, headlabel="      5391"]
+BB5390 [shape=record label="{19234: constant[\"\",v2]}" ] 
+BB5390 -> BB5391 [tailport=s, headport=n]
+BB5391 [shape=record label="{19235: write-variable[v2,'oneWay']*|19236: constant[\"Ember.Binding\\\<\",v17]|19237: read-variable['guidFor',v20,v19]|19238: read-variable['this',v21,-]}" ] 
+BB5391 -> BB5392 [tailport=s, headport=n, headlabel="      5392"]
+BB5391 -> BB5395 [tailport=s, headport=n, color=gray]
+BB5392 [shape=record label="{19239: call-guidFor [v19,v20,v21,v18]}" ] 
+BB5392 -> BB5393 [tailport=s, headport=n, headlabel="      5393"]
+BB5392 -> BB5395 [tailport=s, headport=n, color=gray]
+BB5393 [shape=record label="{19240: +[v17,v18,v15]|19241: constant[\"\\\>(\",v16]|19242: +[v15,v16,v13]|19243: read-variable['this',v22,-]|19244: read-property[v22,'_from',v14]|19245: +[v13,v14,v11]|19246: constant[\" -\\\> \",v12]|19247: +[v11,v12,v9]|19248: read-variable['this',v23,-]|19249: read-property[v23,'_to',v10]|19250: +[v9,v10,v7]|19251: constant[\")\",v8]|19252: +[v7,v8,v5]|19253: read-variable['oneWay',v6,-]|19254: +[v5,v6,v1]}" ] 
+BB5393 -> BB5394 [tailport=s, headport=n, headlabel="      5394"]
+BB5393 -> BB5395 [tailport=s, headport=n, color=gray]
+BB5394 [shape=record label="{19255: return[v1]}" ] 
+BB5395 [shape=record label="{19256: exceptional-return}" ] 
+//#$~ 9776
+}

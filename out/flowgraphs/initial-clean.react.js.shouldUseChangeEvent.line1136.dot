@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry42[shape=none,label=""];
+BB_entry42 -> BB630 [tailport=s, headport=n, headlabel="    630"]
+BB630 [shape=record label="{2113: constant[undefined,v1]}" ] 
+BB630 -> BB631 [tailport=s, headport=n, headlabel="      631"]
+BB631 [shape=record label="{2114: read-variable['elem',v4,-]|2115: read-property[v4,'nodeName',v2]|2116: \<variable-non-null-undef\>['elem']|2117: constant[\"SELECT\",v3]|2118: ===[v2,v3,v1]|2119: if[v1](true-block:634,false-block:632)}" ] 
+BB631 -> BB634 [tailport=s, headport=n, headlabel="      634"]
+BB631 -> BB632 [tailport=s, headport=n, headlabel="      632"]
+BB631 -> BB635 [tailport=s, headport=n, color=gray, headlabel="      635"]
+BB632 [shape=record label="{2120: read-variable['elem',v4,-]|2121: read-property[v4,'nodeName',v2]|2122: \<variable-non-null-undef\>['elem']|2123: constant[\"INPUT\",v3]|2124: ===[v2,v3,v1]|2125: if[v1](true-block:633,false-block:634)}" ] 
+BB632 -> BB634 [tailport=s, headport=n]
+BB632 -> BB633 [tailport=s, headport=n, headlabel="      633"]
+BB632 -> BB635 [tailport=s, headport=n, color=gray]
+BB633 [shape=record label="{2126: read-variable['elem',v7,-]|2127: read-property[v7,'type',v5]|2128: \<variable-non-null-undef\>['elem']|2129: constant[\"file\",v6]|2130: ===[v5,v6,v1]}" ] 
+BB633 -> BB634 [tailport=s, headport=n]
+BB633 -> BB635 [tailport=s, headport=n, color=gray]
+BB634 [shape=record label="{2131: return[v1]}" ] 
+BB635 [shape=record label="{2132: exceptional-return}" ] 
+//#$~ 1139
+}

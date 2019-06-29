@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry51[shape=none,label=""];
+BB_entry51 -> BB694 [tailport=s, headport=n, headlabel="    694"]
+BB694 [shape=record label="{2440: constant[undefined,v1]|2441: vardecl['token']}" ] 
+BB694 -> BB695 [tailport=s, headport=n, headlabel="      695"]
+BB695 [shape=record label="{2442: read-variable['Rivets',v5,-]|2443: read-property[v5,'TypeParser',v4]|2444: \<variable-non-null-undef\>['Rivets']|2445: read-property[v4,'parse',-]|2446: \<property-non-null-undef\>[v5,'TypeParser']|2447: read-variable['this',v7,-]|2448: read-property[v7,'keypath',v6]}" ] 
+BB695 -> BB696 [tailport=s, headport=n, headlabel="      696"]
+BB695 -> BB703 [tailport=s, headport=n, color=gray, headlabel="      703"]
+BB696 [shape=record label="{2449: call-Rivets.TypeParser.parse [v4,'parse',v6,v2]}" ] 
+BB696 -> BB697 [tailport=s, headport=n, headlabel="      697"]
+BB696 -> BB703 [tailport=s, headport=n, color=gray]
+BB697 [shape=record label="{2450: write-variable[v2,'token']*|2451: read-variable['token',v11,-]|2452: read-property[v11,'type',v9]|2453: \<variable-non-null-undef\>['token']|2454: constant[0.0,v10]|2455: ===[v9,v10,v8]|2456: if[v8](true-block:698,false-block:699)}" ] 
+BB697 -> BB698 [tailport=s, headport=n, headlabel="      698"]
+BB697 -> BB699 [tailport=s, headport=n, headlabel="      699"]
+BB697 -> BB703 [tailport=s, headport=n, color=gray]
+BB698 [shape=record label="{2457: read-variable['this',v12,-]|2458: read-variable['token',v13,-]|2459: read-property[v13,'value',v1]|2460: \<variable-non-null-undef\>['token']|2461: write-property[v12,'value',v1]}" ] 
+BB698 -> BB702 [tailport=s, headport=n, headlabel="      702"]
+BB698 -> BB703 [tailport=s, headport=n, color=gray]
+BB699 [shape=record label="{2462: read-variable['this',v13,-]|2463: read-variable['this',v15,-]|2464: read-property[v15,'observe',-]|2465: read-variable['this',v18,-]|2466: read-property[v18,'view',v17]|2467: read-property[v17,'models',v16]|2468: \<property-non-null-undef\>[v18,'view']|2469: read-variable['this',v20,-]|2470: read-property[v20,'keypath',v19]|2471: read-variable['this',v22,-]|2472: read-property[v22,'sync',v21]}" ] 
+BB699 -> BB700 [tailport=s, headport=n, headlabel="      700"]
+BB699 -> BB703 [tailport=s, headport=n, color=gray]
+BB700 [shape=record label="{2473: call-this.observe [v15,'observe',v16,v19,v21,v12]}" ] 
+BB700 -> BB701 [tailport=s, headport=n, headlabel="      701"]
+BB700 -> BB703 [tailport=s, headport=n, color=gray]
+BB701 [shape=record label="{2474: write-property[v13,'observer',v12]*|2475: read-variable['this',v23,-]|2476: read-variable['this',v25,-]|2477: read-property[v25,'observer',v24]|2478: read-property[v24,'target',v1]|2479: \<property-non-null-undef\>[v25,'observer']|2480: write-property[v23,'model',v1]}" ] 
+BB701 -> BB702 [tailport=s, headport=n]
+BB701 -> BB703 [tailport=s, headport=n, color=gray]
+BB702 [shape=record label="{2481: return[v1]}" ] 
+BB703 [shape=record label="{2482: exceptional-return}" ] 
+//#$~ 590
+}

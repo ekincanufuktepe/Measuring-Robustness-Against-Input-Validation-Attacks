@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1700[shape=none,label=""];
+BB_entry1700 -> BB19725 [tailport=s, headport=n, headlabel="    19725"]
+BB19725 [shape=record label="{66140: constant[undefined,v1]|66141: vardecl['pluginContext']|66142: vardecl['walker']}" ] 
+BB19725 -> BB19726 [tailport=s, headport=n, headlabel="      19726"]
+BB19726 [shape=record label="{66143: read-variable['this',v3,-]|66144: write-variable[v3,'pluginContext']*|66145: read-variable['pluginContext',v7,-]|66146: read-property[v7,'syntax',v6]|66147: \<variable-non-null-undef\>['pluginContext']|66148: read-property[v6,'Walker',-]|66149: \<property-non-null-undef\>[v7,'syntax']}" ] 
+BB19726 -> BB19727 [tailport=s, headport=n, headlabel="      19727"]
+BB19726 -> BB19732 [tailport=s, headport=n, color=gray, headlabel="      19732"]
+BB19727 [shape=record label="{66150: construct [v6,'Walker',v4]}" ] 
+BB19727 -> BB19728 [tailport=s, headport=n, headlabel="      19728"]
+BB19727 -> BB19732 [tailport=s, headport=n, color=gray]
+BB19728 [shape=record label="{66151: write-variable[v4,'walker']*|66152: read-variable['walker',v9,-]|66153: read-property[v9,'visit',-]|66154: \<variable-non-null-undef\>['walker']|66155: read-variable['ast',v10,v2]|66156: function-expr[function ( node ),v11]}" ] 
+BB19728 -> BB19729 [tailport=s, headport=n, headlabel="      19729"]
+BB19728 -> BB19732 [tailport=s, headport=n, color=gray]
+BB19729 [shape=record label="{66157: call-walker.visit [v9,'visit',v10,v11,-]*}" ] 
+BB19729 -> BB19730 [tailport=s, headport=n, headlabel="      19730"]
+BB19729 -> BB19732 [tailport=s, headport=n, color=gray]
+BB19730 [shape=record label="{66158: read-variable['ast',v1,v2]}" ] 
+BB19730 -> BB19731 [tailport=s, headport=n, headlabel="      19731"]
+BB19730 -> BB19732 [tailport=s, headport=n, color=gray]
+BB19731 [shape=record label="{66159: return[v1]}" ] 
+BB19732 [shape=record label="{66160: exceptional-return}" ] 
+//#$~ 36878
+}

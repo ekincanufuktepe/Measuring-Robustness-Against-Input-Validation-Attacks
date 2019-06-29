@@ -1,0 +1,18 @@
+digraph {
+rankdir="TD"
+BB_entry1134[shape=none,label=""];
+BB_entry1134 -> BB12335 [tailport=s, headport=n, headlabel="    12335"]
+BB12335 [shape=record label="{42475: constant[undefined,v1]|42476: vardecl['random']}" ] 
+BB12335 -> BB12336 [tailport=s, headport=n, headlabel="      12336"]
+BB12336 [shape=record label="{42477: read-variable['d3',v6,-]|42478: read-property[v6,'random',v5]|42479: \<variable-non-null-undef\>['d3']|42480: read-property[v5,'normal',v4]|42481: \<property-non-null-undef\>[v6,'random']|42482: read-property[v4,'apply',-]|42483: \<property-non-null-undef\>[v5,'normal']|42484: read-variable['d3',v7,-]|42485: read-variable['arguments',v8,-]}" ] 
+BB12336 -> BB12337 [tailport=s, headport=n, headlabel="      12337"]
+BB12336 -> BB12340 [tailport=s, headport=n, color=gray, headlabel="      12340"]
+BB12337 [shape=record label="{42486: call-d3.random.normal.apply [v4,'apply',v7,v8,v2]}" ] 
+BB12337 -> BB12338 [tailport=s, headport=n, headlabel="      12338"]
+BB12337 -> BB12340 [tailport=s, headport=n, color=gray]
+BB12338 [shape=record label="{42487: write-variable[v2,'random']*|42488: function-expr[function ( ),v1]}" ] 
+BB12338 -> BB12339 [tailport=s, headport=n, headlabel="      12339"]
+BB12339 [shape=record label="{42489: return[v1]}" ] 
+BB12340 [shape=record label="{42490: exceptional-return}" ] 
+//#$~ 7413
+}

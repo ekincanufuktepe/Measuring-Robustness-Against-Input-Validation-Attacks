@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry29[shape=none,label=""];
+BB_entry29 -> BB500 [tailport=s, headport=n, headlabel="    500"]
+BB500 [shape=record label="{1746: constant[undefined,v1]}" ] 
+BB500 -> BB501 [tailport=s, headport=n, headlabel="      501"]
+BB501 [shape=record label="{1747: read-variable['element',v4,-]|1748: read-property[v4,'classList',v3]|1749: \<variable-non-null-undef\>['element']|1750: read-property[v3,'add',-]|1751: \<property-non-null-undef\>[v4,'classList']|1752: constant[\"visible\",v5]}" ] 
+BB501 -> BB502 [tailport=s, headport=n, headlabel="      502"]
+BB501 -> BB506 [tailport=s, headport=n, color=gray, headlabel="      506"]
+BB502 [shape=record label="{1753: call-element.classList.add [v3,'add',v5,-]*}" ] 
+BB502 -> BB503 [tailport=s, headport=n, headlabel="      503"]
+BB502 -> BB506 [tailport=s, headport=n, color=gray]
+BB503 [shape=record label="{1754: read-variable['element',v8,-]|1755: read-property[v8,'classList',v7]|1756: \<variable-non-null-undef\>['element']|1757: read-property[v7,'remove',-]|1758: \<property-non-null-undef\>[v8,'classList']|1759: constant[\"current-fragment\",v9]}" ] 
+BB503 -> BB504 [tailport=s, headport=n, headlabel="      504"]
+BB503 -> BB506 [tailport=s, headport=n, color=gray]
+BB504 [shape=record label="{1760: call-element.classList.remove [v7,'remove',v9,-]*}" ] 
+BB504 -> BB505 [tailport=s, headport=n, headlabel="      505"]
+BB504 -> BB506 [tailport=s, headport=n, color=gray]
+BB505 [shape=record label="{1761: return[v1]}" ] 
+BB506 [shape=record label="{1762: exceptional-return}" ] 
+//#$~ 905
+}

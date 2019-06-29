@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry1736[shape=none,label=""];
+BB_entry1736 -> BB20031 [tailport=s, headport=n, headlabel="    20031"]
+BB20031 [shape=record label="{67020: constant[undefined,v1]|67021: vardecl['watcher']}" ] 
+BB20031 -> BB20032 [tailport=s, headport=n, headlabel="      20032"]
+BB20032 [shape=record label="{67022: constant[1.0,v5]|67023: read-variable['countAsync',v6,-]|67024: +[v6,v7]|67025: +[v7,v5,v3]|67026: write-variable[v3,'countAsync']|67027: constant[1.0,v4]|67028: ===[v3,v4,v2]|67029: if[v2](true-block:20033,false-block:20035)}" ] 
+BB20032 -> BB20033 [tailport=s, headport=n, headlabel="      20033"]
+BB20032 -> BB20035 [tailport=s, headport=n, headlabel="      20035"]
+BB20032 -> BB20039 [tailport=s, headport=n, color=gray, headlabel="      20039"]
+BB20033 [shape=record label="{67030: read-variable['Test',v10,-]|67031: read-property[v10,'adapter',v9]|67032: \<variable-non-null-undef\>['Test']|67033: read-property[v9,'asyncStart',-]|67034: \<property-non-null-undef\>[v10,'adapter']}" ] 
+BB20033 -> BB20034 [tailport=s, headport=n, headlabel="      20034"]
+BB20033 -> BB20039 [tailport=s, headport=n, color=gray]
+BB20034 [shape=record label="{67035: call-Test.adapter.asyncStart [v9,'asyncStart',-]*}" ] 
+BB20034 -> BB20035 [tailport=s, headport=n]
+BB20034 -> BB20039 [tailport=s, headport=n, color=gray]
+BB20035 [shape=record label="{67036: read-variable['setInterval',v10,v9]|67037: function-expr[function ( ),v11]|67038: constant[10.0,v12]}" ] 
+BB20035 -> BB20036 [tailport=s, headport=n, headlabel="      20036"]
+BB20035 -> BB20039 [tailport=s, headport=n, color=gray]
+BB20036 [shape=record label="{67039: call-setInterval [v9,v10,v11,v12,v8]}" ] 
+BB20036 -> BB20037 [tailport=s, headport=n, headlabel="      20037"]
+BB20036 -> BB20039 [tailport=s, headport=n, color=gray]
+BB20037 [shape=record label="{67040: write-variable[v8,'watcher']*}" ] 
+BB20037 -> BB20038 [tailport=s, headport=n, headlabel="      20038"]
+BB20038 [shape=record label="{67041: return[v1]}" ] 
+BB20039 [shape=record label="{67042: exceptional-return}" ] 
+//#$~ 37336
+}

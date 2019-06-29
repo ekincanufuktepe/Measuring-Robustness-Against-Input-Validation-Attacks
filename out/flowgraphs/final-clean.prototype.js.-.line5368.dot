@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry518[shape=none,label=""];
+BB_entry518 -> BB6745 [tailport=s, headport=n, headlabel="    6745"]
+BB6745 [shape=record label="{18842: constant[undefined,v1]|18843: vardecl['nodeName']}" ] 
+BB6745 -> BB6746 [tailport=s, headport=n, headlabel="      6746"]
+BB6746 [shape=record label="{18844: read-variable['nodeNameSelector',v6,-]|18845: read-property[v6,'replace',-]|18846: \<variable-non-null-undef\>['nodeNameSelector']|18847: read-variable['runescape',v7,-]|18848: read-variable['funescape',v8,-]}" ] 
+BB6746 -> BB6747 [tailport=s, headport=n, headlabel="      6747"]
+BB6746 -> BB6754 [tailport=s, headport=n, color=gray, headlabel="      6754"]
+BB6747 [shape=record label="{18849: call-nodeNameSelector.replace [v6,'replace',v7,v8,v4]}" ] 
+BB6747 -> BB6748 [tailport=s, headport=n, headlabel="      6748"]
+BB6747 -> BB6754 [tailport=s, headport=n, color=gray]
+BB6748 [shape=record label="{18850: read-property[v4,'toLowerCase',-]}" ] 
+BB6748 -> BB6749 [tailport=s, headport=n, headlabel="      6749"]
+BB6748 -> BB6754 [tailport=s, headport=n, color=gray]
+BB6749 [shape=record label="{18851: call-null [v4,'toLowerCase',v2]}" ] 
+BB6749 -> BB6750 [tailport=s, headport=n, headlabel="      6750"]
+BB6749 -> BB6754 [tailport=s, headport=n, color=gray]
+BB6750 [shape=record label="{18852: write-variable[v2,'nodeName']*|18853: read-variable['nodeNameSelector',v10,-]|18854: constant[\"*\",v11]|18855: ===[v10,v11,v9]|18856: if[v9](true-block:6751,false-block:6752)}" ] 
+BB6750 -> BB6751 [tailport=s, headport=n, headlabel="      6751"]
+BB6750 -> BB6752 [tailport=s, headport=n, headlabel="      6752"]
+BB6750 -> BB6754 [tailport=s, headport=n, color=gray]
+BB6751 [shape=record label="{18857: function-expr[function ( ),v1]}" ] 
+BB6751 -> BB6753 [tailport=s, headport=n, headlabel="      6753"]
+BB6752 [shape=record label="{18858: function-expr[function ( elem ),v1]}" ] 
+BB6752 -> BB6753 [tailport=s, headport=n]
+BB6753 [shape=record label="{18859: return[v1]}" ] 
+BB6754 [shape=record label="{18860: exceptional-return}" ] 
+//#$~ 5373
+}

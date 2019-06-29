@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry241[shape=none,label=""];
+BB_entry241 -> BB3418 [tailport=s, headport=n, headlabel="    3418"]
+BB3418 [shape=record label="{11940: constant[undefined,v1]|11941: vardecl['Component']}" ] 
+BB3418 -> BB3419 [tailport=s, headport=n, headlabel="      3419"]
+BB3419 [shape=record label="{11942: constant[\"production\",v3]|11943: constant[\"development\",v4]|11944: !==[v3,v4,v2]|11945: if[v2](true-block:3420,false-block:3425)}" ] 
+BB3419 -> BB3420 [tailport=s, headport=n, headlabel="      3420"]
+BB3419 -> BB3425 [tailport=s, headport=n, headlabel="      3425"]
+BB3419 -> BB3427 [tailport=s, headport=n, color=gray, headlabel="      3427"]
+BB3420 [shape=record label="{11946: read-variable['ReactNativeComponent',v7,-]|11947: read-property[v7,'getComponentClassForElement',-]|11948: \<variable-non-null-undef\>['ReactNativeComponent']|11949: read-variable['this',v9,-]|11950: read-property[v9,'_currentElement',v8]}" ] 
+BB3420 -> BB3421 [tailport=s, headport=n, headlabel="      3421"]
+BB3420 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3421 [shape=record label="{11951: call-ReactNativeComponent.getComponentClassForElement [v7,'getComponentClassForElement',v8,v5]}" ] 
+BB3421 -> BB3422 [tailport=s, headport=n, headlabel="      3422"]
+BB3421 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3422 [shape=record label="{11952: write-variable[v5,'Component']*|11953: read-variable['Component',v11,-]|11954: read-property[v11,'propTypes',v10]|11955: \<variable-non-null-undef\>['Component']|11956: if[v10](true-block:3423,false-block:3425)}" ] 
+BB3422 -> BB3423 [tailport=s, headport=n, headlabel="      3423"]
+BB3422 -> BB3425 [tailport=s, headport=n]
+BB3422 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3423 [shape=record label="{11957: read-variable['this',v13,-]|11958: read-property[v13,'_checkPropTypes',-]|11959: read-variable['Component',v15,-]|11960: read-property[v15,'propTypes',v14]|11961: \<variable-non-null-undef\>['Component']|11962: read-variable['newProps',v16,-]|11963: read-variable['ReactPropTypeLocations',v18,-]|11964: read-property[v18,'prop',v17]|11965: \<variable-non-null-undef\>['ReactPropTypeLocations']}" ] 
+BB3423 -> BB3424 [tailport=s, headport=n, headlabel="      3424"]
+BB3423 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3424 [shape=record label="{11966: call-this._checkPropTypes [v13,'_checkPropTypes',v14,v16,v17,-]*}" ] 
+BB3424 -> BB3425 [tailport=s, headport=n]
+BB3424 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3425 [shape=record label="{11967: read-variable['newProps',v1,-]}" ] 
+BB3425 -> BB3426 [tailport=s, headport=n, headlabel="      3426"]
+BB3425 -> BB3427 [tailport=s, headport=n, color=gray]
+BB3426 [shape=record label="{11968: return[v1]}" ] 
+BB3427 [shape=record label="{11969: exceptional-return}" ] 
+//#$~ 6626
+}

@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry946[shape=none,label=""];
+BB_entry946 -> BB12867 [tailport=s, headport=n, headlabel="    12867"]
+BB12867 [shape=record label="{37448: constant[undefined,v1]}" ] 
+BB12867 -> BB12868 [tailport=s, headport=n, headlabel="      12868"]
+BB12868 [shape=record label="{37449: read-variable['dojo',v4,-]|37450: read-property[v4,'parser',v3]|37451: \<variable-non-null-undef\>['dojo']|37452: ![v3,v2]|37453: if[v2](true-block:12869,false-block:12874)}" ] 
+BB12868 -> BB12869 [tailport=s, headport=n, headlabel="      12869"]
+BB12868 -> BB12874 [tailport=s, headport=n, headlabel="      12874"]
+BB12868 -> BB12875 [tailport=s, headport=n, color=gray, headlabel="      12875"]
+BB12869 [shape=record label="{37454: read-variable['dojo',v6,-]|37455: read-property[v6,'deprecated',-]|37456: \<variable-non-null-undef\>['dojo']|37457: constant[\"Add explicit require(['dojo/parser']);\",v7]|37458: constant[\"\",v8]|37459: constant[\"2.0\",v9]}" ] 
+BB12869 -> BB12870 [tailport=s, headport=n, headlabel="      12870"]
+BB12869 -> BB12875 [tailport=s, headport=n, color=gray]
+BB12870 [shape=record label="{37460: call-dojo.deprecated [v6,'deprecated',v7,v8,v9,-]*}" ] 
+BB12870 -> BB12871 [tailport=s, headport=n, headlabel="      12871"]
+BB12870 -> BB12875 [tailport=s, headport=n, color=gray]
+BB12871 [shape=record label="{37461: read-variable['require',v11,v10]|37462: read-variable['Array',v13,-]|37463: constant[\"dojo/parser\",v14]}" ] 
+BB12871 -> BB12872 [tailport=s, headport=n, headlabel="      12872"]
+BB12871 -> BB12875 [tailport=s, headport=n, color=gray]
+BB12872 [shape=record label="{37464: construct [-,v13,v14,v12]}" ] 
+BB12872 -> BB12873 [tailport=s, headport=n, headlabel="      12873"]
+BB12872 -> BB12875 [tailport=s, headport=n, color=gray]
+BB12873 [shape=record label="{37465: call-require [v10,v11,v12,-]*}" ] 
+BB12873 -> BB12874 [tailport=s, headport=n]
+BB12873 -> BB12875 [tailport=s, headport=n, color=gray]
+BB12874 [shape=record label="{37466: return[v1]}" ] 
+BB12875 [shape=record label="{37467: exceptional-return}" ] 
+//#$~ 18150
+}

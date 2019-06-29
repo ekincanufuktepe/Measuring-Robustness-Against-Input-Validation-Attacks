@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry21[shape=none,label=""];
+BB_entry21 -> BB200 [tailport=s, headport=n, headlabel="    200"]
+BB200 [shape=record label="{483: constant[undefined,v1]}" ] 
+BB200 -> BB201 [tailport=s, headport=n, headlabel="      201"]
+BB201 [shape=record label="{484: constant[null,v2]|485: write-variable[v2,'timeout']*|486: read-variable['immediate',v4,-]|487: ![v4,v3]|488: if[v3](true-block:202,false-block:204)}" ] 
+BB201 -> BB202 [tailport=s, headport=n, headlabel="      202"]
+BB201 -> BB204 [tailport=s, headport=n, headlabel="      204"]
+BB201 -> BB205 [tailport=s, headport=n, color=gray, headlabel="      205"]
+BB202 [shape=record label="{489: read-variable['func',v6,-]|490: read-property[v6,'apply',-]|491: \<variable-non-null-undef\>['func']|492: read-variable['context',v7,-]|493: read-variable['args',v8,-]}" ] 
+BB202 -> BB203 [tailport=s, headport=n, headlabel="      203"]
+BB202 -> BB205 [tailport=s, headport=n, color=gray]
+BB203 [shape=record label="{494: call-func.apply [v6,'apply',v7,v8,-]*}" ] 
+BB203 -> BB204 [tailport=s, headport=n]
+BB203 -> BB205 [tailport=s, headport=n, color=gray]
+BB204 [shape=record label="{495: return[v1]}" ] 
+BB205 [shape=record label="{496: exceptional-return}" ] 
+//#$~ 167
+}

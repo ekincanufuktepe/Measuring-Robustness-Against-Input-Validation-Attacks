@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry260[shape=none,label=""];
+BB_entry260 -> BB5415 [tailport=s, headport=n, headlabel="    5415"]
+BB5415 [shape=record label="{17359: constant[undefined,v1]|17360: vardecl['ret']}" ] 
+BB5415 -> BB5416 [tailport=s, headport=n, headlabel="      5416"]
+BB5416 [shape=record label="{17361: read-variable['this',v4,-]|17362: read-property[v4,'aliases',v3]|17363: read-variable['name',v5,-]|17364: read-property[v3,v5,v2]|17365: \<property-non-null-undef\>[v4,'aliases']|17366: write-variable[v2,'ret']*|17367: read-variable['ret',v6,-]|17368: if[v6](true-block:5417,false-block:5418)}" ] 
+BB5416 -> BB5417 [tailport=s, headport=n, headlabel="      5417"]
+BB5416 -> BB5418 [tailport=s, headport=n, headlabel="      5418"]
+BB5416 -> BB5422 [tailport=s, headport=n, color=gray, headlabel="      5422"]
+BB5417 [shape=record label="{17369: constant[1.0,v7]|17370: read-variable['ret',v9,-]|17371: read-property[v9,'referenceCount',v8]|17372: \<variable-non-null-undef\>['ret']|17373: +[v8,v10]|17374: +[v10,v7,v11]|17375: write-property[v9,'referenceCount',v11]|17376: \<variable-non-null-undef\>['ret']*|17377: read-variable['ret',v1,-]}" ] 
+BB5417 -> BB5421 [tailport=s, headport=n, headlabel="      5421"]
+BB5417 -> BB5422 [tailport=s, headport=n, color=gray]
+BB5418 [shape=record label="{17378: read-variable['this',v10,-]|17379: read-property[v10,'aliases',v8]|17380: read-variable['name',v9,-]|17381: read-variable['this',v13,-]|17382: read-property[v13,'source',v12]|17383: read-property[v12,'wrap',-]|17384: \<property-non-null-undef\>[v13,'source']|17385: read-variable['name',v14,-]}" ] 
+BB5418 -> BB5419 [tailport=s, headport=n, headlabel="      5419"]
+BB5418 -> BB5422 [tailport=s, headport=n, color=gray]
+BB5419 [shape=record label="{17386: call-this.source.wrap [v12,'wrap',v14,v7]}" ] 
+BB5419 -> BB5420 [tailport=s, headport=n, headlabel="      5420"]
+BB5419 -> BB5422 [tailport=s, headport=n, color=gray]
+BB5420 [shape=record label="{17387: write-property[v8,v9,v7]|17388: \<property-non-null-undef\>[v10,'aliases']|17389: write-variable[v7,'ret']*|17390: read-variable['ret',v16,-]|17391: constant[true,v15]|17392: write-property[v16,'aliasable',v15]|17393: \<variable-non-null-undef\>['ret']*|17394: read-variable['ret',v18,-]|17395: constant[1.0,v17]|17396: write-property[v18,'referenceCount',v17]|17397: \<variable-non-null-undef\>['ret']*|17398: read-variable['ret',v1,-]}" ] 
+BB5420 -> BB5421 [tailport=s, headport=n]
+BB5420 -> BB5422 [tailport=s, headport=n, color=gray]
+BB5421 [shape=record label="{17399: return[v1]}" ] 
+BB5422 [shape=record label="{17400: exceptional-return}" ] 
+//#$~ 3548
+}

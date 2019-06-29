@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry981[shape=none,label=""];
+BB_entry981 -> BB12707 [tailport=s, headport=n, headlabel="    12707"]
+BB12707 [shape=record label="{33306: constant[undefined,v1]}" ] 
+BB12707 -> BB12708 [tailport=s, headport=n, headlabel="      12708"]
+BB12708 [shape=record label="{33307: read-variable['date',v6,-]|33308: read-property[v6,'getHours',-]|33309: \<variable-non-null-undef\>['date']}" ] 
+BB12708 -> BB12709 [tailport=s, headport=n, headlabel="      12709"]
+BB12708 -> BB12714 [tailport=s, headport=n, color=gray, headlabel="      12714"]
+BB12709 [shape=record label="{33310: call-date.getHours [v6,'getHours',v3]}" ] 
+BB12709 -> BB12710 [tailport=s, headport=n, headlabel="      12710"]
+BB12709 -> BB12714 [tailport=s, headport=n, color=gray]
+BB12710 [shape=record label="{33311: constant[12.0,v4]|33312: \<[v3,v4,v2]|33313: if[v2](true-block:12711,false-block:12712)}" ] 
+BB12710 -> BB12711 [tailport=s, headport=n, headlabel="      12711"]
+BB12710 -> BB12712 [tailport=s, headport=n, headlabel="      12712"]
+BB12710 -> BB12714 [tailport=s, headport=n, color=gray]
+BB12711 [shape=record label="{33314: read-variable['formats',v8,-]|33315: read-property[v8,'AMPMS',v7]|33316: \<variable-non-null-undef\>['formats']|33317: constant[0.0,v9]|33318: read-property[v7,v9,v1]|33319: \<property-non-null-undef\>[v8,'AMPMS']}" ] 
+BB12711 -> BB12713 [tailport=s, headport=n, headlabel="      12713"]
+BB12711 -> BB12714 [tailport=s, headport=n, color=gray]
+BB12712 [shape=record label="{33320: read-variable['formats',v8,-]|33321: read-property[v8,'AMPMS',v7]|33322: \<variable-non-null-undef\>['formats']|33323: constant[1.0,v9]|33324: read-property[v7,v9,v1]|33325: \<property-non-null-undef\>[v8,'AMPMS']}" ] 
+BB12712 -> BB12713 [tailport=s, headport=n]
+BB12712 -> BB12714 [tailport=s, headport=n, color=gray]
+BB12713 [shape=record label="{33326: return[v1]}" ] 
+BB12714 [shape=record label="{33327: exceptional-return}" ] 
+//#$~ 18675
+}

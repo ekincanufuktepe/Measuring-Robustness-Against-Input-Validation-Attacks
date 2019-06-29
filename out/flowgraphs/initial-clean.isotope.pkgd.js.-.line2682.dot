@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry176[shape=none,label=""];
+BB_entry176 -> BB1930 [tailport=s, headport=n, headlabel="    1930"]
+BB1930 [shape=record label="{6004: constant[undefined,v1]}" ] 
+BB1930 -> BB1931 [tailport=s, headport=n, headlabel="      1931"]
+BB1931 [shape=record label="{6005: read-variable['this',v3,-]|6006: read-property[v3,'isResizeBound',v2]|6007: if[v2](true-block:1932,false-block:1934)}" ] 
+BB1931 -> BB1932 [tailport=s, headport=n, headlabel="      1932"]
+BB1931 -> BB1934 [tailport=s, headport=n, headlabel="      1934"]
+BB1931 -> BB1936 [tailport=s, headport=n, color=gray, headlabel="      1936"]
+BB1932 [shape=record label="{6008: read-variable['eventie',v5,-]|6009: read-property[v5,'unbind',-]|6010: \<variable-non-null-undef\>['eventie']|6011: read-variable['window',v6,-]|6012: constant[\"resize\",v7]|6013: read-variable['this',v8,-]}" ] 
+BB1932 -> BB1933 [tailport=s, headport=n, headlabel="      1933"]
+BB1932 -> BB1936 [tailport=s, headport=n, color=gray]
+BB1933 [shape=record label="{6014: call-eventie.unbind [v5,'unbind',v6,v7,v8,-]*}" ] 
+BB1933 -> BB1934 [tailport=s, headport=n]
+BB1933 -> BB1936 [tailport=s, headport=n, color=gray]
+BB1934 [shape=record label="{6015: read-variable['this',v5,-]|6016: constant[false,v4]|6017: write-property[v5,'isResizeBound',v4]*}" ] 
+BB1934 -> BB1935 [tailport=s, headport=n, headlabel="      1935"]
+BB1934 -> BB1936 [tailport=s, headport=n, color=gray]
+BB1935 [shape=record label="{6018: return[v1]}" ] 
+BB1936 [shape=record label="{6019: exceptional-return}" ] 
+//#$~ 2686
+}

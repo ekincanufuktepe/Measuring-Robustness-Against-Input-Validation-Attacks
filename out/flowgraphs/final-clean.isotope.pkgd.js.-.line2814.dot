@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry186[shape=none,label=""];
+BB_entry186 -> BB2042 [tailport=s, headport=n, headlabel="    2042"]
+BB2042 [shape=record label="{6264: constant[undefined,v1]|6265: vardecl['items']}" ] 
+BB2042 -> BB2043 [tailport=s, headport=n, headlabel="      2043"]
+BB2043 [shape=record label="{6266: read-variable['this',v4,-]|6267: read-property[v4,'getItems',-]|6268: read-variable['elems',v5,-]}" ] 
+BB2043 -> BB2044 [tailport=s, headport=n, headlabel="      2044"]
+BB2043 -> BB2048 [tailport=s, headport=n, color=gray, headlabel="      2048"]
+BB2044 [shape=record label="{6269: call-this.getItems [v4,'getItems',v5,v2]}" ] 
+BB2044 -> BB2045 [tailport=s, headport=n, headlabel="      2045"]
+BB2044 -> BB2048 [tailport=s, headport=n, color=gray]
+BB2045 [shape=record label="{6270: write-variable[v2,'items']*|6271: read-variable['this',v7,-]|6272: read-property[v7,'reveal',-]|6273: read-variable['items',v8,-]}" ] 
+BB2045 -> BB2046 [tailport=s, headport=n, headlabel="      2046"]
+BB2045 -> BB2048 [tailport=s, headport=n, color=gray]
+BB2046 [shape=record label="{6274: call-this.reveal [v7,'reveal',v8,-]*}" ] 
+BB2046 -> BB2047 [tailport=s, headport=n, headlabel="      2047"]
+BB2046 -> BB2048 [tailport=s, headport=n, color=gray]
+BB2047 [shape=record label="{6275: return[v1]}" ] 
+BB2048 [shape=record label="{6276: exceptional-return}" ] 
+//#$~ 2816
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry629[shape=none,label=""];
+BB_entry629 -> BB8518 [tailport=s, headport=n, headlabel="    8518"]
+BB8518 [shape=record label="{28144: constant[undefined,v1]}" ] 
+BB8518 -> BB8519 [tailport=s, headport=n, headlabel="      8519"]
+BB8519 [shape=record label="{28145: read-variable['ensureInjected',v3,v2]}" ] 
+BB8519 -> BB8520 [tailport=s, headport=n, headlabel="      8520"]
+BB8519 -> BB8524 [tailport=s, headport=n, color=gray, headlabel="      8524"]
+BB8520 [shape=record label="{28146: call-ensureInjected [v2,v3,-]*}" ] 
+BB8520 -> BB8521 [tailport=s, headport=n, headlabel="      8521"]
+BB8520 -> BB8524 [tailport=s, headport=n, color=gray]
+BB8521 [shape=record label="{28147: read-variable['batchingStrategy',v5,-]|28148: read-property[v5,'batchedUpdates',-]|28149: \<variable-non-null-undef\>['batchingStrategy']|28150: read-variable['callback',v6,-]|28151: read-variable['a',v7,-]|28152: read-variable['b',v8,-]|28153: read-variable['c',v9,-]|28154: read-variable['d',v10,-]}" ] 
+BB8521 -> BB8522 [tailport=s, headport=n, headlabel="      8522"]
+BB8521 -> BB8524 [tailport=s, headport=n, color=gray]
+BB8522 [shape=record label="{28155: call-batchingStrategy.batchedUpdates [v5,'batchedUpdates',v6,v7,v8,v9,v10,-]*}" ] 
+BB8522 -> BB8523 [tailport=s, headport=n, headlabel="      8523"]
+BB8522 -> BB8524 [tailport=s, headport=n, color=gray]
+BB8523 [shape=record label="{28156: return[v1]}" ] 
+BB8524 [shape=record label="{28157: exceptional-return}" ] 
+//#$~ 14914
+}

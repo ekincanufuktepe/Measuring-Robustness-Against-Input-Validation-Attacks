@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry262[shape=none,label=""];
+BB_entry262 -> BB3893 [tailport=s, headport=n, headlabel="    3893"]
+BB3893 [shape=record label="{11882: constant[undefined,v1]|11883: vardecl['item']}" ] 
+BB3893 -> BB3894 [tailport=s, headport=n, headlabel="      3894"]
+BB3894 [shape=record label="{11884: read-variable['query',v5,v4]|11885: read-variable['queryOrNode',v6,-]}" ] 
+BB3894 -> BB3895 [tailport=s, headport=n, headlabel="      3895"]
+BB3894 -> BB3899 [tailport=s, headport=n, color=gray, headlabel="      3899"]
+BB3895 [shape=record label="{11886: call-query [v4,v5,v6,v3]}" ] 
+BB3895 -> BB3896 [tailport=s, headport=n, headlabel="      3896"]
+BB3895 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3896 [shape=record label="{11887: constant[0.0,v7]|11888: read-property[v3,v7,v2]|11889: write-variable[v2,'item']*|11890: read-variable['this',v9,-]|11891: read-property[v9,'forEach',-]|11892: function-expr[function ( node ),v10]}" ] 
+BB3896 -> BB3897 [tailport=s, headport=n, headlabel="      3897"]
+BB3896 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3897 [shape=record label="{11893: call-this.forEach [v9,'forEach',v10,v1]}" ] 
+BB3897 -> BB3898 [tailport=s, headport=n, headlabel="      3898"]
+BB3897 -> BB3899 [tailport=s, headport=n, color=gray]
+BB3898 [shape=record label="{11894: return[v1]}" ] 
+BB3899 [shape=record label="{11895: exceptional-return}" ] 
+//#$~ 5121
+}

@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry77[shape=none,label=""];
+BB_entry77 -> BB1328 [tailport=s, headport=n, headlabel="    1328"]
+BB1328 [shape=record label="{4340: constant[undefined,v1]|4341: vardecl['tok']}" ] 
+BB1328 -> BB1329 [tailport=s, headport=n, headlabel="      1329"]
+BB1329 [shape=record label="{4342: read-variable['this',v4,-]|4343: read-property[v4,'scan',-]|4344: read-variable['RegExp',v6,-]|4345: constant[\"^([^\\\\.\\\\n][^\\\\n]+)\",v7]}" ] 
+BB1329 -> BB1330 [tailport=s, headport=n, headlabel="      1330"]
+BB1329 -> BB1338 [tailport=s, headport=n, color=gray, headlabel="      1338"]
+BB1330 [shape=record label="{4346: construct [-,v6,v7,v5]}" ] 
+BB1330 -> BB1331 [tailport=s, headport=n, headlabel="      1331"]
+BB1330 -> BB1338 [tailport=s, headport=n, color=gray]
+BB1331 [shape=record label="{4347: constant[\"text\",v8]}" ] 
+BB1331 -> BB1332 [tailport=s, headport=n, headlabel="      1332"]
+BB1332 [shape=record label="{4348: call-this.scan [v4,'scan',v5,v8,v2]}" ] 
+BB1332 -> BB1333 [tailport=s, headport=n, headlabel="      1333"]
+BB1332 -> BB1338 [tailport=s, headport=n, color=gray]
+BB1333 [shape=record label="{4349: write-variable[v2,'tok']|4350: if[v2](true-block:1334,false-block:1337)}" ] 
+BB1333 -> BB1334 [tailport=s, headport=n, headlabel="      1334"]
+BB1333 -> BB1337 [tailport=s, headport=n, headlabel="      1337"]
+BB1334 [shape=record label="{4351: read-variable['console',v10,-]|4352: read-property[v10,'warn',-]|4353: \<variable-non-null-undef\>['console']|4354: constant[\"Warning: missing space before text for line \",v18]|4355: read-variable['this',v20,-]|4356: read-property[v20,'lineno',v19]|4357: +[v18,v19,v16]|4358: constant[\" of jade file \\\"\",v17]|4359: +[v16,v17,v14]|4360: read-variable['this',v21,-]|4361: read-property[v21,'filename',v15]|4362: +[v14,v15,v12]|4363: constant[\"\\\"\",v13]|4364: +[v12,v13,v11]}" ] 
+BB1334 -> BB1335 [tailport=s, headport=n, headlabel="      1335"]
+BB1334 -> BB1338 [tailport=s, headport=n, color=gray]
+BB1335 [shape=record label="{4365: call-console.warn [v10,'warn',v11,-]*}" ] 
+BB1335 -> BB1336 [tailport=s, headport=n, headlabel="      1336"]
+BB1335 -> BB1338 [tailport=s, headport=n, color=gray]
+BB1336 [shape=record label="{4366: read-variable['tok',v1,-]}" ] 
+BB1336 -> BB1337 [tailport=s, headport=n]
+BB1336 -> BB1338 [tailport=s, headport=n, color=gray]
+BB1337 [shape=record label="{4367: return[v1]}" ] 
+BB1338 [shape=record label="{4368: exceptional-return}" ] 
+//#$~ 1480
+}

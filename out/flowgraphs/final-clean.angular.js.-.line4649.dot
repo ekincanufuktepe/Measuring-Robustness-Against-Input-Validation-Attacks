@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry250[shape=none,label=""];
+BB_entry250 -> BB3190 [tailport=s, headport=n, headlabel="    3190"]
+BB3190 [shape=record label="{7681: constant[undefined,v1]|7682: vardecl['document']|7683: function-decl[function getFirstAnchor ( list ),-]|7684: function-decl[function getYOffset ( ),-]|7685: function-decl[function scrollTo ( elem ),-]|7686: function-decl[function scroll ( hash ),-]}" ] 
+BB3190 -> BB3191 [tailport=s, headport=n, headlabel="      3191"]
+BB3191 [shape=record label="{7687: read-variable['$window',v3,-]|7688: read-property[v3,'document',v2]|7689: \<variable-non-null-undef\>['$window']|7690: write-variable[v2,'document']*|7691: read-variable['autoScrollingEnabled',v4,-]|7692: if[v4](true-block:3192,false-block:3194)}" ] 
+BB3191 -> BB3192 [tailport=s, headport=n, headlabel="      3192"]
+BB3191 -> BB3194 [tailport=s, headport=n, headlabel="      3194"]
+BB3191 -> BB3196 [tailport=s, headport=n, color=gray, headlabel="      3196"]
+BB3192 [shape=record label="{7693: read-variable['$rootScope',v6,-]|7694: read-property[v6,'$watch',-]|7695: \<variable-non-null-undef\>['$rootScope']|7696: function-expr[function autoScrollWatch ( ),v7]|7697: function-expr[function autoScrollWatchAction ( newVal oldVal ),v8]}" ] 
+BB3192 -> BB3193 [tailport=s, headport=n, headlabel="      3193"]
+BB3192 -> BB3196 [tailport=s, headport=n, color=gray]
+BB3193 [shape=record label="{7698: call-$rootScope.$watch [v6,'$watch',v7,v8,-]*}" ] 
+BB3193 -> BB3194 [tailport=s, headport=n]
+BB3193 -> BB3196 [tailport=s, headport=n, color=gray]
+BB3194 [shape=record label="{7699: read-variable['scroll',v1,-]}" ] 
+BB3194 -> BB3195 [tailport=s, headport=n, headlabel="      3195"]
+BB3194 -> BB3196 [tailport=s, headport=n, color=gray]
+BB3195 [shape=record label="{7700: return[v1]}" ] 
+BB3196 [shape=record label="{7701: exceptional-return}" ] 
+//#$~ 4746
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry16[shape=none,label=""];
+BB_entry16 -> BB177 [tailport=s, headport=n, headlabel="    177"]
+BB177 [shape=record label="{799: constant[undefined,v1]}" ] 
+BB177 -> BB178 [tailport=s, headport=n, headlabel="      178"]
+BB178 [shape=record label="{800: read-variable['this',v3,-]|801: read-variable['Joose',v5,-]|802: read-property[v5,'Builder',-]|803: \<variable-non-null-undef\>['Joose']}" ] 
+BB178 -> BB179 [tailport=s, headport=n, headlabel="      179"]
+BB178 -> BB183 [tailport=s, headport=n, color=gray, headlabel="      183"]
+BB179 [shape=record label="{804: construct [v5,'Builder',v2]}" ] 
+BB179 -> BB180 [tailport=s, headport=n, headlabel="      180"]
+BB179 -> BB183 [tailport=s, headport=n, color=gray]
+BB180 [shape=record label="{805: write-property[v3,'builder',v2]*|806: read-variable['this',v8,-]|807: read-property[v8,'builder',v7]|808: read-property[v7,'globalize',-]|809: \<property-non-null-undef\>[v8,'builder']}" ] 
+BB180 -> BB181 [tailport=s, headport=n, headlabel="      181"]
+BB180 -> BB183 [tailport=s, headport=n, color=gray]
+BB181 [shape=record label="{810: call-this.builder.globalize [v7,'globalize',-]*}" ] 
+BB181 -> BB182 [tailport=s, headport=n, headlabel="      182"]
+BB181 -> BB183 [tailport=s, headport=n, color=gray]
+BB182 [shape=record label="{811: return[v1]}" ] 
+BB183 [shape=record label="{812: exceptional-return}" ] 
+//#$~ 121
+}

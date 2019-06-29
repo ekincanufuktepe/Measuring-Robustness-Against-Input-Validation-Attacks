@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry718[shape=none,label=""];
+BB_entry718 -> BB7597 [tailport=s, headport=n, headlabel="    7597"]
+BB7597 [shape=record label="{24136: constant[undefined,v1]|24137: vardecl['rotation']}" ] 
+BB7597 -> BB7598 [tailport=s, headport=n, headlabel="      7598"]
+BB7598 [shape=record label="{24138: read-variable['d3_geo_forwardRotation\\u03bb',v4,v3]|24139: read-variable['\\u03b4\\u03bb',v5,-]}" ] 
+BB7598 -> BB7599 [tailport=s, headport=n, headlabel="      7599"]
+BB7598 -> BB7604 [tailport=s, headport=n, color=gray, headlabel="      7604"]
+BB7599 [shape=record label="{24140: call-d3_geo_forwardRotation\u03bb [v3,v4,v5,v2]}" ] 
+BB7599 -> BB7600 [tailport=s, headport=n, headlabel="      7600"]
+BB7599 -> BB7604 [tailport=s, headport=n, color=gray]
+BB7600 [shape=record label="{24141: write-variable[v2,'rotation']*|24142: read-variable['rotation',v7,-]|24143: read-variable['d3_geo_forwardRotation\\u03bb',v9,v8]|24144: read-variable['\\u03b4\\u03bb',v11,-]|24145: -[v11,v10]}" ] 
+BB7600 -> BB7601 [tailport=s, headport=n, headlabel="      7601"]
+BB7600 -> BB7604 [tailport=s, headport=n, color=gray]
+BB7601 [shape=record label="{24146: call-d3_geo_forwardRotation\u03bb [v8,v9,v10,v6]}" ] 
+BB7601 -> BB7602 [tailport=s, headport=n, headlabel="      7602"]
+BB7601 -> BB7604 [tailport=s, headport=n, color=gray]
+BB7602 [shape=record label="{24147: write-property[v7,'invert',v6]|24148: \<variable-non-null-undef\>['rotation']*|24149: read-variable['rotation',v1,-]}" ] 
+BB7602 -> BB7603 [tailport=s, headport=n, headlabel="      7603"]
+BB7602 -> BB7604 [tailport=s, headport=n, color=gray]
+BB7603 [shape=record label="{24150: return[v1]}" ] 
+BB7604 [shape=record label="{24151: exceptional-return}" ] 
+//#$~ 4416
+}

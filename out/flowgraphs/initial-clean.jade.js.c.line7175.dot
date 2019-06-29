@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry407[shape=none,label=""];
+BB_entry407 -> BB7637 [tailport=s, headport=n, headlabel="    7637"]
+BB7637 [shape=record label="{23092: constant[undefined,v1]}" ] 
+BB7637 -> BB7638 [tailport=s, headport=n, headlabel="      7638"]
+BB7638 [shape=record label="{23093: read-variable['visitor',v3,-]|23094: read-variable['override',v4,-]|23095: if[v4](true-block:7640,false-block:7639)}" ] 
+BB7638 -> BB7640 [tailport=s, headport=n, headlabel="      7640"]
+BB7638 -> BB7639 [tailport=s, headport=n, headlabel="      7639"]
+BB7638 -> BB7643 [tailport=s, headport=n, color=gray, headlabel="      7643"]
+BB7639 [shape=record label="{23096: read-variable['node',v5,-]|23097: read-property[v5,'type',v4]|23098: \<variable-non-null-undef\>['node']}" ] 
+BB7639 -> BB7640 [tailport=s, headport=n]
+BB7639 -> BB7643 [tailport=s, headport=n, color=gray]
+BB7640 [shape=record label="{23099: read-property[v3,v4,-]|23100: \<variable-non-null-undef\>['visitor']|23101: read-variable['node',v5,-]|23102: read-variable['st',v6,-]|23103: read-variable['c',v7,-]}" ] 
+BB7640 -> BB7641 [tailport=s, headport=n, headlabel="      7641"]
+BB7640 -> BB7643 [tailport=s, headport=n, color=gray]
+BB7641 [shape=record label="{23104: call-null [v3,[v4],v5,v6,v7,-]*}" ] 
+BB7641 -> BB7642 [tailport=s, headport=n, headlabel="      7642"]
+BB7641 -> BB7643 [tailport=s, headport=n, color=gray]
+BB7642 [shape=record label="{23105: return[v1]}" ] 
+BB7643 [shape=record label="{23106: exceptional-return}" ] 
+//#$~ 7176
+}

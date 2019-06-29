@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry64[shape=none,label=""];
+BB_entry64 -> BB768 [tailport=s, headport=n, headlabel="    768"]
+BB768 [shape=record label="{2007: constant[undefined,v1]}" ] 
+BB768 -> BB769 [tailport=s, headport=n, headlabel="      769"]
+BB769 [shape=record label="{2008: read-variable['context',v1,-]|2009: if[v1](true-block:770,false-block:772)}" ] 
+BB769 -> BB772 [tailport=s, headport=n, headlabel="      772"]
+BB769 -> BB770 [tailport=s, headport=n, headlabel="      770"]
+BB769 -> BB773 [tailport=s, headport=n, color=gray, headlabel="      773"]
+BB770 [shape=record label="{2010: read-variable['context',v5,-]|2011: read-property[v5,'getElementsByTagName',v4]|2012: \<variable-non-null-undef\>['context']|2013: typeof[v4,v2]|2014: constant[\"undefined\",v3]|2015: !==[v2,v3,v1]|2016: if[v1](true-block:771,false-block:772)}" ] 
+BB770 -> BB772 [tailport=s, headport=n]
+BB770 -> BB771 [tailport=s, headport=n, headlabel="      771"]
+BB770 -> BB773 [tailport=s, headport=n, color=gray]
+BB771 [shape=record label="{2017: read-variable['context',v1,-]}" ] 
+BB771 -> BB772 [tailport=s, headport=n]
+BB771 -> BB773 [tailport=s, headport=n, color=gray]
+BB772 [shape=record label="{2018: return[v1]}" ] 
+BB773 [shape=record label="{2019: exceptional-return}" ] 
+}

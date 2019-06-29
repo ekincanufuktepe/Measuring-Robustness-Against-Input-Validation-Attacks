@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry213[shape=none,label=""];
+BB_entry213 -> BB2480 [tailport=s, headport=n, headlabel="    2480"]
+BB2480 [shape=record label="{8003: constant[undefined,v1]|8004: vardecl['args']|8005: vardecl['div']|8006: vardecl['i']}" ] 
+BB2480 -> BB2481 [tailport=s, headport=n, headlabel="      2481"]
+BB2481 [shape=record label="{8007: read-variable['arguments',v2,-]|8008: write-variable[v2,'args']*|8009: read-variable['document',v5,-]|8010: read-property[v5,'createElement',-]|8011: \<variable-non-null-undef\>['document']|8012: constant[\"div\",v6]}" ] 
+BB2481 -> BB2482 [tailport=s, headport=n, headlabel="      2482"]
+BB2481 -> BB2489 [tailport=s, headport=n, color=gray, headlabel="      2489"]
+BB2482 [shape=record label="{8013: call-document.createElement [v5,'createElement',v6,v3]}" ] 
+BB2482 -> BB2483 [tailport=s, headport=n, headlabel="      2483"]
+BB2482 -> BB2489 [tailport=s, headport=n, color=gray]
+BB2483 [shape=record label="{8014: write-variable[v3,'div']*|8015: constant[1.0,v7]|8016: write-variable[v7,'i']*|8017: read-variable['div',v9,-]|8018: read-variable['html',v11,-]|8019: read-property[v11,'replace',-]|8020: \<variable-non-null-undef\>['html']|8021: read-variable['RegExp',v13,-]|8022: constant[\"%([se])\",v14]|8023: constant[\"g\",v15]}" ] 
+BB2483 -> BB2484 [tailport=s, headport=n, headlabel="      2484"]
+BB2483 -> BB2489 [tailport=s, headport=n, color=gray]
+BB2484 [shape=record label="{8024: construct [-,v13,v14,v15,v12]}" ] 
+BB2484 -> BB2485 [tailport=s, headport=n, headlabel="      2485"]
+BB2484 -> BB2489 [tailport=s, headport=n, color=gray]
+BB2485 [shape=record label="{8025: function-expr[function ( _ type ),v16]}" ] 
+BB2485 -> BB2486 [tailport=s, headport=n, headlabel="      2486"]
+BB2486 [shape=record label="{8026: call-html.replace [v11,'replace',v12,v16,v8]}" ] 
+BB2486 -> BB2487 [tailport=s, headport=n, headlabel="      2487"]
+BB2486 -> BB2489 [tailport=s, headport=n, color=gray]
+BB2487 [shape=record label="{8027: write-property[v9,'innerHTML',v8]|8028: \<variable-non-null-undef\>['div']*|8029: read-variable['div',v17,-]|8030: read-property[v17,'firstChild',v1]|8031: \<variable-non-null-undef\>['div']}" ] 
+BB2487 -> BB2488 [tailport=s, headport=n, headlabel="      2488"]
+BB2487 -> BB2489 [tailport=s, headport=n, color=gray]
+BB2488 [shape=record label="{8032: return[v1]}" ] 
+BB2489 [shape=record label="{8033: exceptional-return}" ] 
+//#$~ 2885
+}

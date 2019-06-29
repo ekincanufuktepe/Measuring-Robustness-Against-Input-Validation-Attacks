@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry473[shape=none,label=""];
+BB_entry473 -> BB4982 [tailport=s, headport=n, headlabel="    4982"]
+BB4982 [shape=record label="{15026: constant[undefined,v1]|15027: vardecl['coordinates']|15028: vardecl['i']|15029: vardecl['n']}" ] 
+BB4982 -> BB4983 [tailport=s, headport=n, headlabel="      4983"]
+BB4983 [shape=record label="{15030: read-variable['object',v3,-]|15031: read-property[v3,'coordinates',v2]|15032: \<variable-non-null-undef\>['object']|15033: write-variable[v2,'coordinates']*|15034: constant[-1.0,v4]|15035: write-variable[v4,'i']*|15036: read-variable['coordinates',v6,-]|15037: read-property[v6,'length',v5]|15038: \<variable-non-null-undef\>['coordinates']|15039: write-variable[v5,'n']*}" ] 
+BB4983 -> BB4984 [tailport=s, headport=n, headlabel="      4984"]
+BB4983 -> BB4988 [tailport=s, headport=n, color=gray, headlabel="      4988"]
+BB4984 [shape=record label="{15040: constant[1.0,v10]|15041: read-variable['i',v11,-]|15042: +[v11,v12]|15043: +[v12,v10,v8]|15044: write-variable[v8,'i']|15045: read-variable['n',v9,-]|15046: \<[v8,v9,v7]|15047: if[v7](true-block:4985,false-block:4987)}" ] 
+BB4984 -> BB4985 [tailport=s, headport=n, headlabel="      4985"]
+BB4984 -> BB4987 [tailport=s, headport=n, headlabel="      4987"]
+BB4984 -> BB4988 [tailport=s, headport=n, color=gray]
+BB4985 [shape=record label="{15048: read-variable['coordinates',v14,-]|15049: read-variable['i',v15,-]|15050: read-property[v14,v15,v13]|15051: \<variable-non-null-undef\>['coordinates']|15052: write-variable[v13,'object']|15053: read-variable['listener',v17,-]|15054: read-property[v17,'point',-]|15055: \<variable-non-null-undef\>['listener']|15056: read-variable['object',v19,-]|15057: constant[0.0,v20]|15058: read-property[v19,v20,v18]|15059: \<variable-non-null-undef\>['object']|15060: read-variable['object',v22,-]|15061: constant[1.0,v23]|15062: read-property[v22,v23,v21]|15063: \<variable-non-null-undef\>['object']|15064: read-variable['object',v25,-]|15065: constant[2.0,v26]|15066: read-property[v25,v26,v24]|15067: \<variable-non-null-undef\>['object']}" ] 
+BB4985 -> BB4986 [tailport=s, headport=n, headlabel="      4986"]
+BB4985 -> BB4988 [tailport=s, headport=n, color=gray]
+BB4986 [shape=record label="{15068: call-listener.point [v17,'point',v18,v21,v24,-]}" ] 
+BB4986 -> BB4984 [tailport=s, headport=n]
+BB4986 -> BB4988 [tailport=s, headport=n, color=gray]
+BB4987 [shape=record label="{15069: return[v1]}" ] 
+BB4988 [shape=record label="{15070: exceptional-return}" ] 
+//#$~ 2896
+}

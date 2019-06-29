@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry13[shape=none,label=""];
+BB_entry13 -> BB88 [tailport=s, headport=n, headlabel="    88"]
+BB88 [shape=record label="{330: constant[undefined,v1]}" ] 
+BB88 -> BB89 [tailport=s, headport=n, headlabel="      89"]
+BB89 [shape=record label="{331: read-variable['hasCache',v5,-]|332: read-variable['name',v6,-]|333: read-property[v5,v6,v3]|334: \<variable-non-null-undef\>['hasCache']|335: read-variable['undefined',v4,-]|336: ===[v3,v4,v2]|337: if[v2](true-block:91,false-block:90)}" ] 
+BB89 -> BB91 [tailport=s, headport=n, headlabel="      91"]
+BB89 -> BB90 [tailport=s, headport=n, headlabel="      90"]
+BB89 -> BB97 [tailport=s, headport=n, color=gray, headlabel="      97"]
+BB90 [shape=record label="{338: read-variable['force',v2,-]}" ] 
+BB90 -> BB91 [tailport=s, headport=n]
+BB90 -> BB97 [tailport=s, headport=n, color=gray]
+BB91 [shape=record label="{339: if[v2](true-block:92,false-block:93)}" ] 
+BB91 -> BB93 [tailport=s, headport=n, headlabel="      93"]
+BB91 -> BB92 [tailport=s, headport=n, headlabel="      92"]
+BB92 [shape=record label="{340: read-variable['hasCache',v4,-]|341: read-variable['name',v5,-]|342: read-variable['test',v3,-]|343: write-property[v4,v5,v3]|344: \<variable-non-null-undef\>['hasCache']}" ] 
+BB92 -> BB93 [tailport=s, headport=n]
+BB92 -> BB97 [tailport=s, headport=n, color=gray]
+BB93 [shape=record label="{345: read-variable['now',v1,-]|346: if[v1](true-block:94,false-block:96)}" ] 
+BB93 -> BB96 [tailport=s, headport=n, headlabel="      96"]
+BB93 -> BB94 [tailport=s, headport=n, headlabel="      94"]
+BB93 -> BB97 [tailport=s, headport=n, color=gray]
+BB94 [shape=record label="{347: read-variable['has',v4,v3]|348: read-variable['name',v5,-]}" ] 
+BB94 -> BB95 [tailport=s, headport=n, headlabel="      95"]
+BB94 -> BB97 [tailport=s, headport=n, color=gray]
+BB95 [shape=record label="{349: call-has [v3,v4,v5,v1]}" ] 
+BB95 -> BB96 [tailport=s, headport=n]
+BB95 -> BB97 [tailport=s, headport=n, color=gray]
+BB96 [shape=record label="{350: return[v1]}" ] 
+BB97 [shape=record label="{351: exceptional-return}" ] 
+//#$~ 155
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry82[shape=none,label=""];
+BB_entry82 -> BB1063 [tailport=s, headport=n, headlabel="    1063"]
+BB1063 [shape=record label="{3385: constant[undefined,v1]}" ] 
+BB1063 -> BB1064 [tailport=s, headport=n, headlabel="      1064"]
+BB1064 [shape=record label="{3386: read-variable['item',v3,-]|3387: read-variable['this',v5,-]|3388: read-property[v5,'type',v4]|3389: instanceof[v3,v4,v2]|3390: if[v2](true-block:1065,false-block:1066)}" ] 
+BB1064 -> BB1065 [tailport=s, headport=n, headlabel="      1065"]
+BB1064 -> BB1066 [tailport=s, headport=n, headlabel="      1066"]
+BB1064 -> BB1070 [tailport=s, headport=n, color=gray, headlabel="      1070"]
+BB1065 [shape=record label="{3391: read-variable['this',v7,-]|3392: read-property[v7,'_super',-]|3393: read-variable['item',v8,-]}" ] 
+BB1065 -> BB1067 [tailport=s, headport=n, headlabel="      1067"]
+BB1065 -> BB1070 [tailport=s, headport=n, color=gray]
+BB1066 [shape=record label="{3394: read-variable['this',v7,-]|3395: read-property[v7,'log',-]|3396: constant[\"add failed - invalid type\",v8]}" ] 
+BB1066 -> BB1068 [tailport=s, headport=n, headlabel="      1068"]
+BB1066 -> BB1070 [tailport=s, headport=n, color=gray]
+BB1067 [shape=record label="{3397: call-this._super [v7,'_super',v8,-]*}" ] 
+BB1067 -> BB1069 [tailport=s, headport=n, headlabel="      1069"]
+BB1067 -> BB1070 [tailport=s, headport=n, color=gray]
+BB1068 [shape=record label="{3398: call-this.log [v7,'log',v8,-]*}" ] 
+BB1068 -> BB1069 [tailport=s, headport=n]
+BB1068 -> BB1070 [tailport=s, headport=n, color=gray]
+BB1069 [shape=record label="{3399: return[v1]}" ] 
+BB1070 [shape=record label="{3400: exceptional-return}" ] 
+//#$~ 886
+}

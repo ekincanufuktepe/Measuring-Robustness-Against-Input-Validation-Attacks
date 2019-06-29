@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry176[shape=none,label=""];
+BB_entry176 -> BB2125 [tailport=s, headport=n, headlabel="    2125"]
+BB2125 [shape=record label="{6283: constant[undefined,v1]}" ] 
+BB2125 -> BB2126 [tailport=s, headport=n, headlabel="      2126"]
+BB2126 [shape=record label="{6284: read-variable['d',v3,-]|6285: ![v3,v2]|6286: if[v2](true-block:2127,false-block:2130)}" ] 
+BB2126 -> BB2127 [tailport=s, headport=n, headlabel="      2127"]
+BB2126 -> BB2130 [tailport=s, headport=n, headlabel="      2130"]
+BB2126 -> BB2132 [tailport=s, headport=n, color=gray, headlabel="      2132"]
+BB2127 [shape=record label="{6287: read-variable['$',v6,-]|6288: read-property[v6,'Deferred',-]|6289: \<variable-non-null-undef\>['$']}" ] 
+BB2127 -> BB2128 [tailport=s, headport=n, headlabel="      2128"]
+BB2127 -> BB2132 [tailport=s, headport=n, color=gray]
+BB2128 [shape=record label="{6290: call-$.Deferred [v6,'Deferred',v4]}" ] 
+BB2128 -> BB2129 [tailport=s, headport=n, headlabel="      2129"]
+BB2128 -> BB2132 [tailport=s, headport=n, color=gray]
+BB2129 [shape=record label="{6291: write-variable[v4,'d']*}" ] 
+BB2129 -> BB2130 [tailport=s, headport=n]
+BB2130 [shape=record label="{6292: read-variable['d',v5,-]|6293: read-variable['d',v6,-]|6294: read-property[v6,'reject',v4]|6295: \<variable-non-null-undef\>['d']|6296: write-property[v5,'__reject',v4]|6297: \<variable-non-null-undef\>['d']*|6298: read-variable['d',v8,-]|6299: read-variable['d',v9,-]|6300: read-property[v9,'resolve',v7]|6301: \<variable-non-null-undef\>['d']|6302: write-property[v8,'__resolve',v7]|6303: \<variable-non-null-undef\>['d']*|6304: read-variable['d',v11,-]|6305: read-variable['d',v12,-]|6306: function-expr[function ( ),v10]|6307: write-property[v12,'resolve',v10]|6308: \<variable-non-null-undef\>['d']|6309: write-property[v11,'reject',v10]|6310: \<variable-non-null-undef\>['d']*|6311: read-variable['d',v1,-]}" ] 
+BB2130 -> BB2131 [tailport=s, headport=n, headlabel="      2131"]
+BB2130 -> BB2132 [tailport=s, headport=n, color=gray]
+BB2131 [shape=record label="{6312: return[v1]}" ] 
+BB2132 [shape=record label="{6313: exceptional-return}" ] 
+//#$~ 1904
+}

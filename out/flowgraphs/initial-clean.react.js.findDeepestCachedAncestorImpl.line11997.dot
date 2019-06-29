@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry477[shape=none,label=""];
+BB_entry477 -> BB6857 [tailport=s, headport=n, headlabel="    6857"]
+BB6857 [shape=record label="{23235: constant[undefined,v1]|23236: vardecl['ancestor']}" ] 
+BB6857 -> BB6858 [tailport=s, headport=n, headlabel="      6858"]
+BB6858 [shape=record label="{23237: read-variable['nodeCache',v3,-]|23238: read-variable['ancestorID',v4,-]|23239: read-property[v3,v4,v2]|23240: \<variable-non-null-undef\>['nodeCache']|23241: write-variable[v2,'ancestor']*|23242: read-variable['ancestor',v5,-]|23243: if[v5](true-block:6859,false-block:6861)}" ] 
+BB6858 -> BB6861 [tailport=s, headport=n, headlabel="      6861"]
+BB6858 -> BB6859 [tailport=s, headport=n, headlabel="      6859"]
+BB6858 -> BB6865 [tailport=s, headport=n, color=gray, headlabel="      6865"]
+BB6859 [shape=record label="{23244: read-variable['isValid',v7,v6]|23245: read-variable['ancestor',v8,-]|23246: read-variable['ancestorID',v9,-]}" ] 
+BB6859 -> BB6860 [tailport=s, headport=n, headlabel="      6860"]
+BB6859 -> BB6865 [tailport=s, headport=n, color=gray]
+BB6860 [shape=record label="{23247: call-isValid [v6,v7,v8,v9,v5]}" ] 
+BB6860 -> BB6861 [tailport=s, headport=n]
+BB6860 -> BB6865 [tailport=s, headport=n, color=gray]
+BB6861 [shape=record label="{23248: if[v5](true-block:6862,false-block:6863)}" ] 
+BB6861 -> BB6862 [tailport=s, headport=n, headlabel="      6862"]
+BB6861 -> BB6863 [tailport=s, headport=n, headlabel="      6863"]
+BB6862 [shape=record label="{23249: read-variable['ancestor',v6,-]|23250: write-variable[v6,'deepestNodeSoFar']*}" ] 
+BB6862 -> BB6864 [tailport=s, headport=n, headlabel="      6864"]
+BB6862 -> BB6865 [tailport=s, headport=n, color=gray]
+BB6863 [shape=record label="{23251: constant[false,v1]}" ] 
+BB6863 -> BB6864 [tailport=s, headport=n]
+BB6864 [shape=record label="{23252: return[v1]}" ] 
+BB6865 [shape=record label="{23253: exceptional-return}" ] 
+//#$~ 12004
+}

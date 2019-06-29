@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry1063[shape=none,label=""];
+BB_entry1063 -> BB12818 [tailport=s, headport=n, headlabel="    12818"]
+BB12818 [shape=record label="{43666: constant[undefined,v1]}" ] 
+BB12818 -> BB12819 [tailport=s, headport=n, headlabel="      12819"]
+BB12819 [shape=record label="{43667: read-variable['controller',v2,-]|43668: if[v2](true-block:12820,false-block:12821)}" ] 
+BB12819 -> BB12821 [tailport=s, headport=n, headlabel="      12821"]
+BB12819 -> BB12820 [tailport=s, headport=n, headlabel="      12820"]
+BB12819 -> BB12825 [tailport=s, headport=n, color=gray, headlabel="      12825"]
+BB12820 [shape=record label="{43669: read-variable['context',v3,-]|43670: read-variable['undefined',v4,-]|43671: !==[v3,v4,v2]}" ] 
+BB12820 -> BB12821 [tailport=s, headport=n]
+BB12820 -> BB12825 [tailport=s, headport=n, color=gray]
+BB12821 [shape=record label="{43672: if[v2](true-block:12822,false-block:12824)}" ] 
+BB12821 -> BB12822 [tailport=s, headport=n, headlabel="      12822"]
+BB12821 -> BB12824 [tailport=s, headport=n, headlabel="      12824"]
+BB12822 [shape=record label="{43673: read-variable['set',v4,v3]|43674: read-variable['controller',v5,-]|43675: constant[\"model\",v6]|43676: read-variable['context',v7,-]}" ] 
+BB12822 -> BB12823 [tailport=s, headport=n, headlabel="      12823"]
+BB12822 -> BB12825 [tailport=s, headport=n, color=gray]
+BB12823 [shape=record label="{43677: call-set [v3,v4,v5,v6,v7,-]*}" ] 
+BB12823 -> BB12824 [tailport=s, headport=n]
+BB12823 -> BB12825 [tailport=s, headport=n, color=gray]
+BB12824 [shape=record label="{43678: return[v1]}" ] 
+BB12825 [shape=record label="{43679: exceptional-return}" ] 
+//#$~ 24174
+}

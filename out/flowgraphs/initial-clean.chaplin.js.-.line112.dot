@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry14[shape=none,label=""];
+BB_entry14 -> BB89 [tailport=s, headport=n, headlabel="    89"]
+BB89 [shape=record label="{197: constant[undefined,v1]}" ] 
+BB89 -> BB90 [tailport=s, headport=n, headlabel="      90"]
+BB90 [shape=record label="{198: read-variable['options',v3,-]|199: constant[null,v4]|200: ==[v3,v4,v2]|201: if[v2](true-block:91,false-block:92)}" ] 
+BB90 -> BB91 [tailport=s, headport=n, headlabel="      91"]
+BB90 -> BB92 [tailport=s, headport=n, headlabel="      92"]
+BB90 -> BB96 [tailport=s, headport=n, color=gray, headlabel="      96"]
+BB91 [shape=record label="{202: new[v5]|203: write-variable[v5,'options']*}" ] 
+BB91 -> BB92 [tailport=s, headport=n]
+BB92 [shape=record label="{204: read-variable['this',v5,-]|205: read-variable['Composer',v6,-]|206: read-variable['options',v7,-]}" ] 
+BB92 -> BB93 [tailport=s, headport=n, headlabel="      93"]
+BB92 -> BB96 [tailport=s, headport=n, color=gray]
+BB93 [shape=record label="{207: construct [-,v6,v7,v1]}" ] 
+BB93 -> BB94 [tailport=s, headport=n, headlabel="      94"]
+BB93 -> BB96 [tailport=s, headport=n, color=gray]
+BB94 [shape=record label="{208: write-property[v5,'composer',v1]}" ] 
+BB94 -> BB95 [tailport=s, headport=n, headlabel="      95"]
+BB94 -> BB96 [tailport=s, headport=n, color=gray]
+BB95 [shape=record label="{209: return[v1]}" ] 
+BB96 [shape=record label="{210: exceptional-return}" ] 
+//#$~ 116
+}

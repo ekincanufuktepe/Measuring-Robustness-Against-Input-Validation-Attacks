@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry223[shape=none,label=""];
+BB_entry223 -> BB2280 [tailport=s, headport=n, headlabel="    2280"]
+BB2280 [shape=record label="{6802: constant[undefined,v1]}" ] 
+BB2280 -> BB2281 [tailport=s, headport=n, headlabel="      2281"]
+BB2281 [shape=record label="{6803: read-variable['this',v3,-]|6804: read-property[v3,'__chart__',v2]|6805: if[v2](true-block:2283,false-block:2282)}" ] 
+BB2281 -> BB2283 [tailport=s, headport=n, headlabel="      2283"]
+BB2281 -> BB2282 [tailport=s, headport=n, headlabel="      2282"]
+BB2281 -> BB2286 [tailport=s, headport=n, color=gray, headlabel="      2286"]
+BB2282 [shape=record label="{6806: new[v2]|6807: constant[0.0,v3]|6808: write-property[v2,'x',v3]|6809: constant[0.0,v4]|6810: write-property[v2,'y',v4]|6811: constant[1.0,v5]|6812: write-property[v2,'k',v5]}" ] 
+BB2282 -> BB2283 [tailport=s, headport=n]
+BB2282 -> BB2286 [tailport=s, headport=n, color=gray]
+BB2283 [shape=record label="{6813: write-variable[v2,'view']*|6814: read-variable['zoomstarted',v4,v3]|6815: read-variable['dispatch',v5,-]}" ] 
+BB2283 -> BB2284 [tailport=s, headport=n, headlabel="      2284"]
+BB2283 -> BB2286 [tailport=s, headport=n, color=gray]
+BB2284 [shape=record label="{6816: call-zoomstarted [v3,v4,v5,-]*}" ] 
+BB2284 -> BB2285 [tailport=s, headport=n, headlabel="      2285"]
+BB2284 -> BB2286 [tailport=s, headport=n, color=gray]
+BB2285 [shape=record label="{6817: return[v1]}" ] 
+BB2286 [shape=record label="{6818: exceptional-return}" ] 
+//#$~ 1329
+}

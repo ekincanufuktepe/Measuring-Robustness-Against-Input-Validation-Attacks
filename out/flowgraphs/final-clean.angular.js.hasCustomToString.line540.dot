@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry27[shape=none,label=""];
+BB_entry27 -> BB318 [tailport=s, headport=n, headlabel="    318"]
+BB318 [shape=record label="{775: constant[undefined,v1]}" ] 
+BB318 -> BB319 [tailport=s, headport=n, headlabel="      319"]
+BB319 [shape=record label="{776: read-variable['isFunction',v3,v2]|777: read-variable['obj',v5,-]|778: read-property[v5,'toString',v4]|779: \<variable-non-null-undef\>['obj']}" ] 
+BB319 -> BB320 [tailport=s, headport=n, headlabel="      320"]
+BB319 -> BB324 [tailport=s, headport=n, color=gray, headlabel="      324"]
+BB320 [shape=record label="{780: call-isFunction [v2,v3,v4,v1]}" ] 
+BB320 -> BB321 [tailport=s, headport=n, headlabel="      321"]
+BB320 -> BB324 [tailport=s, headport=n, color=gray]
+BB321 [shape=record label="{781: if[v1](true-block:322,false-block:323)}" ] 
+BB321 -> BB323 [tailport=s, headport=n, headlabel="      323"]
+BB321 -> BB322 [tailport=s, headport=n, headlabel="      322"]
+BB322 [shape=record label="{782: read-variable['obj',v8,-]|783: read-property[v8,'toString',v6]|784: \<variable-non-null-undef\>['obj']|785: read-variable['Object',v10,-]|786: read-property[v10,'prototype',v9]|787: \<variable-non-null-undef\>['Object']|788: read-property[v9,'toString',v7]|789: \<property-non-null-undef\>[v10,'prototype']|790: !==[v6,v7,v1]}" ] 
+BB322 -> BB323 [tailport=s, headport=n]
+BB322 -> BB324 [tailport=s, headport=n, color=gray]
+BB323 [shape=record label="{791: return[v1]}" ] 
+BB324 [shape=record label="{792: exceptional-return}" ] 
+//#$~ 541
+}

@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry553[shape=none,label=""];
+BB_entry553 -> BB9042 [tailport=s, headport=n, headlabel="    9042"]
+BB9042 [shape=record label="{26766: constant[undefined,v1]|26767: vardecl['callback']}" ] 
+BB9042 -> BB9043 [tailport=s, headport=n, headlabel="      9043"]
+BB9043 [shape=record label="{26768: read-variable['options',v4,-]|26769: read-property[v4,'crossDomain',v3]|26770: \<variable-non-null-undef\>['options']|26771: ![v3,v2]|26772: if[v2](true-block:9045,false-block:9044)}" ] 
+BB9043 -> BB9045 [tailport=s, headport=n, headlabel="      9045"]
+BB9043 -> BB9044 [tailport=s, headport=n, headlabel="      9044"]
+BB9043 -> BB9048 [tailport=s, headport=n, color=gray, headlabel="      9048"]
+BB9044 [shape=record label="{26773: read-variable['support',v3,-]|26774: read-property[v3,'cors',v2]|26775: \<variable-non-null-undef\>['support']}" ] 
+BB9044 -> BB9045 [tailport=s, headport=n]
+BB9044 -> BB9048 [tailport=s, headport=n, color=gray]
+BB9045 [shape=record label="{26776: if[v2](true-block:9046,false-block:9047)}" ] 
+BB9045 -> BB9046 [tailport=s, headport=n, headlabel="      9046"]
+BB9045 -> BB9047 [tailport=s, headport=n, headlabel="      9047"]
+BB9046 [shape=record label="{26777: new[v1]|26778: function-expr[function ( headers complete ),v3]|26779: write-property[v1,'send',v3]|26780: function-expr[function ( ),v4]|26781: write-property[v1,'abort',v4]}" ] 
+BB9046 -> BB9047 [tailport=s, headport=n]
+BB9046 -> BB9048 [tailport=s, headport=n, color=gray]
+BB9047 [shape=record label="{26782: return[v1]}" ] 
+BB9048 [shape=record label="{26783: exceptional-return}" ] 
+}

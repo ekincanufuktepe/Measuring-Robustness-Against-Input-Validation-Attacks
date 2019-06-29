@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry162[shape=none,label=""];
+BB_entry162 -> BB1743 [tailport=s, headport=n, headlabel="    1743"]
+BB1743 [shape=record label="{5688: constant[undefined,v1]}" ] 
+BB1743 -> BB1744 [tailport=s, headport=n, headlabel="      1744"]
+BB1744 [shape=record label="{5689: read-variable['stats',v3,-]|5690: read-variable['stats',v4,-]|5691: read-property[v4,'suites',v2]|5692: \<variable-non-null-undef\>['stats']|5693: if[v2](true-block:1746,false-block:1745)}" ] 
+BB1744 -> BB1746 [tailport=s, headport=n, headlabel="      1746"]
+BB1744 -> BB1745 [tailport=s, headport=n, headlabel="      1745"]
+BB1744 -> BB1749 [tailport=s, headport=n, color=gray, headlabel="      1749"]
+BB1745 [shape=record label="{5694: constant[0.0,v2]}" ] 
+BB1745 -> BB1746 [tailport=s, headport=n]
+BB1746 [shape=record label="{5695: write-property[v3,'suites',v2]|5696: \<variable-non-null-undef\>['stats']*|5697: read-variable['suite',v5,-]|5698: read-property[v5,'root',v4]|5699: \<variable-non-null-undef\>['suite']|5700: if[v4](true-block:1748,false-block:1747)}" ] 
+BB1746 -> BB1748 [tailport=s, headport=n, headlabel="      1748"]
+BB1746 -> BB1747 [tailport=s, headport=n, headlabel="      1747"]
+BB1746 -> BB1749 [tailport=s, headport=n, color=gray]
+BB1747 [shape=record label="{5701: constant[1.0,v5]|5702: read-variable['stats',v7,-]|5703: read-property[v7,'suites',v6]|5704: \<variable-non-null-undef\>['stats']|5705: +[v6,v8]|5706: +[v8,v5,v9]|5707: write-property[v7,'suites',v9]|5708: \<variable-non-null-undef\>['stats']}" ] 
+BB1747 -> BB1748 [tailport=s, headport=n]
+BB1747 -> BB1749 [tailport=s, headport=n, color=gray]
+BB1748 [shape=record label="{5709: return[v1]}" ] 
+BB1749 [shape=record label="{5710: exceptional-return}" ] 
+//#$~ 2231
+}

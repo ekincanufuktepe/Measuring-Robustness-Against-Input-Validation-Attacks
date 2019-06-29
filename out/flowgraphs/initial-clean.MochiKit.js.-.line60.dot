@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB417 [tailport=s, headport=n, headlabel="    417"]
+BB417 [shape=record label="{4687: constant[undefined,v1]|4688: vardecl['me']}" ] 
+BB417 -> BB418 [tailport=s, headport=n, headlabel="      418"]
+BB418 [shape=record label="{4689: read-variable['arguments',v3,-]|4690: read-property[v3,'callee',v2]|4691: \<variable-non-null-undef\>['arguments']|4692: write-variable[v2,'me']*|4693: read-variable['arguments',v7,-]|4694: read-property[v7,'length',v5]|4695: \<variable-non-null-undef\>['arguments']|4696: constant[1.0,v6]|4697: ==[v5,v6,v4]|4698: if[v4](true-block:419,false-block:421)}" ] 
+BB418 -> BB419 [tailport=s, headport=n, headlabel="      419"]
+BB418 -> BB421 [tailport=s, headport=n, headlabel="      421"]
+BB418 -> BB422 [tailport=s, headport=n, color=gray, headlabel="      422"]
+BB419 [shape=record label="{4699: read-variable['me',v9,-]|4700: read-variable['_b',v8,-]|4701: write-property[v9,'prototype',v8]|4702: \<variable-non-null-undef\>['me']*|4703: read-variable['me',v10,-]}" ] 
+BB419 -> BB420 [tailport=s, headport=n, headlabel="      420"]
+BB419 -> BB422 [tailport=s, headport=n, color=gray]
+BB420 [shape=record label="{4704: construct [-,v10,v1]}" ] 
+BB420 -> BB421 [tailport=s, headport=n]
+BB420 -> BB422 [tailport=s, headport=n, color=gray]
+BB421 [shape=record label="{4705: return[v1]}" ] 
+BB422 [shape=record label="{4706: exceptional-return}" ] 
+//#$~ 64
+}

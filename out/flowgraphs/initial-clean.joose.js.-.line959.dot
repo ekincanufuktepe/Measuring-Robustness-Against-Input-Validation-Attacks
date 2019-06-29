@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry98[shape=none,label=""];
+BB_entry98 -> BB875 [tailport=s, headport=n, headlabel="    875"]
+BB875 [shape=record label="{2776: constant[undefined,v1]}" ] 
+BB875 -> BB876 [tailport=s, headport=n, headlabel="      876"]
+BB876 [shape=record label="{2777: read-variable['classObject',v3,-]|2778: constant[null,v4]|2779: ==[v3,v4,v2]|2780: if[v2](true-block:877,false-block:880)}" ] 
+BB876 -> BB877 [tailport=s, headport=n, headlabel="      877"]
+BB876 -> BB880 [tailport=s, headport=n, headlabel="      880"]
+BB876 -> BB883 [tailport=s, headport=n, color=gray, headlabel="      883"]
+BB877 [shape=record label="{2781: read-variable['Error',v6,-]|2782: constant[\"Super class is null\",v7]}" ] 
+BB877 -> BB878 [tailport=s, headport=n, headlabel="      878"]
+BB877 -> BB883 [tailport=s, headport=n, color=gray]
+BB878 [shape=record label="{2783: construct [-,v6,v7,v5]}" ] 
+BB878 -> BB879 [tailport=s, headport=n, headlabel="      879"]
+BB878 -> BB883 [tailport=s, headport=n, color=gray]
+BB879 [shape=record label="{2784: throw[v5]*}" ] 
+BB879 -> BB880 [tailport=s, headport=n]
+BB879 -> BB883 [tailport=s, headport=n, color=gray]
+BB880 [shape=record label="{2785: read-variable['this',v6,-]|2786: read-property[v6,'addSuperClass',-]|2787: read-variable['classObject',v7,-]}" ] 
+BB880 -> BB881 [tailport=s, headport=n, headlabel="      881"]
+BB880 -> BB883 [tailport=s, headport=n, color=gray]
+BB881 [shape=record label="{2788: call-this.addSuperClass [v6,'addSuperClass',v7,-]*}" ] 
+BB881 -> BB882 [tailport=s, headport=n, headlabel="      882"]
+BB881 -> BB883 [tailport=s, headport=n, color=gray]
+BB882 [shape=record label="{2789: return[v1]}" ] 
+BB883 [shape=record label="{2790: exceptional-return}" ] 
+//#$~ 963
+}

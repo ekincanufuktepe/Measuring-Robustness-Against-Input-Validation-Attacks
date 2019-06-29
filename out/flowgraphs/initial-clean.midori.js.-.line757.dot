@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry57[shape=none,label=""];
+BB_entry57 -> BB1026 [tailport=s, headport=n, headlabel="    1026"]
+BB1026 [shape=record label="{3850: constant[undefined,v1]|3851: vardecl['data']|3852: vardecl['diff']}" ] 
+BB1026 -> BB1027 [tailport=s, headport=n, headlabel="      1027"]
+BB1027 [shape=record label="{3853: read-variable['this',v4,-]|3854: read-property[v4,'intervals',v3]|3855: read-variable['intervalKey',v5,-]|3856: read-property[v3,v5,v2]|3857: \<property-non-null-undef\>[v4,'intervals']|3858: write-variable[v2,'data']*|3859: read-variable['Math',v8,-]|3860: read-property[v8,'abs',-]|3861: \<variable-non-null-undef\>['Math']|3862: read-variable['targetPos',v10,-]|3863: read-variable['data',v12,-]|3864: read-property[v12,'targetPos',v11]|3865: \<variable-non-null-undef\>['data']|3866: -[v10,v11,v9]}" ] 
+BB1027 -> BB1028 [tailport=s, headport=n, headlabel="      1028"]
+BB1027 -> BB1035 [tailport=s, headport=n, color=gray, headlabel="      1035"]
+BB1028 [shape=record label="{3867: call-Math.abs [v8,'abs',v9,v6]}" ] 
+BB1028 -> BB1029 [tailport=s, headport=n, headlabel="      1029"]
+BB1028 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1029 [shape=record label="{3868: write-variable[v6,'diff']*|3869: read-variable['data',v15,-]|3870: read-property[v15,'targetPos',v14]|3871: \<variable-non-null-undef\>['data']|3872: read-variable['Math',v20,-]|3873: read-property[v20,'round',-]|3874: \<variable-non-null-undef\>['Math']|3875: read-variable['diff',v22,-]|3876: constant[8.0,v23]|3877: /[v22,v23,v21]}" ] 
+BB1029 -> BB1030 [tailport=s, headport=n, headlabel="      1030"]
+BB1029 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1030 [shape=record label="{3878: call-Math.round [v20,'round',v21,v17]}" ] 
+BB1030 -> BB1031 [tailport=s, headport=n, headlabel="      1031"]
+BB1030 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1031 [shape=record label="{3879: read-variable['data',v24,-]|3880: read-property[v24,'direction',v18]|3881: \<variable-non-null-undef\>['data']|3882: *[v17,v18,v16]|3883: +[v14,v16,v13]|3884: write-property[v15,'targetPos',v13]|3885: \<variable-non-null-undef\>['data']*|3886: read-variable['container',v27,-]|3887: read-property[v27,'style',v26]|3888: \<variable-non-null-undef\>['container']|3889: read-variable['data',v31,-]|3890: read-property[v31,'targetPos',v30]|3891: \<variable-non-null-undef\>['data']|3892: -[v30,v28]|3893: constant[\"px\",v29]|3894: +[v28,v29,v25]|3895: write-property[v26,'marginLeft',v25]|3896: \<property-non-null-undef\>[v27,'style']*|3897: read-variable['diff',v33,-]|3898: constant[4.0,v34]|3899: \<[v33,v34,v32]|3900: if[v32](true-block:1032,false-block:1034)}" ] 
+BB1031 -> BB1032 [tailport=s, headport=n, headlabel="      1032"]
+BB1031 -> BB1034 [tailport=s, headport=n, headlabel="      1034"]
+BB1031 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1032 [shape=record label="{3901: read-variable['clearInterval',v36,v35]|3902: read-variable['data',v38,-]|3903: read-property[v38,'intervalId',v37]|3904: \<variable-non-null-undef\>['data']}" ] 
+BB1032 -> BB1033 [tailport=s, headport=n, headlabel="      1033"]
+BB1032 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1033 [shape=record label="{3905: call-clearInterval [v35,v36,v37,-]*}" ] 
+BB1033 -> BB1034 [tailport=s, headport=n]
+BB1033 -> BB1035 [tailport=s, headport=n, color=gray]
+BB1034 [shape=record label="{3906: return[v1]}" ] 
+BB1035 [shape=record label="{3907: exceptional-return}" ] 
+//#$~ 764
+}

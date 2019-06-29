@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry257[shape=none,label=""];
+BB_entry257 -> BB3287 [tailport=s, headport=n, headlabel="    3287"]
+BB3287 [shape=record label="{10812: constant[undefined,v1]}" ] 
+BB3287 -> BB3288 [tailport=s, headport=n, headlabel="      3288"]
+BB3288 [shape=record label="{10813: read-variable['context',v3,-]|10814: constant[null,v4]|10815: ==[v3,v4,v2]|10816: if[v2](true-block:3289,false-block:3290)}" ] 
+BB3288 -> BB3289 [tailport=s, headport=n, headlabel="      3289"]
+BB3288 -> BB3290 [tailport=s, headport=n, headlabel="      3290"]
+BB3288 -> BB3296 [tailport=s, headport=n, color=gray, headlabel="      3296"]
+BB3289 [shape=record label="{10817: read-variable['this',v5,-]|10818: write-variable[v5,'context']*}" ] 
+BB3289 -> BB3290 [tailport=s, headport=n]
+BB3289 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3290 [shape=record label="{10819: read-variable['this',v6,-]|10820: read-property[v6,'on',-]|10821: read-variable['event',v7,-]|10822: read-variable['callback',v8,-]|10823: read-variable['context',v9,-]}" ] 
+BB3290 -> BB3291 [tailport=s, headport=n, headlabel="      3291"]
+BB3290 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3291 [shape=record label="{10824: call-this.on [v6,'on',v7,v8,v9,-]*}" ] 
+BB3291 -> BB3292 [tailport=s, headport=n, headlabel="      3292"]
+BB3291 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3292 [shape=record label="{10825: read-variable['this',v13,-]|10826: read-property[v13,'_syncState',v11]|10827: read-variable['event',v12,-]|10828: ===[v11,v12,v10]|10829: if[v10](true-block:3293,false-block:3295)}" ] 
+BB3292 -> BB3293 [tailport=s, headport=n, headlabel="      3293"]
+BB3292 -> BB3295 [tailport=s, headport=n, headlabel="      3295"]
+BB3292 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3293 [shape=record label="{10830: read-variable['callback',v15,-]|10831: read-property[v15,'call',-]|10832: \<variable-non-null-undef\>['callback']|10833: read-variable['context',v16,-]}" ] 
+BB3293 -> BB3294 [tailport=s, headport=n, headlabel="      3294"]
+BB3293 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3294 [shape=record label="{10834: call-callback.call [v15,'call',v16,v1]}" ] 
+BB3294 -> BB3295 [tailport=s, headport=n]
+BB3294 -> BB3296 [tailport=s, headport=n, color=gray]
+BB3295 [shape=record label="{10835: return[v1]}" ] 
+BB3296 [shape=record label="{10836: exceptional-return}" ] 
+//#$~ 2876
+}

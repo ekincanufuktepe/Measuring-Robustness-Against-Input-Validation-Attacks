@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry111[shape=none,label=""];
+BB_entry111 -> BB1497 [tailport=s, headport=n, headlabel="    1497"]
+BB1497 [shape=record label="{4777: constant[undefined,v1]}" ] 
+BB1497 -> BB1498 [tailport=s, headport=n, headlabel="      1498"]
+BB1498 [shape=record label="{4778: read-variable['VALID_FULL_NAME_REGEXP',v5,-]|4779: read-property[v5,'test',-]|4780: \<variable-non-null-undef\>['VALID_FULL_NAME_REGEXP']|4781: read-variable['fullName',v6,-]}" ] 
+BB1498 -> BB1499 [tailport=s, headport=n, headlabel="      1499"]
+BB1498 -> BB1506 [tailport=s, headport=n, color=gray, headlabel="      1506"]
+BB1499 [shape=record label="{4782: call-VALID_FULL_NAME_REGEXP.test [v5,'test',v6,v3]}" ] 
+BB1499 -> BB1500 [tailport=s, headport=n, headlabel="      1500"]
+BB1499 -> BB1506 [tailport=s, headport=n, color=gray]
+BB1500 [shape=record label="{4783: ![v3,v2]|4784: if[v2](true-block:1501,false-block:1504)}" ] 
+BB1500 -> BB1501 [tailport=s, headport=n, headlabel="      1501"]
+BB1500 -> BB1504 [tailport=s, headport=n, headlabel="      1504"]
+BB1500 -> BB1506 [tailport=s, headport=n, color=gray]
+BB1501 [shape=record label="{4785: read-variable['TypeError',v8,-]|4786: constant[\"Invalid Fullname, expected: `type:name` got: \",v10]|4787: read-variable['fullName',v11,-]|4788: +[v10,v11,v9]}" ] 
+BB1501 -> BB1502 [tailport=s, headport=n, headlabel="      1502"]
+BB1501 -> BB1506 [tailport=s, headport=n, color=gray]
+BB1502 [shape=record label="{4789: construct [-,v8,v9,v7]}" ] 
+BB1502 -> BB1503 [tailport=s, headport=n, headlabel="      1503"]
+BB1502 -> BB1506 [tailport=s, headport=n, color=gray]
+BB1503 [shape=record label="{4790: throw[v7]*}" ] 
+BB1503 -> BB1504 [tailport=s, headport=n]
+BB1503 -> BB1506 [tailport=s, headport=n, color=gray]
+BB1504 [shape=record label="{4791: constant[true,v1]}" ] 
+BB1504 -> BB1505 [tailport=s, headport=n, headlabel="      1505"]
+BB1505 [shape=record label="{4792: return[v1]}" ] 
+BB1506 [shape=record label="{4793: exceptional-return}" ] 
+//#$~ 1993
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry259[shape=none,label=""];
+BB_entry259 -> BB2922 [tailport=s, headport=n, headlabel="    2922"]
+BB2922 [shape=record label="{9441: constant[undefined,v1]|9442: vardecl['fmt']}" ] 
+BB2922 -> BB2923 [tailport=s, headport=n, headlabel="      2923"]
+BB2923 [shape=record label="{9443: read-variable['color',v6,v5]|9444: constant[\"checkmark\",v7]|9445: constant[\"  -\",v8]}" ] 
+BB2923 -> BB2924 [tailport=s, headport=n, headlabel="      2924"]
+BB2923 -> BB2931 [tailport=s, headport=n, color=gray, headlabel="      2931"]
+BB2924 [shape=record label="{9446: call-color [v5,v6,v7,v8,v3]}" ] 
+BB2924 -> BB2925 [tailport=s, headport=n, headlabel="      2925"]
+BB2924 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2925 [shape=record label="{9447: read-variable['color',v10,v9]|9448: constant[\"pending\",v11]|9449: constant[\" %s\",v12]}" ] 
+BB2925 -> BB2926 [tailport=s, headport=n, headlabel="      2926"]
+BB2925 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2926 [shape=record label="{9450: call-color [v9,v10,v11,v12,v4]}" ] 
+BB2926 -> BB2927 [tailport=s, headport=n, headlabel="      2927"]
+BB2926 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2927 [shape=record label="{9451: +[v3,v4,v2]|9452: write-variable[v2,'fmt']*|9453: read-variable['console',v14,-]|9454: read-property[v14,'log',-]|9455: \<variable-non-null-undef\>['console']|9456: read-variable['fmt',v15,-]|9457: read-variable['test',v18,-]|9458: read-property[v18,'fullTitle',-]|9459: \<variable-non-null-undef\>['test']}" ] 
+BB2927 -> BB2928 [tailport=s, headport=n, headlabel="      2928"]
+BB2927 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2928 [shape=record label="{9460: call-test.fullTitle [v18,'fullTitle',v16]}" ] 
+BB2928 -> BB2929 [tailport=s, headport=n, headlabel="      2929"]
+BB2928 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2929 [shape=record label="{9461: call-console.log [v14,'log',v15,v16,-]*}" ] 
+BB2929 -> BB2930 [tailport=s, headport=n, headlabel="      2930"]
+BB2929 -> BB2931 [tailport=s, headport=n, color=gray]
+BB2930 [shape=record label="{9462: return[v1]}" ] 
+BB2931 [shape=record label="{9463: exceptional-return}" ] 
+//#$~ 3421
+}

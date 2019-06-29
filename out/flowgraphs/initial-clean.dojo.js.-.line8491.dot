@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry401[shape=none,label=""];
+BB_entry401 -> BB5925 [tailport=s, headport=n, headlabel="    5925"]
+BB5925 [shape=record label="{17891: constant[undefined,v1]}" ] 
+BB5925 -> BB5926 [tailport=s, headport=n, headlabel="      5926"]
+BB5926 [shape=record label="{17892: read-variable['require',v3,-]|17893: read-property[v3,'has',v2]|17894: \<variable-non-null-undef\>['require']|17895: if[v2](true-block:5927,false-block:5929)}" ] 
+BB5926 -> BB5927 [tailport=s, headport=n, headlabel="      5927"]
+BB5926 -> BB5929 [tailport=s, headport=n, headlabel="      5929"]
+BB5926 -> BB5934 [tailport=s, headport=n, color=gray, headlabel="      5934"]
+BB5927 [shape=record label="{17896: read-variable['require',v6,-]|17897: read-property[v6,'has',v5]|17898: \<variable-non-null-undef\>['require']|17899: read-property[v5,'add',-]|17900: \<property-non-null-undef\>[v6,'has']|17901: constant[\"config-selectorEngine\",v7]|17902: constant[\"acme\",v8]}" ] 
+BB5927 -> BB5928 [tailport=s, headport=n, headlabel="      5928"]
+BB5927 -> BB5934 [tailport=s, headport=n, color=gray]
+BB5928 [shape=record label="{17903: call-require.has.add [v5,'add',v7,v8,-]*}" ] 
+BB5928 -> BB5929 [tailport=s, headport=n]
+BB5928 -> BB5934 [tailport=s, headport=n, color=gray]
+BB5929 [shape=record label="{17904: read-variable['define',v5,v4]|17905: read-variable['Array',v7,-]|17906: constant[\"../ready\",v8]|17907: constant[\"./kernel\",v9]|17908: constant[\"./connect\",v10]|17909: constant[\"./unload\",v11]|17910: constant[\"./window\",v12]|17911: constant[\"./event\",v13]|17912: constant[\"./html\",v14]|17913: constant[\"./NodeList\",v15]|17914: constant[\"../query\",v16]|17915: constant[\"./xhr\",v17]|17916: constant[\"./fx\",v18]}" ] 
+BB5929 -> BB5930 [tailport=s, headport=n, headlabel="      5930"]
+BB5929 -> BB5934 [tailport=s, headport=n, color=gray]
+BB5930 [shape=record label="{17917: construct [-,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,v17,v18,v6]}" ] 
+BB5930 -> BB5931 [tailport=s, headport=n, headlabel="      5931"]
+BB5930 -> BB5934 [tailport=s, headport=n, color=gray]
+BB5931 [shape=record label="{17918: function-expr[function ( dojo ),v19]}" ] 
+BB5931 -> BB5932 [tailport=s, headport=n, headlabel="      5932"]
+BB5932 [shape=record label="{17919: call-define [v4,v5,v6,v19,-]*}" ] 
+BB5932 -> BB5933 [tailport=s, headport=n, headlabel="      5933"]
+BB5932 -> BB5934 [tailport=s, headport=n, color=gray]
+BB5933 [shape=record label="{17920: return[v1]}" ] 
+BB5934 [shape=record label="{17921: exceptional-return}" ] 
+//#$~ 8518
+}

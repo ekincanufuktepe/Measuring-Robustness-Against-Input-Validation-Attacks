@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry589[shape=none,label=""];
+BB_entry589 -> BB6610 [tailport=s, headport=n, headlabel="    6610"]
+BB6610 [shape=record label="{21089: constant[undefined,v1]|21090: vardecl['sin\\u03c60']|21091: vardecl['n']|21092: vardecl['C']|21093: vardecl['\\u03c10']|21094: function-decl[function forward ( \\u03bb \\u03c6 ),-]}" ] 
+BB6610 -> BB6611 [tailport=s, headport=n, headlabel="      6611"]
+BB6611 [shape=record label="{21095: read-variable['Math',v4,-]|21096: read-property[v4,'sin',-]|21097: \<variable-non-null-undef\>['Math']|21098: read-variable['\\u03c60',v5,-]}" ] 
+BB6611 -> BB6612 [tailport=s, headport=n, headlabel="      6612"]
+BB6611 -> BB6619 [tailport=s, headport=n, color=gray, headlabel="      6619"]
+BB6612 [shape=record label="{21099: call-Math.sin [v4,'sin',v5,v2]}" ] 
+BB6612 -> BB6613 [tailport=s, headport=n, headlabel="      6613"]
+BB6612 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6613 [shape=record label="{21100: write-variable[v2,'sin\\u03c60']*|21101: read-variable['sin\\u03c60',v9,-]|21102: read-variable['Math',v12,-]|21103: read-property[v12,'sin',-]|21104: \<variable-non-null-undef\>['Math']|21105: read-variable['\\u03c61',v13,-]}" ] 
+BB6613 -> BB6614 [tailport=s, headport=n, headlabel="      6614"]
+BB6613 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6614 [shape=record label="{21106: call-Math.sin [v12,'sin',v13,v10]}" ] 
+BB6614 -> BB6615 [tailport=s, headport=n, headlabel="      6615"]
+BB6614 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6615 [shape=record label="{21107: +[v9,v10,v7]|21108: constant[2.0,v8]|21109: /[v7,v8,v6]|21110: write-variable[v6,'n']*|21111: constant[1.0,v15]|21112: read-variable['sin\\u03c60',v17,-]|21113: constant[2.0,v21]|21114: read-variable['n',v22,-]|21115: *[v21,v22,v19]|21116: read-variable['sin\\u03c60',v20,-]|21117: -[v19,v20,v18]|21118: *[v17,v18,v16]|21119: +[v15,v16,v14]|21120: write-variable[v14,'C']*|21121: read-variable['Math',v27,-]|21122: read-property[v27,'sqrt',-]|21123: \<variable-non-null-undef\>['Math']|21124: read-variable['C',v28,-]}" ] 
+BB6615 -> BB6616 [tailport=s, headport=n, headlabel="      6616"]
+BB6615 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6616 [shape=record label="{21125: call-Math.sqrt [v27,'sqrt',v28,v24]}" ] 
+BB6616 -> BB6617 [tailport=s, headport=n, headlabel="      6617"]
+BB6616 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6617 [shape=record label="{21126: read-variable['n',v25,-]|21127: /[v24,v25,v23]|21128: write-variable[v23,'\\u03c10']*|21129: read-variable['forward',v30,-]|21130: function-expr[function ( x y ),v29]|21131: write-property[v30,'invert',v29]|21132: \<variable-non-null-undef\>['forward']*|21133: read-variable['forward',v1,-]}" ] 
+BB6617 -> BB6618 [tailport=s, headport=n, headlabel="      6618"]
+BB6617 -> BB6619 [tailport=s, headport=n, color=gray]
+BB6618 [shape=record label="{21134: return[v1]}" ] 
+BB6619 [shape=record label="{21135: exceptional-return}" ] 
+//#$~ 3843
+}

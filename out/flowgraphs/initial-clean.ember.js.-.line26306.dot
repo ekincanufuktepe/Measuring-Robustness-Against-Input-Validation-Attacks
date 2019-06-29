@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1175[shape=none,label=""];
+BB_entry1175 -> BB14161 [tailport=s, headport=n, headlabel="    14161"]
+BB14161 [shape=record label="{48909: constant[undefined,v1]|48910: vardecl['oldSuspended']}" ] 
+BB14161 -> BB14162 [tailport=s, headport=n, headlabel="      14162"]
+BB14162 [shape=record label="{48911: read-variable['this',v3,-]|48912: read-property[v3,'suspended',v2]|48913: write-variable[v2,'oldSuspended']*|48914: read-variable['this',v5,-]|48915: constant[true,v4]|48916: write-property[v5,'suspended',v4]*|48917: read-variable['callback',v7,-]|48918: read-property[v7,'call',-]|48919: \<variable-non-null-undef\>['callback']|48920: read-variable['binding',v8,-]}" ] 
+BB14162 -> BB14163 [tailport=s, headport=n, headlabel="      14163"]
+BB14162 -> BB14166 [tailport=s, headport=n, color=gray, headlabel="      14166"]
+BB14163 [shape=record label="{48921: call-callback.call [v7,'call',v8,-]*}" ] 
+BB14163 -> BB14164 [tailport=s, headport=n, headlabel="      14164"]
+BB14163 -> BB14166 [tailport=s, headport=n, color=gray]
+BB14164 [shape=record label="{48922: read-variable['this',v10,-]|48923: read-variable['oldSuspended',v9,-]|48924: write-property[v10,'suspended',v9]*}" ] 
+BB14164 -> BB14165 [tailport=s, headport=n, headlabel="      14165"]
+BB14164 -> BB14166 [tailport=s, headport=n, color=gray]
+BB14165 [shape=record label="{48925: return[v1]}" ] 
+BB14166 [shape=record label="{48926: exceptional-return}" ] 
+//#$~ 26310
+}

@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2148[shape=none,label=""];
+BB_entry2148 -> BB24522 [tailport=s, headport=n, headlabel="    24522"]
+BB24522 [shape=record label="{80923: constant[undefined,v1]}" ] 
+BB24522 -> BB24523 [tailport=s, headport=n, headlabel="      24523"]
+BB24523 [shape=record label="{80924: typeof['value',v2]|80925: constant[\"function\",v3]|80926: ===[v2,v3,v1]|80927: if[v1](true-block:24524,false-block:24527)}" ] 
+BB24523 -> BB24527 [tailport=s, headport=n, headlabel="      24527"]
+BB24523 -> BB24524 [tailport=s, headport=n, headlabel="      24524"]
+BB24523 -> BB24528 [tailport=s, headport=n, color=gray, headlabel="      24528"]
+BB24524 [shape=record label="{80928: read-variable['toString',v7,-]|80929: read-property[v7,'call',-]|80930: \<variable-non-null-undef\>['toString']|80931: read-variable['value',v8,-]}" ] 
+BB24524 -> BB24525 [tailport=s, headport=n, headlabel="      24525"]
+BB24524 -> BB24528 [tailport=s, headport=n, color=gray]
+BB24525 [shape=record label="{80932: call-toString.call [v7,'call',v8,v4]}" ] 
+BB24525 -> BB24526 [tailport=s, headport=n, headlabel="      24526"]
+BB24525 -> BB24528 [tailport=s, headport=n, color=gray]
+BB24526 [shape=record label="{80933: constant[\"[object Function]\",v5]|80934: ===[v4,v5,v1]}" ] 
+BB24526 -> BB24527 [tailport=s, headport=n]
+BB24526 -> BB24528 [tailport=s, headport=n, color=gray]
+BB24527 [shape=record label="{80935: return[v1]}" ] 
+BB24528 [shape=record label="{80936: exceptional-return}" ] 
+//#$~ 46044
+}

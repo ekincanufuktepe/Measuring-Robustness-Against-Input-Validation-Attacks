@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry259[shape=none,label=""];
+BB_entry259 -> BB2791 [tailport=s, headport=n, headlabel="    2791"]
+BB2791 [shape=record label="{9193: constant[undefined,v1]|9194: vardecl['isInstant']}" ] 
+BB2791 -> BB2792 [tailport=s, headport=n, headlabel="      2792"]
+BB2792 [shape=record label="{9195: read-variable['this',v7,-]|9196: read-property[v7,'options',v6]|9197: read-property[v6,'isLayoutInstant',v4]|9198: \<property-non-null-undef\>[v7,'options']|9199: read-variable['undefined',v5,-]|9200: !==[v4,v5,v3]|9201: if[v3](true-block:2793,false-block:2794)}" ] 
+BB2792 -> BB2793 [tailport=s, headport=n, headlabel="      2793"]
+BB2792 -> BB2794 [tailport=s, headport=n, headlabel="      2794"]
+BB2792 -> BB2797 [tailport=s, headport=n, color=gray, headlabel="      2797"]
+BB2793 [shape=record label="{9202: read-variable['this',v9,-]|9203: read-property[v9,'options',v8]|9204: read-property[v8,'isLayoutInstant',v2]|9205: \<property-non-null-undef\>[v9,'options']}" ] 
+BB2793 -> BB2795 [tailport=s, headport=n, headlabel="      2795"]
+BB2793 -> BB2797 [tailport=s, headport=n, color=gray]
+BB2794 [shape=record label="{9206: read-variable['this',v9,-]|9207: read-property[v9,'_isLayoutInited',v8]|9208: ![v8,v2]}" ] 
+BB2794 -> BB2795 [tailport=s, headport=n]
+BB2794 -> BB2797 [tailport=s, headport=n, color=gray]
+BB2795 [shape=record label="{9209: write-variable[v2,'isInstant']*|9210: read-variable['this',v9,-]|9211: read-variable['isInstant',v8,-]|9212: write-property[v9,'_isInstant',v8]*|9213: read-variable['isInstant',v1,-]}" ] 
+BB2795 -> BB2796 [tailport=s, headport=n, headlabel="      2796"]
+BB2795 -> BB2797 [tailport=s, headport=n, color=gray]
+BB2796 [shape=record label="{9214: return[v1]}" ] 
+BB2797 [shape=record label="{9215: exceptional-return}" ] 
+//#$~ 3844
+}

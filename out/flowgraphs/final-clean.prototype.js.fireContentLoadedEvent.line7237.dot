@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry697[shape=none,label=""];
+BB_entry697 -> BB9168 [tailport=s, headport=n, headlabel="    9168"]
+BB9168 [shape=record label="{25877: constant[undefined,v1]}" ] 
+BB9168 -> BB9169 [tailport=s, headport=n, headlabel="      9169"]
+BB9169 [shape=record label="{25878: read-variable['document',v3,-]|25879: read-property[v3,'loaded',v2]|25880: \<variable-non-null-undef\>['document']|25881: if[v2](true-block:9170,false-block:9171)}" ] 
+BB9169 -> BB9170 [tailport=s, headport=n, headlabel="      9170"]
+BB9169 -> BB9171 [tailport=s, headport=n, headlabel="      9171"]
+BB9169 -> BB9177 [tailport=s, headport=n, color=gray, headlabel="      9177"]
+BB9170 [shape=record label="{25882: constant[undefined,v1]}" ] 
+BB9170 -> BB9176 [tailport=s, headport=n, headlabel="      9176"]
+BB9171 [shape=record label="{25883: read-variable['TIMER',v4,-]|25884: if[v4](true-block:9172,false-block:9174)}" ] 
+BB9171 -> BB9172 [tailport=s, headport=n, headlabel="      9172"]
+BB9171 -> BB9174 [tailport=s, headport=n, headlabel="      9174"]
+BB9171 -> BB9177 [tailport=s, headport=n, color=gray]
+BB9172 [shape=record label="{25885: read-variable['window',v6,-]|25886: read-property[v6,'clearTimeout',-]|25887: \<variable-non-null-undef\>['window']|25888: read-variable['TIMER',v7,-]}" ] 
+BB9172 -> BB9173 [tailport=s, headport=n, headlabel="      9173"]
+BB9172 -> BB9177 [tailport=s, headport=n, color=gray]
+BB9173 [shape=record label="{25889: call-window.clearTimeout [v6,'clearTimeout',v7,-]*}" ] 
+BB9173 -> BB9174 [tailport=s, headport=n]
+BB9173 -> BB9177 [tailport=s, headport=n, color=gray]
+BB9174 [shape=record label="{25890: read-variable['document',v6,-]|25891: constant[true,v5]|25892: write-property[v6,'loaded',v5]|25893: \<variable-non-null-undef\>['document']*|25894: read-variable['document',v8,-]|25895: read-property[v8,'fire',-]|25896: \<variable-non-null-undef\>['document']|25897: constant[\"dom:loaded\",v9]}" ] 
+BB9174 -> BB9175 [tailport=s, headport=n, headlabel="      9175"]
+BB9174 -> BB9177 [tailport=s, headport=n, color=gray]
+BB9175 [shape=record label="{25898: call-document.fire [v8,'fire',v9,-]*}" ] 
+BB9175 -> BB9176 [tailport=s, headport=n]
+BB9175 -> BB9177 [tailport=s, headport=n, color=gray]
+BB9176 [shape=record label="{25899: return[v1]}" ] 
+BB9177 [shape=record label="{25900: exceptional-return}" ] 
+//#$~ 7241
+}

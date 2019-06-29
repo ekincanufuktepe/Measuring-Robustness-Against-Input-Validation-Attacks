@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry36[shape=none,label=""];
+BB_entry36 -> BB445 [tailport=s, headport=n, headlabel="    445"]
+BB445 [shape=record label="{1002: constant[undefined,v1]}" ] 
+BB445 -> BB446 [tailport=s, headport=n, headlabel="      446"]
+BB446 [shape=record label="{1003: read-variable['parent',v2,-]|1004: read-variable['node',v3,-]|1005: !==[v2,v3,v1]|1006: if[v1](true-block:447,false-block:449)}" ] 
+BB446 -> BB449 [tailport=s, headport=n, headlabel="      449"]
+BB446 -> BB447 [tailport=s, headport=n, headlabel="      447"]
+BB446 -> BB450 [tailport=s, headport=n, color=gray, headlabel="      450"]
+BB447 [shape=record label="{1007: read-variable['parent',v5,-]|1008: read-property[v5,'contains',-]|1009: \<variable-non-null-undef\>['parent']|1010: read-variable['node',v6,-]}" ] 
+BB447 -> BB448 [tailport=s, headport=n, headlabel="      448"]
+BB447 -> BB450 [tailport=s, headport=n, color=gray]
+BB448 [shape=record label="{1011: call-parent.contains [v5,'contains',v6,v1]}" ] 
+BB448 -> BB449 [tailport=s, headport=n]
+BB448 -> BB450 [tailport=s, headport=n, color=gray]
+BB449 [shape=record label="{1012: return[v1]}" ] 
+BB450 [shape=record label="{1013: exceptional-return}" ] 
+//#$~ 271
+}

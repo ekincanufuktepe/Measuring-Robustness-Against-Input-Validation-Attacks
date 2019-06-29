@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry1175[shape=none,label=""];
+BB_entry1175 -> BB12697 [tailport=s, headport=n, headlabel="    12697"]
+BB12697 [shape=record label="{43488: constant[undefined,v1]}" ] 
+BB12697 -> BB12698 [tailport=s, headport=n, headlabel="      12698"]
+BB12698 [shape=record label="{43489: read-variable['positive',v2,-]|43490: if[v2](true-block:12699,false-block:12700)}" ] 
+BB12698 -> BB12699 [tailport=s, headport=n, headlabel="      12699"]
+BB12698 -> BB12700 [tailport=s, headport=n, headlabel="      12700"]
+BB12698 -> BB12705 [tailport=s, headport=n, color=gray, headlabel="      12705"]
+BB12699 [shape=record label="{43491: read-variable['Math',v4,-]|43492: read-property[v4,'pow',-]|43493: \<variable-non-null-undef\>['Math']|43494: read-variable['base',v5,-]|43495: read-variable['x',v6,-]}" ] 
+BB12699 -> BB12701 [tailport=s, headport=n, headlabel="      12701"]
+BB12699 -> BB12705 [tailport=s, headport=n, color=gray]
+BB12700 [shape=record label="{43496: read-variable['Math',v5,-]|43497: read-property[v5,'pow',-]|43498: \<variable-non-null-undef\>['Math']|43499: read-variable['base',v6,-]|43500: read-variable['x',v8,-]|43501: -[v8,v7]}" ] 
+BB12700 -> BB12702 [tailport=s, headport=n, headlabel="      12702"]
+BB12700 -> BB12705 [tailport=s, headport=n, color=gray]
+BB12701 [shape=record label="{43502: call-Math.pow [v4,'pow',v5,v6,v1]}" ] 
+BB12701 -> BB12704 [tailport=s, headport=n, headlabel="      12704"]
+BB12701 -> BB12705 [tailport=s, headport=n, color=gray]
+BB12702 [shape=record label="{43503: call-Math.pow [v5,'pow',v6,v7,v3]}" ] 
+BB12702 -> BB12703 [tailport=s, headport=n, headlabel="      12703"]
+BB12702 -> BB12705 [tailport=s, headport=n, color=gray]
+BB12703 [shape=record label="{43504: -[v3,v1]}" ] 
+BB12703 -> BB12704 [tailport=s, headport=n]
+BB12703 -> BB12705 [tailport=s, headport=n, color=gray]
+BB12704 [shape=record label="{43505: return[v1]}" ] 
+BB12705 [shape=record label="{43506: exceptional-return}" ] 
+//#$~ 7598
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry2074[shape=none,label=""];
+BB_entry2074 -> BB23734 [tailport=s, headport=n, headlabel="    23734"]
+BB23734 [shape=record label="{78500: constant[undefined,v1]|78501: vardecl['attributeValue']|78502: vardecl['unspecifiedAttributeBindings']}" ] 
+BB23734 -> BB23735 [tailport=s, headport=n, headlabel="      23735"]
+BB23735 [shape=record label="{78503: read-variable['this',v3,-]|78504: read-variable['this',v4,-]|78505: read-property[v4,'_unspecifiedAttributeBindings',v2]|78506: if[v2](true-block:23737,false-block:23736)}" ] 
+BB23735 -> BB23737 [tailport=s, headport=n, headlabel="      23737"]
+BB23735 -> BB23736 [tailport=s, headport=n, headlabel="      23736"]
+BB23735 -> BB23741 [tailport=s, headport=n, color=gray, headlabel="      23741"]
+BB23736 [shape=record label="{78507: new[v2]}" ] 
+BB23736 -> BB23737 [tailport=s, headport=n]
+BB23737 [shape=record label="{78508: write-property[v3,'_unspecifiedAttributeBindings',v2]|78509: write-variable[v2,'unspecifiedAttributeBindings']*|78510: read-variable['forEach',v5,v4]|78511: read-variable['attributeBindings',v6,-]|78512: function-expr[function ( binding ),v7]|78513: read-variable['this',v8,-]}" ] 
+BB23737 -> BB23738 [tailport=s, headport=n, headlabel="      23738"]
+BB23737 -> BB23741 [tailport=s, headport=n, color=gray]
+BB23738 [shape=record label="{78514: call-forEach [v4,v5,v6,v7,v8,-]*}" ] 
+BB23738 -> BB23739 [tailport=s, headport=n, headlabel="      23739"]
+BB23738 -> BB23741 [tailport=s, headport=n, color=gray]
+BB23739 [shape=record label="{78515: read-variable['this',v10,-]|78516: read-variable['this',v11,-]|78517: read-property[v11,'_setUnknownProperty',v9]|78518: write-property[v10,'setUnknownProperty',v9]*}" ] 
+BB23739 -> BB23740 [tailport=s, headport=n, headlabel="      23740"]
+BB23739 -> BB23741 [tailport=s, headport=n, color=gray]
+BB23740 [shape=record label="{78519: return[v1]}" ] 
+BB23741 [shape=record label="{78520: exceptional-return}" ] 
+//#$~ 44872
+}

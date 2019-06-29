@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry2342[shape=none,label=""];
+BB_entry2342 -> BB26730 [tailport=s, headport=n, headlabel="    26730"]
+BB26730 [shape=record label="{88256: constant[undefined,v1]}" ] 
+BB26730 -> BB26731 [tailport=s, headport=n, headlabel="      26731"]
+BB26731 [shape=record label="{88257: read-variable['payload',v2,-]|88258: if[v2](true-block:26732,false-block:26733)}" ] 
+BB26731 -> BB26733 [tailport=s, headport=n, headlabel="      26733"]
+BB26731 -> BB26732 [tailport=s, headport=n, headlabel="      26732"]
+BB26731 -> BB26739 [tailport=s, headport=n, color=gray, headlabel="      26739"]
+BB26732 [shape=record label="{88259: read-variable['payload',v3,-]|88260: read-property[v3,'resolvedModels',v2]|88261: \<variable-non-null-undef\>['payload']}" ] 
+BB26732 -> BB26733 [tailport=s, headport=n]
+BB26732 -> BB26739 [tailport=s, headport=n, color=gray]
+BB26733 [shape=record label="{88262: if[v2](true-block:26734,false-block:26735)}" ] 
+BB26733 -> BB26734 [tailport=s, headport=n, headlabel="      26734"]
+BB26733 -> BB26735 [tailport=s, headport=n, headlabel="      26735"]
+BB26734 [shape=record label="{88263: read-variable['payload',v6,-]|88264: read-property[v6,'resolvedModels',v4]|88265: \<variable-non-null-undef\>['payload']|88266: read-variable['this',v7,-]|88267: read-property[v7,'name',v5]|88268: read-variable['this',v8,-]|88269: read-property[v8,'context',v3]|88270: write-property[v4,v5,v3]|88271: \<property-non-null-undef\>[v6,'resolvedModels']*}" ] 
+BB26734 -> BB26735 [tailport=s, headport=n]
+BB26734 -> BB26739 [tailport=s, headport=n, color=gray]
+BB26735 [shape=record label="{88272: read-variable['Promise',v4,-]|88273: read-property[v4,'resolve',-]|88274: \<variable-non-null-undef\>['Promise']|88275: read-variable['this',v5,-]|88276: read-variable['this',v8,-]|88277: read-property[v8,'promiseLabel',-]|88278: constant[\"Resolve\",v9]}" ] 
+BB26735 -> BB26736 [tailport=s, headport=n, headlabel="      26736"]
+BB26735 -> BB26739 [tailport=s, headport=n, color=gray]
+BB26736 [shape=record label="{88279: call-this.promiseLabel [v8,'promiseLabel',v9,v6]}" ] 
+BB26736 -> BB26737 [tailport=s, headport=n, headlabel="      26737"]
+BB26736 -> BB26739 [tailport=s, headport=n, color=gray]
+BB26737 [shape=record label="{88280: call-Promise.resolve [v4,'resolve',v5,v6,v1]}" ] 
+BB26737 -> BB26738 [tailport=s, headport=n, headlabel="      26738"]
+BB26737 -> BB26739 [tailport=s, headport=n, color=gray]
+BB26738 [shape=record label="{88281: return[v1]}" ] 
+BB26739 [shape=record label="{88282: exceptional-return}" ] 
+//#$~ 48358
+}

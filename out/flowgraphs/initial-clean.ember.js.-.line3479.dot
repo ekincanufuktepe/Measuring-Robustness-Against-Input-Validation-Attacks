@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry164[shape=none,label=""];
+BB_entry164 -> BB2122 [tailport=s, headport=n, headlabel="    2122"]
+BB2122 [shape=record label="{6810: constant[undefined,v1]}" ] 
+BB2122 -> BB2123 [tailport=s, headport=n, headlabel="      2123"]
+BB2123 [shape=record label="{6811: read-variable['resolver',v3,-]|6812: read-property[v3,'normalize',v2]|6813: \<variable-non-null-undef\>['resolver']|6814: if[v2](true-block:2124,false-block:2125)}" ] 
+BB2123 -> BB2124 [tailport=s, headport=n, headlabel="      2124"]
+BB2123 -> BB2125 [tailport=s, headport=n, headlabel="      2125"]
+BB2123 -> BB2130 [tailport=s, headport=n, color=gray, headlabel="      2130"]
+BB2124 [shape=record label="{6815: read-variable['resolver',v5,-]|6816: read-property[v5,'normalize',-]|6817: \<variable-non-null-undef\>['resolver']|6818: read-variable['fullName',v6,-]}" ] 
+BB2124 -> BB2126 [tailport=s, headport=n, headlabel="      2126"]
+BB2124 -> BB2130 [tailport=s, headport=n, color=gray]
+BB2125 [shape=record label="{6819: read-variable['Ember',v5,-]|6820: read-property[v5,'deprecate',-]|6821: \<variable-non-null-undef\>['Ember']|6822: constant[\"The Resolver should now provide a 'normalize' function\",v6]|6823: constant[false,v7]}" ] 
+BB2125 -> BB2127 [tailport=s, headport=n, headlabel="      2127"]
+BB2125 -> BB2130 [tailport=s, headport=n, color=gray]
+BB2126 [shape=record label="{6824: call-resolver.normalize [v5,'normalize',v6,v1]}" ] 
+BB2126 -> BB2129 [tailport=s, headport=n, headlabel="      2129"]
+BB2126 -> BB2130 [tailport=s, headport=n, color=gray]
+BB2127 [shape=record label="{6825: call-Ember.deprecate [v5,'deprecate',v6,v7,-]*}" ] 
+BB2127 -> BB2128 [tailport=s, headport=n, headlabel="      2128"]
+BB2127 -> BB2130 [tailport=s, headport=n, color=gray]
+BB2128 [shape=record label="{6826: read-variable['fullName',v1,-]}" ] 
+BB2128 -> BB2129 [tailport=s, headport=n]
+BB2128 -> BB2130 [tailport=s, headport=n, color=gray]
+BB2129 [shape=record label="{6827: return[v1]}" ] 
+BB2130 [shape=record label="{6828: exceptional-return}" ] 
+//#$~ 3484
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry209[shape=none,label=""];
+BB_entry209 -> BB2900 [tailport=s, headport=n, headlabel="    2900"]
+BB2900 [shape=record label="{10121: constant[undefined,v1]|10122: vardecl['boundMethod']|10123: vardecl['componentName']|10124: vardecl['_bind']}" ] 
+BB2900 -> BB2901 [tailport=s, headport=n, headlabel="      2901"]
+BB2901 [shape=record label="{10125: read-variable['method',v4,-]|10126: read-property[v4,'bind',-]|10127: \<variable-non-null-undef\>['method']|10128: read-variable['component',v5,-]}" ] 
+BB2901 -> BB2902 [tailport=s, headport=n, headlabel="      2902"]
+BB2901 -> BB2907 [tailport=s, headport=n, color=gray, headlabel="      2907"]
+BB2902 [shape=record label="{10129: call-method.bind [v4,'bind',v5,v2]}" ] 
+BB2902 -> BB2903 [tailport=s, headport=n, headlabel="      2903"]
+BB2902 -> BB2907 [tailport=s, headport=n, color=gray]
+BB2903 [shape=record label="{10130: write-variable[v2,'boundMethod']*|10131: constant[\"production\",v7]|10132: constant[\"development\",v8]|10133: !==[v7,v8,v6]|10134: if[v6](true-block:2904,false-block:2905)}" ] 
+BB2903 -> BB2904 [tailport=s, headport=n, headlabel="      2904"]
+BB2903 -> BB2905 [tailport=s, headport=n, headlabel="      2905"]
+BB2903 -> BB2907 [tailport=s, headport=n, color=gray]
+BB2904 [shape=record label="{10135: read-variable['boundMethod',v10,-]|10136: read-variable['component',v9,-]|10137: write-property[v10,'__reactBoundContext',v9]|10138: \<variable-non-null-undef\>['boundMethod']*|10139: read-variable['boundMethod',v12,-]|10140: read-variable['method',v11,-]|10141: write-property[v12,'__reactBoundMethod',v11]|10142: \<variable-non-null-undef\>['boundMethod']*|10143: read-variable['boundMethod',v14,-]|10144: constant[null,v13]|10145: write-property[v14,'__reactBoundArguments',v13]|10146: \<variable-non-null-undef\>['boundMethod']*|10147: read-variable['component',v17,-]|10148: read-property[v17,'constructor',v16]|10149: \<variable-non-null-undef\>['component']|10150: read-property[v16,'displayName',v15]|10151: \<property-non-null-undef\>[v17,'constructor']|10152: write-variable[v15,'componentName']*|10153: read-variable['boundMethod',v19,-]|10154: read-property[v19,'bind',v18]|10155: \<variable-non-null-undef\>['boundMethod']|10156: write-variable[v18,'_bind']*|10157: read-variable['boundMethod',v21,-]|10158: function-expr[function ( newThis ),v20]|10159: write-property[v21,'bind',v20]|10160: \<variable-non-null-undef\>['boundMethod']*}" ] 
+BB2904 -> BB2905 [tailport=s, headport=n]
+BB2904 -> BB2907 [tailport=s, headport=n, color=gray]
+BB2905 [shape=record label="{10161: read-variable['boundMethod',v1,-]}" ] 
+BB2905 -> BB2906 [tailport=s, headport=n, headlabel="      2906"]
+BB2905 -> BB2907 [tailport=s, headport=n, color=gray]
+BB2906 [shape=record label="{10162: return[v1]}" ] 
+BB2907 [shape=record label="{10163: exceptional-return}" ] 
+//#$~ 5672
+}

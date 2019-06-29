@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry909[shape=none,label=""];
+BB_entry909 -> BB11717 [tailport=s, headport=n, headlabel="    11717"]
+BB11717 [shape=record label="{30705: constant[undefined,v1]}" ] 
+BB11717 -> BB11718 [tailport=s, headport=n, headlabel="      11718"]
+BB11718 [shape=record label="{30706: read-variable['maybeTrusted',v3,-]|30707: read-variable['trustedValueHolderBase',v4,-]|30708: instanceof[v3,v4,v2]|30709: if[v2](true-block:11719,false-block:11720)}" ] 
+BB11718 -> BB11719 [tailport=s, headport=n, headlabel="      11719"]
+BB11718 -> BB11720 [tailport=s, headport=n, headlabel="      11720"]
+BB11718 -> BB11723 [tailport=s, headport=n, color=gray, headlabel="      11723"]
+BB11719 [shape=record label="{30710: read-variable['maybeTrusted',v6,-]|30711: read-property[v6,'$$unwrapTrustedValue',-]|30712: \<variable-non-null-undef\>['maybeTrusted']}" ] 
+BB11719 -> BB11721 [tailport=s, headport=n, headlabel="      11721"]
+BB11719 -> BB11723 [tailport=s, headport=n, color=gray]
+BB11720 [shape=record label="{30713: read-variable['maybeTrusted',v1,-]}" ] 
+BB11720 -> BB11722 [tailport=s, headport=n, headlabel="      11722"]
+BB11720 -> BB11723 [tailport=s, headport=n, color=gray]
+BB11721 [shape=record label="{30714: call-maybeTrusted.$$unwrapTrustedValue [v6,'$$unwrapTrustedValue',v1]}" ] 
+BB11721 -> BB11722 [tailport=s, headport=n]
+BB11721 -> BB11723 [tailport=s, headport=n, color=gray]
+BB11722 [shape=record label="{30715: return[v1]}" ] 
+BB11723 [shape=record label="{30716: exceptional-return}" ] 
+//#$~ 16654
+}

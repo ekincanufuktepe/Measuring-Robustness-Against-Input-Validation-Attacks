@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry654[shape=none,label=""];
+BB_entry654 -> BB8663 [tailport=s, headport=n, headlabel="    8663"]
+BB8663 [shape=record label="{24330: constant[undefined,v1]}" ] 
+BB8663 -> BB8664 [tailport=s, headport=n, headlabel="      8664"]
+BB8664 [shape=record label="{24331: read-variable['Event',v3,-]|24332: read-property[v3,'extend',-]|24333: \<variable-non-null-undef\>['Event']|24334: read-variable['event',v4,-]}" ] 
+BB8664 -> BB8665 [tailport=s, headport=n, headlabel="      8665"]
+BB8664 -> BB8672 [tailport=s, headport=n, color=gray, headlabel="      8672"]
+BB8665 [shape=record label="{24335: call-Event.extend [v3,'extend',v4,-]*}" ] 
+BB8665 -> BB8666 [tailport=s, headport=n, headlabel="      8666"]
+BB8665 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8666 [shape=record label="{24336: read-variable['event',v6,-]|24337: read-property[v6,'preventDefault',-]|24338: \<variable-non-null-undef\>['event']}" ] 
+BB8666 -> BB8667 [tailport=s, headport=n, headlabel="      8667"]
+BB8666 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8667 [shape=record label="{24339: call-event.preventDefault [v6,'preventDefault',-]*}" ] 
+BB8667 -> BB8668 [tailport=s, headport=n, headlabel="      8668"]
+BB8667 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8668 [shape=record label="{24340: read-variable['event',v8,-]|24341: read-property[v8,'stopPropagation',-]|24342: \<variable-non-null-undef\>['event']}" ] 
+BB8668 -> BB8669 [tailport=s, headport=n, headlabel="      8669"]
+BB8668 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8669 [shape=record label="{24343: call-event.stopPropagation [v8,'stopPropagation',-]*}" ] 
+BB8669 -> BB8670 [tailport=s, headport=n, headlabel="      8670"]
+BB8669 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8670 [shape=record label="{24344: read-variable['event',v10,-]|24345: constant[true,v9]|24346: write-property[v10,'stopped',v9]|24347: \<variable-non-null-undef\>['event']*}" ] 
+BB8670 -> BB8671 [tailport=s, headport=n, headlabel="      8671"]
+BB8670 -> BB8672 [tailport=s, headport=n, color=gray]
+BB8671 [shape=record label="{24348: return[v1]}" ] 
+BB8672 [shape=record label="{24349: exceptional-return}" ] 
+//#$~ 6759
+}

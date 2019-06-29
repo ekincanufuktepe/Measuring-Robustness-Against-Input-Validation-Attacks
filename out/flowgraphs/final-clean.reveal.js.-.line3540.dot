@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry183[shape=none,label=""];
+BB_entry183 -> BB3006 [tailport=s, headport=n, headlabel="    3006"]
+BB3006 [shape=record label="{8902: constant[undefined,v1]}" ] 
+BB3006 -> BB3007 [tailport=s, headport=n, headlabel="      3007"]
+BB3007 [shape=record label="{8903: read-variable['el',v4,-]|8904: read-property[v4,'hasAttribute',-]|8905: \<variable-non-null-undef\>['el']|8906: constant[\"data-autoplay\",v5]}" ] 
+BB3007 -> BB3008 [tailport=s, headport=n, headlabel="      3008"]
+BB3007 -> BB3015 [tailport=s, headport=n, color=gray, headlabel="      3015"]
+BB3008 [shape=record label="{8907: call-el.hasAttribute [v4,'hasAttribute',v5,v2]}" ] 
+BB3008 -> BB3009 [tailport=s, headport=n, headlabel="      3009"]
+BB3008 -> BB3015 [tailport=s, headport=n, color=gray]
+BB3009 [shape=record label="{8908: if[v2](true-block:3010,false-block:3014)}" ] 
+BB3009 -> BB3010 [tailport=s, headport=n, headlabel="      3010"]
+BB3009 -> BB3014 [tailport=s, headport=n, headlabel="      3014"]
+BB3010 [shape=record label="{8909: read-variable['autoSlide',v6,-]|8910: if[v6](true-block:3011,false-block:3012)}" ] 
+BB3010 -> BB3012 [tailport=s, headport=n, headlabel="      3012"]
+BB3010 -> BB3011 [tailport=s, headport=n, headlabel="      3011"]
+BB3010 -> BB3015 [tailport=s, headport=n, color=gray]
+BB3011 [shape=record label="{8911: read-variable['el',v11,-]|8912: read-property[v11,'duration',v9]|8913: \<variable-non-null-undef\>['el']|8914: constant[1000.0,v10]|8915: *[v9,v10,v7]|8916: read-variable['autoSlide',v8,-]|8917: \>[v7,v8,v6]}" ] 
+BB3011 -> BB3012 [tailport=s, headport=n]
+BB3011 -> BB3015 [tailport=s, headport=n, color=gray]
+BB3012 [shape=record label="{8918: if[v6](true-block:3013,false-block:3014)}" ] 
+BB3012 -> BB3013 [tailport=s, headport=n, headlabel="      3013"]
+BB3012 -> BB3014 [tailport=s, headport=n]
+BB3013 [shape=record label="{8919: read-variable['el',v12,-]|8920: read-property[v12,'duration',v10]|8921: \<variable-non-null-undef\>['el']|8922: constant[1000.0,v11]|8923: *[v10,v11,v8]|8924: constant[1000.0,v9]|8925: +[v8,v9,v7]|8926: write-variable[v7,'autoSlide']*}" ] 
+BB3013 -> BB3014 [tailport=s, headport=n]
+BB3013 -> BB3015 [tailport=s, headport=n, color=gray]
+BB3014 [shape=record label="{8927: return[v1]}" ] 
+BB3015 [shape=record label="{8928: exceptional-return}" ] 
+//#$~ 3543
+}

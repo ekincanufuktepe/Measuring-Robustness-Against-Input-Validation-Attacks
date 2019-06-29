@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry295[shape=none,label=""];
+BB_entry295 -> BB3702 [tailport=s, headport=n, headlabel="    3702"]
+BB3702 [shape=record label="{12343: constant[undefined,v1]|12344: vardecl['template']}" ] 
+BB3702 -> BB3703 [tailport=s, headport=n, headlabel="      3703"]
+BB3703 [shape=record label="{12345: read-variable['lookupPartial',v4,v3]|12346: read-variable['view',v5,-]|12347: read-variable['name',v6,-]}" ] 
+BB3703 -> BB3704 [tailport=s, headport=n, headlabel="      3704"]
+BB3703 -> BB3708 [tailport=s, headport=n, color=gray, headlabel="      3708"]
+BB3704 [shape=record label="{12348: call-lookupPartial [v3,v4,v5,v6,v2]}" ] 
+BB3704 -> BB3705 [tailport=s, headport=n, headlabel="      3705"]
+BB3704 -> BB3708 [tailport=s, headport=n, color=gray]
+BB3705 [shape=record label="{12349: write-variable[v2,'template']*|12350: read-variable['template',v8,-]|12351: read-property[v8,'render',-]|12352: \<variable-non-null-undef\>['template']|12353: read-variable['view',v9,-]|12354: read-variable['env',v10,-]|12355: read-variable['contextualElement',v11,-]}" ] 
+BB3705 -> BB3706 [tailport=s, headport=n, headlabel="      3706"]
+BB3705 -> BB3708 [tailport=s, headport=n, color=gray]
+BB3706 [shape=record label="{12356: call-template.render [v8,'render',v9,v10,v11,v1]}" ] 
+BB3706 -> BB3707 [tailport=s, headport=n, headlabel="      3707"]
+BB3706 -> BB3708 [tailport=s, headport=n, color=gray]
+BB3707 [shape=record label="{12357: return[v1]}" ] 
+BB3708 [shape=record label="{12358: exceptional-return}" ] 
+//#$~ 6815
+}

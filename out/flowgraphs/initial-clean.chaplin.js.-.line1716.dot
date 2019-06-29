@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry160[shape=none,label=""];
+BB_entry160 -> BB1909 [tailport=s, headport=n, headlabel="    1909"]
+BB1909 [shape=record label="{6213: constant[undefined,v1]}" ] 
+BB1909 -> BB1910 [tailport=s, headport=n, headlabel="      1910"]
+BB1910 [shape=record label="{6214: read-variable['options',v3,-]|6215: constant[null,v4]|6216: ==[v3,v4,v2]|6217: if[v2](true-block:1911,false-block:1912)}" ] 
+BB1910 -> BB1911 [tailport=s, headport=n, headlabel="      1911"]
+BB1910 -> BB1912 [tailport=s, headport=n, headlabel="      1912"]
+BB1910 -> BB1918 [tailport=s, headport=n, color=gray, headlabel="      1918"]
+BB1911 [shape=record label="{6218: new[v5]|6219: write-variable[v5,'options']*}" ] 
+BB1911 -> BB1912 [tailport=s, headport=n]
+BB1912 [shape=record label="{6220: read-variable['this',v6,-]|6221: read-property[v6,'addCollectionListeners',-]}" ] 
+BB1912 -> BB1913 [tailport=s, headport=n, headlabel="      1913"]
+BB1912 -> BB1918 [tailport=s, headport=n, color=gray]
+BB1913 [shape=record label="{6222: call-this.addCollectionListeners [v6,'addCollectionListeners',-]*}" ] 
+BB1913 -> BB1914 [tailport=s, headport=n, headlabel="      1914"]
+BB1913 -> BB1918 [tailport=s, headport=n, color=gray]
+BB1914 [shape=record label="{6223: read-variable['options',v10,-]|6224: read-property[v10,'filterer',v8]|6225: \<variable-non-null-undef\>['options']|6226: constant[null,v9]|6227: !=[v8,v9,v7]|6228: if[v7](true-block:1915,false-block:1917)}" ] 
+BB1914 -> BB1915 [tailport=s, headport=n, headlabel="      1915"]
+BB1914 -> BB1917 [tailport=s, headport=n, headlabel="      1917"]
+BB1914 -> BB1918 [tailport=s, headport=n, color=gray]
+BB1915 [shape=record label="{6229: read-variable['this',v12,-]|6230: read-property[v12,'filter',-]|6231: read-variable['options',v14,-]|6232: read-property[v14,'filterer',v13]|6233: \<variable-non-null-undef\>['options']}" ] 
+BB1915 -> BB1916 [tailport=s, headport=n, headlabel="      1916"]
+BB1915 -> BB1918 [tailport=s, headport=n, color=gray]
+BB1916 [shape=record label="{6234: call-this.filter [v12,'filter',v13,v1]}" ] 
+BB1916 -> BB1917 [tailport=s, headport=n]
+BB1916 -> BB1918 [tailport=s, headport=n, color=gray]
+BB1917 [shape=record label="{6235: return[v1]}" ] 
+BB1918 [shape=record label="{6236: exceptional-return}" ] 
+//#$~ 1722
+}

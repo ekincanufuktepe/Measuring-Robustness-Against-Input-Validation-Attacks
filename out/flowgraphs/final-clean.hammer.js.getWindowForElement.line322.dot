@@ -1,0 +1,17 @@
+digraph {
+rankdir="TD"
+BB_entry25[shape=none,label=""];
+BB_entry25 -> BB218 [tailport=s, headport=n, headlabel="    218"]
+BB218 [shape=record label="{538: constant[undefined,v1]|539: vardecl['doc']}" ] 
+BB218 -> BB219 [tailport=s, headport=n, headlabel="      219"]
+BB219 [shape=record label="{540: read-variable['element',v3,-]|541: read-property[v3,'ownerDocument',v2]|542: \<variable-non-null-undef\>['element']|543: write-variable[v2,'doc']*|544: read-variable['doc',v4,-]|545: read-property[v4,'defaultView',v1]|546: \<variable-non-null-undef\>['doc']|547: if[v1](true-block:221,false-block:220)}" ] 
+BB219 -> BB221 [tailport=s, headport=n, headlabel="      221"]
+BB219 -> BB220 [tailport=s, headport=n, headlabel="      220"]
+BB219 -> BB222 [tailport=s, headport=n, color=gray, headlabel="      222"]
+BB220 [shape=record label="{548: read-variable['doc',v4,-]|549: read-property[v4,'parentWindow',v1]|550: \<variable-non-null-undef\>['doc']}" ] 
+BB220 -> BB221 [tailport=s, headport=n]
+BB220 -> BB222 [tailport=s, headport=n, color=gray]
+BB221 [shape=record label="{551: return[v1]}" ] 
+BB222 [shape=record label="{552: exceptional-return}" ] 
+//#$~ 324
+}

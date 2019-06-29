@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry395[shape=none,label=""];
+BB_entry395 -> BB5003 [tailport=s, headport=n, headlabel="    5003"]
+BB5003 [shape=record label="{16809: constant[undefined,v1]|16810: vardecl['morph']}" ] 
+BB5003 -> BB5004 [tailport=s, headport=n, headlabel="      5004"]
+BB5004 [shape=record label="{16811: read-variable['this',v6,-]|16812: read-property[v6,'_dom',v5]|16813: read-property[v5,'appendMorph',-]|16814: \<property-non-null-undef\>[v6,'_dom']|16815: read-variable['target',v7,v2]}" ] 
+BB5004 -> BB5005 [tailport=s, headport=n, headlabel="      5005"]
+BB5004 -> BB5009 [tailport=s, headport=n, color=gray, headlabel="      5009"]
+BB5005 [shape=record label="{16816: call-this._dom.appendMorph [v5,'appendMorph',v7,v3]}" ] 
+BB5005 -> BB5006 [tailport=s, headport=n, headlabel="      5006"]
+BB5005 -> BB5009 [tailport=s, headport=n, color=gray]
+BB5006 [shape=record label="{16817: write-variable[v3,'morph']*|16818: read-variable['this',v9,-]|16819: read-property[v9,'scheduleInsert',-]|16820: read-variable['view',v10,v2]|16821: read-variable['morph',v11,v2]}" ] 
+BB5006 -> BB5007 [tailport=s, headport=n, headlabel="      5007"]
+BB5006 -> BB5009 [tailport=s, headport=n, color=gray]
+BB5007 [shape=record label="{16822: call-this.scheduleInsert [v9,'scheduleInsert',v10,v11,-]*}" ] 
+BB5007 -> BB5008 [tailport=s, headport=n, headlabel="      5008"]
+BB5007 -> BB5009 [tailport=s, headport=n, color=gray]
+BB5008 [shape=record label="{16823: return[v1]}" ] 
+BB5009 [shape=record label="{16824: exceptional-return}" ] 
+//#$~ 8948
+}

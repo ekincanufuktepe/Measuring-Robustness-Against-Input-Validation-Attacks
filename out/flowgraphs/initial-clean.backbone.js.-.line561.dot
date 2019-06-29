@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry40[shape=none,label=""];
+BB_entry40 -> BB597 [tailport=s, headport=n, headlabel="    597"]
+BB597 [shape=record label="{1719: constant[undefined,v1]}" ] 
+BB597 -> BB598 [tailport=s, headport=n, headlabel="      598"]
+BB598 [shape=record label="{1720: read-variable['this',v3,-]|1721: read-property[v3,'_validate',-]|1722: new[v4]|1723: read-variable['_',v7,-]|1724: read-property[v7,'extend',-]|1725: \<variable-non-null-undef\>['_']|1726: read-variable['options',v8,-]|1727: if[v8](true-block:600,false-block:599)}" ] 
+BB598 -> BB600 [tailport=s, headport=n, headlabel="      600"]
+BB598 -> BB599 [tailport=s, headport=n, headlabel="      599"]
+BB598 -> BB604 [tailport=s, headport=n, color=gray, headlabel="      604"]
+BB599 [shape=record label="{1728: new[v8]}" ] 
+BB599 -> BB600 [tailport=s, headport=n]
+BB600 [shape=record label="{1729: new[v9]|1730: constant[true,v10]|1731: write-property[v9,'validate',v10]}" ] 
+BB600 -> BB601 [tailport=s, headport=n, headlabel="      601"]
+BB600 -> BB604 [tailport=s, headport=n, color=gray]
+BB601 [shape=record label="{1732: call-_.extend [v7,'extend',v8,v9,v5]}" ] 
+BB601 -> BB602 [tailport=s, headport=n, headlabel="      602"]
+BB601 -> BB604 [tailport=s, headport=n, color=gray]
+BB602 [shape=record label="{1733: call-this._validate [v3,'_validate',v4,v5,v1]}" ] 
+BB602 -> BB603 [tailport=s, headport=n, headlabel="      603"]
+BB602 -> BB604 [tailport=s, headport=n, color=gray]
+BB603 [shape=record label="{1734: return[v1]}" ] 
+BB604 [shape=record label="{1735: exceptional-return}" ] 
+//#$~ 562
+}

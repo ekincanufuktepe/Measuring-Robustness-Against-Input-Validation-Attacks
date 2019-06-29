@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry2013[shape=none,label=""];
+BB_entry2013 -> BB23108 [tailport=s, headport=n, headlabel="    23108"]
+BB23108 [shape=record label="{76856: constant[undefined,v1]}" ] 
+BB23108 -> BB23109 [tailport=s, headport=n, headlabel="      23109"]
+BB23109 [shape=record label="{76857: read-variable['view',v3,-]|76858: read-property[v3,'_renderer',v2]|76859: \<variable-non-null-undef\>['view']|76860: if[v2](true-block:23110,false-block:23112)}" ] 
+BB23109 -> BB23110 [tailport=s, headport=n, headlabel="      23110"]
+BB23109 -> BB23112 [tailport=s, headport=n, headlabel="      23112"]
+BB23109 -> BB23114 [tailport=s, headport=n, color=gray, headlabel="      23114"]
+BB23110 [shape=record label="{76861: read-variable['view',v6,-]|76862: read-property[v6,'_renderer',v5]|76863: \<variable-non-null-undef\>['view']|76864: read-property[v5,'remove',-]|76865: \<property-non-null-undef\>[v6,'_renderer']|76866: read-variable['view',v7,-]|76867: constant[false,v8]}" ] 
+BB23110 -> BB23111 [tailport=s, headport=n, headlabel="      23111"]
+BB23110 -> BB23114 [tailport=s, headport=n, color=gray]
+BB23111 [shape=record label="{76868: call-view._renderer.remove [v5,'remove',v7,v8,-]*}" ] 
+BB23111 -> BB23112 [tailport=s, headport=n]
+BB23111 -> BB23114 [tailport=s, headport=n, color=gray]
+BB23112 [shape=record label="{76869: read-variable['view',v1,-]}" ] 
+BB23112 -> BB23113 [tailport=s, headport=n, headlabel="      23113"]
+BB23112 -> BB23114 [tailport=s, headport=n, color=gray]
+BB23113 [shape=record label="{76870: return[v1]}" ] 
+BB23114 [shape=record label="{76871: exceptional-return}" ] 
+//#$~ 43185
+}

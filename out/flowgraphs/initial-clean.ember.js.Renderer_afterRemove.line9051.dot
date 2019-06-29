@@ -1,0 +1,30 @@
+digraph {
+rankdir="TD"
+BB_entry400[shape=none,label=""];
+BB_entry400 -> BB5105 [tailport=s, headport=n, headlabel="    5105"]
+BB5105 [shape=record label="{17152: constant[undefined,v1]}" ] 
+BB5105 -> BB5106 [tailport=s, headport=n, headlabel="      5106"]
+BB5106 [shape=record label="{17153: read-variable['view',v3,-]|17154: constant[false,v2]|17155: write-property[v3,'_elementInserted',v2]|17156: \<variable-non-null-undef\>['view']*|17157: read-variable['view',v5,-]|17158: constant[null,v4]|17159: write-property[v5,'_morph',v4]|17160: \<variable-non-null-undef\>['view']*|17161: read-variable['view',v7,-]|17162: constant[null,v6]|17163: write-property[v7,'_childViewsMorph',v6]|17164: \<variable-non-null-undef\>['view']*|17165: read-variable['view',v9,-]|17166: read-property[v9,'_elementCreated',v8]|17167: \<variable-non-null-undef\>['view']|17168: if[v8](true-block:5107,false-block:5109)}" ] 
+BB5106 -> BB5107 [tailport=s, headport=n, headlabel="      5107"]
+BB5106 -> BB5109 [tailport=s, headport=n, headlabel="      5109"]
+BB5106 -> BB5113 [tailport=s, headport=n, color=gray, headlabel="      5113"]
+BB5107 [shape=record label="{17169: read-variable['view',v11,-]|17170: constant[false,v10]|17171: write-property[v11,'_elementCreated',v10]|17172: \<variable-non-null-undef\>['view']*|17173: read-variable['this',v13,-]|17174: read-property[v13,'didDestroyElement',-]|17175: read-variable['view',v14,-]}" ] 
+BB5107 -> BB5108 [tailport=s, headport=n, headlabel="      5108"]
+BB5107 -> BB5113 [tailport=s, headport=n, color=gray]
+BB5108 [shape=record label="{17176: call-this.didDestroyElement [v13,'didDestroyElement',v14,-]*}" ] 
+BB5108 -> BB5109 [tailport=s, headport=n]
+BB5108 -> BB5113 [tailport=s, headport=n, color=gray]
+BB5109 [shape=record label="{17177: read-variable['shouldDestroy',v10,-]|17178: if[v10](true-block:5110,false-block:5112)}" ] 
+BB5109 -> BB5110 [tailport=s, headport=n, headlabel="      5110"]
+BB5109 -> BB5112 [tailport=s, headport=n, headlabel="      5112"]
+BB5109 -> BB5113 [tailport=s, headport=n, color=gray]
+BB5110 [shape=record label="{17179: read-variable['this',v12,-]|17180: read-property[v12,'destroyView',-]|17181: read-variable['view',v13,-]}" ] 
+BB5110 -> BB5111 [tailport=s, headport=n, headlabel="      5111"]
+BB5110 -> BB5113 [tailport=s, headport=n, color=gray]
+BB5111 [shape=record label="{17182: call-this.destroyView [v12,'destroyView',v13,-]*}" ] 
+BB5111 -> BB5112 [tailport=s, headport=n]
+BB5111 -> BB5113 [tailport=s, headport=n, color=gray]
+BB5112 [shape=record label="{17183: return[v1]}" ] 
+BB5113 [shape=record label="{17184: exceptional-return}" ] 
+//#$~ 9060
+}

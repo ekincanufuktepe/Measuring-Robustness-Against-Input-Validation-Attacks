@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB75 [tailport=s, headport=n, headlabel="    75"]
+BB75 [shape=record label="{207: constant[undefined,v1]}" ] 
+BB75 -> BB76 [tailport=s, headport=n, headlabel="      76"]
+BB76 [shape=record label="{208: read-variable['isString',v4,v3]|209: read-variable['s',v5,-]}" ] 
+BB76 -> BB77 [tailport=s, headport=n, headlabel="      77"]
+BB76 -> BB85 [tailport=s, headport=n, color=gray, headlabel="      85"]
+BB77 [shape=record label="{210: call-isString [v3,v4,v5,v2]}" ] 
+BB77 -> BB78 [tailport=s, headport=n, headlabel="      78"]
+BB77 -> BB85 [tailport=s, headport=n, color=gray]
+BB78 [shape=record label="{211: if[v2](true-block:79,false-block:80)}" ] 
+BB78 -> BB79 [tailport=s, headport=n, headlabel="      79"]
+BB78 -> BB80 [tailport=s, headport=n, headlabel="      80"]
+BB79 [shape=record label="{212: read-variable['s',v7,-]|213: read-property[v7,'replace',-]|214: \<variable-non-null-undef\>['s']|215: read-variable['RegExp',v9,-]|216: constant[\"[A-Z]\",v10]|217: constant[\"g\",v11]}" ] 
+BB79 -> BB81 [tailport=s, headport=n, headlabel="      81"]
+BB79 -> BB85 [tailport=s, headport=n, color=gray]
+BB80 [shape=record label="{218: read-variable['s',v1,-]}" ] 
+BB80 -> BB84 [tailport=s, headport=n, headlabel="      84"]
+BB80 -> BB85 [tailport=s, headport=n, color=gray]
+BB81 [shape=record label="{219: construct [-,v9,v10,v11,v8]}" ] 
+BB81 -> BB82 [tailport=s, headport=n, headlabel="      82"]
+BB81 -> BB85 [tailport=s, headport=n, color=gray]
+BB82 [shape=record label="{220: function-expr[function ( ch ),v12]}" ] 
+BB82 -> BB83 [tailport=s, headport=n, headlabel="      83"]
+BB83 [shape=record label="{221: call-s.replace [v7,'replace',v8,v12,v1]}" ] 
+BB83 -> BB84 [tailport=s, headport=n]
+BB83 -> BB85 [tailport=s, headport=n, color=gray]
+BB84 [shape=record label="{222: return[v1]}" ] 
+BB85 [shape=record label="{223: exceptional-return}" ] 
+//#$~ 221
+}

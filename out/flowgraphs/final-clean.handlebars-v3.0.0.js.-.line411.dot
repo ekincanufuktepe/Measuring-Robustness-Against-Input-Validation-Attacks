@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry32[shape=none,label=""];
+BB_entry32 -> BB385 [tailport=s, headport=n, headlabel="    385"]
+BB385 [shape=record label="{1127: constant[undefined,v1]|1128: vardecl['method']}" ] 
+BB385 -> BB386 [tailport=s, headport=n, headlabel="      386"]
+BB386 [shape=record label="{1129: typeof['console',v3]|1130: constant[\"undefined\",v4]|1131: !==[v3,v4,v2]|1132: if[v2](true-block:387,false-block:388)}" ] 
+BB386 -> BB388 [tailport=s, headport=n, headlabel="      388"]
+BB386 -> BB387 [tailport=s, headport=n, headlabel="      387"]
+BB386 -> BB394 [tailport=s, headport=n, color=gray, headlabel="      394"]
+BB387 [shape=record label="{1133: read-variable['logger',v7,-]|1134: read-property[v7,'level',v5]|1135: \<variable-non-null-undef\>['logger']|1136: read-variable['level',v6,-]|1137: \<=[v5,v6,v2]}" ] 
+BB387 -> BB388 [tailport=s, headport=n]
+BB387 -> BB394 [tailport=s, headport=n, color=gray]
+BB388 [shape=record label="{1138: if[v2](true-block:389,false-block:393)}" ] 
+BB388 -> BB389 [tailport=s, headport=n, headlabel="      389"]
+BB388 -> BB393 [tailport=s, headport=n, headlabel="      393"]
+BB389 [shape=record label="{1139: read-variable['logger',v7,-]|1140: read-property[v7,'methodMap',v6]|1141: \<variable-non-null-undef\>['logger']|1142: read-variable['level',v8,-]|1143: read-property[v6,v8,v5]|1144: \<property-non-null-undef\>[v7,'methodMap']|1145: write-variable[v5,'method']*|1146: read-variable['console',v11,-]|1147: read-variable['method',v12,-]|1148: read-property[v11,v12,v10]|1149: \<variable-non-null-undef\>['console']|1150: if[v10](true-block:391,false-block:390)}" ] 
+BB389 -> BB391 [tailport=s, headport=n, headlabel="      391"]
+BB389 -> BB390 [tailport=s, headport=n, headlabel="      390"]
+BB389 -> BB394 [tailport=s, headport=n, color=gray]
+BB390 [shape=record label="{1151: read-variable['console',v11,-]|1152: read-property[v11,'log',v10]|1153: \<variable-non-null-undef\>['console']}" ] 
+BB390 -> BB391 [tailport=s, headport=n]
+BB390 -> BB394 [tailport=s, headport=n, color=gray]
+BB391 [shape=record label="{1154: read-property[v10,'call',-]|1155: read-variable['console',v11,-]|1156: read-variable['message',v12,-]}" ] 
+BB391 -> BB392 [tailport=s, headport=n, headlabel="      392"]
+BB391 -> BB394 [tailport=s, headport=n, color=gray]
+BB392 [shape=record label="{1157: call-null [v10,'call',v11,v12,-]*}" ] 
+BB392 -> BB393 [tailport=s, headport=n]
+BB392 -> BB394 [tailport=s, headport=n, color=gray]
+BB393 [shape=record label="{1158: return[v1]}" ] 
+BB394 [shape=record label="{1159: exceptional-return}" ] 
+//#$~ 414
+}

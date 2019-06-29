@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry549[shape=none,label=""];
+BB_entry549 -> BB5798 [tailport=s, headport=n, headlabel="    5798"]
+BB5798 [shape=record label="{18231: constant[undefined,v1]}" ] 
+BB5798 -> BB5799 [tailport=s, headport=n, headlabel="      5799"]
+BB5799 [shape=record label="{18232: read-variable['lines',v5,-]|18233: read-property[v5,'length',v3]|18234: \<variable-non-null-undef\>['lines']|18235: constant[1.0,v4]|18236: \>[v3,v4,v2]|18237: if[v2](true-block:5800,false-block:5806)}" ] 
+BB5799 -> BB5800 [tailport=s, headport=n, headlabel="      5800"]
+BB5799 -> BB5806 [tailport=s, headport=n, headlabel="      5806"]
+BB5799 -> BB5807 [tailport=s, headport=n, color=gray, headlabel="      5807"]
+BB5800 [shape=record label="{18238: read-variable['lines',v7,-]|18239: read-property[v7,'push',-]|18240: \<variable-non-null-undef\>['lines']|18241: read-variable['lines',v12,-]|18242: read-property[v12,'pop',-]|18243: \<variable-non-null-undef\>['lines']}" ] 
+BB5800 -> BB5801 [tailport=s, headport=n, headlabel="      5801"]
+BB5800 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5801 [shape=record label="{18244: call-lines.pop [v12,'pop',v10]}" ] 
+BB5801 -> BB5802 [tailport=s, headport=n, headlabel="      5802"]
+BB5801 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5802 [shape=record label="{18245: read-property[v10,'concat',-]|18246: read-variable['lines',v15,-]|18247: read-property[v15,'shift',-]|18248: \<variable-non-null-undef\>['lines']}" ] 
+BB5802 -> BB5803 [tailport=s, headport=n, headlabel="      5803"]
+BB5802 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5803 [shape=record label="{18249: call-lines.shift [v15,'shift',v13]}" ] 
+BB5803 -> BB5804 [tailport=s, headport=n, headlabel="      5804"]
+BB5803 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5804 [shape=record label="{18250: call-null [v10,'concat',v13,v8]}" ] 
+BB5804 -> BB5805 [tailport=s, headport=n, headlabel="      5805"]
+BB5804 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5805 [shape=record label="{18251: call-lines.push [v7,'push',v8,-]*}" ] 
+BB5805 -> BB5806 [tailport=s, headport=n]
+BB5805 -> BB5807 [tailport=s, headport=n, color=gray]
+BB5806 [shape=record label="{18252: return[v1]}" ] 
+BB5807 [shape=record label="{18253: exceptional-return}" ] 
+//#$~ 3420
+}

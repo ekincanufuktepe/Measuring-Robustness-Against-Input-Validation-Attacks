@@ -1,0 +1,16 @@
+digraph {
+rankdir="TD"
+BB_entry100[shape=none,label=""];
+BB_entry100 -> BB1077 [tailport=s, headport=n, headlabel="    1077"]
+BB1077 [shape=record label="{3337: constant[undefined,v1]}" ] 
+BB1077 -> BB1078 [tailport=s, headport=n, headlabel="      1078"]
+BB1078 [shape=record label="{3338: read-variable['this',v3,-]|3339: read-variable['STATE_RECOGNIZED',v2,-]|3340: write-property[v3,'state',v2]*|3341: read-variable['this',v5,-]|3342: read-property[v5,'tryEmit',-]}" ] 
+BB1078 -> BB1079 [tailport=s, headport=n, headlabel="      1079"]
+BB1078 -> BB1081 [tailport=s, headport=n, color=gray, headlabel="      1081"]
+BB1079 [shape=record label="{3343: call-this.tryEmit [v5,'tryEmit',-]*}" ] 
+BB1079 -> BB1080 [tailport=s, headport=n, headlabel="      1080"]
+BB1079 -> BB1081 [tailport=s, headport=n, color=gray]
+BB1080 [shape=record label="{3344: return[v1]}" ] 
+BB1081 [shape=record label="{3345: exceptional-return}" ] 
+//#$~ 1765
+}

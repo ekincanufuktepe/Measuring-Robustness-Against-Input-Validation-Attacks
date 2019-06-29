@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry1576[shape=none,label=""];
+BB_entry1576 -> BB18312 [tailport=s, headport=n, headlabel="    18312"]
+BB18312 [shape=record label="{61373: constant[undefined,v1]|61374: vardecl['deferred']}" ] 
+BB18312 -> BB18313 [tailport=s, headport=n, headlabel="      18313"]
+BB18313 [shape=record label="{61375: read-variable['Deferred',v4,-]|61376: read-property[v4,'create',-]|61377: \<variable-non-null-undef\>['Deferred']}" ] 
+BB18313 -> BB18314 [tailport=s, headport=n, headlabel="      18314"]
+BB18313 -> BB18319 [tailport=s, headport=n, color=gray, headlabel="      18319"]
+BB18314 [shape=record label="{61378: call-Deferred.create [v4,'create',v2]}" ] 
+BB18314 -> BB18315 [tailport=s, headport=n, headlabel="      18315"]
+BB18314 -> BB18319 [tailport=s, headport=n, color=gray]
+BB18315 [shape=record label="{61379: write-variable[v2,'deferred']*|61380: read-variable['callback',v6,-]|61381: read-property[v6,'call',-]|61382: \<variable-non-null-undef\>['callback']|61383: read-variable['binding',v7,-]|61384: read-variable['deferred',v8,-]}" ] 
+BB18315 -> BB18316 [tailport=s, headport=n, headlabel="      18316"]
+BB18315 -> BB18319 [tailport=s, headport=n, color=gray]
+BB18316 [shape=record label="{61385: call-callback.call [v6,'call',v7,v8,-]*}" ] 
+BB18316 -> BB18317 [tailport=s, headport=n, headlabel="      18317"]
+BB18316 -> BB18319 [tailport=s, headport=n, color=gray]
+BB18317 [shape=record label="{61386: read-variable['deferred',v1,-]}" ] 
+BB18317 -> BB18318 [tailport=s, headport=n, headlabel="      18318"]
+BB18317 -> BB18319 [tailport=s, headport=n, color=gray]
+BB18318 [shape=record label="{61387: return[v1]}" ] 
+BB18319 [shape=record label="{61388: exceptional-return}" ] 
+//#$~ 34477
+}

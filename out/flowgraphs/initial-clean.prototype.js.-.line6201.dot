@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry584[shape=none,label=""];
+BB_entry584 -> BB7786 [tailport=s, headport=n, headlabel="    7786"]
+BB7786 [shape=record label="{21813: constant[undefined,v1]}" ] 
+BB7786 -> BB7787 [tailport=s, headport=n, headlabel="      7787"]
+BB7787 [shape=record label="{21814: read-variable['isXML',v3,-]|21815: ![v3,v2]|21816: if[v2](true-block:7788,false-block:7791)}" ] 
+BB7787 -> BB7791 [tailport=s, headport=n, headlabel="      7791"]
+BB7787 -> BB7788 [tailport=s, headport=n, headlabel="      7788"]
+BB7787 -> BB7794 [tailport=s, headport=n, color=gray, headlabel="      7794"]
+BB7788 [shape=record label="{21817: read-variable['elem',v8,-]|21818: read-property[v8,'nodeName',v7]|21819: \<variable-non-null-undef\>['elem']|21820: read-property[v7,'toLowerCase',-]|21821: \<property-non-null-undef\>[v8,'nodeName']}" ] 
+BB7788 -> BB7789 [tailport=s, headport=n, headlabel="      7789"]
+BB7788 -> BB7794 [tailport=s, headport=n, color=gray]
+BB7789 [shape=record label="{21822: call-elem.nodeName.toLowerCase [v7,'toLowerCase',v4]}" ] 
+BB7789 -> BB7790 [tailport=s, headport=n, headlabel="      7790"]
+BB7789 -> BB7794 [tailport=s, headport=n, color=gray]
+BB7790 [shape=record label="{21823: constant[\"input\",v5]|21824: ===[v4,v5,v2]}" ] 
+BB7790 -> BB7791 [tailport=s, headport=n]
+BB7790 -> BB7794 [tailport=s, headport=n, color=gray]
+BB7791 [shape=record label="{21825: if[v2](true-block:7792,false-block:7793)}" ] 
+BB7791 -> BB7792 [tailport=s, headport=n, headlabel="      7792"]
+BB7791 -> BB7793 [tailport=s, headport=n, headlabel="      7793"]
+BB7792 [shape=record label="{21826: read-variable['elem',v4,-]|21827: read-property[v4,'defaultValue',v1]|21828: \<variable-non-null-undef\>['elem']}" ] 
+BB7792 -> BB7793 [tailport=s, headport=n]
+BB7792 -> BB7794 [tailport=s, headport=n, color=gray]
+BB7793 [shape=record label="{21829: return[v1]}" ] 
+BB7794 [shape=record label="{21830: exceptional-return}" ] 
+//#$~ 6203
+}

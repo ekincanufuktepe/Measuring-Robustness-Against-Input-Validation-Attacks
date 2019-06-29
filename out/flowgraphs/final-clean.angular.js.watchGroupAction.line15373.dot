@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry858[shape=none,label=""];
+BB_entry858 -> BB11002 [tailport=s, headport=n, headlabel="    11002"]
+BB11002 [shape=record label="{28663: constant[undefined,v1]}" ] 
+BB11002 -> BB11003 [tailport=s, headport=n, headlabel="      11003"]
+BB11003 [shape=record label="{28664: constant[false,v2]|28665: write-variable[v2,'changeReactionScheduled']*|28666: read-variable['firstRun',v3,-]|28667: if[v3](true-block:11004,false-block:11005)}" ] 
+BB11003 -> BB11004 [tailport=s, headport=n, headlabel="      11004"]
+BB11003 -> BB11005 [tailport=s, headport=n, headlabel="      11005"]
+BB11003 -> BB11009 [tailport=s, headport=n, color=gray, headlabel="      11009"]
+BB11004 [shape=record label="{28668: constant[false,v4]|28669: write-variable[v4,'firstRun']*|28670: read-variable['listener',v6,v5]|28671: read-variable['newValues',v7,-]|28672: read-variable['newValues',v8,-]|28673: read-variable['self',v9,-]}" ] 
+BB11004 -> BB11006 [tailport=s, headport=n, headlabel="      11006"]
+BB11004 -> BB11009 [tailport=s, headport=n, color=gray]
+BB11005 [shape=record label="{28674: read-variable['listener',v5,v4]|28675: read-variable['newValues',v6,-]|28676: read-variable['oldValues',v7,-]|28677: read-variable['self',v8,-]}" ] 
+BB11005 -> BB11007 [tailport=s, headport=n, headlabel="      11007"]
+BB11005 -> BB11009 [tailport=s, headport=n, color=gray]
+BB11006 [shape=record label="{28678: call-listener [v5,v6,v7,v8,v9,-]*}" ] 
+BB11006 -> BB11008 [tailport=s, headport=n, headlabel="      11008"]
+BB11006 -> BB11009 [tailport=s, headport=n, color=gray]
+BB11007 [shape=record label="{28679: call-listener [v4,v5,v6,v7,v8,-]*}" ] 
+BB11007 -> BB11008 [tailport=s, headport=n]
+BB11007 -> BB11009 [tailport=s, headport=n, color=gray]
+BB11008 [shape=record label="{28680: return[v1]}" ] 
+BB11009 [shape=record label="{28681: exceptional-return}" ] 
+//#$~ 15380
+}

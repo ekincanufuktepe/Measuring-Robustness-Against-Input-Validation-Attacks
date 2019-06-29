@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry710[shape=none,label=""];
+BB_entry710 -> BB9604 [tailport=s, headport=n, headlabel="    9604"]
+BB9604 [shape=record label="{31927: constant[undefined,v1]}" ] 
+BB9604 -> BB9605 [tailport=s, headport=n, headlabel="      9605"]
+BB9605 [shape=record label="{31928: constant[\"production\",v3]|31929: constant[\"development\",v4]|31930: !==[v3,v4,v2]|31931: if[v2](true-block:9606,false-block:9607)}" ] 
+BB9605 -> BB9606 [tailport=s, headport=n, headlabel="      9606"]
+BB9605 -> BB9607 [tailport=s, headport=n, headlabel="      9607"]
+BB9605 -> BB9611 [tailport=s, headport=n, color=gray, headlabel="      9611"]
+BB9606 [shape=record label="{31932: read-variable['invariant',v6,v5]|31933: constant[false,v7]|31934: constant[\"%s tried to unmount. Because of cross-browser quirks it is \",v13]|31935: constant[\"impossible to unmount some top-level components (eg \\\<html\\\>, \\\<head\\\>, \",v14]|31936: +[v13,v14,v11]|31937: constant[\"and \\\<body\\\>) reliably and efficiently. To fix this, have a single \",v12]|31938: +[v11,v12,v9]|31939: constant[\"top-level component that never unmounts render these elements.\",v10]|31940: +[v9,v10,v8]|31941: read-variable['this',v17,-]|31942: read-property[v17,'constructor',v16]|31943: read-property[v16,'displayName',v15]|31944: \<property-non-null-undef\>[v17,'constructor']}" ] 
+BB9606 -> BB9608 [tailport=s, headport=n, headlabel="      9608"]
+BB9606 -> BB9611 [tailport=s, headport=n, color=gray]
+BB9607 [shape=record label="{31945: read-variable['invariant',v6,v5]|31946: constant[false,v7]}" ] 
+BB9607 -> BB9609 [tailport=s, headport=n, headlabel="      9609"]
+BB9607 -> BB9611 [tailport=s, headport=n, color=gray]
+BB9608 [shape=record label="{31947: call-invariant [v5,v6,v7,v8,v15,-]}" ] 
+BB9608 -> BB9610 [tailport=s, headport=n, headlabel="      9610"]
+BB9608 -> BB9611 [tailport=s, headport=n, color=gray]
+BB9609 [shape=record label="{31948: call-invariant [v5,v6,v7,-]}" ] 
+BB9609 -> BB9610 [tailport=s, headport=n]
+BB9609 -> BB9611 [tailport=s, headport=n, color=gray]
+BB9610 [shape=record label="{31949: return[v1]}" ] 
+BB9611 [shape=record label="{31950: exceptional-return}" ] 
+//#$~ 17128
+}

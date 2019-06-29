@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry194[shape=none,label=""];
+BB_entry194 -> BB2185 [tailport=s, headport=n, headlabel="    2185"]
+BB2185 [shape=record label="{5979: constant[undefined,v1]|5980: vardecl['match']}" ] 
+BB2185 -> BB2186 [tailport=s, headport=n, headlabel="      2186"]
+BB2186 [shape=record label="{5981: read-variable['this',v4,-]|5982: read-property[v4,'detect',-]|5983: function-expr[function ( pair ),v5]}" ] 
+BB2186 -> BB2187 [tailport=s, headport=n, headlabel="      2187"]
+BB2186 -> BB2191 [tailport=s, headport=n, color=gray, headlabel="      2191"]
+BB2187 [shape=record label="{5984: call-this.detect [v4,'detect',v5,v2]}" ] 
+BB2187 -> BB2188 [tailport=s, headport=n, headlabel="      2188"]
+BB2187 -> BB2191 [tailport=s, headport=n, color=gray]
+BB2188 [shape=record label="{5985: write-variable[v2,'match']*|5986: read-variable['match',v1,-]|5987: if[v1](true-block:2189,false-block:2190)}" ] 
+BB2188 -> BB2190 [tailport=s, headport=n, headlabel="      2190"]
+BB2188 -> BB2189 [tailport=s, headport=n, headlabel="      2189"]
+BB2188 -> BB2191 [tailport=s, headport=n, color=gray]
+BB2189 [shape=record label="{5988: read-variable['match',v6,-]|5989: read-property[v6,'key',v1]|5990: \<variable-non-null-undef\>['match']}" ] 
+BB2189 -> BB2190 [tailport=s, headport=n]
+BB2189 -> BB2191 [tailport=s, headport=n, color=gray]
+BB2190 [shape=record label="{5991: return[v1]}" ] 
+BB2191 [shape=record label="{5992: exceptional-return}" ] 
+//#$~ 1466
+}

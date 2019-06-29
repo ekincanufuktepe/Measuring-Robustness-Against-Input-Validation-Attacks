@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry865[shape=none,label=""];
+BB_entry865 -> BB9410 [tailport=s, headport=n, headlabel="    9410"]
+BB9410 [shape=record label="{31125: constant[undefined,v1]}" ] 
+BB9410 -> BB9411 [tailport=s, headport=n, headlabel="      9411"]
+BB9411 [shape=record label="{31126: read-variable['arguments',v3,-]|31127: read-property[v3,'length',v2]|31128: \<variable-non-null-undef\>['arguments']|31129: if[v2](true-block:9412,false-block:9413)}" ] 
+BB9411 -> BB9412 [tailport=s, headport=n, headlabel="      9412"]
+BB9411 -> BB9413 [tailport=s, headport=n, headlabel="      9413"]
+BB9411 -> BB9417 [tailport=s, headport=n, color=gray, headlabel="      9417"]
+BB9412 [shape=record label="{31130: read-variable['d3_functor',v6,v5]|31131: read-variable['_',v7,-]|31132: write-variable[v7,'y']}" ] 
+BB9412 -> BB9414 [tailport=s, headport=n, headlabel="      9414"]
+BB9412 -> BB9417 [tailport=s, headport=n, color=gray]
+BB9413 [shape=record label="{31133: read-variable['y',v1,-]}" ] 
+BB9413 -> BB9416 [tailport=s, headport=n, headlabel="      9416"]
+BB9413 -> BB9417 [tailport=s, headport=n, color=gray]
+BB9414 [shape=record label="{31134: call-d3_functor [v5,v6,v7,v4]}" ] 
+BB9414 -> BB9415 [tailport=s, headport=n, headlabel="      9415"]
+BB9414 -> BB9417 [tailport=s, headport=n, color=gray]
+BB9415 [shape=record label="{31135: write-variable[v4,'fy']|31136: read-variable['voronoi',v1,-]}" ] 
+BB9415 -> BB9416 [tailport=s, headport=n]
+BB9415 -> BB9417 [tailport=s, headport=n, color=gray]
+BB9416 [shape=record label="{31137: return[v1]}" ] 
+BB9417 [shape=record label="{31138: exceptional-return}" ] 
+//#$~ 5523
+}

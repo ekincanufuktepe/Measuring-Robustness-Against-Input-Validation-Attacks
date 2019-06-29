@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry1060[shape=none,label=""];
+BB_entry1060 -> BB12788 [tailport=s, headport=n, headlabel="    12788"]
+BB12788 [shape=record label="{43584: constant[undefined,v1]|43585: vardecl['container']|43586: vardecl['routeName']|43587: vardecl['namespace']}" ] 
+BB12788 -> BB12789 [tailport=s, headport=n, headlabel="      12789"]
+BB12789 [shape=record label="{43588: read-variable['this',v3,-]|43589: read-property[v3,'container',v2]|43590: write-variable[v2,'container']*|43591: read-variable['this',v5,-]|43592: read-property[v5,'routeName',v4]|43593: write-variable[v4,'routeName']*|43594: read-variable['get',v8,v7]|43595: read-variable['this',v9,-]|43596: constant[\"router.namespace\",v10]}" ] 
+BB12789 -> BB12790 [tailport=s, headport=n, headlabel="      12790"]
+BB12789 -> BB12793 [tailport=s, headport=n, color=gray, headlabel="      12793"]
+BB12790 [shape=record label="{43597: call-get [v7,v8,v9,v10,v6]}" ] 
+BB12790 -> BB12791 [tailport=s, headport=n, headlabel="      12791"]
+BB12790 -> BB12793 [tailport=s, headport=n, color=gray]
+BB12791 [shape=record label="{43598: write-variable[v6,'namespace']*|43599: new[v1]|43600: function-expr[function ( name value ),v11]|43601: write-property[v1,'find',v11]}" ] 
+BB12791 -> BB12792 [tailport=s, headport=n, headlabel="      12792"]
+BB12791 -> BB12793 [tailport=s, headport=n, color=gray]
+BB12792 [shape=record label="{43602: return[v1]}" ] 
+BB12793 [shape=record label="{43603: exceptional-return}" ] 
+//#$~ 24044
+}

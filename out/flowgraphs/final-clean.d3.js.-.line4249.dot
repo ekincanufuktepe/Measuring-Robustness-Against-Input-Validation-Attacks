@@ -1,0 +1,33 @@
+digraph {
+rankdir="TD"
+BB_entry677[shape=none,label=""];
+BB_entry677 -> BB7302 [tailport=s, headport=n, headlabel="    7302"]
+BB7302 [shape=record label="{23269: constant[undefined,v1]|23270: vardecl['transform']|23271: vardecl['k']}" ] 
+BB7302 -> BB7303 [tailport=s, headport=n, headlabel="      7303"]
+BB7303 [shape=record label="{23272: read-variable['d3_geo_transform',v3,-]|23273: read-variable['stream',v4,-]}" ] 
+BB7303 -> BB7304 [tailport=s, headport=n, headlabel="      7304"]
+BB7303 -> BB7312 [tailport=s, headport=n, color=gray, headlabel="      7312"]
+BB7304 [shape=record label="{23274: construct [-,v3,v4,v2]}" ] 
+BB7304 -> BB7305 [tailport=s, headport=n, headlabel="      7305"]
+BB7304 -> BB7312 [tailport=s, headport=n, color=gray]
+BB7305 [shape=record label="{23275: write-variable[v2,'transform']*|23276: read-variable['methods',v6,-]}" ] 
+BB7305 -> BB7306 [tailport=s, headport=n, headlabel="      7306"]
+BB7305 -> BB7312 [tailport=s, headport=n, color=gray]
+BB7306 [shape=record label="{23277: begin-for-in[v6,v7]}" ] 
+BB7306 -> BB7307 [tailport=s, headport=n, headlabel="      7307"]
+BB7306 -> BB7312 [tailport=s, headport=n, color=gray]
+BB7307 [shape=record label="{23278: has-next[v7,v8]|23279: if[v8](true-block:7308,false-block:7310)}" ] 
+BB7307 -> BB7308 [tailport=s, headport=n, headlabel="      7308"]
+BB7307 -> BB7310 [tailport=s, headport=n, headlabel="      7310"]
+BB7308 [shape=record label="{23280: next-property[v7,v9]|23281: write-variable[v9,'k']|23282: read-variable['transform',v11,-]|23283: read-variable['k',v12,-]|23284: read-variable['methods',v13,-]|23285: read-variable['k',v14,-]|23286: read-property[v13,v14,v10]|23287: \<variable-non-null-undef\>['methods']|23288: write-property[v11,v12,v10]|23289: \<variable-non-null-undef\>['transform']*}" ] 
+BB7308 -> BB7309 [tailport=s, headport=n, headlabel="      7309"]
+BB7308 -> BB7312 [tailport=s, headport=n, color=gray]
+BB7309 [shape=record label="{23290: end-for-in(begin-node:23277)}" ] 
+BB7309 -> BB7307 [tailport=s, headport=n]
+BB7310 [shape=record label="{23291: read-variable['transform',v1,-]}" ] 
+BB7310 -> BB7311 [tailport=s, headport=n, headlabel="      7311"]
+BB7310 -> BB7312 [tailport=s, headport=n, color=gray]
+BB7311 [shape=record label="{23292: return[v1]}" ] 
+BB7312 [shape=record label="{23293: exceptional-return}" ] 
+//#$~ 4252
+}

@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry353[shape=none,label=""];
+BB_entry353 -> BB5643 [tailport=s, headport=n, headlabel="    5643"]
+BB5643 [shape=record label="{16441: constant[undefined,v1]}" ] 
+BB5643 -> BB5644 [tailport=s, headport=n, headlabel="      5644"]
+BB5644 [shape=record label="{16442: read-variable['this',v3,-]|16443: read-property[v3,'parentNode',v2]|16444: write-variable[v2,'arg']*|16445: read-variable['jQuery',v5,-]|16446: read-property[v5,'cleanData',-]|16447: \<variable-non-null-undef\>['jQuery']|16448: read-variable['getAll',v8,v7]|16449: read-variable['this',v9,-]}" ] 
+BB5644 -> BB5645 [tailport=s, headport=n, headlabel="      5645"]
+BB5644 -> BB5651 [tailport=s, headport=n, color=gray, headlabel="      5651"]
+BB5645 [shape=record label="{16450: call-0:0[v7,v8,v9,v6]}" ] 
+BB5645 -> BB5646 [tailport=s, headport=n, headlabel="      5646"]
+BB5645 -> BB5651 [tailport=s, headport=n, color=gray]
+BB5646 [shape=record label="{16451: call-0:0[v5,'cleanData',v6,-]*}" ] 
+BB5646 -> BB5647 [tailport=s, headport=n, headlabel="      5647"]
+BB5646 -> BB5651 [tailport=s, headport=n, color=gray]
+BB5647 [shape=record label="{16452: read-variable['arg',v10,-]|16453: if[v10](true-block:5648,false-block:5650)}" ] 
+BB5647 -> BB5648 [tailport=s, headport=n, headlabel="      5648"]
+BB5647 -> BB5650 [tailport=s, headport=n, headlabel="      5650"]
+BB5647 -> BB5651 [tailport=s, headport=n, color=gray]
+BB5648 [shape=record label="{16454: read-variable['arg',v12,-]|16455: read-property[v12,'replaceChild',-]|16456: \<variable-non-null-undef\>['arg']|16457: read-variable['elem',v13,-]|16458: read-variable['this',v14,-]}" ] 
+BB5648 -> BB5649 [tailport=s, headport=n, headlabel="      5649"]
+BB5648 -> BB5651 [tailport=s, headport=n, color=gray]
+BB5649 [shape=record label="{16459: call-0:0[v12,'replaceChild',v13,v14,-]*}" ] 
+BB5649 -> BB5650 [tailport=s, headport=n]
+BB5649 -> BB5651 [tailport=s, headport=n, color=gray]
+BB5650 [shape=record label="{16460: return[v1]}" ] 
+BB5651 [shape=record label="{16461: exceptional-return}" ] 
+}

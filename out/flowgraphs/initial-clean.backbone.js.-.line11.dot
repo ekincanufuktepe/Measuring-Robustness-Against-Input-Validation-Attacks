@@ -1,0 +1,19 @@
+digraph {
+rankdir="TD"
+BB_entry2[shape=none,label=""];
+BB_entry2 -> BB5 [tailport=s, headport=n, headlabel="    5"]
+BB5 [shape=record label="{7: constant[undefined,v1]}" ] 
+BB5 -> BB6 [tailport=s, headport=n, headlabel="      6"]
+BB6 [shape=record label="{8: read-variable['root',v3,-]|9: read-variable['factory',v5,v4]|10: read-variable['root',v6,-]|11: read-variable['exports',v7,-]|12: read-variable['_',v8,-]|13: read-variable['$',v9,-]}" ] 
+BB6 -> BB7 [tailport=s, headport=n, headlabel="      7"]
+BB6 -> BB10 [tailport=s, headport=n, color=gray, headlabel="      10"]
+BB7 [shape=record label="{14: call-factory [v4,v5,v6,v7,v8,v9,v2]}" ] 
+BB7 -> BB8 [tailport=s, headport=n, headlabel="      8"]
+BB7 -> BB10 [tailport=s, headport=n, color=gray]
+BB8 [shape=record label="{15: write-property[v3,'Backbone',v2]|16: \<variable-non-null-undef\>['root']*}" ] 
+BB8 -> BB9 [tailport=s, headport=n, headlabel="      9"]
+BB8 -> BB10 [tailport=s, headport=n, color=gray]
+BB9 [shape=record label="{17: return[v1]}" ] 
+BB10 [shape=record label="{18: exceptional-return}" ] 
+//#$~ 14
+}

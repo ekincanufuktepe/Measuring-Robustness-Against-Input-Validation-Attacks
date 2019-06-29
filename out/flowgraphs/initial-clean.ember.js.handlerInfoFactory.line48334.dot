@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry2340[shape=none,label=""];
+BB_entry2340 -> BB26719 [tailport=s, headport=n, headlabel="    26719"]
+BB26719 [shape=record label="{88200: constant[undefined,v1]|88201: vardecl['Ctor']|88202: vardecl['handlerInfo']}" ] 
+BB26719 -> BB26720 [tailport=s, headport=n, headlabel="      26720"]
+BB26720 [shape=record label="{88203: read-variable['handlerInfoFactory',v4,-]|88204: read-property[v4,'klasses',v3]|88205: \<variable-non-null-undef\>['handlerInfoFactory']|88206: read-variable['name',v5,-]|88207: read-property[v3,v5,v2]|88208: \<property-non-null-undef\>[v4,'klasses']|88209: write-variable[v2,'Ctor']*|88210: read-variable['Ctor',v7,-]|88211: read-variable['props',v8,-]|88212: if[v8](true-block:26722,false-block:26721)}" ] 
+BB26720 -> BB26722 [tailport=s, headport=n, headlabel="      26722"]
+BB26720 -> BB26721 [tailport=s, headport=n, headlabel="      26721"]
+BB26720 -> BB26725 [tailport=s, headport=n, color=gray, headlabel="      26725"]
+BB26721 [shape=record label="{88213: new[v8]}" ] 
+BB26721 -> BB26722 [tailport=s, headport=n]
+BB26722 [shape=record label="{88214: construct [-,v7,v8,v6]}" ] 
+BB26722 -> BB26723 [tailport=s, headport=n, headlabel="      26723"]
+BB26722 -> BB26725 [tailport=s, headport=n, color=gray]
+BB26723 [shape=record label="{88215: write-variable[v6,'handlerInfo']*|88216: read-variable['handlerInfo',v10,-]|88217: read-variable['handlerInfoFactory',v9,-]|88218: write-property[v10,'factory',v9]|88219: \<variable-non-null-undef\>['handlerInfo']*|88220: read-variable['handlerInfo',v1,-]}" ] 
+BB26723 -> BB26724 [tailport=s, headport=n, headlabel="      26724"]
+BB26723 -> BB26725 [tailport=s, headport=n, color=gray]
+BB26724 [shape=record label="{88221: return[v1]}" ] 
+BB26725 [shape=record label="{88222: exceptional-return}" ] 
+//#$~ 48338
+}

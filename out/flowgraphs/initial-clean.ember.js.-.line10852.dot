@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry481[shape=none,label=""];
+BB_entry481 -> BB5976 [tailport=s, headport=n, headlabel="    5976"]
+BB5976 [shape=record label="{21263: constant[undefined,v1]}" ] 
+BB5976 -> BB5977 [tailport=s, headport=n, headlabel="      5977"]
+BB5977 [shape=record label="{21264: read-variable['arguments',v5,-]|21265: read-property[v5,'length',v3]|21266: \<variable-non-null-undef\>['arguments']|21267: constant[0.0,v4]|21268: ===[v3,v4,v2]|21269: if[v2](true-block:5978,false-block:5979)}" ] 
+BB5977 -> BB5978 [tailport=s, headport=n, headlabel="      5978"]
+BB5977 -> BB5979 [tailport=s, headport=n, headlabel="      5979"]
+BB5977 -> BB5982 [tailport=s, headport=n, color=gray, headlabel="      5982"]
+BB5978 [shape=record label="{21270: read-variable['this',v6,-]|21271: read-property[v6,'_meta',v1]|21272: if[v1](true-block:5981,false-block:5980)}" ] 
+BB5978 -> BB5981 [tailport=s, headport=n, headlabel="      5981"]
+BB5978 -> BB5980 [tailport=s, headport=n, headlabel="      5980"]
+BB5978 -> BB5982 [tailport=s, headport=n, color=gray]
+BB5979 [shape=record label="{21273: read-variable['this',v7,-]|21274: read-variable['meta',v6,-]|21275: write-property[v7,'_meta',v6]*|21276: read-variable['this',v1,-]}" ] 
+BB5979 -> BB5981 [tailport=s, headport=n]
+BB5979 -> BB5982 [tailport=s, headport=n, color=gray]
+BB5980 [shape=record label="{21277: new[v1]}" ] 
+BB5980 -> BB5981 [tailport=s, headport=n]
+BB5981 [shape=record label="{21278: return[v1]}" ] 
+BB5982 [shape=record label="{21279: exceptional-return}" ] 
+//#$~ 10857
+}

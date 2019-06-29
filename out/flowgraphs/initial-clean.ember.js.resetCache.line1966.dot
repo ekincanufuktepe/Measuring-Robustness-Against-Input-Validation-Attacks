@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry108[shape=none,label=""];
+BB_entry108 -> BB1480 [tailport=s, headport=n, headlabel="    1480"]
+BB1480 [shape=record label="{4733: constant[undefined,v1]}" ] 
+BB1480 -> BB1481 [tailport=s, headport=n, headlabel="      1481"]
+BB1481 [shape=record label="{4734: read-variable['eachDestroyable',v3,v2]|4735: read-variable['container',v4,-]|4736: function-expr[function ( value ),v5]}" ] 
+BB1481 -> BB1482 [tailport=s, headport=n, headlabel="      1482"]
+BB1481 -> BB1487 [tailport=s, headport=n, color=gray, headlabel="      1487"]
+BB1482 [shape=record label="{4737: call-eachDestroyable [v2,v3,v4,v5,-]*}" ] 
+BB1482 -> BB1483 [tailport=s, headport=n, headlabel="      1483"]
+BB1482 -> BB1487 [tailport=s, headport=n, color=gray]
+BB1483 [shape=record label="{4738: read-variable['container',v8,-]|4739: read-property[v8,'cache',v7]|4740: \<variable-non-null-undef\>['container']|4741: read-variable['dictionary',v10,v9]|4742: constant[null,v11]}" ] 
+BB1483 -> BB1484 [tailport=s, headport=n, headlabel="      1484"]
+BB1483 -> BB1487 [tailport=s, headport=n, color=gray]
+BB1484 [shape=record label="{4743: call-dictionary [v9,v10,v11,v6]}" ] 
+BB1484 -> BB1485 [tailport=s, headport=n, headlabel="      1485"]
+BB1484 -> BB1487 [tailport=s, headport=n, color=gray]
+BB1485 [shape=record label="{4744: write-property[v7,'dict',v6]|4745: \<property-non-null-undef\>[v8,'cache']*}" ] 
+BB1485 -> BB1486 [tailport=s, headport=n, headlabel="      1486"]
+BB1485 -> BB1487 [tailport=s, headport=n, color=gray]
+BB1486 [shape=record label="{4746: return[v1]}" ] 
+BB1487 [shape=record label="{4747: exceptional-return}" ] 
+//#$~ 1971
+}

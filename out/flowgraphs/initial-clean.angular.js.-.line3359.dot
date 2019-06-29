@@ -1,0 +1,27 @@
+digraph {
+rankdir="TD"
+BB_entry183[shape=none,label=""];
+BB_entry183 -> BB2408 [tailport=s, headport=n, headlabel="    2408"]
+BB2408 [shape=record label="{5820: constant[undefined,v1]|5821: vardecl['index']|5822: vardecl['parent']}" ] 
+BB2408 -> BB2409 [tailport=s, headport=n, headlabel="      2409"]
+BB2409 [shape=record label="{5823: read-variable['element',v3,-]|5824: read-property[v3,'parentNode',v2]|5825: \<variable-non-null-undef\>['element']|5826: write-variable[v2,'parent']*|5827: read-variable['jqLiteDealoc',v5,v4]|5828: read-variable['element',v6,-]}" ] 
+BB2409 -> BB2410 [tailport=s, headport=n, headlabel="      2410"]
+BB2409 -> BB2416 [tailport=s, headport=n, color=gray, headlabel="      2416"]
+BB2410 [shape=record label="{5829: call-jqLiteDealoc [v4,v5,v6,-]*}" ] 
+BB2410 -> BB2411 [tailport=s, headport=n, headlabel="      2411"]
+BB2410 -> BB2416 [tailport=s, headport=n, color=gray]
+BB2411 [shape=record label="{5830: read-variable['forEach',v8,v7]|5831: read-variable['JQLite',v10,-]|5832: read-variable['replaceNode',v11,-]}" ] 
+BB2411 -> BB2412 [tailport=s, headport=n, headlabel="      2412"]
+BB2411 -> BB2416 [tailport=s, headport=n, color=gray]
+BB2412 [shape=record label="{5833: construct [-,v10,v11,v9]}" ] 
+BB2412 -> BB2413 [tailport=s, headport=n, headlabel="      2413"]
+BB2412 -> BB2416 [tailport=s, headport=n, color=gray]
+BB2413 [shape=record label="{5834: function-expr[function ( node ),v12]}" ] 
+BB2413 -> BB2414 [tailport=s, headport=n, headlabel="      2414"]
+BB2414 [shape=record label="{5835: call-forEach [v7,v8,v9,v12,-]*}" ] 
+BB2414 -> BB2415 [tailport=s, headport=n, headlabel="      2415"]
+BB2414 -> BB2416 [tailport=s, headport=n, color=gray]
+BB2415 [shape=record label="{5836: return[v1]}" ] 
+BB2416 [shape=record label="{5837: exceptional-return}" ] 
+//#$~ 3368
+}

@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry560[shape=none,label=""];
+BB_entry560 -> BB8989 [tailport=s, headport=n, headlabel="    8989"]
+BB8989 [shape=record label="{26993: constant[undefined,v1]}" ] 
+BB8989 -> BB8990 [tailport=s, headport=n, headlabel="      8990"]
+BB8990 [shape=record label="{26994: read-variable['timerId-9340:9',v4,v2]|26995: ![v4,v3]|26996: if[v3](true-block:8991,false-block:8994)}" ] 
+BB8990 -> BB8991 [tailport=s, headport=n, headlabel="      8991"]
+BB8990 -> BB8994 [tailport=s, headport=n, headlabel="      8994"]
+BB8990 -> BB8995 [tailport=s, headport=n, color=gray, headlabel="      8995"]
+BB8991 [shape=record label="{26997: read-variable['setInterval-9341:14',v7,v6]|26998: read-variable['jQuery-9341:27',v10,v2]|26999: read-property[v10,'fx',v9]|27000: \<variable-non-null-undef\>['jQuery']|27001: read-property[v9,'tick',v8]|27002: \<property-non-null-undef\>[v10,'fx']|27003: read-variable['jQuery-9341:43',v13,v2]|27004: read-property[v13,'fx',v12]|27005: \<variable-non-null-undef\>['jQuery']|27006: read-property[v12,'interval',v11]|27007: \<property-non-null-undef\>[v13,'fx']}" ] 
+BB8991 -> BB8992 [tailport=s, headport=n, headlabel="      8992"]
+BB8991 -> BB8995 [tailport=s, headport=n, color=gray]
+BB8992 [shape=record label="{27008: call-0:0[v6,v7,v8,v11,v5]}" ] 
+BB8992 -> BB8993 [tailport=s, headport=n, headlabel="      8993"]
+BB8992 -> BB8995 [tailport=s, headport=n, color=gray]
+BB8993 [shape=record label="{27009: write-variable[v5,'timerId']*}" ] 
+BB8993 -> BB8994 [tailport=s, headport=n]
+BB8994 [shape=record label="{27010: return[v1]}" ] 
+BB8995 [shape=record label="{27011: exceptional-return}" ] 
+}

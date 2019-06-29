@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry7[shape=none,label=""];
+BB_entry7 -> BB25 [tailport=s, headport=n, headlabel="    25"]
+BB25 [shape=record label="{45: constant[undefined,v1]}" ] 
+BB25 -> BB26 [tailport=s, headport=n, headlabel="      26"]
+BB26 [shape=record label="{46: read-variable['callbacks',v4,-]|47: read-variable['name',v5,-]|48: read-variable['callbacks',v6,-]|49: read-variable['name',v7,-]|50: read-property[v6,v7,v3]|51: \<variable-non-null-undef\>['callbacks']|52: if[v3](true-block:29,false-block:27)}" ] 
+BB26 -> BB29 [tailport=s, headport=n, headlabel="      29"]
+BB26 -> BB27 [tailport=s, headport=n, headlabel="      27"]
+BB26 -> BB33 [tailport=s, headport=n, color=gray, headlabel="      33"]
+BB27 [shape=record label="{53: read-variable['Array',v6,-]}" ] 
+BB27 -> BB28 [tailport=s, headport=n, headlabel="      28"]
+BB27 -> BB33 [tailport=s, headport=n, color=gray]
+BB28 [shape=record label="{54: construct [-,v6,v3]}" ] 
+BB28 -> BB29 [tailport=s, headport=n]
+BB28 -> BB33 [tailport=s, headport=n, color=gray]
+BB29 [shape=record label="{55: write-property[v4,v5,v3]|56: \<variable-non-null-undef\>['callbacks']|57: read-property[v3,'push',-]|58: read-variable['fn',v6,-]}" ] 
+BB29 -> BB30 [tailport=s, headport=n, headlabel="      30"]
+BB29 -> BB33 [tailport=s, headport=n, color=gray]
+BB30 [shape=record label="{59: call-null [v3,'push',v6,-]*}" ] 
+BB30 -> BB31 [tailport=s, headport=n, headlabel="      31"]
+BB30 -> BB33 [tailport=s, headport=n, color=gray]
+BB31 [shape=record label="{60: read-variable['fn',v8,-]|61: read-variable['pos',v9,-]|62: constant[0.0,v10]|63: \>[v9,v10,v7]|64: write-property[v8,'typed',v7]|65: \<variable-non-null-undef\>['fn']*}" ] 
+BB31 -> BB32 [tailport=s, headport=n, headlabel="      32"]
+BB31 -> BB33 [tailport=s, headport=n, color=gray]
+BB32 [shape=record label="{66: return[v1]}" ] 
+BB33 [shape=record label="{67: exceptional-return}" ] 
+//#$~ 37
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry768[shape=none,label=""];
+BB_entry768 -> BB10437 [tailport=s, headport=n, headlabel="    10437"]
+BB10437 [shape=record label="{27205: constant[undefined,v1]|27206: vardecl['cacheDefault']|27207: vardecl['cacheExpensive']}" ] 
+BB10437 -> BB10438 [tailport=s, headport=n, headlabel="      10438"]
+BB10438 [shape=record label="{27208: read-variable['createMap',v4,v3]}" ] 
+BB10438 -> BB10439 [tailport=s, headport=n, headlabel="      10439"]
+BB10438 -> BB10446 [tailport=s, headport=n, color=gray, headlabel="      10446"]
+BB10439 [shape=record label="{27209: call-createMap [v3,v4,v2]}" ] 
+BB10439 -> BB10440 [tailport=s, headport=n, headlabel="      10440"]
+BB10439 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10440 [shape=record label="{27210: write-variable[v2,'cacheDefault']*|27211: read-variable['createMap',v7,v6]}" ] 
+BB10440 -> BB10441 [tailport=s, headport=n, headlabel="      10441"]
+BB10440 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10441 [shape=record label="{27212: call-createMap [v6,v7,v5]}" ] 
+BB10441 -> BB10442 [tailport=s, headport=n, headlabel="      10442"]
+BB10441 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10442 [shape=record label="{27213: write-variable[v5,'cacheExpensive']*|27214: read-variable['this',v9,-]|27215: read-variable['Array',v10,-]|27216: constant[\"$filter\",v11]|27217: constant[\"$sniffer\",v12]|27218: function-expr[function ( $filter $sniffer ),v13]}" ] 
+BB10442 -> BB10443 [tailport=s, headport=n, headlabel="      10443"]
+BB10442 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10443 [shape=record label="{27219: construct [-,v10,v11,v12,v13,v8]}" ] 
+BB10443 -> BB10444 [tailport=s, headport=n, headlabel="      10444"]
+BB10443 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10444 [shape=record label="{27220: write-property[v9,'$get',v8]*}" ] 
+BB10444 -> BB10445 [tailport=s, headport=n, headlabel="      10445"]
+BB10444 -> BB10446 [tailport=s, headport=n, color=gray]
+BB10445 [shape=record label="{27221: return[v1]}" ] 
+BB10446 [shape=record label="{27222: exceptional-return}" ] 
+//#$~ 14250
+}

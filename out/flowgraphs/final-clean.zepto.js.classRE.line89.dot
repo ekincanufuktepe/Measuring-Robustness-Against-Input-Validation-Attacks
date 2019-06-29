@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry19[shape=none,label=""];
+BB_entry19 -> BB157 [tailport=s, headport=n, headlabel="    157"]
+BB157 [shape=record label="{321: constant[undefined,v1]}" ] 
+BB157 -> BB158 [tailport=s, headport=n, headlabel="      158"]
+BB158 [shape=record label="{322: read-variable['name',v3,-]|323: read-variable['classCache',v4,-]|324: in[v3,v4,v2]|325: if[v2](true-block:159,false-block:160)}" ] 
+BB158 -> BB159 [tailport=s, headport=n, headlabel="      159"]
+BB158 -> BB160 [tailport=s, headport=n, headlabel="      160"]
+BB158 -> BB164 [tailport=s, headport=n, color=gray, headlabel="      164"]
+BB159 [shape=record label="{326: read-variable['classCache',v5,-]|327: read-variable['name',v6,-]|328: read-property[v5,v6,v1]|329: \<variable-non-null-undef\>['classCache']}" ] 
+BB159 -> BB163 [tailport=s, headport=n, headlabel="      163"]
+BB159 -> BB164 [tailport=s, headport=n, color=gray]
+BB160 [shape=record label="{330: read-variable['classCache',v5,-]|331: read-variable['name',v6,-]|332: read-variable['RegExp',v7,-]|333: constant[\"(^|\\\\s)\",v11]|334: read-variable['name',v12,-]|335: +[v11,v12,v9]|336: constant[\"(\\\\s|$)\",v10]|337: +[v9,v10,v8]}" ] 
+BB160 -> BB161 [tailport=s, headport=n, headlabel="      161"]
+BB160 -> BB164 [tailport=s, headport=n, color=gray]
+BB161 [shape=record label="{338: construct [-,v7,v8,v1]}" ] 
+BB161 -> BB162 [tailport=s, headport=n, headlabel="      162"]
+BB161 -> BB164 [tailport=s, headport=n, color=gray]
+BB162 [shape=record label="{339: write-property[v5,v6,v1]|340: \<variable-non-null-undef\>['classCache']}" ] 
+BB162 -> BB163 [tailport=s, headport=n]
+BB162 -> BB164 [tailport=s, headport=n, color=gray]
+BB163 [shape=record label="{341: return[v1]}" ] 
+BB164 [shape=record label="{342: exceptional-return}" ] 
+//#$~ 91
+}

@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry338[shape=none,label=""];
+BB_entry338 -> BB4068 [tailport=s, headport=n, headlabel="    4068"]
+BB4068 [shape=record label="{11906: constant[undefined,v1]}" ] 
+BB4068 -> BB4069 [tailport=s, headport=n, headlabel="      4069"]
+BB4069 [shape=record label="{11907: constant[1.0,v3]|11908: read-variable['arguments',v5,-]|11909: read-property[v5,'length',v4]|11910: \<variable-non-null-undef\>['arguments']|11911: ===[v3,v4,v2]|11912: if[v2](true-block:4070,false-block:4072)}" ] 
+BB4069 -> BB4070 [tailport=s, headport=n, headlabel="      4070"]
+BB4069 -> BB4072 [tailport=s, headport=n, headlabel="      4072"]
+BB4069 -> BB4075 [tailport=s, headport=n, color=gray, headlabel="      4075"]
+BB4070 [shape=record label="{11913: read-variable['a',v9,-]|11914: read-property[v9,'a',v8]|11915: \<variable-non-null-undef\>['a']|11916: read-property[v8,'f',v7]|11917: \<property-non-null-undef\>[v9,'a']|11918: read-property[v7,'get',-]|11919: \<property-non-null-undef\>[v8,'f']|11920: read-variable['this',v11,-]|11921: read-property[v11,'j',v10]|11922: read-variable['b',v13,-]|11923: read-variable['c',v14,-]|11924: +[v13,v14,v12]}" ] 
+BB4070 -> BB4071 [tailport=s, headport=n, headlabel="      4071"]
+BB4070 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4071 [shape=record label="{11925: call-a.a.f.get [v7,'get',v10,v12,v1]}" ] 
+BB4071 -> BB4074 [tailport=s, headport=n, headlabel="      4074"]
+BB4071 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4072 [shape=record label="{11926: read-variable['a',v9,-]|11927: read-property[v9,'a',v8]|11928: \<variable-non-null-undef\>['a']|11929: read-property[v8,'f',v7]|11930: \<property-non-null-undef\>[v9,'a']|11931: read-property[v7,'set',-]|11932: \<property-non-null-undef\>[v8,'f']|11933: read-variable['this',v11,-]|11934: read-property[v11,'j',v10]|11935: read-variable['b',v13,-]|11936: read-variable['c',v14,-]|11937: +[v13,v14,v12]|11938: read-variable['arguments',v16,-]|11939: constant[1.0,v17]|11940: read-property[v16,v17,v15]|11941: \<variable-non-null-undef\>['arguments']}" ] 
+BB4072 -> BB4073 [tailport=s, headport=n, headlabel="      4073"]
+BB4072 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4073 [shape=record label="{11942: call-a.a.f.set [v7,'set',v10,v12,v15,-]*}" ] 
+BB4073 -> BB4074 [tailport=s, headport=n]
+BB4073 -> BB4075 [tailport=s, headport=n, color=gray]
+BB4074 [shape=record label="{11943: return[v1]}" ] 
+BB4075 [shape=record label="{11944: exceptional-return}" ] 
+}

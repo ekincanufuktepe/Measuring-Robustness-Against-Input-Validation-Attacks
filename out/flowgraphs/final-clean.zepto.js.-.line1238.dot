@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry222[shape=none,label=""];
+BB_entry222 -> BB2426 [tailport=s, headport=n, headlabel="    2426"]
+BB2426 [shape=record label="{6025: constant[undefined,v1]}" ] 
+BB2426 -> BB2427 [tailport=s, headport=n, headlabel="      2427"]
+BB2427 [shape=record label="{6026: read-variable['$',v5,v4]|6027: read-variable['script',v6,-]}" ] 
+BB2427 -> BB2428 [tailport=s, headport=n, headlabel="      2428"]
+BB2427 -> BB2433 [tailport=s, headport=n, color=gray, headlabel="      2433"]
+BB2428 [shape=record label="{6028: call-$ [v4,v5,v6,v3]}" ] 
+BB2428 -> BB2429 [tailport=s, headport=n, headlabel="      2429"]
+BB2428 -> BB2433 [tailport=s, headport=n, color=gray]
+BB2429 [shape=record label="{6029: read-property[v3,'triggerHandler',-]|6030: constant[\"error\",v7]|6031: read-variable['errorType',v8,-]|6032: if[v8](true-block:2431,false-block:2430)}" ] 
+BB2429 -> BB2431 [tailport=s, headport=n, headlabel="      2431"]
+BB2429 -> BB2430 [tailport=s, headport=n, headlabel="      2430"]
+BB2429 -> BB2433 [tailport=s, headport=n, color=gray]
+BB2430 [shape=record label="{6033: constant[\"abort\",v8]}" ] 
+BB2430 -> BB2431 [tailport=s, headport=n]
+BB2431 [shape=record label="{6034: call-null [v3,'triggerHandler',v7,v8,-]*}" ] 
+BB2431 -> BB2432 [tailport=s, headport=n, headlabel="      2432"]
+BB2431 -> BB2433 [tailport=s, headport=n, color=gray]
+BB2432 [shape=record label="{6035: return[v1]}" ] 
+BB2433 [shape=record label="{6036: exceptional-return}" ] 
+//#$~ 1239
+}

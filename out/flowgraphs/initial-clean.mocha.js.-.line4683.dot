@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry365[shape=none,label=""];
+BB_entry365 -> BB4052 [tailport=s, headport=n, headlabel="    4052"]
+BB4052 [shape=record label="{12837: constant[undefined,v1]}" ] 
+BB4052 -> BB4053 [tailport=s, headport=n, headlabel="      4053"]
+BB4053 [shape=record label="{12838: read-variable['debug',v3,v2]|12839: constant[\"grep %s\",v4]|12840: read-variable['re',v5,-]}" ] 
+BB4053 -> BB4054 [tailport=s, headport=n, headlabel="      4054"]
+BB4053 -> BB4059 [tailport=s, headport=n, color=gray, headlabel="      4059"]
+BB4054 [shape=record label="{12841: call-debug [v2,v3,v4,v5,-]*}" ] 
+BB4054 -> BB4055 [tailport=s, headport=n, headlabel="      4055"]
+BB4054 -> BB4059 [tailport=s, headport=n, color=gray]
+BB4055 [shape=record label="{12842: read-variable['this',v7,-]|12843: read-variable['re',v6,-]|12844: write-property[v7,'_grep',v6]*|12845: read-variable['this',v9,-]|12846: read-variable['invert',v8,-]|12847: write-property[v9,'_invert',v8]*|12848: read-variable['this',v11,-]|12849: read-variable['this',v13,-]|12850: read-property[v13,'grepTotal',-]|12851: read-variable['this',v15,-]|12852: read-property[v15,'suite',v14]}" ] 
+BB4055 -> BB4056 [tailport=s, headport=n, headlabel="      4056"]
+BB4055 -> BB4059 [tailport=s, headport=n, color=gray]
+BB4056 [shape=record label="{12853: call-this.grepTotal [v13,'grepTotal',v14,v10]}" ] 
+BB4056 -> BB4057 [tailport=s, headport=n, headlabel="      4057"]
+BB4056 -> BB4059 [tailport=s, headport=n, color=gray]
+BB4057 [shape=record label="{12854: write-property[v11,'total',v10]*|12855: read-variable['this',v1,-]}" ] 
+BB4057 -> BB4058 [tailport=s, headport=n, headlabel="      4058"]
+BB4057 -> BB4059 [tailport=s, headport=n, color=gray]
+BB4058 [shape=record label="{12856: return[v1]}" ] 
+BB4059 [shape=record label="{12857: exceptional-return}" ] 
+//#$~ 4688
+}

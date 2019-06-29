@@ -1,0 +1,23 @@
+digraph {
+rankdir="TD"
+BB_entry560[shape=none,label=""];
+BB_entry560 -> BB9071 [tailport=s, headport=n, headlabel="    9071"]
+BB9071 [shape=record label="{26816: constant[undefined,v1]}" ] 
+BB9071 -> BB9072 [tailport=s, headport=n, headlabel="      9072"]
+BB9072 [shape=record label="{26817: read-variable['s',v5,-]|26818: read-property[v5,'cache',v3]|26819: \<variable-non-null-undef\>['s']|26820: read-variable['undefined',v4,-]|26821: ===[v3,v4,v2]|26822: if[v2](true-block:9073,false-block:9074)}" ] 
+BB9072 -> BB9073 [tailport=s, headport=n, headlabel="      9073"]
+BB9072 -> BB9074 [tailport=s, headport=n, headlabel="      9074"]
+BB9072 -> BB9077 [tailport=s, headport=n, color=gray, headlabel="      9077"]
+BB9073 [shape=record label="{26823: read-variable['s',v7,-]|26824: constant[false,v6]|26825: write-property[v7,'cache',v6]|26826: \<variable-non-null-undef\>['s']*}" ] 
+BB9073 -> BB9074 [tailport=s, headport=n]
+BB9073 -> BB9077 [tailport=s, headport=n, color=gray]
+BB9074 [shape=record label="{26827: read-variable['s',v7,-]|26828: read-property[v7,'crossDomain',v6]|26829: \<variable-non-null-undef\>['s']|26830: if[v6](true-block:9075,false-block:9076)}" ] 
+BB9074 -> BB9075 [tailport=s, headport=n, headlabel="      9075"]
+BB9074 -> BB9076 [tailport=s, headport=n, headlabel="      9076"]
+BB9074 -> BB9077 [tailport=s, headport=n, color=gray]
+BB9075 [shape=record label="{26831: read-variable['s',v9,-]|26832: constant[\"GET\",v8]|26833: write-property[v9,'type',v8]|26834: \<variable-non-null-undef\>['s']*|26835: read-variable['s',v11,-]|26836: constant[false,v10]|26837: write-property[v11,'global',v10]|26838: \<variable-non-null-undef\>['s']*}" ] 
+BB9075 -> BB9076 [tailport=s, headport=n]
+BB9075 -> BB9077 [tailport=s, headport=n, color=gray]
+BB9076 [shape=record label="{26839: return[v1]}" ] 
+BB9077 [shape=record label="{26840: exceptional-return}" ] 
+}

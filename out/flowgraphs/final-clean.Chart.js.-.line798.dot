@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry91[shape=none,label=""];
+BB_entry91 -> BB794 [tailport=s, headport=n, headlabel="    794"]
+BB794 [shape=record label="{2784: constant[undefined,v1]|2785: vardecl['textWidth']}" ] 
+BB794 -> BB795 [tailport=s, headport=n, headlabel="      795"]
+BB795 [shape=record label="{2786: read-variable['ctx',v5,-]|2787: read-property[v5,'measureText',-]|2788: \<variable-non-null-undef\>['ctx']|2789: read-variable['string',v6,-]}" ] 
+BB795 -> BB796 [tailport=s, headport=n, headlabel="      796"]
+BB795 -> BB802 [tailport=s, headport=n, color=gray, headlabel="      802"]
+BB796 [shape=record label="{2790: call-ctx.measureText [v5,'measureText',v6,v3]}" ] 
+BB796 -> BB797 [tailport=s, headport=n, headlabel="      797"]
+BB796 -> BB802 [tailport=s, headport=n, color=gray]
+BB797 [shape=record label="{2791: read-property[v3,'width',v2]|2792: write-variable[v2,'textWidth']*|2793: read-variable['textWidth',v9,-]|2794: read-variable['longest',v10,-]|2795: \>[v9,v10,v8]|2796: if[v8](true-block:798,false-block:799)}" ] 
+BB797 -> BB798 [tailport=s, headport=n, headlabel="      798"]
+BB797 -> BB799 [tailport=s, headport=n, headlabel="      799"]
+BB797 -> BB802 [tailport=s, headport=n, color=gray]
+BB798 [shape=record label="{2797: read-variable['textWidth',v7,-]}" ] 
+BB798 -> BB800 [tailport=s, headport=n, headlabel="      800"]
+BB798 -> BB802 [tailport=s, headport=n, color=gray]
+BB799 [shape=record label="{2798: read-variable['longest',v7,-]}" ] 
+BB799 -> BB800 [tailport=s, headport=n]
+BB799 -> BB802 [tailport=s, headport=n, color=gray]
+BB800 [shape=record label="{2799: write-variable[v7,'longest']*}" ] 
+BB800 -> BB801 [tailport=s, headport=n, headlabel="      801"]
+BB801 [shape=record label="{2800: return[v1]}" ] 
+BB802 [shape=record label="{2801: exceptional-return}" ] 
+//#$~ 800
+}

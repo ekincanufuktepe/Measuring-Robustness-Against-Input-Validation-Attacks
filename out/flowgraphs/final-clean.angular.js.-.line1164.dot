@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry62[shape=none,label=""];
+BB_entry62 -> BB816 [tailport=s, headport=n, headlabel="    816"]
+BB816 [shape=record label="{1884: constant[undefined,v1]}" ] 
+BB816 -> BB817 [tailport=s, headport=n, headlabel="      817"]
+BB817 [shape=record label="{1885: read-variable['arguments',v3,-]|1886: read-property[v3,'length',v2]|1887: \<variable-non-null-undef\>['arguments']|1888: if[v2](true-block:818,false-block:819)}" ] 
+BB817 -> BB818 [tailport=s, headport=n, headlabel="      818"]
+BB817 -> BB819 [tailport=s, headport=n, headlabel="      819"]
+BB817 -> BB823 [tailport=s, headport=n, color=gray, headlabel="      823"]
+BB818 [shape=record label="{1889: read-variable['fn',v5,-]|1890: read-property[v5,'apply',-]|1891: \<variable-non-null-undef\>['fn']|1892: read-variable['self',v6,-]|1893: read-variable['arguments',v7,-]}" ] 
+BB818 -> BB820 [tailport=s, headport=n, headlabel="      820"]
+BB818 -> BB823 [tailport=s, headport=n, color=gray]
+BB819 [shape=record label="{1894: read-variable['fn',v5,-]|1895: read-property[v5,'call',-]|1896: \<variable-non-null-undef\>['fn']|1897: read-variable['self',v6,-]}" ] 
+BB819 -> BB821 [tailport=s, headport=n, headlabel="      821"]
+BB819 -> BB823 [tailport=s, headport=n, color=gray]
+BB820 [shape=record label="{1898: call-fn.apply [v5,'apply',v6,v7,v1]}" ] 
+BB820 -> BB822 [tailport=s, headport=n, headlabel="      822"]
+BB820 -> BB823 [tailport=s, headport=n, color=gray]
+BB821 [shape=record label="{1899: call-fn.call [v5,'call',v6,v1]}" ] 
+BB821 -> BB822 [tailport=s, headport=n]
+BB821 -> BB823 [tailport=s, headport=n, color=gray]
+BB822 [shape=record label="{1900: return[v1]}" ] 
+BB823 [shape=record label="{1901: exceptional-return}" ] 
+//#$~ 1167
+}

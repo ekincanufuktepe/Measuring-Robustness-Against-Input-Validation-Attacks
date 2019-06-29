@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry777[shape=none,label=""];
+BB_entry777 -> BB10613 [tailport=s, headport=n, headlabel="    10613"]
+BB10613 [shape=record label="{31300: constant[undefined,v1]|31301: vardecl['arr']}" ] 
+BB10613 -> BB10614 [tailport=s, headport=n, headlabel="      10614"]
+BB10614 [shape=record label="{31302: read-variable['ArrayUtil',v4,-]|31303: read-property[v4,'map',-]|31304: \<variable-non-null-undef\>['ArrayUtil']|31305: read-variable['Array',v6,-]|31306: constant[\"r\",v7]|31307: constant[\"g\",v8]|31308: constant[\"b\",v9]}" ] 
+BB10614 -> BB10615 [tailport=s, headport=n, headlabel="      10615"]
+BB10614 -> BB10622 [tailport=s, headport=n, color=gray, headlabel="      10622"]
+BB10615 [shape=record label="{31309: construct [-,v6,v7,v8,v9,v5]}" ] 
+BB10615 -> BB10616 [tailport=s, headport=n, headlabel="      10616"]
+BB10615 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10616 [shape=record label="{31310: function-expr[function ( x ),v10]|31311: read-variable['this',v11,-]}" ] 
+BB10616 -> BB10617 [tailport=s, headport=n, headlabel="      10617"]
+BB10616 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10617 [shape=record label="{31312: call-ArrayUtil.map [v4,'map',v5,v10,v11,v2]}" ] 
+BB10617 -> BB10618 [tailport=s, headport=n, headlabel="      10618"]
+BB10617 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10618 [shape=record label="{31313: write-variable[v2,'arr']*|31314: constant[\"#\",v12]|31315: read-variable['arr',v15,-]|31316: read-property[v15,'join',-]|31317: \<variable-non-null-undef\>['arr']|31318: constant[\"\",v16]}" ] 
+BB10618 -> BB10619 [tailport=s, headport=n, headlabel="      10619"]
+BB10618 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10619 [shape=record label="{31319: call-arr.join [v15,'join',v16,v13]}" ] 
+BB10619 -> BB10620 [tailport=s, headport=n, headlabel="      10620"]
+BB10619 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10620 [shape=record label="{31320: +[v12,v13,v1]}" ] 
+BB10620 -> BB10621 [tailport=s, headport=n, headlabel="      10621"]
+BB10620 -> BB10622 [tailport=s, headport=n, color=gray]
+BB10621 [shape=record label="{31321: return[v1]}" ] 
+BB10622 [shape=record label="{31322: exceptional-return}" ] 
+//#$~ 15101
+}

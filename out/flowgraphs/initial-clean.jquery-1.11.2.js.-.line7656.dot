@@ -1,0 +1,21 @@
+digraph {
+rankdir="TD"
+BB_entry444[shape=none,label=""];
+BB_entry444 -> BB7241 [tailport=s, headport=n, headlabel="    7241"]
+BB7241 [shape=record label="{21666: constant[undefined,v1]}" ] 
+BB7241 -> BB7242 [tailport=s, headport=n, headlabel="      7242"]
+BB7242 [shape=record label="{21667: read-variable['timerId',v3,-]|21668: ![v3,v2]|21669: if[v2](true-block:7243,false-block:7246)}" ] 
+BB7242 -> BB7243 [tailport=s, headport=n, headlabel="      7243"]
+BB7242 -> BB7246 [tailport=s, headport=n, headlabel="      7246"]
+BB7242 -> BB7247 [tailport=s, headport=n, color=gray, headlabel="      7247"]
+BB7243 [shape=record label="{21670: read-variable['setInterval',v6,v5]|21671: read-variable['jQuery',v9,-]|21672: read-property[v9,'fx',v8]|21673: \<variable-non-null-undef\>['jQuery']|21674: read-property[v8,'tick',v7]|21675: \<property-non-null-undef\>[v9,'fx']|21676: read-variable['jQuery',v12,-]|21677: read-property[v12,'fx',v11]|21678: \<variable-non-null-undef\>['jQuery']|21679: read-property[v11,'interval',v10]|21680: \<property-non-null-undef\>[v12,'fx']}" ] 
+BB7243 -> BB7244 [tailport=s, headport=n, headlabel="      7244"]
+BB7243 -> BB7247 [tailport=s, headport=n, color=gray]
+BB7244 [shape=record label="{21681: call-0:0[v5,v6,v7,v10,v4]}" ] 
+BB7244 -> BB7245 [tailport=s, headport=n, headlabel="      7245"]
+BB7244 -> BB7247 [tailport=s, headport=n, color=gray]
+BB7245 [shape=record label="{21682: write-variable[v4,'timerId']*}" ] 
+BB7245 -> BB7246 [tailport=s, headport=n]
+BB7246 [shape=record label="{21683: return[v1]}" ] 
+BB7247 [shape=record label="{21684: exceptional-return}" ] 
+}

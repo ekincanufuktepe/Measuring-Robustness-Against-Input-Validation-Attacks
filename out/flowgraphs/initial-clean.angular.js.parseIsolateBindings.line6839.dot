@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry335[shape=none,label=""];
+BB_entry335 -> BB3961 [tailport=s, headport=n, headlabel="    3961"]
+BB3961 [shape=record label="{9626: constant[undefined,v1]|9627: vardecl['LOCAL_REGEXP']|9628: vardecl['bindings']}" ] 
+BB3961 -> BB3962 [tailport=s, headport=n, headlabel="      3962"]
+BB3962 [shape=record label="{9629: read-variable['RegExp',v3,-]|9630: constant[\"^\\\\s*([@&]|=(\\\\*?))(\\\\??)\\\\s*(\\\\w*)\\\\s*$\",v4]}" ] 
+BB3962 -> BB3963 [tailport=s, headport=n, headlabel="      3963"]
+BB3962 -> BB3968 [tailport=s, headport=n, color=gray, headlabel="      3968"]
+BB3963 [shape=record label="{9631: construct [-,v3,v4,v2]}" ] 
+BB3963 -> BB3964 [tailport=s, headport=n, headlabel="      3964"]
+BB3963 -> BB3968 [tailport=s, headport=n, color=gray]
+BB3964 [shape=record label="{9632: write-variable[v2,'LOCAL_REGEXP']*|9633: new[v5]|9634: write-variable[v5,'bindings']*|9635: read-variable['forEach',v7,v6]|9636: read-variable['scope',v8,-]|9637: function-expr[function ( definition scopeName ),v9]}" ] 
+BB3964 -> BB3965 [tailport=s, headport=n, headlabel="      3965"]
+BB3964 -> BB3968 [tailport=s, headport=n, color=gray]
+BB3965 [shape=record label="{9638: call-forEach [v6,v7,v8,v9,-]*}" ] 
+BB3965 -> BB3966 [tailport=s, headport=n, headlabel="      3966"]
+BB3965 -> BB3968 [tailport=s, headport=n, color=gray]
+BB3966 [shape=record label="{9639: read-variable['bindings',v1,-]}" ] 
+BB3966 -> BB3967 [tailport=s, headport=n, headlabel="      3967"]
+BB3966 -> BB3968 [tailport=s, headport=n, color=gray]
+BB3967 [shape=record label="{9640: return[v1]}" ] 
+BB3968 [shape=record label="{9641: exceptional-return}" ] 
+//#$~ 6864
+}

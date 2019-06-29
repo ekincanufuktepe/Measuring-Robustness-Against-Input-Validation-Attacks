@@ -1,0 +1,32 @@
+digraph {
+rankdir="TD"
+BB_entry738[shape=none,label=""];
+BB_entry738 -> BB9910 [tailport=s, headport=n, headlabel="    9910"]
+BB9910 [shape=record label="{25967: constant[undefined,v1]|25968: vardecl['arg']}" ] 
+BB9910 -> BB9911 [tailport=s, headport=n, headlabel="      9911"]
+BB9911 [shape=record label="{25969: read-variable['left',v6,v5]|25970: read-variable['scope',v7,-]|25971: read-variable['locals',v8,-]|25972: read-variable['assign',v9,-]|25973: read-variable['inputs',v10,-]}" ] 
+BB9911 -> BB9912 [tailport=s, headport=n, headlabel="      9912"]
+BB9911 -> BB9919 [tailport=s, headport=n, color=gray, headlabel="      9919"]
+BB9912 [shape=record label="{25974: call-left [v5,v6,v7,v8,v9,v10,v3]}" ] 
+BB9912 -> BB9913 [tailport=s, headport=n, headlabel="      9913"]
+BB9912 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9913 [shape=record label="{25975: read-variable['right',v12,v11]|25976: read-variable['scope',v13,-]|25977: read-variable['locals',v14,-]|25978: read-variable['assign',v15,-]|25979: read-variable['inputs',v16,-]}" ] 
+BB9913 -> BB9914 [tailport=s, headport=n, headlabel="      9914"]
+BB9913 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9914 [shape=record label="{25980: call-right [v11,v12,v13,v14,v15,v16,v4]}" ] 
+BB9914 -> BB9915 [tailport=s, headport=n, headlabel="      9915"]
+BB9914 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9915 [shape=record label="{25981: !=[v3,v4,v2]|25982: write-variable[v2,'arg']*|25983: read-variable['context',v17,-]|25984: if[v17](true-block:9916,false-block:9917)}" ] 
+BB9915 -> BB9916 [tailport=s, headport=n, headlabel="      9916"]
+BB9915 -> BB9917 [tailport=s, headport=n, headlabel="      9917"]
+BB9915 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9916 [shape=record label="{25985: new[v1]|25986: read-variable['arg',v18,-]|25987: write-property[v1,'value',v18]}" ] 
+BB9916 -> BB9918 [tailport=s, headport=n, headlabel="      9918"]
+BB9916 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9917 [shape=record label="{25988: read-variable['arg',v1,-]}" ] 
+BB9917 -> BB9918 [tailport=s, headport=n]
+BB9917 -> BB9919 [tailport=s, headport=n, color=gray]
+BB9918 [shape=record label="{25989: return[v1]}" ] 
+BB9919 [shape=record label="{25990: exceptional-return}" ] 
+//#$~ 13824
+}

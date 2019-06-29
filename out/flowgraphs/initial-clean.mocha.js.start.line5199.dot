@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry402[shape=none,label=""];
+BB_entry402 -> BB4484 [tailport=s, headport=n, headlabel="    4484"]
+BB4484 [shape=record label="{13950: constant[undefined,v1]}" ] 
+BB4484 -> BB4485 [tailport=s, headport=n, headlabel="      4485"]
+BB4485 [shape=record label="{13951: read-variable['self',v3,-]|13952: read-property[v3,'emit',-]|13953: \<variable-non-null-undef\>['self']|13954: constant[\"start\",v4]}" ] 
+BB4485 -> BB4486 [tailport=s, headport=n, headlabel="      4486"]
+BB4485 -> BB4490 [tailport=s, headport=n, color=gray, headlabel="      4490"]
+BB4486 [shape=record label="{13955: call-self.emit [v3,'emit',v4,-]*}" ] 
+BB4486 -> BB4487 [tailport=s, headport=n, headlabel="      4487"]
+BB4486 -> BB4490 [tailport=s, headport=n, color=gray]
+BB4487 [shape=record label="{13956: read-variable['self',v6,-]|13957: read-property[v6,'runSuite',-]|13958: \<variable-non-null-undef\>['self']|13959: read-variable['rootSuite',v7,-]|13960: function-expr[function ( ),v8]}" ] 
+BB4487 -> BB4488 [tailport=s, headport=n, headlabel="      4488"]
+BB4487 -> BB4490 [tailport=s, headport=n, color=gray]
+BB4488 [shape=record label="{13961: call-self.runSuite [v6,'runSuite',v7,v8,-]*}" ] 
+BB4488 -> BB4489 [tailport=s, headport=n, headlabel="      4489"]
+BB4488 -> BB4490 [tailport=s, headport=n, color=gray]
+BB4489 [shape=record label="{13962: return[v1]}" ] 
+BB4490 [shape=record label="{13963: exceptional-return}" ] 
+//#$~ 5203
+}

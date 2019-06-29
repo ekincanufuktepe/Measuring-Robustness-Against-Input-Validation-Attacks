@@ -1,0 +1,20 @@
+digraph {
+rankdir="TD"
+BB_entry2408[shape=none,label=""];
+BB_entry2408 -> BB27618 [tailport=s, headport=n, headlabel="    27618"]
+BB27618 [shape=record label="{91612: constant[undefined,v1]}" ] 
+BB27618 -> BB27619 [tailport=s, headport=n, headlabel="      27619"]
+BB27619 [shape=record label="{91613: read-variable['targetName',v3,-]|91614: constant[\"\",v4]|91615: !==[v3,v4,v2]|91616: if[v2](true-block:27620,false-block:27621)}" ] 
+BB27619 -> BB27620 [tailport=s, headport=n, headlabel="      27620"]
+BB27619 -> BB27621 [tailport=s, headport=n, headlabel="      27621"]
+BB27619 -> BB27623 [tailport=s, headport=n, color=gray, headlabel="      27623"]
+BB27620 [shape=record label="{91617: read-variable['targetName',v6,-]|91618: constant[\".\",v7]|91619: +[v6,v7,v5]|91620: write-variable[v5,'targetName']*}" ] 
+BB27620 -> BB27621 [tailport=s, headport=n]
+BB27620 -> BB27623 [tailport=s, headport=n, color=gray]
+BB27621 [shape=record label="{91621: read-variable['targetName',v6,-]|91622: read-variable['handlerInfo',v8,-]|91623: read-property[v8,'name',v7]|91624: \<variable-non-null-undef\>['handlerInfo']|91625: +[v6,v7,v5]|91626: write-variable[v5,'targetName']*}" ] 
+BB27621 -> BB27622 [tailport=s, headport=n, headlabel="      27622"]
+BB27621 -> BB27623 [tailport=s, headport=n, color=gray]
+BB27622 [shape=record label="{91627: return[v1]}" ] 
+BB27623 [shape=record label="{91628: exceptional-return}" ] 
+//#$~ 49609
+}

@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry2398[shape=none,label=""];
+BB_entry2398 -> BB27504 [tailport=s, headport=n, headlabel="    27504"]
+BB27504 [shape=record label="{91133: constant[undefined,v1]|91134: vardecl['i']|91135: vardecl['l']|91136: vardecl['handlerInfo']}" ] 
+BB27504 -> BB27505 [tailport=s, headport=n, headlabel="      27505"]
+BB27505 [shape=record label="{91137: read-variable['invalidateIndex',v3,-]|91138: write-variable[v3,'i']*|91139: read-variable['handlerInfos',v5,-]|91140: read-property[v5,'length',v4]|91141: \<variable-non-null-undef\>['handlerInfos']|91142: write-variable[v4,'l']*}" ] 
+BB27505 -> BB27506 [tailport=s, headport=n, headlabel="      27506"]
+BB27505 -> BB27511 [tailport=s, headport=n, color=gray, headlabel="      27511"]
+BB27506 [shape=record label="{91143: read-variable['i',v6,-]|91144: read-variable['l',v7,-]|91145: \<[v6,v7,v2]|91146: if[v2](true-block:27507,false-block:27510)}" ] 
+BB27506 -> BB27507 [tailport=s, headport=n, headlabel="      27507"]
+BB27506 -> BB27510 [tailport=s, headport=n, headlabel="      27510"]
+BB27506 -> BB27511 [tailport=s, headport=n, color=gray]
+BB27507 [shape=record label="{91147: read-variable['handlerInfos',v9,-]|91148: read-variable['i',v10,-]|91149: read-property[v9,v10,v8]|91150: \<variable-non-null-undef\>['handlerInfos']|91151: write-variable[v8,'handlerInfo']*|91152: read-variable['handlerInfos',v12,-]|91153: read-variable['i',v13,-]|91154: read-variable['handlerInfos',v16,-]|91155: read-variable['i',v17,-]|91156: read-property[v16,v17,v15]|91157: \<variable-non-null-undef\>['handlerInfos']|91158: read-property[v15,'getUnresolved',-]|91159: \<property-non-null-undef\>[v16,v17]}" ] 
+BB27507 -> BB27508 [tailport=s, headport=n, headlabel="      27508"]
+BB27507 -> BB27511 [tailport=s, headport=n, color=gray]
+BB27508 [shape=record label="{91160: call-null [v15,'getUnresolved',v11]}" ] 
+BB27508 -> BB27509 [tailport=s, headport=n, headlabel="      27509"]
+BB27508 -> BB27511 [tailport=s, headport=n, color=gray]
+BB27509 [shape=record label="{91161: write-property[v12,v13,v11]|91162: \<variable-non-null-undef\>['handlerInfos']*|91163: constant[1.0,v18]|91164: read-variable['i',v19,-]|91165: +[v19,v20]|91166: +[v20,v18,v21]|91167: write-variable[v21,'i']}" ] 
+BB27509 -> BB27506 [tailport=s, headport=n]
+BB27509 -> BB27511 [tailport=s, headport=n, color=gray]
+BB27510 [shape=record label="{91168: return[v1]}" ] 
+BB27511 [shape=record label="{91169: exceptional-return}" ] 
+//#$~ 49432
+}

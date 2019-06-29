@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry9[shape=none,label=""];
+BB_entry9 -> BB120 [tailport=s, headport=n, headlabel="    120"]
+BB120 [shape=record label="{666: constant[undefined,v1]|667: vardecl['first']|668: vardecl['rest']}" ] 
+BB120 -> BB121 [tailport=s, headport=n, headlabel="      121"]
+BB121 [shape=record label="{669: read-variable['string',v4,-]|670: read-property[v4,'substr',-]|671: \<variable-non-null-undef\>['string']|672: constant[0.0,v5]|673: constant[1.0,v6]}" ] 
+BB121 -> BB122 [tailport=s, headport=n, headlabel="      122"]
+BB121 -> BB129 [tailport=s, headport=n, color=gray, headlabel="      129"]
+BB122 [shape=record label="{674: call-string.substr [v4,'substr',v5,v6,v2]}" ] 
+BB122 -> BB123 [tailport=s, headport=n, headlabel="      123"]
+BB122 -> BB129 [tailport=s, headport=n, color=gray]
+BB123 [shape=record label="{675: write-variable[v2,'first']*|676: read-variable['string',v9,-]|677: read-property[v9,'substr',-]|678: \<variable-non-null-undef\>['string']|679: constant[1.0,v10]|680: read-variable['string',v14,-]|681: read-property[v14,'length',v12]|682: \<variable-non-null-undef\>['string']|683: constant[1.0,v13]|684: -[v12,v13,v11]}" ] 
+BB123 -> BB124 [tailport=s, headport=n, headlabel="      124"]
+BB123 -> BB129 [tailport=s, headport=n, color=gray]
+BB124 [shape=record label="{685: call-string.substr [v9,'substr',v10,v11,v7]}" ] 
+BB124 -> BB125 [tailport=s, headport=n, headlabel="      125"]
+BB124 -> BB129 [tailport=s, headport=n, color=gray]
+BB125 [shape=record label="{686: write-variable[v7,'rest']*|687: read-variable['first',v17,-]|688: read-property[v17,'toUpperCase',-]|689: \<variable-non-null-undef\>['first']}" ] 
+BB125 -> BB126 [tailport=s, headport=n, headlabel="      126"]
+BB125 -> BB129 [tailport=s, headport=n, color=gray]
+BB126 [shape=record label="{690: call-first.toUpperCase [v17,'toUpperCase',v15]}" ] 
+BB126 -> BB127 [tailport=s, headport=n, headlabel="      127"]
+BB126 -> BB129 [tailport=s, headport=n, color=gray]
+BB127 [shape=record label="{691: write-variable[v15,'first']*|692: read-variable['first',v18,-]|693: read-variable['rest',v19,-]|694: +[v18,v19,v1]}" ] 
+BB127 -> BB128 [tailport=s, headport=n, headlabel="      128"]
+BB127 -> BB129 [tailport=s, headport=n, color=gray]
+BB128 [shape=record label="{695: return[v1]}" ] 
+BB129 [shape=record label="{696: exceptional-return}" ] 
+//#$~ 66
+}

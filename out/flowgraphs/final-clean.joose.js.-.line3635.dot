@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry345[shape=none,label=""];
+BB_entry345 -> BB3168 [tailport=s, headport=n, headlabel="    3168"]
+BB3168 [shape=record label="{9384: constant[undefined,v1]}" ] 
+BB3168 -> BB3169 [tailport=s, headport=n, headlabel="      3169"]
+BB3169 [shape=record label="{9385: read-variable['type',v3,-]|9386: constant[null,v4]|9387: ===[v3,v4,v2]|9388: if[v2](true-block:3170,false-block:3171)}" ] 
+BB3169 -> BB3170 [tailport=s, headport=n, headlabel="      3170"]
+BB3169 -> BB3171 [tailport=s, headport=n, headlabel="      3171"]
+BB3169 -> BB3176 [tailport=s, headport=n, color=gray, headlabel="      3176"]
+BB3170 [shape=record label="{9389: read-variable['typeCheckers',v6,-]|9390: read-property[v6,'push',-]|9391: \<variable-non-null-undef\>['typeCheckers']|9392: constant[null,v7]}" ] 
+BB3170 -> BB3172 [tailport=s, headport=n, headlabel="      3172"]
+BB3170 -> BB3176 [tailport=s, headport=n, color=gray]
+BB3171 [shape=record label="{9393: read-variable['typeCheckers',v6,-]|9394: read-property[v6,'push',-]|9395: \<variable-non-null-undef\>['typeCheckers']|9396: read-variable['Joose',v10,-]|9397: read-property[v10,'TypeChecker',v9]|9398: \<variable-non-null-undef\>['Joose']|9399: read-property[v9,'makeTypeChecker',-]|9400: \<property-non-null-undef\>[v10,'TypeChecker']|9401: read-variable['type',v11,-]|9402: read-variable['props',v12,-]|9403: constant[\"parameter\",v13]|9404: read-variable['index',v14,-]}" ] 
+BB3171 -> BB3173 [tailport=s, headport=n, headlabel="      3173"]
+BB3171 -> BB3176 [tailport=s, headport=n, color=gray]
+BB3172 [shape=record label="{9405: call-typeCheckers.push [v6,'push',v7,-]*}" ] 
+BB3172 -> BB3175 [tailport=s, headport=n, headlabel="      3175"]
+BB3172 -> BB3176 [tailport=s, headport=n, color=gray]
+BB3173 [shape=record label="{9406: call-Joose.TypeChecker.makeTypeChecker [v9,'makeTypeChecker',v11,v12,v13,v14,v7]}" ] 
+BB3173 -> BB3174 [tailport=s, headport=n, headlabel="      3174"]
+BB3173 -> BB3176 [tailport=s, headport=n, color=gray]
+BB3174 [shape=record label="{9407: call-typeCheckers.push [v6,'push',v7,-]*}" ] 
+BB3174 -> BB3175 [tailport=s, headport=n]
+BB3174 -> BB3176 [tailport=s, headport=n, color=gray]
+BB3175 [shape=record label="{9408: return[v1]}" ] 
+BB3176 [shape=record label="{9409: exceptional-return}" ] 
+//#$~ 3640
+}

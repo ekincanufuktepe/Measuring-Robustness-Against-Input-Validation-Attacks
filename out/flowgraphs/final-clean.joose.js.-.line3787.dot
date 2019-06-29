@@ -1,0 +1,22 @@
+digraph {
+rankdir="TD"
+BB_entry358[shape=none,label=""];
+BB_entry358 -> BB3316 [tailport=s, headport=n, headlabel="    3316"]
+BB3316 [shape=record label="{9868: constant[undefined,v1]|9869: vardecl['myself']|9870: vardecl['args']|9871: vardecl['fun']}" ] 
+BB3316 -> BB3317 [tailport=s, headport=n, headlabel="      3317"]
+BB3317 [shape=record label="{9872: read-variable['this',v2,-]|9873: write-variable[v2,'myself']*|9874: read-variable['arguments',v3,-]|9875: write-variable[v3,'args']*|9876: read-variable['self',v7,-]|9877: read-property[v7,'getFunForSignature',v6]|9878: \<variable-non-null-undef\>['self']|9879: read-property[v6,'apply',-]|9880: \<property-non-null-undef\>[v7,'getFunForSignature']|9881: read-variable['self',v8,-]|9882: read-variable['args',v9,-]}" ] 
+BB3317 -> BB3318 [tailport=s, headport=n, headlabel="      3318"]
+BB3317 -> BB3322 [tailport=s, headport=n, color=gray, headlabel="      3322"]
+BB3318 [shape=record label="{9883: call-self.getFunForSignature.apply [v6,'apply',v8,v9,v4]}" ] 
+BB3318 -> BB3319 [tailport=s, headport=n, headlabel="      3319"]
+BB3318 -> BB3322 [tailport=s, headport=n, color=gray]
+BB3319 [shape=record label="{9884: write-variable[v4,'fun']*|9885: read-variable['fun',v11,-]|9886: read-property[v11,'apply',-]|9887: \<variable-non-null-undef\>['fun']|9888: read-variable['myself',v12,-]|9889: read-variable['args',v13,-]}" ] 
+BB3319 -> BB3320 [tailport=s, headport=n, headlabel="      3320"]
+BB3319 -> BB3322 [tailport=s, headport=n, color=gray]
+BB3320 [shape=record label="{9890: call-fun.apply [v11,'apply',v12,v13,v1]}" ] 
+BB3320 -> BB3321 [tailport=s, headport=n, headlabel="      3321"]
+BB3320 -> BB3322 [tailport=s, headport=n, color=gray]
+BB3321 [shape=record label="{9891: return[v1]}" ] 
+BB3322 [shape=record label="{9892: exceptional-return}" ] 
+//#$~ 3791
+}

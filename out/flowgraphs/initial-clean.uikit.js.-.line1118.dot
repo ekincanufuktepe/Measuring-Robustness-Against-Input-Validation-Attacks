@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry118[shape=none,label=""];
+BB_entry118 -> BB1461 [tailport=s, headport=n, headlabel="    1461"]
+BB1461 [shape=record label="{4249: constant[undefined,v1]|4250: vardecl['i']}" ] 
+BB1461 -> BB1462 [tailport=s, headport=n, headlabel="      1462"]
+BB1462 [shape=record label="{4251: constant[0.0,v3]|4252: write-variable[v3,'i']*}" ] 
+BB1462 -> BB1463 [tailport=s, headport=n, headlabel="      1463"]
+BB1463 [shape=record label="{4253: read-variable['i',v4,-]|4254: read-variable['scrollspies',v6,-]|4255: read-property[v6,'length',v5]|4256: \<variable-non-null-undef\>['scrollspies']|4257: \<[v4,v5,v2]|4258: if[v2](true-block:1464,false-block:1468)}" ] 
+BB1463 -> BB1464 [tailport=s, headport=n, headlabel="      1464"]
+BB1463 -> BB1468 [tailport=s, headport=n, headlabel="      1468"]
+BB1463 -> BB1469 [tailport=s, headport=n, color=gray, headlabel="      1469"]
+BB1464 [shape=record label="{4259: read-variable['window',v9,-]|4260: read-property[v9,'requestAnimationFrame',v8]|4261: \<variable-non-null-undef\>['window']|4262: read-property[v8,'apply',-]|4263: \<property-non-null-undef\>[v9,'requestAnimationFrame']|4264: read-variable['window',v10,-]|4265: read-variable['Array',v12,-]|4266: read-variable['scrollspies',v15,-]|4267: read-variable['i',v16,-]|4268: read-property[v15,v16,v14]|4269: \<variable-non-null-undef\>['scrollspies']|4270: read-property[v14,'check',v13]|4271: \<property-non-null-undef\>[v15,v16]}" ] 
+BB1464 -> BB1465 [tailport=s, headport=n, headlabel="      1465"]
+BB1464 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1465 [shape=record label="{4272: construct [-,v12,v13,v11]}" ] 
+BB1465 -> BB1466 [tailport=s, headport=n, headlabel="      1466"]
+BB1465 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1466 [shape=record label="{4273: call-window.requestAnimationFrame.apply [v8,'apply',v10,v11,-]*}" ] 
+BB1466 -> BB1467 [tailport=s, headport=n, headlabel="      1467"]
+BB1466 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1467 [shape=record label="{4274: constant[1.0,v17]|4275: read-variable['i',v18,-]|4276: +[v18,v19]|4277: +[v19,v17,v20]|4278: write-variable[v20,'i']}" ] 
+BB1467 -> BB1463 [tailport=s, headport=n]
+BB1467 -> BB1469 [tailport=s, headport=n, color=gray]
+BB1468 [shape=record label="{4279: return[v1]}" ] 
+BB1469 [shape=record label="{4280: exceptional-return}" ] 
+//#$~ 1119
+}

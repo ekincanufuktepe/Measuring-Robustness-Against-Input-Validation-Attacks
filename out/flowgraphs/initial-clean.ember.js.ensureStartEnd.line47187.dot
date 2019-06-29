@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry2245[shape=none,label=""];
+BB_entry2245 -> BB25606 [tailport=s, headport=n, headlabel="    25606"]
+BB25606 [shape=record label="{84335: constant[undefined,v1]}" ] 
+BB25606 -> BB25607 [tailport=s, headport=n, headlabel="      25607"]
+BB25607 [shape=record label="{84336: read-variable['start',v3,-]|84337: constant[null,v4]|84338: ===[v3,v4,v2]|84339: if[v2](true-block:25609,false-block:25608)}" ] 
+BB25607 -> BB25609 [tailport=s, headport=n, headlabel="      25609"]
+BB25607 -> BB25608 [tailport=s, headport=n, headlabel="      25608"]
+BB25607 -> BB25614 [tailport=s, headport=n, color=gray, headlabel="      25614"]
+BB25608 [shape=record label="{84340: read-variable['end',v3,-]|84341: constant[null,v4]|84342: ===[v3,v4,v2]}" ] 
+BB25608 -> BB25609 [tailport=s, headport=n]
+BB25608 -> BB25614 [tailport=s, headport=n, color=gray]
+BB25609 [shape=record label="{84343: if[v2](true-block:25610,false-block:25613)}" ] 
+BB25609 -> BB25610 [tailport=s, headport=n, headlabel="      25610"]
+BB25609 -> BB25613 [tailport=s, headport=n, headlabel="      25613"]
+BB25610 [shape=record label="{84344: read-variable['Error',v4,-]|84345: constant[\"a fragment parent must have boundary nodes in order to detect insertion\",v5]}" ] 
+BB25610 -> BB25611 [tailport=s, headport=n, headlabel="      25611"]
+BB25610 -> BB25614 [tailport=s, headport=n, color=gray]
+BB25611 [shape=record label="{84346: construct [-,v4,v5,v3]}" ] 
+BB25611 -> BB25612 [tailport=s, headport=n, headlabel="      25612"]
+BB25611 -> BB25614 [tailport=s, headport=n, color=gray]
+BB25612 [shape=record label="{84347: throw[v3]*}" ] 
+BB25612 -> BB25613 [tailport=s, headport=n]
+BB25612 -> BB25614 [tailport=s, headport=n, color=gray]
+BB25613 [shape=record label="{84348: return[v1]}" ] 
+BB25614 [shape=record label="{84349: exceptional-return}" ] 
+//#$~ 47189
+}

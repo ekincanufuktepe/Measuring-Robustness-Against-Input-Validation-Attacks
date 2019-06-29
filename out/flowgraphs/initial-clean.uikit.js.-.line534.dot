@@ -1,0 +1,26 @@
+digraph {
+rankdir="TD"
+BB_entry54[shape=none,label=""];
+BB_entry54 -> BB666 [tailport=s, headport=n, headlabel="    666"]
+BB666 [shape=record label="{1899: constant[undefined,v1]}" ] 
+BB666 -> BB667 [tailport=s, headport=n, headlabel="      667"]
+BB667 [shape=record label="{1900: read-variable['UI',v4,-]|1901: read-property[v4,'domObservers',v3]|1902: \<variable-non-null-undef\>['UI']|1903: read-property[v3,'push',-]|1904: \<property-non-null-undef\>[v4,'domObservers']|1905: read-variable['fn',v5,-]}" ] 
+BB667 -> BB668 [tailport=s, headport=n, headlabel="      668"]
+BB667 -> BB673 [tailport=s, headport=n, color=gray, headlabel="      673"]
+BB668 [shape=record label="{1906: call-UI.domObservers.push [v3,'push',v5,-]*}" ] 
+BB668 -> BB669 [tailport=s, headport=n, headlabel="      669"]
+BB668 -> BB673 [tailport=s, headport=n, color=gray]
+BB669 [shape=record label="{1907: read-variable['UI',v7,-]|1908: read-property[v7,'domready',v6]|1909: \<variable-non-null-undef\>['UI']|1910: if[v6](true-block:670,false-block:672)}" ] 
+BB669 -> BB670 [tailport=s, headport=n, headlabel="      670"]
+BB669 -> BB672 [tailport=s, headport=n, headlabel="      672"]
+BB669 -> BB673 [tailport=s, headport=n, color=gray]
+BB670 [shape=record label="{1911: read-variable['fn',v9,v8]|1912: read-variable['document',v10,-]}" ] 
+BB670 -> BB671 [tailport=s, headport=n, headlabel="      671"]
+BB670 -> BB673 [tailport=s, headport=n, color=gray]
+BB671 [shape=record label="{1913: call-fn [v8,v9,v10,-]*}" ] 
+BB671 -> BB672 [tailport=s, headport=n]
+BB671 -> BB673 [tailport=s, headport=n, color=gray]
+BB672 [shape=record label="{1914: return[v1]}" ] 
+BB673 [shape=record label="{1915: exceptional-return}" ] 
+//#$~ 539
+}

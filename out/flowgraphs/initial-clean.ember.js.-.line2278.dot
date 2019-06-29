@@ -1,0 +1,25 @@
+digraph {
+rankdir="TD"
+BB_entry129[shape=none,label=""];
+BB_entry129 -> BB1731 [tailport=s, headport=n, headlabel="    1731"]
+BB1731 [shape=record label="{5617: constant[undefined,v1]|5618: vardecl['controller']}" ] 
+BB1731 -> BB1732 [tailport=s, headport=n, headlabel="      1732"]
+BB1732 [shape=record label="{5619: read-variable['this',v2,-]|5620: write-variable[v2,'controller']*|5621: new[v1]|5622: read-variable['get',v5,v4]|5623: read-variable['controller',v6,-]|5624: constant[\"needs\",v7]}" ] 
+BB1732 -> BB1733 [tailport=s, headport=n, headlabel="      1733"]
+BB1732 -> BB1738 [tailport=s, headport=n, color=gray, headlabel="      1738"]
+BB1733 [shape=record label="{5625: call-get [v4,v5,v6,v7,v3]}" ] 
+BB1733 -> BB1734 [tailport=s, headport=n, headlabel="      1734"]
+BB1733 -> BB1738 [tailport=s, headport=n, color=gray]
+BB1734 [shape=record label="{5626: write-property[v1,'needs',v3]|5627: read-variable['get',v10,v9]|5628: read-variable['controller',v11,-]|5629: constant[\"container\",v12]}" ] 
+BB1734 -> BB1735 [tailport=s, headport=n, headlabel="      1735"]
+BB1734 -> BB1738 [tailport=s, headport=n, color=gray]
+BB1735 [shape=record label="{5630: call-get [v9,v10,v11,v12,v8]}" ] 
+BB1735 -> BB1736 [tailport=s, headport=n, headlabel="      1736"]
+BB1735 -> BB1738 [tailport=s, headport=n, color=gray]
+BB1736 [shape=record label="{5631: write-property[v1,'container',v8]|5632: function-expr[function ( controllerName ),v13]|5633: write-property[v1,'unknownProperty',v13]|5634: function-expr[function ( key value ),v14]|5635: write-property[v1,'setUnknownProperty',v14]}" ] 
+BB1736 -> BB1737 [tailport=s, headport=n, headlabel="      1737"]
+BB1736 -> BB1738 [tailport=s, headport=n, color=gray]
+BB1737 [shape=record label="{5636: return[v1]}" ] 
+BB1738 [shape=record label="{5637: exceptional-return}" ] 
+//#$~ 2304
+}

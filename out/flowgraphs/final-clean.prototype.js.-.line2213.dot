@@ -1,0 +1,28 @@
+digraph {
+rankdir="TD"
+BB_entry272[shape=none,label=""];
+BB_entry272 -> BB3065 [tailport=s, headport=n, headlabel="    3065"]
+BB3065 [shape=record label="{8289: constant[undefined,v1]|8290: vardecl['el']|8291: vardecl['isBuggy']}" ] 
+BB3065 -> BB3066 [tailport=s, headport=n, headlabel="      3066"]
+BB3066 [shape=record label="{8292: read-variable['document',v4,-]|8293: read-property[v4,'createElement',-]|8294: \<variable-non-null-undef\>['document']|8295: constant[\"div\",v5]}" ] 
+BB3066 -> BB3067 [tailport=s, headport=n, headlabel="      3067"]
+BB3066 -> BB3069 [tailport=s, headport=n, color=gray, headlabel="      3069"]
+BB3067 [shape=record label="{8296: call-document.createElement [v4,'createElement',v5,v2]}" ] 
+BB3067 -> BB3068 [tailport=s, headport=n, headlabel="      3068"]
+BB3067 -> BB3069 [tailport=s, headport=n, color=gray]
+BB3068 [shape=record label="{8297: write-variable[v2,'el']*|8298: read-variable['el',v7,-]|8299: constant[\"\\\<link /\\\>\",v6]|8300: write-property[v7,'innerHTML',v6]|8301: \<variable-non-null-undef\>['el']*|8302: read-variable['el',v12,-]|8303: read-property[v12,'childNodes',v11]|8304: \<variable-non-null-undef\>['el']|8305: read-property[v11,'length',v9]|8306: \<property-non-null-undef\>[v12,'childNodes']|8307: constant[0.0,v10]|8308: ===[v9,v10,v8]|8309: write-variable[v8,'isBuggy']*|8310: constant[null,v13]|8311: write-variable[v13,'el']*|8312: read-variable['isBuggy',v1,-]}" ] 
+BB3068 -> BB3073 [tailport=s, headport=n, headlabel="      3073"]
+BB3068 -> BB3069 [tailport=s, headport=n, color=gray]
+BB3069 [shape=record label="{8313: catch[e,v2]|8314: begin-with[v2]}" ] 
+BB3069 -> BB3070 [tailport=s, headport=n, headlabel="      3070"]
+BB3069 -> BB3074 [tailport=s, headport=n, color=gray, headlabel="      3074"]
+BB3070 [shape=record label="{8315: constant[true,v1]}" ] 
+BB3070 -> BB3073 [tailport=s, headport=n]
+BB3071 [shape=record label="{8316: end-with}" ] 
+BB3071 -> BB3074 [tailport=s, headport=n]
+BB3072 [shape=record label="{8317: end-with}" ] 
+BB3072 -> BB3073 [tailport=s, headport=n]
+BB3073 [shape=record label="{8318: return[v1]}" ] 
+BB3074 [shape=record label="{8319: exceptional-return}" ] 
+//#$~ 2221
+}

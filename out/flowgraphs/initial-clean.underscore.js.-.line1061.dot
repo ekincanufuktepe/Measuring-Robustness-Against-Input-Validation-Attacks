@@ -1,0 +1,29 @@
+digraph {
+rankdir="TD"
+BB_entry114[shape=none,label=""];
+BB_entry114 -> BB1350 [tailport=s, headport=n, headlabel="    1350"]
+BB1350 [shape=record label="{3576: constant[undefined,v1]|3577: vardecl['result']}" ] 
+BB1350 -> BB1351 [tailport=s, headport=n, headlabel="      1351"]
+BB1351 [shape=record label="{3578: read-variable['baseCreate',v4,v3]|3579: read-variable['prototype',v5,-]}" ] 
+BB1351 -> BB1352 [tailport=s, headport=n, headlabel="      1352"]
+BB1351 -> BB1358 [tailport=s, headport=n, color=gray, headlabel="      1358"]
+BB1352 [shape=record label="{3580: call-baseCreate [v3,v4,v5,v2]}" ] 
+BB1352 -> BB1353 [tailport=s, headport=n, headlabel="      1353"]
+BB1352 -> BB1358 [tailport=s, headport=n, color=gray]
+BB1353 [shape=record label="{3581: write-variable[v2,'result']*|3582: read-variable['props',v6,-]|3583: if[v6](true-block:1354,false-block:1356)}" ] 
+BB1353 -> BB1354 [tailport=s, headport=n, headlabel="      1354"]
+BB1353 -> BB1356 [tailport=s, headport=n, headlabel="      1356"]
+BB1353 -> BB1358 [tailport=s, headport=n, color=gray]
+BB1354 [shape=record label="{3584: read-variable['_',v8,-]|3585: read-property[v8,'extendOwn',-]|3586: \<variable-non-null-undef\>['_']|3587: read-variable['result',v9,-]|3588: read-variable['props',v10,-]}" ] 
+BB1354 -> BB1355 [tailport=s, headport=n, headlabel="      1355"]
+BB1354 -> BB1358 [tailport=s, headport=n, color=gray]
+BB1355 [shape=record label="{3589: call-_.extendOwn [v8,'extendOwn',v9,v10,-]*}" ] 
+BB1355 -> BB1356 [tailport=s, headport=n]
+BB1355 -> BB1358 [tailport=s, headport=n, color=gray]
+BB1356 [shape=record label="{3590: read-variable['result',v1,-]}" ] 
+BB1356 -> BB1357 [tailport=s, headport=n, headlabel="      1357"]
+BB1356 -> BB1358 [tailport=s, headport=n, color=gray]
+BB1357 [shape=record label="{3591: return[v1]}" ] 
+BB1358 [shape=record label="{3592: exceptional-return}" ] 
+//#$~ 1064
+}

@@ -1,0 +1,31 @@
+digraph {
+rankdir="TD"
+BB_entry172[shape=none,label=""];
+BB_entry172 -> BB2825 [tailport=s, headport=n, headlabel="    2825"]
+BB2825 [shape=record label="{8474: constant[undefined,v1]|8475: vardecl['indices']}" ] 
+BB2825 -> BB2826 [tailport=s, headport=n, headlabel="      2826"]
+BB2826 [shape=record label="{8476: read-variable['getIndices',v4,v3]}" ] 
+BB2826 -> BB2827 [tailport=s, headport=n, headlabel="      2827"]
+BB2826 -> BB2834 [tailport=s, headport=n, color=gray, headlabel="      2834"]
+BB2827 [shape=record label="{8477: call-getIndices [v3,v4,v2]}" ] 
+BB2827 -> BB2828 [tailport=s, headport=n, headlabel="      2828"]
+BB2827 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2828 [shape=record label="{8478: write-variable[v2,'indices']*|8479: new[v1]|8480: read-variable['indices',v6,-]|8481: read-property[v6,'h',v5]|8482: \<variable-non-null-undef\>['indices']|8483: write-property[v1,'indexh',v5]|8484: read-variable['indices',v8,-]|8485: read-property[v8,'v',v7]|8486: \<variable-non-null-undef\>['indices']|8487: write-property[v1,'indexv',v7]|8488: read-variable['indices',v10,-]|8489: read-property[v10,'f',v9]|8490: \<variable-non-null-undef\>['indices']|8491: write-property[v1,'indexf',v9]|8492: read-variable['isPaused',v13,v12]}" ] 
+BB2828 -> BB2829 [tailport=s, headport=n, headlabel="      2829"]
+BB2828 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2829 [shape=record label="{8493: call-isPaused [v12,v13,v11]}" ] 
+BB2829 -> BB2830 [tailport=s, headport=n, headlabel="      2830"]
+BB2829 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2830 [shape=record label="{8494: write-property[v1,'paused',v11]|8495: read-variable['isOverview',v16,v15]}" ] 
+BB2830 -> BB2831 [tailport=s, headport=n, headlabel="      2831"]
+BB2830 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2831 [shape=record label="{8496: call-isOverview [v15,v16,v14]}" ] 
+BB2831 -> BB2832 [tailport=s, headport=n, headlabel="      2832"]
+BB2831 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2832 [shape=record label="{8497: write-property[v1,'overview',v14]}" ] 
+BB2832 -> BB2833 [tailport=s, headport=n, headlabel="      2833"]
+BB2832 -> BB2834 [tailport=s, headport=n, color=gray]
+BB2833 [shape=record label="{8498: return[v1]}" ] 
+BB2834 [shape=record label="{8499: exceptional-return}" ] 
+//#$~ 3300
+}
