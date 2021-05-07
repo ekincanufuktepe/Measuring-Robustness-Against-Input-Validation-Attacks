@@ -13,3 +13,18 @@ The MainIV receives 2 arguments.
 2) The second argument is the "-flowgraph", which is necessary to generate CFG by TAJS for input validations analysis.
 
 Also, under the "files" folder there is a "config.conf" file for setting the configuration. This configuration is used for updating the input validation vulnerability attack statistics.
+
+To cite our work:
+
+```
+@article{ufuktepe2018estimating,  
+  title={Estimating software robustness in relation to input validation vulnerabilities using Bayesian networks},  
+  author={Ufuktepe, Ekincan and Tuglular, Tugkan},  
+  journal={Software Quality Journal},  
+  volume={26},  
+  number={2},  
+  pages={455--489},  
+  year={2018},  
+  publisher={Springer}  
+}
+```
